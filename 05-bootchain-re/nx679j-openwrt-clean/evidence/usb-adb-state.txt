@@ -1,0 +1,14 @@
+List of devices attached
+0123456789ABCDEF       device usb:6-1 product:NX679J-UN model:NX679J device:NX679J-UN transport_id:4
+
+uid=0(root) gid=0(root) groups=0(root) context=u:r:magisk:s0
+NX679J
+NX679J-UN
+NX679J-UN
+nubia
+SM8450
+_a
+qcom
+orange
+unlocked
+Linux localhost 5.10.66-android12-9-00005-gf6e6376090be-ab8060604 #1 SMP PREEMPT Fri Jan 7 14:51:36 UTC 2022 aarch64

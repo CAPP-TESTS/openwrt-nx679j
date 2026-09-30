@@ -1,0 +1,20 @@
+[*] extracting the stock kernel from the boot_a readback
+    kernel 49108324 bytes sha256=f0aa949c95d1421381850cb1982bd2a505e96fcd7565543ec28d5b1f7d81a0cc (stock, unchanged)
+[*] compiling /init as a STATIC aarch64 binary
+    aarch64-linux-gnu-gcc (GCC) 16.1.0
+    aarch64-linux-gnu-gcc -static -Os -s -Wall -Wextra -Wno-unused-result -Wno-format-truncation -o /home/user/nx679j-stock/experiments/20260916-122926-native-baseline/candidate-minimal-gadget-v6/work/init /home/user/nx679j-stock/experiments/20260916-122926-native-baseline/candidate-init-v6.c
+    file: ELF 64-bit LSB executable, ARM aarch64, version 1 (SYSV), statically linked, BuildID[sha1]=56445e235a83a7d3bc7577cfc7790f472376f59e, for GNU/Linux 3.7.0, stripped
+    ELF type=EXEC (Executable file) machine=AArch64 interp=NONE DT_NEEDED=NONE
+    /init 663456 bytes sha256=a2c901f0375e940521388587f713967f70d56ac629350613d40a0952a5b15e02
+[*] assembling the v6 ramdisk (init + device nodes + directories)
+[*] reading the device vendor ramdisk for the module set
+    vendor ramdisk: 327 .ko, 6 metadata files
+    bundled 47 modules, 2561880 bytes raw, cross-check identical: 47/47
+    65 entries, cpio 3237608 -> gz 901952 bytes
+    self-check: archive parses, 6 device nodes, 47 modules, 10 forbidden paths absent
+[*] stage 1-2 done -> /home/user/nx679j-stock/experiments/20260916-122926-native-baseline/candidate-minimal-gadget-v6/inputs.json
+[*] image  /home/user/nx679j-stock/experiments/20260916-122926-native-baseline/candidate-minimal-gadget-v6/boot_b-staticinit-v6.img
+    50020352 bytes sha256=273fd8be271b1389dd886c4b2d77a35e0f77ee8b810dca61c418a0f39aab029b
+    ramdisk 901952 bytes (v5: 1147147, 78.6%) sha256=8378e9a3398f55bfee72166b8bcd2df94b5cca098418d948cf3bf44019a9d035
+    entries 65 (v5: 85), cmdline identical to v5: True
+[*] manifest -> /home/user/nx679j-stock/experiments/20260916-122926-native-baseline/candidate-minimal-gadget-v6/manifest.json

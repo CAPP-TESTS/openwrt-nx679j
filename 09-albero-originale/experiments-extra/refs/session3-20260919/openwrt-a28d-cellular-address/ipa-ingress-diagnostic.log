@@ -1,0 +1,22 @@
+IPA_TRIGGER uptime=1519.67 11965.50
+IPA_WRITE device=503:0 payload=ASCII_1 length=1
+IPA_WRITE returned=1
+interface=rmnet_ipa0 ioctl=0x89fd struct_size=24
+driver=rmnet_ipa0
+features=7 (0x7)
+endpoint=1 (0x1)
+pipes consumer=2 producer=23
+mru=1000 (0x3e8)
+scatter_gather=1 (0x1)
+ENABLE_IPA_LOW_RAM_LOG uptime=1520.71 11967.28
+[dspawn] pid=11176 log=/tmp/ipa-ipc-collector.log
+DPM_OPEN uptime=1521.71 11974.17
+BEFORE_INGRESS_ONLY uptime=1521.71 11974.17
+CHECKPOINT_DURABLE index=16 label=before_ingress_only
+NETDEV features_block=0 active=0x00004000 available=0x001d4813
+NETDEV features_block=1 active=0x00000000 available=0x02800302
+INGRESS selector=7 flags=0xe
+INGRESS accepted
+INGRESS_EXIT=0 uptime=1521.73 11975.35
+CHECKPOINT_DURABLE index=17 label=after_ingress_only
+INGRESS_ONLY_COMPLETE uptime=1521.74 11975.74

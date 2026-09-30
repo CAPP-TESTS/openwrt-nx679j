@@ -1,0 +1,114 @@
+#!/bin/sh
+# Custom init for NX679J OpenWrt experiment
+# Sets up USB gadget networking for shell access over USB
+
+export PATH=/bin:/sbin:/usr/bin:/usr/sbin
+
+# Mount essential filesystems
+mount -t proc proc /proc
+mount -t sysfs sys /sys
+mount -t devtmpfs dev /dev
+mkdir -p /dev/pts
+mount -t devpts devpts /dev/pts
+mount -t tmpfs tmpfs /tmp
+mount -t tmpfs tmpfs /run
+
+echo "============================================"
+echo "  NX679J Custom OS Boot Experiment"
+echo "  Kernel: $(uname -r)"
+echo "  Date: $(date)"
+echo "============================================"
+
+# Set hostname
+hostname openwrt-nx679j
+
+# Set up USB gadget networking via configfs
+echo "[*] Setting up USB gadget..."
+CONFIGFS=/sys/kernel/config
+mkdir -p $CONFIGFS 2>/dev/null
+mount -t configfs configfs $CONFIGFS 2>/dev/null
+
+if [ -d "$CONFIGFS/usb_gadget" ]; then
+    GADGET=$CONFIGFS/usb_gadget/g1
+    mkdir -p $GADGET
+    
+    # Device IDs
+    echo 0x1d6b > $GADGET/idVendor    # Linux Foundation
+    echo 0x0104 > $GADGET/idProduct   # CDC ECM
+    echo 0x0100 > $GADGET/bcdDevice
+    echo 0x0200 > $GADGET/bcdUSB
+    
+    # English strings
+    mkdir -p $GADGET/strings/0x409
+    echo "OpenWrt-NX679J" > $GADGET/strings/0x409/manufacturer
+    echo "NX679J Gadget" > $GADGET/strings/0x409/product
+    echo "0001" > $GADGET/strings/0x409/serialnumber
+    
+    # Configuration
+    mkdir -p $GADGET/configs/c.1
+    mkdir -p $GADGET/configs/c.1/strings/0x409
+    echo "ECM Network" > $GADGET/configs/c.1/strings/0x409/configuration
+    
+    # CDC ECM function
+    mkdir -p $GADGET/functions/ecm.usb0
+    ln -s $GADGET/functions/ecm.usb0 $GADGET/configs/c.1/
+    
+    # Find and bind to UDC
+    UDC=$(ls /sys/class/udc/ 2>/dev/null | head -1)
+    if [ -n "$UDC" ]; then
+        echo "[*] Binding to UDC: $UDC"
+        echo "$UDC" > $GADGET/UDC
+        sleep 2
+        
+        # Configure network
+        ifconfig usb0 10.0.0.2 netmask 255.255.255.0 up 2>/dev/null
+        echo "[+] USB network up: 10.0.0.2"
+    else
+        echo "[-] No UDC found"
+    fi
+else
+    echo "[-] configfs/usb_gadget not available"
+fi
+
+# Also try RNDIS (more compatible with Windows, sometimes needed for Linux host)
+echo "[*] Trying RNDIS gadget..."
+GADGET2=$CONFIGFS/usb_gadget/g2
+mkdir -p $GADGET2 2>/dev/null
+if [ -d "$GADGET2" ]; then
+    echo 0x18d1 > $GADGET2/idVendor   # Google
+    echo 0x4ee3 > $GADGET2/idProduct  # RNDIS
+    mkdir -p $GADGET2/strings/0x409
+    echo "NX679J-RNDIS" > $GADGET2/strings/0x409/product
+    mkdir -p $GADGET2/configs/c.1/strings/0x409
+    echo "RNDIS" > $GADGET2/configs/c.1/strings/0x409/configuration
+    mkdir -p $GADGET2/functions/rndis.usb0 2>/dev/null
+    if [ -d "$GADGET2/functions/rndis.usb0" ]; then
+        ln -s $GADGET2/functions/rndis.usb0 $GADGET2/configs/c.1/
+        UDC=$(ls /sys/class/udc/ 2>/dev/null | head -1)
+        [ -n "$UDC" ] && echo "$UDC" > $GADGET2/UDC 2>/dev/null
+    fi
+fi
+
+# Start telnet server for remote shell
+echo "[*] Starting telnet server..."
+telnetd -l /bin/sh -p 23 2>/dev/null && echo "[+] Telnet on port 23"
+
+# Start a shell on console (for serial debug if available)
+echo "[*] Starting console shell..."
+setsid sh -c 'exec sh -l </dev/console >/dev/console 2>&1' &
+
+# Print network info
+echo ""
+echo "============================================"
+echo "  Boot complete!"
+echo "  Connect USB cable, configure host IP to 10.0.0.1"
+echo "  Telnet to 10.0.0.2"
+echo "  Or use: adb shell (if adb works)"
+echo "============================================"
+echo ""
+
+# Show kernel messages
+dmesg | tail -20
+
+# Drop to interactive shell on console
+exec sh -l </dev/console >/dev/console 2>&1

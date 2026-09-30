@@ -1,0 +1,8 @@
+STAGE=inspect BEGIN uptime=2478.75 19468.15
+CHECKPOINT_DURABLE index=0 label=before_inspect
+STAGE=inspect RETURNED uptime=2478.78 19468.24
+CHECKPOINT_DURABLE index=1 label=after_inspect
+STAGE=mtu BEGIN uptime=2479.09 19469.67
+CHECKPOINT_DURABLE index=2 label=before_mtu
+STAGE=mtu RETURNED uptime=2479.10 19469.71
+CHECKPOINT_DURABLE index=3 label=after_mtu

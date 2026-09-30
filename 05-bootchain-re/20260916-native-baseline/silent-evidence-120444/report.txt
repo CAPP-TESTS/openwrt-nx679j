@@ -1,0 +1,31 @@
+=== read-silent-evidence 2026-09-17T12:04:44+02:00 -> silent-evidence-120444 ===
+device: _a
+
+=== 1. logdump (log XBL/ABL) ===
+lrwxrwxrwx 1 root root 16 1970-01-01 13:29 /dev/block/by-name/logdump -> /dev/block/sde63
+lrwxrwxrwx 1 root root 16 1970-01-01 13:29 /dev/block/by-name/rawdump -> /dev/block/sda11
+logdump: 536870912 B, sha256 9acca8e8c2220115
+stringhe estratte: 0
+--- righe rilevanti (boot/kernel/dtb/image/error) ---
+
+=== 2. rawdump (nostra journal, se l'init e' arrivato alla UFS) ===
+rawdump: 268435456 B, sha256 a6d72ac7690f53be
+byte non-zero nei primi 64 KiB: 0  (journal ASSENTE: init mai arrivato alla UFS)
+
+=== 3. pstore ===
+total 0
+dr-xr-x---  2 system log  0 1970-01-01 13:29 .
+drwxr-xr-x 10 root   root 0 1970-01-01 01:00 ..
+pstore vuota
+
+=== 4. dmesg di Android: cerca tracce del boot precedente (ramo non-Android) ===
+[    6.039219] init: starting service 'exec 37 (/debug_ramdisk/magisk --service)'...
+[    6.046279] init: SVC_EXEC service 'exec 37 (/debug_ramdisk/magisk --service)' pid 2120 (uid 0 gid 0+0 context u:r:magisk:s0) started; waiting...
+[    6.048363] init: Service 'exec 37 (/debug_ramdisk/magisk --service)' (pid 2120) exited with status 0 waiting took 0.008000 seconds
+[    6.048399] init: Sending signal 9 to service 'exec 37 (/debug_ramdisk/magisk --service)' (pid 2120) process group...
+[   15.863780] init: starting service 'exec 51 (/debug_ramdisk/magisk --boot-complete)'...
+[   15.864892] init: SVC_EXEC service 'exec 51 (/debug_ramdisk/magisk --boot-complete)' pid 5009 (uid 0 gid 0+0 context u:r:magisk:s0) started; waiting...
+[   15.878938] init: Service 'exec 51 (/debug_ramdisk/magisk --boot-complete)' (pid 5009) exited with status 0 waiting took 0.014000 seconds
+[   15.878952] init: Sending signal 9 to service 'exec 51 (/debug_ramdisk/magisk --boot-complete)' (pid 5009) process group...
+
+=== fatto: silent-evidence-120444 ===

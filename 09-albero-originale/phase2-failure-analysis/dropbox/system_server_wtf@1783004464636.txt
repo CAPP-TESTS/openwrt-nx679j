@@ -1,0 +1,15 @@
+Process: system_server
+Subject: SystemServiceRegistry
+Build: nubia/NX679J-UN/NX679J-UN:12/SKQ1.211113.001/eng.nubia.20220308.193302:user/release-keys
+
+android.util.Log$TerribleFailure: Manager wrapper not available: jobscheduler
+	at android.util.Log.wtf(Log.java:474)
+	at android.util.Slog.wtf(Slog.java:98)
+	at android.app.SystemServiceRegistry.getSystemService(SystemServiceRegistry.java:1544)
+	at android.app.ContextImpl.getSystemService(ContextImpl.java:2067)
+	at com.android.providers.settings.SettingsProvider.scheduleWriteFallbackFilesJob(SettingsProvider.java:2653)
+	at com.android.providers.settings.SettingsProvider$SettingsRegistry$MyHandler.handleMessage(SettingsProvider.java:3640)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loopOnce(Looper.java:238)
+	at android.os.Looper.loop(Looper.java:379)
+	at android.os.HandlerThread.run(HandlerThread.java:67)

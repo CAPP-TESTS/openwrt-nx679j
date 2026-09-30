@@ -1,0 +1,1040 @@
+{
+  "image": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/candidate-minimal-gadget-v6/boot_b-staticinit-v6.img",
+  "bytes": 50020352,
+  "sha256": "273fd8be271b1389dd886c4b2d77a35e0f77ee8b810dca61c418a0f39aab029b",
+  "header_version": 4,
+  "os_version": "12.0.0",
+  "os_patch_level": "2022-02",
+  "kernel_bytes": 49108324,
+  "kernel_sha256": "f0aa949c95d1421381850cb1982bd2a505e96fcd7565543ec28d5b1f7d81a0cc",
+  "kernel_is_stock_readback": true,
+  "ramdisk_bytes": 901952,
+  "ramdisk_sha256": "8378e9a3398f55bfee72166b8bcd2df94b5cca098418d948cf3bf44019a9d035",
+  "ramdisk_cpio_bytes": 3237608,
+  "ramdisk_entries": 65,
+  "signature_size": 0,
+  "partition_capacity": 100663296,
+  "cmdline": "stack_depot_disable=on kasan.stacktrace=off kvm-arm.mode=protected cgroup_disable=pressure cgroup.memory=nokmem console=ttyMSM0,115200n8 loglevel=6 kpti=0 log_buf_len=256K kernel.panic_on_rcu_stall=1 swiotlb=noforce loop.max_part=7 cgroup.memory=nokmem,nosocket pcie_ports=compat service_locator.enable=1 msm_rtb.filter=0x237 allow_mismatched_32bit_el0 cpufreq.default_governor=performance pelt=8 kasan=off rcupdate.rcu_expedited=1 rcu_nocbs=0-7 irqaffinity=0-3 ftrace_dump_on_oops pstore.compress=none fsa4480_i2c.async_probe=1 can.stats_timer=0 video=vfb:640x400,bpp=32,memsize=3072000 qcom-dload-mode.download_mode=1 bootconfig msm_drm.dsi_display0=qcom,mdss_dsi_r6130_1080_2400_amoled_cmd: rootwait ro init=/init panic=10",
+  "cmdline_identical_to_v5": true,
+  "cmdline_identical_to_v4": true,
+  "init": {
+    "path": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/candidate-init-v6.c",
+    "source_sha256": "495886c2e0f8fefa3bbacf581579ebe152f525de7f48d6bb1bd989b110a439b4",
+    "binary": "init",
+    "binary_bytes": 663456,
+    "binary_sha256": "a2c901f0375e940521388587f713967f70d56ac629350613d40a0952a5b15e02",
+    "compiler": "aarch64-linux-gnu-gcc (GCC) 16.1.0",
+    "flags": [
+      "-static",
+      "-Os",
+      "-s",
+      "-Wall",
+      "-Wextra",
+      "-Wno-unused-result",
+      "-Wno-format-truncation"
+    ],
+    "static": true,
+    "interp": null,
+    "dt_needed": [],
+    "not_a_shell_script": true,
+    "never_exits": "main() has no exit path: every failure is logged and retried, the last statement is an infinite loop, so PID 1 cannot die and the kernel cannot panic from an init exit"
+  },
+  "module_vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+  "modules_packed": [
+    {
+      "name": "phy_qcom_emu",
+      "file": "phy-qcom-emu.ko",
+      "bytes": 16376,
+      "sha256": "4966b8500a276d11ba48a0776fbe29a75cb538ed4b3e13eec90787fdcf99b158",
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "source": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/unpacked-current/vendor_boot_a/vendor_ramdisk00",
+      "cross_check_dir": "/home/user/nx679j-stock/port-work/stock_vendor_ramdisk/lib/modules/phy-qcom-emu.ko",
+      "identical_to_extracted_copy": true
+    },
+    {
+      "name": "repeater",
+      "file": "repeater.ko",
+      "bytes": 16504,
+      "sha256": "65c9b5a80a1b2490054e95fd914d82799806099b4f1eca3c2454c8460b1633d2",
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "source": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/unpacked-current/vendor_boot_a/vendor_ramdisk00",
+      "cross_check_dir": "/home/user/nx679j-stock/port-work/stock_vendor_ramdisk/lib/modules/repeater.ko",
+      "identical_to_extracted_copy": true
+    },
+    {
+      "name": "qcom_scm",
+      "file": "qcom-scm.ko",
+      "bytes": 202536,
+      "sha256": "16881b7598b149f5cef1b7717e4eabc834b4d9ba64ef532ef62ff6b0acd8dda4",
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "source": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/unpacked-current/vendor_boot_a/vendor_ramdisk00",
+      "cross_check_dir": "/home/user/nx679j-stock/port-work/stock_vendor_ramdisk/lib/modules/qcom-scm.ko",
+      "identical_to_extracted_copy": true
+    },
+    {
+      "name": "phy_msm_snps_eusb2",
+      "file": "phy-msm-snps-eusb2.ko",
+      "bytes": 44520,
+      "sha256": "0d7dd8a80ca3214cdf0439348b1489d839eda852d202b32265cc4dbeda8fcf8e",
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "source": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/unpacked-current/vendor_boot_a/vendor_ramdisk00",
+      "cross_check_dir": "/home/user/nx679j-stock/port-work/stock_vendor_ramdisk/lib/modules/phy-msm-snps-eusb2.ko",
+      "identical_to_extracted_copy": true
+    },
+    {
+      "name": "phy_qcom_ufs",
+      "file": "phy-qcom-ufs.ko",
+      "bytes": 40120,
+      "sha256": "d39f5f2354a0c8322755a41c154896f7c3f5be55e343aeea26a68f6dca15bb53",
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "source": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/unpacked-current/vendor_boot_a/vendor_ramdisk00",
+      "cross_check_dir": "/home/user/nx679j-stock/port-work/stock_vendor_ramdisk/lib/modules/phy-qcom-ufs.ko",
+      "identical_to_extracted_copy": true
+    },
+    {
+      "name": "phy_qcom_ufs_qmp_v4_lahaina",
+      "file": "phy-qcom-ufs-qmp-v4-lahaina.ko",
+      "bytes": 27208,
+      "sha256": "1a39a576174b5c2582643282d3a3fd2df96117a5dd7fb34f489f8cfbe7665c40",
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "source": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/unpacked-current/vendor_boot_a/vendor_ramdisk00",
+      "cross_check_dir": "/home/user/nx679j-stock/port-work/stock_vendor_ramdisk/lib/modules/phy-qcom-ufs-qmp-v4-lahaina.ko",
+      "identical_to_extracted_copy": true
+    },
+    {
+      "name": "qcom_hwspinlock",
+      "file": "qcom_hwspinlock.ko",
+      "bytes": 15880,
+      "sha256": "00b0179fd3bdeef4d72afd9c159889ce1334b9f279be9796639810a69467b02f",
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "source": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/unpacked-current/vendor_boot_a/vendor_ramdisk00",
+      "cross_check_dir": "/home/user/nx679j-stock/port-work/stock_vendor_ramdisk/lib/modules/qcom_hwspinlock.ko",
+      "identical_to_extracted_copy": true
+    },
+    {
+      "name": "smem",
+      "file": "smem.ko",
+      "bytes": 25392,
+      "sha256": "61cc62664379759a7861224f005eb3a4d792fab6ec7f317dddbaa30858d277b7",
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "source": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/unpacked-current/vendor_boot_a/vendor_ramdisk00",
+      "cross_check_dir": "/home/user/nx679j-stock/port-work/stock_vendor_ramdisk/lib/modules/smem.ko",
+      "identical_to_extracted_copy": true
+    },
+    {
+      "name": "minidump",
+      "file": "minidump.ko",
+      "bytes": 127424,
+      "sha256": "b71a46f9ae9d8dcb0ae0747601def8396d113c963a3571a746809d404568a199",
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "source": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/unpacked-current/vendor_boot_a/vendor_ramdisk00",
+      "cross_check_dir": "/home/user/nx679j-stock/port-work/stock_vendor_ramdisk/lib/modules/minidump.ko",
+      "identical_to_extracted_copy": true
+    },
+    {
+      "name": "qcom_ipc_logging",
+      "file": "qcom_ipc_logging.ko",
+      "bytes": 55808,
+      "sha256": "17d9fcab3bf8f3e9833607e2eee96a405c7d5aa6df01f27470bb3f137bdcb351",
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "source": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/unpacked-current/vendor_boot_a/vendor_ramdisk00",
+      "cross_check_dir": "/home/user/nx679j-stock/port-work/stock_vendor_ramdisk/lib/modules/qcom_ipc_logging.ko",
+      "identical_to_extracted_copy": true
+    },
+    {
+      "name": "qcom_glink",
+      "file": "qcom_glink.ko",
+      "bytes": 88136,
+      "sha256": "b5e0ed7997cbf101bb8d9332ae9a1e174bf1b3f3ad391f3bede86b1e1c041ca7",
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "source": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/unpacked-current/vendor_boot_a/vendor_ramdisk00",
+      "cross_check_dir": "/home/user/nx679j-stock/port-work/stock_vendor_ramdisk/lib/modules/qcom_glink.ko",
+      "identical_to_extracted_copy": true
+    },
+    {
+      "name": "qcom_glink_spss",
+      "file": "qcom_glink_spss.ko",
+      "bytes": 20400,
+      "sha256": "7e8ac861403e4769a2732486d653d92130c1e98ff73b1fa41fd4ff29a6542615",
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "source": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/unpacked-current/vendor_boot_a/vendor_ramdisk00",
+      "cross_check_dir": "/home/user/nx679j-stock/port-work/stock_vendor_ramdisk/lib/modules/qcom_glink_spss.ko",
+      "identical_to_extracted_copy": true
+    },
+    {
+      "name": "phy_qcom_ufs_qmp_14nm",
+      "file": "phy-qcom-ufs-qmp-14nm.ko",
+      "bytes": 20088,
+      "sha256": "37311923ee3866e248870a8177a2718ac06694859bff3a5e28a6a29146da303f",
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "source": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/unpacked-current/vendor_boot_a/vendor_ramdisk00",
+      "cross_check_dir": "/home/user/nx679j-stock/port-work/stock_vendor_ramdisk/lib/modules/phy-qcom-ufs-qmp-14nm.ko",
+      "identical_to_extracted_copy": true
+    },
+    {
+      "name": "phy_qcom_ufs_qmp_v3",
+      "file": "phy-qcom-ufs-qmp-v3.ko",
+      "bytes": 24536,
+      "sha256": "58e6c76eb6d0e801708b1eb4b03eda9e9de8723f1aac6e07fd1a8bab96a1b13c",
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "source": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/unpacked-current/vendor_boot_a/vendor_ramdisk00",
+      "cross_check_dir": "/home/user/nx679j-stock/port-work/stock_vendor_ramdisk/lib/modules/phy-qcom-ufs-qmp-v3.ko",
+      "identical_to_extracted_copy": true
+    },
+    {
+      "name": "nvmem_qfprom",
+      "file": "nvmem_qfprom.ko",
+      "bytes": 25832,
+      "sha256": "10cadc13909d784d02ae073d652d69cbabd0a8a5b09b701b9f36e2c20dffe38d",
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "source": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/unpacked-current/vendor_boot_a/vendor_ramdisk00",
+      "cross_check_dir": "/home/user/nx679j-stock/port-work/stock_vendor_ramdisk/lib/modules/nvmem_qfprom.ko",
+      "identical_to_extracted_copy": true
+    },
+    {
+      "name": "qti_regmap_debugfs",
+      "file": "qti-regmap-debugfs.ko",
+      "bytes": 29832,
+      "sha256": "9c1e5d459c61f8b5dea0d566a2a44ce251f67***************b1c99efc35ff",
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "source": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/unpacked-current/vendor_boot_a/vendor_ramdisk00",
+      "cross_check_dir": "/home/user/nx679j-stock/port-work/stock_vendor_ramdisk/lib/modules/qti-regmap-debugfs.ko",
+      "identical_to_extracted_copy": true
+    },
+    {
+      "name": "ns",
+      "file": "ns.ko",
+      "bytes": 64344,
+      "sha256": "1fd92fea8c2225380916681bcbf3da823973658fc610964c1ddde1dfbe4d8749",
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "source": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/unpacked-current/vendor_boot_a/vendor_ramdisk00",
+      "cross_check_dir": "/home/user/nx679j-stock/port-work/stock_vendor_ramdisk/lib/modules/ns.ko",
+      "identical_to_extracted_copy": true
+    },
+    {
+      "name": "qrtr",
+      "file": "qrtr.ko",
+      "bytes": 91976,
+      "sha256": "3386283d539227a071e4c55e8dac3a94112b26725d1fd240fa53c8265029e6cf",
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "source": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/unpacked-current/vendor_boot_a/vendor_ramdisk00",
+      "cross_check_dir": "/home/user/nx679j-stock/port-work/stock_vendor_ramdisk/lib/modules/qrtr.ko",
+      "identical_to_extracted_copy": true
+    },
+    {
+      "name": "qmi_helpers",
+      "file": "qmi_helpers.ko",
+      "bytes": 39480,
+      "sha256": "603f686577f51cf0a8cb058d9a4be89010cf61da259b3fb3b42d891f20c95266",
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "source": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/unpacked-current/vendor_boot_a/vendor_ramdisk00",
+      "cross_check_dir": "/home/user/nx679j-stock/port-work/stock_vendor_ramdisk/lib/modules/qmi_helpers.ko",
+      "identical_to_extracted_copy": true
+    },
+    {
+      "name": "qcom_smd",
+      "file": "qcom_smd.ko",
+      "bytes": 44760,
+      "sha256": "172bbdda6a0c4668addb5c388eec1c8046c9df27fb6b8a82fa3c96fe69dae2c4",
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "source": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/unpacked-current/vendor_boot_a/vendor_ramdisk00",
+      "cross_check_dir": "/home/user/nx679j-stock/port-work/stock_vendor_ramdisk/lib/modules/qcom_smd.ko",
+      "identical_to_extracted_copy": true
+    },
+    {
+      "name": "qcom_glink_smem",
+      "file": "qcom_glink_smem.ko",
+      "bytes": 20112,
+      "sha256": "1002bfd7fe806f9d2122431934944bd50fff8c5fd70fb37fdc00c7c5ae1c0094",
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "source": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/unpacked-current/vendor_boot_a/vendor_ramdisk00",
+      "cross_check_dir": "/home/user/nx679j-stock/port-work/stock_vendor_ramdisk/lib/modules/qcom_glink_smem.ko",
+      "identical_to_extracted_copy": true
+    },
+    {
+      "name": "rproc_qcom_common",
+      "file": "rproc_qcom_common.ko",
+      "bytes": 63848,
+      "sha256": "55f20069515226a145afd1b8a617e25018b695a4c491090807bd79f723fe52cc",
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "source": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/unpacked-current/vendor_boot_a/vendor_ramdisk00",
+      "cross_check_dir": "/home/user/nx679j-stock/port-work/stock_vendor_ramdisk/lib/modules/rproc_qcom_common.ko",
+      "identical_to_extracted_copy": true
+    },
+    {
+      "name": "pdr_interface",
+      "file": "pdr_interface.ko",
+      "bytes": 30760,
+      "sha256": "a0220e9488979739f30f45d32da80f41ce28f3375007b369634ccda8d82ad192",
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "source": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/unpacked-current/vendor_boot_a/vendor_ramdisk00",
+      "cross_check_dir": "/home/user/nx679j-stock/port-work/stock_vendor_ramdisk/lib/modules/pdr_interface.ko",
+      "identical_to_extracted_copy": true
+    },
+    {
+      "name": "pmic_glink",
+      "file": "pmic_glink.ko",
+      "bytes": 34320,
+      "sha256": "9dced9480af1c18f44198cdef3ceb1ea74bf0a49844605905e19e013753603ba",
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "source": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/unpacked-current/vendor_boot_a/vendor_ramdisk00",
+      "cross_check_dir": "/home/user/nx679j-stock/port-work/stock_vendor_ramdisk/lib/modules/pmic_glink.ko",
+      "identical_to_extracted_copy": true
+    },
+    {
+      "name": "ucsi_glink",
+      "file": "ucsi_glink.ko",
+      "bytes": 37616,
+      "sha256": "43ae30f1506b2909c3e5e4cf178c2b1a435f1b273672c0a1fd8f1a90c56692c4",
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "source": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/unpacked-current/vendor_boot_a/vendor_ramdisk00",
+      "cross_check_dir": "/home/user/nx679j-stock/port-work/stock_vendor_ramdisk/lib/modules/ucsi_glink.ko",
+      "identical_to_extracted_copy": true
+    },
+    {
+      "name": "fsa4480_i2c",
+      "file": "fsa4480-i2c.ko",
+      "bytes": 22456,
+      "sha256": "54d1c578c0191f9d038b979928f7caa86ed561dff8991793b39c6a48846371bd",
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "source": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/unpacked-current/vendor_boot_a/vendor_ramdisk00",
+      "cross_check_dir": "/home/user/nx679j-stock/port-work/stock_vendor_ramdisk/lib/modules/fsa4480-i2c.ko",
+      "identical_to_extracted_copy": true
+    },
+    {
+      "name": "altmode_glink",
+      "file": "altmode-glink.ko",
+      "bytes": 32800,
+      "sha256": "543c52bb31f663966527af00811e68a76290d70aecff48ef9a073dcb6c4717f2",
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "source": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/unpacked-current/vendor_boot_a/vendor_ramdisk00",
+      "cross_check_dir": "/home/user/nx679j-stock/port-work/stock_vendor_ramdisk/lib/modules/altmode-glink.ko",
+      "identical_to_extracted_copy": true
+    },
+    {
+      "name": "proxy_consumer",
+      "file": "proxy-consumer.ko",
+      "bytes": 22472,
+      "sha256": "91cc6dc9ac723095bcb3e7d919a8fc0606d468aaa3145eca5a7cbc3c878d3280",
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "source": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/unpacked-current/vendor_boot_a/vendor_ramdisk00",
+      "cross_check_dir": "/home/user/nx679j-stock/port-work/stock_vendor_ramdisk/lib/modules/proxy-consumer.ko",
+      "identical_to_extracted_copy": true
+    },
+    {
+      "name": "debug_regulator",
+      "file": "debug-regulator.ko",
+      "bytes": 53952,
+      "sha256": "2b64631abea8bf5250168d184df8cc0bfafb2659d07bc5ad367e57b0b6906427",
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "source": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/unpacked-current/vendor_boot_a/vendor_ramdisk00",
+      "cross_check_dir": "/home/user/nx679j-stock/port-work/stock_vendor_ramdisk/lib/modules/debug-regulator.ko",
+      "identical_to_extracted_copy": true
+    },
+    {
+      "name": "gdsc_regulator",
+      "file": "gdsc-regulator.ko",
+      "bytes": 33088,
+      "sha256": "554d2eed0ee91a77838e63b7c9fede6f67c88e25742845a58985c39b34f87a01",
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "source": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/unpacked-current/vendor_boot_a/vendor_ramdisk00",
+      "cross_check_dir": "/home/user/nx679j-stock/port-work/stock_vendor_ramdisk/lib/modules/gdsc-regulator.ko",
+      "identical_to_extracted_copy": true
+    },
+    {
+      "name": "clk_qcom",
+      "file": "clk-qcom.ko",
+      "bytes": 347896,
+      "sha256": "83f7cb8dae5ceb598e77f9633464c8c1635ccd2f3a201ca7d7866682e1d1a230",
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "source": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/unpacked-current/vendor_boot_a/vendor_ramdisk00",
+      "cross_check_dir": "/home/user/nx679j-stock/port-work/stock_vendor_ramdisk/lib/modules/clk-qcom.ko",
+      "identical_to_extracted_copy": true
+    },
+    {
+      "name": "ssusb_redriver_nb7vpq904m",
+      "file": "ssusb-redriver-nb7vpq904m.ko",
+      "bytes": 49088,
+      "sha256": "94ba6963b84337f7782250fb3b68009cdbb0a291d4006b7145ddeee7ff7d7191",
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "source": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/unpacked-current/vendor_boot_a/vendor_ramdisk00",
+      "cross_check_dir": "/home/user/nx679j-stock/port-work/stock_vendor_ramdisk/lib/modules/ssusb-redriver-nb7vpq904m.ko",
+      "identical_to_extracted_copy": true
+    },
+    {
+      "name": "phy_generic",
+      "file": "phy-generic.ko",
+      "bytes": 24056,
+      "sha256": "f68d2b87c8a4d41254057521aff8d3b394aec634558cf8f3304f724469caed80",
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "source": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/unpacked-current/vendor_boot_a/vendor_ramdisk00",
+      "cross_check_dir": "/home/user/nx679j-stock/port-work/stock_vendor_ramdisk/lib/modules/phy-generic.ko",
+      "identical_to_extracted_copy": true
+    },
+    {
+      "name": "phy_msm_snps_hs",
+      "file": "phy-msm-snps-hs.ko",
+      "bytes": 36208,
+      "sha256": "be7a352bed409189539a6bfcec7c13fa62f8b02d0b85f72812b16199f476033e",
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "source": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/unpacked-current/vendor_boot_a/vendor_ramdisk00",
+      "cross_check_dir": "/home/user/nx679j-stock/port-work/stock_vendor_ramdisk/lib/modules/phy-msm-snps-hs.ko",
+      "identical_to_extracted_copy": true
+    },
+    {
+      "name": "phy_msm_ssusb_qmp",
+      "file": "phy-msm-ssusb-qmp.ko",
+      "bytes": 47888,
+      "sha256": "28638f66bc04c95edc69e49c9ad341d61a7a825eb37faaae83a07f0ef1e7ac60",
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "source": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/unpacked-current/vendor_boot_a/vendor_ramdisk00",
+      "cross_check_dir": "/home/user/nx679j-stock/port-work/stock_vendor_ramdisk/lib/modules/phy-msm-ssusb-qmp.ko",
+      "identical_to_extracted_copy": true
+    },
+    {
+      "name": "eud",
+      "file": "eud.ko",
+      "bytes": 44064,
+      "sha256": "632ea2b747b9cb32275fd74a9c0554f76692b5da4856efa71c89548c5896c6fe",
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "source": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/unpacked-current/vendor_boot_a/vendor_ramdisk00",
+      "cross_check_dir": "/home/user/nx679j-stock/port-work/stock_vendor_ramdisk/lib/modules/eud.ko",
+      "identical_to_extracted_copy": true
+    },
+    {
+      "name": "dwc3_msm",
+      "file": "dwc3-msm.ko",
+      "bytes": 237896,
+      "sha256": "209a42ac433bc26c48a87bddf761130633bfd834d690d2367f17774e401b2ad2",
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "source": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/unpacked-current/vendor_boot_a/vendor_ramdisk00",
+      "cross_check_dir": "/home/user/nx679j-stock/port-work/stock_vendor_ramdisk/lib/modules/dwc3-msm.ko",
+      "identical_to_extracted_copy": true
+    },
+    {
+      "name": "tmecom_intf",
+      "file": "tmecom-intf.ko",
+      "bytes": 35592,
+      "sha256": "d2a809dd1b85c77073830555810aa7b6f6fba72c9cf25505d703b0db7b75dcf0",
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "source": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/unpacked-current/vendor_boot_a/vendor_ramdisk00",
+      "cross_check_dir": "/home/user/nx679j-stock/port-work/stock_vendor_ramdisk/lib/modules/tmecom-intf.ko",
+      "identical_to_extracted_copy": true
+    },
+    {
+      "name": "hwkm",
+      "file": "hwkm.ko",
+      "bytes": 23216,
+      "sha256": "227d06b749ae85a45e538d1aa1194deb9f40ade90dfbbe8839981df921dc961e",
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "source": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/unpacked-current/vendor_boot_a/vendor_ramdisk00",
+      "cross_check_dir": "/home/user/nx679j-stock/port-work/stock_vendor_ramdisk/lib/modules/hwkm.ko",
+      "identical_to_extracted_copy": true
+    },
+    {
+      "name": "crypto_qti_hwkm",
+      "file": "crypto-qti-hwkm.ko",
+      "bytes": 17320,
+      "sha256": "aa8162c3000e646d2fe4bf4e28ceccdb827caf4bc6efa0f5c664b6a265bf6b57",
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "source": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/unpacked-current/vendor_boot_a/vendor_ramdisk00",
+      "cross_check_dir": "/home/user/nx679j-stock/port-work/stock_vendor_ramdisk/lib/modules/crypto-qti-hwkm.ko",
+      "identical_to_extracted_copy": true
+    },
+    {
+      "name": "crypto_qti_common",
+      "file": "crypto-qti-common.ko",
+      "bytes": 55472,
+      "sha256": "80867802e792301e8d12ed6dfd611acc3fb33e63e0f016f33be793f561687e1a",
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "source": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/unpacked-current/vendor_boot_a/vendor_ramdisk00",
+      "cross_check_dir": "/home/user/nx679j-stock/port-work/stock_vendor_ramdisk/lib/modules/crypto-qti-common.ko",
+      "identical_to_extracted_copy": true
+    },
+    {
+      "name": "ufshcd_crypto_qti",
+      "file": "ufshcd-crypto-qti.ko",
+      "bytes": 18200,
+      "sha256": "200fc05730ae0ec9b7acd6a4dc9c51268bc8d0737add2a8df619fd5ddca92b02",
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "source": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/unpacked-current/vendor_boot_a/vendor_ramdisk00",
+      "cross_check_dir": "/home/user/nx679j-stock/port-work/stock_vendor_ramdisk/lib/modules/ufshcd-crypto-qti.ko",
+      "identical_to_extracted_copy": true
+    },
+    {
+      "name": "ufs_qcom",
+      "file": "ufs_qcom.ko",
+      "bytes": 156408,
+      "sha256": "e0dff0b271f0a58dc640f7e581a27ec1af976c775b42470d99977da1e702283b",
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "source": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/unpacked-current/vendor_boot_a/vendor_ramdisk00",
+      "cross_check_dir": "/home/user/nx679j-stock/port-work/stock_vendor_ramdisk/lib/modules/ufs_qcom.ko",
+      "identical_to_extracted_copy": true
+    },
+    {
+      "name": "phy_qcom_ufs_qmp_v4_cape",
+      "file": "phy-qcom-ufs-qmp-v4-cape.ko",
+      "bytes": 27208,
+      "sha256": "2505fbb9c98beee0a61846b0da99939ad4d06729264ba9fc781bf8bc703010fb",
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "source": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/unpacked-current/vendor_boot_a/vendor_ramdisk00",
+      "cross_check_dir": "/home/user/nx679j-stock/port-work/stock_vendor_ramdisk/lib/modules/phy-qcom-ufs-qmp-v4-cape.ko",
+      "identical_to_extracted_copy": true
+    },
+    {
+      "name": "phy_qcom_ufs_qmp_v4_diwali",
+      "file": "phy-qcom-ufs-qmp-v4-diwali.ko",
+      "bytes": 27208,
+      "sha256": "528a38537c748438383f5f18515a8f9c03b272f31f803028a33f40ae8d8e4ed6",
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "source": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/unpacked-current/vendor_boot_a/vendor_ramdisk00",
+      "cross_check_dir": "/home/user/nx679j-stock/port-work/stock_vendor_ramdisk/lib/modules/phy-qcom-ufs-qmp-v4-diwali.ko",
+      "identical_to_extracted_copy": true
+    },
+    {
+      "name": "phy_qcom_ufs_qmp_v4_waipio",
+      "file": "phy-qcom-ufs-qmp-v4-waipio.ko",
+      "bytes": 27208,
+      "sha256": "086cfced6eb440a1ffba2c830cdff94bfe64734dd7882971c296b95c9193e96e",
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "source": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/unpacked-current/vendor_boot_a/vendor_ramdisk00",
+      "cross_check_dir": "/home/user/nx679j-stock/port-work/stock_vendor_ramdisk/lib/modules/phy-qcom-ufs-qmp-v4-waipio.ko",
+      "identical_to_extracted_copy": true
+    },
+    {
+      "name": "nvmem_qcom_spmi_sdam",
+      "file": "nvmem_qcom-spmi-sdam.ko",
+      "bytes": 14376,
+      "sha256": "66dc24c5d418351a34715953f2df5d3adeee0248c83b5439aa1ac882cb085f5a",
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "source": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/unpacked-current/vendor_boot_a/vendor_ramdisk00",
+      "cross_check_dir": "/home/user/nx679j-stock/port-work/stock_vendor_ramdisk/lib/modules/nvmem_qcom-spmi-sdam.ko",
+      "identical_to_extracted_copy": true
+    }
+  ],
+  "module_plan": {
+    "source_metadata": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/unpacked-current/vendor_boot_a/vendor_ramdisk00",
+    "source_modules": 327,
+    "metadata_files": {
+      "modules.alias": {
+        "bytes": 32739,
+        "sha256": "4650b3f37ad504f659bef6ab51c01bf83316c6722cda062725f11e72cb1325e0"
+      },
+      "modules.blocklist": {
+        "bytes": 1327,
+        "sha256": "34c31aa3ab9ba6f63a30716b00fd0865910114f1cccf8fbdc7fb50f052fed296"
+      },
+      "modules.dep": {
+        "bytes": 38362,
+        "sha256": "30bedfce989a3dd681a4e327d6b416ef81fd39c78fe56bca26d77ab5b1696080"
+      },
+      "modules.load": {
+        "bytes": 1531,
+        "sha256": "d44ddf1f9bff87ba20ca077d1c3fadd89adf756edcbfb46be022450d3886717e"
+      },
+      "modules.load.recovery": {
+        "bytes": 5264,
+        "sha256": "6d5ff72ccf283ab40c2d5979d0623ef54721b3e8c62c67ec85d659b3be5553b0"
+      },
+      "modules.softdep": {
+        "bytes": 694,
+        "sha256": "8f0d200266d88b48ed93d24ec9d301178d0bbe9c6af2c0131487584f4c5219ec"
+      }
+    },
+    "v5_seed": [
+      "phy_qcom_emu",
+      "phy_msm_snps_eusb2",
+      "repeater",
+      "phy_qcom_ufs_qmp_v4_lahaina",
+      "qcom_glink_spss",
+      "phy_qcom_ufs_qmp_14nm",
+      "phy_qcom_ufs_qmp_v3",
+      "nvmem_qfprom",
+      "fsa4480_i2c",
+      "altmode_glink",
+      "dwc3_msm",
+      "phy_msm_ssusb_qmp",
+      "phy_msm_snps_hs",
+      "ssusb_redriver_nb7vpq904m",
+      "ucsi_glink",
+      "pmic_glink",
+      "pdr_interface",
+      "qmi_helpers",
+      "rproc_qcom_common",
+      "qcom_smd",
+      "qcom_glink_smem",
+      "qcom_glink",
+      "ufs_qcom",
+      "ufshcd_crypto_qti",
+      "qti_regmap_debugfs",
+      "phy_qcom_ufs_qmp_v4_cape",
+      "phy_qcom_ufs_qmp_v4_diwali",
+      "phy_qcom_ufs_qmp_v4_waipio",
+      "phy_qcom_ufs",
+      "nvmem_qcom_spmi_sdam",
+      "crypto_qti_common",
+      "crypto_qti_hwkm",
+      "clk_qcom",
+      "gdsc_regulator",
+      "proxy_consumer",
+      "debug_regulator",
+      "qcom_ipc_logging",
+      "qcom_scm",
+      "minidump",
+      "smem"
+    ],
+    "closure": [
+      "altmode_glink",
+      "clk_qcom",
+      "crypto_qti_common",
+      "crypto_qti_hwkm",
+      "debug_regulator",
+      "dwc3_msm",
+      "eud",
+      "fsa4480_i2c",
+      "gdsc_regulator",
+      "hwkm",
+      "minidump",
+      "ns",
+      "nvmem_qcom_spmi_sdam",
+      "nvmem_qfprom",
+      "pdr_interface",
+      "phy_generic",
+      "phy_msm_snps_eusb2",
+      "phy_msm_snps_hs",
+      "phy_msm_ssusb_qmp",
+      "phy_qcom_emu",
+      "phy_qcom_ufs",
+      "phy_qcom_ufs_qmp_14nm",
+      "phy_qcom_ufs_qmp_v3",
+      "phy_qcom_ufs_qmp_v4_cape",
+      "phy_qcom_ufs_qmp_v4_diwali",
+      "phy_qcom_ufs_qmp_v4_lahaina",
+      "phy_qcom_ufs_qmp_v4_waipio",
+      "pmic_glink",
+      "proxy_consumer",
+      "qcom_glink",
+      "qcom_glink_smem",
+      "qcom_glink_spss",
+      "qcom_hwspinlock",
+      "qcom_ipc_logging",
+      "qcom_scm",
+      "qcom_smd",
+      "qmi_helpers",
+      "qrtr",
+      "qti_regmap_debugfs",
+      "repeater",
+      "rproc_qcom_common",
+      "smem",
+      "ssusb_redriver_nb7vpq904m",
+      "tmecom_intf",
+      "ucsi_glink",
+      "ufs_qcom",
+      "ufshcd_crypto_qti"
+    ],
+    "order": [
+      "phy_qcom_emu",
+      "repeater",
+      "qcom_scm",
+      "phy_msm_snps_eusb2",
+      "phy_qcom_ufs",
+      "phy_qcom_ufs_qmp_v4_lahaina",
+      "qcom_hwspinlock",
+      "smem",
+      "minidump",
+      "qcom_ipc_logging",
+      "qcom_glink",
+      "qcom_glink_spss",
+      "phy_qcom_ufs_qmp_14nm",
+      "phy_qcom_ufs_qmp_v3",
+      "nvmem_qfprom",
+      "qti_regmap_debugfs",
+      "ns",
+      "qrtr",
+      "qmi_helpers",
+      "qcom_smd",
+      "qcom_glink_smem",
+      "rproc_qcom_common",
+      "pdr_interface",
+      "pmic_glink",
+      "ucsi_glink",
+      "fsa4480_i2c",
+      "altmode_glink",
+      "proxy_consumer",
+      "debug_regulator",
+      "gdsc_regulator",
+      "clk_qcom",
+      "ssusb_redriver_nb7vpq904m",
+      "phy_generic",
+      "phy_msm_snps_hs",
+      "phy_msm_ssusb_qmp",
+      "eud",
+      "dwc3_msm",
+      "tmecom_intf",
+      "hwkm",
+      "crypto_qti_hwkm",
+      "crypto_qti_common",
+      "ufshcd_crypto_qti",
+      "ufs_qcom",
+      "phy_qcom_ufs_qmp_v4_cape",
+      "phy_qcom_ufs_qmp_v4_diwali",
+      "phy_qcom_ufs_qmp_v4_waipio",
+      "nvmem_qcom_spmi_sdam"
+    ],
+    "closure_added_over_v5_seed": [
+      "eud",
+      "hwkm",
+      "ns",
+      "phy_generic",
+      "qcom_hwspinlock",
+      "qrtr",
+      "tmecom_intf"
+    ],
+    "missing_from_vendor_set": [],
+    "softdep_lines_that_broke_v5": [
+      "softdep soc_sleep_stats pre: smem",
+      "softdep smem pre: qcom_hwspinlock",
+      "softdep dwc3_msm pre: phy-generic phy-msm-snps-hs phy-msm-ssusb-qmp eud"
+    ],
+    "goal_names_in_init": [
+      "qcom_hwspinlock.ko",
+      "smem.ko",
+      "qcom_ipc_logging.ko",
+      "minidump.ko",
+      "qcom_glink.ko",
+      "qcom_glink_smem.ko",
+      "qcom_smd.ko",
+      "rproc_qcom_common.ko",
+      "qmi_helpers.ko",
+      "pdr_interface.ko",
+      "pmic_glink.ko",
+      "ucsi_glink.ko",
+      "debug-regulator.ko",
+      "proxy-consumer.ko",
+      "gdsc-regulator.ko",
+      "clk-qcom.ko",
+      "ssusb-redriver-nb7vpq904m.ko",
+      "phy-generic.ko",
+      "eud.ko",
+      "phy-msm-snps-hs.ko",
+      "phy-msm-ssusb-qmp.ko",
+      "dwc3-msm.ko",
+      "phy-qcom-ufs.ko",
+      "phy-qcom-ufs-qmp-v4-waipio.ko",
+      "ufs-qcom.ko",
+      "ufshcd-crypto-qti.ko",
+      "crypto-qti-common.ko",
+      "crypto-qti-hwkm.ko"
+    ],
+    "fallback_order_file": "lib/modules/fallback.order",
+    "fallback_order_lines": 47,
+    "why": "v5 loaded a hand-built 40-name list with no notion of the device softdeps, so smem.ko (pre: qcom_hwspinlock) and dwc3_msm.ko (pre: phy-generic phy-msm-snps-hs phy-msm-ssusb-qmp eud) could never resolve their symbols. v6 reads modules.dep / modules.softdep at runtime; the bundled closure exists so the same chain works even without the vendor metadata (and it is the fallback order)."
+  },
+  "device_nodes": 6,
+  "ramdisk_inventory": {
+    "dev": {
+      "mode": "0o40755",
+      "bytes": 0
+    },
+    "dev/console": {
+      "mode": "0o20600",
+      "bytes": 0
+    },
+    "dev/kmsg": {
+      "mode": "0o20644",
+      "bytes": 0
+    },
+    "dev/null": {
+      "mode": "0o20666",
+      "bytes": 0
+    },
+    "dev/pmsg0": {
+      "mode": "0o20222",
+      "bytes": 0
+    },
+    "dev/tty": {
+      "mode": "0o20666",
+      "bytes": 0
+    },
+    "dev/zero": {
+      "mode": "0o20666",
+      "bytes": 0
+    },
+    "init": {
+      "mode": "0o100755",
+      "bytes": 663456
+    },
+    "lib": {
+      "mode": "0o40755",
+      "bytes": 0
+    },
+    "lib/modules": {
+      "mode": "0o40755",
+      "bytes": 0
+    },
+    "lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604": {
+      "mode": "0o40755",
+      "bytes": 0
+    },
+    "lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/altmode-glink.ko": {
+      "mode": "0o100644",
+      "bytes": 32800
+    },
+    "lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/clk-qcom.ko": {
+      "mode": "0o100644",
+      "bytes": 347896
+    },
+    "lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/crypto-qti-common.ko": {
+      "mode": "0o100644",
+      "bytes": 55472
+    },
+    "lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/crypto-qti-hwkm.ko": {
+      "mode": "0o100644",
+      "bytes": 17320
+    },
+    "lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/debug-regulator.ko": {
+      "mode": "0o100644",
+      "bytes": 53952
+    },
+    "lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/dwc3-msm.ko": {
+      "mode": "0o100644",
+      "bytes": 237896
+    },
+    "lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/eud.ko": {
+      "mode": "0o100644",
+      "bytes": 44064
+    },
+    "lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/fsa4480-i2c.ko": {
+      "mode": "0o100644",
+      "bytes": 22456
+    },
+    "lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/gdsc-regulator.ko": {
+      "mode": "0o100644",
+      "bytes": 33088
+    },
+    "lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/hwkm.ko": {
+      "mode": "0o100644",
+      "bytes": 23216
+    },
+    "lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/minidump.ko": {
+      "mode": "0o100644",
+      "bytes": 127424
+    },
+    "lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/ns.ko": {
+      "mode": "0o100644",
+      "bytes": 64344
+    },
+    "lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/nvmem_qcom-spmi-sdam.ko": {
+      "mode": "0o100644",
+      "bytes": 14376
+    },
+    "lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/nvmem_qfprom.ko": {
+      "mode": "0o100644",
+      "bytes": 25832
+    },
+    "lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/pdr_interface.ko": {
+      "mode": "0o100644",
+      "bytes": 30760
+    },
+    "lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/phy-generic.ko": {
+      "mode": "0o100644",
+      "bytes": 24056
+    },
+    "lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/phy-msm-snps-eusb2.ko": {
+      "mode": "0o100644",
+      "bytes": 44520
+    },
+    "lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/phy-msm-snps-hs.ko": {
+      "mode": "0o100644",
+      "bytes": 36208
+    },
+    "lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/phy-msm-ssusb-qmp.ko": {
+      "mode": "0o100644",
+      "bytes": 47888
+    },
+    "lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/phy-qcom-emu.ko": {
+      "mode": "0o100644",
+      "bytes": 16376
+    },
+    "lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/phy-qcom-ufs-qmp-14nm.ko": {
+      "mode": "0o100644",
+      "bytes": 20088
+    },
+    "lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/phy-qcom-ufs-qmp-v3.ko": {
+      "mode": "0o100644",
+      "bytes": 24536
+    },
+    "lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/phy-qcom-ufs-qmp-v4-cape.ko": {
+      "mode": "0o100644",
+      "bytes": 27208
+    },
+    "lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/phy-qcom-ufs-qmp-v4-diwali.ko": {
+      "mode": "0o100644",
+      "bytes": 27208
+    },
+    "lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/phy-qcom-ufs-qmp-v4-lahaina.ko": {
+      "mode": "0o100644",
+      "bytes": 27208
+    },
+    "lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/phy-qcom-ufs-qmp-v4-waipio.ko": {
+      "mode": "0o100644",
+      "bytes": 27208
+    },
+    "lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/phy-qcom-ufs.ko": {
+      "mode": "0o100644",
+      "bytes": 40120
+    },
+    "lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/pmic_glink.ko": {
+      "mode": "0o100644",
+      "bytes": 34320
+    },
+    "lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/proxy-consumer.ko": {
+      "mode": "0o100644",
+      "bytes": 22472
+    },
+    "lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/qcom-scm.ko": {
+      "mode": "0o100644",
+      "bytes": 202536
+    },
+    "lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/qcom_glink.ko": {
+      "mode": "0o100644",
+      "bytes": 88136
+    },
+    "lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/qcom_glink_smem.ko": {
+      "mode": "0o100644",
+      "bytes": 20112
+    },
+    "lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/qcom_glink_spss.ko": {
+      "mode": "0o100644",
+      "bytes": 20400
+    },
+    "lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/qcom_hwspinlock.ko": {
+      "mode": "0o100644",
+      "bytes": 15880
+    },
+    "lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/qcom_ipc_logging.ko": {
+      "mode": "0o100644",
+      "bytes": 55808
+    },
+    "lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/qcom_smd.ko": {
+      "mode": "0o100644",
+      "bytes": 44760
+    },
+    "lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/qmi_helpers.ko": {
+      "mode": "0o100644",
+      "bytes": 39480
+    },
+    "lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/qrtr.ko": {
+      "mode": "0o100644",
+      "bytes": 91976
+    },
+    "lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/qti-regmap-debugfs.ko": {
+      "mode": "0o100644",
+      "bytes": 29832
+    },
+    "lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/repeater.ko": {
+      "mode": "0o100644",
+      "bytes": 16504
+    },
+    "lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/rproc_qcom_common.ko": {
+      "mode": "0o100644",
+      "bytes": 63848
+    },
+    "lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/smem.ko": {
+      "mode": "0o100644",
+      "bytes": 25392
+    },
+    "lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/ssusb-redriver-nb7vpq904m.ko": {
+      "mode": "0o100644",
+      "bytes": 49088
+    },
+    "lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/tmecom-intf.ko": {
+      "mode": "0o100644",
+      "bytes": 35592
+    },
+    "lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/ucsi_glink.ko": {
+      "mode": "0o100644",
+      "bytes": 37616
+    },
+    "lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/ufs_qcom.ko": {
+      "mode": "0o100644",
+      "bytes": 156408
+    },
+    "lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/ufshcd-crypto-qti.ko": {
+      "mode": "0o100644",
+      "bytes": 18200
+    },
+    "lib/modules/fallback.order": {
+      "mode": "0o100644",
+      "bytes": 947
+    },
+    "proc": {
+      "mode": "0o40755",
+      "bytes": 0
+    },
+    "sys": {
+      "mode": "0o40755",
+      "bytes": 0
+    },
+    "sys/fs": {
+      "mode": "0o40755",
+      "bytes": 0
+    },
+    "sys/fs/pstore": {
+      "mode": "0o40755",
+      "bytes": 0
+    },
+    "sys/kernel": {
+      "mode": "0o40755",
+      "bytes": 0
+    },
+    "sys/kernel/config": {
+      "mode": "0o40755",
+      "bytes": 0
+    }
+  },
+  "no_userspace": [
+    "no busybox",
+    "no musl",
+    "no kmodloader",
+    "no shell script",
+    "no /sbin/init",
+    "no OpenWrt tree",
+    "no /tmp tmpfs, no tar, no gzip"
+  ],
+  "size_vs_v5": {
+    "v5_ramdisk_bytes": 1147147,
+    "v6_ramdisk_bytes": 901952,
+    "v5_image_bytes": 50266112,
+    "v6_image_bytes": 50020352,
+    "ramdisk_ratio_v6_over_v5": 0.7863,
+    "image_ratio_v6_over_v5": 0.9951,
+    "v5_ramdisk_entries": 85,
+    "v6_ramdisk_entries": 65
+  },
+  "built_ins_relied_on": {
+    "CONFIG_USB_DWC3": "y",
+    "CONFIG_USB_DWC3_DUAL_ROLE": "y",
+    "CONFIG_USB_DWC3_QCOM": "y",
+    "CONFIG_USB_GADGET": "y",
+    "CONFIG_USB_LIBCOMPOSITE": "y",
+    "CONFIG_USB_CONFIGFS": "y",
+    "CONFIG_USB_CONFIGFS_NCM": "y",
+    "CONFIG_USB_U_ETHER": "y",
+    "CONFIG_USB_F_NCM": "y",
+    "CONFIG_CONFIGFS_FS": "y",
+    "CONFIG_PSTORE_RAM": "y",
+    "CONFIG_PSTORE_PMSG": "y",
+    "source": "runtime-v2/config.gz (IKCONFIG of the stock boot_a)",
+    "live_udc_observed_on_the_phone": "a600000.dwc3"
+  },
+  "success_signal": "host sees a new USB device 18d1:4ee7 (NCM gadget); secondary: the host can ping 10.0.0.1 on that link",
+  "not_yet_verified": [
+    "ABL/AVB acceptance of this unsigned image on this device (v5 untested; the Magisk control image on slot B did boot)",
+    "that the vendor ramdisk (vendor_ramdisk00 of vendor_boot_a/b) really is unpacked into the same rootfs as ours when boot_b is our image: it is what the device layout implies and what the softdep evidence points to, but it has NOT been watched from userspace yet",
+    "that every module of the closure loads (vermagic is g5.10.66-gki-g491fe99db339 vs the running android12-9-00005 kernel: same_magic() ignores the release when the kernel has modversions, and the live phone does load these modules, but our own load rc values are only proven by the journal of the next hardware run)",
+    "that NCM enumerates as 18d1:4ee7 and that 10.0.0.1 is reachable",
+    "that the ramoops pmsg node exists in this boot (the major is read from /proc/devices; if ramoops does not probe there is no pmsg channel)",
+    "that the rawdump journal lands on the right 256 MiB partition (identified by size alone: there is no ueventd, no by-name symlink)"
+  ]
+}

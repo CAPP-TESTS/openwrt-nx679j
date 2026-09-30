@@ -1,0 +1,1573 @@
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Read (Sector 0x0 of 0x6000) 0.00 MB/s                
+Progress: |----------|   1.0% Read (Sector 0x100 of 0x6000, ) 262.44 MB/s     
+Progress: |----------|   2.1% Read (Sector 0x200 of 0x6000, ) 246.19 MB/s     
+Progress: |----------|   3.1% Read (Sector 0x300 of 0x6000, ) 266.81 MB/s     
+Progress: |----------|   4.2% Read (Sector 0x400 of 0x6000, ) 268.95 MB/s     
+Progress: |█---------|   5.2% Read (Sector 0x500 of 0x6000, ) 264.11 MB/s     
+Progress: |█---------|   6.2% Read (Sector 0x600 of 0x6000, ) 255.70 MB/s     
+Progress: |█---------|   7.3% Read (Sector 0x700 of 0x6000, ) 268.23 MB/s     
+Progress: |█---------|   8.3% Read (Sector 0x800 of 0x6000, ) 270.29 MB/s     
+Progress: |█---------|   9.4% Read (Sector 0x900 of 0x6000, ) 265.92 MB/s     
+Progress: |█---------|  10.4% Read (Sector 0xA00 of 0x6000, ) 255.78 MB/s     
+Progress: |█---------|  11.5% Read (Sector 0xB00 of 0x6000, ) 270.74 MB/s     
+Progress: |█---------|  12.5% Read (Sector 0xC00 of 0x6000, ) 265.61 MB/s     
+Progress: |█---------|  13.5% Read (Sector 0xD00 of 0x6000, ) 272.57 MB/s     
+Progress: |█---------|  14.6% Read (Sector 0xE00 of 0x6000, ) 274.41 MB/s     
+Progress: |██--------|  15.6% Read (Sector 0xF00 of 0x6000, ) 268.90 MB/s     
+Progress: |██--------|  16.7% Read (Sector 0x1000 of 0x6000, ) 269.83 MB/s    
+Progress: |██--------|  17.7% Read (Sector 0x1100 of 0x6000, ) 260.92 MB/s    
+Progress: |██--------|  18.8% Read (Sector 0x1200 of 0x6000, ) 253.00 MB/s    
+Progress: |██--------|  19.8% Read (Sector 0x1300 of 0x6000, ) 258.75 MB/s    
+Progress: |██--------|  20.8% Read (Sector 0x1400 of 0x6000, ) 268.35 MB/s    
+Progress: |██--------|  21.9% Read (Sector 0x1500 of 0x6000, ) 268.44 MB/s    
+Progress: |██--------|  22.9% Read (Sector 0x1600 of 0x6000, ) 275.00 MB/s    
+Progress: |██--------|  24.0% Read (Sector 0x1700 of 0x6000, ) 275.29 MB/s    
+Progress: |██--------|  25.0% Read (Sector 0x1800 of 0x6000, ) 273.98 MB/s    
+Progress: |███-------|  26.0% Read (Sector 0x1900 of 0x6000, ) 274.59 MB/s    
+Progress: |███-------|  27.1% Read (Sector 0x1A00 of 0x6000, ) 267.89 MB/s    
+Progress: |███-------|  28.1% Read (Sector 0x1B00 of 0x6000, ) 261.44 MB/s    
+Progress: |███-------|  29.2% Read (Sector 0x1C00 of 0x6000, ) 260.19 MB/s    
+Progress: |███-------|  30.2% Read (Sector 0x1D00 of 0x6000, ) 265.24 MB/s    
+Progress: |███-------|  31.2% Read (Sector 0x1E00 of 0x6000, ) 272.50 MB/s    
+Progress: |███-------|  32.3% Read (Sector 0x1F00 of 0x6000, ) 265.46 MB/s    
+Progress: |███-------|  33.3% Read (Sector 0x2000 of 0x6000, ) 272.69 MB/s    
+Progress: |███-------|  34.4% Read (Sector 0x2100 of 0x6000, ) 285.40 MB/s    
+Progress: |████------|  35.4% Read (Sector 0x2200 of 0x6000, ) 279.88 MB/s    
+Progress: |████------|  36.5% Read (Sector 0x2300 of 0x6000, ) 271.09 MB/s    
+Progress: |████------|  37.5% Read (Sector 0x2400 of 0x6000, ) 276.34 MB/s    
+Progress: |████------|  38.5% Read (Sector 0x2500 of 0x6000, ) 260.69 MB/s    
+Progress: |████------|  39.6% Read (Sector 0x2600 of 0x6000, ) 240.94 MB/s    
+Progress: |████------|  40.6% Read (Sector 0x2700 of 0x6000, ) 255.05 MB/s    
+Progress: |████------|  41.7% Read (Sector 0x2800 of 0x6000, ) 267.10 MB/s    
+Progress: |████------|  42.7% Read (Sector 0x2900 of 0x6000, ) 261.83 MB/s    
+Progress: |████------|  43.8% Read (Sector 0x2A00 of 0x6000, ) 266.81 MB/s    
+Progress: |████------|  44.8% Read (Sector 0x2B00 of 0x6000, ) 269.11 MB/s    
+Progress: |█████-----|  45.8% Read (Sector 0x2C00 of 0x6000, ) 272.75 MB/s    
+Progress: |█████-----|  46.9% Read (Sector 0x2D00 of 0x6000, ) 274.26 MB/s    
+Progress: |█████-----|  47.9% Read (Sector 0x2E00 of 0x6000, ) 275.09 MB/s    
+Progress: |█████-----|  49.0% Read (Sector 0x2F00 of 0x6000, ) 263.63 MB/s    
+Progress: |█████-----|  50.0% Read (Sector 0x3000 of 0x6000, ) 269.76 MB/s    
+Progress: |█████-----|  51.0% Read (Sector 0x3100 of 0x6000, ) 267.99 MB/s    
+Progress: |█████-----|  52.1% Read (Sector 0x3200 of 0x6000, ) 268.08 MB/s    
+Progress: |█████-----|  53.1% Read (Sector 0x3300 of 0x6000, ) 275.27 MB/s    
+Progress: |█████-----|  54.2% Read (Sector 0x3400 of 0x6000, ) 274.82 MB/s    
+Progress: |██████----|  55.2% Read (Sector 0x3500 of 0x6000, ) 266.86 MB/s    
+Progress: |██████----|  56.2% Read (Sector 0x3600 of 0x6000, ) 274.95 MB/s    
+Progress: |██████----|  57.3% Read (Sector 0x3700 of 0x6000, ) 269.28 MB/s    
+Progress: |██████----|  58.3% Read (Sector 0x3800 of 0x6000, ) 262.72 MB/s    
+Progress: |██████----|  59.4% Read (Sector 0x3900 of 0x6000, ) 263.91 MB/s    
+Progress: |██████----|  60.4% Read (Sector 0x3A00 of 0x6000, ) 264.67 MB/s    
+Progress: |██████----|  61.5% Read (Sector 0x3B00 of 0x6000, ) 269.83 MB/s    
+Progress: |██████----|  62.5% Read (Sector 0x3C00 of 0x6000, ) 276.50 MB/s    
+Progress: |██████----|  63.5% Read (Sector 0x3D00 of 0x6000, ) 285.73 MB/s    
+Progress: |██████----|  64.6% Read (Sector 0x3E00 of 0x6000, ) 280.76 MB/s    
+Progress: |███████---|  65.6% Read (Sector 0x3F00 of 0x6000, ) 280.76 MB/s    
+Progress: |███████---|  66.7% Read (Sector 0x4000 of 0x6000, ) 283.44 MB/s    
+Progress: |███████---|  67.7% Read (Sector 0x4100 of 0x6000, ) 281.74 MB/s    
+Progress: |███████---|  68.8% Read (Sector 0x4200 of 0x6000, ) 275.96 MB/s    
+Progress: |███████---|  69.8% Read (Sector 0x4300 of 0x6000, ) 273.42 MB/s    
+Progress: |███████---|  70.8% Read (Sector 0x4400 of 0x6000, ) 278.19 MB/s    
+Progress: |███████---|  71.9% Read (Sector 0x4500 of 0x6000, ) 266.07 MB/s    
+Progress: |███████---|  72.9% Read (Sector 0x4600 of 0x6000, ) 269.06 MB/s    
+Progress: |███████---|  74.0% Read (Sector 0x4700 of 0x6000, ) 271.39 MB/s    
+Progress: |████████--|  75.0% Read (Sector 0x4800 of 0x6000, ) 263.41 MB/s    
+Progress: |████████--|  76.0% Read (Sector 0x4900 of 0x6000, ) 272.48 MB/s    
+Progress: |████████--|  77.1% Read (Sector 0x4A00 of 0x6000, ) 279.62 MB/s    
+Progress: |████████--|  78.1% Read (Sector 0x4B00 of 0x6000, ) 272.50 MB/s    
+Progress: |████████--|  79.2% Read (Sector 0x4C00 of 0x6000, ) 268.11 MB/s    
+Progress: |████████--|  80.2% Read (Sector 0x4D00 of 0x6000, ) 259.02 MB/s    
+Progress: |████████--|  81.2% Read (Sector 0x4E00 of 0x6000, ) 266.63 MB/s    
+Progress: |████████--|  82.3% Read (Sector 0x4F00 of 0x6000, ) 270.18 MB/s    
+Progress: |████████--|  83.3% Read (Sector 0x5000 of 0x6000, ) 266.59 MB/s    
+Progress: |████████--|  84.4% Read (Sector 0x5100 of 0x6000, ) 267.02 MB/s    
+Progress: |█████████-|  85.4% Read (Sector 0x5200 of 0x6000, ) 272.61 MB/s    
+Progress: |█████████-|  86.5% Read (Sector 0x5300 of 0x6000, ) 265.83 MB/s    
+Progress: |█████████-|  87.5% Read (Sector 0x5400 of 0x6000, ) 267.58 MB/s    
+Progress: |█████████-|  88.5% Read (Sector 0x5500 of 0x6000, ) 265.83 MB/s    
+Progress: |█████████-|  89.6% Read (Sector 0x5600 of 0x6000, ) 267.09 MB/s    
+Progress: |█████████-|  90.6% Read (Sector 0x5700 of 0x6000, ) 266.90 MB/s    
+Progress: |█████████-|  91.7% Read (Sector 0x5800 of 0x6000, ) 270.22 MB/s    
+Progress: |█████████-|  92.7% Read (Sector 0x5900 of 0x6000, ) 259.61 MB/s    
+Progress: |█████████-|  93.8% Read (Sector 0x5A00 of 0x6000, ) 275.33 MB/s    
+Progress: |█████████-|  94.8% Read (Sector 0x5B00 of 0x6000, ) 269.49 MB/s    
+Progress: |██████████|  95.8% Read (Sector 0x5C00 of 0x6000, ) 264.61 MB/s    
+Progress: |██████████|  96.9% Read (Sector 0x5D00 of 0x6000, ) 249.14 MB/s    
+Progress: |██████████|  97.9% Read (Sector 0x5E00 of 0x6000, ) 258.80 MB/s    
+Progress: |██████████|  99.0% Read (Sector 0x5F00 of 0x6000, ) 272.71 MB/s    
+Progress: |██████████| 100.0% Read (Sector 0x6000 of 0x6000, ) 273.01 MB/s    
+Dumped sector 108422 with sector count 24576 as /home/user/nx679j-stock/edl-recovery/recon-20260717-183330/boot_a.bin.
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Read (Sector 0x0 of 0x6000) 0.00 MB/s                
+Progress: |----------|   1.0% Read (Sector 0x100 of 0x6000, ) 270.22 MB/s     
+Progress: |----------|   2.1% Read (Sector 0x200 of 0x6000, ) 203.45 MB/s     
+Progress: |----------|   3.1% Read (Sector 0x300 of 0x6000, ) 228.62 MB/s     
+Progress: |----------|   4.2% Read (Sector 0x400 of 0x6000, ) 224.94 MB/s     
+Progress: |█---------|   5.2% Read (Sector 0x500 of 0x6000, ) 220.82 MB/s     
+Progress: |█---------|   6.2% Read (Sector 0x600 of 0x6000, ) 222.19 MB/s     
+Progress: |█---------|   7.3% Read (Sector 0x700 of 0x6000, ) 257.87 MB/s     
+Progress: |█---------|   8.3% Read (Sector 0x800 of 0x6000, ) 260.97 MB/s     
+Progress: |█---------|   9.4% Read (Sector 0x900 of 0x6000, ) 256.72 MB/s     
+Progress: |█---------|  10.4% Read (Sector 0xA00 of 0x6000, ) 262.24 MB/s     
+Progress: |█---------|  11.5% Read (Sector 0xB00 of 0x6000, ) 265.48 MB/s     
+Progress: |█---------|  12.5% Read (Sector 0xC00 of 0x6000, ) 265.28 MB/s     
+Progress: |█---------|  13.5% Read (Sector 0xD00 of 0x6000, ) 264.67 MB/s     
+Progress: |█---------|  14.6% Read (Sector 0xE00 of 0x6000, ) 255.91 MB/s     
+Progress: |██--------|  15.6% Read (Sector 0xF00 of 0x6000, ) 291.66 MB/s     
+Progress: |██--------|  16.7% Read (Sector 0x1000 of 0x6000, ) 269.44 MB/s    
+Progress: |██--------|  17.7% Read (Sector 0x1100 of 0x6000, ) 255.13 MB/s    
+Progress: |██--------|  18.8% Read (Sector 0x1200 of 0x6000, ) 275.18 MB/s    
+Progress: |██--------|  19.8% Read (Sector 0x1300 of 0x6000, ) 278.82 MB/s    
+Progress: |██--------|  20.8% Read (Sector 0x1400 of 0x6000, ) 275.65 MB/s    
+Progress: |██--------|  21.9% Read (Sector 0x1500 of 0x6000, ) 275.27 MB/s    
+Progress: |██--------|  22.9% Read (Sector 0x1600 of 0x6000, ) 264.16 MB/s    
+Progress: |██--------|  24.0% Read (Sector 0x1700 of 0x6000, ) 271.76 MB/s    
+Progress: |██--------|  25.0% Read (Sector 0x1800 of 0x6000, ) 282.35 MB/s    
+Progress: |███-------|  26.0% Read (Sector 0x1900 of 0x6000, ) 270.20 MB/s    
+Progress: |███-------|  27.1% Read (Sector 0x1A00 of 0x6000, ) 266.02 MB/s    
+Progress: |███-------|  28.1% Read (Sector 0x1B00 of 0x6000, ) 269.12 MB/s    
+Progress: |███-------|  29.2% Read (Sector 0x1C00 of 0x6000, ) 275.54 MB/s    
+Progress: |███-------|  30.2% Read (Sector 0x1D00 of 0x6000, ) 277.36 MB/s    
+Progress: |███-------|  31.2% Read (Sector 0x1E00 of 0x6000, ) 282.12 MB/s    
+Progress: |███-------|  32.3% Read (Sector 0x1F00 of 0x6000, ) 288.25 MB/s    
+Progress: |███-------|  33.3% Read (Sector 0x2000 of 0x6000, ) 283.13 MB/s    
+Progress: |███-------|  34.4% Read (Sector 0x2100 of 0x6000, ) 275.63 MB/s    
+Progress: |████------|  35.4% Read (Sector 0x2200 of 0x6000, ) 276.07 MB/s    
+Progress: |████------|  36.5% Read (Sector 0x2300 of 0x6000, ) 281.61 MB/s    
+Progress: |████------|  37.5% Read (Sector 0x2400 of 0x6000, ) 281.31 MB/s    
+Progress: |████------|  38.5% Read (Sector 0x2500 of 0x6000, ) 281.53 MB/s    
+Progress: |████------|  39.6% Read (Sector 0x2600 of 0x6000, ) 279.23 MB/s    
+Progress: |████------|  40.6% Read (Sector 0x2700 of 0x6000, ) 282.60 MB/s    
+Progress: |████------|  41.7% Read (Sector 0x2800 of 0x6000, ) 288.15 MB/s    
+Progress: |████------|  42.7% Read (Sector 0x2900 of 0x6000, ) 280.69 MB/s    
+Progress: |████------|  43.8% Read (Sector 0x2A00 of 0x6000, ) 273.58 MB/s    
+Progress: |████------|  44.8% Read (Sector 0x2B00 of 0x6000, ) 272.30 MB/s    
+Progress: |█████-----|  45.8% Read (Sector 0x2C00 of 0x6000, ) 254.28 MB/s    
+Progress: |█████-----|  46.9% Read (Sector 0x2D00 of 0x6000, ) 256.61 MB/s    
+Progress: |█████-----|  47.9% Read (Sector 0x2E00 of 0x6000, ) 263.46 MB/s    
+Progress: |█████-----|  49.0% Read (Sector 0x2F00 of 0x6000, ) 263.08 MB/s    
+Progress: |█████-----|  50.0% Read (Sector 0x3000 of 0x6000, ) 264.11 MB/s    
+Progress: |█████-----|  51.0% Read (Sector 0x3100 of 0x6000, ) 269.92 MB/s    
+Progress: |█████-----|  52.1% Read (Sector 0x3200 of 0x6000, ) 260.26 MB/s    
+Progress: |█████-----|  53.1% Read (Sector 0x3300 of 0x6000, ) 262.09 MB/s    
+Progress: |█████-----|  54.2% Read (Sector 0x3400 of 0x6000, ) 258.83 MB/s    
+Progress: |██████----|  55.2% Read (Sector 0x3500 of 0x6000, ) 255.21 MB/s    
+Progress: |██████----|  56.2% Read (Sector 0x3600 of 0x6000, ) 260.14 MB/s    
+Progress: |██████----|  57.3% Read (Sector 0x3700 of 0x6000, ) 260.00 MB/s    
+Progress: |██████----|  58.3% Read (Sector 0x3800 of 0x6000, ) 262.39 MB/s    
+Progress: |██████----|  59.4% Read (Sector 0x3900 of 0x6000, ) 265.38 MB/s    
+Progress: |██████----|  60.4% Read (Sector 0x3A00 of 0x6000, ) 269.23 MB/s    
+Progress: |██████----|  61.5% Read (Sector 0x3B00 of 0x6000, ) 264.22 MB/s    
+Progress: |██████----|  62.5% Read (Sector 0x3C00 of 0x6000, ) 254.17 MB/s    
+Progress: |██████----|  63.5% Read (Sector 0x3D00 of 0x6000, ) 253.45 MB/s    
+Progress: |██████----|  64.6% Read (Sector 0x3E00 of 0x6000, ) 257.92 MB/s    
+Progress: |███████---|  65.6% Read (Sector 0x3F00 of 0x6000, ) 259.97 MB/s    
+Progress: |███████---|  66.7% Read (Sector 0x4000 of 0x6000, ) 265.03 MB/s    
+Progress: |███████---|  67.7% Read (Sector 0x4100 of 0x6000, ) 261.60 MB/s    
+Progress: |███████---|  68.8% Read (Sector 0x4200 of 0x6000, ) 273.37 MB/s    
+Progress: |███████---|  69.8% Read (Sector 0x4300 of 0x6000, ) 270.65 MB/s    
+Progress: |███████---|  70.8% Read (Sector 0x4400 of 0x6000, ) 269.71 MB/s    
+Progress: |███████---|  71.9% Read (Sector 0x4500 of 0x6000, ) 271.76 MB/s    
+Progress: |███████---|  72.9% Read (Sector 0x4600 of 0x6000, ) 257.81 MB/s    
+Progress: |███████---|  74.0% Read (Sector 0x4700 of 0x6000, ) 253.66 MB/s    
+Progress: |████████--|  75.0% Read (Sector 0x4800 of 0x6000, ) 266.14 MB/s    
+Progress: |████████--|  76.0% Read (Sector 0x4900 of 0x6000, ) 273.78 MB/s    
+Progress: |████████--|  77.1% Read (Sector 0x4A00 of 0x6000, ) 221.73 MB/s    
+Progress: |████████--|  78.1% Read (Sector 0x4B00 of 0x6000, ) 257.04 MB/s    
+Progress: |████████--|  79.2% Read (Sector 0x4C00 of 0x6000, ) 266.20 MB/s    
+Progress: |████████--|  80.2% Read (Sector 0x4D00 of 0x6000, ) 263.05 MB/s    
+Progress: |████████--|  81.2% Read (Sector 0x4E00 of 0x6000, ) 250.14 MB/s    
+Progress: |████████--|  82.3% Read (Sector 0x4F00 of 0x6000, ) 264.21 MB/s    
+Progress: |████████--|  83.3% Read (Sector 0x5000 of 0x6000, ) 264.04 MB/s    
+Progress: |████████--|  84.4% Read (Sector 0x5100 of 0x6000, ) 266.85 MB/s    
+Progress: |█████████-|  85.4% Read (Sector 0x5200 of 0x6000, ) 263.98 MB/s    
+Progress: |█████████-|  86.5% Read (Sector 0x5300 of 0x6000, ) 260.97 MB/s    
+Progress: |█████████-|  87.5% Read (Sector 0x5400 of 0x6000, ) 250.66 MB/s    
+Progress: |█████████-|  88.5% Read (Sector 0x5500 of 0x6000, ) 254.42 MB/s    
+Progress: |█████████-|  89.6% Read (Sector 0x5600 of 0x6000, ) 246.75 MB/s    
+Progress: |█████████-|  90.6% Read (Sector 0x5700 of 0x6000, ) 260.32 MB/s    
+Progress: |█████████-|  91.7% Read (Sector 0x5800 of 0x6000, ) 264.14 MB/s    
+Progress: |█████████-|  92.7% Read (Sector 0x5900 of 0x6000, ) 254.57 MB/s    
+Progress: |█████████-|  93.8% Read (Sector 0x5A00 of 0x6000, ) 267.29 MB/s    
+Progress: |█████████-|  94.8% Read (Sector 0x5B00 of 0x6000, ) 254.17 MB/s    
+Progress: |██████████|  95.8% Read (Sector 0x5C00 of 0x6000, ) 245.74 MB/s    
+Progress: |██████████|  96.9% Read (Sector 0x5D00 of 0x6000, ) 261.59 MB/s    
+Progress: |██████████|  97.9% Read (Sector 0x5E00 of 0x6000, ) 267.77 MB/s    
+Progress: |██████████|  99.0% Read (Sector 0x5F00 of 0x6000, ) 254.71 MB/s    
+Progress: |██████████| 100.0% Read (Sector 0x6000 of 0x6000, ) 262.06 MB/s    
+Dumped sector 374511 with sector count 24576 as /home/user/nx679j-stock/edl-recovery/recon-20260717-183330/boot_b.bin.
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Read (Sector 0x0 of 0x6000) 0.00 MB/s                
+Progress: |----------|   1.0% Read (Sector 0x100 of 0x6000, ) 254.71 MB/s     
+Progress: |----------|   2.1% Read (Sector 0x200 of 0x6000, ) 226.05 MB/s     
+Progress: |----------|   3.1% Read (Sector 0x300 of 0x6000, ) 248.05 MB/s     
+Progress: |----------|   4.2% Read (Sector 0x400 of 0x6000, ) 261.15 MB/s     
+Progress: |█---------|   5.2% Read (Sector 0x500 of 0x6000, ) 251.02 MB/s     
+Progress: |█---------|   6.2% Read (Sector 0x600 of 0x6000, ) 255.97 MB/s     
+Progress: |█---------|   7.3% Read (Sector 0x700 of 0x6000, ) 281.70 MB/s     
+Progress: |█---------|   8.3% Read (Sector 0x800 of 0x6000, ) 279.84 MB/s     
+Progress: |█---------|   9.4% Read (Sector 0x900 of 0x6000, ) 280.67 MB/s     
+Progress: |█---------|  10.4% Read (Sector 0xA00 of 0x6000, ) 284.71 MB/s     
+Progress: |█---------|  11.5% Read (Sector 0xB00 of 0x6000, ) 277.24 MB/s     
+Progress: |█---------|  12.5% Read (Sector 0xC00 of 0x6000, ) 277.47 MB/s     
+Progress: |█---------|  13.5% Read (Sector 0xD00 of 0x6000, ) 267.66 MB/s     
+Progress: |█---------|  14.6% Read (Sector 0xE00 of 0x6000, ) 262.87 MB/s     
+Progress: |██--------|  15.6% Read (Sector 0xF00 of 0x6000, ) 266.64 MB/s     
+Progress: |██--------|  16.7% Read (Sector 0x1000 of 0x6000, ) 267.07 MB/s    
+Progress: |██--------|  17.7% Read (Sector 0x1100 of 0x6000, ) 270.08 MB/s    
+Progress: |██--------|  18.8% Read (Sector 0x1200 of 0x6000, ) 271.02 MB/s    
+Progress: |██--------|  19.8% Read (Sector 0x1300 of 0x6000, ) 271.53 MB/s    
+Progress: |██--------|  20.8% Read (Sector 0x1400 of 0x6000, ) 275.49 MB/s    
+Progress: |██--------|  21.9% Read (Sector 0x1500 of 0x6000, ) 268.99 MB/s    
+Progress: |██--------|  22.9% Read (Sector 0x1600 of 0x6000, ) 255.88 MB/s    
+Progress: |██--------|  24.0% Read (Sector 0x1700 of 0x6000, ) 258.25 MB/s    
+Progress: |██--------|  25.0% Read (Sector 0x1800 of 0x6000, ) 262.36 MB/s    
+Progress: |███-------|  26.0% Read (Sector 0x1900 of 0x6000, ) 266.78 MB/s    
+Progress: |███-------|  27.1% Read (Sector 0x1A00 of 0x6000, ) 264.96 MB/s    
+Progress: |███-------|  28.1% Read (Sector 0x1B00 of 0x6000, ) 275.43 MB/s    
+Progress: |███-------|  29.2% Read (Sector 0x1C00 of 0x6000, ) 267.56 MB/s    
+Progress: |███-------|  30.2% Read (Sector 0x1D00 of 0x6000, ) 260.14 MB/s    
+Progress: |███-------|  31.2% Read (Sector 0x1E00 of 0x6000, ) 268.71 MB/s    
+Progress: |███-------|  32.3% Read (Sector 0x1F00 of 0x6000, ) 273.51 MB/s    
+Progress: |███-------|  33.3% Read (Sector 0x2000 of 0x6000, ) 261.67 MB/s    
+Progress: |███-------|  34.4% Read (Sector 0x2100 of 0x6000, ) 276.45 MB/s    
+Progress: |████------|  35.4% Read (Sector 0x2200 of 0x6000, ) 276.91 MB/s    
+Progress: |████------|  36.5% Read (Sector 0x2300 of 0x6000, ) 268.35 MB/s    
+Progress: |████------|  37.5% Read (Sector 0x2400 of 0x6000, ) 272.59 MB/s    
+Progress: |████------|  38.5% Read (Sector 0x2500 of 0x6000, ) 277.71 MB/s    
+Progress: |████------|  39.6% Read (Sector 0x2600 of 0x6000, ) 286.14 MB/s    
+Progress: |████------|  40.6% Read (Sector 0x2700 of 0x6000, ) 284.59 MB/s    
+Progress: |████------|  41.7% Read (Sector 0x2800 of 0x6000, ) 278.03 MB/s    
+Progress: |████------|  42.7% Read (Sector 0x2900 of 0x6000, ) 274.46 MB/s    
+Progress: |████------|  43.8% Read (Sector 0x2A00 of 0x6000, ) 275.47 MB/s    
+Progress: |████------|  44.8% Read (Sector 0x2B00 of 0x6000, ) 268.75 MB/s    
+Progress: |█████-----|  45.8% Read (Sector 0x2C00 of 0x6000, ) 265.53 MB/s    
+Progress: |█████-----|  46.9% Read (Sector 0x2D00 of 0x6000, ) 272.22 MB/s    
+Progress: |█████-----|  47.9% Read (Sector 0x2E00 of 0x6000, ) 267.80 MB/s    
+Progress: |█████-----|  49.0% Read (Sector 0x2F00 of 0x6000, ) 266.00 MB/s    
+Progress: |█████-----|  50.0% Read (Sector 0x3000 of 0x6000, ) 259.63 MB/s    
+Progress: |█████-----|  51.0% Read (Sector 0x3100 of 0x6000, ) 265.31 MB/s    
+Progress: |█████-----|  52.1% Read (Sector 0x3200 of 0x6000, ) 267.10 MB/s    
+Progress: |█████-----|  53.1% Read (Sector 0x3300 of 0x6000, ) 264.17 MB/s    
+Progress: |█████-----|  54.2% Read (Sector 0x3400 of 0x6000, ) 265.21 MB/s    
+Progress: |██████----|  55.2% Read (Sector 0x3500 of 0x6000, ) 260.26 MB/s    
+Progress: |██████----|  56.2% Read (Sector 0x3600 of 0x6000, ) 263.79 MB/s    
+Progress: |██████----|  57.3% Read (Sector 0x3700 of 0x6000, ) 270.72 MB/s    
+Progress: |██████----|  58.3% Read (Sector 0x3800 of 0x6000, ) 267.37 MB/s    
+Progress: |██████----|  59.4% Read (Sector 0x3900 of 0x6000, ) 268.40 MB/s    
+Progress: |██████----|  60.4% Read (Sector 0x3A00 of 0x6000, ) 270.01 MB/s    
+Progress: |██████----|  61.5% Read (Sector 0x3B00 of 0x6000, ) 272.43 MB/s    
+Progress: |██████----|  62.5% Read (Sector 0x3C00 of 0x6000, ) 273.64 MB/s    
+Progress: |██████----|  63.5% Read (Sector 0x3D00 of 0x6000, ) 276.47 MB/s    
+Progress: |██████----|  64.6% Read (Sector 0x3E00 of 0x6000, ) 281.99 MB/s    
+Progress: |███████---|  65.6% Read (Sector 0x3F00 of 0x6000, ) 288.23 MB/s    
+Progress: |███████---|  66.7% Read (Sector 0x4000 of 0x6000, ) 282.27 MB/s    
+Progress: |███████---|  67.7% Read (Sector 0x4100 of 0x6000, ) 280.29 MB/s    
+Progress: |███████---|  68.8% Read (Sector 0x4200 of 0x6000, ) 284.51 MB/s    
+Progress: |███████---|  69.8% Read (Sector 0x4300 of 0x6000, ) 280.82 MB/s    
+Progress: |███████---|  70.8% Read (Sector 0x4400 of 0x6000, ) 274.77 MB/s    
+Progress: |███████---|  71.9% Read (Sector 0x4500 of 0x6000, ) 270.98 MB/s    
+Progress: |███████---|  72.9% Read (Sector 0x4600 of 0x6000, ) 275.52 MB/s    
+Progress: |███████---|  74.0% Read (Sector 0x4700 of 0x6000, ) 267.31 MB/s    
+Progress: |████████--|  75.0% Read (Sector 0x4800 of 0x6000, ) 263.05 MB/s    
+Progress: |████████--|  76.0% Read (Sector 0x4900 of 0x6000, ) 260.56 MB/s    
+Progress: |████████--|  77.1% Read (Sector 0x4A00 of 0x6000, ) 262.26 MB/s    
+Progress: |████████--|  78.1% Read (Sector 0x4B00 of 0x6000, ) 270.93 MB/s    
+Progress: |████████--|  79.2% Read (Sector 0x4C00 of 0x6000, ) 266.92 MB/s    
+Progress: |████████--|  80.2% Read (Sector 0x4D00 of 0x6000, ) 268.25 MB/s    
+Progress: |████████--|  81.2% Read (Sector 0x4E00 of 0x6000, ) 266.85 MB/s    
+Progress: |████████--|  82.3% Read (Sector 0x4F00 of 0x6000, ) 269.87 MB/s    
+Progress: |████████--|  83.3% Read (Sector 0x5000 of 0x6000, ) 266.31 MB/s    
+Progress: |████████--|  84.4% Read (Sector 0x5100 of 0x6000, ) 268.33 MB/s    
+Progress: |█████████-|  85.4% Read (Sector 0x5200 of 0x6000, ) 264.59 MB/s    
+Progress: |█████████-|  86.5% Read (Sector 0x5300 of 0x6000, ) 269.42 MB/s    
+Progress: |█████████-|  87.5% Read (Sector 0x5400 of 0x6000, ) 266.90 MB/s    
+Progress: |█████████-|  88.5% Read (Sector 0x5500 of 0x6000, ) 267.66 MB/s    
+Progress: |█████████-|  89.6% Read (Sector 0x5600 of 0x6000, ) 267.29 MB/s    
+Progress: |█████████-|  90.6% Read (Sector 0x5700 of 0x6000, ) 268.64 MB/s    
+Progress: |█████████-|  91.7% Read (Sector 0x5800 of 0x6000, ) 268.11 MB/s    
+Progress: |█████████-|  92.7% Read (Sector 0x5900 of 0x6000, ) 270.37 MB/s    
+Progress: |█████████-|  93.8% Read (Sector 0x5A00 of 0x6000, ) 254.83 MB/s    
+Progress: |█████████-|  94.8% Read (Sector 0x5B00 of 0x6000, ) 247.80 MB/s    
+Progress: |██████████|  95.8% Read (Sector 0x5C00 of 0x6000, ) 261.13 MB/s    
+Progress: |██████████|  96.9% Read (Sector 0x5D00 of 0x6000, ) 265.70 MB/s    
+Progress: |██████████|  97.9% Read (Sector 0x5E00 of 0x6000, ) 265.92 MB/s    
+Progress: |██████████|  99.0% Read (Sector 0x5F00 of 0x6000, ) 272.09 MB/s    
+Progress: |██████████| 100.0% Read (Sector 0x6000 of 0x6000, ) 249.68 MB/s    
+Dumped sector 207663 with sector count 24576 as /home/user/nx679j-stock/edl-recovery/recon-20260717-183330/vendor_boot_a.bin.
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Read (Sector 0x0 of 0x6000) 0.00 MB/s                
+Progress: |----------|   1.0% Read (Sector 0x100 of 0x6000, ) 245.74 MB/s     
+Progress: |----------|   2.1% Read (Sector 0x200 of 0x6000, ) 174.36 MB/s     
+Progress: |----------|   3.1% Read (Sector 0x300 of 0x6000, ) 219.32 MB/s     
+Progress: |----------|   4.2% Read (Sector 0x400 of 0x6000, ) 229.80 MB/s     
+Progress: |█---------|   5.2% Read (Sector 0x500 of 0x6000, ) 233.89 MB/s     
+Progress: |█---------|   6.2% Read (Sector 0x600 of 0x6000, ) 193.43 MB/s     
+Progress: |█---------|   7.3% Read (Sector 0x700 of 0x6000, ) 259.66 MB/s     
+Progress: |█---------|   8.3% Read (Sector 0x800 of 0x6000, ) 231.28 MB/s     
+Progress: |█---------|   9.4% Read (Sector 0x900 of 0x6000, ) 249.51 MB/s     
+Progress: |█---------|  10.4% Read (Sector 0xA00 of 0x6000, ) 255.80 MB/s     
+Progress: |█---------|  11.5% Read (Sector 0xB00 of 0x6000, ) 205.63 MB/s     
+Progress: |█---------|  12.5% Read (Sector 0xC00 of 0x6000, ) 246.96 MB/s     
+Progress: |█---------|  13.5% Read (Sector 0xD00 of 0x6000, ) 265.68 MB/s     
+Progress: |█---------|  14.6% Read (Sector 0xE00 of 0x6000, ) 248.39 MB/s     
+Progress: |██--------|  15.6% Read (Sector 0xF00 of 0x6000, ) 231.03 MB/s     
+Progress: |██--------|  16.7% Read (Sector 0x1000 of 0x6000, ) 265.46 MB/s    
+Progress: |██--------|  17.7% Read (Sector 0x1100 of 0x6000, ) 269.80 MB/s    
+Progress: |██--------|  18.8% Read (Sector 0x1200 of 0x6000, ) 266.97 MB/s    
+Progress: |██--------|  19.8% Read (Sector 0x1300 of 0x6000, ) 264.44 MB/s    
+Progress: |██--------|  20.8% Read (Sector 0x1400 of 0x6000, ) 254.69 MB/s    
+Progress: |██--------|  21.9% Read (Sector 0x1500 of 0x6000, ) 252.18 MB/s    
+Progress: |██--------|  22.9% Read (Sector 0x1600 of 0x6000, ) 267.34 MB/s    
+Progress: |██--------|  24.0% Read (Sector 0x1700 of 0x6000, ) 273.89 MB/s    
+Progress: |██--------|  25.0% Read (Sector 0x1800 of 0x6000, ) 274.28 MB/s    
+Progress: |███-------|  26.0% Read (Sector 0x1900 of 0x6000, ) 272.06 MB/s    
+Progress: |███-------|  27.1% Read (Sector 0x1A00 of 0x6000, ) 263.59 MB/s    
+Progress: |███-------|  28.1% Read (Sector 0x1B00 of 0x6000, ) 260.77 MB/s    
+Progress: |███-------|  29.2% Read (Sector 0x1C00 of 0x6000, ) 240.04 MB/s    
+Progress: |███-------|  30.2% Read (Sector 0x1D00 of 0x6000, ) 228.81 MB/s    
+Progress: |███-------|  31.2% Read (Sector 0x1E00 of 0x6000, ) 263.00 MB/s    
+Progress: |███-------|  32.3% Read (Sector 0x1F00 of 0x6000, ) 268.97 MB/s    
+Progress: |███-------|  33.3% Read (Sector 0x2000 of 0x6000, ) 243.01 MB/s    
+Progress: |███-------|  34.4% Read (Sector 0x2100 of 0x6000, ) 275.11 MB/s    
+Progress: |████------|  35.4% Read (Sector 0x2200 of 0x6000, ) 268.04 MB/s    
+Progress: |████------|  36.5% Read (Sector 0x2300 of 0x6000, ) 271.42 MB/s    
+Progress: |████------|  37.5% Read (Sector 0x2400 of 0x6000, ) 225.51 MB/s    
+Progress: |████------|  38.5% Read (Sector 0x2500 of 0x6000, ) 256.69 MB/s    
+Progress: |████------|  39.6% Read (Sector 0x2600 of 0x6000, ) 229.25 MB/s    
+Progress: |████------|  40.6% Read (Sector 0x2700 of 0x6000, ) 253.00 MB/s    
+Progress: |████------|  41.7% Read (Sector 0x2800 of 0x6000, ) 264.83 MB/s    
+Progress: |████------|  42.7% Read (Sector 0x2900 of 0x6000, ) 266.09 MB/s    
+Progress: |████------|  43.8% Read (Sector 0x2A00 of 0x6000, ) 234.46 MB/s    
+Progress: |████------|  44.8% Read (Sector 0x2B00 of 0x6000, ) 265.33 MB/s    
+Progress: |█████-----|  45.8% Read (Sector 0x2C00 of 0x6000, ) 268.75 MB/s    
+Progress: |█████-----|  46.9% Read (Sector 0x2D00 of 0x6000, ) 270.84 MB/s    
+Progress: |█████-----|  47.9% Read (Sector 0x2E00 of 0x6000, ) 272.13 MB/s    
+Progress: |█████-----|  49.0% Read (Sector 0x2F00 of 0x6000, ) 250.48 MB/s    
+Progress: |█████-----|  50.0% Read (Sector 0x3000 of 0x6000, ) 275.56 MB/s    
+Progress: |█████-----|  51.0% Read (Sector 0x3100 of 0x6000, ) 287.38 MB/s    
+Progress: |█████-----|  52.1% Read (Sector 0x3200 of 0x6000, ) 290.50 MB/s    
+Progress: |█████-----|  53.1% Read (Sector 0x3300 of 0x6000, ) 285.29 MB/s    
+Progress: |█████-----|  54.2% Read (Sector 0x3400 of 0x6000, ) 292.31 MB/s    
+Progress: |██████----|  55.2% Read (Sector 0x3500 of 0x6000, ) 294.65 MB/s    
+Progress: |██████----|  56.2% Read (Sector 0x3600 of 0x6000, ) 294.71 MB/s    
+Progress: |██████----|  57.3% Read (Sector 0x3700 of 0x6000, ) 294.15 MB/s    
+Progress: |██████----|  58.3% Read (Sector 0x3800 of 0x6000, ) 297.62 MB/s    
+Progress: |██████----|  59.4% Read (Sector 0x3900 of 0x6000, ) 296.25 MB/s    
+Progress: |██████----|  60.4% Read (Sector 0x3A00 of 0x6000, ) 291.43 MB/s    
+Progress: |██████----|  61.5% Read (Sector 0x3B00 of 0x6000, ) 288.57 MB/s    
+Progress: |██████----|  62.5% Read (Sector 0x3C00 of 0x6000, ) 280.20 MB/s    
+Progress: |██████----|  63.5% Read (Sector 0x3D00 of 0x6000, ) 266.66 MB/s    
+Progress: |██████----|  64.6% Read (Sector 0x3E00 of 0x6000, ) 281.14 MB/s    
+Progress: |███████---|  65.6% Read (Sector 0x3F00 of 0x6000, ) 280.48 MB/s    
+Progress: |███████---|  66.7% Read (Sector 0x4000 of 0x6000, ) 277.18 MB/s    
+Progress: |███████---|  67.7% Read (Sector 0x4100 of 0x6000, ) 264.73 MB/s    
+Progress: |███████---|  68.8% Read (Sector 0x4200 of 0x6000, ) 253.68 MB/s    
+Progress: |███████---|  69.8% Read (Sector 0x4300 of 0x6000, ) 264.57 MB/s    
+Progress: |███████---|  70.8% Read (Sector 0x4400 of 0x6000, ) 263.68 MB/s    
+Progress: |███████---|  71.9% Read (Sector 0x4500 of 0x6000, ) 254.43 MB/s    
+Progress: |███████---|  72.9% Read (Sector 0x4600 of 0x6000, ) 250.17 MB/s    
+Progress: |███████---|  74.0% Read (Sector 0x4700 of 0x6000, ) 258.67 MB/s    
+Progress: |████████--|  75.0% Read (Sector 0x4800 of 0x6000, ) 257.92 MB/s    
+Progress: |████████--|  76.0% Read (Sector 0x4900 of 0x6000, ) 259.47 MB/s    
+Progress: |████████--|  77.1% Read (Sector 0x4A00 of 0x6000, ) 259.98 MB/s    
+Progress: |████████--|  78.1% Read (Sector 0x4B00 of 0x6000, ) 262.50 MB/s    
+Progress: |████████--|  79.2% Read (Sector 0x4C00 of 0x6000, ) 250.30 MB/s    
+Progress: |████████--|  80.2% Read (Sector 0x4D00 of 0x6000, ) 243.85 MB/s    
+Progress: |████████--|  81.2% Read (Sector 0x4E00 of 0x6000, ) 233.00 MB/s    
+Progress: |████████--|  82.3% Read (Sector 0x4F00 of 0x6000, ) 219.02 MB/s    
+Progress: |████████--|  83.3% Read (Sector 0x5000 of 0x6000, ) 250.50 MB/s    
+Progress: |████████--|  84.4% Read (Sector 0x5100 of 0x6000, ) 253.75 MB/s    
+Progress: |█████████-|  85.4% Read (Sector 0x5200 of 0x6000, ) 257.32 MB/s    
+Progress: |█████████-|  86.5% Read (Sector 0x5300 of 0x6000, ) 259.87 MB/s    
+Progress: |█████████-|  87.5% Read (Sector 0x5400 of 0x6000, ) 229.71 MB/s    
+Progress: |█████████-|  88.5% Read (Sector 0x5500 of 0x6000, ) 248.61 MB/s    
+Progress: |█████████-|  89.6% Read (Sector 0x5600 of 0x6000, ) 244.18 MB/s    
+Progress: |█████████-|  90.6% Read (Sector 0x5700 of 0x6000, ) 205.10 MB/s    
+Progress: |█████████-|  91.7% Read (Sector 0x5800 of 0x6000, ) 252.40 MB/s    
+Progress: |█████████-|  92.7% Read (Sector 0x5900 of 0x6000, ) 246.10 MB/s    
+Progress: |█████████-|  93.8% Read (Sector 0x5A00 of 0x6000, ) 236.53 MB/s    
+Progress: |█████████-|  94.8% Read (Sector 0x5B00 of 0x6000, ) 246.38 MB/s    
+Progress: |██████████|  95.8% Read (Sector 0x5C00 of 0x6000, ) 250.53 MB/s    
+Progress: |██████████|  96.9% Read (Sector 0x5D00 of 0x6000, ) 256.36 MB/s    
+Progress: |██████████|  97.9% Read (Sector 0x5E00 of 0x6000, ) 261.16 MB/s    
+Progress: |██████████|  99.0% Read (Sector 0x5F00 of 0x6000, ) 258.21 MB/s    
+Progress: |██████████| 100.0% Read (Sector 0x6000 of 0x6000, ) 227.58 MB/s    
+Dumped sector 473752 with sector count 24576 as /home/user/nx679j-stock/edl-recovery/recon-20260717-183330/vendor_boot_b.bin.
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Read (Sector 0x0 of 0x1800) 0.00 MB/s                
+Progress: |----------|   4.2% Read (Sector 0x100 of 0x1800, ) 240.84 MB/s     
+Progress: |█---------|   8.3% Read (Sector 0x200 of 0x1800, ) 229.54 MB/s     
+Progress: |█---------|  12.5% Read (Sector 0x300 of 0x1800, ) 249.96 MB/s     
+Progress: |██--------|  16.7% Read (Sector 0x400 of 0x1800, ) 254.65 MB/s     
+Progress: |██--------|  20.8% Read (Sector 0x500 of 0x1800, ) 243.19 MB/s     
+Progress: |██--------|  25.0% Read (Sector 0x600 of 0x1800, ) 260.22 MB/s     
+Progress: |███-------|  29.2% Read (Sector 0x700 of 0x1800, ) 292.37 MB/s     
+Progress: |███-------|  33.3% Read (Sector 0x800 of 0x1800, ) 274.73 MB/s     
+Progress: |████------|  37.5% Read (Sector 0x900 of 0x1800, ) 264.41 MB/s     
+Progress: |████------|  41.7% Read (Sector 0xA00 of 0x1800, ) 275.85 MB/s     
+Progress: |█████-----|  45.8% Read (Sector 0xB00 of 0x1800, ) 275.38 MB/s     
+Progress: |█████-----|  50.0% Read (Sector 0xC00 of 0x1800, ) 265.28 MB/s     
+Progress: |█████-----|  54.2% Read (Sector 0xD00 of 0x1800, ) 266.09 MB/s     
+Progress: |██████----|  58.3% Read (Sector 0xE00 of 0x1800, ) 278.08 MB/s     
+Progress: |██████----|  62.5% Read (Sector 0xF00 of 0x1800, ) 281.44 MB/s     
+Progress: |███████---|  66.7% Read (Sector 0x1000 of 0x1800, ) 275.20 MB/s    
+Progress: |███████---|  70.8% Read (Sector 0x1100 of 0x1800, ) 276.05 MB/s    
+Progress: |████████--|  75.0% Read (Sector 0x1200 of 0x1800, ) 280.16 MB/s    
+Progress: |████████--|  79.2% Read (Sector 0x1300 of 0x1800, ) 269.85 MB/s    
+Progress: |████████--|  83.3% Read (Sector 0x1400 of 0x1800, ) 267.17 MB/s    
+Progress: |█████████-|  87.5% Read (Sector 0x1500 of 0x1800, ) 278.65 MB/s    
+Progress: |█████████-|  91.7% Read (Sector 0x1600 of 0x1800, ) 281.01 MB/s    
+Progress: |██████████|  95.8% Read (Sector 0x1700 of 0x1800, ) 276.72 MB/s    
+Progress: |██████████| 100.0% Read (Sector 0x1800 of 0x1800, ) 284.82 MB/s    
+Dumped sector 133066 with sector count 6144 as /home/user/nx679j-stock/edl-recovery/recon-20260717-183330/dtbo_a.bin.
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Read (Sector 0x0 of 0x1800) 0.00 MB/s                
+Progress: |----------|   4.2% Read (Sector 0x100 of 0x1800, ) 221.22 MB/s     
+Progress: |█---------|   8.3% Read (Sector 0x200 of 0x1800, ) 225.63 MB/s     
+Progress: |█---------|  12.5% Read (Sector 0x300 of 0x1800, ) 252.73 MB/s     
+Progress: |██--------|  16.7% Read (Sector 0x400 of 0x1800, ) 261.82 MB/s     
+Progress: |██--------|  20.8% Read (Sector 0x500 of 0x1800, ) 251.08 MB/s     
+Progress: |██--------|  25.0% Read (Sector 0x600 of 0x1800, ) 253.17 MB/s     
+Progress: |███-------|  29.2% Read (Sector 0x700 of 0x1800, ) 277.20 MB/s     
+Progress: |███-------|  33.3% Read (Sector 0x800 of 0x1800, ) 292.92 MB/s     
+Progress: |████------|  37.5% Read (Sector 0x900 of 0x1800, ) 294.69 MB/s     
+Progress: |████------|  41.7% Read (Sector 0xA00 of 0x1800, ) 296.12 MB/s     
+Progress: |█████-----|  45.8% Read (Sector 0xB00 of 0x1800, ) 298.15 MB/s     
+Progress: |█████-----|  50.0% Read (Sector 0xC00 of 0x1800, ) 294.88 MB/s     
+Progress: |█████-----|  54.2% Read (Sector 0xD00 of 0x1800, ) 279.75 MB/s     
+Progress: |██████----|  58.3% Read (Sector 0xE00 of 0x1800, ) 280.52 MB/s     
+Progress: |██████----|  62.5% Read (Sector 0xF00 of 0x1800, ) 289.32 MB/s     
+Progress: |███████---|  66.7% Read (Sector 0x1000 of 0x1800, ) 292.98 MB/s    
+Progress: |███████---|  70.8% Read (Sector 0x1100 of 0x1800, ) 298.89 MB/s    
+Progress: |████████--|  75.0% Read (Sector 0x1200 of 0x1800, ) 297.09 MB/s    
+Progress: |████████--|  79.2% Read (Sector 0x1300 of 0x1800, ) 294.30 MB/s    
+Progress: |████████--|  83.3% Read (Sector 0x1400 of 0x1800, ) 292.88 MB/s    
+Progress: |█████████-|  87.5% Read (Sector 0x1500 of 0x1800, ) 287.05 MB/s    
+Progress: |█████████-|  91.7% Read (Sector 0x1600 of 0x1800, ) 263.53 MB/s    
+Progress: |██████████|  95.8% Read (Sector 0x1700 of 0x1800, ) 274.23 MB/s    
+Progress: |██████████| 100.0% Read (Sector 0x1800 of 0x1800, ) 281.74 MB/s    
+Dumped sector 399155 with sector count 6144 as /home/user/nx679j-stock/edl-recovery/recon-20260717-183330/dtbo_b.bin.
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Read (Sector 0x0 of 0x10) 0.00 MB/s                  
+Progress: |██████████| 100.0% Read (Sector 0x10 of 0x10, ) 70.13 MB/s         
+Dumped sector 133050 with sector count 16 as /home/user/nx679j-stock/edl-recovery/recon-20260717-183330/vbmeta_a.bin.
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Read (Sector 0x0 of 0x10) 0.00 MB/s                  
+Progress: |██████████| 100.0% Read (Sector 0x10 of 0x10, ) 75.92 MB/s         
+Dumped sector 399139 with sector count 16 as /home/user/nx679j-stock/edl-recovery/recon-20260717-183330/vbmeta_b.bin.
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Read (Sector 0x0 of 0x100) 0.00 MB/s                 
+Progress: |██████████| 100.0% Read (Sector 0x100 of 0x100, ) 241.69 MB/s      
+Dumped sector 91654 with sector count 256 as /home/user/nx679j-stock/edl-recovery/recon-20260717-183330/abl_a.bin.
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Read (Sector 0x0 of 0x100) 0.00 MB/s                 
+Progress: |██████████| 100.0% Read (Sector 0x100 of 0x100, ) 222.99 MB/s      
+Dumped sector 357743 with sector count 256 as /home/user/nx679j-stock/edl-recovery/recon-20260717-183330/abl_b.bin.
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Read (Sector 0x0 of 0x380) 0.00 MB/s                 
+Progress: |███-------|  28.6% Read (Sector 0x100 of 0x380, ) 249.85 MB/s      
+Progress: |██████----|  57.1% Read (Sector 0x200 of 0x380, ) 226.89 MB/s      
+Progress: |█████████-|  85.7% Read (Sector 0x300 of 0x380, ) 268.83 MB/s      
+Progress: |██████████| 100.0% Read (Sector 0x380 of 0x380, ) 252.49 MB/s      
+Dumped sector 6 with sector count 896 as /home/user/nx679j-stock/edl-recovery/recon-20260717-183330/xbl_a.bin.
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Read (Sector 0x0 of 0x380) 0.00 MB/s                 
+Progress: |███-------|  28.6% Read (Sector 0x100 of 0x380, ) 249.07 MB/s      
+Progress: |██████----|  57.1% Read (Sector 0x200 of 0x380, ) 247.42 MB/s      
+Progress: |█████████-|  85.7% Read (Sector 0x300 of 0x380, ) 265.71 MB/s      
+Progress: |██████████| 100.0% Read (Sector 0x380 of 0x380, ) 246.78 MB/s      
+Dumped sector 6 with sector count 896 as /home/user/nx679j-stock/edl-recovery/recon-20260717-183330/xbl_b.bin.
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Read (Sector 0x0 of 0x4B) 0.00 MB/s                  
+Progress: |██████████| 100.0% Read (Sector 0x4B of 0x4B, ) 192.87 MB/s        
+Dumped sector 902 with sector count 75 as /home/user/nx679j-stock/edl-recovery/recon-20260717-183330/xbl_config_a.bin.
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Read (Sector 0x0 of 0x4B) 0.00 MB/s                  
+Progress: |██████████| 100.0% Read (Sector 0x4B of 0x4B, ) 184.28 MB/s        
+Dumped sector 902 with sector count 75 as /home/user/nx679j-stock/edl-recovery/recon-20260717-183330/xbl_config_b.bin.
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Read (Sector 0x0 of 0x100) 0.00 MB/s                 
+Progress: |██████████| 100.0% Read (Sector 0x100 of 0x100, ) 247.76 MB/s      
+Dumped sector 8200 with sector count 256 as /home/user/nx679j-stock/edl-recovery/recon-20260717-183330/misc.bin.
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Read (Sector 0x0 of 0x20000) 0.00 MB/s               
+Progress: |----------|   0.2% Read (Sector 0x100 of 0x20000, 01s left) 280.24 MB/s
+Progress: |----------|   0.4% Read (Sector 0x200 of 0x20000, 01s left) 250.66 MB/s
+Progress: |----------|   0.6% Read (Sector 0x300 of 0x20000, 01s left) 263.81 MB/s
+Progress: |----------|   0.8% Read (Sector 0x400 of 0x20000, 01s left) 261.16 MB/s
+Progress: |----------|   1.0% Read (Sector 0x500 of 0x20000, 01s left) 243.13 MB/s
+Progress: |----------|   1.2% Read (Sector 0x600 of 0x20000, 01s left) 234.16 MB/s
+Progress: |----------|   1.4% Read (Sector 0x700 of 0x20000, 01s left) 260.77 MB/s
+Progress: |----------|   1.6% Read (Sector 0x800 of 0x20000, 01s left) 264.76 MB/s
+Progress: |----------|   1.8% Read (Sector 0x900 of 0x20000, 01s left) 265.19 MB/s
+Progress: |----------|   2.0% Read (Sector 0xA00 of 0x20000, 01s left) 281.93 MB/s
+Progress: |----------|   2.1% Read (Sector 0xB00 of 0x20000, 01s left) 284.69 MB/s
+Progress: |----------|   2.3% Read (Sector 0xC00 of 0x20000, 01s left) 287.16 MB/s
+Progress: |----------|   2.5% Read (Sector 0xD00 of 0x20000, 01s left) 283.97 MB/s
+Progress: |----------|   2.7% Read (Sector 0xE00 of 0x20000, 01s left) 280.95 MB/s
+Progress: |----------|   2.9% Read (Sector 0xF00 of 0x20000, 01s left) 281.27 MB/s
+Progress: |----------|   3.1% Read (Sector 0x1000 of 0x20000, 01s left) 279.79 MB/s
+Progress: |----------|   3.3% Read (Sector 0x1100 of 0x20000, 01s left) 277.58 MB/s
+Progress: |----------|   3.5% Read (Sector 0x1200 of 0x20000, 01s left) 273.92 MB/s
+Progress: |----------|   3.7% Read (Sector 0x1300 of 0x20000, 01s left) 276.65 MB/s
+Progress: |----------|   3.9% Read (Sector 0x1400 of 0x20000, 01s left) 272.85 MB/s
+Progress: |----------|   4.1% Read (Sector 0x1500 of 0x20000, 01s left) 270.81 MB/s
+Progress: |----------|   4.3% Read (Sector 0x1600 of 0x20000, 01s left) 272.15 MB/s
+Progress: |----------|   4.5% Read (Sector 0x1700 of 0x20000, 01s left) 268.16 MB/s
+Progress: |----------|   4.7% Read (Sector 0x1800 of 0x20000, 01s left) 256.31 MB/s
+Progress: |----------|   4.9% Read (Sector 0x1900 of 0x20000, 01s left) 266.83 MB/s
+Progress: |█---------|   5.1% Read (Sector 0x1A00 of 0x20000, 01s left) 272.91 MB/s
+Progress: |█---------|   5.3% Read (Sector 0x1B00 of 0x20000, 01s left) 271.83 MB/s
+Progress: |█---------|   5.5% Read (Sector 0x1C00 of 0x20000, 01s left) 271.13 MB/s
+Progress: |█---------|   5.7% Read (Sector 0x1D00 of 0x20000, 01s left) 273.35 MB/s
+Progress: |█---------|   5.9% Read (Sector 0x1E00 of 0x20000, 01s left) 266.92 MB/s
+Progress: |█---------|   6.1% Read (Sector 0x1F00 of 0x20000, 01s left) 268.64 MB/s
+Progress: |█---------|   6.2% Read (Sector 0x2000 of 0x20000, 01s left) 273.98 MB/s
+Progress: |█---------|   6.4% Read (Sector 0x2100 of 0x20000, 01s left) 267.82 MB/s
+Progress: |█---------|   6.6% Read (Sector 0x2200 of 0x20000, 01s left) 273.76 MB/s
+Progress: |█---------|   6.8% Read (Sector 0x2300 of 0x20000, 01s left) 281.21 MB/s
+Progress: |█---------|   7.0% Read (Sector 0x2400 of 0x20000, 01s left) 293.43 MB/s
+Progress: |█---------|   7.2% Read (Sector 0x2500 of 0x20000, 01s left) 283.51 MB/s
+Progress: |█---------|   7.4% Read (Sector 0x2600 of 0x20000, 01s left) 291.25 MB/s
+Progress: |█---------|   7.6% Read (Sector 0x2700 of 0x20000, 01s left) 295.46 MB/s
+Progress: |█---------|   7.8% Read (Sector 0x2800 of 0x20000, 01s left) 288.88 MB/s
+Progress: |█---------|   8.0% Read (Sector 0x2900 of 0x20000, 01s left) 289.56 MB/s
+Progress: |█---------|   8.2% Read (Sector 0x2A00 of 0x20000, 01s left) 281.82 MB/s
+Progress: |█---------|   8.4% Read (Sector 0x2B00 of 0x20000, 01s left) 277.69 MB/s
+Progress: |█---------|   8.6% Read (Sector 0x2C00 of 0x20000, 01s left) 278.62 MB/s
+Progress: |█---------|   8.8% Read (Sector 0x2D00 of 0x20000, 01s left) 272.41 MB/s
+Progress: |█---------|   9.0% Read (Sector 0x2E00 of 0x20000, 01s left) 272.98 MB/s
+Progress: |█---------|   9.2% Read (Sector 0x2F00 of 0x20000, 01s left) 278.49 MB/s
+Progress: |█---------|   9.4% Read (Sector 0x3000 of 0x20000, 01s left) 274.19 MB/s
+Progress: |█---------|   9.6% Read (Sector 0x3100 of 0x20000, 01s left) 274.39 MB/s
+Progress: |█---------|   9.8% Read (Sector 0x3200 of 0x20000, 01s left) 269.70 MB/s
+Progress: |█---------|  10.0% Read (Sector 0x3300 of 0x20000, 01s left) 268.66 MB/s
+Progress: |█---------|  10.2% Read (Sector 0x3400 of 0x20000, 01s left) 268.09 MB/s
+Progress: |█---------|  10.4% Read (Sector 0x3500 of 0x20000, 01s left) 262.50 MB/s
+Progress: |█---------|  10.5% Read (Sector 0x3600 of 0x20000, 01s left) 263.10 MB/s
+Progress: |█---------|  10.7% Read (Sector 0x3700 of 0x20000, 01s left) 267.68 MB/s
+Progress: |█---------|  10.9% Read (Sector 0x3800 of 0x20000, 01s left) 272.52 MB/s
+Progress: |█---------|  11.1% Read (Sector 0x3900 of 0x20000, 01s left) 267.14 MB/s
+Progress: |█---------|  11.3% Read (Sector 0x3A00 of 0x20000, 01s left) 272.73 MB/s
+Progress: |█---------|  11.5% Read (Sector 0x3B00 of 0x20000, 01s left) 276.67 MB/s
+Progress: |█---------|  11.7% Read (Sector 0x3C00 of 0x20000, 01s left) 276.41 MB/s
+Progress: |█---------|  11.9% Read (Sector 0x3D00 of 0x20000, 01s left) 275.80 MB/s
+Progress: |█---------|  12.1% Read (Sector 0x3E00 of 0x20000, 01s left) 272.18 MB/s
+Progress: |█---------|  12.3% Read (Sector 0x3F00 of 0x20000, 01s left) 266.85 MB/s
+Progress: |█---------|  12.5% Read (Sector 0x4000 of 0x20000, 01s left) 270.41 MB/s
+Progress: |█---------|  12.7% Read (Sector 0x4100 of 0x20000, 01s left) 276.03 MB/s
+Progress: |█---------|  12.9% Read (Sector 0x4200 of 0x20000, 01s left) 275.23 MB/s
+Progress: |█---------|  13.1% Read (Sector 0x4300 of 0x20000, 01s left) 275.07 MB/s
+Progress: |█---------|  13.3% Read (Sector 0x4400 of 0x20000, 01s left) 268.23 MB/s
+Progress: |█---------|  13.5% Read (Sector 0x4500 of 0x20000, 01s left) 270.48 MB/s
+Progress: |█---------|  13.7% Read (Sector 0x4600 of 0x20000, 01s left) 279.83 MB/s
+Progress: |█---------|  13.9% Read (Sector 0x4700 of 0x20000, 01s left) 282.71 MB/s
+Progress: |█---------|  14.1% Read (Sector 0x4800 of 0x20000, 01s left) 278.88 MB/s
+Progress: |█---------|  14.3% Read (Sector 0x4900 of 0x20000, 01s left) 278.62 MB/s
+Progress: |█---------|  14.5% Read (Sector 0x4A00 of 0x20000, 01s left) 280.74 MB/s
+Progress: |█---------|  14.6% Read (Sector 0x4B00 of 0x20000, 01s left) 281.76 MB/s
+Progress: |█---------|  14.8% Read (Sector 0x4C00 of 0x20000, 01s left) 278.73 MB/s
+Progress: |██--------|  15.0% Read (Sector 0x4D00 of 0x20000, 01s left) 284.05 MB/s
+Progress: |██--------|  15.2% Read (Sector 0x4E00 of 0x20000, 01s left) 273.01 MB/s
+Progress: |██--------|  15.4% Read (Sector 0x4F00 of 0x20000, 01s left) 276.76 MB/s
+Progress: |██--------|  15.6% Read (Sector 0x5000 of 0x20000, 01s left) 282.10 MB/s
+Progress: |██--------|  15.8% Read (Sector 0x5100 of 0x20000, 01s left) 275.63 MB/s
+Progress: |██--------|  16.0% Read (Sector 0x5200 of 0x20000, 01s left) 281.84 MB/s
+Progress: |██--------|  16.2% Read (Sector 0x5300 of 0x20000, 01s left) 282.56 MB/s
+Progress: |██--------|  16.4% Read (Sector 0x5400 of 0x20000, 01s left) 275.80 MB/s
+Progress: |██--------|  16.6% Read (Sector 0x5500 of 0x20000, 01s left) 280.48 MB/s
+Progress: |██--------|  16.8% Read (Sector 0x5600 of 0x20000, 01s left) 279.99 MB/s
+Progress: |██--------|  17.0% Read (Sector 0x5700 of 0x20000, 01s left) 274.62 MB/s
+Progress: |██--------|  17.2% Read (Sector 0x5800 of 0x20000, 01s left) 278.32 MB/s
+Progress: |██--------|  17.4% Read (Sector 0x5900 of 0x20000, 01s left) 281.36 MB/s
+Progress: |██--------|  17.6% Read (Sector 0x5A00 of 0x20000, 01s left) 279.58 MB/s
+Progress: |██--------|  17.8% Read (Sector 0x5B00 of 0x20000, 01s left) 278.43 MB/s
+Progress: |██--------|  18.0% Read (Sector 0x5C00 of 0x20000, 01s left) 272.46 MB/s
+Progress: |██--------|  18.2% Read (Sector 0x5D00 of 0x20000, 01s left) 259.16 MB/s
+Progress: |██--------|  18.4% Read (Sector 0x5E00 of 0x20000, 01s left) 261.33 MB/s
+Progress: |██--------|  18.6% Read (Sector 0x5F00 of 0x20000, 01s left) 275.05 MB/s
+Progress: |██--------|  18.8% Read (Sector 0x6000 of 0x20000, 01s left) 277.60 MB/s
+Progress: |██--------|  18.9% Read (Sector 0x6100 of 0x20000, 01s left) 282.79 MB/s
+Progress: |██--------|  19.1% Read (Sector 0x6200 of 0x20000, 01s left) 276.54 MB/s
+Progress: |██--------|  19.3% Read (Sector 0x6300 of 0x20000, 01s left) 280.35 MB/s
+Progress: |██--------|  19.5% Read (Sector 0x6400 of 0x20000, 01s left) 277.47 MB/s
+Progress: |██--------|  19.7% Read (Sector 0x6500 of 0x20000, 01s left) 277.73 MB/s
+Progress: |██--------|  19.9% Read (Sector 0x6600 of 0x20000, 01s left) 275.13 MB/s
+Progress: |██--------|  20.1% Read (Sector 0x6700 of 0x20000, 01s left) 275.98 MB/s
+Progress: |██--------|  20.3% Read (Sector 0x6800 of 0x20000, 01s left) 278.32 MB/s
+Progress: |██--------|  20.5% Read (Sector 0x6900 of 0x20000, 01s left) 280.65 MB/s
+Progress: |██--------|  20.7% Read (Sector 0x6A00 of 0x20000, 01s left) 281.59 MB/s
+Progress: |██--------|  20.9% Read (Sector 0x6B00 of 0x20000, 01s left) 278.95 MB/s
+Progress: |██--------|  21.1% Read (Sector 0x6C00 of 0x20000, 01s left) 281.08 MB/s
+Progress: |██--------|  21.3% Read (Sector 0x6D00 of 0x20000, 01s left) 277.51 MB/s
+Progress: |██--------|  21.5% Read (Sector 0x6E00 of 0x20000, 01s left) 257.07 MB/s
+Progress: |██--------|  21.7% Read (Sector 0x6F00 of 0x20000, 01s left) 233.50 MB/s
+Progress: |██--------|  21.9% Read (Sector 0x7000 of 0x20000, 01s left) 276.87 MB/s
+Progress: |██--------|  22.1% Read (Sector 0x7100 of 0x20000, 01s left) 280.52 MB/s
+Progress: |██--------|  22.3% Read (Sector 0x7200 of 0x20000, 01s left) 274.19 MB/s
+Progress: |██--------|  22.5% Read (Sector 0x7300 of 0x20000, 01s left) 275.74 MB/s
+Progress: |██--------|  22.7% Read (Sector 0x7400 of 0x20000, 01s left) 275.96 MB/s
+Progress: |██--------|  22.9% Read (Sector 0x7500 of 0x20000, 01s left) 275.90 MB/s
+Progress: |██--------|  23.0% Read (Sector 0x7600 of 0x20000, 01s left) 274.32 MB/s
+Progress: |██--------|  23.2% Read (Sector 0x7700 of 0x20000, 01s left) 271.35 MB/s
+Progress: |██--------|  23.4% Read (Sector 0x7800 of 0x20000, 01s left) 258.19 MB/s
+Progress: |██--------|  23.6% Read (Sector 0x7900 of 0x20000, 01s left) 263.54 MB/s
+Progress: |██--------|  23.8% Read (Sector 0x7A00 of 0x20000, 01s left) 265.23 MB/s
+Progress: |██--------|  24.0% Read (Sector 0x7B00 of 0x20000, 01s left) 261.82 MB/s
+Progress: |██--------|  24.2% Read (Sector 0x7C00 of 0x20000, 01s left) 273.05 MB/s
+Progress: |██--------|  24.4% Read (Sector 0x7D00 of 0x20000, 01s left) 265.68 MB/s
+Progress: |██--------|  24.6% Read (Sector 0x7E00 of 0x20000, 01s left) 267.49 MB/s
+Progress: |██--------|  24.8% Read (Sector 0x7F00 of 0x20000, 01s left) 270.60 MB/s
+Progress: |██--------|  25.0% Read (Sector 0x8000 of 0x20000, 01s left) 278.69 MB/s
+Progress: |███-------|  25.2% Read (Sector 0x8100 of 0x20000, 01s left) 292.06 MB/s
+Progress: |███-------|  25.4% Read (Sector 0x8200 of 0x20000, 01s left) 290.59 MB/s
+Progress: |███-------|  25.6% Read (Sector 0x8300 of 0x20000, 01s left) 282.90 MB/s
+Progress: |███-------|  25.8% Read (Sector 0x8400 of 0x20000, 01s left) 273.98 MB/s
+Progress: |███-------|  26.0% Read (Sector 0x8500 of 0x20000, 01s left) 260.37 MB/s
+Progress: |███-------|  26.2% Read (Sector 0x8600 of 0x20000, 01s left) 271.72 MB/s
+Progress: |███-------|  26.4% Read (Sector 0x8700 of 0x20000, 01s left) 288.05 MB/s
+Progress: |███-------|  26.6% Read (Sector 0x8800 of 0x20000, 01s left) 287.97 MB/s
+Progress: |███-------|  26.8% Read (Sector 0x8900 of 0x20000, 01s left) 288.70 MB/s
+Progress: |███-------|  27.0% Read (Sector 0x8A00 of 0x20000, 01s left) 293.84 MB/s
+Progress: |███-------|  27.1% Read (Sector 0x8B00 of 0x20000, 01s left) 280.93 MB/s
+Progress: |███-------|  27.3% Read (Sector 0x8C00 of 0x20000, 01s left) 271.51 MB/s
+Progress: |███-------|  27.5% Read (Sector 0x8D00 of 0x20000, 01s left) 279.10 MB/s
+Progress: |███-------|  27.7% Read (Sector 0x8E00 of 0x20000, 01s left) 274.93 MB/s
+Progress: |███-------|  27.9% Read (Sector 0x8F00 of 0x20000, 01s left) 265.90 MB/s
+Progress: |███-------|  28.1% Read (Sector 0x9000 of 0x20000, 01s left) 268.88 MB/s
+Progress: |███-------|  28.3% Read (Sector 0x9100 of 0x20000, 01s left) 271.63 MB/s
+Progress: |███-------|  28.5% Read (Sector 0x9200 of 0x20000, 01s left) 278.90 MB/s
+Progress: |███-------|  28.7% Read (Sector 0x9300 of 0x20000, 01s left) 280.24 MB/s
+Progress: |███-------|  28.9% Read (Sector 0x9400 of 0x20000, 01s left) 276.09 MB/s
+Progress: |███-------|  29.1% Read (Sector 0x9500 of 0x20000, 01s left) 279.62 MB/s
+Progress: |███-------|  29.3% Read (Sector 0x9600 of 0x20000, 01s left) 283.00 MB/s
+Progress: |███-------|  29.5% Read (Sector 0x9700 of 0x20000, 01s left) 280.05 MB/s
+Progress: |███-------|  29.7% Read (Sector 0x9800 of 0x20000, 01s left) 281.06 MB/s
+Progress: |███-------|  29.9% Read (Sector 0x9900 of 0x20000, 01s left) 278.80 MB/s
+Progress: |███-------|  30.1% Read (Sector 0x9A00 of 0x20000, 01s left) 277.93 MB/s
+Progress: |███-------|  30.3% Read (Sector 0x9B00 of 0x20000, 01s left) 289.38 MB/s
+Progress: |███-------|  30.5% Read (Sector 0x9C00 of 0x20000, 01s left) 282.33 MB/s
+Progress: |███-------|  30.7% Read (Sector 0x9D00 of 0x20000, 01s left) 287.08 MB/s
+Progress: |███-------|  30.9% Read (Sector 0x9E00 of 0x20000, 01s left) 291.68 MB/s
+Progress: |███-------|  31.1% Read (Sector 0x9F00 of 0x20000, 01s left) 282.77 MB/s
+Progress: |███-------|  31.2% Read (Sector 0xA000 of 0x20000, 01s left) 279.77 MB/s
+Progress: |███-------|  31.4% Read (Sector 0xA100 of 0x20000, 01s left) 279.06 MB/s
+Progress: |███-------|  31.6% Read (Sector 0xA200 of 0x20000, 01s left) 285.87 MB/s
+Progress: |███-------|  31.8% Read (Sector 0xA300 of 0x20000, 01s left) 291.80 MB/s
+Progress: |███-------|  32.0% Read (Sector 0xA400 of 0x20000, 01s left) 286.75 MB/s
+Progress: |███-------|  32.2% Read (Sector 0xA500 of 0x20000, 01s left) 281.97 MB/s
+Progress: |███-------|  32.4% Read (Sector 0xA600 of 0x20000, 01s left) 281.36 MB/s
+Progress: |███-------|  32.6% Read (Sector 0xA700 of 0x20000, 01s left) 272.64 MB/s
+Progress: |███-------|  32.8% Read (Sector 0xA800 of 0x20000, 01s left) 268.99 MB/s
+Progress: |███-------|  33.0% Read (Sector 0xA900 of 0x20000, 01s left) 275.76 MB/s
+Progress: |███-------|  33.2% Read (Sector 0xAA00 of 0x20000, 01s left) 274.68 MB/s
+Progress: |███-------|  33.4% Read (Sector 0xAB00 of 0x20000, 01s left) 272.71 MB/s
+Progress: |███-------|  33.6% Read (Sector 0xAC00 of 0x20000, 01s left) 265.51 MB/s
+Progress: |███-------|  33.8% Read (Sector 0xAD00 of 0x20000, 01s left) 270.25 MB/s
+Progress: |███-------|  34.0% Read (Sector 0xAE00 of 0x20000, 01s left) 271.09 MB/s
+Progress: |███-------|  34.2% Read (Sector 0xAF00 of 0x20000, 01s left) 271.37 MB/s
+Progress: |███-------|  34.4% Read (Sector 0xB000 of 0x20000, 01s left) 274.60 MB/s
+Progress: |███-------|  34.6% Read (Sector 0xB100 of 0x20000, 01s left) 277.68 MB/s
+Progress: |███-------|  34.8% Read (Sector 0xB200 of 0x20000, 01s left) 271.78 MB/s
+Progress: |████------|  35.0% Read (Sector 0xB300 of 0x20000, 01s left) 267.36 MB/s
+Progress: |████------|  35.2% Read (Sector 0xB400 of 0x20000, 01s left) 273.80 MB/s
+Progress: |████------|  35.4% Read (Sector 0xB500 of 0x20000, 01s left) 271.88 MB/s
+Progress: |████------|  35.5% Read (Sector 0xB600 of 0x20000, 01s left) 263.36 MB/s
+Progress: |████------|  35.7% Read (Sector 0xB700 of 0x20000, 01s left) 276.18 MB/s
+Progress: |████------|  35.9% Read (Sector 0xB800 of 0x20000, 01s left) 279.23 MB/s
+Progress: |████------|  36.1% Read (Sector 0xB900 of 0x20000, 01s left) 256.94 MB/s
+Progress: |████------|  36.3% Read (Sector 0xBA00 of 0x20000, 01s left) 258.25 MB/s
+Progress: |████------|  36.5% Read (Sector 0xBB00 of 0x20000, 01s left) 270.76 MB/s
+Progress: |████------|  36.7% Read (Sector 0xBC00 of 0x20000, 01s left) 273.26 MB/s
+Progress: |████------|  36.9% Read (Sector 0xBD00 of 0x20000, 01s left) 275.23 MB/s
+Progress: |████------|  37.1% Read (Sector 0xBE00 of 0x20000, 01s left) 276.72 MB/s
+Progress: |████------|  37.3% Read (Sector 0xBF00 of 0x20000, 01s left) 282.33 MB/s
+Progress: |████------|  37.5% Read (Sector 0xC000 of 0x20000, 01s left) 280.27 MB/s
+Progress: |████------|  37.7% Read (Sector 0xC100 of 0x20000, 01s left) 272.61 MB/s
+Progress: |████------|  37.9% Read (Sector 0xC200 of 0x20000, 01s left) 272.50 MB/s
+Progress: |████------|  38.1% Read (Sector 0xC300 of 0x20000, 01s left) 281.18 MB/s
+Progress: |████------|  38.3% Read (Sector 0xC400 of 0x20000, 01s left) 278.03 MB/s
+Progress: |████------|  38.5% Read (Sector 0xC500 of 0x20000, 01s left) 279.90 MB/s
+Progress: |████------|  38.7% Read (Sector 0xC600 of 0x20000, 01s left) 277.68 MB/s
+Progress: |████------|  38.9% Read (Sector 0xC700 of 0x20000, 01s left) 268.90 MB/s
+Progress: |████------|  39.1% Read (Sector 0xC800 of 0x20000, 01s left) 267.05 MB/s
+Progress: |████------|  39.3% Read (Sector 0xC900 of 0x20000, 01s left) 264.32 MB/s
+Progress: |████------|  39.5% Read (Sector 0xCA00 of 0x20000, 01s left) 271.85 MB/s
+Progress: |████------|  39.6% Read (Sector 0xCB00 of 0x20000, 01s left) 269.52 MB/s
+Progress: |████------|  39.8% Read (Sector 0xCC00 of 0x20000, 01s left) 267.02 MB/s
+Progress: |████------|  40.0% Read (Sector 0xCD00 of 0x20000, 01s left) 266.93 MB/s
+Progress: |████------|  40.2% Read (Sector 0xCE00 of 0x20000, 01s left) 270.06 MB/s
+Progress: |████------|  40.4% Read (Sector 0xCF00 of 0x20000, 01s left) 269.78 MB/s
+Progress: |████------|  40.6% Read (Sector 0xD000 of 0x20000, 01s left) 271.07 MB/s
+Progress: |████------|  40.8% Read (Sector 0xD100 of 0x20000, 01s left) 273.89 MB/s
+Progress: |████------|  41.0% Read (Sector 0xD200 of 0x20000, 01s left) 270.76 MB/s
+Progress: |████------|  41.2% Read (Sector 0xD300 of 0x20000, 01s left) 271.11 MB/s
+Progress: |████------|  41.4% Read (Sector 0xD400 of 0x20000, 01s left) 270.43 MB/s
+Progress: |████------|  41.6% Read (Sector 0xD500 of 0x20000, 01s left) 273.85 MB/s
+Progress: |████------|  41.8% Read (Sector 0xD600 of 0x20000, 01s left) 270.76 MB/s
+Progress: |████------|  42.0% Read (Sector 0xD700 of 0x20000, 01s left) 268.97 MB/s
+Progress: |████------|  42.2% Read (Sector 0xD800 of 0x20000, 01s left) 270.95 MB/s
+Progress: |████------|  42.4% Read (Sector 0xD900 of 0x20000, 01s left) 274.64 MB/s
+Progress: |████------|  42.6% Read (Sector 0xDA00 of 0x20000, 01s left) 270.51 MB/s
+Progress: |████------|  42.8% Read (Sector 0xDB00 of 0x20000, 01s left) 269.76 MB/s
+Progress: |████------|  43.0% Read (Sector 0xDC00 of 0x20000, 01s left) 273.14 MB/s
+Progress: |████------|  43.2% Read (Sector 0xDD00 of 0x20000, 01s left) 277.33 MB/s
+Progress: |████------|  43.4% Read (Sector 0xDE00 of 0x20000, 01s left) 277.51 MB/s
+Progress: |████------|  43.6% Read (Sector 0xDF00 of 0x20000, 01s left) 270.51 MB/s
+Progress: |████------|  43.8% Read (Sector 0xE000 of 0x20000, 01s left) 274.44 MB/s
+Progress: |████------|  43.9% Read (Sector 0xE100 of 0x20000, 01s left) 272.94 MB/s
+Progress: |████------|  44.1% Read (Sector 0xE200 of 0x20000, 01s left) 272.53 MB/s
+Progress: |████------|  44.3% Read (Sector 0xE300 of 0x20000, 01s left) 272.89 MB/s
+Progress: |████------|  44.5% Read (Sector 0xE400 of 0x20000, 01s left) 275.36 MB/s
+Progress: |████------|  44.7% Read (Sector 0xE500 of 0x20000, 01s left) 273.35 MB/s
+Progress: |████------|  44.9% Read (Sector 0xE600 of 0x20000, 01s left) 273.03 MB/s
+Progress: |█████-----|  45.1% Read (Sector 0xE700 of 0x20000, 01s left) 274.30 MB/s
+Progress: |█████-----|  45.3% Read (Sector 0xE800 of 0x20000, 01s left) 272.80 MB/s
+Progress: |█████-----|  45.5% Read (Sector 0xE900 of 0x20000, 01s left) 271.32 MB/s
+Progress: |█████-----|  45.7% Read (Sector 0xEA00 of 0x20000, 01s left) 275.58 MB/s
+Progress: |█████-----|  45.9% Read (Sector 0xEB00 of 0x20000, 01s left) 277.49 MB/s
+Progress: |█████-----|  46.1% Read (Sector 0xEC00 of 0x20000, 01s left) 289.86 MB/s
+Progress: |█████-----|  46.3% Read (Sector 0xED00 of 0x20000, 01s left) 280.31 MB/s
+Progress: |█████-----|  46.5% Read (Sector 0xEE00 of 0x20000, ) 279.66 MB/s   
+Progress: |█████-----|  46.7% Read (Sector 0xEF00 of 0x20000, ) 284.19 MB/s   
+Progress: |█████-----|  46.9% Read (Sector 0xF000 of 0x20000, ) 293.76 MB/s   
+Progress: |█████-----|  47.1% Read (Sector 0xF100 of 0x20000, ) 285.23 MB/s   
+Progress: |█████-----|  47.3% Read (Sector 0xF200 of 0x20000, ) 270.91 MB/s   
+Progress: |█████-----|  47.5% Read (Sector 0xF300 of 0x20000, ) 274.03 MB/s   
+Progress: |█████-----|  47.7% Read (Sector 0xF400 of 0x20000, ) 281.12 MB/s   
+Progress: |█████-----|  47.9% Read (Sector 0xF500 of 0x20000, ) 274.60 MB/s   
+Progress: |█████-----|  48.0% Read (Sector 0xF600 of 0x20000, ) 282.01 MB/s   
+Progress: |█████-----|  48.2% Read (Sector 0xF700 of 0x20000, ) 282.67 MB/s   
+Progress: |█████-----|  48.4% Read (Sector 0xF800 of 0x20000, ) 279.30 MB/s   
+Progress: |█████-----|  48.6% Read (Sector 0xF900 of 0x20000, ) 277.95 MB/s   
+Progress: |█████-----|  48.8% Read (Sector 0xFA00 of 0x20000, ) 277.14 MB/s   
+Progress: |█████-----|  49.0% Read (Sector 0xFB00 of 0x20000, ) 270.90 MB/s   
+Progress: |█████-----|  49.2% Read (Sector 0xFC00 of 0x20000, ) 272.38 MB/s   
+Progress: |█████-----|  49.4% Read (Sector 0xFD00 of 0x20000, ) 280.39 MB/s   
+Progress: |█████-----|  49.6% Read (Sector 0xFE00 of 0x20000, ) 287.60 MB/s   
+Progress: |█████-----|  49.8% Read (Sector 0xFF00 of 0x20000, ) 274.84 MB/s   
+Progress: |█████-----|  50.0% Read (Sector 0x10000 of 0x20000, ) 265.16 MB/s  
+Progress: |█████-----|  50.2% Read (Sector 0x10100 of 0x20000, ) 273.44 MB/s  
+Progress: |█████-----|  50.4% Read (Sector 0x10200 of 0x20000, ) 274.12 MB/s  
+Progress: |█████-----|  50.6% Read (Sector 0x10300 of 0x20000, ) 274.73 MB/s  
+Progress: |█████-----|  50.8% Read (Sector 0x10400 of 0x20000, ) 275.54 MB/s  
+Progress: |█████-----|  51.0% Read (Sector 0x10500 of 0x20000, ) 274.42 MB/s  
+Progress: |█████-----|  51.2% Read (Sector 0x10600 of 0x20000, ) 274.91 MB/s  
+Progress: |█████-----|  51.4% Read (Sector 0x10700 of 0x20000, ) 282.54 MB/s  
+Progress: |█████-----|  51.6% Read (Sector 0x10800 of 0x20000, ) 289.60 MB/s  
+Progress: |█████-----|  51.8% Read (Sector 0x10900 of 0x20000, ) 290.71 MB/s  
+Progress: |█████-----|  52.0% Read (Sector 0x10A00 of 0x20000, ) 289.00 MB/s  
+Progress: |█████-----|  52.1% Read (Sector 0x10B00 of 0x20000, ) 284.55 MB/s  
+Progress: |█████-----|  52.3% Read (Sector 0x10C00 of 0x20000, ) 292.18 MB/s  
+Progress: |█████-----|  52.5% Read (Sector 0x10D00 of 0x20000, ) 295.62 MB/s  
+Progress: |█████-----|  52.7% Read (Sector 0x10E00 of 0x20000, ) 296.42 MB/s  
+Progress: |█████-----|  52.9% Read (Sector 0x10F00 of 0x20000, ) 294.15 MB/s  
+Progress: |█████-----|  53.1% Read (Sector 0x11000 of 0x20000, ) 294.25 MB/s  
+Progress: |█████-----|  53.3% Read (Sector 0x11100 of 0x20000, ) 297.74 MB/s  
+Progress: |█████-----|  53.5% Read (Sector 0x11200 of 0x20000, ) 294.54 MB/s  
+Progress: |█████-----|  53.7% Read (Sector 0x11300 of 0x20000, ) 268.90 MB/s  
+Progress: |█████-----|  53.9% Read (Sector 0x11400 of 0x20000, ) 266.07 MB/s  
+Progress: |█████-----|  54.1% Read (Sector 0x11500 of 0x20000, ) 276.05 MB/s  
+Progress: |█████-----|  54.3% Read (Sector 0x11600 of 0x20000, ) 269.23 MB/s  
+Progress: |█████-----|  54.5% Read (Sector 0x11700 of 0x20000, ) 275.22 MB/s  
+Progress: |█████-----|  54.7% Read (Sector 0x11800 of 0x20000, ) 281.53 MB/s  
+Progress: |█████-----|  54.9% Read (Sector 0x11900 of 0x20000, ) 272.80 MB/s  
+Progress: |██████----|  55.1% Read (Sector 0x11A00 of 0x20000, ) 258.13 MB/s  
+Progress: |██████----|  55.3% Read (Sector 0x11B00 of 0x20000, ) 273.39 MB/s  
+Progress: |██████----|  55.5% Read (Sector 0x11C00 of 0x20000, ) 278.17 MB/s  
+Progress: |██████----|  55.7% Read (Sector 0x11D00 of 0x20000, ) 267.22 MB/s  
+Progress: |██████----|  55.9% Read (Sector 0x11E00 of 0x20000, ) 272.75 MB/s  
+Progress: |██████----|  56.1% Read (Sector 0x11F00 of 0x20000, ) 277.99 MB/s  
+Progress: |██████----|  56.2% Read (Sector 0x12000 of 0x20000, ) 271.05 MB/s  
+Progress: |██████----|  56.4% Read (Sector 0x12100 of 0x20000, ) 260.77 MB/s  
+Progress: |██████----|  56.6% Read (Sector 0x12200 of 0x20000, ) 265.40 MB/s  
+Progress: |██████----|  56.8% Read (Sector 0x12300 of 0x20000, ) 276.78 MB/s  
+Progress: |██████----|  57.0% Read (Sector 0x12400 of 0x20000, ) 274.46 MB/s  
+Progress: |██████----|  57.2% Read (Sector 0x12500 of 0x20000, ) 265.88 MB/s  
+Progress: |██████----|  57.4% Read (Sector 0x12600 of 0x20000, ) 277.46 MB/s  
+Progress: |██████----|  57.6% Read (Sector 0x12700 of 0x20000, ) 278.95 MB/s  
+Progress: |██████----|  57.8% Read (Sector 0x12800 of 0x20000, ) 270.06 MB/s  
+Progress: |██████----|  58.0% Read (Sector 0x12900 of 0x20000, ) 281.61 MB/s  
+Progress: |██████----|  58.2% Read (Sector 0x12A00 of 0x20000, ) 277.62 MB/s  
+Progress: |██████----|  58.4% Read (Sector 0x12B00 of 0x20000, ) 266.10 MB/s  
+Progress: |██████----|  58.6% Read (Sector 0x12C00 of 0x20000, ) 263.96 MB/s  
+Progress: |██████----|  58.8% Read (Sector 0x12D00 of 0x20000, ) 265.70 MB/s  
+Progress: |██████----|  59.0% Read (Sector 0x12E00 of 0x20000, ) 270.41 MB/s  
+Progress: |██████----|  59.2% Read (Sector 0x12F00 of 0x20000, ) 280.91 MB/s  
+Progress: |██████----|  59.4% Read (Sector 0x13000 of 0x20000, ) 281.57 MB/s  
+Progress: |██████----|  59.6% Read (Sector 0x13100 of 0x20000, ) 276.14 MB/s  
+Progress: |██████----|  59.8% Read (Sector 0x13200 of 0x20000, ) 272.00 MB/s  
+Progress: |██████----|  60.0% Read (Sector 0x13300 of 0x20000, ) 272.61 MB/s  
+Progress: |██████----|  60.2% Read (Sector 0x13400 of 0x20000, ) 276.27 MB/s  
+Progress: |██████----|  60.4% Read (Sector 0x13500 of 0x20000, ) 278.93 MB/s  
+Progress: |██████----|  60.5% Read (Sector 0x13600 of 0x20000, ) 278.45 MB/s  
+Progress: |██████----|  60.7% Read (Sector 0x13700 of 0x20000, ) 276.63 MB/s  
+Progress: |██████----|  60.9% Read (Sector 0x13800 of 0x20000, ) 274.86 MB/s  
+Progress: |██████----|  61.1% Read (Sector 0x13900 of 0x20000, ) 276.98 MB/s  
+Progress: |██████----|  61.3% Read (Sector 0x13A00 of 0x20000, ) 274.66 MB/s  
+Progress: |██████----|  61.5% Read (Sector 0x13B00 of 0x20000, ) 271.34 MB/s  
+Progress: |██████----|  61.7% Read (Sector 0x13C00 of 0x20000, ) 275.33 MB/s  
+Progress: |██████----|  61.9% Read (Sector 0x13D00 of 0x20000, ) 272.85 MB/s  
+Progress: |██████----|  62.1% Read (Sector 0x13E00 of 0x20000, ) 274.39 MB/s  
+Progress: |██████----|  62.3% Read (Sector 0x13F00 of 0x20000, ) 273.46 MB/s  
+Progress: |██████----|  62.5% Read (Sector 0x14000 of 0x20000, ) 274.68 MB/s  
+Progress: |██████----|  62.7% Read (Sector 0x14100 of 0x20000, ) 270.76 MB/s  
+Progress: |██████----|  62.9% Read (Sector 0x14200 of 0x20000, ) 271.88 MB/s  
+Progress: |██████----|  63.1% Read (Sector 0x14300 of 0x20000, ) 277.24 MB/s  
+Progress: |██████----|  63.3% Read (Sector 0x14400 of 0x20000, ) 274.75 MB/s  
+Progress: |██████----|  63.5% Read (Sector 0x14500 of 0x20000, ) 270.81 MB/s  
+Progress: |██████----|  63.7% Read (Sector 0x14600 of 0x20000, ) 270.79 MB/s  
+Progress: |██████----|  63.9% Read (Sector 0x14700 of 0x20000, ) 268.20 MB/s  
+Progress: |██████----|  64.1% Read (Sector 0x14800 of 0x20000, ) 269.97 MB/s  
+Progress: |██████----|  64.3% Read (Sector 0x14900 of 0x20000, ) 271.95 MB/s  
+Progress: |██████----|  64.5% Read (Sector 0x14A00 of 0x20000, ) 275.38 MB/s  
+Progress: |██████----|  64.6% Read (Sector 0x14B00 of 0x20000, ) 273.80 MB/s  
+Progress: |██████----|  64.8% Read (Sector 0x14C00 of 0x20000, ) 271.97 MB/s  
+Progress: |██████----|  65.0% Read (Sector 0x14D00 of 0x20000, ) 267.48 MB/s  
+Progress: |███████---|  65.2% Read (Sector 0x14E00 of 0x20000, ) 266.15 MB/s  
+Progress: |███████---|  65.4% Read (Sector 0x14F00 of 0x20000, ) 270.67 MB/s  
+Progress: |███████---|  65.6% Read (Sector 0x15000 of 0x20000, ) 273.60 MB/s  
+Progress: |███████---|  65.8% Read (Sector 0x15100 of 0x20000, ) 273.89 MB/s  
+Progress: |███████---|  66.0% Read (Sector 0x15200 of 0x20000, ) 274.14 MB/s  
+Progress: |███████---|  66.2% Read (Sector 0x15300 of 0x20000, ) 269.40 MB/s  
+Progress: |███████---|  66.4% Read (Sector 0x15400 of 0x20000, ) 269.83 MB/s  
+Progress: |███████---|  66.6% Read (Sector 0x15500 of 0x20000, ) 274.95 MB/s  
+Progress: |███████---|  66.8% Read (Sector 0x15600 of 0x20000, ) 275.40 MB/s  
+Progress: |███████---|  67.0% Read (Sector 0x15700 of 0x20000, ) 271.92 MB/s  
+Progress: |███████---|  67.2% Read (Sector 0x15800 of 0x20000, ) 272.80 MB/s  
+Progress: |███████---|  67.4% Read (Sector 0x15900 of 0x20000, ) 273.49 MB/s  
+Progress: |███████---|  67.6% Read (Sector 0x15A00 of 0x20000, ) 270.88 MB/s  
+Progress: |███████---|  67.8% Read (Sector 0x15B00 of 0x20000, ) 271.32 MB/s  
+Progress: |███████---|  68.0% Read (Sector 0x15C00 of 0x20000, ) 279.86 MB/s  
+Progress: |███████---|  68.2% Read (Sector 0x15D00 of 0x20000, ) 285.62 MB/s  
+Progress: |███████---|  68.4% Read (Sector 0x15E00 of 0x20000, ) 279.66 MB/s  
+Progress: |███████---|  68.6% Read (Sector 0x15F00 of 0x20000, ) 277.11 MB/s  
+Progress: |███████---|  68.8% Read (Sector 0x16000 of 0x20000, ) 280.99 MB/s  
+Progress: |███████---|  68.9% Read (Sector 0x16100 of 0x20000, ) 269.80 MB/s  
+Progress: |███████---|  69.1% Read (Sector 0x16200 of 0x20000, ) 283.17 MB/s  
+Progress: |███████---|  69.3% Read (Sector 0x16300 of 0x20000, ) 285.35 MB/s  
+Progress: |███████---|  69.5% Read (Sector 0x16400 of 0x20000, ) 283.69 MB/s  
+Progress: |███████---|  69.7% Read (Sector 0x16500 of 0x20000, ) 279.16 MB/s  
+Progress: |███████---|  69.9% Read (Sector 0x16600 of 0x20000, ) 272.96 MB/s  
+Progress: |███████---|  70.1% Read (Sector 0x16700 of 0x20000, ) 275.98 MB/s  
+Progress: |███████---|  70.3% Read (Sector 0x16800 of 0x20000, ) 275.56 MB/s  
+Progress: |███████---|  70.5% Read (Sector 0x16900 of 0x20000, ) 270.29 MB/s  
+Progress: |███████---|  70.7% Read (Sector 0x16A00 of 0x20000, ) 267.77 MB/s  
+Progress: |███████---|  70.9% Read (Sector 0x16B00 of 0x20000, ) 274.08 MB/s  
+Progress: |███████---|  71.1% Read (Sector 0x16C00 of 0x20000, ) 276.07 MB/s  
+Progress: |███████---|  71.3% Read (Sector 0x16D00 of 0x20000, ) 270.55 MB/s  
+Progress: |███████---|  71.5% Read (Sector 0x16E00 of 0x20000, ) 272.45 MB/s  
+Progress: |███████---|  71.7% Read (Sector 0x16F00 of 0x20000, ) 276.50 MB/s  
+Progress: |███████---|  71.9% Read (Sector 0x17000 of 0x20000, ) 276.12 MB/s  
+Progress: |███████---|  72.1% Read (Sector 0x17100 of 0x20000, ) 270.57 MB/s  
+Progress: |███████---|  72.3% Read (Sector 0x17200 of 0x20000, ) 272.32 MB/s  
+Progress: |███████---|  72.5% Read (Sector 0x17300 of 0x20000, ) 273.92 MB/s  
+Progress: |███████---|  72.7% Read (Sector 0x17400 of 0x20000, ) 273.17 MB/s  
+Progress: |███████---|  72.9% Read (Sector 0x17500 of 0x20000, ) 271.88 MB/s  
+Progress: |███████---|  73.0% Read (Sector 0x17600 of 0x20000, ) 274.66 MB/s  
+Progress: |███████---|  73.2% Read (Sector 0x17700 of 0x20000, ) 275.45 MB/s  
+Progress: |███████---|  73.4% Read (Sector 0x17800 of 0x20000, ) 272.41 MB/s  
+Progress: |███████---|  73.6% Read (Sector 0x17900 of 0x20000, ) 269.26 MB/s  
+Progress: |███████---|  73.8% Read (Sector 0x17A00 of 0x20000, ) 270.32 MB/s  
+Progress: |███████---|  74.0% Read (Sector 0x17B00 of 0x20000, ) 273.57 MB/s  
+Progress: |███████---|  74.2% Read (Sector 0x17C00 of 0x20000, ) 269.21 MB/s  
+Progress: |███████---|  74.4% Read (Sector 0x17D00 of 0x20000, ) 274.28 MB/s  
+Progress: |███████---|  74.6% Read (Sector 0x17E00 of 0x20000, ) 272.98 MB/s  
+Progress: |███████---|  74.8% Read (Sector 0x17F00 of 0x20000, ) 271.79 MB/s  
+Progress: |████████--|  75.0% Read (Sector 0x18000 of 0x20000, ) 272.41 MB/s  
+Progress: |████████--|  75.2% Read (Sector 0x18100 of 0x20000, ) 275.07 MB/s  
+Progress: |████████--|  75.4% Read (Sector 0x18200 of 0x20000, ) 263.68 MB/s  
+Progress: |████████--|  75.6% Read (Sector 0x18300 of 0x20000, ) 269.73 MB/s  
+Progress: |████████--|  75.8% Read (Sector 0x18400 of 0x20000, ) 272.98 MB/s  
+Progress: |████████--|  76.0% Read (Sector 0x18500 of 0x20000, ) 274.32 MB/s  
+Progress: |████████--|  76.2% Read (Sector 0x18600 of 0x20000, ) 265.83 MB/s  
+Progress: |████████--|  76.4% Read (Sector 0x18700 of 0x20000, ) 270.69 MB/s  
+Progress: |████████--|  76.6% Read (Sector 0x18800 of 0x20000, ) 280.71 MB/s  
+Progress: |████████--|  76.8% Read (Sector 0x18900 of 0x20000, ) 287.22 MB/s  
+Progress: |████████--|  77.0% Read (Sector 0x18A00 of 0x20000, ) 285.58 MB/s  
+Progress: |████████--|  77.1% Read (Sector 0x18B00 of 0x20000, ) 284.36 MB/s  
+Progress: |████████--|  77.3% Read (Sector 0x18C00 of 0x20000, ) 282.83 MB/s  
+Progress: |████████--|  77.5% Read (Sector 0x18D00 of 0x20000, ) 279.68 MB/s  
+Progress: |████████--|  77.7% Read (Sector 0x18E00 of 0x20000, ) 276.65 MB/s  
+Progress: |████████--|  77.9% Read (Sector 0x18F00 of 0x20000, ) 278.65 MB/s  
+Progress: |████████--|  78.1% Read (Sector 0x19000 of 0x20000, ) 285.89 MB/s  
+Progress: |████████--|  78.3% Read (Sector 0x19100 of 0x20000, ) 287.48 MB/s  
+Progress: |████████--|  78.5% Read (Sector 0x19200 of 0x20000, ) 281.23 MB/s  
+Progress: |████████--|  78.7% Read (Sector 0x19300 of 0x20000, ) 284.92 MB/s  
+Progress: |████████--|  78.9% Read (Sector 0x19400 of 0x20000, ) 278.23 MB/s  
+Progress: |████████--|  79.1% Read (Sector 0x19500 of 0x20000, ) 259.79 MB/s  
+Progress: |████████--|  79.3% Read (Sector 0x19600 of 0x20000, ) 277.18 MB/s  
+Progress: |████████--|  79.5% Read (Sector 0x19700 of 0x20000, ) 275.16 MB/s  
+Progress: |████████--|  79.7% Read (Sector 0x19800 of 0x20000, ) 270.01 MB/s  
+Progress: |████████--|  79.9% Read (Sector 0x19900 of 0x20000, ) 275.92 MB/s  
+Progress: |████████--|  80.1% Read (Sector 0x19A00 of 0x20000, ) 276.56 MB/s  
+Progress: |████████--|  80.3% Read (Sector 0x19B00 of 0x20000, ) 282.94 MB/s  
+Progress: |████████--|  80.5% Read (Sector 0x19C00 of 0x20000, ) 282.18 MB/s  
+Progress: |████████--|  80.7% Read (Sector 0x19D00 of 0x20000, ) 280.87 MB/s  
+Progress: |████████--|  80.9% Read (Sector 0x19E00 of 0x20000, ) 285.15 MB/s  
+Progress: |████████--|  81.1% Read (Sector 0x19F00 of 0x20000, ) 278.56 MB/s  
+Progress: |████████--|  81.2% Read (Sector 0x1A000 of 0x20000, ) 270.13 MB/s  
+Progress: |████████--|  81.4% Read (Sector 0x1A100 of 0x20000, ) 268.85 MB/s  
+Progress: |████████--|  81.6% Read (Sector 0x1A200 of 0x20000, ) 270.37 MB/s  
+Progress: |████████--|  81.8% Read (Sector 0x1A300 of 0x20000, ) 272.04 MB/s  
+Progress: |████████--|  82.0% Read (Sector 0x1A400 of 0x20000, ) 269.14 MB/s  
+Progress: |████████--|  82.2% Read (Sector 0x1A500 of 0x20000, ) 267.63 MB/s  
+Progress: |████████--|  82.4% Read (Sector 0x1A600 of 0x20000, ) 268.62 MB/s  
+Progress: |████████--|  82.6% Read (Sector 0x1A700 of 0x20000, ) 270.51 MB/s  
+Progress: |████████--|  82.8% Read (Sector 0x1A800 of 0x20000, ) 268.76 MB/s  
+Progress: |████████--|  83.0% Read (Sector 0x1A900 of 0x20000, ) 270.13 MB/s  
+Progress: |████████--|  83.2% Read (Sector 0x1AA00 of 0x20000, ) 276.54 MB/s  
+Progress: |████████--|  83.4% Read (Sector 0x1AB00 of 0x20000, ) 270.88 MB/s  
+Progress: |████████--|  83.6% Read (Sector 0x1AC00 of 0x20000, ) 273.85 MB/s  
+Progress: |████████--|  83.8% Read (Sector 0x1AD00 of 0x20000, ) 281.23 MB/s  
+Progress: |████████--|  84.0% Read (Sector 0x1AE00 of 0x20000, ) 282.33 MB/s  
+Progress: |████████--|  84.2% Read (Sector 0x1AF00 of 0x20000, ) 277.11 MB/s  
+Progress: |████████--|  84.4% Read (Sector 0x1B000 of 0x20000, ) 275.45 MB/s  
+Progress: |████████--|  84.6% Read (Sector 0x1B100 of 0x20000, ) 272.68 MB/s  
+Progress: |████████--|  84.8% Read (Sector 0x1B200 of 0x20000, ) 270.55 MB/s  
+Progress: |████████--|  85.0% Read (Sector 0x1B300 of 0x20000, ) 268.68 MB/s  
+Progress: |█████████-|  85.2% Read (Sector 0x1B400 of 0x20000, ) 275.05 MB/s  
+Progress: |█████████-|  85.4% Read (Sector 0x1B500 of 0x20000, ) 281.40 MB/s  
+Progress: |█████████-|  85.5% Read (Sector 0x1B600 of 0x20000, ) 283.59 MB/s  
+Progress: |█████████-|  85.7% Read (Sector 0x1B700 of 0x20000, ) 285.56 MB/s  
+Progress: |█████████-|  85.9% Read (Sector 0x1B800 of 0x20000, ) 287.95 MB/s  
+Progress: |█████████-|  86.1% Read (Sector 0x1B900 of 0x20000, ) 286.34 MB/s  
+Progress: |█████████-|  86.3% Read (Sector 0x1BA00 of 0x20000, ) 279.90 MB/s  
+Progress: |█████████-|  86.5% Read (Sector 0x1BB00 of 0x20000, ) 274.75 MB/s  
+Progress: |█████████-|  86.7% Read (Sector 0x1BC00 of 0x20000, ) 279.34 MB/s  
+Progress: |█████████-|  86.9% Read (Sector 0x1BD00 of 0x20000, ) 275.31 MB/s  
+Progress: |█████████-|  87.1% Read (Sector 0x1BE00 of 0x20000, ) 271.78 MB/s  
+Progress: |█████████-|  87.3% Read (Sector 0x1BF00 of 0x20000, ) 269.82 MB/s  
+Progress: |█████████-|  87.5% Read (Sector 0x1C000 of 0x20000, ) 269.80 MB/s  
+Progress: |█████████-|  87.7% Read (Sector 0x1C100 of 0x20000, ) 264.64 MB/s  
+Progress: |█████████-|  87.9% Read (Sector 0x1C200 of 0x20000, ) 267.89 MB/s  
+Progress: |█████████-|  88.1% Read (Sector 0x1C300 of 0x20000, ) 269.54 MB/s  
+Progress: |█████████-|  88.3% Read (Sector 0x1C400 of 0x20000, ) 269.85 MB/s  
+Progress: |█████████-|  88.5% Read (Sector 0x1C500 of 0x20000, ) 266.59 MB/s  
+Progress: |█████████-|  88.7% Read (Sector 0x1C600 of 0x20000, ) 268.47 MB/s  
+Progress: |█████████-|  88.9% Read (Sector 0x1C700 of 0x20000, ) 270.04 MB/s  
+Progress: |█████████-|  89.1% Read (Sector 0x1C800 of 0x20000, ) 270.53 MB/s  
+Progress: |█████████-|  89.3% Read (Sector 0x1C900 of 0x20000, ) 275.40 MB/s  
+Progress: |█████████-|  89.5% Read (Sector 0x1CA00 of 0x20000, ) 283.44 MB/s  
+Progress: |█████████-|  89.6% Read (Sector 0x1CB00 of 0x20000, ) 289.06 MB/s  
+Progress: |█████████-|  89.8% Read (Sector 0x1CC00 of 0x20000, ) 279.86 MB/s  
+Progress: |█████████-|  90.0% Read (Sector 0x1CD00 of 0x20000, ) 272.89 MB/s  
+Progress: |█████████-|  90.2% Read (Sector 0x1CE00 of 0x20000, ) 278.47 MB/s  
+Progress: |█████████-|  90.4% Read (Sector 0x1CF00 of 0x20000, ) 283.53 MB/s  
+Progress: |█████████-|  90.6% Read (Sector 0x1D000 of 0x20000, ) 278.58 MB/s  
+Progress: |█████████-|  90.8% Read (Sector 0x1D100 of 0x20000, ) 275.54 MB/s  
+Progress: |█████████-|  91.0% Read (Sector 0x1D200 of 0x20000, ) 276.63 MB/s  
+Progress: |█████████-|  91.2% Read (Sector 0x1D300 of 0x20000, ) 280.86 MB/s  
+Progress: |█████████-|  91.4% Read (Sector 0x1D400 of 0x20000, ) 284.96 MB/s  
+Progress: |█████████-|  91.6% Read (Sector 0x1D500 of 0x20000, ) 286.01 MB/s  
+Progress: |█████████-|  91.8% Read (Sector 0x1D600 of 0x20000, ) 287.71 MB/s  
+Progress: |█████████-|  92.0% Read (Sector 0x1D700 of 0x20000, ) 279.27 MB/s  
+Progress: |█████████-|  92.2% Read (Sector 0x1D800 of 0x20000, ) 277.86 MB/s  
+Progress: |█████████-|  92.4% Read (Sector 0x1D900 of 0x20000, ) 270.09 MB/s  
+Progress: |█████████-|  92.6% Read (Sector 0x1DA00 of 0x20000, ) 265.45 MB/s  
+Progress: |█████████-|  92.8% Read (Sector 0x1DB00 of 0x20000, ) 264.78 MB/s  
+Progress: |█████████-|  93.0% Read (Sector 0x1DC00 of 0x20000, ) 270.41 MB/s  
+Progress: |█████████-|  93.2% Read (Sector 0x1DD00 of 0x20000, ) 272.39 MB/s  
+Progress: |█████████-|  93.4% Read (Sector 0x1DE00 of 0x20000, ) 248.10 MB/s  
+Progress: |█████████-|  93.6% Read (Sector 0x1DF00 of 0x20000, ) 266.64 MB/s  
+Progress: |█████████-|  93.8% Read (Sector 0x1E000 of 0x20000, ) 273.40 MB/s  
+Progress: |█████████-|  93.9% Read (Sector 0x1E100 of 0x20000, ) 276.27 MB/s  
+Progress: |█████████-|  94.1% Read (Sector 0x1E200 of 0x20000, ) 278.17 MB/s  
+Progress: |█████████-|  94.3% Read (Sector 0x1E300 of 0x20000, ) 277.38 MB/s  
+Progress: |█████████-|  94.5% Read (Sector 0x1E400 of 0x20000, ) 274.46 MB/s  
+Progress: |█████████-|  94.7% Read (Sector 0x1E500 of 0x20000, ) 265.43 MB/s  
+Progress: |█████████-|  94.9% Read (Sector 0x1E600 of 0x20000, ) 268.32 MB/s  
+Progress: |██████████|  95.1% Read (Sector 0x1E700 of 0x20000, ) 280.48 MB/s  
+Progress: |██████████|  95.3% Read (Sector 0x1E800 of 0x20000, ) 274.75 MB/s  
+Progress: |██████████|  95.5% Read (Sector 0x1E900 of 0x20000, ) 284.22 MB/s  
+Progress: |██████████|  95.7% Read (Sector 0x1EA00 of 0x20000, ) 283.38 MB/s  
+Progress: |██████████|  95.9% Read (Sector 0x1EB00 of 0x20000, ) 275.02 MB/s  
+Progress: |██████████|  96.1% Read (Sector 0x1EC00 of 0x20000, ) 248.39 MB/s  
+Progress: |██████████|  96.3% Read (Sector 0x1ED00 of 0x20000, ) 266.46 MB/s  
+Progress: |██████████|  96.5% Read (Sector 0x1EE00 of 0x20000, ) 275.69 MB/s  
+Progress: |██████████|  96.7% Read (Sector 0x1EF00 of 0x20000, ) 281.53 MB/s  
+Progress: |██████████|  96.9% Read (Sector 0x1F000 of 0x20000, ) 277.25 MB/s  
+Progress: |██████████|  97.1% Read (Sector 0x1F100 of 0x20000, ) 277.92 MB/s  
+Progress: |██████████|  97.3% Read (Sector 0x1F200 of 0x20000, ) 270.06 MB/s  
+Progress: |██████████|  97.5% Read (Sector 0x1F300 of 0x20000, ) 267.56 MB/s  
+Progress: |██████████|  97.7% Read (Sector 0x1F400 of 0x20000, ) 283.15 MB/s  
+Progress: |██████████|  97.9% Read (Sector 0x1F500 of 0x20000, ) 282.43 MB/s  
+Progress: |██████████|  98.0% Read (Sector 0x1F600 of 0x20000, ) 275.47 MB/s  
+Progress: |██████████|  98.2% Read (Sector 0x1F700 of 0x20000, ) 273.69 MB/s  
+Progress: |██████████|  98.4% Read (Sector 0x1F800 of 0x20000, ) 276.23 MB/s  
+Progress: |██████████|  98.6% Read (Sector 0x1F900 of 0x20000, ) 274.50 MB/s  
+Progress: |██████████|  98.8% Read (Sector 0x1FA00 of 0x20000, ) 272.00 MB/s  
+Progress: |██████████|  99.0% Read (Sector 0x1FB00 of 0x20000, ) 272.22 MB/s  
+Progress: |██████████|  99.2% Read (Sector 0x1FC00 of 0x20000, ) 272.52 MB/s  
+Progress: |██████████|  99.4% Read (Sector 0x1FD00 of 0x20000, ) 277.66 MB/s  
+Progress: |██████████|  99.6% Read (Sector 0x1FE00 of 0x20000, ) 277.81 MB/s  
+Progress: |██████████|  99.8% Read (Sector 0x1FF00 of 0x20000, ) 277.11 MB/s  
+Progress: |██████████| 100.0% Read (Sector 0x20000 of 0x20000, ) 275.49 MB/s  
+Dumped sector 535423 with sector count 131072 as /home/user/nx679j-stock/edl-recovery/recon-20260717-183330/logdump.bin.
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Read (Sector 0x0 of 0x800) 0.00 MB/s                 
+Progress: |█---------|  12.5% Read (Sector 0x100 of 0x800, ) 285.15 MB/s      
+Progress: |██--------|  25.0% Read (Sector 0x200 of 0x800, ) 261.74 MB/s      
+Progress: |████------|  37.5% Read (Sector 0x300 of 0x800, ) 277.51 MB/s      
+Progress: |█████-----|  50.0% Read (Sector 0x400 of 0x800, ) 278.45 MB/s      
+Progress: |██████----|  62.5% Read (Sector 0x500 of 0x800, ) 273.10 MB/s      
+Progress: |████████--|  75.0% Read (Sector 0x600 of 0x800, ) 271.21 MB/s      
+Progress: |█████████-|  87.5% Read (Sector 0x700 of 0x800, ) 266.71 MB/s      
+Progress: |██████████| 100.0% Read (Sector 0x800 of 0x800, ) 264.83 MB/s      
+Dumped sector 533375 with sector count 2048 as /home/user/nx679j-stock/edl-recovery/recon-20260717-183330/logfs.bin.
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+firehose_client
+firehose_client - [LIB]: [31mError: Couldn't detect partition: pstore
+Available partitions:[0m
+firehose_client
+firehose_client - [LIB]: [31mLun0:	ssd[0m
+firehose_client
+firehose_client - [LIB]: [31mLun0:	persist[0m
+firehose_client
+firehose_client - [LIB]: [31mLun0:	misc[0m
+firehose_client
+firehose_client - [LIB]: [31mLun0:	parameter[0m
+firehose_client
+firehose_client - [LIB]: [31mLun0:	keystore[0m
+firehose_client
+firehose_client - [LIB]: [31mLun0:	frp[0m
+firehose_client
+firehose_client - [LIB]: [31mLun0:	super[0m
+firehose_client
+firehose_client - [LIB]: [31mLun0:	vbmeta_system_a[0m
+firehose_client
+firehose_client - [LIB]: [31mLun0:	vbmeta_system_b[0m
+firehose_client
+firehose_client - [LIB]: [31mLun0:	metadata[0m
+firehose_client
+firehose_client - [LIB]: [31mLun0:	rawdump[0m
+firehose_client
+firehose_client - [LIB]: [31mLun0:	userdata[0m
+firehose_client
+firehose_client - [LIB]: [31mLun1:	xbl_a[0m
+firehose_client
+firehose_client - [LIB]: [31mLun1:	xbl_config_a[0m
+firehose_client
+firehose_client - [LIB]: [31mLun1:	multiimgqti_a[0m
+firehose_client
+firehose_client - [LIB]: [31mLun1:	multiimgoem_a[0m
+firehose_client
+firehose_client - [LIB]: [31mLun1:	apdp[0m
+firehose_client
+firehose_client - [LIB]: [31mLun2:	xbl_b[0m
+firehose_client
+firehose_client - [LIB]: [31mLun2:	xbl_config_b[0m
+firehose_client
+firehose_client - [LIB]: [31mLun2:	multiimgqti_b[0m
+firehose_client
+firehose_client - [LIB]: [31mLun2:	multiimgoem_b[0m
+firehose_client
+firehose_client - [LIB]: [31mLun2:	apdpb[0m
+firehose_client
+firehose_client - [LIB]: [31mLun3:	ALIGN_TO_128K_1[0m
+firehose_client
+firehose_client - [LIB]: [31mLun3:	cdt[0m
+firehose_client
+firehose_client - [LIB]: [31mLun3:	ddr[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	uefi_a[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	aop_a[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	aop_config_a[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	tz_a[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	hyp_a[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	modem_a[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	bluetooth_a[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	mdtpsecapp_a[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	mdtp_a[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	abl_a[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	dsp_a[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	keymaster_a[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	boot_a[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	devcfg_a[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	qupfw_a[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	vbmeta_a[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	dtbo_a[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	uefisecapp_a[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	imagefv_a[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	shrm_a[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	vm-bootsys_a[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	cpucp_a[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	featenabler_a[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	vendor_boot_a[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	qmcs[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	qweslicstore_a[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	recovery_a[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	xbl_ramdump_a[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	uefi_b[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	aop_b[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	aop_config_b[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	tz_b[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	hyp_b[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	modem_b[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	bluetooth_b[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	mdtpsecapp_b[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	mdtp_b[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	abl_b[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	dsp_b[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	keymaster_b[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	boot_b[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	devcfg_b[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	qupfw_b[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	vbmeta_b[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	dtbo_b[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	uefisecapp_b[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	imagefv_b[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	shrm_b[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	vm-bootsys_b[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	cpucp_b[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	featenabler_b[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	vendor_boot_b[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	qweslicstore_b[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	recovery_b[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	xbl_ramdump_b[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	devinfo[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	dip[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	splash[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	limits[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	limits-cdsp[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	toolsfv[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	logfs[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	logdump[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	storsec[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	uefivarstore[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	secdata[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	vm-data[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	mdcompress[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	connsec[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	tzsc[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	spunvm[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	rtice[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	xbl_sc_test_mode[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	xbl_sc_logs[0m
+firehose_client
+firehose_client - [LIB]: [31mLun5:	ALIGN_TO_128K_2[0m
+firehose_client
+firehose_client - [LIB]: [31mLun5:	modemst1[0m
+firehose_client
+firehose_client - [LIB]: [31mLun5:	modemst2[0m
+firehose_client
+firehose_client - [LIB]: [31mLun5:	fsg[0m
+firehose_client
+firehose_client - [LIB]: [31mLun5:	fsc[0m
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+firehose_client
+firehose_client - [LIB]: [31mError: Couldn't detect partition: minidump
+Available partitions:[0m
+firehose_client
+firehose_client - [LIB]: [31mLun0:	ssd[0m
+firehose_client
+firehose_client - [LIB]: [31mLun0:	persist[0m
+firehose_client
+firehose_client - [LIB]: [31mLun0:	misc[0m
+firehose_client
+firehose_client - [LIB]: [31mLun0:	parameter[0m
+firehose_client
+firehose_client - [LIB]: [31mLun0:	keystore[0m
+firehose_client
+firehose_client - [LIB]: [31mLun0:	frp[0m
+firehose_client
+firehose_client - [LIB]: [31mLun0:	super[0m
+firehose_client
+firehose_client - [LIB]: [31mLun0:	vbmeta_system_a[0m
+firehose_client
+firehose_client - [LIB]: [31mLun0:	vbmeta_system_b[0m
+firehose_client
+firehose_client - [LIB]: [31mLun0:	metadata[0m
+firehose_client
+firehose_client - [LIB]: [31mLun0:	rawdump[0m
+firehose_client
+firehose_client - [LIB]: [31mLun0:	userdata[0m
+firehose_client
+firehose_client - [LIB]: [31mLun1:	xbl_a[0m
+firehose_client
+firehose_client - [LIB]: [31mLun1:	xbl_config_a[0m
+firehose_client
+firehose_client - [LIB]: [31mLun1:	multiimgqti_a[0m
+firehose_client
+firehose_client - [LIB]: [31mLun1:	multiimgoem_a[0m
+firehose_client
+firehose_client - [LIB]: [31mLun1:	apdp[0m
+firehose_client
+firehose_client - [LIB]: [31mLun2:	xbl_b[0m
+firehose_client
+firehose_client - [LIB]: [31mLun2:	xbl_config_b[0m
+firehose_client
+firehose_client - [LIB]: [31mLun2:	multiimgqti_b[0m
+firehose_client
+firehose_client - [LIB]: [31mLun2:	multiimgoem_b[0m
+firehose_client
+firehose_client - [LIB]: [31mLun2:	apdpb[0m
+firehose_client
+firehose_client - [LIB]: [31mLun3:	ALIGN_TO_128K_1[0m
+firehose_client
+firehose_client - [LIB]: [31mLun3:	cdt[0m
+firehose_client
+firehose_client - [LIB]: [31mLun3:	ddr[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	uefi_a[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	aop_a[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	aop_config_a[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	tz_a[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	hyp_a[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	modem_a[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	bluetooth_a[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	mdtpsecapp_a[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	mdtp_a[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	abl_a[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	dsp_a[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	keymaster_a[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	boot_a[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	devcfg_a[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	qupfw_a[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	vbmeta_a[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	dtbo_a[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	uefisecapp_a[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	imagefv_a[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	shrm_a[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	vm-bootsys_a[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	cpucp_a[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	featenabler_a[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	vendor_boot_a[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	qmcs[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	qweslicstore_a[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	recovery_a[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	xbl_ramdump_a[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	uefi_b[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	aop_b[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	aop_config_b[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	tz_b[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	hyp_b[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	modem_b[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	bluetooth_b[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	mdtpsecapp_b[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	mdtp_b[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	abl_b[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	dsp_b[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	keymaster_b[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	boot_b[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	devcfg_b[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	qupfw_b[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	vbmeta_b[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	dtbo_b[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	uefisecapp_b[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	imagefv_b[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	shrm_b[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	vm-bootsys_b[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	cpucp_b[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	featenabler_b[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	vendor_boot_b[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	qweslicstore_b[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	recovery_b[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	xbl_ramdump_b[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	devinfo[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	dip[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	splash[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	limits[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	limits-cdsp[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	toolsfv[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	logfs[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	logdump[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	storsec[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	uefivarstore[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	secdata[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	vm-data[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	mdcompress[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	connsec[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	tzsc[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	spunvm[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	rtice[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	xbl_sc_test_mode[0m
+firehose_client
+firehose_client - [LIB]: [31mLun4:	xbl_sc_logs[0m
+firehose_client
+firehose_client - [LIB]: [31mLun5:	ALIGN_TO_128K_2[0m
+firehose_client
+firehose_client - [LIB]: [31mLun5:	modemst1[0m
+firehose_client
+firehose_client - [LIB]: [31mLun5:	modemst2[0m
+firehose_client
+firehose_client - [LIB]: [31mLun5:	fsg[0m
+firehose_client
+firehose_client - [LIB]: [31mLun5:	fsc[0m

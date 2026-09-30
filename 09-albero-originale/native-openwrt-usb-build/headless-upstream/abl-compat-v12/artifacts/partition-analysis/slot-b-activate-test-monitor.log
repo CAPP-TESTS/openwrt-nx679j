@@ -1,0 +1,19 @@
+  0.000s UTC 2026-07-17T13:02:55.780553+00:00 set_active b + reboot test (BCB cleared)
+  0.016s pre-reboot current-slot: current-slot: b | Finished. Total time: 0.013s
+  0.021s pre-reboot slot-successful:b: slot-successful:b: no | Finished. Total time: 0.002s
+  0.037s pre-reboot slot-unbootable:b: slot-unbootable:b: no | Finished. Total time: 0.014s
+  0.042s pre-reboot slot-retry-count:b: slot-retry-count:b: 7 | Finished. Total time: 0.003s
+  0.094s fastboot reboot rc=0: Rebooting                                          OKAY [  0.000s] | Finished. Total time: 0.050s
+  0.104s USB: device disconnected (boot attempt in progress)
+ 15.208s FASTBOOT RETURN after disconnect: 3dbd****	 fastboot
+ 15.208s OUTCOME FASTBOOT_RETURN elapsed=15.208s disconnect=True
+ 15.213s post current-slot: current-slot: b | Finished. Total time: 0.002s
+ 15.218s post slot-unbootable:b: slot-unbootable:b: no | Finished. Total time: 0.002s
+ 15.222s post slot-successful:b: slot-successful:b: no | Finished. Total time: 0.002s
+ 15.227s post slot-retry-count:b: slot-retry-count:b: 7 | Finished. Total time: 0.003s
+ 15.232s post slot-unbootable:a: slot-unbootable:a: no | Finished. Total time: 0.002s
+ 15.238s post slot-successful:a: slot-successful:a: yes | Finished. Total time: 0.003s
+ 15.242s post slot-retry-count:a: slot-retry-count:a: 7 | Finished. Total time: 0.003s
+ 15.297s recovery set_active a: Setting current slot to 'a'                        OKAY [  0.040s] | Finished. Total time: 0.052s
+ 15.351s recovery reboot: Rebooting                                          OKAY [  0.000s] | Finished. Total time: 0.050s
+ 44.978s RECOVERY SUCCESS: 1 | _a

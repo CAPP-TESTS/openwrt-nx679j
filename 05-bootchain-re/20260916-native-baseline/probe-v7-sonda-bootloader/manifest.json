@@ -1,0 +1,130 @@
+{
+  "purpose": "prove from the host that the probe ran: reboot with LINUX_REBOOT_CMD_RESTART2 reason='bootloader' -> ABL is expected to present fastboot (18d1:d00d)",
+  "built_by": "build-probe-v7bl.py",
+  "differs_from": "probe-v7-sonda (same container/ramdisks/init, only the reboot command and reason differ)",
+  "toolchain": {
+    "cc": "aarch64-linux-gnu-gcc (GCC) 16.1.0",
+    "cflags": [
+      "-static",
+      "-Os",
+      "-s",
+      "-Wall",
+      "-Wextra",
+      "-Wno-unused-result"
+    ],
+    "source": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/probe-v7-sonda-bootloader/candidate-init-sonda-bootloader.c"
+  },
+  "init": {
+    "bytes": 532352,
+    "sha256": "7b2e0859173909e10e7bc27c945e446a13656506d1a03a3bfa753810b10174af",
+    "file": "ELF 64-bit LSB executable, ARM aarch64, version 1 (SYSV), statically linked, BuildID[sha1]=1e833558d7aa204f6495937e01d464f33e90d485, for GNU/Linux 3.7.0, stripped",
+    "elf_type": "EXEC",
+    "machine": "AArch64",
+    "pt_interp": 0,
+    "dt_needed": 0,
+    "disasm_reboot_call": "0x40064c: bl syscall  with x0=142 (__NR_reboot), x1=0xfee1dead (MAGIC1), x2=0x28121969 (MAGIC2), x3=0xa1b2c3d4 (LINUX_REBOOT_CMD_RESTART2), x4=0x455709 -> file offset 349961 = b'bootloader\\x00'",
+    "disasm_check_pass": true
+  },
+  "reboot": {
+    "syscall_nr": 142,
+    "magic1": 4276215469,
+    "magic2": 672274793,
+    "cmd_restart2": 2712847316,
+    "reason": "bootloader",
+    "reason_bytes": "626f6f746c6f6164657200",
+    "header": "/usr/lib/gcc/aarch64-linux-gnu/16.1.0/../../../../aarch64-linux-gnu/include/linux/reboot.h",
+    "semantics": "host sees the phone come up as USB 18d1:d00d (fastboot) if this unit's ABL honours the reason -- HYPOTHESIS, not proven offline"
+  },
+  "container": {
+    "path": "/home/user/nx679j-stock/magisk_patched-30700_Zx2eF.img",
+    "sha256": "0cd94d5627501f3c65c94542093ad18b1ec6c1c215dc6a7ecab4f941057e8364",
+    "kernel_offset": 4096,
+    "ramdisk_offset": 49115136,
+    "full_size": 100663296,
+    "signature_size": 4096,
+    "header_version": 4,
+    "kernel_size": 49108324,
+    "kernel_sha256": "f0aa949c95d1421381850cb1982bd2a505e96fcd7565543ec28d5b1f7d81a0cc",
+    "kernel_area_bytes": 49111040,
+    "kernel_area_sha256": "f7ea707eb916bf1f1800c9277779c1a51f6850cb5a1171cd8258ef32361b19c9",
+    "ramdisk_original_bytes": 2200983
+  },
+  "ramdisk_sources": {
+    "v6": {
+      "path": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/candidate-minimal-gadget-v6/work/ramdisk.cpio.gz",
+      "gz_bytes": 901952,
+      "gz_sha256": "8378e9a3398f55bfee72166b8bcd2df94b5cca098418d948cf3bf44019a9d035",
+      "cpio_bytes": 3237608,
+      "cpio_sha256": "2169b384f8726fc8b29433b190bd160e96ee32c242ffe40a92179f553cebf78a",
+      "entries": 66
+    },
+    "android": {
+      "path": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/probe-v7-sonda/inputs/magisk-android-ramdisk.cpio",
+      "cpio_bytes": 2306300,
+      "cpio_sha256": "6fd2630909eab5458196edc25b8c41b4c15b401c0c92fdeab65fedaec13a0594",
+      "entries": 30
+    }
+  },
+  "images": {
+    "v7": {
+      "name": "sonda-bootloader-v7.img",
+      "path": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/probe-v7-sonda-bootloader/sonda-bootloader-v7.img",
+      "bytes": 100663296,
+      "sha256": "b099bf136895ad6ce3ace744a86d2f6beded63560cd295e2713f1dec1fe0fb51",
+      "header": {
+        "magic": "ANDROID!",
+        "kernel_size": 49108324,
+        "ramdisk_size": 1014206,
+        "header_size": 1584,
+        "header_version": 4,
+        "signature_size": 4096,
+        "os_version": "0x18000162"
+      },
+      "kernel_identical": true,
+      "ramdisk_bytes": 1014206,
+      "ramdisk_sha256": "2cf26721dbb74adb0815dac4df0142695bd77d37d675d1f07b771021bc7e5873",
+      "ramdisk_lz4_offset": 49115136,
+      "ramdisk_cpio_bytes": 3106504,
+      "ramdisk_cpio_sha256": "afbbf255318a05a6ee789347fc6e0903d4f982bab4b42736fd80e71bb4e4aaac",
+      "init_sha256": "7b2e0859173909e10e7bc27c945e446a13656506d1a03a3bfa753810b10174af",
+      "init_bytes": 532352,
+      "tail_identical_absolute": true,
+      "diff_count": 1008331,
+      "leftover_old_ramdisk_bytes": 1186777
+    },
+    "v7b": {
+      "name": "sonda-bootloader-v7b.img",
+      "path": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/probe-v7-sonda-bootloader/sonda-bootloader-v7b.img",
+      "bytes": 100663296,
+      "sha256": "610cfea53d8e06b0b8accee4775b71e34d7077acba7aaa4e2a8d812c482050eb",
+      "header": {
+        "magic": "ANDROID!",
+        "kernel_size": 49108324,
+        "ramdisk_size": 2352934,
+        "header_size": 1584,
+        "header_version": 4,
+        "signature_size": 4096,
+        "os_version": "0x18000162"
+      },
+      "kernel_identical": true,
+      "ramdisk_bytes": 2352934,
+      "ramdisk_sha256": "4501c801f9700b0cfa4c83887fa35cd63a53653aac2b4f41956c31f165301c5f",
+      "ramdisk_lz4_offset": 49115136,
+      "ramdisk_cpio_bytes": 2574724,
+      "ramdisk_cpio_sha256": "98204ed099c7f1567383f73f4682ad0398bed3df1a804a24f971fe9898406bc1",
+      "init_sha256": "7b2e0859173909e10e7bc27c945e446a13656506d1a03a3bfa753810b10174af",
+      "init_bytes": 532352,
+      "tail_identical_absolute": true,
+      "diff_count": 1449800,
+      "leftover_old_ramdisk_bytes": 0
+    }
+  },
+  "lz4": {
+    "args": [
+      "lz4",
+      "-l",
+      "-9"
+    ],
+    "version": "*** lz4 v1.10.0 64-bit multithread, by Yann Collet ***"
+  }
+}

@@ -1,0 +1,1 @@
+savedcmd_/home/user/nx679j-stock/hypervisor-bypass/Module.symvers :=  scripts/mod/modpost -M        -o /home/user/nx679j-stock/hypervisor-bypass/Module.symvers -n -T /home/user/nx679j-stock/hypervisor-bypass/modules.order -i Module.symvers -e 

@@ -1,0 +1,1795 @@
+[    0.000000] Booting Linux on physical CPU 0x0000000000 [0x411fd070]
+[    0.000000] Linux version 6.6.60 (user@user-Mini) (aarch64-linux-gnu-gcc (GCC) 16.1.0, GNU ld (GNU Binutils) 2.47) #1 SMP PREEMPT Thu Aug  6 23:41:56 CEST 2026
+[    0.000000] KASLR enabled
+[    0.000000] random: crng init done
+[    0.000000] Machine model: linux,dummy-virt
+[    0.000000] efi: UEFI not found.
+[    0.000000] earlycon: pl11 at MMIO 0x00************** (options '')
+[    0.000000] printk: bootconsole [pl11] enabled
+[    0.000000] NUMA: No NUMA configuration found
+[    0.000000] NUMA: Faking a node at [mem 0x00**************-0x00000000bfffffff]
+[    0.000000] NUMA: NODE_DATA [mem 0xbfbf09c0-0xbfbf2fff]
+[    0.000000] Zone ranges:
+[    0.000000]   DMA      [mem 0x00**************-0x00000000bfffffff]
+[    0.000000]   DMA32    empty
+[    0.000000]   Normal   empty
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x00**************-0x00000000bfffffff]
+[    0.000000] Initmem setup node 0 [mem 0x00**************-0x00000000bfffffff]
+[    0.000000] cma: Reserved 32 MiB at 0x00000000bba00000 on node -1
+[    0.000000] psci: probing for conduit method from DT.
+[    0.000000] psci: PSCIv1.1 detected in firmware.
+[    0.000000] psci: Using standard PSCI v0.2 function IDs
+[    0.000000] psci: Trusted OS migration not required
+[    0.000000] psci: SMC Calling Convention v1.0
+[    0.000000] percpu: Embedded 22 pages/cpu s50856 r8192 d31064 u90112
+[    0.000000] pcpu-alloc: s50856 r8192 d31064 u90112 alloc=22*4096
+[    0.000000] pcpu-alloc: [0] 0 [0] 1 
+[    0.000000] Detected PIPT I-cache on CPU0
+[    0.000000] CPU features: detected: Spectre-v2
+[    0.000000] CPU features: detected: Spectre-v3a
+[    0.000000] CPU features: detected: Spectre-v4
+[    0.000000] CPU features: detected: Spectre-BHB
+[    0.000000] CPU features: kernel page table isolation forced ON by KASLR
+[    0.000000] CPU features: detected: Kernel page table isolation (KPTI)
+[    0.000000] CPU features: detected: ARM erratum 834220
+[    0.000000] CPU features: detected: ARM erratum 1742098
+[    0.000000] CPU features: detected: ARM erratum 832075
+[    0.000000] CPU features: detected: ARM errata 1165522, 1319367, or 1530923
+[    0.000000] alternatives: applying boot alternatives
+[    0.000000] Kernel command line: console=ttyAMA0 earlycon loglevel=8 panic=10 rdinit=/init
+[    0.000000] Dentry cache hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+[    0.000000] Inode-cache hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+[    0.000000] Fallback order for Node 0: 0 
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 516096
+[    0.000000] Policy zone: DMA
+[    0.000000] mem auto-init: stack:all(zero), heap alloc:off, heap free:off
+[    0.000000] software IO TLB: area num 2.
+[    0.000000] software IO TLB: mapped [mem 0x00000000b7800000-0x00000000bb800000] (64MB)
+[    0.000000] Memory: 1920372K/2097152K available (16832K kernel code, 4276K rwdata, 10592K rodata, 2624K init, 605K bss, 144012K reserved, 32768K cma-reserved)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
+[    0.000000] rcu: Preemptible hierarchical RCU implementation.
+[    0.000000] rcu: 	RCU event tracing is enabled.
+[    0.000000] rcu: 	RCU restricting CPUs from NR_CPUS=256 to nr_cpu_ids=2.
+[    0.000000] 	Trampoline variant of Tasks RCU enabled.
+[    0.000000] 	Tracing variant of Tasks RCU enabled.
+[    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 25 jiffies.
+[    0.000000] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=2
+[    0.000000] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+[    0.000000] Root IRQ handler: gic_handle_irq
+[    0.000000] GICv2m: range[mem 0x08020000-0x08020fff], SPI[80:143]
+[    0.000000] rcu: srcu_init: Setting srcu_struct sizes based on contention.
+[    0.000000] arch_timer: cp15 timer(s) running at 62.50MHz (virt).
+[    0.000000] clocksource: arch_sys_counter: mask: 0x1ffffffffffffff max_cycles: 0x1cd42e208c, max_idle_ns: 881590405314 ns
+[    0.000035] sched_clock: 57 bits at 63MHz, resolution 16ns, wraps every 4398046511096ns
+[    0.005010] Console: colour dummy device 80x25
+[    0.006325] Calibrating delay loop (skipped), value calculated using timer frequency.. 125.00 BogoMIPS (lpj=250000)
+[    0.006557] pid_max: default: 32768 minimum: 301
+[    0.007370] LSM: initializing lsm=capability,integrity
+[    0.008797] Mount-cache hash table entries: 4096 (order: 3, 32768 bytes, linear)
+[    0.008946] Mountpoint-cache hash table entries: 4096 (order: 3, 32768 bytes, linear)
+[    0.029775] RCU Tasks: Setting shift to 1 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=2.
+[    0.030241] RCU Tasks Trace: Setting shift to 1 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=2.
+[    0.031276] rcu: Hierarchical SRCU implementation.
+[    0.031375] rcu: 	Max phase no-delay instances is 1000.
+[    0.038843] EFI services will not be available.
+[    0.040012] smp: Bringing up secondary CPUs ...
+[    0.044851] Detected PIPT I-cache on CPU1
+[    0.045421] CPU1: Booted secondary processor 0x0000000001 [0x411fd070]
+[    0.047593] smp: Brought up 1 node, 2 CPUs
+[    0.047820] SMP: Total of 2 processors activated.
+[    0.047929] CPU features: detected: 32-bit EL0 Support
+[    0.047997] CPU features: detected: 32-bit EL1 Support
+[    0.048088] CPU features: detected: CRC32 instructions
+[    0.049422] CPU: All CPU(s) started at EL1
+[    0.049637] alternatives: applying system-wide alternatives
+[    0.062368] devtmpfs: initialized
+[    0.072682] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 76************** ns
+[    0.072959] futex hash table entries: 512 (order: 3, 32768 bytes, linear)
+[    0.079613] pinctrl core: initialized pinctrl subsystem
+[    0.083402] DMI not present or invalid.
+[    0.088212] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+[    0.093415] DMA: preallocated 256 KiB GFP_KERNEL pool for atomic allocations
+[    0.093975] DMA: preallocated 256 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+[    0.094320] DMA: preallocated 256 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+[    0.094631] audit: initializing netlink subsys (disabled)
+[    0.095871] audit: type=2000 audit(0.084:1): state=initialized audit_enabled=0 res=1
+[    0.098424] thermal_sys: Registered thermal governor 'step_wise'
+[    0.098448] thermal_sys: Registered thermal governor 'power_allocator'
+[    0.098692] cpuidle: using governor menu
+[    0.099439] hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+[    0.099859] ASID allocator initialised with 32768 entries
+[    0.102579] Serial: AMBA PL011 UART driver
+[    0.123852] 9000000.pl011: ttyAMA0 at MMIO 0x9000000 (irq = 13, base_baud = 0) is a PL011 rev1
+[    0.124727] printk: console [ttyAMA0] enabled
+[    0.124727] printk: console [ttyAMA0] enabled
+[    0.124995] printk: bootconsole [pl11] disabled
+[    0.124995] printk: bootconsole [pl11] disabled
+[    0.131516] Modules: 2G module region forced by RANDOMIZE_MODULE_REGION_FULL
+[    0.131720] Modules: 0 pages in range for non-PLT usage
+[    0.131733] Modules: 515504 pages in range for PLT usage
+[    0.134078] HugeTLB: registered 1.00 GiB page size, pre-allocated 0 pages
+[    0.134247] HugeTLB: 0 KiB vmemmap can be freed for a 1.00 GiB page
+[    0.134328] HugeTLB: registered 32.0 MiB page size, pre-allocated 0 pages
+[    0.134401] HugeTLB: 0 KiB vmemmap can be freed for a 32.0 MiB page
+[    0.134499] HugeTLB: registered 2.00 MiB page size, pre-allocated 0 pages
+[    0.134577] HugeTLB: 0 KiB vmemmap can be freed for a 2.00 MiB page
+[    0.134648] HugeTLB: registered 64.0 KiB page size, pre-allocated 0 pages
+[    0.134722] HugeTLB: 0 KiB vmemmap can be freed for a 64.0 KiB page
+[    0.139788] ACPI: Interpreter disabled.
+[    0.142576] iommu: Default domain type: Translated
+[    0.142688] iommu: DMA domain TLB invalidation policy: strict mode
+[    0.143506] SCSI subsystem initialized
+[    0.144119] libata version 3.00 loaded.
+[    0.144919] usbcore: registered new interface driver usbfs
+[    0.145087] usbcore: registered new interface driver hub
+[    0.145211] usbcore: registered new device driver usb
+[    0.146120] pps_core: LinuxPPS API ver. 1 registered
+[    0.146190] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.151758] PTP clock support registered
+[    0.152318] EDAC MC: Ver: 3.0.0
+[    0.154037] scmi_core: SCMI protocol bus registered
+[    0.155217] FPGA manager framework
+[    0.155692] Advanced Linux Sound Architecture Driver Initialized.
+[    0.161371] vgaarb: loaded
+[    0.163019] clocksource: Switched to clocksource arch_sys_counter
+[    0.164333] VFS: Disk quotas dquot_6.6.0
+[    0.164480] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    0.165246] pnp: PnP ACPI: disabled
+[    0.176801] NET: Registered PF_INET protocol family
+[    0.182156] IP idents hash table entries: 32768 (order: 6, 262144 bytes, linear)
+[    0.185626] tcp_listen_portaddr_hash hash table entries: 1024 (order: 2, 16384 bytes, linear)
+[    0.185869] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[    0.185982] TCP established hash table entries: 16384 (order: 5, 131072 bytes, linear)
+[    0.186190] TCP bind hash table entries: 16384 (order: 7, 524288 bytes, linear)
+[    0.186434] TCP: Hash tables configured (established 16384 bind 16384)
+[    0.187098] UDP hash table entries: 1024 (order: 3, 32768 bytes, linear)
+[    0.187301] UDP-Lite hash table entries: 1024 (order: 3, 32768 bytes, linear)
+[    0.187923] NET: Registered PF_UNIX/PF_LOCAL protocol family
+[    0.189698] RPC: Registered named UNIX socket transport module.
+[    0.189801] RPC: Registered udp transport module.
+[    0.189865] RPC: Registered tcp transport module.
+[    0.189919] RPC: Registered tcp-with-tls transport module.
+[    0.189980] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    0.190107] PCI: CLS 0 bytes, default 64
+[    0.192202] Unpacking initramfs...
+[    0.198504] kvm [1]: HYP mode not available
+[    0.200941] Initialise system trusted keyrings
+[    0.207439] workingset: timestamp_bits=42 max_order=19 bucket_order=0
+[    0.208606] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    0.210199] NFS: Registering the id_resolver key type
+[    0.210468] Key type id_resolver registered
+[    0.210529] Key type id_legacy registered
+[    0.210704] nfs4filelayout_init: NFSv4 File Layout Driver Registering...
+[    0.210811] nfs4flexfilelayout_init: NFSv4 Flexfile Layout Driver Registering...
+[    0.211876] 9p: Installing v9fs 9p2000 file system support
+[    0.228899] Freeing initrd memory: 1372K
+[    0.234098] Key type asymmetric registered
+[    0.234255] Asymmetric key parser 'x509' registered
+[    0.240677] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 245)
+[    0.240881] io scheduler mq-deadline registered
+[    0.240968] io scheduler kyber registered
+[    0.241284] io scheduler bfq registered
+[    0.253128] pl061_gpio 9030000.pl061: PL061 GPIO chip registered
+[    0.256358] pci-host-generic 4010000000.pcie: host bridge /pcie@10000000 ranges:
+[    0.256791] pci-host-generic 4010000000.pcie:       IO 0x003eff0000..0x003effffff -> 0x0000000000
+[    0.257151] pci-host-generic 4010000000.pcie:      MEM 0x0010000000..0x003efeffff -> 0x0010000000
+[    0.257278] pci-host-generic 4010000000.pcie:      MEM 0x8000000000..0xffffffffff -> 0x8000000000
+[    0.257602] pci-host-generic 4010000000.pcie: Memory resource size exceeds max for 32 bits
+[    0.257985] pci-host-generic 4010000000.pcie: ECAM at [mem 0x4010000000-0x401fffffff] for [bus 00-ff]
+[    0.258875] pci-host-generic 4010000000.pcie: PCI host bridge to bus 0000:00
+[    0.259250] pci_bus 0000:00: root bus resource [bus 00-ff]
+[    0.259349] pci_bus 0000:00: root bus resource [io  0x0000-0xffff]
+[    0.259446] pci_bus 0000:00: root bus resource [mem 0x10000000-0x3efeffff]
+[    0.259524] pci_bus 0000:00: root bus resource [mem 0x8000000000-0xffffffffff]
+[    0.260448] pci 0000:00:00.0: [1b36:0008] type 00 class 0x060000
+[    0.262438] pci 0000:00:01.0: [1af4:1000] type 00 class 0x020000
+[    0.262638] pci 0000:00:01.0: reg 0x10: [io  0x0000-0x001f]
+[    0.262766] pci 0000:00:01.0: reg 0x20: [mem 0x00000000-0x00003fff 64bit pref]
+[    0.262982] pci 0000:00:01.0: reg 0x30: [mem 0x00000000-0x0003ffff pref]
+[    0.264323] pci 0000:00:01.0: BAR 6: assigned [mem 0x10000000-0x1003ffff pref]
+[    0.264534] pci 0000:00:01.0: BAR 4: assigned [mem 0x8000000000-0x8000003fff 64bit pref]
+[    0.264700] pci 0000:00:01.0: BAR 0: assigned [io  0x1000-0x101f]
+[    0.273528] EINJ: ACPI disabled.
+[    0.297763] virtio-pci 0000:00:01.0: enabling device (0000 -> 0003)
+[    0.305186] Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+[    0.309042] SuperH (H)SCI(F) driver initialized
+[    0.309633] msm_serial: driver initialized
+[    0.310269] STM32 USART driver initialized
+[    0.324011] loop: module loaded
+[    0.326260] megasas: 07.725.01.00-rc1
+[    0.329918] physmap-flash 0.flash: physmap platform flash device: [mem 0x00000000-0x03ffffff]
+[    0.330805] 0.flash: Found 2 x16 devices at 0x0 in 32-bit bank. Manufacturer ID 0x000000 Chip ID 0x000000
+[    0.331293] Intel/Sharp Extended Query Table at 0x0031
+[    0.331743] Using buffer write method
+[    0.331990] erase region 0: offset=0x0,size=0x40000,blocks=256
+[    0.332179] physmap-flash 0.flash: physmap platform flash device: [mem 0x04000000-0x07ffffff]
+[    0.332589] 0.flash: Found 2 x16 devices at 0x0 in 32-bit bank. Manufacturer ID 0x000000 Chip ID 0x000000
+[    0.332742] Intel/Sharp Extended Query Table at 0x0031
+[    0.333073] Using buffer write method
+[    0.333144] erase region 0: offset=0x0,size=0x40000,blocks=256
+[    0.333244] Concatenating MTD devices:
+[    0.333297] (0): "0.flash"
+[    0.333335] (1): "0.flash"
+[    0.333371] into device "0.flash"
+[    0.364456] tun: Universal TUN/TAP device driver, 1.6
+[    0.372814] thunder_xcv, ver 1.0
+[    0.373004] thunder_bgx, ver 1.0
+[    0.373088] nicpf, ver 1.0
+[    0.374664] hns3: Hisilicon Ethernet Network Driver for Hip08 Family - version
+[    0.374798] hns3: Copyright (c) 2017 Huawei Corporation.
+[    0.375433] hclge is initializing
+[    0.375759] e1000: Intel(R) PRO/1000 Network Driver
+[    0.375846] e1000: Copyright (c) 1999-2006 Intel Corporation.
+[    0.375989] e1000e: Intel(R) PRO/1000 Network Driver
+[    0.376060] e1000e: Copyright(c) 1999 - 2015 Intel Corporation.
+[    0.376191] igb: Intel(R) Gigabit Ethernet Network Driver
+[    0.376264] igb: Copyright (c) 2007-2014 Intel Corporation.
+[    0.376414] igbvf: Intel(R) Gigabit Virtual Function Network Driver
+[    0.376557] igbvf: Copyright (c) 2009 - 2012 Intel Corporation.
+[    0.377183] sky2: driver version 1.30
+[    0.379323] VFIO - User Level meta-driver version: 0.3
+[    0.382817] usbcore: registered new interface driver usb-storage
+[    0.388652] rtc-pl031 9010000.pl031: registered as rtc0
+[    0.389092] rtc-pl031 9010000.pl031: setting system clock to 2026-09-17T11:54:52 UTC (1789646092)
+[    0.390143] i2c_dev: i2c /dev entries driver
+[    0.398406] sdhci: Secure Digital Host Controller Interface driver
+[    0.398545] sdhci: Copyright(c) Pierre Ossman
+[    0.399452] Synopsys Designware Multimedia Card Interface Driver
+[    0.400535] sdhci-pltfm: SDHCI platform and OF driver helper
+[    0.402966] ledtrig-cpu: registered to indicate activity on CPUs
+[    0.405763] usbcore: registered new interface driver usbhid
+[    0.405856] usbhid: USB HID core driver
+[    0.411108] hw perfevents: enabled with armv8_pmuv3 PMU driver, 7 counters available
+[    0.418296] NET: Registered PF_PACKET protocol family
+[    0.419337] 9pnet: Installing 9P2000 support
+[    0.419615] Key type dns_resolver registered
+[    0.431275] registered taskstats version 1
+[    0.432149] Loading compiled-in X.509 certificates
+[    0.452673] input: gpio-keys as /devices/platform/gpio-keys/input/input0
+[    0.457094] clk: Disabling unused clocks
+[    0.457428] ALSA device list:
+[    0.457495]   No soundcards found.
+[    0.460020] uart-pl011 9000000.pl011: no DMA platform data
+[    0.485068] Freeing unused kernel memory: 2624K
+[    0.485632] Run /init as init process
+[    0.485712]   with arguments:
+[    0.485756]     /init
+[    0.485791]   with environment:
+[    0.485838]     HOME=/
+[    0.485873]     TERM=linux
+<1>nx679j: journal mirror: 867 bytes (file open, kmsg=4 pmsg=-1 rd=-1)
+nx679j: mounts: start (uid=0 pid=55)
+nx679j: ATTEMPT mount -t proc /proc
+nx679j: mount proc      rc=0
+nx679j: ATTEMPT mount -t sysfs /sys
+nx679j: mount sysfs     rc=0
+nx679j: ATTEMPT mount -t configfs /sys/kernel/config
+nx679j: mount configfs  rc=0
+nx679j: ATTEMPT mount -t pstore /sys/fs/pstore
+nx679j: mount pstore    rc=0
+nx679j: cmdline: console=ttyAMA0 earlycon loglevel=8 panic=10 rdinit=/init
+nx679j: kernel 6.6.60 aarch64
+nx679j: /proc/devices: pmsg=no
+nx679j: configfs usb_gadget=absent
+nx679j: 0 .ko files visible in /lib/modules
+nx679j: mounts: done
+nx679j: FIRST JOURNAL WRITE, no module loaded yet (device tree nodes UFS=absent USB=present)
+nx679j: /dev/block/by-name present: no
+nx679j: /dev present: kmsg=yes pmsg0=yes console=yes
+nx679j: ---- dump (first journal write: NO rawdump partition found) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+[    0.560455] nx679j: journal mirror: 867 bytes (file open, kmsg=4 pmsg=-1 rd=-1)
+[    0.560658] nx679j: mounts: start (uid=0 pid=55)
+[    0.560658] nx679j: ATTEMPT mount -t proc /proc
+[    0.560658] nx679j: mount proc      rc=0
+[    0.560658] nx679j: ATTEMPT mount -t sysfs /sys
+[    0.560658] nx679j: mount sysfs     rc=0
+[    0.560658] nx679j: ATTEMPT mount -t configfs /sys/kernel/config
+[    0.560658] nx679j: mount configfs  rc=0
+[    0.560658] nx679j: ATTEMPT mount -t pstore /sys/fs/pstore
+[    0.560658] nx679j: mount pstore    rc=0
+[    0.560658] nx679j: cmdline: console=ttyAMA0 earlycon loglevel=8 panic=10 rdinit=/init
+[    0.560658] nx679j: kernel 6.6.60 aarch64
+[    0.560658] nx679j: /proc/devices: pmsg=no
+[    0.560658] nx679j: configfs usb_gadget=absent
+[    0.560658] nx679j: 0 .ko files visible in /lib/modules
+[    0.560658] nx679j: mounts: done
+[    0.560658] nx679j: FIRST JOURNAL WRITE, no module loaded yet (device tree nodes UFS=absent USB=present)
+[    0.560658] nx679j: /dev/block/by-name present: no
+[    0.560658] nx679j: /dev present: kmsg=yes pmsg0=yes console=yes
+[    0.560658] nx679j: ---- dump (first journal write: NO rawdump partition found) ----
+[    0.560658] nx679j: pmsg unavailable (no ramoops this boot)
+<1>nx679j: journal mirror: 1090 bytes (file open, kmsg=4 pmsg=-1 rd=-1)
+nx679j: mounts: start (uid=0 pid=55)
+nx679j: ATTEMPT mount -t proc /proc
+nx679j: mount proc      rc=0
+nx679j: ATTEMPT mount -t sysfs /sys
+nx679j: mount sysfs     rc=0
+nx679j: ATTEMPT mount -t configfs /sys/kernel/config
+nx679j: mount configfs  rc=0
+nx679j: ATTEMPT mount -t pstore /sys/fs/pstore
+nx679j: mount pstore    rc=0
+nx679j: cmdline: console=ttyAMA0 earlycon loglevel=8 panic=10 rdinit=/init
+nx679j: kernel 6.6.60 aarch64
+nx679j: /proc/devices: pmsg=no
+nx679j: configfs usb_gadget=absent
+nx679j: 0 .ko files visible in /lib/modules
+nx679j: mounts: done
+nx679j: FIRST JOURNAL WRITE, no module loaded yet (device tree nodes UFS=absent USB=present)
+nx679j: /dev/block/by-name present: no
+nx679j: /dev present: kmsg=yes pmsg0=yes console=yes
+nx679j: ---- dump (first journal write: NO rawdump partition found) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: journal is durable on rawdump: no
+nx679j: PID1-OP-FAILED op=journal rc=1 journal=0 gadget=0
+nx679j: ---- dump (PID1-OP-FAILED op=journal rc=1 journal=0 gadget=0) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+[    0.609513] nx679j: journal mirror: 1090 bytes (file open, kmsg=4 pmsg=-1 rd=-1)
+<1>nx679j: journal mirror: 1838 bytes (file open, kmsg=4 pmsg=-1 rd=-1)
+nx679j: mounts: start (uid=0 pid=55)
+nx679j: ATTEMPT mount -t proc /proc
+nx679j: mount proc      rc=0
+nx679j: ATTEMPT mount -t sysfs /sys
+nx679j: mount sysfs     rc=0
+nx679j: ATTEMPT mount -t configfs /sys/kernel/config
+nx679j: mount configfs  rc=0
+nx679j: ATTEMPT mount -t pstore /sys/fs/pstore
+nx679j: mount pstore    rc=0
+nx679j: cmdline: console=ttyAMA0 earlycon loglevel=8 panic=10 rdinit=/init
+nx679j: kernel 6.6.60 aarch64
+nx679j: /proc/devices: pmsg=no
+nx679j: configfs usb_gadget=absent
+nx679j: 0 .ko files visible in /lib/modules
+nx679j: mounts: done
+nx679j: FIRST JOURNAL WRITE, no module loaded yet (device tree nodes UFS=absent USB=present)
+nx679j: /dev/block/by-name present: no
+nx679j: /dev present: kmsg=yes pmsg0=yes console=yes
+nx679j: ---- dump (first journal write: NO rawdump partition found) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: journal is durable on rawdump: no
+nx679j: PID1-OP-FAILED op=journal rc=1 journal=0 gadget=0
+nx679j: ---- dump (PID1-OP-FAILED op=journal rc=1 journal=0 gadget=0) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: gadget: start
+nx679j: usb_role nodes set to device: 0
+nx679j: ATTEMPT wait for a real UDC (1/12)
+nx679j: ATTEMPT wait for a real UDC (2/12)
+nx679j: ATTEMPT wait for a real UDC (3/12)
+nx679j: ATTEMPT wait for a real UDC (4/12)
+nx679j: ATTEMPT wait for a real UDC (5/12)
+nx679j: ATTEMPT wait for a real UDC (6/12)
+nx679j: ATTEMPT wait for a real UDC (7/12)
+nx679j: ATTEMPT wait for a real UDC (8/12)
+nx679j: ATTEMPT wait for a real UDC (9/12)
+nx679j: ATTEMPT wait for a real UDC (10/12)
+nx679j: ATTEMPT wait for a real UDC (11/12)
+nx679j: ATTEMPT wait for a real UDC (12/12)
+nx679j: gadget: NO UDC after 12 s (dwc3_msm not up?)
+nx679j: gadget: rc=-1
+nx679j: ---- dump (end of gadget step) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+[   12.673024] nx679j: journal mirror: 1838 bytes (file open, kmsg=4 pmsg=-1 rd=-1)
+<1>nx679j: journal mirror: 2017 bytes (file open, kmsg=4 pmsg=-1 rd=-1)
+nx679j: mounts: start (uid=0 pid=55)
+nx679j: ATTEMPT mount -t proc /proc
+nx679j: mount proc      rc=0
+nx679j: ATTEMPT mount -t sysfs /sys
+nx679j: mount sysfs     rc=0
+nx679j: ATTEMPT mount -t configfs /sys/kernel/config
+nx679j: mount configfs  rc=0
+nx679j: ATTEMPT mount -t pstore /sys/fs/pstore
+nx679j: mount pstore    rc=0
+nx679j: cmdline: console=ttyAMA0 earlycon loglevel=8 panic=10 rdinit=/init
+nx679j: kernel 6.6.60 aarch64
+nx679j: /proc/devices: pmsg=no
+nx679j: configfs usb_gadget=absent
+nx679j: 0 .ko files visible in /lib/modules
+nx679j: mounts: done
+nx679j: FIRST JOURNAL WRITE, no module loaded yet (device tree nodes UFS=absent USB=present)
+nx679j: /dev/block/by-name present: no
+nx679j: /dev present: kmsg=yes pmsg0=yes console=yes
+nx679j: ---- dump (first journal write: NO rawdump partition found) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: journal is durable on rawdump: no
+nx679j: PID1-OP-FAILED op=journal rc=1 journal=0 gadget=0
+nx679j: ---- dump (PID1-OP-FAILED op=journal rc=1 journal=0 gadget=0) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: gadget: start
+nx679j: usb_role nodes set to device: 0
+nx679j: ATTEMPT wait for a real UDC (1/12)
+nx679j: ATTEMPT wait for a real UDC (2/12)
+nx679j: ATTEMPT wait for a real UDC (3/12)
+nx679j: ATTEMPT wait for a real UDC (4/12)
+nx679j: ATTEMPT wait for a real UDC (5/12)
+nx679j: ATTEMPT wait for a real UDC (6/12)
+nx679j: ATTEMPT wait for a real UDC (7/12)
+nx679j: ATTEMPT wait for a real UDC (8/12)
+nx679j: ATTEMPT wait for a real UDC (9/12)
+nx679j: ATTEMPT wait for a real UDC (10/12)
+nx679j: ATTEMPT wait for a real UDC (11/12)
+nx679j: ATTEMPT wait for a real UDC (12/12)
+nx679j: gadget: NO UDC after 12 s (dwc3_msm not up?)
+nx679j: gadget: rc=-1
+nx679j: ---- dump (end of gadget step) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: PID1-OP-FAILED op=gadget rc=1 journal=0 gadget=0
+nx679j: ---- dump (PID1-OP-FAILED op=gadget rc=1 journal=0 gadget=0) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+[   12.684524] nx679j: journal mirror: 2017 bytes (file open, kmsg=4 pmsg=-1 rd=-1)
+<1>nx679j: journal mirror: 2254 bytes (file open, kmsg=4 pmsg=-1 rd=-1)
+nx679j: mounts: start (uid=0 pid=55)
+nx679j: ATTEMPT mount -t proc /proc
+nx679j: mount proc      rc=0
+nx679j: ATTEMPT mount -t sysfs /sys
+nx679j: mount sysfs     rc=0
+nx679j: ATTEMPT mount -t configfs /sys/kernel/config
+nx679j: mount configfs  rc=0
+nx679j: ATTEMPT mount -t pstore /sys/fs/pstore
+nx679j: mount pstore    rc=0
+nx679j: cmdline: console=ttyAMA0 earlycon loglevel=8 panic=10 rdinit=/init
+nx679j: kernel 6.6.60 aarch64
+nx679j: /proc/devices: pmsg=no
+nx679j: configfs usb_gadget=absent
+nx679j: 0 .ko files visible in /lib/modules
+nx679j: mounts: done
+nx679j: FIRST JOURNAL WRITE, no module loaded yet (device tree nodes UFS=absent USB=present)
+nx679j: /dev/block/by-name present: no
+nx679j: /dev present: kmsg=yes pmsg0=yes console=yes
+nx679j: ---- dump (first journal write: NO rawdump partition found) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: journal is durable on rawdump: no
+nx679j: PID1-OP-FAILED op=journal rc=1 journal=0 gadget=0
+nx679j: ---- dump (PID1-OP-FAILED op=journal rc=1 journal=0 gadget=0) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: gadget: start
+nx679j: usb_role nodes set to device: 0
+nx679j: ATTEMPT wait for a real UDC (1/12)
+nx679j: ATTEMPT wait for a real UDC (2/12)
+nx679j: ATTEMPT wait for a real UDC (3/12)
+nx679j: ATTEMPT wait for a real UDC (4/12)
+nx679j: ATTEMPT wait for a real UDC (5/12)
+nx679j: ATTEMPT wait for a real UDC (6/12)
+nx679j: ATTEMPT wait for a real UDC (7/12)
+nx679j: ATTEMPT wait for a real UDC (8/12)
+nx679j: ATTEMPT wait for a real UDC (9/12)
+nx679j: ATTEMPT wait for a real UDC (10/12)
+nx679j: ATTEMPT wait for a real UDC (11/12)
+nx679j: ATTEMPT wait for a real UDC (12/12)
+nx679j: gadget: NO UDC after 12 s (dwc3_msm not up?)
+nx679j: gadget: rc=-1
+nx679j: ---- dump (end of gadget step) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: PID1-OP-FAILED op=gadget rc=1 journal=0 gadget=0
+nx679j: ---- dump (PID1-OP-FAILED op=gadget rc=1 journal=0 gadget=0) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: chain: start
+nx679j: chain: 47 modules to try, 0 .ko visible
+nx679j: MOD phy_qcom_emu                       MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+[   12.737725] nx679j: journal mirror: 2254 bytes (file open, kmsg=4 pmsg=-1 rd=-1)
+<1>nx679j: journal mirror: 2982 bytes (file open, kmsg=4 pmsg=-1 rd=-1)
+nx679j: mounts: start (uid=0 pid=55)
+nx679j: ATTEMPT mount -t proc /proc
+nx679j: mount proc      rc=0
+nx679j: ATTEMPT mount -t sysfs /sys
+nx679j: mount sysfs     rc=0
+nx679j: ATTEMPT mount -t configfs /sys/kernel/config
+nx679j: mount configfs  rc=0
+nx679j: ATTEMPT mount -t pstore /sys/fs/pstore
+nx679j: mount pstore    rc=0
+nx679j: cmdline: console=ttyAMA0 earlycon loglevel=8 panic=10 rdinit=/init
+nx679j: kernel 6.6.60 aarch64
+nx679j: /proc/devices: pmsg=no
+nx679j: configfs usb_gadget=absent
+nx679j: 0 .ko files visible in /lib/modules
+nx679j: mounts: done
+nx679j: FIRST JOURNAL WRITE, no module loaded yet (device tree nodes UFS=absent USB=present)
+nx679j: /dev/block/by-name present: no
+nx679j: /dev present: kmsg=yes pmsg0=yes console=yes
+nx679j: ---- dump (first journal write: NO rawdump partition found) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: journal is durable on rawdump: no
+nx679j: PID1-OP-FAILED op=journal rc=1 journal=0 gadget=0
+nx679j: ---- dump (PID1-OP-FAILED op=journal rc=1 journal=0 gadget=0) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: gadget: start
+nx679j: usb_role nodes set to device: 0
+nx679j: ATTEMPT wait for a real UDC (1/12)
+nx679j: ATTEMPT wait for a real UDC (2/12)
+nx679j: ATTEMPT wait for a real UDC (3/12)
+nx679j: ATTEMPT wait for a real UDC (4/12)
+nx679j: ATTEMPT wait for a real UDC (5/12)
+nx679j: ATTEMPT wait for a real UDC (6/12)
+nx679j: ATTEMPT wait for a real UDC (7/12)
+nx679j: ATTEMPT wait for a real UDC (8/12)
+nx679j: ATTEMPT wait for a real UDC (9/12)
+nx679j: ATTEMPT wait for a real UDC (10/12)
+nx679j: ATTEMPT wait for a real UDC (11/12)
+nx679j: ATTEMPT wait for a real UDC (12/12)
+nx679j: gadget: NO UDC after 12 s (dwc3_msm not up?)
+nx679j: gadget: rc=-1
+nx679j: ---- dump (end of gadget step) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: PID1-OP-FAILED op=gadget rc=1 journal=0 gadget=0
+nx679j: ---- dump (PID1-OP-FAILED op=gadget rc=1 journal=0 gadget=0) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: chain: start
+nx679j: chain: 47 modules to try, 0 .ko visible
+nx679j: MOD phy_qcom_emu                       MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: MOD repeater                           MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_scm                           MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_msm_snps_eusb2                 MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs                       MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs_qmp_v4_lahaina        MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_hwspinlock                    MISSING (no .ko in /lib/modules)
+nx679j: MOD smem                               MISSING (no .ko in /lib/modules)
+nx679j: MOD minidump                           MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+[   12.742810] nx679j: journal mirror: 2982 bytes (file open, kmsg=4 pmsg=-1 rd=-1)
+<1>nx679j: journal mirror: 3692 bytes (file open, kmsg=4 pmsg=-1 rd=-1)
+nx679j: mounts: start (uid=0 pid=55)
+nx679j: ATTEMPT mount -t proc /proc
+nx679j: mount proc      rc=0
+nx679j: ATTEMPT mount -t sysfs /sys
+nx679j: mount sysfs     rc=0
+nx679j: ATTEMPT mount -t configfs /sys/kernel/config
+nx679j: mount configfs  rc=0
+nx679j: ATTEMPT mount -t pstore /sys/fs/pstore
+nx679j: mount pstore    rc=0
+nx679j: cmdline: console=ttyAMA0 earlycon loglevel=8 panic=10 rdinit=/init
+nx679j: kernel 6.6.60 aarch64
+nx679j: /proc/devices: pmsg=no
+nx679j: configfs usb_gadget=absent
+nx679j: 0 .ko files visible in /lib/modules
+nx679j: mounts: done
+nx679j: FIRST JOURNAL WRITE, no module loaded yet (device tree nodes UFS=absent USB=present)
+nx679j: /dev/block/by-name present: no
+nx679j: /dev present: kmsg=yes pmsg0=yes console=yes
+nx679j: ---- dump (first journal write: NO rawdump partition found) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: journal is durable on rawdump: no
+nx679j: PID1-OP-FAILED op=journal rc=1 journal=0 gadget=0
+nx679j: ---- dump (PID1-OP-FAILED op=journal rc=1 journal=0 gadget=0) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: gadget: start
+nx679j: usb_role nodes set to device: 0
+nx679j: ATTEMPT wait for a real UDC (1/12)
+nx679j: ATTEMPT wait for a real UDC (2/12)
+nx679j: ATTEMPT wait for a real UDC (3/12)
+nx679j: ATTEMPT wait for a real UDC (4/12)
+nx679j: ATTEMPT wait for a real UDC (5/12)
+nx679j: ATTEMPT wait for a real UDC (6/12)
+nx679j: ATTEMPT wait for a real UDC (7/12)
+nx679j: ATTEMPT wait for a real UDC (8/12)
+nx679j: ATTEMPT wait for a real UDC (9/12)
+nx679j: ATTEMPT wait for a real UDC (10/12)
+nx679j: ATTEMPT wait for a real UDC (11/12)
+nx679j: ATTEMPT wait for a real UDC (12/12)
+nx679j: gadget: NO UDC after 12 s (dwc3_msm not up?)
+nx679j: gadget: rc=-1
+nx679j: ---- dump (end of gadget step) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: PID1-OP-FAILED op=gadget rc=1 journal=0 gadget=0
+nx679j: ---- dump (PID1-OP-FAILED op=gadget rc=1 journal=0 gadget=0) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: chain: start
+nx679j: chain: 47 modules to try, 0 .ko visible
+nx679j: MOD phy_qcom_emu                       MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: MOD repeater                           MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_scm                           MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_msm_snps_eusb2                 MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs                       MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs_qmp_v4_lahaina        MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_hwspinlock                    MISSING (no .ko in /lib/modules)
+nx679j: MOD smem                               MISSING (no .ko in /lib/modules)
+nx679j: MOD minidump                           MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: MOD qcom_ipc_logging                   MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_glink                         MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_glink_spss                    MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs_qmp_14nm              MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs_qmp_v3                MISSING (no .ko in /lib/modules)
+nx679j: MOD nvmem_qfprom                       already-loaded
+nx679j: MOD qti_regmap_debugfs                 MISSING (no .ko in /lib/modules)
+nx679j: MOD ns                                 MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+[   12.749039] nx679j: journal mirror: 3692 bytes (file open, kmsg=4 pmsg=-1 rd=-1)
+<1>nx679j: journal mirror: 4420 bytes (file open, kmsg=4 pmsg=-1 rd=-1)
+nx679j: mounts: start (uid=0 pid=55)
+nx679j: ATTEMPT mount -t proc /proc
+nx679j: mount proc      rc=0
+nx679j: ATTEMPT mount -t sysfs /sys
+nx679j: mount sysfs     rc=0
+nx679j: ATTEMPT mount -t configfs /sys/kernel/config
+nx679j: mount configfs  rc=0
+nx679j: ATTEMPT mount -t pstore /sys/fs/pstore
+nx679j: mount pstore    rc=0
+nx679j: cmdline: console=ttyAMA0 earlycon loglevel=8 panic=10 rdinit=/init
+nx679j: kernel 6.6.60 aarch64
+nx679j: /proc/devices: pmsg=no
+nx679j: configfs usb_gadget=absent
+nx679j: 0 .ko files visible in /lib/modules
+nx679j: mounts: done
+nx679j: FIRST JOURNAL WRITE, no module loaded yet (device tree nodes UFS=absent USB=present)
+nx679j: /dev/block/by-name present: no
+nx679j: /dev present: kmsg=yes pmsg0=yes console=yes
+nx679j: ---- dump (first journal write: NO rawdump partition found) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: journal is durable on rawdump: no
+nx679j: PID1-OP-FAILED op=journal rc=1 journal=0 gadget=0
+nx679j: ---- dump (PID1-OP-FAILED op=journal rc=1 journal=0 gadget=0) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: gadget: start
+nx679j: usb_role nodes set to device: 0
+nx679j: ATTEMPT wait for a real UDC (1/12)
+nx679j: ATTEMPT wait for a real UDC (2/12)
+nx679j: ATTEMPT wait for a real UDC (3/12)
+nx679j: ATTEMPT wait for a real UDC (4/12)
+nx679j: ATTEMPT wait for a real UDC (5/12)
+nx679j: ATTEMPT wait for a real UDC (6/12)
+nx679j: ATTEMPT wait for a real UDC (7/12)
+nx679j: ATTEMPT wait for a real UDC (8/12)
+nx679j: ATTEMPT wait for a real UDC (9/12)
+nx679j: ATTEMPT wait for a real UDC (10/12)
+nx679j: ATTEMPT wait for a real UDC (11/12)
+nx679j: ATTEMPT wait for a real UDC (12/12)
+nx679j: gadget: NO UDC after 12 s (dwc3_msm not up?)
+nx679j: gadget: rc=-1
+nx679j: ---- dump (end of gadget step) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: PID1-OP-FAILED op=gadget rc=1 journal=0 gadget=0
+nx679j: ---- dump (PID1-OP-FAILED op=gadget rc=1 journal=0 gadget=0) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: chain: start
+nx679j: chain: 47 modules to try, 0 .ko visible
+nx679j: MOD phy_qcom_emu                       MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: MOD repeater                           MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_scm                           MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_msm_snps_eusb2                 MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs                       MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs_qmp_v4_lahaina        MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_hwspinlock                    MISSING (no .ko in /lib/modules)
+nx679j: MOD smem                               MISSING (no .ko in /lib/modules)
+nx679j: MOD minidump                           MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: MOD qcom_ipc_logging                   MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_glink                         MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_glink_spss                    MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs_qmp_14nm              MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs_qmp_v3                MISSING (no .ko in /lib/modules)
+nx679j: MOD nvmem_qfprom                       already-loaded
+nx679j: MOD qti_regmap_debugfs                 MISSING (no .ko in /lib/modules)
+nx679j: MOD ns                                 MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: MOD qrtr                               MISSING (no .ko in /lib/modules)
+nx679j: MOD qmi_helpers                        MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_smd                           MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_glink_smem                    MISSING (no .ko in /lib/modules)
+nx679j: MOD rproc_qcom_common                  MISSING (no .ko in /lib/modules)
+nx679j: MOD pdr_interface                      MISSING (no .ko in /lib/modules)
+nx679j: MOD pmic_glink                         MISSING (no .ko in /lib/modules)
+nx679j: MOD ucsi_glink                         MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+[   12.756011] nx679j: journal mirror: 4420 bytes (file open, kmsg=4 pmsg=-1 rd=-1)
+<1>nx679j: journal mirror: 5148 bytes (file open, kmsg=4 pmsg=-1 rd=-1)
+nx679j: mounts: start (uid=0 pid=55)
+nx679j: ATTEMPT mount -t proc /proc
+nx679j: mount proc      rc=0
+nx679j: ATTEMPT mount -t sysfs /sys
+nx679j: mount sysfs     rc=0
+nx679j: ATTEMPT mount -t configfs /sys/kernel/config
+nx679j: mount configfs  rc=0
+nx679j: ATTEMPT mount -t pstore /sys/fs/pstore
+nx679j: mount pstore    rc=0
+nx679j: cmdline: console=ttyAMA0 earlycon loglevel=8 panic=10 rdinit=/init
+nx679j: kernel 6.6.60 aarch64
+nx679j: /proc/devices: pmsg=no
+nx679j: configfs usb_gadget=absent
+nx679j: 0 .ko files visible in /lib/modules
+nx679j: mounts: done
+nx679j: FIRST JOURNAL WRITE, no module loaded yet (device tree nodes UFS=absent USB=present)
+nx679j: /dev/block/by-name present: no
+nx679j: /dev present: kmsg=yes pmsg0=yes console=yes
+nx679j: ---- dump (first journal write: NO rawdump partition found) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: journal is durable on rawdump: no
+nx679j: PID1-OP-FAILED op=journal rc=1 journal=0 gadget=0
+nx679j: ---- dump (PID1-OP-FAILED op=journal rc=1 journal=0 gadget=0) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: gadget: start
+nx679j: usb_role nodes set to device: 0
+nx679j: ATTEMPT wait for a real UDC (1/12)
+nx679j: ATTEMPT wait for a real UDC (2/12)
+nx679j: ATTEMPT wait for a real UDC (3/12)
+nx679j: ATTEMPT wait for a real UDC (4/12)
+nx679j: ATTEMPT wait for a real UDC (5/12)
+nx679j: ATTEMPT wait for a real UDC (6/12)
+nx679j: ATTEMPT wait for a real UDC (7/12)
+nx679j: ATTEMPT wait for a real UDC (8/12)
+nx679j: ATTEMPT wait for a real UDC (9/12)
+nx679j: ATTEMPT wait for a real UDC (10/12)
+nx679j: ATTEMPT wait for a real UDC (11/12)
+nx679j: ATTEMPT wait for a real UDC (12/12)
+nx679j: gadget: NO UDC after 12 s (dwc3_msm not up?)
+nx679j: gadget: rc=-1
+nx679j: ---- dump (end of gadget step) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: PID1-OP-FAILED op=gadget rc=1 journal=0 gadget=0
+nx679j: ---- dump (PID1-OP-FAILED op=gadget rc=1 journal=0 gadget=0) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: chain: start
+nx679j: chain: 47 modules to try, 0 .ko visible
+nx679j: MOD phy_qcom_emu                       MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: MOD repeater                           MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_scm                           MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_msm_snps_eusb2                 MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs                       MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs_qmp_v4_lahaina        MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_hwspinlock                    MISSING (no .ko in /lib/modules)
+nx679j: MOD smem                               MISSING (no .ko in /lib/modules)
+nx679j: MOD minidump                           MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: MOD qcom_ipc_logging                   MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_glink                         MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_glink_spss                    MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs_qmp_14nm              MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs_qmp_v3                MISSING (no .ko in /lib/modules)
+nx679j: MOD nvmem_qfprom                       already-loaded
+nx679j: MOD qti_regmap_debugfs                 MISSING (no .ko in /lib/modules)
+nx679j: MOD ns                                 MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: MOD qrtr                               MISSING (no .ko in /lib/modules)
+nx679j: MOD qmi_helpers                        MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_smd                           MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_glink_smem                    MISSING (no .ko in /lib/modules)
+nx679j: MOD rproc_qcom_common                  MISSING (no .ko in /lib/modules)
+nx679j: MOD pdr_interface                      MISSING (no .ko in /lib/modules)
+nx679j: MOD pmic_glink                         MISSING (no .ko in /lib/modules)
+nx679j: MOD ucsi_glink                         MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: MOD fsa4480_i2c                        MISSING (no .ko in /lib/modules)
+nx679j: MOD altmode_glink                      MISSING (no .ko in /lib/modules)
+nx679j: MOD proxy_consumer                     MISSING (no .ko in /lib/modules)
+nx679j: MOD debug_regulator                    MISSING (no .ko in /lib/modules)
+nx679j: MOD gdsc_regulator                     MISSING (no .ko in /lib/modules)
+nx679j: MOD clk_qcom                           MISSING (no .ko in /lib/modules)
+nx679j: MOD ssusb_redriver_nb7vpq904m          MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_generic                        MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+[   12.763718] nx679j: journal mirror: 5148 bytes (file open, kmsg=4 pmsg=-1 rd=-1)
+<1>nx679j: journal mirror: 5876 bytes (file open, kmsg=4 pmsg=-1 rd=-1)
+nx679j: mounts: start (uid=0 pid=55)
+nx679j: ATTEMPT mount -t proc /proc
+nx679j: mount proc      rc=0
+nx679j: ATTEMPT mount -t sysfs /sys
+nx679j: mount sysfs     rc=0
+nx679j: ATTEMPT mount -t configfs /sys/kernel/config
+nx679j: mount configfs  rc=0
+nx679j: ATTEMPT mount -t pstore /sys/fs/pstore
+nx679j: mount pstore    rc=0
+nx679j: cmdline: console=ttyAMA0 earlycon loglevel=8 panic=10 rdinit=/init
+nx679j: kernel 6.6.60 aarch64
+nx679j: /proc/devices: pmsg=no
+nx679j: configfs usb_gadget=absent
+nx679j: 0 .ko files visible in /lib/modules
+nx679j: mounts: done
+nx679j: FIRST JOURNAL WRITE, no module loaded yet (device tree nodes UFS=absent USB=present)
+nx679j: /dev/block/by-name present: no
+nx679j: /dev present: kmsg=yes pmsg0=yes console=yes
+nx679j: ---- dump (first journal write: NO rawdump partition found) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: journal is durable on rawdump: no
+nx679j: PID1-OP-FAILED op=journal rc=1 journal=0 gadget=0
+nx679j: ---- dump (PID1-OP-FAILED op=journal rc=1 journal=0 gadget=0) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: gadget: start
+nx679j: usb_role nodes set to device: 0
+nx679j: ATTEMPT wait for a real UDC (1/12)
+nx679j: ATTEMPT wait for a real UDC (2/12)
+nx679j: ATTEMPT wait for a real UDC (3/12)
+nx679j: ATTEMPT wait for a real UDC (4/12)
+nx679j: ATTEMPT wait for a real UDC (5/12)
+nx679j: ATTEMPT wait for a real UDC (6/12)
+nx679j: ATTEMPT wait for a real UDC (7/12)
+nx679j: ATTEMPT wait for a real UDC (8/12)
+nx679j: ATTEMPT wait for a real UDC (9/12)
+nx679j: ATTEMPT wait for a real UDC (10/12)
+nx679j: ATTEMPT wait for a real UDC (11/12)
+nx679j: ATTEMPT wait for a real UDC (12/12)
+nx679j: gadget: NO UDC after 12 s (dwc3_msm not up?)
+nx679j: gadget: rc=-1
+nx679j: ---- dump (end of gadget step) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: PID1-OP-FAILED op=gadget rc=1 journal=0 gadget=0
+nx679j: ---- dump (PID1-OP-FAILED op=gadget rc=1 journal=0 gadget=0) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: chain: start
+nx679j: chain: 47 modules to try, 0 .ko visible
+nx679j: MOD phy_qcom_emu                       MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: MOD repeater                           MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_scm                           MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_msm_snps_eusb2                 MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs                       MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs_qmp_v4_lahaina        MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_hwspinlock                    MISSING (no .ko in /lib/modules)
+nx679j: MOD smem                               MISSING (no .ko in /lib/modules)
+nx679j: MOD minidump                           MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: MOD qcom_ipc_logging                   MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_glink                         MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_glink_spss                    MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs_qmp_14nm              MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs_qmp_v3                MISSING (no .ko in /lib/modules)
+nx679j: MOD nvmem_qfprom                       already-loaded
+nx679j: MOD qti_regmap_debugfs                 MISSING (no .ko in /lib/modules)
+nx679j: MOD ns                                 MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: MOD qrtr                               MISSING (no .ko in /lib/modules)
+nx679j: MOD qmi_helpers                        MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_smd                           MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_glink_smem                    MISSING (no .ko in /lib/modules)
+nx679j: MOD rproc_qcom_common                  MISSING (no .ko in /lib/modules)
+nx679j: MOD pdr_interface                      MISSING (no .ko in /lib/modules)
+nx679j: MOD pmic_glink                         MISSING (no .ko in /lib/modules)
+nx679j: MOD ucsi_glink                         MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: MOD fsa4480_i2c                        MISSING (no .ko in /lib/modules)
+nx679j: MOD altmode_glink                      MISSING (no .ko in /lib/modules)
+nx679j: MOD proxy_consumer                     MISSING (no .ko in /lib/modules)
+nx679j: MOD debug_regulator                    MISSING (no .ko in /lib/modules)
+nx679j: MOD gdsc_regulator                     MISSING (no .ko in /lib/modules)
+nx679j: MOD clk_qcom                           MISSING (no .ko in /lib/modules)
+nx679j: MOD ssusb_redriver_nb7vpq904m          MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_generic                        MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: MOD phy_msm_snps_hs                    MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_msm_ssusb_qmp                  MISSING (no .ko in /lib/modules)
+nx679j: MOD eud                                MISSING (no .ko in /lib/modules)
+nx679j: MOD dwc3_msm                           MISSING (no .ko in /lib/modules)
+nx679j: MOD tmecom_intf                        MISSING (no .ko in /lib/modules)
+nx679j: MOD hwkm                               MISSING (no .ko in /lib/modules)
+nx679j: MOD crypto_qti_hwkm                    MISSING (no .ko in /lib/modules)
+nx679j: MOD crypto_qti_common                  MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+[   12.772163] nx679j: journal mirror: 5876 bytes (file open, kmsg=4 pmsg=-1 rd=-1)
+<1>nx679j: journal mirror: 6444 bytes (file open, kmsg=4 pmsg=-1 rd=-1)
+nx679j: mounts: start (uid=0 pid=55)
+nx679j: ATTEMPT mount -t proc /proc
+nx679j: mount proc      rc=0
+nx679j: ATTEMPT mount -t sysfs /sys
+nx679j: mount sysfs     rc=0
+nx679j: ATTEMPT mount -t configfs /sys/kernel/config
+nx679j: mount configfs  rc=0
+nx679j: ATTEMPT mount -t pstore /sys/fs/pstore
+nx679j: mount pstore    rc=0
+nx679j: cmdline: console=ttyAMA0 earlycon loglevel=8 panic=10 rdinit=/init
+nx679j: kernel 6.6.60 aarch64
+nx679j: /proc/devices: pmsg=no
+nx679j: configfs usb_gadget=absent
+nx679j: 0 .ko files visible in /lib/modules
+nx679j: mounts: done
+nx679j: FIRST JOURNAL WRITE, no module loaded yet (device tree nodes UFS=absent USB=present)
+nx679j: /dev/block/by-name present: no
+nx679j: /dev present: kmsg=yes pmsg0=yes console=yes
+nx679j: ---- dump (first journal write: NO rawdump partition found) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: journal is durable on rawdump: no
+nx679j: PID1-OP-FAILED op=journal rc=1 journal=0 gadget=0
+nx679j: ---- dump (PID1-OP-FAILED op=journal rc=1 journal=0 gadget=0) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: gadget: start
+nx679j: usb_role nodes set to device: 0
+nx679j: ATTEMPT wait for a real UDC (1/12)
+nx679j: ATTEMPT wait for a real UDC (2/12)
+nx679j: ATTEMPT wait for a real UDC (3/12)
+nx679j: ATTEMPT wait for a real UDC (4/12)
+nx679j: ATTEMPT wait for a real UDC (5/12)
+nx679j: ATTEMPT wait for a real UDC (6/12)
+nx679j: ATTEMPT wait for a real UDC (7/12)
+nx679j: ATTEMPT wait for a real UDC (8/12)
+nx679j: ATTEMPT wait for a real UDC (9/12)
+nx679j: ATTEMPT wait for a real UDC (10/12)
+nx679j: ATTEMPT wait for a real UDC (11/12)
+nx679j: ATTEMPT wait for a real UDC (12/12)
+nx679j: gadget: NO UDC after 12 s (dwc3_msm not up?)
+nx679j: gadget: rc=-1
+nx679j: ---- dump (end of gadget step) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: PID1-OP-FAILED op=gadget rc=1 journal=0 gadget=0
+nx679j: ---- dump (PID1-OP-FAILED op=gadget rc=1 journal=0 gadget=0) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: chain: start
+nx679j: chain: 47 modules to try, 0 .ko visible
+nx679j: MOD phy_qcom_emu                       MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: MOD repeater                           MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_scm                           MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_msm_snps_eusb2                 MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs                       MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs_qmp_v4_lahaina        MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_hwspinlock                    MISSING (no .ko in /lib/modules)
+nx679j: MOD smem                               MISSING (no .ko in /lib/modules)
+nx679j: MOD minidump                           MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: MOD qcom_ipc_logging                   MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_glink                         MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_glink_spss                    MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs_qmp_14nm              MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs_qmp_v3                MISSING (no .ko in /lib/modules)
+nx679j: MOD nvmem_qfprom                       already-loaded
+nx679j: MOD qti_regmap_debugfs                 MISSING (no .ko in /lib/modules)
+nx679j: MOD ns                                 MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: MOD qrtr                               MISSING (no .ko in /lib/modules)
+nx679j: MOD qmi_helpers                        MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_smd                           MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_glink_smem                    MISSING (no .ko in /lib/modules)
+nx679j: MOD rproc_qcom_common                  MISSING (no .ko in /lib/modules)
+nx679j: MOD pdr_interface                      MISSING (no .ko in /lib/modules)
+nx679j: MOD pmic_glink                         MISSING (no .ko in /lib/modules)
+nx679j: MOD ucsi_glink                         MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: MOD fsa4480_i2c                        MISSING (no .ko in /lib/modules)
+nx679j: MOD altmode_glink                      MISSING (no .ko in /lib/modules)
+nx679j: MOD proxy_consumer                     MISSING (no .ko in /lib/modules)
+nx679j: MOD debug_regulator                    MISSING (no .ko in /lib/modules)
+nx679j: MOD gdsc_regulator                     MISSING (no .ko in /lib/modules)
+nx679j: MOD clk_qcom                           MISSING (no .ko in /lib/modules)
+nx679j: MOD ssusb_redriver_nb7vpq904m          MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_generic                        MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: MOD phy_msm_snps_hs                    MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_msm_ssusb_qmp                  MISSING (no .ko in /lib/modules)
+nx679j: MOD eud                                MISSING (no .ko in /lib/modules)
+nx679j: MOD dwc3_msm                           MISSING (no .ko in /lib/modules)
+nx679j: MOD tmecom_intf                        MISSING (no .ko in /lib/modules)
+nx679j: MOD hwkm                               MISSING (no .ko in /lib/modules)
+nx679j: MOD crypto_qti_hwkm                    MISSING (no .ko in /lib/modules)
+nx679j: MOD crypto_qti_common                  MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: MOD ufshcd_crypto_qti                  MISSING (no .ko in /lib/modules)
+nx679j: MOD ufs_qcom                           MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs_qmp_v4_cape           MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs_qmp_v4_diwali         MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs_qmp_v4_waipio         MISSING (no .ko in /lib/modules)
+nx679j: MOD nvmem_qcom_spmi_sdam               MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+[   12.780675] nx679j: journal mirror: 6444 bytes (file open, kmsg=4 pmsg=-1 rd=-1)
+<1>nx679j: journal mirror: 6610 bytes (file open, kmsg=4 pmsg=-1 rd=-1)
+nx679j: mounts: start (uid=0 pid=55)
+nx679j: ATTEMPT mount -t proc /proc
+nx679j: mount proc      rc=0
+nx679j: ATTEMPT mount -t sysfs /sys
+nx679j: mount sysfs     rc=0
+nx679j: ATTEMPT mount -t configfs /sys/kernel/config
+nx679j: mount configfs  rc=0
+nx679j: ATTEMPT mount -t pstore /sys/fs/pstore
+nx679j: mount pstore    rc=0
+nx679j: cmdline: console=ttyAMA0 earlycon loglevel=8 panic=10 rdinit=/init
+nx679j: kernel 6.6.60 aarch64
+nx679j: /proc/devices: pmsg=no
+nx679j: configfs usb_gadget=absent
+nx679j: 0 .ko files visible in /lib/modules
+nx679j: mounts: done
+nx679j: FIRST JOURNAL WRITE, no module loaded yet (device tree nodes UFS=absent USB=present)
+nx679j: /dev/block/by-name present: no
+nx679j: /dev present: kmsg=yes pmsg0=yes console=yes
+nx679j: ---- dump (first journal write: NO rawdump partition found) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: journal is durable on rawdump: no
+nx679j: PID1-OP-FAILED op=journal rc=1 journal=0 gadget=0
+nx679j: ---- dump (PID1-OP-FAILED op=journal rc=1 journal=0 gadget=0) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: gadget: start
+nx679j: usb_role nodes set to device: 0
+nx679j: ATTEMPT wait for a real UDC (1/12)
+nx679j: ATTEMPT wait for a real UDC (2/12)
+nx679j: ATTEMPT wait for a real UDC (3/12)
+nx679j: ATTEMPT wait for a real UDC (4/12)
+nx679j: ATTEMPT wait for a real UDC (5/12)
+nx679j: ATTEMPT wait for a real UDC (6/12)
+nx679j: ATTEMPT wait for a real UDC (7/12)
+nx679j: ATTEMPT wait for a real UDC (8/12)
+nx679j: ATTEMPT wait for a real UDC (9/12)
+nx679j: ATTEMPT wait for a real UDC (10/12)
+nx679j: ATTEMPT wait for a real UDC (11/12)
+nx679j: ATTEMPT wait for a real UDC (12/12)
+nx679j: gadget: NO UDC after 12 s (dwc3_msm not up?)
+nx679j: gadget: rc=-1
+nx679j: ---- dump (end of gadget step) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: PID1-OP-FAILED op=gadget rc=1 journal=0 gadget=0
+nx679j: ---- dump (PID1-OP-FAILED op=gadget rc=1 journal=0 gadget=0) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: chain: start
+nx679j: chain: 47 modules to try, 0 .ko visible
+nx679j: MOD phy_qcom_emu                       MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: MOD repeater                           MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_scm                           MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_msm_snps_eusb2                 MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs                       MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs_qmp_v4_lahaina        MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_hwspinlock                    MISSING (no .ko in /lib/modules)
+nx679j: MOD smem                               MISSING (no .ko in /lib/modules)
+nx679j: MOD minidump                           MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: MOD qcom_ipc_logging                   MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_glink                         MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_glink_spss                    MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs_qmp_14nm              MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs_qmp_v3                MISSING (no .ko in /lib/modules)
+nx679j: MOD nvmem_qfprom                       already-loaded
+nx679j: MOD qti_regmap_debugfs                 MISSING (no .ko in /lib/modules)
+nx679j: MOD ns                                 MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: MOD qrtr                               MISSING (no .ko in /lib/modules)
+nx679j: MOD qmi_helpers                        MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_smd                           MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_glink_smem                    MISSING (no .ko in /lib/modules)
+nx679j: MOD rproc_qcom_common                  MISSING (no .ko in /lib/modules)
+nx679j: MOD pdr_interface                      MISSING (no .ko in /lib/modules)
+nx679j: MOD pmic_glink                         MISSING (no .ko in /lib/modules)
+nx679j: MOD ucsi_glink                         MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: MOD fsa4480_i2c                        MISSING (no .ko in /lib/modules)
+nx679j: MOD altmode_glink                      MISSING (no .ko in /lib/modules)
+nx679j: MOD proxy_consumer                     MISSING (no .ko in /lib/modules)
+nx679j: MOD debug_regulator                    MISSING (no .ko in /lib/modules)
+nx679j: MOD gdsc_regulator                     MISSING (no .ko in /lib/modules)
+nx679j: MOD clk_qcom                           MISSING (no .ko in /lib/modules)
+nx679j: MOD ssusb_redriver_nb7vpq904m          MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_generic                        MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: MOD phy_msm_snps_hs                    MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_msm_ssusb_qmp                  MISSING (no .ko in /lib/modules)
+nx679j: MOD eud                                MISSING (no .ko in /lib/modules)
+nx679j: MOD dwc3_msm                           MISSING (no .ko in /lib/modules)
+nx679j: MOD tmecom_intf                        MISSING (no .ko in /lib/modules)
+nx679j: MOD hwkm                               MISSING (no .ko in /lib/modules)
+nx679j: MOD crypto_qti_hwkm                    MISSING (no .ko in /lib/modules)
+nx679j: MOD crypto_qti_common                  MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: MOD ufshcd_crypto_qti                  MISSING (no .ko in /lib/modules)
+nx679j: MOD ufs_qcom                           MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs_qmp_v4_cape           MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs_qmp_v4_diwali         MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs_qmp_v4_waipio         MISSING (no .ko in /lib/modules)
+nx679j: MOD nvmem_qcom_spmi_sdam               MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: chain: done in 50 ms: ok=1 timeout-killed=0 failed/missing=46 skipped=0
+nx679j: ---- dump (end of chain) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+[   12.790525] nx679j: journal mirror: 6610 bytes (file open, kmsg=4 pmsg=-1 rd=-1)
+<1>nx679j: journal mirror: 7358 bytes (file open, kmsg=4 pmsg=-1 rd=-1)
+nx679j: mounts: start (uid=0 pid=55)
+nx679j: ATTEMPT mount -t proc /proc
+nx679j: mount proc      rc=0
+nx679j: ATTEMPT mount -t sysfs /sys
+nx679j: mount sysfs     rc=0
+nx679j: ATTEMPT mount -t configfs /sys/kernel/config
+nx679j: mount configfs  rc=0
+nx679j: ATTEMPT mount -t pstore /sys/fs/pstore
+nx679j: mount pstore    rc=0
+nx679j: cmdline: console=ttyAMA0 earlycon loglevel=8 panic=10 rdinit=/init
+nx679j: kernel 6.6.60 aarch64
+nx679j: /proc/devices: pmsg=no
+nx679j: configfs usb_gadget=absent
+nx679j: 0 .ko files visible in /lib/modules
+nx679j: mounts: done
+nx679j: FIRST JOURNAL WRITE, no module loaded yet (device tree nodes UFS=absent USB=present)
+nx679j: /dev/block/by-name present: no
+nx679j: /dev present: kmsg=yes pmsg0=yes console=yes
+nx679j: ---- dump (first journal write: NO rawdump partition found) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: journal is durable on rawdump: no
+nx679j: PID1-OP-FAILED op=journal rc=1 journal=0 gadget=0
+nx679j: ---- dump (PID1-OP-FAILED op=journal rc=1 journal=0 gadget=0) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: gadget: start
+nx679j: usb_role nodes set to device: 0
+nx679j: ATTEMPT wait for a real UDC (1/12)
+nx679j: ATTEMPT wait for a real UDC (2/12)
+nx679j: ATTEMPT wait for a real UDC (3/12)
+nx679j: ATTEMPT wait for a real UDC (4/12)
+nx679j: ATTEMPT wait for a real UDC (5/12)
+nx679j: ATTEMPT wait for a real UDC (6/12)
+nx679j: ATTEMPT wait for a real UDC (7/12)
+nx679j: ATTEMPT wait for a real UDC (8/12)
+nx679j: ATTEMPT wait for a real UDC (9/12)
+nx679j: ATTEMPT wait for a real UDC (10/12)
+nx679j: ATTEMPT wait for a real UDC (11/12)
+nx679j: ATTEMPT wait for a real UDC (12/12)
+nx679j: gadget: NO UDC after 12 s (dwc3_msm not up?)
+nx679j: gadget: rc=-1
+nx679j: ---- dump (end of gadget step) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: PID1-OP-FAILED op=gadget rc=1 journal=0 gadget=0
+nx679j: ---- dump (PID1-OP-FAILED op=gadget rc=1 journal=0 gadget=0) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: chain: start
+nx679j: chain: 47 modules to try, 0 .ko visible
+nx679j: MOD phy_qcom_emu                       MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: MOD repeater                           MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_scm                           MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_msm_snps_eusb2                 MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs                       MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs_qmp_v4_lahaina        MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_hwspinlock                    MISSING (no .ko in /lib/modules)
+nx679j: MOD smem                               MISSING (no .ko in /lib/modules)
+nx679j: MOD minidump                           MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: MOD qcom_ipc_logging                   MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_glink                         MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_glink_spss                    MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs_qmp_14nm              MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs_qmp_v3                MISSING (no .ko in /lib/modules)
+nx679j: MOD nvmem_qfprom                       already-loaded
+nx679j: MOD qti_regmap_debugfs                 MISSING (no .ko in /lib/modules)
+nx679j: MOD ns                                 MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: MOD qrtr                               MISSING (no .ko in /lib/modules)
+nx679j: MOD qmi_helpers                        MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_smd                           MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_glink_smem                    MISSING (no .ko in /lib/modules)
+nx679j: MOD rproc_qcom_common                  MISSING (no .ko in /lib/modules)
+nx679j: MOD pdr_interface                      MISSING (no .ko in /lib/modules)
+nx679j: MOD pmic_glink                         MISSING (no .ko in /lib/modules)
+nx679j: MOD ucsi_glink                         MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: MOD fsa4480_i2c                        MISSING (no .ko in /lib/modules)
+nx679j: MOD altmode_glink                      MISSING (no .ko in /lib/modules)
+nx679j: MOD proxy_consumer                     MISSING (no .ko in /lib/modules)
+nx679j: MOD debug_regulator                    MISSING (no .ko in /lib/modules)
+nx679j: MOD gdsc_regulator                     MISSING (no .ko in /lib/modules)
+nx679j: MOD clk_qcom                           MISSING (no .ko in /lib/modules)
+nx679j: MOD ssusb_redriver_nb7vpq904m          MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_generic                        MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: MOD phy_msm_snps_hs                    MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_msm_ssusb_qmp                  MISSING (no .ko in /lib/modules)
+nx679j: MOD eud                                MISSING (no .ko in /lib/modules)
+nx679j: MOD dwc3_msm                           MISSING (no .ko in /lib/modules)
+nx679j: MOD tmecom_intf                        MISSING (no .ko in /lib/modules)
+nx679j: MOD hwkm                               MISSING (no .ko in /lib/modules)
+nx679j: MOD crypto_qti_hwkm                    MISSING (no .ko in /lib/modules)
+nx679j: MOD crypto_qti_common                  MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: MOD ufshcd_crypto_qti                  MISSING (no .ko in /lib/modules)
+nx679j: MOD ufs_qcom                           MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs_qmp_v4_cape           MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs_qmp_v4_diwali         MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs_qmp_v4_waipio         MISSING (no .ko in /lib/modules)
+nx679j: MOD nvmem_qcom_spmi_sdam               MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: chain: done in 50 ms: ok=1 timeout-killed=0 failed/missing=46 skipped=0
+nx679j: ---- dump (end of chain) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: gadget: start
+nx679j: usb_role nodes set to device: 0
+nx679j: ATTEMPT wait for a real UDC (1/12)
+nx679j: ATTEMPT wait for a real UDC (2/12)
+nx679j: ATTEMPT wait for a real UDC (3/12)
+nx679j: ATTEMPT wait for a real UDC (4/12)
+nx679j: ATTEMPT wait for a real UDC (5/12)
+nx679j: ATTEMPT wait for a real UDC (6/12)
+nx679j: ATTEMPT wait for a real UDC (7/12)
+nx679j: ATTEMPT wait for a real UDC (8/12)
+nx679j: ATTEMPT wait for a real UDC (9/12)
+nx679j: ATTEMPT wait for a real UDC (10/12)
+nx679j: ATTEMPT wait for a real UDC (11/12)
+nx679j: ATTEMPT wait for a real UDC (12/12)
+nx679j: gadget: NO UDC after 12 s (dwc3_msm not up?)
+nx679j: gadget: rc=-1
+nx679j: ---- dump (end of gadget step) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+[   24.854712] nx679j: journal mirror: 7358 bytes (file open, kmsg=4 pmsg=-1 rd=-1)
+<1>nx679j: journal mirror: 7537 bytes (file open, kmsg=4 pmsg=-1 rd=-1)
+nx679j: mounts: start (uid=0 pid=55)
+nx679j: ATTEMPT mount -t proc /proc
+nx679j: mount proc      rc=0
+nx679j: ATTEMPT mount -t sysfs /sys
+nx679j: mount sysfs     rc=0
+nx679j: ATTEMPT mount -t configfs /sys/kernel/config
+nx679j: mount configfs  rc=0
+nx679j: ATTEMPT mount -t pstore /sys/fs/pstore
+nx679j: mount pstore    rc=0
+nx679j: cmdline: console=ttyAMA0 earlycon loglevel=8 panic=10 rdinit=/init
+nx679j: kernel 6.6.60 aarch64
+nx679j: /proc/devices: pmsg=no
+nx679j: configfs usb_gadget=absent
+nx679j: 0 .ko files visible in /lib/modules
+nx679j: mounts: done
+nx679j: FIRST JOURNAL WRITE, no module loaded yet (device tree nodes UFS=absent USB=present)
+nx679j: /dev/block/by-name present: no
+nx679j: /dev present: kmsg=yes pmsg0=yes console=yes
+nx679j: ---- dump (first journal write: NO rawdump partition found) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: journal is durable on rawdump: no
+nx679j: PID1-OP-FAILED op=journal rc=1 journal=0 gadget=0
+nx679j: ---- dump (PID1-OP-FAILED op=journal rc=1 journal=0 gadget=0) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: gadget: start
+nx679j: usb_role nodes set to device: 0
+nx679j: ATTEMPT wait for a real UDC (1/12)
+nx679j: ATTEMPT wait for a real UDC (2/12)
+nx679j: ATTEMPT wait for a real UDC (3/12)
+nx679j: ATTEMPT wait for a real UDC (4/12)
+nx679j: ATTEMPT wait for a real UDC (5/12)
+nx679j: ATTEMPT wait for a real UDC (6/12)
+nx679j: ATTEMPT wait for a real UDC (7/12)
+nx679j: ATTEMPT wait for a real UDC (8/12)
+nx679j: ATTEMPT wait for a real UDC (9/12)
+nx679j: ATTEMPT wait for a real UDC (10/12)
+nx679j: ATTEMPT wait for a real UDC (11/12)
+nx679j: ATTEMPT wait for a real UDC (12/12)
+nx679j: gadget: NO UDC after 12 s (dwc3_msm not up?)
+nx679j: gadget: rc=-1
+nx679j: ---- dump (end of gadget step) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: PID1-OP-FAILED op=gadget rc=1 journal=0 gadget=0
+nx679j: ---- dump (PID1-OP-FAILED op=gadget rc=1 journal=0 gadget=0) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: chain: start
+nx679j: chain: 47 modules to try, 0 .ko visible
+nx679j: MOD phy_qcom_emu                       MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: MOD repeater                           MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_scm                           MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_msm_snps_eusb2                 MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs                       MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs_qmp_v4_lahaina        MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_hwspinlock                    MISSING (no .ko in /lib/modules)
+nx679j: MOD smem                               MISSING (no .ko in /lib/modules)
+nx679j: MOD minidump                           MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: MOD qcom_ipc_logging                   MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_glink                         MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_glink_spss                    MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs_qmp_14nm              MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs_qmp_v3                MISSING (no .ko in /lib/modules)
+nx679j: MOD nvmem_qfprom                       already-loaded
+nx679j: MOD qti_regmap_debugfs                 MISSING (no .ko in /lib/modules)
+nx679j: MOD ns                                 MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: MOD qrtr                               MISSING (no .ko in /lib/modules)
+nx679j: MOD qmi_helpers                        MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_smd                           MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_glink_smem                    MISSING (no .ko in /lib/modules)
+nx679j: MOD rproc_qcom_common                  MISSING (no .ko in /lib/modules)
+nx679j: MOD pdr_interface                      MISSING (no .ko in /lib/modules)
+nx679j: MOD pmic_glink                         MISSING (no .ko in /lib/modules)
+nx679j: MOD ucsi_glink                         MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: MOD fsa4480_i2c                        MISSING (no .ko in /lib/modules)
+nx679j: MOD altmode_glink                      MISSING (no .ko in /lib/modules)
+nx679j: MOD proxy_consumer                     MISSING (no .ko in /lib/modules)
+nx679j: MOD debug_regulator                    MISSING (no .ko in /lib/modules)
+nx679j: MOD gdsc_regulator                     MISSING (no .ko in /lib/modules)
+nx679j: MOD clk_qcom                           MISSING (no .ko in /lib/modules)
+nx679j: MOD ssusb_redriver_nb7vpq904m          MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_generic                        MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: MOD phy_msm_snps_hs                    MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_msm_ssusb_qmp                  MISSING (no .ko in /lib/modules)
+nx679j: MOD eud                                MISSING (no .ko in /lib/modules)
+nx679j: MOD dwc3_msm                           MISSING (no .ko in /lib/modules)
+nx679j: MOD tmecom_intf                        MISSING (no .ko in /lib/modules)
+nx679j: MOD hwkm                               MISSING (no .ko in /lib/modules)
+nx679j: MOD crypto_qti_hwkm                    MISSING (no .ko in /lib/modules)
+nx679j: MOD crypto_qti_common                  MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: MOD ufshcd_crypto_qti                  MISSING (no .ko in /lib/modules)
+nx679j: MOD ufs_qcom                           MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs_qmp_v4_cape           MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs_qmp_v4_diwali         MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs_qmp_v4_waipio         MISSING (no .ko in /lib/modules)
+nx679j: MOD nvmem_qcom_spmi_sdam               MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: chain: done in 50 ms: ok=1 timeout-killed=0 failed/missing=46 skipped=0
+nx679j: ---- dump (end of chain) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: gadget: start
+nx679j: usb_role nodes set to device: 0
+nx679j: ATTEMPT wait for a real UDC (1/12)
+nx679j: ATTEMPT wait for a real UDC (2/12)
+nx679j: ATTEMPT wait for a real UDC (3/12)
+nx679j: ATTEMPT wait for a real UDC (4/12)
+nx679j: ATTEMPT wait for a real UDC (5/12)
+nx679j: ATTEMPT wait for a real UDC (6/12)
+nx679j: ATTEMPT wait for a real UDC (7/12)
+nx679j: ATTEMPT wait for a real UDC (8/12)
+nx679j: ATTEMPT wait for a real UDC (9/12)
+nx679j: ATTEMPT wait for a real UDC (10/12)
+nx679j: ATTEMPT wait for a real UDC (11/12)
+nx679j: ATTEMPT wait for a real UDC (12/12)
+nx679j: gadget: NO UDC after 12 s (dwc3_msm not up?)
+nx679j: gadget: rc=-1
+nx679j: ---- dump (end of gadget step) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: PID1-OP-FAILED op=gadget rc=1 journal=0 gadget=0
+nx679j: ---- dump (PID1-OP-FAILED op=gadget rc=1 journal=0 gadget=0) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+[   24.913875] nx679j: journal mirror: 7537 bytes (file open, kmsg=4 pmsg=-1 rd=-1)
+<1>nx679j: journal mirror: 7704 bytes (file open, kmsg=4 pmsg=-1 rd=-1)
+nx679j: mounts: start (uid=0 pid=55)
+nx679j: ATTEMPT mount -t proc /proc
+nx679j: mount proc      rc=0
+nx679j: ATTEMPT mount -t sysfs /sys
+nx679j: mount sysfs     rc=0
+nx679j: ATTEMPT mount -t configfs /sys/kernel/config
+nx679j: mount configfs  rc=0
+nx679j: ATTEMPT mount -t pstore /sys/fs/pstore
+nx679j: mount pstore    rc=0
+nx679j: cmdline: console=ttyAMA0 earlycon loglevel=8 panic=10 rdinit=/init
+nx679j: kernel 6.6.60 aarch64
+nx679j: /proc/devices: pmsg=no
+nx679j: configfs usb_gadget=absent
+nx679j: 0 .ko files visible in /lib/modules
+nx679j: mounts: done
+nx679j: FIRST JOURNAL WRITE, no module loaded yet (device tree nodes UFS=absent USB=present)
+nx679j: /dev/block/by-name present: no
+nx679j: /dev present: kmsg=yes pmsg0=yes console=yes
+nx679j: ---- dump (first journal write: NO rawdump partition found) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: journal is durable on rawdump: no
+nx679j: PID1-OP-FAILED op=journal rc=1 journal=0 gadget=0
+nx679j: ---- dump (PID1-OP-FAILED op=journal rc=1 journal=0 gadget=0) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: gadget: start
+nx679j: usb_role nodes set to device: 0
+nx679j: ATTEMPT wait for a real UDC (1/12)
+nx679j: ATTEMPT wait for a real UDC (2/12)
+nx679j: ATTEMPT wait for a real UDC (3/12)
+nx679j: ATTEMPT wait for a real UDC (4/12)
+nx679j: ATTEMPT wait for a real UDC (5/12)
+nx679j: ATTEMPT wait for a real UDC (6/12)
+nx679j: ATTEMPT wait for a real UDC (7/12)
+nx679j: ATTEMPT wait for a real UDC (8/12)
+nx679j: ATTEMPT wait for a real UDC (9/12)
+nx679j: ATTEMPT wait for a real UDC (10/12)
+nx679j: ATTEMPT wait for a real UDC (11/12)
+nx679j: ATTEMPT wait for a real UDC (12/12)
+nx679j: gadget: NO UDC after 12 s (dwc3_msm not up?)
+nx679j: gadget: rc=-1
+nx679j: ---- dump (end of gadget step) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: PID1-OP-FAILED op=gadget rc=1 journal=0 gadget=0
+nx679j: ---- dump (PID1-OP-FAILED op=gadget rc=1 journal=0 gadget=0) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: chain: start
+nx679j: chain: 47 modules to try, 0 .ko visible
+nx679j: MOD phy_qcom_emu                       MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: MOD repeater                           MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_scm                           MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_msm_snps_eusb2                 MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs                       MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs_qmp_v4_lahaina        MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_hwspinlock                    MISSING (no .ko in /lib/modules)
+nx679j: MOD smem                               MISSING (no .ko in /lib/modules)
+nx679j: MOD minidump                           MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: MOD qcom_ipc_logging                   MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_glink                         MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_glink_spss                    MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs_qmp_14nm              MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs_qmp_v3                MISSING (no .ko in /lib/modules)
+nx679j: MOD nvmem_qfprom                       already-loaded
+nx679j: MOD qti_regmap_debugfs                 MISSING (no .ko in /lib/modules)
+nx679j: MOD ns                                 MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: MOD qrtr                               MISSING (no .ko in /lib/modules)
+nx679j: MOD qmi_helpers                        MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_smd                           MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_glink_smem                    MISSING (no .ko in /lib/modules)
+nx679j: MOD rproc_qcom_common                  MISSING (no .ko in /lib/modules)
+nx679j: MOD pdr_interface                      MISSING (no .ko in /lib/modules)
+nx679j: MOD pmic_glink                         MISSING (no .ko in /lib/modules)
+nx679j: MOD ucsi_glink                         MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: MOD fsa4480_i2c                        MISSING (no .ko in /lib/modules)
+nx679j: MOD altmode_glink                      MISSING (no .ko in /lib/modules)
+nx679j: MOD proxy_consumer                     MISSING (no .ko in /lib/modules)
+nx679j: MOD debug_regulator                    MISSING (no .ko in /lib/modules)
+nx679j: MOD gdsc_regulator                     MISSING (no .ko in /lib/modules)
+nx679j: MOD clk_qcom                           MISSING (no .ko in /lib/modules)
+nx679j: MOD ssusb_redriver_nb7vpq904m          MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_generic                        MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: MOD phy_msm_snps_hs                    MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_msm_ssusb_qmp                  MISSING (no .ko in /lib/modules)
+nx679j: MOD eud                                MISSING (no .ko in /lib/modules)
+nx679j: MOD dwc3_msm                           MISSING (no .ko in /lib/modules)
+nx679j: MOD tmecom_intf                        MISSING (no .ko in /lib/modules)
+nx679j: MOD hwkm                               MISSING (no .ko in /lib/modules)
+nx679j: MOD crypto_qti_hwkm                    MISSING (no .ko in /lib/modules)
+nx679j: MOD crypto_qti_common                  MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: MOD ufshcd_crypto_qti                  MISSING (no .ko in /lib/modules)
+nx679j: MOD ufs_qcom                           MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs_qmp_v4_cape           MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs_qmp_v4_diwali         MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs_qmp_v4_waipio         MISSING (no .ko in /lib/modules)
+nx679j: MOD nvmem_qcom_spmi_sdam               MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: chain: done in 50 ms: ok=1 timeout-killed=0 failed/missing=46 skipped=0
+nx679j: ---- dump (end of chain) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: gadget: start
+nx679j: usb_role nodes set to device: 0
+nx679j: ATTEMPT wait for a real UDC (1/12)
+nx679j: ATTEMPT wait for a real UDC (2/12)
+nx679j: ATTEMPT wait for a real UDC (3/12)
+nx679j: ATTEMPT wait for a real UDC (4/12)
+nx679j: ATTEMPT wait for a real UDC (5/12)
+nx679j: ATTEMPT wait for a real UDC (6/12)
+nx679j: ATTEMPT wait for a real UDC (7/12)
+nx679j: ATTEMPT wait for a real UDC (8/12)
+nx679j: ATTEMPT wait for a real UDC (9/12)
+nx679j: ATTEMPT wait for a real UDC (10/12)
+nx679j: ATTEMPT wait for a real UDC (11/12)
+nx679j: ATTEMPT wait for a real UDC (12/12)
+nx679j: gadget: NO UDC after 12 s (dwc3_msm not up?)
+nx679j: gadget: rc=-1
+nx679j: ---- dump (end of gadget step) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: PID1-OP-FAILED op=gadget rc=1 journal=0 gadget=0
+nx679j: ---- dump (PID1-OP-FAILED op=gadget rc=1 journal=0 gadget=0) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: v9-summary op=dump rc=0 journal=0 gadget=0
+nx679j: ---- dump (v9-summary op=dump rc=0 journal=0 gadget=0) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+[   24.964256] nx679j: journal mirror: 7704 bytes (file open, kmsg=4 pmsg=-1 rd=-1)
+<1>nx679j: journal mirror: 7893 bytes (file open, kmsg=4 pmsg=-1 rd=-1)
+nx679j: mounts: start (uid=0 pid=55)
+nx679j: ATTEMPT mount -t proc /proc
+nx679j: mount proc      rc=0
+nx679j: ATTEMPT mount -t sysfs /sys
+nx679j: mount sysfs     rc=0
+nx679j: ATTEMPT mount -t configfs /sys/kernel/config
+nx679j: mount configfs  rc=0
+nx679j: ATTEMPT mount -t pstore /sys/fs/pstore
+nx679j: mount pstore    rc=0
+nx679j: cmdline: console=ttyAMA0 earlycon loglevel=8 panic=10 rdinit=/init
+nx679j: kernel 6.6.60 aarch64
+nx679j: /proc/devices: pmsg=no
+nx679j: configfs usb_gadget=absent
+nx679j: 0 .ko files visible in /lib/modules
+nx679j: mounts: done
+nx679j: FIRST JOURNAL WRITE, no module loaded yet (device tree nodes UFS=absent USB=present)
+nx679j: /dev/block/by-name present: no
+nx679j: /dev present: kmsg=yes pmsg0=yes console=yes
+nx679j: ---- dump (first journal write: NO rawdump partition found) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: journal is durable on rawdump: no
+nx679j: PID1-OP-FAILED op=journal rc=1 journal=0 gadget=0
+nx679j: ---- dump (PID1-OP-FAILED op=journal rc=1 journal=0 gadget=0) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: gadget: start
+nx679j: usb_role nodes set to device: 0
+nx679j: ATTEMPT wait for a real UDC (1/12)
+nx679j: ATTEMPT wait for a real UDC (2/12)
+nx679j: ATTEMPT wait for a real UDC (3/12)
+nx679j: ATTEMPT wait for a real UDC (4/12)
+nx679j: ATTEMPT wait for a real UDC (5/12)
+nx679j: ATTEMPT wait for a real UDC (6/12)
+nx679j: ATTEMPT wait for a real UDC (7/12)
+nx679j: ATTEMPT wait for a real UDC (8/12)
+nx679j: ATTEMPT wait for a real UDC (9/12)
+nx679j: ATTEMPT wait for a real UDC (10/12)
+nx679j: ATTEMPT wait for a real UDC (11/12)
+nx679j: ATTEMPT wait for a real UDC (12/12)
+nx679j: gadget: NO UDC after 12 s (dwc3_msm not up?)
+nx679j: gadget: rc=-1
+nx679j: ---- dump (end of gadget step) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: PID1-OP-FAILED op=gadget rc=1 journal=0 gadget=0
+nx679j: ---- dump (PID1-OP-FAILED op=gadget rc=1 journal=0 gadget=0) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: chain: start
+nx679j: chain: 47 modules to try, 0 .ko visible
+nx679j: MOD phy_qcom_emu                       MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: MOD repeater                           MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_scm                           MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_msm_snps_eusb2                 MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs                       MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs_qmp_v4_lahaina        MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_hwspinlock                    MISSING (no .ko in /lib/modules)
+nx679j: MOD smem                               MISSING (no .ko in /lib/modules)
+nx679j: MOD minidump                           MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: MOD qcom_ipc_logging                   MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_glink                         MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_glink_spss                    MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs_qmp_14nm              MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs_qmp_v3                MISSING (no .ko in /lib/modules)
+nx679j: MOD nvmem_qfprom                       already-loaded
+nx679j: MOD qti_regmap_debugfs                 MISSING (no .ko in /lib/modules)
+nx679j: MOD ns                                 MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: MOD qrtr                               MISSING (no .ko in /lib/modules)
+nx679j: MOD qmi_helpers                        MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_smd                           MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_glink_smem                    MISSING (no .ko in /lib/modules)
+nx679j: MOD rproc_qcom_common                  MISSING (no .ko in /lib/modules)
+nx679j: MOD pdr_interface                      MISSING (no .ko in /lib/modules)
+nx679j: MOD pmic_glink                         MISSING (no .ko in /lib/modules)
+nx679j: MOD ucsi_glink                         MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: MOD fsa4480_i2c                        MISSING (no .ko in /lib/modules)
+nx679j: MOD altmode_glink                      MISSING (no .ko in /lib/modules)
+nx679j: MOD proxy_consumer                     MISSING (no .ko in /lib/modules)
+nx679j: MOD debug_regulator                    MISSING (no .ko in /lib/modules)
+nx679j: MOD gdsc_regulator                     MISSING (no .ko in /lib/modules)
+nx679j: MOD clk_qcom                           MISSING (no .ko in /lib/modules)
+nx679j: MOD ssusb_redriver_nb7vpq904m          MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_generic                        MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: MOD phy_msm_snps_hs                    MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_msm_ssusb_qmp                  MISSING (no .ko in /lib/modules)
+nx679j: MOD eud                                MISSING (no .ko in /lib/modules)
+nx679j: MOD dwc3_msm                           MISSING (no .ko in /lib/modules)
+nx679j: MOD tmecom_intf                        MISSING (no .ko in /lib/modules)
+nx679j: MOD hwkm                               MISSING (no .ko in /lib/modules)
+nx679j: MOD crypto_qti_hwkm                    MISSING (no .ko in /lib/modules)
+nx679j: MOD crypto_qti_common                  MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: MOD ufshcd_crypto_qti                  MISSING (no .ko in /lib/modules)
+nx679j: MOD ufs_qcom                           MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs_qmp_v4_cape           MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs_qmp_v4_diwali         MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs_qmp_v4_waipio         MISSING (no .ko in /lib/modules)
+nx679j: MOD nvmem_qcom_spmi_sdam               MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: chain: done in 50 ms: ok=1 timeout-killed=0 failed/missing=46 skipped=0
+nx679j: ---- dump (end of chain) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: gadget: start
+nx679j: usb_role nodes set to device: 0
+nx679j: ATTEMPT wait for a real UDC (1/12)
+nx679j: ATTEMPT wait for a real UDC (2/12)
+nx679j: ATTEMPT wait for a real UDC (3/12)
+nx679j: ATTEMPT wait for a real UDC (4/12)
+nx679j: ATTEMPT wait for a real UDC (5/12)
+nx679j: ATTEMPT wait for a real UDC (6/12)
+nx679j: ATTEMPT wait for a real UDC (7/12)
+nx679j: ATTEMPT wait for a real UDC (8/12)
+nx679j: ATTEMPT wait for a real UDC (9/12)
+nx679j: ATTEMPT wait for a real UDC (10/12)
+nx679j: ATTEMPT wait for a real UDC (11/12)
+nx679j: ATTEMPT wait for a real UDC (12/12)
+nx679j: gadget: NO UDC after 12 s (dwc3_msm not up?)
+nx679j: gadget: rc=-1
+nx679j: ---- dump (end of gadget step) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: PID1-OP-FAILED op=gadget rc=1 journal=0 gadget=0
+nx679j: ---- dump (PID1-OP-FAILED op=gadget rc=1 journal=0 gadget=0) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: v9-summary op=dump rc=0 journal=0 gadget=0
+nx679j: ---- dump (v9-summary op=dump rc=0 journal=0 gadget=0) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: v9-relay-started op=relay rc=0 n=1 journal=0 gadget=0
+nx679j: ---- dump (v9-relay-started op=relay rc=0 n=1 journal=0 gadget=0) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+[   25.019068] nx679j: journal mirror: 7893 bytes (file open, kmsg=4 pmsg=-1 rd=-1)
+<1>nx679j: journal mirror: 7994 bytes (file open, kmsg=4 pmsg=-1 rd=-1)
+nx679j: mounts: start (uid=0 pid=55)
+nx679j: ATTEMPT mount -t proc /proc
+nx679j: mount proc      rc=0
+nx679j: ATTEMPT mount -t sysfs /sys
+nx679j: mount sysfs     rc=0
+nx679j: ATTEMPT mount -t configfs /sys/kernel/config
+nx679j: mount configfs  rc=0
+nx679j: ATTEMPT mount -t pstore /sys/fs/pstore
+nx679j: mount pstore    rc=0
+nx679j: cmdline: console=ttyAMA0 earlycon loglevel=8 panic=10 rdinit=/init
+nx679j: kernel 6.6.60 aarch64
+nx679j: /proc/devices: pmsg=no
+nx679j: configfs usb_gadget=absent
+nx679j: 0 .ko files visible in /lib/modules
+nx679j: mounts: done
+nx679j: FIRST JOURNAL WRITE, no module loaded yet (device tree nodes UFS=absent USB=present)
+nx679j: /dev/block/by-name present: no
+nx679j: /dev present: kmsg=yes pmsg0=yes console=yes
+nx679j: ---- dump (first journal write: NO rawdump partition found) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: journal is durable on rawdump: no
+nx679j: PID1-OP-FAILED op=journal rc=1 journal=0 gadget=0
+nx679j: ---- dump (PID1-OP-FAILED op=journal rc=1 journal=0 gadget=0) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: gadget: start
+nx679j: usb_role nodes set to device: 0
+nx679j: ATTEMPT wait for a real UDC (1/12)
+nx679j: ATTEMPT wait for a real UDC (2/12)
+nx679j: ATTEMPT wait for a real UDC (3/12)
+nx679j: ATTEMPT wait for a real UDC (4/12)
+nx679j: ATTEMPT wait for a real UDC (5/12)
+nx679j: ATTEMPT wait for a real UDC (6/12)
+nx679j: ATTEMPT wait for a real UDC (7/12)
+nx679j: ATTEMPT wait for a real UDC (8/12)
+nx679j: ATTEMPT wait for a real UDC (9/12)
+nx679j: ATTEMPT wait for a real UDC (10/12)
+nx679j: ATTEMPT wait for a real UDC (11/12)
+nx679j: ATTEMPT wait for a real UDC (12/12)
+nx679j: gadget: NO UDC after 12 s (dwc3_msm not up?)
+nx679j: gadget: rc=-1
+nx679j: ---- dump (end of gadget step) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: PID1-OP-FAILED op=gadget rc=1 journal=0 gadget=0
+nx679j: ---- dump (PID1-OP-FAILED op=gadget rc=1 journal=0 gadget=0) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: chain: start
+nx679j: chain: 47 modules to try, 0 .ko visible
+nx679j: MOD phy_qcom_emu                       MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: MOD repeater                           MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_scm                           MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_msm_snps_eusb2                 MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs                       MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs_qmp_v4_lahaina        MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_hwspinlock                    MISSING (no .ko in /lib/modules)
+nx679j: MOD smem                               MISSING (no .ko in /lib/modules)
+nx679j: MOD minidump                           MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: MOD qcom_ipc_logging                   MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_glink                         MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_glink_spss                    MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs_qmp_14nm              MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs_qmp_v3                MISSING (no .ko in /lib/modules)
+nx679j: MOD nvmem_qfprom                       already-loaded
+nx679j: MOD qti_regmap_debugfs                 MISSING (no .ko in /lib/modules)
+nx679j: MOD ns                                 MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: MOD qrtr                               MISSING (no .ko in /lib/modules)
+nx679j: MOD qmi_helpers                        MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_smd                           MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_glink_smem                    MISSING (no .ko in /lib/modules)
+nx679j: MOD rproc_qcom_common                  MISSING (no .ko in /lib/modules)
+nx679j: MOD pdr_interface                      MISSING (no .ko in /lib/modules)
+nx679j: MOD pmic_glink                         MISSING (no .ko in /lib/modules)
+nx679j: MOD ucsi_glink                         MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: MOD fsa4480_i2c                        MISSING (no .ko in /lib/modules)
+nx679j: MOD altmode_glink                      MISSING (no .ko in /lib/modules)
+nx679j: MOD proxy_consumer                     MISSING (no .ko in /lib/modules)
+nx679j: MOD debug_regulator                    MISSING (no .ko in /lib/modules)
+nx679j: MOD gdsc_regulator                     MISSING (no .ko in /lib/modules)
+nx679j: MOD clk_qcom                           MISSING (no .ko in /lib/modules)
+nx679j: MOD ssusb_redriver_nb7vpq904m          MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_generic                        MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: MOD phy_msm_snps_hs                    MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_msm_ssusb_qmp                  MISSING (no .ko in /lib/modules)
+nx679j: MOD eud                                MISSING (no .ko in /lib/modules)
+nx679j: MOD dwc3_msm                           MISSING (no .ko in /lib/modules)
+nx679j: MOD tmecom_intf                        MISSING (no .ko in /lib/modules)
+nx679j: MOD hwkm                               MISSING (no .ko in /lib/modules)
+nx679j: MOD crypto_qti_hwkm                    MISSING (no .ko in /lib/modules)
+nx679j: MOD crypto_qti_common                  MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: MOD ufshcd_crypto_qti                  MISSING (no .ko in /lib/modules)
+nx679j: MOD ufs_qcom                           MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs_qmp_v4_cape           MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs_qmp_v4_diwali         MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs_qmp_v4_waipio         MISSING (no .ko in /lib/modules)
+nx679j: MOD nvmem_qcom_spmi_sdam               MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: chain: done in 50 ms: ok=1 timeout-killed=0 failed/missing=46 skipped=0
+nx679j: ---- dump (end of chain) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: gadget: start
+nx679j: usb_role nodes set to device: 0
+nx679j: ATTEMPT wait for a real UDC (1/12)
+nx679j: ATTEMPT wait for a real UDC (2/12)
+nx679j: ATTEMPT wait for a real UDC (3/12)
+nx679j: ATTEMPT wait for a real UDC (4/12)
+nx679j: ATTEMPT wait for a real UDC (5/12)
+nx679j: ATTEMPT wait for a real UDC (6/12)
+nx679j: ATTEMPT wait for a real UDC (7/12)
+nx679j: ATTEMPT wait for a real UDC (8/12)
+nx679j: ATTEMPT wait for a real UDC (9/12)
+nx679j: ATTEMPT wait for a real UDC (10/12)
+nx679j: ATTEMPT wait for a real UDC (11/12)
+nx679j: ATTEMPT wait for a real UDC (12/12)
+nx679j: gadget: NO UDC after 12 s (dwc3_msm not up?)
+nx679j: gadget: rc=-1
+nx679j: ---- dump (end of gadget step) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: PID1-OP-FAILED op=gadget rc=1 journal=0 gadget=0
+nx679j: ---- dump (PID1-OP-FAILED op=gadget rc=1 journal=0 gadget=0) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: v9-summary op=dump rc=0 journal=0 gadget=0
+nx679j: ---- dump (v9-summary op=dump rc=0 journal=0 gadget=0) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: v9-relay-started op=relay rc=0 n=1 journal=0 gadget=0
+nx679j: ---- dump (v9-relay-started op=relay rc=0 n=1 journal=0 gadget=0) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: heartbeat
+nx679j: ---- dump (heartbeat) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+[   55.069347] nx679j: journal mirror: 7994 bytes (file open, kmsg=4 pmsg=-1 rd=-1)
+nx679j-relay-v9: READ-ONLY relay up: nc 0.0.0.0 9999  (iface usb0 ip -, wildcard_fallback=1)
+nx679j-relay-v9: it never opens a file for writing; the answer is a snapshot of /proc, /sys and /nx679j-journal
+[   55.110829] Flash device refused suspend due to active operation (state 20)
+[   55.111171] Flash device refused suspend due to active operation (state 20)
+[   55.111526] reboot: Restarting system

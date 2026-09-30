@@ -1,0 +1,3 @@
+e3fd61ece52cac5588c21e23b86446c0e44e607599f75a1feaf2185995e6f257  candidate-stockkernel-v2/test-20260917-024847/pre-boot_b.img
+6c93debe281b2edb75e7733391b65d8a0dd64e349eb9a229a58867a3956f341d  candidate-stockkernel-v2/test-20260917-024847/pre-misc.img
+6db6d4d76059a9ef3a6bcc904911aac53a20044224a675014a6396a8f5d9d168  candidate-stockkernel-v2/test-20260917-024847/pre-vendor_boot_b.img

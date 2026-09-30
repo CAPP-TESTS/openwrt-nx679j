@@ -1,0 +1,19 @@
+ifindex=1 name=lo parent=0 flags=0x8
+ifindex=2 name=dummy0 parent=0 flags=0x82 kind=dummy
+ifindex=3 name=ifb0 parent=0 flags=0x82 kind=ifb
+ifindex=4 name=ifb1 parent=0 flags=0x82 kind=ifb
+ifindex=5 name=tunl0 parent=0 flags=0x80 kind=ipip
+ifindex=6 name=gre0 parent=0 flags=0x80 kind=gre
+ifindex=7 name=gretap0 parent=0 flags=0x1002 kind=gretap
+ifindex=8 name=erspan0 parent=0 flags=0x1002 kind=erspan
+ifindex=9 name=ip_vti0 parent=0 flags=0x80 kind=vti
+ifindex=10 name=ip6_vti0 parent=0 flags=0x80 kind=vti6
+ifindex=11 name=sit0 parent=0 flags=0x80 kind=sit
+ifindex=12 name=ip6tnl0 parent=0 flags=0x80 kind=ip6tnl
+ifindex=13 name=ip6gre0 parent=0 flags=0x80 kind=ip6gre
+ifindex=14 name=usb0 parent=0 flags=0x11043
+ifindex=15 name=rmnet_ipa0 parent=0 flags=0x0
+ifindex=16 name=rmnet_data0 parent=15 flags=0x0 kind=rmnet mux_id=1
+  rmnet_attr=1 bytes=0100
+  rmnet_attr=2 bytes=01000000ffffffff
+  rmnet_attr=4 bytes=ff0f1400c0c62d00

@@ -1,0 +1,17 @@
+name: parse
+ID: 1510
+format:
+	field:unsigned short common_type;	offset:0;	size:2;	signed:0;
+	field:unsigned char common_flags;	offset:2;	size:1;	signed:0;
+	field:unsigned char common_preempt_count;	offset:3;	size:1;	signed:0;
+	field:int common_pid;	offset:4;	size:4;	signed:1;
+
+	field:unsigned long __probe_ip;	offset:8;	size:8;	signed:0;
+	field:u64 pointer;	offset:16;	size:8;	signed:0;
+	field:u64 caller;	offset:24;	size:8;	signed:0;
+	field:u64 raw0;	offset:32;	size:8;	signed:0;
+	field:u64 raw1;	offset:40;	size:8;	signed:0;
+	field:u64 raw2;	offset:48;	size:8;	signed:0;
+	field:u64 raw3;	offset:56;	size:8;	signed:0;
+
+print fmt: "(%lx) pointer=0x%Lx caller=0x%Lx raw0=0x%Lx raw1=0x%Lx raw2=0x%Lx raw3=0x%Lx", REC->__probe_ip, REC->pointer, REC->caller, REC->raw0, REC->raw1, REC->raw2, REC->raw3

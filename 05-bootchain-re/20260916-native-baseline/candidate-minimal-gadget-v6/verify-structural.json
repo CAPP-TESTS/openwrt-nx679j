@@ -1,0 +1,55 @@
+{
+  "image": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/candidate-minimal-gadget-v6/boot_b-staticinit-v6.img",
+  "image_sha256": "273fd8be271b1389dd886c4b2d77a35e0f77ee8b810dca61c418a0f39aab029b",
+  "bytes": 50020352,
+  "checks_total": 80,
+  "checks_passed": 80,
+  "checks_failed": 0,
+  "failed": [],
+  "init": {
+    "static": true,
+    "interp": null,
+    "dt_needed": [],
+    "binary_bytes": 663456,
+    "binary_sha256": "a2c901f0375e940521388587f713967f70d56ac629350613d40a0952a5b15e02",
+    "not_a_shell_script": true,
+    "never_exits": true
+  },
+  "ramdisk": {
+    "entries": 65,
+    "dirs": 10,
+    "device_nodes": 6,
+    "regular_files": 49,
+    "modules": 47,
+    "bytes": 901952
+  },
+  "module_plan": {
+    "seed_from_v5": 40,
+    "bundled": 47,
+    "added_by_softdep_and_deps": [
+      "eud",
+      "hwkm",
+      "ns",
+      "phy_generic",
+      "qcom_hwspinlock",
+      "qrtr",
+      "tmecom_intf"
+    ],
+    "goal_names": 28
+  },
+  "liveness": {
+    "emulator": "qemu-aarch64 (user mode)",
+    "ran_seconds": 12,
+    "kill_required": true,
+    "exit_status_returned": null,
+    "log_lines": 42
+  },
+  "not_proven_by_this_script": [
+    "the kernel reaches /init on the phone",
+    "that the vendor ramdisk is really unpacked next to ours on hardware (so modules.load / modules.dep / modules.softdep are readable)",
+    "that every module of the 47 closure loads (only the journal of the next hardware run shows the per-module rc values)",
+    "that dwc3_msm brings up the UDC a600000.dwc3 and that NCM enumerates",
+    "ABL/AVB accepts this unsigned image on slot B",
+    "that the host can ping 10.0.0.1 on the NCM link"
+  ]
+}

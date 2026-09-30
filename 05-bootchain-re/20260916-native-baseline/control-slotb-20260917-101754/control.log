@@ -1,0 +1,36 @@
+== slot attivo ==
+_a
+== hash pre-intervento (slot B) ==
+boot_b         c8074249c5e939e94627513c9b1cfd31cf1e72fe71cff0813617964c62c77f83
+vendor_boot_b  6db6d4d76059a9ef3a6bcc904911aac53a20044224a675014a6396a8f5d9d168
+dtbo_b         9ee95463abce517d140eae3c5c892c2b38fd1344d6fb0a6e2da2af76a86de6a1
+vbmeta_b       cc0de687c935714a9b6de4bf3492391474e640d2e23f752f6c626f6413b07e22
+misc           ca6dc3b64ed590f8af9b78fa3177243f6ad22a1f8ada93de77a0e4c9a61e2fd0
+== push immagine di controllo ==
+/home/user/nx679j-stock/magisk_patched-30700_Zx2eF.img: 1 file pushed, 0 skipped. 674.8 MB/s (100663296 bytes in 0.142s)
+0cd94d5627501f3c65c94542093ad18b1ec6c1c215dc6a7ecab4f941057e8364  /data/local/tmp/control-boot.img
+== scrittura su boot_b ==
+96+0 records out
+100663296 bytes (96 M) copied, 0.349976 s, 274 M/s
+== readback e confronto ==
+atteso  0cd94d5627501f3c65c94542093ad18b1ec6c1c215dc6a7ecab4f941057e8364
+letto   0cd94d5627501f3c65c94542093ad18b1ec6c1c215dc6a7ecab4f941057e8364
+readback OK
+== fastboot: metadati e attivazione B ==
+current-slot           current-slot: a
+slot-successful:a      slot-successful:a: yes
+slot-successful:b      slot-successful:b: no
+slot-unbootable:b      slot-unbootable:b: no
+slot-retry-count:b     slot-retry-count:b: 7
+unlocked               unlocked: yes
+secure                 secure: yes
+Setting current slot to 'b'                        OKAY [  0.039s]
+Rebooting                                          OKAY [  0.000s]
+== monitor 120s ==
+[   0s] USB=none IFACES=ztmjfmwg7f,
+[  26s] USB=ID 05c6:908c Qualcomm, Inc. WAIPIO-MTP _SN:4A09****; IFACES=ztmjfmwg7f,
+[ 120s] monitor finished
+== esito ==
+*** ANDROID E' PARTITO DA SLOT B *** (ABL accetta immagini scritte su B)
+slot ora: _b
+log completo: /home/user/nx679j-stock/experiments/20260916-122926-native-baseline/control-slotb-20260917-101754/control.log

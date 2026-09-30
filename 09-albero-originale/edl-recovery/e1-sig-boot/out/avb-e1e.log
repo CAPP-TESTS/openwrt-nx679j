@@ -1,0 +1,2 @@
+/usr/bin/avbtool: Adding hash_footer failed: Image size of 100663296 exceeds maximum image size of 100593664 in order to fit in a partition size of 100663296..
+/usr/bin/avbtool: Adding hash_footer failed: Image size of 100663296 exceeds maximum image size of 100593664 in order to fit in a partition size of 100663296..

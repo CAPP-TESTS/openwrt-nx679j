@@ -1,0 +1,197 @@
+8787  13:47:49.098112 openat(AT_FDCWD, "/etc/ld-musl-aarch64.path", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+8787  13:47:49.098184 openat(AT_FDCWD, "/lib/libgcc_s.so.1", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+8787  13:47:49.098279 close(3)          = 0
+8787  13:47:49.098490 openat(AT_FDCWD, "/tmp/ipa-trace-smoke2.sh", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+8787  13:47:49.098545 close(3)          = 0
+8788  13:47:49.098786 close(10)         = 0
+8788  13:47:49.098836 close(3)          = 0
+8788  13:47:49.098878 close(4)          = 0
+8788  13:47:49.099214 openat(AT_FDCWD, "/etc/ld-musl-aarch64.path", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+8788  13:47:49.099264 openat(AT_FDCWD, "/lib/libgcc_s.so.1", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+8788  13:47:49.099361 close(3)          = 0
+8788  13:47:49.099493 openat(AT_FDCWD, "/sys/class/remoteproc/remoteproc3/state", O_RDONLY|O_LARGEFILE) = 3
+8788  13:47:49.099567 close(3)          = 0
+8788  13:47:49.099589 exit_group(0)     = ?
+8788  13:47:49.099638 +++ exited with 0 +++
+8787  13:47:49.099766 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=8788, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+8787  13:47:49.099806 close(4)          = 0
+8787  13:47:49.099852 close(3)          = 0
+8789  13:47:49.100229 close(10)         = 0
+8789  13:47:49.100490 openat(AT_FDCWD, "/etc/ld-musl-aarch64.path", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+8789  13:47:49.100872 openat(AT_FDCWD, "/lib/libgcc_s.so.1", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+8789  13:47:49.100978 close(3)          = 0
+8789  13:47:49.101126 mkdirat(AT_FDCWD, "/tmp/nxipa-smoke2", 0777) = 0
+8789  13:47:49.101171 exit_group(0)     = ?
+8789  13:47:49.101229 +++ exited with 0 +++
+8787  13:47:49.101655 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=8789, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+8787  13:47:49.101903 openat(AT_FDCWD, "/tmp/nxipa-smoke2/boot-id", O_WRONLY|O_CREAT|O_TRUNC|O_LARGEFILE, 0666) = 3
+8787  13:47:49.101960 close(3)          = 0
+8790  13:47:49.102178 close(10)         = 0
+8790  13:47:49.103155 openat(AT_FDCWD, "/etc/ld-musl-aarch64.path", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+8790  13:47:49.103192 openat(AT_FDCWD, "/lib/libgcc_s.so.1", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+8790  13:47:49.103321 close(3)          = 0
+8790  13:47:49.103436 openat(AT_FDCWD, "/proc/sys/kernel/random/boot_id", O_RDONLY|O_LARGEFILE) = 3
+8790  13:47:49.103510 close(3)          = 0
+8790  13:47:49.103533 exit_group(0)     = ?
+8790  13:47:49.103592 +++ exited with 0 +++
+8787  13:47:49.104017 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=8790, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+8787  13:47:49.104082 close(11)         = 0
+8791  13:47:49.104318 close(10)         = 0
+8791  13:47:49.104419 close(3)          = 0
+8791  13:47:49.104450 close(4)          = 0
+8787  13:47:49.104708 close(4)          = 0
+8791  13:47:49.105291 openat(AT_FDCWD, "/etc/ld-musl-aarch64.path", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+8791  13:47:49.105365 openat(AT_FDCWD, "/lib/libgcc_s.so.1", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+8791  13:47:49.105474 close(3)          = 0
+8791  13:47:49.105604 openat(AT_FDCWD, "/proc/uptime", O_RDONLY|O_LARGEFILE) = 3
+8791  13:47:49.105692 close(3)          = 0
+8791  13:47:49.105736 exit_group(0)     = ?
+8791  13:47:49.105810 +++ exited with 0 +++
+8787  13:47:49.106303 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=8791, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+8787  13:47:49.106369 close(3)          = 0
+8792  13:47:49.106780 close(10)         = 0
+8792  13:47:49.107135 openat(AT_FDCWD, "/etc/ld-musl-aarch64.path", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+8792  13:47:49.107174 openat(AT_FDCWD, "/lib/libgcc_s.so.1", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+8792  13:47:49.107276 close(3)          = 0
+8792  13:47:49.107409 mkdirat(AT_FDCWD, "/sys/kernel/tracing/instances/nxipa_smoke2", 0777) = 0
+8792  13:47:49.116461 exit_group(0)     = ?
+8792  13:47:49.116597 +++ exited with 0 +++
+8787  13:47:49.116630 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=8792, si_uid=0, si_status=0, si_utime=0, si_stime=1 /* 0.01 s */} ---
+8787  13:47:49.116956 close(4)          = 0
+8793  13:47:49.118450 close(10)         = 0
+8793  13:47:49.120078 close(3)          = 0
+8793  13:47:49.120882 close(4)          = 0
+8793  13:47:49.121242 openat(AT_FDCWD, "/etc/ld-musl-aarch64.path", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+8793  13:47:49.121287 openat(AT_FDCWD, "/lib/libgcc_s.so.1", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+8793  13:47:49.121424 close(3)          = 0
+8793  13:47:49.121621 openat(AT_FDCWD, "/proc/uptime", O_RDONLY|O_LARGEFILE) = 3
+8793  13:47:49.122414 close(3)          = 0
+8793  13:47:49.122840 exit_group(0)     = ?
+8793  13:47:49.122919 +++ exited with 0 +++
+8787  13:47:49.122924 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=8793, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+8787  13:47:49.122966 close(3)          = 0
+8787  13:47:49.123169 openat(AT_FDCWD, "/sys/kernel/tracing/instances/nxipa_smoke2/tracing_on", O_WRONLY|O_CREAT|O_TRUNC|O_LARGEFILE, 0666) = 3
+8787  13:47:49.123277 close(3)          = 0
+8787  13:47:49.123362 close(11)         = 0
+8787  13:47:49.123594 close(4)          = 0
+8794  13:47:49.125047 close(10)         = 0
+8794  13:47:49.127064 close(3)          = 0
+8794  13:47:49.128343 close(4)          = 0
+8794  13:47:49.128644 openat(AT_FDCWD, "/etc/ld-musl-aarch64.path", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+8794  13:47:49.128676 openat(AT_FDCWD, "/lib/libgcc_s.so.1", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+8794  13:47:49.128759 close(3)          = 0
+8794  13:47:49.128880 openat(AT_FDCWD, "/proc/uptime", O_RDONLY|O_LARGEFILE) = 3
+8794  13:47:49.128971 close(3)          = 0
+8794  13:47:49.128998 exit_group(0)     = ?
+8794  13:47:49.129052 +++ exited with 0 +++
+8787  13:47:49.129320 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=8794, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+8787  13:47:49.129378 close(3)          = 0
+8787  13:47:49.129542 openat(AT_FDCWD, "/sys/kernel/tracing/instances/nxipa_smoke2/set_event_pid", O_WRONLY|O_CREAT|O_TRUNC|O_LARGEFILE, 0666) = 3
+8787  13:47:49.129625 close(3)          = 0
+8787  13:47:49.132027 close(11)         = 0
+8795  13:47:49.132387 close(10)         = 0
+8795  13:47:49.132482 close(3)          = 0
+8795  13:47:49.132527 close(4 <unfinished ...>
+8787  13:47:49.132592 close(4)          = 0
+8795  13:47:49.132800 <... close resumed>) = 0
+8795  13:47:49.133132 openat(AT_FDCWD, "/etc/ld-musl-aarch64.path", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+8795  13:47:49.133176 openat(AT_FDCWD, "/lib/libgcc_s.so.1", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+8795  13:47:49.133301 close(3)          = 0
+8795  13:47:49.133452 openat(AT_FDCWD, "/proc/uptime", O_RDONLY|O_LARGEFILE) = 3
+8795  13:47:49.133590 close(3)          = 0
+8795  13:47:49.133621 exit_group(0)     = ?
+8787  13:47:49.133710 close(3 <unfinished ...>
+8795  13:47:49.133720 +++ exited with 0 +++
+8787  13:47:49.133752 <... close resumed>) = 0
+8787  13:47:49.133771 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=8795, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+8787  13:47:49.133958 openat(AT_FDCWD, "/sys/kernel/tracing/kprobe_events", O_WRONLY|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 3
+8787  13:47:49.134051 close(3)          = 0
+8787  13:47:49.134974 close(11)         = 0
+8787  13:47:49.135114 openat(AT_FDCWD, "/tmp/nxipa-smoke2/error-log", O_WRONLY|O_CREAT|O_TRUNC|O_LARGEFILE, 0666) = 3
+8787  13:47:49.135203 close(3)          = 0
+8796  13:47:49.135460 close(10)         = 0
+8796  13:47:49.135737 openat(AT_FDCWD, "/etc/ld-musl-aarch64.path", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+8796  13:47:49.135776 openat(AT_FDCWD, "/lib/libgcc_s.so.1", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+8796  13:47:49.135880 close(3)          = 0
+8796  13:47:49.136003 openat(AT_FDCWD, "/sys/kernel/tracing/error_log", O_RDONLY|O_LARGEFILE) = 3
+8796  13:47:49.136072 write(1, "[ 1241.985923] trace_kprobe: error: String accepts only memory argument\n  Command: p:nxipa_smoke2/write vfs_write count=%x2:u64 caller=%x30:x64 raw=+u0(%x1):x64[4]\n                            "..., 251) = 251
+8796  13:47:49.136111 close(3)          = 0
+8796  13:47:49.136134 exit_group(0)     = ?
+8796  13:47:49.136218 +++ exited with 0 +++
+8787  13:47:49.136497 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=8796, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+8787  13:47:49.136562 close(11)         = 0
+8787  13:47:49.136592 openat(AT_FDCWD, "/tmp/nxipa-smoke2/kprobe-events", O_WRONLY|O_CREAT|O_TRUNC|O_LARGEFILE, 0666) = 3
+8787  13:47:49.136696 close(3)          = 0
+8797  13:47:49.136894 close(10)         = 0
+8797  13:47:49.137147 openat(AT_FDCWD, "/etc/ld-musl-aarch64.path", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+8797  13:47:49.137770 openat(AT_FDCWD, "/lib/libgcc_s.so.1", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+8797  13:47:49.137876 close(3)          = 0
+8797  13:47:49.138028 openat(AT_FDCWD, "/sys/kernel/tracing/kprobe_events", O_RDONLY|O_LARGEFILE) = 3
+8797  13:47:49.138079 close(3)          = 0
+8797  13:47:49.138102 exit_group(0)     = ?
+8797  13:47:49.138157 +++ exited with 0 +++
+8787  13:47:49.138550 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=8797, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+8787  13:47:49.138616 close(11)         = 0
+8787  13:47:49.138646 openat(AT_FDCWD, "/tmp/nxipa-smoke2/kprobe-list", O_WRONLY|O_CREAT|O_TRUNC|O_LARGEFILE, 0666) = 3
+8787  13:47:49.138747 close(3)          = 0
+8798  13:47:49.138947 close(10)         = 0
+8798  13:47:49.139205 openat(AT_FDCWD, "/etc/ld-musl-aarch64.path", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+8798  13:47:49.139819 openat(AT_FDCWD, "/lib/libgcc_s.so.1", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+8798  13:47:49.139915 close(3)          = 0
+8798  13:47:49.140066 openat(AT_FDCWD, "/sys/kernel/debug/kprobes/list", O_RDONLY|O_LARGEFILE) = 3
+8798  13:47:49.140210 write(1, "ffffffecfb4d98b4  r  dwc3_send_gadget_ep_cmd+0x0    \nffffffecfb4e0c3c  r  dwc3_gadget_pullup+0x0    \nffffffecfb4e5ba8  r  dwc3_gadget_run_stop+0x0    \nffffffecfb4e3574  r  dwc3_gadget_reset_in"..., 268) = 268
+8798  13:47:49.140267 close(3)          = 0
+8798  13:47:49.140295 exit_group(0)     = ?
+8798  13:47:49.140359 +++ exited with 0 +++
+8787  13:47:49.140607 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=8798, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+8787  13:47:49.140679 close(11)         = 0
+8787  13:47:49.140709 openat(AT_FDCWD, "/tmp/nxipa-smoke2/dmesg", O_WRONLY|O_CREAT|O_TRUNC|O_LARGEFILE, 0666) = 3
+8787  13:47:49.140812 close(3)          = 0
+8799  13:47:49.141062 close(10)         = 0
+8799  13:47:49.141931 openat(AT_FDCWD, "/etc/ld-musl-aarch64.path", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+8799  13:47:49.141968 openat(AT_FDCWD, "/lib/libgcc_s.so.1", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+8799  13:47:49.142102 close(3)          = 0
+8799  13:47:49.162115 exit_group(0)     = ?
+8799  13:47:49.162198 +++ exited with 0 +++
+8787  13:47:49.162593 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=8799, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+8787  13:47:49.162660 close(11)         = 0
+8787  13:47:49.162741 openat(AT_FDCWD, "/sys/kernel/tracing/instances/nxipa_smoke2/tracing_on", O_WRONLY|O_CREAT|O_TRUNC|O_LARGEFILE, 0666) = 3
+8787  13:47:49.162823 close(3)          = 0
+8787  13:47:49.162885 close(11)         = 0
+8800  13:47:49.163506 close(10)         = 0
+8800  13:47:49.163783 openat(AT_FDCWD, "/etc/ld-musl-aarch64.path", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+8800  13:47:49.163816 openat(AT_FDCWD, "/lib/libgcc_s.so.1", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+8800  13:47:49.163908 close(3)          = 0
+8800  13:47:49.164020 unlinkat(AT_FDCWD, "/sys/kernel/tracing/instances/nxipa_smoke2", AT_REMOVEDIR) = 0
+8800  13:47:49.206656 exit_group(0)     = ?
+8800  13:47:49.206767 +++ exited with 0 +++
+8787  13:47:49.207258 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=8800, si_uid=0, si_status=0, si_utime=0, si_stime=1 /* 0.01 s */} ---
+8787  13:47:49.207544 close(4)          = 0
+8801  13:47:49.207643 close(10)         = 0
+8801  13:47:49.207691 close(3)          = 0
+8801  13:47:49.207731 close(4)          = 0
+8801  13:47:49.207996 openat(AT_FDCWD, "/etc/ld-musl-aarch64.path", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+8801  13:47:49.208032 openat(AT_FDCWD, "/lib/libgcc_s.so.1", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+8801  13:47:49.208157 close(3)          = 0
+8801  13:47:49.208292 openat(AT_FDCWD, "/proc/sys/kernel/random/boot_id", O_RDONLY|O_LARGEFILE) = 3
+8801  13:47:49.208420 close(3)          = 0
+8801  13:47:49.208445 exit_group(0)     = ?
+8787  13:47:49.208534 close(3 <unfinished ...>
+8801  13:47:49.208544 +++ exited with 0 +++
+8787  13:47:49.208559 <... close resumed>) = 0
+8787  13:47:49.208578 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=8801, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+8787  13:47:49.208813 close(4)          = 0
+8802  13:47:49.208950 close(10)         = 0
+8802  13:47:49.208993 close(3)          = 0
+8802  13:47:49.209030 close(4)          = 0
+8802  13:47:49.209259 openat(AT_FDCWD, "/etc/ld-musl-aarch64.path", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+8802  13:47:49.209290 openat(AT_FDCWD, "/lib/libgcc_s.so.1", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+8802  13:47:49.209376 close(3)          = 0
+8802  13:47:49.209490 openat(AT_FDCWD, "/proc/uptime", O_RDONLY|O_LARGEFILE) = 3
+8802  13:47:49.209594 close(3)          = 0
+8802  13:47:49.209622 exit_group(0)     = ?
+8787  13:47:49.209692 close(3)          = 0
+8802  13:47:49.209715 +++ exited with 0 +++
+8787  13:47:49.209721 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=8802, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+8787  13:47:49.209888 exit_group(1)     = ?
+8787  13:47:49.209974 +++ exited with 1 +++

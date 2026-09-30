@@ -1,0 +1,3382 @@
+[
+  {
+    "name": "avb",
+    "offset": 116,
+    "size": 0,
+    "mode": "0o40755",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "avb/q-gsi.avbpubkey",
+    "offset": 248,
+    "size": 1032,
+    "mode": "0o100644",
+    "sha256": "07b37325316fd483765d474aafcaca908b4de4773e16ed87aed415c15f71fb98"
+  },
+  {
+    "name": "avb/r-gsi.avbpubkey",
+    "offset": 1412,
+    "size": 1032,
+    "mode": "0o100644",
+    "sha256": "4706b8d2ffd46c5759d9431b8bf95f5c0544f4f6c87bbe35ff591325eb1783f5"
+  },
+  {
+    "name": "avb/s-gsi.avbpubkey",
+    "offset": 2576,
+    "size": 1032,
+    "mode": "0o100644",
+    "sha256": "ec60e13d92331e2c2d5d1372a5d7f2131861dc602815fd87c0637d14790b4538"
+  },
+  {
+    "name": "first_stage_ramdisk",
+    "offset": 3740,
+    "size": 0,
+    "mode": "0o40755",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "first_stage_ramdisk/fstab.qcom",
+    "offset": 3884,
+    "size": 5497,
+    "mode": "0o100644",
+    "sha256": "02a2ac6c87e73c332611eb6529f09c44fcd0d6869c181b0344634ec74cc30200"
+  },
+  {
+    "name": "lib",
+    "offset": 9500,
+    "size": 0,
+    "mode": "0o40755",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "lib/modules",
+    "offset": 9624,
+    "size": 0,
+    "mode": "0o40755",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "lib/modules/adsp_sleepmon.ko",
+    "offset": 9764,
+    "size": 50176,
+    "mode": "0o100644",
+    "sha256": "b1d5812901f345f8c4e4a45caae39e2ab9b7896674a76e93870f1f305539f524",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/altmode-glink.ko",
+    "offset": 60080,
+    "size": 32800,
+    "mode": "0o100644",
+    "sha256": "543c52bb31f663966527af00811e68a76290d70aecff48ef9a073dcb6c4717f2",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/arm_smmu.ko",
+    "offset": 93016,
+    "size": 345840,
+    "mode": "0o100644",
+    "sha256": "971397836b18ed39fef97687f90b64af8829e5aeecead79521a4c7d5c539bdf4",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/atmel_mxt_ts.ko",
+    "offset": 438996,
+    "size": 75720,
+    "mode": "0o100644",
+    "sha256": "1c0859ac3da080dc856c424771d619785a8d0dc70f2f2e1b4144bf164c571edd",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/aw9620x.ko",
+    "offset": 514852,
+    "size": 168568,
+    "mode": "0o100644",
+    "sha256": "e89b5550537c275e547c4a59145d2400725e9f626b2dcaf2af3dbbfa8a54a6f7",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/ax88179_178a.ko",
+    "offset": 683560,
+    "size": 76744,
+    "mode": "0o100644",
+    "sha256": "329b9f7810622796408e99d67bcc133f9080f1ec84cea0bb9f3f41dffabe4e50",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/bam_dma.ko",
+    "offset": 760440,
+    "size": 59384,
+    "mode": "0o100644",
+    "sha256": "233bdc14c8086ab274a92f357c313b154bb712188ccdbe1c463900033962ccff",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/bcl_pmic5.ko",
+    "offset": 819960,
+    "size": 30800,
+    "mode": "0o100644",
+    "sha256": "ca984065a2274c288e3055fd67cae0841d784ab2bed9320f06a4b64e5b9c2bf5",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/bcl_soc.ko",
+    "offset": 850896,
+    "size": 18600,
+    "mode": "0o100644",
+    "sha256": "1bcda01000cadba32893fe7960e322718a05bd9b9fb5708dc3ed27581e36c979",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/boot_stats.ko",
+    "offset": 869632,
+    "size": 15776,
+    "mode": "0o100644",
+    "sha256": "4432133fad862aba40a20fe2169a718ca842ac18e3c82ea61ffe2170d8a14728",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/bt_fm_slim.ko",
+    "offset": 885544,
+    "size": 44000,
+    "mode": "0o100644",
+    "sha256": "1d53e5c025936ac1044563fce63325a86edb1108b251d776830492817f5ae610",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/btpower.ko",
+    "offset": 929680,
+    "size": 54896,
+    "mode": "0o100644",
+    "sha256": "357c8266fadd6d787255407b9c7fd4ea10ea177801848b0ca6d35db71fba5d52",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/bwmon.ko",
+    "offset": 984708,
+    "size": 103664,
+    "mode": "0o100644",
+    "sha256": "d2e5633dc8d73938bcee25eaac28c4401688666f65ce59d038ce5c5ee4ca6e24",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/c1dcvs_scmi.ko",
+    "offset": 1088512,
+    "size": 27520,
+    "mode": "0o100644",
+    "sha256": "98fde286f059803b39b4abe3bd8ea99ebf87b6ce9a49b149e19feb64e8b38762",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/c1dcvs_vendor.ko",
+    "offset": 1116172,
+    "size": 18992,
+    "mode": "0o100644",
+    "sha256": "135e1ba0a96e36514218da889b993c56f7ada2b912fd697bb7470014f62f98b0",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/camcc-diwali.ko",
+    "offset": 1135304,
+    "size": 140976,
+    "mode": "0o100644",
+    "sha256": "6ef137107a9b63a604708d8b8435a78b1bf3fec004fa7214b31c68c870d060c9",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/camcc-waipio.ko",
+    "offset": 1276420,
+    "size": 179200,
+    "mode": "0o100644",
+    "sha256": "2666c09a39f2638d91af8ce7a4a6d2b1bab37c0ee2e9d0aeb40aba7f462d6628",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/cdsp-loader.ko",
+    "offset": 1455760,
+    "size": 17016,
+    "mode": "0o100644",
+    "sha256": "91db3404713dc3e02ed8918ffcf6fd471c726477f34b4851056df8c0baa393a9",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/cdsprm.ko",
+    "offset": 1472908,
+    "size": 63000,
+    "mode": "0o100644",
+    "sha256": "5f3e2ff310da2379a7db509877faa50e4e48aca756bea132cf52e2cc26bb370d",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/cfg80211.ko",
+    "offset": 1536044,
+    "size": 1972824,
+    "mode": "0o100644",
+    "sha256": "8cf153d791dd05b8628c1f4f974c8a7d5b7d83c19854325bc367db8c99ef5717",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/charger-ulog-glink.ko",
+    "offset": 3509012,
+    "size": 28336,
+    "mode": "0o100644",
+    "sha256": "cf4c8fcbbe1c063a6cb4ee039c0f6500726a88d2528258e5383433ba4121877f",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/clk-dummy.ko",
+    "offset": 3537484,
+    "size": 17112,
+    "mode": "0o100644",
+    "sha256": "5be27aa697cfcb230959348f6b753ba37fddf7c6504b5ceffd2921d8c7059e2f",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/clk-qcom.ko",
+    "offset": 3554732,
+    "size": 347896,
+    "mode": "0o100644",
+    "sha256": "83f7cb8dae5ceb598e77f9633464c8c1635ccd2f3a201ca7d7866682e1d1a230",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/clk-rpmh.ko",
+    "offset": 3902764,
+    "size": 91008,
+    "mode": "0o100644",
+    "sha256": "64efbe47f6d4dd8077e1224b3bbaf438507f25bdd8c847a71c2fda04184a24ac",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/cmd-db.ko",
+    "offset": 3993904,
+    "size": 20584,
+    "mode": "0o100644",
+    "sha256": "ebb68f40bff91c59990759986ff9408db07f35166c9f9912eef7e43ada1f4927",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/cnss2.ko",
+    "offset": 4014620,
+    "size": 889800,
+    "mode": "0o100644",
+    "sha256": "1d034ac3bfa7edfe927defdda6cf026ce04b2d42ad91318ed006af5f22bc66bd",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/cnss_nl.ko",
+    "offset": 4904556,
+    "size": 16264,
+    "mode": "0o100644",
+    "sha256": "38dff8c7063742f2759d42f76db9152fe1c6a3a0aea3fa9ef837f186f251f8a3",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/cnss_plat_ipc_qmi_svc.ko",
+    "offset": 4920968,
+    "size": 58928,
+    "mode": "0o100644",
+    "sha256": "c4cb2fe14f074b573372510348faaa444aee104c24b24909ffa029806135868a",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/cnss_prealloc.ko",
+    "offset": 4980036,
+    "size": 18616,
+    "mode": "0o100644",
+    "sha256": "4b201204ffaa3a56076f13eaa06605ec581cb5749f641cb6f34eed60809c7e81",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/cnss_utils.ko",
+    "offset": 4998788,
+    "size": 33568,
+    "mode": "0o100644",
+    "sha256": "789372407cd2046331c07d29e2073244c6981e3e09606db4f2433c9f4e8e0bf5",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/core_hang_detect.ko",
+    "offset": 5032500,
+    "size": 25408,
+    "mode": "0o100644",
+    "sha256": "ed8291280c1e20c12a07c11bdc2aa402afad2100cd2addf3ef0b17b63983b673",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/coresight-csr.ko",
+    "offset": 5058048,
+    "size": 46920,
+    "mode": "0o100644",
+    "sha256": "578368a56e2b611ab31e4b5de272881702d7ba4fc903856095088b77edf943f9",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/coresight-cti.ko",
+    "offset": 5105108,
+    "size": 122608,
+    "mode": "0o100644",
+    "sha256": "49bccfde54a1c97c0d981b121d0a018b99ac6ae83f11f733fbbf8cc44de130e8",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/coresight-dummy.ko",
+    "offset": 5227860,
+    "size": 16216,
+    "mode": "0o100644",
+    "sha256": "d001d6ceb79b15db058c30b9dfe266843f111d6e09442d1ff87c50a13945a7e2",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/coresight-funnel.ko",
+    "offset": 5244220,
+    "size": 31936,
+    "mode": "0o100644",
+    "sha256": "5b58273dd2fde84c4097aea93ffe16c27742bc9852e56c4447367c78b48a6d52",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/coresight-hwevent.ko",
+    "offset": 5276300,
+    "size": 19752,
+    "mode": "0o100644",
+    "sha256": "c0fa4c8564c6cc7f3acdef40937f1b2687b798ebcb913a126db24b1a6cc4cf3a",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/coresight-remote-etm.ko",
+    "offset": 5296200,
+    "size": 20600,
+    "mode": "0o100644",
+    "sha256": "2e4a51a287ac964dd015a5ae3ede28cfb54f73334feb7f1eca569c16d65e0ec0",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/coresight-replicator.ko",
+    "offset": 5316948,
+    "size": 33896,
+    "mode": "0o100644",
+    "sha256": "8a84628c49f0af3f699d2535cb0890eb35418ffcfbfccc5be9fc93b8dd10881a",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/coresight-stm.ko",
+    "offset": 5350984,
+    "size": 50208,
+    "mode": "0o100644",
+    "sha256": "f33c6aace0fd0b455abe0af84d2afe73924bde3d6f7f4d2fe51651880458cb56",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/coresight-tgu.ko",
+    "offset": 5401332,
+    "size": 24192,
+    "mode": "0o100644",
+    "sha256": "37ab974bf0be8d1f8bd9eaff3549e2067d0089f71585ff276faed16507e6c1f5",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/coresight-tmc.ko",
+    "offset": 5425664,
+    "size": 172432,
+    "mode": "0o100644",
+    "sha256": "25b447aba98ea2db32464925f7a0296fb42e88cad3a39cb416d71f8f68484eb1",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/coresight-tpda.ko",
+    "offset": 5598236,
+    "size": 41144,
+    "mode": "0o100644",
+    "sha256": "a019c3769d6369fe50ae7ddfa927f68798db22**************e0bf50cc6d9f",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/coresight-tpdm.ko",
+    "offset": 5639520,
+    "size": 189768,
+    "mode": "0o100644",
+    "sha256": "0ba2de9e39038b08c25616ae098d181ec99b3a9929409468e0803bb1d61653e6",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/coresight.ko",
+    "offset": 5829424,
+    "size": 105600,
+    "mode": "0o100644",
+    "sha256": "eded94880c279b56ae61865a98dfc10b6bc8ba1eb27fcb8165ebba7343d8fbb9",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/cpu_hotplug.ko",
+    "offset": 5935164,
+    "size": 20120,
+    "mode": "0o100644",
+    "sha256": "2d506fbb336be920047f355c56e4f55d35be35189d76346772661712c46ed7ba",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/cpu_voltage_cooling.ko",
+    "offset": 5955432,
+    "size": 22240,
+    "mode": "0o100644",
+    "sha256": "f6c72f4474da89c69d7699a3449254f1f32559a18bec6f4a4416aa339102841b",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/cqhci.ko",
+    "offset": 5977804,
+    "size": 84856,
+    "mode": "0o100644",
+    "sha256": "c85319dde9585a40ca45f818da00bde450adf20c5fb462402f84793488b781bb",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/crypto-qti-common.ko",
+    "offset": 6062804,
+    "size": 55472,
+    "mode": "0o100644",
+    "sha256": "80867802e792301e8d12ed6dfd611acc3fb33e63e0f016f33be793f561687e1a",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/crypto-qti-hwkm.ko",
+    "offset": 6118420,
+    "size": 17320,
+    "mode": "0o100644",
+    "sha256": "aa8162c3000e646d2fe4bf4e28ceccdb827caf4bc6efa0f5c664b6a265bf6b57",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/dcc_v2.ko",
+    "offset": 6135872,
+    "size": 75552,
+    "mode": "0o100644",
+    "sha256": "2bd641ec9bb4d4589dc6b12a1ed35124faaa7b3f19833088d6734ce05709486e",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/dcvs_fp.ko",
+    "offset": 6211560,
+    "size": 16768,
+    "mode": "0o100644",
+    "sha256": "e21ecb22f3a420b3d940916ebaafa9b3ade8a2e2eca4af0e62e75e835e91f5aa",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/ddr_cdev.ko",
+    "offset": 6228464,
+    "size": 15624,
+    "mode": "0o100644",
+    "sha256": "4377aaa404cd75ab41b1a31bd7281e24001eb2c2aa2c39eacdf297297ab9b4ad",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/debug-regulator.ko",
+    "offset": 6244232,
+    "size": 53952,
+    "mode": "0o100644",
+    "sha256": "2b64631abea8bf5250168d184df8cc0bfafb2659d07bc5ad367e57b0b6906427",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/debugcc-diwali.ko",
+    "offset": 6298324,
+    "size": 89184,
+    "mode": "0o100644",
+    "sha256": "08e026e5fddbae819390308ba41b44d7ed5185e0ed50a619bf4cb35ba938953d",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/debugcc-waipio.ko",
+    "offset": 6387648,
+    "size": 45152,
+    "mode": "0o100644",
+    "sha256": "5cd1e659685f2f46309351312eb370277e9db98682f1c27e168babb56eac0f9d",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/dispcc-diwali.ko",
+    "offset": 6432940,
+    "size": 105872,
+    "mode": "0o100644",
+    "sha256": "d0043b8b0d9eb1d4da511f2524cacedbeb74d8e2c4e1bb9c6ba4f61b86af3bfb",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/dispcc-waipio.ko",
+    "offset": 6538952,
+    "size": 115192,
+    "mode": "0o100644",
+    "sha256": "7fc07c9634a098c0313e84424708e95389079b1cf06a375b85384bc49169a54a",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/dwc3-msm.ko",
+    "offset": 6654280,
+    "size": 237896,
+    "mode": "0o100644",
+    "sha256": "209a42ac433bc26c48a87bddf761130633bfd834d690d2367f17774e401b2ad2",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/ehset.ko",
+    "offset": 6892308,
+    "size": 13568,
+    "mode": "0o100644",
+    "sha256": "9a2db13e7cfcc0665520a956c4c583cc0c77f1eb234db4ec00b59730dda337da",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/ep_pcie_drv.ko",
+    "offset": 6906016,
+    "size": 365056,
+    "mode": "0o100644",
+    "sha256": "e2cb7613190e27438d031192f2de14cf574d3304bc65d8060768048be4ed7be1",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/eud.ko",
+    "offset": 7271204,
+    "size": 44064,
+    "mode": "0o100644",
+    "sha256": "632ea2b747b9cb32275fd74a9c0554f76692b5da4856efa71c89548c5896c6fe",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/f_fs_ipc_log.ko",
+    "offset": 7315408,
+    "size": 62728,
+    "mode": "0o100644",
+    "sha256": "e465df33000830ed5b61e12f0ba558b0f2fa8cb072e2c5fbe6a443af463ffc8b",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/fan_core.ko",
+    "offset": 7378272,
+    "size": 54352,
+    "mode": "0o100644",
+    "sha256": "8919fdd6f782a7d2a9633438c90d25dc203359bb42613e9c73a72ccf5d9ef287",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/fork_monitor_ctl.ko",
+    "offset": 7432768,
+    "size": 25032,
+    "mode": "0o100644",
+    "sha256": "8345eccb11905b8a572490e021a8e7a88fb81397586e8cd24177767bbffd077e",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/frpc-adsprpc.ko",
+    "offset": 7457940,
+    "size": 801192,
+    "mode": "0o100644",
+    "sha256": "b499fe9eb637ca925750b043879dde67902b398b3ed8f93bf426dfc0803f6962",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/fsa4480-i2c.ko",
+    "offset": 8259272,
+    "size": 22456,
+    "mode": "0o100644",
+    "sha256": "54d1c578c0191f9d038b979928f7caa86ed561dff8991793b39c6a48846371bd",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/gcc-diwali.ko",
+    "offset": 8281864,
+    "size": 138544,
+    "mode": "0o100644",
+    "sha256": "ad6c470b9fd26754585baa4e0d18e3e3ba7eadd32f4fd6bacf745aad4ddd7e44",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/gcc-waipio.ko",
+    "offset": 8420544,
+    "size": 191224,
+    "mode": "0o100644",
+    "sha256": "84767396d5cedbefea7882614fcc15eb81984e53dcedf0feaee8e04b51b95d54",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/gdsc-regulator.ko",
+    "offset": 8611908,
+    "size": 33088,
+    "mode": "0o100644",
+    "sha256": "554d2eed0ee91a77838e63b7c9fede6f67c88e25742845a58985c39b34f87a01",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/gf_spi.ko",
+    "offset": 8645128,
+    "size": 62368,
+    "mode": "0o100644",
+    "sha256": "c55c232dfa19e21c958109cdbb04df1972183b9f34e45e4b173fff16c93b1725",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/gh_arm_drv.ko",
+    "offset": 8707632,
+    "size": 15672,
+    "mode": "0o100644",
+    "sha256": "446c81a897bc22b86065541922508b46b80193cd2e7901fd2981fb0e75c32dd3",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/gh_ctrl.ko",
+    "offset": 8723440,
+    "size": 23328,
+    "mode": "0o100644",
+    "sha256": "464f2b408d9149f6bd5ff9437759c486a5fa9b3d9ffa29813e55a21d6e7633ef",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/gh_dbl.ko",
+    "offset": 8746900,
+    "size": 28536,
+    "mode": "0o100644",
+    "sha256": "02ea3cf3dbec191735a1eb41e9519e28ad621e5a975d3287d5ec6251cc8ffef2",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/gh_irq_lend.ko",
+    "offset": 8775576,
+    "size": 26432,
+    "mode": "0o100644",
+    "sha256": "b13b6d6eb419ca4f9801d305d6e011434958fd4e8b38d7574e67a5fc6c245956",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/gh_mem_notifier.ko",
+    "offset": 8802152,
+    "size": 14544,
+    "mode": "0o100644",
+    "sha256": "fcaa876af154467efd75b1b869af7ba1f866a9415c9cf3a55c27fa7c37dc1508",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/gh_msgq.ko",
+    "offset": 8816832,
+    "size": 30280,
+    "mode": "0o100644",
+    "sha256": "f28a8db20e14d5a3a4aadb486ee6a034bf98bde079c9d38ecc3485bab0b3e3cc",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/gh_rm_drv.ko",
+    "offset": 8847248,
+    "size": 108168,
+    "mode": "0o100644",
+    "sha256": "72376cbc3486261c6764d118f375d03cf830fefe0a006f9dd8562200b619a25f",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/gh_virt_wdt.ko",
+    "offset": 8955556,
+    "size": 16376,
+    "mode": "0o100644",
+    "sha256": "1945bc329b159679f4351b4d1c298eb6db6b89ef35d8ca18e8123f714ef1d295",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/gh_virtio_backend.ko",
+    "offset": 8972076,
+    "size": 99408,
+    "mode": "0o100644",
+    "sha256": "7a2dee937826be43c4b1256c042d794451e42e0cccd3e0a701bcb1492a60104c",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/glink_pkt.ko",
+    "offset": 9071620,
+    "size": 59104,
+    "mode": "0o100644",
+    "sha256": "586e7c632a0f4948642b06693a40e0618bf9e6c01b9c8fb1f354a734ed24d765",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/glink_probe.ko",
+    "offset": 9130864,
+    "size": 19000,
+    "mode": "0o100644",
+    "sha256": "63186ac4463412d04c0deffd73ee385fe4129c57c3013ab80adefa04aa654364",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/goodix_core.ko",
+    "offset": 9150004,
+    "size": 349888,
+    "mode": "0o100644",
+    "sha256": "1c569348b4f7b3717b0f3fe71f12f8bfebece592c306dc2cfeb01ce8e1484b79",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/gpi.ko",
+    "offset": 9500024,
+    "size": 114384,
+    "mode": "0o100644",
+    "sha256": "44e4f212794606e457e440bbde7db1f265d897b0b5680c2170592fc79c731b4b",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/gpio_keys_nubia.ko",
+    "offset": 9614552,
+    "size": 39432,
+    "mode": "0o100644",
+    "sha256": "c779f603fb98406127010e9744d5645c295a9a09136973d51f7cf390d3445ac3",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/gpucc-diwali.ko",
+    "offset": 9654124,
+    "size": 41744,
+    "mode": "0o100644",
+    "sha256": "7d63988cd7430e391ce5a1f4c24cbaca62b29cc53e3807f6d7e7e41880555703",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/gpucc-waipio.ko",
+    "offset": 9696008,
+    "size": 54032,
+    "mode": "0o100644",
+    "sha256": "b505ac568b1bacfab919977a56521af67c7b0ef4b7365ce78eb1214da46684ca",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/guestvm_loader.ko",
+    "offset": 9750180,
+    "size": 30368,
+    "mode": "0o100644",
+    "sha256": "1cdb8172fe52af7df091e04fe3e23d0d30aa869b77769fa004904d45fc091eda",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/haptic.ko",
+    "offset": 9780680,
+    "size": 370968,
+    "mode": "0o100644",
+    "sha256": "82a54fed395b1276c9ae56f247d5a9fc0ea51f2645b22702953c96d3e0eec9c7",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/heap_mem_ext_v01.ko",
+    "offset": 10151792,
+    "size": 12664,
+    "mode": "0o100644",
+    "sha256": "c60a03eb54b4322e2ec2d96fbe3d460ff0364411e759bca272eca381eb1b3004",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/hung_task_enh.ko",
+    "offset": 10164596,
+    "size": 17992,
+    "mode": "0o100644",
+    "sha256": "4cb754057ae46d714e53747d4eeed037e5c7ed0d740781d8dc9bb12dd6c7c072",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/hvc_gunyah.ko",
+    "offset": 10182724,
+    "size": 21144,
+    "mode": "0o100644",
+    "sha256": "78e79e1433781346ad5f7d6e37c239cdde44d18fbfa554eca21521b9b9f964fc",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/hwkm.ko",
+    "offset": 10204000,
+    "size": 23216,
+    "mode": "0o100644",
+    "sha256": "227d06b749ae85a45e538d1aa1194deb9f40ade90dfbbe8839981df921dc961e",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/hwmon.ko",
+    "offset": 10227348,
+    "size": 60752,
+    "mode": "0o100644",
+    "sha256": "fc02e048fabd533c95cbdf486916bd50c6eaf712cf2ec7e18d2258f0a2d02108",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/hyp_core_ctl.ko",
+    "offset": 10288240,
+    "size": 88184,
+    "mode": "0o100644",
+    "sha256": "b959e5837b760cb340cfba745e841c1140357a42b1c61cbc72d9b3ae72111011",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/i2c-msm-geni.ko",
+    "offset": 10376564,
+    "size": 74064,
+    "mode": "0o100644",
+    "sha256": "8c02e41374c726cbf3fa53805e2e0cf6d5560eb4fa25e49d5703b219f9f7605b",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/i3c-master-msm-geni.ko",
+    "offset": 10450776,
+    "size": 84080,
+    "mode": "0o100644",
+    "sha256": "f83e80bbebc2e19178805cfc0ddca6024496c7db1898e8432bf4eace5c5df1d0",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/icc-bcm-voter.ko",
+    "offset": 10534996,
+    "size": 21840,
+    "mode": "0o100644",
+    "sha256": "1a4102f0ef287ce4e4e086a5ccd57a5849f971d214379f8afc83b316f65d054e",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/icc-debug.ko",
+    "offset": 10556972,
+    "size": 20104,
+    "mode": "0o100644",
+    "sha256": "0c2e3066954eaf2fb9300c11143f7eae99b2c0a87fde6fbed0c5e3c516054034",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/icc-rpmh.ko",
+    "offset": 10577212,
+    "size": 27424,
+    "mode": "0o100644",
+    "sha256": "5077f560072577ac03242e9912e6c0aa685d43517f365808531e7b2083bb5c9a",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/icc-test.ko",
+    "offset": 10604772,
+    "size": 15480,
+    "mode": "0o100644",
+    "sha256": "32e647ac9a080e6c2c4bbd90315d1441b16af7dfc7991e84e209741df457b5f4",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/icnss2.ko",
+    "offset": 10620384,
+    "size": 375960,
+    "mode": "0o100644",
+    "sha256": "a323627f9636ae74e1cbc931c0c23abe6e77c6b5d0b2f5cde3e384651417ea3d",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/iommu-logger.ko",
+    "offset": 10996484,
+    "size": 13200,
+    "mode": "0o100644",
+    "sha256": "0580b3d1724ca533b1c8b4de4761cf322dfaef40f141bd8bded940d43606550d",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/ipa_fmwk.ko",
+    "offset": 11009820,
+    "size": 206016,
+    "mode": "0o100644",
+    "sha256": "64a86fdea2b5468645a188f3630b407b50164fc9ab22d2b9686e7b189dff8b7e",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/kryo_arm64_edac.ko",
+    "offset": 11215980,
+    "size": 26064,
+    "mode": "0o100644",
+    "sha256": "cfe0324697e622746241789e5e109a8c20246b85b449d5829dbb2e277000c0e2",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/leds-aw22xxx.ko",
+    "offset": 11242184,
+    "size": 90400,
+    "mode": "0o100644",
+    "sha256": "f9fb8daa45ec91a6304985d1a2c86a3a99c4d1b016a739da9e5b9b5c37fb3f0e",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/leds-qpnp-vibrator-ldo.ko",
+    "offset": 11332732,
+    "size": 29504,
+    "mode": "0o100644",
+    "sha256": "33cfd1704e1adfaaa35536f214853beaa3127fed553d625e8a6516e6261020b2",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/leds-qti-flash.ko",
+    "offset": 11362376,
+    "size": 55768,
+    "mode": "0o100644",
+    "sha256": "b08f20de0e923b1c340eb503e6bf11eeeb7f321dab11170d38384712f1949384",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/leds-qti-tri-led.ko",
+    "offset": 11418288,
+    "size": 29144,
+    "mode": "0o100644",
+    "sha256": "968ce57e920c305d861c7f498beb922dccb8600d9b907a77989007860f73968f",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/llcc-qcom.ko",
+    "offset": 11447568,
+    "size": 32480,
+    "mode": "0o100644",
+    "sha256": "3e0b198094d9fd43fecdb9c83a1ec8b68abec5e4dd02b4612fa33c7d662cbc98",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/llcc_perfmon.ko",
+    "offset": 11480188,
+    "size": 48176,
+    "mode": "0o100644",
+    "sha256": "a22c45e9bf1616898ce21ce9c3faf734d446921dd42ae502267688c1062db568",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/lt9611uxc.ko",
+    "offset": 11528500,
+    "size": 83080,
+    "mode": "0o100644",
+    "sha256": "9820dacf249e4f2c817abac2c4da2ef260e721e0fa5bf74553321f65a504fe31",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/lvstest.ko",
+    "offset": 11611716,
+    "size": 24208,
+    "mode": "0o100644",
+    "sha256": "46e6ba56056bd8111c24c0737408d48a6e414847088853a9aa7934001a69c32a",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/lzo-rle.ko",
+    "offset": 11636060,
+    "size": 15624,
+    "mode": "0o100644",
+    "sha256": "17975299ef0f0781de4d0c8186a930facb83a68ae703aea4c1734c14b64e20b3",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/lzo.ko",
+    "offset": 11651816,
+    "size": 15504,
+    "mode": "0o100644",
+    "sha256": "3b032c30c46b1cae517b0f660cef595d8987b43cf997e427ca38a820cfe266b0",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/mac80211.ko",
+    "offset": 11667456,
+    "size": 1937248,
+    "mode": "0o100644",
+    "sha256": "ada11db8a8b30d6502f99823711a71ecf4a9654fde2e35e3b30594dbbe2a52bf",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/mdt_loader.ko",
+    "offset": 13604840,
+    "size": 18968,
+    "mode": "0o100644",
+    "sha256": "321daa66d1ca723c4c9c2db6384931e1cc3844486dc5b530022ca2ffd34b76bf",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/mem-hooks.ko",
+    "offset": 13623944,
+    "size": 16112,
+    "mode": "0o100644",
+    "sha256": "af9acad6506ae41235f314408dfd98e0911d5c385a7955c88f7546d346c58ec7",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/mem_buf.ko",
+    "offset": 13640192,
+    "size": 74192,
+    "mode": "0o100644",
+    "sha256": "102b2e28c0e3ef9352776d2699635187c31371f4bcd375bd1f9e221e9b1054e6",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/mem_buf_dev.ko",
+    "offset": 13714524,
+    "size": 150304,
+    "mode": "0o100644",
+    "sha256": "457184cf2d209054f61099cc52473acb025dac3a1d311edbe3eeff5d5506cfdc",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/memlat.ko",
+    "offset": 13864960,
+    "size": 78288,
+    "mode": "0o100644",
+    "sha256": "e7ea12cca54588ee65bd2a2da8840c26ea6059de47153ec675ceb085875c8162",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/memory_dump_v2.ko",
+    "offset": 13943388,
+    "size": 31560,
+    "mode": "0o100644",
+    "sha256": "557dda9c3a30af2a5d4ee6e3e4b2aa2b4b77594c83c96243e3bda0bbec5d11ad",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/mhi.ko",
+    "offset": 13975080,
+    "size": 240680,
+    "mode": "0o100644",
+    "sha256": "14e51b9a49f82b4448fd7fde676308bab9d54311f6acb32b0bffa334bae08b76",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/mhi_cntrl_qcom.ko",
+    "offset": 14215900,
+    "size": 81392,
+    "mode": "0o100644",
+    "sha256": "e7be56578d18b14476cc2f42981c79a17c5d6005e2e563a3d85f014b68709d7c",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/mhi_dev_drv.ko",
+    "offset": 14297432,
+    "size": 546416,
+    "mode": "0o100644",
+    "sha256": "20ae554d477eaf8514453d8a0a51a1e17ca6a356426ac054e12fc97800cb27f6",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/mhi_dev_dtr.ko",
+    "offset": 14843988,
+    "size": 22368,
+    "mode": "0o100644",
+    "sha256": "6e0da7315735d38eb22db6c95ff171b2d6080b66c556be6040c6b72bc50cf856",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/mhi_dev_net.ko",
+    "offset": 14866496,
+    "size": 39240,
+    "mode": "0o100644",
+    "sha256": "185dbfa6c8ff5e7a21726dd9c4f6c5dda5c827af01567a3578d51aa9f4906273",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/mhi_dev_netdev.ko",
+    "offset": 14905876,
+    "size": 55440,
+    "mode": "0o100644",
+    "sha256": "3fd74f371ad0417f35531a297dc2975e1d252fcc999011adf8344e0e8070b2d5",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/mhi_dev_uci.ko",
+    "offset": 14961456,
+    "size": 47424,
+    "mode": "0o100644",
+    "sha256": "0353665febcea601920123f92e9c61e80bda95c522064579bedd41c6e15de4e3",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/microdump_collector.ko",
+    "offset": 15009028,
+    "size": 16160,
+    "mode": "0o100644",
+    "sha256": "f40b82e03706701132d18165800a007ebd7c6a386e519e70bc5a023e0c5f80b3",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/minidump.ko",
+    "offset": 15025324,
+    "size": 127424,
+    "mode": "0o100644",
+    "sha256": "b71a46f9ae9d8dcb0ae0747601def8396d113c963a3571a746809d404568a199",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/modules.alias",
+    "offset": 15152884,
+    "size": 32739,
+    "mode": "0o100644",
+    "sha256": "4650b3f37ad504f659bef6ab51c01bf83316c6722cda062725f11e72cb1325e0",
+    "text": "# Aliases extracted from modules themselves.\nalias of:N*T*Cqcom,dummycc clk_dummy\nalias of:N*T*Cqcom,dummyccC* clk_dummy\nalias i2c:aw22xxx_led leds_aw22xxx\nalias i2c:DEVICE_NAME stk3x3x\nalias of:N*T*Cgoodix,gt9897 goodix_core\nalias of:N*T*Cgoodix,gt9897C* goodix_core\nalias of:N*T*Cgoodix,gt9966 goodix_core\nalias of:N*T*Cgoodix,gt9966C* goodix_core\nalias of:N*T*Cgoodix,gt9916 goodix_core\nalias of:N*T*Cgoodix,gt9916C* goodix_core\nalias i2c:gtx8_i2c goodix_core\nalias platform:nubia_goodix_ts goodix_core\nalias of:N*T*Cqcom,llcc-perfmon llcc_perfmon\nalias of:N*T*Cqcom,llcc-perfmonC* llcc_perfmon\nalias of:N*T*Cqcom,ufs-phy-qmp-v4-lahaina phy_qcom_ufs_qmp_v4_lahaina\nalias of:N*T*Cqcom,ufs-phy-qmp-v4-lahainaC* phy_qcom_ufs_qmp_v4_lahaina\nalias MHI_UCI mhi_dev_uci\nalias of:N*T*Cqcom,msm-eud eud\nalias of:N*T*Cqcom,msm-eudC* eud\nalias of:N*T*Cqcom,waipio-spss-pas qcom_spss\nalias of:N*T*Cqcom,waipio-spss-pasC* qcom_spss\nalias of:N*T*Cqcom,cape-spss-pas qcom_spss\nalias of:N*T*Cqcom,cape-spss-pasC* qcom_spss\nalias of:N*T*Cqcom,dload-mode qcom_dload_mode\nalias of:N*T*Cqcom,dload-modeC* qcom_dload_mode\nalias lzo lzo\nalias crypto-lzo lzo\nalias of:N*T*Cqcom,sc7180-aoss-qmp qcom_aoss\nalias of:N*T*Cqcom,sc7180-aoss-qmpC* qcom_aoss\nalias of:N*T*Cqcom,sdm845-aoss-qmp qcom_aoss\nalias of:N*T*Cqcom,sdm845-aoss-qmpC* qcom_aoss\nalias of:N*T*Cqcom,sm8150-aoss-qmp qcom_aoss\nalias of:N*T*Cqcom,sm8150-aoss-qmpC* qcom_aoss\nalias of:N*T*Cqcom,sm8250-aoss-qmp qcom_aoss\nalias of:N*T*Cqcom,sm8250-aoss-qmpC* qcom_aoss\nalias of:N*T*Cqcom,waipio-aoss-qmp qcom_aoss\nalias of:N*T*Cqcom,waipio-aoss-qmpC* qcom_aoss\nalias of:N*T*Cqcom,diwali-aoss-qmp qcom_aoss\nalias of:N*T*Cqcom,diwali-aoss-qmpC* qcom_aoss\nalias of:N*T*Cqcom,reboot-reason qcom_reboot_reason\nalias of:N*T*Cqcom,reboot-reasonC* qcom_reboot_reason\nalias platform:qcom-tsens qcom_tsens\nalias of:N*T*Cqcom,msm8916-tsens qcom_tsens\nalias of:N*T*Cqcom,msm8916-tsensC* qcom_tsens\nalias of:N*T*Cqcom,msm8939-tsens qcom_tsens\nalias of:N*T*Cqcom,msm8939-tsensC* qcom_tsens\nalias of:N*T*Cqcom,msm8974-tsens qcom_tsens\nalias of:N*T*Cqcom,msm8974-tsensC* qcom_tsens\nalias of:N*T*Cqcom,msm8976-tsens qcom_tsens\nalias of:N*T*Cqcom,msm8976-tsensC* qcom_tsens\nalias of:N*T*Cqcom,msm8996-tsens qcom_tsens\nalias of:N*T*Cqcom,msm8996-tsensC* qcom_tsens\nalias of:N*T*Cqcom,tsens-v1 qcom_tsens\nalias of:N*T*Cqcom,tsens-v1C* qcom_tsens\nalias of:N*T*Cqcom,tsens-v2 qcom_tsens\nalias of:N*T*Cqcom,tsens-v2C* qcom_tsens\nalias of:N*T*Cqcom,pdc qcom_pdc\nalias of:N*T*Cqcom,pdcC* qcom_pdc\nalias of:N*T*Cqcom,pm8941-pwrkey pm8941_pwrkey\nalias of:N*T*Cqcom,pm8941-pwrkeyC* pm8941_pwrkey\nalias of:N*T*Cqcom,pm8941-resin pm8941_pwrkey\nalias of:N*T*Cqcom,pm8941-resinC* pm8941_pwrkey\nalias of:N*T*Cqcom,pmk8350-pwrkey pm8941_pwrkey\nalias of:N*T*Cqcom,pmk8350-pwrkeyC* pm8941_pwrkey\nalias of:N*T*Cqcom,pmk8350-resin pm8941_pwrkey\nalias of:N*T*Cqcom,pmk8350-resinC* pm8941_pwrkey\nalias MHI_DTR mhi_dev_dtr\nalias mhi:IPCR qrtr_mhi\nalias platform:nubia_hw_version nubia_hw_version\nalias of:N*T*Cqcom,ufs-phy-qmp-v4-cape phy_qcom_ufs_qmp_v4_cape\nalias of:N*T*Cqcom,ufs-phy-qmp-v4-capeC* phy_qcom_ufs_qmp_v4_cape\nalias of:N*T*Cqcom,qpnp-vibrator-ldo leds_qpnp_vibrator_ldo\nalias of:N*T*Cqcom,qpnp-vibrator-ldoC* leds_qpnp_vibrator_ldo\nalias platform:qcom,qpnp-pbs qpnp_pbs\nalias usbfunc:gsi usb_f_gsi\nalias of:N*T*Cqcom,ufs-phy-qmp-14nm phy_qcom_ufs_qmp_14nm\nalias of:N*T*Cqcom,ufs-phy-qmp-14nmC* phy_qcom_ufs_qmp_14nm\nalias of:N*T*Cqcom,msm8996-ufs-phy-qmp-14nm phy_qcom_ufs_qmp_14nm\nalias of:N*T*Cqcom,msm8996-ufs-phy-qmp-14nmC* phy_qcom_ufs_qmp_14nm\nalias of:N*T*Cqcom,bam-v1.3.0 bam_dma\nalias of:N*T*Cqcom,bam-v1.3.0C* bam_dma\nalias of:N*T*Cqcom,bam-v1.4.0 bam_dma\nalias of:N*T*Cqcom,bam-v1.4.0C* bam_dma\nalias of:N*T*Cqcom,bam-v1.7.0 bam_dma\nalias of:N*T*Cqcom,bam-v1.7.0C* bam_dma\nalias of:N*T*Cqcom,qfprom-sys qfprom_sys\nalias of:N*T*Cqcom,qfprom-sysC* qfprom_sys\nalias of:N*T*Cqcom,usb-bam-msm usb_bam\nalias of:N*T*Cqcom,usb-bam-msmC* usb_bam\nalias of:N*T*Cqcom,ufs-phy-qmp-v4-waipio phy_qcom_ufs_qmp_v4_waipio\nalias of:N*T*Cqcom,ufs-phy-qmp-v4-waipioC* phy_qcom_ufs_qmp_v4_waipio\nalias i2c:aw9620x_sar aw9620x\nalias platform:geni_i3c_master i3c_master_msm_geni\nalias of:N*T*Cqcom,geni-i3c i3c_master_msm_geni\nalias of:N*T*Cqcom,geni-i3cC* i3c_master_msm_geni\nalias of:N*T*Cqcom,parrot-aggre1_noc qnoc_parrot\nalias of:N*T*Cqcom,parrot-aggre1_nocC* qnoc_parrot\nalias of:N*T*Cqcom,parrot-aggre2_noc qnoc_parrot\nalias of:N*T*Cqcom,parrot-aggre2_nocC* qnoc_parrot\nalias of:N*T*Cqcom,parrot-clk_virt qnoc_parrot\nalias of:N*T*Cqcom,parrot-clk_virtC* qnoc_parrot\nalias of:N*T*Cqcom,parrot-cnoc2 qnoc_parrot\nalias of:N*T*Cqcom,parrot-cnoc2C* qnoc_parrot\nalias of:N*T*Cqcom,parrot-cnoc3 qnoc_parrot\nalias of:N*T*Cqcom,parrot-cnoc3C* qnoc_parrot\nalias of:N*T*Cqcom,parrot-gem_noc qnoc_parrot\nalias of:N*T*Cqcom,parrot-gem_nocC* qnoc_parrot\nalias of:N*T*Cqcom,parrot-lpass_ag_noc qnoc_parrot\nalias of:N*T*Cqcom,parrot-lpass_ag_nocC* qnoc_parrot\nalias of:N*T*Cqcom,parrot-mc_virt qnoc_parrot\nalias of:N*T*Cqcom,parrot-mc_virtC* qnoc_parrot\nalias of:N*T*Cqcom,parrot-mmss_noc qnoc_parrot\nalias of:N*T*Cqcom,parrot-mmss_nocC* qnoc_parrot\nalias of:N*T*Cqcom,parrot-nsp_noc qnoc_parrot\nalias of:N*T*Cqcom,parrot-nsp_nocC* qnoc_parrot\nalias of:N*T*Cqcom,parrot-pcie_anoc qnoc_parrot\nalias of:N*T*Cqcom,parrot-pcie_anocC* qnoc_parrot\nalias of:N*T*Cqcom,parrot-system_noc qnoc_parrot\nalias of:N*T*Cqcom,parrot-system_nocC* qnoc_parrot\nalias of:N*T*Cqcom,msm-mmrm msm_mmrm\nalias of:N*T*Cqcom,msm-mmrmC* msm_mmrm\nalias of:N*T*Cqcom,msm-ext-disp msm_ext_display\nalias of:N*T*Cqcom,msm-ext-dispC* msm_ext_display\nalias of:N*T*Cqcom,msm8974-adsp-pil qcom_q6v5_pas\nalias of:N*T*Cqcom,msm8974-adsp-pilC* qcom_q6v5_pas\nalias of:N*T*Cqcom,msm8996-adsp-pil qcom_q6v5_pas\nalias of:N*T*Cqcom,msm8996-adsp-pilC* qcom_q6v5_pas\nalias of:N*T*Cqcom,msm8996-slpi-pil qcom_q6v5_pas\nalias of:N*T*Cqcom,msm8996-slpi-pilC* qcom_q6v5_pas\nalias of:N*T*Cqcom,msm8998-adsp-pas qcom_q6v5_pas\nalias of:N*T*Cqcom,msm8998-adsp-pasC* qcom_q6v5_pas\nalias of:N*T*Cqcom,msm8998-slpi-pas qcom_q6v5_pas\nalias of:N*T*Cqcom,msm8998-slpi-pasC* qcom_q6v5_pas\nalias of:N*T*Cqcom,qcs404-adsp-pas qcom_q6v5_pas\nalias of:N*T*Cqcom,qcs404-adsp-pasC* qcom_q6v5_pas\nalias of:N*T*Cqcom,qcs404-cdsp-pas qcom_q6v5_pas\nalias of:N*T*Cqcom,qcs404-cdsp-pasC* qcom_q6v5_pas\nalias of:N*T*Cqcom,qcs404-wcss-pas qcom_q6v5_pas\nalias of:N*T*Cqcom,qcs404-wcss-pasC* qcom_q6v5_pas\nalias of:N*T*Cqcom,sc7180-mpss-pas qcom_q6v5_pas\nalias of:N*T*Cqcom,sc7180-mpss-pasC* qcom_q6v5_pas\nalias of:N*T*Cqcom,sdm845-adsp-pas qcom_q6v5_pas\nalias of:N*T*Cqcom,sdm845-adsp-pasC* qcom_q6v5_pas\nalias of:N*T*Cqcom,sdm845-cdsp-pas qcom_q6v5_pas\nalias of:N*T*Cqcom,sdm845-cdsp-pasC* qcom_q6v5_pas\nalias of:N*T*Cqcom,sm8150-adsp-pas qcom_q6v5_pas\nalias of:N*T*Cqcom,sm8150-adsp-pasC* qcom_q6v5_pas\nalias of:N*T*Cqcom,sm8150-cdsp-pas qcom_q6v5_pas\nalias of:N*T*Cqcom,sm8150-cdsp-pasC* qcom_q6v5_pas\nalias of:N*T*Cqcom,sm8150-mpss-pas qcom_q6v5_pas\nalias of:N*T*Cqcom,sm8150-mpss-pasC* qcom_q6v5_pas\nalias of:N*T*Cqcom,sm8150-slpi-pas qcom_q6v5_pas\nalias of:N*T*Cqcom,sm8150-slpi-pasC* qcom_q6v5_pas\nalias of:N*T*Cqcom,sm8250-adsp-pas qcom_q6v5_pas\nalias of:N*T*Cqcom,sm8250-adsp-pasC* qcom_q6v5_pas\nalias of:N*T*Cqcom,sm8250-cdsp-pas qcom_q6v5_pas\nalias of:N*T*Cqcom,sm8250-cdsp-pasC* qcom_q6v5_pas\nalias of:N*T*Cqcom,sm8250-slpi-pas qcom_q6v5_pas\nalias of:N*T*Cqcom,sm8250-slpi-pasC* qcom_q6v5_pas\nalias of:N*T*Cqcom,waipio-adsp-pas qcom_q6v5_pas\nalias of:N*T*Cqcom,waipio-adsp-pasC* qcom_q6v5_pas\nalias of:N*T*Cqcom,waipio-cdsp-pas qcom_q6v5_pas\nalias of:N*T*Cqcom,waipio-cdsp-pasC* qcom_q6v5_pas\nalias of:N*T*Cqcom,waipio-slpi-pas qcom_q6v5_pas\nalias of:N*T*Cqcom,waipio-slpi-pasC* qcom_q6v5_pas\nalias of:N*T*Cqcom,waipio-modem-pas qcom_q6v5_pas\nalias of:N*T*Cqcom,waipio-modem-pasC* qcom_q6v5_pas\nalias of:N*T*Cqcom,diwali-adsp-pas qcom_q6v5_pas\nalias of:N*T*Cqcom,diwali-adsp-pasC* qcom_q6v5_pas\nalias of:N*T*Cqcom,diwali-cdsp-pas qcom_q6v5_pas\nalias of:N*T*Cqcom,diwali-cdsp-pasC* qcom_q6v5_pas\nalias of:N*T*Cqcom,diwali-modem-pas qcom_q6v5_pas\nalias of:N*T*Cqcom,diwali-modem-pasC* qcom_q6v5_pas\nalias of:N*T*Cqcom,diwali-wpss-pas qcom_q6v5_pas\nalias of:N*T*Cqcom,diwali-wpss-pasC* qcom_q6v5_pas\nalias of:N*T*Cqcom,cape-adsp-pas qcom_q6v5_pas\nalias of:N*T*Cqcom,cape-adsp-pasC* qcom_q6v5_pas\nalias of:N*T*Cqcom,cape-cdsp-pas qcom_q6v5_pas\nalias of:N*T*Cqcom,cape-cdsp-pasC* qcom_q6v5_pas\nalias of:N*T*Cqcom,cape-modem-pas qcom_q6v5_pas\nalias of:N*T*Cqcom,cape-modem-pasC* qcom_q6v5_pas\nalias of:N*T*Cqcom,cmd-db cmd_db\nalias of:N*T*Cqcom,cmd-dbC* cmd_db\nalias platform:spi_geni spi_msm_geni\nalias of:N*T*Cqcom,cpu-vendor-hooks qcom_cpu_vendor_hooks\nalias of:N*T*Cqcom,cpu-vendor-hooksC* qcom_cpu_vendor_hooks\nalias of:N*T*Cqcom,minidump minidump\nalias of:N*T*Cqcom,minidumpC* minidump\nalias amba:d???BB961 coresight_tmc\nalias amba:d???BB9E8 coresight_tmc\nalias amba:d???BB9E9 coresight_tmc\nalias amba:d???BB9EA coresight_tmc\nalias of:N*T*Cqcom,spmi-glink-debug spmi_glink_debug\nalias of:N*T*Cqcom,spmi-glink-debugC* spmi_glink_debug\nalias tty:msm_geni_geni_serial msm_geni_serial\nalias of:N*T*Cqcom,usb-ssphy-qmp phy_msm_ssusb_qmp\nalias of:N*T*Cqcom,usb-ssphy-qmpC* phy_msm_ssusb_qmp\nalias of:N*T*Cqcom,usb-ssphy-qmp-v1 phy_msm_ssusb_qmp\nalias of:N*T*Cqcom,usb-ssphy-qmp-v1C* phy_msm_ssusb_qmp\nalias of:N*T*Cqcom,usb-ssphy-qmp-v2 phy_msm_ssusb_qmp\nalias of:N*T*Cqcom,usb-ssphy-qmp-v2C* phy_msm_ssusb_qmp\nalias of:N*T*Cqcom,usb-ssphy-qmp-dp-combo phy_msm_ssusb_qmp\nalias of:N*T*Cqcom,usb-ssphy-qmp-dp-comboC* phy_msm_ssusb_qmp\nalias of:N*T*Cqcom,usb-ssphy-qmp-usb3-or-dp phy_msm_ssusb_qmp\nalias of:N*T*Cqcom,usb-ssphy-qmp-usb3-or-dpC* phy_msm_ssusb_qmp\nalias of:N*T*Cqcom,kgsl-3d0 msm_kgsl\nalias of:N*T*Cqcom,kgsl-3d0C* msm_kgsl\nalias of:N*T*Cqcom,waipio-gcc gcc_waipio\nalias of:N*T*Cqcom,waipio-gccC* gcc_waipio\nalias of:N*T*Cqcom,cape-gcc gcc_waipio\nalias of:N*T*Cqcom,cape-gccC* gcc_waipio\nalias platform:gpio-keys_nubia gpio_keys_nubia\nalias of:N*T*Cgpio-keys_nubia gpio_keys_nubia\nalias of:N*T*Cgpio-keys_nubiaC* gpio_keys_nubia\nalias of:N*T*Cqcom,msm-cdsprm-rpmsg cdsprm\nalias of:N*T*Cqcom,msm-cdsprm-rpmsgC* cdsprm\nalias of:N*T*Cqcom,tee-shared-memory-bridge qcom_scm\nalias of:N*T*Cqcom,tee-shared-memory-bridgeC* qcom_scm\nalias of:N*T*Cqcom,smd qcom_smd\nalias of:N*T*Cqcom,smdC* qcom_smd\nalias of:N*T*Cqcom,waipio-dispcc dispcc_waipio\nalias of:N*T*Cqcom,waipio-dispccC* dispcc_waipio\nalias of:N*T*Cqcom,cape-dispcc dispcc_waipio\nalias of:N*T*Cqcom,cape-dispccC* dispcc_waipio\nalias usb:v1A0Ap0101d*dc*dsc*dp*ic*isc*ip*in* ehset\nalias usb:v1A0Ap0102d*dc*dsc*dp*ic*isc*ip*in* ehset\nalias usb:v1A0Ap0103d*dc*dsc*dp*ic*isc*ip*in* ehset\nalias usb:v1A0Ap0104d*dc*dsc*dp*ic*isc*ip*in* ehset\nalias usb:v1A0Ap0106d*dc*dsc*dp*ic*isc*ip*in* ehset\nalias usb:v1A0Ap0107d*dc*dsc*dp*ic*isc*ip*in* ehset\nalias usb:v1A0Ap0108d*dc*dsc*dp*ic*isc*ip*in* ehset\nalias of:N*T*Cqcom,msm-ssc-sensors sensors_ssc\nalias of:N*T*Cqcom,msm-ssc-sensorsC* sensors_ssc\nalias of:N*T*Cqcom,qcedev qcedev_mod\nalias of:N*T*Cqcom,qcedevC* qcedev_mod\nalias of:N*T*Cqcom,qcedev,context-bank qcedev_mod\nalias of:N*T*Cqcom,qcedev,context-bankC* qcedev_mod\nalias of:N*T*Cqcom,msm-fastrpc-rpmsg frpc_adsprpc\nalias of:N*T*Cqcom,msm-fastrpc-rpmsgC* frpc_adsprpc\nalias input:b*v*p*e*-e*3,*k*r*a*m*l*s*f*w* qbt_handler\nalias of:N*T*Cqcom,diwali-pinctrl pinctrl_diwali\nalias of:N*T*Cqcom,diwali-pinctrlC* pinctrl_diwali\nalias of:N*T*Cqcom,diwali-vm-pinctrl pinctrl_diwali\nalias of:N*T*Cqcom,diwali-vm-pinctrlC* pinctrl_diwali\nalias of:N*T*Cqcom,pm8916-pon qcom_pon\nalias of:N*T*Cqcom,pm8916-ponC* qcom_pon\nalias of:N*T*Cqcom,pms405-pon qcom_pon\nalias of:N*T*Cqcom,pms405-ponC* qcom_pon\nalias of:N*T*Cqcom,pm8998-pon qcom_pon\nalias of:N*T*Cqcom,pm8998-ponC* qcom_pon\nalias of:N*T*Clt,lt9611uxc lt9611uxc\nalias of:N*T*Clt,lt9611uxcC* lt9611uxc\nalias of:N*T*Cqcom,sn-nci nfc_i2c\nalias of:N*T*Cqcom,sn-nciC* nfc_i2c\nalias of:N*T*Carm,coresight-replicator coresight_replicator\nalias of:N*T*Carm,coresight-replicatorC* coresight_replicator\nalias of:N*T*Carm,coresight-static-replicator coresight_replicator\nalias of:N*T*Carm,coresight-static-replicatorC* coresight_replicator\nalias amba:d???BB909 coresight_replicator\nalias amba:d???BB9EC coresight_replicator\nalias of:N*T*Cqcom,gic-intr-routing qcom_gic_intr_routing\nalias of:N*T*Cqcom,gic-intr-routingC* qcom_gic_intr_routing\nalias of:N*T*Cqcom,spcom spcom\nalias of:N*T*Cqcom,spcomC* spcom\nalias usbfunc:ccid usb_f_ccid\nalias of:N*T*Cqcom,diwali-gcc gcc_diwali\nalias of:N*T*Cqcom,diwali-gccC* gcc_diwali\nalias of:N*T*Cqcom,usb-snps-eusb2-phy phy_msm_snps_eusb2\nalias of:N*T*Cqcom,usb-snps-eusb2-phyC* phy_msm_snps_eusb2\nalias of:N*T*Cqcom,ufs-phy-qmp-v3 phy_qcom_ufs_qmp_v3\nalias of:N*T*Cqcom,ufs-phy-qmp-v3C* phy_qcom_ufs_qmp_v3\nalias of:N*T*Cqcom,wcn6750 icnss2\nalias of:N*T*Cqcom,wcn6750C* icnss2\nalias of:N*T*Cqcom,icnss icnss2\nalias of:N*T*Cqcom,icnssC* icnss2\nalias net-pf-42 qrtr\nalias of:N*T*Cqcom,sfpb-mutex qcom_hwspinlock\nalias of:N*T*Cqcom,sfpb-mutexC* qcom_hwspinlock\nalias of:N*T*Cqcom,tcsr-mutex qcom_hwspinlock\nalias of:N*T*Cqcom,tcsr-mutexC* qcom_hwspinlock\nalias amba:d???[37BF]B968 coresight_tpdm\nalias amba:d???[37BF]B969 coresight_tpda\nalias platform:i2c_geni i2c_msm_geni\nalias of:N*T*Cqcom,i2c-geni i2c_msm_geni\nalias of:N*T*Cqcom,i2c-geniC* i2c_msm_geni\nalias platform:msm_sys_pm_vx sys_pm_vx\nalias lzo-rle lzo_rle\nalias crypto-lzo-rle lzo_rle\nalias platform:sched_ctl sched_ctl\nalias char-major-21-* sg\nalias of:N*T*Cqcom,iommu-dma qcom_iommu_util\nalias of:N*T*Cqcom,iommu-dmaC* qcom_iommu_util\nalias usbfunc:cser usb_f_cdev\nalias of:N*T*Cqcom,diwali-videocc videocc_diwali\nalias of:N*T*Cqcom,diwali-videoccC* videocc_diwali\nalias of:N*T*Catmel,maxtouch atmel_mxt_ts\nalias of:N*T*Catmel,maxtouchC* atmel_mxt_ts\nalias of:N*T*Catmel,qt602240_ts atmel_mxt_ts\nalias of:N*T*Catmel,qt602240_tsC* atmel_mxt_ts\nalias of:N*T*Catmel,atmel_mxt_ts atmel_mxt_ts\nalias of:N*T*Catmel,atmel_mxt_tsC* atmel_mxt_ts\nalias of:N*T*Catmel,atmel_mxt_tp atmel_mxt_ts\nalias of:N*T*Catmel,atmel_mxt_tpC* atmel_mxt_ts\nalias of:N*T*Catmel,mXT224 atmel_mxt_ts\nalias of:N*T*Catmel,mXT224C* atmel_mxt_ts\nalias i2c:qt602240_ts atmel_mxt_ts\nalias i2c:atmel_mxt_ts atmel_mxt_ts\nalias i2c:atmel_mxt_tp atmel_mxt_ts\nalias i2c:maxtouch atmel_mxt_ts\nalias i2c:mXT224 atmel_mxt_ts\nalias MHI_CORE mhi_cntrl_qcom\nalias pci:v000017CBd00000308sv*sd*bc*sc*i* mhi_cntrl_qcom\nalias pci:v000017CBd0000FFFFsv*sd*bc*sc*i* mhi_cntrl_qcom\nalias of:N*T*Cqcom,diwali-camcc camcc_diwali\nalias of:N*T*Cqcom,diwali-camccC* camcc_diwali\nalias platform:spmi-temp-alarm qcom_spmi_temp_alarm\nalias of:N*T*Cqcom,spmi-temp-alarm qcom_spmi_temp_alarm\nalias of:N*T*Cqcom,spmi-temp-alarmC* qcom_spmi_temp_alarm\nalias of:N*T*Cqcom,smem smem\nalias of:N*T*Cqcom,smemC* smem\nalias usbfunc:diag usb_f_diag\nalias of:N*T*Cqcom,waipio-aggre1_noc qnoc_waipio\nalias of:N*T*Cqcom,waipio-aggre1_nocC* qnoc_waipio\nalias of:N*T*Cqcom,waipio-aggre2_noc qnoc_waipio\nalias of:N*T*Cqcom,waipio-aggre2_nocC* qnoc_waipio\nalias of:N*T*Cqcom,waipio-clk_virt qnoc_waipio\nalias of:N*T*Cqcom,waipio-clk_virtC* qnoc_waipio\nalias of:N*T*Cqcom,waipio-config_noc qnoc_waipio\nalias of:N*T*Cqcom,waipio-config_nocC* qnoc_waipio\nalias of:N*T*Cqcom,waipio-gem_noc qnoc_waipio\nalias of:N*T*Cqcom,waipio-gem_nocC* qnoc_waipio\nalias of:N*T*Cqcom,waipio-lpass_ag_noc qnoc_waipio\nalias of:N*T*Cqcom,waipio-lpass_ag_nocC* qnoc_waipio\nalias of:N*T*Cqcom,waipio-mc_virt qnoc_waipio\nalias of:N*T*Cqcom,waipio-mc_virtC* qnoc_waipio\nalias of:N*T*Cqcom,waipio-mmss_noc qnoc_waipio\nalias of:N*T*Cqcom,waipio-mmss_nocC* qnoc_waipio\nalias of:N*T*Cqcom,waipio-nsp_noc qnoc_waipio\nalias of:N*T*Cqcom,waipio-nsp_nocC* qnoc_waipio\nalias of:N*T*Cqcom,waipio-pcie_anoc qnoc_waipio\nalias of:N*T*Cqcom,waipio-pcie_anocC* qnoc_waipio\nalias of:N*T*Cqcom,waipio-system_noc qnoc_waipio\nalias of:N*T*Cqcom,waipio-system_nocC* qnoc_waipio\nalias platform:spmi_pmic_arb_debug spmi_pmic_arb_debug\nalias of:N*T*Cqcom,spmi-pmic-arb-debug spmi_pmic_arb_debug\nalias of:N*T*Cqcom,spmi-pmic-arb-debugC* spmi_pmic_arb_debug\nalias of:N*T*Cqcom,diwali-dispcc dispcc_diwali\nalias of:N*T*Cqcom,diwali-dispccC* dispcc_diwali\nalias of:N*T*Cqcom,bcm-voter icc_bcm_voter\nalias of:N*T*Cqcom,bcm-voterC* icc_bcm_voter\nalias of:N*T*Cqcom,pmic-pon-log pmic_pon_log\nalias of:N*T*Cqcom,pmic-pon-logC* pmic_pon_log\nalias of:N*T*Cqcom,logbuf-vendor-hooks qcom_logbuf_vendor_hooks\nalias of:N*T*Cqcom,logbuf-vendor-hooksC* qcom_logbuf_vendor_hooks\nalias of:N*T*Cqcom,smp2p smp2p\nalias of:N*T*Cqcom,smp2pC* smp2p\nalias net-pf-16-proto-16-family-nl80211 cfg80211\nalias of:N*T*Cqcom,usb-audio-qmi-dev snd_usb_audio_qmi\nalias of:N*T*Cqcom,usb-audio-qmi-devC* snd_usb_audio_qmi\nalias of:N*T*Cqcom,slim-ngd-v1.5.0 slim_qcom_ngd_ctrl\nalias of:N*T*Cqcom,slim-ngd-v1.5.0C* slim_qcom_ngd_ctrl\nalias of:N*T*Cqcom,slim-ngd-v2.1.0 slim_qcom_ngd_ctrl\nalias of:N*T*Cqcom,slim-ngd-v2.1.0C* slim_qcom_ngd_ctrl\nalias of:N*T*Cqcom,waipio-camcc camcc_waipio\nalias of:N*T*Cqcom,waipio-camccC* camcc_waipio\nalias of:N*T*Cqcom,waipio-camcc-v2 camcc_waipio\nalias of:N*T*Cqcom,waipio-camcc-v2C* camcc_waipio\nalias of:N*T*Cqcom,cape-camcc camcc_waipio\nalias of:N*T*Cqcom,cape-camccC* camcc_waipio\nalias platform:qcom-socinfo socinfo\nalias of:N*T*Cqcom,gpi-dma gpi\nalias of:N*T*Cqcom,gpi-dmaC* gpi\nalias of:N*T*Cqcom,cape-pinctrl pinctrl_cape\nalias of:N*T*Cqcom,cape-pinctrlC* pinctrl_cape\nalias platform:qcom-spmi-gpio pinctrl_spmi_gpio\nalias of:N*T*Cqcom,pm8005-gpio pinctrl_spmi_gpio\nalias of:N*T*Cqcom,pm8005-gpioC* pinctrl_spmi_gpio\nalias of:N*T*Cqcom,pm8916-gpio pinctrl_spmi_gpio\nalias of:N*T*Cqcom,pm8916-gpioC* pinctrl_spmi_gpio\nalias of:N*T*Cqcom,pm8941-gpio pinctrl_spmi_gpio\nalias of:N*T*Cqcom,pm8941-gpioC* pinctrl_spmi_gpio\nalias of:N*T*Cqcom,pm8950-gpio pinctrl_spmi_gpio\nalias of:N*T*Cqcom,pm8950-gpioC* pinctrl_spmi_gpio\nalias of:N*T*Cqcom,pmi8950-gpio pinctrl_spmi_gpio\nalias of:N*T*Cqcom,pmi8950-gpioC* pinctrl_spmi_gpio\nalias of:N*T*Cqcom,pm8994-gpio pinctrl_spmi_gpio\nalias of:N*T*Cqcom,pm8994-gpioC* pinctrl_spmi_gpio\nalias of:N*T*Cqcom,pmi8994-gpio pinctrl_spmi_gpio\nalias of:N*T*Cqcom,pmi8994-gpioC* pinctrl_spmi_gpio\nalias of:N*T*Cqcom,pm8998-gpio pinctrl_spmi_gpio\nalias of:N*T*Cqcom,pm8998-gpioC* pinctrl_spmi_gpio\nalias of:N*T*Cqcom,pmi8998-gpio pinctrl_spmi_gpio\nalias of:N*T*Cqcom,pmi8998-gpioC* pinctrl_spmi_gpio\nalias of:N*T*Cqcom,pma8084-gpio pinctrl_spmi_gpio\nalias of:N*T*Cqcom,pma8084-gpioC* pinctrl_spmi_gpio\nalias of:N*T*Cqcom,pms405-gpio pinctrl_spmi_gpio\nalias of:N*T*Cqcom,pms405-gpioC* pinctrl_spmi_gpio\nalias of:N*T*Cqcom,pm660-gpio pinctrl_spmi_gpio\nalias of:N*T*Cqcom,pm660-gpioC* pinctrl_spmi_gpio\nalias of:N*T*Cqcom,pm660l-gpio pinctrl_spmi_gpio\nalias of:N*T*Cqcom,pm660l-gpioC* pinctrl_spmi_gpio\nalias of:N*T*Cqcom,pm8150-gpio pinctrl_spmi_gpio\nalias of:N*T*Cqcom,pm8150-gpioC* pinctrl_spmi_gpio\nalias of:N*T*Cqcom,pm8150b-gpio pinctrl_spmi_gpio\nalias of:N*T*Cqcom,pm8150b-gpioC* pinctrl_spmi_gpio\nalias of:N*T*Cqcom,pm8150l-gpio pinctrl_spmi_gpio\nalias of:N*T*Cqcom,pm8150l-gpioC* pinctrl_spmi_gpio\nalias of:N*T*Cqcom,pm6150-gpio pinctrl_spmi_gpio\nalias of:N*T*Cqcom,pm6150-gpioC* pinctrl_spmi_gpio\nalias of:N*T*Cqcom,pm6150l-gpio pinctrl_spmi_gpio\nalias of:N*T*Cqcom,pm6150l-gpioC* pinctrl_spmi_gpio\nalias of:N*T*Cqcom,pm8350-gpio pinctrl_spmi_gpio\nalias of:N*T*Cqcom,pm8350-gpioC* pinctrl_spmi_gpio\nalias of:N*T*Cqcom,pm8350b-gpio pinctrl_spmi_gpio\nalias of:N*T*Cqcom,pm8350b-gpioC* pinctrl_spmi_gpio\nalias of:N*T*Cqcom,pm8350c-gpio pinctrl_spmi_gpio\nalias of:N*T*Cqcom,pm8350c-gpioC* pinctrl_spmi_gpio\nalias of:N*T*Cqcom,pmk8350-gpio pinctrl_spmi_gpio\nalias of:N*T*Cqcom,pmk8350-gpioC* pinctrl_spmi_gpio\nalias of:N*T*Cqcom,pmr735a-gpio pinctrl_spmi_gpio\nalias of:N*T*Cqcom,pmr735a-gpioC* pinctrl_spmi_gpio\nalias of:N*T*Cqcom,pmr735b-gpio pinctrl_spmi_gpio\nalias of:N*T*Cqcom,pmr735b-gpioC* pinctrl_spmi_gpio\nalias of:N*T*Cqcom,pm7250b-gpio pinctrl_spmi_gpio\nalias of:N*T*Cqcom,pm7250b-gpioC* pinctrl_spmi_gpio\nalias of:N*T*Cqcom,pm6350-gpio pinctrl_spmi_gpio\nalias of:N*T*Cqcom,pm6350-gpioC* pinctrl_spmi_gpio\nalias of:N*T*Cqcom,pm6150l-gpio pinctrl_spmi_gpio\nalias of:N*T*Cqcom,pm6150l-gpioC* pinctrl_spmi_gpio\nalias of:N*T*Cqcom,pmx65-gpio pinctrl_spmi_gpio\nalias of:N*T*Cqcom,pmx65-gpioC* pinctrl_spmi_gpio\nalias of:N*T*Cqcom,pm8450-gpio pinctrl_spmi_gpio\nalias of:N*T*Cqcom,pm8450-gpioC* pinctrl_spmi_gpio\nalias of:N*T*Cqcom,pm7325-gpio pinctrl_spmi_gpio\nalias of:N*T*Cqcom,pm7325-gpioC* pinctrl_spmi_gpio\nalias of:N*T*Cqcom,ufs-phy-qmp-v4-diwali phy_qcom_ufs_qmp_v4_diwali\nalias of:N*T*Cqcom,ufs-phy-qmp-v4-diwaliC* phy_qcom_ufs_qmp_v4_diwali\nalias platform:rtc-pm8xxx rtc_pm8xxx\nalias of:N*T*Cqcom,pm8921-rtc rtc_pm8xxx\nalias of:N*T*Cqcom,pm8921-rtcC* rtc_pm8xxx\nalias of:N*T*Cqcom,pm8018-rtc rtc_pm8xxx\nalias of:N*T*Cqcom,pm8018-rtcC* rtc_pm8xxx\nalias of:N*T*Cqcom,pm8058-rtc rtc_pm8xxx\nalias of:N*T*Cqcom,pm8058-rtcC* rtc_pm8xxx\nalias of:N*T*Cqcom,pm8941-rtc rtc_pm8xxx\nalias of:N*T*Cqcom,pm8941-rtcC* rtc_pm8xxx\nalias of:N*T*Cqcom,pmk8350-rtc rtc_pm8xxx\nalias of:N*T*Cqcom,pmk8350-rtcC* rtc_pm8xxx\nalias of:N*T*Cqcom,pm5100-rtc rtc_pm8xxx\nalias of:N*T*Cqcom,pm5100-rtcC* rtc_pm8xxx\nalias amba:d???BB962 coresight_stm\nalias amba:d???BB963 coresight_stm\nalias of:N*T*Cqcom,diwali-aggre1_noc qnoc_diwali\nalias of:N*T*Cqcom,diwali-aggre1_nocC* qnoc_diwali\nalias of:N*T*Cqcom,diwali-aggre2_noc qnoc_diwali\nalias of:N*T*Cqcom,diwali-aggre2_nocC* qnoc_diwali\nalias of:N*T*Cqcom,diwali-clk_virt qnoc_diwali\nalias of:N*T*Cqcom,diwali-clk_virtC* qnoc_diwali\nalias of:N*T*Cqcom,diwali-config_noc qnoc_diwali\nalias of:N*T*Cqcom,diwali-config_nocC* qnoc_diwali\nalias of:N*T*Cqcom,diwali-gem_noc qnoc_diwali\nalias of:N*T*Cqcom,diwali-gem_nocC* qnoc_diwali\nalias of:N*T*Cqcom,diwali-lpass_ag_noc qnoc_diwali\nalias of:N*T*Cqcom,diwali-lpass_ag_nocC* qnoc_diwali\nalias of:N*T*Cqcom,diwali-mc_virt qnoc_diwali\nalias of:N*T*Cqcom,diwali-mc_virtC* qnoc_diwali\nalias of:N*T*Cqcom,diwali-mmss_noc qnoc_diwali\nalias of:N*T*Cqcom,diwali-mmss_nocC* qnoc_diwali\nalias of:N*T*Cqcom,diwali-nsp_noc qnoc_diwali\nalias of:N*T*Cqcom,diwali-nsp_nocC* qnoc_diwali\nalias of:N*T*Cqcom,diwali-pcie_anoc qnoc_diwali\nalias of:N*T*Cqcom,diwali-pcie_anocC* qnoc_diwali\nalias of:N*T*Cqcom,diwali-system_noc qnoc_diwali\nalias of:N*T*Cqcom,diwali-system_nocC* qnoc_diwali\nalias of:N*T*Cqcom,dwc-usb3-msm dwc3_msm\nalias of:N*T*Cqcom,dwc-usb3-msmC* dwc3_msm\nalias i2c:ssusb-redriver ssusb_redriver_nb7vpq904m\nalias of:N*T*Cqcom,cdsp-loader cdsp_loader\nalias of:N*T*Cqcom,cdsp-loaderC* cdsp_loader\nalias of:N*T*Cqcom,qfprom nvmem_qfprom\nalias of:N*T*Cqcom,qfpromC* nvmem_qfprom\nalias of:N*T*Cqcom,waipio-videocc videocc_waipio\nalias of:N*T*Cqcom,waipio-videoccC* videocc_waipio\nalias of:N*T*Cqcom,cape-videocc videocc_waipio\nalias of:N*T*Cqcom,cape-videoccC* videocc_waipio\nalias of:N*T*Cqcom,waipio-pinctrl pinctrl_waipio\nalias of:N*T*Cqcom,waipio-pinctrlC* pinctrl_waipio\nalias of:N*T*Cqcom,waipio-vm-pinctrl pinctrl_waipio\nalias of:N*T*Cqcom,waipio-vm-pinctrlC* pinctrl_waipio\nalias of:N*T*Cqcom,mdp4 msm_drm\nalias of:N*T*Cqcom,mdp4C* msm_drm\nalias of:N*T*Cqcom,mdss msm_drm\nalias of:N*T*Cqcom,mdssC* msm_drm\nalias of:N*T*Cqcom,sde-kms msm_drm\nalias of:N*T*Cqcom,sde-kmsC* msm_drm\nalias of:N*T*Cqcom,smmu_sde_unsec msm_drm\nalias of:N*T*Cqcom,smmu_sde_unsecC* msm_drm\nalias of:N*T*Cqcom,smmu_sde_sec msm_drm\nalias of:N*T*Cqcom,smmu_sde_secC* msm_drm\nalias of:N*T*Cqcom,smmu_sde_nrt_unsec msm_drm\nalias of:N*T*Cqcom,smmu_sde_nrt_unsecC* msm_drm\nalias of:N*T*Cqcom,smmu_sde_nrt_sec msm_drm\nalias of:N*T*Cqcom,smmu_sde_nrt_secC* msm_drm\nalias platform:nubia_hw_version usb_switch_dp\nalias of:N*T*Cqcom,diwali-gpucc gpucc_diwali\nalias of:N*T*Cqcom,diwali-gpuccC* gpucc_diwali\nalias usbfunc:qdss usb_f_qdss\nalias of:N*T*Cqcom,rpmh-rsc qcom_rpmh\nalias of:N*T*Cqcom,rpmh-rscC* qcom_rpmh\nalias of:N*T*Cqcom,secure-buffer secure_buffer\nalias of:N*T*Cqcom,secure-bufferC* secure_buffer\nalias of:N*T*Cqcom,usb-hsphy-snps-femto phy_msm_snps_hs\nalias of:N*T*Cqcom,usb-hsphy-snps-femtoC* phy_msm_snps_hs\nalias of:N*T*Cnxp,eusb2-repeater repeater_i2c_eusb2\nalias of:N*T*Cnxp,eusb2-repeaterC* repeater_i2c_eusb2\nalias of:N*T*Cti,eusb2-repeater repeater_i2c_eusb2\nalias of:N*T*Cti,eusb2-repeaterC* repeater_i2c_eusb2\nalias platform:usb_phy_generic phy_generic\nalias of:N*T*Cusb-nop-xceiv phy_generic\nalias of:N*T*Cusb-nop-xceivC* phy_generic\nalias rpmsg:IPCRTR qrtr_smd\nalias of:N*T*Cqcom,rimps qcom_rimps\nalias of:N*T*Cqcom,rimpsC* qcom_rimps\nalias platform:fork_monitor fork_monitor_ctl\nalias usb:v0B95p1790d*dc*dsc*dp*ic*isc*ip*in* ax88179_178a\nalias usb:v0B95p178Ad*dc*dsc*dp*ic*isc*ip*in* ax88179_178a\nalias usb:v04B4p3610d*dc*dsc*dp*ic*isc*ip*in* ax88179_178a\nalias usb:v2001p4A00d*dc*dsc*dp*ic*isc*ip*in* ax88179_178a\nalias usb:v0DF6p0072d*dc*dsc*dp*ic*isc*ip*in* ax88179_178a\nalias usb:v04E8pA100d*dc*dsc*dp*ic*isc*ip*in* ax88179_178a\nalias usb:v17EFp304Bd*dc*dsc*dp*ic*isc*ip*in* ax88179_178a\nalias usb:v050Dp0128d*dc*dsc*dp*ic*isc*ip*in* ax88179_178a\nalias usb:v0930p0A13d*dc*dsc*dp*ic*isc*ip*in* ax88179_178a\nalias usb:v0711p0179d*dc*dsc*dp*ic*isc*ip*in* ax88179_178a\nalias of:N*T*Cqcom,sc7180-rpmh-clk clk_rpmh\nalias of:N*T*Cqcom,sc7180-rpmh-clkC* clk_rpmh\nalias of:N*T*Cqcom,sdm845-rpmh-clk clk_rpmh\nalias of:N*T*Cqcom,sdm845-rpmh-clkC* clk_rpmh\nalias of:N*T*Cqcom,kona-rpmh-clk clk_rpmh\nalias of:N*T*Cqcom,kona-rpmh-clkC* clk_rpmh\nalias of:N*T*Cqcom,sm8150-rpmh-clk clk_rpmh\nalias of:N*T*Cqcom,sm8150-rpmh-clkC* clk_rpmh\nalias of:N*T*Cqcom,lahaina-rpmh-clk clk_rpmh\nalias of:N*T*Cqcom,lahaina-rpmh-clkC* clk_rpmh\nalias of:N*T*Cqcom,shima-rpmh-clk clk_rpmh\nalias of:N*T*Cqcom,shima-rpmh-clkC* clk_rpmh\nalias of:N*T*Cqcom,sm8250-rpmh-clk clk_rpmh\nalias of:N*T*Cqcom,sm8250-rpmh-clkC* clk_rpmh\nalias of:N*T*Cqcom,waipio-rpmh-clk clk_rpmh\nalias of:N*T*Cqcom,waipio-rpmh-clkC* clk_rpmh\nalias of:N*T*Cqcom,sdxlemur-rpmh-clk clk_rpmh\nalias of:N*T*Cqcom,sdxlemur-rpmh-clkC* clk_rpmh\nalias of:N*T*Cqcom,diwali-rpmh-clk clk_rpmh\nalias of:N*T*Cqcom,diwali-rpmh-clkC* clk_rpmh\nalias of:N*T*Cqcom,ufshc ufs_qcom\nalias of:N*T*Cqcom,ufshcC* ufs_qcom\nalias of:N*T*Carm,coresight-static-funnel coresight_funnel\nalias of:N*T*Carm,coresight-static-funnelC* coresight_funnel\nalias amba:d???BB908 coresight_funnel\nalias amba:d???BB9EB coresight_funnel\nalias of:N*T*Cqcom,memshare msm_memshare\nalias of:N*T*Cqcom,memshareC* msm_memshare\nalias of:N*T*Cqcom,memshare-peripheral msm_memshare\nalias of:N*T*Cqcom,memshare-peripheralC* msm_memshare\nalias platform:qcom-spmi-adc5 qcom_spmi_adc5\nalias of:N*T*Cqcom,spmi-adc5 qcom_spmi_adc5\nalias of:N*T*Cqcom,spmi-adc5C* qcom_spmi_adc5\nalias of:N*T*Cqcom,spmi-adc7 qcom_spmi_adc5\nalias of:N*T*Cqcom,spmi-adc7C* qcom_spmi_adc5\nalias of:N*T*Cqcom,spmi-adc-rev2 qcom_spmi_adc5\nalias of:N*T*Cqcom,spmi-adc-rev2C* qcom_spmi_adc5\nalias of:N*T*Cqcom,spmi-adc5-lite qcom_spmi_adc5\nalias of:N*T*Cqcom,spmi-adc5-liteC* qcom_spmi_adc5\nalias platform:reg-fixed-voltage qti_fixed_regulator\nalias of:N*T*Cqti-regulator-fixed qti_fixed_regulator\nalias of:N*T*Cqti-regulator-fixedC* qti_fixed_regulator\nalias of:N*T*Cregulator-fixed qti_fixed_regulator\nalias of:N*T*Cregulator-fixedC* qti_fixed_regulator\nalias of:N*T*Cregulator-fixed-clock qti_fixed_regulator\nalias of:N*T*Cregulator-fixed-clockC* qti_fixed_regulator\nalias i2c:i2c_pmic qcom_i2c_pmic\nalias i2c:i2c-pmic qcom_i2c_pmic\nalias of:N*T*Carm,smmu-v1 arm_smmu\nalias of:N*T*Carm,smmu-v1C* arm_smmu\nalias of:N*T*Carm,smmu-v2 arm_smmu\nalias of:N*T*Carm,smmu-v2C* arm_smmu\nalias of:N*T*Cqcom,qsmmu-v500 arm_smmu\nalias of:N*T*Cqcom,qsmmu-v500C* arm_smmu\nalias of:N*T*Carm,mmu-400 arm_smmu\nalias of:N*T*Carm,mmu-400C* arm_smmu\nalias of:N*T*Carm,mmu-401 arm_smmu\nalias of:N*T*Carm,mmu-401C* arm_smmu\nalias of:N*T*Carm,mmu-500 arm_smmu\nalias of:N*T*Carm,mmu-500C* arm_smmu\nalias of:N*T*Ccavium,smmu-v2 arm_smmu\nalias of:N*T*Ccavium,smmu-v2C* arm_smmu\nalias of:N*T*Cnvidia,smmu-500 arm_smmu\nalias of:N*T*Cnvidia,smmu-500C* arm_smmu\nalias of:N*T*Cqcom,smmu-v2 arm_smmu\nalias of:N*T*Cqcom,smmu-v2C* arm_smmu\nalias of:N*T*Cqcom,usb-emu-phy phy_qcom_emu\nalias of:N*T*Cqcom,usb-emu-phyC* phy_qcom_emu\nalias of:N*T*Cqcom,waipio-gpucc gpucc_waipio\nalias of:N*T*Cqcom,waipio-gpuccC* gpucc_waipio\nalias of:N*T*Cqcom,waipio-gpucc-v2 gpucc_waipio\nalias of:N*T*Cqcom,waipio-gpucc-v2C* gpucc_waipio\nalias of:N*T*Cqcom,cape-gpucc gpucc_waipio\nalias of:N*T*Cqcom,cape-gpuccC* gpucc_waipio\nalias amba:d???BB906 coresight_cti\nalias amba:d???BB922 coresight_cti\nalias amba:d???BB9A8 coresight_cti\nalias amba:d???BB9AA coresight_cti\nalias amba:d???BB9DA coresight_cti\nalias amba:d???BB9ED coresight_cti\nalias of:N*T*Cqcom,ext-mdm9x55 qcom_esoc\nalias of:N*T*Cqcom,ext-mdm9x55C* qcom_esoc\nalias of:N*T*Cqcom,ext-sdx50m qcom_esoc\nalias of:N*T*Cqcom,ext-sdx50mC* qcom_esoc\nalias of:N*T*Cqcom,ext-sdx55m qcom_esoc\nalias of:N*T*Cqcom,ext-sdx55mC* qcom_esoc\nalias of:N*T*Cqcom,ext-lemur qcom_esoc\nalias of:N*T*Cqcom,ext-lemurC* qcom_esoc\nalias platform:qcom-spmi-mpp pinctrl_spmi_mpp\nalias of:N*T*Cqcom,pm8841-mpp pinctrl_spmi_mpp\nalias of:N*T*Cqcom,pm8841-mppC* pinctrl_spmi_mpp\nalias of:N*T*Cqcom,pm8916-mpp pinctrl_spmi_mpp\nalias of:N*T*Cqcom,pm8916-mppC* pinctrl_spmi_mpp\nalias of:N*T*Cqcom,pm8941-mpp pinctrl_spmi_mpp\nalias of:N*T*Cqcom,pm8941-mppC* pinctrl_spmi_mpp\nalias of:N*T*Cqcom,pm8950-mpp pinctrl_spmi_mpp\nalias of:N*T*Cqcom,pm8950-mppC* pinctrl_spmi_mpp\nalias of:N*T*Cqcom,pmi8950-mpp pinctrl_spmi_mpp\nalias of:N*T*Cqcom,pmi8950-mppC* pinctrl_spmi_mpp\nalias of:N*T*Cqcom,pm8994-mpp pinctrl_spmi_mpp\nalias of:N*T*Cqcom,pm8994-mppC* pinctrl_spmi_mpp\nalias of:N*T*Cqcom,pma8084-mpp pinctrl_spmi_mpp\nalias of:N*T*Cqcom,pma8084-mppC* pinctrl_spmi_mpp\nalias of:N*T*Cqcom,spmi-mpp pinctrl_spmi_mpp\nalias of:N*T*Cqcom,spmi-mppC* pinctrl_spmi_mpp\nalias of:N*T*Cqcom,cnss cnss2\nalias of:N*T*Cqcom,cnssC* cnss2\nalias of:N*T*Cqcom,cnss-qca6290 cnss2\nalias of:N*T*Cqcom,cnss-qca6290C* cnss2\nalias of:N*T*Cqcom,cnss-qca6390 cnss2\nalias of:N*T*Cqcom,cnss-qca6390C* cnss2\nalias of:N*T*Cqcom,cnss-qca6490 cnss2\nalias of:N*T*Cqcom,cnss-qca6490C* cnss2\nalias of:N*T*Cqcom,cnss-wcn7850 cnss2\nalias of:N*T*Cqcom,cnss-wcn7850C* cnss2\nalias pci:v0000168Cd0000003Esv*sd*bc*sc*i* cnss2\nalias pci:v000017CBd00001100sv*sd*bc*sc*i* cnss2\nalias pci:v000017CBd00001101sv*sd*bc*sc*i* cnss2\nalias pci:v000017CBd00001103sv*sd*bc*sc*i* cnss2\nalias pci:v000017CBd00001107sv*sd*bc*sc*i* cnss2\nalias of:N*T*Cqcom,ipcc qcom_ipcc\nalias of:N*T*Cqcom,ipccC* qcom_ipcc\nalias i2c:rtc6226 radio_i2c_rtc6226_qca\nalias pwm:pwm-lpg pwm_qti_lpg\nalias i2c:haptic_hv haptic\nalias of:N*T*Cqcom,sharedmem-uio msm_sharedmem\nalias of:N*T*Cqcom,sharedmem-uioC* msm_sharedmem\nalias qcom,pmic-glink pmic_glink\nalias of:N*T*Cqcom,pmic-glink pmic_glink\nalias of:N*T*Cqcom,pmic-glinkC* pmic_glink\nalias i2c:sec-nfc sec_nfc\nalias spmi:spmi-pmic qcom_spmi_pmic\nalias of:N*T*Cqcom,spmi-pmic qcom_spmi_pmic\nalias of:N*T*Cqcom,spmi-pmicC* qcom_spmi_pmic\nalias of:N*T*Cqcom,pm8941 qcom_spmi_pmic\nalias of:N*T*Cqcom,pm8941C* qcom_spmi_pmic\nalias of:N*T*Cqcom,pm8841 qcom_spmi_pmic\nalias of:N*T*Cqcom,pm8841C* qcom_spmi_pmic\nalias of:N*T*Cqcom,pm8019 qcom_spmi_pmic\nalias of:N*T*Cqcom,pm8019C* qcom_spmi_pmic\nalias of:N*T*Cqcom,pm8226 qcom_spmi_pmic\nalias of:N*T*Cqcom,pm8226C* qcom_spmi_pmic\nalias of:N*T*Cqcom,pm8110 qcom_spmi_pmic\nalias of:N*T*Cqcom,pm8110C* qcom_spmi_pmic\nalias of:N*T*Cqcom,pma8084 qcom_spmi_pmic\nalias of:N*T*Cqcom,pma8084C* qcom_spmi_pmic\nalias of:N*T*Cqcom,pmi8962 qcom_spmi_pmic\nalias of:N*T*Cqcom,pmi8962C* qcom_spmi_pmic\nalias of:N*T*Cqcom,pmd9635 qcom_spmi_pmic\nalias of:N*T*Cqcom,pmd9635C* qcom_spmi_pmic\nalias of:N*T*Cqcom,pm8994 qcom_spmi_pmic\nalias of:N*T*Cqcom,pm8994C* qcom_spmi_pmic\nalias of:N*T*Cqcom,pmi8994 qcom_spmi_pmic\nalias of:N*T*Cqcom,pmi8994C* qcom_spmi_pmic\nalias of:N*T*Cqcom,pm8916 qcom_spmi_pmic\nalias of:N*T*Cqcom,pm8916C* qcom_spmi_pmic\nalias of:N*T*Cqcom,pm8004 qcom_spmi_pmic\nalias of:N*T*Cqcom,pm8004C* qcom_spmi_pmic\nalias of:N*T*Cqcom,pm8909 qcom_spmi_pmic\nalias of:N*T*Cqcom,pm8909C* qcom_spmi_pmic\nalias of:N*T*Cqcom,pm8950 qcom_spmi_pmic\nalias of:N*T*Cqcom,pm8950C* qcom_spmi_pmic\nalias of:N*T*Cqcom,pmi8950 qcom_spmi_pmic\nalias of:N*T*Cqcom,pmi8950C* qcom_spmi_pmic\nalias of:N*T*Cqcom,pm8998 qcom_spmi_pmic\nalias of:N*T*Cqcom,pm8998C* qcom_spmi_pmic\nalias of:N*T*Cqcom,pmi8998 qcom_spmi_pmic\nalias of:N*T*Cqcom,pmi8998C* qcom_spmi_pmic\nalias of:N*T*Cqcom,pm8005 qcom_spmi_pmic\nalias of:N*T*Cqcom,pm8005C* qcom_spmi_pmic\nalias of:N*T*Cqcom,sdhci-msm-v4 sdhci_msm\nalias of:N*T*Cqcom,sdhci-msm-v4C* sdhci_msm\nalias of:N*T*Cqcom,sdhci-msm-v5 sdhci_msm\nalias of:N*T*Cqcom,sdhci-msm-v5C* sdhci_msm\nalias of:N*T*Cqcom,sdm845-sdhci sdhci_msm\nalias of:N*T*Cqcom,sdm845-sdhciC* sdhci_msm\nalias platform:spmi_pmic_arb spmi_pmic_arb\nalias of:N*T*Cqcom,spmi-pmic-arb spmi_pmic_arb\nalias of:N*T*Cqcom,spmi-pmic-arbC* spmi_pmic_arb\n"
+  },
+  {
+    "name": "lib/modules/modules.blocklist",
+    "offset": 15185764,
+    "size": 1327,
+    "mode": "0o100644",
+    "sha256": "34c31aa3ab9ba6f63a30716b00fd0865910114f1cccf8fbdc7fb50f052fed296"
+  },
+  {
+    "name": "lib/modules/modules.dep",
+    "offset": 15187228,
+    "size": 38362,
+    "mode": "0o100644",
+    "sha256": "30bedfce989a3dd681a4e327d6b416ef81fd39c78fe56bca26d77ab5b1696080",
+    "text": "/lib/modules/sdpm_clk.ko:\n/lib/modules/debug-regulator.ko:\n/lib/modules/qcom_pm8008-regulator.ko: /lib/modules/debug-regulator.ko\n/lib/modules/clk-dummy.ko: /lib/modules/clk-qcom.ko /lib/modules/gdsc-regulator.ko /lib/modules/proxy-consumer.ko /lib/modules/debug-regulator.ko\n/lib/modules/hyp_core_ctl.ko: /lib/modules/gh_rm_drv.ko /lib/modules/gh_dbl.ko /lib/modules/gh_msgq.ko /lib/modules/gh_arm_drv.ko /lib/modules/thermal_pause.ko /lib/modules/sched-walt.ko /lib/modules/qcom-cpufreq-hw.ko\n/lib/modules/cnss_plat_ipc_qmi_svc.ko: /lib/modules/qmi_helpers.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/leds-aw22xxx.ko:\n/lib/modules/repeater.ko:\n/lib/modules/soc_sleep_stats.ko: /lib/modules/smem.ko\n/lib/modules/stk3x3x.ko:\n/lib/modules/goodix_core.ko: /lib/modules/panel_event_notifier.ko\n/lib/modules/llcc_perfmon.ko:\n/lib/modules/phy-qcom-ufs-qmp-v4-lahaina.ko: /lib/modules/phy-qcom-ufs.ko\n/lib/modules/smp2p_sleepstate.ko:\n/lib/modules/qcom_ipc_logging.ko: /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/mhi_dev_uci.ko: /lib/modules/mhi_dev_dtr.ko /lib/modules/mhi.ko /lib/modules/pci-msm-drv.ko /lib/modules/rproc_qcom_common.ko /lib/modules/qcom_smd.ko /lib/modules/qcom_glink_smem.ko /lib/modules/qcom_glink.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/qcom_dma_heaps.ko: /lib/modules/msm_dma_iommu_mapping.ko /lib/modules/mem_buf_dev.ko /lib/modules/secure_buffer.ko /lib/modules/qcom-scm.ko /lib/modules/gh_rm_drv.ko /lib/modules/gh_dbl.ko /lib/modules/gh_msgq.ko /lib/modules/gh_arm_drv.ko\n/lib/modules/eud.ko: /lib/modules/qcom-scm.ko\n/lib/modules/qcom_spss.ko: /lib/modules/qcom_glink_spss.ko /lib/modules/qcom_sysmon.ko /lib/modules/qmi_helpers.ko /lib/modules/mdt_loader.ko /lib/modules/qcom-scm.ko /lib/modules/rproc_qcom_common.ko /lib/modules/qcom_smd.ko /lib/modules/qcom_glink_smem.ko /lib/modules/qcom_glink.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/stm_p_basic.ko: /lib/modules/stm_core.ko\n/lib/modules/qcom-dload-mode.ko: /lib/modules/qcom-scm.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/qce50.ko: /lib/modules/sps_drv.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/lzo.ko:\n/lib/modules/cpu_hotplug.ko:\n/lib/modules/qcom_aoss.ko: /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/lvstest.ko:\n/lib/modules/qcom-reboot-reason.ko:\n/lib/modules/coresight.ko:\n/lib/modules/qcom_tsens.ko: /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/qcom-pdc.ko: /lib/modules/qcom-scm.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/pm8941-pwrkey.ko:\n/lib/modules/mhi_dev_dtr.ko: /lib/modules/mhi.ko /lib/modules/pci-msm-drv.ko /lib/modules/rproc_qcom_common.ko /lib/modules/qcom_smd.ko /lib/modules/qcom_glink_smem.ko /lib/modules/qcom_glink.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/qrtr-mhi.ko: /lib/modules/qrtr.ko /lib/modules/ns.ko /lib/modules/mhi.ko /lib/modules/pci-msm-drv.ko /lib/modules/rproc_qcom_common.ko /lib/modules/qcom_smd.ko /lib/modules/qcom_glink_smem.ko /lib/modules/qcom_glink.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/nubia_hw_version.ko:\n/lib/modules/qcom_cpuss_sleep_stats.ko: /lib/modules/qcom-scm.ko\n/lib/modules/phy-qcom-ufs-qmp-v4-cape.ko: /lib/modules/phy-qcom-ufs.ko\n/lib/modules/guestvm_loader.ko: /lib/modules/mdt_loader.ko /lib/modules/qcom-scm.ko /lib/modules/gh_rm_drv.ko /lib/modules/gh_dbl.ko /lib/modules/gh_msgq.ko /lib/modules/gh_arm_drv.ko\n/lib/modules/ns.ko: /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/leds-qpnp-vibrator-ldo.ko:\n/lib/modules/qpnp-pbs.ko:\n/lib/modules/clk-qcom.ko: /lib/modules/gdsc-regulator.ko /lib/modules/proxy-consumer.ko /lib/modules/debug-regulator.ko\n/lib/modules/coresight-dummy.ko: /lib/modules/coresight.ko\n/lib/modules/usb_f_gsi.ko: /lib/modules/ipa_fmwk.ko /lib/modules/dwc3-msm.ko /lib/modules/clk-qcom.ko /lib/modules/gdsc-regulator.ko /lib/modules/proxy-consumer.ko /lib/modules/ssusb-redriver-nb7vpq904m.ko /lib/modules/ucsi_glink.ko /lib/modules/pmic_glink.ko /lib/modules/pdr_interface.ko /lib/modules/qmi_helpers.ko /lib/modules/rproc_qcom_common.ko /lib/modules/qcom_smd.ko /lib/modules/qcom_glink_smem.ko /lib/modules/qcom_glink.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko /lib/modules/debug-regulator.ko\n/lib/modules/phy-qcom-ufs-qmp-14nm.ko: /lib/modules/phy-qcom-ufs.ko\n/lib/modules/bam_dma.ko: /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/c1dcvs_vendor.ko:\n/lib/modules/qfprom-sys.ko:\n/lib/modules/usb_bam.ko: /lib/modules/sps_drv.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/leds-qti-flash.ko: /lib/modules/qti_battery_charger.ko /lib/modules/pmic_glink.ko /lib/modules/pdr_interface.ko /lib/modules/qmi_helpers.ko /lib/modules/rproc_qcom_common.ko /lib/modules/qcom_smd.ko /lib/modules/qcom_glink_smem.ko /lib/modules/qcom_glink.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/hung_task_enh.ko:\n/lib/modules/phy-qcom-ufs-qmp-v4-waipio.ko: /lib/modules/phy-qcom-ufs.ko\n/lib/modules/gh_dbl.ko:\n/lib/modules/gh_ctrl.ko:\n/lib/modules/icc-debug.ko:\n/lib/modules/aw9620x.ko:\n/lib/modules/qcom_iommu_debug.ko: /lib/modules/qcom_iommu_util.ko\n/lib/modules/i3c-master-msm-geni.ko: /lib/modules/pinctrl-msm.ko /lib/modules/msm-geni-se.ko /lib/modules/qcom-scm.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/qcom_ramdump.ko:\n/lib/modules/qnoc-parrot.ko: /lib/modules/qnoc-qos.ko /lib/modules/icc-rpmh.ko /lib/modules/icc-debug.ko /lib/modules/icc-bcm-voter.ko /lib/modules/qcom_rpmh.ko /lib/modules/cmd-db.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/msm-mmrm.ko: /lib/modules/clk-qcom.ko /lib/modules/gdsc-regulator.ko /lib/modules/proxy-consumer.ko /lib/modules/debug-regulator.ko\n/lib/modules/proxy-consumer.ko:\n/lib/modules/msm_sysstats.ko: /lib/modules/msm_kgsl.ko /lib/modules/msm_performance.ko /lib/modules/qcom-pmu-lib.ko /lib/modules/qcom_llcc_pmu.ko /lib/modules/llcc-qcom.ko /lib/modules/qcom-dcvs.ko /lib/modules/dcvs_fp.ko /lib/modules/mem_buf_dev.ko /lib/modules/secure_buffer.ko /lib/modules/qcom_rpmh.ko /lib/modules/cmd-db.ko /lib/modules/clk-qcom.ko /lib/modules/gdsc-regulator.ko /lib/modules/proxy-consumer.ko /lib/modules/mdt_loader.ko /lib/modules/qcom-scm.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko /lib/modules/gh_rm_drv.ko /lib/modules/gh_dbl.ko /lib/modules/gh_msgq.ko /lib/modules/gh_arm_drv.ko /lib/modules/sched-walt.ko /lib/modules/qcom-cpufreq-hw.ko /lib/modules/debug-regulator.ko\n/lib/modules/stm_p_ost.ko: /lib/modules/stm_core.ko\n/lib/modules/msm_ext_display.ko:\n/lib/modules/qcom_q6v5_pas.ko: /lib/modules/qcom_pil_info.ko /lib/modules/qcom_q6v5.ko /lib/modules/qcom_sysmon.ko /lib/modules/qcom_aoss.ko /lib/modules/qmi_helpers.ko /lib/modules/mdt_loader.ko /lib/modules/qcom-scm.ko /lib/modules/rproc_qcom_common.ko /lib/modules/qcom_smd.ko /lib/modules/qcom_glink_smem.ko /lib/modules/qcom_glink.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/cnss_prealloc.ko:\n/lib/modules/cmd-db.ko:\n/lib/modules/hwmon.ko:\n/lib/modules/qseecom-mod.ko: /lib/modules/mem_buf_dev.ko /lib/modules/secure_buffer.ko /lib/modules/qcom-scm.ko /lib/modules/gh_rm_drv.ko /lib/modules/gh_dbl.ko /lib/modules/gh_msgq.ko /lib/modules/gh_arm_drv.ko\n/lib/modules/spi-msm-geni.ko: /lib/modules/msm-geni-se.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/msm_rng.ko:\n/lib/modules/microdump_collector.ko: /lib/modules/qcom_ramdump.ko /lib/modules/rproc_qcom_common.ko /lib/modules/qcom_smd.ko /lib/modules/qcom_glink_smem.ko /lib/modules/qcom_glink.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/qcom_cpu_vendor_hooks.ko:\n/lib/modules/coresight-csr.ko: /lib/modules/coresight.ko\n/lib/modules/minidump.ko: /lib/modules/smem.ko\n/lib/modules/qti_qmi_cdev.ko: /lib/modules/qmi_helpers.ko\n/lib/modules/altmode-glink.ko: /lib/modules/pmic_glink.ko /lib/modules/pdr_interface.ko /lib/modules/qmi_helpers.ko /lib/modules/rproc_qcom_common.ko /lib/modules/qcom_smd.ko /lib/modules/qcom_glink_smem.ko /lib/modules/qcom_glink.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/coresight-tmc.ko: /lib/modules/usb_f_qdss.ko /lib/modules/usb_bam.ko /lib/modules/sps_drv.ko /lib/modules/coresight-csr.ko /lib/modules/dwc3-msm.ko /lib/modules/clk-qcom.ko /lib/modules/gdsc-regulator.ko /lib/modules/proxy-consumer.ko /lib/modules/ssusb-redriver-nb7vpq904m.ko /lib/modules/ucsi_glink.ko /lib/modules/pmic_glink.ko /lib/modules/pdr_interface.ko /lib/modules/qmi_helpers.ko /lib/modules/coresight.ko /lib/modules/rproc_qcom_common.ko /lib/modules/qcom_smd.ko /lib/modules/qcom_glink_smem.ko /lib/modules/qcom_glink.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko /lib/modules/debug-regulator.ko\n/lib/modules/rq_stats.ko:\n/lib/modules/spmi-glink-debug.ko: /lib/modules/pmic_glink.ko /lib/modules/pdr_interface.ko /lib/modules/qmi_helpers.ko /lib/modules/rproc_qcom_common.ko /lib/modules/qcom_smd.ko /lib/modules/qcom_glink_smem.ko /lib/modules/qcom_glink.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/iommu-logger.ko:\n/lib/modules/msm_geni_serial.ko: /lib/modules/msm-geni-se.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/phy-msm-ssusb-qmp.ko:\n/lib/modules/msm_kgsl.ko: /lib/modules/msm_performance.ko /lib/modules/qcom-pmu-lib.ko /lib/modules/qcom_llcc_pmu.ko /lib/modules/llcc-qcom.ko /lib/modules/qcom-dcvs.ko /lib/modules/dcvs_fp.ko /lib/modules/mem_buf_dev.ko /lib/modules/secure_buffer.ko /lib/modules/qcom_rpmh.ko /lib/modules/cmd-db.ko /lib/modules/clk-qcom.ko /lib/modules/gdsc-regulator.ko /lib/modules/proxy-consumer.ko /lib/modules/mdt_loader.ko /lib/modules/qcom-scm.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko /lib/modules/gh_rm_drv.ko /lib/modules/gh_dbl.ko /lib/modules/gh_msgq.ko /lib/modules/gh_arm_drv.ko /lib/modules/sched-walt.ko /lib/modules/qcom-cpufreq-hw.ko /lib/modules/debug-regulator.ko\n/lib/modules/qcom-pmu-lib.ko: /lib/modules/qcom_llcc_pmu.ko\n/lib/modules/tmecom-intf.ko:\n/lib/modules/reboot-mode.ko:\n/lib/modules/mhi_dev_netdev.ko: /lib/modules/mhi.ko /lib/modules/pci-msm-drv.ko /lib/modules/rproc_qcom_common.ko /lib/modules/qcom_smd.ko /lib/modules/qcom_glink_smem.ko /lib/modules/qcom_glink.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/qcom_lpm.ko: /lib/modules/sched-walt.ko /lib/modules/qcom-cpufreq-hw.ko\n/lib/modules/gcc-waipio.ko: /lib/modules/clk-dummy.ko /lib/modules/clk-qcom.ko /lib/modules/gdsc-regulator.ko /lib/modules/proxy-consumer.ko /lib/modules/debug-regulator.ko\n/lib/modules/gpio_keys_nubia.ko:\n/lib/modules/qcom-cpufreq-hw.ko:\n/lib/modules/msm_performance.ko: /lib/modules/qcom-pmu-lib.ko /lib/modules/qcom_llcc_pmu.ko /lib/modules/sched-walt.ko /lib/modules/qcom-cpufreq-hw.ko\n/lib/modules/qcom_glink_smem.ko: /lib/modules/qcom_glink.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/cdsprm.ko:\n/lib/modules/rpmh-regulator.ko: /lib/modules/qcom_rpmh.ko /lib/modules/cmd-db.ko /lib/modules/proxy-consumer.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko /lib/modules/debug-regulator.ko\n/lib/modules/qcom_glink.ko: /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/mhi.ko: /lib/modules/pci-msm-drv.ko /lib/modules/rproc_qcom_common.ko /lib/modules/qcom_smd.ko /lib/modules/qcom_glink_smem.ko /lib/modules/qcom_glink.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/qcom-scm.ko:\n/lib/modules/qcom_smd.ko: /lib/modules/smem.ko\n/lib/modules/icc-test.ko:\n/lib/modules/dispcc-waipio.ko: /lib/modules/clk-qcom.ko /lib/modules/gdsc-regulator.ko /lib/modules/proxy-consumer.ko /lib/modules/debug-regulator.ko\n/lib/modules/qmi_helpers.ko:\n/lib/modules/ehset.ko:\n/lib/modules/sensors_ssc.ko:\n/lib/modules/qcedev-mod.ko: /lib/modules/qce50.ko /lib/modules/sps_drv.ko /lib/modules/mem_buf_dev.ko /lib/modules/secure_buffer.ko /lib/modules/qcom-scm.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko /lib/modules/gh_rm_drv.ko /lib/modules/gh_dbl.ko /lib/modules/gh_msgq.ko /lib/modules/gh_arm_drv.ko\n/lib/modules/msm_dma_iommu_mapping.ko:\n/lib/modules/frpc-adsprpc.ko: /lib/modules/qcom_ramdump.ko /lib/modules/mem_buf_dev.ko /lib/modules/secure_buffer.ko /lib/modules/pdr_interface.ko /lib/modules/qmi_helpers.ko /lib/modules/qcom-scm.ko /lib/modules/rproc_qcom_common.ko /lib/modules/qcom_smd.ko /lib/modules/qcom_glink_smem.ko /lib/modules/qcom_glink.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko /lib/modules/gh_rm_drv.ko /lib/modules/gh_dbl.ko /lib/modules/gh_msgq.ko /lib/modules/gh_arm_drv.ko\n/lib/modules/qbt_handler.ko:\n/lib/modules/pinctrl-diwali.ko: /lib/modules/pinctrl-msm.ko /lib/modules/qcom-scm.ko\n/lib/modules/qcom-pon.ko: /lib/modules/reboot-mode.ko\n/lib/modules/qcom_wdt_core.ko: /lib/modules/qcom-scm.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/lt9611uxc.ko:\n/lib/modules/mdt_loader.ko: /lib/modules/qcom-scm.ko\n/lib/modules/qti_devfreq_cdev.ko:\n/lib/modules/gh_irq_lend.ko: /lib/modules/gh_rm_drv.ko /lib/modules/gh_dbl.ko /lib/modules/gh_msgq.ko /lib/modules/gh_arm_drv.ko\n/lib/modules/nfc_i2c.ko: /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/sensors_sensitivity.ko:\n/lib/modules/coresight-replicator.ko: /lib/modules/coresight.ko\n/lib/modules/qcom_gic_intr_routing.ko:\n/lib/modules/core_hang_detect.ko: /lib/modules/qcom-scm.ko\n/lib/modules/qnoc-qos.ko:\n/lib/modules/gf_spi.ko:\n/lib/modules/qti-adc-tm.ko:\n/lib/modules/spcom.ko: /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/usb_f_ccid.ko:\n/lib/modules/gcc-diwali.ko: /lib/modules/clk-qcom.ko /lib/modules/gdsc-regulator.ko /lib/modules/proxy-consumer.ko /lib/modules/debug-regulator.ko\n/lib/modules/qcom-dcvs.ko: /lib/modules/dcvs_fp.ko /lib/modules/qcom_rpmh.ko /lib/modules/cmd-db.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/qti-regmap-debugfs.ko:\n/lib/modules/gh_msgq.ko:\n/lib/modules/rproc_qcom_common.ko: /lib/modules/qcom_smd.ko /lib/modules/qcom_glink_smem.ko /lib/modules/qcom_glink.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/phy-msm-snps-eusb2.ko: /lib/modules/repeater.ko /lib/modules/qcom-scm.ko\n/lib/modules/mem_buf.ko: /lib/modules/qcom_dma_heaps.ko /lib/modules/msm_dma_iommu_mapping.ko /lib/modules/mem_buf_dev.ko /lib/modules/secure_buffer.ko /lib/modules/qcom-scm.ko /lib/modules/gh_rm_drv.ko /lib/modules/gh_dbl.ko /lib/modules/gh_msgq.ko /lib/modules/gh_arm_drv.ko\n/lib/modules/nubiafreezer.ko:\n/lib/modules/phy-qcom-ufs-qmp-v3.ko: /lib/modules/phy-qcom-ufs.ko\n/lib/modules/bcl_pmic5.ko: /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/rdbg.ko: /lib/modules/smem.ko\n/lib/modules/debugcc-waipio.ko: /lib/modules/clk-dummy.ko /lib/modules/clk-qcom.ko /lib/modules/gdsc-regulator.ko /lib/modules/proxy-consumer.ko /lib/modules/debug-regulator.ko\n/lib/modules/icnss2.ko: /lib/modules/wlan_firmware_service.ko /lib/modules/qti-adc-tm.ko /lib/modules/socinfo.ko /lib/modules/pdr_interface.ko /lib/modules/qmi_helpers.ko /lib/modules/rproc_qcom_common.ko /lib/modules/qcom_smd.ko /lib/modules/qcom_glink_smem.ko /lib/modules/qcom_glink.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/gh_arm_drv.ko:\n/lib/modules/c1dcvs_scmi.ko:\n/lib/modules/heap_mem_ext_v01.ko: /lib/modules/qmi_helpers.ko\n/lib/modules/qcom_sysmon.ko: /lib/modules/qmi_helpers.ko /lib/modules/rproc_qcom_common.ko /lib/modules/qcom_smd.ko /lib/modules/qcom_glink_smem.ko /lib/modules/qcom_glink.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/gh_virt_wdt.ko: /lib/modules/qcom_wdt_core.ko /lib/modules/qcom-scm.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/ucsi_glink.ko: /lib/modules/pmic_glink.ko /lib/modules/pdr_interface.ko /lib/modules/qmi_helpers.ko /lib/modules/rproc_qcom_common.ko /lib/modules/qcom_smd.ko /lib/modules/qcom_glink_smem.ko /lib/modules/qcom_glink.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/stm_core.ko:\n/lib/modules/bwmon.ko: /lib/modules/qcom-dcvs.ko /lib/modules/dcvs_fp.ko /lib/modules/qcom_rpmh.ko /lib/modules/cmd-db.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/tz_log.ko: /lib/modules/qcom-scm.ko\n/lib/modules/qrtr.ko: /lib/modules/ns.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/gh_mem_notifier.ko: /lib/modules/gh_rm_drv.ko /lib/modules/gh_dbl.ko /lib/modules/gh_msgq.ko /lib/modules/gh_arm_drv.ko\n/lib/modules/qcom_hwspinlock.ko:\n/lib/modules/boot_stats.ko:\n/lib/modules/coresight-tpdm.ko: /lib/modules/coresight.ko /lib/modules/qcom-scm.ko\n/lib/modules/plh_scmi.ko: /lib/modules/msm_performance.ko /lib/modules/qcom-pmu-lib.ko /lib/modules/qcom_llcc_pmu.ko /lib/modules/sched-walt.ko /lib/modules/qcom-cpufreq-hw.ko\n/lib/modules/coresight-tpda.ko: /lib/modules/coresight.ko\n/lib/modules/fsa4480-i2c.ko: /lib/modules/qti-regmap-debugfs.ko /lib/modules/ucsi_glink.ko /lib/modules/pmic_glink.ko /lib/modules/pdr_interface.ko /lib/modules/qmi_helpers.ko /lib/modules/rproc_qcom_common.ko /lib/modules/qcom_smd.ko /lib/modules/qcom_glink_smem.ko /lib/modules/qcom_glink.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/ipa_fmwk.ko:\n/lib/modules/i2c-msm-geni.ko: /lib/modules/msm-geni-se.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/sys_pm_vx.ko:\n/lib/modules/lzo-rle.ko:\n/lib/modules/sched_ctl.ko:\n/lib/modules/memory_dump_v2.ko: /lib/modules/qcom-scm.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/sg.ko:\n/lib/modules/kryo_arm64_edac.ko:\n/lib/modules/qcom_iommu_util.ko:\n/lib/modules/qsee_ipc_irq_bridge.ko: /lib/modules/rproc_qcom_common.ko /lib/modules/qcom_smd.ko /lib/modules/qcom_glink_smem.ko /lib/modules/qcom_glink.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/usb_f_cdev.ko:\n/lib/modules/videocc-diwali.ko: /lib/modules/clk-qcom.ko /lib/modules/gdsc-regulator.ko /lib/modules/proxy-consumer.ko /lib/modules/debug-regulator.ko\n/lib/modules/plh_vendor.ko:\n/lib/modules/qti_amoled_ecm.ko: /lib/modules/hwmon.ko /lib/modules/panel_event_notifier.ko\n/lib/modules/atmel_mxt_ts.ko: /lib/modules/panel_event_notifier.ko\n/lib/modules/panel_event_notifier.ko:\n/lib/modules/debugcc-diwali.ko: /lib/modules/clk-dummy.ko /lib/modules/clk-qcom.ko /lib/modules/gdsc-regulator.ko /lib/modules/proxy-consumer.ko /lib/modules/debug-regulator.ko\n/lib/modules/mhi_cntrl_qcom.ko: /lib/modules/qcom_esoc.ko /lib/modules/qcom_sysmon.ko /lib/modules/qmi_helpers.ko /lib/modules/mhi.ko /lib/modules/pci-msm-drv.ko /lib/modules/rproc_qcom_common.ko /lib/modules/qcom_smd.ko /lib/modules/qcom_glink_smem.ko /lib/modules/qcom_glink.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/policy_engine.ko:\n/lib/modules/camcc-diwali.ko: /lib/modules/clk-qcom.ko /lib/modules/gdsc-regulator.ko /lib/modules/proxy-consumer.ko /lib/modules/debug-regulator.ko\n/lib/modules/charger-ulog-glink.ko: /lib/modules/pmic_glink.ko /lib/modules/pdr_interface.ko /lib/modules/qmi_helpers.ko /lib/modules/rproc_qcom_common.ko /lib/modules/qcom_smd.ko /lib/modules/qcom_glink_smem.ko /lib/modules/qcom_glink.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/qcom-spmi-temp-alarm.ko:\n/lib/modules/smem.ko:\n/lib/modules/usb_f_diag.ko:\n/lib/modules/btpower.ko:\n/lib/modules/qcom-hv-haptics.ko: /lib/modules/qpnp-pbs.ko\n/lib/modules/pci-edma.ko: /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/qcom_soc_wdt.ko: /lib/modules/qcom_wdt_core.ko /lib/modules/qcom-scm.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/stm_ftrace.ko: /lib/modules/stm_core.ko\n/lib/modules/qnoc-waipio.ko: /lib/modules/qnoc-qos.ko /lib/modules/icc-rpmh.ko /lib/modules/icc-debug.ko /lib/modules/icc-bcm-voter.ko /lib/modules/qcom_rpmh.ko /lib/modules/cmd-db.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/spmi-pmic-arb-debug.ko:\n/lib/modules/qcom_ipc_lite.ko:\n/lib/modules/mem-hooks.ko:\n/lib/modules/rimps_log.ko: /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/zsmalloc.ko:\n/lib/modules/dcvs_fp.ko: /lib/modules/qcom_rpmh.ko /lib/modules/cmd-db.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/dispcc-diwali.ko: /lib/modules/clk-qcom.ko /lib/modules/gdsc-regulator.ko /lib/modules/proxy-consumer.ko /lib/modules/debug-regulator.ko\n/lib/modules/ddr_cdev.ko:\n/lib/modules/icc-bcm-voter.ko: /lib/modules/qcom_rpmh.ko /lib/modules/cmd-db.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/pmic-pon-log.ko: /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/qcom-vadc-common.ko:\n/lib/modules/qcom_edac.ko:\n/lib/modules/qcom_logbuf_vendor_hooks.ko: /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/gh_virtio_backend.ko: /lib/modules/secure_buffer.ko /lib/modules/qcom-scm.ko /lib/modules/gh_rm_drv.ko /lib/modules/gh_dbl.ko /lib/modules/gh_msgq.ko /lib/modules/gh_arm_drv.ko\n/lib/modules/smp2p.ko: /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/phy-qcom-ufs.ko:\n/lib/modules/qti_battery_debug.ko: /lib/modules/pmic_glink.ko /lib/modules/pdr_interface.ko /lib/modules/qmi_helpers.ko /lib/modules/rproc_qcom_common.ko /lib/modules/qcom_smd.ko /lib/modules/qcom_glink_smem.ko /lib/modules/qcom_glink.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/cfg80211.ko:\n/lib/modules/snd-usb-audio-qmi.ko: /lib/modules/qmi_helpers.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/dcc_v2.ko: /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/qcom_sync_file.ko:\n/lib/modules/slim-qcom-ngd-ctrl.ko: /lib/modules/slimbus.ko /lib/modules/pdr_interface.ko /lib/modules/qmi_helpers.ko /lib/modules/rproc_qcom_common.ko /lib/modules/qcom_smd.ko /lib/modules/qcom_glink_smem.ko /lib/modules/qcom_glink.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/qti_cpufreq_cdev.ko:\n/lib/modules/camcc-waipio.ko: /lib/modules/clk-qcom.ko /lib/modules/gdsc-regulator.ko /lib/modules/proxy-consumer.ko /lib/modules/debug-regulator.ko\n/lib/modules/socinfo.ko: /lib/modules/smem.ko\n/lib/modules/bcl_soc.ko:\n/lib/modules/stub-regulator.ko: /lib/modules/debug-regulator.ko\n/lib/modules/gpi.ko: /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/pinctrl-cape.ko: /lib/modules/pinctrl-msm.ko /lib/modules/qcom-scm.ko\n/lib/modules/pinctrl-spmi-gpio.ko:\n/lib/modules/phy-qcom-ufs-qmp-v4-diwali.ko: /lib/modules/phy-qcom-ufs.ko\n/lib/modules/smcinvoke_mod.ko: /lib/modules/qseecom-mod.ko /lib/modules/mem_buf_dev.ko /lib/modules/secure_buffer.ko /lib/modules/qcom-scm.ko /lib/modules/gh_rm_drv.ko /lib/modules/gh_dbl.ko /lib/modules/gh_msgq.ko /lib/modules/gh_arm_drv.ko\n/lib/modules/rtc-pm8xxx.ko:\n/lib/modules/coresight-stm.ko: /lib/modules/coresight.ko /lib/modules/stm_core.ko\n/lib/modules/gh_rm_drv.ko: /lib/modules/gh_dbl.ko /lib/modules/gh_msgq.ko /lib/modules/gh_arm_drv.ko\n/lib/modules/qpnp-amoled-regulator.ko: /lib/modules/debug-regulator.ko\n/lib/modules/qnoc-diwali.ko: /lib/modules/qnoc-qos.ko /lib/modules/icc-rpmh.ko /lib/modules/icc-debug.ko /lib/modules/icc-bcm-voter.ko /lib/modules/qcom_rpmh.ko /lib/modules/cmd-db.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/qrtr-gunyah.ko: /lib/modules/secure_buffer.ko /lib/modules/qrtr.ko /lib/modules/ns.ko /lib/modules/qcom-scm.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko /lib/modules/gh_rm_drv.ko /lib/modules/gh_dbl.ko /lib/modules/gh_msgq.ko /lib/modules/gh_arm_drv.ko\n/lib/modules/coresight-hwevent.ko: /lib/modules/coresight-csr.ko /lib/modules/coresight.ko\n/lib/modules/qcom-cpufreq-hw-debug.ko:\n/lib/modules/dwc3-msm.ko: /lib/modules/clk-qcom.ko /lib/modules/gdsc-regulator.ko /lib/modules/proxy-consumer.ko /lib/modules/ssusb-redriver-nb7vpq904m.ko /lib/modules/ucsi_glink.ko /lib/modules/pmic_glink.ko /lib/modules/pdr_interface.ko /lib/modules/qmi_helpers.ko /lib/modules/rproc_qcom_common.ko /lib/modules/qcom_smd.ko /lib/modules/qcom_glink_smem.ko /lib/modules/qcom_glink.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko /lib/modules/debug-regulator.ko\n/lib/modules/qti_userspace_cdev.ko:\n/lib/modules/ssusb-redriver-nb7vpq904m.ko: /lib/modules/ucsi_glink.ko /lib/modules/pmic_glink.ko /lib/modules/pdr_interface.ko /lib/modules/qmi_helpers.ko /lib/modules/rproc_qcom_common.ko /lib/modules/qcom_smd.ko /lib/modules/qcom_glink_smem.ko /lib/modules/qcom_glink.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/cdsp-loader.ko:\n/lib/modules/hwkm.ko: /lib/modules/tmecom-intf.ko\n/lib/modules/subsystem_sleep_stats.ko: /lib/modules/smem.ko\n/lib/modules/qcom_pil_info.ko:\n/lib/modules/nvmem_qfprom.ko:\n/lib/modules/videocc-waipio.ko: /lib/modules/clk-qcom.ko /lib/modules/gdsc-regulator.ko /lib/modules/proxy-consumer.ko /lib/modules/debug-regulator.ko\n/lib/modules/pinctrl-msm.ko: /lib/modules/qcom-scm.ko\n/lib/modules/pinctrl-waipio.ko: /lib/modules/pinctrl-msm.ko /lib/modules/qcom-scm.ko\n/lib/modules/cpu_voltage_cooling.ko:\n/lib/modules/mem_buf_dev.ko: /lib/modules/secure_buffer.ko /lib/modules/qcom-scm.ko /lib/modules/gh_rm_drv.ko /lib/modules/gh_dbl.ko /lib/modules/gh_msgq.ko /lib/modules/gh_arm_drv.ko\n/lib/modules/msm_drm.ko: /lib/modules/msm-mmrm.ko /lib/modules/spmi-pmic-arb.ko /lib/modules/fsa4480-i2c.ko /lib/modules/qti-regmap-debugfs.ko /lib/modules/msm_ext_display.ko /lib/modules/usb_switch_dp.ko /lib/modules/altmode-glink.ko /lib/modules/gh_mem_notifier.ko /lib/modules/gh_irq_lend.ko /lib/modules/msm_dma_iommu_mapping.ko /lib/modules/llcc-qcom.ko /lib/modules/qcom_rpmh.ko /lib/modules/cmd-db.ko /lib/modules/pinctrl-msm.ko /lib/modules/qcom_iommu_util.ko /lib/modules/dwc3-msm.ko /lib/modules/clk-qcom.ko /lib/modules/gdsc-regulator.ko /lib/modules/proxy-consumer.ko /lib/modules/ssusb-redriver-nb7vpq904m.ko /lib/modules/ucsi_glink.ko /lib/modules/pmic_glink.ko /lib/modules/pdr_interface.ko /lib/modules/qmi_helpers.ko /lib/modules/qcom-scm.ko /lib/modules/rproc_qcom_common.ko /lib/modules/qcom_smd.ko /lib/modules/qcom_glink_smem.ko /lib/modules/qcom_glink.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/panel_event_notifier.ko /lib/modules/smem.ko /lib/modules/gh_rm_drv.ko /lib/modules/gh_dbl.ko /lib/modules/gh_msgq.ko /lib/modules/gh_arm_drv.ko /lib/modules/debug-regulator.ko\n/lib/modules/hvc_gunyah.ko: /lib/modules/gh_rm_drv.ko /lib/modules/gh_dbl.ko /lib/modules/gh_msgq.ko /lib/modules/gh_arm_drv.ko\n/lib/modules/slimbus.ko:\n/lib/modules/usb_switch_dp.ko:\n/lib/modules/ufshcd-crypto-qti.ko: /lib/modules/crypto-qti-common.ko /lib/modules/crypto-qti-hwkm.ko /lib/modules/hwkm.ko /lib/modules/tmecom-intf.ko /lib/modules/qcom-scm.ko\n/lib/modules/crypto-qti-hwkm.ko: /lib/modules/hwkm.ko /lib/modules/tmecom-intf.ko /lib/modules/qcom-scm.ko\n/lib/modules/gpucc-diwali.ko: /lib/modules/clk-qcom.ko /lib/modules/gdsc-regulator.ko /lib/modules/proxy-consumer.ko /lib/modules/debug-regulator.ko\n/lib/modules/pmu_vendor.ko:\n/lib/modules/usb_f_qdss.ko: /lib/modules/usb_bam.ko /lib/modules/sps_drv.ko /lib/modules/dwc3-msm.ko /lib/modules/clk-qcom.ko /lib/modules/gdsc-regulator.ko /lib/modules/proxy-consumer.ko /lib/modules/ssusb-redriver-nb7vpq904m.ko /lib/modules/ucsi_glink.ko /lib/modules/pmic_glink.ko /lib/modules/pdr_interface.ko /lib/modules/qmi_helpers.ko /lib/modules/rproc_qcom_common.ko /lib/modules/qcom_smd.ko /lib/modules/qcom_glink_smem.ko /lib/modules/qcom_glink.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko /lib/modules/debug-regulator.ko\n/lib/modules/qcom_rpmh.ko: /lib/modules/cmd-db.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/secure_buffer.ko: /lib/modules/qcom-scm.ko\n/lib/modules/coresight-tgu.ko: /lib/modules/coresight.ko\n/lib/modules/phy-msm-snps-hs.ko: /lib/modules/qcom-scm.ko\n/lib/modules/msm_qmp.ko: /lib/modules/qcom_aoss.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/glink_probe.ko: /lib/modules/qcom_glink_spss.ko /lib/modules/qcom_glink_smem.ko /lib/modules/qcom_glink.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/repeater-i2c-eusb2.ko: /lib/modules/repeater.ko\n/lib/modules/cnss_nl.ko:\n/lib/modules/phy-generic.ko:\n/lib/modules/qrtr-smd.ko: /lib/modules/qrtr.ko /lib/modules/ns.ko /lib/modules/qcom_glink.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/qcom_rimps.ko:\n/lib/modules/fork_monitor_ctl.ko:\n/lib/modules/cqhci.ko: /lib/modules/crypto-qti-common.ko /lib/modules/crypto-qti-hwkm.ko /lib/modules/hwkm.ko /lib/modules/tmecom-intf.ko /lib/modules/qcom-scm.ko\n/lib/modules/mhi_dev_net.ko: /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/regmap-spmi.ko:\n/lib/modules/sched-walt.ko: /lib/modules/qcom-cpufreq-hw.ko\n/lib/modules/ax88179_178a.ko:\n/lib/modules/bt_fm_slim.ko: /lib/modules/btpower.ko /lib/modules/slimbus.ko\n/lib/modules/clk-rpmh.ko: /lib/modules/qcom_rpmh.ko /lib/modules/cmd-db.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/ufs_qcom.ko: /lib/modules/ufshcd-crypto-qti.ko /lib/modules/crypto-qti-common.ko /lib/modules/crypto-qti-hwkm.ko /lib/modules/hwkm.ko /lib/modules/tmecom-intf.ko /lib/modules/clk-qcom.ko /lib/modules/gdsc-regulator.ko /lib/modules/proxy-consumer.ko /lib/modules/qcom-scm.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/phy-qcom-ufs.ko /lib/modules/smem.ko /lib/modules/debug-regulator.ko\n/lib/modules/coresight-funnel.ko: /lib/modules/coresight.ko\n/lib/modules/qdss_bridge.ko: /lib/modules/usb_f_qdss.ko /lib/modules/usb_bam.ko /lib/modules/sps_drv.ko /lib/modules/dwc3-msm.ko /lib/modules/clk-qcom.ko /lib/modules/gdsc-regulator.ko /lib/modules/proxy-consumer.ko /lib/modules/ssusb-redriver-nb7vpq904m.ko /lib/modules/ucsi_glink.ko /lib/modules/pmic_glink.ko /lib/modules/pdr_interface.ko /lib/modules/qmi_helpers.ko /lib/modules/mhi.ko /lib/modules/pci-msm-drv.ko /lib/modules/rproc_qcom_common.ko /lib/modules/qcom_smd.ko /lib/modules/qcom_glink_smem.ko /lib/modules/qcom_glink.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko /lib/modules/debug-regulator.ko\n/lib/modules/leds-qti-tri-led.ko:\n/lib/modules/nvmem_qcom-spmi-sdam.ko:\n/lib/modules/sysmon_subsystem_stats.ko: /lib/modules/smem.ko\n/lib/modules/sps_drv.ko: /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/coresight-remote-etm.ko: /lib/modules/qmi_helpers.ko /lib/modules/coresight.ko\n/lib/modules/msm_memshare.ko: /lib/modules/heap_mem_ext_v01.ko /lib/modules/secure_buffer.ko /lib/modules/qmi_helpers.ko /lib/modules/qcom-scm.ko\n/lib/modules/msm_show_epoch.ko:\n/lib/modules/qcom-spmi-adc5.ko: /lib/modules/qcom-vadc-common.ko\n/lib/modules/qti-fixed-regulator.ko: /lib/modules/proxy-consumer.ko /lib/modules/debug-regulator.ko\n/lib/modules/gdsc-regulator.ko: /lib/modules/proxy-consumer.ko /lib/modules/debug-regulator.ko\n/lib/modules/qcom-i2c-pmic.ko: /lib/modules/qti-regmap-debugfs.ko\n/lib/modules/msm-geni-se.ko: /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/msm_show_resume_irq.ko:\n/lib/modules/qti_qmi_sensor_v2.ko: /lib/modules/qmi_helpers.ko\n/lib/modules/arm_smmu.ko: /lib/modules/iommu-logger.ko /lib/modules/secure_buffer.ko /lib/modules/qcom_iommu_util.ko /lib/modules/qcom-scm.ko\n/lib/modules/phy-qcom-emu.ko:\n/lib/modules/pmu_scmi.ko: /lib/modules/qcom-pmu-lib.ko /lib/modules/qcom_llcc_pmu.ko\n/lib/modules/ep_pcie_drv.ko: /lib/modules/pci-edma.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/gpucc-waipio.ko: /lib/modules/clk-qcom.ko /lib/modules/gdsc-regulator.ko /lib/modules/proxy-consumer.ko /lib/modules/debug-regulator.ko\n/lib/modules/coresight-cti.ko: /lib/modules/coresight.ko\n/lib/modules/f_fs_ipc_log.ko: /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/thermal_pause.ko: /lib/modules/sched-walt.ko /lib/modules/qcom-cpufreq-hw.ko\n/lib/modules/wlan_firmware_service.ko: /lib/modules/qmi_helpers.ko\n/lib/modules/qcom_esoc.ko: /lib/modules/qcom_sysmon.ko /lib/modules/qmi_helpers.ko /lib/modules/rproc_qcom_common.ko /lib/modules/qcom_smd.ko /lib/modules/qcom_glink_smem.ko /lib/modules/qcom_glink.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/qti_battery_charger.ko: /lib/modules/pmic_glink.ko /lib/modules/pdr_interface.ko /lib/modules/qmi_helpers.ko /lib/modules/rproc_qcom_common.ko /lib/modules/qcom_smd.ko /lib/modules/qcom_glink_smem.ko /lib/modules/qcom_glink.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/pinctrl-spmi-mpp.ko:\n/lib/modules/fan_core.ko:\n/lib/modules/cnss2.ko: /lib/modules/cnss_plat_ipc_qmi_svc.ko /lib/modules/memory_dump_v2.ko /lib/modules/wlan_firmware_service.ko /lib/modules/qcom_ramdump.ko /lib/modules/cmd-db.ko /lib/modules/qmi_helpers.ko /lib/modules/qcom-scm.ko /lib/modules/mhi.ko /lib/modules/pci-msm-drv.ko /lib/modules/rproc_qcom_common.ko /lib/modules/qcom_smd.ko /lib/modules/qcom_glink_smem.ko /lib/modules/qcom_glink.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/msm_lmh_dcvs.ko:\n/lib/modules/synx-driver.ko: /lib/modules/qcom_ipc_lite.ko\n/lib/modules/crypto-qti-common.ko: /lib/modules/crypto-qti-hwkm.ko /lib/modules/hwkm.ko /lib/modules/tmecom-intf.ko /lib/modules/qcom-scm.ko\n/lib/modules/glink_pkt.ko: /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/qcom_glink_spss.ko: /lib/modules/qcom_glink.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/qcom_ipcc.ko:\n/lib/modules/zram.ko: /lib/modules/zsmalloc.ko\n/lib/modules/memlat.ko: /lib/modules/qcom-pmu-lib.ko /lib/modules/qcom_llcc_pmu.ko /lib/modules/qcom-dcvs.ko /lib/modules/dcvs_fp.ko /lib/modules/qcom_rpmh.ko /lib/modules/cmd-db.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/radio-i2c-rtc6226-qca.ko:\n/lib/modules/llcc-qcom.ko:\n/lib/modules/cnss_utils.ko:\n/lib/modules/qcom_q6v5.ko: /lib/modules/qcom_sysmon.ko /lib/modules/qmi_helpers.ko /lib/modules/rproc_qcom_common.ko /lib/modules/qcom_smd.ko /lib/modules/qcom_glink_smem.ko /lib/modules/qcom_glink.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/pwm-qti-lpg.ko: /lib/modules/qpnp-pbs.ko\n/lib/modules/haptic.ko:\n/lib/modules/spss_utils.ko: /lib/modules/qcom_spss.ko /lib/modules/qcom_glink_spss.ko /lib/modules/qcom_sysmon.ko /lib/modules/qmi_helpers.ko /lib/modules/mdt_loader.ko /lib/modules/qcom-scm.ko /lib/modules/rproc_qcom_common.ko /lib/modules/qcom_smd.ko /lib/modules/qcom_glink_smem.ko /lib/modules/qcom_glink.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/icc-rpmh.ko: /lib/modules/icc-debug.ko /lib/modules/icc-bcm-voter.ko /lib/modules/qcom_rpmh.ko /lib/modules/cmd-db.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/pci-msm-drv.ko: /lib/modules/rproc_qcom_common.ko /lib/modules/qcom_smd.ko /lib/modules/qcom_glink_smem.ko /lib/modules/qcom_glink.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/msm_sharedmem.ko: /lib/modules/secure_buffer.ko /lib/modules/qcom-scm.ko\n/lib/modules/stm_console.ko: /lib/modules/stm_core.ko\n/lib/modules/mac80211.ko: /lib/modules/cfg80211.ko\n/lib/modules/pmic_glink.ko: /lib/modules/pdr_interface.ko /lib/modules/qmi_helpers.ko /lib/modules/rproc_qcom_common.ko /lib/modules/qcom_smd.ko /lib/modules/qcom_glink_smem.ko /lib/modules/qcom_glink.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/mhi_dev_drv.ko: /lib/modules/mhi_dev_net.ko /lib/modules/ep_pcie_drv.ko /lib/modules/pci-edma.ko /lib/modules/ipa_fmwk.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/pdr_interface.ko: /lib/modules/qmi_helpers.ko /lib/modules/rproc_qcom_common.ko /lib/modules/qcom_smd.ko /lib/modules/qcom_glink_smem.ko /lib/modules/qcom_glink.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko\n/lib/modules/qcom_llcc_pmu.ko:\n/lib/modules/sec_nfc.ko:\n/lib/modules/adsp_sleepmon.ko: /lib/modules/smem.ko\n/lib/modules/qcom-spmi-pmic.ko: /lib/modules/regmap-spmi.ko /lib/modules/qti-regmap-debugfs.ko\n/lib/modules/sdhci-msm.ko: /lib/modules/cqhci.ko /lib/modules/crypto-qti-common.ko /lib/modules/crypto-qti-hwkm.ko /lib/modules/hwkm.ko /lib/modules/tmecom-intf.ko /lib/modules/qcom-scm.ko\n/lib/modules/spmi-pmic-arb.ko:\n"
+  },
+  {
+    "name": "lib/modules/modules.load",
+    "offset": 15225728,
+    "size": 1531,
+    "mode": "0o100644",
+    "sha256": "d44ddf1f9bff87ba20ca077d1c3fadd89adf756edcbfb46be022450d3886717e",
+    "text": "gh_virt_wdt.ko\nqcom_wdt_core.ko\nqcom_cpu_vendor_hooks.ko\nclk-rpmh.ko\ngcc-waipio.ko\nicc-rpmh.ko\nqcom_ipcc.ko\nqcom_ipc_logging.ko\nqcom-pdc.ko\nrpmh-regulator.ko\nbwmon.ko\nqcom-cpufreq-hw.ko\nsched-walt.ko\ncfg80211.ko\nclk-dummy.ko\nclk-qcom.ko\ncmd-db.ko\ncqhci.ko\ncrypto-qti-common.ko\ncrypto-qti-hwkm.ko\ndcvs_fp.ko\ndebug-regulator.ko\ndispcc-diwali.ko\ndispcc-waipio.ko\ngcc-diwali.ko\ngdsc-regulator.ko\ngh_arm_drv.ko\ngh_ctrl.ko\ngh_dbl.ko\ngh_msgq.ko\ngh_rm_drv.ko\ngh_virt_wdt.ko\nhwkm.ko\nicc-bcm-voter.ko\nicc-debug.ko\niommu-logger.ko\nkryo_arm64_edac.ko\nllcc-qcom.ko\nmac80211.ko\nmem_buf_dev.ko\nmem_buf.ko\nmem-hooks.ko\nmemory_dump_v2.ko\nminidump.ko\nmsm_dma_iommu_mapping.ko\npinctrl-waipio.ko\nqnoc-waipio.ko\nqti-fixed-regulator.ko\nreboot-mode.ko\nmsm_geni_serial.ko\nns.ko\nnvmem_qcom-spmi-sdam.ko\nphy-generic.ko\nphy-qcom-ufs.ko\nphy-qcom-ufs-qmp-v4-waipio.ko\nphy-qcom-ufs-qmp-v4-diwali.ko\nphy-qcom-ufs-qmp-v4-cape.ko\npinctrl-cape.ko\npinctrl-diwali.ko\npinctrl-msm.ko\nproxy-consumer.ko\nqcom-dcvs.ko\nqcom-dload-mode.ko\nqcom_dma_heaps.ko\nqcom_gic_intr_routing.ko\nqcom_hwspinlock.ko\nqcom_iommu_util.ko\nqcom_llcc_pmu.ko\nqcom-pmu-lib.ko\npmu_vendor.ko\npmu_scmi.ko\nqcom-spmi-pmic.ko\nspmi-pmic-arb.ko\nqcom-reboot-reason.ko\nqcom_rpmh.ko\nqcom-scm.ko\nqcom_wdt_core.ko\nqnoc-diwali.ko\nqnoc-qos.ko\nqrtr.ko\nqti-regmap-debugfs.ko\nregmap-spmi.ko\nrtc-pm8xxx.ko\nsecure_buffer.ko\nsmem.ko\nsocinfo.ko\nstub-regulator.ko\ntmecom-intf.ko\nufshcd-crypto-qti.ko\nufs_qcom.ko\narm_smmu.ko\nmsm-geni-se.ko\nqcom_aoss.ko\nmsm_qmp.ko\nqcom_rimps.ko\nc1dcvs_vendor.ko\nc1dcvs_scmi.ko\nmsm_drm.ko\n"
+  },
+  {
+    "name": "lib/modules/modules.load.recovery",
+    "offset": 15227404,
+    "size": 5264,
+    "mode": "0o100644",
+    "sha256": "6d5ff72ccf283ab40c2d5979d0623ef54721b3e8c62c67ec85d659b3be5553b0",
+    "text": "gh_virt_wdt.ko\nqcom_wdt_core.ko\nqcom_cpu_vendor_hooks.ko\nclk-rpmh.ko\ngcc-waipio.ko\nicc-rpmh.ko\nqcom_ipcc.ko\nqcom_ipc_logging.ko\nqcom-pdc.ko\nrpmh-regulator.ko\nbwmon.ko\nqcom-cpufreq-hw.ko\nsched-walt.ko\ncfg80211.ko\nclk-dummy.ko\nclk-qcom.ko\ncmd-db.ko\ncqhci.ko\ncrypto-qti-common.ko\ncrypto-qti-hwkm.ko\ndcvs_fp.ko\ndebug-regulator.ko\ndispcc-diwali.ko\ndispcc-waipio.ko\ngcc-diwali.ko\ngdsc-regulator.ko\ngh_arm_drv.ko\ngh_ctrl.ko\ngh_dbl.ko\ngh_msgq.ko\ngh_rm_drv.ko\ngh_virt_wdt.ko\nhwkm.ko\nicc-bcm-voter.ko\nicc-debug.ko\niommu-logger.ko\nkryo_arm64_edac.ko\nllcc-qcom.ko\nmac80211.ko\nmem_buf_dev.ko\nmem_buf.ko\nmem-hooks.ko\nmemory_dump_v2.ko\nminidump.ko\nmsm_dma_iommu_mapping.ko\npinctrl-waipio.ko\nqnoc-waipio.ko\nqti-fixed-regulator.ko\nreboot-mode.ko\nmsm_geni_serial.ko\nns.ko\nnvmem_qcom-spmi-sdam.ko\nphy-generic.ko\nphy-qcom-ufs.ko\nphy-qcom-ufs-qmp-v4-waipio.ko\nphy-qcom-ufs-qmp-v4-diwali.ko\nphy-qcom-ufs-qmp-v4-cape.ko\npinctrl-cape.ko\npinctrl-diwali.ko\npinctrl-msm.ko\nproxy-consumer.ko\nqcom-dcvs.ko\nqcom-dload-mode.ko\nqcom_dma_heaps.ko\nqcom_gic_intr_routing.ko\nqcom_hwspinlock.ko\nqcom_iommu_util.ko\nqcom_llcc_pmu.ko\nqcom-pmu-lib.ko\npmu_vendor.ko\npmu_scmi.ko\nqcom-spmi-pmic.ko\nspmi-pmic-arb.ko\nqcom-reboot-reason.ko\nqcom_rpmh.ko\nqcom-scm.ko\nqcom_wdt_core.ko\nqnoc-diwali.ko\nqnoc-qos.ko\nqrtr.ko\nqti-regmap-debugfs.ko\nregmap-spmi.ko\nrtc-pm8xxx.ko\nsecure_buffer.ko\nsmem.ko\nsocinfo.ko\nstub-regulator.ko\ntmecom-intf.ko\nufshcd-crypto-qti.ko\nufs_qcom.ko\narm_smmu.ko\nmsm-geni-se.ko\nqcom_aoss.ko\nmsm_qmp.ko\nqcom_rimps.ko\nc1dcvs_vendor.ko\nc1dcvs_scmi.ko\nmsm_sysstats.ko\nzsmalloc.ko\nlzo.ko\nlzo-rle.ko\nmsm_show_resume_irq.ko\nmhi_cntrl_qcom.ko\nmhi.ko\nmhi_dev_uci.ko\nmhi_dev_netdev.ko\nmhi_dev_dtr.ko\nphy-qcom-ufs-qmp-v4-lahaina.ko\nphy-qcom-ufs-qmp-v3.ko\nphy-qcom-ufs-qmp-14nm.ko\npinctrl-spmi-gpio.ko\npinctrl-spmi-mpp.ko\npwm-qti-lpg.ko\npci-msm-drv.ko\ncamcc-waipio.ko\ncamcc-diwali.ko\ndebugcc-diwali.ko\nvideocc-waipio.ko\ngpucc-waipio.ko\ndebugcc-waipio.ko\ngpucc-diwali.ko\nvideocc-diwali.ko\nbam_dma.ko\ngpi.ko\npci-edma.ko\nqcom_cpuss_sleep_stats.ko\nmdt_loader.ko\ncdsp-loader.ko\nqcom_ramdump.ko\npdr_interface.ko\nqmi_helpers.ko\nheap_mem_ext_v01.ko\nmsm_memshare.ko\nboot_stats.ko\nsmp2p.ko\nsubsystem_sleep_stats.ko\nadsp_sleepmon.ko\nsysmon_subsystem_stats.ko\nqsee_ipc_irq_bridge.ko\ncore_hang_detect.ko\nsoc_sleep_stats.ko\nrq_stats.ko\ndcc_v2.ko\nsmcinvoke_mod.ko\nmicrodump_collector.ko\nllcc_perfmon.ko\nsmp2p_sleepstate.ko\nsensors_ssc.ko\nglink_pkt.ko\nglink_probe.ko\npmic_glink.ko\nqti_battery_debug.ko\ncharger-ulog-glink.ko\naltmode-glink.ko\npmic-pon-log.ko\nspss_utils.ko\nmsm_performance.ko\nqpnp-pbs.ko\nspcom.ko\ncdsprm.ko\nfsa4480-i2c.ko\nmsm_show_epoch.ko\neud.ko\nguestvm_loader.ko\nhyp_core_ctl.ko\nqbt_handler.ko\nqcom_soc_wdt.ko\nsys_pm_vx.ko\nmsm_ext_display.ko\nicnss2.ko\nrimps_log.ko\nplh_scmi.ko\nqdss_bridge.ko\nmemlat.ko\nqcom_logbuf_vendor_hooks.ko\npanel_event_notifier.ko\nqcom_sync_file.ko\nhung_task_enh.ko\nqfprom-sys.ko\nqcom_pm8008-regulator.ko\nqpnp-amoled-regulator.ko\nhvc_gunyah.ko\nmsm_rng.ko\nfrpc-adsprpc.ko\nrdbg.ko\nqcom_iommu_debug.ko\nlt9611uxc.ko\nmsm_kgsl.ko\nzram.ko\nqseecom-mod.ko\nqcom-i2c-pmic.ko\nsec_nfc.ko\nnfc_i2c.ko\nsg.ko\nspi-msm-geni.ko\nspmi-pmic-arb-debug.ko\nspmi-glink-debug.ko\ncnss2.ko\ncnss_utils.ko\nwlan_firmware_service.ko\ncnss_plat_ipc_qmi_svc.ko\ncnss_nl.ko\ncnss_prealloc.ko\nax88179_178a.ko\nmsm_sharedmem.ko\nphy-qcom-emu.ko\nphy-msm-ssusb-qmp.ko\nphy-msm-snps-hs.ko\nphy-msm-snps-eusb2.ko\ndwc3-msm.ko\nehset.ko\nlvstest.ko\nssusb-redriver-nb7vpq904m.ko\nusb_f_diag.ko\nusb_f_qdss.ko\nusb_f_ccid.ko\nusb_f_cdev.ko\nusb_f_gsi.ko\nf_fs_ipc_log.ko\nucsi_glink.ko\nrepeater.ko\nrepeater-i2c-eusb2.ko\ngpio_keys_nubia.ko\natmel_mxt_ts.ko\ngoodix_core.ko\npm8941-pwrkey.ko\nqcom-hv-haptics.ko\ni2c-msm-geni.ko\ni3c-master-msm-geni.ko\nqcom_ipc_lite.ko\nsynx-driver.ko\nradio-i2c-rtc6226-qca.ko\nqcom-pon.ko\nqti_battery_charger.ko\nqcom_tsens.ko\nqcom-spmi-temp-alarm.ko\nqti-adc-tm.ko\nqti_qmi_sensor_v2.ko\nqti_qmi_cdev.ko\nthermal_pause.ko\ncpu_hotplug.ko\nbcl_pmic5.ko\nbcl_soc.ko\nmsm_lmh_dcvs.ko\ncpu_voltage_cooling.ko\npolicy_engine.ko\nsdpm_clk.ko\nddr_cdev.ko\nqti_userspace_cdev.ko\nqti_cpufreq_cdev.ko\nqti_devfreq_cdev.ko\nbtpower.ko\nbt_fm_slim.ko\nqcom_edac.ko\nqcom-cpufreq-hw-debug.ko\nqcom_lpm.ko\nsdhci-msm.ko\nleds-qti-flash.ko\nleds-qti-tri-led.ko\nleds-qpnp-vibrator-ldo.ko\nleds-aw22xxx.ko\nhaptic.ko\naw9620x.ko\nplh_vendor.ko\ntz_log.ko\nqce50.ko\nqcedev-mod.ko\nipa_fmwk.ko\nusb_bam.ko\nsps_drv.ko\nep_pcie_drv.ko\nmhi_dev_drv.ko\nmhi_dev_net.ko\nqcom_pil_info.ko\nrproc_qcom_common.ko\nqcom_q6v5.ko\nqcom_q6v5_pas.ko\nqcom_spss.ko\nqcom_esoc.ko\nqcom_sysmon.ko\nqcom_glink.ko\nqcom_glink_smem.ko\nqcom_glink_spss.ko\nqcom_smd.ko\ngh_irq_lend.ko\ngh_mem_notifier.ko\ngh_virtio_backend.ko\nqcom-spmi-adc5.ko\nqcom-vadc-common.ko\nnvmem_qfprom.ko\nicc-test.ko\nqnoc-parrot.ko\ngf_spi.ko\nstk3x3x.ko\nsensors_sensitivity.ko\nfork_monitor_ctl.ko\nsched_ctl.ko\nnubiafreezer.ko\nusb_switch_dp.ko\nfan_core.ko\nslimbus.ko\nslim-qcom-ngd-ctrl.ko\nhwmon.ko\nqti_amoled_ecm.ko\ncoresight.ko\ncoresight-tmc.ko\ncoresight-funnel.ko\ncoresight-replicator.ko\ncoresight-stm.ko\ncoresight-cti.ko\ncoresight-tpda.ko\ncoresight-tpdm.ko\ncoresight-csr.ko\ncoresight-dummy.ko\ncoresight-remote-etm.ko\ncoresight-tgu.ko\ncoresight-hwevent.ko\nstm_core.ko\nstm_p_basic.ko\nstm_p_ost.ko\nstm_console.ko\nstm_ftrace.ko\nnubia_hw_version.ko\nsnd-usb-audio-qmi.ko\nqrtr-smd.ko\nqrtr-mhi.ko\nqrtr-gunyah.ko\nmsm_drm.ko\nmsm-mmrm.ko\n"
+  },
+  {
+    "name": "lib/modules/modules.softdep",
+    "offset": 15232808,
+    "size": 694,
+    "mode": "0o100644",
+    "sha256": "8f0d200266d88b48ed93d24ec9d301178d0bbe9c6af2c0131487584f4c5219ec",
+    "text": "# Soft dependencies extracted from modules themselves.\nsoftdep soc_sleep_stats pre: smem\nsoftdep msm_kgsl pre: qcom-arm-smmu-mod nvmem_qfprom\nsoftdep qmi_helpers pre: qrtr\nsoftdep pinctrl_diwali pre: qcom_tlmm_vm_irqchip\nsoftdep spcom pre: spss_utils\nsoftdep c1dcvs_scmi pre: c1dcvs_vendor\nsoftdep plh_scmi pre: plh_vendor\nsoftdep qsee_ipc_irq_bridge pre: qcom_ipcc\nsoftdep smem pre: qcom_hwspinlock\nsoftdep dwc3_msm pre: phy-generic phy-msm-snps-hs phy-msm-ssusb-qmp eud\nsoftdep pinctrl_msm pre: qcom-pdc\nsoftdep pinctrl_waipio pre: qcom_tlmm_vm_irqchip\nsoftdep msm_drm pre: msm-mmrm\nsoftdep leds_qti_tri_led pre: pwm-qti-lpg\nsoftdep pmu_scmi pre: pmu_vendor\nsoftdep spss_utils pre: qcom_spss\n"
+  },
+  {
+    "name": "lib/modules/msm-geni-se.ko",
+    "offset": 15233644,
+    "size": 76640,
+    "mode": "0o100644",
+    "sha256": "732ebc90da9aae90d20945e9fd38825aa4bdcd761420b2f9a572f51c51cc48ec",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/msm-mmrm.ko",
+    "offset": 15310420,
+    "size": 95096,
+    "mode": "0o100644",
+    "sha256": "da2b1f9d9d8960cacdfa1a87678e970383c432f5207cce51df5340c3b4f855f8",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339-dirty SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/msm_dma_iommu_mapping.ko",
+    "offset": 15405664,
+    "size": 27776,
+    "mode": "0o100644",
+    "sha256": "2e6f6836daf2297ae0d07cf2bae937edc009e841eb6acd0aa841eea579fda462",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/msm_drm.ko",
+    "offset": 15433576,
+    "size": 4544736,
+    "mode": "0o100644",
+    "sha256": "f8a6534118845bdd13d783de663fb95c91ae4603fd449be6f278d2622a26d53f",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339-dirty SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/msm_ext_display.ko",
+    "offset": 19978456,
+    "size": 26144,
+    "mode": "0o100644",
+    "sha256": "b748841bae05d17a1be1a407ec27755ee6224cee8e0c36c54fdeb8b53a3bf292",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/msm_geni_serial.ko",
+    "offset": 20004744,
+    "size": 132848,
+    "mode": "0o100644",
+    "sha256": "1bae9bd4dc7142df6aaf4470d23753df2b00afa52fa45f654b6774e2ac55249b",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/msm_kgsl.ko",
+    "offset": 20137728,
+    "size": 2586960,
+    "mode": "0o100644",
+    "sha256": "c13135ac6005fad1c3279134eaae926c9f950f9a8d1b44ef4fafb4e08ab2505b",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/msm_lmh_dcvs.ko",
+    "offset": 22724828,
+    "size": 26016,
+    "mode": "0o100644",
+    "sha256": "3e3a7ac6fcc2c637ed4b89260f8345d3c9051e3daf41c9951573d90ff6960e24",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/msm_memshare.ko",
+    "offset": 22750984,
+    "size": 34736,
+    "mode": "0o100644",
+    "sha256": "77837ec98033fc56cd0f2313928db82806584a3ba7e5d2d56b84ba030074b30c",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/msm_performance.ko",
+    "offset": 22785864,
+    "size": 58960,
+    "mode": "0o100644",
+    "sha256": "b489cf5abc8267933e4d0f98607e29e942d8d806ec393f0345285720e98b457a",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/msm_qmp.ko",
+    "offset": 22844960,
+    "size": 47320,
+    "mode": "0o100644",
+    "sha256": "dd760c4b7e1390900a25a1e64820af794c25cb6b64b6b42eb258a566eb00ce04",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/msm_rng.ko",
+    "offset": 22892416,
+    "size": 27888,
+    "mode": "0o100644",
+    "sha256": "067d8abd82dd93e3f2316ac56d177590b0956891a81f24043c834bb0ace1837f",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/msm_sharedmem.ko",
+    "offset": 22920444,
+    "size": 16072,
+    "mode": "0o100644",
+    "sha256": "443b7f129c154dfeb1b9039b4a7afb3aa2d0eb3ccc2fb0bc22b67dedf158e9df",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/msm_show_epoch.ko",
+    "offset": 22936656,
+    "size": 10904,
+    "mode": "0o100644",
+    "sha256": "e6a70674ff51bc25120594ecd2dba21b374e4233a86063abf544fef6d0cca1cd",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/msm_show_resume_irq.ko",
+    "offset": 22947708,
+    "size": 17576,
+    "mode": "0o100644",
+    "sha256": "46a1ce516d60e3b118dd0f2772346710142ea26ef1d274997f14a74630ec66ba",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/msm_sysstats.ko",
+    "offset": 22965424,
+    "size": 39504,
+    "mode": "0o100644",
+    "sha256": "b789d4ddcc4b018ec9028e79c9062a1adaf49f3b5b11e2f4d1c70acf9ad4d9e6",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/nfc_i2c.ko",
+    "offset": 23005064,
+    "size": 70712,
+    "mode": "0o100644",
+    "sha256": "ca71ddf6d9a88d2dca4efdb7255d81d46f5b5a6534210c237f0a8d342b76bbb2",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/ns.ko",
+    "offset": 23075904,
+    "size": 64344,
+    "mode": "0o100644",
+    "sha256": "1fd92fea8c2225380916681bcbf3da823973658fc610964c1ddde1dfbe4d8749",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/nubia_hw_version.ko",
+    "offset": 23140392,
+    "size": 43648,
+    "mode": "0o100644",
+    "sha256": "59cd7f4edde272486cda96e44e583813f8a85f86cc8b240f0e71e3100f990a2b",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/nubiafreezer.ko",
+    "offset": 23184180,
+    "size": 19576,
+    "mode": "0o100644",
+    "sha256": "636be0d49b1975541c2a1b45fefcd497df1336dc2cc14ca72c038bcd6a0108e9",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/nvmem_qcom-spmi-sdam.ko",
+    "offset": 23203904,
+    "size": 14376,
+    "mode": "0o100644",
+    "sha256": "66dc24c5d418351a34715953f2df5d3adeee0248c83b5439aa1ac882cb085f5a",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/nvmem_qfprom.ko",
+    "offset": 23218420,
+    "size": 25832,
+    "mode": "0o100644",
+    "sha256": "10cadc13909d784d02ae073d652d69cbabd0a8a5b09b701b9f36e2c20dffe38d",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/panel_event_notifier.ko",
+    "offset": 23244400,
+    "size": 15912,
+    "mode": "0o100644",
+    "sha256": "8e002031141b8eba4ef3de51267d27539f0b09c8517ae8b2f1ba4115375dd32f",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/pci-edma.ko",
+    "offset": 23260448,
+    "size": 50504,
+    "mode": "0o100644",
+    "sha256": "afe88ff275c3b1d767f1354874f79c2cb048c2c08b3ecb0f9717461eff08fa40",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/pci-msm-drv.ko",
+    "offset": 23311092,
+    "size": 480024,
+    "mode": "0o100644",
+    "sha256": "ff797316d14b8c4321e16fda051161e0a303ef5551edf289092e95bc2673749c",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/pdr_interface.ko",
+    "offset": 23791256,
+    "size": 30760,
+    "mode": "0o100644",
+    "sha256": "a0220e9488979739f30f45d32da80f41ce28f3375007b369634ccda8d82ad192",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/phy-generic.ko",
+    "offset": 23822156,
+    "size": 24056,
+    "mode": "0o100644",
+    "sha256": "f68d2b87c8a4d41254057521aff8d3b394aec634558cf8f3304f724469caed80",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/phy-msm-snps-eusb2.ko",
+    "offset": 23846356,
+    "size": 44520,
+    "mode": "0o100644",
+    "sha256": "0d7dd8a80ca3214cdf0439348b1489d839eda852d202b32265cc4dbeda8fcf8e",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/phy-msm-snps-hs.ko",
+    "offset": 23891020,
+    "size": 36208,
+    "mode": "0o100644",
+    "sha256": "be7a352bed409189539a6bfcec7c13fa62f8b02d0b85f72812b16199f476033e",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/phy-msm-ssusb-qmp.ko",
+    "offset": 23927372,
+    "size": 47888,
+    "mode": "0o100644",
+    "sha256": "28638f66bc04c95edc69e49c9ad341d61a7a825eb37faaae83a07f0ef1e7ac60",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/phy-qcom-emu.ko",
+    "offset": 23975400,
+    "size": 16376,
+    "mode": "0o100644",
+    "sha256": "4966b8500a276d11ba48a0776fbe29a75cb538ed4b3e13eec90787fdcf99b158",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/phy-qcom-ufs-qmp-14nm.ko",
+    "offset": 23991924,
+    "size": 20088,
+    "mode": "0o100644",
+    "sha256": "37311923ee3866e248870a8177a2718ac06694859bff3a5e28a6a29146da303f",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/phy-qcom-ufs-qmp-v3.ko",
+    "offset": 24012160,
+    "size": 24536,
+    "mode": "0o100644",
+    "sha256": "58e6c76eb6d0e801708b1eb4b03eda9e9de8723f1aac6e07fd1a8bab96a1b13c",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/phy-qcom-ufs-qmp-v4-cape.ko",
+    "offset": 24036848,
+    "size": 27208,
+    "mode": "0o100644",
+    "sha256": "2505fbb9c98beee0a61846b0da99939ad4d06729264ba9fc781bf8bc703010fb",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/phy-qcom-ufs-qmp-v4-diwali.ko",
+    "offset": 24064208,
+    "size": 27208,
+    "mode": "0o100644",
+    "sha256": "528a38537c748438383f5f18515a8f9c03b272f31f803028a33f40ae8d8e4ed6",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/phy-qcom-ufs-qmp-v4-lahaina.ko",
+    "offset": 24091572,
+    "size": 27208,
+    "mode": "0o100644",
+    "sha256": "1a39a576174b5c2582643282d3a3fd2df96117a5dd7fb34f489f8cfbe7665c40",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/phy-qcom-ufs-qmp-v4-waipio.ko",
+    "offset": 24118932,
+    "size": 27208,
+    "mode": "0o100644",
+    "sha256": "086cfced6eb440a1ffba2c830cdff94bfe64734dd7882971c296b95c9193e96e",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/phy-qcom-ufs.ko",
+    "offset": 24146280,
+    "size": 40120,
+    "mode": "0o100644",
+    "sha256": "d39f5f2354a0c8322755a41c154896f7c3f5be55e343aeea26a68f6dca15bb53",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/pinctrl-cape.ko",
+    "offset": 24186540,
+    "size": 171104,
+    "mode": "0o100644",
+    "sha256": "0a8892e10df222e9f57e29cde33a2d1eab9440ca3bf03f4f047f44b6ee926014",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/pinctrl-diwali.ko",
+    "offset": 24357784,
+    "size": 141184,
+    "mode": "0o100644",
+    "sha256": "35b44ab8a3d73b65f13e12107adc6ad7715efc071bff4557e9ad31cb5550209a",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/pinctrl-msm.ko",
+    "offset": 24499108,
+    "size": 81824,
+    "mode": "0o100644",
+    "sha256": "87fffcfb9180a809eb7fb234fecec6c3ec565cc600c9a474b73006dd029688c3",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/pinctrl-spmi-gpio.ko",
+    "offset": 24581076,
+    "size": 52696,
+    "mode": "0o100644",
+    "sha256": "ae29eab65ac86d7381ce0f153c74bbdbfd23251205ac2bf9d83741814ad2ff68",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/pinctrl-spmi-mpp.ko",
+    "offset": 24633916,
+    "size": 34048,
+    "mode": "0o100644",
+    "sha256": "0c07acc8501e27d54ad243b1087d4a9131d56cb342a28fd593acab3e8cf7bccd",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/pinctrl-waipio.ko",
+    "offset": 24668104,
+    "size": 172664,
+    "mode": "0o100644",
+    "sha256": "44184e091273a1ae12dc87d45970b6ad15f57899258deadda544b6c6fac13ade",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/plh_scmi.ko",
+    "offset": 24840904,
+    "size": 11224,
+    "mode": "0o100644",
+    "sha256": "494bb771edef746ac4cc8029bf741d12c9386051b5cbf22d61e7af5ee244d273",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/plh_vendor.ko",
+    "offset": 24852264,
+    "size": 15408,
+    "mode": "0o100644",
+    "sha256": "bd15d145bdd2095a992b16ad46e54d85be07844154b47d608e7025a54b15b767",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/pm8941-pwrkey.ko",
+    "offset": 24867812,
+    "size": 20568,
+    "mode": "0o100644",
+    "sha256": "7607b67327e207a12534f10e34b778f7c0e05b952f948c8a67005bc40907d1da",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/pmic-pon-log.ko",
+    "offset": 24888520,
+    "size": 24488,
+    "mode": "0o100644",
+    "sha256": "78692e653965ab96d41b2f20457668218de8e14830f3e8b9c73d5afba1f77179",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/pmic_glink.ko",
+    "offset": 24913144,
+    "size": 34320,
+    "mode": "0o100644",
+    "sha256": "9dced9480af1c18f44198cdef3ceb1ea74bf0a49844605905e19e013753603ba",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/pmu_scmi.ko",
+    "offset": 24947600,
+    "size": 11224,
+    "mode": "0o100644",
+    "sha256": "65bab0d349731aa4b69d28df3fe12163e408127bb32459e981489aae86e29f6e",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/pmu_vendor.ko",
+    "offset": 24958960,
+    "size": 13008,
+    "mode": "0o100644",
+    "sha256": "20c8334ce90441944ae1d394a0bcc1718ee702a7a06a8344b77fe40eb3d3e2aa",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/policy_engine.ko",
+    "offset": 24972108,
+    "size": 18400,
+    "mode": "0o100644",
+    "sha256": "87cf8369e174f2d3301b8b99d76fa3d1e075a1fc3c4f44fd4dfc8d65b0e94d24",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/proxy-consumer.ko",
+    "offset": 24990648,
+    "size": 22472,
+    "mode": "0o100644",
+    "sha256": "91cc6dc9ac723095bcb3e7d919a8fc0606d468aaa3145eca5a7cbc3c878d3280",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/pwm-qti-lpg.ko",
+    "offset": 25013260,
+    "size": 52984,
+    "mode": "0o100644",
+    "sha256": "299663bd1c8b36025f0c9eb674893ad793f148ee84e9edb1469fb1808efbcd64",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qbt_handler.ko",
+    "offset": 25066384,
+    "size": 62528,
+    "mode": "0o100644",
+    "sha256": "2530f99e4accb77c03cdc6761d9342bca9d48e27f3a2898baa503580afebbebc",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qce50.ko",
+    "offset": 25129044,
+    "size": 159160,
+    "mode": "0o100644",
+    "sha256": "03b05229071531ac8e5937f0d14982ff72****************e8a5d8e086d2d4",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qcedev-mod.ko",
+    "offset": 25288340,
+    "size": 513960,
+    "mode": "0o100644",
+    "sha256": "f2a441ffb7070e792c4b4f7218612b0242e313d00be88b223dfc49d839c8482d",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qcom-cpufreq-hw-debug.ko",
+    "offset": 25802448,
+    "size": 20664,
+    "mode": "0o100644",
+    "sha256": "8cc32a4a8a66e0327d448cbebbda0773478ab89a3838add7e46fd5a8969bb196",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qcom-cpufreq-hw.ko",
+    "offset": 25823256,
+    "size": 47992,
+    "mode": "0o100644",
+    "sha256": "1eaaf6ebfd9a704c5590b1373d6263b13f6dd39aabf119d0e68a1ec6b6aa9aea",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qcom-dcvs.ko",
+    "offset": 25871384,
+    "size": 109528,
+    "mode": "0o100644",
+    "sha256": "36441fd4bb937f5e02382c0bef8fa939299817d0821e5b96f4227edb36fcfd8d",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qcom-dload-mode.ko",
+    "offset": 25981056,
+    "size": 26320,
+    "mode": "0o100644",
+    "sha256": "78d527c6b6602ae04336d5c0e51d2e0ecfc3ac1c3684b4f1520d606e576ae947",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qcom-hv-haptics.ko",
+    "offset": 26007520,
+    "size": 114816,
+    "mode": "0o100644",
+    "sha256": "141818315fbd7e3e33e70aac775252aec186b1c14a2df482339e2e3bf5bfb41b",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qcom-i2c-pmic.ko",
+    "offset": 26122476,
+    "size": 36560,
+    "mode": "0o100644",
+    "sha256": "a2c4b00df377b050d60f438e8190ab166dfeba705a1d7e8318affc5db35e97be",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qcom-pdc.ko",
+    "offset": 26159172,
+    "size": 32960,
+    "mode": "0o100644",
+    "sha256": "397c41d914d60d7d9cee71003261dccf7d4297d2ae2ff6b6bd19fb773d823af7",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qcom-pmu-lib.ko",
+    "offset": 26192272,
+    "size": 58640,
+    "mode": "0o100644",
+    "sha256": "75f4cbd7d3fd915e5307330d88367173253b1d900427b4dc0181e21a9c3308b3",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qcom-pon.ko",
+    "offset": 26251048,
+    "size": 13424,
+    "mode": "0o100644",
+    "sha256": "2e62427edfd285b80576c123fc6334af18b81413ad6128bc6b26c765032433c5",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qcom-reboot-reason.ko",
+    "offset": 26264616,
+    "size": 13200,
+    "mode": "0o100644",
+    "sha256": "bede3afa99d8921152a0e48bc7c18c2b991946c8ec4b1a418832e175676c066d",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qcom-scm.ko",
+    "offset": 26277952,
+    "size": 202536,
+    "mode": "0o100644",
+    "sha256": "16881b7598b149f5cef1b7717e4eabc834b4d9ba64ef532ef62ff6b0acd8dda4",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qcom-spmi-adc5.ko",
+    "offset": 26480628,
+    "size": 51480,
+    "mode": "0o100644",
+    "sha256": "d9d9d72ea0739764094b6a9650cf785a261c48cabe1776a4343c78a2da067e11",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qcom-spmi-pmic.ko",
+    "offset": 26532248,
+    "size": 19680,
+    "mode": "0o100644",
+    "sha256": "2ceb39bfd6fb52aa209bf65ed6e996e2f686320ddce637d8929b85ba97c3231c",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qcom-spmi-temp-alarm.ko",
+    "offset": 26552076,
+    "size": 21920,
+    "mode": "0o100644",
+    "sha256": "17dd70c34ebe0d8455da4799e25e473b2635974d5aa2e75e09857bc55bdec22a",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qcom-vadc-common.ko",
+    "offset": 26574140,
+    "size": 21016,
+    "mode": "0o100644",
+    "sha256": "1f05cd462b2f30dfb18661dee5d4123310f4ef97464b7c1220869ecd16923d79",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qcom_aoss.ko",
+    "offset": 26595292,
+    "size": 48088,
+    "mode": "0o100644",
+    "sha256": "00e4c5c2c69a8202c013bc8e75fb517d96a578c7cbe9fcd021a0ffcdde703a09",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qcom_cpu_vendor_hooks.ko",
+    "offset": 26643528,
+    "size": 19056,
+    "mode": "0o100644",
+    "sha256": "186f6f35a561ce4ac23e643076d2db0383a496a38568ea7cf9dd9c6b515252eb",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qcom_cpuss_sleep_stats.ko",
+    "offset": 26662732,
+    "size": 26304,
+    "mode": "0o100644",
+    "sha256": "18be67199e473f44197e6be78180863fd6161b8332b81b2540dc91ff29ba61ac",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qcom_dma_heaps.ko",
+    "offset": 26689176,
+    "size": 108200,
+    "mode": "0o100644",
+    "sha256": "af3035459f8b837a647f25ef56a42451177e7d1c9aaa7e0927dabefaa0f03516",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qcom_edac.ko",
+    "offset": 26797512,
+    "size": 19120,
+    "mode": "0o100644",
+    "sha256": "3d39bc0121cf2653399815162a6756e3c5e3e509710370086d7e33f78dff87d9",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qcom_esoc.ko",
+    "offset": 26816768,
+    "size": 177200,
+    "mode": "0o100644",
+    "sha256": "8fadd5ae23896a09f0f6c70b23c2b735f4e41ebdd5a552d871e40e5578862ed2",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qcom_gic_intr_routing.ko",
+    "offset": 26994116,
+    "size": 40336,
+    "mode": "0o100644",
+    "sha256": "3a496159549bd4ed18c19519a46e986894df6ea00c213af8e00f42e43b78d27f",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qcom_glink.ko",
+    "offset": 27034588,
+    "size": 88136,
+    "mode": "0o100644",
+    "sha256": "b5e0ed7997cbf101bb8d9332ae9a1e174bf1b3f3ad391f3bede86b1e1c041ca7",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qcom_glink_smem.ko",
+    "offset": 27122868,
+    "size": 20112,
+    "mode": "0o100644",
+    "sha256": "1002bfd7fe806f9d2122431934944bd50fff8c5fd70fb37fdc00c7c5ae1c0094",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qcom_glink_spss.ko",
+    "offset": 27143124,
+    "size": 20400,
+    "mode": "0o100644",
+    "sha256": "7e8ac861403e4769a2732486d653d92130c1e98ff73b1fa41fd4ff29a6542615",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qcom_hwspinlock.ko",
+    "offset": 27163668,
+    "size": 15880,
+    "mode": "0o100644",
+    "sha256": "00b0179fd3bdeef4d72afd9c159889ce1334b9f279be9796639810a69467b02f",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qcom_iommu_debug.ko",
+    "offset": 27179692,
+    "size": 102872,
+    "mode": "0o100644",
+    "sha256": "87f121cf73b53f2695b74f19b426b0b389eeaf7bc956f70756d910f66999406e",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qcom_iommu_util.ko",
+    "offset": 27282708,
+    "size": 115768,
+    "mode": "0o100644",
+    "sha256": "dc62178ae6a8f1009bfb2bc86343fcd01fe10bb8edce220be2b71f6ecbf03e64",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qcom_ipc_lite.ko",
+    "offset": 27398616,
+    "size": 15416,
+    "mode": "0o100644",
+    "sha256": "b6c570af9e0ba89af300d4bae95f7f7436df3d3a5f7b1dc7fa43a654276642a5",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qcom_ipc_logging.ko",
+    "offset": 27414176,
+    "size": 55808,
+    "mode": "0o100644",
+    "sha256": "17d9fcab3bf8f3e9833607e2eee96a405c7d5aa6df01f27470bb3f137bdcb351",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qcom_ipcc.ko",
+    "offset": 27470120,
+    "size": 25552,
+    "mode": "0o100644",
+    "sha256": "f82bb5045cafbc266290031ff5fdb4dd82e373eadeec65294fd9b6408ab49ae0",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qcom_llcc_pmu.ko",
+    "offset": 27495812,
+    "size": 26952,
+    "mode": "0o100644",
+    "sha256": "abaed048a5fc15f51b7779e70a560d13a0ddce2ca472765945534e8d32570272",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qcom_logbuf_vendor_hooks.ko",
+    "offset": 27522916,
+    "size": 21176,
+    "mode": "0o100644",
+    "sha256": "f07103fe96871c3c376a885e64181ad4b5ea5f6f13db375ba8e233d463f0494e",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qcom_lpm.ko",
+    "offset": 27544228,
+    "size": 102168,
+    "mode": "0o100644",
+    "sha256": "b02035a21dae2151d6cc6c70ee49918434fb30cc4b8b2993071a555e5cde513b",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qcom_pil_info.ko",
+    "offset": 27646536,
+    "size": 18408,
+    "mode": "0o100644",
+    "sha256": "5edc830fb3b7aca2be5f1415ab8fc8b9df3eb8c1a33b5a132095eaf7ae1b6ff1",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qcom_pm8008-regulator.ko",
+    "offset": 27665092,
+    "size": 47616,
+    "mode": "0o100644",
+    "sha256": "182c324bdf7d4048e3d2a4c29928597b7930aa85c2f8c70*************bf9b",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qcom_q6v5.ko",
+    "offset": 27712844,
+    "size": 23616,
+    "mode": "0o100644",
+    "sha256": "cc328bdfb5a617641a05d13c0fd2bdf97031940e4ea72a9189a7d62cf6b10a81",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qcom_q6v5_pas.ko",
+    "offset": 27736600,
+    "size": 70808,
+    "mode": "0o100644",
+    "sha256": "92dd0d277ec52c53d67009c7fa085d4957f3b350cfc34655d2a9ce0db7b8d175",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qcom_ramdump.ko",
+    "offset": 27807548,
+    "size": 18880,
+    "mode": "0o100644",
+    "sha256": "f320d5c15ff126427790eac758b9620f2c3823023320f19e9678c1fb57822b47",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qcom_rimps.ko",
+    "offset": 27826564,
+    "size": 17808,
+    "mode": "0o100644",
+    "sha256": "02f169ea8769278e3ce2fe521a7e9b3f3bce3b2d1f157b21e9a82760022bd587",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qcom_rpmh.ko",
+    "offset": 27844508,
+    "size": 90640,
+    "mode": "0o100644",
+    "sha256": "817e660bcd467d25cfd56a243835cb71ee4051637285f0eb428982be5c840360",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qcom_smd.ko",
+    "offset": 27935284,
+    "size": 44760,
+    "mode": "0o100644",
+    "sha256": "172bbdda6a0c4668addb5c388eec1c8046c9df27fb6b8a82fa3c96fe69dae2c4",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qcom_soc_wdt.ko",
+    "offset": 27980184,
+    "size": 19472,
+    "mode": "0o100644",
+    "sha256": "5f03b5b420c9fa2bd3da4a6b14d83d5203f691e633a29968d89c0a649617cc3e",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qcom_spss.ko",
+    "offset": 27999792,
+    "size": 40800,
+    "mode": "0o100644",
+    "sha256": "0b7321daf252ff6e34f901905939b00c651848633c8fed6fd828bc4b7cf03410",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qcom_sync_file.ko",
+    "offset": 28040732,
+    "size": 34864,
+    "mode": "0o100644",
+    "sha256": "ea89ab256dde1e83ef0a8a829de3f030fa5ea986761c9f4512645886b2c94611",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qcom_sysmon.ko",
+    "offset": 28075736,
+    "size": 43368,
+    "mode": "0o100644",
+    "sha256": "f7ba24c26889ba5c2850273d138bb85efeca0f757ddc197b390d6e2a69c6e264",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qcom_tsens.ko",
+    "offset": 28119240,
+    "size": 72448,
+    "mode": "0o100644",
+    "sha256": "d2b7a71c43313700e3c7e7c037487ebd20854f262c592c45bfd98f2a69493154",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qcom_wdt_core.ko",
+    "offset": 28191828,
+    "size": 44784,
+    "mode": "0o100644",
+    "sha256": "c4c66a82af381facf8c076f3659b55b7f851f6a502025a8de6de8e51cb2a6b44",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qdss_bridge.ko",
+    "offset": 28236752,
+    "size": 44096,
+    "mode": "0o100644",
+    "sha256": "9a84803fedc9f02d678e4c93a09a28c93f7f6e1bca343a54111018b8a5f5d1eb",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qfprom-sys.ko",
+    "offset": 28280984,
+    "size": 14648,
+    "mode": "0o100644",
+    "sha256": "962c50eb1dd09bc662d4e377e19a328139bb556eb59cfe81c509f381ef52f134",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qmi_helpers.ko",
+    "offset": 28295772,
+    "size": 39480,
+    "mode": "0o100644",
+    "sha256": "603f686577f51cf0a8cb058d9a4be89010cf61da259b3fb3b42d891f20c95266",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qnoc-diwali.ko",
+    "offset": 28335392,
+    "size": 188392,
+    "mode": "0o100644",
+    "sha256": "3722af2125cfde950ee47a9c406ccc4df9f4a4e6d9814e222066136689c55012",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qnoc-parrot.ko",
+    "offset": 28523924,
+    "size": 202952,
+    "mode": "0o100644",
+    "sha256": "7b8a974371c77e5cb1e27f27686f4242c12796234a55d41d334ef3d8fd762e67",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qnoc-qos.ko",
+    "offset": 28727012,
+    "size": 10440,
+    "mode": "0o100644",
+    "sha256": "7d8ee9bff972a05cb014b063b4a4aca1123ae13729de2d5541be32973a21cccc",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qnoc-waipio.ko",
+    "offset": 28737592,
+    "size": 197272,
+    "mode": "0o100644",
+    "sha256": "e23e49f5bf8c21c6980ebd7665f4163c8f300310c8135f711968a6b5f65122ce",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qpnp-amoled-regulator.ko",
+    "offset": 28935012,
+    "size": 25944,
+    "mode": "0o100644",
+    "sha256": "1899dc23c2571f7e09a8dad199863e83ae724721b19e388aa6364cde5fbf3fb3",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qpnp-pbs.ko",
+    "offset": 28961092,
+    "size": 21792,
+    "mode": "0o100644",
+    "sha256": "54ab1c9a16ea5e55bc01a4f5b3480a471da2a7b36d8164080aabb8383719c518",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qrtr-gunyah.ko",
+    "offset": 28983024,
+    "size": 26080,
+    "mode": "0o100644",
+    "sha256": "a4529e3b91deb58ad31cc0257125dcdefa3c628ecfea840431d5965c3637721a",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qrtr-mhi.ko",
+    "offset": 29009240,
+    "size": 18320,
+    "mode": "0o100644",
+    "sha256": "528a8d8e223d9b9251324a4a6cef1d6a3c96140d41da5a1556f442630db1f4ed",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qrtr-smd.ko",
+    "offset": 29027696,
+    "size": 15576,
+    "mode": "0o100644",
+    "sha256": "552c8cf7227cc9cf9343072564bc072d7c1f29e449c5ce60aec262fc39abeffb",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qrtr.ko",
+    "offset": 29043404,
+    "size": 91976,
+    "mode": "0o100644",
+    "sha256": "3386283d539227a071e4c55e8dac3a94112b26725d1fd240fa53c8265029e6cf",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qsee_ipc_irq_bridge.ko",
+    "offset": 29135528,
+    "size": 31672,
+    "mode": "0o100644",
+    "sha256": "2905be6c244b1cbdc3ae63b886d1824eb2f976e964370c97d017e6875acc9c5e",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qseecom-mod.ko",
+    "offset": 29167340,
+    "size": 730352,
+    "mode": "0o100644",
+    "sha256": "dfd04c1f3131c100b166928ac92d8dbd571ccbb211185df40e8211fea495b8c0",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qti-adc-tm.ko",
+    "offset": 29897828,
+    "size": 68352,
+    "mode": "0o100644",
+    "sha256": "37cf63aba46e0601722cc7dcb930705fb0e2385bf6a2ccd4e179c33d1c02ed04",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qti-fixed-regulator.ko",
+    "offset": 29966328,
+    "size": 17856,
+    "mode": "0o100644",
+    "sha256": "8cad8d6582a5f1228af3e4615eee12f19b7f11dbad795c4997a0bdbab8db47cb",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qti-regmap-debugfs.ko",
+    "offset": 29984328,
+    "size": 29832,
+    "mode": "0o100644",
+    "sha256": "9c1e5d459c61f8b5dea0d566a2a44ce251f67***************b1c99efc35ff",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qti_amoled_ecm.ko",
+    "offset": 30014300,
+    "size": 38392,
+    "mode": "0o100644",
+    "sha256": "b611c5a25f7e326adeac219488753ccd6a17b363cc7067ec28cf3baad96decc7",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qti_battery_charger.ko",
+    "offset": 30052840,
+    "size": 81800,
+    "mode": "0o100644",
+    "sha256": "3d262ded2c111d50eefe18efe24eb983ffa20b0083dbfbec3727b26f522af4b7",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qti_battery_debug.ko",
+    "offset": 30134784,
+    "size": 37704,
+    "mode": "0o100644",
+    "sha256": "bf3b3a5a89dfbcdec2d3f1fae65b8f4a5027e062149d1c1729023409ae50170c",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qti_cpufreq_cdev.ko",
+    "offset": 30172632,
+    "size": 20136,
+    "mode": "0o100644",
+    "sha256": "5942b0b5c9ab1bcaf00d276d42e77809ab4c24b577274222348e3a826c0518d5",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qti_devfreq_cdev.ko",
+    "offset": 30192912,
+    "size": 17648,
+    "mode": "0o100644",
+    "sha256": "e8dc95743a453bac414ee97071eb1fc37900c7a0d73a05706f9f796462bb9f50",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qti_qmi_cdev.ko",
+    "offset": 30210700,
+    "size": 30320,
+    "mode": "0o100644",
+    "sha256": "d5aa9f00307c46e7cc51aa6b2c2f4ed61db6b9e2501f6f6b0359389d82a1b5a0",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qti_qmi_sensor_v2.ko",
+    "offset": 30241164,
+    "size": 35384,
+    "mode": "0o100644",
+    "sha256": "0c65870a5febfefc1f14b847fea9950c2cae921d941c0816cc97da77fbfbad47",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/qti_userspace_cdev.ko",
+    "offset": 30276692,
+    "size": 15304,
+    "mode": "0o100644",
+    "sha256": "b26af27dfe7d19941b6ad92d4bfc103dfd3dbcb206a40d93874013a2a6f49df7",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/radio-i2c-rtc6226-qca.ko",
+    "offset": 30292144,
+    "size": 89048,
+    "mode": "0o100644",
+    "sha256": "857ea00d8cff6a2192c0ccf965d878ba9c537b04ac64cf4cbe53502a1b0afd2b",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/rdbg.ko",
+    "offset": 30381324,
+    "size": 34720,
+    "mode": "0o100644",
+    "sha256": "3eb6e9a5348958fbbb0f6e6d5e7d648855e6613787e18f385148baaf783995c3",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/reboot-mode.ko",
+    "offset": 30416184,
+    "size": 16680,
+    "mode": "0o100644",
+    "sha256": "3810e940537670af2d3c44b97c12ec2bd78cf8674fe536a51109887ba06f6db1",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/regmap-spmi.ko",
+    "offset": 30433004,
+    "size": 17360,
+    "mode": "0o100644",
+    "sha256": "9b337b42460c71f262124c1696b760eeb5a08ffa5fdcd2c020b66addbe6d593b",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/repeater-i2c-eusb2.ko",
+    "offset": 30450508,
+    "size": 20632,
+    "mode": "0o100644",
+    "sha256": "4e739698ee254219576f1cc4fd8a9bf181e762a3e63f193a778a181c9bb8b3f4",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/repeater.ko",
+    "offset": 30471276,
+    "size": 16504,
+    "mode": "0o100644",
+    "sha256": "65c9b5a80a1b2490054e95fd914d82799806099b4f1eca3c2454c8460b1633d2",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/rimps_log.ko",
+    "offset": 30487916,
+    "size": 18520,
+    "mode": "0o100644",
+    "sha256": "4bbd7cce7c43ef08ee7429122351e47b5e7561e931e7ddcb310549b61f78b8fd",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/rpmh-regulator.ko",
+    "offset": 30506576,
+    "size": 44744,
+    "mode": "0o100644",
+    "sha256": "1340212e597ddafb5685dc080e17281cfa02184fef53135344e9b755ae07f2e2",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/rproc_qcom_common.ko",
+    "offset": 30551464,
+    "size": 63848,
+    "mode": "0o100644",
+    "sha256": "55f20069515226a145afd1b8a617e25018b695a4c491090807bd79f723fe52cc",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/rq_stats.ko",
+    "offset": 30615448,
+    "size": 16256,
+    "mode": "0o100644",
+    "sha256": "0425d7b99301477d69b57f34d36ac27c40a1cd566fa240b2c6ec59a4da934151",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/rtc-pm8xxx.ko",
+    "offset": 30631840,
+    "size": 23984,
+    "mode": "0o100644",
+    "sha256": "6ea1568574381f846a021dd2ab3b09881c3874cfcc34b7827a1d0e6378d2e7d5",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/sched-walt.ko",
+    "offset": 30655960,
+    "size": 662848,
+    "mode": "0o100644",
+    "sha256": "a207b50d173422173b6b731000e86ad6918d5002570eae4ed73ea6a74eff00b1",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/sched_ctl.ko",
+    "offset": 31318944,
+    "size": 24704,
+    "mode": "0o100644",
+    "sha256": "824f02ab954217c7fbd63c7655c184bda2e5d6660875974a728852a39278aa3c",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/sdhci-msm.ko",
+    "offset": 31343784,
+    "size": 191992,
+    "mode": "0o100644",
+    "sha256": "47bd7c9f9ab64a919981a83559762f777b7c894680e790400a0330816d11f0e6",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/sdpm_clk.ko",
+    "offset": 31535912,
+    "size": 22296,
+    "mode": "0o100644",
+    "sha256": "faae578f1f23aec35509a21a12454d4a09ef092c20650a2f830ed9c2280c0823",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/sec_nfc.ko",
+    "offset": 31558344,
+    "size": 40128,
+    "mode": "0o100644",
+    "sha256": "e07bc52dd8f7899a41f5558fdcd6b728f2ce3c5d09a312bfdd982de0fa441377",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/secure_buffer.ko",
+    "offset": 31598612,
+    "size": 53344,
+    "mode": "0o100644",
+    "sha256": "e62e227426c0957f1a1d3d4ed359adffc4477c88f8648efbd1f8ff1f995cf2f8",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/sensors_sensitivity.ko",
+    "offset": 31652104,
+    "size": 31736,
+    "mode": "0o100644",
+    "sha256": "b29ee8607cda4bb73287200907e63e300b092e15f368d4089ebc9b61981098ee",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/sensors_ssc.ko",
+    "offset": 31683980,
+    "size": 27384,
+    "mode": "0o100644",
+    "sha256": "a34a8ff40a6190d901b7ba04047369d912490d5d9d0d4ccab9670515d043bcf3",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/sg.ko",
+    "offset": 31711492,
+    "size": 161384,
+    "mode": "0o100644",
+    "sha256": "401b896cd07e92a7f0482bfe4e9bbea08c6f2a57887ebad5dc19c78a8eefa6a5",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/slim-qcom-ngd-ctrl.ko",
+    "offset": 31873020,
+    "size": 105976,
+    "mode": "0o100644",
+    "sha256": "be4b6cf4e8e2e3a4784ed2daae2f832ff16d0d50a48ac0f6019c7e95163042f2",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/slimbus.ko",
+    "offset": 31979132,
+    "size": 54104,
+    "mode": "0o100644",
+    "sha256": "f7a7ab29e89db4f983fbd7e4292b73b8b67f9dbe075062004834a78f9fa4f3eb",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/smcinvoke_mod.ko",
+    "offset": 32033376,
+    "size": 271088,
+    "mode": "0o100644",
+    "sha256": "ee503c2d8d7187b0da80d0b4a77f32a6b0d0afe024c79c278483b39c124d78bc",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/smem.ko",
+    "offset": 32304596,
+    "size": 25392,
+    "mode": "0o100644",
+    "sha256": "61cc62664379759a7861224f005eb3a4d792fab6ec7f317dddbaa30858d277b7",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/smp2p.ko",
+    "offset": 32330120,
+    "size": 33040,
+    "mode": "0o100644",
+    "sha256": "2a9b409b8714f56304316a10e17ca457a6054a16e9fbb851baffbcf12b37f514",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/smp2p_sleepstate.ko",
+    "offset": 32363304,
+    "size": 14384,
+    "mode": "0o100644",
+    "sha256": "6306aabf2cb23552457020870d6dfabd548b0f5d3a24dede0047f4e23abc7942",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/snd-usb-audio-qmi.ko",
+    "offset": 32377832,
+    "size": 78872,
+    "mode": "0o100644",
+    "sha256": "6e630c465416128ad8bcfe570fe0414dd70da32cd2297f5b1a28fcdd1e648c67",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/soc_sleep_stats.ko",
+    "offset": 32456848,
+    "size": 35168,
+    "mode": "0o100644",
+    "sha256": "4afe519f524f708afb49626570c130cc7cf881e82dfd5809b323d1a4c74ed148",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/socinfo.ko",
+    "offset": 32492152,
+    "size": 51032,
+    "mode": "0o100644",
+    "sha256": "1b77c672ed1361d8d8a310f0d7dd605d6ca4d157c15f31928ca40b7c97b9e97b",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/spcom.ko",
+    "offset": 32543316,
+    "size": 181264,
+    "mode": "0o100644",
+    "sha256": "9bc94463b51fa25d642a7cbd100f54afb826df78c6a3b5d9bef90672f66a4bbb",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/spi-msm-geni.ko",
+    "offset": 32724720,
+    "size": 90024,
+    "mode": "0o100644",
+    "sha256": "793f338bc77a943c329eaf1979a06d2c30ffca6d2130c9cf4621acbadc9febbe",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/spmi-glink-debug.ko",
+    "offset": 32814888,
+    "size": 19080,
+    "mode": "0o100644",
+    "sha256": "731fb4c215680bc79b9a1d4d58d8ce88c5bddc56670b89e786a807c64e496600",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/spmi-pmic-arb-debug.ko",
+    "offset": 32834116,
+    "size": 23160,
+    "mode": "0o100644",
+    "sha256": "a4c50e0f617a5b3ca9e10c59e3888cecd0686d53ee473df7fb8030b95f7b29bc",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/spmi-pmic-arb.ko",
+    "offset": 32857416,
+    "size": 78968,
+    "mode": "0o100644",
+    "sha256": "50051663a1d4211f7b083df8d0cab1402217ef6be51bcbe8fb9ece72cd04d152",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/sps_drv.ko",
+    "offset": 32936520,
+    "size": 487000,
+    "mode": "0o100644",
+    "sha256": "d51b6ed0e35899f7c351b50277b0a88258139f3e70199aa70c1233f33cc04605",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/spss_utils.ko",
+    "offset": 33423656,
+    "size": 64936,
+    "mode": "0o100644",
+    "sha256": "2c01a2a14c224b89b9a2b548e47d22137d31ae23e3e45074d464f21ae768f3ab",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/ssusb-redriver-nb7vpq904m.ko",
+    "offset": 33488744,
+    "size": 49088,
+    "mode": "0o100644",
+    "sha256": "94ba6963b84337f7782250fb3b68009cdbb0a291d4006b7145ddeee7ff7d7191",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/stk3x3x.ko",
+    "offset": 33537968,
+    "size": 193624,
+    "mode": "0o100644",
+    "sha256": "350356e8860d3be3d002483dae56a94e4c39432d05cd691403117f255d900de5",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/stm_console.ko",
+    "offset": 33731732,
+    "size": 11736,
+    "mode": "0o100644",
+    "sha256": "fa5c349ed87f8da457845f9db0eebab531187f6bf9c73fdcdd3c24be22c7eaea",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/stm_core.ko",
+    "offset": 33743604,
+    "size": 67984,
+    "mode": "0o100644",
+    "sha256": "30815524bc5bb727ab0c9a9faa02b23919f2fd1b2d44f35361091d4e96459e1f",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/stm_ftrace.ko",
+    "offset": 33811724,
+    "size": 12976,
+    "mode": "0o100644",
+    "sha256": "e6e02a966a35f720e4cf1e6067f1a0830afb8a74cf5f70430aebc9078f79255b",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/stm_p_basic.ko",
+    "offset": 33824840,
+    "size": 11280,
+    "mode": "0o100644",
+    "sha256": "cfcc776602fd810cf1c6156038475ea98659a7649c56091bf1434fcfb06e9527",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/stm_p_ost.ko",
+    "offset": 33836256,
+    "size": 11808,
+    "mode": "0o100644",
+    "sha256": "384657c33312c7eb21a492a622d53f458051aad6302ba428e409e72323fd557b",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/stub-regulator.ko",
+    "offset": 33848204,
+    "size": 17408,
+    "mode": "0o100644",
+    "sha256": "5fe135822e6e05533a6306ddbd1b073ca9ce05f949437453f160d9a4125be0b3",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/subsystem_sleep_stats.ko",
+    "offset": 33865760,
+    "size": 28336,
+    "mode": "0o100644",
+    "sha256": "6aa19df312b899ab755c2438bf3f8429d7d572fbf8d9fa293c560bb53719e2c4",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/synx-driver.ko",
+    "offset": 33894236,
+    "size": 132352,
+    "mode": "0o100644",
+    "sha256": "68e2c67d32fe7200a03d708ded5909ae1266e6de8772ca76085e898196258575",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/sys_pm_vx.ko",
+    "offset": 34026724,
+    "size": 21664,
+    "mode": "0o100644",
+    "sha256": "6026aea02a01bc4ceff720097044a6f0b2bdc9635388cb94a91ba6bbf756ebc6",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/sysmon_subsystem_stats.ko",
+    "offset": 34048536,
+    "size": 26120,
+    "mode": "0o100644",
+    "sha256": "d513b1dbf8e0a206db05eb114f016dbc32c04eb164f3b98726214c736dea6504",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/thermal_pause.ko",
+    "offset": 34074796,
+    "size": 26176,
+    "mode": "0o100644",
+    "sha256": "e8f890ab0ef1fdd5670d8d341b29466303208bc78f1ee91062ba8bc8ecc55861",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/tmecom-intf.ko",
+    "offset": 34101112,
+    "size": 35592,
+    "mode": "0o100644",
+    "sha256": "d2a809dd1b85c77073830555810aa7b6f6fba72c9cf25505d703b0db7b75dcf0",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/tz_log.ko",
+    "offset": 34136836,
+    "size": 48256,
+    "mode": "0o100644",
+    "sha256": "d6f7ec87a9f00a8a4a63354e69a915eeb2628d7af02eb5870db2a2883e688909",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/ucsi_glink.ko",
+    "offset": 34185228,
+    "size": 37616,
+    "mode": "0o100644",
+    "sha256": "43ae30f1506b2909c3e5e4cf178c2b1a435f1b273672c0a1fd8f1a90c56692c4",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/ufs_qcom.ko",
+    "offset": 34222980,
+    "size": 156408,
+    "mode": "0o100644",
+    "sha256": "e0dff0b271f0a58dc640f7e581a27ec1af976c775b42470d99977da1e702283b",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/ufshcd-crypto-qti.ko",
+    "offset": 34379532,
+    "size": 18200,
+    "mode": "0o100644",
+    "sha256": "200fc05730ae0ec9b7acd6a4dc9c51268bc8d0737add2a8df619fd5ddca92b02",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/usb_bam.ko",
+    "offset": 34397868,
+    "size": 85024,
+    "mode": "0o100644",
+    "sha256": "a530ebe404575136a975b87d8ab50784ec3ca31ebd98e4097b3f96f36a9a627d",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/usb_f_ccid.ko",
+    "offset": 34483028,
+    "size": 54232,
+    "mode": "0o100644",
+    "sha256": "384b34b00827ba384d67a004e427951cb025bec7c03f6b421ba6187c91b6846f",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/usb_f_cdev.ko",
+    "offset": 34537396,
+    "size": 74288,
+    "mode": "0o100644",
+    "sha256": "4a64324c38e7d20e207d4e8fe592c410b1f80dd358a4ce3946da64d17ffabe2a",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/usb_f_diag.ko",
+    "offset": 34611820,
+    "size": 47536,
+    "mode": "0o100644",
+    "sha256": "4244de8e7aa8babd7580de74da065498971f6b92e6bd5d54220e8d361f07e53d",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/usb_f_gsi.ko",
+    "offset": 34659492,
+    "size": 165856,
+    "mode": "0o100644",
+    "sha256": "bdea228639b9c1098a0306af8714d6331ad76b6f785204bb032cb3f7e8533c74",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/usb_f_qdss.ko",
+    "offset": 34825484,
+    "size": 55168,
+    "mode": "0o100644",
+    "sha256": "26574b68bb49f697963f3a749f1796c7140d20e324d73c0fae5bf7d4fc3dfe5c",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/usb_switch_dp.ko",
+    "offset": 34880792,
+    "size": 21656,
+    "mode": "0o100644",
+    "sha256": "f43a2867cb694f5e15dea27a2c09b53874a358a456e4c7895bde09d5020c200d",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/videocc-diwali.ko",
+    "offset": 34902588,
+    "size": 37328,
+    "mode": "0o100644",
+    "sha256": "f95dac599d515549e6d85f811e2e7a1380832118b4dddf95ffcf91535d6ee77e",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/videocc-waipio.ko",
+    "offset": 34940056,
+    "size": 39320,
+    "mode": "0o100644",
+    "sha256": "dc5f9f343084292a2b688b98f53e17d71626e3b3735a54104f61768b34eb7900",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/wlan_firmware_service.ko",
+    "offset": 34979524,
+    "size": 76984,
+    "mode": "0o100644",
+    "sha256": "2af6995fe6b503f7739ede6e85407d6d33818338c7ec42ac9883530a668cf774",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/zram.ko",
+    "offset": 35056640,
+    "size": 71880,
+    "mode": "0o100644",
+    "sha256": "3fca1bbace30b3a77219a343d4ce34f4bc601aea57925d05df0cd3d5cb995c5e",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "lib/modules/zsmalloc.ko",
+    "offset": 35128656,
+    "size": 76824,
+    "mode": "0o100644",
+    "sha256": "ad5efe7f96fc1d88c27386dbfb1ff1c75fab38aa525369cb4814f8a0495fe3a7",
+    "vermagic": [
+      "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+    ]
+  },
+  {
+    "name": "TRAILER!!!",
+    "offset": 35205604,
+    "size": 0,
+    "mode": "0o755",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

@@ -1,0 +1,633 @@
+IPC=ipa_low UPTIME=1520.71 11970.30
+IPC=ipa_low UPTIME=1521.72 11975.33
+IPC=ipa_low UPTIME=1522.72 11979.74
+[  1521.751186518/       0x6de0ce7c8] ipa-wan ipa3_wwan_ioctl:2631 rmnet_ipa got ioctl number 0x000089fd
+[  1521.751188289/       0x6de0ce7ea] ipa-wan ipa3_wwan_ioctl:2690 get ioctl: RMNET_IOCTL_EXTENDED
+[  1521.751191206/       0x6de0ce822] ipa-wan ipa3_wwan_ioctl:2631 rmnet_ipa got ioctl number 0x000089fd
+[  1521.751192247/       0x6de0ce837] ipa-wan ipa3_wwan_ioctl:2690 get ioctl: RMNET_IOCTL_EXTENDED
+[  1521.751193237/       0x6de0ce849] ipa-wan ipa3_wwan_ioctl:2701 get RMNET_IOCTL_GET_SUPPORTED_FEATURES
+[  1521.751208081/       0x6de0ce966] ipa-wan ipa3_wwan_ioctl:2631 rmnet_ipa got ioctl number 0x000089fd
+[  1521.751208810/       0x6de0ce974] ipa-wan ipa3_wwan_ioctl:2690 get ioctl: RMNET_IOCTL_EXTENDED
+[  1521.751209643/       0x6de0ce984] ipa-wan handle3_ingress_format:1716 Get RMNET_IOCTL_SET_INGRESS_DATA_FORMAT
+[  1521.751213966/       0x6de0ce9d7] ipa ipa3_enable_clks:6217 enabling IPA clocks and bus voting
+[  1521.751214331/       0x6de0ce9de] ipa ipa3_get_bus_vote:6196 curr 120000000 idx 1
+[  1521.751678914/       0x6de0d0cb6] ipa _ipa_enable_clks_v3_0:6167 curr_ipa_clk_rate=120000000
+[  1521.751679747/       0x6de0d0cc6] ipa _ipa_enable_clks_v3_0:6169 enabling gcc_ipa_clk
+[  1521.752242508/       0x6de0d36fb] ipa ipa3_uc_notify_clk_state:1420 not supported past IPA v4.0
+[  1521.752245060/       0x6de0d372c] ipa _ipa_suspend_resume_pipe:11109 unsuspend pipe 16
+[  1521.752321310/       0x6de0d3ce4] ipa _ipa_suspend_resume_pipe:11169 switch ch 13 to callback
+[  1521.752325060/       0x6de0d3d2c] ipa _ipa_suspend_resume_pipe:11109 unsuspend pipe 9
+[  1521.752372612/       0x6de0d40bd] ipa ipa3_inc_client_enable_clks:6466 active clients = 1
+[  1521.752475268/       0x6de0d4870] ipa_pm ipa_pm_register:740 IPA PM registering client
+[  1521.752491258/       0x6de0d49a3] ipa_pm add_client_to_exception_list:569 IPA_CLIENT_APPS_WAN_CONS added to exception list
+[  1521.752492091/       0x6de0d49b3] ipa_pm ipa_pm_register:795 IPA PM client registered with handle 8
+[  1521.752493289/       0x6de0d49ca] ipa_pm ipa_pm_associate_ipa_cons_to_client:902 Mapping pipe 23 to client 8
+[  1521.752494383/       0x6de0d49df] ipa_pm ipa_pm_associate_ipa_cons_to_client:912 Pipe 23 is mapped to client 8
+[  1521.752494956/       0x6de0d49ea] ipa_pm ipa_pm_set_throughput:1299 old Group 1 throughput: 700
+[  1521.752495581/       0x6de0d49f6] ipa_pm ipa_pm_set_throughput:1310 New Group 1 throughput: 700
+[  1521.752496258/       0x6de0d4a03] ipa_pm do_clk_scaling:369 clock scaling started
+[  1521.752496883/       0x6de0d4a0f] ipa_pm calculate_throughput:277 Aggregated throughput: 0
+[  1521.752497404/       0x6de0d4a19] ipa_pm do_clk_scaling:381 old idx was at 0
+[  1521.752497977/       0x6de0d4a24] ipa ipa3_set_clock_plan_from_pm:6690 idx = 1
+[  1521.752498758/       0x6de0d4a33] ipa ipa3_set_clock_plan_from_pm:6722 Same voltage
+[  1521.752499175/       0x6de0d4a3b] ipa_pm do_clk_scaling:389 new idx is at 1
+[  1521.752501831/       0x6de0d4a6e] ipa ipa3_cfg_ep_hdr:7761 pipe=23 metadata_reg_valid=0
+[  1521.752502820/       0x6de0d4a81] ipa ipa3_cfg_ep_hdr:7766 remove_additional=0, a5_mux=0, ofst_pkt_size=0x2
+[  1521.752503758/       0x6de0d4a93] ipa ipa3_cfg_ep_hdr:7770 ofst_pkt_size_valid=1, additional_const_len=0x0
+[  1521.752504643/       0x6de0d4aa4] ipa ipa3_cfg_ep_hdr:7775 ofst_metadata=0x1, ofst_metadata_valid=1, len=0x4
+[  1521.752505060/       0x6de0d4aac] ipa ipa3_inc_client_enable_clks:6447 active clients = 2
+[  1521.752506050/       0x6de0d4abf] ipahal ipahal_write_reg_n_fields:4962 write to IPA_ENDP_INIT_HDR_n n=23 after constructing it
+[  1521.752508602/       0x6de0d4af0] ipa __ipa3_dec_client_disable_clks:6569 active clients = 1
+[  1521.752509800/       0x6de0d4b07] ipa ipa3_cfg_ep_hdr_ext:7814 pipe=23 hdr_pad_to_alignment=0
+[  1521.752510633/       0x6de0d4b17] ipa ipa3_cfg_ep_hdr_ext:7817 hdr_total_len_or_pad_offset=0
+[  1521.752511466/       0x6de0d4b27] ipa ipa3_cfg_ep_hdr_ext:7821 hdr_payload_len_inc_padding=1 hdr_total_len_or_pad=0
+[  1521.752512195/       0x6de0d4b35] ipa ipa3_cfg_ep_hdr_ext:7825 hdr_total_len_or_pad_valid=1 hdr_little_endian=0
+[  1521.752512560/       0x6de0d4b3c] ipa ipa3_inc_client_enable_clks:6447 active clients = 2
+[  1521.752512872/       0x6de0d4b42] ipahal ipahal_write_reg_n_fields:4962 write to IPA_ENDP_INIT_HDR_EXT_n n=23 after constructing it
+[  1521.752514018/       0x6de0d4b58] ipa __ipa3_dec_client_disable_clks:6569 active clients = 1
+[  1521.752515425/       0x6de0d4b73] ipa ipa3_cfg_ep_aggr:8211 pipe=23 en=1(aggregation enabled), type=4(GENERIC), byte_limit=6, time_limit=500
+[  1521.752516466/       0x6de0d4b87] ipa ipa3_cfg_ep_aggr:8214 hard_byte_limit_en=0 aggr_sw_eof_active=1
+[  1521.752516935/       0x6de0d4b91] ipa ipa3_inc_client_enable_clks:6447 active clients = 2
+[  1521.752518081/       0x6de0d4ba6] ipa ipa3_process_timer_cfg:8114 time in usec=500
+[  1521.752518654/       0x6de0d4bb1] ipahal ipahal_read_reg_n_fields:4925 read from IPA_TIMERS_PULSE_GRAN_CFG n=0 and parse it
+[  1521.752521310/       0x6de0d4be4] ipa ipa3_process_timer_cfg:8135 gran0 usec step=100  gran1 usec step=1000 gran2 usec step=10000
+[  1521.752522143/       0x6de0d4bf4] ipa ipa3_process_timer_cfg:8143 Matched: generator=0, units=5
+[  1521.752522508/       0x6de0d4bfb] ipahal ipahal_write_reg_n_fields:4962 write to IPA_ENDP_INIT_AGGR_n n=23 after constructing it
+[  1521.752523341/       0x6de0d4c0b] ipa __ipa3_dec_client_disable_clks:6569 active clients = 1
+[  1521.752524539/       0x6de0d4c22] ipa ipa3_cfg_ep_cfg:7676 pipe=23, frag_ofld_en=0 cs_ofld_en=0 mdata_hdr_ofst=0 gen_qmb_master_sel=0
+[  1521.752525060/       0x6de0d4c2c] ipa ipa3_inc_client_enable_clks:6447 active clients = 2
+[  1521.752525372/       0x6de0d4c31] ipahal ipahal_write_reg_n_fields:4962 write to IPA_ENDP_INIT_CFG_n n=23 after constructing it
+[  1521.752526727/       0x6de0d4c4c] ipa ipa3_get_tx_instance:7132 ipa_get_ep_group: hw_idx = 19
+[  1521.752527247/       0x6de0d4c56] ipahal ipahal_write_reg_mn:4874 write to IPA_ENDP_INIT_PROD_CFG_n m=0 n=23 val=1
+[  1521.752528445/       0x6de0d4c6d] ipa __ipa3_dec_client_disable_clks:6569 active clients = 1
+[  1521.752529227/       0x6de0d4c7c] ipa ipa3_cfg_ep_ulso:7864 pipe=23 ipid_min_max_idx=0 is_ulso_pipe=0
+[  1521.752529591/       0x6de0d4c83] ipa ipa3_inc_client_enable_clks:6447 active clients = 2
+[  1521.752530008/       0x6de0d4c8b] ipahal ipahal_write_reg_mn:4874 write to IPA_ENDP_INIT_ULSO_CFG_n m=0 n=23 val=0
+[  1521.752530841/       0x6de0d4c9b] ipa __ipa3_dec_client_disable_clks:6569 active clients = 1
+[  1521.752531831/       0x6de0d4cae] ipa ipa3_cfg_ep_metadata_mask:7725 pipe=23, metadata_mask=0xff000000
+[  1521.752532143/       0x6de0d4cb4] ipa ipa3_inc_client_enable_clks:6447 active clients = 2
+[  1521.752532456/       0x6de0d4cba] ipahal ipahal_write_reg_n_fields:4962 write to IPA_ENDP_INIT_HDR_METADATA_MASK_n n=23 after constructing it
+[  1521.752533341/       0x6de0d4ccb] ipa __ipa3_dec_client_disable_clks:6569 active clients = 1
+[  1521.752534383/       0x6de0d4cdf] ipa ipa3_cfg_ep_status:7628 pipe=23, status_en=1 status_ep=0 status_location=0
+[  1521.752534800/       0x6de0d4ce7] ipa ipa3_inc_client_enable_clks:6447 active clients = 2
+[  1521.752535060/       0x6de0d4cec] ipahal ipahal_write_reg_n_fields:4962 write to IPA_ENDP_STATUS_n n=23 after constructing it
+[  1521.752536050/       0x6de0d4cff] ipa __ipa3_dec_client_disable_clks:6569 active clients = 1
+[  1521.752536831/       0x6de0d4d0e] ipa ipa3_setup_sys_pipe:1420 ep 23 configuration successful
+[  1521.752542300/       0x6de0d4d77] ipa ipa_gsi_setup_event_ring:5378 client=35 moderation threshold cycles=16 cnt=20
+[  1521.752970737/       0x6de0d6d99] ipa ipa3_setup_sys_pipe:1483 Page repl capacity for client:35, value:450
+[  1521.752971675/       0x6de0d6dab] ipa ipa3_setup_sys_pipe:1500 Repl capacity for client:35, value:225
+[  1521.753995268/       0x6de0dba70] ipa ipa3_enable_data_path:56 Setting group 0 for pipe 23
+[  1521.753996622/       0x6de0dba8a] ipahal ipahal_write_reg_n_fields:4962 write to IPA_ENDP_INIT_RSRC_GRP_n n=23 after constructing it
+[  1521.753998602/       0x6de0dbab0] ipa ipa3_enable_data_path:60 Enabling data path
+[  1521.753999487/       0x6de0dbac1] ipa ipa3_inc_client_enable_clks:6447 active clients = 2
+[  1521.754000268/       0x6de0dbad0] ipahal ipahal_write_reg_n_fields:4962 write to IPA_ENDP_INIT_HOL_BLOCK_EN_n n=23 after constructing it
+[  1521.754001206/       0x6de0dbae2] ipahal ipahal_write_reg_n_fields:4962 write to IPA_ENDP_INIT_HOL_BLOCK_EN_n n=23 after constructing it
+[  1521.754002039/       0x6de0dbaf1] ipa ipa3_process_timer_cfg:8114 time in usec=0
+[  1521.754002456/       0x6de0dbafa] ipahal ipahal_write_reg_n_fields:4962 write to IPA_ENDP_INIT_HOL_BLOCK_TIMER_n n=23 after constructing it
+[  1521.754003393/       0x6de0dbb0c] ipa __ipa3_dec_client_disable_clks:6569 active clients = 1
+[  1521.754004643/       0x6de0dbb24] ipa ipa3_cfg_ep_holb:8426 cfg holb 0 ep=23 tmr=0
+[  1521.754551935/       0x6de0de42f] ipa ipa3_setup_sys_pipe:1562 client 35 (ep: 23) connected sys=00000000b9211ebc
+[  1521.754554175/       0x6de0de45b] ipa _ipa_suspend_resume_pipe:11109 suspend pipe 23
+[  1521.754555737/       0x6de0de479] ipa __ipa3_stop_gsi_channel:11033 client_type 35 not supported
+[  1521.754556831/       0x6de0de48e] ipa __ipa3_stop_gsi_channel:11043 Calling gsi_stop_channel ch:1
+[  1521.754631622/       0x6de0dea2a] ipa __ipa3_stop_gsi_channel:11046 gsi_stop_channel ch: 1 returned 0
+[  1521.754632768/       0x6de0dea40] ipa _ipa_suspend_resume_pipe:11109 suspend pipe 16
+[  1521.754633445/       0x6de0dea4d] ipa __ipa3_stop_gsi_channel:11033 client_type 33 not supported
+[  1521.754634018/       0x6de0dea58] ipa __ipa3_stop_gsi_channel:11043 Calling gsi_stop_channel ch:13
+[  1521.754683029/       0x6de0dee05] ipa __ipa3_stop_gsi_channel:11046 gsi_stop_channel ch: 13 returned 0
+[  1521.754683862/       0x6de0dee15] ipa _ipa_suspend_resume_pipe:11164 switch ch 13 to poll
+[  1521.754688810/       0x6de0dee74] ipa _ipa_suspend_resume_pipe:11109 suspend pipe 9
+[  1521.754689539/       0x6de0dee82] ipa __ipa3_stop_gsi_channel:11033 client_type 32 not supported
+[  1521.754690320/       0x6de0dee91] ipa __ipa3_stop_gsi_channel:11043 Calling gsi_stop_channel ch:19
+[  1521.754731206/       0x6de0df1a2] ipa __ipa3_stop_gsi_channel:11046 gsi_stop_channel ch: 19 returned 0
+[  1521.754732456/       0x6de0df1ba] ipa ipa3_disable_clks:6262 disabling IPA clocks and bus voting
+[  1521.754733810/       0x6de0df1d4] ipa ipa3_uc_notify_clk_state:1420 not supported past IPA v4.0
+[  1521.754734487/       0x6de0df1e1] ipa _ipa_disable_clks_v3_0:6241 disabling gcc_ipa_clk
+[  1521.754747352/       0x6de0df2d8] ipa_pm ipa_pm_set_clock_index:1333 Setting pm clock vote to 0
+[  1521.754879747/       0x6de0dfcc6] ipa __ipa3_dec_client_disable_clks:6569 active clients = 0
+[  1521.754881206/       0x6de0dfce2] ipa-wan handle3_ingress_format:1805 ingress WAN pipe setup successfully
+[  1521.754884643/       0x6de0dfd24] ipa ipa3_enable_clks:6217 enabling IPA clocks and bus voting
+[  1521.754885008/       0x6de0dfd2b] ipa ipa3_get_bus_vote:6196 curr 120000000 idx 1
+[  1521.755596570/       0x6de0e3289] ipa _ipa_enable_clks_v3_0:6167 curr_ipa_clk_rate=120000000
+[  1521.755597091/       0x6de0e3293] ipa _ipa_enable_clks_v3_0:6169 enabling gcc_ipa_clk
+[  1521.755643289/       0x6de0e360a] ipa ipa3_uc_notify_clk_state:1420 not supported past IPA v4.0
+[  1521.755644122/       0x6de0e361a] ipa _ipa_suspend_resume_pipe:11109 unsuspend pipe 23
+[  1521.755694591/       0x6de0e39e3] ipa _ipa_suspend_resume_pipe:11109 unsuspend pipe 16
+[  1521.755742143/       0x6de0e3d74] ipa _ipa_suspend_resume_pipe:11169 switch ch 13 to callback
+[  1521.755743966/       0x6de0e3d97] ipa _ipa_suspend_resume_pipe:11109 unsuspend pipe 9
+[  1521.755788393/       0x6de0e40ec] ipa ipa3_inc_client_enable_clks:6466 active clients = 1
+[  1521.755904643/       0x6de0e49a4] ipa_pm ipa_pm_register:740 IPA PM registering client
+[  1521.755921883/       0x6de0e4aef] ipa_pm add_client_to_exception_list:569 IPA_CLIENT_APPS_WAN_LOW_LAT_CONS added to exception list
+[  1521.755922768/       0x6de0e4b00] ipa_pm ipa_pm_register:795 IPA PM client registered with handle 9
+[  1521.755923810/       0x6de0e4b14] ipa_pm ipa_pm_associate_ipa_cons_to_client:902 Mapping pipe 32 to client 9
+[  1521.755924539/       0x6de0e4b22] ipa_pm ipa_pm_associate_ipa_cons_to_client:912 Pipe 32 is mapped to client 9
+[  1521.755925060/       0x6de0e4b2c] ipa_pm ipa_pm_set_throughput:1299 old Group 1 throughput: 700
+[  1521.755925425/       0x6de0e4b33] ipa_pm ipa_pm_set_throughput:1310 New Group 1 throughput: 700
+[  1521.755926050/       0x6de0e4b3f] ipa_pm do_clk_scaling:369 clock scaling started
+[  1521.755926727/       0x6de0e4b4b] ipa_pm calculate_throughput:277 Aggregated throughput: 0
+[  1521.755927352/       0x6de0e4b58] ipa_pm do_clk_scaling:381 old idx was at 0
+[  1521.755927820/       0x6de0e4b61] ipa ipa3_set_clock_plan_from_pm:6690 idx = 1
+[  1521.755928445/       0x6de0e4b6d] ipa ipa3_set_clock_plan_from_pm:6722 Same voltage
+[  1521.755928706/       0x6de0e4b72] ipa_pm do_clk_scaling:389 new idx is at 1
+[  1521.755931154/       0x6de0e4ba1] ipa ipa3_cfg_ep_hdr:7761 pipe=32 metadata_reg_valid=0
+[  1521.755932039/       0x6de0e4bb2] ipa ipa3_cfg_ep_hdr:7766 remove_additional=0, a5_mux=0, ofst_pkt_size=0x2
+[  1521.755932820/       0x6de0e4bc1] ipa ipa3_cfg_ep_hdr:7770 ofst_pkt_size_valid=1, additional_const_len=0x0
+[  1521.755933550/       0x6de0e4bcf] ipa ipa3_cfg_ep_hdr:7775 ofst_metadata=0x1, ofst_metadata_valid=1, len=0x8
+[  1521.755933862/       0x6de0e4bd5] ipa ipa3_inc_client_enable_clks:6447 active clients = 2
+[  1521.755934279/       0x6de0e4bdd] ipahal ipahal_write_reg_n_fields:4962 write to IPA_ENDP_INIT_HDR_n n=32 after constructing it
+[  1521.755935268/       0x6de0e4bf0] ipa __ipa3_dec_client_disable_clks:6569 active clients = 1
+[  1521.755936206/       0x6de0e4c02] ipa ipa3_cfg_ep_hdr_ext:7814 pipe=32 hdr_pad_to_alignment=0
+[  1521.755937091/       0x6de0e4c13] ipa ipa3_cfg_ep_hdr_ext:7817 hdr_total_len_or_pad_offset=0
+[  1521.755937872/       0x6de0e4c22] ipa ipa3_cfg_ep_hdr_ext:7821 hdr_payload_len_inc_padding=1 hdr_total_len_or_pad=0
+[  1521.755938706/       0x6de0e4c32] ipa ipa3_cfg_ep_hdr_ext:7825 hdr_total_len_or_pad_valid=1 hdr_little_endian=0
+[  1521.755939018/       0x6de0e4c38] ipa ipa3_inc_client_enable_clks:6447 active clients = 2
+[  1521.755939331/       0x6de0e4c3e] ipahal ipahal_write_reg_n_fields:4962 write to IPA_ENDP_INIT_HDR_EXT_n n=32 after constructing it
+[  1521.755940425/       0x6de0e4c53] ipa __ipa3_dec_client_disable_clks:6569 active clients = 1
+[  1521.755941883/       0x6de0e4c6f] ipa ipa3_cfg_ep_aggr:8211 pipe=32 en=0(no aggregation), type=4(GENERIC), byte_limit=0, time_limit=0
+[  1521.755942820/       0x6de0e4c81] ipa ipa3_cfg_ep_aggr:8214 hard_byte_limit_en=0 aggr_sw_eof_active=0
+[  1521.755943445/       0x6de0e4c8d] ipa ipa3_inc_client_enable_clks:6447 active clients = 2
+[  1521.755944122/       0x6de0e4c9a] ipa ipa3_process_timer_cfg:8114 time in usec=0
+[  1521.755944435/       0x6de0e4ca0] ipahal ipahal_write_reg_n_fields:4962 write to IPA_ENDP_INIT_AGGR_n n=32 after constructing it
+[  1521.755945320/       0x6de0e4cb1] ipa __ipa3_dec_client_disable_clks:6569 active clients = 1
+[  1521.755946206/       0x6de0e4cc2] ipa ipa3_cfg_ep_cfg:7676 pipe=32, frag_ofld_en=0 cs_ofld_en=1 mdata_hdr_ofst=0 gen_qmb_master_sel=0
+[  1521.755946622/       0x6de0e4cca] ipa ipa3_inc_client_enable_clks:6447 active clients = 2
+[  1521.755946883/       0x6de0e4ccf] ipahal ipahal_write_reg_n_fields:4962 write to IPA_ENDP_INIT_CFG_n n=32 after constructing it
+[  1521.755947716/       0x6de0e4cdf] ipa ipa3_get_tx_instance:7132 ipa_get_ep_group: hw_idx = 19
+[  1521.755948185/       0x6de0e4ce8] ipahal ipahal_write_reg_mn:4874 write to IPA_ENDP_INIT_PROD_CFG_n m=0 n=32 val=1
+[  1521.755949122/       0x6de0e4cfa] ipa __ipa3_dec_client_disable_clks:6569 active clients = 1
+[  1521.755950060/       0x6de0e4d0b] ipa ipa3_cfg_ep_ulso:7864 pipe=32 ipid_min_max_idx=0 is_ulso_pipe=0
+[  1521.755950372/       0x6de0e4d12] ipa ipa3_inc_client_enable_clks:6447 active clients = 2
+[  1521.755950841/       0x6de0e4d1b] ipahal ipahal_write_reg_mn:4874 write to IPA_ENDP_INIT_ULSO_CFG_n m=0 n=32 val=0
+[  1521.755951779/       0x6de0e4d2d] ipa __ipa3_dec_client_disable_clks:6569 active clients = 1
+[  1521.755952612/       0x6de0e4d3d] ipa ipa3_cfg_ep_metadata_mask:7725 pipe=32, metadata_mask=0xff000000
+[  1521.755952977/       0x6de0e4d44] ipa ipa3_inc_client_enable_clks:6447 active clients = 2
+[  1521.755953289/       0x6de0e4d49] ipahal ipahal_write_reg_n_fields:4962 write to IPA_ENDP_INIT_HDR_METADATA_MASK_n n=32 after constructing it
+[  1521.755953966/       0x6de0e4d57] ipa __ipa3_dec_client_disable_clks:6569 active clients = 1
+[  1521.755954800/       0x6de0e4d67] ipa ipa3_cfg_ep_status:7628 pipe=32, status_en=0 status_ep=0 status_location=0
+[  1521.755955268/       0x6de0e4d70] ipa ipa3_inc_client_enable_clks:6447 active clients = 2
+[  1521.755955529/       0x6de0e4d75] ipahal ipahal_write_reg_n_fields:4962 write to IPA_ENDP_STATUS_n n=32 after constructing it
+[  1521.755956258/       0x6de0e4d83] ipa __ipa3_dec_client_disable_clks:6569 active clients = 1
+[  1521.755956935/       0x6de0e4d90] ipa ipa3_setup_sys_pipe:1420 ep 32 configuration successful
+[  1521.755960893/       0x6de0e4ddc] ipa ipa_gsi_setup_event_ring:5378 client=105 moderation threshold cycles=16 cnt=1
+[  1521.756570945/       0x6de0e7b9d] ipa ipa3_enable_data_path:56 Setting group 0 for pipe 32
+[  1521.756571362/       0x6de0e7ba5] ipahal ipahal_write_reg_n_fields:4962 write to IPA_ENDP_INIT_RSRC_GRP_n n=32 after constructing it
+[  1521.756572195/       0x6de0e7bb5] ipa ipa3_enable_data_path:60 Enabling data path
+[  1521.756572612/       0x6de0e7bbd] ipa ipa3_inc_client_enable_clks:6447 active clients = 2
+[  1521.756572925/       0x6de0e7bc3] ipahal ipahal_write_reg_n_fields:4962 write to IPA_ENDP_INIT_HOL_BLOCK_EN_n n=32 after constructing it
+[  1521.756573393/       0x6de0e7bcc] ipahal ipahal_write_reg_n_fields:4962 write to IPA_ENDP_INIT_HOL_BLOCK_EN_n n=32 after constructing it
+[  1521.756574122/       0x6de0e7bda] ipa ipa3_process_timer_cfg:8114 time in usec=0
+[  1521.756574435/       0x6de0e7be0] ipahal ipahal_write_reg_n_fields:4962 write to IPA_ENDP_INIT_HOL_BLOCK_TIMER_n n=32 after constructing it
+[  1521.756575320/       0x6de0e7bf1] ipa __ipa3_dec_client_disable_clks:6569 active clients = 1
+[  1521.756576258/       0x6de0e7c03] ipa ipa3_cfg_ep_holb:8426 cfg holb 0 ep=32 tmr=0
+[  1521.757026831/       0x6de0e9dce] ipa ipa3_setup_sys_pipe:1562 client 105 (ep: 32) connected sys=00000000cb56a94c
+[  1521.757028133/       0x6de0e9de7] ipa _ipa_suspend_resume_pipe:11109 suspend pipe 23
+[  1521.757028966/       0x6de0e9df7] ipa __ipa3_stop_gsi_channel:11033 client_type 35 not supported
+[  1521.757029695/       0x6de0e9e05] ipa __ipa3_stop_gsi_channel:11043 Calling gsi_stop_channel ch:1
+[  1521.757053289/       0x6de0e9fca] ipa __ipa3_stop_gsi_channel:11046 gsi_stop_channel ch: 1 returned 0
+[  1521.757054070/       0x6de0e9fd9] ipa _ipa_suspend_resume_pipe:11109 suspend pipe 16
+[  1521.757054747/       0x6de0e9fe6] ipa __ipa3_stop_gsi_channel:11033 client_type 33 not supported
+[  1521.757055529/       0x6de0e9ff5] ipa __ipa3_stop_gsi_channel:11043 Calling gsi_stop_channel ch:13
+[  1521.757076466/       0x6de0ea187] ipa __ipa3_stop_gsi_channel:11046 gsi_stop_channel ch: 13 returned 0
+[  1521.757077195/       0x6de0ea195] ipa _ipa_suspend_resume_pipe:11164 switch ch 13 to poll
+[  1521.757080372/       0x6de0ea1d2] ipa _ipa_suspend_resume_pipe:11109 suspend pipe 32
+[  1521.757080997/       0x6de0ea1de] ipa __ipa3_stop_gsi_channel:11033 client_type 105 not supported
+[  1521.757081622/       0x6de0ea1ea] ipa __ipa3_stop_gsi_channel:11043 Calling gsi_stop_channel ch:10
+[  1521.757101154/       0x6de0ea361] ipa __ipa3_stop_gsi_channel:11046 gsi_stop_channel ch: 10 returned 0
+[  1521.757101779/       0x6de0ea36d] ipa _ipa_suspend_resume_pipe:11164 switch ch 10 to poll
+[  1521.757104070/       0x6de0ea399] ipa _ipa_suspend_resume_pipe:11109 suspend pipe 9
+[  1521.757104695/       0x6de0ea3a5] ipa __ipa3_stop_gsi_channel:11033 client_type 32 not supported
+[  1521.757105268/       0x6de0ea3b0] ipa __ipa3_stop_gsi_channel:11043 Calling gsi_stop_channel ch:19
+[  1521.757124279/       0x6de0ea51d] ipa __ipa3_stop_gsi_channel:11046 gsi_stop_channel ch: 19 returned 0
+[  1521.757125320/       0x6de0ea531] ipa ipa3_disable_clks:6262 disabling IPA clocks and bus voting
+[  1521.757126102/       0x6de0ea540] ipa ipa3_uc_notify_clk_state:1420 not supported past IPA v4.0
+[  1521.757126414/       0x6de0ea546] ipa _ipa_disable_clks_v3_0:6241 disabling gcc_ipa_clk
+[  1521.757131831/       0x6de0ea5ae] ipa_pm ipa_pm_set_clock_index:1333 Setting pm clock vote to 0
+[  1521.757220008/       0x6de0eac4b] ipa __ipa3_dec_client_disable_clks:6569 active clients = 0
+[  1521.757227195/       0x6de0eacd5] ipa-wan handle3_ingress_format:1813 ingress low latency pipe setup successfully
+[  1521.757228966/       0x6de0eacf7] ipa ipa3_add_hdr_usr:1000 adding 1 headers to IPA driver internal data struct
+[  1521.757231987/       0x6de0ead31] ipa __ipa_add_hdr:657 add hdr of sz=4 hdr_cnt=1 ofst=0 to DDR table
+[  1521.757233914/       0x6de0ead56] ipa ipa3_add_hdr_usr:1011 committing all headers to IPA core
+[  1521.757234435/       0x6de0ead60] ipa ipa3_generate_hdr_hw_tbl:36 tbl_sz=8
+[  1521.757239643/       0x6de0eadc4] ipa ipa3_generate_hdr_hw_tbl:55 hdr of len 2 ofst=0
+[  1521.757240268/       0x6de0eadd0] ipahal ipahal_cp_hdr_to_hw_buff:2157 Entry
+[  1521.757241466/       0x6de0eade7] ipahal ipahal_cp_hdr_to_hw_buff:2159 base 00000000efe672ab, offset 0, hdr 00*************a, hdr_len 2
+[  1521.757242195/       0x6de0eadf5] ipahal ipahal_cp_hdr_to_hw_buff:2167 Exit
+[  1521.757242560/       0x6de0eadfc] ipa ipa3_generate_hdr_hw_tbl:36 tbl_sz=8
+[  1521.757243966/       0x6de0eae17] ipa ipa3_generate_hdr_hw_tbl:55 hdr of len 4 ofst=0
+[  1521.757244279/       0x6de0eae1d] ipahal ipahal_cp_hdr_to_hw_buff:2157 Entry
+[  1521.757245060/       0x6de0eae2c] ipahal ipahal_cp_hdr_to_hw_buff:2159 base 000000006253be9c, offset 0, hdr 00000000777b7c00, hdr_len 4
+[  1521.757245529/       0x6de0eae35] ipahal ipahal_cp_hdr_to_hw_buff:2167 Exit
+[  1521.757246206/       0x6de0eae42] ipahal ipahal_construct_imm_cmd:1056 construct IMM_CMD:IPA_IMM_CMD_DMA_SHARED_MEM
+[  1521.757247768/       0x6de0eae60] ipahal ipahal_imm_cmd_get_opcode:1024 Get opcode of IMM_CMD=IPA_IMM_CMD_DMA_SHARED_MEM
+[  1521.757248550/       0x6de0eae6f] ipahal ipahal_construct_imm_cmd:1056 construct IMM_CMD:IPA_IMM_CMD_HDR_INIT_SYSTEM
+[  1521.757249331/       0x6de0eae7e] ipahal ipahal_imm_cmd_get_opcode:1024 Get opcode of IMM_CMD=IPA_IMM_CMD_HDR_INIT_SYSTEM
+[  1521.757249695/       0x6de0eae85] ipa ipa3_generate_hdr_proc_ctx_hw_tbl:144 tbl_sz=0
+[  1521.757251466/       0x6de0eaea7] ipahal ipahal_get_reg_mn_ofst:4990 get offset of IPA_SW_AREA_RAM_DIRECT_ACCESS_n m=0 n=0
+[  1521.757252195/       0x6de0eaeb5] ipahal ipahal_construct_imm_cmd:1056 construct IMM_CMD:IPA_IMM_CMD_DMA_SHARED_MEM
+[  1521.757252716/       0x6de0eaebf] ipahal ipahal_imm_cmd_get_opcode:1024 Get opcode of IMM_CMD=IPA_IMM_CMD_DMA_SHARED_MEM
+[  1521.757253810/       0x6de0eaed3] ipa ipa3_send_cmd:767 sending imm cmd 19
+[  1521.757254383/       0x6de0eaedf] ipa ipa3_send_cmd:767 sending imm cmd 10
+[  1521.757254904/       0x6de0eaee9] ipa ipa3_send_cmd:767 sending imm cmd 19
+[  1521.757255685/       0x6de0eaef8] ipa ipa3_enable_clks:6217 enabling IPA clocks and bus voting
+[  1521.757255945/       0x6de0eaefd] ipa ipa3_get_bus_vote:6196 curr 120000000 idx 1
+[  1521.757336466/       0x6de0eb507] ipa _ipa_enable_clks_v3_0:6167 curr_ipa_clk_rate=120000000
+[  1521.757336987/       0x6de0eb511] ipa _ipa_enable_clks_v3_0:6169 enabling gcc_ipa_clk
+[  1521.757360372/       0x6de0eb6d1] ipa ipa3_uc_notify_clk_state:1420 not supported past IPA v4.0
+[  1521.757361154/       0x6de0eb6e1] ipa _ipa_suspend_resume_pipe:11109 unsuspend pipe 23
+[  1521.757382872/       0x6de0eb882] ipa _ipa_suspend_resume_pipe:11109 unsuspend pipe 16
+[  1521.757405372/       0x6de0eba32] ipa _ipa_suspend_resume_pipe:11169 switch ch 13 to callback
+[  1521.757407247/       0x6de0eba56] ipa _ipa_suspend_resume_pipe:11109 unsuspend pipe 32
+[  1521.757427143/       0x6de0ebbd4] ipa _ipa_suspend_resume_pipe:11169 switch ch 10 to callback
+[  1521.757428185/       0x6de0ebbe8] ipa _ipa_suspend_resume_pipe:11109 unsuspend pipe 9
+[  1521.757448445/       0x6de0ebd6d] ipa ipa3_inc_client_enable_clks:6466 active clients = 1
+[  1521.757451154/       0x6de0ebda1] ipa ipa3_send:624 ch:12 queue xfer
+[  1521.757468914/       0x6de0ebef7] ipa ipa_gsi_irq_tx_notify_cb:5020 event 2 notified
+[  1521.757487508/       0x6de0ec05b] ipa ipa3_transport_irq_cmd_ack:721 got ack for cmd=19
+[  1521.757500997/       0x6de0ec15e] ipa __ipa3_dec_client_disable_clks:6569 active clients = 1
+[  1521.757510633/       0x6de0ec217] ipa __ipa_add_rt_tbl:898 add rt tbl idx=12 tbl_cnt=2 ip=0
+[  1521.757513550/       0x6de0ec24f] ipa __ipa_finish_rt_rule_add:1112 add rt rule tbl_idx=12 rule_cnt=1 rule_id=2
+[  1521.757514852/       0x6de0ec268] ipa __ipa_finish_rt_rule_add:1112 add rt rule tbl_idx=12 rule_cnt=2 rule_id=3
+[  1521.757516622/       0x6de0ec28a] ipahal ipahal_rt_generate_hw_rule:4719 Entry
+[  1521.757519487/       0x6de0ec2c1] ipahal ipa_fltrt_generate_hw_rule_bdy:2223 extra_word_1 0x1
+[  1521.757520112/       0x6de0ec2cd] ipahal ipa_fltrt_generate_hw_rule_bdy:2225 extra_word_2 0x0
+[  1521.757520581/       0x6de0ec2d6] ipahal ipa_fltrt_generate_hw_rule_bdy:2229 extra words params sz 8
+[  1521.757521102/       0x6de0ec2df] ipahal ipa_fltrt_generate_hw_rule_bdy:2234 non extra words params sz 0
+[  1521.757521466/       0x6de0ec2e7] ipahal ipa_rt_gen_hw_rule_ipav5_0:357 en_rule 0x2
+[  1521.757522247/       0x6de0ec2f6] ipa ipa_prep_rt_tbl_for_cmt:330 RT rule id (handle) 8 hw_len 16 priority 1
+[  1521.757522977/       0x6de0ec304] ipahal ipahal_rt_generate_hw_rule:4719 Entry
+[  1521.757523445/       0x6de0ec30d] ipahal ipa_fltrt_generate_hw_rule_bdy:2216 building default rule
+[  1521.757523862/       0x6de0ec315] ipahal ipa_fltrt_generate_hw_rule_bdy:2223 extra_word_1 0x0
+[  1521.757524175/       0x6de0ec31b] ipahal ipa_fltrt_generate_hw_rule_bdy:2225 extra_word_2 0x0
+[  1521.757524487/       0x6de0ec321] ipahal ipa_fltrt_generate_hw_rule_bdy:2229 extra words params sz 8
+[  1521.757524800/       0x6de0ec327] ipahal ipa_fltrt_generate_hw_rule_bdy:2234 non extra words params sz 8
+[  1521.757525164/       0x6de0ec32e] ipahal ipa_rt_gen_hw_rule_ipav5_0:357 en_rule 0x20
+[  1521.757525529/       0x6de0ec335] ipa ipa_prep_rt_tbl_for_cmt:330 RT rule id (handle) 7 hw_len 24 priority 2
+[  1521.757526414/       0x6de0ec346] ipa ipa_prep_rt_tbl_for_cmt:351 RT tbl index 12 hash_sz 32 non-hash sz 24
+[  1521.757526987/       0x6de0ec351] ipahal ipahal_rt_generate_hw_rule:4719 Entry
+[  1521.757527404/       0x6de0ec359] ipahal ipa_fltrt_generate_hw_rule_bdy:2216 building default rule
+[  1521.757527664/       0x6de0ec35e] ipahal ipa_fltrt_generate_hw_rule_bdy:2223 extra_word_1 0x0
+[  1521.757527925/       0x6de0ec363] ipahal ipa_fltrt_generate_hw_rule_bdy:2225 extra_word_2 0x0
+[  1521.757528237/       0x6de0ec369] ipahal ipa_fltrt_generate_hw_rule_bdy:2229 extra words params sz 8
+[  1521.757528550/       0x6de0ec36e] ipahal ipa_fltrt_generate_hw_rule_bdy:2234 non extra words params sz 8
+[  1521.757528862/       0x6de0ec375] ipahal ipa_rt_gen_hw_rule_ipav5_0:357 en_rule 0x20
+[  1521.757529227/       0x6de0ec37c] ipa ipa_prep_rt_tbl_for_cmt:330 RT rule id (handle) 2 hw_len 24 priority 1
+[  1521.757530008/       0x6de0ec38b] ipa ipa_prep_rt_tbl_for_cmt:351 RT tbl index 11 hash_sz 0 non-hash sz 32
+[  1521.757530789/       0x6de0ec39a] ipahal ipahal_fltrt_allocate_hw_tbl_imgs:4553 Entry
+[  1521.757534122/       0x6de0ec3da] ipahal ipa_fltrt_alloc_lcl_bdy:4474 lcl tbl bdy total effective sizes: hash=0 nhash=0
+[  1521.757534643/       0x6de0ec3e4] ipahal ipa_fltrt_alloc_lcl_bdy:4478 lcl tbl bdy count: hash=0 nhash=0
+[  1521.757535477/       0x6de0ec3f4] ipahal ipahal_fltrt_allocate_hw_sys_tbl:4596 Entry
+[  1521.757536883/       0x6de0ec40f] ipahal ipahal_fltrt_write_addr_to_hdr:4654 Entry
+[  1521.757537352/       0x6de0ec418] ipahal ipahal_rt_generate_hw_rule:4719 Entry
+[  1521.757537716/       0x6de0ec41f] ipahal ipa_fltrt_generate_hw_rule_bdy:2216 building default rule
+[  1521.757538029/       0x6de0ec425] ipahal ipa_fltrt_generate_hw_rule_bdy:2223 extra_word_1 0x0
+[  1521.757538341/       0x6de0ec42b] ipahal ipa_fltrt_generate_hw_rule_bdy:2225 extra_word_2 0x0
+[  1521.757538654/       0x6de0ec431] ipahal ipa_fltrt_generate_hw_rule_bdy:2229 extra words params sz 8
+[  1521.757538914/       0x6de0ec436] ipahal ipa_fltrt_generate_hw_rule_bdy:2234 non extra words params sz 8
+[  1521.757539227/       0x6de0ec43c] ipahal ipa_rt_gen_hw_rule_ipav5_0:357 en_rule 0x20
+[  1521.757539747/       0x6de0ec446] ipahal ipahal_fltrt_allocate_hw_sys_tbl:4596 Entry
+[  1521.757540893/       0x6de0ec45c] ipahal ipahal_fltrt_write_addr_to_hdr:4654 Entry
+[  1521.757541362/       0x6de0ec465] ipahal ipahal_rt_generate_hw_rule:4719 Entry
+[  1521.757541727/       0x6de0ec46c] ipahal ipa_fltrt_generate_hw_rule_bdy:2223 extra_word_1 0x1
+[  1521.757542039/       0x6de0ec472] ipahal ipa_fltrt_generate_hw_rule_bdy:2225 extra_word_2 0x0
+[  1521.757542352/       0x6de0ec478] ipahal ipa_fltrt_generate_hw_rule_bdy:2229 extra words params sz 8
+[  1521.757542612/       0x6de0ec47d] ipahal ipa_fltrt_generate_hw_rule_bdy:2234 non extra words params sz 0
+[  1521.757542925/       0x6de0ec483] ipahal ipa_rt_gen_hw_rule_ipav5_0:357 en_rule 0x2
+[  1521.757543289/       0x6de0ec48a] ipahal ipahal_fltrt_allocate_hw_sys_tbl:4596 Entry
+[  1521.757544435/       0x6de0ec4a0] ipahal ipahal_fltrt_write_addr_to_hdr:4654 Entry
+[  1521.757544800/       0x6de0ec4a7] ipahal ipahal_rt_generate_hw_rule:4719 Entry
+[  1521.757545164/       0x6de0ec4ae] ipahal ipa_fltrt_generate_hw_rule_bdy:2216 building default rule
+[  1521.757545425/       0x6de0ec4b3] ipahal ipa_fltrt_generate_hw_rule_bdy:2223 extra_word_1 0x0
+[  1521.757545737/       0x6de0ec4b9] ipahal ipa_fltrt_generate_hw_rule_bdy:2225 extra_word_2 0x0
+[  1521.757546050/       0x6de0ec4bf] ipahal ipa_fltrt_generate_hw_rule_bdy:2229 extra words params sz 8
+[  1521.757546362/       0x6de0ec4c5] ipahal ipa_fltrt_generate_hw_rule_bdy:2234 non extra words params sz 8
+[  1521.757546675/       0x6de0ec4cb] ipahal ipa_rt_gen_hw_rule_ipav5_0:357 en_rule 0x20
+[  1521.757547664/       0x6de0ec4de] ipahal ipahal_get_reg_mn_ofst:4990 get offset of IPA_FILT_ROUT_CACHE_FLUSH m=0 n=0
+[  1521.757548185/       0x6de0ec4e8] ipahal ipahal_construct_imm_cmd:1056 construct IMM_CMD:IPA_IMM_CMD_REGISTER_WRITE
+[  1521.757548862/       0x6de0ec4f5] ipahal ipahal_imm_cmd_get_opcode:1024 Get opcode of IMM_CMD=IPA_IMM_CMD_REGISTER_WRITE
+[  1521.757549227/       0x6de0ec4fc] ipahal ipahal_construct_imm_cmd:1056 construct IMM_CMD:IPA_IMM_CMD_DMA_SHARED_MEM
+[  1521.757549643/       0x6de0ec504] ipahal ipahal_imm_cmd_get_opcode:1024 Get opcode of IMM_CMD=IPA_IMM_CMD_DMA_SHARED_MEM
+[  1521.757550008/       0x6de0ec50b] ipahal ipahal_construct_imm_cmd:1056 construct IMM_CMD:IPA_IMM_CMD_DMA_SHARED_MEM
+[  1521.757550372/       0x6de0ec512] ipahal ipahal_imm_cmd_get_opcode:1024 Get opcode of IMM_CMD=IPA_IMM_CMD_DMA_SHARED_MEM
+[  1521.757551102/       0x6de0ec520] ipa ipa3_send_cmd:767 sending imm cmd 12
+[  1521.757551622/       0x6de0ec52a] ipa ipa3_send_cmd:767 sending imm cmd 19
+[  1521.757552143/       0x6de0ec534] ipa ipa3_send_cmd:767 sending imm cmd 19
+[  1521.757552456/       0x6de0ec53a] ipa ipa3_inc_client_enable_clks:6447 active clients = 2
+[  1521.757553758/       0x6de0ec553] ipa ipa3_send:624 ch:12 queue xfer
+[  1521.757558393/       0x6de0ec5ac] ipa ipa3_start_tag_process:6315 starting TAG process
+[  1521.757558862/       0x6de0ec5b5] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=0 and parse it
+[  1521.757559591/       0x6de0ec5c3] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=1 and parse it
+[  1521.757560216/       0x6de0ec5cf] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=2 and parse it
+[  1521.757560789/       0x6de0ec5da] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=3 and parse it
+[  1521.757561362/       0x6de0ec5e5] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=4 and parse it
+[  1521.757562091/       0x6de0ec5f3] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=5 and parse it
+[  1521.757562664/       0x6de0ec5fe] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=6 and parse it
+[  1521.757563237/       0x6de0ec609] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=7 and parse it
+[  1521.757563810/       0x6de0ec614] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=8 and parse it
+[  1521.757564383/       0x6de0ec61f] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=9 and parse it
+[  1521.757564904/       0x6de0ec629] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=10 and parse it
+[  1521.757565529/       0x6de0ec635] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=11 and parse it
+[  1521.757566102/       0x6de0ec640] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=12 and parse it
+[  1521.757566675/       0x6de0ec64b] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=13 and parse it
+[  1521.757567300/       0x6de0ec657] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=14 and parse it
+[  1521.757567872/       0x6de0ec662] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=15 and parse it
+[  1521.757568497/       0x6de0ec66e] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=16 and parse it
+[  1521.757567872/       0x6de0ec662] ipa ipa_gsi_irq_tx_notify_cb:5020 event 2 notified
+[  1521.757569591/       0x6de0ec683] ipa ipa3_tag_generate_force_close_desc:9904 Force close ep: 16
+[  1521.757570060/       0x6de0ec68c] ipahal ipahal_get_reg_mn_ofst:4990 get offset of IPA_AGGR_FORCE_CLOSE_n m=0 n=0
+[  1521.757570685/       0x6de0ec698] ipahal ipahal_construct_imm_cmd:1056 construct IMM_CMD:IPA_IMM_CMD_REGISTER_WRITE
+[  1521.757571102/       0x6de0ec6a0] ipahal ipahal_imm_cmd_get_opcode:1024 Get opcode of IMM_CMD=IPA_IMM_CMD_REGISTER_WRITE
+[  1521.757571414/       0x6de0ec6a6] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=17 and parse it
+[  1521.757572300/       0x6de0ec6b7] ipa ipa3_tag_generate_force_close_desc:9904 Force close ep: 17
+[  1521.757572560/       0x6de0ec6bc] ipahal ipahal_get_reg_mn_ofst:4990 get offset of IPA_AGGR_FORCE_CLOSE_n m=0 n=0
+[  1521.757572977/       0x6de0ec6c3] ipahal ipahal_construct_imm_cmd:1056 construct IMM_CMD:IPA_IMM_CMD_REGISTER_WRITE
+[  1521.757573289/       0x6de0ec6ca] ipahal ipahal_imm_cmd_get_opcode:1024 Get opcode of IMM_CMD=IPA_IMM_CMD_REGISTER_WRITE
+[  1521.757573550/       0x6de0ec6cf] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=18 and parse it
+[  1521.757574175/       0x6de0ec6db] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=19 and parse it
+[  1521.757575060/       0x6de0ec6eb] ipa ipa3_tag_generate_force_close_desc:9904 Force close ep: 19
+[  1521.757575320/       0x6de0ec6f1] ipahal ipahal_get_reg_mn_ofst:4990 get offset of IPA_AGGR_FORCE_CLOSE_n m=0 n=0
+[  1521.757575789/       0x6de0ec6fa] ipahal ipahal_construct_imm_cmd:1056 construct IMM_CMD:IPA_IMM_CMD_REGISTER_WRITE
+[  1521.757576154/       0x6de0ec701] ipahal ipahal_imm_cmd_get_opcode:1024 Get opcode of IMM_CMD=IPA_IMM_CMD_REGISTER_WRITE
+[  1521.757576466/       0x6de0ec707] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=20 and parse it
+[  1521.757577300/       0x6de0ec717] ipa ipa3_tag_generate_force_close_desc:9904 Force close ep: 20
+[  1521.757577612/       0x6de0ec71d] ipahal ipahal_get_reg_mn_ofst:4990 get offset of IPA_AGGR_FORCE_CLOSE_n m=0 n=0
+[  1521.757576935/       0x6de0ec711] ipa ipa3_transport_irq_cmd_ack:721 got ack for cmd=19
+[  1521.757577977/       0x6de0ec724] ipahal ipahal_construct_imm_cmd:1056 construct IMM_CMD:IPA_IMM_CMD_REGISTER_WRITE
+[  1521.757578602/       0x6de0ec730] ipahal ipahal_imm_cmd_get_opcode:1024 Get opcode of IMM_CMD=IPA_IMM_CMD_REGISTER_WRITE
+[  1521.757578914/       0x6de0ec736] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=21 and parse it
+[  1521.757579800/       0x6de0ec747] ipa ipa3_tag_generate_force_close_desc:9904 Force close ep: 21
+[  1521.757580060/       0x6de0ec74c] ipahal ipahal_get_reg_mn_ofst:4990 get offset of IPA_AGGR_FORCE_CLOSE_n m=0 n=0
+[  1521.757580425/       0x6de0ec753] ipahal ipahal_construct_imm_cmd:1056 construct IMM_CMD:IPA_IMM_CMD_REGISTER_WRITE
+[  1521.757580893/       0x6de0ec75c] ipahal ipahal_imm_cmd_get_opcode:1024 Get opcode of IMM_CMD=IPA_IMM_CMD_REGISTER_WRITE
+[  1521.757581206/       0x6de0ec762] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=22 and parse it
+[  1521.757581831/       0x6de0ec76e] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=23 and parse it
+[  1521.757582664/       0x6de0ec77e] ipa ipa3_tag_generate_force_close_desc:9904 Force close ep: 23
+[  1521.757582977/       0x6de0ec784] ipahal ipahal_get_reg_mn_ofst:4990 get offset of IPA_AGGR_FORCE_CLOSE_n m=0 n=0
+[  1521.757583341/       0x6de0ec78b] ipahal ipahal_construct_imm_cmd:1056 construct IMM_CMD:IPA_IMM_CMD_REGISTER_WRITE
+[  1521.757583706/       0x6de0ec792] ipahal ipahal_imm_cmd_get_opcode:1024 Get opcode of IMM_CMD=IPA_IMM_CMD_REGISTER_WRITE
+[  1521.757583966/       0x6de0ec797] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=24 and parse it
+[  1521.757584591/       0x6de0ec7a3] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=25 and parse it
+[  1521.757585164/       0x6de0ec7ae] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=26 and parse it
+[  1521.757585737/       0x6de0ec7b9] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=27 and parse it
+[  1521.757586362/       0x6de0ec7c5] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=28 and parse it
+[  1521.757586883/       0x6de0ec7cf] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=29 and parse it
+[  1521.757587456/       0x6de0ec7da] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=30 and parse it
+[  1521.757587977/       0x6de0ec7e4] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=31 and parse it
+[  1521.757588654/       0x6de0ec7f1] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=32 and parse it
+[  1521.757589331/       0x6de0ec7fe] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=33 and parse it
+[  1521.757589904/       0x6de0ec809] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=34 and parse it
+[  1521.757590425/       0x6de0ec813] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=35 and parse it
+[  1521.757591466/       0x6de0ec827] ipahal ipahal_get_reg_mn_ofst:4990 get offset of IPA_AGGR_FORCE_CLOSE_n m=0 n=0
+[  1521.757591831/       0x6de0ec82e] ipahal ipahal_construct_imm_cmd:1056 construct IMM_CMD:IPA_IMM_CMD_REGISTER_WRITE
+[  1521.757592195/       0x6de0ec835] ipahal ipahal_imm_cmd_get_opcode:1024 Get opcode of IMM_CMD=IPA_IMM_CMD_REGISTER_WRITE
+[  1521.757594279/       0x6de0ec85d] ipahal ipahal_get_reg_mn_ofst:4990 get offset of IPA_STAT_QUOTA_BASE_n m=0 n=0
+[  1521.757594800/       0x6de0ec867] ipahal ipahal_construct_imm_cmd:1056 construct IMM_CMD:IPA_IMM_CMD_REGISTER_READ
+[  1521.757595372/       0x6de0ec872] ipahal ipahal_imm_cmd_get_opcode:1024 Get opcode of IMM_CMD=IPA_IMM_CMD_REGISTER_READ
+[  1521.757595737/       0x6de0ec879] ipahal ipahal_construct_imm_cmd:1056 construct IMM_CMD:IPA_IMM_CMD_IP_PACKET_INIT
+[  1521.757597352/       0x6de0ec898] ipahal ipahal_imm_cmd_get_opcode:1024 Get opcode of IMM_CMD=IPA_IMM_CMD_IP_PACKET_INIT
+[  1521.757597820/       0x6de0ec8a1] ipahal ipahal_construct_imm_cmd:1056 construct IMM_CMD:IPA_IMM_CMD_IP_PACKET_TAG_STATUS
+[  1521.757598550/       0x6de0ec8af] ipahal ipahal_imm_cmd_get_opcode:1024 Get opcode of IMM_CMD=IPA_IMM_CMD_IP_PACKET_TAG_STATUS
+[  1521.757602404/       0x6de0ec8f8] ipa ipa3_send:624 ch:12 queue xfer
+[  1521.757603758/       0x6de0ec913] ipa ipa3_tag_process:9814 waiting for TAG response
+[  1521.757605997/       0x6de0ec93e] ipa __ipa3_dec_client_disable_clks:6569 active clients = 1
+[  1521.757606362/       0x6de0ec945] ipa __ipa_commit_rt_v3:735 Hashable HEAD
+[  1521.757606779/       0x6de0ec94d] ipa __ipa_commit_rt_v3:739 Non-Hashable HEAD
+[  1521.757607195/       0x6de0ec955] ipa __ipa_reap_sys_rt_tbls:262 reaping sys rt tbl name=ipa_dflt_rt ip=0 rlt=1
+[  1521.757611883/       0x6de0ec9af] ipa-wan ipa3_setup_dflt_wan_rt_tables:495 dflt v4 rt rule hdl[WAN_RT_COMMON]=7
+[  1521.757612560/       0x6de0ec9bc] ipa-wan ipa3_setup_dflt_wan_rt_tables:498 dflt v4 rt rule hdl[WAN_RT_ICMP]=8
+[  1521.757613810/       0x6de0ec9d4] ipa __ipa_add_rt_tbl:898 add rt tbl idx=12 tbl_cnt=2 ip=1
+[  1521.757615008/       0x6de0ec9eb] ipa __ipa_finish_rt_rule_add:1112 add rt rule tbl_idx=12 rule_cnt=1 rule_id=2
+[  1521.757616310/       0x6de0eca04] ipa __ipa_finish_rt_rule_add:1112 add rt rule tbl_idx=12 rule_cnt=2 rule_id=3
+[  1521.757616935/       0x6de0eca10] ipahal ipahal_rt_generate_hw_rule:4719 Entry
+[  1521.757618445/       0x6de0eca2d] ipahal ipa_fltrt_generate_hw_rule_bdy:2223 extra_word_1 0x3a
+[  1521.757618810/       0x6de0eca34] ipahal ipa_fltrt_generate_hw_rule_bdy:2225 extra_word_2 0x0
+[  1521.757619122/       0x6de0eca3a] ipahal ipa_fltrt_generate_hw_rule_bdy:2229 extra words params sz 8
+[  1521.757619435/       0x6de0eca40] ipahal ipa_fltrt_generate_hw_rule_bdy:2234 non extra words params sz 0
+[  1521.757619800/       0x6de0eca48] ipahal ipa_rt_gen_hw_rule_ipav5_0:357 en_rule 0x2
+[  1521.757620164/       0x6de0eca4e] ipa ipa_prep_rt_tbl_for_cmt:330 RT rule id (handle) 11 hw_len 16 priority 1
+[  1521.757620737/       0x6de0eca59] ipahal ipahal_rt_generate_hw_rule:4719 Entry
+[  1521.757621154/       0x6de0eca61] ipahal ipa_fltrt_generate_hw_rule_bdy:2216 building default rule
+[  1521.757621414/       0x6de0eca66] ipahal ipa_fltrt_generate_hw_rule_bdy:2223 extra_word_1 0x0
+[  1521.757621727/       0x6de0eca6c] ipahal ipa_fltrt_generate_hw_rule_bdy:2225 extra_word_2 0x0
+[  1521.757621987/       0x6de0eca71] ipahal ipa_fltrt_generate_hw_rule_bdy:2229 extra words params sz 8
+[  1521.757622247/       0x6de0eca76] ipahal ipa_fltrt_generate_hw_rule_bdy:2234 non extra words params sz 8
+[  1521.757622612/       0x6de0eca7d] ipahal ipa_rt_gen_hw_rule_ipav5_0:357 en_rule 0x20
+[  1521.757622925/       0x6de0eca83] ipa ipa_prep_rt_tbl_for_cmt:330 RT rule id (handle) 10 hw_len 24 priority 2
+[  1521.757623758/       0x6de0eca93] ipa ipa_prep_rt_tbl_for_cmt:351 RT tbl index 12 hash_sz 32 non-hash sz 24
+[  1521.757624331/       0x6de0eca9e] ipahal ipahal_rt_generate_hw_rule:4719 Entry
+[  1521.757623289/       0x6de0eca8b] ipa ipa_gsi_irq_tx_notify_cb:5020 event 2 notified
+[  1521.757624852/       0x6de0ecaa8] ipahal ipa_fltrt_generate_hw_rule_bdy:2216 building default rule
+[  1521.757625268/       0x6de0ecab0] ipahal ipa_fltrt_generate_hw_rule_bdy:2223 extra_word_1 0x0
+[  1521.757625581/       0x6de0ecab6] ipahal ipa_fltrt_generate_hw_rule_bdy:2225 extra_word_2 0x0
+[  1521.757625893/       0x6de0ecabc] ipahal ipa_fltrt_generate_hw_rule_bdy:2229 extra words params sz 8
+[  1521.757626154/       0x6de0ecac1] ipahal ipa_fltrt_generate_hw_rule_bdy:2234 non extra words params sz 8
+[  1521.757626466/       0x6de0ecac7] ipahal ipa_rt_gen_hw_rule_ipav5_0:357 en_rule 0x20
+[  1521.757626779/       0x6de0ecacd] ipa ipa_prep_rt_tbl_for_cmt:330 RT rule id (handle) 4 hw_len 24 priority 1
+[  1521.757627456/       0x6de0ecada] ipa ipa_prep_rt_tbl_for_cmt:351 RT tbl index 11 hash_sz 0 non-hash sz 32
+[  1521.757627820/       0x6de0ecae1] ipahal ipahal_fltrt_allocate_hw_tbl_imgs:4553 Entry
+[  1521.757629852/       0x6de0ecb08] ipahal ipa_fltrt_alloc_lcl_bdy:4474 lcl tbl bdy total effective sizes: hash=0 nhash=0
+[  1521.757630216/       0x6de0ecb0f] ipahal ipa_fltrt_alloc_lcl_bdy:4478 lcl tbl bdy count: hash=0 nhash=0
+[  1521.757630633/       0x6de0ecb17] ipahal ipahal_fltrt_allocate_hw_sys_tbl:4596 Entry
+[  1521.757631987/       0x6de0ecb31] ipahal ipahal_fltrt_write_addr_to_hdr:4654 Entry
+[  1521.757632404/       0x6de0ecb39] ipahal ipahal_rt_generate_hw_rule:4719 Entry
+[  1521.757632820/       0x6de0ecb41] ipahal ipa_fltrt_generate_hw_rule_bdy:2216 building default rule
+[  1521.757633133/       0x6de0ecb47] ipahal ipa_fltrt_generate_hw_rule_bdy:2223 extra_word_1 0x0
+[  1521.757633393/       0x6de0ecb4c] ipahal ipa_fltrt_generate_hw_rule_bdy:2225 extra_word_2 0x0
+[  1521.757633758/       0x6de0ecb53] ipahal ipa_fltrt_generate_hw_rule_bdy:2229 extra words params sz 8
+[  1521.757634070/       0x6de0ecb59] ipahal ipa_fltrt_generate_hw_rule_bdy:2234 non extra words params sz 8
+[  1521.757634383/       0x6de0ecb5f] ipahal ipa_rt_gen_hw_rule_ipav5_0:357 en_rule 0x20
+[  1521.757634747/       0x6de0ecb66] ipahal ipahal_fltrt_allocate_hw_sys_tbl:4596 Entry
+[  1521.757636154/       0x6de0ecb81] ipahal ipahal_fltrt_write_addr_to_hdr:4654 Entry
+[  1521.757636570/       0x6de0ecb89] ipahal ipahal_rt_generate_hw_rule:4719 Entry
+[  1521.757636987/       0x6de0ecb91] ipahal ipa_fltrt_generate_hw_rule_bdy:2223 extra_word_1 0x3a
+[  1521.757637300/       0x6de0ecb97] ipahal ipa_fltrt_generate_hw_rule_bdy:2225 extra_word_2 0x0
+[  1521.757637664/       0x6de0ecb9d] ipahal ipa_fltrt_generate_hw_rule_bdy:2229 extra words params sz 8
+[  1521.757637925/       0x6de0ecba3] ipahal ipa_fltrt_generate_hw_rule_bdy:2234 non extra words params sz 0
+[  1521.757638289/       0x6de0ecbaa] ipahal ipa_rt_gen_hw_rule_ipav5_0:357 en_rule 0x2
+[  1521.757638654/       0x6de0ecbb1] ipahal ipahal_fltrt_allocate_hw_sys_tbl:4596 Entry
+[  1521.757640268/       0x6de0ecbd0] ipahal ipahal_fltrt_write_addr_to_hdr:4654 Entry
+[  1521.757640581/       0x6de0ecbd6] ipahal ipahal_rt_generate_hw_rule:4719 Entry
+[  1521.757640997/       0x6de0ecbde] ipahal ipa_fltrt_generate_hw_rule_bdy:2216 building default rule
+[  1521.757641414/       0x6de0ecbe5] ipahal ipa_fltrt_generate_hw_rule_bdy:2223 extra_word_1 0x0
+[  1521.757641675/       0x6de0ecbeb] ipahal ipa_fltrt_generate_hw_rule_bdy:2225 extra_word_2 0x0
+[  1521.757641935/       0x6de0ecbf0] ipahal ipa_fltrt_generate_hw_rule_bdy:2229 extra words params sz 8
+[  1521.757642352/       0x6de0ecbf8] ipahal ipa_fltrt_generate_hw_rule_bdy:2234 non extra words params sz 8
+[  1521.757642872/       0x6de0ecc02] ipahal ipa_rt_gen_hw_rule_ipav5_0:357 en_rule 0x20
+[  1521.757643393/       0x6de0ecc0d] ipahal ipahal_get_reg_mn_ofst:4990 get offset of IPA_FILT_ROUT_CACHE_FLUSH m=0 n=0
+[  1521.757643862/       0x6de0ecc15] ipahal ipahal_construct_imm_cmd:1056 construct IMM_CMD:IPA_IMM_CMD_REGISTER_WRITE
+[  1521.757644227/       0x6de0ecc1c] ipahal ipahal_imm_cmd_get_opcode:1024 Get opcode of IMM_CMD=IPA_IMM_CMD_REGISTER_WRITE
+[  1521.757644539/       0x6de0ecc22] ipahal ipahal_construct_imm_cmd:1056 construct IMM_CMD:IPA_IMM_CMD_DMA_SHARED_MEM
+[  1521.757644852/       0x6de0ecc28] ipahal ipahal_imm_cmd_get_opcode:1024 Get opcode of IMM_CMD=IPA_IMM_CMD_DMA_SHARED_MEM
+[  1521.757645164/       0x6de0ecc2e] ipahal ipahal_construct_imm_cmd:1056 construct IMM_CMD:IPA_IMM_CMD_DMA_SHARED_MEM
+[  1521.757645581/       0x6de0ecc35] ipahal ipahal_imm_cmd_get_opcode:1024 Get opcode of IMM_CMD=IPA_IMM_CMD_DMA_SHARED_MEM
+[  1521.757646206/       0x6de0ecc42] ipa ipa3_send_cmd:767 sending imm cmd 12
+[  1521.757646779/       0x6de0ecc4d] ipa ipa3_send_cmd:767 sending imm cmd 19
+[  1521.757647300/       0x6de0ecc57] ipa ipa3_send_cmd:767 sending imm cmd 19
+[  1521.757647612/       0x6de0ecc5d] ipa ipa3_inc_client_enable_clks:6447 active clients = 2
+[  1521.757648602/       0x6de0ecc71] ipa ipa3_send:624 ch:12 queue xfer
+[  1521.757662872/       0x6de0ecd83] ipa ipa_gsi_irq_tx_notify_cb:5020 event 2 notified
+[  1521.757672195/       0x6de0ece36] ipa ipa3_transport_irq_cmd_ack:721 got ack for cmd=19
+[  1521.757682456/       0x6de0ecefa] ipa __ipa3_dec_client_disable_clks:6569 active clients = 1
+[  1521.757682872/       0x6de0ecf02] ipa __ipa_commit_rt_v3:735 Hashable HEAD
+[  1521.757683133/       0x6de0ecf07] ipa __ipa_commit_rt_v3:739 Non-Hashable HEAD
+[  1521.757683393/       0x6de0ecf0c] ipa __ipa_reap_sys_rt_tbls:262 reaping sys rt tbl name=ipa_dflt_rt ip=1 rlt=1
+[  1521.757687039/       0x6de0ecf52] ipa-wan ipa3_setup_dflt_wan_rt_tables:520 dflt v6 rt rule hdl[WAN_RT_COMMON]=a
+[  1521.757687820/       0x6de0ecf61] ipa-wan ipa3_setup_dflt_wan_rt_tables:523 dflt v6 rt rule hdl[WAN_RT_ICMP]=b
+[  1521.757689539/       0x6de0ecf82] ipa-wan ipa3_qmi_send_endp_desc_indication:2556 Sending QMI_IPA_ENDP_DESC_INDICATION_V01
+[  1521.758569591/       0x6de0f1183] ipa ipa_gsi_irq_rx_notify_cb:5103 event 2 notified
+[  1521.758578133/       0x6de0f1227] ipa ipa3_inc_acquire_wakelock:6660 active wakelock ref cnt = 1
+[  1521.758580425/       0x6de0f1253] ipa ipa3_inc_client_enable_clks_no_block:6503 active clients = 2
+[  1521.758590372/       0x6de0f1312] ipa_pm ipa_pm_activate_helper:925 Client[2] IPA_CLIENT_APPS_LAN_CONS: IPA_PM_DEACTIVATED
+[  1521.758592664/       0x6de0f133e] ipa_pm ipa_pm_activate_helper:954 Client[2] IPA_CLIENT_APPS_LAN_CONS: IPA_PM_DEACTIVATED
+[  1521.758594227/       0x6de0f135d] ipa ipa3_inc_client_enable_clks_no_block:6503 active clients = 3
+[  1521.758596727/       0x6de0f138d] ipa_pm activate_client:315 active bitmask (0): 4
+[  1521.758624070/       0x6de0f1599] ipa_pm do_clk_scaling:369 clock scaling started
+[  1521.758625529/       0x6de0f15b5] ipa_pm calculate_throughput:277 Aggregated throughput: 0
+[  1521.758626466/       0x6de0f15c7] ipa_pm do_clk_scaling:381 old idx was at 0
+[  1521.758627352/       0x6de0f15d8] ipa ipa3_set_clock_plan_from_pm:6690 idx = 1
+[  1521.758628133/       0x6de0f15e7] ipa ipa3_set_clock_plan_from_pm:6722 Same voltage
+[  1521.758628862/       0x6de0f15f5] ipa_pm do_clk_scaling:389 new idx is at 1
+[  1521.758633289/       0x6de0f164b] ipa_pm ipa_pm_activate_helper:980 Client[2] IPA_CLIENT_APPS_LAN_CONS: IPA_PM_ACTIVATED
+[  1521.758643185/       0x6de0f1709] ipa ipa3_lan_rx_pyld_hdlr:3371 LEN_REM 40
+[  1521.758645060/       0x6de0f1730] ipahal ipahal_pkt_status_parse:1638 Parse Status Packet
+[  1521.758649487/       0x6de0f1782] ipa ipa3_lan_rx_pyld_hdlr:3387 STATUS opcode=0 src=14 dst=16 len=8
+[  1521.758652300/       0x6de0f17b8] ipa ipa3_lan_rx_pyld_hdlr:3432 TAG packet arrived
+[  1521.758672352/       0x6de0f1938] ipa ipa3_tag_process:9829 TAG response arrived!
+[  1521.758672768/       0x6de0f1941] ipa_pm ipa_pm_deferred_deactivate:1063 Client[2] IPA_CLIENT_APPS_LAN_CONS: IPA_PM_ACTIVATED
+[  1521.758679122/       0x6de0f19bb] ipa_pm ipa_pm_deferred_deactivate:1095 Client[2] IPA_CLIENT_APPS_LAN_CONS: IPA_PM_ACTIVATED_PENDING_DEACTIVATION
+[  1521.758681154/       0x6de0f19e2] ipa ipa3_dec_release_wakelock:6679 active wakelock ref cnt = 0
+[  1521.758687820/       0x6de0f1a62] ipa ipa3_dec_client_disable_clks_no_block:6619 active clients = 2
+[  1521.760692143/       0x6de0fb0b4] ipa __ipa3_dec_client_disable_clks:6569 active clients = 1
+[  1521.760694018/       0x6de0fb0d8] ipa ipa3_start_tag_process:6322 TAG process done
+[  1521.857335789/       0x6de2c00fa] ipa_pm delayed_deferred_deactivate_work_func:476 Client[2] IPA_CLIENT_APPS_LAN_CONS: IPA_PM_ACTIVATED_PENDING_DEACTIVATION
+[  1521.857337248/       0x6de2c0116] ipa_pm delayed_deferred_deactivate_work_func:493 Client[2] IPA_CLIENT_APPS_LAN_CONS: IPA_PM_DEACTIVATED
+[  1521.857340998/       0x6de2c015e] ipa __ipa3_dec_client_disable_clks:6569 active clients = 1
+[  1521.857342560/       0x6de2c017c] ipa_pm deactivate_client:297 active bitmask (0): 0
+[  1521.857343394/       0x6de2c018c] ipa_pm do_clk_scaling:369 clock scaling started
+[  1521.857344279/       0x6de2c019d] ipa_pm calculate_throughput:277 Aggregated throughput: 0
+[  1521.857344800/       0x6de2c01a7] ipa_pm do_clk_scaling:381 old idx was at 1
+[  1521.857345321/       0x6de2c01b1] ipa_pm do_clk_scaling:389 new idx is at 1
+[  1521.857346883/       0x6de2c01cf] ipa ipa3_start_tag_process:6315 starting TAG process
+[  1521.857347664/       0x6de2c01de] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=0 and parse it
+[  1521.857349539/       0x6de2c0202] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=1 and parse it
+[  1521.857350373/       0x6de2c0212] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=2 and parse it
+[  1521.857351206/       0x6de2c0222] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=3 and parse it
+[  1521.857352039/       0x6de2c0232] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=4 and parse it
+[  1521.857352977/       0x6de2c0244] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=5 and parse it
+[  1521.857353862/       0x6de2c0255] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=6 and parse it
+[  1521.857354748/       0x6de2c0266] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=7 and parse it
+[  1521.857355581/       0x6de2c0276] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=8 and parse it
+[  1521.857356519/       0x6de2c0288] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=9 and parse it
+[  1521.857357404/       0x6de2c0299] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=10 and parse it
+[  1521.857358394/       0x6de2c02ac] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=11 and parse it
+[  1521.857359331/       0x6de2c02be] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=12 and parse it
+[  1521.857360269/       0x6de2c02d0] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=13 and parse it
+[  1521.857361154/       0x6de2c02e1] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=14 and parse it
+[  1521.857362144/       0x6de2c02f4] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=15 and parse it
+[  1521.857363081/       0x6de2c0306] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=16 and parse it
+[  1521.857364956/       0x6de2c032a] ipa ipa3_tag_generate_force_close_desc:9904 Force close ep: 16
+[  1521.857365581/       0x6de2c0336] ipahal ipahal_get_reg_mn_ofst:4990 get offset of IPA_AGGR_FORCE_CLOSE_n m=0 n=0
+[  1521.857367196/       0x6de2c0355] ipahal ipahal_construct_imm_cmd:1056 construct IMM_CMD:IPA_IMM_CMD_REGISTER_WRITE
+[  1521.857368966/       0x6de2c0377] ipahal ipahal_imm_cmd_get_opcode:1024 Get opcode of IMM_CMD=IPA_IMM_CMD_REGISTER_WRITE
+[  1521.857369696/       0x6de2c0385] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=17 and parse it
+[  1521.857371258/       0x6de2c03a3] ipa ipa3_tag_generate_force_close_desc:9904 Force close ep: 17
+[  1521.857371779/       0x6de2c03ad] ipahal ipahal_get_reg_mn_ofst:4990 get offset of IPA_AGGR_FORCE_CLOSE_n m=0 n=0
+[  1521.857372821/       0x6de2c03c1] ipahal ipahal_construct_imm_cmd:1056 construct IMM_CMD:IPA_IMM_CMD_REGISTER_WRITE
+[  1521.857373446/       0x6de2c03cd] ipahal ipahal_imm_cmd_get_opcode:1024 Get opcode of IMM_CMD=IPA_IMM_CMD_REGISTER_WRITE
+[  1521.857374123/       0x6de2c03da] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=18 and parse it
+[  1521.857375112/       0x6de2c03ed] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=19 and parse it
+[  1521.857376623/       0x6de2c040a] ipa ipa3_tag_generate_force_close_desc:9904 Force close ep: 19
+[  1521.857377144/       0x6de2c0413] ipahal ipahal_get_reg_mn_ofst:4990 get offset of IPA_AGGR_FORCE_CLOSE_n m=0 n=0
+[  1521.857377664/       0x6de2c041e] ipahal ipahal_construct_imm_cmd:1056 construct IMM_CMD:IPA_IMM_CMD_REGISTER_WRITE
+[  1521.857378185/       0x6de2c0428] ipahal ipahal_imm_cmd_get_opcode:1024 Get opcode of IMM_CMD=IPA_IMM_CMD_REGISTER_WRITE
+[  1521.857378654/       0x6de2c0431] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=20 and parse it
+[  1521.857379800/       0x6de2c0447] ipa ipa3_tag_generate_force_close_desc:9904 Force close ep: 20
+[  1521.857380164/       0x6de2c044e] ipahal ipahal_get_reg_mn_ofst:4990 get offset of IPA_AGGR_FORCE_CLOSE_n m=0 n=0
+[  1521.857380685/       0x6de2c0457] ipahal ipahal_construct_imm_cmd:1056 construct IMM_CMD:IPA_IMM_CMD_REGISTER_WRITE
+[  1521.857381102/       0x6de2c0460] ipahal ipahal_imm_cmd_get_opcode:1024 Get opcode of IMM_CMD=IPA_IMM_CMD_REGISTER_WRITE
+[  1521.857381466/       0x6de2c0467] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=21 and parse it
+[  1521.857382612/       0x6de2c047d] ipa ipa3_tag_generate_force_close_desc:9904 Force close ep: 21
+[  1521.857383029/       0x6de2c0485] ipahal ipahal_get_reg_mn_ofst:4990 get offset of IPA_AGGR_FORCE_CLOSE_n m=0 n=0
+[  1521.857383498/       0x6de2c048e] ipahal ipahal_construct_imm_cmd:1056 construct IMM_CMD:IPA_IMM_CMD_REGISTER_WRITE
+[  1521.857383914/       0x6de2c0496] ipahal ipahal_imm_cmd_get_opcode:1024 Get opcode of IMM_CMD=IPA_IMM_CMD_REGISTER_WRITE
+[  1521.857384383/       0x6de2c049f] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=22 and parse it
+[  1521.857385112/       0x6de2c04ad] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=23 and parse it
+[  1521.857386258/       0x6de2c04c3] ipa ipa3_tag_generate_force_close_desc:9904 Force close ep: 23
+[  1521.857386623/       0x6de2c04ca] ipahal ipahal_get_reg_mn_ofst:4990 get offset of IPA_AGGR_FORCE_CLOSE_n m=0 n=0
+[  1521.857387091/       0x6de2c04d3] ipahal ipahal_construct_imm_cmd:1056 construct IMM_CMD:IPA_IMM_CMD_REGISTER_WRITE
+[  1521.857387508/       0x6de2c04db] ipahal ipahal_imm_cmd_get_opcode:1024 Get opcode of IMM_CMD=IPA_IMM_CMD_REGISTER_WRITE
+[  1521.857387925/       0x6de2c04e3] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=24 and parse it
+[  1521.857388654/       0x6de2c04f1] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=25 and parse it
+[  1521.857389331/       0x6de2c04fe] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=26 and parse it
+[  1521.857390060/       0x6de2c050c] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=27 and parse it
+[  1521.857390737/       0x6de2c0519] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=28 and parse it
+[  1521.857391414/       0x6de2c0526] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=29 and parse it
+[  1521.857392039/       0x6de2c0532] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=30 and parse it
+[  1521.857392716/       0x6de2c053f] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=31 and parse it
+[  1521.857393394/       0x6de2c054c] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=32 and parse it
+[  1521.857394071/       0x6de2c0559] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=33 and parse it
+[  1521.857394748/       0x6de2c0566] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=34 and parse it
+[  1521.857395425/       0x6de2c0573] ipahal ipahal_read_reg_n_fields:4925 read from IPA_ENDP_INIT_AGGR_n n=35 and parse it
+[  1521.857396571/       0x6de2c0589] ipahal ipahal_get_reg_mn_ofst:4990 get offset of IPA_AGGR_FORCE_CLOSE_n m=0 n=0
+[  1521.857397039/       0x6de2c0592] ipahal ipahal_construct_imm_cmd:1056 construct IMM_CMD:IPA_IMM_CMD_REGISTER_WRITE
+[  1521.857397560/       0x6de2c059c] ipahal ipahal_imm_cmd_get_opcode:1024 Get opcode of IMM_CMD=IPA_IMM_CMD_REGISTER_WRITE
+[  1521.857407925/       0x6de2c0663] ipahal ipahal_get_reg_mn_ofst:4990 get offset of IPA_STAT_QUOTA_BASE_n m=0 n=0
+[  1521.857408446/       0x6de2c066d] ipahal ipahal_construct_imm_cmd:1056 construct IMM_CMD:IPA_IMM_CMD_REGISTER_READ
+[  1521.857409227/       0x6de2c067c] ipahal ipahal_imm_cmd_get_opcode:1024 Get opcode of IMM_CMD=IPA_IMM_CMD_REGISTER_READ
+[  1521.857409904/       0x6de2c0688] ipahal ipahal_construct_imm_cmd:1056 construct IMM_CMD:IPA_IMM_CMD_IP_PACKET_INIT
+[  1521.857410581/       0x6de2c0696] ipahal ipahal_imm_cmd_get_opcode:1024 Get opcode of IMM_CMD=IPA_IMM_CMD_IP_PACKET_INIT
+[  1521.857410946/       0x6de2c069d] ipahal ipahal_construct_imm_cmd:1056 construct IMM_CMD:IPA_IMM_CMD_IP_PACKET_TAG_STATUS
+[  1521.857411935/       0x6de2c06b0] ipahal ipahal_imm_cmd_get_opcode:1024 Get opcode of IMM_CMD=IPA_IMM_CMD_IP_PACKET_TAG_STATUS
+[  1521.857417769/       0x6de2c0720] ipa ipa3_send:624 ch:12 queue xfer
+[  1521.857420477/       0x6de2c0754] ipa ipa3_tag_process:9814 waiting for TAG response
+[  1521.857773498/       0x6de2c21cf] ipa ipa_gsi_irq_tx_notify_cb:5020 event 2 notified
+[  1521.858640685/       0x6de2c62d8] ipa ipa_gsi_irq_rx_notify_cb:5103 event 2 notified
+[  1521.858651466/       0x6de2c63a8] ipa ipa3_inc_acquire_wakelock:6660 active wakelock ref cnt = 1
+[  1521.858654019/       0x6de2c63d9] ipa ipa3_inc_client_enable_clks_no_block:6503 active clients = 2
+[  1521.858663029/       0x6de2c6485] ipa_pm ipa_pm_activate_helper:925 Client[2] IPA_CLIENT_APPS_LAN_CONS: IPA_PM_DEACTIVATED
+[  1521.858665946/       0x6de2c64be] ipa_pm ipa_pm_activate_helper:954 Client[2] IPA_CLIENT_APPS_LAN_CONS: IPA_PM_DEACTIVATED
+[  1521.858667769/       0x6de2c64e1] ipa ipa3_inc_client_enable_clks_no_block:6503 active clients = 3
+[  1521.858670477/       0x6de2c6515] ipa_pm activate_client:315 active bitmask (0): 4
+[  1521.858684383/       0x6de2c6620] ipa_pm ipa_pm_activate_helper:980 Client[2] IPA_CLIENT_APPS_LAN_CONS: IPA_PM_ACTIVATED
+[  1521.858695633/       0x6de2c66f8] ipa ipa3_lan_rx_pyld_hdlr:3371 LEN_REM 40
+[  1521.858697352/       0x6de2c6718] ipahal ipahal_pkt_status_parse:1638 Parse Status Packet
+[  1521.858700112/       0x6de2c674e] ipa ipa3_lan_rx_pyld_hdlr:3387 STATUS opcode=0 src=14 dst=16 len=8
+[  1521.858702664/       0x6de2c677e] ipa ipa3_lan_rx_pyld_hdlr:3432 TAG packet arrived
+[  1521.858714591/       0x6de2c6864] ipa_pm ipa_pm_deferred_deactivate:1063 Client[2] IPA_CLIENT_APPS_LAN_CONS: IPA_PM_ACTIVATED
+[  1521.858723133/       0x6de2c6908] ipa_pm ipa_pm_deferred_deactivate:1095 Client[2] IPA_CLIENT_APPS_LAN_CONS: IPA_PM_ACTIVATED_PENDING_DEACTIVATION
+[  1521.858725164/       0x6de2c692e] ipa ipa3_dec_release_wakelock:6679 active wakelock ref cnt = 0
+[  1521.858731727/       0x6de2c69ad] ipa ipa3_dec_client_disable_clks_no_block:6619 active clients = 2
+[  1521.858971362/       0x6de2c7ba5] ipa_pm do_clk_scaling:369 clock scaling started
+[  1521.858975581/       0x6de2c7bf6] ipa_pm calculate_throughput:277 Aggregated throughput: 0
+[  1521.858976727/       0x6de2c7c0c] ipa_pm do_clk_scaling:381 old idx was at 1
+[  1521.858977508/       0x6de2c7c1b] ipa_pm do_clk_scaling:389 new idx is at 1
+[  1521.858984956/       0x6de2c7caa] ipa ipa3_tag_process:9829 TAG response arrived!
+[  1521.861009123/       0x6de2d147a] ipa __ipa3_dec_client_disable_clks:6569 active clients = 1
+[  1521.861010425/       0x6de2d1493] ipa ipa3_start_tag_process:6322 TAG process done
+[  1521.957330581/       0x6de494c96] ipa_pm delayed_deferred_deactivate_work_func:476 Client[2] IPA_CLIENT_APPS_LAN_CONS: IPA_PM_ACTIVATED_PENDING_DEACTIVATION
+[  1521.957333029/       0x6de494cc5] ipa_pm delayed_deferred_deactivate_work_func:493 Client[2] IPA_CLIENT_APPS_LAN_CONS: IPA_PM_DEACTIVATED
+[  1521.957336675/       0x6de494d0b] ipa _ipa_suspend_resume_pipe:11109 suspend pipe 23
+[  1521.957338602/       0x6de494d30] ipa __ipa3_stop_gsi_channel:11033 client_type 35 not supported
+[  1521.957340061/       0x6de494d4c] ipa __ipa3_stop_gsi_channel:11043 Calling gsi_stop_channel ch:1
+[  1521.958130581/       0x6de498896] ipa __ipa3_stop_gsi_channel:11046 gsi_stop_channel ch: 1 returned 0
+[  1521.958134383/       0x6de4988df] ipa _ipa_suspend_resume_pipe:11109 suspend pipe 16
+[  1521.958136154/       0x6de498901] ipa __ipa3_stop_gsi_channel:11033 client_type 33 not supported
+[  1521.958137665/       0x6de49891e] ipa __ipa3_stop_gsi_channel:11043 Calling gsi_stop_channel ch:13
+[  1521.958963081/       0x6de49c706] ipa __ipa3_stop_gsi_channel:11046 gsi_stop_channel ch: 13 returned 0
+[  1521.958965165/       0x6de49c72e] ipa _ipa_suspend_resume_pipe:11164 switch ch 13 to poll
+[  1521.958971727/       0x6de49c7ac] ipa _ipa_suspend_resume_pipe:11109 suspend pipe 32
+[  1521.958972873/       0x6de49c7c2] ipa __ipa3_stop_gsi_channel:11033 client_type 105 not supported
+[  1521.958973654/       0x6de49c7d1] ipa __ipa3_stop_gsi_channel:11043 Calling gsi_stop_channel ch:10
+[  1521.959834696/       0x6de4a0865] ipa __ipa3_stop_gsi_channel:11046 gsi_stop_channel ch: 10 returned 0
+[  1521.959836623/       0x6de4a088a] ipa _ipa_suspend_resume_pipe:11164 switch ch 10 to poll
+[  1521.959842561/       0x6de4a08fc] ipa _ipa_suspend_resume_pipe:11109 suspend pipe 9
+[  1521.959843654/       0x6de4a0911] ipa __ipa3_stop_gsi_channel:11033 client_type 32 not supported
+[  1521.959844696/       0x6de4a0925] ipa __ipa3_stop_gsi_channel:11043 Calling gsi_stop_channel ch:19
+[  1521.960707092/       0x6de4a49d3] ipa __ipa3_stop_gsi_channel:11046 gsi_stop_channel ch: 19 returned 0
+[  1521.960710165/       0x6de4a4a0e] ipa ipa3_disable_clks:6262 disabling IPA clocks and bus voting
+[  1521.960711727/       0x6de4a4a2c] ipa ipa3_uc_notify_clk_state:1420 not supported past IPA v4.0
+[  1521.960712248/       0x6de4a4a36] ipa _ipa_disable_clks_v3_0:6241 disabling gcc_ipa_clk
+[  1521.960723706/       0x6de4a4b12] ipa_pm ipa_pm_set_clock_index:1333 Setting pm clock vote to 0
+[  1521.961188029/       0x6de4a6de5] ipa __ipa3_dec_client_disable_clks:6569 active clients = 0
+[  1521.961189748/       0x6de4a6e06] ipa_pm deactivate_client:297 active bitmask (0): 0
+[  1521.961191102/       0x6de4a6e20] ipa_pm do_clk_scaling:362 IPA clock is gated
+[  1522.466282198/       0x6dede67f5] ipa-wan ipa3_a5_svc_disconnect_cb:498 Received QMI client disconnect

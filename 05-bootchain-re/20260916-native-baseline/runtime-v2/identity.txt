@@ -1,0 +1,7 @@
+uid=0(root) gid=0(root) groups=0(root) context=u:r:magisk:s0
+Linux localhost 5.10.66-android12-9-00005-gf6e6376090be-ab8060604 #1 SMP PREEMPT Fri Jan 7 14:51:36 UTC 2022 aarch64
+NX679J
+_a
+5
+35
+1

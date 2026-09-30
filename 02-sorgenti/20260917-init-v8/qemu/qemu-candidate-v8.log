@@ -1,0 +1,20 @@
+[PASS] image: kernel bytes match the container: 49108324 bytes
+[PASS] image: ramdisk lz4 matches the manifest: 1076975 bytes at 49115136, sha256=2a97f1efaf64ea19
+[PASS] A: PID 1 came up and its journal is being written: ['<1>nx679j: journal mirror: 1026 bytes (file open, kmsg=4 pmsg=-1 rd=-1)', 'nx679j: mounts: start (uid=0 pid=107)']
+[PASS] A: the mounts step ran: ['nx679j: mounts: start (uid=0 pid=107)', 'nx679j: ATTEMPT mount -t proc /proc', 'nx679j: mount proc      rc=0']
+[PASS] A: ORDER - the first journal write happened before ANY module load: journal at byte 20111, first finit_module at byte 28741
+[PASS] A: ORDER - the first gadget attempt happened before ANY module load: gadget at byte 23243, first finit_module at byte 28741
+[PASS] A: the first journal write reported the rawdump state honestly: ['nx679j: ---- dump (first journal write: NO rawdump partition found) ----']
+[PASS] A: the chain ran and attempted modules: ['nx679j: chain: start', 'nx679j: chain: 47 modules to try, 47 .ko visible']
+[PASS] A: the gadget step ran: ['nx679j: gadget: start', 'nx679j: gadget: NO UDC after 12 s (dwc3_msm not up?)', 'nx679j: gadget: rc=-1']
+[PASS] A: no panic, PID 1 never died: clean
+[PASS] A: PID 1 reached reboot(2) -- the logo would keep cycling: 58.0
+[PASS] A: the kernel performed the restart (QEMU -no-reboot exited): exit code 0
+[PASS] B: the poisoned module was attempted: ['nx679j: ATTEMPT finit_module /lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/phy-qcom-emu.ko']
+[PASS] B: the stuck child was KILLED on the deadline and journalled: ['nx679j: MOD phy_qcom_emu                       TIMEOUT-KILLED after 15000 ms (stuck in finit_module, see ATTEMPT line above)']
+[PASS] B: the walk CONTINUED after the kill (later modules loaded): ['nx679j: MOD repeater                           loaded rc=0', 'nx679j: MOD qcom_scm                           loaded rc=0']
+[PASS] B: the chain reported its summary (ok / timeout-killed counters): ['nx679j: chain: done in 17662 ms: ok=46 timeout-killed=1 failed/missing=0 skipped=0']
+[PASS] B: PID 1 still reached reboot(2) with a stuck child alive: 74.0
+[PASS] B: no panic in the poisoned run: clean
+
+18/18 passed

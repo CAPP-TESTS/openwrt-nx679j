@@ -1,0 +1,12 @@
+system        1779     1 2417652   6796 do_epoll_wait       0 S dpmQmiMgr
+radio         1865     1 4218572  51816 binder_wait_for_work 0 S qcrilNrd
+radio         1871     1 4131968  49364 binder_wait_for_work 0 S qcrilNrd
+radio         1874     1 2374568   3692 futex_wait_queue_me 0 S qmipriod
+system        1887     1 2265100   7608 do_epoll_wait       0 S vendor.dpmd
+radio         1977     1 2714548  17328 binder_wait_for_work 0 S imsdaemon
+radio         1991     1 2343864   9300 do_epoll_wait       0 S modemManager
+radio         2002     1 3340888  13096 __skb_wait_for_more_packets 0 S netmgrd
+radio         2070     1   12808   2252 __skb_wait_for_more_packets 0 S ssgqmigd
+system        2104     1 2262024   6024 futex_wait_queue_me 0 S ATFWD-daemon
+radio         2364     1 2300996   5248 do_select           0 S adpl
+radio         3155     1 2487844  10096 binder_wait_for_work 0 S ims_rtp_daemon

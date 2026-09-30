@@ -1,0 +1,1 @@
+--header_version 4 --os_version 12.0.0 --os_patch_level 2022-02 --kernel /home/user/nx679j-stock/native-openwrt-usb-build/headless-upstream/v1/boot-stock/kernel --ramdisk /home/user/nx679j-stock/native-openwrt-usb-build/headless-upstream/v1/boot-stock/ramdisk --cmdline ''

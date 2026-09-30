@@ -1,0 +1,220 @@
+qemu cmd: qemu-system-aarch64 -machine virt -cpu cortex-a57 -accel tcg -smp 2 -m 2048 -nodefaults -nic none -display none -monitor none -serial stdio -no-reboot -kernel /home/user/nx679j-stock/experiments/20260916-122926-native-baseline/candidate-minimal-gadget-v5/qemu/kernel-from-image -initrd /home/user/nx679j-stock/experiments/20260916-122926-native-baseline/candidate-minimal-gadget-v5/qemu/ramdisk-from-image.gz -append console=ttyAMA0 earlycon loglevel=7 panic=10 rdinit=/init
+{
+  "qemu_argv": [
+    "qemu-system-aarch64",
+    "-machine",
+    "virt",
+    "-cpu",
+    "cortex-a57",
+    "-accel",
+    "tcg",
+    "-smp",
+    "2",
+    "-m",
+    "2048",
+    "-nodefaults",
+    "-nic",
+    "none",
+    "-display",
+    "none",
+    "-monitor",
+    "none",
+    "-serial",
+    "stdio",
+    "-no-reboot",
+    "-kernel",
+    "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/candidate-minimal-gadget-v5/qemu/kernel-from-image",
+    "-initrd",
+    "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/candidate-minimal-gadget-v5/qemu/ramdisk-from-image.gz",
+    "-append",
+    "console=ttyAMA0 earlycon loglevel=7 panic=10 rdinit=/init"
+  ],
+  "append": "console=ttyAMA0 earlycon loglevel=7 panic=10 rdinit=/init",
+  "image": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/candidate-minimal-gadget-v5/boot_b-minimal-gadget-v5.img",
+  "image_sha256": "62c7fa4bb28cdd5ec96faa960b431ed8b5faf734a9e298405ea1400040b8b1f4",
+  "kernel_sha256": "f0aa949c95d1421381850cb1982bd2a505e96fcd7565543ec28d5b1f7d81a0cc",
+  "ramdisk_sha256": "33f0cb1b30d3ce61cfcfa2b87400d43f87219bd3925981864ae66c4a3d6ed915",
+  "ramdisk_bytes": 1147147,
+  "elapsed_seconds": 104.99,
+  "qemu_returncode": 0,
+  "unpacking_initramfs_seen": true,
+  "unpack_evidence_line": "[    0.305663][    T1] Trying to unpack rootfs image as initramfs...",
+  "unpack_cpio_bytes": null,
+  "unpack_failed": false,
+  "run_init_as_init_process_seen": true,
+  "init_script_ran": true,
+  "mount_rcs": [
+    [
+      "tmpfs /tmp",
+      "0"
+    ],
+    [
+      "tmpfs /tmp",
+      "0"
+    ],
+    [
+      "proc /proc",
+      "0"
+    ],
+    [
+      "proc /proc",
+      "0"
+    ],
+    [
+      "sysfs /sys",
+      "0"
+    ],
+    [
+      "sysfs /sys",
+      "0"
+    ],
+    [
+      "devtmpfs /dev",
+      "255"
+    ],
+    [
+      "devtmpfs /dev",
+      "255"
+    ],
+    [
+      "configfs /sys/kernel/config",
+      "0"
+    ],
+    [
+      "configfs /sys/kernel/config",
+      "0"
+    ],
+    [
+      "pstore /sys/fs/pstore",
+      "0"
+    ],
+    [
+      "pstore /sys/fs/pstore",
+      "0"
+    ]
+  ],
+  "stage0_kernel_line": "[    0.727352][    T1] nx679j: stage0 kernel=5.10.66-android12-9-00005-gf6e6376090be-ab8060604",
+  "stage0_modprobe_line": "[    0.750605][    T1] nx679j: stage0 modprobe=/sbin/insmod",
+  "modules_dir_line": "[    0.790761][    T1] nx679j: modules dir=/lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604 insmod=/sbin/insmod count=40",
+  "insmod_lines_raw": 80,
+  "insmod_distinct_names": [
+    "altmode_glink",
+    "clk_qcom",
+    "crypto_qti_common",
+    "crypto_qti_hwkm",
+    "debug_regulator",
+    "dwc3_msm",
+    "fsa4480_i2c",
+    "gdsc_regulator",
+    "minidump",
+    "nvmem_qcom_spmi_sdam",
+    "nvmem_qfprom",
+    "pdr_interface",
+    "phy_msm_snps_eusb2",
+    "phy_msm_snps_hs",
+    "phy_msm_ssusb_qmp",
+    "phy_qcom_emu",
+    "phy_qcom_ufs",
+    "phy_qcom_ufs_qmp_14nm",
+    "phy_qcom_ufs_qmp_v3",
+    "phy_qcom_ufs_qmp_v4_cape",
+    "phy_qcom_ufs_qmp_v4_diwali",
+    "phy_qcom_ufs_qmp_v4_lahaina",
+    "phy_qcom_ufs_qmp_v4_waipio",
+    "pmic_glink",
+    "proxy_consumer",
+    "qcom_glink",
+    "qcom_glink_smem",
+    "qcom_glink_spss",
+    "qcom_ipc_logging",
+    "qcom_scm",
+    "qcom_smd",
+    "qmi_helpers",
+    "qti_regmap_debugfs",
+    "repeater",
+    "rproc_qcom_common",
+    "smem",
+    "ssusb_redriver_nb7vpq904m",
+    "ucsi_glink",
+    "ufs_qcom",
+    "ufshcd_crypto_qti"
+  ],
+  "insmod_distinct_count": 40,
+  "insmod_names_match_manifest": true,
+  "insmod_resolved_all": true,
+  "insmod_mixed_spelling": [
+    [
+      "nvmem_qcom_spmi_sdam",
+      "nvmem_qcom-spmi-sdam.ko"
+    ],
+    [
+      "nvmem_qcom_spmi_sdam",
+      "nvmem_qcom-spmi-sdam.ko"
+    ]
+  ],
+  "insmod_resolution_failed": [],
+  "insmod_rc0": [
+    "debug_regulator",
+    "nvmem_qcom_spmi_sdam",
+    "nvmem_qfprom",
+    "phy_msm_ssusb_qmp",
+    "phy_qcom_emu",
+    "phy_qcom_ufs",
+    "proxy_consumer",
+    "qcom_scm",
+    "qmi_helpers",
+    "qti_regmap_debugfs",
+    "repeater",
+    "smem"
+  ],
+  "insmod_rc0_count": 12,
+  "ufs_line": "[   17.723581][    T1] nx679j: ufs sda after 15s present=no",
+  "udc_lines": [
+    "[   48.273127][    T1] nx679j: udc=NONE after 30s cycle=0",
+    "nx679j: udc=NONE after 30s cycle=0",
+    "[   51.393930][    T1] nx679j: udc=NONE after 3s cycle=1",
+    "nx679j: udc=NONE after 3s cycle=1",
+    "[   69.489039][    T1] nx679j: udc=NONE after 3s cycle=2",
+    "nx679j: udc=NONE after 3s cycle=2",
+    "[   87.579445][    T1] nx679j: udc=NONE after 3s cycle=3",
+    "nx679j: udc=NONE after 3s cycle=3"
+  ],
+  "role_lines": [
+    "[   17.760060][    T1] nx679j: usb_role nodes found=0",
+    "nx679j: usb_role nodes found=0",
+    "[   48.319537][    T1] nx679j: usb_role nodes found=0",
+    "nx679j: usb_role nodes found=0",
+    "[   66.439186][    T1] nx679j: usb_role nodes found=0",
+    "nx679j: usb_role nodes found=0",
+    "[   84.529666][    T1] nx679j: usb_role nodes found=0",
+    "nx679j: usb_role nodes found=0",
+    "[  102.617627][    T1] nx679j: usb_role nodes found=0",
+    "nx679j: usb_role nodes found=0"
+  ],
+  "cycle_lines": [
+    "[   48.314878][    T1] nx679j: cycle 1 uptime=48.28 93.90 modules=12",
+    "nx679j: cycle 1 uptime=48.28 93.90 modules=12",
+    "[   66.435919][    T1] nx679j: cycle 2 uptime=66.41 129.98 modules=12",
+    "nx679j: cycle 2 uptime=66.41 129.98 modules=12",
+    "[   84.525500][    T1] nx679j: cycle 3 uptime=84.50 166.04 modules=12",
+    "nx679j: cycle 3 uptime=84.50 166.04 modules=12",
+    "[  102.614712][    T1] nx679j: cycle 4 uptime=102.59 202.11 modules=12",
+    "nx679j: cycle 4 uptime=102.59 202.11 modules=12"
+  ],
+  "cycles_seen_at_seconds": {
+    "1": 48.6,
+    "2": 66.7,
+    "3": 84.8,
+    "4": 102.9
+  },
+  "gadget_attempt_lines": [
+    "[   17.762286][    T1] nx679j: gadget attempt 1 (wait up to 30s for a real UDC)",
+    "nx679j: gadget attempt 1 (wait up to 30s for a real UDC)"
+  ],
+  "pid1_still_alive_at_end": true,
+  "kernel_panic": false,
+  "oom": false,
+  "log": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/candidate-minimal-gadget-v5/qemu/boot.log",
+  "log_bytes": 42935
+}
+RESULT PASS

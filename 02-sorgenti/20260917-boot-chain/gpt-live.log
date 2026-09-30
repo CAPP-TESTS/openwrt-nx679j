@@ -1,0 +1,52 @@
+== sde : 4096 byte di tabella ==
+   1 uefi_a             lb=6         last=1285      settori=1280      byte=5242880      attr=0x107f000000000000 prio=3 succ=1 tries=7 bit54,bit60
+   2 aop_a              lb=1286      last=1413      settori=128       byte=524288       attr=0x107f000000000000 prio=3 succ=1 tries=7 bit54,bit60
+   3 aop_config_a       lb=1414      last=1541      settori=128       byte=524288       attr=0x107f000000000000 prio=3 succ=1 tries=7 bit54,bit60
+   4 tz_a               lb=1542      last=2565      settori=1024      byte=4194304      attr=0x107f000000000000 prio=3 succ=1 tries=7 bit54,bit60
+   5 hyp_a              lb=2566      last=4613      settori=2048      byte=8388608      attr=0x007f000000000000 prio=3 succ=1 tries=7 bit54
+   6 modem_a            lb=4614      last=81413     settori=76800     byte=314572800    attr=0x107f000000000000 prio=3 succ=1 tries=7 bit54,bit60
+   7 bluetooth_a        lb=81414     last=82437     settori=1024      byte=4194304      attr=0x107f000000000000 prio=3 succ=1 tries=7 bit54,bit60
+   8 mdtpsecapp_a       lb=82438     last=83461     settori=1024      byte=4194304      attr=0x107f000000000000 prio=3 succ=1 tries=7 bit54,bit60
+   9 mdtp_a             lb=83462     last=91653     settori=8192      byte=33554432     attr=0x107f000000000000 prio=3 succ=1 tries=7 bit54,bit60
+  10 abl_a              lb=91654     last=91909     settori=256       byte=1048576      attr=0x107f000000000000 prio=3 succ=1 tries=7 bit54,bit60
+  11 dsp_a              lb=91910     last=108293    settori=16384     byte=67108864     attr=0x107f000000000000 prio=3 succ=1 tries=7 bit54,bit60
+  12 keymaster_a        lb=108294    last=108421    settori=128       byte=524288       attr=0x107f000000000000 prio=3 succ=1 tries=7 bit54,bit60
+  13 boot_a             lb=108422    last=132997    settori=24576     byte=100663296    attr=0x007f000000000000 prio=3 succ=1 tries=7 bit54
+  14 devcfg_a           lb=132998    last=133029    settori=32        byte=131072       attr=0x007f000000000000 prio=3 succ=1 tries=7 bit54
+  15 qupfw_a            lb=133030    last=133049    settori=20        byte=81920        attr=0x007f000000000000 prio=3 succ=1 tries=7 bit54
+  16 vbmeta_a           lb=133050    last=133065    settori=16        byte=65536        attr=0x107f000000000000 prio=3 succ=1 tries=7 bit54,bit60
+  17 dtbo_a             lb=133066    last=139209    settori=6144      byte=25165824     attr=0x007f000000000000 prio=3 succ=1 tries=7 bit54
+  18 uefisecapp_a       lb=139210    last=139721    settori=512       byte=2097152      attr=0x007f000000000000 prio=3 succ=1 tries=7 bit54
+  19 imagefv_a          lb=139722    last=140233    settori=512       byte=2097152      attr=0x007f000000000001 prio=3 succ=1 tries=7 bit54
+  20 shrm_a             lb=140234    last=140265    settori=32        byte=131072       attr=0x107f000000000000 prio=3 succ=1 tries=7 bit54,bit60
+  21 vm-bootsys_a       lb=140266    last=207374    settori=67109     byte=274878464    attr=0x007f000000000000 prio=3 succ=1 tries=7 bit54
+  22 cpucp_a            lb=207375    last=207630    settori=256       byte=1048576      attr=0x107f000000000000 prio=3 succ=1 tries=7 bit54,bit60
+  23 featenabler_a      lb=207631    last=207662    settori=32        byte=131072       attr=0x007f000000000000 prio=3 succ=1 tries=7 bit54
+  24 vendor_boot_a      lb=207663    last=232238    settori=24576     byte=100663296    attr=0x007f000000000000 prio=3 succ=1 tries=7 bit54
+  25 qmcs               lb=232239    last=239918    settori=7680      byte=31457280     attr=0x00************** prio=0 succ=0 tries=0 
+  26 qweslicstore_a     lb=239919    last=239982    settori=64        byte=262144       attr=0x107f000000000000 prio=3 succ=1 tries=7 bit54,bit60
+  27 recovery_a         lb=239983    last=265582    settori=25600     byte=104857600    attr=0x007f000000000000 prio=3 succ=1 tries=7 bit54
+  28 xbl_ramdump_a      lb=265583    last=266094    settori=512       byte=2097152      attr=0x007f000000000000 prio=3 succ=1 tries=7 bit54
+  29 uefi_b             lb=266095    last=267374    settori=1280      byte=5242880      attr=0x107b000000000000 prio=3 succ=0 tries=7 bit54,bit60
+  30 aop_b              lb=267375    last=267502    settori=128       byte=524288       attr=0x007b000000000000 prio=3 succ=0 tries=7 bit54
+  31 aop_config_b       lb=267503    last=267630    settori=128       byte=524288       attr=0x007b000000000000 prio=3 succ=0 tries=7 bit54
+  32 tz_b               lb=267631    last=268654    settori=1024      byte=4194304      attr=0x007b000000000000 prio=3 succ=0 tries=7 bit54
+== sdb : 4096 byte di tabella ==
+   1 xbl_a              lb=6         last=901       settori=896       byte=3670016      attr=0x10c4000000000000 prio=0 succ=1 tries=0 bit54,bit55,bit60
+   2 xbl_config_a       lb=902       last=976       settori=75        byte=307200       attr=0x00c4000000000000 prio=0 succ=1 tries=0 bit54,bit55
+   3 multiimgqti_a      lb=977       last=984       settori=8         byte=32768        attr=0x10c4000000000000 prio=0 succ=1 tries=0 bit54,bit55,bit60
+   4 multiimgoem_a      lb=985       last=992       settori=8         byte=32768        attr=0x10c4000000000000 prio=0 succ=1 tries=0 bit54,bit55,bit60
+   5 apdp               lb=993       last=1056      settori=64        byte=262144       attr=0x00************** prio=0 succ=0 tries=0 
+   6 last_parti         lb=1057      last=2042      settori=986       byte=4038656      attr=0x10************** prio=0 succ=0 tries=0 bit60
+== sdc : 4096 byte di tabella ==
+   1 xbl_b              lb=6         last=901       settori=896       byte=3670016      attr=0x10c0000000000000 prio=0 succ=0 tries=0 bit54,bit55,bit60
+   2 xbl_config_b       lb=902       last=976       settori=75        byte=307200       attr=0x00c0000000000000 prio=0 succ=0 tries=0 bit54,bit55
+   3 multiimgqti_b      lb=977       last=984       settori=8         byte=32768        attr=0x10c0000000000000 prio=0 succ=0 tries=0 bit54,bit55,bit60
+   4 multiimgoem_b      lb=985       last=992       settori=8         byte=32768        attr=0x10c0000000000000 prio=0 succ=0 tries=0 bit54,bit55,bit60
+   5 apdpb              lb=993       last=1056      settori=64        byte=262144       attr=0x00************** prio=0 succ=0 tries=0 
+   6 last_parti         lb=1057      last=2042      settori=986       byte=4038656      attr=0x10************** prio=0 succ=0 tries=0 bit60
+== header sde primary ==
+  signature=b'EFI PART' revision=0x10000 header_size=92 crc=0x34245d17 reserved=0x0 cur=1 alt=1572863 first=6 last=1572858 guid=8f0c91a4b82ee011e1965cee743ea640 table_lba=2 entries=96 entry_size=128 table_crc=0x434f4f43
+== misc: primi 64 byte ==
+  hex : 626f6f746f6e63652d626f6f746c6f61************************************************************************************************
+  ascii: b'bootonce-bootloader\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'

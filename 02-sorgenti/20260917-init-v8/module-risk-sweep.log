@@ -1,0 +1,184 @@
+modules.dep/dep+softdep names: 329; v6 emit() order: 329
+first 25 of the v6 order: qcom_scm qcom_hwspinlock smem minidump qcom_wdt_core gh_virt_wdt qcom_cpu_vendor_hooks cmd_db qcom_ipc_logging qcom_rpmh clk_rpmh proxy_consumer debug_regulator gdsc_regulator clk_qcom clk_dummy gcc_waipio icc_debug icc_bcm_voter icc_rpmh qcom_ipcc qcom_pdc rpmh_regulator dcvs_fp qcom_dcvs
+  position of dwc3_msm: 115
+  position of ufs_qcom: 89
+  position of qcom_glink: 99
+  position of pmic_glink: 103
+  position of qmi_helpers: 97
+  position of pdr_interface: 102
+  position of ucsi_glink: 104
+  position of eud: 114
+  position of msm_kgsl: 122
+  position of adsp_loader_dlkm: None
+  position of qcom_hwspinlock: 1
+  position of smem: 2
+  position of phy_msm_ssusb_qmp: 113
+  position of altmode_glink: 108
+  .. 0/329
+  .. 25/329
+  .. 50/329
+  .. 75/329
+  .. 100/329
+  .. 125/329
+  .. 150/329
+  .. 175/329
+  .. 200/329
+  .. 225/329
+  .. 250/329
+  .. 275/329
+  .. 300/329
+  .. 325/329
+
+=== modules in the v6 order: 327
+=== with an UNBOUNDED wait reachable from init/probe: 75
+  [pos   0] qcom_scm                         platform_driver=1 unbounded=['mutex_lock', 'wait_for_completion']
+  [pos   8] qcom_ipc_logging                 platform_driver=0 unbounded=['mutex_lock']
+  [pos  14] clk_qcom                         platform_driver=0 unbounded=['mutex_lock']
+  [pos  18] icc_bcm_voter                    platform_driver=1 unbounded=['mutex_lock']
+  [pos  19] icc_rpmh                         platform_driver=0 unbounded=['mutex_lock']
+  [pos  22] rpmh_regulator                   platform_driver=1 unbounded=['mutex_lock']
+  [pos  24] qcom_dcvs                        platform_driver=1 unbounded=['mutex_lock']
+  [pos  25] bwmon                            platform_driver=1 unbounded=['mutex_lock']
+  [pos  27] sched_walt                       platform_driver=0 unbounded=['mutex_lock']
+  [pos  28] cfg80211                         platform_driver=0 unbounded=['cancel_work_sync']
+  [pos  41] gh_rm_drv                        platform_driver=1 unbounded=['mutex_lock', 'mutex_lock_interruptible', 'wait_for_completion']
+  [pos  44] llcc_qcom                        platform_driver=1 unbounded=['mutex_lock']
+  [pos  45] mac80211                         platform_driver=0 unbounded=['cancel_work_sync', 'mutex_lock']
+  [pos  49] qcom_dma_heaps                   platform_driver=1 unbounded=['down_write', 'mutex_lock']
+  [pos  50] mem_buf                          platform_driver=1 unbounded=['destroy_workqueue']
+  [pos  60] msm_geni_se                      platform_driver=1 unbounded=['mutex_lock']
+  [pos  73] qcom_iommu_util                  platform_driver=0 unbounded=['mutex_lock']
+  [pos  89] ufs_qcom                         platform_driver=1 unbounded=['mutex_lock']
+  [pos  90] arm_smmu                         platform_driver=1 unbounded=['mutex_lock']
+  [pos  97] qmi_helpers                      platform_driver=0 unbounded=['destroy_workqueue', 'mutex_lock']
+  [pos 102] pdr_interface                    platform_driver=0 unbounded=['mutex_lock']
+  [pos 103] pmic_glink                       platform_driver=1 unbounded=['destroy_workqueue', 'mutex_lock']
+  [pos 104] ucsi_glink                       platform_driver=1 unbounded=['mutex_lock']
+  [pos 106] msm_ext_display                  platform_driver=1 unbounded=['mutex_lock']
+  [pos 108] altmode_glink                    platform_driver=1 unbounded=['cancel_work_sync', 'mutex_lock']
+  [pos 115] dwc3_msm                         platform_driver=1 unbounded=['destroy_workqueue']
+  [pos 117] msm_drm                          platform_driver=1 unbounded=['cancel_work_sync', 'destroy_workqueue', 'flush_workqueue', 'mutex_lock', 'request_firmware']
+  [pos 118] msm_performance                  platform_driver=0 unbounded=['mutex_lock']
+  [pos 122] msm_kgsl                         platform_driver=1 unbounded=['destroy_workqueue', 'flush_workqueue', 'mutex_lock', 'request_firmware', 'wait_for_completion']
+  [pos 128] qcom_sysmon                      platform_driver=0 unbounded=['mutex_lock']
+  [pos 130] pci_msm_drv                      platform_driver=1 unbounded=['cancel_work_sync', 'destroy_workqueue', 'mutex_lock']
+  [pos 131] mhi                              platform_driver=0 unbounded=['flush_work']
+  [pos 134] mhi_dev_uci                      platform_driver=0 unbounded=['mutex_lock']
+  [pos 141] qpnp_pbs                         platform_driver=1 unbounded=['mutex_lock']
+  [pos 142] pwm_qti_lpg                      platform_driver=1 unbounded=['mutex_lock']
+  [pos 164] qsee_ipc_irq_bridge              platform_driver=1 unbounded=['mutex_lock']
+  [pos 169] qseecom_mod                      platform_driver=1 unbounded=['cancel_work_sync', 'mutex_lock']
+  [pos 175] glink_pkt                        platform_driver=1 unbounded=['mutex_lock']
+  [pos 178] qti_battery_debug                platform_driver=1 unbounded=['mutex_lock']
+  [pos 182] spss_utils                       platform_driver=1 unbounded=['mutex_lock']
+  [pos 183] spcom                            platform_driver=1 unbounded=['mutex_lock']
+  [pos 184] cdsprm                           platform_driver=1 unbounded=['destroy_workqueue', 'mutex_lock', 'wait_for_completion']
+  [pos 193] qti_adc_tm                       platform_driver=1 unbounded=['destroy_workqueue', 'mutex_lock']
+  [pos 194] icnss2                           platform_driver=1 unbounded=['destroy_workqueue']
+  [pos 199] usb_bam                          platform_driver=1 unbounded=['destroy_workqueue']
+  [pos 202] memlat                           platform_driver=1 unbounded=['mutex_lock']
+  [pos 207] qcom_pm8008_regulator            platform_driver=1 unbounded=['mutex_lock']
+  [pos 209] hvc_gunyah                       platform_driver=0 unbounded=['cancel_work_sync']
+  [pos 211] frpc_adsprpc                     platform_driver=1 unbounded=['mutex_lock']
+  [pos 215] zram                             platform_driver=0 unbounded=['mutex_lock']
+  [pos 224] cnss2                            platform_driver=1 unbounded=['destroy_workqueue', 'down_write', 'mutex_lock', 'wait_for_completion', 'wait_for_completion_interruptible', 'wait_for_completion_killable']
+  [pos 240] f_fs_ipc_log                     platform_driver=0 unbounded=['destroy_workqueue']
+  [pos 243] atmel_mxt_ts                     platform_driver=0 unbounded=['mutex_lock']
+  [pos 250] synx_driver                      platform_driver=0 unbounded=['mutex_lock']
+  [pos 251] radio_i2c_rtc6226_qca            platform_driver=0 unbounded=['destroy_workqueue']
+  [pos 255] qcom_spmi_temp_alarm             platform_driver=1 unbounded=['mutex_lock']
+  [pos 259] bcl_pmic5                        platform_driver=1 unbounded=['mutex_lock']
+  [pos 260] bcl_soc                          platform_driver=1 unbounded=['flush_work']
+  [pos 261] msm_lmh_dcvs                     platform_driver=1 unbounded=['mutex_lock']
+  [pos 262] cpu_voltage_cooling              platform_driver=1 unbounded=['mutex_lock']
+  [pos 267] qti_cpufreq_cdev                 platform_driver=1 unbounded=['mutex_lock']
+  [pos 271] bt_fm_slim                       platform_driver=0 unbounded=['mutex_lock']
+  [pos 277] leds_qti_tri_led                 platform_driver=1 unbounded=['mutex_lock']
+  [pos 280] haptic                           platform_driver=0 unbounded=['mutex_lock']
+  [pos 286] mhi_dev_net                      platform_driver=1 unbounded=['destroy_workqueue']
+  [pos 287] mhi_dev_drv                      platform_driver=1 unbounded=['mutex_lock']
+  [pos 291] gh_virtio_backend                platform_driver=1 unbounded=['mutex_lock']
+  [pos 296] gf_spi                           platform_driver=1 unbounded=['mutex_lock']
+  [pos 297] stk3x3x                          platform_driver=0 unbounded=['destroy_workqueue']
+  [pos 303] slim_qcom_ngd_ctrl               platform_driver=1 unbounded=['destroy_workqueue', 'mutex_lock']
+  [pos 307] coresight_csr                    platform_driver=1 unbounded=['mutex_lock']
+  [pos 311] stm_core                         platform_driver=0 unbounded=['__request_module']
+  [pos 313] coresight_cti                    platform_driver=0 unbounded=['mutex_lock']
+  [pos 325] snd_usb_audio_qmi                platform_driver=1 unbounded=['destroy_workqueue']
+  [pos 328] qrtr_gunyah                      platform_driver=1 unbounded=['cancel_work_sync']
+
+=== with a peer-rendezvous call reachable from a probe: 68
+  [pos   0] qcom_scm                         peer=['qcom_scm_convention', 'qcom_scm_create_shm_bridge', 'qcom_scm_delete_shm_bridge', 'qcom_scm_do_restart$7c9c04a4775843f648c08718f988e31e.cfi_jt', 'qcom_scm_enable_shm_bridge']
+  [pos   9] qcom_rpmh                        peer=['rpmh_flush', 'rpmh_rsc_cpu_pm_callback$33a91d6f1a86059c0a50226ec96936b4', 'rpmh_rsc_cpu_pm_callback$33a91d6f1a86059c0a50226ec96936b4.cfi_jt', 'rpmh_rsc_invalidate', 'rpmh_rsc_pd_cb$33a91d6f1a86059c0a50226ec96936b4.cfi_jt']
+  [pos  14] clk_qcom                         peer=['icc_put']
+  [pos  17] icc_debug                        peer=['icc_debug_suspend_trace_probe$7a9f7f669ad86622336e73d96f70481e']
+  [pos  19] icc_rpmh                         peer=['icc_link_create', 'icc_node_add', 'icc_node_create', 'icc_node_del', 'icc_node_destroy']
+  [pos  22] rpmh_regulator                   peer=['rpmh_regulator_probe$4e8b0154c58fc8baa75c3124f9a25b1c']
+  [pos  23] dcvs_fp                          peer=['rpmh_init_fast_path', 'rpmh_write_async']
+  [pos  24] qcom_dcvs                        peer=['icc_set_tag']
+  [pos  52] memory_dump_v2                   peer=['qcom_scm_assign_dump_table_region']
+  [pos  60] msm_geni_se                      peer=['icc_put']
+  [pos  71] qcom_dload_mode                  peer=['qcom_scm_disable_sdi', 'qcom_scm_set_download_mode']
+  [pos  89] ufs_qcom                         peer=['qcom_scm_ice_available']
+  [pos  90] arm_smmu                         peer=['icc_set_bw', 'icc_set_tag', 'qcom_scm_is_available']
+  [pos  98] qcom_smd                         peer=['qcom_smd_edge_intr$e4b3ac0aa88198cf12ca80dc3d2a0ec8.cfi_jt', 'qcom_smd_edge_release$e4b3ac0aa88198cf12ca80dc3d2a0ec8.cfi_jt', 'qcom_smd_probe$e4b3ac0aa88198cf12ca80dc3d2a0ec8', 'qcom_smd_register_edge', 'qcom_smd_release_device$e4b3ac0aa88198cf12ca80dc3d2a0ec8.cfi_jt']
+  [pos  99] qcom_glink                       peer=['qcom_glink_native_probe', 'qcom_glink_ssr_callback$a38385d870d17b5d27b65d7b83c7b324', 'qcom_glink_ssr_notifier_call$a38385d870d17b5d27b65d7b83c7b324.cfi_jt', 'qcom_glink_ssr_notify', 'qcom_glink_ssr_probe$a38385d870d17b5d27b65d7b83c7b324']
+  [pos 103] pmic_glink                       peer=['pdr_add_lookup', 'pdr_handle_alloc', 'pdr_handle_release', 'pmic_glink_init_work$7d5b00eae26b800f052f6bee13e4f7b3.cfi_jt', 'pmic_glink_pdr_notifier_cb$7d5b00eae26b800f052f6bee13e4f7b3.cfi_jt']
+  [pos 104] ucsi_glink                       peer=['pmic_glink_register_client', 'pmic_glink_unregister_client', 'ucsi_callback$af8d816e243553bb755a45c79cfd73ec', 'ucsi_callback$af8d816e243553bb755a45c79cfd73ec.cfi_jt', 'ucsi_connector_change']
+  [pos 106] msm_ext_display                  peer=['extcon_get_state', 'extcon_set_state_sync']
+  [pos 108] altmode_glink                    peer=['pmic_glink_register_client']
+  [pos 112] phy_msm_snps_hs                  peer=['qcom_scm_io_writel']
+  [pos 114] eud                              peer=['extcon_set_state_sync', 'qcom_scm_io_readl', 'qcom_scm_io_writel']
+  [pos 115] dwc3_msm                         peer=['extcon_get_edev_by_phandle', 'extcon_get_edev_name', 'extcon_get_state', 'extcon_register_notifier', 'icc_put']
+  [pos 117] msm_drm                          peer=['icc_set_tag', 'rpmh_mode_solver_set']
+  [pos 122] msm_kgsl                         peer=['icc_put', 'icc_set_tag', 'qcom_scm_kgsl_set_smmu_aperture', 'qcom_scm_pas_auth_and_reset']
+  [pos 128] qcom_sysmon                      peer=['rproc_get_by_child']
+  [pos 129] qcom_esoc                        peer=['rproc_add', 'rproc_alloc', 'rproc_del', 'rproc_free']
+  [pos 131] mhi                              peer=['mhi_bus', 'mhi_bus_type', 'mhi_device_get_sync', 'mhi_device_put', 'mhi_driver_probe$6ea9a53e17dc3aa18347e4cc921a30b8']
+  [pos 132] mhi_cntrl_qcom                   peer=['mhi_alloc_controller', 'mhi_arch_bw_scale$017a381a7ab6d34ff4daeb2f184c5672.cfi_jt', 'mhi_arch_esoc_ops_mdm_error$017a381a7ab6d34ff4daeb2f184c5672.cfi_jt', 'mhi_arch_esoc_ops_power_off$017a381a7ab6d34ff4daeb2f184c5672.cfi_jt', 'mhi_arch_esoc_ops_power_on$017a381a7ab6d34ff4daeb2f184c5672.cfi_jt']
+  [pos 133] mhi_dev_dtr                      peer=['mhi_dtr_probe$90792509ddb502df4b0933820cd9d7b8', 'mhi_prepare_for_transfer']
+  [pos 134] mhi_dev_uci                      peer=['mhi_uci_probe$a189eb64f9c5a61c6ba6b5239a5e9cfc']
+  [pos 135] mhi_dev_netdev                   peer=['mhi_get_free_desc_count', 'mhi_netdev_alloc_thread$8c1b39a14705c1362dc6cdd1d2821d6c.cfi_jt', 'mhi_netdev_probe$8c1b39a14705c1362dc6cdd1d2821d6c', 'mhi_prepare_for_transfer']
+  [pos 154] qcom_cpuss_sleep_stats           peer=['qcom_scm_io_readl']
+  [pos 169] qseecom_mod                      peer=['icc_put', 'icc_set_bw', 'qcom_scm_qseecom_call']
+  [pos 173] smp2p_sleepstate                 peer=['smp2p_sleepstate_handler$835a4498e5ea78c0e09ecbebc9fc5a14.cfi_jt', 'smp2p_sleepstate_probe$835a4498e5ea78c0e09ecbebc9fc5a14']
+  [pos 175] glink_pkt                        peer=['glink_pkt_probe$4e8b0154c58fc8baa75c3124f9a25b1c', 'glink_pkt_release_device$4e8b0154c58fc8baa75c3124f9a25b1c.cfi_jt', 'glink_pkt_rpdev_cb$4e8b0154c58fc8baa75c3124f9a25b1c.cfi_jt', 'glink_pkt_rpdev_probe$4e8b0154c58fc8baa75c3124f9a25b1c', 'glink_pkt_rpdev_probe$4e8b0154c58fc8baa75c3124f9a25b1c.cfi_jt']
+  [pos 177] glink_probe                      peer=['glink_probe$4e8b0154c58fc8baa75c3124f9a25b1c', 'glink_probe_smem_reg$4e8b0154c58fc8baa75c3124f9a25b1c', 'glink_probe_smem_reg$4e8b0154c58fc8baa75c3124f9a25b1c.cfi_jt', 'glink_probe_smem_unreg$4e8b0154c58fc8baa75c3124f9a25b1c', 'glink_probe_smem_unreg$4e8b0154c58fc8baa75c3124f9a25b1c.cfi_jt']
+  [pos 178] qti_battery_debug                peer=['pmic_glink_register_client', 'pmic_glink_unregister_client', 'pmic_glink_write']
+  [pos 179] charger_ulog_glink               peer=['pmic_glink_register_client', 'pmic_glink_unregister_client']
+  [pos 181] qcom_spss                        peer=['glink_spss_subdev_start$f3b18f44389f6964d682bd8fb0ebac16.cfi_jt', 'glink_spss_subdev_stop$f3b18f44389f6964d682bd8fb0ebac16.cfi_jt', 'glink_spss_subdev_unprepare$f3b18f44389f6964d682bd8fb0ebac16.cfi_jt', 'qcom_scm_is_available', 'rproc_add']
+  [pos 182] spss_utils                       peer=['rproc_get_by_phandle', 'rproc_put', 'spss_probe$4e8b0154c58fc8baa75c3124f9a25b1c', 'spss_utils_rproc_callback$4e8b0154c58fc8baa75c3124f9a25b1c', 'spss_utils_rproc_callback$4e8b0154c58fc8baa75c3124f9a25b1c.cfi_jt']
+  [pos 183] spcom                            peer=['spcom_probe$087ce42fa5e2d9695ad75cdac8988d03', 'spcom_rpdev_probe$087ce42fa5e2d9695ad75cdac8988d03']
+  [pos 184] cdsprm                           peer=['rpmsg_send']
+  [pos 194] icnss2                           peer=['qmi_add_lookup', 'qmi_handle_init', 'qmi_send_request', 'qmi_txn_cancel', 'qmi_txn_init']
+  [pos 201] qdss_bridge                      peer=['mhi_read_done_work_fn$1230218ac825476707fa02a509da176f.cfi_jt', 'mhi_read_work_fn$1230218ac825476707fa02a509da176f.cfi_jt']
+  [pos 210] msm_rng                          peer=['icc_put']
+  [pos 222] spmi_glink_debug                 peer=['pmic_glink_register_client', 'pmic_glink_unregister_client']
+  [pos 224] cnss2                            peer=['icc_put', 'mhi_alloc_controller', 'mhi_controller_set_bw_scale_cb', 'mhi_free_controller', 'mhi_register_controller']
+  [pos 232] phy_msm_snps_eusb2               peer=['qcom_scm_io_writel']
+  [pos 253] qti_battery_charger              peer=['pmic_glink_register_client', 'pmic_glink_unregister_client']
+  [pos 256] qti_qmi_sensor_v2                peer=['qmi_add_lookup', 'qmi_handle_init', 'qmi_sens_device_probe$350366888c9727d19137fadcb5bb7281', 'qmi_sensor_pm_notify$350366888c9727d19137fadcb5bb7281', 'qmi_ts_svc_arrive$350366888c9727d19137fadcb5bb7281.cfi_jt']
+  [pos 257] qti_qmi_cdev                     peer=['qmi_add_lookup', 'qmi_device_probe$4e8b0154c58fc8baa75c3124f9a25b1c', 'qmi_handle_init', 'qmi_tmd_svc_arrive$4e8b0154c58fc8baa75c3124f9a25b1c.cfi_jt']
+  [pos 265] ddr_cdev                         peer=['icc_put', 'icc_set_bw']
+  [pos 270] slimbus                          peer=['slim_device_probe$4020ef1babf190634992950ef4117f2b']
+  [pos 271] bt_fm_slim                       peer=['slim_get_logical_addr', 'slim_readb']
+  [pos 275] sdhci_msm                        peer=['icc_put', 'qcom_scm_ice_available']
+  [pos 282] tz_log                           peer=['qcom_scm_get_tz_feat_id_version', 'qcom_scm_get_tz_log_feat_id', 'qcom_scm_query_encrypted_log_feature', 'qcom_scm_register_qsee_log_buf']
+  [pos 284] qcedev_mod                       peer=['icc_put', 'icc_set_bw']
+  [pos 285] ep_pcie_drv                      peer=['icc_put', 'icc_set_bw']
+  [pos 286] mhi_dev_net                      peer=['mhi_dev_net_event_notifier$d74e1255c1a3c468b9cdafe541bcd31e.cfi_jt', 'mhi_dev_net_interface_init', 'mhi_dev_net_probe$d74e1255c1a3c468b9cdafe541bcd31e', 'mhi_dev_net_process_queue_packets$d74e1255c1a3c468b9cdafe541bcd31e.cfi_jt', 'mhi_dev_net_state_cb$d74e1255c1a3c468b9cdafe541bcd31e.cfi_jt']
+  [pos 287] mhi_dev_drv                      peer=['mhi_dev_enable$2aaaee32cdbd8d6ab52d31ae502b3f6a.cfi_jt', 'mhi_dev_isr$2aaaee32cdbd8d6ab52d31ae502b3f6a.cfi_jt', 'mhi_dev_mmio_clear_interrupts', 'mhi_dev_mmio_get_mhi_state', 'mhi_dev_mmio_init']
+  [pos 290] qcom_q6v5_pas                    peer=['qcom_scm_is_available', 'rproc_add', 'rproc_alloc', 'rproc_coredump_set_elf_info', 'rproc_free']
+  [pos 295] qnoc_parrot                      peer=['icc_link_create', 'icc_node_add', 'icc_node_create', 'icc_node_del', 'icc_node_destroy']
+  [pos 303] slim_qcom_ngd_ctrl               peer=['pdr_add_lookup', 'pdr_handle_alloc', 'pdr_handle_release', 'qmi_add_lookup', 'qmi_handle_init']
+  [pos 315] coresight_tpdm                   peer=['qcom_scm_get_sec_dump_state']
+  [pos 317] coresight_remote_etm             peer=['qmi_add_lookup', 'qmi_handle_init', 'qmi_handle_release']
+  [pos 325] snd_usb_audio_qmi                peer=['qmi_add_server', 'qmi_handle_init', 'qmi_handle_release']
+  [pos 326] qrtr_smd                         peer=['qcom_glink_is_wakeup', 'qcom_smd_qrtr_callback$4e8b0154c58fc8baa75c3124f9a25b1c', 'qcom_smd_qrtr_probe$4e8b0154c58fc8baa75c3124f9a25b1c', 'qcom_smd_qrtr_send$4e8b0154c58fc8baa75c3124f9a25b1c.cfi_jt']
+  [pos 327] qrtr_mhi                         peer=['mhi_prepare_for_transfer']
+
+written /home/user/nx679j-stock/experiments/20260917-init-v8/module-risk.json
+
+real	0m4,587s
+user	0m3,746s
+sys	0m0,747s

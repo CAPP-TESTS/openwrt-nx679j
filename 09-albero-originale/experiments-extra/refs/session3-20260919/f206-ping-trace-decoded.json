@@ -1,0 +1,2 @@
+{"caller_offset": "0x5a818", "destination": 0, "line": 2, "mask": 0, "opcode": 0, "packet_length": 0, "path": "WAN", "pointer": "0xffffff8799c16600", "raw32": "00**************************************************************", "source": 0, "timestamp": "2930.683119"}
+{"summary": {"opcode_zero": 1, "paths": {"LAN": 0, "UNKNOWN": 0, "WAN": 1}, "records": 1}}

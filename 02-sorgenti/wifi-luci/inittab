@@ -1,0 +1,3 @@
+::sysinit:/bin/sh /etc/init.d/rcS S boot
+::shutdown:/bin/sh /etc/init.d/rcS K shutdown
+::ctrlaltdel:/bin/sh /etc/init.d/rcS K shutdown

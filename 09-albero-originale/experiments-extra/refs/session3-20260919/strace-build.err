@@ -1,0 +1,5 @@
+aarch64-linux-gnu-ar: `u' modifier ignored since `D' is the default (see `U')
+/usr/aarch64-linux-gnu/bin/ld: strace-strace.o: in function `exec_or_die':
+strace.c:(.text+0xfc8): warning: Using 'initgroups' in statically linked applications requires at runtime the shared libraries from the glibc version used for linking
+/usr/aarch64-linux-gnu/bin/ld: strace-strace.o: in function `init':
+strace.c:(.text+0x32e4): warning: Using 'getpwnam' in statically linked applications requires at runtime the shared libraries from the glibc version used for linking

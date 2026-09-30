@@ -1,0 +1,80 @@
+[PASS] image exists and hash matches manifest: 50020352 bytes sha256=273fd8be271b1389...
+[PASS] image fits the 96 MiB boot partition: 50020352 < 100663296
+[PASS] magic ANDROID!: b'ANDROID!'
+[PASS] header_version == 4: 4
+[PASS] header_size == 1584 (BOOT_IMAGE_HEADER_V4_SIZE): 1584
+[PASS] os_version == 12.0.0 / 2022-02: 12.0.0 2022-02
+[PASS] signature_size == 0 (unsigned): 0
+[PASS] cmdline byte-identical to v5: 725 chars, identical=True
+[PASS] manifest cmdline equals the image cmdline field: ok
+[PASS] kernel_size / ramdisk_size are the manifest values: kernel 49108324 ramdisk 901952
+[PASS] kernel sha == manifest: f0aa949c95d14213...
+[PASS] ramdisk sha == manifest: 8378e9a3398f55bf...
+[PASS] kernel payload is byte-identical to the stock boot_a readback: 49108324 bytes, identical to readback
+[PASS] ramdisk is gzip: 1f8b
+[PASS] gzip payload size == manifest cpio bytes: 3237608
+[PASS] cpio entry count == manifest: 65 entries
+[PASS] device node dev/console mode/major/minor: mode=0o20600 5:1
+[PASS] device node dev/kmsg mode/major/minor: mode=0o20644 1:11
+[PASS] device node dev/null mode/major/minor: mode=0o20666 1:3
+[PASS] device node dev/pmsg0 mode/major/minor: mode=0o20222 252:0
+[PASS] device node dev/tty mode/major/minor: mode=0o20666 5:0
+[PASS] device node dev/zero mode/major/minor: mode=0o20666 1:5
+[PASS] exactly 10 directories: 10
+[PASS] exactly 6 device nodes: 6
+[PASS] bundled .ko count == manifest: 47 vs 47
+[PASS] every bundled .ko sha256 == manifest (from the device vendor ramdisk): []
+[PASS] every bundled .ko is byte-identical to the extracted device copy: 47
+[PASS] softdep provider bundled: qcom_hwspinlock.ko: lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/qcom_hwspinlock.ko
+[PASS] softdep provider bundled: phy-generic.ko: lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/phy-generic.ko
+[PASS] softdep provider bundled: eud.ko: lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/eud.ko
+[PASS] exactly one regular file besides /init and the modules: ['init', 'lib/modules/fallback.order']
+[PASS] no .ko outside the bundled module directory: ['lib/modules']
+[PASS] absent: sbin/init: ok
+[PASS] absent: bin/busybox: ok
+[PASS] absent: bin/sh: ok
+[PASS] absent: sbin/kmodloader: ok
+[PASS] absent: sbin/insmod: ok
+[PASS] absent: lib/libc.so: ok
+[PASS] absent: lib/ld-musl-aarch64.so.1: ok
+[PASS] absent: bin/busybox.nosuid: ok
+[PASS] absent: init.sh: ok
+[PASS] module dir holds exactly the bundled .ko files: 47 files vs 47 modules
+[PASS] fallback.order present: lib/modules/fallback.order
+[PASS] fallback.order lists the whole closure exactly once: 47 names
+[PASS] fallback order: qcom_hwspinlock before smem (device softdep): 6 < 7
+[PASS] fallback order: phy-generic.ko before dwc3-msm (device softdep): 32 < 36
+[PASS] fallback order: eud.ko before dwc3-msm (device softdep): 35 < 36
+[PASS] manifest records the softdep lines the v5 list ignored: ['softdep soc_sleep_stats pre: smem', 'softdep smem pre: qcom_hwspinlock', 'softdep dwc3_msm pre: phy-generic phy-msm-snps-hs phy-msm-ssusb-qmp eud']
+[PASS] manifest closure adds the softdep providers over the v5 seed: ['eud', 'hwkm', 'ns', 'phy_generic', 'qcom_hwspinlock', 'qrtr', 'tmecom_intf']
+[PASS] /init mode 0755: 0o100755
+[PASS] /init sha == manifest: a2c901f0375e9405...
+[PASS] /init is not a script (no #!): 7f454c46
+[PASS] /init is an ELF: 7f454c46
+[PASS] /init is statically linked: ELF 64-bit LSB executable, ARM aarch64, version 1 (SYSV), statically linked, BuildID[sha1]=56445e235a83a7d3bc7577cfc7790f472376f59e, for GNU/Linux 3.7.0, stripped
+[PASS] /init has no PT_INTERP: no INTERP segment
+[PASS] /init has no DT_NEEDED: no dynamic section
+[PASS] /init is AArch64 EXEC: AArch64 EXEC (Executable file)
+[PASS] /init binary sha == inputs.json: a2c901f0375e9405...
+[PASS] no exit()/_exit()/abort() in the init source: none
+[PASS] /init source reads modules.dep (hard deps): modules.dep
+[PASS] /init source reads modules.softdep: modules.softdep
+[PASS] /init source handles softdep pre: providers: pre:
+[PASS] /init source reads modules.load.recovery: modules.load.recovery
+[PASS] /init source reads modules.load first: modules.load
+[PASS] /init source has the fallback order path: fallback.order
+[PASS] /init source loads with finit_module(2): finit_module
+[PASS] /init source has an init_module(2) fallback: init_module
+[PASS] /init source knows ufs_qcom is a goal: ufs_qcom
+[PASS] /init source attempts the gadget when dwc3_msm is in: dwc3_msm
+[PASS] /init source resolves the pmsg major at runtime: /proc/devices
+[PASS] goal set includes the softdep providers: GOALS[] in candidate-init-v6.c
+[PASS] source sha == inputs.json: 495886c2e0f8fefa
+[PASS] main ends in an infinite loop, no return-from-main path: both loops present in main()
+[PASS] init never invokes a shell (no "/bin/sh"): ok
+[PASS] still alive after 12 s in qemu-aarch64 (timeout had to kill it): rc=124 (124 == killed while running)
+[PASS] logged "init v6 entered": ['nx679j-v6: init v6 entered pid=2695948 channels kmsg=-13 console=-13']
+[PASS] logged at least one retry cycle: ['nx679j-v6: cycle=1 uptime=265885.06 6190602.21 logs=19']
+[PASS] module chain runs before the gadget attempt (new stage order): modules first, gadget after
+[PASS] degradation is graceful when neither device metadata nor the fallback list exist (user mode has no /lib/modules/modules.dep): no metadata -> no crash, stage3 still runs
+[PASS] no channel/dependency failure aborts the program (it keeps cycling): 42 log lines in 12 s

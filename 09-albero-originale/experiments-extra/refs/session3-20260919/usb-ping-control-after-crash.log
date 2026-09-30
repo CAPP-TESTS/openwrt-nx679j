@@ -1,0 +1,12 @@
+111.00 608.08
+CHECKPOINT_DURABLE index=17 label=before_usb_ping
+PING 10.0.0.2 (10.0.0.2): 56 data bytes
+64 bytes from 10.0.0.2: seq=0 ttl=64 time=2.064 ms
+
+--- 10.0.0.2 ping statistics ---
+1 packets transmitted, 1 packets received, 0% packet loss
+round-trip min/avg/max = 2.064/2.064/2.064 ms
+PING_EXIT=0
+CHECKPOINT_DURABLE index=18 label=after_usb_ping
+c8bf2d2d-3185-4fe4-be41-3591387b026f
+offline

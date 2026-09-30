@@ -1,0 +1,8 @@
+0cd94d5627501f3c65c94542093ad18b1ec6c1c215dc6a7ecab4f941057e8364  /dev/block/by-name/boot_a
+b099bf136895ad6ce3ace744a86d2f6beded63560cd295e2713f1dec1fe0fb51  /dev/block/by-name/boot_b
+6db6d4d76059a9ef3a6bcc904911aac53a20044224a675014a6396a8f5d9d168  /dev/block/by-name/vendor_boot_a
+6db6d4d76059a9ef3a6bcc904911aac53a20044224a675014a6396a8f5d9d168  /dev/block/by-name/vendor_boot_b
+9ee95463abce517d140eae3c5c892c2b38fd1344d6fb0a6e2da2af76a86de6a1  /dev/block/by-name/dtbo_a
+9ee95463abce517d140eae3c5c892c2b38fd1344d6fb0a6e2da2af76a86de6a1  /dev/block/by-name/dtbo_b
+cc0de687c935714a9b6de4bf3492391474e640d2e23f752f6c626f6413b07e22  /dev/block/by-name/vbmeta_a
+cc0de687c935714a9b6de4bf3492391474e640d2e23f752f6c626f6413b07e22  /dev/block/by-name/vbmeta_b

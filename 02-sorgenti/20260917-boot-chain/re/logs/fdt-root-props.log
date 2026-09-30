@@ -1,0 +1,14 @@
+=== work/fdt/base00.dtb (431264 B)
+/dts-v1/;
+/ {
+	model = "Qualcomm Technologies, Inc. Cape LTE Only SoC";
+	compatible = "qcom,cape-v2";
+	qcom,msm-id = <0x212 0x10000>;
+	qcom,board-id = <0x00 0x00>;
+=== work/fdt/base01.dtb (431252 B)
+/dts-v1/;
+/ {
+	model = "Qualcomm Technologies, Inc. Cape SoC";
+	compatible = "qcom,cape";
+	qcom,msm-id = <0x212 0x10000>;
+	qcom,board-id = <0x00 0x00>;

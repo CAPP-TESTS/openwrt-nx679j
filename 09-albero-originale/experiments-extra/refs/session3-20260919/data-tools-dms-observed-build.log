@@ -1,0 +1,6 @@
+PASS: QMI identity/result/TLVs, IPv4, transactions, DPM/WDA, servreg
+PASS: stock rmnet layouts, plain QMAP flags, bounded mux/name
+PASS: nested rmnet netlink attributes, flags, mux and bounds
+245e521d7e40eb00bf73b3f2fb9b3c8945521d54820cc2dc341c8d53d181ada0  /home/user/nx679j-stock/experiments/qrtr/qmi-qrtr-dpm
+f2790e70bec4a8255472bbc10a685d25ec69c845172b054e37bea285d9d60556  /home/user/nx679j-stock/experiments/qrtr/rmnet-config
+ac2003b7dc03b191c6faea42f432120ae2ff266cece5f207329a23600dcb10af  /home/user/nx679j-stock/experiments/qrtr/rmnet-link

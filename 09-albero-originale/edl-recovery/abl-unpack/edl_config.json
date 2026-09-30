@@ -1,0 +1,1 @@
+{"supported_functions": ["program", "read", "nop", "patch", "configure", "setbootablestoragedrive", "erase", "power", "firmwarewrite", "getstorageinfo", "benchmark", "emmc", "ufs", "fixgpt", "getsha256digest"], "programmer": "/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf", "serial": 0}

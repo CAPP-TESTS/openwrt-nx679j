@@ -1,0 +1,17 @@
+debugfs /sys/kernel/debug debugfs rw,seclabel,relatime 0 0
+-r--r--r--  1 root root 0 1970-01-01 01:00 /sys/kernel/debug/gpio
+-r--r--r--  1 root root 0 1970-01-01 01:00 /sys/kernel/debug/regulator/regulator_summary
+
+/sys/kernel/debug/pinctrl:
+total 0
+drwxr-xr-x 2 root root 0 1970-01-02 05:43 c42d000.qcom,spmi:qcom,pm8350@1:pinctrl@8800
+drwxr-xr-x 2 root root 0 1970-01-02 05:43 c42d000.qcom,spmi:qcom,pm8350b@3:pinctrl@8800
+drwxr-xr-x 2 root root 0 1970-01-02 05:43 c42d000.qcom,spmi:qcom,pm8350c@2:pinctrl@8800
+drwxr-xr-x 2 root root 0 1970-01-02 05:43 c42d000.qcom,spmi:qcom,pm8450@7:pinctrl@8800
+drwxr-xr-x 2 root root 0 1970-01-02 05:43 c42d000.qcom,spmi:qcom,pmk8350@0:pinctrl@b000
+drwxr-xr-x 2 root root 0 1970-01-02 05:43 c42d000.qcom,spmi:qcom,pmr735a@4:pinctrl@8800
+drwxr-xr-x 2 root root 0 1970-01-01 01:00 f000000.pinctrl
+-r--r--r-- 1 root root 0 1970-01-01 01:00 pinctrl-devices
+-r--r--r-- 1 root root 0 1970-01-01 01:00 pinctrl-handles
+-r--r--r-- 1 root root 0 1970-01-01 01:00 pinctrl-maps
+drwxr-xr-x 2 root root 0 2026-07-11 13:42 soc:spf_core_platform:lpi_pinctrl@3440000

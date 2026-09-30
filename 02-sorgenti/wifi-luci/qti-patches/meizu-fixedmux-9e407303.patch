@@ -1,0 +1,248 @@
+From 9e407303e0ef22a2e8a40702262f7d31d64b3b78 Mon Sep 17 00:00:00 2001
+From: athbe <prayer@athbe.cn>
+Date: Mon, 20 Jul 2026 10:42:39 +0800
+Subject: [PATCH] qmi: allow fixed WDS mux binding on the main interface
+
+Signed-off-by: athbe <prayer@athbe.cn>
+---
+ docs/reference/api/ModemManager-sections.txt |  1 +
+ include/ModemManager-tags.h                  | 16 ++++
+ src/mm-bearer-qmi.c                          |  1 +
+ src/mm-port-qmi.c                            | 23 +++++
+ src/mm-port-qmi.h                            |  1 +
+ src/tests/meson.build                        |  5 +-
+ src/tests/test-port-qmi.c                    | 88 ++++++++++++++++++++
+ 7 files changed, 134 insertions(+), 1 deletion(-)
+ create mode 100644 src/tests/test-port-qmi.c
+
+diff --git a/docs/reference/api/ModemManager-sections.txt b/docs/reference/api/ModemManager-sections.txt
+index 94bfc4587..79000d14d 100644
+--- a/docs/reference/api/ModemManager-sections.txt
++++ b/docs/reference/api/ModemManager-sections.txt
+@@ -230,6 +230,7 @@ ID_MM_TTY_FLOW_CONTROL
+ ID_MM_REQUIRED
+ ID_MM_MAX_MULTIPLEXED_LINKS
+ ID_MM_INITIAL_QMAP_MUX_ID
++ID_MM_QMI_FIXED_MUX_ID
+ <SUBSECTION Deprecated>
+ ID_MM_TTY_BLACKLIST
+ ID_MM_TTY_MANUAL_SCAN_ONLY
+diff --git a/include/ModemManager-tags.h b/include/ModemManager-tags.h
+index 59c31f124..f949c67db 100644
+--- a/include/ModemManager-tags.h
++++ b/include/ModemManager-tags.h
+@@ -337,6 +337,22 @@
+  */
+ #define ID_MM_INITIAL_QMAP_MUX_ID "ID_MM_INITIAL_QMAP_MUX_ID"
+ 
++/**
++ * ID_MM_QMI_FIXED_MUX_ID:
++ *
++ * This is a device-specific tag that specifies the QMI WDS mux id that must be
++ * used when binding a client to the main network interface, without creating a
++ * multiplexed QMAP link.
++ *
++ * An integer value greater or equal than 1 and smaller than 255.
++ *
++ * If a multiplexed QMAP link is created, the mux id assigned to that link takes
++ * precedence over this setting.
++ *
++ * Since: 1.26
++ */
++#define ID_MM_QMI_FIXED_MUX_ID "ID_MM_QMI_FIXED_MUX_ID"
++
+ /**
+  * ID_MM_AT_NETWORK_TIME_BROKEN:
+  *
+diff --git a/src/mm-bearer-qmi.c b/src/mm-bearer-qmi.c
+index 64d983ebc..09ce50c85 100644
+--- a/src/mm-bearer-qmi.c
++++ b/src/mm-bearer-qmi.c
+@@ -2582,6 +2582,7 @@ _connect (MMBaseBearer        *_self,
+         g_object_unref (task);
+         return;
+     }
++    ctx->mux_id = mm_port_qmi_get_fixed_mux_id (ctx->qmi);
+     ctx->dap = mm_port_qmi_get_data_aggregation_protocol (ctx->qmi);
+ 
+     /* load all settings from bearer */
+diff --git a/src/mm-port-qmi.c b/src/mm-port-qmi.c
+index d4c4d64d8..577d852aa 100644
+--- a/src/mm-port-qmi.c
++++ b/src/mm-port-qmi.c
+@@ -21,6 +21,7 @@
+ #include <libqmi-glib.h>
+ 
+ #include <ModemManager.h>
++#include <ModemManager-tags.h>
+ #include <mm-errors-types.h>
+ 
+ #include "mm-port-qmi.h"
+@@ -61,6 +62,7 @@ struct _MMPortQmiPrivate {
+     gchar     *net_sysfs_path;
+     guint      net_preallocated_links_requested;
+     guint      net_initial_mux_id;
++    guint      net_fixed_mux_id;
+ #if defined WITH_QRTR
+     QrtrNode  *node;
+ #endif
+@@ -2736,6 +2738,7 @@ mm_port_qmi_set_net_details (MMPortQmi *self,
+                              MMPort    *first_net)
+ {
+     MMKernelDevice *first_net_dev;
++    const gchar    *fixed_mux_id_str;
+ 
+     first_net_dev = mm_port_peek_kernel_device (first_net);
+ 
+@@ -2753,9 +2756,29 @@ mm_port_qmi_set_net_details (MMPortQmi *self,
+     g_assert (!self->priv->net_initial_mux_id);
+     self->priv->net_initial_mux_id = mm_kernel_device_get_global_property_as_int (first_net_dev, "ID_MM_INITIAL_QMAP_MUX_ID");
+ 
++    fixed_mux_id_str = mm_kernel_device_get_global_property (first_net_dev, ID_MM_QMI_FIXED_MUX_ID);
++    if (fixed_mux_id_str) {
++        guint fixed_mux_id;
++
++        if (mm_get_uint_from_str (fixed_mux_id_str, &fixed_mux_id) &&
++            fixed_mux_id > QMI_DEVICE_MUX_ID_UNBOUND &&
++            fixed_mux_id < G_MAXUINT8)
++            self->priv->net_fixed_mux_id = fixed_mux_id;
++        else
++            mm_obj_warn (self, "invalid %s value '%s', ignoring it", ID_MM_QMI_FIXED_MUX_ID, fixed_mux_id_str);
++    }
++
+     initialize_endpoint_info (self);
+ }
+ 
++guint
++mm_port_qmi_get_fixed_mux_id (MMPortQmi *self)
++{
++    g_return_val_if_fail (MM_IS_PORT_QMI (self), QMI_DEVICE_MUX_ID_UNBOUND);
++
++    return self->priv->net_fixed_mux_id;
++}
++
+ /*****************************************************************************/
+ 
+ typedef struct {
+diff --git a/src/mm-port-qmi.h b/src/mm-port-qmi.h
+index 148067fa7..59183a5a3 100644
+--- a/src/mm-port-qmi.h
++++ b/src/mm-port-qmi.h
+@@ -90,6 +90,7 @@ gboolean   mm_port_qmi_close_finish (MMPortQmi            *self,
+ 
+ void       mm_port_qmi_set_net_details (MMPortQmi *self,
+                                         MMPort    *first_net);
++guint      mm_port_qmi_get_fixed_mux_id (MMPortQmi *self);
+ 
+ typedef enum {
+     MM_PORT_QMI_FLAG_DEFAULT  = 0,
+diff --git a/src/tests/meson.build b/src/tests/meson.build
+index 3804fe632..375ee3e9a 100644
+--- a/src/tests/meson.build
++++ b/src/tests/meson.build
+@@ -28,7 +28,10 @@ deps = [
+ test_units += {'qcdm-serial-port': deps}
+ 
+ if enable_qmi
+-  test_units += {'modem-helpers-qmi': libkerneldevice_dep}
++  test_units += {
++    'modem-helpers-qmi': libkerneldevice_dep,
++    'port-qmi': libport_dep,
++  }
+ endif
+ 
+ if enable_mbim
+diff --git a/src/tests/test-port-qmi.c b/src/tests/test-port-qmi.c
+new file mode 100644
+index 000000000..42517c18e
+--- /dev/null
++++ b/src/tests/test-port-qmi.c
+@@ -0,0 +1,88 @@
++/* -*- Mode: C; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- */
++/*
++ * This program is free software; you can redistribute it and/or modify
++ * it under the terms of the GNU General Public License as published by
++ * the Free Software Foundation; either version 2 of the License, or
++ * (at your option) any later version.
++ *
++ * This program is distributed in the hope that it will be useful,
++ * but WITHOUT ANY WARRANTY; without even the implied warranty of
++ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
++ * GNU General Public License for more details.
++ */
++
++#include <glib.h>
++
++#include <ModemManager.h>
++#include <ModemManager-tags.h>
++#define _LIBMM_INSIDE_MM
++#include <libmm-glib.h>
++
++#include "mm-kernel-device-generic.h"
++#include "mm-log-test.h"
++#include "mm-port-net.h"
++#include "mm-port-qmi.h"
++
++typedef struct {
++    const gchar *value;
++    guint        expected;
++} FixedMuxIdTest;
++
++static const FixedMuxIdTest fixed_mux_id_tests[] = {
++    { NULL,      QMI_DEVICE_MUX_ID_UNBOUND },
++    { "0",       QMI_DEVICE_MUX_ID_UNBOUND },
++    { "1",       1 },
++    { "254",     254 },
++    { "255",     QMI_DEVICE_MUX_ID_UNBOUND },
++    { "-1",      QMI_DEVICE_MUX_ID_UNBOUND },
++    { "invalid", QMI_DEVICE_MUX_ID_UNBOUND },
++};
++
++static void
++test_fixed_mux_id (void)
++{
++    guint i;
++
++    for (i = 0; i < G_N_ELEMENTS (fixed_mux_id_tests); i++) {
++        g_autoptr(MMKernelDevice)          kernel_device = NULL;
++        g_autoptr(MMKernelEventProperties) properties = NULL;
++        g_autoptr(MMPortNet)               net = NULL;
++        g_autoptr(MMPortQmi)               qmi = NULL;
++        g_autoptr(GError)                  error = NULL;
++
++        properties = mm_kernel_event_properties_new ();
++        mm_kernel_event_properties_set_action (properties, "add");
++        mm_kernel_event_properties_set_subsystem (properties, "virtual");
++        mm_kernel_event_properties_set_name (properties, "test-net");
++
++        kernel_device = mm_kernel_device_generic_new_with_rules (properties, NULL, &error);
++        g_assert_no_error (error);
++        g_assert (kernel_device);
++
++        if (fixed_mux_id_tests[i].value)
++            g_object_set_data_full (G_OBJECT (kernel_device),
++                                    ID_MM_QMI_FIXED_MUX_ID,
++                                    g_strdup (fixed_mux_id_tests[i].value),
++                                    g_free);
++
++        net = mm_port_net_new ("test-net");
++        g_object_set (net,
++                      MM_PORT_KERNEL_DEVICE, kernel_device,
++                      NULL);
++
++        qmi = mm_port_qmi_new ("test-qmi", MM_PORT_SUBSYS_USBMISC);
++        mm_port_qmi_set_net_details (qmi, MM_PORT (net));
++
++        g_assert_cmpuint (mm_port_qmi_get_fixed_mux_id (qmi), ==, fixed_mux_id_tests[i].expected);
++    }
++}
++
++int
++main (int argc, char **argv)
++{
++    g_test_init (&argc, &argv, NULL);
++
++    g_test_add_func ("/MM/port-qmi/fixed-mux-id", test_fixed_mux_id);
++
++    return g_test_run ();
++}

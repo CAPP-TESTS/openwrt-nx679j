@@ -1,0 +1,6 @@
+{
+  "lun": "sde",
+  "backup_lba": 1572863,
+  "sec_part_lba": 1572860,
+  "entry_lbAs": 3
+}

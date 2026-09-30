@@ -1,0 +1,131 @@
+# 1249 events from android-trace-qcril.log
+## sendto (node,port,msgid) counts:
+   node=1 port=4294967294 msgid=0x0100 x24
+   node=1 port=4294967294 msgid=0x0900 x20
+   node=0 port=69 msgid=0x0003 x17
+   node=1 port=4294967294 msgid=0x2400 x15
+   node=1 port=4294967294 msgid=0xe300 x10
+   node=1 port=4294967294 msgid=0x1200 x10
+   node=1 port=4294967294 msgid=0x2a00 x10
+   node=1 port=4294967294 msgid=0x0300 x10
+   node=1 port=4294967294 msgid=0x0c00 x9
+   node=1 port=4294967294 msgid=0x2100 x9
+   node=1 port=4294967294 msgid=0x4400 x9
+   node=1 port=4294967294 msgid=0x0700 x9
+   node=0 port=74 msgid=0x002b x9
+   node=1 port=4294967294 msgid=0x0500 x8
+   node=0 port=74 msgid=0x0003 x8
+   node=0 port=93 msgid=0x0028 x8
+   node=0 port=86 msgid=0x0038 x8
+   node=1 port=4294967294 msgid=0x4900 x7
+   node=0 port=93 msgid=0x0023 x7
+   node=1 port=4294967294 msgid=0x3200 x6
+   node=1 port=4294967294 msgid=0x0b00 x6
+   node=0 port=86 msgid=0x0065 x6
+   node=1 port=4294967294 msgid=0x4700 x6
+   node=1 port=4294967294 msgid=0x0a00 x5
+   node=0 port=73 msgid=0x003b x5
+   node=1 port=4294967294 msgid=0x1800 x4
+   node=0 port=69 msgid=0x0044 x4
+   node=0 port=74 msgid=0x00af x4
+   node=0 port=74 msgid=0x002a x4
+   node=0 port=73 msgid=0x002f x4
+   node=0 port=93 msgid=0x0022 x4
+   node=0 port=86 msgid=0x004f x4
+   node=0 port=73 msgid=0x0020 x4
+   node=0 port=73 msgid=0x0042 x4
+   node=0 port=73 msgid=0x002a x3
+   node=0 port=100 msgid=0x001f x3
+   node=0 port=69 msgid=0x00ac x2
+   node=0 port=69 msgid=0x0031 x2
+   node=0 port=69 msgid=0x0043 x2
+   node=0 port=74 msgid=0x00a2 x2
+   node=0 port=68 msgid=0x001a x2
+   node=0 port=71 msgid=0x0001 x2
+   node=0 port=94 msgid=0x0029 x2
+   node=0 port=74 msgid=0x00a7 x2
+   node=0 port=98 msgid=0x0033 x2
+   node=0 port=73 msgid=0x0076 x2
+   node=0 port=73 msgid=0x002e x2
+   node=0 port=73 msgid=0x0047 x2
+   node=0 port=93 msgid=0x0020 x2
+   node=0 port=73 msgid=0x003a x2
+   node=0 port=90 msgid=0x004c x2
+   node=0 port=100 msgid=0x0098 x2
+   node=0 port=33 msgid=0x0020 x2
+   node=0 port=86 msgid=0x0027 x2
+   node=0 port=97 msgid=0x0027 x2
+   node=0 port=86 msgid=0x0069 x2
+   node=0 port=86 msgid=0x0068 x2
+   node=0 port=97 msgid=0x0003 x2
+   node=0 port=86 msgid=0x0078 x2
+   node=0 port=86 msgid=0x0025 x2
+   node=0 port=86 msgid=0x0047 x2
+   node=0 port=86 msgid=0x006d x2
+   node=0 port=74 msgid=0x0100 x2
+   node=0 port=94 msgid=0x002b x2
+   node=0 port=70 msgid=0x0045 x2
+   node=0 port=98 msgid=0x0022 x2
+   node=0 port=70 msgid=0x00ac x2
+   node=0 port=70 msgid=0x0031 x2
+   node=0 port=70 msgid=0x0043 x2
+   node=0 port=68 msgid=0x0001 x2
+   node=0 port=70 msgid=0x006c x2
+   node=0 port=69 msgid=0x006c x1
+   node=0 port=69 msgid=0x0002 x1
+   node=5 port=14 msgid=0x0020 x1
+   node=0 port=71 msgid=0x002e x1
+   node=0 port=93 msgid=0x0027 x1
+   node=0 port=73 msgid=0x0039 x1
+   node=0 port=70 msgid=0x004d x1
+   node=0 port=73 msgid=0x0024 x1
+   node=0 port=69 msgid=0x001e x1
+   node=0 port=69 msgid=0x0080 x1
+   node=0 port=73 msgid=0x0021 x1
+   node=0 port=65 msgid=0x0002 x1
+   node=0 port=68 msgid=0x0024 x1
+   node=0 port=73 msgid=0x003f x1
+   node=0 port=100 msgid=0x001e x1
+   node=0 port=100 msgid=0x0090 x1
+   node=0 port=90 msgid=0x0032 x1
+   node=0 port=90 msgid=0x0001 x1
+   node=0 port=90 msgid=0x0047 x1
+   node=0 port=90 msgid=0x005c x1
+   node=0 port=90 msgid=0x0048 x1
+   node=0 port=70 msgid=0x0034 x1
+   node=0 port=70 msgid=0x0002 x1
+   node=0 port=70 msgid=0x0003 x1
+   node=0 port=70 msgid=0x0075 x1
+   node=0 port=70 msgid=0x007e x1
+
+## full conversation (sendto with payload + qmi decode; responds length):
+[   1] fd=0x41 -> node=0 port=69 type=0 txn=388 msgid=0x00ac len=0 total=7 hex=
+[   2] fd=0x41 -> node=0 port=69 type=0 txn=389 msgid=0x0031 len=0 total=7 hex=
+[   3] fd=0x41 -> node=0 port=69 type=0 txn=390 msgid=0x0043 len=0 total=7 hex=
+[   4] fd=0x41 -> node=0 port=69 type=0 txn=391 msgid=0x00ac len=0 total=7 hex=
+[   5] fd=0x41 -> node=0 port=69 type=0 txn=392 msgid=0x0031 len=0 total=7 hex=
+[   6] fd=0x41 -> node=0 port=69 type=0 txn=393 msgid=0x0043 len=0 total=7 hex=
+[   7] fd=0x35 -> node=None port=None type=8 txn=0 msgid=0x0f10 len=0 total=160 hex=080000100f00****************************c80*************************************************************************************************************************************************************************************************************************************************************************************
+[   8] fd=0x22 -> node=1 port=4294967294 type=10 txn=0 msgid=0x2400 len=0 total=20 hex=0a00************************************
+[   9] fd=0x22 -> node=1 port=4294967294 type=10 txn=0 msgid=0xe300 len=0 total=20 hex=0a000000e30*****************************
+[  10] fd=0x22 -> node=1 port=4294967294 type=10 txn=0 msgid=0x0900 len=0 total=20 hex=0a00************************************
+[  11] fd=0x22 -> node=1 port=4294967294 type=10 txn=0 msgid=0x0900 len=0 total=20 hex=0a00************************************
+[  12] fd=0x22 -> node=1 port=4294967294 type=10 txn=0 msgid=0x0100 len=0 total=20 hex=0a00************************************
+[  13] fd=0x22 -> node=1 port=4294967294 type=10 txn=0 msgid=0x0900 len=0 total=20 hex=0a00************************************
+[  14] fd=0x18 -> node=0 port=69 type=0 txn=72 msgid=0x006c len=106 total=113 hex=0048006c006a00110200ffff1302000a00150200ffff1702000a0019020001001d0200ffff1f0200ffff2102000a00230200ffff25*************************c002a020003052c020028002e04000000a04**************f3204000000803f34***************c003702000305
+[  15] fd=0x18 -> node=0 port=69 type=0 txn=73 msgid=0x0002 len=4 total=11 hex=
+[  16] fd=0x22 -> node=1 port=4294967294 type=10 txn=0 msgid=0xe300 len=0 total=20 hex=0a000000e30*****************************
+[  17] fd=0x22 -> node=1 port=4294967294 type=10 txn=0 msgid=0x0100 len=0 total=20 hex=0a00************************************
+[  18] fd=0x22 -> node=1 port=4294967294 type=10 txn=0 msgid=0x4900 len=0 total=20 hex=0a00************************************
+[  19] fd=0x22 -> node=1 port=4294967294 type=10 txn=0 msgid=0x0900 len=0 total=20 hex=0a00************************************
+[  20] fd=0x22 -> node=1 port=4294967294 type=10 txn=0 msgid=0x1200 len=0 total=20 hex=0a00************************************
+Traceback (most recent call last):
+  File "/home/user/nx679j-stock/experiments/refs/parse-trace.py", line 82, in <module>
+    main(sys.argv[1])
+  File "/home/user/nx679j-stock/experiments/refs/parse-trace.py", line 71, in main
+    q = qmi(e['hex'])
+        ^^^^^^^^^^^^^
+  File "/home/user/nx679j-stock/experiments/refs/parse-trace.py", line 46, in qmi
+    b = bytes.fromhex(hexs)
+        ^^^^^^^^^^^^^^^^^^^
+ValueError: non-hexadecimal number found in fromhex() arg at position 0

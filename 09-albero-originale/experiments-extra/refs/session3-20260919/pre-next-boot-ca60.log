@@ -1,0 +1,84 @@
+boot=ca60b6b2-9f6d-4a73-bed2-fe3b1b15fe7f
+ uptime=3738.28 26049.12
+ mss=offline
+
+[ 3635.726154][T15883] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[ 3637.778453][T15884] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[ 3639.830795][T15885] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[ 3641.883140][T15886] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[ 3643.935470][T15887] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[ 3644.917038][  T240] (virq:irq_count)- 11:1902040 6:233979 2:80282 1:46939 35:8748 30:6246 301:4855 358:422 28:409 37:24 
+[ 3644.917044][  T240] (cpu:irq_count)- 0:99806 1:810 2:675 3:800 4:1047483 5:2221 6:2494 7:1129697 
+[ 3644.917049][  T240] (ipi:irq_count)- 0:46939 1:80282 2:0 3:0 4:0 5:233979 6:0 
+[ 3645.987750][T15888] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[ 3648.040089][T15889] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[ 3650.092425][T15890] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[ 3652.144766][T15891] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[ 3654.197167][T15892] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[ 3654.389035][    T7] (virq:irq_count)- 11:1906992 6:234580 2:80476 1:46987 35:8768 30:6261 301:4858 358:422 28:409 37:24 
+[ 3654.389042][    T7] (cpu:irq_count)- 0:100040 1:810 2:675 3:800 4:1050198 5:2221 6:2494 7:1132581 
+[ 3654.389047][    T7] (ipi:irq_count)- 0:46987 1:80476 2:0 3:0 4:0 5:234580 6:0 
+[ 3656.249484][T15893] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[ 3658.301818][T15894] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[ 3660.354143][T15895] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[ 3662.406457][T15896] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[ 3663.865044][    T7] (virq:irq_count)- 11:1911944 6:235182 2:80672 1:47018 35:8784 30:6273 301:4858 358:422 28:409 37:24 
+[ 3663.865051][    T7] (cpu:irq_count)- 0:100262 1:810 2:675 3:800 4:1052926 5:2221 6:2494 7:1135440 
+[ 3663.865056][    T7] (ipi:irq_count)- 0:47018 1:80672 2:0 3:0 4:0 5:235182 6:0 
+[ 3664.458815][T15897] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[ 3666.511153][T15898] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[ 3668.563503][T15899] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[ 3670.615837][T15900] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[ 3672.668187][T15901] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[ 3673.333034][T15041] (virq:irq_count)- 11:1916897 6:235783 2:80866 1:47054 35:8804 30:6288 301:4858 358:422 28:409 37:24 
+[ 3673.333039][T15041] (cpu:irq_count)- 0:100490 1:810 2:675 3:800 4:1055628 5:2221 6:2494 7:1138329 
+[ 3673.333042][T15041] (ipi:irq_count)- 0:47054 1:80866 2:0 3:0 4:0 5:235783 6:0 
+[ 3674.720513][T15902] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[ 3676.772852][T15903] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[ 3678.825242][T15904] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[ 3680.877578][T15905] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[ 3682.805036][  T240] (virq:irq_count)- 11:1921846 6:236385 2:81060 1:47095 35:8820 30:6300 301:4862 358:422 28:409 37:24 
+[ 3682.805044][  T240] (cpu:irq_count)- 0:100716 1:810 2:675 3:800 4:1058343 5:2221 6:2494 7:1141206 
+[ 3682.805049][  T240] (ipi:irq_count)- 0:47095 1:81060 2:0 3:0 4:0 5:236385 6:0 
+[ 3682.929869][T15906] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[ 3684.982167][T15907] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[ 3687.034491][T15908] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[ 3689.086834][T15909] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[ 3691.139161][T15910] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[ 3692.277038][  T240] (virq:irq_count)- 11:1926799 6:236986 2:81254 1:47140 35:8840 30:6315 301:4864 358:422 28:409 37:24 
+[ 3692.277044][  T240] (cpu:irq_count)- 0:100948 1:810 2:675 3:800 4:1061058 5:2221 6:2494 7:1144089 
+[ 3692.277047][  T240] (ipi:irq_count)- 0:47140 1:81254 2:0 3:0 4:0 5:236986 6:0 
+[ 3693.191514][T15911] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[ 3695.243844][T15912] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[ 3697.296189][T15913] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[ 3699.348515][T15914] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[ 3701.400857][T15915] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[ 3701.749037][    T7] (virq:irq_count)- 11:1931753 6:237587 2:81447 1:47178 35:8860 30:6330 301:4864 358:422 28:409 37:24 
+[ 3701.749044][    T7] (cpu:irq_count)- 0:101175 1:810 2:675 3:800 4:1063771 5:2221 6:2494 7:1146970 
+[ 3701.749047][    T7] (ipi:irq_count)- 0:47178 1:81447 2:0 3:0 4:0 5:237587 6:0 
+[ 3703.453236][T15916] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[ 3705.505575][T15917] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[ 3707.557876][T15918] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[ 3709.610196][T15919] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[ 3711.221037][  T240] (virq:irq_count)- 11:1936700 6:238190 2:81643 1:47211 35:8876 30:6342 301:4866 358:422 28:409 37:24 
+[ 3711.221042][  T240] (cpu:irq_count)- 0:101401 1:810 2:675 3:800 4:1066485 5:2221 6:2494 7:1149839 
+[ 3711.221045][  T240] (ipi:irq_count)- 0:47211 1:81643 2:0 3:0 4:0 5:238190 6:0 
+[ 3711.662520][T15920] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[ 3713.714869][T15921] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[ 3715.767202][T15922] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[ 3717.819539][T15923] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[ 3719.871864][T15924] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[ 3720.693035][T15041] (virq:irq_count)- 11:1941650 6:238791 2:81837 1:47252 35:8896 30:6357 301:4866 358:422 28:409 37:24 
+[ 3720.693040][T15041] (cpu:irq_count)- 0:101629 1:810 2:675 3:800 4:1069198 5:2221 6:2494 7:1152719 
+[ 3720.693043][T15041] (ipi:irq_count)- 0:47252 1:81837 2:0 3:0 4:0 5:238791 6:0 
+[ 3721.924209][T15925] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[ 3723.976532][T15926] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[ 3726.028881][T15927] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[ 3728.081239][T15928] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[ 3730.133590][T15929] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[ 3730.165031][T15041] (virq:irq_count)- 11:1946605 6:239393 2:82032 1:47310 35:8916 30:6372 301:4872 358:422 28:409 37:24 
+[ 3730.165036][T15041] (cpu:irq_count)- 0:101870 1:810 2:675 3:800 4:1071918 5:2221 6:2494 7:1155609 
+[ 3730.165039][T15041] (ipi:irq_count)- 0:47310 1:82032 2:0 3:0 4:0 5:239393 6:0 
+[ 3732.185865][T15930] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[ 3734.238225][T15931] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[ 3736.290518][T15932] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)

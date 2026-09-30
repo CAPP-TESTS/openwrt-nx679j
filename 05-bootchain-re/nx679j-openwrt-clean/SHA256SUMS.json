@@ -1,0 +1,197 @@
+[
+  {
+    "path": "KNOWN_FACTS.md",
+    "bytes": 2766,
+    "sha256": "175a59c1e5eca95c0f16ddfc16bfd7cf7f9287ca3b51a60331f0a5f9f13b5453"
+  },
+  {
+    "path": "analysis/boot_a/boot_signature",
+    "bytes": 4096,
+    "sha256": "89269bf0af7d754a2da06d5e5ff250e9698416d6d4af1062da16a49e645327e7"
+  },
+  {
+    "path": "analysis/boot_a/kernel",
+    "bytes": 49108324,
+    "sha256": "f0aa949c95d1421381850cb1982bd2a505e96fcd7565543ec28d5b1f7d81a0cc"
+  },
+  {
+    "path": "analysis/boot_a/ramdisk",
+    "bytes": 2200983,
+    "sha256": "adb917c51de2b9a58a74053d2aa39c2762abaeac29a7f605f5f4eda2ba692b84"
+  },
+  {
+    "path": "analysis/boot_b/kernel",
+    "bytes": 49108324,
+    "sha256": "f0aa949c95d1421381850cb1982bd2a505e96fcd7565543ec28d5b1f7d81a0cc"
+  },
+  {
+    "path": "analysis/boot_b/ramdisk",
+    "bytes": 12048477,
+    "sha256": "eb0028acd6a701e1f554d0d8d983c38b323f38204cc6f685787c979e70ffb069"
+  },
+  {
+    "path": "analysis/running-fdt.dts",
+    "bytes": 1185841,
+    "sha256": "0bbd1e8952518c5c229341928e64954df7f12c30c90a8dba5b4d6f5d90c9e42d"
+  },
+  {
+    "path": "analysis/vendor_boot_a/bootconfig",
+    "bytes": 85,
+    "sha256": "fbab70e49b81a2c679a7802d8e27712323ed79a2a7116bab037cf29b5198cba6"
+  },
+  {
+    "path": "analysis/vendor_boot_a/dtb",
+    "bytes": 3879360,
+    "sha256": "b67334af3954fc47bc07cefb8d7fc1c7a59ce8258c2b4c8a55bed92fee5c88ad"
+  },
+  {
+    "path": "analysis/vendor_boot_a/vendor-ramdisk-by-name/ramdisk_",
+    "bytes": 10041284,
+    "sha256": "8e9280413248b94e7e03685965087ca691777e85f51e3a494875582d2c62fb51"
+  },
+  {
+    "path": "analysis/vendor_boot_a/vendor_ramdisk00",
+    "bytes": 10041284,
+    "sha256": "8e9280413248b94e7e03685965087ca691777e85f51e3a494875582d2c62fb51"
+  },
+  {
+    "path": "analysis/vendor_boot_b/bootconfig",
+    "bytes": 85,
+    "sha256": "fbab70e49b81a2c679a7802d8e27712323ed79a2a7116bab037cf29b5198cba6"
+  },
+  {
+    "path": "analysis/vendor_boot_b/dtb",
+    "bytes": 3879360,
+    "sha256": "b67334af3954fc47bc07cefb8d7fc1c7a59ce8258c2b4c8a55bed92fee5c88ad"
+  },
+  {
+    "path": "analysis/vendor_boot_b/vendor-ramdisk-by-name/ramdisk_",
+    "bytes": 10041284,
+    "sha256": "8e9280413248b94e7e03685965087ca691777e85f51e3a494875582d2c62fb51"
+  },
+  {
+    "path": "analysis/vendor_boot_b/vendor_ramdisk00",
+    "bytes": 10041284,
+    "sha256": "8e9280413248b94e7e03685965087ca691777e85f51e3a494875582d2c62fb51"
+  },
+  {
+    "path": "bootchain/abl_a.img",
+    "bytes": 1048576,
+    "sha256": "443d1956e836aea3fe30ac13113dae787d88223c1e24f875c6831f69d86acea3"
+  },
+  {
+    "path": "bootchain/abl_b.img",
+    "bytes": 1048576,
+    "sha256": "443d1956e836aea3fe30ac13113dae787d88223c1e24f875c6831f69d86acea3"
+  },
+  {
+    "path": "bootchain/boot_a.img",
+    "bytes": 100663296,
+    "sha256": "0cd94d5627501f3c65c94542093ad18b1ec6c1c215dc6a7ecab4f941057e8364"
+  },
+  {
+    "path": "bootchain/boot_b.img",
+    "bytes": 100663296,
+    "sha256": "e3fd61ece52cac5588c21e23b86446c0e44e607599f75a1feaf2185995e6f257"
+  },
+  {
+    "path": "bootchain/dtbo_a.img",
+    "bytes": 25165824,
+    "sha256": "9ee95463abce517d140eae3c5c892c2b38fd1344d6fb0a6e2da2af76a86de6a1"
+  },
+  {
+    "path": "bootchain/dtbo_b.img",
+    "bytes": 25165824,
+    "sha256": "9ee95463abce517d140eae3c5c892c2b38fd1344d6fb0a6e2da2af76a86de6a1"
+  },
+  {
+    "path": "bootchain/manifest.json",
+    "bytes": 2311,
+    "sha256": "242f514b7012c4897926c9e8c738b3434ef87274be18c40547f703444dbbe1de"
+  },
+  {
+    "path": "bootchain/running-fdt.dtb",
+    "bytes": 748187,
+    "sha256": "68f2042b1ad3fba5c3256d628f5c76ea3248c2d5352d8f9e00f9316f5595efe8"
+  },
+  {
+    "path": "bootchain/uefi_a.img",
+    "bytes": 5242880,
+    "sha256": "d32139de305aeb2aba1dc8c12b4996c49b09a09a6032307bf100ecb1ecb2d312"
+  },
+  {
+    "path": "bootchain/uefi_b.img",
+    "bytes": 5242880,
+    "sha256": "d32139de305aeb2aba1dc8c12b4996c49b09a09a6032307bf100ecb1ecb2d312"
+  },
+  {
+    "path": "bootchain/vbmeta_a.img",
+    "bytes": 65536,
+    "sha256": "cc0de687c935714a9b6de4bf3492391474e640d2e23f752f6c626f6413b07e22"
+  },
+  {
+    "path": "bootchain/vbmeta_b.img",
+    "bytes": 65536,
+    "sha256": "cc0de687c935714a9b6de4bf3492391474e640d2e23f752f6c626f6413b07e22"
+  },
+  {
+    "path": "bootchain/vendor_boot_a.img",
+    "bytes": 100663296,
+    "sha256": "6db6d4d76059a9ef3a6bcc904911aac53a20044224a675014a6396a8f5d9d168"
+  },
+  {
+    "path": "bootchain/vendor_boot_b.img",
+    "bytes": 100663296,
+    "sha256": "6db6d4d76059a9ef3a6bcc904911aac53a20044224a675014a6396a8f5d9d168"
+  },
+  {
+    "path": "evidence/bcb-misc.txt",
+    "bytes": 1215,
+    "sha256": "21932f68c85b32f0533513928ce13fb753eda201cac23f0d08ac912d8533f35d"
+  },
+  {
+    "path": "evidence/boot-properties.txt",
+    "bytes": 111,
+    "sha256": "d2175b0acb1bdade4c5c6f1d10375e52b6fa1549c7f4930068c01f92720ea229"
+  },
+  {
+    "path": "evidence/collection.json",
+    "bytes": 505,
+    "sha256": "82f002a963d1a641aade97d28a31ddc5026f59517a2dc21348573917dda6abe3"
+  },
+  {
+    "path": "evidence/device-tree.txt",
+    "bytes": 283,
+    "sha256": "18992a570f48398ba74f061cb3c9d4de58ff95d5105a1a0729bfe7011d93871e"
+  },
+  {
+    "path": "evidence/partition-links.txt",
+    "bytes": 1082,
+    "sha256": "be79e4d15acb245a9476c723dd7960ea25392ea68cfe69874ee10312cf771c3f"
+  },
+  {
+    "path": "evidence/runtime-tree-properties.txt",
+    "bytes": 251,
+    "sha256": "8afbd36e6e53ecd554d8f0c80652d3766065ab7392d43210cde9f82f058ebd9e"
+  },
+  {
+    "path": "evidence/usb-adb-state.txt",
+    "bytes": 368,
+    "sha256": "845596891a53541bfc0d842bdcf3844af9cbe201eff0d4f6c1a60bea5e29634b"
+  },
+  {
+    "path": "evidence/usb-display-state.txt",
+    "bytes": 1847,
+    "sha256": "218c9ce9fc072ede2c3ad46264dc5950980ab6c8c89c6246272adc97bf1cf445"
+  },
+  {
+    "path": "uefi/abl_a-inspection.txt",
+    "bytes": 9617,
+    "sha256": "38dcfc15a8d45f4a01f3a3f193b2a7fa7347e30e06a067208cf39704ffead1a6"
+  },
+  {
+    "path": "uefi/uefi_a-inspection.txt",
+    "bytes": 9755,
+    "sha256": "5d64512b336a27eab1daed98eb93b7e84015fe45512e174683ac5f87ebfddc73"
+  }
+]

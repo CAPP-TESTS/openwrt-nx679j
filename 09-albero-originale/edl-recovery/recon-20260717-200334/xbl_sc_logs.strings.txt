@@ -1,0 +1,2186 @@
+IMTL
+LOG_START-0000000781
+S - 
+Format: Log Type - Time(microsec) - Message - Optional Info
+S - 
+Log Type: B - Since Boot(Power On Reset),  D - Delta,  S - Statistic
+S - QC_IMAGE_VERSION_STRING=BOOT.MXF.2.0-00608-WAIPIO-1.465557.1.467702.3
+S - IMAGE_VARIANT_STRING=SocWaipioLAA
+S - OEM_IMAGE_VERSION_STRING=crm-ubuntu70
+S - Boot Interface: UFS
+S - Secure Boot: On
+S - Boot Config @ 0x221c8600 = 0x00000001
+S - JTAG ID @ 0x221c8744 = 0x301870e1
+S - OEM ID @ 0x221c8700 = 0x00000004
+S - Serial Number @ 0x221c8610 = 0x000004324a099072
+S - Feature Config Row 0 @ 0x221c2258 = 0x062d850008800000
+S - Feature Config Row 1 @ 0x221c2260 = 0x59bb5504a0b6a500
+S - Core 0 Frequency, 1363 MHz
+S - PBL Patch Ver: 0
+S - PBL freq: 600 MHZ
+S - -------------------------
+PBL Timestamps (in usecs)
+-------------------------
+APBL start: 330
+APBL Boot Media Detect Start: 7746
+APBL Boot Media Detect End: 7763
+APBL SHELF Load+Auth Start: 7763
+	APBL ELF MD Load Start: 39258
+	APBL ELF MD Load End: 39525
+	APBL ELF Seg Load Start: 39526
+	APBL ELF Seg Load End: 42471
+		APBL SEQ Valid Set: 42496
+		APBL SEQ SA ACK Rcvd: 52750
+	APBL ELF MD Load Start: 53968
+	APBL ELF MD Load End: 54898
+	APBL ELF Auth Start: 54905
+	APBL ELF Auth End: 72356
+	APBL ELF Seg Load Start: 72358
+	APBL ELF Seg Load End: 75646
+	APBL ELF Seg Verify Start: 75646
+	APBL ELF Seg Verify End: 80605
+	APBL ELF MD Load Start: 81745
+	APBL ELF MD Load End: 82500
+	APBL ELF Auth Start: 82501
+	APBL ELF Auth End: 99900
+	APBL ELF Seg Load Start: 99900
+	APBL ELF Seg Load End: 107088
+	APBL ELF Seg Verify Start: 107090
+	APBL ELF Seg Verify End: 111518
+APBL SHELF Load+Auth End: 111666
+		APBL TME PBL Exit: 111668
+		APBL XBL_SC Exit Check: 112030
+		APBL XBL_SC Exit Ack: 120271
+APBL Exit: 120275
+B -    122915 - SBL1, Start
+B -    140025 - SBL1 BUILD @ 18:12:28 on Jan 11 2022
+B -    145546 - usb: HS: usb_shared_xbl_dtb_node_init dtb inaccessible , 0x2
+B -    145546 - usb: usb_hs_phy_cfg size  , 0x20
+B -    145607 - usb: eud_ser_upd , 0x4a099072
+D -      1250 - sbl1_hw_init
+D -       488 - media_init:1
+D -         0 - blacklist disable
+B -    146156 - OEM_MISC -  Image Load, Start
+D -     12200 - Auth Metadata
+D -     14640 - OEM_MISC -  Image Loaded, Delta - (4648 Bytes)
+B -    160796 - QTI_MISC -  Image Load, Start
+D -      9089 - Auth Metadata
+D -     11163 - QTI_MISC -  Image Loaded, Delta - (3508 Bytes)
+B -    171959 - APDP -  Image Load, Start
+D -     11712 - Auth Metadata
+D -     18818 - APDP -  Image Loaded, Delta - (3856 Bytes)
+D -         0 - boot_dload_dump_security_regions
+D -         0 - EUD Init
+D -         0 - blacklist enable
+B -    193827 - Debug Policy: processed
+B -    193827 - Debug Policy: debug policy applied
+D -      3081 - DP_Milestone
+D -      3294 - Auth Metadata
+D -      5032 - sbl1_xblconfig_init
+B -    198890 - XBL Config -  Image Load, Start
+B -    198890 - DTB: looking for default S_DTB_NAME
+B -    200415 - DTB: published DEFAULT_BLOB_ID
+D -      1525 - boot_pre_ddr_dtb_init
+B -    211121 - 
+BUS: 0 PMIC A:2.0 B:2.2 C:2.2 D:2.0 E:2.3 H:1.0 I:1.1
+BUS: 1 PMIC J:3.0 N:2.0
+B -    212829 - PM: Reset by PSHOLD
+B -    212829 - PM: Reset Type: Hard Reset
+B -    212829 - PM: PON by SYSOK
+B -    246958 - PM: SET_VAL:Skip
+B -    247233 - PM: PSI: b0x0a_v0x87
+B -    251015 - PM: Device Init # SPMI Transn: 3172
+D -     50600 - pm_device_init, Delta
+B -    251015 - pm_driver_init, Start
+B -    260043 - PM: Driver Init # SPMI Transn: 674
+D -      9028 - pm_driver_init, Delta
+D -     59628 - sbl1_pmic_init
+D -     19550 - media_init:2
+B -    485407 - UFS Spec Version: 3.10
+B -    487359 - UFS INQUIRY ID: SAMSUNG KLUEG8UHDC-B0E1 0400
+B -    488762 - UFS Boot LUN: 2
+B -    490379 - UFS Total Size: 256 GB
+B -    500200 - UFS Speed: Gear 4 Lane 2 Rate B
+D -    227591 - media_init:3
+D -        31 - boot_wdog_disable_check
+D -       457 - init-logstomedia
+D -         0 - shrm_load_cancel
+B -    507672 - SHRM -  Image Load, Start
+D -     22906 - Auth Metadata
+D -     27908 - SHRM -  Image Loaded, Delta - (59552 Bytes)
+B -    535732 - CDT not found in any storage media, using defaults
+D -       122 - boot_cdt_init
+B -    535732 - CDT -  Image Load, Start
+B -    535732 - CDT not found in any storage media
+D -      1495 - sbl1_hw_platform_pre_ddr
+B -    543540 - PM: ICL final: 500mA
+B -    543784 - usb: chgr -  SDP_CHARGER
+B -    543784 - usb: qusb_dci_eud_init
+B -    544882 - PM: Battery ID: 15213Ohm
+B -    546682 - PM: 2S Vbat cell1:4289mV, cell2:4342mV
+B -    546834 - PM: VBAT: 8630mV IBAT: -49mA
+B -    546865 - PM: CHG Init # SPMI Transn: 3925
+B -    546865 - vsense_init, Start
+D -        30 - vsense_init, Delta
+D -     21624 - sbl1_hw_pre_ddr_init
+D -        61 - boot_fedl_check
+D -        31 - boot_dload_handle_forced_dload_timeout
+D -       915 - sbl1_load_ddr_training_data
+B -    559858 - Pre_DDR_clock_init, Start
+D -         0 - Pre_DDR_clock_init, Delta
+D -       945 - sbl1_ddr_set_params
+B -    559888 - sbl1_ddr_init, Start
+B -    560071 - LP5 DDR detected
+B -    562267 - DDR_INIT with shrm.elf
+B -    562267 - INFO: PXI based read & write training enabled
+B -    572302 - eCDT MRR - Data Starting Address: 0x19056D00
+B -    604601 - ddr_init = 1 cold boot
+D -     44744 - sbl1_ddr_init, Delta
+B -    604632 - DSF version = 272.56.120
+B -    604632 - Manufacturer ID = 0x1, Device Type = 0x8
+B -    604632 - Rank 0 size = 6144 MB, Rank 1 size = 12288 MB
+D -     44957 - sbl1_ddr_init
+D -       244 - store-logstomedia
+B -    605120 - do_ddr_training, Start
+B -    619912 - DDR: Start of DDR Training Restore
+B -    623359 - Current DDR Freq = 2096 MHz
+B -    623389 - Max enabled DDR Freq = 3196 MHz
+B -    623389 - DDR: End of DDR Training Restore
+D -     18300 - do_ddr_training, Delta
+B -    627049 - IOCTL LCP enabled feature set = 0x0 
+D -     21960 - xbl_trng_ddi_seq
+D -       244 - store-logstomedia
+D -      1312 - xbl_map_smem
+D -         0 - boot_smem_debug_init
+D -      2928 - boot_smem_init
+D -       122 - boot_ddr_share_data_to_aop
+D -        30 - boot_populate_ddr_details_shared_table
+D -        61 - boot_update_ram_partition_table
+B -    631746 - Pimem init cmd, entry
+D -      7564 - Pimem init cmd, exit
+B -    640347 - External heap init, Start
+B -    640378 - External heap init, End
+D -     18666 - sbl1_post_ddr_init
+D -         0 - sbl1_hw_init_secondary
+B -    650412 - DDR -  Image Load, Start
+B -    650443 - Find DTB for chipinfo:[7401c902020000] and platforminfo:[80*************]
+B -    650443 - DTB: looking for default D_DTB_NAME
+B -    653157 - DTB: published DEFAULT_BLOB_ID
+D -      2745 - boot_platform_dtb_init
+B -    653249 - usb: UFS Serial - 3dbd****
+D -        61 - boot_usb_update_serial
+D -         0 - boot_usb_handle_charger
+D -        61 - sbl1_hw_platform_smem
+D -         0 - ramdump_load_cancel
+B -    653310 - RamDump -  Image Load, Start
+D -         0 - RamDump -  Image Loaded, Delta - (0 Bytes)
+D -         0 - boot_update_abnormal_reset_status
+D -         0 - boot_cache_set_memory_barrier
+D -        31 - boot_smem_alloc_for_minidump
+D -         0 - boot_shrm_mini_dump_init
+D -        30 - boot_minidump_register_regions
+D -        61 - boot_smem_store_pon_status
+D -        31 - boot_clock_init_rpm
+D -         0 - boot_vsense_copy_to_smem
+D -       152 - sbl1_tlmm_init
+D -         0 - sbl1_efs_handle_cookies
+B -    668468 - PM: PM Total Mem Allocated: 9092 
+D -     14823 - sbl1_pm_aop_pre_init_wrapper
+B -    668499 - AOP Config -  Image Load, Start
+D -     11621 - Auth Metadata
+D -     15799 - AOP Config -  Image Loaded, Delta - (12186 Bytes)
+B -    684328 - AOP -  Image Load, Start
+D -     23821 - Auth Metadata
+D -     39681 - AOP -  Image Loaded, Delta - (250296 Bytes)
+D -        30 - aop_loaded
+D -         0 - boot_prepare_cpucp
+B -    724039 - CPUCPFW -  Image Load, Start
+D -     23607 - Auth Metadata
+D -     50996 - CPUCPFW -  Image Loaded, Delta - (132184 Bytes)
+D -         0 - boot_reset_cpucp
+B -    775066 - QSEE Dev Config -  Image Load, Start
+D -     13237 - Auth Metadata
+D -     17659 - QSEE Dev Config -  Image Loaded, Delta - (47520 Bytes)
+B -    792725 - QSEE -  Image Load, Start
+D -     25010 - Auth Metadata
+D -    142801 - QSEE -  Image Loaded, Delta - (3675580 Bytes)
+D -         0 - sbl1_save_qsee_image_info
+B -    936228 - DTB: Vibration Enabled
+D -       854 - sbl1_hw_play_vibr
+B -    936380 - SEC -  Image Load, Start
+D -     11804 - Auth Metadata
+D -     14213 - SEC -  Image Loaded, Delta - (3916 Bytes)
+B -    950593 - QHEE -  Image Load, Start
+D -     23912 - Auth Metadata
+D -     45110 - QHEE -  Image Loaded, Delta - (1321868 Bytes)
+B -    995703 - APPSBL -  Image Load, Start
+D -      2867 - Auth Metadata
+D -     33184 - APPSBL -  Image Loaded, Delta - (2755992 Bytes)
+D -         0 - sbl1_save_appsbl_index
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          LOG_START-0000000782
+S - 
+Format: Log Type - Time(microsec) - Message - Optional Info
+S - 
+Log Type: B - Since Boot(Power On Reset),  D - Delta,  S - Statistic
+S - QC_IMAGE_VERSION_STRING=BOOT.MXF.2.0-00608-WAIPIO-1.465557.1.467702.3
+S - IMAGE_VARIANT_STRING=SocWaipioLAA
+S - OEM_IMAGE_VERSION_STRING=crm-ubuntu70
+S - Boot Interface: UFS
+S - Secure Boot: On
+S - Boot Config @ 0x221c8600 = 0x00000001
+S - JTAG ID @ 0x221c8744 = 0x301870e1
+S - OEM ID @ 0x221c8700 = 0x00000004
+S - Serial Number @ 0x221c8610 = 0x000004324a099072
+S - Feature Config Row 0 @ 0x221c2258 = 0x062d850008800000
+S - Feature Config Row 1 @ 0x221c2260 = 0x59bb5504a0b6a500
+S - Core 0 Frequency, 1363 MHz
+S - PBL Patch Ver: 0
+S - PBL freq: 600 MHZ
+S - -------------------------
+PBL Timestamps (in usecs)
+-------------------------
+APBL start: 330
+APBL Boot Media Detect Start: 7755
+APBL Boot Media Detect End: 7771
+APBL SHELF Load+Auth Start: 7773
+	APBL ELF MD Load Start: 39275
+	APBL ELF MD Load End: 39538
+	APBL ELF Seg Load Start: 39538
+	APBL ELF Seg Load End: 42485
+		APBL SEQ Valid Set: 42510
+		APBL SEQ SA ACK Rcvd: 52765
+	APBL ELF MD Load Start: 53983
+	APBL ELF MD Load End: 54916
+	APBL ELF Auth Start: 54921
+	APBL ELF Auth End: 72370
+	APBL ELF Seg Load Start: 72371
+	APBL ELF Seg Load End: 75656
+	APBL ELF Seg Verify Start: 75658
+	APBL ELF Seg Verify End: 80616
+	APBL ELF MD Load Start: 81756
+	APBL ELF MD Load End: 82513
+	APBL ELF Auth Start: 82515
+	APBL ELF Auth End: 99910
+	APBL ELF Seg Load Start: 99910
+	APBL ELF Seg Load End: 107100
+	APBL ELF Seg Verify Start: 107100
+	APBL ELF Seg Verify End: 111528
+APBL SHELF Load+Auth End: 111676
+		APBL TME PBL Exit: 111678
+		APBL XBL_SC Exit Check: 112041
+		APBL XBL_SC Exit Ack: 120281
+APBL Exit: 120285
+B -    123006 - SBL1, Start
+B -    140117 - SBL1 BUILD @ 18:12:28 on Jan 11 2022
+B -    145637 - usb: HS: usb_shared_xbl_dtb_node_init dtb inaccessible , 0x2
+B -    145637 - usb: usb_hs_phy_cfg size  , 0x20
+B -    145698 - usb: eud_ser_upd , 0x4a099072
+D -      1251 - sbl1_hw_init
+D -       458 - media_init:1
+D -         0 - blacklist disable
+B -    146217 - OEM_MISC -  Image Load, Start
+D -     12169 - Auth Metadata
+D -     14670 - OEM_MISC -  Image Loaded, Delta - (4648 Bytes)
+B -    160887 - QTI_MISC -  Image Load, Start
+D -      9120 - Auth Metadata
+D -     11163 - QTI_MISC -  Image Loaded, Delta - (3508 Bytes)
+B -    172050 - APDP -  Image Load, Start
+D -     11742 - Auth Metadata
+D -     18849 - APDP -  Image Loaded, Delta - (3856 Bytes)
+D -         0 - boot_dload_dump_security_regions
+D -         0 - EUD Init
+D -         0 - blacklist enable
+B -    193980 - Debug Policy: processed
+B -    193980 - Debug Policy: debug policy applied
+D -      3081 - DP_Milestone
+D -      3294 - Auth Metadata
+D -      5063 - sbl1_xblconfig_init
+B -    199043 - XBL Config -  Image Load, Start
+B -    199043 - DTB: looking for default S_DTB_NAME
+B -    200537 - DTB: published DEFAULT_BLOB_ID
+D -      1494 - boot_pre_ddr_dtb_init
+B -    211273 - 
+BUS: 0 PMIC A:2.0 B:2.2 C:2.2 D:2.0 E:2.3 H:1.0 I:1.1
+BUS: 1 PMIC J:3.0 N:2.0
+B -    212981 - PM: Reset by PSHOLD
+B -    213012 - PM: Reset Type: Hard Reset
+B -    213012 - PM: PON by SYSOK
+B -    247294 - PM: SET_VAL:Skip
+B -    247568 - PM: PSI: b0x0a_v0x87
+B -    251350 - PM: Device Init # SPMI Transn: 3172
+D -     50813 - pm_device_init, Delta
+B -    251381 - pm_driver_init, Start
+B -    260378 - PM: Driver Init # SPMI Transn: 674
+D -      8997 - pm_driver_init, Delta
+D -     59841 - sbl1_pmic_init
+D -     19642 - media_init:2
+B -    485834 - UFS Spec Version: 3.10
+B -    487786 - UFS INQUIRY ID: SAMSUNG KLUEG8UHDC-B0E1 0400
+B -    489189 - UFS Boot LUN: 2
+B -    490806 - UFS Total Size: 256 GB
+B -    500657 - UFS Speed: Gear 4 Lane 2 Rate B
+D -    227469 - media_init:3
+D -         0 - boot_wdog_disable_check
+D -       671 - init-logstomedia
+D -         0 - shrm_load_cancel
+B -    508191 - SHRM -  Image Load, Start
+D -     22753 - Auth Metadata
+D -     27785 - SHRM -  Image Loaded, Delta - (59552 Bytes)
+B -    536129 - CDT not found in any storage media, using defaults
+D -       153 - boot_cdt_init
+B -    536129 - CDT -  Image Load, Start
+B -    536129 - CDT not found in any storage media
+D -      1494 - sbl1_hw_platform_pre_ddr
+B -    543937 - PM: ICL final: 500mA
+B -    544181 - usb: chgr -  SDP_CHARGER
+B -    544181 - usb: qusb_dci_eud_init
+B -    545279 - PM: Battery ID: 15218Ohm
+B -    547078 - PM: 2S Vbat cell1:4290mV, cell2:4342mV
+B -    547231 - PM: VBAT: 8630mV IBAT: -36mA
+B -    547261 - PM: CHG Init # SPMI Transn: 3925
+B -    547261 - vsense_init, Start
+D -         0 - vsense_init, Delta
+D -     21198 - sbl1_hw_pre_ddr_init
+D -        61 - boot_fedl_check
+D -         0 - boot_dload_handle_forced_dload_timeout
+D -       915 - sbl1_load_ddr_training_data
+B -    559797 - Pre_DDR_clock_init, Start
+D -         0 - Pre_DDR_clock_init, Delta
+D -       945 - sbl1_ddr_set_params
+B -    559827 - sbl1_ddr_init, Start
+B -    560010 - LP5 DDR detected
+B -    562237 - DDR_INIT with shrm.elf
+B -    562237 - INFO: PXI based read & write training enabled
+B -    572271 - eCDT MRR - Data Starting Address: 0x19056D00
+B -    604571 - ddr_init = 1 cold boot
+D -     44774 - sbl1_ddr_init, Delta
+B -    604601 - DSF version = 272.56.120
+B -    604601 - Manufacturer ID = 0x1, Device Type = 0x8
+B -    604632 - Rank 0 size = 6144 MB, Rank 1 size = 12288 MB
+D -     44988 - sbl1_ddr_init
+D -       244 - store-logstomedia
+B -    605089 - do_ddr_training, Start
+B -    619882 - DDR: Start of DDR Training Restore
+B -    623328 - Current DDR Freq = 2096 MHz
+B -    623359 - Max enabled DDR Freq = 3196 MHz
+B -    623359 - DDR: End of DDR Training Restore
+D -     18300 - do_ddr_training, Delta
+B -    627019 - IOCTL LCP enabled feature set = 0x0 
+D -     21960 - xbl_trng_ddi_seq
+D -       274 - store-logstomedia
+D -      1312 - xbl_map_smem
+D -         0 - boot_smem_debug_init
+D -      2928 - boot_smem_init
+D -       122 - boot_ddr_share_data_to_aop
+D -        30 - boot_populate_ddr_details_shared_table
+D -        30 - boot_update_ram_partition_table
+B -    631777 - Pimem init cmd, entry
+D -      7564 - Pimem init cmd, exit
+B -    640347 - External heap init, Start
+B -    640378 - External heap init, End
+D -     18666 - sbl1_post_ddr_init
+D -         0 - sbl1_hw_init_secondary
+B -    650412 - DDR -  Image Load, Start
+B -    650443 - Find DTB for chipinfo:[7401c902020000] and platforminfo:[80*************]
+B -    650443 - DTB: looking for default D_DTB_NAME
+B -    653127 - DTB: published DEFAULT_BLOB_ID
+D -      2745 - boot_platform_dtb_init
+B -    653218 - usb: UFS Serial - 3dbd****
+D -        61 - boot_usb_update_serial
+D -         0 - boot_usb_handle_charger
+D -        61 - sbl1_hw_platform_smem
+D -         0 - ramdump_load_cancel
+B -    653279 - RamDump -  Image Load, Start
+D -         0 - RamDump -  Image Loaded, Delta - (0 Bytes)
+D -         0 - boot_update_abnormal_reset_status
+D -         0 - boot_cache_set_memory_barrier
+D -        30 - boot_smem_alloc_for_minidump
+D -         0 - boot_shrm_mini_dump_init
+D -        31 - boot_minidump_register_regions
+D -        61 - boot_smem_store_pon_status
+D -         0 - boot_clock_init_rpm
+D -         0 - boot_vsense_copy_to_smem
+D -       153 - sbl1_tlmm_init
+D -        30 - sbl1_efs_handle_cookies
+B -    668438 - PM: PM Total Mem Allocated: 9092 
+D -     14793 - sbl1_pm_aop_pre_init_wrapper
+B -    668438 - AOP Config -  Image Load, Start
+D -     11620 - Auth Metadata
+D -     15829 - AOP Config -  Image Loaded, Delta - (12186 Bytes)
+B -    684298 - AOP -  Image Load, Start
+D -     23820 - Auth Metadata
+D -     39680 - AOP -  Image Loaded, Delta - (250296 Bytes)
+D -        31 - aop_loaded
+D -         0 - boot_prepare_cpucp
+B -    724009 - CPUCPFW -  Image Load, Start
+D -     23607 - Auth Metadata
+D -     51057 - CPUCPFW -  Image Loaded, Delta - (132184 Bytes)
+D -         0 - boot_reset_cpucp
+B -    775066 - QSEE Dev Config -  Image Load, Start
+D -     13206 - Auth Metadata
+D -     17659 - QSEE Dev Config -  Image Loaded, Delta - (47520 Bytes)
+B -    792725 - QSEE -  Image Load, Start
+D -     25040 - Auth Metadata
+D -    143106 - QSEE -  Image Loaded, Delta - (3675580 Bytes)
+D -         0 - sbl1_save_qsee_image_info
+B -    936441 - DTB: Vibration Enabled
+D -       763 - sbl1_hw_play_vibr
+B -    936624 - SEC -  Image Load, Start
+D -     11834 - Auth Metadata
+D -     14152 - SEC -  Image Loaded, Delta - (3916 Bytes)
+B -    950807 - QHEE -  Image Load, Start
+D -     23881 - Auth Metadata
+D -     45170 - QHEE -  Image Loaded, Delta - (1321868 Bytes)
+B -    995977 - APPSBL -  Image Load, Start
+D -      2836 - Auth Metadata
+D -     33459 - APPSBL -  Image Loaded, Delta - (2755992 Bytes)
+D -         0 - sbl1_save_appsbl_index
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          LOG_START-0000000783
+S - 
+Format: Log Type - Time(microsec) - Message - Optional Info
+S - 
+Log Type: B - Since Boot(Power On Reset),  D - Delta,  S - Statistic
+S - QC_IMAGE_VERSION_STRING=BOOT.MXF.2.0-00608-WAIPIO-1.465557.1.467702.3
+S - IMAGE_VARIANT_STRING=SocWaipioLAA
+S - OEM_IMAGE_VERSION_STRING=crm-ubuntu70
+S - Boot Interface: UFS
+S - Secure Boot: On
+S - Boot Config @ 0x221c8600 = 0x00000001
+S - JTAG ID @ 0x221c8744 = 0x301870e1
+S - OEM ID @ 0x221c8700 = 0x00000004
+S - Serial Number @ 0x221c8610 = 0x000004324a099072
+S - Feature Config Row 0 @ 0x221c2258 = 0x062d850008800000
+S - Feature Config Row 1 @ 0x221c2260 = 0x59bb5504a0b6a500
+S - Core 0 Frequency, 1363 MHz
+S - PBL Patch Ver: 0
+S - PBL freq: 600 MHZ
+S - -------------------------
+PBL Timestamps (in usecs)
+-------------------------
+APBL start: 330
+APBL Boot Media Detect Start: 7745
+APBL Boot Media Detect End: 7761
+APBL SHELF Load+Auth Start: 7763
+	APBL ELF MD Load Start: 39271
+	APBL ELF MD Load End: 39535
+	APBL ELF Seg Load Start: 39535
+	APBL ELF Seg Load End: 42481
+		APBL SEQ Valid Set: 42506
+		APBL SEQ SA ACK Rcvd: 52761
+	APBL ELF MD Load Start: 53980
+	APBL ELF MD Load End: 54911
+	APBL ELF Auth Start: 54916
+	APBL ELF Auth End: 72333
+	APBL ELF Seg Load Start: 72333
+	APBL ELF Seg Load End: 75625
+	APBL ELF Seg Verify Start: 75626
+	APBL ELF Seg Verify End: 80586
+	APBL ELF MD Load Start: 81725
+	APBL ELF MD Load End: 82481
+	APBL ELF Auth Start: 82483
+	APBL ELF Auth End: 99930
+	APBL ELF Seg Load Start: 99931
+	APBL ELF Seg Load End: 107130
+	APBL ELF Seg Verify Start: 107130
+	APBL ELF Seg Verify End: 111560
+APBL SHELF Load+Auth End: 111706
+		APBL TME PBL Exit: 111710
+		APBL XBL_SC Exit Check: 112071
+		APBL XBL_SC Exit Ack: 120313
+APBL Exit: 120316
+B -    123037 - SBL1, Start
+B -    140117 - SBL1 BUILD @ 18:12:28 on Jan 11 2022
+B -    145637 - usb: HS: usb_shared_xbl_dtb_node_init dtb inaccessible , 0x2
+B -    145637 - usb: usb_hs_phy_cfg size  , 0x20
+B -    145698 - usb: eud_ser_upd , 0x4a099072
+D -      1220 - sbl1_hw_init
+D -       488 - media_init:1
+D -         0 - blacklist disable
+B -    146217 - OEM_MISC -  Image Load, Start
+D -     12200 - Auth Metadata
+D -     14640 - OEM_MISC -  Image Loaded, Delta - (4648 Bytes)
+B -    160857 - QTI_MISC -  Image Load, Start
+D -      9059 - Auth Metadata
+D -     11132 - QTI_MISC -  Image Loaded, Delta - (3508 Bytes)
+B -    171989 - APDP -  Image Load, Start
+D -     11712 - Auth Metadata
+D -     18819 - APDP -  Image Loaded, Delta - (3856 Bytes)
+D -         0 - boot_dload_dump_security_regions
+D -         0 - EUD Init
+D -         0 - blacklist enable
+B -    193888 - Debug Policy: processed
+B -    193888 - Debug Policy: debug policy applied
+D -      3080 - DP_Milestone
+D -      3294 - Auth Metadata
+D -      5033 - sbl1_xblconfig_init
+B -    198921 - XBL Config -  Image Load, Start
+B -    198951 - DTB: looking for default S_DTB_NAME
+B -    200385 - DTB: published DEFAULT_BLOB_ID
+D -      1434 - boot_pre_ddr_dtb_init
+B -    211121 - 
+BUS: 0 PMIC A:2.0 B:2.2 C:2.2 D:2.0 E:2.3 H:1.0 I:1.1
+BUS: 1 PMIC J:3.0 N:2.0
+B -    212798 - PM: Reset by PSHOLD
+B -    212798 - PM: Reset Type: Hard Reset
+B -    212798 - PM: PON by SYSOK
+B -    247416 - PM: SET_VAL:Skip
+B -    247690 - PM: PSI: b0x0a_v0x87
+B -    251472 - PM: Device Init # SPMI Transn: 3172
+D -     51087 - pm_device_init, Delta
+B -    251472 - pm_driver_init, Start
+B -    260531 - PM: Driver Init # SPMI Transn: 674
+D -      9059 - pm_driver_init, Delta
+D -     60146 - sbl1_pmic_init
+D -     19611 - media_init:2
+B -    473421 - UFS Spec Version: 3.10
+B -    475403 - UFS INQUIRY ID: SAMSUNG KLUEG8UHDC-B0E1 0400
+B -    476776 - UFS Boot LUN: 1
+B -    478392 - UFS Total Size: 256 GB
+B -    488244 - UFS Speed: Gear 4 Lane 2 Rate B
+D -    215147 - media_init:3
+D -        31 - boot_wdog_disable_check
+D -       823 - init-logstomedia
+D -         0 - shrm_load_cancel
+B -    496143 - SHRM -  Image Load, Start
+D -     22784 - Auth Metadata
+D -     27267 - SHRM -  Image Loaded, Delta - (59552 Bytes)
+B -    523532 - CDT not found in any storage media, using defaults
+D -       122 - boot_cdt_init
+B -    523532 - CDT -  Image Load, Start
+B -    523532 - CDT not found in any storage media
+D -      1495 - sbl1_hw_platform_pre_ddr
+B -    531432 - PM: ICL final: 500mA
+B -    531676 - usb: chgr -  SDP_CHARGER
+B -    531676 - usb: qusb_dci_eud_init
+B -    532774 - PM: Battery ID: 15213Ohm
+B -    534573 - PM: 2S Vbat cell1:4289mV, cell2:4343mV
+B -    534726 - PM: VBAT: 8631mV IBAT: -44mA
+B -    534787 - PM: CHG Init # SPMI Transn: 3925
+B -    534787 - vsense_init, Start
+D -         0 - vsense_init, Delta
+D -     21319 - sbl1_hw_pre_ddr_init
+D -        61 - boot_fedl_check
+D -         0 - boot_dload_handle_forced_dload_timeout
+D -      1220 - sbl1_load_ddr_training_data
+B -    547627 - Pre_DDR_clock_init, Start
+D -         0 - Pre_DDR_clock_init, Delta
+D -      1251 - sbl1_ddr_set_params
+B -    547658 - sbl1_ddr_init, Start
+B -    547841 - LP5 DDR detected
+B -    550067 - DDR_INIT with shrm.elf
+B -    550067 - INFO: PXI based read & write training enabled
+B -    560102 - eCDT MRR - Data Starting Address: 0x19056D00
+B -    592401 - ddr_init = 1 cold boot
+D -     44774 - sbl1_ddr_init, Delta
+B -    592432 - DSF version = 272.56.120
+B -    592432 - Manufacturer ID = 0x1, Device Type = 0x8
+B -    592432 - Rank 0 size = 6144 MB, Rank 1 size = 12288 MB
+D -     44987 - sbl1_ddr_init
+D -       336 - store-logstomedia
+B -    593011 - do_ddr_training, Start
+B -    607773 - DDR: Start of DDR Training Restore
+B -    611250 - Current DDR Freq = 2096 MHz
+B -    611281 - Max enabled DDR Freq = 3196 MHz
+B -    611281 - DDR: End of DDR Training Restore
+D -     18300 - do_ddr_training, Delta
+B -    614941 - IOCTL LCP enabled feature set = 0x0 
+D -     21960 - xbl_trng_ddi_seq
+D -       244 - store-logstomedia
+D -      1311 - xbl_map_smem
+D -         0 - boot_smem_debug_init
+D -      2928 - boot_smem_init
+D -       122 - boot_ddr_share_data_to_aop
+D -        61 - boot_populate_ddr_details_shared_table
+D -        31 - boot_update_ram_partition_table
+B -    619668 - Pimem init cmd, entry
+D -      7534 - Pimem init cmd, exit
+B -    628239 - External heap init, Start
+B -    628239 - External heap init, End
+D -     18666 - sbl1_post_ddr_init
+D -         0 - sbl1_hw_init_secondary
+B -    638304 - DDR -  Image Load, Start
+B -    638334 - Find DTB for chipinfo:[7401c902020000] and platforminfo:[80*************]
+B -    638334 - DTB: looking for default D_DTB_NAME
+B -    640652 - DTB: published DEFAULT_BLOB_ID
+D -      2379 - boot_platform_dtb_init
+B -    640744 - usb: UFS Serial - 3dbd****
+D -        61 - boot_usb_update_serial
+D -         0 - boot_usb_handle_charger
+D -        61 - sbl1_hw_platform_smem
+D -         0 - ramdump_load_cancel
+B -    640805 - RamDump -  Image Load, Start
+D -         0 - RamDump -  Image Loaded, Delta - (0 Bytes)
+D -        30 - boot_update_abnormal_reset_status
+D -         0 - boot_cache_set_memory_barrier
+D -        31 - boot_smem_alloc_for_minidump
+D -         0 - boot_shrm_mini_dump_init
+D -        30 - boot_minidump_register_regions
+D -        61 - boot_smem_store_pon_status
+D -         0 - boot_clock_init_rpm
+D -         0 - boot_vsense_copy_to_smem
+D -       152 - sbl1_tlmm_init
+D -         0 - sbl1_efs_handle_cookies
+B -    655963 - PM: PM Total Mem Allocated: 9092 
+D -     14823 - sbl1_pm_aop_pre_init_wrapper
+B -    655963 - AOP Config -  Image Load, Start
+D -     11742 - Auth Metadata
+D -     15830 - AOP Config -  Image Loaded, Delta - (12186 Bytes)
+B -    671793 - AOP -  Image Load, Start
+D -     23821 - Auth Metadata
+D -     39284 - AOP -  Image Loaded, Delta - (250296 Bytes)
+D -         0 - aop_loaded
+D -         0 - boot_prepare_cpucp
+B -    711107 - CPUCPFW -  Image Load, Start
+D -     23638 - Auth Metadata
+D -     50996 - CPUCPFW -  Image Loaded, Delta - (132184 Bytes)
+D -        31 - boot_reset_cpucp
+B -    762134 - QSEE Dev Config -  Image Load, Start
+D -     13176 - Auth Metadata
+D -     17598 - QSEE Dev Config -  Image Loaded, Delta - (47520 Bytes)
+B -    779732 - QSEE -  Image Load, Start
+D -     25040 - Auth Metadata
+D -    141734 - QSEE -  Image Loaded, Delta - (3675580 Bytes)
+D -        30 - sbl1_save_qsee_image_info
+B -    922076 - DTB: Vibration Enabled
+D -       732 - sbl1_hw_play_vibr
+B -    922259 - SEC -  Image Load, Start
+D -     11804 - Auth Metadata
+D -     14121 - SEC -  Image Loaded, Delta - (3916 Bytes)
+B -    936411 - QHEE -  Image Load, Start
+D -     23790 - Auth Metadata
+D -     44957 - QHEE -  Image Loaded, Delta - (1321868 Bytes)
+B -    981368 - APPSBL -  Image Load, Start
+D -     12688 - Auth Metadata
+D -     42242 - APPSBL -  Image Loaded, Delta - (2755992 Bytes)
+D -         0 - sbl1_save_appsbl_index
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          LOG_START-0000000784
+S - 
+Format: Log Type - Time(microsec) - Message - Optional Info
+S - 
+Log Type: B - Since Boot(Power On Reset),  D - Delta,  S - Statistic
+S - QC_IMAGE_VERSION_STRING=BOOT.MXF.2.0-00608-WAIPIO-1.465557.1.467702.3
+S - IMAGE_VARIANT_STRING=SocWaipioLAA
+S - OEM_IMAGE_VERSION_STRING=crm-ubuntu70
+S - Boot Interface: UFS
+S - Secure Boot: On
+S - Boot Config @ 0x221c8600 = 0x00000001
+S - JTAG ID @ 0x221c8744 = 0x301870e1
+S - OEM ID @ 0x221c8700 = 0x00000004
+S - Serial Number @ 0x221c8610 = 0x000004324a099072
+S - Feature Config Row 0 @ 0x221c2258 = 0x062d850008800000
+S - Feature Config Row 1 @ 0x221c2260 = 0x59bb5504a0b6a500
+S - Core 0 Frequency, 1363 MHz
+S - PBL Patch Ver: 0
+S - PBL freq: 600 MHZ
+S - -------------------------
+PBL Timestamps (in usecs)
+-------------------------
+APBL start: 330
+APBL Boot Media Detect Start: 7741
+APBL Boot Media Detect End: 7758
+APBL SHELF Load+Auth Start: 7760
+	APBL ELF MD Load Start: 39275
+	APBL ELF MD Load End: 39538
+	APBL ELF Seg Load Start: 39538
+	APBL ELF Seg Load End: 42483
+		APBL SEQ Valid Set: 42508
+		APBL SEQ SA ACK Rcvd: 52763
+	APBL ELF MD Load Start: 53981
+	APBL ELF MD Load End: 54911
+	APBL ELF Auth Start: 54918
+	APBL ELF Auth End: 72335
+	APBL ELF Seg Load Start: 72336
+	APBL ELF Seg Load End: 75628
+	APBL ELF Seg Verify Start: 75628
+	APBL ELF Seg Verify End: 80586
+	APBL ELF MD Load Start: 81726
+	APBL ELF MD Load End: 82483
+	APBL ELF Auth Start: 82485
+	APBL ELF Auth End: 99930
+	APBL ELF Seg Load Start: 99930
+	APBL ELF Seg Load End: 107126
+	APBL ELF Seg Verify Start: 107128
+	APBL ELF Seg Verify End: 111555
+APBL SHELF Load+Auth End: 111703
+		APBL TME PBL Exit: 111705
+		APBL XBL_SC Exit Check: 112068
+		APBL XBL_SC Exit Ack: 120313
+APBL Exit: 120315
+B -    123037 - SBL1, Start
+B -    140117 - SBL1 BUILD @ 18:12:28 on Jan 11 2022
+B -    145637 - usb: HS: usb_shared_xbl_dtb_node_init dtb inaccessible , 0x2
+B -    145637 - usb: usb_hs_phy_cfg size  , 0x20
+B -    145698 - usb: eud_ser_upd , 0x4a099072
+D -      1251 - sbl1_hw_init
+D -       519 - media_init:1
+D -         0 - blacklist disable
+B -    146278 - OEM_MISC -  Image Load, Start
+D -     12200 - Auth Metadata
+D -     14670 - OEM_MISC -  Image Loaded, Delta - (4648 Bytes)
+B -    160948 - QTI_MISC -  Image Load, Start
+D -      9059 - Auth Metadata
+D -     11133 - QTI_MISC -  Image Loaded, Delta - (3508 Bytes)
+B -    172081 - APDP -  Image Load, Start
+D -     11651 - Auth Metadata
+D -     18757 - APDP -  Image Loaded, Delta - (3856 Bytes)
+D -         0 - boot_dload_dump_security_regions
+D -         0 - EUD Init
+D -         0 - blacklist enable
+B -    193919 - Debug Policy: processed
+B -    193919 - Debug Policy: debug policy applied
+D -      3081 - DP_Milestone
+D -      3264 - Auth Metadata
+D -      5032 - sbl1_xblconfig_init
+B -    198951 - XBL Config -  Image Load, Start
+B -    198951 - DTB: looking for default S_DTB_NAME
+B -    200446 - DTB: published DEFAULT_BLOB_ID
+D -      1495 - boot_pre_ddr_dtb_init
+B -    211212 - 
+BUS: 0 PMIC A:2.0 B:2.2 C:2.2 D:2.0 E:2.3 H:1.0 I:1.1
+BUS: 1 PMIC J:3.0 N:2.0
+B -    212890 - PM: Reset by PSHOLD
+B -    212890 - PM: Reset Type: Hard Reset
+B -    212890 - PM: PON by SYSOK
+B -    247263 - PM: SET_VAL:Skip
+B -    247538 - PM: PSI: b0x0a_v0x87
+B -    251320 - PM: Device Init # SPMI Transn: 3172
+D -     50874 - pm_device_init, Delta
+B -    251320 - pm_driver_init, Start
+B -    260348 - PM: Driver Init # SPMI Transn: 674
+D -      9028 - pm_driver_init, Delta
+D -     59902 - sbl1_pmic_init
+D -     19612 - media_init:2
+B -    489464 - UFS Spec Version: 3.10
+B -    491416 - UFS INQUIRY ID: SAMSUNG KLUEG8UHDC-B0E1 0400
+B -    492819 - UFS Boot LUN: 1
+B -    494435 - UFS Total Size: 256 GB
+B -    504256 - UFS Speed: Gear 4 Lane 2 Rate B
+D -    231037 - media_init:3
+D -        31 - boot_wdog_disable_check
+D -       457 - init-logstomedia
+D -         0 - shrm_load_cancel
+B -    511515 - SHRM -  Image Load, Start
+D -     22783 - Auth Metadata
+D -     27023 - SHRM -  Image Loaded, Delta - (59552 Bytes)
+B -    538660 - CDT not found in any storage media, using defaults
+D -       122 - boot_cdt_init
+B -    538660 - CDT -  Image Load, Start
+B -    538660 - CDT not found in any storage media
+D -      1495 - sbl1_hw_platform_pre_ddr
+B -    546529 - PM: ICL final: 500mA
+B -    546773 - usb: chgr -  SDP_CHARGER
+B -    546773 - usb: qusb_dci_eud_init
+B -    547871 - PM: Battery ID: 15213Ohm
+B -    549701 - PM: 2S Vbat cell1:4289mV, cell2:4342mV
+B -    549854 - PM: VBAT: 8631mV IBAT: -41mA
+B -    549884 - PM: CHG Init # SPMI Transn: 3925
+B -    549884 - vsense_init, Start
+D -         0 - vsense_init, Delta
+D -     21685 - sbl1_hw_pre_ddr_init
+D -        61 - boot_fedl_check
+D -         0 - boot_dload_handle_forced_dload_timeout
+D -      1281 - sbl1_load_ddr_training_data
+B -    563213 - Pre_DDR_clock_init, Start
+D -         0 - Pre_DDR_clock_init, Delta
+D -      1342 - sbl1_ddr_set_params
+B -    563243 - sbl1_ddr_init, Start
+B -    563426 - LP5 DDR detected
+B -    565256 - DDR_INIT with shrm.elf
+B -    565256 - INFO: PXI based read & write training enabled
+B -    575291 - eCDT MRR - Data Starting Address: 0x19056D00
+B -    607590 - ddr_init = 1 cold boot
+D -     44378 - sbl1_ddr_init, Delta
+B -    607621 - DSF version = 272.56.120
+B -    607621 - Manufacturer ID = 0x1, Device Type = 0x8
+B -    607621 - Rank 0 size = 6144 MB, Rank 1 size = 12288 MB
+D -     44591 - sbl1_ddr_init
+D -       244 - store-logstomedia
+B -    608109 - do_ddr_training, Start
+B -    622901 - DDR: Start of DDR Training Restore
+B -    626348 - Current DDR Freq = 2096 MHz
+B -    626378 - Max enabled DDR Freq = 3196 MHz
+B -    626378 - DDR: End of DDR Training Restore
+D -     18300 - do_ddr_training, Delta
+B -    630038 - IOCTL LCP enabled feature set = 0x0 
+D -     21960 - xbl_trng_ddi_seq
+D -       275 - store-logstomedia
+D -      1311 - xbl_map_smem
+D -         0 - boot_smem_debug_init
+D -      2928 - boot_smem_init
+D -       122 - boot_ddr_share_data_to_aop
+D -        31 - boot_populate_ddr_details_shared_table
+D -        61 - boot_update_ram_partition_table
+B -    634796 - Pimem init cmd, entry
+D -      7534 - Pimem init cmd, exit
+B -    643336 - External heap init, Start
+B -    643367 - External heap init, End
+D -     18635 - sbl1_post_ddr_init
+D -         0 - sbl1_hw_init_secondary
+B -    653401 - DDR -  Image Load, Start
+B -    653432 - Find DTB for chipinfo:[7401c902020000] and platforminfo:[80*************]
+B -    653432 - DTB: looking for default D_DTB_NAME
+B -    655780 - DTB: published DEFAULT_BLOB_ID
+D -      2379 - boot_platform_dtb_init
+B -    655872 - usb: UFS Serial - 3dbd****
+D -        61 - boot_usb_update_serial
+D -         0 - boot_usb_handle_charger
+D -        61 - sbl1_hw_platform_smem
+D -         0 - ramdump_load_cancel
+B -    655933 - RamDump -  Image Load, Start
+D -         0 - RamDump -  Image Loaded, Delta - (0 Bytes)
+D -        30 - boot_update_abnormal_reset_status
+D -         0 - boot_cache_set_memory_barrier
+D -        31 - boot_smem_alloc_for_minidump
+D -         0 - boot_shrm_mini_dump_init
+D -        30 - boot_minidump_register_regions
+D -        61 - boot_smem_store_pon_status
+D -         0 - boot_clock_init_rpm
+D -        31 - boot_vsense_copy_to_smem
+D -       152 - sbl1_tlmm_init
+D -         0 - sbl1_efs_handle_cookies
+B -    671122 - PM: PM Total Mem Allocated: 9092 
+D -     14854 - sbl1_pm_aop_pre_init_wrapper
+B -    671122 - AOP Config -  Image Load, Start
+D -     11773 - Auth Metadata
+D -     15829 - AOP Config -  Image Loaded, Delta - (12186 Bytes)
+B -    686951 - AOP -  Image Load, Start
+D -     23790 - Auth Metadata
+D -     39284 - AOP -  Image Loaded, Delta - (250296 Bytes)
+D -         0 - aop_loaded
+D -         0 - boot_prepare_cpucp
+B -    726266 - CPUCPFW -  Image Load, Start
+D -     23607 - Auth Metadata
+D -     50996 - CPUCPFW -  Image Loaded, Delta - (132184 Bytes)
+D -         0 - boot_reset_cpucp
+B -    777262 - QSEE Dev Config -  Image Load, Start
+D -     13237 - Auth Metadata
+D -     17629 - QSEE Dev Config -  Image Loaded, Delta - (47520 Bytes)
+B -    794921 - QSEE -  Image Load, Start
+D -     25040 - Auth Metadata
+D -    141947 - QSEE -  Image Loaded, Delta - (3675580 Bytes)
+D -         0 - sbl1_save_qsee_image_info
+B -    937478 - DTB: Vibration Enabled
+D -       763 - sbl1_hw_play_vibr
+B -    937631 - SEC -  Image Load, Start
+D -     11773 - Auth Metadata
+D -     14121 - SEC -  Image Loaded, Delta - (3916 Bytes)
+B -    951752 - QHEE -  Image Load, Start
+D -     23760 - Auth Metadata
+D -     44805 - QHEE -  Image Loaded, Delta - (1321868 Bytes)
+B -    996557 - APPSBL -  Image Load, Start
+D -     12688 - Auth Metadata
+D -     41876 - APPSBL -  Image Loaded, Delta - (2755992 Bytes)
+D -         0 - sbl1_save_appsbl_index
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          LOG_START-0000000785
+S - 
+Format: Log Type - Time(microsec) - Message - Optional Info
+S - 
+Log Type: B - Since Boot(Power On Reset),  D - Delta,  S - Statistic
+S - QC_IMAGE_VERSION_STRING=BOOT.MXF.2.0-00608-WAIPIO-1.465557.1.467702.3
+S - IMAGE_VARIANT_STRING=SocWaipioLAA
+S - OEM_IMAGE_VERSION_STRING=crm-ubuntu70
+S - Boot Interface: UFS
+S - Secure Boot: On
+S - Boot Config @ 0x221c8600 = 0x00000001
+S - JTAG ID @ 0x221c8744 = 0x301870e1
+S - OEM ID @ 0x221c8700 = 0x00000004
+S - Serial Number @ 0x221c8610 = 0x000004324a099072
+S - Feature Config Row 0 @ 0x221c2258 = 0x062d850008800000
+S - Feature Config Row 1 @ 0x221c2260 = 0x59bb5504a0b6a500
+S - Core 0 Frequency, 1363 MHz
+S - PBL Patch Ver: 0
+S - PBL freq: 600 MHZ
+S - -------------------------
+PBL Timestamps (in usecs)
+-------------------------
+APBL start: 330
+APBL Boot Media Detect Start: 7745
+APBL Boot Media Detect End: 7761
+APBL SHELF Load+Auth Start: 7763
+	APBL ELF MD Load Start: 39278
+	APBL ELF MD Load End: 39545
+	APBL ELF Seg Load Start: 39546
+	APBL ELF Seg Load End: 42491
+		APBL SEQ Valid Set: 42516
+		APBL SEQ SA ACK Rcvd: 52771
+	APBL ELF MD Load Start: 53990
+	APBL ELF MD Load End: 54928
+	APBL ELF Auth Start: 54933
+	APBL ELF Auth End: 72381
+	APBL ELF Seg Load Start: 72381
+	APBL ELF Seg Load End: 75668
+	APBL ELF Seg Verify Start: 75668
+	APBL ELF Seg Verify End: 80636
+	APBL ELF MD Load Start: 81775
+	APBL ELF MD Load End: 82510
+	APBL ELF Auth Start: 82511
+	APBL ELF Auth End: 99915
+	APBL ELF Seg Load Start: 99916
+	APBL ELF Seg Load End: 107111
+	APBL ELF Seg Verify Start: 107111
+	APBL ELF Seg Verify End: 111550
+APBL SHELF Load+Auth End: 111696
+		APBL TME PBL Exit: 111698
+		APBL XBL_SC Exit Check: 112060
+		APBL XBL_SC Exit Ack: 120305
+APBL Exit: 120308
+B -    122915 - SBL1, Start
+B -    140025 - SBL1 BUILD @ 18:12:28 on Jan 11 2022
+B -    145515 - usb: HS: usb_shared_xbl_dtb_node_init dtb inaccessible , 0x2
+B -    145515 - usb: usb_hs_phy_cfg size  , 0x20
+B -    145576 - usb: eud_ser_upd , 0x4a099072
+D -      1220 - sbl1_hw_init
+D -       488 - media_init:1
+D -         0 - blacklist disable
+B -    146125 - OEM_MISC -  Image Load, Start
+D -     12200 - Auth Metadata
+D -     14671 - OEM_MISC -  Image Loaded, Delta - (4648 Bytes)
+B -    160796 - QTI_MISC -  Image Load, Start
+D -      9059 - Auth Metadata
+D -     11163 - QTI_MISC -  Image Loaded, Delta - (3508 Bytes)
+B -    171959 - APDP -  Image Load, Start
+D -     11682 - Auth Metadata
+D -     18757 - APDP -  Image Loaded, Delta - (3856 Bytes)
+D -         0 - boot_dload_dump_security_regions
+D -         0 - EUD Init
+D -         0 - blacklist enable
+B -    193797 - Debug Policy: processed
+B -    193797 - Debug Policy: debug policy applied
+D -      3081 - DP_Milestone
+D -      3294 - Auth Metadata
+D -      5063 - sbl1_xblconfig_init
+B -    198890 - XBL Config -  Image Load, Start
+B -    198890 - DTB: looking for default S_DTB_NAME
+B -    200385 - DTB: published DEFAULT_BLOB_ID
+D -      1495 - boot_pre_ddr_dtb_init
+B -    211090 - 
+BUS: 0 PMIC A:2.0 B:2.2 C:2.2 D:2.0 E:2.3 H:1.0 I:1.1
+BUS: 1 PMIC J:3.0 N:2.0
+B -    212798 - PM: Reset by PSHOLD
+B -    212798 - PM: Reset Type: Hard Reset
+B -    212798 - PM: PON by SYSOK
+B -    214232 - PM: PBS_RAM 1 reloading
+B -    369507 - PM: SET_VAL:Skip
+B -    369782 - PM: PSI: b0x0a_v0x87
+B -    373533 - PM: Device Init # SPMI Transn: 11332
+D -    173148 - pm_device_init, Delta
+B -    373533 - pm_driver_init, Start
+B -    382561 - PM: Driver Init # SPMI Transn: 674
+D -      9028 - pm_driver_init, Delta
+D -    182176 - sbl1_pmic_init
+D -     19520 - media_init:2
+B -    739777 - UFS Spec Version: 3.10
+B -    741973 - UFS INQUIRY ID: SAMSUNG KLUEG8UHDC-B0E1 0400
+B -    743376 - UFS Boot LUN: 1
+B -    744993 - UFS Total Size: 256 GB
+B -    754844 - UFS Speed: Gear 4 Lane 2 Rate B
+D -    359687 - media_init:3
+D -        30 - boot_wdog_disable_check
+D -       458 - init-logstomedia
+D -         0 - shrm_load_cancel
+B -    762256 - SHRM -  Image Load, Start
+D -     22783 - Auth Metadata
+D -     27053 - SHRM -  Image Loaded, Delta - (59552 Bytes)
+B -    789431 - CDT not found in any storage media, using defaults
+D -       122 - boot_cdt_init
+B -    789431 - CDT -  Image Load, Start
+B -    789431 - CDT not found in any storage media
+D -      1495 - sbl1_hw_platform_pre_ddr
+B -    807426 - PM: ICL final: 2000mA
+B -    807670 - usb: chgr -  FLOAT_CHARGER
+B -    809866 - PM: Battery ID: 15222Ohm
+B -    814167 - PM: 2S Vbat cell1:4320mV, cell2:4320mV
+B -    814319 - PM: VBAT: 8641mV IBAT: 0mA
+B -    814350 - PM: CHG Init # SPMI Transn: 12118
+B -    814350 - vsense_init, Start
+D -         0 - vsense_init, Delta
+D -     34953 - sbl1_hw_pre_ddr_init
+D -        61 - boot_fedl_check
+D -        30 - boot_dload_handle_forced_dload_timeout
+D -      1281 - sbl1_load_ddr_training_data
+B -    827251 - Pre_DDR_clock_init, Start
+D -         0 - Pre_DDR_clock_init, Delta
+D -      1312 - sbl1_ddr_set_params
+B -    827282 - sbl1_ddr_init, Start
+B -    827465 - LP5 DDR detected
+B -    829691 - DDR_INIT with shrm.elf
+B -    829691 - INFO: PXI based read & write training enabled
+B -    839726 - eCDT MRR - Data Starting Address: 0x19056D00
+B -    872025 - ddr_init = 1 cold boot
+D -     44774 - sbl1_ddr_init, Delta
+B -    872056 - DSF version = 272.56.120
+B -    872056 - Manufacturer ID = 0x1, Device Type = 0x8
+B -    872086 - Rank 0 size = 6144 MB, Rank 1 size = 12288 MB
+D -     44987 - sbl1_ddr_init
+D -       366 - store-logstomedia
+B -    872666 - do_ddr_training, Start
+B -    887458 - DDR: Start of DDR Training Restore
+B -    890905 - Current DDR Freq = 2096 MHz
+B -    890935 - Max enabled DDR Freq = 3196 MHz
+B -    890935 - DDR: End of DDR Training Restore
+D -     18300 - do_ddr_training, Delta
+B -    894595 - IOCTL LCP enabled feature set = 0x0 
+D -     21960 - xbl_trng_ddi_seq
+D -       336 - store-logstomedia
+D -      1311 - xbl_map_smem
+D -         0 - boot_smem_debug_init
+D -      2928 - boot_smem_init
+D -       122 - boot_ddr_share_data_to_aop
+D -        31 - boot_populate_ddr_details_shared_table
+D -        61 - boot_update_ram_partition_table
+B -    899414 - Pimem init cmd, entry
+D -      7534 - Pimem init cmd, exit
+B -    907985 - External heap init, Start
+B -    907985 - External heap init, End
+D -     18666 - sbl1_post_ddr_init
+D -         0 - sbl1_hw_init_secondary
+B -    918050 - DDR -  Image Load, Start
+B -    918050 - Find DTB for chipinfo:[7401c902020000] and platforminfo:[80*************]
+B -    918080 - DTB: looking for default D_DTB_NAME
+B -    920368 - DTB: published DEFAULT_BLOB_ID
+D -      2348 - boot_platform_dtb_init
+B -    920459 - usb: UFS Serial - 3dbd****
+D -        61 - boot_usb_update_serial
+D -         0 - boot_usb_handle_charger
+D -        61 - sbl1_hw_platform_smem
+D -         0 - ramdump_load_cancel
+B -    920520 - RamDump -  Image Load, Start
+D -         0 - RamDump -  Image Loaded, Delta - (0 Bytes)
+D -         0 - boot_update_abnormal_reset_status
+D -         0 - boot_cache_set_memory_barrier
+D -        30 - boot_smem_alloc_for_minidump
+D -         0 - boot_shrm_mini_dump_init
+D -        31 - boot_minidump_register_regions
+D -        61 - boot_smem_store_pon_status
+D -         0 - boot_clock_init_rpm
+D -        30 - boot_vsense_copy_to_smem
+D -       153 - sbl1_tlmm_init
+D -        30 - sbl1_efs_handle_cookies
+B -    935862 - PM: PM Total Mem Allocated: 9092 
+D -     14976 - sbl1_pm_aop_pre_init_wrapper
+B -    935862 - AOP Config -  Image Load, Start
+D -     11743 - Auth Metadata
+D -     15860 - AOP Config -  Image Loaded, Delta - (12186 Bytes)
+B -    951722 - AOP -  Image Load, Start
+D -     23820 - Auth Metadata
+D -     39284 - AOP -  Image Loaded, Delta - (250296 Bytes)
+D -         0 - aop_loaded
+D -        30 - boot_prepare_cpucp
+B -    991036 - CPUCPFW -  Image Load, Start
+D -     23577 - Auth Metadata
+D -     50966 - CPUCPFW -  Image Loaded, Delta - (132184 Bytes)
+D -         0 - boot_reset_cpucp
+B -   1042032 - QSEE Dev Config -  Image Load, Start
+D -     13237 - Auth Metadata
+D -     17416 - QSEE Dev Config -  Image Loaded, Delta - (47520 Bytes)
+B -   1059448 - QSEE -  Image Load, Start
+D -     24980 - Auth Metadata
+D -    141916 - QSEE -  Image Loaded, Delta - (3675580 Bytes)
+D -        31 - sbl1_save_qsee_image_info
+B -   1201974 - DTB: Vibration Enabled
+D -       732 - sbl1_hw_play_vibr
+B -   1202157 - SEC -  Image Load, Start
+D -     11803 - Auth Metadata
+D -     14122 - SEC -  Image Loaded, Delta - (3916 Bytes)
+B -   1216279 - QHEE -  Image Load, Start
+D -     23759 - Auth Metadata
+D -     44774 - QHEE -  Image Loaded, Delta - (1321868 Bytes)
+B -   1261083 - APPSBL -  Image Load, Start
+D -     12627 - Auth Metadata
+D -     41480 - APPSBL -  Image Loaded, Delta - (2755992 Bytes)
+D -         0 - sbl1_save_appsbl_index
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          LOG_START-0000000786
+S - 
+Format: Log Type - Time(microsec) - Message - Optional Info
+S - 
+Log Type: B - Since Boot(Power On Reset),  D - Delta,  S - Statistic
+S - QC_IMAGE_VERSION_STRING=BOOT.MXF.2.0-00608-WAIPIO-1.465557.1.467702.3
+S - IMAGE_VARIANT_STRING=SocWaipioLAA
+S - OEM_IMAGE_VERSION_STRING=crm-ubuntu70
+S - Boot Interface: UFS
+S - Secure Boot: On
+S - Boot Config @ 0x221c8600 = 0x00000001
+S - JTAG ID @ 0x221c8744 = 0x301870e1
+S - OEM ID @ 0x221c8700 = 0x00000004
+S - Serial Number @ 0x221c8610 = 0x000004324a099072
+S - Feature Config Row 0 @ 0x221c2258 = 0x062d850008800000
+S - Feature Config Row 1 @ 0x221c2260 = 0x59bb5504a0b6a500
+S - Core 0 Frequency, 1363 MHz
+S - PBL Patch Ver: 0
+S - PBL freq: 600 MHZ
+S - -------------------------
+PBL Timestamps (in usecs)
+-------------------------
+APBL start: 330
+APBL Boot Media Detect Start: 7755
+APBL Boot Media Detect End: 7771
+APBL SHELF Load+Auth Start: 7773
+	APBL ELF MD Load Start: 39280
+	APBL ELF MD Load End: 39546
+	APBL ELF Seg Load Start: 39548
+	APBL ELF Seg Load End: 42493
+		APBL SEQ Valid Set: 42518
+		APBL SEQ SA ACK Rcvd: 52773
+	APBL ELF MD Load Start: 53993
+	APBL ELF MD Load End: 54930
+	APBL ELF Auth Start: 54935
+	APBL ELF Auth End: 72385
+	APBL ELF Seg Load Start: 72386
+	APBL ELF Seg Load End: 75673
+	APBL ELF Seg Verify Start: 75675
+	APBL ELF Seg Verify End: 80633
+	APBL ELF MD Load Start: 81771
+	APBL ELF MD Load End: 82526
+	APBL ELF Auth Start: 82528
+	APBL ELF Auth End: 99921
+	APBL ELF Seg Load Start: 99923
+	APBL ELF Seg Load End: 107111
+	APBL ELF Seg Verify Start: 107111
+	APBL ELF Seg Verify End: 111538
+APBL SHELF Load+Auth End: 111686
+		APBL TME PBL Exit: 111688
+		APBL XBL_SC Exit Check: 112051
+		APBL XBL_SC Exit Ack: 120296
+APBL Exit: 120300
+B -    122915 - SBL1, Start
+B -    139995 - SBL1 BUILD @ 18:12:28 on Jan 11 2022
+B -    145515 - usb: HS: usb_shared_xbl_dtb_node_init dtb inaccessible , 0x2
+B -    145515 - usb: usb_hs_phy_cfg size  , 0x20
+B -    145607 - usb: eud_ser_upd , 0x4a099072
+D -      1220 - sbl1_hw_init
+D -       519 - media_init:1
+D -         0 - blacklist disable
+B -    146156 - OEM_MISC -  Image Load, Start
+D -     12169 - Auth Metadata
+D -     14640 - OEM_MISC -  Image Loaded, Delta - (4648 Bytes)
+B -    160796 - QTI_MISC -  Image Load, Start
+D -      9089 - Auth Metadata
+D -     11163 - QTI_MISC -  Image Loaded, Delta - (3508 Bytes)
+B -    171959 - APDP -  Image Load, Start
+D -     11682 - Auth Metadata
+D -     18757 - APDP -  Image Loaded, Delta - (3856 Bytes)
+D -         0 - boot_dload_dump_security_regions
+D -         0 - EUD Init
+D -         0 - blacklist enable
+B -    193797 - Debug Policy: processed
+B -    193797 - Debug Policy: debug policy applied
+D -      3050 - DP_Milestone
+D -      3264 - Auth Metadata
+D -      5002 - sbl1_xblconfig_init
+B -    198829 - XBL Config -  Image Load, Start
+B -    198860 - DTB: looking for default S_DTB_NAME
+B -    200324 - DTB: published DEFAULT_BLOB_ID
+D -      1525 - boot_pre_ddr_dtb_init
+B -    211029 - 
+BUS: 0 PMIC A:2.0 B:2.2 C:2.2 D:2.0 E:2.3 H:1.0 I:1.1
+BUS: 1 PMIC J:3.0 N:2.0
+B -    212737 - PM: Reset by PSHOLD
+B -    212737 - PM: Reset Type: Hard Reset
+B -    212737 - PM: PON by SYSOK
+B -    247141 - PM: SET_VAL:Skip
+B -    247446 - PM: PSI: b0x0a_v0x87
+B -    251198 - PM: Device Init # SPMI Transn: 3172
+D -     50844 - pm_device_init, Delta
+B -    251228 - pm_driver_init, Start
+B -    260287 - PM: Driver Init # SPMI Transn: 674
+D -      9059 - pm_driver_init, Delta
+D -     59933 - sbl1_pmic_init
+D -     19611 - media_init:2
+B -    421327 - UFS Spec Version: 3.10
+B -    423279 - UFS INQUIRY ID: SAMSUNG KLUEG8UHDC-B0E1 0400
+B -    424682 - UFS Boot LUN: 1
+B -    426298 - UFS Total Size: 256 GB
+B -    435936 - UFS Speed: Gear 4 Lane 2 Rate B
+D -    162992 - media_init:3
+D -        31 - boot_wdog_disable_check
+D -       488 - init-logstomedia
+D -         0 - shrm_load_cancel
+B -    443409 - SHRM -  Image Load, Start
+D -     22844 - Auth Metadata
+D -     27084 - SHRM -  Image Loaded, Delta - (59552 Bytes)
+B -    470645 - CDT not found in any storage media, using defaults
+D -       122 - boot_cdt_init
+B -    470645 - CDT -  Image Load, Start
+B -    470645 - CDT not found in any storage media
+D -      1495 - sbl1_hw_platform_pre_ddr
+B -    488549 - PM: ICL final: 2000mA
+B -    488793 - usb: chgr -  FLOAT_CHARGER
+B -    490989 - PM: Battery ID: 15222Ohm
+B -    504927 - PM: 2S Vbat cell1:4330mV, cell2:4330mV
+B -    505049 - PM: VBAT: 8659mV IBAT: 0mA
+B -    505110 - PM: CHG Init # SPMI Transn: 4024
+B -    505110 - vsense_init, Start
+D -         0 - vsense_init, Delta
+D -     44469 - sbl1_hw_pre_ddr_init
+D -        61 - boot_fedl_check
+D -         0 - boot_dload_handle_forced_dload_timeout
+D -      1189 - sbl1_load_ddr_training_data
+B -    517920 - Pre_DDR_clock_init, Start
+D -         0 - Pre_DDR_clock_init, Delta
+D -      1251 - sbl1_ddr_set_params
+B -    517951 - sbl1_ddr_init, Start
+B -    518134 - LP5 DDR detected
+B -    520330 - DDR_INIT with shrm.elf
+B -    520330 - INFO: PXI based read & write training enabled
+B -    530364 - eCDT MRR - Data Starting Address: 0x19056D00
+B -    562664 - ddr_init = 1 cold boot
+D -     44743 - sbl1_ddr_init, Delta
+B -    562694 - DSF version = 272.56.120
+B -    562694 - Manufacturer ID = 0x1, Device Type = 0x8
+B -    562694 - Rank 0 size = 6144 MB, Rank 1 size = 12288 MB
+D -     44957 - sbl1_ddr_init
+D -       244 - store-logstomedia
+B -    563182 - do_ddr_training, Start
+B -    577944 - DDR: Start of DDR Training Restore
+B -    581421 - Current DDR Freq = 2096 MHz
+B -    581421 - Max enabled DDR Freq = 3196 MHz
+B -    581452 - DDR: End of DDR Training Restore
+D -     18300 - do_ddr_training, Delta
+B -    585112 - IOCTL LCP enabled feature set = 0x0 
+D -     21960 - xbl_trng_ddi_seq
+D -       244 - store-logstomedia
+D -      1311 - xbl_map_smem
+D -         0 - boot_smem_debug_init
+D -      2928 - boot_smem_init
+D -       122 - boot_ddr_share_data_to_aop
+D -        31 - boot_populate_ddr_details_shared_table
+D -        61 - boot_update_ram_partition_table
+B -    589839 - Pimem init cmd, entry
+D -      7564 - Pimem init cmd, exit
+B -    598410 - External heap init, Start
+B -    598440 - External heap init, End
+D -     18696 - sbl1_post_ddr_init
+D -         0 - sbl1_hw_init_secondary
+B -    608505 - DDR -  Image Load, Start
+B -    608536 - Find DTB for chipinfo:[7401c902020000] and platforminfo:[80*************]
+B -    608536 - DTB: looking for default D_DTB_NAME
+B -    610854 - DTB: published DEFAULT_BLOB_ID
+D -      2349 - boot_platform_dtb_init
+B -    610945 - usb: UFS Serial - 3dbd****
+D -        61 - boot_usb_update_serial
+D -         0 - boot_usb_handle_charger
+D -        61 - sbl1_hw_platform_smem
+D -         0 - ramdump_load_cancel
+B -    611006 - RamDump -  Image Load, Start
+D -         0 - RamDump -  Image Loaded, Delta - (0 Bytes)
+D -         0 - boot_update_abnormal_reset_status
+D -         0 - boot_cache_set_memory_barrier
+D -        30 - boot_smem_alloc_for_minidump
+D -         0 - boot_shrm_mini_dump_init
+D -        31 - boot_minidump_register_regions
+D -        61 - boot_smem_store_pon_status
+D -        30 - boot_clock_init_rpm
+D -         0 - boot_vsense_copy_to_smem
+D -       153 - sbl1_tlmm_init
+D -        30 - sbl1_efs_handle_cookies
+B -    626165 - PM: PM Total Mem Allocated: 9092 
+D -     14793 - sbl1_pm_aop_pre_init_wrapper
+B -    626165 - AOP Config -  Image Load, Start
+D -     11773 - Auth Metadata
+D -     15890 - AOP Config -  Image Loaded, Delta - (12186 Bytes)
+B -    642055 - AOP -  Image Load, Start
+D -     23881 - Auth Metadata
+D -     39406 - AOP -  Image Loaded, Delta - (250296 Bytes)
+D -         0 - aop_loaded
+D -        31 - boot_prepare_cpucp
+B -    681492 - CPUCPFW -  Image Load, Start
+D -     23668 - Auth Metadata
+D -     50996 - CPUCPFW -  Image Loaded, Delta - (132184 Bytes)
+D -         0 - boot_reset_cpucp
+B -    732518 - QSEE Dev Config -  Image Load, Start
+D -     13237 - Auth Metadata
+D -     17507 - QSEE Dev Config -  Image Loaded, Delta - (47520 Bytes)
+B -    749995 - QSEE -  Image Load, Start
+D -     24949 - Auth Metadata
+D -    141489 - QSEE -  Image Loaded, Delta - (3675580 Bytes)
+D -        31 - sbl1_save_qsee_image_info
+B -    892216 - DTB: Vibration Enabled
+D -       854 - sbl1_hw_play_vibr
+B -    892369 - SEC -  Image Load, Start
+D -     11773 - Auth Metadata
+D -     14121 - SEC -  Image Loaded, Delta - (3916 Bytes)
+B -    906521 - QHEE -  Image Load, Start
+D -     23821 - Auth Metadata
+D -     44957 - QHEE -  Image Loaded, Delta - (1321868 Bytes)
+B -    951508 - APPSBL -  Image Load, Start
+D -     12719 - Auth Metadata
+D -     41541 - APPSBL -  Image Loaded, Delta - (2755992 Bytes)
+D -         0 - sbl1_save_appsbl_index
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          LOG_START-0000000787
+S - 
+Format: Log Type - Time(microsec) - Message - Optional Info
+S - 
+Log Type: B - Since Boot(Power On Reset),  D - Delta,  S - Statistic
+S - QC_IMAGE_VERSION_STRING=BOOT.MXF.2.0-00608-WAIPIO-1.465557.1.467702.3
+S - IMAGE_VARIANT_STRING=SocWaipioLAA
+S - OEM_IMAGE_VERSION_STRING=crm-ubuntu70
+S - Boot Interface: UFS
+S - Secure Boot: On
+S - Boot Config @ 0x221c8600 = 0x00000001
+S - JTAG ID @ 0x221c8744 = 0x301870e1
+S - OEM ID @ 0x221c8700 = 0x00000004
+S - Serial Number @ 0x221c8610 = 0x000004324a099072
+S - Feature Config Row 0 @ 0x221c2258 = 0x062d850008800000
+S - Feature Config Row 1 @ 0x221c2260 = 0x59bb5504a0b6a500
+S - Core 0 Frequency, 1363 MHz
+S - PBL Patch Ver: 0
+S - PBL freq: 600 MHZ
+S - -------------------------
+PBL Timestamps (in usecs)
+-------------------------
+APBL start: 330
+APBL Boot Media Detect Start: 7745
+APBL Boot Media Detect End: 7761
+APBL SHELF Load+Auth Start: 7763
+	APBL ELF MD Load Start: 39278
+	APBL ELF MD Load End: 39545
+	APBL ELF Seg Load Start: 39546
+	APBL ELF Seg Load End: 42491
+		APBL SEQ Valid Set: 42516
+		APBL SEQ SA ACK Rcvd: 52770
+	APBL ELF MD Load Start: 53990
+	APBL ELF MD Load End: 54926
+	APBL ELF Auth Start: 54931
+	APBL ELF Auth End: 72385
+	APBL ELF Seg Load Start: 72386
+	APBL ELF Seg Load End: 75673
+	APBL ELF Seg Verify Start: 75675
+	APBL ELF Seg Verify End: 80635
+	APBL ELF MD Load Start: 81775
+	APBL ELF MD Load End: 82510
+	APBL ELF Auth Start: 82511
+	APBL ELF Auth End: 99908
+	APBL ELF Seg Load Start: 99908
+	APBL ELF Seg Load End: 107058
+	APBL ELF Seg Verify Start: 107058
+	APBL ELF Seg Verify End: 111488
+APBL SHELF Load+Auth End: 111635
+		APBL TME PBL Exit: 111636
+		APBL XBL_SC Exit Check: 112000
+		APBL XBL_SC Exit Ack: 120241
+APBL Exit: 120243
+B -    122885 - SBL1, Start
+B -    139995 - SBL1 BUILD @ 18:12:28 on Jan 11 2022
+B -    145515 - usb: HS: usb_shared_xbl_dtb_node_init dtb inaccessible , 0x2
+B -    145515 - usb: usb_hs_phy_cfg size  , 0x20
+B -    145576 - usb: eud_ser_upd , 0x4a099072
+D -      1251 - sbl1_hw_init
+D -       519 - media_init:1
+D -         0 - blacklist disable
+B -    146156 - OEM_MISC -  Image Load, Start
+D -     12230 - Auth Metadata
+D -     14670 - OEM_MISC -  Image Loaded, Delta - (4648 Bytes)
+B -    160857 - QTI_MISC -  Image Load, Start
+D -      9058 - Auth Metadata
+D -     11102 - QTI_MISC -  Image Loaded, Delta - (3508 Bytes)
+B -    171989 - APDP -  Image Load, Start
+D -     11651 - Auth Metadata
+D -     18697 - APDP -  Image Loaded, Delta - (3856 Bytes)
+D -        30 - boot_dload_dump_security_regions
+D -         0 - EUD Init
+D -         0 - blacklist enable
+B -    193766 - Debug Policy: processed
+B -    193766 - Debug Policy: debug policy applied
+D -      3050 - DP_Milestone
+D -      3233 - Auth Metadata
+D -      4910 - sbl1_xblconfig_init
+B -    198707 - XBL Config -  Image Load, Start
+B -    198738 - DTB: looking for default S_DTB_NAME
+B -    200202 - DTB: published DEFAULT_BLOB_ID
+D -      1525 - boot_pre_ddr_dtb_init
+B -    210938 - 
+BUS: 0 PMIC A:2.0 B:2.2 C:2.2 D:2.0 E:2.3 H:1.0 I:1.1
+BUS: 1 PMIC J:3.0 N:2.0
+B -    212646 - PM: Reset by PSHOLD
+B -    212646 - PM: Reset Type: Hard Reset
+B -    212646 - PM: PON by SYSOK
+B -    247080 - PM: SET_VAL:Skip
+B -    247355 - PM: PSI: b0x0a_v0x87
+B -    251137 - PM: Device Init # SPMI Transn: 3172
+D -     50905 - pm_device_init, Delta
+B -    251137 - pm_driver_init, Start
+B -    260165 - PM: Driver Init # SPMI Transn: 674
+D -      9028 - pm_driver_init, Delta
+D -     59933 - sbl1_pmic_init
+D -     19550 - media_init:2
+B -    421144 - UFS Spec Version: 3.10
+B -    423126 - UFS INQUIRY ID: SAMSUNG KLUEG8UHDC-B0E1 0400
+B -    424499 - UFS Boot LUN: 1
+B -    426115 - UFS Total Size: 256 GB
+B -    435753 - UFS Speed: Gear 4 Lane 2 Rate B
+D -    163023 - media_init:3
+D -        30 - boot_wdog_disable_check
+D -       427 - init-logstomedia
+D -         0 - shrm_load_cancel
+B -    443195 - SHRM -  Image Load, Start
+D -     22753 - Auth Metadata
+D -     26993 - SHRM -  Image Loaded, Delta - (59552 Bytes)
+B -    470310 - CDT not found in any storage media, using defaults
+D -       122 - boot_cdt_init
+B -    470310 - CDT -  Image Load, Start
+B -    470310 - CDT not found in any storage media
+D -      1494 - sbl1_hw_platform_pre_ddr
+B -    488305 - PM: ICL final: 2000mA
+B -    488549 - usb: chgr -  FLOAT_CHARGER
+B -    490745 - PM: Battery ID: 15226Ohm
+B -    504531 - PM: 2S Vbat cell1:4327mV, cell2:4326mV
+B -    504683 - PM: VBAT: 8652mV IBAT: 0mA
+B -    504714 - PM: CHG Init # SPMI Transn: 4023
+B -    504714 - vsense_init, Start
+D -         0 - vsense_init, Delta
+D -     44469 - sbl1_hw_pre_ddr_init
+D -        61 - boot_fedl_check
+D -         0 - boot_dload_handle_forced_dload_timeout
+D -      1220 - sbl1_load_ddr_training_data
+B -    517554 - Pre_DDR_clock_init, Start
+D -         0 - Pre_DDR_clock_init, Delta
+D -      1251 - sbl1_ddr_set_params
+B -    517585 - sbl1_ddr_init, Start
+B -    517768 - LP5 DDR detected
+B -    519964 - DDR_INIT with shrm.elf
+B -    519964 - INFO: PXI based read & write training enabled
+B -    529998 - eCDT MRR - Data Starting Address: 0x19056D00
+B -    562298 - ddr_init = 1 cold boot
+D -     44743 - sbl1_ddr_init, Delta
+B -    562328 - DSF version = 272.56.120
+B -    562328 - Manufacturer ID = 0x1, Device Type = 0x8
+B -    562359 - Rank 0 size = 6144 MB, Rank 1 size = 12288 MB
+D -     44957 - sbl1_ddr_init
+D -       244 - store-logstomedia
+B -    562786 - do_ddr_training, Start
+B -    577609 - DDR: Start of DDR Training Restore
+B -    581055 - Current DDR Freq = 2096 MHz
+B -    581086 - Max enabled DDR Freq = 3196 MHz
+B -    581086 - DDR: End of DDR Training Restore
+D -     18300 - do_ddr_training, Delta
+B -    584746 - IOCTL LCP enabled feature set = 0x0 
+D -     21960 - xbl_trng_ddi_seq
+D -       244 - store-logstomedia
+D -      1311 - xbl_map_smem
+D -         0 - boot_smem_debug_init
+D -      2928 - boot_smem_init
+D -       122 - boot_ddr_share_data_to_aop
+D -        31 - boot_populate_ddr_details_shared_table
+D -        31 - boot_update_ram_partition_table
+B -    589473 - Pimem init cmd, entry
+D -      7534 - Pimem init cmd, exit
+B -    598044 - External heap init, Start
+B -    598044 - External heap init, End
+D -     18666 - sbl1_post_ddr_init
+D -         0 - sbl1_hw_init_secondary
+B -    608109 - DDR -  Image Load, Start
+B -    608139 - Find DTB for chipinfo:[7401c902020000] and platforminfo:[80*************]
+B -    608139 - DTB: looking for default D_DTB_NAME
+B -    610427 - DTB: published DEFAULT_BLOB_ID
+D -      2318 - boot_platform_dtb_init
+B -    610518 - usb: UFS Serial - 3dbd****
+D -        61 - boot_usb_update_serial
+D -         0 - boot_usb_handle_charger
+D -        61 - sbl1_hw_platform_smem
+D -         0 - ramdump_load_cancel
+B -    610579 - RamDump -  Image Load, Start
+D -         0 - RamDump -  Image Loaded, Delta - (0 Bytes)
+D -         0 - boot_update_abnormal_reset_status
+D -         0 - boot_cache_set_memory_barrier
+D -        30 - boot_smem_alloc_for_minidump
+D -         0 - boot_shrm_mini_dump_init
+D -        31 - boot_minidump_register_regions
+D -        61 - boot_smem_store_pon_status
+D -        30 - boot_clock_init_rpm
+D -         0 - boot_vsense_copy_to_smem
+D -       153 - sbl1_tlmm_init
+D -        30 - sbl1_efs_handle_cookies
+B -    625829 - PM: PM Total Mem Allocated: 9092 
+D -     14884 - sbl1_pm_aop_pre_init_wrapper
+B -    625829 - AOP Config -  Image Load, Start
+D -     11804 - Auth Metadata
+D -     15860 - AOP Config -  Image Loaded, Delta - (12186 Bytes)
+B -    641689 - AOP -  Image Load, Start
+D -     23882 - Auth Metadata
+D -     39376 - AOP -  Image Loaded, Delta - (250296 Bytes)
+D -         0 - aop_loaded
+D -         0 - boot_prepare_cpucp
+B -    681095 - CPUCPFW -  Image Load, Start
+D -     23607 - Auth Metadata
+D -     50569 - CPUCPFW -  Image Loaded, Delta - (132184 Bytes)
+D -         0 - boot_reset_cpucp
+B -    731664 - QSEE Dev Config -  Image Load, Start
+D -     13237 - Auth Metadata
+D -     17507 - QSEE Dev Config -  Image Loaded, Delta - (47520 Bytes)
+B -    749171 - QSEE -  Image Load, Start
+D -     25010 - Auth Metadata
+D -    141947 - QSEE -  Image Loaded, Delta - (3675580 Bytes)
+D -         0 - sbl1_save_qsee_image_info
+B -    891728 - DTB: Vibration Enabled
+D -       763 - sbl1_hw_play_vibr
+B -    891911 - SEC -  Image Load, Start
+D -     11803 - Auth Metadata
+D -     14122 - SEC -  Image Loaded, Delta - (3916 Bytes)
+B -    906063 - QHEE -  Image Load, Start
+D -     23790 - Auth Metadata
+D -     44896 - QHEE -  Image Loaded, Delta - (1321868 Bytes)
+B -    950959 - APPSBL -  Image Load, Start
+D -     12658 - Auth Metadata
+D -     41511 - APPSBL -  Image Loaded, Delta - (2755992 Bytes)
+D -         0 - sbl1_save_appsbl_index
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          LOG_START-0000000778
+S - 
+Format: Log Type - Time(microsec) - Message - Optional Info
+S - 
+Log Type: B - Since Boot(Power On Reset),  D - Delta,  S - Statistic
+S - QC_IMAGE_VERSION_STRING=BOOT.MXF.2.0-00608-WAIPIO-1.465557.1.467702.3
+S - IMAGE_VARIANT_STRING=SocWaipioLAA
+S - OEM_IMAGE_VERSION_STRING=crm-ubuntu70
+S - Boot Interface: UFS
+S - Secure Boot: On
+S - Boot Config @ 0x221c8600 = 0x00000001
+S - JTAG ID @ 0x221c8744 = 0x301870e1
+S - OEM ID @ 0x221c8700 = 0x00000004
+S - Serial Number @ 0x221c8610 = 0x000004324a099072
+S - Feature Config Row 0 @ 0x221c2258 = 0x062d850008800000
+S - Feature Config Row 1 @ 0x221c2260 = 0x59bb5504a0b6a500
+S - Core 0 Frequency, 1363 MHz
+S - PBL Patch Ver: 0
+S - PBL freq: 600 MHZ
+S - -------------------------
+PBL Timestamps (in usecs)
+-------------------------
+APBL start: 330
+APBL Boot Media Detect Start: 7745
+APBL Boot Media Detect End: 7761
+APBL SHELF Load+Auth Start: 7763
+	APBL ELF MD Load Start: 39276
+	APBL ELF MD Load End: 39538
+	APBL ELF Seg Load Start: 39538
+	APBL ELF Seg Load End: 42481
+		APBL SEQ Valid Set: 42506
+		APBL SEQ SA ACK Rcvd: 52763
+	APBL ELF MD Load Start: 53981
+	APBL ELF MD Load End: 54911
+	APBL ELF Auth Start: 54918
+	APBL ELF Auth End: 72336
+	APBL ELF Seg Load Start: 72336
+	APBL ELF Seg Load End: 75623
+	APBL ELF Seg Verify Start: 75623
+	APBL ELF Seg Verify End: 80583
+	APBL ELF MD Load Start: 81721
+	APBL ELF MD Load End: 82463
+	APBL ELF Auth Start: 82465
+	APBL ELF Auth End: 99905
+	APBL ELF Seg Load Start: 99906
+	APBL ELF Seg Load End: 107098
+	APBL ELF Seg Verify Start: 107098
+	APBL ELF Seg Verify End: 111526
+APBL SHELF Load+Auth End: 111675
+		APBL TME PBL Exit: 111676
+		APBL XBL_SC Exit Check: 112040
+		APBL XBL_SC Exit Ack: 120283
+APBL Exit: 120285
+B -    123006 - SBL1, Start
+B -    140117 - SBL1 BUILD @ 18:12:28 on Jan 11 2022
+B -    145637 - usb: HS: usb_shared_xbl_dtb_node_init dtb inaccessible , 0x2
+B -    145637 - usb: usb_hs_phy_cfg size  , 0x20
+B -    145698 - usb: eud_ser_upd , 0x4a099072
+D -      1220 - sbl1_hw_init
+D -       488 - media_init:1
+D -         0 - blacklist disable
+B -    146217 - OEM_MISC -  Image Load, Start
+D -     12291 - Auth Metadata
+D -     14762 - OEM_MISC -  Image Loaded, Delta - (4648 Bytes)
+B -    160979 - QTI_MISC -  Image Load, Start
+D -      9059 - Auth Metadata
+D -     11132 - QTI_MISC -  Image Loaded, Delta - (3508 Bytes)
+B -    172142 - APDP -  Image Load, Start
+D -     11712 - Auth Metadata
+D -     18757 - APDP -  Image Loaded, Delta - (3856 Bytes)
+D -         0 - boot_dload_dump_security_regions
+D -         0 - EUD Init
+D -         0 - blacklist enable
+B -    193980 - Debug Policy: processed
+B -    193980 - Debug Policy: debug policy applied
+D -      3080 - DP_Milestone
+D -      3294 - Auth Metadata
+D -      4972 - sbl1_xblconfig_init
+B -    198982 - XBL Config -  Image Load, Start
+B -    198982 - DTB: looking for default S_DTB_NAME
+B -    200476 - DTB: published DEFAULT_BLOB_ID
+D -      1525 - boot_pre_ddr_dtb_init
+B -    211212 - 
+BUS: 0 PMIC A:2.0 B:2.2 C:2.2 D:2.0 E:2.3 H:1.0 I:1.1
+BUS: 1 PMIC J:3.0 N:2.0
+B -    212890 - PM: Reset by PWR key S2
+B -    212890 - PM: Reset Type: Hard Reset
+B -    212890 - PM: PON by PWR key DEB
+B -    214384 - PM: PBS_RAM 1 reloading
+B -    369751 - PM: SET_VAL:Skip
+B -    370026 - PM: PSI: b0x0a_v0x87
+B -    373808 - PM: Device Init # SPMI Transn: 11332
+D -    173301 - pm_device_init, Delta
+B -    373808 - pm_driver_init, Start
+B -    382836 - PM: Driver Init # SPMI Transn: 674
+D -      9028 - pm_driver_init, Delta
+D -    182329 - sbl1_pmic_init
+D -     19520 - media_init:2
+B -    726723 - UFS Spec Version: 3.10
+B -    728919 - UFS INQUIRY ID: SAMSUNG KLUEG8UHDC-B0E1 0400
+B -    730292 - UFS Boot LUN: 1
+B -    731908 - UFS Total Size: 256 GB
+B -    741790 - UFS Speed: Gear 4 Lane 2 Rate B
+D -    346266 - media_init:3
+D -        31 - boot_wdog_disable_check
+D -       457 - init-logstomedia
+D -         0 - shrm_load_cancel
+B -    749110 - SHRM -  Image Load, Start
+D -     22875 - Auth Metadata
+D -     27389 - SHRM -  Image Loaded, Delta - (59552 Bytes)
+B -    776621 - CDT not found in any storage media, using defaults
+D -       122 - boot_cdt_init
+B -    776621 - CDT -  Image Load, Start
+B -    776621 - CDT not found in any storage media
+D -      1525 - sbl1_hw_platform_pre_ddr
+B -    784551 - PM: ICL final: 500mA
+B -    784795 - usb: chgr -  SDP_CHARGER
+B -    784795 - usb: qusb_dci_eud_init
+B -    785893 - PM: Battery ID: 15226Ohm
+B -    787723 - PM: 2S Vbat cell1:4283mV, cell2:4342mV
+B -    787845 - PM: VBAT: 8623mV IBAT: -21mA
+B -    787906 - PM: CHG Init # SPMI Transn: 12085
+B -    787906 - vsense_init, Start
+D -         0 - vsense_init, Delta
+D -     21716 - sbl1_hw_pre_ddr_init
+B -    799923 - V-/V+/P:101
+D -        61 - boot_fedl_check
+D -         0 - boot_dload_handle_forced_dload_timeout
+D -      1220 - sbl1_load_ddr_training_data
+B -    801143 - Pre_DDR_clock_init, Start
+D -         0 - Pre_DDR_clock_init, Delta
+D -      1251 - sbl1_ddr_set_params
+B -    801174 - sbl1_ddr_init, Start
+B -    801357 - LP5 DDR detected
+B -    803583 - DDR_INIT with shrm.elf
+B -    803583 - INFO: PXI based read & write training enabled
+B -    813618 - eCDT MRR - Data Starting Address: 0x19056D00
+B -    845917 - ddr_init = 1 cold boot
+D -     44774 - sbl1_ddr_init, Delta
+B -    845948 - DSF version = 272.56.120
+B -    845948 - Manufacturer ID = 0x1, Device Type = 0x8
+B -    845948 - Rank 0 size = 6144 MB, Rank 1 size = 12288 MB
+D -     44987 - sbl1_ddr_init
+D -       244 - store-logstomedia
+B -    846436 - do_ddr_training, Start
+B -    861228 - DDR: Start of DDR Training Restore
+B -    864675 - Current DDR Freq = 2096 MHz
+B -    864705 - Max enabled DDR Freq = 3196 MHz
+B -    864705 - DDR: End of DDR Training Restore
+D -     18300 - do_ddr_training, Delta
+B -    868365 - IOCTL LCP enabled feature set = 0x0 
+D -     21960 - xbl_trng_ddi_seq
+D -       244 - store-logstomedia
+D -      1312 - xbl_map_smem
+D -         0 - boot_smem_debug_init
+D -      2928 - boot_smem_init
+D -       122 - boot_ddr_share_data_to_aop
+D -        61 - boot_populate_ddr_details_shared_table
+D -        30 - boot_update_ram_partition_table
+B -    873093 - Pimem init cmd, entry
+D -      7533 - Pimem init cmd, exit
+B -    881633 - External heap init, Start
+B -    881633 - External heap init, End
+D -     18636 - sbl1_post_ddr_init
+D -         0 - sbl1_hw_init_secondary
+B -    891728 - DDR -  Image Load, Start
+B -    891728 - Find DTB for chipinfo:[7401c902020000] and platforminfo:[80*************]
+B -    891728 - DTB: looking for default D_DTB_NAME
+B -    894443 - DTB: published DEFAULT_BLOB_ID
+D -      2715 - boot_platform_dtb_init
+B -    894534 - usb: UFS Serial - 3dbd****
+D -        61 - boot_usb_update_serial
+D -         0 - boot_usb_handle_charger
+D -        61 - sbl1_hw_platform_smem
+D -         0 - ramdump_load_cancel
+B -    894595 - RamDump -  Image Load, Start
+D -         0 - RamDump -  Image Loaded, Delta - (0 Bytes)
+D -         0 - boot_update_abnormal_reset_status
+D -         0 - boot_cache_set_memory_barrier
+D -        30 - boot_smem_alloc_for_minidump
+D -         0 - boot_shrm_mini_dump_init
+D -        31 - boot_minidump_register_regions
+D -        61 - boot_smem_store_pon_status
+D -        30 - boot_clock_init_rpm
+D -         0 - boot_vsense_copy_to_smem
+D -       153 - sbl1_tlmm_init
+D -        30 - sbl1_efs_handle_cookies
+B -    909754 - PM: PM Total Mem Allocated: 9092 
+D -     14793 - sbl1_pm_aop_pre_init_wrapper
+B -    909784 - AOP Config -  Image Load, Start
+D -     11773 - Auth Metadata
+D -     15860 - AOP Config -  Image Loaded, Delta - (12186 Bytes)
+B -    925644 - AOP -  Image Load, Start
+D -     23820 - Auth Metadata
+D -     39406 - AOP -  Image Loaded, Delta - (250296 Bytes)
+D -         0 - aop_loaded
+D -         0 - boot_prepare_cpucp
+B -    965050 - CPUCPFW -  Image Load, Start
+D -     23668 - Auth Metadata
+D -     51027 - CPUCPFW -  Image Loaded, Delta - (132184 Bytes)
+D -         0 - boot_reset_cpucp
+B -   1016077 - QSEE Dev Config -  Image Load, Start
+D -     13176 - Auth Metadata
+D -     17568 - QSEE Dev Config -  Image Loaded, Delta - (47520 Bytes)
+B -   1033645 - QSEE -  Image Load, Start
+D -     25041 - Auth Metadata
+D -    141886 - QSEE -  Image Loaded, Delta - (3675580 Bytes)
+D -         0 - sbl1_save_qsee_image_info
+B -   1176232 - DTB: Vibration Enabled
+D -       824 - sbl1_hw_play_vibr
+B -   1176415 - SEC -  Image Load, Start
+D -     11804 - Auth Metadata
+D -     14183 - SEC -  Image Loaded, Delta - (3916 Bytes)
+B -   1190598 - QHEE -  Image Load, Start
+D -     23790 - Auth Metadata
+D -     44957 - QHEE -  Image Loaded, Delta - (1321868 Bytes)
+B -   1235555 - APPSBL -  Image Load, Start
+D -     12627 - Auth Metadata
+D -     42151 - APPSBL -  Image Loaded, Delta - (2755992 Bytes)
+D -         0 - sbl1_save_appsbl_index
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          LOG_START-0000000779
+S - 
+Format: Log Type - Time(microsec) - Message - Optional Info
+S - 
+Log Type: B - Since Boot(Power On Reset),  D - Delta,  S - Statistic
+S - QC_IMAGE_VERSION_STRING=BOOT.MXF.2.0-00608-WAIPIO-1.465557.1.467702.3
+S - IMAGE_VARIANT_STRING=SocWaipioLAA
+S - OEM_IMAGE_VERSION_STRING=crm-ubuntu70
+S - Boot Interface: UFS
+S - Secure Boot: On
+S - Boot Config @ 0x221c8600 = 0x00000001
+S - JTAG ID @ 0x221c8744 = 0x301870e1
+S - OEM ID @ 0x221c8700 = 0x00000004
+S - Serial Number @ 0x221c8610 = 0x000004324a099072
+S - Feature Config Row 0 @ 0x221c2258 = 0x062d850008800000
+S - Feature Config Row 1 @ 0x221c2260 = 0x59bb5504a0b6a500
+S - Core 0 Frequency, 1363 MHz
+S - PBL Patch Ver: 0
+S - PBL freq: 600 MHZ
+S - -------------------------
+PBL Timestamps (in usecs)
+-------------------------
+APBL start: 330
+APBL Boot Media Detect Start: 7755
+APBL Boot Media Detect End: 7771
+APBL SHELF Load+Auth Start: 7773
+	APBL ELF MD Load Start: 39285
+	APBL ELF MD Load End: 39548
+	APBL ELF Seg Load Start: 39548
+	APBL ELF Seg Load End: 42495
+		APBL SEQ Valid Set: 42520
+		APBL SEQ SA ACK Rcvd: 52773
+	APBL ELF MD Load Start: 53993
+	APBL ELF MD Load End: 54923
+	APBL ELF Auth Start: 54928
+	APBL ELF Auth End: 72346
+	APBL ELF Seg Load Start: 72346
+	APBL ELF Seg Load End: 75636
+	APBL ELF Seg Verify Start: 75636
+	APBL ELF Seg Verify End: 80596
+	APBL ELF MD Load Start: 81735
+	APBL ELF MD Load End: 82470
+	APBL ELF Auth Start: 82471
+	APBL ELF Auth End: 99918
+	APBL ELF Seg Load Start: 99920
+	APBL ELF Seg Load End: 107088
+	APBL ELF Seg Verify Start: 107088
+	APBL ELF Seg Verify End: 111515
+APBL SHELF Load+Auth End: 111663
+		APBL TME PBL Exit: 111665
+		APBL XBL_SC Exit Check: 112026
+		APBL XBL_SC Exit Ack: 120270
+APBL Exit: 120273
+B -    124379 - SBL1, Start
+B -    141672 - SBL1 BUILD @ 18:12:28 on Jan 11 2022
+B -    147254 - usb: HS: usb_shared_xbl_dtb_node_init dtb inaccessible , 0x2
+B -    147254 - usb: usb_hs_phy_cfg size  , 0x20
+B -    147315 - usb: eud_ser_upd , 0x4a099072
+D -      1250 - sbl1_hw_init
+D -       488 - media_init:1
+D -         0 - blacklist disable
+B -    147864 - OEM_MISC -  Image Load, Start
+D -     12322 - Auth Metadata
+D -     14823 - OEM_MISC -  Image Loaded, Delta - (4648 Bytes)
+B -    162687 - QTI_MISC -  Image Load, Start
+D -      9181 - Auth Metadata
+D -     11285 - QTI_MISC -  Image Loaded, Delta - (3508 Bytes)
+B -    173972 - APDP -  Image Load, Start
+D -     11865 - Auth Metadata
+D -     19032 - APDP -  Image Loaded, Delta - (3856 Bytes)
+D -         0 - boot_dload_dump_security_regions
+D -        30 - EUD Init
+D -         0 - blacklist enable
+B -    196115 - Debug Policy: processed
+B -    196115 - Debug Policy: debug policy applied
+D -      3111 - DP_Milestone
+D -      3355 - Auth Metadata
+D -      5063 - sbl1_xblconfig_init
+B -    201239 - XBL Config -  Image Load, Start
+B -    201239 - DTB: looking for default S_DTB_NAME
+B -    202733 - DTB: published DEFAULT_BLOB_ID
+D -      1494 - boot_pre_ddr_dtb_init
+B -    213591 - 
+BUS: 0 PMIC A:2.0 B:2.2 C:2.2 D:2.0 E:2.3 H:1.0 I:1.1
+BUS: 1 PMIC J:3.0 N:2.0
+B -    215391 - PM: xVdd reset. keypad S3
+B -    215391 - PM: Event 0x09, Fault data: 0x00 0x00 0x00
+B -    215391 - PM: Event 0x0A, Fault data: 0x00 0x00 0x00
+B -    215391 - PM: PON by PWR key DEB
+B -    216458 - PM: PBS_RAM 0 reloading
+B -    268095 - PM: PBS_RAM 1 reloading
+B -    391101 - PM: PBS_RAM 2 reloading
+B -    435784 - PM: SET_VAL:Skip
+B -    436058 - PM: PSI: b0x0a_v0x87
+B -    439810 - PM: Device Init # SPMI Transn: 15576
+D -    237077 - pm_device_init, Delta
+B -    439840 - pm_driver_init, Start
+B -    448838 - PM: Driver Init # SPMI Transn: 674
+D -      8998 - pm_driver_init, Delta
+D -    246105 - sbl1_pmic_init
+D -     19581 - media_init:2
+B -    610457 - UFS Spec Version: 3.10
+B -    612409 - UFS INQUIRY ID: SAMSUNG KLUEG8UHDC-B0E1 0400
+B -    613812 - UFS Boot LUN: 1
+B -    615429 - UFS Total Size: 256 GB
+B -    625036 - UFS Speed: Gear 4 Lane 2 Rate B
+D -    163510 - media_init:3
+D -        31 - boot_wdog_disable_check
+D -       457 - init-logstomedia
+D -         0 - shrm_load_cancel
+B -    632417 - SHRM -  Image Load, Start
+D -     22753 - Auth Metadata
+D -     27267 - SHRM -  Image Loaded, Delta - (59552 Bytes)
+B -    659806 - CDT not found in any storage media, using defaults
+D -       122 - boot_cdt_init
+B -    659806 - CDT -  Image Load, Start
+B -    659806 - CDT not found in any storage media
+D -      1525 - sbl1_hw_platform_pre_ddr
+B -    667797 - PM: ICL final: 500mA
+B -    668041 - usb: chgr -  SDP_CHARGER
+B -    668041 - usb: qusb_dci_eud_init
+B -    669139 - PM: Battery ID: 15218Ohm
+B -    670969 - PM: 2S Vbat cell1:4287mV, cell2:4342mV
+B -    671122 - PM: VBAT: 8629mV IBAT: -51mA
+B -    671152 - PM: CHG Init # SPMI Transn: 16335
+B -    671152 - vsense_init, Start
+D -         0 - vsense_init, Delta
+D -     21777 - sbl1_hw_pre_ddr_init
+D -        61 - boot_fedl_check
+D -         0 - boot_dload_handle_forced_dload_timeout
+D -      1251 - sbl1_load_ddr_training_data
+B -    684420 - Pre_DDR_clock_init, Start
+D -         0 - Pre_DDR_clock_init, Delta
+D -      1281 - sbl1_ddr_set_params
+B -    684450 - sbl1_ddr_init, Start
+B -    684633 - LP5 DDR detected
+B -    686829 - DDR_INIT with shrm.elf
+B -    686829 - INFO: PXI based read & write training enabled
+B -    696864 - eCDT MRR - Data Starting Address: 0x19056D00
+B -    729163 - ddr_init = 1 cold boot
+D -     44744 - sbl1_ddr_init, Delta
+B -    729194 - DSF version = 272.56.120
+B -    729194 - Manufacturer ID = 0x1, Device Type = 0x8
+B -    729224 - Rank 0 size = 6144 MB, Rank 1 size = 12288 MB
+D -     44957 - sbl1_ddr_init
+D -       244 - store-logstomedia
+B -    729651 - do_ddr_training, Start
+B -    744444 - DDR: Start of DDR Training Restore
+B -    747921 - Current DDR Freq = 2096 MHz
+B -    747921 - Max enabled DDR Freq = 3196 MHz
+B -    747951 - DDR: End of DDR Training Restore
+D -     18300 - do_ddr_training, Delta
+B -    751611 - IOCTL LCP enabled feature set = 0x0 
+D -     21960 - xbl_trng_ddi_seq
+D -       214 - store-logstomedia
+D -      1311 - xbl_map_smem
+D -         0 - boot_smem_debug_init
+D -      2928 - boot_smem_init
+D -       122 - boot_ddr_share_data_to_aop
+D -        61 - boot_populate_ddr_details_shared_table
+D -        31 - boot_update_ram_partition_table
+B -    756308 - Pimem init cmd, entry
+D -      7534 - Pimem init cmd, exit
+B -    764879 - External heap init, Start
+B -    764879 - External heap init, End
+D -     18666 - sbl1_post_ddr_init
+D -         0 - sbl1_hw_init_secondary
+B -    774974 - DDR -  Image Load, Start
+B -    774974 - Find DTB for chipinfo:[7401c902020000] and platforminfo:[80*************]
+B -    774974 - DTB: looking for default D_DTB_NAME
+B -    777719 - DTB: published DEFAULT_BLOB_ID
+D -      2776 - boot_platform_dtb_init
+B -    777811 - usb: UFS Serial - 3dbd****
+D -        61 - boot_usb_update_serial
+D -         0 - boot_usb_handle_charger
+D -        61 - sbl1_hw_platform_smem
+D -         0 - ramdump_load_cancel
+B -    777872 - RamDump -  Image Load, Start
+D -         0 - RamDump -  Image Loaded, Delta - (0 Bytes)
+D -         0 - boot_update_abnormal_reset_status
+D -         0 - boot_cache_set_memory_barrier
+D -        31 - boot_smem_alloc_for_minidump
+D -         0 - boot_shrm_mini_dump_init
+D -        30 - boot_minidump_register_regions
+D -        61 - boot_smem_store_pon_status
+D -        31 - boot_clock_init_rpm
+D -         0 - boot_vsense_copy_to_smem
+D -       152 - sbl1_tlmm_init
+D -         0 - sbl1_efs_handle_cookies
+B -    792908 - PM: PM Total Mem Allocated: 9092 
+D -     14701 - sbl1_pm_aop_pre_init_wrapper
+B -    792908 - AOP Config -  Image Load, Start
+D -     11773 - Auth Metadata
+D -     15891 - AOP Config -  Image Loaded, Delta - (12186 Bytes)
+B -    808799 - AOP -  Image Load, Start
+D -     23790 - Auth Metadata
+D -     39406 - AOP -  Image Loaded, Delta - (250296 Bytes)
+D -         0 - aop_loaded
+D -         0 - boot_prepare_cpucp
+B -    848235 - CPUCPFW -  Image Load, Start
+D -     23668 - Auth Metadata
+D -     51026 - CPUCPFW -  Image Loaded, Delta - (132184 Bytes)
+D -        31 - boot_reset_cpucp
+B -    899262 - QSEE Dev Config -  Image Load, Start
+D -     13237 - Auth Metadata
+D -     17568 - QSEE Dev Config -  Image Loaded, Delta - (47520 Bytes)
+B -    916860 - QSEE -  Image Load, Start
+D -     24980 - Auth Metadata
+D -    141764 - QSEE -  Image Loaded, Delta - (3675580 Bytes)
+D -         0 - sbl1_save_qsee_image_info
+B -   1059356 - DTB: Vibration Enabled
+D -       854 - sbl1_hw_play_vibr
+B -   1059509 - SEC -  Image Load, Start
+D -     11834 - Auth Metadata
+D -     14182 - SEC -  Image Loaded, Delta - (3916 Bytes)
+B -   1073691 - QHEE -  Image Load, Start
+D -     23882 - Auth Metadata
+D -     44957 - QHEE -  Image Loaded, Delta - (1321868 Bytes)
+B -   1118679 - APPSBL -  Image Load, Start
+D -     12657 - Auth Metadata
+D -     42212 - APPSBL -  Image Loaded, Delta - (2755992 Bytes)
+D -         0 - sbl1_save_appsbl_index
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          LOG_START-0000000780
+S - 
+Format: Log Type - Time(microsec) - Message - Optional Info
+S - 
+Log Type: B - Since Boot(Power On Reset),  D - Delta,  S - Statistic
+S - QC_IMAGE_VERSION_STRING=BOOT.MXF.2.0-00608-WAIPIO-1.465557.1.467702.3
+S - IMAGE_VARIANT_STRING=SocWaipioLAA
+S - OEM_IMAGE_VERSION_STRING=crm-ubuntu70
+S - Boot Interface: UFS
+S - Secure Boot: On
+S - Boot Config @ 0x221c8600 = 0x00000001
+S - JTAG ID @ 0x221c8744 = 0x301870e1
+S - OEM ID @ 0x221c8700 = 0x00000004
+S - Serial Number @ 0x221c8610 = 0x000004324a099072
+S - Feature Config Row 0 @ 0x221c2258 = 0x062d850008800000
+S - Feature Config Row 1 @ 0x221c2260 = 0x59bb5504a0b6a500
+S - Core 0 Frequency, 1363 MHz
+S - PBL Patch Ver: 0
+S - PBL freq: 600 MHZ
+S - -------------------------
+PBL Timestamps (in usecs)
+-------------------------
+APBL start: 330
+APBL Boot Media Detect Start: 7746
+APBL Boot Media Detect End: 7763
+APBL SHELF Load+Auth Start: 7763
+	APBL ELF MD Load Start: 39265
+	APBL ELF MD Load End: 39526
+	APBL ELF Seg Load Start: 39526
+	APBL ELF Seg Load End: 42476
+		APBL SEQ Valid Set: 42501
+		APBL SEQ SA ACK Rcvd: 52758
+	APBL ELF MD Load Start: 53976
+	APBL ELF MD Load End: 54906
+	APBL ELF Auth Start: 54911
+	APBL ELF Auth End: 72331
+	APBL ELF Seg Load Start: 72331
+	APBL ELF Seg Load End: 75621
+	APBL ELF Seg Verify Start: 75621
+	APBL ELF Seg Verify End: 80581
+	APBL ELF MD Load Start: 81720
+	APBL ELF MD Load End: 82475
+	APBL ELF Auth Start: 82478
+	APBL ELF Auth End: 99925
+	APBL ELF Seg Load Start: 99926
+	APBL ELF Seg Load End: 107081
+	APBL ELF Seg Verify Start: 107081
+	APBL ELF Seg Verify End: 111511
+APBL SHELF Load+Auth End: 111660
+		APBL TME PBL Exit: 111663
+		APBL XBL_SC Exit Check: 112023
+		APBL XBL_SC Exit Ack: 120266
+APBL Exit: 120270
+B -    123067 - SBL1, Start
+B -    140178 - SBL1 BUILD @ 18:12:28 on Jan 11 2022
+B -    145698 - usb: HS: usb_shared_xbl_dtb_node_init dtb inaccessible , 0x2
+B -    145698 - usb: usb_hs_phy_cfg size  , 0x20
+B -    145759 - usb: eud_ser_upd , 0x4a099072
+D -      1251 - sbl1_hw_init
+D -       488 - media_init:1
+D -         0 - blacklist disable
+B -    146308 - OEM_MISC -  Image Load, Start
+D -     12291 - Auth Metadata
+D -     14732 - OEM_MISC -  Image Loaded, Delta - (4648 Bytes)
+B -    161040 - QTI_MISC -  Image Load, Start
+D -      9089 - Auth Metadata
+D -     11193 - QTI_MISC -  Image Loaded, Delta - (3508 Bytes)
+B -    172233 - APDP -  Image Load, Start
+D -     11681 - Auth Metadata
+D -     18788 - APDP -  Image Loaded, Delta - (3856 Bytes)
+D -         0 - boot_dload_dump_security_regions
+D -         0 - EUD Init
+D -         0 - blacklist enable
+B -    194102 - Debug Policy: processed
+B -    194102 - Debug Policy: debug policy applied
+D -      3081 - DP_Milestone
+D -      3264 - Auth Metadata
+D -      5063 - sbl1_xblconfig_init
+B -    199165 - XBL Config -  Image Load, Start
+B -    199165 - DTB: looking for default S_DTB_NAME
+B -    200659 - DTB: published DEFAULT_BLOB_ID
+D -      1494 - boot_pre_ddr_dtb_init
+B -    211090 - 
+BUS: 0 PMIC A:2.0 B:2.2 C:2.2 D:2.0 E:2.3 H:1.0 I:1.1
+BUS: 1 PMIC J:3.0 N:2.0
+B -    212798 - PM: Reset by PSHOLD
+B -    212798 - PM: Reset Type: Hard Reset
+B -    212798 - PM: PON by SYSOK
+B -    247538 - PM: SET_VAL:Skip
+B -    247812 - PM: PSI: b0x0a_v0x87
+B -    251594 - PM: Device Init # SPMI Transn: 3172
+D -     50935 - pm_device_init, Delta
+B -    251594 - pm_driver_init, Start
+B -    260653 - PM: Driver Init # SPMI Transn: 674
+D -      9059 - pm_driver_init, Delta
+D -     59994 - sbl1_pmic_init
+D -     19520 - media_init:2
+B -    421510 - UFS Spec Version: 3.10
+B -    423492 - UFS INQUIRY ID: SAMSUNG KLUEG8UHDC-B0E1 0400
+B -    424865 - UFS Boot LUN: 1
+B -    426481 - UFS Total Size: 256 GB
+B -    436089 - UFS Speed: Gear 4 Lane 2 Rate B
+D -    162870 - media_init:3
+D -        30 - boot_wdog_disable_check
+D -       458 - init-logstomedia
+D -         0 - shrm_load_cancel
+B -    443531 - SHRM -  Image Load, Start
+D -     22844 - Auth Metadata
+D -     27328 - SHRM -  Image Loaded, Delta - (59552 Bytes)
+B -    470981 - CDT not found in any storage media, using defaults
+D -       122 - boot_cdt_init
+B -    470981 - CDT -  Image Load, Start
+B -    470981 - CDT not found in any storage media
+D -      1525 - sbl1_hw_platform_pre_ddr
+B -    478911 - PM: ICL final: 500mA
+B -    479155 - usb: chgr -  SDP_CHARGER
+B -    479155 - usb: qusb_dci_eud_init
+B -    480253 - PM: Battery ID: 15197Ohm
+B -    482083 - PM: 2S Vbat cell1:4282mV, cell2:4342mV
+B -    482235 - PM: VBAT: 8624mV IBAT: -40mA
+B -    482266 - PM: CHG Init # SPMI Transn: 3925
+B -    482266 - vsense_init, Start
+D -         0 - vsense_init, Delta
+D -     21716 - sbl1_hw_pre_ddr_init
+D -        61 - boot_fedl_check
+D -        30 - boot_dload_handle_forced_dload_timeout
+D -      1220 - sbl1_load_ddr_training_data
+B -    495533 - Pre_DDR_clock_init, Start
+D -         0 - Pre_DDR_clock_init, Delta
+D -      1251 - sbl1_ddr_set_params
+B -    495564 - sbl1_ddr_init, Start
+B -    495747 - LP5 DDR detected
+B -    497973 - DDR_INIT with shrm.elf
+B -    497973 - INFO: PXI based read & write training enabled
+B -    508008 - eCDT MRR - Data Starting Address: 0x19056D00
+B -    540307 - ddr_init = 1 cold boot
+D -     44774 - sbl1_ddr_init, Delta
+B -    540338 - DSF version = 272.56.120
+B -    540338 - Manufacturer ID = 0x1, Device Type = 0x8
+B -    540368 - Rank 0 size = 6144 MB, Rank 1 size = 12288 MB
+D -     44987 - sbl1_ddr_init
+D -       244 - store-logstomedia
+B -    540826 - do_ddr_training, Start
+B -    555618 - DDR: Start of DDR Training Restore
+B -    559065 - Current DDR Freq = 2096 MHz
+B -    559095 - Max enabled DDR Freq = 3196 MHz
+B -    559095 - DDR: End of DDR Training Restore
+D -     18300 - do_ddr_training, Delta
+B -    562755 - IOCTL LCP enabled feature set = 0x0 
+D -     21960 - xbl_trng_ddi_seq
+D -       244 - store-logstomedia
+D -      1312 - xbl_map_smem
+D -         0 - boot_smem_debug_init
+D -      2928 - boot_smem_init
+D -       122 - boot_ddr_share_data_to_aop
+D -        30 - boot_populate_ddr_details_shared_table
+D -        30 - boot_update_ram_partition_table
+B -    567483 - Pimem init cmd, entry
+D -      7533 - Pimem init cmd, exit
+B -    576053 - External heap init, Start
+B -    576053 - External heap init, End
+D -     18666 - sbl1_post_ddr_init
+D -         0 - sbl1_hw_init_secondary
+B -    586118 - DDR -  Image Load, Start
+B -    586118 - Find DTB for chipinfo:[7401c902020000] and platforminfo:[80*************]
+B -    586149 - DTB: looking for default D_DTB_NAME
+B -    588863 - DTB: published DEFAULT_BLOB_ID
+D -      2745 - boot_platform_dtb_init
+B -    588955 - usb: UFS Serial - 3dbd****
+D -        61 - boot_usb_update_serial
+D -         0 - boot_usb_handle_charger
+D -        61 - sbl1_hw_platform_smem
+D -         0 - ramdump_load_cancel
+B -    589016 - RamDump -  Image Load, Start
+D -         0 - RamDump -  Image Loaded, Delta - (0 Bytes)
+D -         0 - boot_update_abnormal_reset_status
+D -         0 - boot_cache_set_memory_barrier
+D -        31 - boot_smem_alloc_for_minidump
+D -         0 - boot_shrm_mini_dump_init
+D -        30 - boot_minidump_register_regions
+D -        61 - boot_smem_store_pon_status
+D -        31 - boot_clock_init_rpm
+D -         0 - boot_vsense_copy_to_smem
+D -       152 - sbl1_tlmm_init
+D -         0 - sbl1_efs_handle_cookies
+B -    604296 - PM: PM Total Mem Allocated: 9092 
+D -     14914 - sbl1_pm_aop_pre_init_wrapper
+B -    604296 - AOP Config -  Image Load, Start
+D -     11712 - Auth Metadata
+D -     15860 - AOP Config -  Image Loaded, Delta - (12186 Bytes)
+B -    620156 - AOP -  Image Load, Start
+D -     23790 - Auth Metadata
+D -     39254 - AOP -  Image Loaded, Delta - (250296 Bytes)
+D -         0 - aop_loaded
+D -         0 - boot_prepare_cpucp
+B -    659440 - CPUCPFW -  Image Load, Start
+D -     23699 - Auth Metadata
+D -     51027 - CPUCPFW -  Image Loaded, Delta - (132184 Bytes)
+D -         0 - boot_reset_cpucp
+B -    710497 - QSEE Dev Config -  Image Load, Start
+D -     13176 - Auth Metadata
+D -     17599 - QSEE Dev Config -  Image Loaded, Delta - (47520 Bytes)
+B -    728096 - QSEE -  Image Load, Start
+D -     25132 - Auth Metadata
+D -    141825 - QSEE -  Image Loaded, Delta - (3675580 Bytes)
+D -         0 - sbl1_save_qsee_image_info
+B -    870622 - DTB: Vibration Enabled
+D -       854 - sbl1_hw_play_vibr
+B -    870805 - SEC -  Image Load, Start
+D -     11803 - Auth Metadata
+D -     14122 - SEC -  Image Loaded, Delta - (3916 Bytes)
+B -    884957 - QHEE -  Image Load, Start
+D -     23759 - Auth Metadata
+D -     44805 - QHEE -  Image Loaded, Delta - (1321868 Bytes)
+B -    929792 - APPSBL -  Image Load, Start
+D -     12658 - Auth Metadata
+D -     42151 - APPSBL -  Image Loaded, Delta - (2755992 Bytes)
+D -         0 - sbl1_save_appsbl_index
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          

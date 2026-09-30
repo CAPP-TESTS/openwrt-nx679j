@@ -1,0 +1,559 @@
+[    0.000000][    T0] Booting Linux on physical CPU 0x0000000000 [0x411fd070]
+[    0.000000][    T0] Linux version 5.10.66-android12-9-00005-gf6e6376090be-ab8060604 (build-user@build-host) (Android (7284624, based on r416183b) clang version 12.0.5 (https://android.googlesource.com/toolchain/llvm-project c935d99d7cf2016289302412d708641d52d2f7ee), LLD 12.0.5 (/buildbot/src/android/llvm-toolchain/out/llvm-project/lld c935d99d7cf2016289302412d708641d52d2f7ee)) #1 SMP PREEMPT Fri Jan 7 14:51:36 UTC 2022
+[    0.000000][    T0] Machine model: linux,dummy-virt
+[    0.000000][    T0] Stack Depot is disabled
+[    0.000000][    T0] earlycon: pl11 at MMIO 0x00************** (options '')
+[    0.000000][    T0] printk: bootconsole [pl11] enabled
+[    0.000000][    T0] efi: UEFI not found.
+[    0.000000][    T0] Zone ranges:
+[    0.000000][    T0]   DMA32    [mem 0x00**************-0x00000000bfffffff]
+[    0.000000][    T0]   Normal   empty
+[    0.000000][    T0] Movable zone start for each node
+[    0.000000][    T0] Early memory node ranges
+[    0.000000][    T0]   node   0: [mem 0x00**************-0x00000000bfffffff]
+[    0.000000][    T0] Initmem setup node 0 [mem 0x00**************-0x00000000bfffffff]
+[    0.000000][    T0] cma: Reserved 16 MiB at 0x00000000bc800000
+[    0.000000][    T0] psci: probing for conduit method from DT.
+[    0.000000][    T0] psci: PSCIv1.1 detected in firmware.
+[    0.000000][    T0] psci: Using standard PSCI v0.2 function IDs
+[    0.000000][    T0] psci: Trusted OS migration not required
+[    0.000000][    T0] psci: SMC Calling Convention v1.0
+[    0.000000][    T0] percpu: Embedded 33 pages/cpu s95960 r8192 d31016 u135168
+[    0.000000][    T0] Detected PIPT I-cache on CPU0
+[    0.000000][    T0] CPU features: SYS_ID_AA64MMFR1_EL1[11:8]: already set to 0
+[    0.000000][    T0] CPU features: detected: ARM erratum 832075
+[    0.000000][    T0] CPU features: detected: ARM erratum 834220
+[    0.000000][    T0] CPU features: detected: Spectre-v3a
+[    0.000000][    T0] CPU features: kernel page table isolation forced ON by KASLR
+[    0.000000][    T0] CPU features: detected: Kernel page table isolation (KPTI)
+[    0.000000][    T0] CPU features: detected: Spectre-v2
+[    0.000000][    T0] CPU features: detected: Spectre-v4
+[    0.000000][    T0] CPU features: detected: ARM errata 1165522, 1319367, or 1530923
+[    0.000000][    T0] Built 1 zonelists, mobility grouping on.  Total pages: 516096
+[    0.000000][    T0] Kernel command line: stack_depot_disable=on kasan.stacktrace=off kvm-arm.mode=protected cgroup_disable=pressure cgroup.memory=nokmem console=ttyAMA0 earlycon loglevel=7 panic=10 rdinit=/init
+[    0.000000][    T0] cgroup: Disabling pressure control group feature
+[    0.000000][    T0] Dentry cache hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+[    0.000000][    T0] Inode-cache hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+[    0.000000][    T0] mem auto-init: stack:all(zero), heap alloc:on, heap free:off
+[    0.000000][    T0] Memory: 1991956K/2097152K available (28800K kernel code, 2088K rwdata, 10664K rodata, 3072K init, 969K bss, 88812K reserved, 16384K cma-reserved)
+[    0.000000][    T0] random: get_random_u64 called from kmem_cache_open+0x2c/0x39c with crng_init=0
+[    0.000000][    T0] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
+[    0.000000][    T0] rcu: Preemptible hierarchical RCU implementation.
+[    0.000000][    T0] rcu: 	RCU event tracing is enabled.
+[    0.000000][    T0] rcu: 	RCU dyntick-idle grace-period acceleration is enabled.
+[    0.000000][    T0] rcu: 	RCU restricting CPUs from NR_CPUS=32 to nr_cpu_ids=2.
+[    0.000000][    T0] 	Trampoline variant of Tasks RCU enabled.
+[    0.000000][    T0] 	Tracing variant of Tasks RCU enabled.
+[    0.000000][    T0] rcu: RCU calculated value of scheduler-enlistment delay is 25 jiffies.
+[    0.000000][    T0] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=2
+[    0.000000][    T0] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+[    0.000000][    T0] GICv2m: range[mem 0x08020000-0x08020fff], SPI[80:143]
+[    0.000000][    T0] rcu: 	Offload RCU callbacks from CPUs: (none).
+[    0.000000][    T0] kfence: initialized - using 524288 bytes for 63 objects at 0x(____ptrval____)-0x(____ptrval____)
+[    0.000000][    T0] arch_timer: cp15 timer(s) running at 62.50MHz (virt).
+[    0.000000][    T0] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x1cd42e208c, max_idle_ns: 881590405314 ns
+[    0.000043][    T0] sched_clock: 56 bits at 62MHz, resolution 16ns, wraps every 4398046511096ns
+[    0.002597][    T0] Calibrating delay loop (skipped), value calculated using timer frequency.. 125.00 BogoMIPS (lpj=250000)
+[    0.002770][    T0] pid_max: default: 32768 minimum: 301
+[    0.005594][    T0] LSM: Security Framework initializing
+[    0.006240][    T0] SELinux:  Initializing.
+[    0.006710][    T0] Mount-cache hash table entries: 4096 (order: 3, 32768 bytes, linear)
+[    0.006955][    T0] Mountpoint-cache hash table entries: 4096 (order: 3, 32768 bytes, linear)
+[    0.026574][    T1] /cpus/cpu-map: empty cluster
+[    0.033905][    T1] rcu: Hierarchical SRCU implementation.
+[    0.036617][    T1] EFI services will not be available.
+[    0.037252][    T1] smp: Bringing up secondary CPUs ...
+[    0.041580][    T0] Detected PIPT I-cache on CPU1
+[    0.042096][    T0] CPU1: Booted secondary processor 0x0000000001 [0x411fd070]
+[    0.045066][    T1] smp: Brought up 1 node, 2 CPUs
+[    0.045215][    T1] SMP: Total of 2 processors activated.
+[    0.045328][    T1] CPU features: detected: 32-bit EL0 Support
+[    0.045404][    T1] CPU features: detected: CRC32 instructions
+[    0.045481][    T1] CPU features: detected: 32-bit EL1 Support
+[    0.045547][    T1] CPU features: detected: Protected KVM
+[    0.047490][    T1] CPU features: emulated: Privileged Access Never (PAN) using TTBR0_EL1 switching
+[    0.125679][    T1] CPU: All CPU(s) started at EL1
+[    0.126221][   T14] alternatives: patching kernel code
+[    0.143665][    T1] Registered cp15_barrier emulation handler
+[    0.143859][    T1] Registered setend emulation handler
+[    0.144007][    T1] KASLR enabled
+[    0.144845][    T1] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 76************** ns
+[    0.145115][    T1] futex hash table entries: 512 (order: 3, 32768 bytes, linear)
+[    0.148292][    T1] pinctrl core: initialized pinctrl subsystem
+[    0.158227][    T1] NET: Registered protocol family 16
+[    0.167912][    T1] DMA: preallocated 256 KiB GFP_KERNEL pool for atomic allocations
+[    0.168427][    T1] DMA: preallocated 256 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+[    0.168723][    T1] audit: initializing netlink subsys (disabled)
+[    0.170099][   T24] audit: type=2000 audit(0.164:1): state=initialized audit_enabled=0 res=1
+[    0.173342][    T1] thermal_sys: Registered thermal governor 'step_wise'
+[    0.173386][    T1] thermal_sys: Registered thermal governor 'user_space'
+[    0.173451][    T1] thermal_sys: Registered thermal governor 'power_allocator'
+[    0.174155][    T1] cpuidle: using governor menu
+[    0.174925][    T1] hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+[    0.175343][    T1] ASID allocator initialised with 32768 entries
+[    0.176005][    T1] Serial: AMBA PL011 UART driver
+[    0.189228][    T1] 9000000.pl011: ttyAMA0 at MMIO 0x9000000 (irq = 47, base_baud = 0) is a PL011 rev1
+[    0.190030][    T1] printk: console [ttyAMA0] enabled
+[    0.190030][    T1] printk: console [ttyAMA0] enabled
+[    0.190274][    T1] printk: bootconsole [pl11] disabled
+[    0.190274][    T1] printk: bootconsole [pl11] disabled
+[    0.218153][    T1] iommu: Default domain type: Translated 
+[    0.220323][    T1] SCSI subsystem initialized
+[    0.220940][    T1] usbcore: registered new interface driver usbfs
+[    0.221136][    T1] usbcore: registered new interface driver hub
+[    0.221290][    T1] usbcore: registered new device driver usb
+[    0.221751][    T1] mc: Linux media interface: v0.10
+[    0.221846][    T1] videodev: Linux video capture interface: v2.00
+[    0.222526][    T1] EDAC MC: Ver: 3.0.0
+[    0.225158][    T1] Advanced Linux Sound Architecture Driver Initialized.
+[    0.230036][    T1] Bluetooth: Core ver 2.22
+[    0.231096][    T1] NET: Registered protocol family 31
+[    0.231158][    T1] Bluetooth: HCI device and connection manager initialized
+[    0.231358][    T1] Bluetooth: HCI socket layer initialized
+[    0.231445][    T1] Bluetooth: L2CAP socket layer initialized
+[    0.231614][    T1] Bluetooth: SCO socket layer initialized
+[    0.232621][    T1] nfc: nfc_init: NFC Core ver 0.1
+[    0.232810][    T1] NET: Registered protocol family 39
+[    0.234062][    T1] clocksource: Switched to clocksource arch_sys_counter
+[    0.290287][    T1] VFS: Disk quotas dquot_6.6.0
+[    0.290530][    T1] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    0.292346][    T1] NET: Registered protocol family 2
+[    0.293170][    T1] IP idents hash table entries: 32768 (order: 6, 262144 bytes, linear)
+[    0.297792][    T1] tcp_listen_portaddr_hash hash table entries: 1024 (order: 2, 16384 bytes, linear)
+[    0.298097][    T1] TCP established hash table entries: 16384 (order: 5, 131072 bytes, linear)
+[    0.298410][    T1] TCP bind hash table entries: 16384 (order: 6, 262144 bytes, linear)
+[    0.298590][    T1] TCP: Hash tables configured (established 16384 bind 16384)
+[    0.299417][    T1] UDP hash table entries: 1024 (order: 3, 32768 bytes, linear)
+[    0.299622][    T1] UDP-Lite hash table entries: 1024 (order: 3, 32768 bytes, linear)
+[    0.300571][    T1] NET: Registered protocol family 1
+[    0.300815][    T1] NET: Registered protocol family 44
+[    0.301020][    T1] PCI: CLS 0 bytes, default 64
+[    0.305663][    T1] Trying to unpack rootfs image as initramfs...
+[    0.344088][    T1] Freeing initrd memory: 1120K
+[    0.347201][    T1] hw perfevents: enabled with armv8_pmuv3 PMU driver, 7 counters available
+[    0.347868][    T1] kvm [1]: HYP mode not available
+[    0.355410][    T1] Initialise system trusted keyrings
+[    0.357089][    T1] workingset: timestamp_bits=46 max_order=19 bucket_order=0
+[    0.366376][    T1] fuse: init (API version 7.32)
+[    0.383490][    T1] Key type asymmetric registered
+[    0.383705][    T1] Asymmetric key parser 'x509' registered
+[    0.383958][    T1] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 241)
+[    0.384395][    T1] io scheduler mq-deadline registered
+[    0.384545][    T1] io scheduler kyber registered
+[    0.384857][    T1] io scheduler bfq registered
+[    0.388246][    T1] pl061_gpio 9030000.pl061: PL061 GPIO chip registered
+[    0.389077][    T1] pci-host-generic 4010000000.pcie: host bridge /pcie@10000000 ranges:
+[    0.389567][    T1] pci-host-generic 4010000000.pcie:       IO 0x003eff0000..0x003effffff -> 0x0000000000
+[    0.390029][    T1] pci-host-generic 4010000000.pcie:      MEM 0x0010000000..0x003efeffff -> 0x0010000000
+[    0.390107][    T1] pci-host-generic 4010000000.pcie:      MEM 0x8000000000..0xffffffffff -> 0x8000000000
+[    0.390752][    T1] pci-host-generic 4010000000.pcie: ECAM at [mem 0x4010000000-0x401fffffff] for [bus 00-ff]
+[    0.391300][    T1] pci-host-generic 4010000000.pcie: PCI host bridge to bus 0000:00
+[    0.391491][    T1] pci_bus 0000:00: root bus resource [bus 00-ff]
+[    0.391595][    T1] pci_bus 0000:00: root bus resource [io  0x0000-0xffff]
+[    0.391641][    T1] pci_bus 0000:00: root bus resource [mem 0x10000000-0x3efeffff]
+[    0.391689][    T1] pci_bus 0000:00: root bus resource [mem 0x8000000000-0xffffffffff]
+[    0.392702][    T1] pci 0000:00:00.0: [1b36:0008] type 00 class 0x060000
+[    0.397174][    T1] Serial: 8250/16550 driver, 4 ports, IRQ sharing disabled
+[    0.399965][   T15] cacheinfo: Unable to detect cache hierarchy for CPU 0
+[    0.416037][    T1] brd: module loaded
+[    0.426388][    T1] loop: module loaded
+[    0.430617][    T1] wireguard: WireGuard 1.0.0 loaded. See www.wireguard.com for information.
+[    0.430710][    T1] wireguard: Copyright (C) 2015-2019 Jason A. Donenfeld <Jason@zx2c4.com>. All Rights Reserved.
+[    0.433819][    T1] libphy: Fixed MDIO Bus: probed
+[    0.434039][    T1] tun: Universal TUN/TAP device driver, 1.6
+[    0.434277][    T1] CAN device driver interface
+[    0.434330][    T1] PPP generic driver version 2.4.2
+[    0.434622][    T1] PPP BSD Compression module registered
+[    0.434698][    T1] PPP Deflate Compression module registered
+[    0.434795][    T1] PPP MPPE Compression module registered
+[    0.434847][    T1] NET: Registered protocol family 24
+[    0.434890][    T1] PPTP driver version 0.8.5
+[    0.435306][    T1] usbcore: registered new interface driver rtl8150
+[    0.435387][    T1] usbcore: registered new interface driver r8152
+[    0.435484][    T1] usbcore: registered new interface driver cdc_ether
+[    0.435553][    T1] usbcore: registered new interface driver cdc_eem
+[    0.435643][    T1] usbcore: registered new interface driver cdc_ncm
+[    0.435708][    T1] usbcore: registered new interface driver aqc111
+[    0.436201][    T1] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    0.436283][    T1] ehci-pci: EHCI PCI platform driver
+[    0.436369][    T1] ehci-platform: EHCI generic platform driver
+[    0.436889][    T1] usbcore: registered new interface driver cdc_acm
+[    0.436936][    T1] cdc_acm: USB Abstract Control Model driver for USB modems and ISDN adapters
+[    0.437618][    T1] usbcore: registered new interface driver uas
+[    0.437751][    T1] usbcore: registered new interface driver usb-storage
+[    0.439269][    T1] dummy_hcd dummy_hcd.0: USB Host+Gadget Emulator, driver 02 May 2005
+[    0.439502][    T1] dummy_hcd dummy_hcd.0: Dummy host controller
+[    0.439731][    T1] dummy_hcd dummy_hcd.0: new USB bus registered, assigned bus number 1
+[    0.442974][    T1] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 5.10
+[    0.443057][    T1] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    0.443114][    T1] usb usb1: Product: Dummy host controller
+[    0.443157][    T1] usb usb1: Manufacturer: Linux 5.10.66-android12-9-00005-gf6e6376090be-ab8060604 dummy_hcd
+[    0.443234][    T1] usb usb1: SerialNumber: dummy_hcd.0
+[    0.445045][    T1] hub 1-0:1.0: USB hub found
+[    0.445359][    T1] hub 1-0:1.0: 1 port detected
+[    0.454157][    T1] usbcore: registered new interface driver xpad
+[    0.456709][    T1] rtc-pl031 9010000.pl031: registered as rtc0
+[    0.457373][    T1] rtc-pl031 9010000.pl031: setting system clock to 2026-09-17T08:35:10 UTC (1789634110)
+[    0.458366][    T1] usbcore: registered new interface driver uvcvideo
+[    0.458438][    T1] USB Video Class driver (1.1.1)
+[    0.458486][    T1] gspca_main: v2.14.0 registered
+[    0.458876][    T1] device-mapper: uevent: version 1.0.3
+[    0.459424][    T1] device-mapper: ioctl: 4.44.0-ioctl (2021-02-01) initialised: dm-devel@redhat.com
+[    0.460568][    T1] Bluetooth: HCI UART driver ver 2.3
+[    0.460661][    T1] Bluetooth: HCI UART protocol H4 registered
+[    0.460747][    T1] Bluetooth: HCI UART protocol LL registered
+[    0.460870][    T1] Bluetooth: HCI UART protocol Broadcom registered
+[    0.460932][    T1] Bluetooth: HCI UART protocol QCA registered
+[    0.462130][    T1] sdhci: Secure Digital Host Controller Interface driver
+[    0.462195][    T1] sdhci: Copyright(c) Pierre Ossman
+[    0.462244][    T1] sdhci-pltfm: SDHCI platform and OF driver helper
+[    0.462552][    T1] hid: raw HID events driver (C) Jiri Kosina
+[    0.464155][    T1] usbcore: registered new interface driver usbhid
+[    0.464222][    T1] usbhid: USB HID core driver
+[    0.464618][    T1] ashmem: initialized
+[    0.465125][    T1] gnss: GNSS driver registered with major 234
+[    0.466398][    T1] usbcore: registered new interface driver snd-usb-audio
+[    0.467754][    T1] GACT probability NOT on
+[    0.467925][    T1] Mirror/redirect action on
+[    0.469813][    T1] netem: version 1.3
+[    0.470224][    T1] u32 classifier
+[    0.470267][    T1]     input device check on
+[    0.470299][    T1]     Actions configured
+[    0.475643][    T1] xt_time: kernel timezone is -0000
+[    0.475964][    T1] ipip: IPv4 and MPLS over IPv4 tunneling driver
+[    0.477346][    T1] gre: GRE over IPv4 demultiplexor driver
+[    0.477415][    T1] ip_gre: GRE over IPv4 tunneling driver
+[    0.479010][    T1] IPv4 over IPsec tunneling driver
+[    0.483369][    T1] Initializing XFRM netlink socket
+[    0.483680][    T1] IPsec XFRM device driver
+[    0.484597][    T1] NET: Registered protocol family 10
+[    0.491624][    T1] Segment Routing with IPv6
+[    0.492435][    T1] mip6: Mobile IPv6
+[    0.495715][    T1] sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+[    0.498004][    T1] ip6_gre: GRE over IPv6 tunneling driver
+[    0.506631][    T1] NET: Registered protocol family 17
+[    0.507061][    T1] NET: Registered protocol family 15
+[    0.507645][    T1] can: controller area network core
+[    0.508046][    T1] NET: Registered protocol family 29
+[    0.508119][    T1] can: raw protocol
+[    0.508293][    T1] can: broadcast manager protocol
+[    0.508442][    T1] can: netlink gateway - max_hops=1
+[    0.509453][    T1] Bluetooth: RFCOMM TTY layer initialized
+[    0.510450][    T1] Bluetooth: RFCOMM socket layer initialized
+[    0.510608][    T1] Bluetooth: RFCOMM ver 1.11
+[    0.510685][    T1] Bluetooth: HIDP (Human Interface Emulation) ver 1.2
+[    0.510751][    T1] Bluetooth: HIDP socket layer initialized
+[    0.510918][    T1] l2tp_core: L2TP core driver, V2.0
+[    0.511037][    T1] l2tp_ppp: PPPoL2TP kernel driver, V2.0
+[    0.511090][    T1] tipc: Activated (version 2.0.0)
+[    0.512307][    T1] NET: Registered protocol family 30
+[    0.513483][    T1] tipc: Started in single node mode
+[    0.514311][    T1] NET: Registered protocol family 36
+[    0.514789][    T1] NET: Registered protocol family 40
+[    0.515409][    T1] registered taskstats version 1
+[    0.515525][    T1] Loading compiled-in X.509 certificates
+[    0.515697][    T1] page_owner is disabled
+[    0.515996][    T1] Key type ._fscrypt registered
+[    0.516037][    T1] Key type .fscrypt registered
+[    0.516080][    T1] Key type fscrypt-provisioning registered
+[    0.526389][    T1] input: gpio-keys as /devices/platform/gpio-keys/input/input0
+[    0.531644][    T1] ALSA device list:
+[    0.531783][    T1]   No soundcards found.
+[    0.534806][    T1] uart-pl011 9000000.pl011: no DMA platform data
+[    0.562916][    T1] Freeing unused kernel memory: 3072K
+[    0.564059][    T1] Run /init as init process
+[    0.653042][    T1] nx679j: mount tmpfs /tmp rc=0
+nx679j: mount tmpfs /tmp rc=0
+[    0.657683][    T1] nx679j: init v5 entered
+nx679j: init v5 entered
+[    0.668642][    T1] nx679j: mount proc /proc rc=0
+nx679j: mount proc /proc rc=0
+[    0.680340][    T1] nx679j: mount sysfs /sys rc=0
+nx679j: mount sysfs /sys rc=0
+[    0.687231][  T111] request_module fs-devtmpfs succeeded, but still no fs?
+[    0.694568][    T1] nx679j: mount devtmpfs /dev rc=255
+nx679j: mount devtmpfs /dev rc=255
+[    0.705196][    T1] nx679j: mount configfs /sys/kernel/config rc=0
+nx679j: mount configfs /sys/kernel/config rc=0
+[    0.715628][    T1] nx679j: mount pstore /sys/fs/pstore rc=0
+nx679j: mount pstore /sys/fs/pstore rc=0
+[    0.727352][    T1] nx679j: stage0 kernel=5.10.66-android12-9-00005-gf6e6376090be-ab8060604
+nx679j: stage0 kernel=5.10.66-android12-9-00005-gf6e6376090be-ab8060604
+[    0.739789][    T1] nx679j: stage0 cmdline=stack_depot_disable=on kasan.stacktrace=off kvm-arm.mode=protected cgroup_disable=pressure cgroup.memory=nokmem console=ttyAMA0 earlycon loglevel=7 panic=10 rdinit=/init
+nx679j: stage0 cmdline=stack_depot_disable=on kasan.stacktrace=off kvm-arm.mode=protected cgroup_disable=pressure cgroup.memory=nokmem console=ttyAMA0 earlycon loglevel=7 panic=10 rdinit=/init
+[    0.750605][    T1] nx679j: stage0 modprobe=/sbin/insmod
+nx679j: stage0 modprobe=/sbin/insmod
+[    0.790761][    T1] nx679j: modules dir=/lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604 insmod=/sbin/insmod count=40
+nx679j: modules dir=/lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604 insmod=/sbin/insmod count=40
+[    0.820539][    T1] nx679j: insmod phy_qcom_emu rc=0 resolved=phy-qcom-emu.ko 
+nx679j: insmod phy_qcom_emu rc=0 resolved=phy-qcom-emu.ko 
+[    0.838398][  T125] phy_msm_snps_eusb2: Unknown symbol devm_usb_get_repeater_by_phandle (err -2)
+[    0.838748][  T125] phy_msm_snps_eusb2: Unknown symbol qcom_scm_io_writel (err -2)
+[    0.886095][    T1] nx679j: insmod phy_msm_snps_eusb2 rc=255 resolved=phy-msm-snps-eusb2.ko 
+nx679j: insmod phy_msm_snps_eusb2 rc=255 resolved=phy-msm-snps-eusb2.ko 
+[    0.907018][    T1] nx679j: insmod repeater rc=0 resolved=repeater.ko 
+nx679j: insmod repeater rc=0 resolved=repeater.ko 
+[    0.922705][  T129] phy_qcom_ufs_qmp_v4_lahaina: Unknown symbol ufs_qcom_phy_generic_probe (err -2)
+[    0.922847][  T129] phy_qcom_ufs_qmp_v4_lahaina: Unknown symbol ufs_qcom_phy_power_on (err -2)
+[    0.922903][  T129] phy_qcom_ufs_qmp_v4_lahaina: Unknown symbol ufs_qcom_phy_power_off (err -2)
+[    0.922957][  T129] phy_qcom_ufs_qmp_v4_lahaina: Unknown symbol ufs_qcom_phy_init_clks (err -2)
+[    0.923010][  T129] phy_qcom_ufs_qmp_v4_lahaina: Unknown symbol ufs_qcom_phy_init_vregulators (err -2)
+[    0.923066][  T129] phy_qcom_ufs_qmp_v4_lahaina: Unknown symbol ufs_qcom_phy_get_reset (err -2)
+[    0.923122][  T129] phy_qcom_ufs_qmp_v4_lahaina: Unknown symbol get_ufs_qcom_phy (err -2)
+[    0.923178][  T129] phy_qcom_ufs_qmp_v4_lahaina: Unknown symbol ufs_qcom_phy_write_tbl (err -2)
+[    0.923252][  T129] phy_qcom_ufs_qmp_v4_lahaina: Unknown symbol ufs_qcom_phy_dump_regs (err -2)
+[    0.960788][    T1] nx679j: insmod phy_qcom_ufs_qmp_v4_lahaina rc=255 resolved=phy-qcom-ufs-qmp-v4-lahaina.ko 
+nx679j: insmod phy_qcom_ufs_qmp_v4_lahaina rc=255 resolved=phy-qcom-ufs-qmp-v4-lahaina.ko 
+[    0.978386][  T131] qcom_glink_spss: Unknown symbol qcom_smem_alloc (err -2)
+[    0.978526][  T131] qcom_glink_spss: Unknown symbol qcom_smem_get (err -2)
+[    0.978577][  T131] qcom_glink_spss: Unknown symbol qcom_smem_virt_to_phys (err -2)
+[    0.978631][  T131] qcom_glink_spss: Unknown symbol qcom_glink_native_probe (err -2)
+[    0.978685][  T131] qcom_glink_spss: Unknown symbol qcom_glink_native_start (err -2)
+[    0.978742][  T131] qcom_glink_spss: Unknown symbol qcom_glink_native_remove (err -2)
+[    0.978796][  T131] qcom_glink_spss: Unknown symbol qcom_glink_native_unregister (err -2)
+[    1.007447][    T1] nx679j: insmod qcom_glink_spss rc=255 resolved=qcom_glink_spss.ko 
+nx679j: insmod qcom_glink_spss rc=255 resolved=qcom_glink_spss.ko 
+[    1.023580][  T133] phy_qcom_ufs_qmp_14nm: Unknown symbol ufs_qcom_phy_generic_probe (err -2)
+[    1.023722][  T133] phy_qcom_ufs_qmp_14nm: Unknown symbol ufs_qcom_phy_init_clks (err -2)
+[    1.023778][  T133] phy_qcom_ufs_qmp_14nm: Unknown symbol ufs_qcom_phy_init_vregulators (err -2)
+[    1.023846][  T133] phy_qcom_ufs_qmp_14nm: Unknown symbol ufs_qcom_phy_power_on (err -2)
+[    1.023901][  T133] phy_qcom_ufs_qmp_14nm: Unknown symbol ufs_qcom_phy_power_off (err -2)
+[    1.023958][  T133] phy_qcom_ufs_qmp_14nm: Unknown symbol get_ufs_qcom_phy (err -2)
+[    1.024009][  T133] phy_qcom_ufs_qmp_14nm: Unknown symbol ufs_qcom_phy_calibrate (err -2)
+[    1.055139][    T1] nx679j: insmod phy_qcom_ufs_qmp_14nm rc=255 resolved=phy-qcom-ufs-qmp-14nm.ko 
+nx679j: insmod phy_qcom_ufs_qmp_14nm rc=255 resolved=phy-qcom-ufs-qmp-14nm.ko 
+[    1.069797][  T135] phy_qcom_ufs_qmp_v3: Unknown symbol ufs_qcom_phy_generic_probe (err -2)
+[    1.070331][  T135] phy_qcom_ufs_qmp_v3: Unknown symbol ufs_qcom_phy_power_on (err -2)
+[    1.070404][  T135] phy_qcom_ufs_qmp_v3: Unknown symbol ufs_qcom_phy_power_off (err -2)
+[    1.070456][  T135] phy_qcom_ufs_qmp_v3: Unknown symbol ufs_qcom_phy_init_clks (err -2)
+[    1.070507][  T135] phy_qcom_ufs_qmp_v3: Unknown symbol ufs_qcom_phy_init_vregulators (err -2)
+[    1.070560][  T135] phy_qcom_ufs_qmp_v3: Unknown symbol ufs_qcom_phy_get_reset (err -2)
+[    1.070615][  T135] phy_qcom_ufs_qmp_v3: Unknown symbol get_ufs_qcom_phy (err -2)
+[    1.070670][  T135] phy_qcom_ufs_qmp_v3: Unknown symbol ufs_qcom_phy_write_tbl (err -2)
+[    1.070738][  T135] phy_qcom_ufs_qmp_v3: Unknown symbol ufs_qcom_phy_dump_regs (err -2)
+[    1.118834][    T1] nx679j: insmod phy_qcom_ufs_qmp_v3 rc=255 resolved=phy-qcom-ufs-qmp-v3.ko 
+nx679j: insmod phy_qcom_ufs_qmp_v3 rc=255 resolved=phy-qcom-ufs-qmp-v3.ko 
+[    1.138293][    T1] nx679j: insmod nvmem_qfprom rc=0 resolved=nvmem_qfprom.ko 
+nx679j: insmod nvmem_qfprom rc=0 resolved=nvmem_qfprom.ko 
+[    1.153249][  T139] fsa4480_i2c: Unknown symbol devm_regmap_qti_debugfs_register (err -2)
+[    1.153397][  T139] fsa4480_i2c: Unknown symbol register_ucsi_glink_notifier (err -2)
+[    1.153468][  T139] fsa4480_i2c: Unknown symbol unregister_ucsi_glink_notifier (err -2)
+[    1.182942][    T1] nx679j: insmod fsa4480_i2c rc=255 resolved=fsa4480-i2c.ko 
+nx679j: insmod fsa4480_i2c rc=255 resolved=fsa4480-i2c.ko 
+[    1.198005][  T141] altmode_glink: Unknown symbol pmic_glink_write (err -2)
+[    1.198152][  T141] altmode_glink: Unknown symbol pmic_glink_register_client (err -2)
+[    1.198210][  T141] altmode_glink: Unknown symbol ipc_log_context_create (err -2)
+[    1.198259][  T141] altmode_glink: Unknown symbol pmic_glink_unregister_client (err -2)
+[    1.198319][  T141] altmode_glink: Unknown symbol ipc_log_string (err -2)
+[    1.198373][  T141] altmode_glink: Unknown symbol ipc_log_context_destroy (err -2)
+[    1.230794][    T1] nx679j: insmod altmode_glink rc=255 resolved=altmode-glink.ko 
+nx679j: insmod altmode_glink rc=255 resolved=altmode-glink.ko 
+[    1.248547][  T143] dwc3_msm: Unknown symbol ipc_log_string (err -2)
+[    1.248732][  T143] dwc3_msm: Unknown symbol redriver_release_usb_lanes (err -2)
+[    1.249046][  T143] dwc3_msm: Unknown symbol redriver_orientation_get (err -2)
+[    1.249170][  T143] dwc3_msm: Unknown symbol redriver_notify_connect (err -2)
+[    1.249231][  T143] dwc3_msm: Unknown symbol redriver_notify_disconnect (err -2)
+[    1.249292][  T143] dwc3_msm: Unknown symbol ipc_log_context_create (err -2)
+[    1.249361][  T143] dwc3_msm: Unknown symbol qcom_clk_set_flags (err -2)
+[    1.249435][  T143] dwc3_msm: Unknown symbol redriver_gadget_pullup (err -2)
+[    1.249500][  T143] dwc3_msm: Unknown symbol ipc_log_context_destroy (err -2)
+[    1.249572][  T143] dwc3_msm: Unknown symbol enhance_kobj (err -2)
+[    1.295718][    T1] nx679j: insmod dwc3_msm rc=255 resolved=dwc3-msm.ko 
+nx679j: insmod dwc3_msm rc=255 resolved=dwc3-msm.ko 
+[    1.316532][    T1] nx679j: insmod phy_msm_ssusb_qmp rc=0 resolved=phy-msm-ssusb-qmp.ko 
+nx679j: insmod phy_msm_ssusb_qmp rc=0 resolved=phy-msm-ssusb-qmp.ko 
+[    1.332666][  T148] phy_msm_snps_hs: Unknown symbol qcom_scm_io_writel (err -2)
+[    1.358960][    T1] nx679j: insmod phy_msm_snps_hs rc=255 resolved=phy-msm-snps-hs.ko 
+nx679j: insmod phy_msm_snps_hs rc=255 resolved=phy-msm-snps-hs.ko 
+[    1.375241][  T150] ssusb_redriver_nb7vpq904m: Unknown symbol register_ucsi_glink_notifier (err -2)
+[    1.375495][  T150] ssusb_redriver_nb7vpq904m: Unknown symbol unregister_ucsi_glink_notifier (err -2)
+[    1.423805][    T1] nx679j: insmod ssusb_redriver_nb7vpq904m rc=255 resolved=ssusb-redriver-nb7vpq904m.ko 
+nx679j: insmod ssusb_redriver_nb7vpq904m rc=255 resolved=ssusb-redriver-nb7vpq904m.ko 
+[    1.440645][  T152] ucsi_glink: Unknown symbol pmic_glink_register_client (err -2)
+[    1.440843][  T152] ucsi_glink: Unknown symbol ipc_log_context_create (err -2)
+[    1.440893][  T152] ucsi_glink: Unknown symbol ipc_log_context_destroy (err -2)
+[    1.440940][  T152] ucsi_glink: Unknown symbol pmic_glink_unregister_client (err -2)
+[    1.441023][  T152] ucsi_glink: Unknown symbol ipc_log_string (err -2)
+[    1.441076][  T152] ucsi_glink: Unknown symbol pmic_glink_write (err -2)
+[    1.487628][    T1] nx679j: insmod ucsi_glink rc=255 resolved=ucsi_glink.ko 
+nx679j: insmod ucsi_glink rc=255 resolved=ucsi_glink.ko 
+[    1.503775][  T154] pmic_glink: Unknown symbol qcom_register_ssr_notifier (err -2)
+[    1.503905][  T154] pmic_glink: Unknown symbol pdr_handle_alloc (err -2)
+[    1.503949][  T154] pmic_glink: Unknown symbol pdr_add_lookup (err -2)
+[    1.503996][  T154] pmic_glink: Unknown symbol pdr_handle_release (err -2)
+[    1.504038][  T154] pmic_glink: Unknown symbol qcom_unregister_ssr_notifier (err -2)
+[    1.535646][    T1] nx679j: insmod pmic_glink rc=255 resolved=pmic_glink.ko 
+nx679j: insmod pmic_glink rc=255 resolved=pmic_glink.ko 
+[    1.551148][  T156] pdr_interface: Unknown symbol qmi_txn_init (err -2)
+[    1.551272][  T156] pdr_interface: Unknown symbol qmi_send_request (err -2)
+[    1.551319][  T156] pdr_interface: Unknown symbol qmi_txn_cancel (err -2)
+[    1.551363][  T156] pdr_interface: Unknown symbol qmi_txn_wait (err -2)
+[    1.551420][  T156] pdr_interface: Unknown symbol qmi_handle_init (err -2)
+[    1.551466][  T156] pdr_interface: Unknown symbol qmi_add_lookup (err -2)
+[    1.551509][  T156] pdr_interface: Unknown symbol qmi_handle_release (err -2)
+[    1.551586][  T156] pdr_interface: Unknown symbol qmi_response_type_v01_ei (err -2)
+[    1.551642][  T156] pdr_interface: Unknown symbol qcom_device_shutdown_in_progress (err -2)
+[    1.583121][    T1] nx679j: insmod pdr_interface rc=255 resolved=pdr_interface.ko 
+nx679j: insmod pdr_interface rc=255 resolved=pdr_interface.ko 
+[    1.602581][    T1] nx679j: insmod qmi_helpers rc=0 resolved=qmi_helpers.ko 
+nx679j: insmod qmi_helpers rc=0 resolved=qmi_helpers.ko 
+[    1.618787][  T160] rproc_qcom_common: Unknown symbol qcom_smem_get (err -2)
+[    1.619044][  T160] rproc_qcom_common: Unknown symbol qcom_glink_smem_start (err -2)
+[    1.619097][  T160] rproc_qcom_common: Unknown symbol qcom_glink_smem_register (err -2)
+[    1.619147][  T160] rproc_qcom_common: Unknown symbol qcom_glink_smem_unregister (err -2)
+[    1.619210][  T160] rproc_qcom_common: Unknown symbol qcom_glink_ssr_notify (err -2)
+[    1.619259][  T160] rproc_qcom_common: Unknown symbol qcom_smd_register_edge (err -2)
+[    1.619307][  T160] rproc_qcom_common: Unknown symbol qcom_smd_unregister_edge (err -2)
+[    1.663929][    T1] nx679j: insmod rproc_qcom_common rc=255 resolved=rproc_qcom_common.ko 
+nx679j: insmod rproc_qcom_common rc=255 resolved=rproc_qcom_common.ko 
+[    1.680305][  T162] qcom_smd: Unknown symbol qcom_smem_get (err -2)
+[    1.680479][  T162] qcom_smd: Unknown symbol qcom_smem_get_free_space (err -2)
+[    1.702719][    T1] nx679j: insmod qcom_smd rc=255 resolved=qcom_smd.ko 
+nx679j: insmod qcom_smd rc=255 resolved=qcom_smd.ko 
+[    1.717840][  T164] qcom_glink_smem: Unknown symbol qcom_smem_alloc (err -2)
+[    1.718085][  T164] qcom_glink_smem: Unknown symbol qcom_smem_get (err -2)
+[    1.718151][  T164] qcom_glink_smem: Unknown symbol qcom_glink_native_probe (err -2)
+[    1.718217][  T164] qcom_glink_smem: Unknown symbol qcom_glink_native_start (err -2)
+[    1.718265][  T164] qcom_glink_smem: Unknown symbol qcom_glink_native_remove (err -2)
+[    1.718314][  T164] qcom_glink_smem: Unknown symbol qcom_glink_native_unregister (err -2)
+[    1.760295][    T1] nx679j: insmod qcom_glink_smem rc=255 resolved=qcom_glink_smem.ko 
+nx679j: insmod qcom_glink_smem rc=255 resolved=qcom_glink_smem.ko 
+[    1.776884][  T166] qcom_glink: Unknown symbol ipc_log_context_create (err -2)
+[    1.777063][  T166] qcom_glink: Unknown symbol ipc_log_string (err -2)
+[    1.807799][    T1] nx679j: insmod qcom_glink rc=255 resolved=qcom_glink.ko 
+nx679j: insmod qcom_glink rc=255 resolved=qcom_glink.ko 
+[    1.825355][  T168] ufs_qcom: Unknown symbol ufshcd_qti_hba_init_crypto_capabilities (err -2)
+[    1.825526][  T168] ufs_qcom: Unknown symbol ipc_log_context_create (err -2)
+[    1.825823][  T168] ufs_qcom: Unknown symbol ipc_log_string (err -2)
+[    1.825889][  T168] ufs_qcom: Unknown symbol ufs_qcom_phy_set_src_clk_h8_exit (err -2)
+[    1.826064][  T168] ufs_qcom: Unknown symbol ufs_qcom_phy_set_src_clk_h8_enter (err -2)
+[    1.826160][  T168] ufs_qcom: Unknown symbol qcom_clk_set_flags (err -2)
+[    1.826245][  T168] ufs_qcom: Unknown symbol ufs_qcom_phy_ctrl_rx_linecfg (err -2)
+[    1.826305][  T168] ufs_qcom: Unknown symbol ufs_qcom_phy_set_tx_lane_enable (err -2)
+[    1.826379][  T168] ufs_qcom: Unknown symbol ufs_qcom_phy_dbg_register_dump (err -2)
+[    1.826508][  T168] ufs_qcom: Unknown symbol qcom_scm_ice_available (err -2)
+[    1.826557][  T168] ufs_qcom: Unknown symbol crypto_qti_disable (err -2)
+[    1.826603][  T168] ufs_qcom: Unknown symbol qtee_shmbridge_allocate_shm (err -2)
+[    1.826652][  T168] ufs_qcom: Unknown symbol qcom_scm_ice_invalidate_key (err -2)
+[    1.826703][  T168] ufs_qcom: Unknown symbol qtee_shmbridge_flush_shm_buf (err -2)
+[    1.826753][  T168] ufs_qcom: Unknown symbol qcom_scm_config_set_ice_key (err -2)
+[    1.826802][  T168] ufs_qcom: Unknown symbol qtee_shmbridge_inv_shm_buf (err -2)
+[    1.826851][  T168] ufs_qcom: Unknown symbol qtee_shmbridge_free_shm (err -2)
+[    1.855514][    T1] nx679j: insmod ufs_qcom rc=255 resolved=ufs_qcom.ko 
+nx679j: insmod ufs_qcom rc=255 resolved=ufs_qcom.ko 
+[    1.873284][  T170] ufshcd_crypto_qti: Unknown symbol crypto_qti_keyslot_program (err -2)
+[    1.873417][  T170] ufshcd_crypto_qti: Unknown symbol crypto_qti_keyslot_evict (err -2)
+[    1.873470][  T170] ufshcd_crypto_qti: Unknown symbol crypto_qti_derive_raw_secret (err -2)
+[    1.918863][    T1] nx679j: insmod ufshcd_crypto_qti rc=255 resolved=ufshcd-crypto-qti.ko 
+nx679j: insmod ufshcd_crypto_qti rc=255 resolved=ufshcd-crypto-qti.ko 
+[    1.939540][    T1] nx679j: insmod qti_regmap_debugfs rc=0 resolved=qti-regmap-debugfs.ko 
+nx679j: insmod qti_regmap_debugfs rc=0 resolved=qti-regmap-debugfs.ko 
+[    1.954587][  T174] phy_qcom_ufs_qmp_v4_cape: Unknown symbol ufs_qcom_phy_generic_probe (err -2)
+[    1.954800][  T174] phy_qcom_ufs_qmp_v4_cape: Unknown symbol ufs_qcom_phy_power_on (err -2)
+[    1.954852][  T174] phy_qcom_ufs_qmp_v4_cape: Unknown symbol ufs_qcom_phy_power_off (err -2)
+[    1.954903][  T174] phy_qcom_ufs_qmp_v4_cape: Unknown symbol ufs_qcom_phy_init_clks (err -2)
+[    1.954954][  T174] phy_qcom_ufs_qmp_v4_cape: Unknown symbol ufs_qcom_phy_init_vregulators (err -2)
+[    1.955008][  T174] phy_qcom_ufs_qmp_v4_cape: Unknown symbol ufs_qcom_phy_get_reset (err -2)
+[    1.955087][  T174] phy_qcom_ufs_qmp_v4_cape: Unknown symbol get_ufs_qcom_phy (err -2)
+[    1.955166][  T174] phy_qcom_ufs_qmp_v4_cape: Unknown symbol ufs_qcom_phy_write_tbl (err -2)
+[    1.955241][  T174] phy_qcom_ufs_qmp_v4_cape: Unknown symbol ufs_qcom_phy_dump_regs (err -2)
+[    1.987389][    T1] nx679j: insmod phy_qcom_ufs_qmp_v4_cape rc=255 resolved=phy-qcom-ufs-qmp-v4-cape.ko 
+nx679j: insmod phy_qcom_ufs_qmp_v4_cape rc=255 resolved=phy-qcom-ufs-qmp-v4-cape.ko 
+[    2.005390][  T176] phy_qcom_ufs_qmp_v4_diwali: Unknown symbol ufs_qcom_phy_generic_probe (err -2)
+[    2.005709][  T176] phy_qcom_ufs_qmp_v4_diwali: Unknown symbol ufs_qcom_phy_power_on (err -2)
+[    2.005765][  T176] phy_qcom_ufs_qmp_v4_diwali: Unknown symbol ufs_qcom_phy_power_off (err -2)
+[    2.005816][  T176] phy_qcom_ufs_qmp_v4_diwali: Unknown symbol ufs_qcom_phy_init_clks (err -2)
+[    2.005868][  T176] phy_qcom_ufs_qmp_v4_diwali: Unknown symbol ufs_qcom_phy_init_vregulators (err -2)
+[    2.006257][  T176] phy_qcom_ufs_qmp_v4_diwali: Unknown symbol ufs_qcom_phy_get_reset (err -2)
+[    2.006364][  T176] phy_qcom_ufs_qmp_v4_diwali: Unknown symbol get_ufs_qcom_phy (err -2)
+[    2.006451][  T176] phy_qcom_ufs_qmp_v4_diwali: Unknown symbol ufs_qcom_phy_write_tbl (err -2)
+[    2.006572][  T176] phy_qcom_ufs_qmp_v4_diwali: Unknown symbol ufs_qcom_phy_dump_regs (err -2)
+[    2.063055][    T1] nx679j: insmod phy_qcom_ufs_qmp_v4_diwali rc=255 resolved=phy-qcom-ufs-qmp-v4-diwali.ko 
+nx679j: insmod phy_qcom_ufs_qmp_v4_diwali rc=255 resolved=phy-qcom-ufs-qmp-v4-diwali.ko 
+[    2.080472][  T178] phy_qcom_ufs_qmp_v4_waipio: Unknown symbol ufs_qcom_phy_generic_probe (err -2)
+[    2.080618][  T178] phy_qcom_ufs_qmp_v4_waipio: Unknown symbol ufs_qcom_phy_power_on (err -2)
+[    2.080673][  T178] phy_qcom_ufs_qmp_v4_waipio: Unknown symbol ufs_qcom_phy_power_off (err -2)
+[    2.080727][  T178] phy_qcom_ufs_qmp_v4_waipio: Unknown symbol ufs_qcom_phy_init_clks (err -2)
+[    2.080781][  T178] phy_qcom_ufs_qmp_v4_waipio: Unknown symbol ufs_qcom_phy_init_vregulators (err -2)
+[    2.080838][  T178] phy_qcom_ufs_qmp_v4_waipio: Unknown symbol ufs_qcom_phy_get_reset (err -2)
+[    2.080895][  T178] phy_qcom_ufs_qmp_v4_waipio: Unknown symbol get_ufs_qcom_phy (err -2)
+[    2.080952][  T178] phy_qcom_ufs_qmp_v4_waipio: Unknown symbol ufs_qcom_phy_write_tbl (err -2)
+[    2.081020][  T178] phy_qcom_ufs_qmp_v4_waipio: Unknown symbol ufs_qcom_phy_dump_regs (err -2)
+[    2.111632][    T1] nx679j: insmod phy_qcom_ufs_qmp_v4_waipio rc=255 resolved=phy-qcom-ufs-qmp-v4-waipio.ko 
+nx679j: insmod phy_qcom_ufs_qmp_v4_waipio rc=255 resolved=phy-qcom-ufs-qmp-v4-waipio.ko 
+[    2.132025][    T1] nx679j: insmod phy_qcom_ufs rc=0 resolved=phy-qcom-ufs.ko 
+nx679j: insmod phy_qcom_ufs rc=0 resolved=phy-qcom-ufs.ko 
+[    2.154394][    T1] nx679j: insmod nvmem_qcom_spmi_sdam rc=0 resolved=nvmem_qcom-spmi-sdam.ko (mixed spelling) 
+nx679j: insmod nvmem_qcom_spmi_sdam rc=0 resolved=nvmem_qcom-spmi-sdam.ko (mixed spelling) 
+[    2.170729][  T184] crypto_qti_common: Unknown symbol crypto_qti_disable_platform (err -2)
+[    2.170906][  T184] crypto_qti_common: Unknown symbol crypto_qti_program_key (err -2)
+[    2.170961][  T184] crypto_qti_common: Unknown symbol crypto_qti_invalidate_key (err -2)
+[    2.171015][  T184] crypto_qti_common: Unknown symbol crypto_qti_derive_raw_secret_platform (err -2)
+[    2.208517][    T1] nx679j: insmod crypto_qti_common rc=255 resolved=crypto-qti-common.ko 
+nx679j: insmod crypto_qti_common rc=255 resolved=crypto-qti-common.ko 
+[    2.225793][  T186] crypto_qti_hwkm: Unknown symbol qtee_shmbridge_allocate_shm (err -2)
+[    2.226071][  T186] crypto_qti_hwkm: Unknown symbol qtee_shmbridge_free_shm (err -2)
+[    2.226149][  T186] crypto_qti_hwkm: Unknown symbol qtee_shmbridge_flush_shm_buf (err -2)
+[    2.226227][  T186] crypto_qti_hwkm: Unknown symbol qcom_scm_derive_raw_secret (err -2)
+[    2.226301][  T186] crypto_qti_hwkm: Unknown symbol qtee_shmbridge_inv_shm_buf (err -2)
+[    2.226367][  T186] crypto_qti_hwkm: Unknown symbol qti_hwkm_init (err -2)
+[    2.226438][  T186] crypto_qti_hwkm: Unknown symbol qcom_scm_config_set_ice_key (err -2)
+[    2.226505][  T186] crypto_qti_hwkm: Unknown symbol qcom_scm_clear_ice_key (err -2)
+[    2.271455][    T1] nx679j: insmod crypto_qti_hwkm rc=255 resolved=crypto-qti-hwkm.ko 
+nx679j: insmod crypto_qti_hwkm rc=255 resolved=crypto-qti-hwkm.ko 
+[    2.291388][  T188] clk_qcom: Unknown symbol gdsc_debug_print_regs (err -2)
+[    2.335949][    T1] nx679j: insmod clk_qcom rc=255 resolved=clk-qcom.ko 
+nx679j: insmod clk_qcom rc=255 resolved=clk-qcom.ko 
+[    2.353099][  T190] gdsc_regulator: Unknown symbol regulator_proxy_consumer_sync_state (err -2)
+[    2.353265][  T190] gdsc_regulator: Unknown symbol devm_regulator_proxy_consumer_register (err -2)
+[    2.353323][  T190] gdsc_regulator: Unknown symbol devm_regulator_debug_register (err -2)
+[    2.399253][    T1] nx679j: insmod gdsc_regulator rc=255 resolved=gdsc-regulator.ko 
+nx679j: insmod gdsc_regulator rc=255 resolved=gdsc-regulator.ko 
+[    2.419047][    T1] nx679j: insmod proxy_consumer rc=0 resolved=proxy-consumer.ko 
+nx679j: insmod proxy_consumer rc=0 resolved=proxy-consumer.ko 
+[    2.438906][    T1] nx679j: insmod debug_regulator rc=0 resolved=debug-regulator.ko 
+nx679j: insmod debug_regulator rc=0 resolved=debug-regulator.ko 
+[    2.453506][  T196] qcom_ipc_logging: Unknown symbol msm_minidump_enabled (err -2)
+[    2.453641][  T196] qcom_ipc_logging: Unknown symbol msm_minidump_add_region (err -2)
+[    2.479379][    T1] nx679j: insmod qcom_ipc_logging rc=255 resolved=qcom_ipc_logging.ko 
+nx679j: insmod qcom_ipc_logging rc=255 resolved=qcom_ipc_logging.ko 
+[    2.503020][    T1] nx679j: insmod qcom_scm rc=0 resolved=qcom-scm.ko 
+nx679j: insmod qcom_scm rc=0 resolved=qcom-scm.ko 
+[    2.520544][  T200] minidump: Unknown symbol qcom_smem_get (err -2)
+[    2.559540][    T1] nx679j: insmod minidump rc=255 resolved=minidump.ko 
+nx679j: insmod minidump rc=255 resolved=minidump.ko 
+[    2.579897][    T1] nx679j: insmod smem rc=0 resolved=smem.ko 
+nx679j: insmod smem rc=0 resolved=smem.ko 
+[   17.723581][    T1] nx679j: ufs sda after 15s present=no
+nx679j: ufs sda after 15s present=no
+[   17.744445][    T1] nx679j: partitions=16
+nx679j: partitions=16
+[   17.760060][    T1] nx679j: usb_role nodes found=0
+nx679j: usb_role nodes found=0
+[   17.762286][    T1] nx679j: gadget attempt 1 (wait up to 30s for a real UDC)
+nx679j: gadget attempt 1 (wait up to 30s for a real UDC)
+[   48.273127][    T1] nx679j: udc=NONE after 30s cycle=0
+nx679j: udc=NONE after 30s cycle=0
+[   48.314878][    T1] nx679j: cycle 1 uptime=48.28 93.90 modules=12
+nx679j: cycle 1 uptime=48.28 93.90 modules=12
+[   48.319537][    T1] nx679j: usb_role nodes found=0
+nx679j: usb_role nodes found=0
+[   51.393930][    T1] nx679j: udc=NONE after 3s cycle=1
+nx679j: udc=NONE after 3s cycle=1
+[   66.435919][    T1] nx679j: cycle 2 uptime=66.41 129.98 modules=12
+nx679j: cycle 2 uptime=66.41 129.98 modules=12
+[   66.439186][    T1] nx679j: usb_role nodes found=0
+nx679j: usb_role nodes found=0
+[   69.489039][    T1] nx679j: udc=NONE after 3s cycle=2
+nx679j: udc=NONE after 3s cycle=2
+[   84.525500][    T1] nx679j: cycle 3 uptime=84.50 166.04 modules=12
+nx679j: cycle 3 uptime=84.50 166.04 modules=12
+[   84.529666][    T1] nx679j: usb_role nodes found=0
+nx679j: usb_role nodes found=0
+[   87.579445][    T1] nx679j: udc=NONE after 3s cycle=3
+nx679j: udc=NONE after 3s cycle=3
+[  102.614712][    T1] nx679j: cycle 4 uptime=102.59 202.11 modules=12
+nx679j: cycle 4 uptime=102.59 202.11 modules=12
+[  102.617627][    T1] nx679j: usb_role nodes found=0
+nx679j: usb_role nodes found=0
+qemu-system-aarch64: terminating on signal 15 from pid 2627043 (python3)

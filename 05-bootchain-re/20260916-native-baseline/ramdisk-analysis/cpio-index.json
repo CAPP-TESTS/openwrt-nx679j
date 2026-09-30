@@ -1,0 +1,54 @@
+[
+  {
+    "name": "dev",
+    "offset": 0,
+    "data_offset": 116,
+    "size": 0,
+    "mode": "0o40755",
+    "uid": 0,
+    "gid": 0,
+    "nlink": 2,
+    "rdev_major": 0,
+    "rdev_minor": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "dev/console",
+    "offset": 116,
+    "data_offset": 240,
+    "size": 0,
+    "mode": "0o20600",
+    "uid": 0,
+    "gid": 0,
+    "nlink": 1,
+    "rdev_major": 5,
+    "rdev_minor": 1,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "root",
+    "offset": 240,
+    "data_offset": 356,
+    "size": 0,
+    "mode": "0o40700",
+    "uid": 0,
+    "gid": 0,
+    "nlink": 2,
+    "rdev_major": 0,
+    "rdev_minor": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "TRAILER!!!",
+    "offset": 356,
+    "data_offset": 480,
+    "size": 0,
+    "mode": "0o0",
+    "uid": 0,
+    "gid": 0,
+    "nlink": 1,
+    "rdev_major": 0,
+    "rdev_minor": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

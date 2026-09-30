@@ -1,0 +1,6 @@
++ fstab/vendor/dev : L2Rldi9ibG9jay9wbGF0Zm9ybS9zb2MvMWQ4NDAwMC51ZnNoYy9ieS1uYW1lL3ZlbmRvcgA=
++ fstab/vendor/type : ZXh0NAA=
++ fstab/vendor/mnt_flags : cm8sYmFycmllcj0xLGRpc2NhcmQA
++ fstab/vendor/fsmgr_flags : d2FpdCxzbG90c2VsZWN0LGF2YgA=
++ fstab/vendor/compatible : YW5kcm9pZCx2ZW5kb3IA
++ fstab/vendor/status : ZGlzYWJsZWQA

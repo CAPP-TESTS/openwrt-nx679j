@@ -1,0 +1,35 @@
+Unrecognized argument: "--help"
+
+Usage: magiskboot cpio <incpio> [commands...]
+
+Do cpio commands to <incpio> (modifications are done in-place).
+Each command is a single argument; add quotes for each command.
+
+Supported commands:
+  exists ENTRY
+    Return 0 if ENTRY exists, else return 1
+  ls [-r] [PATH]
+    List PATH ("/" by default); specify [-r] to list recursively
+  rm [-r] ENTRY
+    Remove ENTRY, specify [-r] to remove recursively
+  mkdir MODE ENTRY
+    Create directory ENTRY with permissions MODE
+  ln TARGET ENTRY
+    Create a symlink to TARGET with the name ENTRY
+  mv SOURCE DEST
+    Move SOURCE to DEST
+  add MODE ENTRY INFILE
+    Add INFILE as ENTRY with permissions MODE; replaces ENTRY if exists
+  extract [ENTRY OUT]
+    Extract ENTRY to OUT, or extract all entries to current directory
+  test
+    Test the cpio's status. Return values:
+    0:stock    1:Magisk    2:unsupported
+  patch
+    Apply ramdisk patches
+    Configure with env variables: KEEPVERITY KEEPFORCEENCRYPT
+  backup ORIG [-n]
+    Create ramdisk backups from ORIG, specify [-n] to skip compression
+  restore
+    Restore ramdisk from ramdisk backup stored within incpio
+

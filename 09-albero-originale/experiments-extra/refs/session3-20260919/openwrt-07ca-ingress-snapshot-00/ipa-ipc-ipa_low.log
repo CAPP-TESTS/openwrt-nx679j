@@ -1,0 +1,4 @@
+IPC=ipa_low UPTIME=1260.10 9857.68
+IPC=ipa_low UPTIME=1261.10 9862.75
+[  1261.101929577/       0x5b3c1759b] ipa-wan ipa3_a5_svc_disconnect_cb:498 Received QMI client disconnect
+IPC=ipa_low UPTIME=1262.10 9867.78

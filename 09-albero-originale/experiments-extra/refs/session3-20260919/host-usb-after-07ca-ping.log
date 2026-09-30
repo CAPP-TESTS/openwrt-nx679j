@@ -1,0 +1,12 @@
+2026-09-20T12:33:01+02:00 user-Mini kernel: usb 6-1: USB disconnect, device number 89
+2026-09-20T12:33:01+02:00 user-Mini kernel: cdc_ncm 6-1:1.0 enp103s0f3u1: unregister 'cdc_ncm' usb-0000:67:00.3-1, CDC NCM (NO ZLP)
+2026-09-20T12:33:45+02:00 user-Mini kernel: usb 6-1: new SuperSpeed Plus Gen 2x1 USB device number 90 using xhci_hcd
+2026-09-20T12:33:45+02:00 user-Mini kernel: usb 6-1: LPM exit latency is zeroed, disabling LPM.
+2026-09-20T12:33:45+02:00 user-Mini kernel: usb 6-1: New USB device found, idVendor=18d1, idProduct=4ee7, bcdDevice= 1.00
+2026-09-20T12:33:45+02:00 user-Mini kernel: usb 6-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+2026-09-20T12:33:45+02:00 user-Mini kernel: usb 6-1: Product: NX679J
+2026-09-20T12:33:45+02:00 user-Mini kernel: usb 6-1: Manufacturer: OpenWrt
+2026-09-20T12:33:45+02:00 user-Mini kernel: usb 6-1: SerialNumber: nx679j-v8
+2026-09-20T12:33:45+02:00 user-Mini kernel: cdc_ncm 6-1:1.0: MAC-Address: xx:xx:xx:xx:xx:xx
+2026-09-20T12:33:45+02:00 user-Mini kernel: cdc_ncm 6-1:1.0 usb0: register 'cdc_ncm' at usb-0000:67:00.3-1, CDC NCM (NO ZLP), xx:xx:xx:xx:xx:xx
+2026-09-20T12:33:45+02:00 user-Mini kernel: cdc_ncm 6-1:1.0 enp103s0f3u1: renamed from usb0

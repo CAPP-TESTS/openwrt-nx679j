@@ -1,0 +1,14 @@
+   0.000s monitor-start current-slot=b expected-watchdog-boundary=15s
+   0.053s fastboot-reboot rc=0 output='Rebooting                                          OKAY [  0.000s]\nFinished. Total time: 0.050s'
+   0.263s usb-state='Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub\nBus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub\nBus 003 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub\nBus 003 Device 002: ID 12cf:0c05 DEXIN MADCATZ R.A.T. 8+ gaming mouse\nBus 003 Device 003: ID 8087:0032 Intel Corp. AX210 Bluetooth\nBus 003 Device 004: ID 0c45:8009 Microdia AK980 PRO\nBus 004 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub\nBus 005 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub\nBus 006 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub\nBus 007 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub\nBus 008 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub'
+   0.264s net-state=''
+   0.270s adb-state='error: no devices/emulators found'
+  14.741s FASTBOOT-RETURN devices='3dbd****\t fastboot'
+  14.748s fastboot-current-slot 'current-slot: b\nFinished. Total time: 0.005s'
+  14.752s fastboot-slot-unbootable:b 'slot-unbootable:b: no\nFinished. Total time: 0.002s'
+  14.755s fastboot-slot-retry-count:b 'slot-retry-count:b: 7\nFinished. Total time: 0.003s'
+  14.800s recovery-set-active-a rc=0 output="Setting current slot to 'a'                        OKAY [  0.040s]\nFinished. Total time: 0.043s"
+  14.853s recovery-reboot rc=0 output='Rebooting                                          OKAY [  0.000s]\nFinished. Total time: 0.050s'
+  42.985s recovery-adb 'slot=_a\nboot_completed='
+  45.076s recovery-adb 'slot=_a\nboot_completed=1'
+  45.076s OUTCOME fastboot-return-recovered-a

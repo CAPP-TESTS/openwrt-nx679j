@@ -1,0 +1,41 @@
+== immagine v7b ==
+path   /home/user/nx679j-stock/experiments/20260916-122926-native-baseline/probe-v7-sonda/boot_b-probe-v7b.img
+size   100663296 byte
+sha256 7424a599a6a9b7e105ad1ed59b53b9dfe6763238ca16e88f9d7ad9adaba48e20
+       manifest: ramdisk_size=2352880 kernel_size=49108324 signature_size=4096 header_version=4
+       /init sha256=a1376c22ac8a02fbdf7e7e1e3b8bb2fe (532352 byte)
+
+== 0. stato di partenza (serve per il confronto del contatore A/B) ==
+slot attivo ora: _b
+-- metadati A/B PRIMA (lettura diretta della GPT, nessuna scrittura)
+    GPT boot_a: priority=2 successful=0 tries_remaining=7   (bits 48-49 / 50 / 51-53)
+    GPT boot_b: priority=3 successful=1 tries_remaining=7   (bits 48-49 / 50 / 51-53)
+
+== 1. push + verifica hash sull'host e sul device ==
+/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/probe-v7-sonda/boot_b-probe-v7b.img: 1 file pushed, 0 skipped. 623.2 MB/s (100663296 bytes in 0.154s)
+push OK
+
+== 2. scrittura su boot_b + READBACK (nessun riavvio se non combacia) ==
+96+0 records out
+100663296 bytes (96 M) copied, 0.279092 s, 344 M/s
+atteso 7424a599a6a9b7e105ad1ed59b53b9dfe6763238ca16e88f9d7ad9adaba48e20
+letto  7424a599a6a9b7e105ad1ed59b53b9dfe6763238ca16e88f9d7ad9adaba48e20
+readback OK
+
+== 3. fastboot: metadati PRIMA dell'attivazione ==
+current-slot           current-slot: b
+slot-successful:a      slot-successful:a: yes
+slot-successful:b      slot-successful:b: yes
+slot-unbootable:b      slot-unbootable:b: no
+slot-retry-count:b     slot-retry-count:b: 7
+slot-retry-count:a     slot-retry-count:a: 7
+
+== 4. attivazione slot B e riavvio ==
+Setting current slot to 'b'                        OKAY [  0.006s]
+Rebooting                                          OKAY [  0.000s]
+
+== 5. monitor USB 240s ==
+   ATTENZIONE: la sonda non espone nessun USB. Il segnale primario e' il
+   TELEFONO: guarda lo schermo. Logo RedMagic che si RIPETE ~ogni 10 s =
+   la sonda gira (userspace raggiunto). Logo FERMO una volta sola = non
+   raggiunto (stesso esito di v5/v6). Sui due casi il host non vede USB.

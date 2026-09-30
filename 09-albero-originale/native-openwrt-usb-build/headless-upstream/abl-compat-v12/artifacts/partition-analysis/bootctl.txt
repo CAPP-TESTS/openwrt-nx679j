@@ -1,0 +1,9 @@
+/system/bin/sh: bootctl: inaccessible or not found
+/system/bin/sh: bootctl: inaccessible or not found
+/system/bin/sh: bootctl: inaccessible or not found
+/system/bin/sh: bootctl: inaccessible or not found
+/system/bin/sh: bootctl: inaccessible or not found
+/system/bin/sh: bootctl: inaccessible or not found
+/system/bin/sh: bootctl: inaccessible or not found
+/system/bin/sh: bootctl: inaccessible or not found
+/system/bin/sh: bootctl: inaccessible or not found

@@ -1,0 +1,72 @@
+/sys/kernel/tracing/instances/nxipa_status/per_cpu/cpu0/stats
+entries: 0
+overrun: 0
+commit overrun: 0
+bytes: 0
+oldest event ts:     0.000000
+now ts:  1786.854534
+dropped events: 0
+read events: 0
+/sys/kernel/tracing/instances/nxipa_status/per_cpu/cpu1/stats
+entries: 0
+overrun: 0
+commit overrun: 0
+bytes: 0
+oldest event ts:     0.000000
+now ts:  1786.854945
+dropped events: 0
+read events: 0
+/sys/kernel/tracing/instances/nxipa_status/per_cpu/cpu2/stats
+entries: 0
+overrun: 0
+commit overrun: 0
+bytes: 0
+oldest event ts:     0.000000
+now ts:  1786.855353
+dropped events: 0
+read events: 0
+/sys/kernel/tracing/instances/nxipa_status/per_cpu/cpu3/stats
+entries: 0
+overrun: 0
+commit overrun: 0
+bytes: 0
+oldest event ts:     0.000000
+now ts:  1786.855764
+dropped events: 0
+read events: 0
+/sys/kernel/tracing/instances/nxipa_status/per_cpu/cpu4/stats
+entries: 0
+overrun: 0
+commit overrun: 0
+bytes: 0
+oldest event ts:     0.000000
+now ts:  1786.856204
+dropped events: 0
+read events: 0
+/sys/kernel/tracing/instances/nxipa_status/per_cpu/cpu5/stats
+entries: 0
+overrun: 0
+commit overrun: 0
+bytes: 0
+oldest event ts:     0.000000
+now ts:  1786.856619
+dropped events: 0
+read events: 0
+/sys/kernel/tracing/instances/nxipa_status/per_cpu/cpu6/stats
+entries: 0
+overrun: 0
+commit overrun: 0
+bytes: 0
+oldest event ts:     0.000000
+now ts:  1786.857024
+dropped events: 0
+read events: 0
+/sys/kernel/tracing/instances/nxipa_status/per_cpu/cpu7/stats
+entries: 0
+overrun: 0
+commit overrun: 0
+bytes: 0
+oldest event ts:     0.000000
+now ts:  1786.857419
+dropped events: 0
+read events: 0

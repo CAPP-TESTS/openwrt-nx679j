@@ -1,0 +1,320 @@
+tracing pid=2359 for 300 seconds
+attached tid=2359
+attached tid=2372
+attached tid=5226
+attached tid=5227
+T2372 enter read(0x3, 0x7d0ef61d00, 0x186a0, 0x7d0ef7a340, 0x7d0ef7a3a0, 0x4)
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 05 00 00 00 47 00 00 00 01 00 00 00 00 00 00 00 42 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 05 00 00 00 32 00 00 00 01 00 00 00 00 00 00 00 3f 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 05 00 00 00 42 00 00 00 01 b4 00 00 00 00 00 00 01 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 05 00 00 00 2b 00 00 00 02 12 00 00 00 00 00 00 04 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 05 00 00 00 0f 00 00 00 01 05 00 00 00 00 00 00 0f 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 05 00 00 00 15 00 00 00 01 00 00 00 00 00 00 00 11 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 05 00 00 00 33 00 00 00 01 0b 00 00 00 00 00 00 12 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 05 00 00 00 33 00 00 00 01 02 00 00 00 00 00 00 13 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 05 00 00 00 18 00 00 00 01 00 00 00 00 00 00 00 14 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 05 00 00 00 16 00 00 00 01 10 00 00 00 00 00 00 15 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 05 00 00 00 01 10 00 00 01 00 00 00 00 00 00 00 19 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 05 00 00 00 01 10 00 00 03 00 00 00 00 00 00 00 1c 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 05 00 00 00 17 00 00 00 02 00 00 00 00 00 00 00 1f 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 05 00 00 00 17 00 00 00 01 00 00 00 00 00 00 00 20 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 05 00 00 00 24 00 00 00 01 00 00 00 00 00 00 00 21 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 05 00 00 00 31 00 00 00 01 02 00 00 00 00 00 00 22 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 05 00 00 00 2f 04 00 00 01 01 00 00 00 00 00 00 23 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 05 00 00 00 11 00 00 00 01 00 00 00 00 00 00 00 31 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 05 00 00 00 22 00 00 00 01 00 00 00 00 00 00 00 32 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 05 00 00 00 29 00 00 00 01 01 00 00 00 00 00 00 34 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 05 00 00 00 8c 13 00 00 ef de 00 00 00 00 00 00 35 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 05 00 00 00 55 00 00 00 01 00 00 00 00 00 00 00 38 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 05 00 00 00 4c 00 00 00 01 00 00 00 00 00 00 00 39 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 05 00 00 00 37 00 00 00 01 02 00 00 00 00 00 00 3c 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 05 00 00 00 e3 00 00 00 01 00 00 00 00 00 00 00 3e 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 05 00 00 00 0c 00 00 00 01 00 00 00 00 00 00 00 40 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 05 00 00 00 09 00 00 00 02 00 00 00 00 00 00 00 43 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 05 00 00 00 03 00 00 00 01 00 00 00 00 00 00 00 45 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 05 00 00 00 0a 00 00 00 02 00 00 00 00 00 00 00 46 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 05 00 00 00 2f 00 00 00 01 00 00 00 00 00 00 00 47 00 00 00
+T5226 enter writev(0x4, 0x7c8ed490a0, 0x4, 0x3, 0x7c8ed490e0, 0x8160)
+T5226 exit  writev -> 101 (0x65)
+T5226 enter writev(0x4, 0x7c8ed490a0, 0x4, 0x3, 0x7c8ed490e0, 0x81fe)
+T5226 exit  writev -> 99 (0x63)
+T5226 enter writev(0x4, 0x7c8ed49000, 0x4, 0x3, 0x7c8ed49040, 0x825c)
+T5226 exit  writev -> 146 (0x92)
+T5226 enter sendto(0x7, 0x7c8ed49a98, 0x4, 0, 0x7c8ed49aa0, 0x1e) bytes=4: 04 00 00 00 addr: bytes=12: 01 00 2f 64 65 76 2f 73 6f 63 6b 65
+T5226 exit  sendto -> 4 (0x4)
+T2359 enter recvfrom(0x13, 0x7fd2bf7670, 0xff, 0, 0x7fd2bf7660, 0x7fd2bf7658)
+T2359 exit  recvfrom -> 4 (0x4) bytes=4: 04 00 00 00
+T5226 enter writev(0x4, 0x7c8ed49000, 0x4, 0x3, 0x7c8ed49040, 0x8322)
+T5226 exit  writev -> 126 (0x7e)
+T5226 enter write(0xd, 0x7d128e2702, 0x1, 0x3, 0x7c8ed490b0, 0x8322) bytes=1: 72
+T2359 enter writev(0x4, 0x7fd2bf6b90, 0x4, 0x3, 0x7fd2bf6bd0, 0x8348)
+T5226 exit  write -> 1 (0x1)
+T2359 exit  writev -> 116 (0x74)
+T5227 enter read(0xc, 0x7c8c3fbb94, 0x1, 0, 0, 0x4)
+T5227 exit  read -> 1 (0x1) bytes=1: 72
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T2359 enter writev(0x4, 0x7fd2bf6b90, 0x4, 0x3, 0x7fd2bf6bd0, 0x838a)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 05 00 00 00 0b 00 00 00 01 00 00 00 00 00 00 00 48 00 00 00
+T2359 exit  writev -> 111 (0x6f)
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T2359 enter writev(0x4, 0x7fd2bf6bc0, 0x4, 0x3, 0x7fd2bf6c00, 0x83dc)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 05 00 00 00 01 00 00 00 01 00 00 00 00 00 00 00 4b 00 00 00
+T2359 exit  writev -> 135 (0x87)
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T2359 enter writev(0x4, 0x7fd2bf6bc0, 0x4, 0x3, 0x7fd2bf6c00, 0x8448)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 05 00 00 00 04 00 00 00 01 00 00 00 00 00 00 00 4c 00 00 00
+T2359 exit  writev -> 99 (0x63)
+T2359 enter write(0xd, 0x7d128e28c8, 0x1, 0x3, 0x7fd2bf6c70, 0x8448) bytes=1: 64
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T2359 exit  write -> 1 (0x1)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 05 00 00 00 1a 00 00 00 01 00 00 00 00 00 00 00 4d 00 00 00
+T5227 enter read(0xc, 0x7c8c3fbb94, 0x1, 0, 0, 0x47000000)
+T5227 exit  read -> 1 (0x1) bytes=1: 64
+T5227 enter close(0xc, 0xc, 0x1, 0, 0, 0x47000000)
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5227 exit  close -> 0 (0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 05 00 00 00 08 00 00 00 01 00 00 00 00 00 00 00 4e 00 00 00
+T5227 enter close(0xd, 0xd, 0x1, 0, 0, 0x47000000)
+T5227 exit  close -> 0 (0)
+T5227 enter close(0xb, 0xb, 0x1, 0, 0, 0x47000000)
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5227 exit  close -> 0 (0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 05 00 00 00 4d 00 00 00 01 00 00 00 00 00 00 00 4f 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 05 00 00 00 4b 00 00 00 01 00 00 00 00 00 00 00 54 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 05 00 00 00 4a 00 00 00 01 00 00 00 00 00 00 00 55 00 00 00
+T2359 enter writev(0x4, 0x7fd2bf6bc0, 0x4, 0x3, 0x7fd2bf6c00, 0x850a)
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T2359 exit  writev -> 108 (0x6c)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 05 00 00 00 2a 00 00 00 01 00 00 00 00 00 00 00 58 00 00 00
+T2359 enter writev(0x4, 0x7fd2bf6bc0, 0x4, 0x3, 0x7fd2bf6c00, 0x855e)
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 05 00 00 00 02 00 00 00 01 00 00 00 00 00 00 00 59 00 00 00
+T2359 exit  writev -> 147 (0x93)
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T2359 enter writev(0x4, 0x7fd2bf6bc0, 0x4, 0x3, 0x7fd2bf6c00, 0x85aa)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 05 00 00 00 30 00 00 00 01 00 00 00 00 00 00 00 5a 00 00 00
+T2359 exit  writev -> 129 (0x81)
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 05 00 00 00 44 00 00 00 01 00 00 00 00 00 00 00 5b 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 05 00 00 00 49 00 00 00 01 00 00 00 00 00 00 00 5c 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 05 00 00 00 4e 00 00 00 01 00 00 00 00 00 00 00 5d 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 05 00 00 00 1d 00 00 00 01 00 00 00 00 00 00 00 5e 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 05 00 00 00 05 00 00 00 01 00 00 00 00 00 00 00 5f 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 05 00 00 00 07 00 00 00 01 00 00 00 00 00 00 00 60 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 05 00 00 00 21 00 00 00 01 00 00 00 00 00 00 00 62 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 05 00 00 00 12 00 00 00 01 00 00 00 00 00 00 00 64 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 05 00 00 00 10 00 00 00 02 00 00 00 00 00 00 00 68 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 05 00 00 00 28 00 00 00 01 00 00 00 01 00 00 00 c1 43 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 05 00 00 00 02 03 00 00 01 00 00 00 01 00 00 00 97 40 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 04 00 00 00 02 03 00 00 01 00 00 00 01 00 00 00 46 45 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 05 00 00 00 31 00 00 00 01 01 00 00 01 00 00 00 5b 40 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 04 00 00 00 31 00 00 00 01 01 00 00 01 00 00 00 72 45 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 04 00 00 00 42 00 00 00 01 b4 00 00 00 00 00 00 01 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 04 00 00 00 2b 00 00 00 02 12 00 00 00 00 00 00 04 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 04 00 00 00 0f 00 00 00 01 05 00 00 00 00 00 00 0f 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 04 00 00 00 15 00 00 00 01 00 00 00 00 00 00 00 11 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 04 00 00 00 33 00 00 00 01 0b 00 00 00 00 00 00 12 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 04 00 00 00 33 00 00 00 01 02 00 00 00 00 00 00 13 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 04 00 00 00 18 00 00 00 01 00 00 00 00 00 00 00 14 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 04 00 00 00 16 00 00 00 01 10 00 00 00 00 00 00 15 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 04 00 00 00 01 10 00 00 01 00 00 00 00 00 00 00 19 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 04 00 00 00 01 10 00 00 03 00 00 00 00 00 00 00 1c 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 04 00 00 00 17 00 00 00 02 00 00 00 00 00 00 00 1f 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 04 00 00 00 17 00 00 00 01 00 00 00 00 00 00 00 20 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 04 00 00 00 24 00 00 00 01 00 00 00 00 00 00 00 21 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 04 00 00 00 31 00 00 00 01 02 00 00 00 00 00 00 22 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 04 00 00 00 2f 04 00 00 01 01 00 00 00 00 00 00 23 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 04 00 00 00 11 00 00 00 01 00 00 00 00 00 00 00 32 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 04 00 00 00 22 00 00 00 01 00 00 00 00 00 00 00 33 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 04 00 00 00 29 00 00 00 01 01 00 00 00 00 00 00 34 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 04 00 00 00 8c 13 00 00 ef de 00 00 00 00 00 00 35 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 04 00 00 00 55 00 00 00 01 00 00 00 00 00 00 00 38 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 04 00 00 00 4c 00 00 00 01 00 00 00 00 00 00 00 39 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 04 00 00 00 37 00 00 00 01 02 00 00 00 00 00 00 3d 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 04 00 00 00 32 00 00 00 01 00 00 00 00 00 00 00 42 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 04 00 00 00 0c 00 00 00 01 00 00 00 00 00 00 00 44 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 04 00 00 00 e3 00 00 00 01 00 00 00 00 00 00 00 41 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 04 00 00 00 09 00 00 00 02 00 00 00 00 00 00 00 45 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 04 00 00 00 03 00 00 00 01 00 00 00 00 00 00 00 46 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 04 00 00 00 0a 00 00 00 02 00 00 00 00 00 00 00 47 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 04 00 00 00 2f 00 00 00 01 00 00 00 00 00 00 00 48 00 00 00
+T5226 enter writev(0x4, 0x7c8ed490a0, 0x4, 0x3, 0x7c8ed490e0, 0x98aa)
+T5226 exit  writev -> 101 (0x65)
+T5226 enter writev(0x4, 0x7c8ed490a0, 0x4, 0x3, 0x7c8ed490e0, 0x98d0)
+T5226 exit  writev -> 83 (0x53)
+T5226 enter writev(0x4, 0x7c8ed49000, 0x4, 0x3, 0x7c8ed49040, 0x98fa)
+T5226 exit  writev -> 124 (0x7c)
+T5226 enter sendto(0x7, 0x7c8ed49a98, 0x4, 0, 0x7c8ed49aa0, 0x1e) bytes=4: 05 00 00 00 addr: bytes=12: 01 00 2f 64 65 76 2f 73 6f 63 6b 65
+T5226 exit  sendto -> 4 (0x4)
+T2359 enter recvfrom(0x13, 0x7fd2bf7670, 0xff, 0, 0x7fd2bf7660, 0x7fd2bf7658)
+T2359 exit  recvfrom -> 4 (0x4) bytes=4: 05 00 00 00
+T5226 enter writev(0x4, 0x7c8ed49000, 0x4, 0x3, 0x7c8ed49040, 0x992c)
+T5226 exit  writev -> 126 (0x7e)
+T2359 enter writev(0x4, 0x7fd2bf6bc0, 0x4, 0x3, 0x7fd2bf6c00, 0x9948)
+T2359 exit  writev -> 136 (0x88)
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T2359 enter socket(0x2a, 0x80002, 0, 0x1, 0x7fd2bf748c, 0x7fd2bf75d0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 04 00 00 00 0b 00 00 00 01 00 00 00 00 00 00 00 49 00 00 00
+T2359 exit  socket -> 11 (0xb)
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T2359 enter sendto(0xb, 0x7fd2bf73a0, 0x14, 0, 0x7fd2bf7390, 0xc) bytes=20: 0a 00 00 00 2f 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 addr: bytes=12: 2a 00 00 00 01 00 00 00 fe ff ff ff
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 04 00 00 00 01 00 00 00 01 00 00 00 00 00 00 00 4a 00 00 00
+T2359 exit  sendto -> 20 (0x14)
+T2359 enter recvfrom(0xb, 0x7fd2bf73f0, 0x14, 0, 0, 0)
+T2359 exit  recvfrom -> 20 (0x14) bytes=20: 04 00 00 00 2f 00 00 00 01 00 00 00 00 00 00 00 48 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T2359 enter recvfrom(0xb, 0x7fd2bf73f0, 0x14, 0, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 04 00 00 00 04 00 00 00 01 00 00 00 00 00 00 00 4b 00 00 00
+T2359 exit  recvfrom -> 20 (0x14) bytes=20: 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+T2359 enter close(0xb, 0xb, 0x14, 0, 0x14, 0)
+T2359 exit  close -> 0 (0)
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T2359 enter socket(0x2a, 0x80002, 0, 0x7c8e875270, 0x7c8e875280, 0xed0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 04 00 00 00 1a 00 00 00 01 00 00 00 00 00 00 00 4c 00 00 00
+T2359 exit  socket -> 11 (0xb)
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 04 00 00 00 08 00 00 00 01 00 00 00 00 00 00 00 4d 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 04 00 00 00 4d 00 00 00 01 00 00 00 00 00 00 00 51 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 04 00 00 00 4b 00 00 00 01 00 00 00 00 00 00 00 52 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 04 00 00 00 4a 00 00 00 01 00 00 00 00 00 00 00 53 00 00 00
+attached new tid=6826
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 04 00 00 00 2a 00 00 00 01 00 00 00 00 00 00 00 56 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 04 00 00 00 02 00 00 00 01 00 00 00 00 00 00 00 59 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 04 00 00 00 05 00 00 00 01 00 00 00 00 00 00 00 5a 00 00 00
+T2359 enter write(0xd, 0x7d128e26c3, 0x1, 0, 0, 0) bytes=1: 61
+T2359 exit  write -> 1 (0x1)
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T2359 enter socket(0x2a, 0x80002, 0, 0x1, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 04 00 00 00 30 00 00 00 01 00 00 00 00 00 00 00 5c 00 00 00
+T2359 exit  socket -> 14 (0xe)
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T2359 enter sendto(0xe, 0x7fd2bf7350, 0x14, 0, 0x7fd2bf7340, 0xc) bytes=20: 0a 00 00 00 2f 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 addr: bytes=12: 2a 00 00 00 01 00 00 00 fe ff ff ff
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 04 00 00 00 44 00 00 00 01 00 00 00 00 00 00 00 5d 00 00 00
+T2359 exit  sendto -> 20 (0x14)
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T2359 enter recvfrom(0xe, 0x7fd2bf73a0, 0x14, 0, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 04 00 00 00 49 00 00 00 01 00 00 00 00 00 00 00 5e 00 00 00
+T2359 exit  recvfrom -> 20 (0x14) bytes=20: 04 00 00 00 2f 00 00 00 01 00 00 00 00 00 00 00 48 00 00 00
+T2359 enter recvfrom(0xe, 0x7fd2bf73a0, 0x14, 0, 0, 0)
+T6826 enter read(0xc, 0x7c8c3fbb94, 0x1, 0, 0, 0x4)
+T2359 exit  recvfrom -> 20 (0x14) bytes=20: 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+T6826 exit  read -> 1 (0x1) bytes=1: 61
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T2359 enter close(0xe, 0xe, 0x14, 0, 0x14, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 04 00 00 00 4e 00 00 00 01 00 00 00 00 00 00 00 5f 00 00 00
+T2359 exit  close -> 0 (0)
+T2359 enter socket(0x2a, 0x80002, 0, 0x1, 0x7fd2bf743c, 0xb400007c8e80d020)
+T2359 exit  socket -> 14 (0xe)
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 04 00 00 00 1d 00 00 00 01 00 00 00 00 00 00 00 60 00 00 00
+T2359 enter sendto(0xe, 0x7fd2bf7350, 0x14, 0, 0x7fd2bf7340, 0xc) bytes=20: 0a 00 00 00 2f 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 addr: bytes=12: 2a 00 00 00 01 00 00 00 fe ff ff ff
+T2359 exit  sendto -> 20 (0x14)
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T2359 enter recvfrom(0xe, 0x7fd2bf73a0, 0x14, 0, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 04 00 00 00 07 00 00 00 01 00 00 00 00 00 00 00 61 00 00 00
+T2359 exit  recvfrom -> 20 (0x14) bytes=20: 04 00 00 00 2f 00 00 00 01 00 00 00 00 00 00 00 48 00 00 00
+T2359 enter recvfrom(0xe, 0x7fd2bf73a0, 0x14, 0, 0, 0)
+T2359 exit  recvfrom -> 20 (0x14) bytes=20: 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T2359 enter close(0xe, 0xe, 0x14, 0, 0x14, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 04 00 00 00 21 00 00 00 01 00 00 00 00 00 00 00 62 00 00 00
+T2359 exit  close -> 0 (0)
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T2359 enter writev(0x4, 0x7fd2bf6bc0, 0x4, 0x3, 0x7fd2bf6c00, 0x9cc6)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 04 00 00 00 12 00 00 00 01 00 00 00 00 00 00 00 64 00 00 00
+T2359 exit  writev -> 86 (0x56)
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 04 00 00 00 28 00 00 00 01 00 00 00 01 00 00 00 c2 45 00 00
+T2359 enter writev(0x4, 0x7fd2bf6bc0, 0x4, 0x3, 0x7fd2bf6c00, 0x9cf4)
+T2359 exit  writev -> 127 (0x7f)
+T2359 enter ioctl(0x6, 0x80047202, 0x7fd2bf765c, 0x3, 0x7fd2bf6c70, 0x9cf4) ioctl_req=0x80047202
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T2359 exit  ioctl -> -104 (0xffffffffffffff98)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 04 00 00 00 10 00 00 00 02 00 00 00 00 00 00 00 68 00 00 00
+T2359 enter writev(0x4, 0x7fd2bf6bc0, 0x4, 0x3, 0x7fd2bf6c00, 0x9d7e)
+T5226 enter recvfrom(0x8, 0x7c8ed49b70, 0x14, 0x40, 0, 0)
+T5226 exit  recvfrom -> 20 (0x14) bytes=20: 04 00 00 00 47 00 00 00 01 00 00 00 00 00 00 00 6b 00 00 00
+T2359 exit  writev -> 130 (0x82)
+T2359 enter writev(0x4, 0x7fd2bf6bc0, 0x4, 0x3, 0x7fd2bf6c00, 0x9dbc)
+T2359 exit  writev -> 129 (0x81)
+detached threads=5

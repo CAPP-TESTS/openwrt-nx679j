@@ -1,0 +1,23 @@
+{
+  "image": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/candidate-stockkernel-v1/boot_b-stockkernel-openwrt-v1.img",
+  "bytes": 61165568,
+  "sha256": "e66889d1e7945a19a15fae355225da7ab985d8d4c0b45b2edfada537baf5cabe",
+  "header_version": 4,
+  "kernel_bytes": 49108324,
+  "kernel_sha256": "f0aa949c95d1421381850cb1982bd2a505e96fcd7565543ec28d5b1f7d81a0cc",
+  "ramdisk_bytes": 12048641,
+  "ramdisk_sha256": "00c050c51ce2534b08cbf9a8b6d5dd61a04ac7838970ee1c925167e7fd098bb7",
+  "ramdisk_entries": 1541,
+  "signature_size": 0,
+  "partition_capacity": 100663296,
+  "init": {
+    "path": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/candidate-init.sh",
+    "sha256": "baa492b18b458b0aa8369932d28e3fc063c56e577eaca42582dc9c39c01c5c4f"
+  },
+  "module_vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+  "not_yet_verified": [
+    "ABL/AVB acceptance of an unsigned boot image on this device",
+    "module load success on the real DT (QEMU cannot bind Qualcomm nodes)",
+    "DWC3 peripheral role and NCM enumeration on hardware"
+  ]
+}

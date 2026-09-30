@@ -1,0 +1,3 @@
+I tar di persistenza canonici di questo archivio sono in 04-persistenza/ (etc.tar, luci.tar, tools.tar).
+Questa cartella conteneva copie con lo stesso identico contenuto (stessi nomi e dimensioni; differivano
+solo negli mtime interni) ed e' stata rimossa in questa revisione. md5 e dettagli: MANIFEST-quarantena.json.

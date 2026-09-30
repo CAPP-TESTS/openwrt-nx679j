@@ -1,0 +1,155 @@
+{
+  "ramdisk_source": {
+    "path": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/probe-v7-sonda/work/v7-ramdisk.cpio",
+    "bytes": 3106504,
+    "sha256": "bfeb2f907ce9e5842f4fe37d4ebcf67ad83630fcf32e43d7f2590151cc53c4e0",
+    "v7_image_sha256": "77d7675eb54a65d9b3ca45042731b8180d1d927d6006a5c80e8f9775e1c3c2a5"
+  },
+  "init": {
+    "bytes": 67312,
+    "sha256": "6fa91dec86dceafc01cbd69caea71dbff1be27d26c815802a23bd914be2bd6b1",
+    "elf_aarch64": true,
+    "no_dynamic_section": true,
+    "undefined_symbols": [],
+    "symbols": [
+      ".ARM.attributes",
+      ".comment",
+      ".data.rel.ro",
+      ".eh_frame",
+      ".note.gnu.build-id",
+      ".rodata",
+      ".text",
+      "__bss_end__",
+      "__bss_start",
+      "__bss_start__",
+      "__end__",
+      "_bss_end__",
+      "_edata",
+      "_end",
+      "_start",
+      "memcpy",
+      "memmove",
+      "memset",
+      "mkmsg",
+      "now_ms",
+      "nx679j-init-v8.c",
+      "op_deadline",
+      "op_name",
+      "report_op",
+      "run_op",
+      "scpy",
+      "u2s"
+    ],
+    "forbidden_symbols_present": [],
+    "syscalls_executed": {
+      "exit_group": 1,
+      "nanosleep": 2,
+      "clock_gettime": 1,
+      "kill": 1,
+      "reboot": 1,
+      "clone": 1,
+      "execve": 1,
+      "wait4": 1
+    },
+    "syscall_audit_problems": [],
+    "text_forbidden_strings": [],
+    "call_targets": [
+      "_start+0xa8",
+      "_start+0xd8",
+      "_start+0xe0",
+      "_start+0xf0",
+      "memcpy",
+      "memcpy+0x4",
+      "memmove+0x1c",
+      "memset+0x4",
+      "mkmsg",
+      "now_ms",
+      "report_op",
+      "run_op",
+      "run_op+0x38",
+      "run_op+0xa0",
+      "run_op+0xc8",
+      "run_op+0xf8",
+      "scpy",
+      "u2s"
+    ],
+    "calls_into_libc": []
+  },
+  "worker": {
+    "bytes": 663536,
+    "sha256": "ac4a6ff8069bbce36d77d566f76ac2e247e4dd9308edcf38920a5daed487be29",
+    "elf_aarch64": true,
+    "static": true,
+    "syscall_call_sites": {
+      "273": 1,
+      "18******************": 1
+    },
+    "has_finit_module": true,
+    "has_mount": false,
+    "has_socket": false,
+    "has_fork": true,
+    "text_has_modules_load": true,
+    "text_has_modules_recovery": false,
+    "text_has_timeout_killed": true
+  },
+  "spliced_init": {
+    "name": "init",
+    "old_size": 532352,
+    "new_size": 67312,
+    "mode": "0o100755"
+  },
+  "added_worker": {
+    "name": "nx679j/worker",
+    "size": 663536,
+    "inserted_before": "TRAILER!!!"
+  },
+  "ramdisk_entries": 68,
+  "ramdisk_has_worker": true,
+  "ramdisk_has_init": true,
+  "ramdisk_lz4": {
+    "bytes": 1076975,
+    "sha256": "2a97f1efaf64ea1982957ba3f4361a07a0121ce49207bad40ca88a00db80aab8",
+    "magic": "02214c18",
+    "round_trip_ok": true
+  },
+  "unpacked": {
+    "init_exists": true,
+    "init_executable": true,
+    "init_sha256": "6fa91dec86dceafc01cbd69caea71dbff1be27d26c815802a23bd914be2bd6b1",
+    "worker_exists": true,
+    "worker_executable": true,
+    "worker_sha256": "ac4a6ff8069bbce36d77d566f76ac2e247e4dd9308edcf38920a5daed487be29",
+    "worker_path_is_a_file": true,
+    "dev_nodes_in_ramdisk": []
+  },
+  "image": {
+    "path": "/home/user/nx679j-stock/experiments/20260917-init-v8/boot_b-init-v8.img",
+    "bytes": 100663296,
+    "sha256": "04e7f9b2be9430977f48ce7091ada2edcad63c8edd11b976fce11262a45d1dbd",
+    "header": {
+      "magic": "ANDROID!",
+      "kernel_size": 49108324,
+      "ramdisk_size": 1076975,
+      "header_size": 1584,
+      "os_version": "0x18000162",
+      "signature_size": 4096
+    },
+    "kernel_identical": true,
+    "ramdisk_identical": true,
+    "tail_identical_absolute": true,
+    "diff_count": 1070281,
+    "diff_outside_allowed_regions": [],
+    "leftover_old_ramdisk_bytes": 1124008,
+    "ramdisk_sha256": "2a97f1efaf64ea1982957ba3f4361a07a0121ce49207bad40ca88a00db80aab8"
+  },
+  "protocol": {
+    "success": "logo STEADY (no flash) + host sees USB 18d1:4ee7 -> the gadget is up",
+    "not_successful": "logo CYCLES: 8 s period = UFS ok but no gadget, 30 s = no UFS/rawdump, 60 s = PID 1 had to kill an operation",
+    "dead": "logo STEADY and no USB at all",
+    "journal": [
+      "rawdump partition (256 MiB, size 524288 sectors) at offset 0",
+      "/sys/fs/pstore (ramoops pmsg/kmsg) on the next boot",
+      "/dev/kmsg at KERN_EMERG during the run"
+    ]
+  }
+}

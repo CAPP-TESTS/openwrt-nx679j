@@ -1,0 +1,9 @@
+[000.00s] baseline links: enp98s0,enp99s0,lo,wlan0,ztmjfmwg7f
+[000.05s] fastboot reboot rc=0: Rebooting                                          OKAY [  0.000s]
+Finished. Total time: 0.050s
+[000.06s] state fastboot=False usb=none new_links=none usb_links=none
+[014.83s] state fastboot=True usb=('Bus 008 Device 090: ID 18d1:d00d Google Inc. Xiaomi Mi/Redmi 2 (fastboot)',) new_links=none usb_links=none
+[014.83s] RESULT: fastboot returned after disappearance; stopping monitor immediately
+[014.83s] final result=fastboot-returned
+[014.84s] final relevant USB: Bus 008 Device 090: ID 18d1:d00d Google Inc. Xiaomi Mi/Redmi 2 (fastboot)
+[014.84s] final links: 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000\    link/loopback xx:xx:xx:xx:xx:xx brd xx:xx:xx:xx:xx:xx | 2: enp98s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc fq_codel state DOWN mode DEFAULT group default qlen 1000\    link/ether xx:xx:xx:xx:xx:xx brd xx:xx:xx:xx:xx:xx\    altname enx8447097076d8 | 3: enp99s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP mode DEFAULT group default qlen 1000\    link/ether xx:xx:xx:xx:xx:xx brd xx:xx:xx:xx:xx:xx\    altname enx8447097076d7 | 4: wlan0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP mode DORMANT group default qlen 1000\    link/ether xx:xx:xx:xx:xx:xx brd xx:xx:xx:xx:xx:xx | 5: ztmjfmwg7f: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 2800 qdisc fq_codel state UNKNOWN mode DEFAULT group default qlen 1000\    link/ether xx:xx:xx:xx:xx:xx brd xx:xx:xx:xx:xx:xx

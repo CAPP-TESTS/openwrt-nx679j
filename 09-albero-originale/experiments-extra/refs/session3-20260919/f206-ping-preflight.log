@@ -1,0 +1,24 @@
+f2064c04-e0b0-41fa-b9ed-746808a2b741
+2895.88 22984.85
+337
+-rw-r--r--    1 root     root             0 Jan  4 14:08 /tmp/cellular-stats.done
+-rw-r--r--    1 root     root             0 Jan  4 14:14 /tmp/ipa-ping-collector.ready
+-rw-------    1 root     root             0 Jan  4 14:14 /tmp/ipa-status-ping/ready
+1
+1
+/tmp/ipa-status-ping/controller.pid PID=23033 Name:	sh
+State:	S (sleeping)
+/tmp/ipa-status-ping/sink.pid PID=23106 Name:	ipa-trace-captu
+State:	S (sleeping)
+/tmp/ipa-ping-collector.pid PID=23034 Name:	sh
+State:	S (sleeping)
+/tmp/crashlog-dump.pid PID=9272 Name:	crashlog-dump.s
+State:	S (sleeping)
+/tmp/dpm-session.pid PID=12396 Name:	qmi-qrtr-observ
+State:	S (sleeping)
+/tmp/wds-session.pid PID=16989 Name:	qmi-qrtr-observ
+State:	S (sleeping)
+0xffffffecfd2c1000
+ffffffecfd3840b8 t ipahal_pkt_status_parse	[ipam]
+  parse                                                      0               0
+8.8.8.8 via 10.180.238.161 dev rmnet_data0  src 10.180.238.160 

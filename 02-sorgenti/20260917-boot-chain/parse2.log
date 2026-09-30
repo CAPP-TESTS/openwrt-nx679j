@@ -1,0 +1,201 @@
+
+==============================================================================
+## A. vendor_boot dtb: e' un contenitore multi-DTB?
+==============================================================================
+primi 64 byte: d00dfeed000694a0000000380005f59*********************************
+magic = 0xd00dfeed
+  singolo FDT -> /home/user/nx679j-stock/experiments/20260917-boot-chain/work/dtb-vendor-single.dtb sha256=b67334af3954fc47bc07cefb8d7fc1c7a59ce8258c2b4c8a55bed92fee5c88ad
+
+==============================================================================
+## B. chosen/bootargs dei DTB disponibili
+==============================================================================
+dtc su /home/user/nx679j-stock/experiments/20260917-boot-chain/work/dtb-vendor-idx5.dtb -> rc=1 FATAL ERROR: Couldn't open "/home/user/nx679j-stock/experiments/20260917-boot-chain/work/dtb-vendor-idx5.dtb": No such file or directory 
+
+==============================================================================
+## C. dtbo_a: entry 35 (ro.boot.dtbo_idx=35) e entry 0
+==============================================================================
+somma dt_size = 9445784 ; total_size dichiarato = 9447224 ; delta = 1440
+
+  entry 35: dt_size=334200   dt_offset=6679236    -> /home/user/nx679j-stock/experiments/20260917-boot-chain/work/dtbo-entry35.dtb sha256=5d4d23a6c5922d4a69dd55716c3e3750b225ddd557d4b75ddf75ae233716e054  (dtc rc=0)
+     model            = "Qualcomm Technologies, Inc. Waipio MTP with PM8010"
+     qcom,msm-id      = <0x1c9 0x20000 0x1e2 0x20000>
+     qcom,board-id    = <0x10008 0x00>
+     model            = "waipio-mtp-snd-card"
+
+  entry  0: dt_size=109475   dt_offset=1440       -> /home/user/nx679j-stock/experiments/20260917-boot-chain/work/dtbo-entry00.dtb sha256=4e957374893cbbdc6664e34b85718bae68ea71b89ff2a9e1f3050c6b7b760bcf  (dtc rc=0)
+     model            = "Qualcomm Technologies, Inc. Cape ATP with PM8008"
+     qcom,msm-id      = <0x213 0x10000 0x21c 0x10000 0x212 0x10000>
+     qcom,board-id    = <0x10021 0x00>
+
+  entry  5: dt_size=121695   dt_offset=588458     -> /home/user/nx679j-stock/experiments/20260917-boot-chain/work/dtbo-entry05.dtb sha256=4541c32bb7dce07c57d8b483023de64fe5151020adb452ae0844738bf6317f89  (dtc rc=0)
+     model            = "Qualcomm Technologies, Inc. Cape MTP with PM8010"
+     qcom,msm-id      = <0x213 0x10000 0x21c 0x10000 0x212 0x10000>
+     qcom,board-id    = <0x10008 0x00>
+
+  entry 43: dt_size=303837   dt_offset=9143387    -> /home/user/nx679j-stock/experiments/20260917-boot-chain/work/dtbo-entry43.dtb sha256=b7e06e229e02e05de5d82e49c811c523623bbe2a7dfe09d10d4d2b2f7ab46ef4  (dtc rc=0)
+     model            = "Qualcomm Technologies, Inc. WaipioP HDK with PM8010"
+     qcom,msm-id      = <0x1e2 0x20000 0x1e2 0x10000>
+     qcom,board-id    = <0x1001f 0x00>
+     model            = "waipio-qrd-snd-card"
+
+==============================================================================
+## D. boot_a ramdisk: contenuto (magiskinit)
+==============================================================================
+compresso: 2200983 B sha256=adb917c51de2b9a58a74053d2aa39c2762abaeac29a7f605f5f4eda2ba692b84 magic=02214c18
+lz4 legacy: rc=0, 2306300 B
+decompresso: 2306300 B sha256=6fd2630909eab5458196edc25b8c41b4c15b401c0c92fdeab65fedaec13a0594
+voci cpio: 29
+  d---------   1 root     root            0 Jan  1  1970 .backup
+  ----------   1 root     root          143 Jan  1  1970 .backup/.magisk
+  ----------   1 root     root           99 Jan  1  1970 .backup/.rmlist
+  -rwxr-x---   1 root     root       891140 Jan  1  1970 .backup/init.xz
+  drwxr-xr-x   1 root     root            0 Jan  1  1970 debug_ramdisk
+  drwxr-xr-x   1 root     root            0 Jan  1  1970 dev
+  drwxr-xr-x   1 root     root            0 Jan  1  1970 first_stage_ramdisk
+  drwxr-xr-x   1 root     root            0 Jan  1  1970 first_stage_ramdisk/debug_ramdisk
+  drwxr-xr-x   1 root     root            0 Jan  1  1970 first_stage_ramdisk/dev
+  drwxr-xr-x   1 root     root            0 Jan  1  1970 first_stage_ramdisk/metadata
+  drwxr-xr-x   1 root     root            0 Jan  1  1970 first_stage_ramdisk/mnt
+  drwxr-xr-x   1 root     root            0 Jan  1  1970 first_stage_ramdisk/proc
+  drwxr-xr-x   1 root     root            0 Jan  1  1970 first_stage_ramdisk/second_stage_resources
+  drwxr-xr-x   1 root     root            0 Jan  1  1970 first_stage_ramdisk/sys
+  -rwxr-x---   1 root     root       263928 Jan  1  1970 init
+  drwxr-xr-x   1 root     root            0 Jan  1  1970 metadata
+  drwxr-xr-x   1 root     root            0 Jan  1  1970 mnt
+  drwxr-x---   1 root     root            0 Jan  1  1970 overlay.d
+  drwxr-x---   1 root     root            0 Jan  1  1970 overlay.d/sbin
+  -rw-r--r--   1 root     root         1556 Jan  1  1970 overlay.d/sbin/init-ld.xz
+  -rw-r--r--   1 root     root       181004 Jan  1  1970 overlay.d/sbin/magisk.xz
+  -rw-r--r--   1 root     root       963636 Jan  1  1970 overlay.d/sbin/stub.xz
+  drwxr-xr-x   1 root     root            0 Jan  1  1970 proc
+  drwxr-xr-x   1 root     root            0 Jan  1  1970 second_stage_resources
+  drwxr-xr-x   1 root     root            0 Jan  1  1970 sys
+  drwxr-xr-x   1 root     root            0 Jan  1  1970 system
+  drwxr-xr-x   1 root     root            0 Jan  1  1970 system/etc
+  drwxr-xr-x   1 root     root            0 Jan  1  1970 system/etc/ramdisk
+  -rw-r--r--   1 root     root          914 Jan  1  1970 system/etc/ramdisk/build.prop
+
+==============================================================================
+## E. /init del boot ramdisk = magiskinit?
+==============================================================================
+/init: 263928 B sha256=8e26e33c3db284823f5d083588df26781d032ecd9818b8a116490d2f488f75dd
+primi 20 byte: 7f454c46****************************b700
+/home/user/nx679j-stock/experiments/20260917-boot-chain/work/magiskinit: ELF 64-bit LSB executable, ARM aarch64, version 1 (SYSV), statically linked, BuildID[sha1]=564de200772571e22bf624f32214c6139f89ab65, stripped
+  Class:                             ELF64
+  Type:                              EXEC (Executable file)
+  Machine:                           AArch64
+  Entry point address:               0x22fe8c
+stringhe totali (len>=6): 743
+  -- magisk             59 occorrenze; esempi: ['.backup/.magisk', '.magisk/isolated', './magisk', '.magisk/rootdir/init', '/data/magiskinit', '/watchdog/magisk']
+  -- Magisk             2 occorrenze; esempi: ['Setup Magisk tmp at %s', 'keyvaluemagiskinit::ffi::MagiskInit::mount_overlaymagiskinit::ffi::inject_magisk_rcmagiskinit::ffi::switch_rootFirst Stage Init']
+  -- switch_root        1 occorrenze; esempi: ['keyvaluemagiskinit::ffi::MagiskInit::mount_overlaymagiskinit::ffi::inject_magisk_rcmagiskinit::ffi::switch_rootFirst Stage Init']
+  -- first_stage        5 occorrenze; esempi: ['/first_stage_ramdisk/sdcard', '/first_stage_ramdisk', '/first_stage_ramdisk/storage/self', '/first_stage_ramdisk/storage/self/primary', 'Symlink /first_stage_ramdisk/storage/self/primary -> /system/system/bin/init']
+  -- fstab              5 occorrenze; esempi: ['androidboot.fstab_suffix', 'android,fstab', '%s/fstab_suffix', 'fstab_suffix=[', 'Patch @ %08zX [android,fstab] -> [xxx]']
+  -- sepolicy           6 occorrenze; esempi: ['/dev/sepolicy', '/system/etc/selinux/plat_sepolicy.cil', ' Loading custom sepolicy patch: [', '/sepolicy_version', '/data/.magisk/preinit/sepolicy.rule', 'Unknown sepolicy setup, abort...']
+  -- overlay.d          5 occorrenze; esempi: ['/overlay.d', '/data/overlay.d', 'overlay.d', '/overlay.d', '/data/overlay.d']
+  -- .backup            9 occorrenze; esempi: ['.backup/.magisk', '.backup', '/.backup/init', '/.backup/.magisk', '/.backup', '/.backup/init.xz']
+  -- config             3 occorrenze; esempi: ['Device config:', '.magisk/config', '/proc/bootconfig']
+  -- init.rc            3 occorrenze; esempi: ['init.rc', 'Patching init.rc in %s', '/system/etc/init/hw/init.rc']
+  -- selinux            19 occorrenze; esempi: ['ocontext_read_selinux', 'selinux', 'init/selinux.rs', 'ocontext_write_selinux', 'selinux_setup', 'security.selinux']
+  -- tmpfs              2 occorrenze; esempi: ['/datatmpfsmount', 'f=Zioctlkernelload_policydomainmagiskmlstrustedsubjectnetdomainappdomainfile_typemagisk_filemagisk_log_filedirfifo_filesock_filezygotewritefs_typeservice_manager_typehwservice_manager_typevndservice_manager_typeport_typenode_typeproperty_typetcp_socketudp_socketrawip_socketservicemanagervndservicemanagersearchmapprocessgetattrbindersigchldfduseshellplatform_appsystem_appuntrusted_appuntrusted_app_allunix_stream_socketconnecttogetopttmpfsrootfslabeledfsfilesystemassociatepipefsdevptsrelabeltorelabelfromsetcurrentdyntransitionexecmemunmountsystem_serverptraceadb_data_filevendor_init']
+  -- /proc              8 occorrenze; esempi: ['/proc/device-tree/firmware/android', '/proc/cmdline', '/proc/', '/proc/bootconfig', '/proc/cmdline', '\t/proc']
+  -- system/bin/init    6 occorrenze; esempi: ['/system/bin/init', 'no storage space/system/bin/init', '/system/bin/init', '/system/system/bin/init', 'Symlink /first_stage_ramdisk/storage/self/primary -> /system/system/bin/init', 'Symlink /storage/self/primary -> /system/system/bin/init']
+
+==============================================================================
+## F. vendor_boot vendor_ramdisk00: moduli e liste
+==============================================================================
+compresso: 10041284 B magic=02214c18
+decompresso: 35205632 B sha256=d994d70672986b067b1946092817fb4c7e0542bb815c8169f7350f18f269d7e3
+voci cpio: 341
+  avb                            1
+  avb/q-gsi.avbpubkey            1
+  avb/r-gsi.avbpubkey            1
+  avb/s-gsi.avbpubkey            1
+  first_stage_ramdisk            1
+  first_stage_ramdisk/fstab.qcom 1
+  lib                            1
+  lib/modules                    334
+file .ko: 327
+
+modules.load: 98 righe
+  sha256=d44ddf1f9bff87ba20ca077d1c3fadd89adf756edcbfb46be022450d3886717e
+  prime 10: ['gh_virt_wdt.ko', 'qcom_wdt_core.ko', 'qcom_cpu_vendor_hooks.ko', 'clk-rpmh.ko', 'gcc-waipio.ko', 'icc-rpmh.ko', 'qcom_ipcc.ko', 'qcom_ipc_logging.ko', 'qcom-pdc.ko', 'rpmh-regulator.ko']
+modules.load.recovery: 329 righe
+  sha256=6d5ff72ccf283ab40c2d5979d0623ef54721b3e8c62c67ec85d659b3be5553b0
+
+==============================================================================
+## G. fstab nel vendor ramdisk e moduli pericolosi
+==============================================================================
+
+--- first_stage_ramdisk/fstab.qcom (5497 B) ---
+# Copyright (c) 2019-2020 The Linux Foundation. All rights reserved.
+#
+# Redistribution and use in source and binary forms, with or without
+# modification, are permitted (subject to the limitations in the
+# disclaimer below) provided that the following conditions are met:
+#
+#    * Redistributions of source code must retain the above copyright
+#      notice, this list of conditions and the following disclaimer.
+#
+#    * Redistributions in binary form must reproduce the above
+#      copyright notice, this list of conditions and the following
+#      disclaimer in the documentation and/or other materials provided
+#      with the distribution.
+#
+#    * Neither the name of The Linux Foundation nor the names of its
+#      contributors may be used to endorse or promote products derived
+#      from this software without specific prior written permission.
+#
+# NO EXPRESS OR IMPLIED LICENSES TO ANY PARTY'S PATENT RIGHTS ARE
+# GRANTED BY THIS LICENSE. THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT
+# HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED
+# WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+# MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+# IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+# ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+# DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE
+# GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+# INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER
+# IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+# OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
+# IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+# Android fstab file.
+# The filesystem that contains the filesystem checker binary (typically /system) cannot
+# specify MF_CHECK, and must come before any filesystems that do specify MF_CHECK
+
+#<src>                                                 <mnt_point>            <type>  <mnt_flags and options>                            <fs_mgr_flags>
+system                                                  /system                ext4    ro,barrier=1,discard                                 wait,slotselect,avb=vbmeta_system,logical,first_stage_mount,avb_keys=/avb/q-gsi.avbpubkey:/avb/r-gsi.avbpubkey:/avb/s-gsi.avbpubkey
+system_ext                                              /system_ext            ext4    ro,barrier=1,discard                                 wait,slotselect,avb=vbmeta_system,logical,first_stage_mount
+product                                                 /product               ext4    ro,barrier=1,discard                                 wait,slotselect,avb=vbmeta_system,logical,first_stage_mount
+vendor                                                  /vendor                ext4    ro,barrier=1,discard                                 wait,slotselect,avb,logical,first_stage_mount
+vendor_dlkm                                             /vendor_dlkm           ext4    ro,barrier=1,discard                                 wait,slotselect,avb,logical,first_stage_mount
+odm                                                     /odm                   ext4    ro,barrier=1,discard                                 wait,slotselect,avb,logical,first_stage_mount
+/dev/block/by-name/metadata                             /metadata              ext4    noatime,nosuid,nodev,discard                         wait,check,formattable,first_stage_mount
+/dev/block/bootdevice/by-name/persist                   /mnt/vendor/persist    ext4    noatime,nosuid,nodev,barrier=1                       wait
+/dev/block/bootdevice/by-name/userdata                  /data                  f2fs    noatime,nosuid,nodev,discard,reserve_root=32768,resgid=1065,fsync_mode=nobarrier,inlinecrypt    latemount,wait,check,formattable,fileencryption=aes-256-xts:aes-256-cts:v2+inlinecrypt_optimized+wrappedkey_v0,keydirectory=/metadata/vold/metadata_encryption,metadata_encryption=aes-256-xts:wrappedkey_v0,quota,reservedsize=128M,sysfs_path=/sys/devices/platform/soc/1d84000.ufshc,checkpoint=fs
+/dev/block/bootdevice/by-name/misc                      /misc                  emmc    defaults                                             defaults
+#/devices/platform/soc/8804000.sdhci/mmc_host*           /storage/sdcard1       vfat    nosuid,nodev                                         wait,voldmanaged=sdcard1:auto,encryptable=footer
+/devices/platform/soc/*.ssusb/*.dwc3/xhci-hcd.*.auto*   /storage/usbotg        vfat    nosuid,nodev                                         wait,voldmanaged=usbotg:auto
+/dev/block/bootdevice/by-name/modem                     /vendor/firmware_mnt   vfat    ro,shortname=lower,uid=1000,gid=1000,dmask=227,fmask=337,context=u:object_r:firmware_file:s0 wait,slotselect
+/dev/block/bootdevice/by-name/dsp                       /vendor/dsp            ext4    ro,nosuid,nodev,barrier=1                            wait,slotselect
+/dev/block/bootdevice/by-name/vm-bootsys                /vendor/vm-system      ext4    ro,nosuid,nodev,barrier=1                            wait,slotselect
+/dev/block/bootdevice/by-name/bluetooth                 /vendor/bt_firmware    vfat    ro,shortname=lower,uid=1002,gid=3002,dmask=227,fmask=337,context=u:object_r:bt_firmware_file:s0 wait,slotselect
+/dev/block/bootdevice/by-name/qmcs                      /mnt/vendor/qmcs       vfat    noatime,nosuid,nodev,context=u:object_r:vendor_qmcs_file:s0   wait,check,formattable
+
+  cnss2          in modules.load: -                                        in modules.load.recovery: ['icnss2.ko', 'cnss2.ko']
+  icnss2         in modules.load: -                                        in modules.load.recovery: ['icnss2.ko']
+  cdsp-loader    in modules.load: -                                        in modules.load.recovery: ['cdsp-loader.ko']
+  cdsprm         in modules.load: -                                        in modules.load.recovery: ['cdsprm.ko']
+  mhi_           in modules.load: -                                        in modules.load.recovery: ['mhi_cntrl_qcom.ko', 'mhi_dev_uci.ko', 'mhi_dev_netdev.ko', 'mhi_dev_dtr.ko', 'mhi_dev_drv.ko', 'mhi_dev_net.ko']
+  atmel_mxt_ts   in modules.load: -                                        in modules.load.recovery: ['atmel_mxt_ts.ko']
+  aw9620x        in modules.load: -                                        in modules.load.recovery: ['aw9620x.ko']
+  fsa4480        in modules.load: -                                        in modules.load.recovery: ['fsa4480-i2c.ko']
+  qcom_q6v5      in modules.load: -                                        in modules.load.recovery: ['qcom_q6v5.ko', 'qcom_q6v5_pas.ko']
+  qrtr           in modules.load: ['qrtr.ko']                              in modules.load.recovery: ['qrtr.ko', 'qrtr-smd.ko', 'qrtr-mhi.ko', 'qrtr-gunyah.ko']
+  wlan           in modules.load: -                                        in modules.load.recovery: ['wlan_firmware_service.ko']
+  ipa            in modules.load: -                                        in modules.load.recovery: ['ipa_fmwk.ko']
+  glink          in modules.load: -                                        in modules.load.recovery: ['glink_pkt.ko', 'glink_probe.ko', 'pmic_glink.ko', 'charger-ulog-glink.ko', 'altmode-glink.ko', 'spmi-glink-debug.ko', 'ucsi_glink.ko', 'qcom_glink.ko', 'qcom_glink_smem.ko', 'qcom_glink_spss.ko']
+  smem           in modules.load: ['smem.ko']                              in modules.load.recovery: ['smem.ko', 'qcom_glink_smem.ko']
+  socinfo        in modules.load: ['socinfo.ko']                           in modules.load.recovery: ['socinfo.ko']
+  boot_stats     in modules.load: -                                        in modules.load.recovery: ['boot_stats.ko']

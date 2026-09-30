@@ -1,0 +1,3 @@
+[    2.157307] 
+[    6.977363] [ZtemtUSB] [dwc3_otg_sm_work: 5805] Otg drd_state = peripheral
+[    6.977781] [ZtemtUSB] [handle_ucsi_notify: 232] receiver the data form adsp cc_orientation = 02.

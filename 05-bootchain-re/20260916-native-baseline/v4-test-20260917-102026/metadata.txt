@@ -1,0 +1,1 @@
+img=candidate-stockkernel-v4/boot_b-stockkernel-openwrt-v4.img size=61169664 sha=1a46f350376ba5fc609e2da52cce22e9086fc3b850d3ed22f425066e4e3f941b

@@ -1,0 +1,39 @@
+CHECKPOINT index=14 label=before_ping_exec boot=a28dc1c5-8505-4bae-a39a-308ce7faa168 uptime=1698.06 12853.20
+STAGE=inspect BEGIN uptime=1622.94 12479.67
+CHECKPOINT_DURABLE index=0 label=before_inspect
+STAGE=inspect RETURNED uptime=1622.95 12479.69
+CHECKPOINT_DURABLE index=1 label=after_inspect
+STAGE=mtu BEGIN uptime=1625.22 12490.92
+CHECKPOINT_DURABLE index=2 label=before_mtu
+STAGE=mtu RETURNED uptime=1625.23 12490.95
+CHECKPOINT_DURABLE index=3 label=after_mtu
+STAGE=address BEGIN uptime=1627.49 12502.12
+CHECKPOINT_DURABLE index=4 label=before_address
+STAGE=address RETURNED uptime=1627.50 12502.14
+CHECKPOINT_DURABLE index=5 label=after_address
+STAGE=route BEGIN uptime=1629.77 12513.36
+CHECKPOINT_DURABLE index=6 label=before_route
+STAGE=route RETURNED uptime=1629.78 12513.37
+CHECKPOINT_DURABLE index=7 label=after_route
+STAGE=route-get BEGIN uptime=1632.05 12524.56
+CHECKPOINT_DURABLE index=8 label=before_route-get
+16: rmnet_data0@rmnet_ipa0: <UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UNKNOWN qlen 1000
+    inet 10.101.158.83/29 scope global rmnet_data0
+       valid_lft forever preferred_lft forever
+default via 10.101.158.84 dev rmnet_data0 
+10.0.0.0/24 dev usb0 scope link  src 10.0.0.1 
+10.101.158.80/29 dev rmnet_data0 scope link  src 10.101.158.83 
+8.8.8.8 via 10.101.158.84 dev rmnet_data0  src 10.101.158.83 
+STAGE=route-get RETURNED uptime=1632.07 12524.59
+CHECKPOINT_DURABLE index=9 label=after_route-get
+STAGE=stats BEGIN uptime=1634.33 12535.78
+CHECKPOINT_DURABLE index=10 label=before_stats
+BEFORE rx_packets=0
+BEFORE tx_packets=9
+BEFORE rx_bytes=0
+BEFORE tx_bytes=568
+STAGE=stats RETURNED uptime=1634.34 12535.85
+CHECKPOINT_DURABLE index=11 label=after_stats
+STAGE=ping BEGIN uptime=1698.04 12853.18
+CHECKPOINT_DURABLE index=12 label=before_ping
+PING_EXEC uptime=1698.06 12853.20

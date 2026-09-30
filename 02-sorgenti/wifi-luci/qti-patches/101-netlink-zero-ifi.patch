@@ -1,0 +1,18 @@
+--- a/src/libqmi-glib/qmi-net-port-manager-rmnet.c
++++ b/src/libqmi-glib/qmi-net-port-manager-rmnet.c
+@@ -183,11 +183,10 @@
+     hdr->msghdr.nlmsg_type = type;
+     hdr->msghdr.nlmsg_flags = NLM_F_REQUEST | NLM_F_ACK | extra_flags;
+     hdr->ifreq.ifi_family = AF_UNSPEC;
+-    if (type != RTM_DELLINK) {
+-        hdr->ifreq.ifi_type = ARPHRD_RAWIP;
+-        hdr->ifreq.ifi_flags = 0;
+-        hdr->ifreq.ifi_change = 0xFFFFFFFF;
+-    }
++    /* NX679J local: the stock SM8450 vendor rmnet driver ACKs but does not
++     * create the device when ifi_change is non-zero. Keep the ifinfomsg
++     * fields zeroed (as plain netlink tooling does) for vendor kernels. */
++    (void) type;
+     return msg;
+ }
+ 

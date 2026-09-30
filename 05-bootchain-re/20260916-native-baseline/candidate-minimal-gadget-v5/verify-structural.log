@@ -1,0 +1,210 @@
+image /home/user/nx679j-stock/experiments/20260916-122926-native-baseline/candidate-minimal-gadget-v5/boot_b-minimal-gadget-v5.img
+      50266112 bytes sha256=62c7fa4bb28cdd5ec96faa960b431ed8b5faf734a9e298405ea1400040b8b1f4
+[PASS] header magic ANDROID! :: b'ANDROID!'
+      kernel_size=49108324 ramdisk_size=1147147 os_version=0x18000162 header_size=1584 header_version=4
+[PASS] header_version == 4 :: 4
+[PASS] kernel_size == manifest :: 49108324/49108324
+[PASS] ramdisk_size == manifest :: 1147147/1147147
+[PASS] image bytes == manifest :: 50266112/50266112
+[PASS] image sha256 == manifest
+[PASS] kernel sha256 == device stock kernel :: f0aa949c95d1421381850cb1982bd2a505e96fcd7565543ec28d5b1f7d81a0cc
+[PASS] kernel != trailing zeros
+[PASS] kernel identical to the v4 kernel
+[PASS] size <= 96 MiB (0x6000000) :: 50266112 <= 100663296 (50397184 bytes headroom)
+[PASS] cmdline carries panic=10
+[PASS] cmdline has exactly one panic= token :: panic=10
+[PASS] cmdline byte-identical to v4
+[PASS] header cmdline == manifest cmdline
+[PASS] cmdline keeps "rootwait ro init=/init" :: led_cmd: rootwait ro init=/init panic=10
+[PASS] ramdisk sha256 == manifest :: 33f0cb1b30d3ce61cfcfa2b87400d43f87219bd3925981864ae66c4a3d6ed915
+[PASS] gzip -t accepts ramdisk
+[PASS] newc parses to TRAILER!!!
+[PASS] entry count == manifest :: 85 vs 85
+[PASS] compressed ramdisk == manifest size
+[PASS] ramdisk contains init
+[PASS] ramdisk contains bin/busybox
+[PASS] ramdisk contains bin/sh
+[PASS] ramdisk contains bin/mount
+[PASS] ramdisk contains sbin/kmodloader
+[PASS] ramdisk contains sbin/insmod
+[PASS] ramdisk contains lib/libc.so
+[PASS] ramdisk contains lib/libgcc_s.so.1
+[PASS] ramdisk contains lib/libubox.so.20240329
+[PASS] ramdisk contains lib/ld-musl-aarch64.so.1
+[PASS] ramdisk contains dev/console
+[PASS] ramdisk contains dev/kmsg
+[PASS] ramdisk contains dev/pmsg0
+[PASS] ramdisk contains dev/null
+[PASS] ramdisk contains dev/zero
+[PASS] ramdisk contains dev/tty
+[PASS] ramdisk contains proc
+[PASS] ramdisk contains sys
+[PASS] ramdisk contains sys/kernel/config
+[PASS] ramdisk contains sys/fs/pstore
+[PASS] ramdisk contains tmp
+[PASS] ramdisk contains lib/modules
+[PASS] ramdisk contains lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604
+[PASS] 6 static device nodes :: 6
+[PASS] device node dev/kmsg is 1:11
+[PASS] device node dev/pmsg0 is 252:0
+[PASS] /bin/sh is a symlink (shebang target) :: 0o120777
+[PASS] /bin/sh -> busybox
+[PASS] /sbin/insmod -> kmodloader
+[PASS] /lib/ld-musl-aarch64.so.1 -> libc.so
+[PASS] init is executable script :: 0o100755
+[PASS] packed init sha256 == on-disk init sha256 :: 4ebac295a09d24ec28e359b253c55d79acda50d596ff2748fd61dc760b1e0f8c
+[PASS] packed init == manifest init sha256
+[PASS] init starts with #!/bin/sh
+[PASS] no OpenWrt userspace in the ramdisk :: 12 forbidden paths absent
+[PASS] exactly 40 .ko packed :: 40
+[PASS] all .ko under one versioned modules dir :: lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604
+[PASS] ramdisk entry count <= 100 (minimality budget) :: 85 entries
+[PASS] ramdisk <= 2 MB compressed :: 1147147 bytes
+[PASS] all 40 .ko byte-identical to the vendor ramdisk copies :: 40/40 identical (327 vendor .ko available)
+      extracted to /home/user/nx679j-stock/experiments/20260916-122926-native-baseline/candidate-minimal-gadget-v5/verify-scratch: {'dir': 13, 'file': 46, 'link': 20, 'node': 6}
+      libraries in the ramdisk: ['lib/ld-musl-aarch64.so.1', 'lib/libc.so', 'lib/libgcc_s.so.1', 'lib/libubox.so.20240329']
+[PASS] every dynamic user-space ELF in the ramdisk is listed :: 25 ELFs: ['bin/basename', 'bin/busybox', 'bin/cat', 'bin/dd', 'bin/head', 'bin/ip', 'bin/ln', 'bin/ls', 'bin/mkdir', 'bin/mknod', 'bin/mount', 'bin/rm', 'bin/sh', 'bin/sleep', 'bin/sync', 'bin/tail', 'bin/uname', 'bin/wc', 'bin/which', 'lib/ld-musl-aarch64.so.1', 'lib/libc.so', 'lib/libgcc_s.so.1', 'lib/libubox.so.20240329', 'sbin/insmod', 'sbin/kmodloader']
+[PASS] every NEEDED soname resolved inside the ramdisk :: 25 ELFs checked
+[PASS] every interpreter path exists inside the ramdisk :: all ELFs use /lib/ld-musl-aarch64.so.1
+      qemu-aarch64: /usr/bin/qemu-aarch64
+[PASS] the ramdisk busybox serves every applet the init calls (qemu-user) :: 18 applets run under qemu-aarch64; problems: []
+[PASS] the ramdisk sh accepts the shipped init with -n (syntax) :: {"rc": 0, "stderr": "", "stdout": ""}
+[PASS] the ramdisk /sbin/insmod runs as the kmodloader insmod applet :: rc=255 out=Failed to find v5-verify-nonexistent. Maybe it is a built in module ?
+      (the "$BB insmod" branch in the init is dead code: /sbin/insmod is present)
+[PASS] every symlink in the ramdisk resolves to a packed entry :: all symlinks resolve
+[PASS] journaling helper code (log/find_rawdump/flush) identical to v4 :: 1340 bytes of text, 972 bytes of code, code identical=True
+[PASS] module list + loop byte-identical to v4 :: 1524 bytes, identical=True
+[PASS] UFS check block byte-identical to v4 :: 352 bytes, identical=True
+[PASS] module list identical token-for-token to v4 :: 40 names
+[PASS] init v5 has no exec /sbin/init handover :: exec /sbin/init
+[PASS] init v5 has no set -e (never aborts) :: set -e
+[PASS] init v5 has the 15 s retry loop :: sleep 15
+[PASS] init v5 has the infinite hold loop :: while true; do
+[PASS] init v5 has the breadcrumb journal on the 524288-sector partition :: 524288
+[PASS] init v5 has the rawdump flush() :: flush()
+[PASS] init v5 has the NCM configfs gadget :: functions/ncm.usb0
+[PASS] init v5 has idVendor 0x18d1 :: 0x18d1
+[PASS] init v5 has idProduct 0x4ee7 :: 0x4ee7
+[PASS] init v5 has MaxPower 250 :: MaxPower
+[PASS] init v5 has the usb0 address 10.0.0.1/24 :: 10.0.0.1/24
+[PASS] init v5 has the dummy_udc filter :: dummy_udc
+[PASS] init v5 has the 30 s first UDC wait :: gadget_try 30
+[PASS] init v5 has the per-cycle gadget retry :: gadget_try 3
+[PASS] init v5 has /sbin/insmod as the live insmod path :: [ -x /sbin/insmod ]
+[PASS] init v5 has INSMOD=/sbin/insmod as the resolved tool :: INSMOD=/sbin/insmod
+[PASS] init v5 has no telnetd in code (comments may mention it) :: telnetd absent from code
+[PASS] init v5 never execs anything (code lines only) :: no exec statement in v5 code
+[PASS] v5 mixed-spelling table identical to v4 :: ['nvmem_qcom-spmi-sdam.ko']
+      phy_qcom_emu                   -> phy-qcom-emu.ko                    [all-hyphens]
+      phy_msm_snps_eusb2             -> phy-msm-snps-eusb2.ko              [all-hyphens]
+      repeater                       -> repeater.ko                        [literal]
+      phy_qcom_ufs_qmp_v4_lahaina    -> phy-qcom-ufs-qmp-v4-lahaina.ko     [all-hyphens]
+      qcom_glink_spss                -> qcom_glink_spss.ko                 [literal]
+      phy_qcom_ufs_qmp_14nm          -> phy-qcom-ufs-qmp-14nm.ko           [all-hyphens]
+      phy_qcom_ufs_qmp_v3            -> phy-qcom-ufs-qmp-v3.ko             [all-hyphens]
+      nvmem_qfprom                   -> nvmem_qfprom.ko                    [literal]
+      fsa4480_i2c                    -> fsa4480-i2c.ko                     [all-hyphens]
+      altmode_glink                  -> altmode-glink.ko                   [all-hyphens]
+      dwc3_msm                       -> dwc3-msm.ko                        [all-hyphens]
+      phy_msm_ssusb_qmp              -> phy-msm-ssusb-qmp.ko               [all-hyphens]
+      phy_msm_snps_hs                -> phy-msm-snps-hs.ko                 [all-hyphens]
+      ssusb_redriver_nb7vpq904m      -> ssusb-redriver-nb7vpq904m.ko       [all-hyphens]
+      ucsi_glink                     -> ucsi_glink.ko                      [literal]
+      pmic_glink                     -> pmic_glink.ko                      [literal]
+      pdr_interface                  -> pdr_interface.ko                   [literal]
+      qmi_helpers                    -> qmi_helpers.ko                     [literal]
+      rproc_qcom_common              -> rproc_qcom_common.ko               [literal]
+      qcom_smd                       -> qcom_smd.ko                        [literal]
+      qcom_glink_smem                -> qcom_glink_smem.ko                 [literal]
+      qcom_glink                     -> qcom_glink.ko                      [literal]
+      ufs_qcom                       -> ufs_qcom.ko                        [literal]
+      ufshcd_crypto_qti              -> ufshcd-crypto-qti.ko               [all-hyphens]
+      qti_regmap_debugfs             -> qti-regmap-debugfs.ko              [all-hyphens]
+      phy_qcom_ufs_qmp_v4_cape       -> phy-qcom-ufs-qmp-v4-cape.ko        [all-hyphens]
+      phy_qcom_ufs_qmp_v4_diwali     -> phy-qcom-ufs-qmp-v4-diwali.ko      [all-hyphens]
+      phy_qcom_ufs_qmp_v4_waipio     -> phy-qcom-ufs-qmp-v4-waipio.ko      [all-hyphens]
+      phy_qcom_ufs                   -> phy-qcom-ufs.ko                    [all-hyphens]
+      nvmem_qcom_spmi_sdam           -> nvmem_qcom-spmi-sdam.ko            [mixed-spelling alias]
+      crypto_qti_common              -> crypto-qti-common.ko               [all-hyphens]
+      crypto_qti_hwkm                -> crypto-qti-hwkm.ko                 [all-hyphens]
+      clk_qcom                       -> clk-qcom.ko                        [all-hyphens]
+      gdsc_regulator                 -> gdsc-regulator.ko                  [all-hyphens]
+      proxy_consumer                 -> proxy-consumer.ko                  [all-hyphens]
+      debug_regulator                -> debug-regulator.ko                 [all-hyphens]
+      qcom_ipc_logging               -> qcom_ipc_logging.ko                [literal]
+      qcom_scm                       -> qcom-scm.ko                        [all-hyphens]
+      minidump                       -> minidump.ko                        [literal]
+      smem                           -> smem.ko                            [literal]
+[PASS] all init v5 module names resolve in the ramdisk :: 40/40 resolved; unresolved: []
+[PASS] no module in the ramdisk is unused by the init :: packed=40 used=40
+[PASS] exactly one name needs the documented mixed-spelling alias :: [('nvmem_qcom_spmi_sdam', 'nvmem_qcom-spmi-sdam.ko')]
+      unpack_bootimg: boot magic: ANDROID! | kernel_size: 49108324 | ramdisk size: 1147147 | os version: 12.0.0 | os patch level: 2022-02 | boot image header version: 4 | command line args: stack_depot_disable=on kasan.stacktrace=off kvm-arm.mode=protected cgroup_disable=pressure cgroup.memory=nokmem console=ttyMSM0,115200n8 loglevel=6 kpti=0 log_buf_len=256K kernel.panic_on_rcu_stall=1 swiotlb=noforce loop.max_part=7 cgroup.memory=nokmem,nosocket pcie_ports=compat service_locator.enable=1 msm_rtb.filter=0x237 allow_mismatched_32bit_el0 cpufreq.default_governor=performance pelt=8 kasan=off rcupdate.rcu_expedited=1 rcu_nocbs=0-7 irqaffinity=0-3 ftrace_dump_on_oops pstore.compress=none fsa4480_i2c.async_probe=1 can.stats_timer=0 video=vfb:640x400,bpp=32,memsize=3072000 qcom-dload-mode.download_mode=1 bootconfig msm_drm.dsi_display0=qcom,mdss_dsi_r6130_1080_2400_amoled_cmd: rootwait ro init=/init panic=10 | boot.img signature size: 0
+[PASS] unpack_bootimg kernel sha256 matches
+[PASS] unpack_bootimg ramdisk sha256 matches
+      size comparison: {"v4_ramdisk_bytes": 12051145, "v5_ramdisk_bytes": 1147147, "v5_over_v4_ramdisk_pct": 9.5, "v4_image_bytes": 61169664, "v5_image_bytes": 50266112, "v5_over_v4_image_pct": 82.2, "v4_ramdisk_entries": 1541, "v5_ramdisk_entries": 85, "android_reference_ramdisk_bytes": 2200983, "v5_over_android_reference_pct": 52.1, "v4_modules": 327, "v5_modules": 40}
+[PASS] ramdisk is far below v4 (size hypothesis still testable) :: 1147147 vs 12051145 (9.5%)
+[PASS] ramdisk is in the same order of magnitude as the Android reference :: 1147147 vs Android boot_a ramdisk 2200983 bytes (52.1%)
+
+97/97 checks passed
+{
+  "image": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/candidate-minimal-gadget-v5/boot_b-minimal-gadget-v5.img",
+  "bytes": 50266112,
+  "sha256": "62c7fa4bb28cdd5ec96faa960b431ed8b5faf734a9e298405ea1400040b8b1f4",
+  "header_version": 4,
+  "kernel_bytes": 49108324,
+  "kernel_sha256": "f0aa949c95d1421381850cb1982bd2a505e96fcd7565543ec28d5b1f7d81a0cc",
+  "ramdisk_bytes": 1147147,
+  "ramdisk_sha256": "33f0cb1b30d3ce61cfcfa2b87400d43f87219bd3925981864ae66c4a3d6ed915",
+  "ramdisk_cpio_bytes": 3598688,
+  "ramdisk_entries": 85,
+  "ramdisk_modules": 40,
+  "checks_total": 97,
+  "checks_failed": [],
+  "cmdline_bytes": 725,
+  "size_comparison": {
+    "v4_ramdisk_bytes": 12051145,
+    "v5_ramdisk_bytes": 1147147,
+    "v5_over_v4_ramdisk_pct": 9.5,
+    "v4_image_bytes": 61169664,
+    "v5_image_bytes": 50266112,
+    "v5_over_v4_image_pct": 82.2,
+    "v4_ramdisk_entries": 1541,
+    "v5_ramdisk_entries": 85,
+    "android_reference_ramdisk_bytes": 2200983,
+    "v5_over_android_reference_pct": 52.1,
+    "v4_modules": 327,
+    "v5_modules": 40
+  },
+  "elfs_checked": [
+    "bin/basename",
+    "bin/busybox",
+    "bin/cat",
+    "bin/dd",
+    "bin/head",
+    "bin/ip",
+    "bin/ln",
+    "bin/ls",
+    "bin/mkdir",
+    "bin/mknod",
+    "bin/mount",
+    "bin/rm",
+    "bin/sh",
+    "bin/sleep",
+    "bin/sync",
+    "bin/tail",
+    "bin/uname",
+    "bin/wc",
+    "bin/which",
+    "lib/ld-musl-aarch64.so.1",
+    "lib/libc.so",
+    "lib/libgcc_s.so.1",
+    "lib/libubox.so.20240329",
+    "sbin/insmod",
+    "sbin/kmodloader"
+  ],
+  "init_syntax_check": {
+    "rc": 0,
+    "stderr": "",
+    "stdout": ""
+  }
+}

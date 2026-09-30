@@ -1,0 +1,4 @@
+# Bootconfig to override kvm-arm.mode
+kernel {
+    kvm-arm.mode = "nvhe"
+}

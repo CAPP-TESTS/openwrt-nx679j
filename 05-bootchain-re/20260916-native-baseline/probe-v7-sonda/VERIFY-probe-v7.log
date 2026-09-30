@@ -1,0 +1,39 @@
+=== verify-probe-v7: independent re-check with GNU cpio ===
+[PASS] container is the measured Magisk image: 100663296 bytes 0cd94d5627501f3c
+[i] source tree v6: 49 files, 59 entries
+[i] source tree android: 8 files, 29 entries
+
+--- v7: /home/user/nx679j-stock/experiments/20260916-122926-native-baseline/probe-v7-sonda/boot_b-probe-v7.img
+[PASS] v7: sha256 matches the manifest: 77d7675eb54a65d9b3ca45042731b8180d1d927d6006a5c80e8f9775e1c3c2a5
+[PASS] v7: length is the full partition: 100663296 bytes
+[PASS] v7: header v4 consistent (kernel/ramdisk/header/signature size): kernel_size=49108324 ramdisk_size=1014155 header_size=1584 header_version=4 signature_size=4096
+[PASS] v7: kernel area byte-identical to the container: 49111040 bytes sha f7ea707eb916bf1f
+[PASS] v7: bytes after the ramdisk identical at the same absolute offsets: 50534005 bytes tail
+[PASS] v7: every differing byte is in the size field or the ramdisk: 1008392 differing bytes, outside: 0
+[PASS] v7: stored ramdisk is an lz4 legacy frame: 02214c18
+[PASS] v7: decompressed ramdisk sha256 matches the manifest: bfeb2f907ce9e5842f4fe37d4ebcf67ad83630fcf32e43d7f2590151cc53c4e0
+[PASS] v7: extracted tree == the v6 tree except /init: only in source: [], only in image: [], content differs: ['init'], entry types differ: []
+[PASS] v7: 59 entries, all names and their mode/nlink/uid/gid identical to the v6 archive: source has 59 entries, image 59; metadata differs on: []
+[PASS] v7: /init in the image is the probe binary: 532352 bytes a1376c22ac8a02fb
+[PASS] v7: /init keeps the source entry mode: source -rwxr-xr-x -> image -rwxr-xr-x (expected -rwxr-xr-x)
+
+--- v7b: /home/user/nx679j-stock/experiments/20260916-122926-native-baseline/probe-v7-sonda/boot_b-probe-v7b.img
+[PASS] v7b: sha256 matches the manifest: 7424a599a6a9b7e105ad1ed59b53b9dfe6763238ca16e88f9d7ad9adaba48e20
+[PASS] v7b: length is the full partition: 100663296 bytes
+[PASS] v7b: header v4 consistent (kernel/ramdisk/header/signature size): kernel_size=49108324 ramdisk_size=2352880 header_size=1584 header_version=4 signature_size=4096
+[PASS] v7b: kernel area byte-identical to the container: 49111040 bytes sha f7ea707eb916bf1f
+[PASS] v7b: bytes after the ramdisk identical at the same absolute offsets: 49195280 bytes tail
+[PASS] v7b: every differing byte is in the size field or the ramdisk: 1449862 differing bytes, outside: 0
+[PASS] v7b: stored ramdisk is an lz4 legacy frame: 02214c18
+[PASS] v7b: decompressed ramdisk sha256 matches the manifest: c6b800bced1018a4f4372f4353e541630207c975db57b78b34fa7c38542079d6
+[PASS] v7b: extracted tree == the android tree except /init: only in source: [], only in image: [], content differs: ['init'], entry types differ: []
+[PASS] v7b: 29 entries, all names and their mode/nlink/uid/gid identical to the android archive: source has 29 entries, image 29; metadata differs on: []
+[PASS] v7b: /init in the image is the probe binary: 532352 bytes a1376c22ac8a02fb
+[PASS] v7b: /init keeps the source entry mode: source -rwxr-x--- -> image -rwxr-x--- (expected -rwxr-x---)
+
+--- probe binary
+[PASS] probe: static aarch64 ELF, no interpreter, no DT_NEEDED: ELF 64-bit LSB executable, ARM aarch64, version 1 (SYSV), statically linked, BuildID[sha1]=07ca1c2c52108e5bd5e3d576131d564286aee91e, for GNU/Linux 3.7.0, stripped; INTERP=0 NEEDED=0
+[PASS] probe: the source contains no exit/_exit/abort call: none
+[PASS] probe: main() cannot return (no return instruction, no branch to exit/abort, ends in an unconditional branch): 137 instructions, return instructions: none, branches to exit/abort: none, last instruction: b 40056c <main+0xb4>
+
+=== 28/28 checks passed

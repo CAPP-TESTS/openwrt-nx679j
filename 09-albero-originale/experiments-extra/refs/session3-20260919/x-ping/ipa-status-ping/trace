@@ -1,0 +1,4 @@
+          <idle>-0       [000] d.s2  6325.665818: parse: (ipahal_pkt_status_parse+0x0/0x16c [ipam]) pointer=0xffffff8799f48040 caller=0xffffffe3ab2c7e18 raw0=0xe000843100001 raw1=0xffffffff raw2=0x578316030000 raw3=0x100000715ef20e
+          <idle>-0       [000] d.s2  6326.665405: parse: (ipahal_pkt_status_parse+0x0/0x16c [ipam]) pointer=0xffffff8799f4c040 caller=0xffffffe3ab2c7e18 raw0=0xe000843100001 raw1=0xffffffff raw2=0x578316030000 raw3=0x1000007163850f
+          <idle>-0       [000] d.s2  6327.661391: parse: (ipahal_pkt_status_parse+0x0/0x16c [ipam]) pointer=0xffffff8799f4a040 caller=0xffffffe3ab2c7e18 raw0=0xe000843100001 raw1=0xffffffff raw2=0x578316030000 raw3=0x10000071681410
+          <idle>-0       [000] d.s2  6356.033808: parse: (ipahal_pkt_status_parse+0x0/0x16c [ipam]) pointer=0xffffff8799f4e040 caller=0xffffffe3ab2c7e18 raw0=0xe000843100001 raw1=0xffffffff raw2=0x578316030000 raw3=0x10000071e9f511

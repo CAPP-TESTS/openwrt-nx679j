@@ -1,0 +1,202 @@
+$(ANDROID_BOOT_PARTUUID)
+$(ANDROID_VERITY_MODE)
+Active Slot %s is bootable
+Active Slot %s is bootable, retry count %ld
+%a Invalid InputSlot Suffix
+Allocate for partial read failed!
+AllocateUnSafeStackPtr ThreadSetThreadUnsafeSPfailed, Status = %d 
+allocating z_stream failed.
+Alternate Slot %s is bootable
+Alternate slot %s, New slot %s
+ANDROID!
+androidboot.
+ANDROID-BOOT!
+ androidboot.alarmboot=true
+ androidboot.baseband=
+ androidboot.bootdevice=
+ androidboot.boot_devices=soc/
+ androidboot.dtb_idx=
+ androidboot.dtbo_idx=
+ androidboot.force_normal_boot=1
+ androidboot.fstab_suffix=
+ androidboot.keymaster=1
+ androidboot.mode=
+ androidboot.mode=charger
+ androidboot.selinux=permissive
+ androidboot.serialno=
+ androidboot.slot_suffix=
+androidboot.vbmeta.avb_version
+androidboot.vbmeta.device
+androidboot.vbmeta.device_state
+androidboot.vbmeta.digest
+androidboot.vbmeta.hash_alg
+androidboot.vbmeta.invalidate_on_error
+androidboot.vbmeta.size
+ androidboot.verifiedbootstate=
+androidboot.veritymode
+ApplyOverlay: Install blob failed
+ApplyOverlay: Invalid input parameters
+ApplyOverlay: ufdt apply overlay failed
+assert fail: avb_strcmp(slot_data->vbmeta_images[0].partition_name, "boot") == 0
+assert fail: footer_num_read == AVB_FOOTER_SIZE
+assert fail: !is_main_vbmeta
+assert fail: is_main_vbmeta
+assert fail: ops->read_is_device_unlocked != NULL
+assert fail: ops->validate_vbmeta_public_key != NULL
+assert fail: ret == AVB_SLOT_VERIFY_RESULT_OK
+assert fail: slot_data->cmdline == NULL
+assert fail: slot_data->num_vbmeta_images == 0
+assert fail: slot_data->num_vbmeta_images > 0
+assert fail: (((uintptr_t)dh) & (AVB_ALIGNMENT_SIZE - 1)) == 0
+assert fail: (((uintptr_t)image_data) & (AVB_ALIGNMENT_SIZE - 1)) == 0
+assert fail: vbmeta_num_read <= vbmeta_size
+avb_abort!
+AvbGetSizeOfImage: GetHandleInfo failed
+AvbGetSizeOfPartition: GetHandleInfo failed
+AvbGetSizeOfPartition invalid parameter pointers
+AvbGetUniqueGuidForPartition: Partition %a, name too large
+avb_sha256_final
+avb_sha256_final failed, Ctx->user_data is NULL
+avb_sha256_init
+avb_sha256_update failed, Ctx->user_data is NULL
+avb_sha256_update failed, Data is NULL
+avb_sha256_update: HashUpdate failed
+AVB_SLOT_VERIFY_FLAGS_NO_VBMETA_PARTITION was passed but the validate_public_key_for_partition() operation isn't implemented.
+AVB version %d
+Backup the boot logo blt buffer failed: %r
+Board dt prop search failed.
+Booting from slot (%s)
+BootLinux: failed to get dtbo image
+BootLinux: Get%aImage failed!
+BootLinux: invalid parameter Info
+Boot lun: %x and BootableSlot: %s do not match
+Boot State is : %d
+Buffer overread occured due to invalid sparse header
+buffer overreads occured due to invalid sparse header
+By unlocking the bootloader, you will be able to install custom operating system on this phone. nubia cannot guarantee the full functionality for any custom ROM, certain function and offerings may cease to work. nubia will not be responsible for any unsigned custom ROM being flashed to your device after the bootloader is unlocked.
+CatCmdLine: Failed to allocate memory for cmdline
+: chained vbmeta image has non-zero flags
+: Chain partition descriptor is invalid.
+: Chain partition has invalid rollback_index_location field.
+ClearUnbootable: GetActiveSlot failed.
+ClearUnbootable: No boot partition entry for slot %s
+CMDLINE: Failed to allocate destination buffer
+com.android.build.boot.security_patch
+Couldn't create Fastboot protocol send event: %r
+couldnt init fastboot , exiting
+couldnt Start fastboot usb device, exiting
+couldnt uninit fastboot
+Creating fastboot menu keys detect event
+Creating unlock keys detect event
+current-slot
+Decompressing kernel image failed!!!
+: Descriptor is invalid.
+Device critical unlocked: %a
+Device is unlocked, Skipping boot verification
+Device Tree update failed Status:%r
+Device unlocked: %a
+Display get variable failed with status(%d)!
+Display set variable failed with status(%d)!
+DO NOT UNLOCK THE BOOTLOADER
+Dts list is invalid: NULL!
+Enter fastboot oem off-mode-charge 0/1
+Enumeration of partitions failed
+erasing avb_custom_key
+Erasing avb_custom_key failed
+: ERROR: 
+Error Allocate RX buffer, cannot enter fastboot mode
+Error Allocate TX buffer, cannot enter fastboot mode
+Error allocating memory for AvbOps.
+ERROR: Allocation fail for minimim buffer for fastboot
+Error: Appended Soc Device Tree blob not found
+ERROR: AvbSlotVerify slot data error: num of loaded partitions %d, requested %d
+Error: Board Dtbo blob not found
+Error boot partition for slot: %s not found
+ERROR: Can not determine slot suffix
+ERROR: Cannot generate Kaslr Seed - %r
+ERROR: Cannot generate Random Seed - %r
+ERROR: Can not shutdown UEFI boot services. Status=0x%X
+ERROR: Cannot update chosen node [bootargs] - 0x%x
+ERROR: Cannot update chosen node [kaslr-seed] - 0x%x
+ERROR: Cannot update chosen node [linux,initrd-end] - 0x%x
+ERROR: Cannot update chosen node [linux,initrd-start] - 0x%x
+ERROR: Cannot update chosen node [rng-seed] - 0x%x
+ERROR: Cannot update memory node
+ERROR: Cannot update memory node [ddr_device_type]:0x%x
+Error: Check the CHAR_NUM_PERROW: Y-axis(%d) is larger than Y-max(%d)
+ERROR: Could not find chosen node ...
+ERROR: Could not find memory node ...
+ERROR: Could not find the splash reg property
+ERROR: Could not update splash mem info
+ERROR: Couldn't find the suitable DTB!
+ERROR: Data size (%d) is more than max download size (%d)
+ERROR: Device State %a, AvbSlotVerify returned %a
+ERROR: Device State %a,AvbSlotVerify returned %a
+Error: Device Tree blob not found
+Error: Dtb overlay failed
+ERROR: Failed to add DDR Regions : %a
+ERROR: Failed to allocate AvbOps
+ERROR: Failed to allocate AvbOpsUserData
+ERROR: Failed to allocate memory for memory map
+ERROR: Failed to allocate memory for ThreadFlashInfo
+ERROR: Failed to allocate VB2Data
+ERROR: Failed to disable Node: %a
+Error, failed to handle USB event
+ERROR: Failed to load image header: %r
+Error: Failed to locate PlatformInfo protocol.
+ERROR: Failed to move/resize dtb buffer ...
+ERROR: Failed to query memory map
+ERROR: Failed to set keys detection Timer: %r
+ERROR: Failed to switch to 32 bit mode.Status= %r
+ERROR: Fail to get the number of bytes to download.
+ERROR: Fail to turn display off,Status=%d
+ERROR: Get DDR Regions info failed=%r
+Error: GetPlatformInfo failed.
+Error: HW Platform string is NULL
+Error: HypOverlay DT is NULL
+ERROR: Integer Overflow: fdt size = %u
+ERROR: integer Overflow while adding additionalmemory to MemMapSize
+ERROR: integer Overflow while updating FBAddress
+ERROR: integer Overflow while updating FBSize
+ERROR_INVALID_ARGUMENT
+ERROR: Invalid device tree header ...
+ERROR_INVALID_METADATA
+Error: Last flash failed
+: Error loading vbmeta data.
+ERROR: Not a valid memory node found!
+Error: Number of images(%u)in meta_image are greater than expected
+Error: Ramdisk size is over the limit
+ERROR: %s():
+ERROR: splash mem reservation node size. Expected: %d, Actual: %d
+Error: Stack Smashing Detected. Halting...
+Error start the usb device, cannot enter fastboot mode
+Error: The size is smaller than image header size + entry size
+Error: The size is smaller than the image header size
+ERROR: Unable to get DDR Info protocol:%r
+ERROR: Unable to get display power protocol,Status=%d
+ERROR: Undefined response get memory map
+Error: Unknown platform type (%d).
+ERROR: Unsupported version (%d) in dt node check 
+: Error verifying vbmeta image: 
+: Error verifying vbmeta image: invalid vbmeta header
+: Error verifying vbmeta image: unsupported AVB version
+ERROR: Wrong number of DDR Region member
+: failed
+Failed Kernel Size   : 0x%x
+Failed one fixup in ufdt_do_one_fixup
+Failed to add ddr region node
+Failed to add ddr regions property
+Failed to add memory space :0x%lx 0x%lx
+Failed to add %s to bootconfig! Out of memory
+Failed to add the memory information addr: %d
+Failed to add the memory information size: %d
+Failed to allocate buffer for superblock %s
+Failed to allocated memory for System path query
+Failed to allocate for Boot image Hdr
+Failed to allocate memory.
+Failed to allocate memory for board_data
+Failed to allocate memory for DataSize
+Failed to allocate memory for DMTemp
+failed to allocate memory for DTB blob with overlays
+Failed to allocate memory for dt_entry_array
+Fai

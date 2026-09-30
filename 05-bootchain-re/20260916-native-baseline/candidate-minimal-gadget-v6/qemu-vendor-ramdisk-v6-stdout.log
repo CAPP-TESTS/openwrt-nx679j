@@ -1,0 +1,17 @@
+composite ramdisk 9058263 bytes (38443240 raw cpio), order=ours+vendor, vendor has /init=False
+ran 383.4s, 65536 bytes of log
+[PASS] our /init still won over the appended vendor ramdisk: ['[    0.871992][    T1] nx679j-v6: init v6 entered pid=1 channels kmsg=0 console=0']
+[PASS] both ramdisks are visible: /lib/modules holds the device .ko set: indexed 327 .ko files (47 ours + 327 vendor)
+[PASS] primary path used the device metadata: ['[    0.922172][    T1] nx679j-v6: modload source=device modules.load=98 recovery=329 parsed deps=389 softdep pre=4 post=0']
+[PASS] modules.load parsed first (98) and modules.load.recovery appended (329): ['[    0.922172][    T1] nx679j-v6: modload source=device modules.load=98 recovery=329 parsed deps=389 softdep pre=4 post=0']
+[PASS] a long chain was really attempted (>=300 modules): ['nx679j-v6: modload summary loaded=294 skipped=0 failed=8 missing=2 dwc3_seen=1']
+[PASS] dwc3_msm loaded: ['nx679j-v6: modload dwc3_msm rc=0 /lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/dwc3-msm.ko']
+[PASS] ufs_qcom loaded (the goal that makes rawdump visible): ['nx679j-v6: modload ufs_qcom rc=0 /lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/ufs_qcom.ko']
+[PASS] softdep obeyed: qcom_hwspinlock before smem: qcom_hwspinlock 20733 < smem 20847
+[PASS] softdep obeyed: phy_generic and eud before dwc3_msm: phy_generic 25950 eud 30601 dwc3_msm 30699
+[PASS] gadget attempted after the chain and after dwc3_msm: gadget after dwc3_msm
+[PASS] every module got a journal line with its rc: 314 lines
+[PASS] PID 1 survived the whole chain and kept cycling: cycles=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24] alive=True
+[PASS] no panic from loading the vendor set in QEMU: clean
+
+[*] 13/13 checks passed

@@ -1,0 +1,11 @@
+[  1688.770723174/       0x79d3068fe] ipa-wan ipa3_a5_svc_disconnect_cb:498 Received QMI client disconnect
+IPC=ipa_low UPTIME=1690.16 12810.31
+IPC=ipa_low UPTIME=1691.16 12811.31
+IPC=ipa_low UPTIME=1692.17 12822.14
+[  1691.795822662/       0x7a0a6ab74] ipa-wan ipa3_a5_svc_disconnect_cb:498 Received QMI client disconnect
+IPC=ipa_low UPTIME=1693.17 12823.14
+IPC=ipa_low UPTIME=1694.17 12831.58
+IPC=ipa_low UPTIME=1695.18 12836.21
+[  1694.819567307/       0x7a41c884d] ipa-wan ipa3_a5_svc_disconnect_cb:498 Received QMI client disconnect
+IPC=ipa_low UPTIME=1696.18 12840.03
+IPC=ipa_low UPTIME=1697.18 12848.34

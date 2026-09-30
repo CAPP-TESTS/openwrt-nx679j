@@ -1,0 +1,2 @@
+Qualcomm Technologies, Inc. Waipio MTP with PM8010
+qcom,waipio-mtpqcom,waipioqcom,mtp

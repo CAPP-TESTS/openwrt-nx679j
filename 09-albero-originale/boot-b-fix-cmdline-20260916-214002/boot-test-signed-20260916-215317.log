@@ -1,0 +1,59 @@
+=== Boot test started at 21:53:19 ===
+--- Check 1/25 (21:53:19.665) ---
+--- Check 2/25 (21:53:21.181) ---
+--- Check 3/25 (21:53:22.695) ---
+--- Check 4/25 (21:53:24.210) ---
+--- Check 5/25 (21:53:25.725) ---
+--- Check 6/25 (21:53:27.240) ---
+--- Check 7/25 (21:53:28.756) ---
+--- Check 8/25 (21:53:30.272) ---
+--- Check 9/25 (21:53:31.788) ---
+--- Check 10/25 (21:53:33.304) ---
+Bus 006 Device 010: ID 18d1:d00d Google Inc. Xiaomi Mi/Redmi 2 (fastboot)
+⚠ FASTBOOT — boot failed
+--- Check 11/25 (21:53:34.820) ---
+Bus 006 Device 010: ID 18d1:d00d Google Inc. Xiaomi Mi/Redmi 2 (fastboot)
+⚠ FASTBOOT — boot failed
+--- Check 12/25 (21:53:36.338) ---
+Bus 006 Device 010: ID 18d1:d00d Google Inc. Xiaomi Mi/Redmi 2 (fastboot)
+⚠ FASTBOOT — boot failed
+--- Check 13/25 (21:53:37.855) ---
+Bus 006 Device 010: ID 18d1:d00d Google Inc. Xiaomi Mi/Redmi 2 (fastboot)
+⚠ FASTBOOT — boot failed
+--- Check 14/25 (21:53:39.372) ---
+Bus 006 Device 010: ID 18d1:d00d Google Inc. Xiaomi Mi/Redmi 2 (fastboot)
+⚠ FASTBOOT — boot failed
+--- Check 15/25 (21:53:40.889) ---
+Bus 006 Device 010: ID 18d1:d00d Google Inc. Xiaomi Mi/Redmi 2 (fastboot)
+⚠ FASTBOOT — boot failed
+--- Check 16/25 (21:53:42.405) ---
+Bus 006 Device 010: ID 18d1:d00d Google Inc. Xiaomi Mi/Redmi 2 (fastboot)
+⚠ FASTBOOT — boot failed
+--- Check 17/25 (21:53:43.921) ---
+Bus 006 Device 010: ID 18d1:d00d Google Inc. Xiaomi Mi/Redmi 2 (fastboot)
+⚠ FASTBOOT — boot failed
+--- Check 18/25 (21:53:45.438) ---
+Bus 006 Device 010: ID 18d1:d00d Google Inc. Xiaomi Mi/Redmi 2 (fastboot)
+⚠ FASTBOOT — boot failed
+--- Check 19/25 (21:53:46.955) ---
+Bus 006 Device 010: ID 18d1:d00d Google Inc. Xiaomi Mi/Redmi 2 (fastboot)
+⚠ FASTBOOT — boot failed
+--- Check 20/25 (21:53:48.472) ---
+Bus 006 Device 010: ID 18d1:d00d Google Inc. Xiaomi Mi/Redmi 2 (fastboot)
+⚠ FASTBOOT — boot failed
+--- Check 21/25 (21:53:49.989) ---
+Bus 006 Device 010: ID 18d1:d00d Google Inc. Xiaomi Mi/Redmi 2 (fastboot)
+⚠ FASTBOOT — boot failed
+--- Check 22/25 (21:53:51.505) ---
+Bus 006 Device 010: ID 18d1:d00d Google Inc. Xiaomi Mi/Redmi 2 (fastboot)
+⚠ FASTBOOT — boot failed
+--- Check 23/25 (21:53:53.022) ---
+Bus 006 Device 010: ID 18d1:d00d Google Inc. Xiaomi Mi/Redmi 2 (fastboot)
+⚠ FASTBOOT — boot failed
+--- Check 24/25 (21:53:54.538) ---
+Bus 006 Device 010: ID 18d1:d00d Google Inc. Xiaomi Mi/Redmi 2 (fastboot)
+⚠ FASTBOOT — boot failed
+--- Check 25/25 (21:53:56.054) ---
+Bus 006 Device 010: ID 18d1:d00d Google Inc. Xiaomi Mi/Redmi 2 (fastboot)
+⚠ FASTBOOT — boot failed
+=== Monitor ended ===

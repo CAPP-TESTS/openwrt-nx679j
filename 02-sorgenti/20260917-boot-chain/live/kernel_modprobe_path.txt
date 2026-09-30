@@ -1,0 +1,4 @@
+
+ls: /sbin/modprobe: No such file or directory
+lrwxr-xr-x 1 root shell 7 2009-01-01 01:00 /system/bin/modprobe -> toolbox
+lrwxr-xr-x 1 root shell 7 2009-01-01 01:00 /vendor/bin/modprobe -> toolbox

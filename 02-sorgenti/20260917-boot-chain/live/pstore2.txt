@@ -1,0 +1,4 @@
+total 0
+dr-xr-x---  2 system log  0 1970-01-01 14:01 .
+drwxr-xr-x 10 root   root 0 1970-01-01 01:00 ..
+cat: /proc/pstore: No such file or directory

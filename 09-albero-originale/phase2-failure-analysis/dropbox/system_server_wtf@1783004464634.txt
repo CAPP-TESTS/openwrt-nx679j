@@ -1,0 +1,22 @@
+Process: system_server
+Subject: SystemServiceRegistry
+Build: nubia/NX679J-UN/NX679J-UN:12/SKQ1.211113.001/eng.nubia.20220308.193302:user/release-keys
+
+android.util.Log$TerribleFailure: No service published for: jobscheduler
+	at android.util.Log.wtf(Log.java:474)
+	at android.util.Log.wtf(Log.java:468)
+	at android.app.SystemServiceRegistry.onServiceNotFound(SystemServiceRegistry.java:1974)
+	at android.app.SystemServiceRegistry$StaticServiceFetcher.getService(SystemServiceRegistry.java:1925)
+	at android.app.SystemServiceRegistry.getSystemService(SystemServiceRegistry.java:1534)
+	at android.app.ContextImpl.getSystemService(ContextImpl.java:2067)
+	at com.android.providers.settings.SettingsProvider.scheduleWriteFallbackFilesJob(SettingsProvider.java:2653)
+	at com.android.providers.settings.SettingsProvider$SettingsRegistry$MyHandler.handleMessage(SettingsProvider.java:3640)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loopOnce(Looper.java:238)
+	at android.os.Looper.loop(Looper.java:379)
+	at android.os.HandlerThread.run(HandlerThread.java:67)
+Caused by: android.os.ServiceManager$ServiceNotFoundException: No service published for: jobscheduler
+	at android.os.ServiceManager.getServiceOrThrow(ServiceManager.java:209)
+	at android.app.SystemServiceRegistry$132.createService(SystemServiceRegistry.java:1699)
+	at android.app.SystemServiceRegistry$StaticServiceFetcher.getService(SystemServiceRegistry.java:1923)
+	... 8 more

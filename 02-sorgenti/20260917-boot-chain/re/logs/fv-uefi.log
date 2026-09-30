@@ -1,0 +1,36 @@
+### bl/uefi_a.img (5242880 B) — firmware volume trovati: [('0x1000', 2752512, 72)]
+[FV uefi_a.img@1000 off=0x1000 len=2752512 (2752512 B) headerlen=72]
+[FFS uefi_a.img@1000 off=0x1048 PAD/erased size=4000]
+[FFS uefi_a.img@1000 off=0x1fe8 guid=8af09f13-44c5-96ec-1437-dd899cb5ee5d type=0x03 size=286744]
+  [sect RAW off=0x2000 size=3892 (3892 B) large=False]
+  [sect TE off=0x2f34 size=282828 (282828 B) large=False]
+[FFS uefi_a.img@1000 off=0x48000 guid=dde58710-41cd-4306-dbfb-3fa90bb1d2dd type=0x02 size=7928]
+  [sect USER_INTERFACE off=0x48018 size=30 (30 B) large=False]
+[FFS uefi_a.img@1000 off=0x49ef8 guid=9e21fd93-9c72-4c15-8c4b-e77f1db2d792 type=0x0b size=1274035]
+  [sect GUID_DEFINED off=0x49f10 size=1274011 (1274011 B) large=False]
+      GUID_DEFINED 1d301fe9-be79-4353-91c2-d23bc959ae0c dataOffset=24 attr=0x0001 payload=1273987 B entropy=7.98
+      -> DECOMPRESSIONE FALLITA (GUID 1d301fe9-be79-4353-91c2-d23bc959ae0c)
+[FFS uefi_a.img@1000 off=0x180fb0 guid=d14c51ed-4f4d-2f2d-eae4-77914692d046 type=0x0b size=985252]
+  [sect GUID_DEFINED off=0x180fc8 size=985228 (985228 B) large=False]
+      GUID_DEFINED 1d301fe9-be79-4353-91c2-d23bc959ae0c dataOffset=24 attr=0x0001 payload=985204 B entropy=7.98
+      -> DECOMPRESSIONE FALLITA (GUID 1d301fe9-be79-4353-91c2-d23bc959ae0c)
+[FFS uefi_a.img@1000 off=0x271858 PAD/erased size=16777215]
+...
+### bl/uefi_a.img (5242880 B) — firmware volume trovati: [('0x1000', 2752512, 72)]
+[FV uefi_a.img@1000 off=0x1000 len=2752512 (2752512 B) headerlen=72]
+[FFS uefi_a.img@1000 off=0x1048 PAD/erased size=4000]
+[FFS uefi_a.img@1000 off=0x1fe8 guid=8af09f13-44c5-96ec-1437-dd899cb5ee5d type=0x03 size=286744]
+  [sect RAW off=0x2000 size=3892 (3892 B) large=False]
+  [sect TE off=0x2f34 size=282828 (282828 B) large=False]
+[FFS uefi_a.img@1000 off=0x48000 guid=dde58710-41cd-4306-dbfb-3fa90bb1d2dd type=0x02 size=7928]
+  [sect USER_INTERFACE off=0x48018 size=30 (30 B) large=False]
+[FFS uefi_a.img@1000 off=0x49ef8 guid=9e21fd93-9c72-4c15-8c4b-e77f1db2d792 type=0x0b size=1274035]
+  [sect GUID_DEFINED off=0x49f10 size=1274011 (1274011 B) large=False]
+      GUID_DEFINED 1d301fe9-be79-4353-91c2-d23bc959ae0c dataOffset=24 attr=0x0001 payload=1273987 B entropy=7.98
+      -> DECOMPRESSIONE FALLITA (GUID 1d301fe9-be79-4353-91c2-d23bc959ae0c)
+[FFS uefi_a.img@1000 off=0x180fb0 guid=d14c51ed-4f4d-2f2d-eae4-77914692d046 type=0x0b size=985252]
+  [sect GUID_DEFINED off=0x180fc8 size=985228 (985228 B) large=False]
+      GUID_DEFINED 1d301fe9-be79-4353-91c2-d23bc959ae0c dataOffset=24 attr=0x0001 payload=985204 B entropy=7.98
+      -> DECOMPRESSIONE FALLITA (GUID 1d301fe9-be79-4353-91c2-d23bc959ae0c)
+[FFS uefi_a.img@1000 off=0x271858 PAD/erased size=16777215]
+STATS {'files': 4, 'sections': 5, 'decompressed': 0, 'failed': 2, 'leaf': 3}

@@ -1,0 +1,202 @@
+[
+  {
+    "name": "phy_qcom_emu",
+    "file": "phy-qcom-emu.ko",
+    "how": "all-hyphens"
+  },
+  {
+    "name": "phy_msm_snps_eusb2",
+    "file": "phy-msm-snps-eusb2.ko",
+    "how": "all-hyphens"
+  },
+  {
+    "name": "repeater",
+    "file": "repeater.ko",
+    "how": "literal"
+  },
+  {
+    "name": "phy_qcom_ufs_qmp_v4_lahaina",
+    "file": "phy-qcom-ufs-qmp-v4-lahaina.ko",
+    "how": "all-hyphens"
+  },
+  {
+    "name": "qcom_glink_spss",
+    "file": "qcom_glink_spss.ko",
+    "how": "literal"
+  },
+  {
+    "name": "phy_qcom_ufs_qmp_14nm",
+    "file": "phy-qcom-ufs-qmp-14nm.ko",
+    "how": "all-hyphens"
+  },
+  {
+    "name": "phy_qcom_ufs_qmp_v3",
+    "file": "phy-qcom-ufs-qmp-v3.ko",
+    "how": "all-hyphens"
+  },
+  {
+    "name": "nvmem_qfprom",
+    "file": "nvmem_qfprom.ko",
+    "how": "literal"
+  },
+  {
+    "name": "fsa4480_i2c",
+    "file": "fsa4480-i2c.ko",
+    "how": "all-hyphens"
+  },
+  {
+    "name": "altmode_glink",
+    "file": "altmode-glink.ko",
+    "how": "all-hyphens"
+  },
+  {
+    "name": "dwc3_msm",
+    "file": "dwc3-msm.ko",
+    "how": "all-hyphens"
+  },
+  {
+    "name": "phy_msm_ssusb_qmp",
+    "file": "phy-msm-ssusb-qmp.ko",
+    "how": "all-hyphens"
+  },
+  {
+    "name": "phy_msm_snps_hs",
+    "file": "phy-msm-snps-hs.ko",
+    "how": "all-hyphens"
+  },
+  {
+    "name": "ssusb_redriver_nb7vpq904m",
+    "file": "ssusb-redriver-nb7vpq904m.ko",
+    "how": "all-hyphens"
+  },
+  {
+    "name": "ucsi_glink",
+    "file": "ucsi_glink.ko",
+    "how": "literal"
+  },
+  {
+    "name": "pmic_glink",
+    "file": "pmic_glink.ko",
+    "how": "literal"
+  },
+  {
+    "name": "pdr_interface",
+    "file": "pdr_interface.ko",
+    "how": "literal"
+  },
+  {
+    "name": "qmi_helpers",
+    "file": "qmi_helpers.ko",
+    "how": "literal"
+  },
+  {
+    "name": "rproc_qcom_common",
+    "file": "rproc_qcom_common.ko",
+    "how": "literal"
+  },
+  {
+    "name": "qcom_smd",
+    "file": "qcom_smd.ko",
+    "how": "literal"
+  },
+  {
+    "name": "qcom_glink_smem",
+    "file": "qcom_glink_smem.ko",
+    "how": "literal"
+  },
+  {
+    "name": "qcom_glink",
+    "file": "qcom_glink.ko",
+    "how": "literal"
+  },
+  {
+    "name": "ufs_qcom",
+    "file": "ufs_qcom.ko",
+    "how": "literal"
+  },
+  {
+    "name": "ufshcd_crypto_qti",
+    "file": "ufshcd-crypto-qti.ko",
+    "how": "all-hyphens"
+  },
+  {
+    "name": "qti_regmap_debugfs",
+    "file": "qti-regmap-debugfs.ko",
+    "how": "all-hyphens"
+  },
+  {
+    "name": "phy_qcom_ufs_qmp_v4_cape",
+    "file": "phy-qcom-ufs-qmp-v4-cape.ko",
+    "how": "all-hyphens"
+  },
+  {
+    "name": "phy_qcom_ufs_qmp_v4_diwali",
+    "file": "phy-qcom-ufs-qmp-v4-diwali.ko",
+    "how": "all-hyphens"
+  },
+  {
+    "name": "phy_qcom_ufs_qmp_v4_waipio",
+    "file": "phy-qcom-ufs-qmp-v4-waipio.ko",
+    "how": "all-hyphens"
+  },
+  {
+    "name": "phy_qcom_ufs",
+    "file": "phy-qcom-ufs.ko",
+    "how": "all-hyphens"
+  },
+  {
+    "name": "nvmem_qcom_spmi_sdam",
+    "file": "nvmem_qcom-spmi-sdam.ko",
+    "how": "mixed-spelling alias"
+  },
+  {
+    "name": "crypto_qti_common",
+    "file": "crypto-qti-common.ko",
+    "how": "all-hyphens"
+  },
+  {
+    "name": "crypto_qti_hwkm",
+    "file": "crypto-qti-hwkm.ko",
+    "how": "all-hyphens"
+  },
+  {
+    "name": "clk_qcom",
+    "file": "clk-qcom.ko",
+    "how": "all-hyphens"
+  },
+  {
+    "name": "gdsc_regulator",
+    "file": "gdsc-regulator.ko",
+    "how": "all-hyphens"
+  },
+  {
+    "name": "proxy_consumer",
+    "file": "proxy-consumer.ko",
+    "how": "all-hyphens"
+  },
+  {
+    "name": "debug_regulator",
+    "file": "debug-regulator.ko",
+    "how": "all-hyphens"
+  },
+  {
+    "name": "qcom_ipc_logging",
+    "file": "qcom_ipc_logging.ko",
+    "how": "literal"
+  },
+  {
+    "name": "qcom_scm",
+    "file": "qcom-scm.ko",
+    "how": "all-hyphens"
+  },
+  {
+    "name": "minidump",
+    "file": "minidump.ko",
+    "how": "literal"
+  },
+  {
+    "name": "smem",
+    "file": "smem.ko",
+    "how": "literal"
+  }
+]

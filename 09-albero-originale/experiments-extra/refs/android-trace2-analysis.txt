@@ -1,0 +1,390 @@
+# 1213 events from android-trace2-qcril.log
+## sendto (node,port,msgid) counts:
+   node=1 port=4294967294 msgid=0x0100 x24
+   node=1 port=4294967294 msgid=0x0900 x20
+   node=0 port=69 msgid=0x0003 x17
+   node=1 port=4294967294 msgid=0x2400 x15
+   node=1 port=4294967294 msgid=0xe300 x10
+   node=1 port=4294967294 msgid=0x1200 x10
+   node=1 port=4294967294 msgid=0x2100 x10
+   node=1 port=4294967294 msgid=0x0500 x10
+   node=1 port=4294967294 msgid=0x0c00 x10
+   node=1 port=4294967294 msgid=0x4400 x10
+   node=1 port=4294967294 msgid=0x0700 x10
+   node=1 port=4294967294 msgid=0x2a00 x10
+   node=1 port=4294967294 msgid=0x0300 x10
+   node=0 port=74 msgid=0x002b x9
+   node=1 port=4294967294 msgid=0x4900 x8
+   node=0 port=74 msgid=0x0003 x8
+   node=0 port=93 msgid=0x0023 x8
+   node=0 port=93 msgid=0x0028 x8
+   node=0 port=88 msgid=0x0038 x8
+   node=1 port=4294967294 msgid=0x3200 x6
+   node=1 port=4294967294 msgid=0x0a00 x6
+   node=1 port=4294967294 msgid=0x0b00 x6
+   node=0 port=90 msgid=0x004c x6
+   node=0 port=88 msgid=0x0065 x6
+   node=1 port=4294967294 msgid=0x4700 x6
+   node=0 port=74 msgid=0x00af x5
+   node=0 port=69 msgid=0x0044 x5
+   node=0 port=73 msgid=0x003b x5
+   node=0 port=74 msgid=0x002a x4
+   node=0 port=73 msgid=0x002f x4
+   node=0 port=98 msgid=0x0033 x4
+   node=0 port=93 msgid=0x0022 x4
+   node=0 port=88 msgid=0x004f x4
+   node=0 port=73 msgid=0x0042 x4
+   node=0 port=100 msgid=0x0098 x3
+   node=0 port=65 msgid=0x001a x3
+   node=0 port=93 msgid=0x0020 x3
+   node=0 port=97 msgid=0x0027 x3
+   node=0 port=88 msgid=0x0027 x3
+   node=0 port=100 msgid=0x001f x3
+   node=0 port=70 msgid=0x0045 x3
+   node=0 port=73 msgid=0x002a x3
+   node=1 port=4294967294 msgid=0x0200 x3
+   node=1 port=4294967294 msgid=0x1100 x3
+   node=0 port=33 msgid=0x0020 x2
+   node=0 port=74 msgid=0x00a2 x2
+   node=0 port=74 msgid=0x00a7 x2
+   node=0 port=94 msgid=0x0029 x2
+   node=0 port=71 msgid=0x002e x2
+   node=0 port=73 msgid=0x0076 x2
+   node=0 port=71 msgid=0x0001 x2
+   node=0 port=73 msgid=0x002e x2
+   node=0 port=73 msgid=0x0047 x2
+   node=0 port=73 msgid=0x003a x2
+   node=0 port=88 msgid=0x0069 x2
+   node=0 port=88 msgid=0x0068 x2
+   node=0 port=98 msgid=0x0022 x2
+   node=0 port=97 msgid=0x0003 x2
+   node=0 port=88 msgid=0x0078 x2
+   node=0 port=88 msgid=0x0025 x2
+   node=0 port=88 msgid=0x0047 x2
+   node=0 port=107 msgid=0x0020 x2
+   node=0 port=94 msgid=0x002b x2
+   node=0 port=88 msgid=0x006d x2
+   node=0 port=65 msgid=0x0001 x2
+   node=0 port=74 msgid=0x0100 x2
+   node=0 port=73 msgid=0x0020 x2
+   node=0 port=73 msgid=0x0039 x2
+   node=0 port=100 msgid=0x008f x2
+   node=0 port=90 msgid=0x004a x2
+   node=0 port=63 msgid=0x0000 x1
+   node=0 port=93 msgid=0x0027 x1
+   node=0 port=69 msgid=0x001e x1
+   node=0 port=69 msgid=0x0080 x1
+   node=0 port=100 msgid=0x001e x1
+   node=0 port=100 msgid=0x002a x1
+   node=0 port=100 msgid=0x0090 x1
+   node=0 port=88 msgid=0x0034 x1
+   node=0 port=90 msgid=0x0032 x1
+   node=0 port=90 msgid=0x0001 x1
+   node=0 port=90 msgid=0x0047 x1
+   node=0 port=90 msgid=0x004d x1
+   node=0 port=90 msgid=0x005c x1
+   node=0 port=90 msgid=0x0048 x1
+   node=0 port=65 msgid=0x0024 x1
+   node=0 port=73 msgid=0x0024 x1
+   node=0 port=73 msgid=0x0021 x1
+   node=0 port=93 msgid=0x002c x1
+   node=0 port=73 msgid=0x003f x1
+   node=1 port=4294967294 msgid=0x1300 x1
+
+## full conversation (sendto with payload + qmi decode; responds length):
+[   1] fd=0x2a -> node=0 port=63 type=0 txn=2 msgid=0x0000 len=7 total=14 hex=
+[   2] fd=0x1f -> node=1 port=4294967294 type=10 txn=0 msgid=0x2400 len=0 total=20 hex=0a00************************************
+[   3] fd=0x1f -> node=1 port=4294967294 type=10 txn=0 msgid=0x0900 len=0 total=20 hex=0a00************************************
+[   4] fd=0x1f -> node=1 port=4294967294 type=10 txn=0 msgid=0xe300 len=0 total=20 hex=0a000000e30*****************************
+[   5] fd=0x1f -> node=1 port=4294967294 type=10 txn=0 msgid=0x0900 len=0 total=20 hex=0a00************************************
+[   6] fd=0x1f -> node=1 port=4294967294 type=10 txn=0 msgid=0x0100 len=0 total=20 hex=0a00************************************
+[   7] fd=0x1f -> node=1 port=4294967294 type=10 txn=0 msgid=0x4900 len=0 total=20 hex=0a00************************************
+[   8] fd=0x1f -> node=1 port=4294967294 type=10 txn=0 msgid=0x0900 len=0 total=20 hex=0a00************************************
+[   9] fd=0x1f -> node=1 port=4294967294 type=10 txn=0 msgid=0x1200 len=0 total=20 hex=0a00************************************
+[  10] fd=0x1f -> node=1 port=4294967294 type=10 txn=0 msgid=0x2100 len=0 total=20 hex=0a00************************************
+[  11] fd=0x1f -> node=1 port=4294967294 type=10 txn=0 msgid=0x0500 len=0 total=20 hex=0a00************************************
+[  12] fd=0x1f -> node=1 port=4294967294 type=10 txn=0 msgid=0x0c00 len=0 total=20 hex=0a0000000c00****************************
+[  13] fd=0x1f -> node=1 port=4294967294 type=10 txn=0 msgid=0x2400 len=0 total=20 hex=0a00************************************
+[  14] fd=0x1f -> node=1 port=4294967294 type=10 txn=0 msgid=0x4400 len=0 total=20 hex=0a00************************************
+[  15] fd=0x1f -> node=1 port=4294967294 type=10 txn=0 msgid=0x0700 len=0 total=20 hex=0a00************************************
+[  16] fd=0x1f -> node=1 port=4294967294 type=10 txn=0 msgid=0x2a00 len=0 total=20 hex=0a0000002a00****************************
+[  17] fd=0x1f -> node=1 port=4294967294 type=10 txn=0 msgid=0x0100 len=0 total=20 hex=0a00************************************
+[  18] fd=0x1f -> node=1 port=4294967294 type=10 txn=0 msgid=0x0300 len=0 total=20 hex=0a00************************************
+[  19] fd=0x20 -> node=1 port=4294967294 type=10 txn=0 msgid=0xe300 len=0 total=20 hex=0a000000e30*****************************
+[  20] fd=0x18 -> node=1 port=4294967294 type=10 txn=0 msgid=0x0100 len=0 total=20 hex=0a00************************************
+[  21] fd=0x18 -> node=1 port=4294967294 type=10 txn=0 msgid=0x4900 len=0 total=20 hex=0a00************************************
+[  22] fd=0x18 -> node=1 port=4294967294 type=10 txn=0 msgid=0x0900 len=0 total=20 hex=0a00************************************
+[  23] fd=0x18 -> node=1 port=4294967294 type=10 txn=0 msgid=0x1200 len=0 total=20 hex=0a00************************************
+[  24] fd=0x18 -> node=1 port=4294967294 type=10 txn=0 msgid=0x2100 len=0 total=20 hex=0a00************************************
+[  25] fd=0x18 -> node=1 port=4294967294 type=10 txn=0 msgid=0x0500 len=0 total=20 hex=0a00************************************
+[  26] fd=0x18 -> node=1 port=4294967294 type=10 txn=0 msgid=0x0c00 len=0 total=20 hex=0a0000000c00****************************
+[  27] fd=0x18 -> node=1 port=4294967294 type=10 txn=0 msgid=0x2400 len=0 total=20 hex=0a00************************************
+[  28] fd=0x18 -> node=1 port=4294967294 type=10 txn=0 msgid=0x4400 len=0 total=20 hex=0a00************************************
+[  29] fd=0x18 -> node=1 port=4294967294 type=10 txn=0 msgid=0x0700 len=0 total=20 hex=0a00************************************
+[  30] fd=0x18 -> node=1 port=4294967294 type=10 txn=0 msgid=0x2400 len=0 total=20 hex=0a00************************************
+[  31] fd=0x18 -> node=1 port=4294967294 type=10 txn=0 msgid=0x2a00 len=0 total=20 hex=0a0000002a00****************************
+[  32] fd=0x18 -> node=1 port=4294967294 type=10 txn=0 msgid=0x2400 len=0 total=20 hex=0a00************************************
+[  33] fd=0x1e -> node=1 port=4294967294 type=10 txn=0 msgid=0x2400 len=0 total=20 hex=0a00************************************
+[  34] fd=0x1e -> node=1 port=4294967294 type=10 txn=0 msgid=0x2400 len=0 total=20 hex=0a00************************************
+[  35] fd=0x18 -> node=0 port=33 type=0 txn=1 msgid=0x0020 len=4 total=11 hex=
+[  36] fd=0x1e -> node=1 port=4294967294 type=10 txn=0 msgid=0x0100 len=0 total=20 hex=0a00************************************
+[  37] fd=0x1e -> node=1 port=4294967294 type=10 txn=0 msgid=0x3200 len=0 total=20 hex=0a00************************************
+[  38] fd=0x22 -> node=1 port=4294967294 type=10 txn=0 msgid=0x0300 len=0 total=20 hex=0a00************************************
+[  39] fd=0x22 -> node=1 port=4294967294 type=10 txn=0 msgid=0x3200 len=0 total=20 hex=0a00************************************
+[  40] fd=0x22 -> node=1 port=4294967294 type=10 txn=0 msgid=0xe300 len=0 total=20 hex=0a000000e30*****************************
+[  41] fd=0x22 -> node=1 port=4294967294 type=10 txn=0 msgid=0x0a00 len=0 total=20 hex=0a0000000a00****************************
+[  42] fd=0x22 -> node=1 port=4294967294 type=10 txn=0 msgid=0x0b00 len=0 total=20 hex=0a0000000b00****************************
+[  43] fd=0x22 -> node=1 port=4294967294 type=10 txn=0 msgid=0x0100 len=0 total=20 hex=0a00************************************
+[  44] fd=0x23 -> node=1 port=4294967294 type=10 txn=0 msgid=0x0100 len=0 total=20 hex=0a00************************************
+[  45] fd=0x28 -> node=1 port=4294967294 type=10 txn=0 msgid=0x0900 len=0 total=20 hex=0a00************************************
+[  46] fd=0x28 -> node=1 port=4294967294 type=10 txn=0 msgid=0x0c00 len=0 total=20 hex=0a0000000c00****************************
+[  47] fd=0x28 -> node=1 port=4294967294 type=10 txn=0 msgid=0x0100 len=0 total=20 hex=0a00************************************
+[  48] fd=0x28 -> node=1 port=4294967294 type=10 txn=0 msgid=0x2a00 len=0 total=20 hex=0a0000002a00****************************
+[  49] fd=0x28 -> node=1 port=4294967294 type=10 txn=0 msgid=0x0500 len=0 total=20 hex=0a00************************************
+[  50] fd=0x28 -> node=1 port=4294967294 type=10 txn=0 msgid=0x4900 len=0 total=20 hex=0a00************************************
+[  51] fd=0x28 -> node=1 port=4294967294 type=10 txn=0 msgid=0x0300 len=0 total=20 hex=0a00************************************
+[  52] fd=0x28 -> node=1 port=4294967294 type=10 txn=0 msgid=0x2100 len=0 total=20 hex=0a00************************************
+[  53] fd=0x28 -> node=1 port=4294967294 type=10 txn=0 msgid=0x1200 len=0 total=20 hex=0a00************************************
+[  54] fd=0x28 -> node=1 port=4294967294 type=10 txn=0 msgid=0x0700 len=0 total=20 hex=0a00************************************
+[  55] fd=0x28 -> node=1 port=4294967294 type=10 txn=0 msgid=0x3200 len=0 total=20 hex=0a00************************************
+[  56] fd=0x2a -> node=1 port=4294967294 type=10 txn=0 msgid=0xe300 len=0 total=20 hex=0a000000e30*****************************
+[  57] fd=0x2a -> node=1 port=4294967294 type=10 txn=0 msgid=0x0100 len=0 total=20 hex=0a00************************************
+[  58] fd=0x2a -> node=1 port=4294967294 type=10 txn=0 msgid=0x0100 len=0 total=20 hex=0a00************************************
+[  59] fd=0x22 -> node=0 port=74 type=0 txn=1 msgid=0x00a2 len=15 total=22 hex=000100a2000f00******************************
+[  60] fd=0x2a -> node=1 port=4294967294 type=10 txn=0 msgid=0x1200 len=0 total=20 hex=0a00************************************
+[  61] fd=0x2f -> node=1 port=4294967294 type=10 txn=0 msgid=0x2100 len=0 total=20 hex=0a00************************************
+[  62] fd=0x34 -> node=1 port=4294967294 type=10 txn=0 msgid=0x0900 len=0 total=20 hex=0a00************************************
+[  63] fd=0x3a -> node=1 port=4294967294 type=10 txn=0 msgid=0x0500 len=0 total=20 hex=0a00************************************
+[  64] fd=0x3a -> node=1 port=4294967294 type=10 txn=0 msgid=0x0b00 len=0 total=20 hex=0a0000000b00****************************
+[  65] fd=0x3a -> node=1 port=4294967294 type=10 txn=0 msgid=0x0a00 len=0 total=20 hex=0a0000000a00****************************
+[  66] fd=0x3a -> node=1 port=4294967294 type=10 txn=0 msgid=0x0a00 len=0 total=20 hex=0a0000000a00****************************
+[  67] fd=0x3a -> node=1 port=4294967294 type=10 txn=0 msgid=0x0100 len=0 total=20 hex=0a00************************************
+[  68] fd=0x3a -> node=1 port=4294967294 type=10 txn=0 msgid=0x0100 len=0 total=20 hex=0a00************************************
+[  69] fd=0x23 -> node=0 port=74 type=0 txn=1 msgid=0x00af len=7 total=14 hex=
+[  70] fd=0x3a -> node=1 port=4294967294 type=10 txn=0 msgid=0x1200 len=0 total=20 hex=0a00************************************
+[  71] fd=0x23 -> node=0 port=74 type=0 txn=2 msgid=0x0003 len=4 total=11 hex=
+[  72] fd=0x3a -> node=1 port=4294967294 type=10 txn=0 msgid=0x4900 len=0 total=20 hex=0a00************************************
+[  73] fd=0x23 -> node=0 port=74 type=0 txn=3 msgid=0x00a7 len=10 total=17 hex=000300a7000a0010030001ffff11010001
+[  74] fd=0x3a -> node=1 port=4294967294 type=10 txn=0 msgid=0x4900 len=0 total=20 hex=0a00************************************
+[  75] fd=0x2f -> node=0 port=94 type=0 txn=1 msgid=0x0029 len=7 total=14 hex=
+[  76] fd=0x23 -> node=0 port=74 type=0 txn=4 msgid=0x002a len=4 total=11 hex=
+[  77] fd=0x23 -> node=0 port=74 type=0 txn=5 msgid=0x002b len=5 total=12 hex=
+[  78] fd=0x23 -> node=0 port=74 type=0 txn=6 msgid=0x002b len=5 total=12 hex=
+[  79] fd=0x3a -> node=1 port=4294967294 type=10 txn=0 msgid=0x0900 len=0 total=20 hex=0a00************************************
+[  80] fd=0x23 -> node=0 port=74 type=0 txn=7 msgid=0x002b len=5 total=12 hex=
+[  81] fd=0x3a -> node=1 port=4294967294 type=10 txn=0 msgid=0x0900 len=0 total=20 hex=0a00************************************
+[  82] fd=0x23 -> node=0 port=74 type=0 txn=8 msgid=0x002a len=4 total=11 hex=
+[  83] fd=0x3a -> node=1 port=4294967294 type=10 txn=0 msgid=0x0b00 len=0 total=20 hex=0a0000000b00****************************
+[  84] fd=0x23 -> node=0 port=74 type=0 txn=9 msgid=0x002b len=5 total=12 hex=
+[  85] fd=0x3b -> node=1 port=4294967294 type=10 txn=0 msgid=0x2a00 len=0 total=20 hex=0a0000002a00****************************
+[  86] fd=0x40 -> node=1 port=4294967294 type=10 txn=0 msgid=0x0700 len=0 total=20 hex=0a00************************************
+[  87] fd=0x42 -> node=1 port=4294967294 type=10 txn=0 msgid=0x4400 len=0 total=20 hex=0a00************************************
+[  88] fd=0x49 -> node=1 port=4294967294 type=10 txn=0 msgid=0x0100 len=0 total=20 hex=0a00************************************
+[  89] fd=0x49 -> node=1 port=4294967294 type=10 txn=0 msgid=0x1200 len=0 total=20 hex=0a00************************************
+[  90] fd=0x29 -> node=0 port=73 type=0 txn=1 msgid=0x002f len=4 total=11 hex=
+[  91] fd=0x28 -> node=0 port=71 type=0 txn=1 msgid=0x002e len=0 total=7 hex=
+[  92] fd=0x29 -> node=0 port=73 type=0 txn=2 msgid=0x0076 len=4 total=11 hex=
+[  93] fd=0x34 -> node=0 port=69 type=0 txn=1 msgid=0x0044 len=4 total=11 hex=
+[  94] fd=0x28 -> node=0 port=71 type=0 txn=2 msgid=0x0001 len=18 total=25 hex=00******************ffff7f41**********************
+[  95] fd=0x2a -> node=0 port=100 type=0 txn=1 msgid=0x0098 len=7 total=14 hex=
+[  96] fd=0x49 -> node=1 port=4294967294 type=10 txn=0 msgid=0x2100 len=0 total=20 hex=0a00************************************
+[  97] fd=0x49 -> node=1 port=4294967294 type=10 txn=0 msgid=0x2100 len=0 total=20 hex=0a00************************************
+[  98] fd=0x29 -> node=0 port=73 type=0 txn=3 msgid=0x002e len=7 total=14 hex=
+[  99] fd=0x49 -> node=1 port=4294967294 type=10 txn=0 msgid=0x0c00 len=0 total=20 hex=0a0000000c00****************************
+[ 100] fd=0x49 -> node=1 port=4294967294 type=10 txn=0 msgid=0x0500 len=0 total=20 hex=0a00************************************
+[ 101] fd=0x35 -> node=0 port=98 type=0 txn=1 msgid=0x0033 len=7 total=14 hex=
+[ 102] fd=0x49 -> node=1 port=4294967294 type=10 txn=0 msgid=0x0500 len=0 total=20 hex=0a00************************************
+[ 103] fd=0x29 -> node=0 port=73 type=0 txn=4 msgid=0x0047 len=0 total=7 hex=
+[ 104] fd=0x29 -> node=0 port=73 type=0 txn=5 msgid=0x002f len=4 total=11 hex=
+[ 105] fd=0x3a -> node=0 port=90 type=0 txn=1 msgid=0x004c len=4 total=11 hex=
+[ 106] fd=0x29 -> node=0 port=73 type=0 txn=6 msgid=0x003a len=7 total=14 hex=
+[ 107] fd=0x49 -> node=1 port=4294967294 type=10 txn=0 msgid=0x0700 len=0 total=20 hex=0a00************************************
+[ 108] fd=0x49 -> node=1 port=4294967294 type=10 txn=0 msgid=0x2a00 len=0 total=20 hex=0a0000002a00****************************
+[ 109] fd=0x49 -> node=1 port=4294967294 type=10 txn=0 msgid=0x2a00 len=0 total=20 hex=0a0000002a00****************************
+[ 110] fd=0x34 -> node=0 port=69 type=0 txn=2 msgid=0x0003 len=4 total=11 hex=
+[ 111] fd=0x49 -> node=1 port=4294967294 type=10 txn=0 msgid=0xe300 len=0 total=20 hex=0a000000e30*****************************
+[ 112] fd=0x4c -> node=1 port=4294967294 type=10 txn=0 msgid=0xe300 len=0 total=20 hex=0a000000e30*****************************
+[ 113] fd=0x4c -> node=1 port=4294967294 type=10 txn=0 msgid=0x0700 len=0 total=20 hex=0a00************************************
+[ 114] fd=0x4c -> node=1 port=4294967294 type=10 txn=0 msgid=0x4400 len=0 total=20 hex=0a00************************************
+[ 115] fd=0x50 -> node=1 port=4294967294 type=10 txn=0 msgid=0x0c00 len=0 total=20 hex=0a0000000c00****************************
+[ 116] fd=0x50 -> node=1 port=4294967294 type=10 txn=0 msgid=0x0c00 len=0 total=20 hex=0a0000000c00****************************
+[ 117] fd=0x50 -> node=1 port=4294967294 type=10 txn=0 msgid=0x4400 len=0 total=20 hex=0a00************************************
+[ 118] fd=0x34 -> node=0 port=69 type=0 txn=3 msgid=0x0003 len=4 total=11 hex=
+[ 119] fd=0x34 -> node=0 port=69 type=0 txn=4 msgid=0x0003 len=4 total=11 hex=
+[ 120] fd=0x4a -> node=0 port=65 type=0 txn=1 msgid=0x001a len=4 total=11 hex=
+[ 121] fd=0x50 -> node=1 port=4294967294 type=10 txn=0 msgid=0x4400 len=0 total=20 hex=0a00************************************
+[ 122] fd=0x34 -> node=0 port=69 type=0 txn=5 msgid=0x0003 len=4 total=11 hex=
+[ 123] fd=0x4c -> node=0 port=93 type=0 txn=1 msgid=0x0020 len=7 total=14 hex=
+[ 124] fd=0x34 -> node=0 port=69 type=0 txn=6 msgid=0x0003 len=4 total=11 hex=
+[ 125] fd=0x41 -> node=0 port=97 type=0 txn=1 msgid=0x0027 len=7 total=14 hex=
+[ 126] fd=0x34 -> node=0 port=69 type=0 txn=7 msgid=0x0003 len=4 total=11 hex=
+[ 127] fd=0x34 -> node=0 port=69 type=0 txn=8 msgid=0x0003 len=4 total=11 hex=
+[ 128] fd=0x4c -> node=0 port=93 type=0 txn=2 msgid=0x0023 len=7 total=14 hex=
+[ 129] fd=0x4c -> node=0 port=93 type=0 txn=3 msgid=0x0022 len=4 total=11 hex=
+[ 130] fd=0x34 -> node=0 port=69 type=0 txn=9 msgid=0x0003 len=4 total=11 hex=
+[ 131] fd=0x4c -> node=0 port=93 type=0 txn=4 msgid=0x0022 len=4 total=11 hex=
+[ 132] fd=0x34 -> node=0 port=69 type=0 txn=10 msgid=0x0003 len=4 total=11 hex=
+[ 133] fd=0x4c -> node=0 port=93 type=0 txn=5 msgid=0x0028 len=7 total=14 hex=
+[ 134] fd=0x34 -> node=0 port=69 type=0 txn=11 msgid=0x0003 len=4 total=11 hex=
+[ 135] fd=0x34 -> node=0 port=69 type=0 txn=12 msgid=0x0003 len=4 total=11 hex=
+[ 136] fd=0x34 -> node=0 port=69 type=0 txn=13 msgid=0x0003 len=4 total=11 hex=
+[ 137] fd=0x34 -> node=0 port=69 type=0 txn=14 msgid=0x0003 len=4 total=11 hex=
+[ 138] fd=0x34 -> node=0 port=69 type=0 txn=15 msgid=0x0003 len=4 total=11 hex=
+[ 139] fd=0x4c -> node=0 port=93 type=0 txn=6 msgid=0x0027 len=0 total=7 hex=
+[ 140] fd=0x34 -> node=0 port=69 type=0 txn=16 msgid=0x0003 len=4 total=11 hex=
+[ 141] fd=0x34 -> node=0 port=69 type=0 txn=17 msgid=0x0003 len=4 total=11 hex=
+[ 142] fd=0x4c -> node=0 port=93 type=0 txn=7 msgid=0x0023 len=69 total=76 hex=00********************************b80b00*******************d000b64000000f4010000e80************************e000050c30000f8240100a0860100400d030020a10700
+[ 143] fd=0x4c -> node=0 port=93 type=0 txn=8 msgid=0x0028 len=81 total=88 hex=00********************************b80b00***********************e64000000f4010000e80************************e000050c30000f8240100a0860100400d030020a1070040420f0060e3160080841e00
+[ 144] fd=0x34 -> node=0 port=69 type=0 txn=18 msgid=0x0003 len=4 total=11 hex=
+[ 145] fd=0x40 -> node=0 port=88 type=0 txn=1 msgid=0x0027 len=7 total=14 hex=
+[ 146] fd=0x50 -> node=1 port=4294967294 type=10 txn=0 msgid=0x0100 len=0 total=20 hex=0a00************************************
+[ 147] fd=0x50 -> node=1 port=4294967294 type=10 txn=0 msgid=0x0300 len=0 total=20 hex=0a00************************************
+[ 148] fd=0x34 -> node=0 port=69 type=0 txn=19 msgid=0x001e len=0 total=7 hex=
+[ 149] fd=0x40 -> node=0 port=88 type=0 txn=2 msgid=0x0069 len=12 total=19 hex=00020069000c00************************
+[ 150] fd=0x4c -> node=0 port=93 type=0 txn=9 msgid=0x0023 len=69 total=76 hex=00********************************b80b00*******************d000b64000000f4010000e80************************e000050c30000f8240100a0860100400d030020a10700
+[ 151] fd=0x4c -> node=0 port=93 type=0 txn=10 msgid=0x0028 len=81 total=88 hex=000a00****************************b80b00***********************e64000000f4010000e80************************e000050c30000f8240100a0860100400d030020a1070040420f0060e3160080841e00
+[ 152] fd=0x34 -> node=0 port=69 type=0 txn=20 msgid=0x0080 len=4 total=11 hex=
+[ 153] fd=0x2a -> node=0 port=100 type=0 txn=2 msgid=0x001e len=0 total=7 hex=
+[ 154] fd=0x53 -> node=1 port=4294967294 type=10 txn=0 msgid=0x0100 len=0 total=20 hex=0a00************************************
+[ 155] fd=0x40 -> node=0 port=88 type=0 txn=3 msgid=0x0068 len=0 total=7 hex=
+[ 156] fd=0x2a -> node=0 port=100 type=0 txn=3 msgid=0x001f len=5 total=12 hex=
+[ 157] fd=0x4c -> node=0 port=93 type=0 txn=11 msgid=0x0023 len=69 total=76 hex=000b00****************************b80b00*******************d000b64000000f4010000e80************************e000050c30000f8240100a0860100400d030020a10700
+[ 158] fd=0x4c -> node=0 port=93 type=0 txn=12 msgid=0x0028 len=81 total=88 hex=000c00****************************b80b00***********************e64000000f4010000e80************************e000050c30000f8240100a0860100400d030020a1070040420f0060e3160080841e00
+[ 159] fd=0x2a -> node=0 port=100 type=0 txn=4 msgid=0x001f len=5 total=12 hex=
+[ 160] fd=0x2a -> node=0 port=100 type=0 txn=5 msgid=0x001f len=5 total=12 hex=
+[ 161] fd=0x40 -> node=0 port=88 type=0 txn=4 msgid=0x004f len=0 total=7 hex=
+[ 162] fd=0x2a -> node=0 port=100 type=0 txn=6 msgid=0x002a len=16 total=23 hex=0006002a00*************f0100012d01000131010001
+[ 163] fd=0x4d -> node=0 port=74 type=0 txn=1 msgid=0x00af len=7 total=14 hex=
+[ 164] fd=0x40 -> node=0 port=88 type=0 txn=5 msgid=0x0038 len=4 total=11 hex=
+[ 165] fd=0x2a -> node=0 port=100 type=0 txn=7 msgid=0x0090 len=0 total=7 hex=
+[ 166] fd=0x40 -> node=0 port=88 type=0 txn=6 msgid=0x004f len=0 total=7 hex=
+[ 167] fd=0x56 -> node=None port=None type=8 txn=0 msgid=0x0d10 len=0 total=8 hex=
+[ 168] fd=0x40 -> node=0 port=88 type=0 txn=7 msgid=0x0034 len=7 total=14 hex=
+[ 169] fd=0x55 -> node=1 port=4294967294 type=10 txn=0 msgid=0x0300 len=0 total=20 hex=0a00************************************
+[ 170] fd=0x55 -> node=1 port=4294967294 type=10 txn=0 msgid=0x0300 len=0 total=20 hex=0a00************************************
+[ 171] fd=0x40 -> node=0 port=88 type=0 txn=8 msgid=0x0038 len=4 total=11 hex=
+[ 172] fd=0x35 -> node=0 port=98 type=0 txn=2 msgid=0x0022 len=36 total=43 hex=00*****************************************************b0100011e0100011f01000123010001
+[ 173] fd=0x41 -> node=0 port=97 type=0 txn=2 msgid=0x0003 len=4 total=11 hex=
+[ 174] fd=0x35 -> node=0 port=98 type=0 txn=3 msgid=0x0022 len=4 total=11 hex=
+[ 175] fd=0x40 -> node=0 port=88 type=0 txn=9 msgid=0x0078 len=4 total=11 hex=
+[ 176] fd=0x50 -> node=0 port=70 type=0 txn=1 msgid=0x0045 len=4 total=11 hex=
+[ 177] fd=0x40 -> node=0 port=88 type=0 txn=10 msgid=0x0065 len=14 total=21 hex=000a0065000e00****************************
+[ 178] fd=0x40 -> node=0 port=88 type=0 txn=11 msgid=0x0025 len=4 total=11 hex=
+[ 179] fd=0x4d -> node=0 port=74 type=0 txn=2 msgid=0x0003 len=4 total=11 hex=
+[ 180] fd=0x40 -> node=0 port=88 type=0 txn=12 msgid=0x0038 len=4 total=11 hex=
+[ 181] fd=0x40 -> node=0 port=88 type=0 txn=13 msgid=0x0047 len=0 total=7 hex=
+[ 182] fd=0x3a -> node=0 port=90 type=0 txn=2 msgid=0x0032 len=33 total=40 hex=00***************a0006000000ff020001ff02000200010003ff020004ff020005ff0210010001
+[ 183] fd=0x4d -> node=0 port=74 type=0 txn=3 msgid=0x0003 len=4 total=11 hex=
+[ 184] fd=0x3a -> node=0 port=90 type=0 txn=3 msgid=0x0001 len=12 total=19 hex=00030001000c00************************
+[ 185] fd=0x55 -> node=1 port=4294967294 type=10 txn=0 msgid=0x4700 len=0 total=20 hex=0a00************************************
+[ 186] fd=0x4d -> node=0 port=74 type=0 txn=4 msgid=0x0003 len=4 total=11 hex=
+[ 187] fd=0x3a -> node=0 port=90 type=0 txn=4 msgid=0x0047 len=16 total=23 hex=00********************************************
+[ 188] fd=0x58 -> node=1 port=4294967294 type=10 txn=0 msgid=0x4700 len=0 total=20 hex=0a00************************************
+[ 189] fd=0x58 -> node=1 port=4294967294 type=10 txn=0 msgid=0x4700 len=0 total=20 hex=0a00************************************
+[ 190] fd=0x3a -> node=0 port=90 type=0 txn=5 msgid=0x004d len=0 total=7 hex=
+[ 191] fd=0x55 -> node=0 port=107 type=0 txn=1 msgid=0x0020 len=0 total=7 hex=
+[ 192] fd=0x40 -> node=0 port=88 type=0 txn=14 msgid=0x0065 len=7 total=14 hex=
+[ 193] fd=0x3a -> node=0 port=90 type=0 txn=6 msgid=0x005c len=0 total=7 hex=
+[ 194] fd=0x2f -> node=0 port=94 type=0 txn=2 msgid=0x002b len=7 total=14 hex=
+[ 195] fd=0x3a -> node=0 port=90 type=0 txn=7 msgid=0x0048 len=0 total=7 hex=
+[ 196] fd=0x1f -> node=1 port=4294967294 type=10 txn=0 msgid=0x2400 len=0 total=20 hex=0a00************************************
+[ 197] fd=0x40 -> node=0 port=88 type=0 txn=15 msgid=0x0038 len=20 total=27 hex=000f00380014001e0100011f01****************************
+[ 198] fd=0x4a -> node=0 port=65 type=0 txn=2 msgid=0x0024 len=11 total=18 hex=00020024000b00**********************
+[ 199] fd=0x40 -> node=0 port=88 type=0 txn=16 msgid=0x006d len=0 total=7 hex=
+[ 200] fd=0x4a -> node=0 port=65 type=0 txn=3 msgid=0x0001 len=7 total=14 hex=
+[ 201] fd=0x4a -> node=0 port=65 type=0 txn=4 msgid=0x0001 len=7 total=14 hex=
+[ 202] fd=0x40 -> node=0 port=88 type=0 txn=17 msgid=0x0065 len=7 total=14 hex=
+[ 203] fd=0x29 -> node=0 port=73 type=0 txn=7 msgid=0x002a len=12 total=19 hex=0007002a000c00************************
+[ 204] fd=0x4d -> node=0 port=74 type=0 txn=5 msgid=0x0100 len=7 total=14 hex=
+[ 205] fd=0x1f -> node=1 port=4294967294 type=10 txn=0 msgid=0x2400 len=0 total=20 hex=0a00************************************
+[ 206] fd=0x22 -> node=1 port=4294967294 type=10 txn=0 msgid=0x2400 len=0 total=20 hex=0a00************************************
+[ 207] fd=0x22 -> node=1 port=4294967294 type=10 txn=0 msgid=0x2400 len=0 total=20 hex=0a00************************************
+[ 208] fd=0x22 -> node=1 port=4294967294 type=10 txn=0 msgid=0x3200 len=0 total=20 hex=0a00************************************
+[ 209] fd=0x22 -> node=1 port=4294967294 type=10 txn=0 msgid=0x2400 len=0 total=20 hex=0a00************************************
+[ 210] fd=0x22 -> node=1 port=4294967294 type=10 txn=0 msgid=0xe300 len=0 total=20 hex=0a000000e30*****************************
+[ 211] fd=0x26 -> node=1 port=4294967294 type=10 txn=0 msgid=0x0900 len=0 total=20 hex=0a00************************************
+[ 212] fd=0x26 -> node=1 port=4294967294 type=10 txn=0 msgid=0x0900 len=0 total=20 hex=0a00************************************
+[ 213] fd=0x26 -> node=1 port=4294967294 type=10 txn=0 msgid=0x3200 len=0 total=20 hex=0a00************************************
+[ 214] fd=0x26 -> node=1 port=4294967294 type=10 txn=0 msgid=0x3200 len=0 total=20 hex=0a00************************************
+[ 215] fd=0x26 -> node=1 port=4294967294 type=10 txn=0 msgid=0x0900 len=0 total=20 hex=0a00************************************
+[ 216] fd=0x27 -> node=1 port=4294967294 type=10 txn=0 msgid=0x0900 len=0 total=20 hex=0a00************************************
+[ 217] fd=0x2a -> node=1 port=4294967294 type=10 txn=0 msgid=0xe300 len=0 total=20 hex=0a000000e30*****************************
+[ 218] fd=0x2f -> node=1 port=4294967294 type=10 txn=0 msgid=0x0900 len=0 total=20 hex=0a00************************************
+[ 219] fd=0x2f -> node=1 port=4294967294 type=10 txn=0 msgid=0x0900 len=0 total=20 hex=0a00************************************
+[ 220] fd=0x2f -> node=1 port=4294967294 type=10 txn=0 msgid=0xe300 len=0 total=20 hex=0a000000e30*****************************
+[ 221] fd=0x26 -> node=0 port=69 type=0 txn=1 msgid=0x0044 len=4 total=11 hex=
+[ 222] fd=0x2f -> node=1 port=4294967294 type=10 txn=0 msgid=0xe300 len=0 total=20 hex=0a000000e30*****************************
+[ 223] fd=0x2f -> node=1 port=4294967294 type=10 txn=0 msgid=0x0a00 len=0 total=20 hex=0a0000000a00****************************
+[ 224] fd=0x2f -> node=1 port=4294967294 type=10 txn=0 msgid=0x0900 len=0 total=20 hex=0a00************************************
+[ 225] fd=0x2f -> node=1 port=4294967294 type=10 txn=0 msgid=0x0900 len=0 total=20 hex=0a00************************************
+[ 226] fd=0x2f -> node=1 port=4294967294 type=10 txn=0 msgid=0x0b00 len=0 total=20 hex=0a0000000b00****************************
+[ 227] fd=0x27 -> node=0 port=69 type=0 txn=1 msgid=0x0044 len=4 total=11 hex=
+[ 228] fd=0x35 -> node=1 port=4294967294 type=10 txn=0 msgid=0x0b00 len=0 total=20 hex=0a0000000b00****************************
+[ 229] fd=0x35 -> node=1 port=4294967294 type=10 txn=0 msgid=0x0b00 len=0 total=20 hex=0a0000000b00****************************
+[ 230] fd=0x35 -> node=1 port=4294967294 type=10 txn=0 msgid=0x0a00 len=0 total=20 hex=0a0000000a00****************************
+[ 231] fd=0x35 -> node=1 port=4294967294 type=10 txn=0 msgid=0x0a00 len=0 total=20 hex=0a0000000a00****************************
+[ 232] fd=0x2f -> node=0 port=73 type=0 txn=1 msgid=0x002f len=4 total=11 hex=
+[ 233] fd=0x35 -> node=1 port=4294967294 type=10 txn=0 msgid=0x0100 len=0 total=20 hex=0a00************************************
+[ 234] fd=0x30 -> node=0 port=71 type=0 txn=1 msgid=0x002e len=0 total=7 hex=
+[ 235] fd=0x38 -> node=1 port=4294967294 type=10 txn=0 msgid=0x0100 len=0 total=20 hex=0a00************************************
+[ 236] fd=0x2f -> node=0 port=73 type=0 txn=2 msgid=0x0076 len=4 total=11 hex=
+[ 237] fd=0x30 -> node=0 port=71 type=0 txn=2 msgid=0x0001 len=18 total=25 hex=00******************ffff7f41**********************
+[ 238] fd=0x38 -> node=1 port=4294967294 type=10 txn=0 msgid=0x0900 len=0 total=20 hex=0a00************************************
+[ 239] fd=0x38 -> node=1 port=4294967294 type=10 txn=0 msgid=0x0100 len=0 total=20 hex=0a00************************************
+[ 240] fd=0x38 -> node=1 port=4294967294 type=10 txn=0 msgid=0x0100 len=0 total=20 hex=0a00************************************
+[ 241] fd=0x35 -> node=0 port=74 type=0 txn=1 msgid=0x00a2 len=15 total=22 hex=000100a2000f00******************************
+[ 242] fd=0x2f -> node=0 port=73 type=0 txn=3 msgid=0x002e len=7 total=14 hex=
+[ 243] fd=0x38 -> node=1 port=4294967294 type=10 txn=0 msgid=0x0c00 len=0 total=20 hex=0a0000000c00****************************
+[ 244] fd=0x3b -> node=1 port=4294967294 type=10 txn=0 msgid=0x4900 len=0 total=20 hex=0a00************************************
+[ 245] fd=0x3e -> node=1 port=4294967294 type=10 txn=0 msgid=0x4900 len=0 total=20 hex=0a00************************************
+[ 246] fd=0x3e -> node=1 port=4294967294 type=10 txn=0 msgid=0x0100 len=0 total=20 hex=0a00************************************
+[ 247] fd=0x3e -> node=1 port=4294967294 type=10 txn=0 msgid=0x4900 len=0 total=20 hex=0a00************************************
+[ 248] fd=0x3b -> node=0 port=94 type=0 txn=1 msgid=0x0029 len=7 total=14 hex=
+[ 249] fd=0x3e -> node=1 port=4294967294 type=10 txn=0 msgid=0x0100 len=0 total=20 hex=0a00************************************
+[ 250] fd=0x38 -> node=0 port=74 type=0 txn=1 msgid=0x00af len=7 total=14 hex=
+[ 251] fd=0x38 -> node=0 port=74 type=0 txn=2 msgid=0x0003 len=4 total=11 hex=
+[ 252] fd=0x38 -> node=0 port=74 type=0 txn=3 msgid=0x00a7 len=10 total=17 hex=000300a7000a0010030001ffff11010001
+[ 253] fd=0x38 -> node=0 port=74 type=0 txn=4 msgid=0x002a len=4 total=11 hex=
+[ 254] fd=0x2f -> node=0 port=73 type=0 txn=4 msgid=0x0047 len=0 total=7 hex=
+[ 255] fd=0x38 -> node=0 port=74 type=0 txn=5 msgid=0x002b len=5 total=12 hex=
+[ 256] fd=0x38 -> node=0 port=74 type=0 txn=6 msgid=0x002b len=5 total=12 hex=
+[ 257] fd=0x38 -> node=0 port=74 type=0 txn=7 msgid=0x002b len=5 total=12 hex=
+[ 258] fd=0x38 -> node=0 port=74 type=0 txn=8 msgid=0x002b len=5 total=12 hex=
+[ 259] fd=0x38 -> node=0 port=74 type=0 txn=9 msgid=0x002a len=4 total=11 hex=
+[ 260] fd=0x2f -> node=0 port=73 type=0 txn=5 msgid=0x002f len=4 total=11 hex=
+[ 261] fd=0x38 -> node=0 port=74 type=0 txn=10 msgid=0x002b len=5 total=12 hex=
+[ 262] fd=0x3e -> node=1 port=4294967294 type=10 txn=0 msgid=0x0500 len=0 total=20 hex=0a00************************************
+[ 263] fd=0x3e -> node=1 port=4294967294 type=10 txn=0 msgid=0x0900 len=0 total=20 hex=0a00************************************
+[ 264] fd=0x3e -> node=1 port=4294967294 type=10 txn=0 msgid=0x4700 len=0 total=20 hex=0a00************************************
+[ 265] fd=0x2f -> node=0 port=73 type=0 txn=6 msgid=0x0020 len=20 total=27 hex=00****************************e22f02003f03040000000000
+[ 266] fd=0x44 -> node=1 port=4294967294 type=10 txn=0 msgid=0x2100 len=0 total=20 hex=0a00************************************
+[ 267] fd=0x44 -> node=1 port=4294967294 type=10 txn=0 msgid=0x1200 len=0 total=20 hex=0a00************************************
+[ 268] fd=0x44 -> node=1 port=4294967294 type=10 txn=0 msgid=0x4700 len=0 total=20 hex=0a00************************************
+[ 269] fd=0x44 -> node=1 port=4294967294 type=10 txn=0 msgid=0x4700 len=0 total=20 hex=0a00************************************
+[ 270] fd=0x3e -> node=0 port=107 type=0 txn=1 msgid=0x0020 len=0 total=7 hex=
+[ 271] fd=0x44 -> node=1 port=4294967294 type=10 txn=0 msgid=0x0900 len=0 total=20 hex=0a00************************************
+[ 272] fd=0x44 -> node=1 port=4294967294 type=10 txn=0 msgid=0x0900 len=0 total=20 hex=0a00************************************
+[ 273] fd=0x2f -> node=0 port=73 type=0 txn=7 msgid=0x0039 len=21 total=28 hex=00**********************a0000000871002ff39ffff8901010100
+[ 274] fd=0x2f -> node=0 port=73 type=0 txn=8 msgid=0x0024 len=17 total=24 hex=00*******************************f06003f107f3a5f
+[ 275] fd=0x41 -> node=0 port=69 type=0 txn=1 msgid=0x0044 len=4 total=11 hex=
+[ 276] fd=0x2f -> node=0 port=73 type=0 txn=9 msgid=0x002a len=12 total=19 hex=0009002a000c00************************
+[ 277] fd=0x44 -> node=1 port=4294967294 type=10 txn=0 msgid=0x1200 len=0 total=20 hex=0a00************************************
+[ 278] fd=0x47 -> node=1 port=4294967294 type=10 txn=0 msgid=0x1200 len=0 total=20 hex=0a00************************************
+[ 279] fd=0x47 -> node=1 port=4294967294 type=10 txn=0 msgid=0x1200 len=0 total=20 hex=0a00************************************
+[ 280] fd=0x2f -> node=0 port=73 type=0 txn=10 msgid=0x003a len=7 total=14 hex=
+[ 281] fd=0x47 -> node=1 port=4294967294 type=10 txn=0 msgid=0x2100 len=0 total=20 hex=0a00************************************
+[ 282] fd=0x44 -> node=0 port=100 type=0 txn=1 msgid=0x0098 len=7 total=14 hex=
+[ 283] fd=0x4a -> node=1 port=4294967294 type=10 txn=0 msgid=0x2100 len=0 total=20 hex=0a00************************************
+[ 284] fd=0x4a -> node=1 port=4294967294 type=10 txn=0 msgid=0x2100 len=0 total=20 hex=0a00************************************
+[ 285] fd=0x4a -> node=1 port=4294967294 type=10 txn=0 msgid=0x0500 len=0 total=20 hex=0a00************************************
+[ 286] fd=0x47 -> node=0 port=98 type=0 txn=1 msgid=0x0033 len=7 total=14 hex=
+Traceback (most recent call last):
+  File "/home/user/nx679j-stock/experiments/refs/parse-trace.py", line 82, in <module>
+    main(sys.argv[1])
+  File "/home/user/nx679j-stock/experiments/refs/parse-trace.py", line 71, in main
+    q = qmi(e['hex'])
+        ^^^^^^^^^^^^^
+  File "/home/user/nx679j-stock/experiments/refs/parse-trace.py", line 46, in qmi
+    b = bytes.fromhex(hexs)
+        ^^^^^^^^^^^^^^^^^^^
+ValueError: non-hexadecimal number found in fromhex() arg at position 18

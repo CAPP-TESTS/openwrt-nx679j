@@ -1,0 +1,35 @@
+--- a/src/libqmi-glib/qmi-net-port-manager-rmnet.c
++++ b/src/libqmi-glib/qmi-net-port-manager-rmnet.c
+@@ -38,7 +38,8 @@
+ #endif
+ 
+ #include <sys/socket.h>
+-#include <sys/types.h>
++#include <sys/types.h>
++#include <errno.h>
+ #include <string.h>
+ 
+ #include "qmi-device.h"
+@@ -560,11 +560,17 @@
+     /* The task ownership is transferred to the transaction. */
+     tr = transaction_new (self, msg, timeout, task);
+ 
+-    bytes_sent = g_socket_send (self->priv->socket,
+-                                (const gchar *) msg->data,
+-                                msg->len,
+-                                cancellable,
+-                                &error);
++    {
++        /* NX679J local: the stock SM8450 vendor netlink handler requires an
++         * explicit sockaddr_nl destination; g_socket_send() uses sendto() with
++         * a NULL address and the vendor kernel never creates the device. */
++        struct sockaddr_nl kernel_nl = { .nl_family = AF_NETLINK };
++        gint fd = g_socket_get_fd (self->priv->socket);
++        bytes_sent = sendto (fd, msg->data, msg->len, 0,
++                             (struct sockaddr *) &kernel_nl, sizeof (kernel_nl));
++        if (bytes_sent < 0)
++            error = g_error_new_literal (G_IO_ERROR, g_io_error_from_errno (errno), g_strerror (errno));
++    }
+     netlink_message_free (msg);
+ 
+     if (bytes_sent < 0)

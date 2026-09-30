@@ -1,0 +1,21 @@
+/proc/device-tree/firmware/android/fstab:
+total 0
+-r--r--r-- 1 root root 14 1970-01-01 14:01 compatible
+-r--r--r-- 1 root root  6 2026-09-17 12:44 name
+drwxr-xr-x 2 root root  0 1970-01-01 14:01 vendor
+
+/proc/device-tree/firmware/android/fstab/vendor:
+total 0
+-r--r--r-- 1 root root 15 2026-09-17 12:44 compatible
+-r--r--r-- 1 root root 53 2026-09-17 12:44 dev
+-r--r--r-- 1 root root 20 2026-09-17 12:44 fsmgr_flags
+-r--r--r-- 1 root root 21 2026-09-17 12:44 mnt_flags
+-r--r--r-- 1 root root  7 2026-09-17 12:44 name
+-r--r--r-- 1 root root  9 1970-01-01 14:01 status
+-r--r--r-- 1 root root  5 2026-09-17 12:44 type
+
+/proc/device-tree/firmware/android/vbmeta:
+total 0
+-r--r--r-- 1 root root 15 2026-09-17 12:44 compatible
+-r--r--r-- 1 root root  7 2026-09-17 12:44 name
+-r--r--r-- 1 root root 40 1970-01-01 14:01 parts

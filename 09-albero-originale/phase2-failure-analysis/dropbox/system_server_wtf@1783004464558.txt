@@ -1,0 +1,28 @@
+Process: system_server
+Subject: ActivityManager
+Build: nubia/NX679J-UN/NX679J-UN:12/SKQ1.211113.001/eng.nubia.20220308.193302:user/release-keys
+
+android.util.Log$TerribleFailure: Sending non-protected broadcast cn.nubia.action.HDMI_PLUGGED from system 2928:system/1000 pkg android
+	at android.util.Log.wtf(Log.java:474)
+	at android.util.Log.wtf(Log.java:468)
+	at com.android.server.am.ActivityManagerService.checkBroadcastFromSystem(ActivityManagerService.java:13863)
+	at com.android.server.am.ActivityManagerService.broadcastIntentLocked(ActivityManagerService.java:14598)
+	at com.android.server.am.ActivityManagerService.broadcastIntentLocked(ActivityManagerService.java:13881)
+	at com.android.server.am.ActivityManagerService.broadcastIntentWithFeature(ActivityManagerService.java:14755)
+	at android.app.ContextImpl.sendBroadcast(ContextImpl.java:1180)
+	at com.android.server.wm.DisplayPolicy.setHdmiPlugged(DisplayPolicy.java:880)
+	at com.android.server.policy.PhoneWindowManager.initializeHdmiStateInternal(PhoneWindowManager.java:3920)
+	at com.android.server.policy.PhoneWindowManager.initializeHdmiState(PhoneWindowManager.java:3874)
+	at com.android.server.policy.PhoneWindowManager.init(PhoneWindowManager.java:2177)
+	at com.android.server.wm.WindowManagerService$5.run(WindowManagerService.java:1287)
+	at android.os.Handler$BlockingRunnable.run(Handler.java:961)
+	at android.os.Handler.handleCallback(Handler.java:938)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loopOnce(Looper.java:238)
+	at android.os.Looper.loop(Looper.java:379)
+	at android.os.HandlerThread.run(HandlerThread.java:67)
+	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+	at com.android.server.UiThread.run(UiThread.java:45)
+Caused by: java.lang.Throwable
+	at com.android.server.am.ActivityManagerService.checkBroadcastFromSystem(ActivityManagerService.java:13864)
+	... 17 more

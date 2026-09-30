@@ -1,0 +1,1910 @@
+tqftpserv: published 4096 versions 1..10
+got del_client for 1:16402
+got del_client for 1:16402
+got del_client for 1:16402
+got del_client for 1:16402
+got del_client for 1:16402
+got del_client for 1:16402
+got del_client for 1:16402
+got del_client for 1:16402
+got del_client for 1:16402
+got del_client for 1:16402
+got del_client for 1:16403
+got del_client for 1:16403
+got del_client for 1:16403
+got del_client for 1:16403
+got del_client for 1:16403
+got del_client for 1:16403
+got del_client for 1:16403
+got del_client for 1:16403
+got del_client for 1:16403
+got del_client for 1:16403
+got del_client for 1:16404
+got del_client for 1:16404
+got del_client for 1:16404
+got del_client for 1:16404
+got del_client for 1:16404
+got del_client for 1:16404
+got del_client for 1:16404
+got del_client for 1:16404
+got del_client for 1:16404
+got del_client for 1:16404
+got del_client for 0:8
+got del_client for 0:8
+got del_client for 0:8
+got del_client for 0:8
+got del_client for 0:8
+got del_client for 0:8
+got del_client for 0:8
+got del_client for 0:8
+got del_client for 0:8
+got del_client for 0:8
+got del_client for 0:9
+got del_client for 0:9
+got del_client for 0:9
+got del_client for 0:9
+got del_client for 0:9
+got del_client for 0:9
+got del_client for 0:9
+got del_client for 0:9
+got del_client for 0:9
+got del_client for 0:9
+got del_client for 0:11
+got del_client for 0:11
+got del_client for 0:11
+got del_client for 0:11
+got del_client for 0:11
+got del_client for 0:11
+got del_client for 0:11
+got del_client for 0:11
+got del_client for 0:11
+got del_client for 0:11
+got del_client for 0:12
+got del_client for 0:12
+got del_client for 0:12
+got del_client for 0:12
+got del_client for 0:12
+got del_client for 0:12
+got del_client for 0:12
+got del_client for 0:12
+got del_client for 0:12
+got del_client for 0:12
+got del_client for 0:13
+got del_client for 0:13
+got del_client for 0:13
+got del_client for 0:13
+got del_client for 0:13
+got del_client for 0:13
+got del_client for 0:13
+got del_client for 0:13
+got del_client for 0:13
+got del_client for 0:13
+got del_client for 0:14
+got del_client for 0:14
+got del_client for 0:14
+got del_client for 0:14
+got del_client for 0:14
+got del_client for 0:14
+got del_client for 0:14
+got del_client for 0:14
+got del_client for 0:14
+got del_client for 0:14
+write request for /readwrite/server_check.txt (octet) from 0:29
+got del_client for 1:16405
+got del_client for 1:16405
+got del_client for 1:16405
+got del_client for 1:16405
+got del_client for 1:16405
+got del_client for 1:16405
+got del_client for 1:16405
+got del_client for 1:16405
+got del_client for 1:16405
+got del_client for 1:16405
+got del_client for 0:29
+got del_client for 0:29
+got del_client for 0:29
+got del_client for 0:29
+got del_client for 0:29
+got del_client for 0:29
+got del_client for 0:29
+got del_client for 0:29
+got del_client for 0:29
+got del_client for 0:29
+read request for /readwrite/ota_firewall/ruleset (mode: octet, rsize: 0, seek: 0) from 0:30
+tqftpserv: failed to open ota_firewall/ruleset: No such file or directory
+unable to open /readwrite/ota_firewall/ruleset (2), reject
+got del_client for 1:16406
+got del_client for 1:16406
+got del_client for 1:16406
+got del_client for 1:16406
+got del_client for 1:16406
+got del_client for 1:16406
+got del_client for 1:16406
+got del_client for 1:16406
+got del_client for 1:16406
+got del_client for 1:16406
+got del_client for 0:30
+got del_client for 0:30
+got del_client for 0:30
+got del_client for 0:30
+got del_client for 0:30
+got del_client for 0:30
+got del_client for 0:30
+got del_client for 0:30
+got del_client for 0:30
+got del_client for 0:30
+read request for /readwrite/ota_firewall/ruleset (mode: octet, rsize: 0, seek: 0) from 0:31
+tqftpserv: failed to open ota_firewall/ruleset: No such file or directory
+unable to open /readwrite/ota_firewall/ruleset (2), reject
+got del_client for 1:16407
+got del_client for 1:16407
+got del_client for 1:16407
+got del_client for 1:16407
+got del_client for 1:16407
+got del_client for 1:16407
+got del_client for 1:16407
+got del_client for 1:16407
+got del_client for 1:16407
+got del_client for 1:16407
+got del_client for 0:31
+got del_client for 0:31
+got del_client for 0:31
+got del_client for 0:31
+got del_client for 0:31
+got del_client for 0:31
+got del_client for 0:31
+got del_client for 0:31
+got del_client for 0:31
+got del_client for 0:31
+read request for /readonly/firmware/image/modem_pr/so/848_0_0.mbn (mode: octet, rsize: 0, seek: 0) from 0:32
+read request for /readonly/firmware/image/modem_pr/so/848_0_0.mbn (mode: octet, rsize: 52, seek: 0) from 0:33
+got del_client for 0:32
+got del_client for 0:32
+got del_client for 0:32
+got del_client for 0:32
+got del_client for 0:32
+got del_client for 0:32
+got del_client for 0:32
+got del_client for 0:32
+got del_client for 0:32
+got del_client for 0:32
+got del_client for 1:16408
+got del_client for 1:16408
+got del_client for 1:16408
+got del_client for 1:16408
+got del_client for 1:16408
+got del_client for 1:16408
+got del_client for 1:16408
+got del_client for 1:16408
+got del_client for 1:16408
+got del_client for 1:16408
+Got ack for 0 from 0:33
+Sending 56 bytes of DATA to 0:33
+Sent block 1 of 56 to 0:33
+Got ack for 1 from 0:33
+got del_client for 1:16409
+got del_client for 1:16409
+got del_client for 1:16409
+got del_client for 1:16409
+got del_client for 1:16409
+got del_client for 1:16409
+got del_client for 1:16409
+got del_client for 1:16409
+got del_client for 1:16409
+got del_client for 1:16409
+got del_client for 0:33
+got del_client for 0:33
+got del_client for 0:33
+got del_client for 0:33
+got del_client for 0:33
+got del_client for 0:33
+got del_client for 0:33
+got del_client for 0:33
+got del_client for 0:33
+got del_client for 0:33
+read request for /readonly/firmware/image/modem_pr/so/848_0_0.mbn (mode: octet, rsize: 160, seek: 52) from 0:34
+Got ack for 0 from 0:34
+Sending 164 bytes of DATA to 0:34
+Sent block 1 of 164 to 0:34
+Got ack for 1 from 0:34
+got del_client for 1:16410
+got del_client for 1:16410
+got del_client for 1:16410
+got del_client for 1:16410
+got del_client for 1:16410
+got del_client for 1:16410
+got del_client for 1:16410
+got del_client for 1:16410
+got del_client for 1:16410
+got del_client for 1:16410
+got del_client for 0:34
+got del_client for 0:34
+got del_client for 0:34
+got del_client for 0:34
+got del_client for 0:34
+got del_client for 0:34
+got del_client for 0:34
+got del_client for 0:34
+got del_client for 0:34
+got del_client for 0:34
+read request for /readonly/firmware/image/modem_pr/so/848_0_0.mbn (mode: octet, rsize: 3512, seek: 4096) from 0:35
+Got ack for 0 from 0:35
+Sending 3516 bytes of DATA to 0:35
+Sent block 1 of 3516 to 0:35
+Got ack for 1 from 0:35
+got del_client for 1:16411
+got del_client for 1:16411
+got del_client for 1:16411
+got del_client for 1:16411
+got del_client for 1:16411
+got del_client for 1:16411
+got del_client for 1:16411
+got del_client for 1:16411
+got del_client for 1:16411
+got del_client for 1:16411
+got del_client for 0:35
+got del_client for 0:35
+got del_client for 0:35
+got del_client for 0:35
+got del_client for 0:35
+got del_client for 0:35
+got del_client for 0:35
+got del_client for 0:35
+got del_client for 0:35
+got del_client for 0:35
+read request for /readonly/firmware/image/modem_pr/so/848_0_0.mbn (mode: octet, rsize: 4096, seek: 0) from 0:37
+Got ack for 0 from 0:37
+Sending 4100 bytes of DATA to 0:37
+Sent block 1 of 4100 to 0:37
+Got ack for 1 from 0:37
+read request for /readonly/firmware/image/modem_pr/so/848_0_0.mbn (mode: octet, rsize: 250361, seek: 8192) from 0:38
+got del_client for 1:16412
+got del_client for 1:16412
+got del_client for 1:16412
+got del_client for 1:16412
+got del_client for 1:16412
+got del_client for 1:16412
+got del_client for 1:16412
+got del_client for 1:16412
+got del_client for 1:16412
+got del_client for 1:16412
+got del_client for 0:37
+got del_client for 0:37
+got del_client for 0:37
+got del_client for 0:37
+got del_client for 0:37
+got del_client for 0:37
+got del_client for 0:37
+got del_client for 0:37
+got del_client for 0:37
+got del_client for 0:37
+Got ack for 0 from 0:38
+Sending 7684 bytes of DATA to 0:38
+Sent block 1 of 7684 to 0:38
+Sending 7684 bytes of DATA to 0:38
+Sent block 2 of 7684 to 0:38
+Sending 7684 bytes of DATA to 0:38
+Sent block 3 of 7684 to 0:38
+Sending 7684 bytes of DATA to 0:38
+Sent block 4 of 7684 to 0:38
+Sending 7684 bytes of DATA to 0:38
+Sent block 5 of 7684 to 0:38
+Sending 7684 bytes of DATA to 0:38
+Sent block 6 of 7684 to 0:38
+Sending 7684 bytes of DATA to 0:38
+Sent block 7 of 7684 to 0:38
+Sending 7684 bytes of DATA to 0:38
+Sent block 8 of 7684 to 0:38
+Sending 7684 bytes of DATA to 0:38
+Sent block 9 of 7684 to 0:38
+Sending 7684 bytes of DATA to 0:38
+Sent block 10 of 7684 to 0:38
+Got ack for 10 from 0:38
+Sending 7684 bytes of DATA to 0:38
+Sent block 11 of 7684 to 0:38
+Sending 7684 bytes of DATA to 0:38
+Sent block 12 of 7684 to 0:38
+Sending 7684 bytes of DATA to 0:38
+Sent block 13 of 7684 to 0:38
+Sending 7684 bytes of DATA to 0:38
+Sent block 14 of 7684 to 0:38
+Sending 7684 bytes of DATA to 0:38
+Sent block 15 of 7684 to 0:38
+Sending 7684 bytes of DATA to 0:38
+Sent block 16 of 7684 to 0:38
+Sending 7684 bytes of DATA to 0:38
+Sent block 17 of 7684 to 0:38
+Sending 7684 bytes of DATA to 0:38
+Sent block 18 of 7684 to 0:38
+Sending 7684 bytes of DATA to 0:38
+Sent block 19 of 7684 to 0:38
+Sending 7684 bytes of DATA to 0:38
+Sent block 20 of 7684 to 0:38
+Got ack for 20 from 0:38
+Sending 7684 bytes of DATA to 0:38
+Sent block 21 of 7684 to 0:38
+Sending 7684 bytes of DATA to 0:38
+Sent block 22 of 7684 to 0:38
+Sending 7684 bytes of DATA to 0:38
+Sent block 23 of 7684 to 0:38
+Sending 7684 bytes of DATA to 0:38
+Sent block 24 of 7684 to 0:38
+Sending 7684 bytes of DATA to 0:38
+Sent block 25 of 7684 to 0:38
+Sending 7684 bytes of DATA to 0:38
+Sent block 26 of 7684 to 0:38
+Sending 7684 bytes of DATA to 0:38
+Sent block 27 of 7684 to 0:38
+Sending 7684 bytes of DATA to 0:38
+Sent block 28 of 7684 to 0:38
+Sending 7684 bytes of DATA to 0:38
+Sent block 29 of 7684 to 0:38
+Sending 7684 bytes of DATA to 0:38
+Sent block 30 of 7684 to 0:38
+Got ack for 30 from 0:38
+Sending 7684 bytes of DATA to 0:38
+Sent block 31 of 7684 to 0:38
+Sending 7684 bytes of DATA to 0:38
+Sent block 32 of 7684 to 0:38
+Sending 4605 bytes of DATA to 0:38
+Sent block 33 of 4605 to 0:38
+Got ack for 33 from 0:38
+got del_client for 1:16413
+got del_client for 1:16413
+got del_client for 1:16413
+got del_client for 1:16413
+got del_client for 1:16413
+got del_client for 1:16413
+got del_client for 1:16413
+got del_client for 1:16413
+got del_client for 1:16413
+got del_client for 1:16413
+got del_client for 0:38
+got del_client for 0:38
+got del_client for 0:38
+got del_client for 0:38
+got del_client for 0:38
+got del_client for 0:38
+got del_client for 0:38
+got del_client for 0:38
+got del_client for 0:38
+got del_client for 0:38
+read request for /readonly/firmware/image/modem_pr/so/848_0_0.mbn (mode: octet, rsize: 213864, seek: 262144) from 0:41
+Got ack for 0 from 0:41
+Sending 7684 bytes of DATA to 0:41
+Sent block 1 of 7684 to 0:41
+Sending 7684 bytes of DATA to 0:41
+Sent block 2 of 7684 to 0:41
+Sending 7684 bytes of DATA to 0:41
+Sent block 3 of 7684 to 0:41
+Sending 7684 bytes of DATA to 0:41
+Sent block 4 of 7684 to 0:41
+Sending 7684 bytes of DATA to 0:41
+Sent block 5 of 7684 to 0:41
+Sending 7684 bytes of DATA to 0:41
+Sent block 6 of 7684 to 0:41
+Sending 7684 bytes of DATA to 0:41
+Sent block 7 of 7684 to 0:41
+Sending 7684 bytes of DATA to 0:41
+Sent block 8 of 7684 to 0:41
+Sending 7684 bytes of DATA to 0:41
+Sent block 9 of 7684 to 0:41
+Sending 7684 bytes of DATA to 0:41
+Sent block 10 of 7684 to 0:41
+Got ack for 10 from 0:41
+Sending 7684 bytes of DATA to 0:41
+Sent block 11 of 7684 to 0:41
+Sending 7684 bytes of DATA to 0:41
+Sent block 12 of 7684 to 0:41
+Sending 7684 bytes of DATA to 0:41
+Sent block 13 of 7684 to 0:41
+Sending 7684 bytes of DATA to 0:41
+Sent block 14 of 7684 to 0:41
+Sending 7684 bytes of DATA to 0:41
+Sent block 15 of 7684 to 0:41
+Sending 7684 bytes of DATA to 0:41
+Sent block 16 of 7684 to 0:41
+Sending 7684 bytes of DATA to 0:41
+Sent block 17 of 7684 to 0:41
+Sending 7684 bytes of DATA to 0:41
+Sent block 18 of 7684 to 0:41
+Sending 7684 bytes of DATA to 0:41
+Sent block 19 of 7684 to 0:41
+Sending 7684 bytes of DATA to 0:41
+Sent block 20 of 7684 to 0:41
+Got ack for 20 from 0:41
+Sending 7684 bytes of DATA to 0:41
+Sent block 21 of 7684 to 0:41
+Sending 7684 bytes of DATA to 0:41
+Sent block 22 of 7684 to 0:41
+Sending 7684 bytes of DATA to 0:41
+Sent block 23 of 7684 to 0:41
+Sending 7684 bytes of DATA to 0:41
+Sent block 24 of 7684 to 0:41
+Sending 7684 bytes of DATA to 0:41
+Sent block 25 of 7684 to 0:41
+Sending 7684 bytes of DATA to 0:41
+Sent block 26 of 7684 to 0:41
+Sending 7684 bytes of DATA to 0:41
+Sent block 27 of 7684 to 0:41
+Sending 6508 bytes of DATA to 0:41
+Sent block 28 of 6508 to 0:41
+Got ack for 28 from 0:41
+got del_client for 1:16414
+got del_client for 1:16414
+got del_client for 1:16414
+got del_client for 1:16414
+got del_client for 1:16414
+got del_client for 1:16414
+got del_client for 1:16414
+got del_client for 1:16414
+got del_client for 1:16414
+got del_client for 1:16414
+got del_client for 0:41
+got del_client for 0:41
+got del_client for 0:41
+got del_client for 0:41
+got del_client for 0:41
+got del_client for 0:41
+got del_client for 0:41
+got del_client for 0:41
+got del_client for 0:41
+got del_client for 0:41
+got del_client for 1:16415
+got del_client for 1:16415
+got del_client for 1:16415
+got del_client for 1:16415
+got del_client for 1:16415
+got del_client for 1:16415
+got del_client for 1:16415
+got del_client for 1:16415
+got del_client for 1:16415
+got del_client for 1:16415
+got del_client for 1:16416
+got del_client for 1:16416
+got del_client for 1:16416
+got del_client for 1:16416
+got del_client for 1:16416
+got del_client for 1:16416
+got del_client for 1:16416
+got del_client for 1:16416
+got del_client for 1:16416
+got del_client for 1:16416
+got del_client for 1:16417
+got del_client for 1:16417
+got del_client for 1:16417
+got del_client for 1:16417
+got del_client for 1:16417
+got del_client for 1:16417
+got del_client for 1:16417
+got del_client for 1:16417
+got del_client for 1:16417
+got del_client for 1:16417
+got del_client for 1:16418
+got del_client for 1:16418
+got del_client for 1:16418
+got del_client for 1:16418
+got del_client for 1:16418
+got del_client for 1:16418
+got del_client for 1:16418
+got del_client for 1:16418
+got del_client for 1:16418
+got del_client for 1:16418
+read request for /readwrite/mcfg.tmp (mode: octet, rsize: 0, seek: 0) from 0:89
+tqftpserv: failed to open mcfg.tmp: No such file or directory
+unable to open /readwrite/mcfg.tmp (2), reject
+got del_client for 1:16419
+got del_client for 1:16419
+got del_client for 1:16419
+got del_client for 1:16419
+got del_client for 1:16419
+got del_client for 1:16419
+got del_client for 1:16419
+got del_client for 1:16419
+got del_client for 1:16419
+got del_client for 1:16419
+got del_client for 0:89
+got del_client for 0:89
+got del_client for 0:89
+got del_client for 0:89
+got del_client for 0:89
+got del_client for 0:89
+got del_client for 0:89
+got del_client for 0:89
+got del_client for 0:89
+got del_client for 0:89
+write request for /readwrite/mcfg.tmp (octet) from 0:90
+got del_client for 1:16420
+got del_client for 1:16420
+got del_client for 1:16420
+got del_client for 1:16420
+got del_client for 1:16420
+got del_client for 1:16420
+got del_client for 1:16420
+got del_client for 1:16420
+got del_client for 1:16420
+got del_client for 1:16420
+got del_client for 0:90
+got del_client for 0:90
+got del_client for 0:90
+got del_client for 0:90
+got del_client for 0:90
+got del_client for 0:90
+got del_client for 0:90
+got del_client for 0:90
+got del_client for 0:90
+got del_client for 0:90
+write request for /readwrite/mcfg.tmp (octet) from 0:91
+got del_client for 1:16421
+got del_client for 1:16421
+got del_client for 1:16421
+got del_client for 1:16421
+got del_client for 1:16421
+got del_client for 1:16421
+got del_client for 1:16421
+got del_client for 1:16421
+got del_client for 1:16421
+got del_client for 1:16421
+got del_client for 0:91
+got del_client for 0:91
+got del_client for 0:91
+got del_client for 0:91
+got del_client for 0:91
+got del_client for 0:91
+got del_client for 0:91
+got del_client for 0:91
+got del_client for 0:91
+got del_client for 0:91
+read request for /readwrite/mcfg.tmp (mode: octet, rsize: 0, seek: 0) from 0:92
+got del_client for 1:16422
+got del_client for 1:16422
+got del_client for 1:16422
+got del_client for 1:16422
+got del_client for 1:16422
+got del_client for 1:16422
+got del_client for 1:16422
+got del_client for 1:16422
+got del_client for 1:16422
+got del_client for 1:16422
+got del_client for 0:92
+got del_client for 0:92
+got del_client for 0:92
+got del_client for 0:92
+got del_client for 0:92
+got del_client for 0:92
+got del_client for 0:92
+got del_client for 0:92
+got del_client for 0:92
+got del_client for 0:92
+write request for /readwrite/mcfg.tmp (octet) from 0:93
+Ignoring unknown option 'unlink' with value '0'
+got del_client for 0:93
+got del_client for 0:93
+got del_client for 0:93
+got del_client for 0:93
+got del_client for 0:93
+got del_client for 0:93
+got del_client for 0:93
+got del_client for 0:93
+got del_client for 0:93
+got del_client for 0:93
+read request for /readonly/firmware/image/modem_pr/mcfg/configs/mcfg_hw/mbn_hw.dig (mode: octet, rsize: 0, seek: 0) from 0:94
+got del_client for 1:16424
+got del_client for 1:16424
+got del_client for 1:16424
+got del_client for 1:16424
+got del_client for 1:16424
+got del_client for 1:16424
+got del_client for 1:16424
+got del_client for 1:16424
+got del_client for 1:16424
+got del_client for 1:16424
+got del_client for 0:94
+got del_client for 0:94
+got del_client for 0:94
+got del_client for 0:94
+got del_client for 0:94
+got del_client for 0:94
+got del_client for 0:94
+got del_client for 0:94
+got del_client for 0:94
+got del_client for 0:94
+read request for /readonly/firmware/image/modem_pr/mcfg/configs/mcfg_hw/mbn_hw.dig (mode: octet, rsize: 32, seek: 0) from 0:95
+Got ack for 0 from 0:95
+Sending 36 bytes of DATA to 0:95
+Sent block 1 of 36 to 0:95
+Got ack for 1 from 0:95
+got del_client for 1:16425
+got del_client for 1:16425
+got del_client for 1:16425
+got del_client for 1:16425
+got del_client for 1:16425
+got del_client for 1:16425
+got del_client for 1:16425
+got del_client for 1:16425
+got del_client for 1:16425
+got del_client for 1:16425
+got del_client for 0:95
+got del_client for 0:95
+got del_client for 0:95
+got del_client for 0:95
+got del_client for 0:95
+got del_client for 0:95
+got del_client for 0:95
+got del_client for 0:95
+got del_client for 0:95
+got del_client for 0:95
+read request for /readonly/firmware/image/modem_pr/mcfg/configs/mcfg_sw/mbn_sw.dig (mode: octet, rsize: 0, seek: 0) from 0:96
+got del_client for 1:16426
+got del_client for 1:16426
+got del_client for 1:16426
+got del_client for 1:16426
+got del_client for 1:16426
+got del_client for 1:16426
+got del_client for 1:16426
+got del_client for 1:16426
+got del_client for 1:16426
+got del_client for 1:16426
+got del_client for 0:96
+got del_client for 0:96
+got del_client for 0:96
+got del_client for 0:96
+got del_client for 0:96
+got del_client for 0:96
+got del_client for 0:96
+got del_client for 0:96
+got del_client for 0:96
+got del_client for 0:96
+read request for /readonly/firmware/image/modem_pr/mcfg/configs/mcfg_sw/mbn_sw.dig (mode: octet, rsize: 32, seek: 0) from 0:97
+Got ack for 0 from 0:97
+Sending 36 bytes of DATA to 0:97
+Sent block 1 of 36 to 0:97
+Got ack for 1 from 0:97
+got del_client for 1:16427
+got del_client for 1:16427
+got del_client for 1:16427
+got del_client for 1:16427
+got del_client for 1:16427
+got del_client for 1:16427
+got del_client for 1:16427
+got del_client for 1:16427
+got del_client for 1:16427
+got del_client for 1:16427
+got del_client for 0:97
+got del_client for 0:97
+got del_client for 0:97
+got del_client for 0:97
+got del_client for 0:97
+got del_client for 0:97
+got del_client for 0:97
+got del_client for 0:97
+got del_client for 0:97
+got del_client for 0:97
+got del_client for 1:16428
+got del_client for 1:16428
+got del_client for 1:16428
+got del_client for 1:16428
+got del_client for 1:16428
+got del_client for 1:16428
+got del_client for 1:16428
+got del_client for 1:16428
+got del_client for 1:16428
+got del_client for 1:16428
+got del_client for 1:16429
+got del_client for 1:16429
+got del_client for 1:16429
+got del_client for 1:16429
+got del_client for 1:16429
+got del_client for 1:16429
+got del_client for 1:16429
+got del_client for 1:16429
+got del_client for 1:16429
+got del_client for 1:16429
+got del_client for 1:16430
+got del_client for 1:16430
+got del_client for 1:16430
+got del_client for 1:16430
+got del_client for 1:16430
+got del_client for 1:16430
+got del_client for 1:16430
+got del_client for 1:16430
+got del_client for 1:16430
+got del_client for 1:16430
+got del_client for 1:16431
+got del_client for 1:16431
+got del_client for 1:16431
+got del_client for 1:16431
+got del_client for 1:16431
+got del_client for 1:16431
+got del_client for 1:16431
+got del_client for 1:16431
+got del_client for 1:16431
+got del_client for 1:16431
+got del_client for 1:16432
+got del_client for 1:16432
+got del_client for 1:16432
+got del_client for 1:16432
+got del_client for 1:16432
+got del_client for 1:16432
+got del_client for 1:16432
+got del_client for 1:16432
+got del_client for 1:16432
+got del_client for 1:16432
+got del_client for 1:16433
+got del_client for 1:16433
+got del_client for 1:16433
+got del_client for 1:16433
+got del_client for 1:16433
+got del_client for 1:16433
+got del_client for 1:16433
+got del_client for 1:16433
+got del_client for 1:16433
+got del_client for 1:16433
+got del_client for 1:16434
+got del_client for 1:16434
+got del_client for 1:16434
+got del_client for 1:16434
+got del_client for 1:16434
+got del_client for 1:16434
+got del_client for 1:16434
+got del_client for 1:16434
+got del_client for 1:16434
+got del_client for 1:16434
+got del_client for 1:16435
+got del_client for 1:16435
+got del_client for 1:16435
+got del_client for 1:16435
+got del_client for 1:16435
+got del_client for 1:16435
+got del_client for 1:16435
+got del_client for 1:16435
+got del_client for 1:16435
+got del_client for 1:16435
+got del_client for 1:16436
+got del_client for 1:16436
+got del_client for 1:16436
+got del_client for 1:16436
+got del_client for 1:16436
+got del_client for 1:16436
+got del_client for 1:16436
+got del_client for 1:16436
+got del_client for 1:16436
+got del_client for 1:16436
+got del_client for 1:16437
+got del_client for 1:16437
+got del_client for 1:16437
+got del_client for 1:16437
+got del_client for 1:16437
+got del_client for 1:16437
+got del_client for 1:16437
+got del_client for 1:16437
+got del_client for 1:16437
+got del_client for 1:16437
+got del_client for 1:16438
+got del_client for 1:16438
+got del_client for 1:16438
+got del_client for 1:16438
+got del_client for 1:16438
+got del_client for 1:16438
+got del_client for 1:16438
+got del_client for 1:16438
+got del_client for 1:16438
+got del_client for 1:16438
+got del_client for 1:16439
+got del_client for 1:16439
+got del_client for 1:16439
+got del_client for 1:16439
+got del_client for 1:16439
+got del_client for 1:16439
+got del_client for 1:16439
+got del_client for 1:16439
+got del_client for 1:16439
+got del_client for 1:16439
+got del_client for 1:16440
+got del_client for 1:16440
+got del_client for 1:16440
+got del_client for 1:16440
+got del_client for 1:16440
+got del_client for 1:16440
+got del_client for 1:16440
+got del_client for 1:16440
+got del_client for 1:16440
+got del_client for 1:16440
+got del_client for 1:16441
+got del_client for 1:16441
+got del_client for 1:16441
+got del_client for 1:16441
+got del_client for 1:16441
+got del_client for 1:16441
+got del_client for 1:16441
+got del_client for 1:16441
+got del_client for 1:16441
+got del_client for 1:16441
+got del_client for 1:16442
+got del_client for 1:16442
+got del_client for 1:16442
+got del_client for 1:16442
+got del_client for 1:16442
+got del_client for 1:16442
+got del_client for 1:16442
+got del_client for 1:16442
+got del_client for 1:16442
+got del_client for 1:16442
+got del_client for 1:16443
+got del_client for 1:16443
+got del_client for 1:16443
+got del_client for 1:16443
+got del_client for 1:16443
+got del_client for 1:16443
+got del_client for 1:16443
+got del_client for 1:16443
+got del_client for 1:16443
+got del_client for 1:16443
+got del_client for 1:16444
+got del_client for 1:16444
+got del_client for 1:16444
+got del_client for 1:16444
+got del_client for 1:16444
+got del_client for 1:16444
+got del_client for 1:16444
+got del_client for 1:16444
+got del_client for 1:16444
+got del_client for 1:16444
+got del_client for 1:16445
+got del_client for 1:16445
+got del_client for 1:16445
+got del_client for 1:16445
+got del_client for 1:16445
+got del_client for 1:16445
+got del_client for 1:16445
+got del_client for 1:16445
+got del_client for 1:16445
+got del_client for 1:16445
+got del_client for 1:16446
+got del_client for 1:16446
+got del_client for 1:16446
+got del_client for 1:16446
+got del_client for 1:16446
+got del_client for 1:16446
+got del_client for 1:16446
+got del_client for 1:16446
+got del_client for 1:16446
+got del_client for 1:16446
+got del_client for 1:16447
+got del_client for 1:16447
+got del_client for 1:16447
+got del_client for 1:16447
+got del_client for 1:16447
+got del_client for 1:16447
+got del_client for 1:16447
+got del_client for 1:16447
+got del_client for 1:16447
+got del_client for 1:16447
+got del_client for 1:16448
+got del_client for 1:16448
+got del_client for 1:16448
+got del_client for 1:16448
+got del_client for 1:16448
+got del_client for 1:16448
+got del_client for 1:16448
+got del_client for 1:16448
+got del_client for 1:16448
+got del_client for 1:16448
+got del_client for 1:16449
+got del_client for 1:16449
+got del_client for 1:16449
+got del_client for 1:16449
+got del_client for 1:16449
+got del_client for 1:16449
+got del_client for 1:16449
+got del_client for 1:16449
+got del_client for 1:16449
+got del_client for 1:16449
+got del_client for 1:16450
+got del_client for 1:16450
+got del_client for 1:16450
+got del_client for 1:16450
+got del_client for 1:16450
+got del_client for 1:16450
+got del_client for 1:16450
+got del_client for 1:16450
+got del_client for 1:16450
+got del_client for 1:16450
+got del_client for 1:16451
+got del_client for 1:16451
+got del_client for 1:16451
+got del_client for 1:16451
+got del_client for 1:16451
+got del_client for 1:16451
+got del_client for 1:16451
+got del_client for 1:16451
+got del_client for 1:16451
+got del_client for 1:16451
+got del_client for 0:88
+got del_client for 0:88
+got del_client for 0:88
+got del_client for 0:88
+got del_client for 0:88
+got del_client for 0:88
+got del_client for 0:88
+got del_client for 0:88
+got del_client for 0:88
+got del_client for 0:88
+got del_client for 0:53
+got del_client for 0:53
+got del_client for 0:53
+got del_client for 0:53
+got del_client for 0:53
+got del_client for 0:53
+got del_client for 0:53
+got del_client for 0:53
+got del_client for 0:53
+got del_client for 0:53
+got del_client for 1:16452
+got del_client for 1:16452
+got del_client for 1:16452
+got del_client for 1:16452
+got del_client for 1:16452
+got del_client for 1:16452
+got del_client for 1:16452
+got del_client for 1:16452
+got del_client for 1:16452
+got del_client for 1:16452
+got del_client for 0:99
+got del_client for 0:99
+got del_client for 0:99
+got del_client for 0:99
+got del_client for 0:99
+got del_client for 0:99
+got del_client for 0:99
+got del_client for 0:99
+got del_client for 0:99
+got del_client for 0:99
+got bye for 0
+got bye for 0
+got bye for 0
+got bye for 0
+got bye for 0
+got bye for 0
+got bye for 0
+got bye for 0
+got bye for 0
+got bye for 0
+got del_client for 1:16453
+got del_client for 1:16453
+got del_client for 1:16453
+got del_client for 1:16453
+got del_client for 1:16453
+got del_client for 1:16453
+got del_client for 1:16453
+got del_client for 1:16453
+got del_client for 1:16453
+got del_client for 1:16453
+got del_client for 1:16454
+got del_client for 1:16454
+got del_client for 1:16454
+got del_client for 1:16454
+got del_client for 1:16454
+got del_client for 1:16454
+got del_client for 1:16454
+got del_client for 1:16454
+got del_client for 1:16454
+got del_client for 1:16454
+got del_client for 0:8
+got del_client for 0:8
+got del_client for 0:8
+got del_client for 0:8
+got del_client for 0:8
+got del_client for 0:8
+got del_client for 0:8
+got del_client for 0:8
+got del_client for 0:8
+got del_client for 0:8
+got del_client for 0:9
+got del_client for 0:9
+got del_client for 0:9
+got del_client for 0:9
+got del_client for 0:9
+got del_client for 0:9
+got del_client for 0:9
+got del_client for 0:9
+got del_client for 0:9
+got del_client for 0:9
+got del_client for 0:11
+got del_client for 0:11
+got del_client for 0:11
+got del_client for 0:11
+got del_client for 0:11
+got del_client for 0:11
+got del_client for 0:11
+got del_client for 0:11
+got del_client for 0:11
+got del_client for 0:11
+got del_client for 0:12
+got del_client for 0:12
+got del_client for 0:12
+got del_client for 0:12
+got del_client for 0:12
+got del_client for 0:12
+got del_client for 0:12
+got del_client for 0:12
+got del_client for 0:12
+got del_client for 0:12
+got del_client for 0:13
+got del_client for 0:13
+got del_client for 0:13
+got del_client for 0:13
+got del_client for 0:13
+got del_client for 0:13
+got del_client for 0:13
+got del_client for 0:13
+got del_client for 0:13
+got del_client for 0:13
+got del_client for 0:14
+got del_client for 0:14
+got del_client for 0:14
+got del_client for 0:14
+got del_client for 0:14
+got del_client for 0:14
+got del_client for 0:14
+got del_client for 0:14
+got del_client for 0:14
+got del_client for 0:14
+write request for /readwrite/server_check.txt (octet) from 0:29
+got del_client for 1:16455
+got del_client for 1:16455
+got del_client for 1:16455
+got del_client for 1:16455
+got del_client for 1:16455
+got del_client for 1:16455
+got del_client for 1:16455
+got del_client for 1:16455
+got del_client for 1:16455
+got del_client for 1:16455
+got del_client for 0:29
+got del_client for 0:29
+got del_client for 0:29
+got del_client for 0:29
+got del_client for 0:29
+got del_client for 0:29
+got del_client for 0:29
+got del_client for 0:29
+got del_client for 0:29
+got del_client for 0:29
+read request for /readwrite/ota_firewall/ruleset (mode: octet, rsize: 0, seek: 0) from 0:30
+tqftpserv: failed to open ota_firewall/ruleset: No such file or directory
+unable to open /readwrite/ota_firewall/ruleset (2), reject
+got del_client for 1:16456
+got del_client for 1:16456
+got del_client for 1:16456
+got del_client for 1:16456
+got del_client for 1:16456
+got del_client for 1:16456
+got del_client for 1:16456
+got del_client for 1:16456
+got del_client for 1:16456
+got del_client for 1:16456
+got del_client for 0:30
+got del_client for 0:30
+got del_client for 0:30
+got del_client for 0:30
+got del_client for 0:30
+got del_client for 0:30
+got del_client for 0:30
+got del_client for 0:30
+got del_client for 0:30
+got del_client for 0:30
+read request for /readwrite/ota_firewall/ruleset (mode: octet, rsize: 0, seek: 0) from 0:31
+tqftpserv: failed to open ota_firewall/ruleset: No such file or directory
+unable to open /readwrite/ota_firewall/ruleset (2), reject
+got del_client for 1:16457
+got del_client for 1:16457
+got del_client for 1:16457
+got del_client for 1:16457
+got del_client for 1:16457
+got del_client for 1:16457
+got del_client for 1:16457
+got del_client for 1:16457
+got del_client for 1:16457
+got del_client for 1:16457
+got del_client for 0:31
+got del_client for 0:31
+got del_client for 0:31
+got del_client for 0:31
+got del_client for 0:31
+got del_client for 0:31
+got del_client for 0:31
+got del_client for 0:31
+got del_client for 0:31
+got del_client for 0:31
+read request for /readonly/firmware/image/modem_pr/so/848_0_0.mbn (mode: octet, rsize: 0, seek: 0) from 0:32
+read request for /readonly/firmware/image/modem_pr/so/848_0_0.mbn (mode: octet, rsize: 52, seek: 0) from 0:33
+got del_client for 1:16458
+got del_client for 1:16458
+got del_client for 1:16458
+got del_client for 1:16458
+got del_client for 1:16458
+got del_client for 1:16458
+got del_client for 1:16458
+got del_client for 1:16458
+got del_client for 1:16458
+got del_client for 1:16458
+got del_client for 0:32
+got del_client for 0:32
+got del_client for 0:32
+got del_client for 0:32
+got del_client for 0:32
+got del_client for 0:32
+got del_client for 0:32
+got del_client for 0:32
+got del_client for 0:32
+got del_client for 0:32
+Got ack for 0 from 0:33
+Sending 56 bytes of DATA to 0:33
+Sent block 1 of 56 to 0:33
+Got ack for 1 from 0:33
+got del_client for 1:16459
+got del_client for 1:16459
+got del_client for 1:16459
+got del_client for 1:16459
+got del_client for 1:16459
+got del_client for 1:16459
+got del_client for 1:16459
+got del_client for 1:16459
+got del_client for 1:16459
+got del_client for 1:16459
+read request for /readonly/firmware/image/modem_pr/so/848_0_0.mbn (mode: octet, rsize: 160, seek: 52) from 0:35
+got del_client for 0:33
+got del_client for 0:33
+got del_client for 0:33
+got del_client for 0:33
+got del_client for 0:33
+got del_client for 0:33
+got del_client for 0:33
+got del_client for 0:33
+got del_client for 0:33
+got del_client for 0:33
+Got ack for 0 from 0:35
+Sending 164 bytes of DATA to 0:35
+Sent block 1 of 164 to 0:35
+Got ack for 1 from 0:35
+got del_client for 1:16460
+got del_client for 1:16460
+got del_client for 1:16460
+got del_client for 1:16460
+got del_client for 1:16460
+got del_client for 1:16460
+got del_client for 1:16460
+got del_client for 1:16460
+got del_client for 1:16460
+got del_client for 1:16460
+read request for /readonly/firmware/image/modem_pr/so/848_0_0.mbn (mode: octet, rsize: 3512, seek: 4096) from 0:36
+got del_client for 0:35
+got del_client for 0:35
+got del_client for 0:35
+got del_client for 0:35
+got del_client for 0:35
+got del_client for 0:35
+got del_client for 0:35
+got del_client for 0:35
+got del_client for 0:35
+got del_client for 0:35
+Got ack for 0 from 0:36
+Sending 3516 bytes of DATA to 0:36
+Sent block 1 of 3516 to 0:36
+Got ack for 1 from 0:36
+got del_client for 1:16461
+got del_client for 1:16461
+got del_client for 1:16461
+got del_client for 1:16461
+got del_client for 1:16461
+got del_client for 1:16461
+got del_client for 1:16461
+got del_client for 1:16461
+got del_client for 1:16461
+got del_client for 1:16461
+got del_client for 0:36
+got del_client for 0:36
+got del_client for 0:36
+got del_client for 0:36
+got del_client for 0:36
+got del_client for 0:36
+got del_client for 0:36
+got del_client for 0:36
+got del_client for 0:36
+got del_client for 0:36
+read request for /readonly/firmware/image/modem_pr/so/848_0_0.mbn (mode: octet, rsize: 4096, seek: 0) from 0:37
+Got ack for 0 from 0:37
+Sending 4100 bytes of DATA to 0:37
+Sent block 1 of 4100 to 0:37
+Got ack for 1 from 0:37
+read request for /readonly/firmware/image/modem_pr/so/848_0_0.mbn (mode: octet, rsize: 250361, seek: 8192) from 0:38
+got del_client for 0:37
+got del_client for 0:37
+got del_client for 0:37
+got del_client for 0:37
+got del_client for 0:37
+got del_client for 0:37
+got del_client for 0:37
+got del_client for 0:37
+got del_client for 0:37
+got del_client for 0:37
+got del_client for 1:16462
+got del_client for 1:16462
+got del_client for 1:16462
+got del_client for 1:16462
+got del_client for 1:16462
+got del_client for 1:16462
+got del_client for 1:16462
+got del_client for 1:16462
+got del_client for 1:16462
+got del_client for 1:16462
+Got ack for 0 from 0:38
+Sending 7684 bytes of DATA to 0:38
+Sent block 1 of 7684 to 0:38
+Sending 7684 bytes of DATA to 0:38
+Sent block 2 of 7684 to 0:38
+Sending 7684 bytes of DATA to 0:38
+Sent block 3 of 7684 to 0:38
+Sending 7684 bytes of DATA to 0:38
+Sent block 4 of 7684 to 0:38
+Sending 7684 bytes of DATA to 0:38
+Sent block 5 of 7684 to 0:38
+Sending 7684 bytes of DATA to 0:38
+Sent block 6 of 7684 to 0:38
+Sending 7684 bytes of DATA to 0:38
+Sent block 7 of 7684 to 0:38
+Sending 7684 bytes of DATA to 0:38
+Sent block 8 of 7684 to 0:38
+Sending 7684 bytes of DATA to 0:38
+Sent block 9 of 7684 to 0:38
+Sending 7684 bytes of DATA to 0:38
+Sent block 10 of 7684 to 0:38
+Got ack for 10 from 0:38
+Sending 7684 bytes of DATA to 0:38
+Sent block 11 of 7684 to 0:38
+Sending 7684 bytes of DATA to 0:38
+Sent block 12 of 7684 to 0:38
+Sending 7684 bytes of DATA to 0:38
+Sent block 13 of 7684 to 0:38
+Sending 7684 bytes of DATA to 0:38
+Sent block 14 of 7684 to 0:38
+Sending 7684 bytes of DATA to 0:38
+Sent block 15 of 7684 to 0:38
+Sending 7684 bytes of DATA to 0:38
+Sent block 16 of 7684 to 0:38
+Sending 7684 bytes of DATA to 0:38
+Sent block 17 of 7684 to 0:38
+Sending 7684 bytes of DATA to 0:38
+Sent block 18 of 7684 to 0:38
+Sending 7684 bytes of DATA to 0:38
+Sent block 19 of 7684 to 0:38
+Sending 7684 bytes of DATA to 0:38
+Sent block 20 of 7684 to 0:38
+Got ack for 20 from 0:38
+Sending 7684 bytes of DATA to 0:38
+Sent block 21 of 7684 to 0:38
+Sending 7684 bytes of DATA to 0:38
+Sent block 22 of 7684 to 0:38
+Sending 7684 bytes of DATA to 0:38
+Sent block 23 of 7684 to 0:38
+Sending 7684 bytes of DATA to 0:38
+Sent block 24 of 7684 to 0:38
+Sending 7684 bytes of DATA to 0:38
+Sent block 25 of 7684 to 0:38
+Sending 7684 bytes of DATA to 0:38
+Sent block 26 of 7684 to 0:38
+Sending 7684 bytes of DATA to 0:38
+Sent block 27 of 7684 to 0:38
+Sending 7684 bytes of DATA to 0:38
+Sent block 28 of 7684 to 0:38
+Sending 7684 bytes of DATA to 0:38
+Sent block 29 of 7684 to 0:38
+Sending 7684 bytes of DATA to 0:38
+Sent block 30 of 7684 to 0:38
+Got ack for 30 from 0:38
+Sending 7684 bytes of DATA to 0:38
+Sent block 31 of 7684 to 0:38
+Sending 7684 bytes of DATA to 0:38
+Sent block 32 of 7684 to 0:38
+Sending 4605 bytes of DATA to 0:38
+Sent block 33 of 4605 to 0:38
+Got ack for 33 from 0:38
+got del_client for 1:16463
+got del_client for 1:16463
+got del_client for 1:16463
+got del_client for 1:16463
+got del_client for 1:16463
+got del_client for 1:16463
+got del_client for 1:16463
+got del_client for 1:16463
+got del_client for 1:16463
+got del_client for 1:16463
+got del_client for 0:38
+got del_client for 0:38
+got del_client for 0:38
+got del_client for 0:38
+got del_client for 0:38
+got del_client for 0:38
+got del_client for 0:38
+got del_client for 0:38
+got del_client for 0:38
+got del_client for 0:38
+read request for /readonly/firmware/image/modem_pr/so/848_0_0.mbn (mode: octet, rsize: 213864, seek: 262144) from 0:41
+Got ack for 0 from 0:41
+Sending 7684 bytes of DATA to 0:41
+Sent block 1 of 7684 to 0:41
+Sending 7684 bytes of DATA to 0:41
+Sent block 2 of 7684 to 0:41
+Sending 7684 bytes of DATA to 0:41
+Sent block 3 of 7684 to 0:41
+Sending 7684 bytes of DATA to 0:41
+Sent block 4 of 7684 to 0:41
+Sending 7684 bytes of DATA to 0:41
+Sent block 5 of 7684 to 0:41
+Sending 7684 bytes of DATA to 0:41
+Sent block 6 of 7684 to 0:41
+Sending 7684 bytes of DATA to 0:41
+Sent block 7 of 7684 to 0:41
+Sending 7684 bytes of DATA to 0:41
+Sent block 8 of 7684 to 0:41
+Sending 7684 bytes of DATA to 0:41
+Sent block 9 of 7684 to 0:41
+Sending 7684 bytes of DATA to 0:41
+Sent block 10 of 7684 to 0:41
+Got ack for 10 from 0:41
+Sending 7684 bytes of DATA to 0:41
+Sent block 11 of 7684 to 0:41
+Sending 7684 bytes of DATA to 0:41
+Sent block 12 of 7684 to 0:41
+Sending 7684 bytes of DATA to 0:41
+Sent block 13 of 7684 to 0:41
+Sending 7684 bytes of DATA to 0:41
+Sent block 14 of 7684 to 0:41
+Sending 7684 bytes of DATA to 0:41
+Sent block 15 of 7684 to 0:41
+Sending 7684 bytes of DATA to 0:41
+Sent block 16 of 7684 to 0:41
+Sending 7684 bytes of DATA to 0:41
+Sent block 17 of 7684 to 0:41
+Sending 7684 bytes of DATA to 0:41
+Sent block 18 of 7684 to 0:41
+Sending 7684 bytes of DATA to 0:41
+Sent block 19 of 7684 to 0:41
+Sending 7684 bytes of DATA to 0:41
+Sent block 20 of 7684 to 0:41
+Got ack for 20 from 0:41
+Sending 7684 bytes of DATA to 0:41
+Sent block 21 of 7684 to 0:41
+Sending 7684 bytes of DATA to 0:41
+Sent block 22 of 7684 to 0:41
+Sending 7684 bytes of DATA to 0:41
+Sent block 23 of 7684 to 0:41
+Sending 7684 bytes of DATA to 0:41
+Sent block 24 of 7684 to 0:41
+Sending 7684 bytes of DATA to 0:41
+Sent block 25 of 7684 to 0:41
+Sending 7684 bytes of DATA to 0:41
+Sent block 26 of 7684 to 0:41
+Sending 7684 bytes of DATA to 0:41
+Sent block 27 of 7684 to 0:41
+Sending 6508 bytes of DATA to 0:41
+Sent block 28 of 6508 to 0:41
+Got ack for 28 from 0:41
+got del_client for 1:16464
+got del_client for 1:16464
+got del_client for 1:16464
+got del_client for 1:16464
+got del_client for 1:16464
+got del_client for 1:16464
+got del_client for 1:16464
+got del_client for 1:16464
+got del_client for 1:16464
+got del_client for 1:16464
+got del_client for 0:41
+got del_client for 0:41
+got del_client for 0:41
+got del_client for 0:41
+got del_client for 0:41
+got del_client for 0:41
+got del_client for 0:41
+got del_client for 0:41
+got del_client for 0:41
+got del_client for 0:41
+got del_client for 1:16465
+got del_client for 1:16465
+got del_client for 1:16465
+got del_client for 1:16465
+got del_client for 1:16465
+got del_client for 1:16465
+got del_client for 1:16465
+got del_client for 1:16465
+got del_client for 1:16465
+got del_client for 1:16465
+got del_client for 1:16466
+got del_client for 1:16466
+got del_client for 1:16466
+got del_client for 1:16466
+got del_client for 1:16466
+got del_client for 1:16466
+got del_client for 1:16466
+got del_client for 1:16466
+got del_client for 1:16466
+got del_client for 1:16466
+got del_client for 1:16467
+got del_client for 1:16467
+got del_client for 1:16467
+got del_client for 1:16467
+got del_client for 1:16467
+got del_client for 1:16467
+got del_client for 1:16467
+got del_client for 1:16467
+got del_client for 1:16467
+got del_client for 1:16467
+read request for /readwrite/mcfg.tmp (mode: octet, rsize: 0, seek: 0) from 0:90
+got del_client for 0:90
+got del_client for 0:90
+got del_client for 0:90
+got del_client for 0:90
+got del_client for 0:90
+got del_client for 0:90
+got del_client for 0:90
+got del_client for 0:90
+got del_client for 0:90
+got del_client for 0:90
+got del_client for 1:16468
+got del_client for 1:16468
+got del_client for 1:16468
+got del_client for 1:16468
+got del_client for 1:16468
+got del_client for 1:16468
+got del_client for 1:16468
+got del_client for 1:16468
+got del_client for 1:16468
+got del_client for 1:16468
+write request for /readwrite/mcfg.tmp (octet) from 0:91
+got del_client for 1:16469
+got del_client for 1:16469
+got del_client for 1:16469
+got del_client for 1:16469
+got del_client for 1:16469
+got del_client for 1:16469
+got del_client for 1:16469
+got del_client for 1:16469
+got del_client for 1:16469
+got del_client for 1:16469
+got del_client for 0:91
+got del_client for 0:91
+got del_client for 0:91
+got del_client for 0:91
+got del_client for 0:91
+got del_client for 0:91
+got del_client for 0:91
+got del_client for 0:91
+got del_client for 0:91
+got del_client for 0:91
+read request for /readwrite/mcfg.tmp (mode: octet, rsize: 0, seek: 0) from 0:92
+got del_client for 1:16470
+got del_client for 1:16470
+got del_client for 1:16470
+got del_client for 1:16470
+got del_client for 1:16470
+got del_client for 1:16470
+got del_client for 1:16470
+got del_client for 1:16470
+got del_client for 1:16470
+got del_client for 1:16470
+got del_client for 0:92
+got del_client for 0:92
+got del_client for 0:92
+got del_client for 0:92
+got del_client for 0:92
+got del_client for 0:92
+got del_client for 0:92
+got del_client for 0:92
+got del_client for 0:92
+got del_client for 0:92
+write request for /readwrite/mcfg.tmp (octet) from 0:93
+Ignoring unknown option 'unlink' with value '0'
+got del_client for 0:93
+got del_client for 0:93
+got del_client for 0:93
+got del_client for 0:93
+got del_client for 0:93
+got del_client for 0:93
+got del_client for 0:93
+got del_client for 0:93
+got del_client for 0:93
+got del_client for 0:93
+read request for /readonly/firmware/image/modem_pr/mcfg/configs/mcfg_hw/mbn_hw.dig (mode: octet, rsize: 0, seek: 0) from 0:94
+got del_client for 1:16472
+got del_client for 1:16472
+got del_client for 1:16472
+got del_client for 1:16472
+got del_client for 1:16472
+got del_client for 1:16472
+got del_client for 1:16472
+got del_client for 1:16472
+got del_client for 1:16472
+got del_client for 1:16472
+got del_client for 0:94
+got del_client for 0:94
+got del_client for 0:94
+got del_client for 0:94
+got del_client for 0:94
+got del_client for 0:94
+got del_client for 0:94
+got del_client for 0:94
+got del_client for 0:94
+got del_client for 0:94
+read request for /readonly/firmware/image/modem_pr/mcfg/configs/mcfg_hw/mbn_hw.dig (mode: octet, rsize: 32, seek: 0) from 0:95
+Got ack for 0 from 0:95
+Sending 36 bytes of DATA to 0:95
+Sent block 1 of 36 to 0:95
+Got ack for 1 from 0:95
+got del_client for 1:16473
+got del_client for 1:16473
+got del_client for 1:16473
+got del_client for 1:16473
+got del_client for 1:16473
+got del_client for 1:16473
+got del_client for 1:16473
+got del_client for 1:16473
+got del_client for 1:16473
+got del_client for 1:16473
+got del_client for 0:95
+got del_client for 0:95
+got del_client for 0:95
+got del_client for 0:95
+got del_client for 0:95
+got del_client for 0:95
+got del_client for 0:95
+got del_client for 0:95
+got del_client for 0:95
+got del_client for 0:95
+read request for /readonly/firmware/image/modem_pr/mcfg/configs/mcfg_sw/mbn_sw.dig (mode: octet, rsize: 0, seek: 0) from 0:96
+got del_client for 1:16474
+got del_client for 1:16474
+got del_client for 1:16474
+got del_client for 1:16474
+got del_client for 1:16474
+got del_client for 1:16474
+got del_client for 1:16474
+got del_client for 1:16474
+got del_client for 1:16474
+got del_client for 1:16474
+got del_client for 0:96
+got del_client for 0:96
+got del_client for 0:96
+got del_client for 0:96
+got del_client for 0:96
+got del_client for 0:96
+got del_client for 0:96
+got del_client for 0:96
+got del_client for 0:96
+got del_client for 0:96
+read request for /readonly/firmware/image/modem_pr/mcfg/configs/mcfg_sw/mbn_sw.dig (mode: octet, rsize: 32, seek: 0) from 0:97
+Got ack for 0 from 0:97
+Sending 36 bytes of DATA to 0:97
+Sent block 1 of 36 to 0:97
+Got ack for 1 from 0:97
+got del_client for 1:16475
+got del_client for 1:16475
+got del_client for 1:16475
+got del_client for 1:16475
+got del_client for 1:16475
+got del_client for 1:16475
+got del_client for 1:16475
+got del_client for 1:16475
+got del_client for 1:16475
+got del_client for 1:16475
+got del_client for 0:97
+got del_client for 0:97
+got del_client for 0:97
+got del_client for 0:97
+got del_client for 0:97
+got del_client for 0:97
+got del_client for 0:97
+got del_client for 0:97
+got del_client for 0:97
+got del_client for 0:97
+got del_client for 1:16476
+got del_client for 1:16476
+got del_client for 1:16476
+got del_client for 1:16476
+got del_client for 1:16476
+got del_client for 1:16476
+got del_client for 1:16476
+got del_client for 1:16476
+got del_client for 1:16476
+got del_client for 1:16476
+got del_client for 1:16477
+got del_client for 1:16477
+got del_client for 1:16477
+got del_client for 1:16477
+got del_client for 1:16477
+got del_client for 1:16477
+got del_client for 1:16477
+got del_client for 1:16477
+got del_client for 1:16477
+got del_client for 1:16477
+got del_client for 1:16478
+got del_client for 1:16478
+got del_client for 1:16478
+got del_client for 1:16478
+got del_client for 1:16478
+got del_client for 1:16478
+got del_client for 1:16478
+got del_client for 1:16478
+got del_client for 1:16478
+got del_client for 1:16478
+got del_client for 1:16479
+got del_client for 1:16479
+got del_client for 1:16479
+got del_client for 1:16479
+got del_client for 1:16479
+got del_client for 1:16479
+got del_client for 1:16479
+got del_client for 1:16479
+got del_client for 1:16479
+got del_client for 1:16479
+got del_client for 1:16480
+got del_client for 1:16480
+got del_client for 1:16480
+got del_client for 1:16480
+got del_client for 1:16480
+got del_client for 1:16480
+got del_client for 1:16480
+got del_client for 1:16480
+got del_client for 1:16480
+got del_client for 1:16480
+got del_client for 1:16481
+got del_client for 1:16481
+got del_client for 1:16481
+got del_client for 1:16481
+got del_client for 1:16481
+got del_client for 1:16481
+got del_client for 1:16481
+got del_client for 1:16481
+got del_client for 1:16481
+got del_client for 1:16481
+got del_client for 1:16483
+got del_client for 1:16483
+got del_client for 1:16483
+got del_client for 1:16483
+got del_client for 1:16483
+got del_client for 1:16483
+got del_client for 1:16483
+got del_client for 1:16483
+got del_client for 1:16483
+got del_client for 1:16483
+got del_client for 1:16482
+got del_client for 1:16482
+got del_client for 1:16482
+got del_client for 1:16482
+got del_client for 1:16482
+got del_client for 1:16482
+got del_client for 1:16482
+got del_client for 1:16482
+got del_client for 1:16482
+got del_client for 1:16482
+got del_client for 1:16484
+got del_client for 1:16484
+got del_client for 1:16484
+got del_client for 1:16484
+got del_client for 1:16484
+got del_client for 1:16484
+got del_client for 1:16484
+got del_client for 1:16484
+got del_client for 1:16484
+got del_client for 1:16484
+got del_client for 1:16485
+got del_client for 1:16485
+got del_client for 1:16485
+got del_client for 1:16485
+got del_client for 1:16485
+got del_client for 1:16485
+got del_client for 1:16485
+got del_client for 1:16485
+got del_client for 1:16485
+got del_client for 1:16485
+got del_client for 1:16486
+got del_client for 1:16486
+got del_client for 1:16486
+got del_client for 1:16486
+got del_client for 1:16486
+got del_client for 1:16486
+got del_client for 1:16486
+got del_client for 1:16486
+got del_client for 1:16486
+got del_client for 1:16486
+got del_client for 1:16487
+got del_client for 1:16487
+got del_client for 1:16487
+got del_client for 1:16487
+got del_client for 1:16487
+got del_client for 1:16487
+got del_client for 1:16487
+got del_client for 1:16487
+got del_client for 1:16487
+got del_client for 1:16487
+got del_client for 1:16488
+got del_client for 1:16488
+got del_client for 1:16488
+got del_client for 1:16488
+got del_client for 1:16488
+got del_client for 1:16488
+got del_client for 1:16488
+got del_client for 1:16488
+got del_client for 1:16488
+got del_client for 1:16488
+got del_client for 1:16489
+got del_client for 1:16489
+got del_client for 1:16489
+got del_client for 1:16489
+got del_client for 1:16489
+got del_client for 1:16489
+got del_client for 1:16489
+got del_client for 1:16489
+got del_client for 1:16489
+got del_client for 1:16489
+got del_client for 1:16490
+got del_client for 1:16490
+got del_client for 1:16490
+got del_client for 1:16490
+got del_client for 1:16490
+got del_client for 1:16490
+got del_client for 1:16490
+got del_client for 1:16490
+got del_client for 1:16490
+got del_client for 1:16490
+got del_client for 1:16491
+got del_client for 1:16491
+got del_client for 1:16491
+got del_client for 1:16491
+got del_client for 1:16491
+got del_client for 1:16491
+got del_client for 1:16491
+got del_client for 1:16491
+got del_client for 1:16491
+got del_client for 1:16491
+got del_client for 1:16492
+got del_client for 1:16492
+got del_client for 1:16492
+got del_client for 1:16492
+got del_client for 1:16492
+got del_client for 1:16492
+got del_client for 1:16492
+got del_client for 1:16492
+got del_client for 1:16492
+got del_client for 1:16492
+got del_client for 1:16493
+got del_client for 1:16493
+got del_client for 1:16493
+got del_client for 1:16493
+got del_client for 1:16493
+got del_client for 1:16493
+got del_client for 1:16493
+got del_client for 1:16493
+got del_client for 1:16493
+got del_client for 1:16493
+got del_client for 1:16494
+got del_client for 1:16494
+got del_client for 1:16494
+got del_client for 1:16494
+got del_client for 1:16494
+got del_client for 1:16494
+got del_client for 1:16494
+got del_client for 1:16494
+got del_client for 1:16494
+got del_client for 1:16494
+got del_client for 1:16495
+got del_client for 1:16495
+got del_client for 1:16495
+got del_client for 1:16495
+got del_client for 1:16495
+got del_client for 1:16495
+got del_client for 1:16495
+got del_client for 1:16495
+got del_client for 1:16495
+got del_client for 1:16495
+got del_client for 1:16496
+got del_client for 1:16496
+got del_client for 1:16496
+got del_client for 1:16496
+got del_client for 1:16496
+got del_client for 1:16496
+got del_client for 1:16496
+got del_client for 1:16496
+got del_client for 1:16496
+got del_client for 1:16496
+got del_client for 1:16497
+got del_client for 1:16497
+got del_client for 1:16497
+got del_client for 1:16497
+got del_client for 1:16497
+got del_client for 1:16497
+got del_client for 1:16497
+got del_client for 1:16497
+got del_client for 1:16497
+got del_client for 1:16497
+got del_client for 1:16498
+got del_client for 1:16498
+got del_client for 1:16498
+got del_client for 1:16498
+got del_client for 1:16498
+got del_client for 1:16498
+got del_client for 1:16498
+got del_client for 1:16498
+got del_client for 1:16498
+got del_client for 1:16498
+got del_client for 1:16499
+got del_client for 1:16499
+got del_client for 1:16499
+got del_client for 1:16499
+got del_client for 1:16499
+got del_client for 1:16499
+got del_client for 1:16499
+got del_client for 1:16499
+got del_client for 1:16499
+got del_client for 1:16499
+got del_client for 1:16500
+got del_client for 1:16500
+got del_client for 1:16500
+got del_client for 1:16500
+got del_client for 1:16500
+got del_client for 1:16500
+got del_client for 1:16500
+got del_client for 1:16500
+got del_client for 1:16500
+got del_client for 1:16500
+got del_client for 1:16501
+got del_client for 1:16501
+got del_client for 1:16501
+got del_client for 1:16501
+got del_client for 1:16501
+got del_client for 1:16501
+got del_client for 1:16501
+got del_client for 1:16501
+got del_client for 1:16501
+got del_client for 1:16501
+got del_client for 1:16502
+got del_client for 1:16502
+got del_client for 1:16502
+got del_client for 1:16502
+got del_client for 1:16502
+got del_client for 1:16502
+got del_client for 1:16502
+got del_client for 1:16502
+got del_client for 1:16502
+got del_client for 1:16502
+got del_client for 1:16503
+got del_client for 1:16503
+got del_client for 1:16503
+got del_client for 1:16503
+got del_client for 1:16503
+got del_client for 1:16503
+got del_client for 1:16503
+got del_client for 1:16503
+got del_client for 1:16503
+got del_client for 1:16503
+got del_client for 1:16506
+got del_client for 1:16506
+got del_client for 1:16506
+got del_client for 1:16506
+got del_client for 1:16506
+got del_client for 1:16506
+got del_client for 1:16506
+got del_client for 1:16506
+got del_client for 1:16506
+got del_client for 1:16506
+got del_client for 1:16508
+got del_client for 1:16508
+got del_client for 1:16508
+got del_client for 1:16508
+got del_client for 1:16508
+got del_client for 1:16508
+got del_client for 1:16508
+got del_client for 1:16508
+got del_client for 1:16508
+got del_client for 1:16508

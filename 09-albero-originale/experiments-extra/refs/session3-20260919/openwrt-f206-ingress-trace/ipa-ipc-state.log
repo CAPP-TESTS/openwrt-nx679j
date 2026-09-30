@@ -1,0 +1,422 @@
+IRQ_UPTIME=2095.25 16664.68
+           CPU0       CPU1       CPU2       CPU3       CPU4       CPU5       CPU6       CPU7       
+ 11:       2117         91        269        156        874        682        714      78969     GICv3  27 Level     arch_timer
+ 13:          0          0          0          0          0          0          0          0     GICv3  38 Level     arch_mem_timer
+ 15:          0          0          0          0          0          0          0          0     GICv3 962 Edge      qcom-scm
+ 16:          0          0          0          0          0          0          0          0     GICv3  62 Level     dcvsh-irq-0
+ 17:          0          0          0          0          1          0          0          0     GICv3  63 Level     dcvsh-irq-4
+ 18:          0          0          0          0          0          0          0          1     GICv3  51 Level     dcvsh-irq-7
+ 21:         11          0          0          0          0          0          0          0     GICv3  94 Level     qcom_rimps
+ 22:          0          0          0          0          0          0          0          0     GICv3  23 Level     arm-pmu
+ 24:          0          0          0          0          0          0          0          0     GICv3 610 Edge      q6v5 wdog
+ 25:          0          0          0          0          0          0          0          0     GICv3 296 Edge      q6v5 wdog
+ 26:          0          0          0          0          0          0          0          0     GICv3 384 Edge      generic-irq
+ 28:        328          0          0          0          0          0          0          0     GICv3 261 Level     ipcc_0
+ 30:       4667          0          0          0          0          0          0          0     GICv3 297 Level     ufshcd
+ 35:       6874          0          0          0          0          0          0          0     GICv3  37 Level     apps_rsc
+ 36:          0          0          0          0          0          0          0          0     GICv3 161 Level     disp_rsc
+ 37:         78          0          0          0          0          0          0          0     GICv3 613 Level     190b6400.qcom,bwmon-llcc
+ 38:         17          0          0          0          0          0          0          0     GICv3 113 Level     19091000.qcom,bwmon-ddr
+ 39:          3          0          0          0          0          0          0          0     GICv3 686 Edge      ipa
+ 40:         28          0          0          0          0          0          0          0     GICv3 464 Level     gsi
+ 85:          3          0          0          0          0          0          0          0     GICv3 619 Level     msm_serial_geni0
+112:          0          0          0          0          0          0          0          0     GICv3  97 Level     arm-smmu global fault
+113:          0          0          0          0          0          0          0          0     GICv3 129 Level     arm-smmu-context-fault
+114:          0          0          0          0          0          0          0          0     GICv3 130 Level     arm-smmu-context-fault
+115:          0          0          0          0          0          0          0          0     GICv3 131 Level     arm-smmu-context-fault
+116:          0          0          0          0          0          0          0          0     GICv3 132 Level     arm-smmu-context-fault
+117:          0          0          0          0          0          0          0          0     GICv3 133 Level     arm-smmu-context-fault
+118:          0          0          0          0          0          0          0          0     GICv3 134 Level     arm-smmu-context-fault
+119:          0          0          0          0          0          0          0          0     GICv3 135 Level     arm-smmu-context-fault
+120:          0          0          0          0          0          0          0          0     GICv3 136 Level     arm-smmu-context-fault
+121:          0          0          0          0          0          0          0          0     GICv3 137 Level     arm-smmu-context-fault
+122:          0          0          0          0          0          0          0          0     GICv3 138 Level     arm-smmu-context-fault
+123:          0          0          0          0          0          0          0          0     GICv3 139 Level     arm-smmu-context-fault
+212:          0          0          0          0          0          0          0          0     GICv3 172 Edge      int_global_int
+259:          0          0          0          0          0          0          0          0     GICv3 115 Level     msm_drm
+291:          0          0          0          0          0          0          0          0     GICv3  32 Edge      apps_wdog_bark
+292:          0          0          0          0          0          0          0          0     GICv3 960 Edge      gh_msgq_tx_0
+293:          0          0          0          0          0          0          0          0     GICv3 961 Edge      gh_msgq_rx_0
+296:          0          0          0          0          0          0          0          0       PDC  11 Level     eud_irq
+297:          0          0          0          0          0          0          0          0     GICv3 162 Level     pwr_event_irq
+298:          0          0          0          0          0          0          0          0       PDC  14 Edge      dp_hs_phy_irq
+299:          0          0          0          0          0          0          0          0       PDC  15 Edge      dm_hs_phy_irq
+300:          0          0          0          0          0          0          0          0       PDC  17 Level     ss_phy_irq
+301:       4323          0          0          0          0          0          0          0     GICv3 165 Level     dwc3-msm, dwc3
+302:          0          0          0          0          0          0          0          0       sde  12 Edge      dp_display_isr
+303:          0          0          0          0          0          0          0          0       sde   4 Edge      dsi_ctrl
+304:          0          0          0          0          0          0          0          0   msmgpio  96 Edge      msm_pcie_wake
+305:          0          0          0          0          0          0          0          0   msmgpio  79 Edge      hs_uart_wakeup
+306:          2          0          0          0          0          0          0          0      ipcc 1507328 Edge      qcom,qmp-tme
+307:          0          0          0          0          0          0          0          0      ipcc 196610 Edge      smp2p
+308:          0          0          0          0          0          0          0          0      ipcc 262146 Edge      smp2p
+309:          0          0          0          0          0          0          0          0      ipcc 393218 Edge      smp2p
+310:          7          0          0          0          0          0          0          0      ipcc 131074 Edge      smp2p
+311:          0          0          0          0          0          0          0          0     smp2p   0 Edge      smp2p_sleepstate
+312:          4          0          0          0          0          0          0          0      ipcc   0 Edge      aoss-qmp
+313:          0          0          0          0          0          0          0          0       PDC   6 Edge      q6v5 wdog
+314:          0          0          0          0          0          0          0          0     smp2p   0 Edge      q6v5 fatal
+315:          0          0          0          0          0          0          0          0     smp2p   1 Edge      q6v5 ready
+316:          0          0          0          0          0          0          0          0     smp2p   2 Edge      q6v5 handover
+317:          0          0          0          0          0          0          0          0     smp2p   3 Edge      q6v5 stop
+318:          0          0          0          0          0          0          0          0     smp2p   0 Edge      q6v5 fatal
+319:          0          0          0          0          0          0          0          0     smp2p   1 Edge      q6v5 ready
+320:          0          0          0          0          0          0          0          0     smp2p   2 Edge      q6v5 handover
+321:          0          0          0          0          0          0          0          0     smp2p   3 Edge      q6v5 stop
+322:          0          0          0          0          0          0          0          0       PDC   9 Edge      q6v5 wdog
+323:          0          0          0          0          0          0          0          0     smp2p   0 Edge      q6v5 fatal
+324:          0          0          0          0          0          0          0          0     smp2p   1 Edge      q6v5 ready
+325:          0          0          0          0          0          0          0          0     smp2p   2 Edge      q6v5 handover
+326:          0          0          0          0          0          0          0          0     smp2p   3 Edge      q6v5 stop
+327:          0          0          0          0          0          0          0          0     smp2p   0 Edge      q6v5 fatal
+328:          0          0          0          0          0          0          0          2     smp2p   1 Edge      q6v5 ready
+329:          0          0          0          0          0          0          0          2     smp2p   2 Edge      q6v5 handover
+330:          0          0          0          0          0          0          0          0     smp2p   3 Edge      q6v5 stop
+331:          0          0          0          0          0          0          0          1     smp2p   7 Edge      q6v5 shutdown-ack
+334:          0          0          0          0          0          0          0          0  pmic_arb 102826394 Edge      pm8xxx_rtc_alarm
+356:          0          0          0          0          0          0          0          0     smp2p   0 Edge      ipa_smp2p_clk_vote
+358:        352          0          0          0          0          0          0          0      ipcc 131072 Edge      glink-native-modem
+359:          0          0          0          0          0          0          0          0  ITS-pMSI   0 Edge      gsi_msi
+360:          0          0          0          0          0          0          0          0  ITS-pMSI   1 Edge      gsi_msi
+IPI0:       201        208        148        197       2588       2582       3054      27850       Rescheduling interrupts
+IPI1:     13641        591        446        185        487        458        477       3008       Function call interrupts
+IPI2:         0          0          0          0          0          0          0          0       CPU stop interrupts
+IPI3:         0          0          0          0          0          0          0          0       CPU stop (for crash dump) interrupts
+IPI4:         0          0          0          0          0          0          0          0       Timer broadcast interrupts
+IPI5:       986          1         12         19        330        305        337      57883       IRQ work interrupts
+IPI6:         0          0          0          0          0          0          0          0       CPU wake-up interrupts
+Err:          0
+IRQ_UPTIME=2096.26 16667.66
+           CPU0       CPU1       CPU2       CPU3       CPU4       CPU5       CPU6       CPU7       
+ 11:       2117         91        269        156        874        682        715      79192     GICv3  27 Level     arch_timer
+ 13:          0          0          0          0          0          0          0          0     GICv3  38 Level     arch_mem_timer
+ 15:          0          0          0          0          0          0          0          0     GICv3 962 Edge      qcom-scm
+ 16:          0          0          0          0          0          0          0          0     GICv3  62 Level     dcvsh-irq-0
+ 17:          0          0          0          0          1          0          0          0     GICv3  63 Level     dcvsh-irq-4
+ 18:          0          0          0          0          0          0          0          1     GICv3  51 Level     dcvsh-irq-7
+ 21:         11          0          0          0          0          0          0          0     GICv3  94 Level     qcom_rimps
+ 22:          0          0          0          0          0          0          0          0     GICv3  23 Level     arm-pmu
+ 24:          0          0          0          0          0          0          0          0     GICv3 610 Edge      q6v5 wdog
+ 25:          0          0          0          0          0          0          0          0     GICv3 296 Edge      q6v5 wdog
+ 26:          0          0          0          0          0          0          0          0     GICv3 384 Edge      generic-irq
+ 28:        329          0          0          0          0          0          0          0     GICv3 261 Level     ipcc_0
+ 30:       4667          0          0          0          0          0          0          0     GICv3 297 Level     ufshcd
+ 35:       6885          0          0          0          0          0          0          0     GICv3  37 Level     apps_rsc
+ 36:          0          0          0          0          0          0          0          0     GICv3 161 Level     disp_rsc
+ 37:         78          0          0          0          0          0          0          0     GICv3 613 Level     190b6400.qcom,bwmon-llcc
+ 38:         17          0          0          0          0          0          0          0     GICv3 113 Level     19091000.qcom,bwmon-ddr
+ 39:          3          0          0          0          0          0          0          0     GICv3 686 Edge      ipa
+ 40:         28          0          0          0          0          0          0          0     GICv3 464 Level     gsi
+ 85:          3          0          0          0          0          0          0          0     GICv3 619 Level     msm_serial_geni0
+112:          0          0          0          0          0          0          0          0     GICv3  97 Level     arm-smmu global fault
+113:          0          0          0          0          0          0          0          0     GICv3 129 Level     arm-smmu-context-fault
+114:          0          0          0          0          0          0          0          0     GICv3 130 Level     arm-smmu-context-fault
+115:          0          0          0          0          0          0          0          0     GICv3 131 Level     arm-smmu-context-fault
+116:          0          0          0          0          0          0          0          0     GICv3 132 Level     arm-smmu-context-fault
+117:          0          0          0          0          0          0          0          0     GICv3 133 Level     arm-smmu-context-fault
+118:          0          0          0          0          0          0          0          0     GICv3 134 Level     arm-smmu-context-fault
+119:          0          0          0          0          0          0          0          0     GICv3 135 Level     arm-smmu-context-fault
+120:          0          0          0          0          0          0          0          0     GICv3 136 Level     arm-smmu-context-fault
+121:          0          0          0          0          0          0          0          0     GICv3 137 Level     arm-smmu-context-fault
+122:          0          0          0          0          0          0          0          0     GICv3 138 Level     arm-smmu-context-fault
+123:          0          0          0          0          0          0          0          0     GICv3 139 Level     arm-smmu-context-fault
+212:          0          0          0          0          0          0          0          0     GICv3 172 Edge      int_global_int
+259:          0          0          0          0          0          0          0          0     GICv3 115 Level     msm_drm
+291:          0          0          0          0          0          0          0          0     GICv3  32 Edge      apps_wdog_bark
+292:          0          0          0          0          0          0          0          0     GICv3 960 Edge      gh_msgq_tx_0
+293:          0          0          0          0          0          0          0          0     GICv3 961 Edge      gh_msgq_rx_0
+296:          0          0          0          0          0          0          0          0       PDC  11 Level     eud_irq
+297:          0          0          0          0          0          0          0          0     GICv3 162 Level     pwr_event_irq
+298:          0          0          0          0          0          0          0          0       PDC  14 Edge      dp_hs_phy_irq
+299:          0          0          0          0          0          0          0          0       PDC  15 Edge      dm_hs_phy_irq
+300:          0          0          0          0          0          0          0          0       PDC  17 Level     ss_phy_irq
+301:       4323          0          0          0          0          0          0          0     GICv3 165 Level     dwc3-msm, dwc3
+302:          0          0          0          0          0          0          0          0       sde  12 Edge      dp_display_isr
+303:          0          0          0          0          0          0          0          0       sde   4 Edge      dsi_ctrl
+304:          0          0          0          0          0          0          0          0   msmgpio  96 Edge      msm_pcie_wake
+305:          0          0          0          0          0          0          0          0   msmgpio  79 Edge      hs_uart_wakeup
+306:          2          0          0          0          0          0          0          0      ipcc 1507328 Edge      qcom,qmp-tme
+307:          0          0          0          0          0          0          0          0      ipcc 196610 Edge      smp2p
+308:          0          0          0          0          0          0          0          0      ipcc 262146 Edge      smp2p
+309:          0          0          0          0          0          0          0          0      ipcc 393218 Edge      smp2p
+310:          7          0          0          0          0          0          0          0      ipcc 131074 Edge      smp2p
+311:          0          0          0          0          0          0          0          0     smp2p   0 Edge      smp2p_sleepstate
+312:          4          0          0          0          0          0          0          0      ipcc   0 Edge      aoss-qmp
+313:          0          0          0          0          0          0          0          0       PDC   6 Edge      q6v5 wdog
+314:          0          0          0          0          0          0          0          0     smp2p   0 Edge      q6v5 fatal
+315:          0          0          0          0          0          0          0          0     smp2p   1 Edge      q6v5 ready
+316:          0          0          0          0          0          0          0          0     smp2p   2 Edge      q6v5 handover
+317:          0          0          0          0          0          0          0          0     smp2p   3 Edge      q6v5 stop
+318:          0          0          0          0          0          0          0          0     smp2p   0 Edge      q6v5 fatal
+319:          0          0          0          0          0          0          0          0     smp2p   1 Edge      q6v5 ready
+320:          0          0          0          0          0          0          0          0     smp2p   2 Edge      q6v5 handover
+321:          0          0          0          0          0          0          0          0     smp2p   3 Edge      q6v5 stop
+322:          0          0          0          0          0          0          0          0       PDC   9 Edge      q6v5 wdog
+323:          0          0          0          0          0          0          0          0     smp2p   0 Edge      q6v5 fatal
+324:          0          0          0          0          0          0          0          0     smp2p   1 Edge      q6v5 ready
+325:          0          0          0          0          0          0          0          0     smp2p   2 Edge      q6v5 handover
+326:          0          0          0          0          0          0          0          0     smp2p   3 Edge      q6v5 stop
+327:          0          0          0          0          0          0          0          0     smp2p   0 Edge      q6v5 fatal
+328:          0          0          0          0          0          0          0          2     smp2p   1 Edge      q6v5 ready
+329:          0          0          0          0          0          0          0          2     smp2p   2 Edge      q6v5 handover
+330:          0          0          0          0          0          0          0          0     smp2p   3 Edge      q6v5 stop
+331:          0          0          0          0          0          0          0          1     smp2p   7 Edge      q6v5 shutdown-ack
+334:          0          0          0          0          0          0          0          0  pmic_arb 102826394 Edge      pm8xxx_rtc_alarm
+356:          0          0          0          0          0          0          0          0     smp2p   0 Edge      ipa_smp2p_clk_vote
+358:        353          0          0          0          0          0          0          0      ipcc 131072 Edge      glink-native-modem
+359:          0          0          0          0          0          0          0          0  ITS-pMSI   0 Edge      gsi_msi
+360:          0          0          0          0          0          0          0          0  ITS-pMSI   1 Edge      gsi_msi
+IPI0:       201        208        148        197       2590       2583       3059      27874       Rescheduling interrupts
+IPI1:     13667        591        446        185        487        458        477       3008       Function call interrupts
+IPI2:         0          0          0          0          0          0          0          0       CPU stop interrupts
+IPI3:         0          0          0          0          0          0          0          0       CPU stop (for crash dump) interrupts
+IPI4:         0          0          0          0          0          0          0          0       Timer broadcast interrupts
+IPI5:       986          1         12         19        330        305        338      57952       IRQ work interrupts
+IPI6:         0          0          0          0          0          0          0          0       CPU wake-up interrupts
+Err:          0
+IRQ_UPTIME=2097.26 16675.61
+           CPU0       CPU1       CPU2       CPU3       CPU4       CPU5       CPU6       CPU7       
+ 11:       2118         91        269        156        876        682        715      79422     GICv3  27 Level     arch_timer
+ 13:          0          0          0          0          0          0          0          0     GICv3  38 Level     arch_mem_timer
+ 15:          0          0          0          0          0          0          0          0     GICv3 962 Edge      qcom-scm
+ 16:          0          0          0          0          0          0          0          0     GICv3  62 Level     dcvsh-irq-0
+ 17:          0          0          0          0          1          0          0          0     GICv3  63 Level     dcvsh-irq-4
+ 18:          0          0          0          0          0          0          0          1     GICv3  51 Level     dcvsh-irq-7
+ 21:         11          0          0          0          0          0          0          0     GICv3  94 Level     qcom_rimps
+ 22:          0          0          0          0          0          0          0          0     GICv3  23 Level     arm-pmu
+ 24:          0          0          0          0          0          0          0          0     GICv3 610 Edge      q6v5 wdog
+ 25:          0          0          0          0          0          0          0          0     GICv3 296 Edge      q6v5 wdog
+ 26:          0          0          0          0          0          0          0          0     GICv3 384 Edge      generic-irq
+ 28:        329          0          0          0          0          0          0          0     GICv3 261 Level     ipcc_0
+ 30:       4670          0          0          0          0          0          0          0     GICv3 297 Level     ufshcd
+ 35:       6893          0          0          0          0          0          0          0     GICv3  37 Level     apps_rsc
+ 36:          0          0          0          0          0          0          0          0     GICv3 161 Level     disp_rsc
+ 37:         78          0          0          0          0          0          0          0     GICv3 613 Level     190b6400.qcom,bwmon-llcc
+ 38:         17          0          0          0          0          0          0          0     GICv3 113 Level     19091000.qcom,bwmon-ddr
+ 39:          3          0          0          0          0          0          0          0     GICv3 686 Edge      ipa
+ 40:         28          0          0          0          0          0          0          0     GICv3 464 Level     gsi
+ 85:          3          0          0          0          0          0          0          0     GICv3 619 Level     msm_serial_geni0
+112:          0          0          0          0          0          0          0          0     GICv3  97 Level     arm-smmu global fault
+113:          0          0          0          0          0          0          0          0     GICv3 129 Level     arm-smmu-context-fault
+114:          0          0          0          0          0          0          0          0     GICv3 130 Level     arm-smmu-context-fault
+115:          0          0          0          0          0          0          0          0     GICv3 131 Level     arm-smmu-context-fault
+116:          0          0          0          0          0          0          0          0     GICv3 132 Level     arm-smmu-context-fault
+117:          0          0          0          0          0          0          0          0     GICv3 133 Level     arm-smmu-context-fault
+118:          0          0          0          0          0          0          0          0     GICv3 134 Level     arm-smmu-context-fault
+119:          0          0          0          0          0          0          0          0     GICv3 135 Level     arm-smmu-context-fault
+120:          0          0          0          0          0          0          0          0     GICv3 136 Level     arm-smmu-context-fault
+121:          0          0          0          0          0          0          0          0     GICv3 137 Level     arm-smmu-context-fault
+122:          0          0          0          0          0          0          0          0     GICv3 138 Level     arm-smmu-context-fault
+123:          0          0          0          0          0          0          0          0     GICv3 139 Level     arm-smmu-context-fault
+212:          0          0          0          0          0          0          0          0     GICv3 172 Edge      int_global_int
+259:          0          0          0          0          0          0          0          0     GICv3 115 Level     msm_drm
+291:          0          0          0          0          0          0          0          0     GICv3  32 Edge      apps_wdog_bark
+292:          0          0          0          0          0          0          0          0     GICv3 960 Edge      gh_msgq_tx_0
+293:          0          0          0          0          0          0          0          0     GICv3 961 Edge      gh_msgq_rx_0
+296:          0          0          0          0          0          0          0          0       PDC  11 Level     eud_irq
+297:          0          0          0          0          0          0          0          0     GICv3 162 Level     pwr_event_irq
+298:          0          0          0          0          0          0          0          0       PDC  14 Edge      dp_hs_phy_irq
+299:          0          0          0          0          0          0          0          0       PDC  15 Edge      dm_hs_phy_irq
+300:          0          0          0          0          0          0          0          0       PDC  17 Level     ss_phy_irq
+301:       4331          0          0          0          0          0          0          0     GICv3 165 Level     dwc3-msm, dwc3
+302:          0          0          0          0          0          0          0          0       sde  12 Edge      dp_display_isr
+303:          0          0          0          0          0          0          0          0       sde   4 Edge      dsi_ctrl
+304:          0          0          0          0          0          0          0          0   msmgpio  96 Edge      msm_pcie_wake
+305:          0          0          0          0          0          0          0          0   msmgpio  79 Edge      hs_uart_wakeup
+306:          2          0          0          0          0          0          0          0      ipcc 1507328 Edge      qcom,qmp-tme
+307:          0          0          0          0          0          0          0          0      ipcc 196610 Edge      smp2p
+308:          0          0          0          0          0          0          0          0      ipcc 262146 Edge      smp2p
+309:          0          0          0          0          0          0          0          0      ipcc 393218 Edge      smp2p
+310:          7          0          0          0          0          0          0          0      ipcc 131074 Edge      smp2p
+311:          0          0          0          0          0          0          0          0     smp2p   0 Edge      smp2p_sleepstate
+312:          4          0          0          0          0          0          0          0      ipcc   0 Edge      aoss-qmp
+313:          0          0          0          0          0          0          0          0       PDC   6 Edge      q6v5 wdog
+314:          0          0          0          0          0          0          0          0     smp2p   0 Edge      q6v5 fatal
+315:          0          0          0          0          0          0          0          0     smp2p   1 Edge      q6v5 ready
+316:          0          0          0          0          0          0          0          0     smp2p   2 Edge      q6v5 handover
+317:          0          0          0          0          0          0          0          0     smp2p   3 Edge      q6v5 stop
+318:          0          0          0          0          0          0          0          0     smp2p   0 Edge      q6v5 fatal
+319:          0          0          0          0          0          0          0          0     smp2p   1 Edge      q6v5 ready
+320:          0          0          0          0          0          0          0          0     smp2p   2 Edge      q6v5 handover
+321:          0          0          0          0          0          0          0          0     smp2p   3 Edge      q6v5 stop
+322:          0          0          0          0          0          0          0          0       PDC   9 Edge      q6v5 wdog
+323:          0          0          0          0          0          0          0          0     smp2p   0 Edge      q6v5 fatal
+324:          0          0          0          0          0          0          0          0     smp2p   1 Edge      q6v5 ready
+325:          0          0          0          0          0          0          0          0     smp2p   2 Edge      q6v5 handover
+326:          0          0          0          0          0          0          0          0     smp2p   3 Edge      q6v5 stop
+327:          0          0          0          0          0          0          0          0     smp2p   0 Edge      q6v5 fatal
+328:          0          0          0          0          0          0          0          2     smp2p   1 Edge      q6v5 ready
+329:          0          0          0          0          0          0          0          2     smp2p   2 Edge      q6v5 handover
+330:          0          0          0          0          0          0          0          0     smp2p   3 Edge      q6v5 stop
+331:          0          0          0          0          0          0          0          1     smp2p   7 Edge      q6v5 shutdown-ack
+334:          0          0          0          0          0          0          0          0  pmic_arb 102826394 Edge      pm8xxx_rtc_alarm
+356:          0          0          0          0          0          0          0          0     smp2p   0 Edge      ipa_smp2p_clk_vote
+358:        353          0          0          0          0          0          0          0      ipcc 131072 Edge      glink-native-modem
+359:          0          0          0          0          0          0          0          0  ITS-pMSI   0 Edge      gsi_msi
+360:          0          0          0          0          0          0          0          0  ITS-pMSI   1 Edge      gsi_msi
+IPI0:       201        208        148        197       2596       2585       3061      27910       Rescheduling interrupts
+IPI1:     13686        591        446        185        488        458        477       3009       Function call interrupts
+IPI2:         0          0          0          0          0          0          0          0       CPU stop interrupts
+IPI3:         0          0          0          0          0          0          0          0       CPU stop (for crash dump) interrupts
+IPI4:         0          0          0          0          0          0          0          0       Timer broadcast interrupts
+IPI5:       987          1         12         19        331        306        338      58020       IRQ work interrupts
+IPI6:         0          0          0          0          0          0          0          0       CPU wake-up interrupts
+Err:          0
+INGRESS_PID=12426
+Name:	rmnet-config-st
+Umask:	0022
+State:	D (disk sleep)
+Tgid:	12426
+Ngid:	0
+Pid:	12426
+PPid:	12302
+TracerPid:	0
+Uid:	0	0	0	0
+Gid:	0	0	0	0
+FDSize:	64
+Groups:	 
+VmPeak:	    2588 kB
+VmSize:	    2588 kB
+VmLck:	       0 kB
+VmPin:	       0 kB
+VmHWM:	       4 kB
+VmRSS:	       4 kB
+RssAnon:	       4 kB
+RssFile:	       0 kB
+RssShmem:	       0 kB
+VmData:	    1888 kB
+VmStk:	     132 kB
+VmExe:	     536 kB
+VmLib:	       4 kB
+VmPTE:	      28 kB
+VmSwap:	       0 kB
+CoreDumping:	0
+THP_enabled:	1
+Threads:	1
+SigQ:	0/65662
+SigPnd:	00**************
+ShdPnd:	00**************
+SigBlk:	00**************
+SigIgn:	00**************
+SigCgt:	00**************
+CapInh:	00**************
+CapPrm:	000001ffffffffff
+CapEff:	000001ffffffffff
+CapBnd:	000001ffffffffff
+CapAmb:	00**************
+NoNewPrivs:	0
+Seccomp:	0
+Seccomp_filters:	0
+Speculation_Store_Bypass:	thread vulnerable
+Cpus_allowed:	ff
+Cpus_allowed_list:	0-7
+Mems_allowed:	1
+Mems_allowed_list:	0
+voluntary_ctxt_switches:	1
+nonvoluntary_ctxt_switches:	1
+rpmh_write_batch[<0>] __switch_to+0x248/0x4e0
+[<0>] rpmh_write_batch+0x218/0x2bc [qcom_rpmh]
+[<0>] qcom_icc_bcm_voter_commit+0x2a4/0x4d0 [icc_bcm_voter]
+[<0>] qcom_icc_set+0x48/0x15c [icc_rpmh]
+[<0>] icc_set_bw+0x248/0x568
+[<0>] ipa3_enable_clks+0x1a0/0x2b8 [ipam]
+[<0>] ipa3_inc_client_enable_clks+0x168/0x258 [ipam]
+[<0>] ipa3_setup_sys_pipe+0x13c/0x2be0 [ipam]
+[<0>] ipa_setup_sys_pipe+0x3c/0xb8 [ipa_fmwk]
+[<0>] ipa3_wwan_ioctl$cd50d283d9bde353bb46d6d35bdc8ee8+0x372c/0x545c [ipam]
+[<0>] dev_ifsioc+0x158/0x42c
+[<0>] dev_ioctl+0x4f0/0x6b4
+[<0>] sock_ioctl+0x750/0xa6c
+[<0>] __arm64_sys_ioctl+0x178/0x1fc
+[<0>] el0_svc_common+0xd4/0x270
+[<0>] el0_svc+0x28/0x88
+[<0>] el0_sync_handler+0x8c/0xf0
+[<0>] el0_sync+0x1b4/0x1c0
+IRQ_UPTIME=2098.27 16678.82
+           CPU0       CPU1       CPU2       CPU3       CPU4       CPU5       CPU6       CPU7       
+ 11:       2123         91        269        156        878        683        718      79677     GICv3  27 Level     arch_timer
+ 13:          0          0          0          0          0          0          0          0     GICv3  38 Level     arch_mem_timer
+ 15:          0          0          0          0          0          0          0          0     GICv3 962 Edge      qcom-scm
+ 16:          0          0          0          0          0          0          0          0     GICv3  62 Level     dcvsh-irq-0
+ 17:          0          0          0          0          1          0          0          0     GICv3  63 Level     dcvsh-irq-4
+ 18:          0          0          0          0          0          0          0          1     GICv3  51 Level     dcvsh-irq-7
+ 21:         11          0          0          0          0          0          0          0     GICv3  94 Level     qcom_rimps
+ 22:          0          0          0          0          0          0          0          0     GICv3  23 Level     arm-pmu
+ 24:          0          0          0          0          0          0          0          0     GICv3 610 Edge      q6v5 wdog
+ 25:          0          0          0          0          0          0          0          0     GICv3 296 Edge      q6v5 wdog
+ 26:          0          0          0          0          0          0          0          0     GICv3 384 Edge      generic-irq
+ 28:        330          0          0          0          0          0          0          0     GICv3 261 Level     ipcc_0
+ 30:       4686          0          0          0          0          0          0          0     GICv3 297 Level     ufshcd
+ 35:       6944          0          0          0          0          0          0          0     GICv3  37 Level     apps_rsc
+ 36:          0          0          0          0          0          0          0          0     GICv3 161 Level     disp_rsc
+ 37:         79          0          0          0          0          0          0          0     GICv3 613 Level     190b6400.qcom,bwmon-llcc
+ 38:         18          0          0          0          0          0          0          0     GICv3 113 Level     19091000.qcom,bwmon-ddr
+ 39:          3          0          0          0          0          0          0          0     GICv3 686 Edge      ipa
+ 40:         60          0          0          0          0          0          0          0     GICv3 464 Level     gsi
+ 85:          3          0          0          0          0          0          0          0     GICv3 619 Level     msm_serial_geni0
+112:          0          0          0          0          0          0          0          0     GICv3  97 Level     arm-smmu global fault
+113:          0          0          0          0          0          0          0          0     GICv3 129 Level     arm-smmu-context-fault
+114:          0          0          0          0          0          0          0          0     GICv3 130 Level     arm-smmu-context-fault
+115:          0          0          0          0          0          0          0          0     GICv3 131 Level     arm-smmu-context-fault
+116:          0          0          0          0          0          0          0          0     GICv3 132 Level     arm-smmu-context-fault
+117:          0          0          0          0          0          0          0          0     GICv3 133 Level     arm-smmu-context-fault
+118:          0          0          0          0          0          0          0          0     GICv3 134 Level     arm-smmu-context-fault
+119:          0          0          0          0          0          0          0          0     GICv3 135 Level     arm-smmu-context-fault
+120:          0          0          0          0          0          0          0          0     GICv3 136 Level     arm-smmu-context-fault
+121:          0          0          0          0          0          0          0          0     GICv3 137 Level     arm-smmu-context-fault
+122:          0          0          0          0          0          0          0          0     GICv3 138 Level     arm-smmu-context-fault
+123:          0          0          0          0          0          0          0          0     GICv3 139 Level     arm-smmu-context-fault
+212:          0          0          0          0          0          0          0          0     GICv3 172 Edge      int_global_int
+259:          0          0          0          0          0          0          0          0     GICv3 115 Level     msm_drm
+291:          0          0          0          0          0          0          0          0     GICv3  32 Edge      apps_wdog_bark
+292:          0          0          0          0          0          0          0          0     GICv3 960 Edge      gh_msgq_tx_0
+293:          0          0          0          0          0          0          0          0     GICv3 961 Edge      gh_msgq_rx_0
+296:          0          0          0          0          0          0          0          0       PDC  11 Level     eud_irq
+297:          0          0          0          0          0          0          0          0     GICv3 162 Level     pwr_event_irq
+298:          0          0          0          0          0          0          0          0       PDC  14 Edge      dp_hs_phy_irq
+299:          0          0          0          0          0          0          0          0       PDC  15 Edge      dm_hs_phy_irq
+300:          0          0          0          0          0          0          0          0       PDC  17 Level     ss_phy_irq
+301:       4335          0          0          0          0          0          0          0     GICv3 165 Level     dwc3-msm, dwc3
+302:          0          0          0          0          0          0          0          0       sde  12 Edge      dp_display_isr
+303:          0          0          0          0          0          0          0          0       sde   4 Edge      dsi_ctrl
+304:          0          0          0          0          0          0          0          0   msmgpio  96 Edge      msm_pcie_wake
+305:          0          0          0          0          0          0          0          0   msmgpio  79 Edge      hs_uart_wakeup
+306:          2          0          0          0          0          0          0          0      ipcc 1507328 Edge      qcom,qmp-tme
+307:          0          0          0          0          0          0          0          0      ipcc 196610 Edge      smp2p
+308:          0          0          0          0          0          0          0          0      ipcc 262146 Edge      smp2p
+309:          0          0          0          0          0          0          0          0      ipcc 393218 Edge      smp2p
+310:          7          0          0          0          0          0          0          0      ipcc 131074 Edge      smp2p
+311:          0          0          0          0          0          0          0          0     smp2p   0 Edge      smp2p_sleepstate
+312:          4          0          0          0          0          0          0          0      ipcc   0 Edge      aoss-qmp
+313:          0          0          0          0          0          0          0          0       PDC   6 Edge      q6v5 wdog
+314:          0          0          0          0          0          0          0          0     smp2p   0 Edge      q6v5 fatal
+315:          0          0          0          0          0          0          0          0     smp2p   1 Edge      q6v5 ready
+316:          0          0          0          0          0          0          0          0     smp2p   2 Edge      q6v5 handover
+317:          0          0          0          0          0          0          0          0     smp2p   3 Edge      q6v5 stop
+318:          0          0          0          0          0          0          0          0     smp2p   0 Edge      q6v5 fatal
+319:          0          0          0          0          0          0          0          0     smp2p   1 Edge      q6v5 ready
+320:          0          0          0          0          0          0          0          0     smp2p   2 Edge      q6v5 handover
+321:          0          0          0          0          0          0          0          0     smp2p   3 Edge      q6v5 stop
+322:          0          0          0          0          0          0          0          0       PDC   9 Edge      q6v5 wdog
+323:          0          0          0          0          0          0          0          0     smp2p   0 Edge      q6v5 fatal
+324:          0          0          0          0          0          0          0          0     smp2p   1 Edge      q6v5 ready
+325:          0          0          0          0          0          0          0          0     smp2p   2 Edge      q6v5 handover
+326:          0          0          0          0          0          0          0          0     smp2p   3 Edge      q6v5 stop
+327:          0          0          0          0          0          0          0          0     smp2p   0 Edge      q6v5 fatal
+328:          0          0          0          0          0          0          0          2     smp2p   1 Edge      q6v5 ready
+329:          0          0          0          0          0          0          0          2     smp2p   2 Edge      q6v5 handover
+330:          0          0          0          0          0          0          0          0     smp2p   3 Edge      q6v5 stop
+331:          0          0          0          0          0          0          0          1     smp2p   7 Edge      q6v5 shutdown-ack
+334:          0          0          0          0          0          0          0          0  pmic_arb 102826394 Edge      pm8xxx_rtc_alarm
+356:          0          0          0          0          0          0          0          0     smp2p   0 Edge      ipa_smp2p_clk_vote
+358:        354          0          0          0          0          0          0          0      ipcc 131072 Edge      glink-native-modem
+359:          0          0          0          0          0          0          0          0  ITS-pMSI   0 Edge      gsi_msi
+360:          0          0          0          0          0          0          0          0  ITS-pMSI   1 Edge      gsi_msi
+IPI0:       201        208        148        197       2606       2587       3071      28031       Rescheduling interrupts
+IPI1:     13710        591        446        185        489        458        477       3018       Function call interrupts
+IPI2:         0          0          0          0          0          0          0          0       CPU stop interrupts
+IPI3:         0          0          0          0          0          0          0          0       CPU stop (for crash dump) interrupts
+IPI4:         0          0          0          0          0          0          0          0       Timer broadcast interrupts
+IPI5:       990          1         12         19        334        307        342      58097       IRQ work interrupts
+IPI6:         0          0          0          0          0          0          0          0       CPU wake-up interrupts
+Err:          0

@@ -1,0 +1,42 @@
+
+/home/user/nx679j-kernel-test.IYMJNo/vmlinux:     file format elf64-littleaarch64
+
+
+Disassembly of section .head.text:
+
+Disassembly of section .text:
+
+Disassembly of section .rodata.text:
+
+ffffffc081d3c110 <nx679j_gunyah_wdt_fingerprint>:
+ffffffc081d3c110:	d28000a0 	mov	x0, #0x5                   	// #5
+ffffffc081d3c114:	f2b0c000 	movk	x0, #0x8600, lsl #16
+ffffffc081d3c118:	d2800041 	mov	x1, #0x2                   	// #2
+ffffffc081d3c11c:	aa1f03e2 	mov	x2, xzr
+ffffffc081d3c120:	aa1f03e3 	mov	x3, xzr
+ffffffc081d3c124:	aa1f03e4 	mov	x4, xzr
+ffffffc081d3c128:	aa1f03e5 	mov	x5, xzr
+ffffffc081d3c12c:	aa1f03e6 	mov	x6, xzr
+ffffffc081d3c130:	aa1f03e7 	mov	x7, xzr
+ffffffc081d3c134:	d4000003 	smc	#0x0
+ffffffc081d3c138:	d2800100 	mov	x0, #0x8                   	// #8
+ffffffc081d3c13c:	f2b0c000 	movk	x0, #0x8600, lsl #16
+ffffffc081d3c140:	d2817701 	mov	x1, #0xbb8                 	// #3000
+ffffffc081d3c144:	aa0103e2 	mov	x2, x1
+ffffffc081d3c148:	d4000003 	smc	#0x0
+ffffffc081d3c14c:	d28000a0 	mov	x0, #0x5                   	// #5
+ffffffc081d3c150:	f2b0c000 	movk	x0, #0x8600, lsl #16
+ffffffc081d3c154:	d2800061 	mov	x1, #0x3                   	// #3
+ffffffc081d3c158:	aa1f03e2 	mov	x2, xzr
+ffffffc081d3c15c:	d4000003 	smc	#0x0
+ffffffc081d3c160:	d28000e0 	mov	x0, #0x7                   	// #7
+ffffffc081d3c164:	f2b0c000 	movk	x0, #0x8600, lsl #16
+ffffffc081d3c168:	aa1f03e1 	mov	x1, xzr
+ffffffc081d3c16c:	aa1f03e2 	mov	x2, xzr
+ffffffc081d3c170:	d4000003 	smc	#0x0
+ffffffc081d3c174:	d503205f 	wfe
+ffffffc081d3c178:	17ffffff 	b	ffffffc081d3c174 <nx679j_gunyah_wdt_fingerprint+0x64>
+
+Disassembly of section .init.text:
+
+Disassembly of section .exit.text:

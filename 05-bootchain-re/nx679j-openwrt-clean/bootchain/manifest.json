@@ -1,0 +1,86 @@
+[
+  {
+    "partition": "abl_a",
+    "expected_bytes": 1048576,
+    "actual_bytes": 1048576,
+    "sha256": "443d1956e836aea3fe30ac13113dae787d88223c1e24f875c6831f69d86acea3",
+    "rc": 0
+  },
+  {
+    "partition": "abl_b",
+    "expected_bytes": 1048576,
+    "actual_bytes": 1048576,
+    "sha256": "443d1956e836aea3fe30ac13113dae787d88223c1e24f875c6831f69d86acea3",
+    "rc": 0
+  },
+  {
+    "partition": "uefi_a",
+    "expected_bytes": 5242880,
+    "actual_bytes": 5242880,
+    "sha256": "d32139de305aeb2aba1dc8c12b4996c49b09a09a6032307bf100ecb1ecb2d312",
+    "rc": 0
+  },
+  {
+    "partition": "uefi_b",
+    "expected_bytes": 5242880,
+    "actual_bytes": 5242880,
+    "sha256": "d32139de305aeb2aba1dc8c12b4996c49b09a09a6032307bf100ecb1ecb2d312",
+    "rc": 0
+  },
+  {
+    "partition": "boot_a",
+    "expected_bytes": 100663296,
+    "actual_bytes": 100663296,
+    "sha256": "0cd94d5627501f3c65c94542093ad18b1ec6c1c215dc6a7ecab4f941057e8364",
+    "rc": 0
+  },
+  {
+    "partition": "boot_b",
+    "expected_bytes": 100663296,
+    "actual_bytes": 100663296,
+    "sha256": "e3fd61ece52cac5588c21e23b86446c0e44e607599f75a1feaf2185995e6f257",
+    "rc": 0
+  },
+  {
+    "partition": "vendor_boot_a",
+    "expected_bytes": 100663296,
+    "actual_bytes": 100663296,
+    "sha256": "6db6d4d76059a9ef3a6bcc904911aac53a20044224a675014a6396a8f5d9d168",
+    "rc": 0
+  },
+  {
+    "partition": "vendor_boot_b",
+    "expected_bytes": 100663296,
+    "actual_bytes": 100663296,
+    "sha256": "6db6d4d76059a9ef3a6bcc904911aac53a20044224a675014a6396a8f5d9d168",
+    "rc": 0
+  },
+  {
+    "partition": "dtbo_a",
+    "expected_bytes": 25165824,
+    "actual_bytes": 25165824,
+    "sha256": "9ee95463abce517d140eae3c5c892c2b38fd1344d6fb0a6e2da2af76a86de6a1",
+    "rc": 0
+  },
+  {
+    "partition": "dtbo_b",
+    "expected_bytes": 25165824,
+    "actual_bytes": 25165824,
+    "sha256": "9ee95463abce517d140eae3c5c892c2b38fd1344d6fb0a6e2da2af76a86de6a1",
+    "rc": 0
+  },
+  {
+    "partition": "vbmeta_a",
+    "expected_bytes": 65536,
+    "actual_bytes": 65536,
+    "sha256": "cc0de687c935714a9b6de4bf3492391474e640d2e23f752f6c626f6413b07e22",
+    "rc": 0
+  },
+  {
+    "partition": "vbmeta_b",
+    "expected_bytes": 65536,
+    "actual_bytes": 65536,
+    "sha256": "cc0de687c935714a9b6de4bf3492391474e640d2e23f752f6c626f6413b07e22",
+    "rc": 0
+  }
+]

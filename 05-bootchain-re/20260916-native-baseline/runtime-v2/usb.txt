@@ -1,0 +1,4 @@
+udc=/sys/class/udc/a600000.dwc3 state=configured
+udc=/sys/class/udc/dummy_udc.0 state=not attached
+/config/usb_gadget/g1/UDC=a600000.dwc3
+/config/usb_gadget/g2/UDC=

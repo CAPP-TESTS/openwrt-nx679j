@@ -1,0 +1,87 @@
+{
+  "checks": [
+    {
+      "check": "t1: every module was attempted with an ATTEMPT line first",
+      "pass": true,
+      "detail": "6 ATTEMPT lines for 6 modules"
+    },
+    {
+      "check": "t1: a result line per module (loaded / failed), never silent",
+      "pass": true,
+      "detail": "20 MOD lines"
+    },
+    {
+      "check": "t1: no TIMEOUT-KILLED when nothing hangs",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "t1: the chain finished and exited 0 (a failed load is not fatal)",
+      "pass": true,
+      "detail": "rc=0"
+    },
+    {
+      "check": "t2: the stuck module is named in an ATTEMPT line written before the call",
+      "pass": true,
+      "detail": "altmode-glink.ko"
+    },
+    {
+      "check": "t2: the child was KILLED on the deadline and journalled as TIMEOUT-KILLED",
+      "pass": true,
+      "detail": "['nx679j: MOD altmode_glink                      TIMEOUT-KILLED after 15000 ms (stuck in finit_module, see ATTEMPT line above)']"
+    },
+    {
+      "check": "t2: the walk CONTINUED after the kill (later modules were attempted)",
+      "pass": true,
+      "detail": "[' after 15000 ms (stuck in finit_module, see ATTEMPT line above)', 'nx679j: ATTEMPT finit_module /home/user/nx679j-stock/experiments/20260917-init-v8/localtest/modules/clk-qcom.ko']"
+    },
+    {
+      "check": "t2: the cost of the stuck module was the deadline, not forever",
+      "pass": true,
+      "detail": "15.3 s"
+    },
+    {
+      "check": "t2: the chain still reported its summary and exited 0",
+      "pass": true,
+      "detail": "rc=0"
+    },
+    {
+      "check": "t2: loaded and TIMEOUT-KILLED are different strings in the same journal",
+      "pass": true,
+      "detail": "both present"
+    },
+    {
+      "check": "t3: a module with no .ko is reported MISSING, not silently skipped",
+      "pass": true,
+      "detail": "['nx679j: MOD ghost_module                       MISSING (no .ko in /lib/modules)', 'nx679j: MOD second_ghost                       MISSING (no .ko in /lib/modules)']"
+    }
+  ],
+  "t1": {
+    "tag": "t1-normal",
+    "rc": 0,
+    "seconds": 0.3,
+    "journal": "nx679j: chain: start\nnx679j: chain: 20 modules to try, 6 .ko visible\nnx679j: ATTEMPT finit_module /home/user/nx679j-stock/experiments/20260917-init-v8/localtest/modules/altmode-glink.ko\nnx679j: MOD altmode_glink                      finit_module rc=-38 errno=38 (other)\nnx679j: ---- dump (chain progress) ----\nnx679j: kmsg unavailable\nnx679j: pmsg unavailable (no ramoops this boot)\nnx679j: no kmsg/pmsg/rawdump channel this boot\nnx679j: ATTEMPT finit_module /home/user/nx679j-stock/experiments/20260917-init-v8/localtest/modules/clk-qcom.ko\nnx679j: MOD clk_qcom                           finit_module rc=-38 errno=38 (other)\nnx679j: ATTEMPT finit_module /home/user/nx679j-stock/experiments/20260917-init-v8/localtest/modules/crypto-qti-common.ko\nnx679j: MOD crypto_qti_common                  finit_module rc=-38 errno=38 (other)\nnx679j: ATTEMPT finit_module /home/user/nx679j-stock/experiments/20260917-init-v8/localtest/modules/crypto-qti-hwkm.ko\nnx679j: MOD crypto_qti_hwkm                    finit_module rc=-38 errno=38 (other)\nnx679j: ATTEMPT finit_module /home/user/nx679j-stock/experiments/20260917-init-v8/localtest/modules/debug-regulator.ko\nnx679j: MOD debug_regulator                    finit_module rc=-38 errno=38 (other)\nnx679j: ATTEMPT finit_module /home/user/nx679j-stock/experiments/20260917-init-v8/localtest/modules/dwc3-msm.ko\nnx679j: MOD dwc3_msm                           finit_module rc=-38 errno=38 (other)\nnx679j: MOD phy_msm_ssusb_qmp                  MISSING (no .ko in /lib/modules)\nnx679j: MOD phy_msm_snps_hs                    MISSING (no .ko in /lib/modules)\nnx679j: MOD phy_generic                        MISSING (no .ko in /lib/modules)\nnx679j: ---- dump (chain progress) ----\nnx679j: kmsg unavailable\nnx679j: pmsg unavailable (no ramoops this boot)\nnx679j: no kmsg/pmsg/rawdump channel this boot\nnx679j: MOD eud                                MISSING (no .ko in /lib/modules)\nnx679j: MOD ssusb_redriver_nb7vpq904m          MISSING (no .ko in /lib/modules)\nnx679j: MOD ucsi_glink                         MISSING (no .ko in /lib/modules)\nnx679j: MOD pmic_glink                         MISSING (no .ko in /lib/modules)\nnx679j: MOD pdr_interface                      MISSING (no .ko in /lib/modules)\nnx679j: MOD qmi_helpers                        MISSING (no .ko in /lib/modules)\nnx679j: MOD qcom_glink                         MISSING (no .ko in /lib/modules)\nnx679j: MOD qcom_glink_smem                    MISSING (no .ko in /lib/modules)\nnx679j: ---- dump (chain progress) ----\nnx679j: kmsg unavailable\nnx679j: pmsg unavailable (no ramoops this boot)\nnx679j: no kmsg/pmsg/rawdump channel this boot\nnx679j: MOD qcom_smd                           MISSING (no .ko in /lib/modules)\nnx679j: MOD rproc_qcom_common                  MISSING (no .ko in /lib/modules)\nnx679j: MOD fsa4480_i2c                        MISSING (no .ko in /lib/modules)\nnx679j: ---- dump (chain progress) ----\nnx679j: kmsg unavailable\nnx679j: pmsg unavailable (no ramoops this boot)\nnx679j: no kmsg/pmsg/rawdump channel this boot\nnx679j: chain: done in 312 ms: ok=0 timeout-killed=0 failed/missing=20 skipped=0\nnx679j: ---- dump (end of chain) ----\nnx679j: kmsg unavailable\nnx679j: pmsg unavailable (no ramoops this boot)\nnx679j: no kmsg/pmsg/rawdump channel this boot\n",
+    "stdout": "\nnx679j: ---- dump (chain progress) ----\nnx679j: kmsg unavailable\nnx679j: pmsg unavailable (no ramoops this boot)\nnx679j: no kmsg/pmsg/rawdump channel this boot\nnx679j: chain: done in 312 ms: ok=0 timeout-killed=0 failed/missing=20 skipped=0\nnx679j: ---- dump (end of chain) ----\nnx679j: kmsg unavailable\nnx679j: pmsg unavailable (no ramoops this boot)\nnx679j: no kmsg/pmsg/rawdump channel this boot\n",
+    "stderr": ""
+  },
+  "t2": {
+    "tag": "t2-fifo",
+    "rc": 0,
+    "seconds": 15.3,
+    "journal": "nx679j: chain: start\nnx679j: chain: 20 modules to try, 6 .ko visible\nnx679j: ATTEMPT finit_module /home/user/nx679j-stock/experiments/20260917-init-v8/localtest/modules/altmode-glink.ko\nnx679j: MOD altmode_glink                      TIMEOUT-KILLED after 15000 ms (stuck in finit_module, see ATTEMPT line above)\nnx679j: ---- dump (chain progress) ----\nnx679j: kmsg unavailable\nnx679j: pmsg unavailable (no ramoops this boot)\nnx679j: no kmsg/pmsg/rawdump channel this boot\nnx679j: ATTEMPT finit_module /home/user/nx679j-stock/experiments/20260917-init-v8/localtest/modules/clk-qcom.ko\nnx679j: MOD clk_qcom                           finit_module rc=-38 errno=38 (other)\nnx679j: ATTEMPT finit_module /home/user/nx679j-stock/experiments/20260917-init-v8/localtest/modules/crypto-qti-common.ko\nnx679j: MOD crypto_qti_common                  finit_module rc=-38 errno=38 (other)\nnx679j: ATTEMPT finit_module /home/user/nx679j-stock/experiments/20260917-init-v8/localtest/modules/crypto-qti-hwkm.ko\nnx679j: MOD crypto_qti_hwkm                    finit_module rc=-38 errno=38 (other)\nnx679j: ATTEMPT finit_module /home/user/nx679j-stock/experiments/20260917-init-v8/localtest/modules/debug-regulator.ko\nnx679j: MOD debug_regulator                    finit_module rc=-38 errno=38 (other)\nnx679j: ATTEMPT finit_module /home/user/nx679j-stock/experiments/20260917-init-v8/localtest/modules/dwc3-msm.ko\nnx679j: MOD dwc3_msm                           finit_module rc=-38 errno=38 (other)\nnx679j: MOD phy_msm_ssusb_qmp                  MISSING (no .ko in /lib/modules)\nnx679j: MOD phy_msm_snps_hs                    MISSING (no .ko in /lib/modules)\nnx679j: MOD phy_generic                        MISSING (no .ko in /lib/modules)\nnx679j: ---- dump (chain progress) ----\nnx679j: kmsg unavailable\nnx679j: pmsg unavailable (no ramoops this boot)\nnx679j: no kmsg/pmsg/rawdump channel this boot\nnx679j: MOD eud                                MISSING (no .ko in /lib/modules)\nnx679j: MOD ssusb_redriver_nb7vpq904m          MISSING (no .ko in /lib/modules)\nnx679j: MOD ucsi_glink                         MISSING (no .ko in /lib/modules)\nnx679j: MOD pmic_glink                         MISSING (no .ko in /lib/modules)\nnx679j: MOD pdr_interface                      MISSING (no .ko in /lib/modules)\nnx679j: MOD qmi_helpers                        MISSING (no .ko in /lib/modules)\nnx679j: MOD qcom_glink                         MISSING (no .ko in /lib/modules)\nnx679j: MOD qcom_glink_smem                    MISSING (no .ko in /lib/modules)\nnx679j: ---- dump (chain progress) ----\nnx679j: kmsg unavailable\nnx679j: pmsg unavailable (no ramoops this boot)\nnx679j: no kmsg/pmsg/rawdump channel this boot\nnx679j: MOD qcom_smd                           MISSING (no .ko in /lib/modules)\nnx679j: MOD rproc_qcom_common                  MISSING (no .ko in /lib/modules)\nnx679j: MOD fsa4480_i2c                        MISSING (no .ko in /lib/modules)\nnx679j: ---- dump (chain progress) ----\nnx679j: kmsg unavailable\nnx679j: pmsg unavailable (no ramoops this boot)\nnx679j: no kmsg/pmsg/rawdump channel this boot\nnx679j: chain: done in 15285 ms: ok=0 timeout-killed=1 failed/missing=19 skipped=0\nnx679j: ---- dump (end of chain) ----\nnx679j: kmsg unavailable\nnx679j: pmsg unavailable (no ramoops this boot)\nnx679j: no kmsg/pmsg/rawdump channel this boot\n",
+    "stdout": "x679j: ---- dump (chain progress) ----\nnx679j: kmsg unavailable\nnx679j: pmsg unavailable (no ramoops this boot)\nnx679j: no kmsg/pmsg/rawdump channel this boot\nnx679j: chain: done in 15285 ms: ok=0 timeout-killed=1 failed/missing=19 skipped=0\nnx679j: ---- dump (end of chain) ----\nnx679j: kmsg unavailable\nnx679j: pmsg unavailable (no ramoops this boot)\nnx679j: no kmsg/pmsg/rawdump channel this boot\n",
+    "stderr": ""
+  },
+  "t3": {
+    "tag": "t3-missing",
+    "rc": 0,
+    "seconds": 0.0,
+    "journal": "nx679j: chain: start\nnx679j: chain: 18 modules to try, 0 .ko visible\nnx679j: MOD ghost_module                       MISSING (no .ko in /lib/modules)\nnx679j: ---- dump (chain progress) ----\nnx679j: kmsg unavailable\nnx679j: pmsg unavailable (no ramoops this boot)\nnx679j: no kmsg/pmsg/rawdump channel this boot\nnx679j: MOD second_ghost                       MISSING (no .ko in /lib/modules)\nnx679j: MOD dwc3_msm                           MISSING (no .ko in /lib/modules)\nnx679j: MOD phy_msm_ssusb_qmp                  MISSING (no .ko in /lib/modules)\nnx679j: MOD phy_msm_snps_hs                    MISSING (no .ko in /lib/modules)\nnx679j: MOD phy_generic                        MISSING (no .ko in /lib/modules)\nnx679j: MOD eud                                MISSING (no .ko in /lib/modules)\nnx679j: MOD ssusb_redriver_nb7vpq904m          MISSING (no .ko in /lib/modules)\nnx679j: MOD ucsi_glink                         MISSING (no .ko in /lib/modules)\nnx679j: ---- dump (chain progress) ----\nnx679j: kmsg unavailable\nnx679j: pmsg unavailable (no ramoops this boot)\nnx679j: no kmsg/pmsg/rawdump channel this boot\nnx679j: MOD altmode_glink                      MISSING (no .ko in /lib/modules)\nnx679j: MOD pmic_glink                         MISSING (no .ko in /lib/modules)\nnx679j: MOD pdr_interface                      MISSING (no .ko in /lib/modules)\nnx679j: MOD qmi_helpers                        MISSING (no .ko in /lib/modules)\nnx679j: MOD qcom_glink                         MISSING (no .ko in /lib/modules)\nnx679j: MOD qcom_glink_smem                    MISSING (no .ko in /lib/modules)\nnx679j: MOD qcom_smd                           MISSING (no .ko in /lib/modules)\nnx679j: MOD rproc_qcom_common                  MISSING (no .ko in /lib/modules)\nnx679j: ---- dump (chain progress) ----\nnx679j: kmsg unavailable\nnx679j: pmsg unavailable (no ramoops this boot)\nnx679j: no kmsg/pmsg/rawdump channel this boot\nnx679j: MOD fsa4480_i2c                        MISSING (no .ko in /lib/modules)\nnx679j: ---- dump (chain progress) ----\nnx679j: kmsg unavailable\nnx679j: pmsg unavailable (no ramoops this boot)\nnx679j: no kmsg/pmsg/rawdump channel this boot\nnx679j: chain: done in 3 ms: ok=0 timeout-killed=0 failed/missing=18 skipped=0\nnx679j: ---- dump (end of chain) ----\nnx679j: kmsg unavailable\nnx679j: pmsg unavailable (no ramoops this boot)\nnx679j: no kmsg/pmsg/rawdump channel this boot\n",
+    "stdout": "s)\nnx679j: ---- dump (chain progress) ----\nnx679j: kmsg unavailable\nnx679j: pmsg unavailable (no ramoops this boot)\nnx679j: no kmsg/pmsg/rawdump channel this boot\nnx679j: chain: done in 3 ms: ok=0 timeout-killed=0 failed/missing=18 skipped=0\nnx679j: ---- dump (end of chain) ----\nnx679j: kmsg unavailable\nnx679j: pmsg unavailable (no ramoops this boot)\nnx679j: no kmsg/pmsg/rawdump channel this boot\n",
+    "stderr": ""
+  },
+  "summary": {
+    "passed": 11,
+    "total": 11
+  }
+}

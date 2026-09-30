@@ -1,0 +1,4 @@
+Questa cartella conteneva il ramdisk vendor stock estratto (init, moduli .ko e i file di
+configurazione del ramdisk: modules.dep/alias/softdep/blocklist, fstab.qcom, chiavi AVB GSI).
+In questa revisione e' stato rimosso: e' materiale del produttore, e le procedure per
+ri-estrarlo dal proprio dispositivo sono in ESTRAZIONE-BLOB.md.

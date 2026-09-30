@@ -1,0 +1,11 @@
+Parsing boot image: [boot.img]
+HEADER_VER      [4]
+KERNEL_SZ       [38781440]
+RAMDISK_SZ      [4929692]
+OS_VERSION      [12.0.0]
+OS_PATCH_LEVEL  [2022-02]
+PAGESIZE        [4096]
+CMDLINE         [console=ttyMSM0,115200n8 console=tty0 loglevel=8 ignore_loglevel initcall_debug fbcon=map:0 panic=10 g_ncm.dev_addr=xx:xx:xx:xx:xx:xx g_ncm.host_addr=xx:xx:xx:xx:xx:xx]
+KERNEL_FMT      [raw]
+RAMDISK_FMT     [lz4_legacy]
+VBMETA

@@ -1,0 +1,6 @@
+id=gunyah_watchdog_pet
+name=Gunyah Watchdog Pet
+version=v1.0
+versionCode=1
+author=Research
+description=Continuously pets Gunyah hypervisor watchdog to prevent 15s timeout. Enables custom kernel boot on Snapdragon 888 devices.

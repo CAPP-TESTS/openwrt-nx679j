@@ -1,0 +1,27 @@
+   0.000s UTC 2026-07-11T18:52:49.610672+00:00
+   0.000s baseline netifs=enp98s0,enp99s0,lo,wlan0,ztmjfmwg7f
+   0.001s baseline usb=3-2=0c45:8009:AK980 PRO | 3-3=12cf:0c05:MADCATZ R.A.T. 8+ gaming mouse | 3-5=8087:0032: | 8-1=18d1:d00d:Android | usb1=1d6b:0002:xHCI Host Controller | usb2=1d6b:0003:xHCI Host Controller | usb3=1d6b:0002:xHCI Host Controller | usb4=1d6b:0003:xHCI Host Controller | usb5=1d6b:0002:xHCI Host Controller | usb6=1d6b:0003:xHCI Host Controller | usb7=1d6b:0002:xHCI Host Controller | usb8=1d6b:0003:xHCI Host Controller
+   0.054s fastboot reboot rc=0: Rebooting                                          OKAY [  0.000s]
+Finished. Total time: 0.050s
+   0.138s state fastboot=0 adb=0 netifs=enp98s0,enp99s0,lo,wlan0,ztmjfmwg7f usb=3-2=0c45:8009:AK980 PRO | 3-3=12cf:0c05:MADCATZ R.A.T. 8+ gaming mouse | 3-5=8087:0032: | usb1=1d6b:0002:xHCI Host Controller | usb2=1d6b:0003:xHCI Host Controller | usb3=1d6b:0002:xHCI Host Controller | usb4=1d6b:0003:xHCI Host Controller | usb5=1d6b:0002:xHCI Host Controller | usb6=1d6b:0003:xHCI Host Controller | usb7=1d6b:0002:xHCI Host Controller | usb8=1d6b:0003:xHCI Host Controller
+  15.099s state fastboot=1 adb=0 netifs=enp98s0,enp99s0,lo,wlan0,ztmjfmwg7f usb=3-2=0c45:8009:AK980 PRO | 3-3=12cf:0c05:MADCATZ R.A.T. 8+ gaming mouse | 3-5=8087:0032: | 8-1=18d1:d00d:Android | usb1=1d6b:0002:xHCI Host Controller | usb2=1d6b:0003:xHCI Host Controller | usb3=1d6b:0002:xHCI Host Controller | usb4=1d6b:0003:xHCI Host Controller | usb5=1d6b:0002:xHCI Host Controller | usb6=1d6b:0003:xHCI Host Controller | usb7=1d6b:0002:xHCI Host Controller | usb8=1d6b:0003:xHCI Host Controller
+  15.099s FAILURE: device returned to fastboot
+  15.102s fastboot getvar current-slot rc=0: current-slot: b
+Finished. Total time: 0.002s
+  15.106s fastboot getvar slot-retry-count:b rc=0: slot-retry-count:b: 7
+Finished. Total time: 0.003s
+  15.120s fastboot getvar slot-unbootable:b rc=0: slot-unbootable:b: no
+Finished. Total time: 0.011s
+  15.165s fastboot set_active a rc=0: Setting current slot to 'a'                        OKAY [  0.040s]
+Finished. Total time: 0.042s
+  15.170s fastboot getvar current-slot rc=0: current-slot: a
+Finished. Total time: 0.002s
+  15.222s fastboot reboot rc=0: Rebooting                                          OKAY [  0.000s]
+Finished. Total time: 0.050s
+  42.125s Android adb=1 boot_completed='' slot='_a'
+  42.665s Android adb=1 boot_completed='' slot='_a'
+  43.212s Android adb=1 boot_completed='' slot='_a'
+  43.775s Android adb=1 boot_completed='' slot='_a'
+  44.338s Android adb=1 boot_completed='1' slot='_a'
+  44.338s RECOVERY SUCCESS: healthy slot-A Android boot-complete
+  44.369s pstore listing rc=1: ls: /sys/fs/pstore: Permission denied

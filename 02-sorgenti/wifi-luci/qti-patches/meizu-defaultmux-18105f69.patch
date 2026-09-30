@@ -1,0 +1,33 @@
+From 18105f69fc9874a9776129044d7a6ab899beb889 Mon Sep 17 00:00:00 2001
+From: athbe <prayer@athbe.cn>
+Date: Wed, 22 Jul 2026 13:12:54 +0800
+Subject: [PATCH] qcom-soc: prefer QMAP links on SDX55
+
+The SDX55 can use dynamically allocated RMNET/QMAP links on its MHI data port. Select multiplexing by default so unmodified NetworkManager connections use that path and can coexist with a separate IMS bearer.
+
+Keep the fixed mux hint for callers that explicitly select the non-multiplexed raw-IP path.
+
+Signed-off-by: athbe <prayer@athbe.cn>
+---
+ src/plugins/qcom-soc/77-mm-qcom-soc.rules | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+
+diff --git a/src/plugins/qcom-soc/77-mm-qcom-soc.rules b/src/plugins/qcom-soc/77-mm-qcom-soc.rules
+index 80d066ffb..3bbf34a80 100644
+--- a/src/plugins/qcom-soc/77-mm-qcom-soc.rules
++++ b/src/plugins/qcom-soc/77-mm-qcom-soc.rules
+@@ -29,10 +29,10 @@ ENV{ID_MM_QCOM_SOC}="1"
+ #
+ ENV{ID_MM_PHYSDEV_UID}="qcom-soc"
+ 
+-# The SDX55 requires an explicit WDS bind to PCIe endpoint 4, mux id 1 even
+-# when the main raw-IP interface is used without QMAP aggregation.
+-SUBSYSTEM=="net", KERNEL=="mhi_hwip0", ATTRS{vendor}=="0x17cb", ATTRS{device}=="0x0306", ATTRS{subsystem_vendor}=="0x17cb", ATTRS{subsystem_device}=="0x010c", ENV{ID_MM_QMI_FIXED_MUX_ID}="1"
+-SUBSYSTEM=="net", KERNEL=="mhi_swip0", ATTRS{vendor}=="0x17cb", ATTRS{device}=="0x0306", ATTRS{subsystem_vendor}=="0x17cb", ATTRS{subsystem_device}=="0x010c", ENV{ID_MM_QMI_FIXED_MUX_ID}="1"
++# Prefer dynamic QMAP links on the SDX55. Keep the fixed mux hint for callers
++# that explicitly request the main raw-IP interface without QMAP aggregation.
++SUBSYSTEM=="net", KERNEL=="mhi_hwip0", ATTRS{vendor}=="0x17cb", ATTRS{device}=="0x0306", ATTRS{subsystem_vendor}=="0x17cb", ATTRS{subsystem_device}=="0x010c", ENV{ID_MM_QMI_DEFAULT_MULTIPLEX}="1", ENV{ID_MM_QMI_FIXED_MUX_ID}="1"
++SUBSYSTEM=="net", KERNEL=="mhi_swip0", ATTRS{vendor}=="0x17cb", ATTRS{device}=="0x0306", ATTRS{subsystem_vendor}=="0x17cb", ATTRS{subsystem_device}=="0x010c", ENV{ID_MM_QMI_DEFAULT_MULTIPLEX}="1", ENV{ID_MM_QMI_FIXED_MUX_ID}="1"
+ 
+ # port type hints for the rpmsgexport-ed ports
+ SUBSYSTEM=="rpmsg", ATTR{name}=="DATA*", ATTR{name}=="*_CNTL", ENV{ID_MM_PORT_TYPE_QMI}="1"

@@ -1,0 +1,95 @@
+#!/bin/sh
+# luci.nx679j-modem — stato e controllo del Modem X65 (QRTR/QMI) senza ModemManager.
+# Sorgente dati: qmicli (upstream, libqmi) su qrtr://0 via qmi-proxy.
+# Parser verificati sul device: NAS serving-system/signal, DMS ids/revision,
+# UIM slot-status (+ EF_IMSI in BCD), stato dati dal kernel.
+. /usr/share/libubox/jshn.sh
+D=qrtr://0
+q() { qmicli -p -d "$D" "$@" 2>/dev/null; }
+f() { sed -n "s/.*$1: '\([^']*\)'.*/\1/p" | head -1; }
+
+# BCD: "08:29:22:..." -> cifre. Il primo byte e' la lunghezza; si tengono le ultime 15.
+bcd15() {
+  tr -d '\t ' | tr ':' '\n' | sed '1d' | while read -r b; do
+    [ ${#b} = 2 ] && printf '%s%s' "$(printf %s "$b" | cut -c2)" "$(printf %s "$b" | cut -c1)"
+  done | tail -c 15
+}
+
+imsi_val() { q --uim-read-transparent=0x3F00,0x7FFF,0x6F07 | grep -A1 'Read result' | tail -1 | bcd15; }
+
+status() {
+  local ss sg dg dr sl
+  ss=$(q --nas-get-serving-system); sg=$(q --nas-get-signal-info)
+  dg=$(q --dms-get-ids); dr=$(q --dms-get-revision); sl=$(q --uim-get-slot-status)
+  json_init
+  json_add_string registration "$(printf '%s' "$ss" | f 'Registration state')"
+  json_add_string tech "$(printf '%s' "$ss" | sed -n "s/^[[:space:]]*\[0\]: '\([^']*\)'.*/\1/p" | head -1)"
+  json_add_string operator "$(q --nas-get-home-network | f 'Description')"
+  json_add_string rssi "$(printf '%s' "$sg" | f 'RSSI')"
+  json_add_string rsrp "$(printf '%s' "$sg" | f 'RSRP')"
+  json_add_string rsrq "$(printf '%s' "$sg" | f 'RSRQ')"
+  json_add_string snr "$(printf '%s' "$sg" | f 'SNR')"
+  json_add_string imei "$(printf '%s' "$dg" | f 'IMEI')"
+  json_add_string revision "$(printf '%s' "$dr" | f 'Revision')"
+  json_add_string slot1 "$(printf '%s' "$sl" | sed -n 's/.*Card status: \([a-z]*\).*/\1/p' | sed -n 1p)"
+  json_add_string slot2 "$(printf '%s' "$sl" | sed -n 's/.*Card status: \([a-z]*\).*/\1/p' | sed -n 2p)"
+  json_add_string iccid "$(printf '%s' "$sl" | sed -n 's/.*ICCID: *\([0-9][0-9]*\).*/\1/p' | head -1)"
+  json_add_string imsi "$(imsi_val)"
+  json_add_string ip "$(ip -4 -o addr show dev rmnet_data0 2>/dev/null | awk '{print $4}' | head -1)"
+  json_add_int route "$(ip -4 route show default 2>/dev/null | grep -c .)"
+  json_add_int session "$(pidof qmi-qrtr-observed 2>/dev/null | wc -w)"
+  json_add_int uptime "$(cut -d. -f1 /proc/uptime)"
+  json_dump; json_cleanup
+}
+
+imsi() {
+  local v
+  v=$(imsi_val)
+  json_init; json_add_string imsi "$v"; json_dump; json_cleanup
+}
+
+# Sblocco PIN: serve quando si inserisce una SIM protetta da PIN.
+# NB: non testato sul device di proposito — un tentativo con PIN errato consumerebbe
+# uno dei 3 disponibili. L'opzione e' verificata presente in qmicli 1.36.
+pin() {
+  local input p out
+  input=''; read -r input || true; [ -n "$input" ] || input='{}'
+  json_load "$input"; json_get_var p pin; json_cleanup
+  json_init
+  if [ -z "$p" ]; then
+    json_add_boolean ok 0; json_add_string err "pin mancante"
+  else
+    out=$(qmicli -p -d "$D" --uim-verify-pin=PIN1,"$p" 2>&1)
+    if printf '%s' "$out" | grep -q "Successfully"; then
+      json_add_boolean ok 1
+    else
+      json_add_boolean ok 0
+      json_add_string err "$(printf '%s' "$out" | head -1)"
+    fi
+  fi
+  json_dump; json_cleanup
+}
+
+reconnect() {
+  local r='{}'
+  read -r r || true
+  date +%s > /tmp/nx679j-link-renew.request
+  json_init; json_add_boolean queued 1; json_dump; json_cleanup
+}
+
+case "$1" in
+  list)
+    json_init
+    json_add_object 'getStatus'; json_close_object
+    json_add_object 'getImsi'; json_close_object
+    json_add_object 'doReconnect'; json_close_object
+    json_add_object 'doPin'; json_add_string 'pin' 'string'; json_close_object
+    json_dump; json_cleanup ;;
+  call)
+    case "$2" in
+      getStatus) status ;;
+      getImsi) imsi ;;
+      doReconnect) reconnect ;;
+      doPin) pin ;;
+    esac ;;
+esac

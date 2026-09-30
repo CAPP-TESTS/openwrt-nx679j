@@ -1,0 +1,15 @@
+  0.000s UTC 2026-07-17T13:12:57.656032+00:00 reboot with GPT B active SUCCESS retry0 (0x47) no set_active
+  0.000s waiting for USB disconnect after adb reboot...
+  0.009s USB disconnected (boot attempt likely)
+  7.444s FASTBOOT: 3dbd****	 fastboot
+  7.444s OUTCOME FASTBOOT_RETURN elapsed=7.444s disconnect=True
+  7.458s current-slot: current-slot: b | Finished. Total time: 0.011s
+  7.464s slot-successful:b: slot-successful:b: yes | Finished. Total time: 0.002s
+  7.472s slot-retry-count:b: slot-retry-count:b: 0 | Finished. Total time: 0.006s
+  7.477s slot-unbootable:b: slot-unbootable:b: no | Finished. Total time: 0.002s
+  7.482s slot-successful:a: slot-successful:a: yes | Finished. Total time: 0.002s
+  7.486s slot-retry-count:a: slot-retry-count:a: 7 | Finished. Total time: 0.003s
+  7.491s slot-unbootable:a: slot-unbootable:a: no | Finished. Total time: 0.002s
+  7.526s set_active a: Setting current slot to 'a'                        OKAY [  0.030s] | Finished. Total time: 0.032s
+  7.579s reboot a: Rebooting                                          OKAY [  0.000s] | Finished. Total time: 0.050s
+107.785s RECOVERY timeout

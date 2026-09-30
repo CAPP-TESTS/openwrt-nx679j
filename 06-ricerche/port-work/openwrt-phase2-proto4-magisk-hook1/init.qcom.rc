@@ -1,0 +1,8 @@
+on late-init
+    setprop openwrt.phase2.proto4.import 1
+
+on post-fs-data
+    exec -- /system/bin/sh /openwrt-phase2-probe.sh post-fs-data
+
+on property:sys.boot_completed=1
+    exec -- /system/bin/sh /openwrt-phase2-probe.sh boot-completed

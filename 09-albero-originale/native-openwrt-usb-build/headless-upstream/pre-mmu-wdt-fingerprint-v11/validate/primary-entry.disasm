@@ -1,0 +1,43 @@
+
+/home/user/nx679j-kernel-test.IYMJNo/vmlinux:     file format elf64-littleaarch64
+
+
+Disassembly of section .head.text:
+
+Disassembly of section .text:
+
+Disassembly of section .rodata.text:
+
+ffffffc081d3c0a0 <primary_entry>:
+ffffffc081d3c0a0:	940072a2 	bl	ffffffc081d58b28 <record_mmu_state>
+ffffffc081d3c0a4:	940072b6 	bl	ffffffc081d58b7c <preserve_boot_args>
+ffffffc081d3c0a8:	9400001a 	bl	ffffffc081d3c110 <nx679j_gunyah_wdt_fingerprint>
+ffffffc081d3c0ac:	90004421 	adrp	x1, ffffffc0825c0000 <_end>
+ffffffc081d3c0b0:	9100003f 	mov	sp, x1
+ffffffc081d3c0b4:	aa1f03fd 	mov	x29, xzr
+ffffffc081d3c0b8:	900008a0 	adrp	x0, ffffffc081e50000 <__initdata_begin>
+ffffffc081d3c0bc:	aa1f03e1 	mov	x1, xzr
+ffffffc081d3c0c0:	940068e8 	bl	ffffffc081d56460 <__pi_create_init_idmap>
+ffffffc081d3c0c4:	b5000113 	cbnz	x19, ffffffc081d3c0e4 <primary_entry+0x44>
+ffffffc081d3c0c8:	d5033fbf 	dmb	sy
+ffffffc081d3c0cc:	aa0003e1 	mov	x1, x0
+ffffffc081d3c0d0:	900008a0 	adrp	x0, ffffffc081e50000 <__initdata_begin>
+ffffffc081d3c0d4:	b0ff17c2 	adrp	x2, ffffffc080035000 <do_page_fault+0x4bc>
+ffffffc081d3c0d8:	9121f042 	add	x2, x2, #0x87c
+ffffffc081d3c0dc:	d63f0040 	blr	x2
+ffffffc081d3c0e0:	14000007 	b	ffffffc081d3c0fc <primary_entry+0x5c>
+ffffffc081d3c0e4:	90000000 	adrp	x0, ffffffc081d3c000 <__idmap_text_start>
+ffffffc081d3c0e8:	90000001 	adrp	x1, ffffffc081d3c000 <__idmap_text_start>
+ffffffc081d3c0ec:	91211021 	add	x1, x1, #0x844
+ffffffc081d3c0f0:	b0ff17c2 	adrp	x2, ffffffc080035000 <do_page_fault+0x4bc>
+ffffffc081d3c0f4:	91235042 	add	x2, x2, #0x8d4
+ffffffc081d3c0f8:	d63f0040 	blr	x2
+ffffffc081d3c0fc:	aa1303e0 	mov	x0, x19
+ffffffc081d3c100:	9400001f 	bl	ffffffc081d3c17c <init_kernel_el>
+ffffffc081d3c104:	aa0003f4 	mov	x20, x0
+ffffffc081d3c108:	9400018b 	bl	ffffffc081d3c734 <__cpu_setup>
+ffffffc081d3c10c:	140000f3 	b	ffffffc081d3c4d8 <__primary_switch>
+
+Disassembly of section .init.text:
+
+Disassembly of section .exit.text:

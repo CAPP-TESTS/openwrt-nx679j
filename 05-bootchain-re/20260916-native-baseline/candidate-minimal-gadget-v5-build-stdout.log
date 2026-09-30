@@ -1,0 +1,25 @@
+[*] extracting stock kernel from boot_a readback
+    kernel 49108324 bytes sha256=f0aa949c95d1421381850cb1982bd2a505e96fcd7565543ec28d5b1f7d81a0cc
+[*] unwrapping OpenWrt rootfs (source of busybox + musl + kmodloader)
+    extracted to /home/user/nx679j-stock/experiments/20260916-122926-native-baseline/candidate-minimal-gadget-v5/work/owrt (1253 paths)
+[*] reading stock vendor modules
+    327 .ko modules in the vendor ramdisk
+[*] resolving 40 module names from candidate-init-v5.sh
+    40 names -> 40 distinct .ko files, 2262752 bytes raw
+    vermagic != "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64": none
+[*] computing the shared-library closure of the ramdisk binaries
+    libc.so                  <- lib/libc.so (590852 bytes)
+    libgcc_s.so.1            <- lib/libgcc_s.so.1 (131088 bytes)
+    libubox.so.20240329      <- lib/libubox.so.20240329 (65633 bytes)
+    interpreter of /home/user/nx679j-stock/experiments/20260916-122926-native-baseline/candidate-minimal-gadget-v5/work/owrt/bin/busybox: /lib/ld-musl-aarch64.so.1
+    interpreter of /home/user/nx679j-stock/experiments/20260916-122926-native-baseline/candidate-minimal-gadget-v5/work/owrt/sbin/kmodloader: /lib/ld-musl-aarch64.so.1
+    all 18 needed applets exist as busybox symlinks in the OpenWrt rootfs
+[*] stage 1 done -> /home/user/nx679j-stock/experiments/20260916-122926-native-baseline/candidate-minimal-gadget-v5/inputs.json
+[*] assembling the minimal ramdisk
+    85 entries, cpio 3598688 -> gz 1147147 bytes
+    self-check: archive parses, 6 device nodes, 40 modules, no /sbin/init
+[*] image  /home/user/nx679j-stock/experiments/20260916-122926-native-baseline/candidate-minimal-gadget-v5/boot_b-minimal-gadget-v5.img
+    50266112 bytes sha256=62c7fa4bb28cdd5ec96faa960b431ed8b5faf734a9e298405ea1400040b8b1f4
+    ramdisk 1147147 bytes (v4: 12051145, 9.5%) sha256=33f0cb1b30d3ce61cfcfa2b87400d43f87219bd3925981864ae66c4a3d6ed915
+    entries 85 (v4: 1541)
+[*] manifest -> /home/user/nx679j-stock/experiments/20260916-122926-native-baseline/candidate-minimal-gadget-v5/manifest.json

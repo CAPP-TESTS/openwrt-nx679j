@@ -1,0 +1,15 @@
+   0.000s monitor-start current-slot=b unchanged-v9 stock-gunyah-disable-confirmed secure-scm-disable=-22
+   0.010s initial-usb='Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub\nBus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub\nBus 003 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub\nBus 003 Device 002: ID 12cf:0c05 DEXIN MADCATZ R.A.T. 8+ gaming mouse\nBus 003 Device 003: ID 8087:0032 Intel Corp. AX210 Bluetooth\nBus 003 Device 004: ID 0c45:8009 Microdia AK980 PRO\nBus 004 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub\nBus 005 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub\nBus 006 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub\nBus 007 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub\nBus 008 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub\nBus 008 Device 113: ID 18d1:d00d Google Inc. Xiaomi Mi/Redmi 2 (fastboot)'
+   0.010s initial-net='enp98s0:xx:xx:xx:xx:xx:xx:down:carrier=0:driver=r8169:ipv4=\nenp99s0:xx:xx:xx:xx:xx:xx:up:carrier=1:driver=r8169:ipv4=\nlo:xx:xx:xx:xx:xx:xx:unknown:carrier=1:driver=:ipv4=127.0.0.1/8\nwlan0:xx:xx:xx:xx:xx:xx:up:carrier=1:driver=iwlwifi:ipv4=10.20.61.23/24\nztmjfmwg7f:xx:xx:xx:xx:xx:xx:unknown:carrier=1:driver=:ipv4=10.147.20.140/24'
+   0.062s fastboot-reboot rc=0 output='Rebooting                                          OKAY [  0.000s]\\nFinished. Total time: 0.050s'
+   0.068s usb-state='Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub\nBus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub\nBus 003 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub\nBus 003 Device 002: ID 12cf:0c05 DEXIN MADCATZ R.A.T. 8+ gaming mouse\nBus 003 Device 003: ID 8087:0032 Intel Corp. AX210 Bluetooth\nBus 003 Device 004: ID 0c45:8009 Microdia AK980 PRO\nBus 004 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub\nBus 005 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub\nBus 006 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub\nBus 007 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub\nBus 008 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub'
+   0.079s adb-state='error: no devices/emulators found'
+  14.842s FASTBOOT-RETURN devices='3dbd****\t fastboot'
+  14.855s fastboot-current-slot 'current-slot: b\\nFinished. Total time: 0.012s'
+  14.859s fastboot-slot-unbootable:b 'slot-unbootable:b: no\\nFinished. Total time: 0.002s'
+  14.862s fastboot-slot-retry-count:b 'slot-retry-count:b: 7\\nFinished. Total time: 0.003s'
+  14.906s recovery-set-active-a rc=0 output="Setting current slot to 'a'                        OKAY [  0.040s]\\nFinished. Total time: 0.042s"
+  14.959s recovery-reboot rc=0 output='Rebooting                                          OKAY [  0.000s]\\nFinished. Total time: 0.050s'
+  43.183s recovery-adb slot='_a' boot_completed=''
+  44.213s recovery-adb slot='_a' boot_completed='1'
+  44.213s OUTCOME fastboot-return-recovered-a

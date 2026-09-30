@@ -1,0 +1,7 @@
+error: unexpected argument '--run-as' found
+
+  tip: to pass '--run-as' as a value, use '-- --run-as'
+
+Usage: binwalk <--list|--quiet|--verbose|--extract|--matryoshka|--search-all|--entropy|--log <LOG>|--threads <THREADS>|--exclude <EXCLUDE>...|--include <INCLUDE>...|--directory <DIRECTORY>|FILE_NAME>
+
+For more information, try '--help'.

@@ -1,0 +1,59 @@
+--- candidate-init-v3.sh	2026-09-17 03:45:57.906501323 +0200
++++ candidate-init-v4.sh	2026-09-17 03:53:52.570719535 +0200
+@@ -1,5 +1,19 @@
+ #!/bin/sh
+-# NX679J slot-B diagnostic init, v3.
++# NX679J slot-B diagnostic init, v4.
++#
++# v4 = v3 with ONE change, confined to the module loop below: the names in the
++# list are /proc/modules style (underscores) while the files inside this ramdisk
++# are mostly hyphenated. v3 looked for the same literal string twice
++# ("$M/$ko.ko" and "$M/${ko}.ko"), so 25 of the 40 names were never found and
++# logged "insmod ... ABSENT": no dwc3-msm means no USB gadget, no ufs_qcom means
++# no UFS, and therefore no breadcrumb journal on rawdump either.
++# Every name is now tried in this order:
++#   1. literal <name>.ko
++#   2. all hyphens      <name with _ -> -).ko
++#   3. all underscores  <name with - -> _).ko
++#   4. the mixed-spelling table below (files on this device that are neither)
++# and a name that matches nothing is logged explicitly as RESOLUTION-FAILED.
++# Load order, journal, gadget and handover are byte-identical to v3.
+ #
+ # v3 = v2 with the body below byte-identical. The single v3 change does not
+ # live in this file: the boot-image kernel command line now carries panic=10,
+@@ -103,15 +117,31 @@
+     minidump smem
+ do
+     f=""
+-    for cand in "$M/$ko.ko" "$M/${ko}.ko"; do
+-        [ -f "$cand" ] && f="$cand" && break
++    hit=""
++    for cand in "$M/$ko.ko" "$M/${ko//_/-}.ko" "$M/${ko//-/_}.ko"; do
++        if [ -f "$cand" ]; then
++            f="$cand"
++            hit="$(basename "$cand")"
++            break
++        fi
+     done
+     if [ -z "$f" ]; then
+-        log "insmod $ko ABSENT"
++        # Files on this device whose name is neither all-hyphen nor all-underscore.
++        case "$ko" in
++            nvmem_qcom_spmi_sdam) cand="$M/nvmem_qcom-spmi-sdam.ko" ;;
++            *) cand="" ;;
++        esac
++        if [ -n "$cand" ] && [ -f "$cand" ]; then
++            f="$cand"
++            hit="$(basename "$cand") (mixed spelling)"
++        fi
++    fi
++    if [ -z "$f" ]; then
++        log "insmod $ko RESOLUTION-FAILED tried $ko.ko ${ko//_/-}.ko ${ko//-/_}.ko"
+         continue
+     fi
+     out=$($INSMOD "$f" 2>&1)
+-    log "insmod $ko rc=$? ${out:+msg=$out}"
++    log "insmod $ko rc=$? resolved=$hit ${out:+msg=$out}"
+ done
+ flush
+ 

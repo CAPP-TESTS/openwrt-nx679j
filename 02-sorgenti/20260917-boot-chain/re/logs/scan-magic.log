@@ -1,0 +1,19 @@
+
+### bl/xbl_a.img  size=3670016 sha256(first16)=7f454c46************************
+    entropia globale = 6.533 bit/byte (su 1 MiB)
+    ELF          n>=  3 primi offset: ['0x0', '0x162f4', '0x439f4']
+    mappa entropia (blocchi 256 KiB, max 24 blocchi):
+      0x0000000:6.57  0x0040000:6.43  0x0080000:6.73  0x00c0000:5.32  0x0100000:0.53  0x0140000:-0.00  0x0180000:-0.00  0x01c0000:-0.00  0x0200000:-0.00  0x0240000:-0.00  0x0280000:-0.00  0x02c0000:-0.00  0x0300000:-0.00  0x0340000:-0.00
+
+### bl/abl_a.img  size=1048576 sha256(first16)=7f454c46************************
+    entropia globale = 1.852 bit/byte (su 1 MiB)
+    ELF          n>=  1 primi offset: ['0x0']
+    mappa entropia (blocchi 256 KiB, max 24 blocchi):
+      0x0000000:5.83  0x0040000:-0.00  0x0080000:-0.00  0x00c0000:-0.00
+
+### bl/uefi_a.img  size=5242880 sha256(first16)=7f454c46************************
+    entropia globale = 7.658 bit/byte (su 1 MiB)
+    ELF          n>=  1 primi offset: ['0x0']
+    gzip         n>=  2 primi offset: ['0x49f28', '0x180fe0']
+    mappa entropia (blocchi 256 KiB, max 24 blocchi):
+      0x0000000:6.23  0x0040000:7.53  0x0080000:7.98  0x00c0000:7.97  0x0100000:7.98  0x0140000:7.98  0x0180000:7.98  0x01c0000:7.99  0x0200000:7.98  0x0240000:6.92  0x0280000:1.12  0x02c0000:-0.00  0x0300000:-0.00  0x0340000:-0.00  0x0380000:-0.00  0x03c0000:-0.00  0x0400000:-0.00  0x0440000:-0.00  0x0480000:-0.00  0x04c0000:-0.00

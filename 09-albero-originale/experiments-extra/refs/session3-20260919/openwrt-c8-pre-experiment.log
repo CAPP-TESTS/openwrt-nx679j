@@ -1,0 +1,188 @@
+c8bf2d2d-3185-4fe4-be41-3591387b026f
+367.31 1989.59
+Linux (none) 5.10.66-android12-9-00005-gf6e6376090be-ab8060604 #1 SMP PREEMPT Fri Jan 7 14:51:36 UTC 2022 aarch64 GNU/Linux
+offline
+ipanetm 16384 0 - Live 0xffffffeebe082000 (O)
+ipa_clientsm 249856 0 - Live 0xffffffeebe09b000 (O)
+rndisipam 69632 1 ipa_clientsm, Live 0xffffffeebe253000 (O)
+ipam 4079616 3 ipanetm,ipa_clientsm,rndisipam, Live 0xffffffeec12c1000 (O)
+rmnet_aps 20480 0 - Live 0xffffffeebe06f000 (O)
+rmnet_perf_tether 20480 0 - Live 0xffffffeebe069000 (O)
+rmnet_perf 16384 0 - Live 0xffffffeebe064000 (O)
+rmnet_offload 32768 0 - Live 0xffffffeebdfd7000 (O)
+rmnet_shs 196608 1 rmnet_perf, Live 0xffffffeebe033000 (O)
+rmnet_core 331776 6 rmnet_aps,rmnet_perf_tether,rmnet_perf,rmnet_offload,rmnet_shs, Live 0xffffffeebdfe1000 (O)
+qcom_spss 28672 0 - Live 0xffffffeebdfcf000
+qcom_glink_spss 20480 1 qcom_spss, Live 0xffffffeebdfbf000
+gsim 274432 1 ipam, Live 0xffffffeebe488000 (O)
+rmnet_ctl 20480 1 rmnet_core, Live 0xffffffeebdfc9000 (O)
+rmnet_wlan 49152 0 - Live 0xffffffeebdfb2000 (O)
+rmnet_sch 16384 0 - Live 0xffffffeebe096000 (O)
+qcom_spmi_pmic 20480 0 - Live 0xffffffeebdfac000
+mac80211 1302528 0 - Live 0xffffffeebde6d000
+qcom_ipcc 24576 6 - Live 0xffffffeebde66000
+glink_pkt 36864 0 - Live 0xffffffeebde5c000
+pmu_scmi 16384 0 - Live 0xffffffeebde57000
+arm_smmu 208896 11 - Live 0xffffffeebde23000
+qti_fixed_regulator 16384 0 - Live 0xffffffeebde1e000
+nvmem_qcom_spmi_sdam 16384 1 - Live 0xffffffeebde19000
+ufs_qcom 90112 1 - Live 0xffffffeebde02000
+clk_rpmh 45056 16 - Live 0xffffffeebddf6000
+regmap_spmi 16384 1 qcom_spmi_pmic, Live 0xffffffeebddf1000
+cqhci 53248 0 - Live 0xffffffeebdde3000
+qcom_rimps 20480 1 - Live 0xffffffeebdddd000
+msm_qmp 32768 1 - Live 0xffffffeebddd4000
+pmu_vendor 16384 1 - Live 0xffffffeebddcf000
+ufshcd_crypto_qti 20480 1 ufs_qcom, Live 0xffffffeebddc9000
+crypto_qti_common 36864 3 ufs_qcom,cqhci,ufshcd_crypto_qti, Live 0xffffffeebddbf000
+crypto_qti_hwkm 20480 1 crypto_qti_common, Live 0xffffffeebddb9000
+msm_drm 2637824 3 - Live 0xffffffeebdb34000 (O)
+panel_event_notifier 16384 1 msm_drm, Live 0xffffffeebdb2f000
+gh_irq_lend 20480 1 msm_drm, Live 0xffffffeebdb29000
+gh_mem_notifier 16384 1 msm_drm, Live 0xffffffeebdb24000
+altmode_glink 24576 1 msm_drm, Live 0xffffffeebdb1d000
+usb_switch_dp 16384 1 msm_drm, Live 0xffffffeebdb18000
+msm_ext_display 16384 1 msm_drm,[permanent], Live 0xffffffeebdb13000
+fsa4480_i2c 16384 1 msm_drm, Live 0xffffffeebdb0e000
+spmi_pmic_arb 53248 1 msm_drm, Live 0xffffffeebdb00000
+msm_mmrm 53248 1 msm_drm, Live 0xffffffeebdaf2000 (O)
+pinctrl_waipio 106496 7 - Live 0xffffffeebdad7000
+hwkm 24576 1 crypto_qti_hwkm, Live 0xffffffeebdad0000
+qnoc_diwali 167936 0 - Live 0xffffffeebdaa6000
+rtc_pm8xxx 16384 1 - Live 0xffffffeebdaa1000
+phy_qcom_ufs_qmp_v4_diwali 24576 0 - Live 0xffffffeebda9a000
+pinctrl_cape 106496 0 - Live 0xffffffeebda7f000
+stub_regulator 16384 0 - Live 0xffffffeebda7a000
+cfg80211 1335296 1 mac80211, Live 0xffffffeebd933000
+smp2p 28672 0 - Live 0xffffffeebd92b000
+dispcc_diwali 61440 0 - Live 0xffffffeebd91b000
+mem_hooks 16384 0 - Live 0xffffffeebd916000
+qnoc_waipio 180224 0 - Live 0xffffffeebd8e9000
+mhi_cntrl_qcom 49152 0 - Live 0xffffffeebd8dc000
+qcom_esoc 98304 1 mhi_cntrl_qcom, Live 0xffffffeebd8c3000
+kryo_arm64_edac 16384 0 - Live 0xffffffeebd8be000
+memory_dump_v2 24576 0 - Live 0xffffffeebd8b7000
+bwmon 65536 0 - Live 0xffffffeebd8a6000
+gh_virt_wdt 16384 0 - Live 0xffffffeebd8a1000
+c1dcvs_scmi 24576 0 - Live 0xffffffeebd89a000
+socinfo 32768 0 - Live 0xffffffeebd891000
+mem_buf 45056 0 - Live 0xffffffeebd885000
+qti_regmap_debugfs 28672 2 qcom_spmi_pmic,fsa4480_i2c, Live 0xffffffeebd87d000
+gcc_diwali 81920 0 - Live 0xffffffeebd868000
+qcom_gic_intr_routing 28672 0 [permanent], Live 0xffffffeebd860000
+qcom_wdt_core 32768 1 gh_virt_wdt, Live 0xffffffeebd857000
+pinctrl_diwali 86016 0 - Live 0xffffffeebd841000
+dispcc_waipio 65536 29 - Live 0xffffffeebd830000
+rpmh_regulator 32768 64 - Live 0xffffffeebd827000
+gcc_waipio 110592 83 - Live 0xffffffeebd80b000
+reboot_mode 16384 0 - Live 0xffffffeebd806000
+tmecom_intf 28672 1 hwkm, Live 0xffffffeebd7fe000
+msm_geni_serial 81920 0 - Live 0xffffffeebd7e9000
+iommu_logger 16384 1 arm_smmu, Live 0xffffffeebd7e4000
+qcom_cpu_vendor_hooks 20480 0 - Live 0xffffffeebd7de000
+qcom_q6v5_pas 45056 0 - Live 0xffffffeebd7d2000
+qcom_q6v5 20480 1 qcom_q6v5_pas, Live 0xffffffeebd7cc000
+qcom_pil_info 20480 1 qcom_q6v5_pas, Live 0xffffffeebd7c6000
+qcom_dcvs 73728 1 bwmon, Live 0xffffffeebd7b3000
+dcvs_fp 16384 1 qcom_dcvs, Live 0xffffffeebd7ae000
+llcc_qcom 32768 1 msm_drm, Live 0xffffffeebd7a5000
+qcom_pmu_lib 40960 1 pmu_scmi, Live 0xffffffeebd79a000
+qcom_llcc_pmu 24576 1 qcom_pmu_lib, Live 0xffffffeebd793000
+icc_rpmh 24576 2 qnoc_diwali,qnoc_waipio, Live 0xffffffeebd78c000
+icc_bcm_voter 16384 1 icc_rpmh, Live 0xffffffeebd787000
+qcom_rpmh 57344 5 clk_rpmh,msm_drm,rpmh_regulator,dcvs_fp,icc_bcm_voter,[permanent], Live 0xffffffeebd778000
+cmd_db 16384 5 clk_rpmh,rpmh_regulator,dcvs_fp,icc_rpmh,qcom_rpmh,[permanent], Live 0xffffffeebd773000
+qnoc_qos 16384 2 qnoc_diwali,qnoc_waipio, Live 0xffffffeebd76e000
+msm_geni_se 57344 1 msm_geni_serial, Live 0xffffffeebd75f000
+pinctrl_msm 57344 23 msm_drm,pinctrl_waipio,pinctrl_cape,pinctrl_diwali, Live 0xffffffeebd750000
+qcom_iommu_util 77824 2 arm_smmu,msm_drm, Live 0xffffffeebd73c000
+icc_debug 16384 1 icc_rpmh, Live 0xffffffeebd737000
+gh_ctrl 20480 0 - Live 0xffffffeebd731000
+phy_qcom_ufs_qmp_v4_waipio 24576 1 - Live 0xffffffeebd72a000
+c1dcvs_vendor 16384 1 - Live 0xffffffeebd725000
+usb_f_gsi 90112 0 - Live 0xffffffeebd70e000
+dwc3_msm 135168 2 msm_drm,usb_f_gsi, Live 0xffffffeebd6ec000
+eud 32768 0 - Live 0xffffffeebd6e3000
+phy_msm_ssusb_qmp 32768 3 - Live 0xffffffeebd6da000
+phy_msm_snps_hs 28672 2 - Live 0xffffffeebd6d2000
+phy_generic 20480 0 - Live 0xffffffeebd6cc000
+ssusb_redriver_nb7vpq904m 40960 1 dwc3_msm, Live 0xffffffeebd6c1000
+ucsi_glink 28672 3 fsa4480_i2c,dwc3_msm,ssusb_redriver_nb7vpq904m, Live 0xffffffeebd6b9000
+pmic_glink 24576 2 altmode_glink,ucsi_glink, Live 0xffffffeebd6b2000
+pdr_interface 24576 1 pmic_glink, Live 0xffffffeebd6ab000
+ipa_fmwk 126976 6 ipa_clientsm,rndisipam,ipam,rmnet_core,rmnet_ctl,usb_f_gsi, Live 0xffffffeebd68b000
+phy_qcom_ufs_qmp_v4_cape 24576 0 - Live 0xffffffeebd684000
+qcom_pdc 28672 0 - Live 0xffffffeebd67c000
+qcom_reboot_reason 16384 0 - Live 0xffffffeebd677000
+qcom_aoss 32768 2 msm_qmp,qcom_q6v5_pas, Live 0xffffffeebd66e000
+qcom_dload_mode 24576 0 - Live 0xffffffeebd667000
+mdt_loader 16384 3 ipam,qcom_spss,qcom_q6v5_pas, Live 0xffffffeebd662000
+qcom_sysmon 32768 4 qcom_spss,qcom_esoc,qcom_q6v5_pas,qcom_q6v5, Live 0xffffffeebd659000
+qcom_dma_heaps 65536 1 mem_buf,[permanent], Live 0xffffffeebd648000
+mem_buf_dev 106496 2 mem_buf,qcom_dma_heaps, Live 0xffffffeebd62d000
+secure_buffer 40960 3 arm_smmu,qcom_dma_heaps,mem_buf_dev, Live 0xffffffeebd622000
+qcom_scm 118784 16 ipam,qcom_spss,arm_smmu,ufs_qcom,crypto_qti_hwkm,msm_drm,memory_dump_v2,qcom_wdt_core,qcom_q6v5_pas,pinctrl_msm,eud,phy_msm_snps_hs,qcom_pdc,qcom_dload_mode,mdt_loader,secure_buffer, Live 0xffffffeebd604000
+msm_dma_iommu_mapping 28672 2 msm_drm,qcom_dma_heaps, Live 0xffffffeebd5fc000
+mhi 139264 2 ipam,mhi_cntrl_qcom, Live 0xffffffeebd5d9000
+pci_msm_drv 245760 2 mhi_cntrl_qcom,mhi, Live 0xffffffeebd59c000
+rproc_qcom_common 45056 8 ipam,qcom_spss,qcom_q6v5_pas,qcom_q6v5,pmic_glink,pdr_interface,qcom_sysmon,pci_msm_drv, Live 0xffffffeebd590000
+qcom_glink_smem 16384 1 rproc_qcom_common, Live 0xffffffeebd58b000
+qcom_glink 53248 4 qcom_spss,qcom_glink_spss,rproc_qcom_common,qcom_glink_smem, Live 0xffffffeebd57d000
+qcom_smd 32768 1 rproc_qcom_common, Live 0xffffffeebd574000
+smp2p_sleepstate 16384 0 [permanent], Live 0xffffffeebd56f000
+phy_qcom_ufs 28672 4 ufs_qcom,phy_qcom_ufs_qmp_v4_diwali,phy_qcom_ufs_qmp_v4_waipio,phy_qcom_ufs_qmp_v4_cape, Live 0xffffffeebd567000
+qmi_helpers 28672 4 ipam,rmnet_core,pdr_interface,qcom_sysmon, Live 0xffffffeebd55f000
+qrtr 53248 14 - Live 0xffffffeebd551000
+ns 40960 1 qrtr, Live 0xffffffeebd546000
+qcom_ipc_logging 40960 26 ipanetm,ipa_clientsm,rndisipam,ipam,gsim,rmnet_ctl,glink_pkt,ufs_qcom,msm_qmp,altmode_glink,smp2p,mhi_cntrl_qcom,qcom_esoc,msm_geni_serial,qcom_rpmh,msm_geni_se,usb_f_gsi,dwc3_msm,ucsi_glink,qcom_pdc,qcom_aoss,mhi,pci_msm_drv,qcom_glink,qrtr,ns,[permanent], Live 0xffffffeebd53b000
+minidump 1130496 4 memory_dump_v2,qcom_wdt_core,qcom_dload_mode,qcom_ipc_logging, Live 0xffffffeebd426000
+smem 24576 10 ipam,qcom_glink_spss,msm_qmp,smp2p,socinfo,qcom_q6v5,rproc_qcom_common,qcom_glink_smem,qcom_smd,minidump, Live 0xffffffeebd41f000
+qcom_hwspinlock 16384 1 - Live 0xffffffeebd41a000
+sched_walt 405504 0 [permanent], Live 0xffffffeebd3b6000
+qcom_cpufreq_hw 32768 1 sched_walt, Live 0xffffffeebd3ad000
+gh_rm_drv 61440 4 msm_drm,gh_irq_lend,gh_mem_notifier,mem_buf_dev, Live 0xffffffeebd39d000
+gh_arm_drv 16384 1 gh_rm_drv, Live 0xffffffeebd398000
+gh_msgq 24576 3 msm_drm,mem_buf,gh_rm_drv, Live 0xffffffeebd391000
+gh_dbl 24576 1 gh_rm_drv, Live 0xffffffeebd38a000
+clk_dummy 16384 1 gcc_waipio, Live 0xffffffeebd385000
+clk_qcom 225280 8 ufs_qcom,msm_mmrm,dispcc_diwali,gcc_diwali,dispcc_waipio,gcc_waipio,dwc3_msm,clk_dummy, Live 0xffffffeebd34d000
+gdsc_regulator 24576 7 clk_qcom, Live 0xffffffeebd346000
+proxy_consumer 16384 3 qti_fixed_regulator,rpmh_regulator,gdsc_regulator, Live 0xffffffeebd341000
+debug_regulator 40960 4 qti_fixed_regulator,stub_regulator,rpmh_regulator,gdsc_regulator, Live 0xffffffeebd336000
+1: lo: <LOOPBACK> mtu 65536 qdisc noop state DOWN qlen 1000
+    link/loopback xx:xx:xx:xx:xx:xx brd xx:xx:xx:xx:xx:xx
+2: dummy0: <BROADCAST,NOARP> mtu 1500 qdisc noop state DOWN qlen 1000
+    link/ether xx:xx:xx:xx:xx:xx brd xx:xx:xx:xx:xx:xx
+3: ifb0: <BROADCAST,NOARP> mtu 1500 qdisc noop state DOWN qlen 32
+    link/ether xx:xx:xx:xx:xx:xx brd xx:xx:xx:xx:xx:xx
+4: ifb1: <BROADCAST,NOARP> mtu 1500 qdisc noop state DOWN qlen 32
+    link/ether xx:xx:xx:xx:xx:xx brd xx:xx:xx:xx:xx:xx
+5: tunl0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN qlen 1000
+    link/ipip 0.0.0.0 brd 0.0.0.0
+6: gre0@NONE: <NOARP> mtu 1476 qdisc noop state DOWN qlen 1000
+    link/gre 0.0.0.0 brd 0.0.0.0
+7: gretap0@NONE: <BROADCAST,MULTICAST> mtu 1462 qdisc noop state DOWN qlen 1000
+    link/ether xx:xx:xx:xx:xx:xx brd xx:xx:xx:xx:xx:xx
+8: erspan0@NONE: <BROADCAST,MULTICAST> mtu 1450 qdisc noop state DOWN qlen 1000
+    link/ether xx:xx:xx:xx:xx:xx brd xx:xx:xx:xx:xx:xx
+9: ip_vti0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN qlen 1000
+    link/ipip 0.0.0.0 brd 0.0.0.0
+10: ip6_vti0@NONE: <NOARP> mtu 1364 qdisc noop state DOWN qlen 1000
+    link/tunnel6 xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:00:00:00:00 brd xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:00:00:00:00
+11: sit0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN qlen 1000
+    link/sit 0.0.0.0 brd 0.0.0.0
+12: ip6tnl0@NONE: <NOARP> mtu 1452 qdisc noop state DOWN qlen 1000
+    link/tunnel6 xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:00:00:00:00 brd xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:00:00:00:00
+13: ip6gre0@NONE: <NOARP> mtu 1448 qdisc noop state DOWN qlen 1000
+    link/[823] xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:00:00:00:00 brd xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:00:00:00:00
+14: usb0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP qlen 1000
+    link/ether xx:xx:xx:xx:xx:xx brd xx:xx:xx:xx:xx:xx
+f8bb6c3def6964a9b2d6a76c406ddb61bafc9f7fbad29328886b40a3392a318d  /proc/1/root/lib/modules/rmnet_aps.ko
+8465d6a04d8fee06de39819db9c930f3ecd0b907bb3fe8dd09b76a4fd62d4cb2  /proc/1/root/lib/modules/rmnet_core.ko
+0b683dda20ebc5b292554bc3bab692607379c8c35b4f9666cb1f27690c5d1a8c  /proc/1/root/lib/modules/rmnet_ctl.ko
+af892a03f84df1217154d1da6c0220acb249665c0f53c633caf0daff56e38f5e  /proc/1/root/lib/modules/rmnet_offload.ko
+5028c8d1c6e1b36b5372e8fe8eb70c659a37c652f9f0380205fb354603b664b5  /proc/1/root/lib/modules/rmnet_perf.ko
+1d54df1f978cb814d47959930fe53979847b52dbb0a26b028e56ff31e7a3ab4f  /proc/1/root/lib/modules/rmnet_perf_tether.ko
+a6a335f5f23a138da70a9ab696514507c602df40e882e46ee14091a06f9ad56c  /proc/1/root/lib/modules/rmnet_sch.ko
+f7e5153137da29f96001bfb6e557b862eb68a922a5647bc010dae0aa0353e073  /proc/1/root/lib/modules/rmnet_shs.ko
+f8d0cfed651c3875a11b877b8a86cb4d2b891817f7cc840baf19ce5be7bd9936  /proc/1/root/lib/modules/rmnet_wlan.ko

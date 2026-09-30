@@ -1,0 +1,29 @@
+BASE_ISOLATION_BEGIN boot=a28dc1c5-8505-4bae-a39a-308ce7faa168 uptime=1362.91 6970.62
+CHECKPOINT_DURABLE index=16 label=before_base_isolation
+REMOVE module=rmnet_aps uptime=1362.92 6970.65
+CHECKPOINT_DURABLE index=0 label=before_remove_rmnet_aps
+REMOVE_EXIT module=rmnet_aps result=0 uptime=1362.93 6970.66
+REMOVED module=rmnet_aps
+CHECKPOINT_DURABLE index=1 label=after_remove_rmnet_aps
+REMOVE module=rmnet_perf_tether uptime=1362.94 6970.69
+CHECKPOINT_DURABLE index=2 label=before_remove_rmnet_perf_tether
+REMOVE_EXIT module=rmnet_perf_tether result=0 uptime=1362.94 6970.69
+REMOVED module=rmnet_perf_tether
+CHECKPOINT_DURABLE index=3 label=after_remove_rmnet_perf_tether
+REMOVE module=rmnet_perf uptime=1362.95 6970.70
+CHECKPOINT_DURABLE index=4 label=before_remove_rmnet_perf
+REMOVE_EXIT module=rmnet_perf result=0 uptime=1362.95 6970.71
+REMOVED module=rmnet_perf
+CHECKPOINT_DURABLE index=5 label=after_remove_rmnet_perf
+REMOVE module=rmnet_offload uptime=1362.96 6970.71
+CHECKPOINT_DURABLE index=6 label=before_remove_rmnet_offload
+REMOVE_EXIT module=rmnet_offload result=0 uptime=1362.96 6970.72
+REMOVED module=rmnet_offload
+CHECKPOINT_DURABLE index=7 label=after_remove_rmnet_offload
+REMOVE module=rmnet_shs uptime=1362.97 6970.72
+CHECKPOINT_DURABLE index=8 label=before_remove_rmnet_shs
+REMOVE_EXIT module=rmnet_shs result=0 uptime=1362.97 6970.73
+REMOVED module=rmnet_shs
+CHECKPOINT_DURABLE index=9 label=after_remove_rmnet_shs
+CHECKPOINT_DURABLE index=17 label=after_base_isolation
+BASE_ISOLATION_COMPLETE uptime=1362.98 6970.74

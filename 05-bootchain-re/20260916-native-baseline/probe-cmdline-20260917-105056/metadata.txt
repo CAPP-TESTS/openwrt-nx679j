@@ -1,0 +1,2 @@
+probe=probe-cmdline-ours.img sha256=47b7e7fb5e072b9f4cf86b0894e89b5b2716d8f626b5d6fa8bb2943ea94f588d
+current-slot: b

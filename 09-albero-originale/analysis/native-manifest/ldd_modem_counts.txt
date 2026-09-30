@@ -1,0 +1,12 @@
+/system/vendor/bin/netmgrd	57
+/system/vendor/bin/hw/qcrilNrd	107
+/system/vendor/bin/dpmQmiMgr	32
+/system/vendor/bin/vendor.dpmd	24
+/system/vendor/bin/qmipriod	25
+/system/vendor/bin/modemManager	40
+/system/vendor/bin/adpl	26
+/system/vendor/bin/qti	26
+/vendor/bin/ssgqmigd	6
+/vendor/bin/ATFWD-daemon	32
+/system/vendor/bin/imsdaemon	62
+/system/vendor/bin/ims_rtp_daemon	44

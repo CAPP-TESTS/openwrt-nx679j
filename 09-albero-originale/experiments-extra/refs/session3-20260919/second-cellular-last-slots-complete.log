@@ -1,0 +1,456 @@
+RAW_SLOT=159
+slot=159 uptime=1390.29 boot=a609cace-9d94-43e6-8cbf-432d9fff1ca6 r3=running
+-- dmesg:
+[ 1047.281123][    T7] gsi soc:qcom,msm_gsi: saved msi 1 msg data 1 addr 0x00**************
+[ 1047.284678][    T7] ipa ipa3_rmnet_ctl_register_pm_client:739 rmnet_ctl register done
+[ 1047.284693][    T7] ipa ipa3_rmnet_ll_register_pm_client:964 rmnet_ll register done
+[ 1047.284699][    T7] IPA driver is now in ready state
+[ 1047.284713][    T7] ipa-lnx-stats ipa_spearhead_stats_ioctl_init:1856 IPA ipa_lnx_stats_ioctl major(497) initial ok :>>>>
+[ 1047.284715][    T7] ipa-lnx-stats ipa_spearhead_stats_init:1884 IPA_LNX_STATS_IOCTL init success
+[ 1047.284717][    T7] IPA driver initialization was successful.
+[ 1047.284721][  T412] rmnet_ipa3 started initialization
+[ 1047.284723][  T412] IPA SSR support = True
+[ 1047.284724][  T412] IPA SG support = True
+[ 1047.284724][  T412] IPA Napi Enable = True
+[ 1047.284725][  T412] using default for wan-rx-desc-size = 256
+[ 1047.284852][  T412] ipa-wan ipa3_wwan_register_netdev_pm_client:3474 rmnet_ipa%d register done
+[ 1047.284988][  T412] ipa-wan ipa3_wwan_probe:3669 rmnet_ipa completed initialization
+[ 1047.285435][  T364] Sending QMI_IPA_INIT_MODEM_DRIVER_REQ_V01
+[ 1047.285801][  T241] ipa-wan ipa3_handle_indication_req:144 not send indication
+[ 1047.291003][    T7] ipa ipa3_uc_wdi_event_log_info_handler:373 WDI protocol missing 0x1
+[ 1047.291006][    T7] ipa ipa3_uc_ntn_event_log_info_handler:19 NTN protocol missing 0x1
+[ 1047.291022][    T7] ipa ipa_pc_qmp_enable:11184 mailbox channel request failed, ret=-19
+[ 1047.298621][  T364] QMI_IPA_INIT_MODEM_DRIVER_REQ_V01 response received
+[ 1048.280630][T11620] rmnet_ctl driver probed
+[ 1048.283574][T11620] ipa ipa3_setup_apps_low_lat_prod_pipe:374 Configuring low lat prod without rmnet config
+[ 1048.288198][T11634] DATARMNET6e31e62d2e(): Initializing on device rmnet_data0
+[ 1048.288205][T11634] rmnet_shs initializing rmnet_data0
+[ 1048.288214][T11634] rmnet_shs init with 0
+[ 1048.288227][T11634] DATARMNET7dec24813e(): Initializing on device rmnet_data0
+[ 1048.290154][T11638] ipa-wan ipa3_wwan_ioctl:2891 dev(rmnet_data0) register to IPA
+[ 1048.292025][T11641] DATARMNETe9173bbe0e(): rmnet dl_ind registration fail
+[ 1050.999627][  T412] sd 0:0:0:4: [sde] Synchronizing SCSI cache
+[ 1098.095627][  T412] sd 0:0:0:5: [sdf] Synchronizing SCSI cache
+-- rmtfs:
+[RMTFS] packet; from: 1:-2
+[RMTFS] del_client 1:16558
+[RMTFS] packet; from: 1:-2
+[RMTFS] del_client 1:16559
+[RMTFS] packet; from: 1:-2
+[RMTFS] del_client 1:16-- tqftpserv:
+got del_client for 1:16614
+got del_client for 1:16614
+got del_client for 1:16614
+got del_client for 1:16614
+-- pd-mapper:
+[PD-MAPPER] request node=0 port=2 service=avs/audio domains=1
+[PD-MAPPER] request node=0 port=2 service=tms/servreg domains=7
+[PD-MAPPER] request node=0 port=2 service=tms/servreg domains=7
+[PD-MAPPER] request node=0 port=2 service=tms/pddump_disabled domains=0
+[PD-MAPPER] request node=0 port=2 service=avs/audio domains=1
+[PD-MAPPER] request node=0 port=2 service=tms/servreg domains=7
+-- IPA experiment:
+-- IPA-ready restart experiment:
+-- ADSP experiment:
+-- DPM experiment:
+  00 00 00 02 00 00 00 17 00 00 00 
+[qmi] raw (14 bytes):
+  02 01 00 20 00 07 00 02 04 00 00 00 00 00 
+[qmi] type=2 txn=1 msg_id=0x0020 msg_len=7
+  TLV 0x02 len=4  u32=0 (0x00000000)  str="\0\0\0\0"
+[dpm] OPENED endpoint=4:1 rx=2 tx=23 pid=11614 hold=3600
+-- IPA pipe experiment:
+NETDEV features_block=0 active=0x00004000 available=0x001d4813
+NETDEV features_block=1 active=0x00000000 available=0x02800302
+INGRESS selector=7 flags=0xe
+INGRESS accepted
+EGRESS selector=6 flags=0xa
+EGRESS accepted
+-- WDA experiment:
+  TLV 0x16 len=4  u32=63 (0x0000003f)  str="?\0\0\0"
+  TLV 0x17 len=4  u32=1 (0x00000001)
+  TLV 0x18 len=4  u32=64512 (0x0000fc00)
+  TLV 0x1a len=4  u32=0 (0x00000000)  str="\0\0\0\0"
+  TLV 0x1b len=1  u8=0  str="\0"
+[wda] VERIFIED raw-IP=2 UL-QMAP=5 DL-QMAP=5 QoS=0
+-- rmnet mux experiment:
+-- observed-DMS bootstrap/test:
+  02 01 00 2d 00 0b 00 02 04 00 00 00 00 00 01 01 
+  00 05 
+[qmi] type=2 txn=1 msg_id=0x002d msg_len=11
+  TLV 0x02 len=4  u32=0 (0x00000000)  str="\0\0\0\0"
+  TLV 0x01 len=1  u8=5
+READY_FOR_OBSERVED_DMS_TEST uptime=1019.20 8103.95
+[dms] ONLINE_VERIFIED; not a bearer or Internet proof
+OBSERVED_CLIENT_EXIT=0 UPTIME=1047.21 8269.24
+[qrtr] local node=1 port=0
+[ns] service=2 version=1 instance=0 node=0 port=72
+[qmi] raw (18 bytes):
+  02 01 00 2d 00 0b 00 02 04 00 00 00 00 00 01 01 
+  00 00 
+[qmi] type=2 txn=1 msg_id=0x002d msg_len=11
+  TLV 0x02 len=4  u32=0 (0x00000000)  str="\0\0\0\0"
+  TLV 0x01 len=1  u8=0
+FRESH_CLIENT_EXIT=0
+OBSERVED_CHECK_FINISHED UPTIME=1047.21 8269.25 EXIT=0
+-- online data setup/session:
+  result=0 error=0
+  APN: internet.it
+  DNS1: 151.5.216.30 (as-le32 value 0x9705d81e)
+  DNS2: 151.5.216.130 (as-le32 value 0x9705d882)
+  IPv4 addr: 10.140.64.82 (as-le32 value 0x0a8c4052)
+  IPv4 gateway: 10.140.64.81 (as-le32 value 0x0a8c4051)
+  IPv4 netmask: 255.255.255.252 (as-le32 value 0xfffffffc)
+  MTU: 1500
+  IP family: 4
+[session] HOLDING seconds=3600; same QRTR client remains open
+DATA_BEARER_READY uptime=1049.27 8283.58
+DATA_SETUP_EXIT=0 UPTIME=1049.27 8283.58
+  8c 0a 21 04 00 fc ff ff ff 29 04 00 dc 05 00 00 
+  2b 01 00 04 
+[qmi] type=2 txn=5 msg_id=0x002d msg_len=93
+  TLV 0x02 len=4  u32=0 (0x00000000)  str="\0\0\0\0"
+  TLV 0x10 len=14  str="qdp_profile_ia"
+  TLV 0x11 len=1  u8=0  str="\0"
+  TLV 0x14 len=11  str="internet.it"
+  TLV 0x15 len=4  u32=2533742622 (0x9705d81e)
+  TLV 0x16 len=4  u32=2533742722 (0x9705d882)
+  TLV 0x1e len=4  u32=176963666 (0x0a8c4052)
+  TLV 0x1f len=2  u16=1024
+  TLV 0x20 len=4  u32=176963665 (0x0a8c4051)
+  TLV 0x21 len=4  u32=4294967292 (0xfffffffc)
+  TLV 0x29 len=4  u32=1500 (0x000005dc)
+  TLV 0x2b len=1  u8=4
+  result=0 error=0
+  APN: internet.it
+  DNS1: 151.5.216.30 (as-le32 value 0x9705d81e)
+  DNS2: 151.5.216.130 (as-le32 value 0x9705d882)
+  IPv4 addr: 10.140.64.82 (as-le32 value 0x0a8c4052)
+  IPv4 gateway: 10.140.64.81 (as-le32 value 0x0a8c4051)
+  IPv4 netmask: 255.255.255.252 (as-le32 value 0xfffffffc)
+  MTU: 1500
+  IP family: 4
+[session] HOLDING seconds=3600; same QRTR client remains open
+CHECKPOINT_DURABLE index=5 label=after_address
+STAGE=route BEGIN uptime=1312.10 9857.67
+CHECKPOINT_DURABLE index=6 label=before_route
+STAGE=route RETURNED uptime=1312.11 9857.68
+CHECKPOINT_DURABLE index=7 label=after_route
+STAGE=route-get BEGIN uptime=1312.12 9857.69
+CHECKPOINT_DURABLE index=8 label=before_route-get
+16: rmnet_data0@rmnet_ipa0: <UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UNKNOWN qlen 1000
+    inet 10.140.64.82/30 scope global rmnet_data0
+       valid_lft forever preferred_lft forever
+default via 10.140.64.81 dev rmnet_data0 
+10.0.0.0/24 dev usb0 scope link  src 10.0.0.1 
+10.140.64.80/30 dev rmnet_data0 scope link  src 10.140.64.82 
+8.8.8.8 via 10.140.64.81 dev rmnet_data0  src 10.140.64.82 
+STAGE=route-get RETURNED uptime=1312.13 9857.70
+CHECKPOINT_DURABLE index=9 label=after_route-get
+-- qrtr svc count:
+61
+
+RAW_SLOT=160
+slot=160 uptime=1393.31 boot=a609cace-9d94-43e6-8cbf-432d9fff1ca6 r3=running
+-- dmesg:
+[ 1047.281123][    T7] gsi soc:qcom,msm_gsi: saved msi 1 msg data 1 addr 0x00**************
+[ 1047.284678][    T7] ipa ipa3_rmnet_ctl_register_pm_client:739 rmnet_ctl register done
+[ 1047.284693][    T7] ipa ipa3_rmnet_ll_register_pm_client:964 rmnet_ll register done
+[ 1047.284699][    T7] IPA driver is now in ready state
+[ 1047.284713][    T7] ipa-lnx-stats ipa_spearhead_stats_ioctl_init:1856 IPA ipa_lnx_stats_ioctl major(497) initial ok :>>>>
+[ 1047.284715][    T7] ipa-lnx-stats ipa_spearhead_stats_init:1884 IPA_LNX_STATS_IOCTL init success
+[ 1047.284717][    T7] IPA driver initialization was successful.
+[ 1047.284721][  T412] rmnet_ipa3 started initialization
+[ 1047.284723][  T412] IPA SSR support = True
+[ 1047.284724][  T412] IPA SG support = True
+[ 1047.284724][  T412] IPA Napi Enable = True
+[ 1047.284725][  T412] using default for wan-rx-desc-size = 256
+[ 1047.284852][  T412] ipa-wan ipa3_wwan_register_netdev_pm_client:3474 rmnet_ipa%d register done
+[ 1047.284988][  T412] ipa-wan ipa3_wwan_probe:3669 rmnet_ipa completed initialization
+[ 1047.285435][  T364] Sending QMI_IPA_INIT_MODEM_DRIVER_REQ_V01
+[ 1047.285801][  T241] ipa-wan ipa3_handle_indication_req:144 not send indication
+[ 1047.291003][    T7] ipa ipa3_uc_wdi_event_log_info_handler:373 WDI protocol missing 0x1
+[ 1047.291006][    T7] ipa ipa3_uc_ntn_event_log_info_handler:19 NTN protocol missing 0x1
+[ 1047.291022][    T7] ipa ipa_pc_qmp_enable:11184 mailbox channel request failed, ret=-19
+[ 1047.298621][  T364] QMI_IPA_INIT_MODEM_DRIVER_REQ_V01 response received
+[ 1048.280630][T11620] rmnet_ctl driver probed
+[ 1048.283574][T11620] ipa ipa3_setup_apps_low_lat_prod_pipe:374 Configuring low lat prod without rmnet config
+[ 1048.288198][T11634] DATARMNET6e31e62d2e(): Initializing on device rmnet_data0
+[ 1048.288205][T11634] rmnet_shs initializing rmnet_data0
+[ 1048.288214][T11634] rmnet_shs init with 0
+[ 1048.288227][T11634] DATARMNET7dec24813e(): Initializing on device rmnet_data0
+[ 1048.290154][T11638] ipa-wan ipa3_wwan_ioctl:2891 dev(rmnet_data0) register to IPA
+[ 1048.292025][T11641] DATARMNETe9173bbe0e(): rmnet dl_ind registration fail
+[ 1050.999627][  T412] sd 0:0:0:4: [sde] Synchronizing SCSI cache
+[ 1098.095627][  T412] sd 0:0:0:5: [sdf] Synchronizing SCSI cache
+-- rmtfs:
+[RMTFS] packet; from: 1:-2
+[RMTFS] del_client 1:16558
+[RMTFS] packet; from: 1:-2
+[RMTFS] del_client 1:16559
+[RMTFS] packet; from: 1:-2
+[RMTFS] del_client 1:16-- tqftpserv:
+got del_client for 1:16615
+got del_client for 1:16615
+got del_client for 1:16615
+got del_client for 1:16615
+-- pd-mapper:
+[PD-MAPPER] request node=0 port=2 service=avs/audio domains=1
+[PD-MAPPER] request node=0 port=2 service=tms/servreg domains=7
+[PD-MAPPER] request node=0 port=2 service=tms/servreg domains=7
+[PD-MAPPER] request node=0 port=2 service=tms/pddump_disabled domains=0
+[PD-MAPPER] request node=0 port=2 service=avs/audio domains=1
+[PD-MAPPER] request node=0 port=2 service=tms/servreg domains=7
+-- IPA experiment:
+-- IPA-ready restart experiment:
+-- ADSP experiment:
+-- DPM experiment:
+  00 00 00 02 00 00 00 17 00 00 00 
+[qmi] raw (14 bytes):
+  02 01 00 20 00 07 00 02 04 00 00 00 00 00 
+[qmi] type=2 txn=1 msg_id=0x0020 msg_len=7
+  TLV 0x02 len=4  u32=0 (0x00000000)  str="\0\0\0\0"
+[dpm] OPENED endpoint=4:1 rx=2 tx=23 pid=11614 hold=3600
+-- IPA pipe experiment:
+NETDEV features_block=0 active=0x00004000 available=0x001d4813
+NETDEV features_block=1 active=0x00000000 available=0x02800302
+INGRESS selector=7 flags=0xe
+INGRESS accepted
+EGRESS selector=6 flags=0xa
+EGRESS accepted
+-- WDA experiment:
+  TLV 0x16 len=4  u32=63 (0x0000003f)  str="?\0\0\0"
+  TLV 0x17 len=4  u32=1 (0x00000001)
+  TLV 0x18 len=4  u32=64512 (0x0000fc00)
+  TLV 0x1a len=4  u32=0 (0x00000000)  str="\0\0\0\0"
+  TLV 0x1b len=1  u8=0  str="\0"
+[wda] VERIFIED raw-IP=2 UL-QMAP=5 DL-QMAP=5 QoS=0
+-- rmnet mux experiment:
+-- observed-DMS bootstrap/test:
+  02 01 00 2d 00 0b 00 02 04 00 00 00 00 00 01 01 
+  00 05 
+[qmi] type=2 txn=1 msg_id=0x002d msg_len=11
+  TLV 0x02 len=4  u32=0 (0x00000000)  str="\0\0\0\0"
+  TLV 0x01 len=1  u8=5
+READY_FOR_OBSERVED_DMS_TEST uptime=1019.20 8103.95
+[dms] ONLINE_VERIFIED; not a bearer or Internet proof
+OBSERVED_CLIENT_EXIT=0 UPTIME=1047.21 8269.24
+[qrtr] local node=1 port=0
+[ns] service=2 version=1 instance=0 node=0 port=72
+[qmi] raw (18 bytes):
+  02 01 00 2d 00 0b 00 02 04 00 00 00 00 00 01 01 
+  00 00 
+[qmi] type=2 txn=1 msg_id=0x002d msg_len=11
+  TLV 0x02 len=4  u32=0 (0x00000000)  str="\0\0\0\0"
+  TLV 0x01 len=1  u8=0
+FRESH_CLIENT_EXIT=0
+OBSERVED_CHECK_FINISHED UPTIME=1047.21 8269.25 EXIT=0
+-- online data setup/session:
+  result=0 error=0
+  APN: internet.it
+  DNS1: 151.5.216.30 (as-le32 value 0x9705d81e)
+  DNS2: 151.5.216.130 (as-le32 value 0x9705d882)
+  IPv4 addr: 10.140.64.82 (as-le32 value 0x0a8c4052)
+  IPv4 gateway: 10.140.64.81 (as-le32 value 0x0a8c4051)
+  IPv4 netmask: 255.255.255.252 (as-le32 value 0xfffffffc)
+  MTU: 1500
+  IP family: 4
+[session] HOLDING seconds=3600; same QRTR client remains open
+DATA_BEARER_READY uptime=1049.27 8283.58
+DATA_SETUP_EXIT=0 UPTIME=1049.27 8283.58
+  8c 0a 21 04 00 fc ff ff ff 29 04 00 dc 05 00 00 
+  2b 01 00 04 
+[qmi] type=2 txn=5 msg_id=0x002d msg_len=93
+  TLV 0x02 len=4  u32=0 (0x00000000)  str="\0\0\0\0"
+  TLV 0x10 len=14  str="qdp_profile_ia"
+  TLV 0x11 len=1  u8=0  str="\0"
+  TLV 0x14 len=11  str="internet.it"
+  TLV 0x15 len=4  u32=2533742622 (0x9705d81e)
+  TLV 0x16 len=4  u32=2533742722 (0x9705d882)
+  TLV 0x1e len=4  u32=176963666 (0x0a8c4052)
+  TLV 0x1f len=2  u16=1024
+  TLV 0x20 len=4  u32=176963665 (0x0a8c4051)
+  TLV 0x21 len=4  u32=4294967292 (0xfffffffc)
+  TLV 0x29 len=4  u32=1500 (0x000005dc)
+  TLV 0x2b len=1  u8=4
+  result=0 error=0
+  APN: internet.it
+  DNS1: 151.5.216.30 (as-le32 value 0x9705d81e)
+  DNS2: 151.5.216.130 (as-le32 value 0x9705d882)
+  IPv4 addr: 10.140.64.82 (as-le32 value 0x0a8c4052)
+  IPv4 gateway: 10.140.64.81 (as-le32 value 0x0a8c4051)
+  IPv4 netmask: 255.255.255.252 (as-le32 value 0xfffffffc)
+  MTU: 1500
+  IP family: 4
+[session] HOLDING seconds=3600; same QRTR client remains open
+CHECKPOINT_DURABLE index=5 label=after_address
+STAGE=route BEGIN uptime=1312.10 9857.67
+CHECKPOINT_DURABLE index=6 label=before_route
+STAGE=route RETURNED uptime=1312.11 9857.68
+CHECKPOINT_DURABLE index=7 label=after_route
+STAGE=route-get BEGIN uptime=1312.12 9857.69
+CHECKPOINT_DURABLE index=8 label=before_route-get
+16: rmnet_data0@rmnet_ipa0: <UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UNKNOWN qlen 1000
+    inet 10.140.64.82/30 scope global rmnet_data0
+       valid_lft forever preferred_lft forever
+default via 10.140.64.81 dev rmnet_data0 
+10.0.0.0/24 dev usb0 scope link  src 10.0.0.1 
+10.140.64.80/30 dev rmnet_data0 scope link  src 10.140.64.82 
+8.8.8.8 via 10.140.64.81 dev rmnet_data0  src 10.140.64.82 
+STAGE=route-get RETURNED uptime=1312.13 9857.70
+CHECKPOINT_DURABLE index=9 label=after_route-get
+-- qrtr svc count:
+61
+
+RAW_SLOT=161
+slot=161 uptime=1396.33 boot=a609cace-9d94-43e6-8cbf-432d9fff1ca6 r3=running
+-- dmesg:
+[ 1047.281123][    T7] gsi soc:qcom,msm_gsi: saved msi 1 msg data 1 addr 0x00**************
+[ 1047.284678][    T7] ipa ipa3_rmnet_ctl_register_pm_client:739 rmnet_ctl register done
+[ 1047.284693][    T7] ipa ipa3_rmnet_ll_register_pm_client:964 rmnet_ll register done
+[ 1047.284699][    T7] IPA driver is now in ready state
+[ 1047.284713][    T7] ipa-lnx-stats ipa_spearhead_stats_ioctl_init:1856 IPA ipa_lnx_stats_ioctl major(497) initial ok :>>>>
+[ 1047.284715][    T7] ipa-lnx-stats ipa_spearhead_stats_init:1884 IPA_LNX_STATS_IOCTL init success
+[ 1047.284717][    T7] IPA driver initialization was successful.
+[ 1047.284721][  T412] rmnet_ipa3 started initialization
+[ 1047.284723][  T412] IPA SSR support = True
+[ 1047.284724][  T412] IPA SG support = True
+[ 1047.284724][  T412] IPA Napi Enable = True
+[ 1047.284725][  T412] using default for wan-rx-desc-size = 256
+[ 1047.284852][  T412] ipa-wan ipa3_wwan_register_netdev_pm_client:3474 rmnet_ipa%d register done
+[ 1047.284988][  T412] ipa-wan ipa3_wwan_probe:3669 rmnet_ipa completed initialization
+[ 1047.285435][  T364] Sending QMI_IPA_INIT_MODEM_DRIVER_REQ_V01
+[ 1047.285801][  T241] ipa-wan ipa3_handle_indication_req:144 not send indication
+[ 1047.291003][    T7] ipa ipa3_uc_wdi_event_log_info_handler:373 WDI protocol missing 0x1
+[ 1047.291006][    T7] ipa ipa3_uc_ntn_event_log_info_handler:19 NTN protocol missing 0x1
+[ 1047.291022][    T7] ipa ipa_pc_qmp_enable:11184 mailbox channel request failed, ret=-19
+[ 1047.298621][  T364] QMI_IPA_INIT_MODEM_DRIVER_REQ_V01 response received
+[ 1048.280630][T11620] rmnet_ctl driver probed
+[ 1048.283574][T11620] ipa ipa3_setup_apps_low_lat_prod_pipe:374 Configuring low lat prod without rmnet config
+[ 1048.288198][T11634] DATARMNET6e31e62d2e(): Initializing on device rmnet_data0
+[ 1048.288205][T11634] rmnet_shs initializing rmnet_data0
+[ 1048.288214][T11634] rmnet_shs init with 0
+[ 1048.288227][T11634] DATARMNET7dec24813e(): Initializing on device rmnet_data0
+[ 1048.290154][T11638] ipa-wan ipa3_wwan_ioctl:2891 dev(rmnet_data0) register to IPA
+[ 1048.292025][T11641] DATARMNETe9173bbe0e(): rmnet dl_ind registration fail
+[ 1050.999627][  T412] sd 0:0:0:4: [sde] Synchronizing SCSI cache
+[ 1098.095627][  T412] sd 0:0:0:5: [sdf] Synchronizing SCSI cache
+-- rmtfs:
+[RMTFS] packet; from: 1:-2
+[RMTFS] del_client 1:16558
+[RMTFS] packet; from: 1:-2
+[RMTFS] del_client 1:16559
+[RMTFS] packet; from: 1:-2
+[RMTFS] del_client 1:16-- tqftpserv:
+got del_client for 1:16616
+got del_client for 1:16616
+got del_client for 1:16616
+got del_client for 1:16616
+-- pd-mapper:
+[PD-MAPPER] request node=0 port=2 service=avs/audio domains=1
+[PD-MAPPER] request node=0 port=2 service=tms/servreg domains=7
+[PD-MAPPER] request node=0 port=2 service=tms/servreg domains=7
+[PD-MAPPER] request node=0 port=2 service=tms/pddump_disabled domains=0
+[PD-MAPPER] request node=0 port=2 service=avs/audio domains=1
+[PD-MAPPER] request node=0 port=2 service=tms/servreg domains=7
+-- IPA experiment:
+-- IPA-ready restart experiment:
+-- ADSP experiment:
+-- DPM experiment:
+  00 00 00 02 00 00 00 17 00 00 00 
+[qmi] raw (14 bytes):
+  02 01 00 20 00 07 00 02 04 00 00 00 00 00 
+[qmi] type=2 txn=1 msg_id=0x0020 msg_len=7
+  TLV 0x02 len=4  u32=0 (0x00000000)  str="\0\0\0\0"
+[dpm] OPENED endpoint=4:1 rx=2 tx=23 pid=11614 hold=3600
+-- IPA pipe experiment:
+NETDEV features_block=0 active=0x00004000 available=0x001d4813
+NETDEV features_block=1 active=0x00000000 available=0x02800302
+INGRESS selector=7 flags=0xe
+INGRESS accepted
+EGRESS selector=6 flags=0xa
+EGRESS accepted
+-- WDA experiment:
+  TLV 0x16 len=4  u32=63 (0x0000003f)  str="?\0\0\0"
+  TLV 0x17 len=4  u32=1 (0x00000001)
+  TLV 0x18 len=4  u32=64512 (0x0000fc00)
+  TLV 0x1a len=4  u32=0 (0x00000000)  str="\0\0\0\0"
+  TLV 0x1b len=1  u8=0  str="\0"
+[wda] VERIFIED raw-IP=2 UL-QMAP=5 DL-QMAP=5 QoS=0
+-- rmnet mux experiment:
+-- observed-DMS bootstrap/test:
+  02 01 00 2d 00 0b 00 02 04 00 00 00 00 00 01 01 
+  00 05 
+[qmi] type=2 txn=1 msg_id=0x002d msg_len=11
+  TLV 0x02 len=4  u32=0 (0x00000000)  str="\0\0\0\0"
+  TLV 0x01 len=1  u8=5
+READY_FOR_OBSERVED_DMS_TEST uptime=1019.20 8103.95
+[dms] ONLINE_VERIFIED; not a bearer or Internet proof
+OBSERVED_CLIENT_EXIT=0 UPTIME=1047.21 8269.24
+[qrtr] local node=1 port=0
+[ns] service=2 version=1 instance=0 node=0 port=72
+[qmi] raw (18 bytes):
+  02 01 00 2d 00 0b 00 02 04 00 00 00 00 00 01 01 
+  00 00 
+[qmi] type=2 txn=1 msg_id=0x002d msg_len=11
+  TLV 0x02 len=4  u32=0 (0x00000000)  str="\0\0\0\0"
+  TLV 0x01 len=1  u8=0
+FRESH_CLIENT_EXIT=0
+OBSERVED_CHECK_FINISHED UPTIME=1047.21 8269.25 EXIT=0
+-- online data setup/session:
+  result=0 error=0
+  APN: internet.it
+  DNS1: 151.5.216.30 (as-le32 value 0x9705d81e)
+  DNS2: 151.5.216.130 (as-le32 value 0x9705d882)
+  IPv4 addr: 10.140.64.82 (as-le32 value 0x0a8c4052)
+  IPv4 gateway: 10.140.64.81 (as-le32 value 0x0a8c4051)
+  IPv4 netmask: 255.255.255.252 (as-le32 value 0xfffffffc)
+  MTU: 1500
+  IP family: 4
+[session] HOLDING seconds=3600; same QRTR client remains open
+DATA_BEARER_READY uptime=1049.27 8283.58
+DATA_SETUP_EXIT=0 UPTIME=1049.27 8283.58
+  8c 0a 21 04 00 fc ff ff ff 29 04 00 dc 05 00 00 
+  2b 01 00 04 
+[qmi] type=2 txn=5 msg_id=0x002d msg_len=93
+  TLV 0x02 len=4  u32=0 (0x00000000)  str="\0\0\0\0"
+  TLV 0x10 len=14  str="qdp_profile_ia"
+  TLV 0x11 len=1  u8=0  str="\0"
+  TLV 0x14 len=11  str="internet.it"
+  TLV 0x15 len=4  u32=2533742622 (0x9705d81e)
+  TLV 0x16 len=4  u32=2533742722 (0x9705d882)
+  TLV 0x1e len=4  u32=176963666 (0x0a8c4052)
+  TLV 0x1f len=2  u16=1024
+  TLV 0x20 len=4  u32=176963665 (0x0a8c4051)
+  TLV 0x21 len=4  u32=4294967292 (0xfffffffc)
+  TLV 0x29 len=4  u32=1500 (0x000005dc)
+  TLV 0x2b len=1  u8=4
+  result=0 error=0
+  APN: internet.it
+  DNS1: 151.5.216.30 (as-le32 value 0x9705d81e)
+  DNS2: 151.5.216.130 (as-le32 value 0x9705d882)
+  IPv4 addr: 10.140.64.82 (as-le32 value 0x0a8c4052)
+  IPv4 gateway: 10.140.64.81 (as-le32 value 0x0a8c4051)
+  IPv4 netmask: 255.255.255.252 (as-le32 value 0xfffffffc)
+  MTU: 1500
+  IP family: 4
+[session] HOLDING seconds=3600; same QRTR client remains open
+CHECKPOINT_DURABLE index=5 label=after_address
+STAGE=route BEGIN uptime=1312.10 9857.67
+CHECKPOINT_DURABLE index=6 label=before_route
+STAGE=route RETURNED uptime=1312.11 9857.68
+CHECKPOINT_DURABLE index=7 label=after_route
+STAGE=route-get BEGIN uptime=1312.12 9857.69
+CHECKPOINT_DURABLE index=8 label=before_route-get
+16: rmnet_data0@rmnet_ipa0: <UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UNKNOWN qlen 1000
+    inet 10.140.64.82/30 scope global rmnet_data0
+       valid_lft forever preferred_lft forever
+default via 10.140.64.81 dev rmnet_data0 
+10.0.0.0/24 dev usb0 scope link  src 10.0.0.1 
+10.140.64.80/30 dev rmnet_data0 scope link  src 10.140.64.82 
+8.8.8.8 via 10.140.64.81 dev rmnet_data0  src 10.140.64.82 
+STAGE=route-get RETURNED uptime=1312.13 9857.70
+CHECKPOINT_DURABLE index=9 label=after_route-get
+-- qrtr svc count:
+61
+

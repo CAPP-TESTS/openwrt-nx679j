@@ -1,0 +1,42 @@
+{
+  "patched": [
+    {
+      "name": "boot_b",
+      "idx": 41,
+      "old_ab": 58,
+      "new_ab": 67,
+      "old_attrs": "0x003a000000000000",
+      "new_attrs": "0x00**************"
+    },
+    {
+      "name": "vbmeta_b",
+      "idx": 44,
+      "old_ab": 123,
+      "new_ab": 67,
+      "old_attrs": "0x107b000000000000",
+      "new_attrs": "0x10**************"
+    },
+    {
+      "name": "dtbo_b",
+      "idx": 45,
+      "old_ab": 123,
+      "new_ab": 67,
+      "old_attrs": "0x007b000000000000",
+      "new_attrs": "0x00**************"
+    },
+    {
+      "name": "vendor_boot_b",
+      "idx": 52,
+      "old_ab": 123,
+      "new_ab": 67,
+      "old_attrs": "0x007b000000000000",
+      "new_attrs": "0x00**************"
+    }
+  ],
+  "new_part_crc": "0xb33749f0",
+  "new_hdr_crc": "0x6535c133",
+  "backup_lba": 1572863,
+  "num_parts": 96,
+  "ent_size": 128,
+  "part_lba": 2
+}

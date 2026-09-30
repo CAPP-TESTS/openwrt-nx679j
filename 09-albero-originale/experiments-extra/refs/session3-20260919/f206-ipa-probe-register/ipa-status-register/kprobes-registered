@@ -1,0 +1,6 @@
+ffffffecfb4d98b4  r  dwc3_send_gadget_ep_cmd+0x0    
+ffffffecfb4e0c3c  r  dwc3_gadget_pullup+0x0    
+ffffffecfd3840b8  k  ipahal_pkt_status_parse+0x0  ipam [DISABLED]
+ffffffecfb4e5ba8  r  dwc3_gadget_run_stop+0x0    
+ffffffecfb4e3574  r  dwc3_gadget_reset_interrupt+0x0    
+ffffffecfb4e3b1c  r  dwc3_gadget_conndone_interrupt+0x0    

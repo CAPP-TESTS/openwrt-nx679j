@@ -1,0 +1,15 @@
+[*] extracting stock kernel from boot_a readback
+    kernel 49108324 bytes sha256=f0aa949c95d1421381850cb1982bd2a505e96fcd7565543ec28d5b1f7d81a0cc
+[*] reading OpenWrt rootfs
+    1253 entries
+[*] reading stock vendor modules
+    327 .ko modules
+    USB-chain vermagic verified: 5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64
+[*] stage 1 done -> /home/user/nx679j-stock/experiments/20260916-122926-native-baseline/candidate-stockkernel-v3/inputs.json
+[*] assembling ramdisk
+    1541 entries, cpio 48469596 -> gz 12050259 bytes
+    self-check: archive parses, 6 device nodes, required members present
+[*] image  /home/user/nx679j-stock/experiments/20260916-122926-native-baseline/candidate-stockkernel-v3/boot_b-stockkernel-openwrt-v3.img
+    61165568 bytes sha256=a35a28c14b7ca18217740f9727aba8b971efd443adff9092c982d879d963ceba
+[*] cmdline (725 bytes) panic=10 appended; v2 prefix intact
+[*] manifest -> manifest.json

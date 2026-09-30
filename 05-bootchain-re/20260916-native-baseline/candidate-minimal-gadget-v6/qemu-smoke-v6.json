@@ -1,0 +1,114 @@
+{
+  "image": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/candidate-minimal-gadget-v6/boot_b-staticinit-v6.img",
+  "image_sha256": "273fd8be271b1389dd886c4b2d77a35e0f77ee8b810dca61c418a0f39aab029b",
+  "ramdisk_sha256": "8378e9a3398f55bfee72166b8bcd2df94b5cca098418d948cf3bf44019a9d035",
+  "kernel_sha256": "f0aa949c95d1421381850cb1982bd2a505e96fcd7565543ec28d5b1f7d81a0cc",
+  "qemu_cmd": "qemu-system-aarch64 -machine virt -cpu cortex-a57 -accel tcg -smp 2 -m 2048 -nodefaults -nic none -display none -monitor none -serial stdio -no-reboot -kernel /home/user/nx679j-stock/experiments/20260916-122926-native-baseline/candidate-minimal-gadget-v6/qemu/kernel-from-image -initrd /home/user/nx679j-stock/experiments/20260916-122926-native-baseline/candidate-minimal-gadget-v6/qemu/ramdisk-from-image.gz -append console=ttyAMA0 earlycon loglevel=7 panic=10 rdinit=/init",
+  "append": "console=ttyAMA0 earlycon loglevel=7 panic=10 rdinit=/init",
+  "ran_seconds": 98.1,
+  "pid1_alive_when_test_stopped": true,
+  "qemu_exit_code": 0,
+  "init_log_lines": 104,
+  "cycles_seen": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "checks": {
+    "kernel reached userspace: /init ran as PID 1": {
+      "ok": true,
+      "detail": "[    0.815167][    T1] nx679j-v6: init v6 entered pid=1 channels kmsg=0 console=0"
+    },
+    "PID 1 is our binary with its channel fds open": {
+      "ok": true,
+      "detail": "[    0.815167][    T1] nx679j-v6: init v6 entered pid=1 channels kmsg=0 console=0"
+    },
+    "configfs mounted and usb_gadget reachable": {
+      "ok": true,
+      "detail": "['[    0.834154][    T1] nx679j-v6: configfs usb_gadget dir present=1 rc=0']"
+    },
+    "module chain runs before the gadget attempt (new order)": {
+      "ok": true,
+      "detail": "enter=0 modules=10 gadget=79"
+    },
+    "no UDC in QEMU (expected: no Waipio DT, dwc3 never probes)": {
+      "ok": true,
+      "detail": "['[    6.139025][    T1] nx679j-v6: cycle=901 udc=NONE after 5s']"
+    },
+    "configfs layout is really created (g1 dirs) - logged only if UDC": {
+      "ok": true,
+      "detail": "skipped: no UDC in QEMU, gadget_cycle returns before mkdir"
+    },
+    "fallback path used (QEMU has no device modules.dep)": {
+      "ok": true,
+      "detail": "['nx679j-v6: modload source=fallback order=/lib/modules/fallback.order ok=47 fail=0 skip=0 missing=0']"
+    },
+    "the 47-module closure really loads in this kernel": {
+      "ok": true,
+      "detail": "['nx679j-v6: modload summary loaded=47 skipped=0 failed=0 missing=0 dwc3_seen=1']"
+    },
+    "dwc3_msm appears in the chain and loads (rc=0)": {
+      "ok": true,
+      "detail": "['nx679j-v6: modload dwc3_msm rc=0 /lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/dwc3-msm.ko', 'nx679j-v6: dwc3_msm in -> gadget attempt now (fallback path)']"
+    },
+    "softdep order honoured on the wire: qcom_hwspinlock before smem": {
+      "ok": true,
+      "detail": "qcom_hwspinlock at 21224, smem at 21346"
+    },
+    "softdep order honoured on the wire: phy-generic/eud before dwc3-msm": {
+      "ok": true,
+      "detail": "phy_generic 24330 eud 24692 dwc3_msm 24790"
+    },
+    "every loaded/failed module is journalled with an rc": {
+      "ok": true,
+      "detail": "58 per-module lines"
+    },
+    "the one unresolved module is named in the log, not skipped silently": {
+      "ok": true,
+      "detail": "[]"
+    },
+    "rawdump (UFS) absent without a UFS host bind, and that is not fatal": {
+      "ok": true,
+      "detail": "['[   36.235590][    T1] nx679j-v6: rawdump none (no block device yet: is ufs_qcom in?)']"
+    },
+    "pmsg breadcrumb channel: resolved from /proc/devices or declared unavailable": {
+      "ok": true,
+      "detail": "['[    0.829931][    T1] nx679j-v6: pmsg0 unavailable (no pmsg major in /proc/devices: no ramoops this boot)']"
+    },
+    "retry loop keeps running (>= 2 cycles)": {
+      "ok": true,
+      "detail": "5 cycles: [1, 2, 3, 4, 5]"
+    },
+    "retry loop reached the requested depth": {
+      "ok": true,
+      "detail": "want >= 5, got 5"
+    },
+    "PID 1 still alive when the test stopped it": {
+      "ok": true,
+      "detail": "qemu still running=True (rc=0)"
+    },
+    "no kernel panic / no dead init in the whole log": {
+      "ok": true,
+      "detail": "clean"
+    },
+    "order on the wire: enter -> module chain -> udc=NONE -> gadget": {
+      "ok": true,
+      "detail": "enter=0 modules=10 gadget=79 udc=56"
+    },
+    "cycle numbering is monotonic and never resets": {
+      "ok": true,
+      "detail": "[1, 2, 3, 4, 5]"
+    }
+  },
+  "not_proven_by_this_test": [
+    "that the gadget can bind on the phone (no dwc3/UDC in QEMU)",
+    "that the host would see 18d1:4ee7 (needs the phone)",
+    "that ABL/AVB accepts the image on slot B (needs the phone)",
+    "that pmsg0/rawdump breadcrumbs are recoverable (no ramoops in QEMU)"
+  ],
+  "checks_total": 21,
+  "checks_failed": 0,
+  "failed": []
+}

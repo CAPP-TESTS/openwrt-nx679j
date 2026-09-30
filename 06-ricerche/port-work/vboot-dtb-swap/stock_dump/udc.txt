@@ -1,0 +1,2 @@
+a600000.dwc3
+dummy_udc.0

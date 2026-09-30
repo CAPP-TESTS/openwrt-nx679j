@@ -1,0 +1,2247 @@
+Warning: Permanently added '10.0.0.1' (RSA) to the list of known hosts.
+6,0,0,-,caller=T0;Booting Linux on physical CPU 0x0000000000 [0x410fd462]
+5,1,0,-,caller=T0;Linux version 5.10.66-android12-9-00005-gf6e6376090be-ab8060604 (build-user@build-host) (Android (7284624, based on r416183b) clang version 12.0.5 (https://android.googlesource.com/toolchain/llvm-project c935d99d7cf2016289302412d708641d52d2f7ee), LLD 12.0.5 (/buildbot/src/android/llvm-toolchain/out/llvm-project/lld c935d99d7cf2016289302412d708641d52d2f7ee)) #1 SMP PREEMPT Fri Jan 7 14:51:36 UTC 2022
+6,2,0,-,caller=T0;Machine model: Qualcomm Technologies, Inc. Waipio MTP with PM8010
+6,3,0,-,caller=T0;Stack Depot is disabled
+6,4,0,-,caller=T0;PELT half life is set to 8ms
+6,5,0,-,caller=T0;efi: UEFI not found.
+6,6,0,-,caller=T0;OF: fdt: Reserved memory: failed to reserve memory for node 'demura_region_0': base 0x00**************, size 0 MiB
+6,7,0,-,caller=T0;OF: fdt: Reserved memory: failed to reserve memory for node 'demura_region_1': base 0x00**************, size 0 MiB
+6,8,0,-,caller=T0;Reserved memory: created CMA memory pool at 0x00000000fe000000, size 28 MiB
+6,9,0,-,caller=T0;OF: reserved mem: initialized node audio_cma_region, compatible id shared-dma-pool
+6,10,0,-,caller=T0;Reserved memory: created CMA memory pool at 0x0000000bff000000, size 16 MiB
+6,11,0,-,caller=T0;OF: reserved mem: initialized node va_md_mem_region, compatible id shared-dma-pool
+6,12,0,-,caller=T0;Reserved memory: created CMA memory pool at 0x00000000d5c00000, size 164 MiB
+6,13,0,-,caller=T0;OF: reserved mem: initialized node non_secure_display_region, compatible id shared-dma-pool
+6,14,0,-,caller=T0;Reserved memory: created CMA memory pool at 0x00000000fc000000, size 32 MiB
+6,15,0,-,caller=T0;OF: reserved mem: initialized node qseecom_ta_region, compatible id shared-dma-pool
+6,16,0,-,caller=T0;Reserved memory: created CMA memory pool at 0x0000000bfc800000, size 40 MiB
+6,17,0,-,caller=T0;OF: reserved mem: initialized node demura_heap_region, compatible id shared-dma-pool
+6,18,0,-,caller=T0;Reserved memory: created CMA memory pool at 0x00000000fac00000, size 20 MiB
+6,19,0,-,caller=T0;OF: reserved mem: initialized node qseecom_region, compatible id shared-dma-pool
+6,20,0,-,caller=T0;Reserved memory: created CMA memory pool at 0x00000000f8c00000, size 32 MiB
+6,21,0,-,caller=T0;OF: reserved mem: initialized node cnss_wlan_region, compatible id shared-dma-pool
+6,22,0,-,caller=T0;Reserved memory: created CMA memory pool at 0x0000000bf9000000, size 52 MiB
+6,23,0,-,caller=T0;OF: reserved mem: initialized node mem_dump_region, compatible id shared-dma-pool
+6,24,0,-,caller=T0;Reserved memory: created CMA memory pool at 0x00000000f8000000, size 12 MiB
+6,25,0,-,caller=T0;OF: reserved mem: initialized node adsp_heap_region, compatible id shared-dma-pool
+6,26,0,-,caller=T0;Reserved memory: created CMA memory pool at 0x00000000e7800000, size 16 MiB
+6,27,0,-,caller=T0;OF: reserved mem: initialized node user_contig_region, compatible id shared-dma-pool
+6,28,0,-,caller=T0;Reserved memory: created CMA memory pool at 0x00000000e6800000, size 16 MiB
+6,29,0,-,caller=T0;OF: reserved mem: initialized node sp_region, compatible id shared-dma-pool
+6,30,0,-,caller=T0;Reserved memory: created CMA memory pool at 0x00000000e6400000, size 4 MiB
+6,31,0,-,caller=T0;OF: reserved mem: initialized node cdsp_eva_region, compatible id shared-dma-pool
+6,32,0,-,caller=T0;Reserved memory: created CMA memory pool at 0x00000000e5c00000, size 8 MiB
+6,33,0,-,caller=T0;OF: reserved mem: initialized node sdsp_region, compatible id shared-dma-pool
+6,34,0,-,caller=T0;Reserved memory: created CMA memory pool at 0x00000000d3c00000, size 32 MiB
+6,35,0,-,caller=T0;OF: reserved mem: initialized node linux,cma, compatible id shared-dma-pool
+6,36,0,-,caller=T0;Zone ranges:
+6,37,0,-,caller=T0;  DMA32    [mem 0x00**************-0x00000000ffffffff]
+6,38,0,-,caller=T0;  Normal   [mem 0x00**************-0x0000000bffffffff]
+6,39,0,-,caller=T0;Movable zone start for each node
+6,40,0,-,caller=T0;Early memory node ranges
+6,41,0,-,caller=T0;  node   0: [mem 0x00**************-0x00000000808f3fff]
+6,42,0,-,caller=T0;  node   0: [mem 0x00000000808f4000-0x00000000808fffff]
+6,43,0,-,caller=T0;  node   0: [mem 0x00**************-0x00000000851fffff]
+6,44,0,-,caller=T0;  node   0: [mem 0x00**************-0x00000000856fffff]
+6,45,0,-,caller=T0;  node   0: [mem 0x00**************-0x0000000085dfffff]
+6,46,0,-,caller=T0;  node   0: [mem 0x0000000085e00000-0x0000000087ffffff]
+6,47,0,-,caller=T0;  node   0: [mem 0x00**************-0x000000008b91bfff]
+6,48,0,-,caller=T0;  node   0: [mem 0x000000008b91c000-0x000000008b9fffff]
+6,49,0,-,caller=T0;  node   0: [mem 0x000000008ba00000-0x00000000a24fffff]
+6,50,0,-,caller=T0;  node   0: [mem 0x00000000a2500000-0x00000000a6dfffff]
+6,51,0,-,caller=T0;  node   0: [mem 0x00000000a6e00000-0x00000000a6e3ffff]
+6,52,0,-,caller=T0;  node   0: [mem 0x00000000a6e40000-0x00000000a6efffff]
+6,53,0,-,caller=T0;  node   0: [mem 0x00000000a6f00000-0x00000000a6ffffff]
+6,54,0,-,caller=T0;  node   0: [mem 0x00000000a7000000-0x00000000baffffff]
+6,55,0,-,caller=T0;  node   0: [mem 0x00000000bb000000-0x00000000bfffffff]
+6,56,0,-,caller=T0;  node   0: [mem 0x00000000c0000000-0x00000000dfffffff]
+6,57,0,-,caller=T0;  node   0: [mem 0x00000000e0000000-0x00000000e56fffff]
+6,58,0,-,caller=T0;  node   0: [mem 0x00000000e5700000-0x00000000e87fffff]
+6,59,0,-,caller=T0;  node   0: [mem 0x00000000e8800000-0x00000000e9ffffff]
+6,60,0,-,caller=T0;  node   0: [mem 0x00000000f8000000-0x00000000ffffffff]
+6,61,0,-,caller=T0;  node   0: [mem 0x00**************-0x00000008377fffff]
+6,62,0,-,caller=T0;  node   0: [mem 0x00**************-0x0000000bffffffff]
+6,63,0,-,caller=T0;Initmem setup node 0 [mem 0x00**************-0x0000000bffffffff]
+7,64,0,-,caller=T0;On node 0 totalpages: 4626432
+7,65,0,-,caller=T0;  DMA32 zone: 7296 pages used for memmap
+7,66,0,-,caller=T0;  DMA32 zone: 0 pages reserved
+7,67,0,-,caller=T0;  DMA32 zone: 466944 pages, LIFO batch:63
+7,68,0,-,caller=T0;  Normal zone: 64992 pages used for memmap
+7,69,0,-,caller=T0;  Normal zone: 4159488 pages, LIFO batch:63
+6,70,0,-,caller=T0;psci: probing for conduit method from DT.
+6,71,0,-,caller=T0;psci: PSCIv1.1 detected in firmware.
+6,72,0,-,caller=T0;psci: Using standard PSCI v0.2 function IDs
+6,73,0,-,caller=T0;psci: MIGRATE_INFO_TYPE not supported.
+6,74,0,-,caller=T0;psci: SMC Calling Convention v1.0
+6,75,0,-,caller=T0;psci: OSI mode supported.
+6,76,0,-,caller=T0;Load bootconfig: 805 bytes 46 nodes
+6,77,0,-,caller=T0;percpu: Embedded 33 pages/cpu s95960 r8192 d31016 u135168
+7,78,0,-,caller=T0;pcpu-alloc: s95960 r8192 d31016 u135168 alloc=33*4096
+7,79,0,-,caller=T0;pcpu-alloc: [0] 0 [0] 1 [0] 2 [0] 3 [0] 4 [0] 5 [0] 6 [0] 7 
+6,80,0,-,caller=T0;Detected PIPT I-cache on CPU0
+4,81,0,-,caller=T0;CPU features: SYS_ID_AA64MMFR1_EL1[11:8]: forced to 0
+6,82,0,-,caller=T0;CPU features: detected: GIC system register CPU interface
+6,83,0,-,caller=T0;CPU features: kernel page table isolation forced OFF by kpti command line option
+6,84,0,-,caller=T0;CPU features: detected: Hardware dirty bit management
+6,85,0,-,caller=T0;CPU features: detected: Spectre-v4
+6,86,0,-,caller=T0;CPU features: detected: Address authentication (architected algorithm)
+6,87,0,-,caller=T0;CPU features: detected: Branch Target Identification
+6,88,0,-,caller=T0;alternatives: patching kernel code
+6,89,0,-,caller=T0;Built 1 zonelists, mobility grouping on.  Total pages: 4554144
+5,90,0,-,caller=T0;Kernel command line: stack_depot_disable=on kasan.stacktrace=off kvm-arm.mode=protected cgroup_disable=pressure cgroup.memory=nokmem console=ttyMSM0,115200n8 loglevel=6 kpti=0 log_buf_len=256K kernel.panic_on_rcu_stall=1 swiotlb=noforce loop.max_part=7 cgroup.memory=nokmem,nosocket pcie_ports=compat service_locator.enable=1 msm_rtb.filter=0x237 allow_mismatched_32bit_el0 cpufreq.default_governor=performance pelt=8 kasan=off rcupdate.rcu_expedited=1 rcu_nocbs=0-7 irqaffinity=0-3 ftrace_dump_on_oops pstore.compress=none fsa4480_i2c.async_probe=1 can.stats_timer=0 video=vfb:640x400,bpp=32,memsize=3072000 qcom-dload-mode.download_mode=1 bootconfig  msm_drm.dsi_display0=qcom,mdss_dsi_r6130_1080_2400_amoled_cmd: rootwait ro init=/init
+6,91,0,-,caller=T0;cgroup: Disabling pressure control group feature
+6,92,0,-,caller=T0;printk: log_buf_len: 262144 bytes
+6,93,0,-,caller=T0;printk: early log buf free: 123600(94%)
+6,94,0,-,caller=T0;Dentry cache hash table entries: 4194304 (order: 13, 33554432 bytes, linear)
+6,95,0,-,caller=T0;Inode-cache hash table entries: 2097152 (order: 12, 16777216 bytes, linear)
+6,96,0,-,caller=T0;mem auto-init: stack:all(zero), heap alloc:on, heap free:off
+6,97,0,-,caller=T0;software IO TLB: mapped [mem 0x00000000ffffe000-0x00000000ffffe800] (0MB)
+6,98,0,-,caller=T0;Memory: 16809668K/18505728K available (28800K kernel code, 2088K rwdata, 10664K rodata, 3072K init, 969K bss, 1212732K reserved, 483328K cma-reserved)
+5,99,0,-,caller=T0;random: get_random_u64 called from kmem_cache_open+0x2c/0x39c with crng_init=0
+6,100,0,-,caller=T0;SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=8, Nodes=1
+6,101,0,-,caller=T0;rcu: Preemptible hierarchical RCU implementation.
+6,102,0,-,caller=T0;rcu: \x09RCU event tracing is enabled.
+6,103,0,-,caller=T0;rcu: \x09RCU dyntick-idle grace-period acceleration is enabled.
+6,104,0,-,caller=T0;rcu: \x09RCU restricting CPUs from NR_CPUS=32 to nr_cpu_ids=8.
+6,105,0,-,caller=T0;\x09All grace periods are expedited (rcu_expedited).
+6,106,0,-,caller=T0;\x09Trampoline variant of Tasks RCU enabled.
+6,107,0,-,caller=T0;\x09Tracing variant of Tasks RCU enabled.
+6,108,0,-,caller=T0;rcu: RCU calculated value of scheduler-enlistment delay is 25 jiffies.
+6,109,0,-,caller=T0;rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=8
+6,110,0,-,caller=T0;NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+6,111,0,-,caller=T0;GICv3: 988 SPIs implemented
+6,112,0,-,caller=T0;GICv3: 0 Extended SPIs implemented
+6,113,0,-,caller=T0;GICv3: Distributor has no Range Selector support
+6,114,0,-,caller=T0;GICv3: 16 PPIs implemented
+6,115,0,-,caller=T0;GICv3: Enabling SGIs without active state
+6,116,0,-,caller=T0;GICv3: CPU0: found redistributor 0 region 0:0x00**************
+6,117,0,-,caller=T0;ITS [mem 0x17140000-0x1715ffff]
+4,118,0,-,caller=T0;ITS@0x00**************: Devices Table too large, reduce ids 32->19
+4,119,0,-,caller=T0;ITS@0x00**************: Devices too large, reduce ITS pages 1024->256
+6,120,0,-,caller=T0;ITS@0x00**************: allocated 131072 Devices @800100000 (indirect, esz 8, psz 4K, shr 1)
+6,121,0,-,caller=T0;ITS@0x00**************: allocated 4096 Interrupt Collections @8000d2000 (flat, esz 1, psz 4K, shr 1)
+6,122,0,-,caller=T0;GICv3: using LPI property table @0x00000008000f0000
+6,123,0,-,caller=T0;GICv3: CPU0: using allocated LPI pending table @0x00**************
+6,124,0,-,caller=T0;rcu: \x09Offload RCU callbacks from CPUs: 0-7.
+6,125,0,-,caller=T0;kfence: initialized - using 524288 bytes for 63 objects at 0x(____ptrval____)-0x(____ptrval____)
+6,126,0,-,caller=T0;arch_timer: cp15 and mmio timer(s) running at 19.20MHz (virt/virt).
+6,127,0,-,caller=T0;clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x46d987e47, max_idle_ns: 440795202767 ns
+6,128,3,-,caller=T0;sched_clock: 56 bits at 19MHz, resolution 52ns, wraps every 4398046511078ns
+6,129,5656,-,caller=T0;Calibrating delay loop (skipped), value calculated using timer frequency.. 38.40 BogoMIPS (lpj=76800)
+6,130,5667,-,caller=T0;pid_max: default: 32768 minimum: 301
+6,131,5756,-,caller=T0;LSM: Security Framework initializing
+6,132,5791,-,caller=T0;SELinux:  Initializing.
+6,133,5908,-,caller=T0;Mount-cache hash table entries: 65536 (order: 7, 524288 bytes, linear)
+6,134,5938,-,caller=T0;Mountpoint-cache hash table entries: 65536 (order: 7, 524288 bytes, linear)
+6,135,7454,-,caller=T1;rcu: Hierarchical SRCU implementation.
+6,136,7927,-,caller=T1;Platform MSI: msi-controller@17140000 domain created
+6,137,8724,-,caller=T1;PCI/MSI: /soc/interrupt-controller@17100000/msi-controller@17140000 domain created
+6,138,9416,-,caller=T1;EFI services will not be available.
+6,139,9706,-,caller=T1;smp: Bringing up secondary CPUs ...
+6,140,10637,-,caller=T0;Detected PIPT I-cache on CPU1
+6,141,10656,-,caller=T0;GICv3: CPU1: found redistributor 100 region 0:0x00000000171c0000
+6,142,10769,-,caller=T0;GICv3: CPU1: using allocated LPI pending table @0x00**************
+6,143,10852,-,caller=T0;CPU1: Booted secondary processor 0x0000000100 [0x410fd462]
+6,144,11881,-,caller=T0;Detected PIPT I-cache on CPU2
+6,145,11897,-,caller=T0;GICv3: CPU2: found redistributor 200 region 0:0x00**************
+6,146,11996,-,caller=T0;GICv3: CPU2: using allocated LPI pending table @0x00**************
+6,147,12071,-,caller=T0;CPU2: Booted secondary processor 0x0000000200 [0x410fd462]
+6,148,12992,-,caller=T0;Detected PIPT I-cache on CPU3
+6,149,13008,-,caller=T0;GICv3: CPU3: found redistributor 300 region 0:0x00**************
+6,150,13101,-,caller=T0;GICv3: CPU3: using allocated LPI pending table @0x00**************
+6,151,13173,-,caller=T0;CPU3: Booted secondary processor 0x0000000300 [0x410fd462]
+6,152,16302,-,caller=T0;Detected PIPT I-cache on CPU4
+4,153,16306,-,caller=T0;CPU features: SANITY CHECK: Unexpected variation in SYS_ID_AA64MMFR1_EL1. Boot CPU: 0x00000011212122, CPU4: 0x00000010212122
+4,154,16314,-,caller=T0;CPU features: Unsupported CPU feature variation detected.
+6,155,16321,-,caller=T0;GICv3: CPU4: found redistributor 400 region 0:0x00**************
+6,156,16380,-,caller=T0;GICv3: CPU4: using allocated LPI pending table @0x00**************
+6,157,16434,-,caller=T0;CPU4: Booted secondary processor 0x0000000400 [0x412fd470]
+6,158,17336,-,caller=T0;Detected PIPT I-cache on CPU5
+4,159,17340,-,caller=T0;CPU features: SANITY CHECK: Unexpected variation in SYS_ID_AA64MMFR1_EL1. Boot CPU: 0x00000011212122, CPU5: 0x00000010212122
+6,160,17349,-,caller=T0;GICv3: CPU5: found redistributor 500 region 0:0x00000000172c0000
+6,161,17410,-,caller=T0;GICv3: CPU5: using allocated LPI pending table @0x00**************
+6,162,17465,-,caller=T0;CPU5: Booted secondary processor 0x0000000500 [0x412fd470]
+6,163,18406,-,caller=T0;Detected PIPT I-cache on CPU6
+4,164,18410,-,caller=T0;CPU features: SANITY CHECK: Unexpected variation in SYS_ID_AA64MMFR1_EL1. Boot CPU: 0x00000011212122, CPU6: 0x00000010212122
+6,165,18419,-,caller=T0;GICv3: CPU6: found redistributor 600 region 0:0x00**************
+6,166,18476,-,caller=T0;GICv3: CPU6: using allocated LPI pending table @0x00**************
+6,167,18530,-,caller=T0;CPU6: Booted secondary processor 0x0000000600 [0x412fd470]
+6,168,21498,-,caller=T0;Detected PIPT I-cache on CPU7
+4,169,21501,-,caller=T0;CPU features: SANITY CHECK: Unexpected variation in SYS_ID_AA64MMFR1_EL1. Boot CPU: 0x00000011212122, CPU7: 0x00000010212122
+6,170,21510,-,caller=T0;GICv3: CPU7: found redistributor 700 region 0:0x00**************
+6,171,21570,-,caller=T0;GICv3: CPU7: using allocated LPI pending table @0x00**************
+6,172,21622,-,caller=T0;CPU7: Booted secondary processor 0x0000000700 [0x412fd480]
+6,173,21735,-,caller=T1;smp: Brought up 1 node, 8 CPUs
+6,174,21761,-,caller=T1;SMP: Total of 8 processors activated.
+6,175,21765,-,caller=T1;CPU features: detected: Privileged Access Never
+6,176,21768,-,caller=T1;CPU features: detected: LSE atomic instructions
+6,177,21771,-,caller=T1;CPU features: detected: User Access Override
+6,178,21774,-,caller=T1;CPU features: detected: Common not Private translations
+6,179,21778,-,caller=T1;CPU features: detected: Data cache clean to the PoU not required for I/D coherence
+6,180,21781,-,caller=T1;CPU features: detected: Stage-2 Force Write-Back
+6,181,21783,-,caller=T1;CPU features: detected: CRC32 instructions
+6,182,21786,-,caller=T1;CPU features: detected: Speculative Store Bypassing Safe (SSBS)
+6,183,21788,-,caller=T1;CPU features: detected: Speculation barrier (SB)
+6,184,21792,-,caller=T1;CPU features: detected: Generic authentication (architected algorithm)
+6,185,21795,-,caller=T1;CPU features: detected: E0PD
+6,186,21798,-,caller=T1;CPU features: detected: ARMv8.4 Translation Table Level
+6,187,21800,-,caller=T1;CPU features: detected: TLB range maintenance instructions
+6,188,21803,-,caller=T1;CPU features: detected: RCpc load-acquire (LDAPR)
+6,189,21805,-,caller=T1;CPU features: detected: Protected KVM
+6,190,68201,-,caller=T16;CPU features: detected CPU0: Activity Monitors Unit (AMU)
+6,191,68204,-,caller=T19;CPU features: detected CPU1: Activity Monitors Unit (AMU)
+6,192,68208,-,caller=T25;CPU features: detected CPU2: Activity Monitors Unit (AMU)
+6,193,68210,-,caller=T31;CPU features: detected CPU3: Activity Monitors Unit (AMU)
+6,194,68213,-,caller=T56;CPU features: detected CPU7: Activity Monitors Unit (AMU)
+6,195,68215,-,caller=T44;CPU features: detected CPU5: Activity Monitors Unit (AMU)
+6,196,68218,-,caller=T50;CPU features: detected CPU6: Activity Monitors Unit (AMU)
+6,197,68221,-,caller=T37;CPU features: detected CPU4: Activity Monitors Unit (AMU)
+6,198,118864,-,caller=T1;CPU: All CPU(s) started at EL1
+5,199,166377,-,caller=T1;Registered cp15_barrier emulation handler
+5,200,166390,-,caller=T1;Registered setend emulation handler
+6,201,166392,-,caller=T1;KASLR enabled
+6,202,166427,-,caller=T1;clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 76************** ns
+6,203,166436,-,caller=T1;futex hash table entries: 2048 (order: 5, 131072 bytes, linear)
+6,204,168120,-,caller=T1;pinctrl core: initialized pinctrl subsystem
+6,205,168342,-,caller=T1;NET: Registered protocol family 16
+6,206,169270,-,caller=T1;DMA: preallocated 4096 KiB GFP_KERNEL pool for atomic allocations
+6,207,169558,-,caller=T1;DMA: preallocated 4096 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+6,208,169580,-,caller=T1;audit: initializing netlink subsys (disabled)
+5,209,169667,-,caller=T70;audit: type=2000 audit(0.144:1): state=initialized audit_enabled=0 res=1
+6,210,169739,-,caller=T1;thermal_sys: Registered thermal governor 'step_wise'
+6,211,169740,-,caller=T1;thermal_sys: Registered thermal governor 'user_space'
+6,212,169741,-,caller=T1;thermal_sys: Registered thermal governor 'power_allocator'
+6,213,172236,-,caller=T1;cpuidle: using governor menu
+6,214,172275,-,caller=T1;hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+6,215,172390,-,caller=T1;ASID allocator initialised with 65536 entries
+6,216,172409,-,caller=T1;Serial: AMBA PL011 UART driver
+6,217,172526,-,caller=T1;pstore: Registered ramoops as persistent store backend
+6,218,172527,-,caller=T1;ramoops: using 0x200000@0xbfc600000, ecc: 0
+3,219,179439,-,caller=T1;OF: /soc/spf_core_platform/lpass-cdc/va-macro@33F0000: could not get #gpio-cells for /soc/interrupt-controller@17100000
+3,220,179625,-,caller=T1;OF: /soc/spf_core_platform/sound: could not get #gpio-cells for /soc/spf_core_platform/pri_mi2s_pinctrl
+6,221,199836,-,caller=T1;iommu: Default domain type: Translated 
+5,222,199939,-,caller=T1;SCSI subsystem initialized
+6,223,199962,-,caller=T1;usbcore: registered new interface driver usbfs
+6,224,199967,-,caller=T1;usbcore: registered new interface driver hub
+6,225,199971,-,caller=T1;usbcore: registered new device driver usb
+6,226,199989,-,caller=T1;mc: Linux media interface: v0.10
+6,227,199992,-,caller=T1;videodev: Linux video capture interface: v2.00
+6,228,200006,-,caller=T1;EDAC MC: Ver: 3.0.0
+6,229,200117,-,caller=T1;CPUidle PSCI: Initialized CPU PM domain topology
+6,230,200372,-,caller=T1;Advanced Linux Sound Architecture Driver Initialized.
+6,231,200464,-,caller=T1;Bluetooth: Core ver 2.22
+6,232,200468,-,caller=T1;NET: Registered protocol family 31
+6,233,200468,-,caller=T1;Bluetooth: HCI device and connection manager initialized
+6,234,200470,-,caller=T1;Bluetooth: HCI socket layer initialized
+6,235,200471,-,caller=T1;Bluetooth: L2CAP socket layer initialized
+6,236,200475,-,caller=T1;Bluetooth: SCO socket layer initialized
+6,237,200498,-,caller=T1;nfc: nfc_init: NFC Core ver 0.1
+6,238,200503,-,caller=T1;NET: Registered protocol family 39
+6,239,200625,-,caller=T36;CPU features: Asymmetric 32-bit EL0 support detected on CPU 4; CPU hot-unplug disabled on CPU 4
+6,240,200761,-,caller=T1;clocksource: Switched to clocksource arch_sys_counter
+5,241,211060,-,caller=T1;VFS: Disk quotas dquot_6.6.0
+6,242,211075,-,caller=T1;VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+6,243,211221,-,caller=T1;NET: Registered protocol family 2
+6,244,211324,-,caller=T1;IP idents hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+6,245,212888,-,caller=T1;tcp_listen_portaddr_hash hash table entries: 16384 (order: 6, 262144 bytes, linear)
+6,246,212992,-,caller=T1;TCP established hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+6,247,213223,-,caller=T1;TCP bind hash table entries: 65536 (order: 8, 1048576 bytes, linear)
+6,248,213496,-,caller=T1;TCP: Hash tables configured (established 262144 bind 65536)
+6,249,213551,-,caller=T1;UDP hash table entries: 16384 (order: 7, 524288 bytes, linear)
+6,250,213603,-,caller=T1;UDP-Lite hash table entries: 16384 (order: 7, 524288 bytes, linear)
+6,251,213662,-,caller=T1;NET: Registered protocol family 1
+6,252,213667,-,caller=T1;NET: Registered protocol family 44
+6,253,213672,-,caller=T1;PCI: CLS 0 bytes, default 64
+6,254,213739,-,caller=T1;Trying to unpack rootfs image as initramfs...
+6,255,265348,-,caller=T1;Freeing initrd memory: 20948K
+6,256,266127,-,caller=T1;hw perfevents: enabled with armv8_pmuv3 PMU driver, 7 counters available
+6,257,266483,-,caller=T1;kvm [1]: HYP mode not available
+5,258,269440,-,caller=T1;Initialise system trusted keyrings
+6,259,269573,-,caller=T1;workingset: timestamp_bits=46 max_order=23 bucket_order=0
+6,260,270476,-,caller=T1;fuse: init (API version 7.32)
+5,261,280950,-,caller=T1;Key type asymmetric registered
+5,262,280954,-,caller=T1;Asymmetric key parser 'x509' registered
+6,263,280966,-,caller=T1;Block layer SCSI generic (bsg) driver version 0.4 loaded (major 240)
+6,264,280973,-,caller=T1;io scheduler mq-deadline registered
+6,265,280975,-,caller=T1;io scheduler kyber registered
+6,266,280992,-,caller=T1;io scheduler bfq registered
+6,267,282533,-,caller=T1;Serial: 8250/16550 driver, 4 ports, IRQ sharing disabled
+6,268,284734,-,caller=T1;brd: module loaded
+6,269,287028,-,caller=T1;loop: module loaded
+6,270,287616,-,caller=T1;wireguard: WireGuard 1.0.0 loaded. See www.wireguard.com for information.
+6,271,287617,-,caller=T1;wireguard: Copyright (C) 2015-2019 Jason A. Donenfeld <Jason@zx2c4.com>. All Rights Reserved.
+6,272,287760,-,caller=T1;libphy: Fixed MDIO Bus: probed
+6,273,287760,-,caller=T1;tun: Universal TUN/TAP device driver, 1.6
+6,274,287770,-,caller=T1;CAN device driver interface
+6,275,287771,-,caller=T1;PPP generic driver version 2.4.2
+6,276,287782,-,caller=T1;PPP BSD Compression module registered
+6,277,287782,-,caller=T1;PPP Deflate Compression module registered
+6,278,287791,-,caller=T1;PPP MPPE Compression module registered
+6,279,287792,-,caller=T1;NET: Registered protocol family 24
+6,280,287793,-,caller=T1;PPTP driver version 0.8.5
+6,281,287854,-,caller=T1;usbcore: registered new interface driver rtl8150
+6,282,287859,-,caller=T1;usbcore: registered new interface driver r8152
+6,283,287862,-,caller=T1;usbcore: registered new interface driver cdc_ether
+6,284,287865,-,caller=T1;usbcore: registered new interface driver cdc_eem
+6,285,287870,-,caller=T1;usbcore: registered new interface driver cdc_ncm
+6,286,287873,-,caller=T1;usbcore: registered new interface driver aqc111
+6,287,288158,-,caller=T1;ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+6,288,288159,-,caller=T1;ehci-pci: EHCI PCI platform driver
+6,289,288166,-,caller=T1;ehci-platform: EHCI generic platform driver
+6,290,288442,-,caller=T1;usbcore: registered new interface driver cdc_acm
+6,291,288443,-,caller=T1;cdc_acm: USB Abstract Control Model driver for USB modems and ISDN adapters
+6,292,288582,-,caller=T1;usbcore: registered new interface driver uas
+6,293,288588,-,caller=T1;usbcore: registered new interface driver usb-storage
+6,294,288675,-,caller=T1;dummy_hcd dummy_hcd.0: USB Host+Gadget Emulator, driver 02 May 2005
+ SUBSYSTEM=platform
+ DEVICE=+platform:dummy_hcd.0
+6,295,288677,-,caller=T1;dummy_hcd dummy_hcd.0: Dummy host controller
+ SUBSYSTEM=platform
+ DEVICE=+platform:dummy_hcd.0
+6,296,288680,-,caller=T1;dummy_hcd dummy_hcd.0: new USB bus registered, assigned bus number 1
+ SUBSYSTEM=platform
+ DEVICE=+platform:dummy_hcd.0
+6,297,288718,-,caller=T1;usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 5.10
+ SUBSYSTEM=usb
+ DEVICE=c189:0
+6,298,288719,-,caller=T1;usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+ SUBSYSTEM=usb
+ DEVICE=c189:0
+6,299,288721,-,caller=T1;usb usb1: Product: Dummy host controller
+ SUBSYSTEM=usb
+ DEVICE=c189:0
+6,300,288722,-,caller=T1;usb usb1: Manufacturer: Linux 5.10.66-android12-9-00005-gf6e6376090be-ab8060604 dummy_hcd
+ SUBSYSTEM=usb
+ DEVICE=c189:0
+6,301,288723,-,caller=T1;usb usb1: SerialNumber: dummy_hcd.0
+ SUBSYSTEM=usb
+ DEVICE=c189:0
+6,302,288789,-,caller=T1;hub 1-0:1.0: USB hub found
+ SUBSYSTEM=usb
+ DEVICE=+usb:1-0:1.0
+6,303,288794,-,caller=T1;hub 1-0:1.0: 1 port detected
+ SUBSYSTEM=usb
+ DEVICE=+usb:1-0:1.0
+6,304,288921,-,caller=T1;usbcore: registered new interface driver xpad
+6,305,288964,-,caller=T1;usbcore: registered new interface driver uvcvideo
+6,306,288965,-,caller=T1;USB Video Class driver (1.1.1)
+6,307,288965,-,caller=T1;gspca_main: v2.14.0 registered
+6,308,289084,-,caller=T1;device-mapper: uevent: version 1.0.3
+6,309,289114,-,caller=T1;device-mapper: ioctl: 4.44.0-ioctl (2021-02-01) initialised: dm-devel@redhat.com
+6,310,289269,-,caller=T1;Bluetooth: HCI UART driver ver 2.3
+6,311,289271,-,caller=T1;Bluetooth: HCI UART protocol H4 registered
+6,312,289276,-,caller=T1;Bluetooth: HCI UART protocol LL registered
+6,313,289299,-,caller=T1;Bluetooth: HCI UART protocol Broadcom registered
+6,314,289302,-,caller=T1;Bluetooth: HCI UART protocol QCA registered
+6,315,289611,-,caller=T1;sdhci: Secure Digital Host Controller Interface driver
+6,316,289612,-,caller=T1;sdhci: Copyright(c) Pierre Ossman
+6,317,289612,-,caller=T1;sdhci-pltfm: SDHCI platform and OF driver helper
+6,318,289681,-,caller=T1;hid: raw HID events driver (C) Jiri Kosina
+6,319,289813,-,caller=T1;usbcore: registered new interface driver usbhid
+6,320,289814,-,caller=T1;usbhid: USB HID core driver
+6,321,289846,-,caller=T1;ashmem: initialized
+6,322,289948,-,caller=T1;gnss: GNSS driver registered with major 511
+6,323,290380,-,caller=T1;usbcore: registered new interface driver snd-usb-audio
+6,324,290470,-,caller=T1;GACT probability NOT on
+6,325,290474,-,caller=T1;Mirror/redirect action on
+6,326,290480,-,caller=T1;netem: version 1.3
+6,327,290490,-,caller=T1;u32 classifier
+6,328,290491,-,caller=T1;    input device check on
+6,329,290492,-,caller=T1;    Actions configured
+6,330,290685,-,caller=T1;xt_time: kernel timezone is -0000
+6,331,290722,-,caller=T1;ipip: IPv4 and MPLS over IPv4 tunneling driver
+6,332,290800,-,caller=T1;gre: GRE over IPv4 demultiplexor driver
+6,333,290801,-,caller=T1;ip_gre: GRE over IPv4 tunneling driver
+6,334,290917,-,caller=T1;IPv4 over IPsec tunneling driver
+6,335,291029,-,caller=T1;Initializing XFRM netlink socket
+6,336,291033,-,caller=T1;IPsec XFRM device driver
+6,337,291094,-,caller=T1;NET: Registered protocol family 10
+6,338,291407,-,caller=T1;Segment Routing with IPv6
+6,339,291427,-,caller=T1;mip6: Mobile IPv6
+6,340,291547,-,caller=T1;sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+6,341,291633,-,caller=T1;ip6_gre: GRE over IPv6 tunneling driver
+6,342,291676,-,caller=T1;NET: Registered protocol family 17
+6,343,291680,-,caller=T1;NET: Registered protocol family 15
+6,344,291692,-,caller=T1;can: controller area network core
+6,345,291706,-,caller=T1;NET: Registered protocol family 29
+6,346,291707,-,caller=T1;can: raw protocol
+6,347,291709,-,caller=T1;can: broadcast manager protocol
+6,348,291711,-,caller=T1;can: netlink gateway - max_hops=1
+6,349,291837,-,caller=T1;Bluetooth: RFCOMM TTY layer initialized
+6,350,291838,-,caller=T1;Bluetooth: RFCOMM socket layer initialized
+6,351,291842,-,caller=T1;Bluetooth: RFCOMM ver 1.11
+6,352,291844,-,caller=T1;Bluetooth: HIDP (Human Interface Emulation) ver 1.2
+6,353,291845,-,caller=T1;Bluetooth: HIDP socket layer initialized
+6,354,291851,-,caller=T1;l2tp_core: L2TP core driver, V2.0
+6,355,291852,-,caller=T1;l2tp_ppp: PPPoL2TP kernel driver, V2.0
+6,356,291853,-,caller=T1;tipc: Activated (version 2.0.0)
+6,357,291876,-,caller=T1;NET: Registered protocol family 30
+6,358,291893,-,caller=T1;tipc: Started in single node mode
+6,359,291921,-,caller=T1;NET: Registered protocol family 36
+6,360,291949,-,caller=T1;NET: Registered protocol family 40
+6,361,292019,-,caller=T1;registered taskstats version 1
+5,362,292021,-,caller=T1;Loading compiled-in X.509 certificates
+6,363,292034,-,caller=T1;page_owner is disabled
+5,364,292226,-,caller=T1;Key type ._fscrypt registered
+5,365,292228,-,caller=T1;Key type .fscrypt registered
+5,366,292229,-,caller=T1;Key type fscrypt-provisioning registered
+6,367,293461,-,caller=T1;ALSA device list:
+6,368,293462,-,caller=T1;  No soundcards found.
+3,369,293484,-,caller=T1;Warning: unable to open an initial console.
+6,370,293905,-,caller=T1;Freeing unused kernel memory: 3072K
+6,371,326850,-,caller=T1;Run /init as init process
+7,372,326853,-,caller=T1;  with arguments:
+7,373,326854,-,caller=T1;    /init
+7,374,326855,-,caller=T1;  with environment:
+7,375,326857,-,caller=T1;    HOME=/
+7,376,326858,-,caller=T1;    TERM=linux
+9,377,381293,-,caller=T153;nx679j: journal mirror: 1047 bytes (file open, kmsg=1 pmsg=2 rd=-1)
+9,378,381311,-,caller=T153;nx679j: journal mirror: 1047 bytes (file open, kmsg=1 pmsg=2 rd=-1)
+9,379,431714,-,caller=T154;nx679j: journal mirror: 1146 bytes (file open, kmsg=1 pmsg=2 rd=-1)
+9,380,431726,-,caller=T154;nx679j: journal mirror: 1146 bytes (file open, kmsg=1 pmsg=2 rd=-1)
+9,381,482810,-,caller=T155;nx679j: journal mirror: 1213 bytes (file open, kmsg=1 pmsg=2 rd=-1)
+9,382,482821,-,caller=T155;nx679j: journal mirror: 1213 bytes (file open, kmsg=1 pmsg=2 rd=-1)
+9,383,534675,-,caller=T156;nx679j: journal mirror: 1472 bytes (file open, kmsg=1 pmsg=2 rd=-1)
+9,384,534687,-,caller=T156;nx679j: journal mirror: 1472 bytes (file open, kmsg=1 pmsg=2 rd=-1)
+9,385,585225,-,caller=T157;nx679j: journal mirror: 1647 bytes (file open, kmsg=1 pmsg=2 rd=-1)
+9,386,585237,-,caller=T157;nx679j: journal mirror: 1647 bytes (file open, kmsg=1 pmsg=2 rd=-1)
+9,387,12646783,-,caller=T158;nx679j: journal mirror: 2347 bytes (file open, kmsg=1 pmsg=2 rd=-1)
+9,388,12646795,-,caller=T158;nx679j: journal mirror: 2347 bytes (file open, kmsg=1 pmsg=2 rd=-1)
+9,389,12688691,-,caller=T159;nx679j: journal mirror: 2478 bytes (file open, kmsg=1 pmsg=2 rd=-1)
+9,390,12688703,-,caller=T159;nx679j: journal mirror: 2478 bytes (file open, kmsg=1 pmsg=2 rd=-1)
+9,391,12794717,-,caller=T160;nx679j: journal mirror: 2816 bytes (file open, kmsg=1 pmsg=2 rd=-1)
+9,392,12794730,-,caller=T160;nx679j: journal mirror: 2816 bytes (file open, kmsg=1 pmsg=2 rd=-1)
+6,393,13155092,-,caller=T171;gh_msgq: Registered client for label: 0
+9,394,13202620,-,caller=T160;nx679j: journal mirror: 3773 bytes (file open, kmsg=1 pmsg=2 rd=-1)
+9,395,13202634,-,caller=T160;nx679j: journal mirror: 3773 bytes (file open, kmsg=1 pmsg=2 rd=-1)
+6,396,13414557,-,caller=T178;Minidump: Enabled with max number of regions 200
+6,397,13561708,-,caller=T182;NET: Registered protocol family 42
+9,398,13610667,-,caller=T160;nx679j: journal mirror: 4727 bytes (file open, kmsg=1 pmsg=2 rd=-1)
+9,399,13610681,-,caller=T160;nx679j: journal mirror: 4727 bytes (file open, kmsg=1 pmsg=2 rd=-1)
+1,400,13974389,-,caller=T192;pcie:pcie_init.
+9,401,14018642,-,caller=T160;nx679j: journal mirror: 5707 bytes (file open, kmsg=1 pmsg=2 rd=-1)
+9,402,14018659,-,caller=T160;nx679j: journal mirror: 5707 bytes (file open, kmsg=1 pmsg=2 rd=-1)
+6,403,14127701,-,caller=T197;qcom-scm: __get_convention: qcom_scm: convention: smc arm 64
+3,404,14128117,-,caller=T197;qtee shmbridge registered default bridge with size 4194304 bytes
+4,405,14129259,-,caller=T197;shmbridge is enabled
+6,406,14277963,-,caller=T201;qcom_system_heap_create: DMA-BUF Heap: Created 'qcom,system'
+6,407,14278004,-,caller=T201;qcom_system_heap_create: DMA-BUF Heap: Created 'system'
+6,408,14278050,-,caller=T201;qcom_secure_system_heap_create: DMA-BUF Heap: Created 'qcom,secure-pixel'
+6,409,14278089,-,caller=T201;qcom_secure_system_heap_create: DMA-BUF Heap: Created 'qcom,secure-non-pixel'
+6,410,14278363,-,caller=T201;platform soc:qcom,dma-heaps:qcom,adsp: assigned reserved memory node sdsp_region
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:qcom,dma-heaps:qcom,adsp
+6,411,14278606,-,caller=T201;platform soc:qcom,dma-heaps:qcom,sp_hlos: assigned reserved memory node sp_region
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:qcom,dma-heaps:qcom,sp_hlos
+6,412,14278941,-,caller=T201;platform soc:qcom,dma-heaps:qcom,user_contig: assigned reserved memory node user_contig_region
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:qcom,dma-heaps:qcom,user_contig
+6,413,14279049,-,caller=T201;platform soc:qcom,dma-heaps:qcom,qseecom: assigned reserved memory node qseecom_region
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:qcom,dma-heaps:qcom,qseecom
+6,414,14279161,-,caller=T201;platform soc:qcom,dma-heaps:qcom,qseecom_ta: assigned reserved memory node qseecom_ta_region
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:qcom,dma-heaps:qcom,qseecom_ta
+6,415,14279289,-,caller=T201;platform soc:qcom,dma-heaps:qcom,display: assigned reserved memory node non_secure_display_region
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:qcom,dma-heaps:qcom,display
+6,416,14279413,-,caller=T201;platform soc:qcom,dma-heaps:qcom,demura: assigned reserved memory node demura_heap_region
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:qcom,dma-heaps:qcom,demura
+6,417,14279521,-,caller=T201;platform soc:qcom,dma-heaps:qcom,audio_ml: assigned reserved memory node audio_cma_region
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:qcom,dma-heaps:qcom,audio_ml
+6,418,14279565,-,caller=T201;qcom_dma_heap_probe: DMA-BUF Heap: Created qcom,adsp
+6,419,14322964,-,caller=T201;qcom_dma_heap_probe: DMA-BUF Heap: Created qcom,secure-cdsp
+6,420,14322978,-,caller=T201;qcom_dma_heap_probe: DMA-BUF Heap: Created qcom,sp-hlos
+6,421,14323509,-,caller=T201;qcom_dma_heap_probe: DMA-BUF Heap: Created qcom,secure-sp-modem
+6,422,14325407,-,caller=T201;qcom_dma_heap_probe: DMA-BUF Heap: Created qcom,secure-sp-tz
+6,423,14325416,-,caller=T201;qcom_dma_heap_probe: DMA-BUF Heap: Created qcom,user-contig
+6,424,14325424,-,caller=T201;qcom_dma_heap_probe: DMA-BUF Heap: Created qcom,qseecom
+6,425,14325432,-,caller=T201;qcom_dma_heap_probe: DMA-BUF Heap: Created qcom,qseecom-ta
+6,426,14325441,-,caller=T201;qcom_dma_heap_probe: DMA-BUF Heap: Created qcom,display
+6,427,14325449,-,caller=T201;qcom_dma_heap_probe: DMA-BUF Heap: Created qcom,demura
+6,428,14325457,-,caller=T201;qcom_dma_heap_probe: DMA-BUF Heap: Created qcom,audio-ml
+9,429,14477437,-,caller=T160;nx679j: journal mirror: 6678 bytes (file open, kmsg=1 pmsg=2 rd=-1)
+9,430,14477452,-,caller=T160;nx679j: journal mirror: 6678 bytes (file open, kmsg=1 pmsg=2 rd=-1)
+6,431,14738020,-,caller=T210;IPA framework init
+6,432,15501212,-,caller=T227;qcom_dma_iommu soc:dma_dev@0x0: assigned reserved memory node linux,cma
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:dma_dev@0x0
+6,433,15501981,-,caller=T227;DMA: preallocated 256 KiB pool for atomic allocations
+6,434,15907722,-,caller=T235;qcom-llcc-pmu 19095000.llcc-pmu: Registered llcc_pmu, type: 9
+ SUBSYSTEM=platform
+ DEVICE=+platform:19095000.llcc-pmu
+6,435,16417665,-,caller=T247;msm_geni_serial_init: Driver initialized
+6,436,16623401,-,caller=T251;pm8450_s4_level: supplied by pm8350c_s6_mmcx_sup_level
+6,437,16623758,-,caller=T7;gcc_pcie_0_gdsc: supplied by pm8350c_s6_level
+6,438,16624016,-,caller=T7;gcc_pcie_1_gdsc: supplied by pm8350c_s6_level
+6,439,16624279,-,caller=T7;gcc_ufs_phy_gdsc: supplied by pm8350c_s6_level
+6,440,16625345,-,caller=T251;pm8350c_s2_mmcx_voter_level: supplied by pm8450_s4_level
+6,441,16625570,-,caller=T251;pm8350c_s2_gfx_voter_level: supplied by pm8350_s5_level
+6,442,16627258,-,caller=T7;gpu_cc_cx_gdsc: supplied by pm8350c_s6_level
+6,443,16627902,-,caller=T251;gpu_cc_gx_gdsc: supplied by pm8350c_s2_gfx_voter_level
+6,444,16633167,-,caller=T251;pm8350c_l7: Bringing 3000000uV into 3008000-3008000uV
+3,445,16634462,-,caller=T251;rpmh_regulator_probe: ldof1: could not find RPMh address for resource
+3,446,16634474,-,caller=T251;rpmh_regulator_probe: ldof2: could not find RPMh address for resource
+3,447,16634482,-,caller=T251;rpmh_regulator_probe: ldof4: could not find RPMh address for resource
+3,448,16634489,-,caller=T251;rpmh_regulator_probe: ldof5: could not find RPMh address for resource
+3,449,16634498,-,caller=T251;rpmh_regulator_probe: ldof6: could not find RPMh address for resource
+3,450,16634908,-,caller=T251;rpmh_regulator_probe: ldoj1: could not find RPMh address for resource
+3,451,16634925,-,caller=T251;rpmh_regulator_probe: ldoj2: could not find RPMh address for resource
+3,452,16634936,-,caller=T251;rpmh_regulator_probe: ldoj3: could not find RPMh address for resource
+3,453,16634959,-,caller=T251;rpmh_regulator_probe: ldoj4: could not find RPMh address for resource
+3,454,16634979,-,caller=T251;rpmh_regulator_probe: ldoj5: could not find RPMh address for resource
+3,455,16634999,-,caller=T251;rpmh_regulator_probe: ldoj6: could not find RPMh address for resource
+3,456,16635018,-,caller=T251;rpmh_regulator_probe: ldoj7: could not find RPMh address for resource
+6,457,16978226,-,caller=T258;gh_msgq: Registered client for label: 1
+6,458,17027160,-,caller=T260;v0.15, id=457, ver=2.2, raw_id=391, raw_ver=3, hw_plat=8, hw_plat_ver=65536\x0a accessory_chip=0, hw_plat_subtype=0, pmic_model=65550, pmic_die_revision=131072 foundry_id=7 serial_number=1242****** num_pmics=7 chip_family=0x74 raw_device_family=0xa raw_device_number=0x1 nproduct_id=0x432 num_clusters=0x1 ncluster_array_offset=0xb0 num_defective_parts=0xf ndefective_parts_array_offset=0xb4 nmodem_supported=0xffffffff
+6,459,17130085,-,caller=T262;gh-watchdog hypervisor:qcom,gh-watchdog: QCOM Apps Watchdog Initialized
+ SUBSYSTEM=platform
+ DEVICE=+platform:hypervisor:qcom,gh-watchdog
+6,460,17230656,-,caller=T265;msm_mem_dump soc:mem_dump: assigned reserved memory node mem_dump_region
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:mem_dump
+6,461,17241901,-,caller=T265;MSM Memory Dump apps data table set up
+3,462,17435331,-,caller=T269;qnoc-waipio soc:interconnect@1: failed to register ICC provider
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:interconnect@1
+3,463,17436194,-,caller=T269;qnoc-waipio 1740000.interconnect: failed to register ICC provider
+ SUBSYSTEM=platform
+ DEVICE=+platform:1740000.interconnect
+3,464,17436243,-,caller=T269;qnoc-waipio 19100000.interconnect: failed to register ICC provider
+ SUBSYSTEM=platform
+ DEVICE=+platform:19100000.interconnect
+3,465,17436318,-,caller=T7;qnoc-waipio soc:interconnect@1: failed to register ICC provider
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:interconnect@1
+3,466,17439082,-,caller=T7;qnoc-waipio 1740000.interconnect: failed to register ICC provider
+ SUBSYSTEM=platform
+ DEVICE=+platform:1740000.interconnect
+3,467,17439146,-,caller=T7;qnoc-waipio 19100000.interconnect: failed to register ICC provider
+ SUBSYSTEM=platform
+ DEVICE=+platform:19100000.interconnect
+3,468,17439201,-,caller=T7;qnoc-waipio soc:interconnect@1: failed to register ICC provider
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:interconnect@1
+5,469,17646539,-,caller=T273;cfg80211: Loading compiled-in X.509 certificates for regulatory database
+5,470,17649873,-,caller=T273;cfg80211: Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+4,471,17649921,-,caller=T194;platform regulatory.0: Direct firmware load for regulatory.db failed with error -2
+ SUBSYSTEM=platform
+ DEVICE=+platform:regulatory.0
+6,472,17649926,-,caller=T194;cfg80211: failed to load regulatory.db
+3,473,17998171,-,caller=T7;qnoc-waipio 1740000.interconnect: failed to register ICC provider
+ SUBSYSTEM=platform
+ DEVICE=+platform:1740000.interconnect
+3,474,17998274,-,caller=T7;qnoc-waipio 19100000.interconnect: failed to register ICC provider
+ SUBSYSTEM=platform
+ DEVICE=+platform:19100000.interconnect
+3,475,17998353,-,caller=T7;qnoc-waipio soc:interconnect@1: failed to register ICC provider
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:interconnect@1
+4,476,18043485,-,caller=T285;msm_mmrm: loading out-of-tree module taints kernel.
+3,477,18048121,-,caller=T7;qnoc-waipio 1740000.interconnect: failed to register ICC provider
+ SUBSYSTEM=platform
+ DEVICE=+platform:1740000.interconnect
+3,478,18048206,-,caller=T7;qnoc-waipio 19100000.interconnect: failed to register ICC provider
+ SUBSYSTEM=platform
+ DEVICE=+platform:19100000.interconnect
+3,479,18048272,-,caller=T7;qnoc-waipio soc:interconnect@1: failed to register ICC provider
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:interconnect@1
+9,480,18094359,-,caller=T160;nx679j: journal mirror: 15418 bytes (file open, kmsg=1 pmsg=2 rd=-1)
+9,481,18094371,-,caller=T160;nx679j: journal mirror: 15418 bytes (file open, kmsg=1 pmsg=2 rd=-1)
+6,482,18098165,-,caller=T7;spmi spmi-0: PMIC arbiter version v7 (0x70000000)
+ SUBSYSTEM=spmi
+ DEVICE=+spmi:spmi-0
+4,483,18100866,-,caller=T7;gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:gpio_keys
+3,484,18101074,-,caller=T7;qnoc-waipio 1740000.interconnect: failed to register ICC provider
+ SUBSYSTEM=platform
+ DEVICE=+platform:1740000.interconnect
+3,485,18101146,-,caller=T7;qnoc-waipio 19100000.interconnect: failed to register ICC provider
+ SUBSYSTEM=platform
+ DEVICE=+platform:19100000.interconnect
+3,486,18101207,-,caller=T7;qnoc-waipio soc:interconnect@1: failed to register ICC provider
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:interconnect@1
+6,487,18101386,-,caller=T7;spmi spmi-1: PMIC arbiter version v7 (0x70000000)
+ SUBSYSTEM=spmi
+ DEVICE=+spmi:spmi-1
+4,488,18102288,-,caller=T7;gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:gpio_keys
+3,489,18102482,-,caller=T7;qnoc-waipio 1740000.interconnect: failed to register ICC provider
+ SUBSYSTEM=platform
+ DEVICE=+platform:1740000.interconnect
+3,490,18102546,-,caller=T7;qnoc-waipio 19100000.interconnect: failed to register ICC provider
+ SUBSYSTEM=platform
+ DEVICE=+platform:19100000.interconnect
+3,491,18102605,-,caller=T7;qnoc-waipio soc:interconnect@1: failed to register ICC provider
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:interconnect@1
+4,492,18200415,-,caller=T7;gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:gpio_keys
+3,493,18200617,-,caller=T7;qnoc-waipio 1740000.interconnect: failed to register ICC provider
+ SUBSYSTEM=platform
+ DEVICE=+platform:1740000.interconnect
+3,494,18200693,-,caller=T7;qnoc-waipio 19100000.interconnect: failed to register ICC provider
+ SUBSYSTEM=platform
+ DEVICE=+platform:19100000.interconnect
+3,495,18200771,-,caller=T7;qnoc-waipio soc:interconnect@1: failed to register ICC provider
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:interconnect@1
+6,496,18249499,-,caller=T289;[msm-dp-info]nubia_usb_switch_dp_probe +
+6,497,18249553,-,caller=T289;[msm-dp-info]nubia_parse_switcher_dt:pswitcher->switch_en = 371, pswitcher->switch_mode = 375
+6,498,18249560,-,caller=T289;[msm-dp-info]nubia_usb_switch_dp_probe -
+4,499,18250888,-,caller=T7;gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:gpio_keys
+3,500,18251090,-,caller=T7;qnoc-waipio 1740000.interconnect: failed to register ICC provider
+ SUBSYSTEM=platform
+ DEVICE=+platform:1740000.interconnect
+3,501,18251163,-,caller=T7;qnoc-waipio 19100000.interconnect: failed to register ICC provider
+ SUBSYSTEM=platform
+ DEVICE=+platform:19100000.interconnect
+3,502,18251228,-,caller=T7;qnoc-waipio soc:interconnect@1: failed to register ICC provider
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:interconnect@1
+9,503,18501534,-,caller=T160;nx679j: journal mirror: 16409 bytes (file open, kmsg=1 pmsg=2 rd=-1)
+9,504,18501546,-,caller=T160;nx679j: journal mirror: 16409 bytes (file open, kmsg=1 pmsg=2 rd=-1)
+4,505,18520895,-,caller=T294;dsi_phy ae94400.qcom,mdss_dsi_phy0: supply gdsc not found, using dummy regulator
+ SUBSYSTEM=platform
+ DEVICE=+platform:ae94400.qcom,mdss_dsi_phy0
+6,506,18521225,-,caller=T294;[drm:dsi_pll_init [msm_drm]] [msm-dsi-info]: DSI_PLL_0: DSI pll label = dsi_pll_5nm
+6,507,18521355,-,caller=T294;[drm:dsi_pll_init [msm_drm]] [msm-dsi-info]: DSI_PLL_0: PLL SSC enabled
+6,508,18521362,-,caller=T294;dsi_pll_init: PLL base=(____ptrval____)
+6,509,18521514,-,caller=T294;[drm:dsi_pll_clock_register_5nm [msm_drm]] [msm-dsi-info]: DSI_PLL_0: Registered clocks successfully
+6,510,18521610,-,caller=T294;[drm:dsi_phy_driver_probe$f82802b0bf108c90655d299f84d4d244 [msm_drm]] [msm-dsi-info]: DSI_0: Probe successful
+4,511,18521658,-,caller=T294;dsi_phy ae96400.qcom,mdss_dsi_phy1: supply gdsc not found, using dummy regulator
+ SUBSYSTEM=platform
+ DEVICE=+platform:ae96400.qcom,mdss_dsi_phy1
+4,512,18521663,-,caller=T7;gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:gpio_keys
+6,513,18521805,-,caller=T294;[drm:dsi_pll_init [msm_drm]] [msm-dsi-info]: DSI_PLL_0: DSI pll label = dsi_pll_5nm
+6,514,18521902,-,caller=T294;[drm:dsi_pll_init [msm_drm]] [msm-dsi-info]: DSI_PLL_1: PLL SSC enabled
+3,515,18521903,-,caller=T7;qnoc-waipio 1740000.interconnect: failed to register ICC provider
+ SUBSYSTEM=platform
+ DEVICE=+platform:1740000.interconnect
+6,516,18521907,-,caller=T294;dsi_pll_init: PLL base=(____ptrval____)
+6,517,18522048,-,caller=T294;[drm:dsi_pll_clock_register_5nm [msm_drm]] [msm-dsi-info]: DSI_PLL_1: Registered clocks successfully
+3,518,18522049,-,caller=T7;qnoc-waipio 19100000.interconnect: failed to register ICC provider
+ SUBSYSTEM=platform
+ DEVICE=+platform:19100000.interconnect
+6,519,18522144,-,caller=T294;[drm:dsi_phy_driver_probe$f82802b0bf108c90655d299f84d4d244 [msm_drm]] [msm-dsi-info]: DSI_1: Probe successful
+3,520,18522145,-,caller=T7;qnoc-waipio soc:interconnect@1: failed to register ICC provider
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:interconnect@1
+6,521,18522540,-,caller=T294;zxb get panel_name from uefi: i=0, name=
+3,522,18522642,-,caller=T294;[drm:dsi_display_register [msm_drm]] *ERROR* [msm-dsi-error]: display name[]is not valid
+6,523,18522644,-,caller=T294;zxb get panel_name from uefi: i=1, name=
+3,524,18522738,-,caller=T294;[drm:dsi_display_register [msm_drm]] *ERROR* [msm-dsi-error]: display name[]is not valid
+3,525,18523046,-,caller=T294;Error: Driver 'sde_wb' is already registered, aborting...
+3,526,18523048,-,caller=T294;[ZtemtDisp] [nubia_disp_preference_init: 707] start
+3,527,18523059,-,caller=T294;[ZtemtDisp] [nubia_disp_preference_init: 732] success
+4,528,18523405,-,caller=T7;gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:gpio_keys
+3,529,18523625,-,caller=T7;qnoc-waipio 1740000.interconnect: failed to register ICC provider
+ SUBSYSTEM=platform
+ DEVICE=+platform:1740000.interconnect
+3,530,18523695,-,caller=T7;qnoc-waipio 19100000.interconnect: failed to register ICC provider
+ SUBSYSTEM=platform
+ DEVICE=+platform:19100000.interconnect
+3,531,18523759,-,caller=T7;qnoc-waipio soc:interconnect@1: failed to register ICC provider
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:interconnect@1
+6,532,18810730,-,caller=T7;arm-scmi soc:qcom,scmi: SCMI Notifications - Core Enabled.
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:qcom,scmi
+6,533,18811508,-,caller=T7;arm-scmi soc:qcom,scmi: SCMI Protocol v2.0 'Qualcomm:' Firmware version 0x10000
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:qcom,scmi
+3,534,18811613,-,caller=T7;arm-scmi soc:qcom,scmi: SCMI protocol 128 not implemented
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:qcom,scmi
+4,535,18811843,-,caller=T7;gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:gpio_keys
+3,536,18812838,-,caller=T7;qnoc-waipio 1740000.interconnect: failed to register ICC provider
+ SUBSYSTEM=platform
+ DEVICE=+platform:1740000.interconnect
+3,537,18813163,-,caller=T7;qnoc-waipio 19100000.interconnect: failed to register ICC provider
+ SUBSYSTEM=platform
+ DEVICE=+platform:19100000.interconnect
+3,538,18813459,-,caller=T7;qnoc-waipio soc:interconnect@1: failed to register ICC provider
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:interconnect@1
+3,539,18817909,-,caller=T7;arm-scmi soc:qcom,scmi: version 1.0
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:qcom,scmi
+4,540,18818006,-,caller=T7;gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:gpio_keys
+3,541,18818865,-,caller=T7;qnoc-waipio 1740000.interconnect: failed to register ICC provider
+ SUBSYSTEM=platform
+ DEVICE=+platform:1740000.interconnect
+3,542,18819160,-,caller=T7;qnoc-waipio 19100000.interconnect: failed to register ICC provider
+ SUBSYSTEM=platform
+ DEVICE=+platform:19100000.interconnect
+3,543,18819443,-,caller=T7;qnoc-waipio soc:interconnect@1: failed to register ICC provider
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:interconnect@1
+9,544,18908896,-,caller=T160;nx679j: journal mirror: 17377 bytes (file open, kmsg=1 pmsg=2 rd=-1)
+9,545,18908908,-,caller=T160;nx679j: journal mirror: 17377 bytes (file open, kmsg=1 pmsg=2 rd=-1)
+4,546,18964383,-,caller=T7;gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:gpio_keys
+3,547,18965007,-,caller=T7;qnoc-waipio 1740000.interconnect: failed to register ICC provider
+ SUBSYSTEM=platform
+ DEVICE=+platform:1740000.interconnect
+3,548,18965090,-,caller=T7;qnoc-waipio 19100000.interconnect: failed to register ICC provider
+ SUBSYSTEM=platform
+ DEVICE=+platform:19100000.interconnect
+3,549,18965158,-,caller=T7;qnoc-waipio soc:interconnect@1: failed to register ICC provider
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:interconnect@1
+6,550,18972002,-,caller=T7;gcc-waipio 100000.clock-controller: Registered GCC clocks
+ SUBSYSTEM=platform
+ DEVICE=+platform:100000.clock-controller
+6,551,18972672,-,caller=T7;88e0000.qcom,msm-eud: ttyEUD0 at MMIO 0x0 (irq = 296, base_baud = 0) is a EUD UART
+6,552,18972998,-,caller=T7;video_cc_mvs0c_gdsc: supplied by pm8350c_s2_mmcx_voter_level
+6,553,18973173,-,caller=T7;video_cc_mvs1c_gdsc: supplied by pm8350c_s2_mmcx_voter_level
+4,554,18973373,-,caller=T7;gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:gpio_keys
+6,555,18973437,-,caller=T7;cam_cc_bps_gdsc: supplied by pm8350c_s2_mmcx_voter_level
+6,556,18973503,-,caller=T7;cam_cc_ife_0_gdsc: supplied by pm8350c_s2_mmcx_voter_level
+6,557,18973564,-,caller=T7;cam_cc_ife_1_gdsc: supplied by pm8350c_s2_mmcx_voter_level
+6,558,18973628,-,caller=T7;cam_cc_ife_2_gdsc: supplied by pm8350c_s2_mmcx_voter_level
+6,559,18973689,-,caller=T7;cam_cc_ipe_0_gdsc: supplied by pm8350c_s2_mmcx_voter_level
+6,560,18973751,-,caller=T7;cam_cc_sbi_gdsc: supplied by pm8350c_s2_mmcx_voter_level
+6,561,18973812,-,caller=T7;cam_cc_sfe_0_gdsc: supplied by pm8350c_s2_mmcx_voter_level
+6,562,18973872,-,caller=T7;cam_cc_sfe_1_gdsc: supplied by pm8350c_s2_mmcx_voter_level
+6,563,18973945,-,caller=T7;cam_cc_titan_top_gdsc: supplied by pm8350c_s2_mmcx_voter_level
+6,564,18975968,-,caller=T7;disp_cc_mdss_core_gdsc: supplied by pm8450_s4_level
+4,565,18978099,-,caller=T7;disp_cc_pll0 PLL is already enabled
+6,566,18978239,-,caller=T7;disp_cc-waipio af00000.clock-controller: Registered DISP CC clocks
+ SUBSYSTEM=platform
+ DEVICE=+platform:af00000.clock-controller
+3,567,18978289,-,caller=T7;qnoc-waipio 1740000.interconnect: failed to register ICC provider
+ SUBSYSTEM=platform
+ DEVICE=+platform:1740000.interconnect
+3,568,18978374,-,caller=T7;qnoc-waipio 19100000.interconnect: failed to register ICC provider
+ SUBSYSTEM=platform
+ DEVICE=+platform:19100000.interconnect
+3,569,18978508,-,caller=T7;qnoc-waipio soc:interconnect@1: failed to register ICC provider
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:interconnect@1
+6,570,18979058,-,caller=T7;disp_cc_mdss_core_int2_gdsc: supplied by pm8450_s4_level
+6,571,18980049,-,caller=T7;cpu cpu0: EM: created perf domain
+ SUBSYSTEM=cpu
+ DEVICE=+cpu:cpu0
+6,572,18980976,-,caller=T7;cpu cpu4: EM: created perf domain
+ SUBSYSTEM=cpu
+ DEVICE=+cpu:cpu4
+6,573,18981638,-,caller=T7;cpu cpu7: EM: created perf domain
+ SUBSYSTEM=cpu
+ DEVICE=+cpu:cpu7
+3,574,18984083,-,caller=T7;msm_geni_serial 99c000.qcom,qup_uart: msm_geni_serial_probe, Console Disabled
+ SUBSYSTEM=platform
+ DEVICE=+platform:99c000.qcom,qup_uart
+6,575,18985137,-,caller=T64;core_ctl: Creating CPU group 0
+6,576,18985139,-,caller=T64;core_ctl: Init CPU0 state
+6,577,18985140,-,caller=T64;core_ctl: Init CPU1 state
+6,578,18985140,-,caller=T64;core_ctl: Init CPU2 state
+6,579,18985141,-,caller=T64;core_ctl: Init CPU3 state
+6,580,18985153,-,caller=T64;core_ctl: Creating CPU group 4
+6,581,18985154,-,caller=T64;core_ctl: Init CPU4 state
+6,582,18985155,-,caller=T64;core_ctl: Init CPU5 state
+6,583,18985155,-,caller=T64;core_ctl: Init CPU6 state
+6,584,18985161,-,caller=T64;core_ctl: Creating CPU group 7
+6,585,18985162,-,caller=T64;core_ctl: Init CPU7 state
+6,586,18985240,-,caller=T7;video_cc_mvs0_gdsc: supplied by video_cc_mvs0c_gdsc
+6,587,18985480,-,caller=T7;[drm:dsi_display_dev_probe [msm_drm]] [nubia-dsi-debug]: 8450 dsi_display_dev_probe [soc:qcom,dsi-display-primary] , pdev->dev.of_node->name is qcom,dsi-display-primary, pdev->dev.of_node->full_name is qcom,dsi-display-primary
+6,588,18985766,-,caller=T7;[drm:dsi_display_dev_probe [msm_drm]] [nubia-dsi-debug]: mdp_node name is qcom,mdss_mdp ++
+6,589,18985843,-,caller=T7;[drm:dsi_display_dev_probe [msm_drm]] [nubia-dsi-debug]: mdp_node full name is qcom,mdss_mdp@ae00000 ++
+6,590,18986015,-,caller=T7;[drm:dsi_display_dev_probe [msm_drm]] [nubia-dsi-debug]: get disply :[(null)]++ 
+3,591,18986204,-,caller=T7;[drm:dsi_display_dev_probe [msm_drm]] *ERROR* [msm-dsi-error]: resources required for display probe not present: rc=-517
+6,592,18986380,-,caller=T7;[drm:dsi_display_dev_probe [msm_drm]] [nubia-dsi-debug]: 8450 dsi_display_dev_probe [soc:qcom,dsi-display-secondary] , pdev->dev.of_node->name is qcom,dsi-display-secondary, pdev->dev.of_node->full_name is qcom,dsi-display-secondary
+6,593,18986475,-,caller=T7;[drm:dsi_display_dev_probe [msm_drm]] [nubia-dsi-debug]: mdp_node name is qcom,mdss_mdp ++
+6,594,18986543,-,caller=T7;[drm:dsi_display_dev_probe [msm_drm]] [nubia-dsi-debug]: mdp_node full name is qcom,mdss_mdp@ae00000 ++
+4,595,18986547,-,caller=T7;[drm] [msm-dsi-warn]: secondary default panel not found
+6,596,18986616,-,caller=T7;[drm:dsi_display_dev_probe [msm_drm]] [nubia-dsi-debug]: get disply :[(null)]++ 
+3,597,18986684,-,caller=T7;[drm:dsi_display_dev_probe [msm_drm]] *ERROR* [msm-dsi-error]: resources required for display probe not present: rc=-517
+6,598,18986766,-,caller=T7;video_cc_mvs1_gdsc: supplied by video_cc_mvs1c_gdsc
+4,599,18986817,-,caller=T7;gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:gpio_keys
+6,600,18990259,-,caller=T7;[sde_rsc_hw:rsc_hw_init_v3:537]: sde rsc init successfully done
+6,601,18990273,-,caller=T7;[sde_rsc:sde_rsc_probe:1807]: sde rsc index:0 probed successfully
+6,602,18991064,-,caller=T7;[drm:sde_dbg_init:2407] evtlog_status: enable:11, panic:1, dump:2
+3,603,18993314,-,caller=T7;msm-dwc3 a600000.ssusb: IRQ hs_phy_irq not found
+ SUBSYSTEM=platform
+ DEVICE=+platform:a600000.ssusb
+3,604,18993708,-,caller=T7;nubia enhance_kobj init in dwc3_msm_probe
+6,605,18994402,-,caller=T7;[drm:dsi_display_dev_probe [msm_drm]] [nubia-dsi-debug]: 8450 dsi_display_dev_probe [soc:qcom,dsi-display-primary] , pdev->dev.of_node->name is qcom,dsi-display-primary, pdev->dev.of_node->full_name is qcom,dsi-display-primary
+6,606,18994499,-,caller=T7;[drm:dsi_display_dev_probe [msm_drm]] [nubia-dsi-debug]: mdp_node name is qcom,mdss_mdp ++
+6,607,18994572,-,caller=T7;[drm:dsi_display_dev_probe [msm_drm]] [nubia-dsi-debug]: mdp_node full name is qcom,mdss_mdp@ae00000 ++
+6,608,18994645,-,caller=T7;[drm:dsi_display_dev_probe [msm_drm]] [nubia-dsi-debug]: get disply :[(null)]++ 
+3,609,18994803,-,caller=T7;[drm:dsi_display_dev_probe [msm_drm]] *ERROR* [msm-dsi-error]: resources required for display probe not present: rc=-517
+6,610,18994951,-,caller=T7;[drm:dsi_display_dev_probe [msm_drm]] [nubia-dsi-debug]: 8450 dsi_display_dev_probe [soc:qcom,dsi-display-secondary] , pdev->dev.of_node->name is qcom,dsi-display-secondary, pdev->dev.of_node->full_name is qcom,dsi-display-secondary
+6,611,18995042,-,caller=T7;[drm:dsi_display_dev_probe [msm_drm]] [nubia-dsi-debug]: mdp_node name is qcom,mdss_mdp ++
+6,612,18995111,-,caller=T7;[drm:dsi_display_dev_probe [msm_drm]] [nubia-dsi-debug]: mdp_node full name is qcom,mdss_mdp@ae00000 ++
+4,613,18995114,-,caller=T7;[drm] [msm-dsi-warn]: secondary default panel not found
+6,614,18995184,-,caller=T7;[drm:dsi_display_dev_probe [msm_drm]] [nubia-dsi-debug]: get disply :[(null)]++ 
+3,615,18995253,-,caller=T7;[drm:dsi_display_dev_probe [msm_drm]] *ERROR* [msm-dsi-error]: resources required for display probe not present: rc=-517
+4,616,18995306,-,caller=T7;gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:gpio_keys
+4,617,18996051,-,caller=T7;qcom-bwmon: Zone thres larger than hw limit: hi:267 med:400 lo:0
+6,618,18996348,-,caller=T7;[drm:dsi_ctrl_dev_probe$ac852388496582ddec80c3e2c0809167 [msm_drm]] [msm-dsi-info]: dsi-ctrl-0: Probe successful
+6,619,18996482,-,caller=T7;[drm:dsi_ctrl_dev_probe$ac852388496582ddec80c3e2c0809167 [msm_drm]] [msm-dsi-info]: dsi-ctrl-1: Probe successful
+6,620,18996951,-,caller=T7;[drm:dsi_display_dev_probe [msm_drm]] [nubia-dsi-debug]: 8450 dsi_display_dev_probe [soc:qcom,dsi-display-primary] , pdev->dev.of_node->name is qcom,dsi-display-primary, pdev->dev.of_node->full_name is qcom,dsi-display-primary
+6,621,18997067,-,caller=T7;[drm:dsi_display_dev_probe [msm_drm]] [nubia-dsi-debug]: mdp_node name is qcom,mdss_mdp ++
+6,622,18997133,-,caller=T7;[drm:dsi_display_dev_probe [msm_drm]] [nubia-dsi-debug]: mdp_node full name is qcom,mdss_mdp@ae00000 ++
+6,623,18997202,-,caller=T7;[drm:dsi_display_dev_probe [msm_drm]] [nubia-dsi-debug]: get disply :[(null)]++ 
+3,624,18997247,-,caller=T7;[ZtemtDisp] [nubia_set_dsi_ctrl: 694] start primary
+6,625,18997380,-,caller=T7;[drm:dsi_display_dev_probe [msm_drm]] [nubia-dsi-debug]: 8450 dsi_display_dev_probe [soc:qcom,dsi-display-secondary] , pdev->dev.of_node->name is qcom,dsi-display-secondary, pdev->dev.of_node->full_name is qcom,dsi-display-secondary
+4,626,18997410,-,caller=T120;msm-dsi-display soc:qcom,dsi-display-primary: Direct firmware load for dsi_prop failed with error -2
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:qcom,dsi-display-primary
+6,627,18997479,-,caller=T120;[drm:dsi_display_firmware_display$1ae4955404bb03e2af56b768bf162ccf [msm_drm]] [msm-dsi-info]: no firmware available, fallback to device node
+6,628,18997546,-,caller=T120;[drm:dsi_display_init [msm_drm]] [nubia-dsi-debug]: dsi_display_init ++: (null)
+3,629,18997556,-,caller=T120;OF: graph: no port node found in /soc/qcom,dsi-display-primary
+3,630,18997665,-,caller=T120;[drm:dsi_panel_parse_gpios$6b9df652b2950c0b73ec8b08e6bcf15e [msm_drm]] *ERROR* [msm-dsi-error]: gpio [r66451 amoled cmd mode dsi visionox panel with DSC] panel_dvdd_1p2_goio is not set, rc=0
+4,631,18997799,-,caller=T120;msm-dsi-display soc:qcom,dsi-display-primary: supply lab not found, using dummy regulator
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:qcom,dsi-display-primary
+4,632,18997819,-,caller=T120;msm-dsi-display soc:qcom,dsi-display-primary: supply ibb not found, using dummy regulator
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:qcom,dsi-display-primary
+6,633,18997921,-,caller=T7;[drm:dsi_display_dev_probe [msm_drm]] [nubia-dsi-debug]: mdp_node name is qcom,mdss_mdp ++
+6,634,18997987,-,caller=T7;[drm:dsi_display_dev_probe [msm_drm]] [nubia-dsi-debug]: mdp_node full name is qcom,mdss_mdp@ae00000 ++
+4,635,18997991,-,caller=T7;[drm] [msm-dsi-warn]: secondary default panel not found
+6,636,18998058,-,caller=T7;[drm:dsi_display_dev_probe [msm_drm]] [nubia-dsi-debug]: get disply :[(null)]++ 
+3,637,18998061,-,caller=T7;[ZtemtDisp] [nubia_set_dsi_ctrl: 694] start secondary
+4,638,18998094,-,caller=T7;gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:gpio_keys
+4,639,18998539,-,caller=T62;msm-dsi-display soc:qcom,dsi-display-secondary: Direct firmware load for dsi_prop_sec failed with error -2
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:qcom,dsi-display-secondary
+6,640,18998615,-,caller=T62;[drm:dsi_display_firmware_display$1ae4955404bb03e2af56b768bf162ccf [msm_drm]] [msm-dsi-info]: no firmware available, fallback to device node
+6,641,18998686,-,caller=T62;[drm:dsi_display_init [msm_drm]] [nubia-dsi-debug]: dsi_display_init ++: (null)
+6,642,19113182,-,caller=T327;qti-reg-fixed-voltage soc:display_gpio_regulator@1: there is not valid maps for state default
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:display_gpio_regulator@1
+4,643,19113678,-,caller=T7;gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:gpio_keys
+4,644,19164265,-,caller=T7;gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:gpio_keys
+4,645,19164872,-,caller=T240;gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:gpio_keys
+4,646,19165429,-,caller=T7;gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:gpio_keys
+4,647,19165954,-,caller=T7;gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:gpio_keys
+4,648,19166472,-,caller=T7;gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:gpio_keys
+4,649,19166980,-,caller=T7;gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:gpio_keys
+4,650,19167487,-,caller=T7;gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:gpio_keys
+4,651,19167992,-,caller=T7;gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:gpio_keys
+4,652,19168498,-,caller=T7;gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:gpio_keys
+4,653,19169019,-,caller=T7;gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:gpio_keys
+4,654,19169525,-,caller=T7;gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:gpio_keys
+5,655,19170067,-,caller=T328;arm-smmu 15000000.apps-smmu: \x09coherent table walk
+ SUBSYSTEM=platform
+ DEVICE=+platform:15000000.apps-smmu
+5,656,19170068,-,caller=T328;arm-smmu 15000000.apps-smmu: \x09stream matching with 113 register groups
+ SUBSYSTEM=platform
+ DEVICE=+platform:15000000.apps-smmu
+4,657,19170860,-,caller=T7;gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:gpio_keys
+6,658,19171023,-,caller=T7;msmdrm_smmu soc:qcom,smmu_sde_unsec_cb: Adding to iommu group 0
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:qcom,smmu_sde_unsec_cb
+6,659,19171380,-,caller=T7;[drm] probing device qcom,smmu_sde_unsec
+6,660,19171381,-,caller=T7;[drm] Created domain mdp_ns, secure=0
+6,661,19171442,-,caller=T7;msmdrm_smmu soc:qcom,smmu_sde_sec_cb: Adding to iommu group 1
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:qcom,smmu_sde_sec_cb
+6,662,19171718,-,caller=T7;[drm] probing device qcom,smmu_sde_sec
+6,663,19171720,-,caller=T7;[drm] Created domain mdp_s, secure=1
+6,664,19171862,-,caller=T7;[drm:dsi_display_bind$1ae4955404bb03e2af56b768bf162ccf [msm_drm]] [msm-dsi-info]: Successfully bind display panel 'qcom,mdss_dsi_visionox_r66451_fhd_plus_cmd '
+6,665,19171935,-,caller=T7;msm_drm ae00000.qcom,mdss_mdp: bound soc:qcom,dsi-display-primary (ops dsi_display_comp_ops [msm_drm])
+ SUBSYSTEM=platform
+ DEVICE=+platform:ae00000.qcom,mdss_mdp
+6,666,19172011,-,caller=T7;msm_drm ae00000.qcom,mdss_mdp: bound soc:qcom,dsi-display-secondary (ops dsi_display_comp_ops [msm_drm])
+ SUBSYSTEM=platform
+ DEVICE=+platform:ae00000.qcom,mdss_mdp
+6,667,19172084,-,caller=T7;msm_drm ae00000.qcom,mdss_mdp: bound soc:qcom,smmu_sde_unsec_cb (ops msm_smmu_comp_ops [msm_drm])
+ SUBSYSTEM=platform
+ DEVICE=+platform:ae00000.qcom,mdss_mdp
+6,668,19172157,-,caller=T7;msm_drm ae00000.qcom,mdss_mdp: bound soc:qcom,smmu_sde_sec_cb (ops msm_smmu_comp_ops [msm_drm])
+ SUBSYSTEM=platform
+ DEVICE=+platform:ae00000.qcom,mdss_mdp
+6,669,19172230,-,caller=T7;msm_drm ae00000.qcom,mdss_mdp: bound soc:qcom,wb-display@0 (ops sde_wb_comp_ops [msm_drm])
+ SUBSYSTEM=platform
+ DEVICE=+platform:ae00000.qcom,mdss_mdp
+6,670,19172302,-,caller=T7;msm_drm ae00000.qcom,mdss_mdp: bound ae90000.qcom,dp_display (ops dp_display_comp_ops [msm_drm])
+ SUBSYSTEM=platform
+ DEVICE=+platform:ae00000.qcom,mdss_mdp
+6,671,19172374,-,caller=T7;msm_drm ae00000.qcom,mdss_mdp: bound af20000.qcom,sde_rscc (ops sde_rsc_comp_ops [msm_drm])
+ SUBSYSTEM=platform
+ DEVICE=+platform:ae00000.qcom,mdss_mdp
+6,672,19172385,-,caller=T7;[drm] mapped mdp address space @(____ptrval____)
+6,673,19173187,-,caller=T7;[drm:_sde_kms_hw_init_blocks:4654] sde hardware revision:0x80010000
+3,674,19173261,-,caller=T7;[drm:msm_smmu_new [msm_drm]] *ERROR* unable to find domain 1 compat: qcom,smmu_sde_nrt_unsec
+3,675,19173328,-,caller=T7;[drm:msm_smmu_new [msm_drm]] *ERROR* unable to find domain 3 compat: qcom,smmu_sde_nrt_sec
+6,676,19173832,-,caller=T7;[drm:dsi_panel_get_mode [msm_drm]] [msm-dsi-info]: default topology: lm: 2 comp_enc:2 intf: 1
+6,677,19173921,-,caller=T7;[drm:dsi_panel_get_mode [msm_drm]] [msm-dsi-info]: roi alignment: [540, 20, 20, 20, 1080, 20]
+6,678,19174001,-,caller=T7;[drm:dsi_panel_get_mode [msm_drm]] [msm-dsi-info]: default topology: lm: 2 comp_enc:2 intf: 1
+6,679,19174083,-,caller=T7;[drm:dsi_panel_get_mode [msm_drm]] [msm-dsi-info]: roi alignment: [540, 20, 20, 20, 1080, 20]
+6,680,19174160,-,caller=T7;[drm:dsi_panel_get_mode [msm_drm]] [msm-dsi-info]: default topology: lm: 2 comp_enc:2 intf: 1
+6,681,19174240,-,caller=T7;[drm:dsi_panel_get_mode [msm_drm]] [msm-dsi-info]: roi alignment: [540, 20, 20, 20, 1080, 20]
+6,682,19174674,-,caller=T7;[drm:dp_pll_get][msm-dp-info][7   ]revision=DP_PLL_5NM_V1, ssc_en=0, bonding_en=0
+3,683,19175362,-,caller=T7;[sde-hdcp1x] sde_hdcp_1x_init: Error creating HDCP 1.x handle
+6,684,19175372,-,caller=T7;[drm:dp_init_sub_modules][msm-dp-info][7   ]: hdcp_disabled = 1
+6,685,19175935,-,caller=T7;gh_msgq: Registered client for label: 2
+4,686,19177003,-,caller=T7;------------[ cut here ]------------
+4,687,19177009,-,caller=T7;WARNING: CPU: 7 PID: 7 at kernel/kthread.c:874 kthread_queue_work+0x194/0x254
+4,688,19177010,-,caller=T7;Modules linked in: arm_smmu qti_fixed_regulator nvmem_qcom_spmi_sdam ufs_qcom clk_rpmh regmap_spmi cqhci qcom_rimps msm_qmp pmu_vendor ufshcd_crypto_qti crypto_qti_common crypto_qti_hwkm msm_drm(O) panel_event_notifier gh_irq_lend gh_mem_notifier altmode_glink usb_switch_dp msm_ext_display fsa4480_i2c spmi_pmic_arb msm_mmrm(O) pinctrl_waipio hwkm qnoc_diwali rtc_pm8xxx phy_qcom_ufs_qmp_v4_diwali pinctrl_cape stub_regulator cfg80211 smp2p dispcc_diwali mem_hooks qnoc_waipio mhi_cntrl_qcom qcom_esoc kryo_arm64_edac memory_dump_v2 bwmon gh_virt_wdt c1dcvs_scmi socinfo mem_buf qti_regmap_debugfs gcc_diwali qcom_gic_intr_routing qcom_wdt_core pinctrl_diwali dispcc_waipio rpmh_regulator gcc_waipio reboot_mode tmecom_intf msm_geni_serial iommu_logger qcom_cpu_vendor_hooks qcom_q6v5_pas qcom_q6v5 qcom_pil_info qcom_dcvs dcvs_fp llcc_qcom qcom_pmu_lib qcom_llcc_pmu icc_rpmh icc_bcm_voter qcom_rpmh cmd_db qnoc_qos msm_geni_se pinctrl_msm qcom_iommu_util icc_debug gh_ctrl
+4,689,19177044,c,caller=T7; phy_qcom_ufs_qmp_v4_waipio c1dcvs_vendor usb_f_gsi dwc3_msm eud phy_msm_ssusb_qmp phy_msm_snps_hs phy_generic ssusb_redriver_nb7vpq904m ucsi_glink pmic_glink pdr_interface ipa_fmwk phy_qcom_ufs_qmp_v4_cape qcom_pdc qcom_reboot_reason qcom_aoss qcom_dload_mode mdt_loader qcom_sysmon qcom_dma_heaps mem_buf_dev secure_buffer qcom_scm msm_dma_iommu_mapping mhi pci_msm_drv rproc_qcom_common qcom_glink_smem qcom_glink qcom_smd smp2p_sleepstate phy_qcom_ufs qmi_helpers qrtr ns qcom_ipc_logging minidump smem qcom_hwspinlock sched_walt qcom_cpufreq_hw gh_rm_drv gh_arm_drv gh_msgq gh_dbl clk_dummy clk_qcom gdsc_regulator proxy_consumer debug_regulator
+4,690,19177069,-,caller=T7;CPU: 7 PID: 7 Comm: kworker/u16:0 Tainted: G S         O      5.10.66-android12-9-00005-gf6e6376090be-ab8060604 #1
+4,691,19177070,-,caller=T7;Hardware name: Qualcomm Technologies, Inc. Waipio MTP with PM8010 (DT)
+4,692,19177073,-,caller=T7;Workqueue: events_unbound deferred_probe_work_func.cfi_jt
+4,693,19177075,-,caller=T7;pstate: 82c00085 (Nzcv daIf +PAN +UAO +TCO BTYPE=--)
+4,694,19177077,-,caller=T7;pc : kthread_queue_work+0x194/0x254
+4,695,19177174,-,caller=T7;lr : msm_drm_bind$98f8e18cfc04c71c4ebc615b0054683d+0x3f0/0x860 [msm_drm]
+4,696,19177175,-,caller=T7;sp : ffffffc0100a3920
+4,697,19177176,-,caller=T7;x29: ffffffc0100a3920 x28: 00************** 
+4,698,19177178,-,caller=T7;x27: ffffffdd24b6a328 x26: ffffff8796c14a00 
+4,699,19177179,-,caller=T7;x25: ffffff879604a8b8 x24: ffffff879604ade0 
+4,700,19177180,-,caller=T7;x23: 00************** x22: ffffff87802f0000 
+4,701,19177182,-,caller=T7;x21: ffffff879604a8b8 x20: ffffff879604ade0 
+4,702,19177183,-,caller=T7;x19: ffffff879604a8bc x18: ffffffc01008d080 
+4,703,19177184,-,caller=T7;x17: 00************** x16: 00************** 
+4,704,19177185,-,caller=T7;x15: 00************** x14: 00************** 
+4,705,19177187,-,caller=T7;x13: 00ff00ff00000000 x12: 00************** 
+4,706,19177188,-,caller=T7;x11: 00000000000c9400 x10: 00************** 
+4,707,19177190,-,caller=T7;x9 : 00************** x8 : ffffff879604a3b8 
+4,708,19177191,-,caller=T7;x7 : ffffff8b64ff5b88 x6 : ffffff8b64ff5c30 
+4,709,19177192,-,caller=T7;x5 : ffffffffffffff80 x4 : 00************** 
+4,710,19177193,-,caller=T7;x3 : ffffff879604a8c0 x2 : 00************** 
+4,711,19177195,-,caller=T7;x1 : 00************** x0 : 00************** 
+4,712,19177196,-,caller=T7;Call trace:
+4,713,19177198,-,caller=T7; kthread_queue_work+0x194/0x254
+4,714,19177265,-,caller=T7; msm_drm_bind$98f8e18cfc04c71c4ebc615b0054683d+0x3f0/0x860 [msm_drm]
+4,715,19177268,-,caller=T7; try_to_bring_up_master+0x1f4/0x25c
+4,716,19177269,-,caller=T7; __component_add+0xf0/0x290
+4,717,19177270,-,caller=T7; component_add+0x18/0x28
+4,718,19177337,-,caller=T7; msm_smmu_probe$53769042edf31190487d36ea935dc7d2+0x1ac/0x1c4 [msm_drm]
+4,719,19177339,-,caller=T7; platform_drv_probe+0x60/0x180
+4,720,19177340,-,caller=T7; really_probe+0x514/0xb2c
+4,721,19177341,-,caller=T7; driver_probe_device+0x1b0/0x230
+4,722,19177343,-,caller=T7; __device_attach_driver+0x210/0x308
+4,723,19177344,-,caller=T7; __device_attach+0x210/0x33c
+4,724,19177345,-,caller=T7; bus_probe_device+0x44/0x1b4
+4,725,19177346,-,caller=T7; deferred_probe_work_func+0x108/0x278
+4,726,19177348,-,caller=T7; process_one_work+0x248/0x780
+4,727,19177350,-,caller=T7; worker_thread+0x438/0xbd8
+4,728,19177351,-,caller=T7; kthread+0x150/0x200
+4,729,19177353,-,caller=T7; ret_from_fork+0x10/0x30
+4,730,19177354,-,caller=T7;---[ end trace c64717b2c56b3843 ]---
+6,731,19181715,-,caller=T7;[drm] Initialized msm_drm 1.4.0 20130625 for ae00000.qcom,mdss_mdp on minor 0
+6,732,19181717,-,caller=T7;[drm] cont_splash enabled in 1 of 1 display(s)
+6,733,19181827,-,caller=T7;[drm:dsi_ctrl_isr_configure [msm_drm]] [msm-dsi-info]: dsi-ctrl-0: IRQ 303 registered
+6,734,19182754,-,caller=T7;pci-msm 1c00000.qcom,pcie: PCIe: msm_pcie_probe
+ SUBSYSTEM=platform
+ DEVICE=+platform:1c00000.qcom,pcie
+3,735,19183023,-,caller=T7;msm_pcie_get_reg: PCIe: RC0: no mhi resource found.
+3,736,19183025,-,caller=T7;msm_pcie_get_reg: PCIe: RC0: no tcsr resource found.
+3,737,19183027,-,caller=T7;msm_pcie_get_reg: PCIe: RC0: no rumi resource found.
+6,738,19183937,-,caller=T7;qupv3_geni_se 9c0000.qcom,qupv3_0_geni_se: Adding to iommu group 2
+ SUBSYSTEM=platform
+ DEVICE=+platform:9c0000.qcom,qupv3_0_geni_se
+6,739,19184552,-,caller=T7;qupv3_geni_se ac0000.qcom,qupv3_1_geni_se: Adding to iommu group 3
+ SUBSYSTEM=platform
+ DEVICE=+platform:ac0000.qcom,qupv3_1_geni_se
+6,740,19185565,-,caller=T7;qupv3_geni_se 8c0000.qcom,qupv3_2_geni_se: Adding to iommu group 4
+ SUBSYSTEM=platform
+ DEVICE=+platform:8c0000.qcom,qupv3_2_geni_se
+6,741,19186379,-,caller=T7;ufshcd-qcom 1d84000.ufshc: Adding to iommu group 5
+ SUBSYSTEM=platform
+ DEVICE=+platform:1d84000.ufshc
+6,742,19187334,-,caller=T7;ufshcd-qcom 1d84000.ufshc: ufshcd_populate_vreg: unable to find vdd-hba-max-microamp
+ SUBSYSTEM=platform
+ DEVICE=+platform:1d84000.ufshc
+6,743,19187483,-,caller=T7;ufshcd-qcom 1d84000.ufshc: ufshcd_populate_vreg: Unable to find vccq2-supply regulator, assuming enabled
+ SUBSYSTEM=platform
+ DEVICE=+platform:1d84000.ufshc
+6,744,19188566,-,caller=T7;ufshcd-qcom 1d84000.ufshc: Found QC Inline Crypto Engine (ICE) v3.2.1
+ SUBSYSTEM=platform
+ DEVICE=+platform:1d84000.ufshc
+6,745,19190628,-,caller=T7;scsi host0: ufshcd
+ SUBSYSTEM=scsi
+ DEVICE=+scsi:host0
+4,746,19198785,-,caller=T7;gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:gpio_keys
+6,747,19199275,-,caller=T7;msm_geni_serial 894000.qcom,qup_uart: Wakeup byte 0xfd
+ SUBSYSTEM=platform
+ DEVICE=+platform:894000.qcom,qup_uart
+6,748,19199367,-,caller=T7;msm_geni_serial 894000.qcom,qup_uart: Serial port0 added.FifoSize 64 is_console0
+ SUBSYSTEM=platform
+ DEVICE=+platform:894000.qcom,qup_uart
+6,749,19199659,-,caller=T7;894000.qcom,qup_uart: ttyHS0 at MMIO 0x894000 (irq = 85, base_baud = 0) is a MSM
+4,750,19200363,-,caller=T7;gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:gpio_keys
+3,751,19211193,-,caller=T240;ufshcd-qcom 1d84000.ufshc: ufshcd_print_pwr_info:[RX, TX]: gear=[1, 1], lane[1, 1], pwr[SLOWAUTO_MODE, SLOWAUTO_MODE], rate = 0
+ SUBSYSTEM=platform
+ DEVICE=+platform:1d84000.ufshc
+4,752,19213840,-,caller=T7;gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:gpio_keys
+4,753,19265266,-,caller=T7;gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:gpio_keys
+9,754,19314426,-,caller=T160;nx679j: journal mirror: 18348 bytes (file open, kmsg=1 pmsg=2 rd=-1)
+9,755,19314430,-,caller=T160;nx679j: journal mirror: 18348 bytes (file open, kmsg=1 pmsg=2 rd=-1)
+4,756,19316075,-,caller=T9;gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:gpio_keys
+4,757,19318363,-,caller=T9;qcom_q6v5_pas 3000000.remoteproc-adsp: adsp_init_bus_scaling: No bus client
+ SUBSYSTEM=platform
+ DEVICE=+platform:3000000.remoteproc-adsp
+6,758,19318954,-,caller=T9;remoteproc remoteproc0: 3000000.remoteproc-adsp is available
+ SUBSYSTEM=remoteproc
+ DEVICE=c243:0
+6,759,19319422,-,caller=T9;remoteproc remoteproc1: 32300000.remoteproc-cdsp is available
+ SUBSYSTEM=remoteproc
+ DEVICE=c243:1
+4,760,19319508,-,caller=T9;qcom_q6v5_pas 2400000.remoteproc-slpi: adsp_init_bus_scaling: No bus client
+ SUBSYSTEM=platform
+ DEVICE=+platform:2400000.remoteproc-slpi
+6,761,19320040,-,caller=T9;remoteproc remoteproc2: 2400000.remoteproc-slpi is available
+ SUBSYSTEM=remoteproc
+ DEVICE=c243:2
+6,762,19320320,-,caller=T9;remoteproc remoteproc3: 4080000.remoteproc-mss is available
+ SUBSYSTEM=remoteproc
+ DEVICE=c243:3
+6,763,19320669,-,caller=T9;tmecom-qmp-client soc:qcom,tmecom-qmp-client: tmecom probe success
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:qcom,tmecom-qmp-client
+4,764,19320723,-,caller=T9;gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:gpio_keys
+4,765,19321170,-,caller=T9;gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:gpio_keys
+3,766,19374639,-,caller=T240;ufshcd-qcom 1d84000.ufshc: No HPB LU supported
+ SUBSYSTEM=platform
+ DEVICE=+platform:1d84000.ufshc
+3,767,19387388,-,caller=T240;ufshcd-qcom 1d84000.ufshc: ufshcd_print_pwr_info:[RX, TX]: gear=[4, 4], lane[2, 2], pwr[FAST MODE, FAST MODE], rate = 2
+ SUBSYSTEM=platform
+ DEVICE=+platform:1d84000.ufshc
+3,768,19387887,-,caller=T240;ufshcd-qcom 1d84000.ufshc: ufshcd_find_max_sup_active_icc_level: Regulator capability was not set, actvIccLevel=0
+ SUBSYSTEM=platform
+ DEVICE=+platform:1d84000.ufshc
+6,769,19387995,-,caller=T240;ufshcd-qcom 1d84000.ufshc: ufshcd_wb_config: Write Booster Configured
+ SUBSYSTEM=platform
+ DEVICE=+platform:1d84000.ufshc
+5,770,19388602,-,caller=T240;scsi 0:0:0:49488: Well-known LUN    SAMSUNG  KLUEG8UHDC-B0E1  0400 PQ: 0 ANSI: 6
+ SUBSYSTEM=scsi
+ DEVICE=+scsi:0:0:0:49488
+5,771,19390315,-,caller=T240;scsi 0:0:0:49476: Well-known LUN    SAMSUNG  KLUEG8UHDC-B0E1  0400 PQ: 0 ANSI: 6
+ SUBSYSTEM=scsi
+ DEVICE=+scsi:0:0:0:49476
+5,772,19391941,-,caller=T240;scsi 0:0:0:49456: Well-known LUN    SAMSUNG  KLUEG8UHDC-B0E1  0400 PQ: 0 ANSI: 6
+ SUBSYSTEM=scsi
+ DEVICE=+scsi:0:0:0:49456
+5,773,19393186,-,caller=T240;scsi 0:0:0:0: Direct-Access     SAMSUNG  KLUEG8UHDC-B0E1  0400 PQ: 0 ANSI: 6
+ SUBSYSTEM=scsi
+ DEVICE=+scsi:0:0:0:0
+4,774,19394819,-,caller=C7;sd 0:0:0:0: Power-on or device reset occurred
+ SUBSYSTEM=scsi
+ DEVICE=+scsi:0:0:0:0
+5,775,19394951,-,caller=T240;scsi 0:0:0:1: Direct-Access     SAMSUNG  KLUEG8UHDC-B0E1  0400 PQ: 0 ANSI: 6
+ SUBSYSTEM=scsi
+ DEVICE=+scsi:0:0:0:1
+4,776,19396605,-,caller=C7;sd 0:0:0:1: Power-on or device reset occurred
+ SUBSYSTEM=scsi
+ DEVICE=+scsi:0:0:0:1
+5,777,19396680,-,caller=T7;sd 0:0:0:0: [sda] 60884992 4096-byte logical blocks: (249 GB/232 GiB)
+ SUBSYSTEM=scsi
+ DEVICE=+scsi:0:0:0:0
+5,778,19396714,-,caller=T240;scsi 0:0:0:2: Direct-Access     SAMSUNG  KLUEG8UHDC-B0E1  0400 PQ: 0 ANSI: 6
+ SUBSYSTEM=scsi
+ DEVICE=+scsi:0:0:0:2
+5,779,19397199,-,caller=T7;sd 0:0:0:0: [sda] Write Protect is off
+ SUBSYSTEM=scsi
+ DEVICE=+scsi:0:0:0:0
+7,780,19397201,-,caller=T7;sd 0:0:0:0: [sda] Mode Sense: 00 32 00 10
+ SUBSYSTEM=scsi
+ DEVICE=+scsi:0:0:0:0
+5,781,19397777,-,caller=T7;sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, supports DPO and FUA
+ SUBSYSTEM=scsi
+ DEVICE=+scsi:0:0:0:0
+6,782,19397879,-,caller=T7;sd 0:0:0:0: [sda] Optimal transfer size 524288 bytes
+ SUBSYSTEM=scsi
+ DEVICE=+scsi:0:0:0:0
+4,783,19398356,-,caller=C7;sd 0:0:0:2: Power-on or device reset occurred
+ SUBSYSTEM=scsi
+ DEVICE=+scsi:0:0:0:2
+5,784,19398449,-,caller=T240;scsi 0:0:0:3: Direct-Access     SAMSUNG  KLUEG8UHDC-B0E1  0400 PQ: 0 ANSI: 6
+ SUBSYSTEM=scsi
+ DEVICE=+scsi:0:0:0:3
+5,785,19398937,-,caller=T9;sd 0:0:0:1: [sdb] 2048 4096-byte logical blocks: (8.39 MB/8.00 MiB)
+ SUBSYSTEM=scsi
+ DEVICE=+scsi:0:0:0:1
+5,786,19399008,-,caller=T9;sd 0:0:0:1: [sdb] Write Protect is off
+ SUBSYSTEM=scsi
+ DEVICE=+scsi:0:0:0:1
+7,787,19399010,-,caller=T9;sd 0:0:0:1: [sdb] Mode Sense: 00 32 00 10
+ SUBSYSTEM=scsi
+ DEVICE=+scsi:0:0:0:1
+5,788,19399570,-,caller=T9;sd 0:0:0:1: [sdb] Write cache: enabled, read cache: enabled, supports DPO and FUA
+ SUBSYSTEM=scsi
+ DEVICE=+scsi:0:0:0:1
+4,789,19400064,-,caller=C6;sd 0:0:0:3: Power-on or device reset occurred
+ SUBSYSTEM=scsi
+ DEVICE=+scsi:0:0:0:3
+6,790,19400079,-,caller=T9;sd 0:0:0:1: [sdb] Optimal transfer size 524288 bytes
+ SUBSYSTEM=scsi
+ DEVICE=+scsi:0:0:0:1
+5,791,19400126,-,caller=T240;scsi 0:0:0:4: Direct-Access     SAMSUNG  KLUEG8UHDC-B0E1  0400 PQ: 0 ANSI: 6
+ SUBSYSTEM=scsi
+ DEVICE=+scsi:0:0:0:4
+5,792,19400163,-,caller=T377;sd 0:0:0:2: [sdc] 2048 4096-byte logical blocks: (8.39 MB/8.00 MiB)
+ SUBSYSTEM=scsi
+ DEVICE=+scsi:0:0:0:2
+5,793,19400202,-,caller=T377;sd 0:0:0:2: [sdc] Write Protect is off
+ SUBSYSTEM=scsi
+ DEVICE=+scsi:0:0:0:2
+7,794,19400204,-,caller=T377;sd 0:0:0:2: [sdc] Mode Sense: 00 32 00 10
+ SUBSYSTEM=scsi
+ DEVICE=+scsi:0:0:0:2
+5,795,19400291,-,caller=T377;sd 0:0:0:2: [sdc] Write cache: enabled, read cache: enabled, supports DPO and FUA
+ SUBSYSTEM=scsi
+ DEVICE=+scsi:0:0:0:2
+6,796,19400359,-,caller=T377;sd 0:0:0:2: [sdc] Optimal transfer size 524288 bytes
+ SUBSYSTEM=scsi
+ DEVICE=+scsi:0:0:0:2
+4,797,19400445,-,caller=C7;sd 0:0:0:4: Power-on or device reset occurred
+ SUBSYSTEM=scsi
+ DEVICE=+scsi:0:0:0:4
+5,798,19400583,-,caller=T240;scsi 0:0:0:5: Direct-Access     SAMSUNG  KLUEG8UHDC-B0E1  0400 PQ: 0 ANSI: 6
+ SUBSYSTEM=scsi
+ DEVICE=+scsi:0:0:0:5
+5,799,19400989,-,caller=T378;sd 0:0:0:3: [sdd] 8192 4096-byte logical blocks: (33.6 MB/32.0 MiB)
+ SUBSYSTEM=scsi
+ DEVICE=+scsi:0:0:0:3
+5,800,19401501,-,caller=T378;sd 0:0:0:3: [sdd] Write Protect is off
+ SUBSYSTEM=scsi
+ DEVICE=+scsi:0:0:0:3
+7,801,19401504,-,caller=T378;sd 0:0:0:3: [sdd] Mode Sense: 00 32 00 10
+ SUBSYSTEM=scsi
+ DEVICE=+scsi:0:0:0:3
+6,802,19402540,-,caller=T7; sda: sda1 sda2 sda3 sda4 sda5 sda6 sda7 sda8 sda9 sda10 sda11 sda12
+5,803,19402816,-,caller=T378;sd 0:0:0:3: [sdd] Write cache: enabled, read cache: enabled, supports DPO and FUA
+ SUBSYSTEM=scsi
+ DEVICE=+scsi:0:0:0:3
+4,804,19403064,-,caller=C6;sd 0:0:0:5: Power-on or device reset occurred
+ SUBSYSTEM=scsi
+ DEVICE=+scsi:0:0:0:5
+6,805,19403069,-,caller=T378;sd 0:0:0:3: [sdd] Optimal transfer size 524288 bytes
+ SUBSYSTEM=scsi
+ DEVICE=+scsi:0:0:0:3
+5,806,19403722,-,caller=T379;sd 0:0:0:4: [sde] 1572864 4096-byte logical blocks: (6.44 GB/6.00 GiB)
+ SUBSYSTEM=scsi
+ DEVICE=+scsi:0:0:0:4
+5,807,19403763,-,caller=C0;random: fast init done
+5,808,19403811,-,caller=T379;sd 0:0:0:4: [sde] Write Protect is off
+ SUBSYSTEM=scsi
+ DEVICE=+scsi:0:0:0:4
+7,809,19403812,-,caller=T379;sd 0:0:0:4: [sde] Mode Sense: 00 32 00 10
+ SUBSYSTEM=scsi
+ DEVICE=+scsi:0:0:0:4
+5,810,19405303,-,caller=T380;sd 0:0:0:5: [sdf] 8192 4096-byte logical blocks: (33.6 MB/32.0 MiB)
+ SUBSYSTEM=scsi
+ DEVICE=+scsi:0:0:0:5
+5,811,19405848,-,caller=T379;sd 0:0:0:4: [sde] Write cache: enabled, read cache: enabled, supports DPO and FUA
+ SUBSYSTEM=scsi
+ DEVICE=+scsi:0:0:0:4
+5,812,19405850,-,caller=T380;sd 0:0:0:5: [sdf] Write Protect is off
+ SUBSYSTEM=scsi
+ DEVICE=+scsi:0:0:0:5
+7,813,19405852,-,caller=T380;sd 0:0:0:5: [sdf] Mode Sense: 00 32 00 10
+ SUBSYSTEM=scsi
+ DEVICE=+scsi:0:0:0:5
+6,814,19406391,-,caller=T379;sd 0:0:0:4: [sde] Optimal transfer size 524288 bytes
+ SUBSYSTEM=scsi
+ DEVICE=+scsi:0:0:0:4
+6,815,19406396,-,caller=T9; sdb: sdb1 sdb2 sdb3 sdb4 sdb5
+6,816,19406499,-,caller=T377; sdc: sdc1 sdc2 sdc3 sdc4 sdc5
+5,817,19406729,-,caller=T380;sd 0:0:0:5: [sdf] Write cache: enabled, read cache: enabled, supports DPO and FUA
+ SUBSYSTEM=scsi
+ DEVICE=+scsi:0:0:0:5
+5,818,19407023,-,caller=T7;sd 0:0:0:0: [sda] Attached SCSI disk
+ SUBSYSTEM=scsi
+ DEVICE=+scsi:0:0:0:0
+6,819,19407046,-,caller=T380;sd 0:0:0:5: [sdf] Optimal transfer size 524288 bytes
+ SUBSYSTEM=scsi
+ DEVICE=+scsi:0:0:0:5
+4,820,19407200,-,caller=T240;gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:gpio_keys
+6,821,19408373,-,caller=T378; sdd: sdd1 sdd2 sdd3
+5,822,19408474,-,caller=T377;sd 0:0:0:2: [sdc] Attached SCSI disk
+ SUBSYSTEM=scsi
+ DEVICE=+scsi:0:0:0:2
+4,823,19408550,-,caller=T240;gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:gpio_keys
+5,824,19408810,-,caller=T9;sd 0:0:0:1: [sdb] Attached SCSI disk
+ SUBSYSTEM=scsi
+ DEVICE=+scsi:0:0:0:1
+4,825,19408907,-,caller=T9;gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:gpio_keys
+6,826,19411504,-,caller=T380; sdf: sdf1 sdf2 sdf3 sdf4 sdf5
+6,827,19412044,-,caller=T379; sde: sde1 sde2 sde3 sde4 sde5 sde6 sde7 sde8 sde9 sde10 sde11 sde12 sde13 sde14 sde15 sde16 sde17 sde18 sde19 sde20 sde21 sde22 sde23 sde24 sde25 sde26 sde27 sde28 sde29 sde30 sde31 sde32 sde33 sde34 sde35 sde36 sde37 sde38 sde39 sde40 sde41 sde42 sde43 sde44 sde45 sde46 sde47 sde48 sde49 sde50 sde51 sde52 sde53 sde54 sde55 sde56 sde57 sde58 sde59 sde60 sde61 sde62 sde63 sde64 sde65 sde66 sde67 sde68 sde69 sde70 sde71 sde72 sde73 sde74
+5,828,19413145,-,caller=T378;sd 0:0:0:3: [sdd] Attached SCSI disk
+ SUBSYSTEM=scsi
+ DEVICE=+scsi:0:0:0:3
+4,829,19413218,-,caller=T240;gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:gpio_keys
+5,830,19415490,-,caller=T380;sd 0:0:0:5: [sdf] Attached SCSI disk
+ SUBSYSTEM=scsi
+ DEVICE=+scsi:0:0:0:5
+4,831,19415606,-,caller=T240;gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:gpio_keys
+4,832,19416043,-,caller=T240;gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:gpio_keys
+4,833,19416156,-,caller=T240;gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:gpio_keys
+4,834,19416243,-,caller=T240;gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:gpio_keys
+4,835,19416336,-,caller=T240;gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:gpio_keys
+5,836,19416403,-,caller=T379;sd 0:0:0:4: [sde] Attached SCSI disk
+ SUBSYSTEM=scsi
+ DEVICE=+scsi:0:0:0:4
+4,837,19416473,-,caller=T240;gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:gpio_keys
+4,838,19416559,-,caller=T240;gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:gpio_keys
+4,839,19416645,-,caller=T240;gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:gpio_keys
+4,840,19416725,-,caller=T240;gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:gpio_keys
+4,841,19416861,-,caller=T379;gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:gpio_keys
+4,842,19416942,-,caller=T379;gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:gpio_keys
+4,843,19417244,-,caller=T240;gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:gpio_keys
+6,844,19417268,-,caller=T382;rtc-pm8xxx c42d000.qcom,spmi:qcom,pmk8350@0:rtc@6100: registered as rtc0
+ SUBSYSTEM=platform
+ DEVICE=+platform:c42d000.qcom,spmi:qcom,pmk8350@0:rtc@
+6,845,19417763,-,caller=T382;rtc-pm8xxx c42d000.qcom,spmi:qcom,pmk8350@0:rtc@6100: setting system clock to 1970-01-03T16:47:19 UTC (233239)
+ SUBSYSTEM=platform
+ DEVICE=+platform:c42d000.qcom,spmi:qcom,pmk8350@0:rtc@
+4,846,19417792,-,caller=T240;gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:gpio_keys
+4,847,19417831,-,caller=T240;gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:gpio_keys
+4,848,19417970,-,caller=T240;gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:gpio_keys
+4,849,19418334,-,caller=T240;gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:gpio_keys
+4,850,19418695,-,caller=T240;gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:gpio_keys
+4,851,19418866,-,caller=T240;gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:gpio_keys
+4,852,19418990,-,caller=T240;gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:gpio_keys
+4,853,19419110,-,caller=T240;gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:gpio_keys
+4,854,19419250,-,caller=T240;gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:gpio_keys
+4,855,19419345,-,caller=T240;gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:gpio_keys
+4,856,19465664,-,caller=T384;rmnet_core: Unknown symbol rmnet_ctl_if (err -2)
+4,857,19515765,-,caller=T385;rmnet_shs: Unknown symbol __traceiter_rmnet_shs_high (err -2)
+4,858,19515781,-,caller=T385;rmnet_shs: Unknown symbol qmi_rmnet_ps_ind_deregister (err -2)
+4,859,19515790,-,caller=T385;rmnet_shs: Unknown symbol rmnet_map_dl_ind_deregister (err -2)
+4,860,19515797,-,caller=T385;rmnet_shs: Unknown symbol rmnet_get_port (err -2)
+4,861,19515803,-,caller=T385;rmnet_shs: Unknown symbol rmnet_map_dl_ind_register (err -2)
+4,862,19515810,-,caller=T385;rmnet_shs: Unknown symbol qmi_rmnet_ps_ind_register (err -2)
+4,863,19515822,-,caller=T385;rmnet_shs: Unknown symbol __tracepoint_rmnet_shs_high (err -2)
+4,864,19515831,-,caller=T385;rmnet_shs: Unknown symbol rmnet_shs_skb_entry (err -2)
+4,865,19515838,-,caller=T385;rmnet_shs: Unknown symbol rmnet_shs_switch (err -2)
+4,866,19515849,-,caller=T385;rmnet_shs: Unknown symbol rmnet_is_real_dev_registered (err -2)
+4,867,19515856,-,caller=T385;rmnet_shs: Unknown symbol rmnet_rx_handler (err -2)
+4,868,19515883,-,caller=T385;rmnet_shs: Unknown symbol __traceiter_print_icmp_rx (err -2)
+4,869,19515891,-,caller=T385;rmnet_shs: Unknown symbol __traceiter_rmnet_shs_low (err -2)
+4,870,19515901,-,caller=T385;rmnet_shs: Unknown symbol __traceiter_rmnet_shs_err (err -2)
+4,871,19515918,-,caller=T385;rmnet_shs: Unknown symbol __tracepoint_print_icmp_rx (err -2)
+4,872,19515925,-,caller=T385;rmnet_shs: Unknown symbol __tracepoint_rmnet_shs_low (err -2)
+4,873,19515932,-,caller=T385;rmnet_shs: Unknown symbol __tracepoint_rmnet_shs_err (err -2)
+4,874,19515939,-,caller=T385;rmnet_shs: Unknown symbol __traceiter_rmnet_shs_wq_low (err -2)
+4,875,19515948,-,caller=T385;rmnet_shs: Unknown symbol __tracepoint_rmnet_shs_wq_low (err -2)
+4,876,19515960,-,caller=T385;rmnet_shs: Unknown symbol __traceiter_rmnet_shs_wq_high (err -2)
+4,877,19515967,-,caller=T385;rmnet_shs: Unknown symbol __tracepoint_rmnet_shs_wq_high (err -2)
+4,878,19515978,-,caller=T385;rmnet_shs: Unknown symbol __traceiter_rmnet_freq_boost (err -2)
+4,879,19515986,-,caller=T385;rmnet_shs: Unknown symbol __traceiter_rmnet_freq_reset (err -2)
+4,880,19515996,-,caller=T385;rmnet_shs: Unknown symbol __tracepoint_rmnet_freq_boost (err -2)
+4,881,19516002,-,caller=T385;rmnet_shs: Unknown symbol __tracepoint_rmnet_freq_reset (err -2)
+9,882,19567193,-,caller=T160;nx679j: journal mirror: 19323 bytes (file open, kmsg=1 pmsg=2 rd=8)
+9,883,19567197,-,caller=T160;nx679j: journal mirror: 19323 bytes (file open, kmsg=1 pmsg=2 rd=8)
+4,884,19569843,-,caller=T386;rmnet_perf: Unknown symbol rmnet_perf_ingress_hook1 (err -2)
+4,885,19569853,-,caller=T386;rmnet_perf: Unknown symbol rmnet_perf_egress_hook1 (err -2)
+4,886,19619955,-,caller=T387;rmnet_offload: Unknown symbol rmnet_get_port (err -2)
+4,887,19619968,-,caller=T387;rmnet_offload: Unknown symbol qmi_rmnet_ps_ind_register (err -2)
+4,888,19619974,-,caller=T387;rmnet_offload: Unknown symbol rmnet_map_dl_ind_register (err -2)
+4,889,19619981,-,caller=T387;rmnet_offload: Unknown symbol qmi_rmnet_ps_ind_deregister (err -2)
+4,890,19619987,-,caller=T387;rmnet_offload: Unknown symbol rmnet_map_dl_ind_deregister (err -2)
+4,891,19619995,-,caller=T387;rmnet_offload: Unknown symbol rmnet_frag_deliver (err -2)
+4,892,19620003,-,caller=T387;rmnet_offload: Unknown symbol rmnet_recycle_frag_descriptor (err -2)
+4,893,19620010,-,caller=T387;rmnet_offload: Unknown symbol rmnet_frag_header_ptr (err -2)
+4,894,19620015,-,caller=T387;rmnet_offload: Unknown symbol rmnet_frag_ipv6_skip_exthdr (err -2)
+4,895,19620025,-,caller=T387;rmnet_offload: Unknown symbol rmnet_perf_desc_entry (err -2)
+4,896,19620032,-,caller=T387;rmnet_offload: Unknown symbol rmnet_frag_descriptor_add_frags_from (err -2)
+4,897,19620037,-,caller=T387;rmnet_offload: Unknown symbol rmnet_perf_chain_end (err -2)
+4,898,19670102,-,caller=T388;rmnet_aps: Unknown symbol rmnet_aps_set_prio (err -2)
+6,899,19721606,-,caller=T389;sch: init (1.0)
+6,900,19772751,-,caller=T390;DATARMNET7eb0fa5c8f(): rmnet_wlan initializing
+4,901,19822706,-,caller=T391;rmnet_perf_tether: Unknown symbol rmnet_perf_tether_ingress_hook (err -2)
+4,902,19822715,-,caller=T391;rmnet_perf_tether: Unknown symbol rmnet_perf_tether_egress_hook (err -2)
+4,903,19822722,-,caller=T391;rmnet_perf_tether: Unknown symbol rmnet_perf_tether_cmd_hook (err -2)
+4,904,19929564,-,caller=T393;ipam: Unknown symbol gsi_pending_irq_type (err -2)
+4,905,19929602,-,caller=T393;ipam: Unknown symbol gsi_map_base (err -2)
+4,906,19929663,-,caller=T393;ipam: Unknown symbol gsi_flow_control_ee (err -2)
+4,907,19929670,-,caller=T393;ipam: Unknown symbol gsi_halt_channel_ee (err -2)
+4,908,19929730,-,caller=T393;ipam: Unknown symbol gsi_register_device (err -2)
+4,909,19929737,-,caller=T393;ipam: Unknown symbol gsi_query_device_msi_addr (err -2)
+4,910,19929743,-,caller=T393;ipam: Unknown symbol gsi_deregister_device (err -2)
+4,911,19929750,-,caller=T393;ipam: Unknown symbol gsi_alloc_channel_ee (err -2)
+4,912,19929801,-,caller=T393;ipam: Unknown symbol gsi_enable_fw (err -2)
+4,913,19929833,-,caller=T393;ipam: Unknown symbol gsi_unmap_base (err -2)
+4,914,19929856,-,caller=T393;ipam: Unknown symbol gsi_configure_regs (err -2)
+4,915,19929913,-,caller=T393;ipam: Unknown symbol gsi_queue_xfer (err -2)
+4,916,19929921,-,caller=T393;ipam: Unknown symbol gsi_start_channel (err -2)
+4,917,19929930,-,caller=T393;ipam: Unknown symbol gsi_dealloc_channel (err -2)
+4,918,19929936,-,caller=T393;ipam: Unknown symbol gsi_reset_evt_ring (err -2)
+4,919,19929943,-,caller=T393;ipam: Unknown symbol gsi_dealloc_evt_ring (err -2)
+4,920,19929954,-,caller=T393;ipam: Unknown symbol gsi_alloc_evt_ring (err -2)
+4,921,19929961,-,caller=T393;ipam: Unknown symbol gsi_alloc_channel (err -2)
+4,922,19929974,-,caller=T393;ipam: Unknown symbol gsi_ring_evt_doorbell_polling_mode (err -2)
+4,923,19929981,-,caller=T393;ipam: Unknown symbol gsi_config_channel_mode (err -2)
+4,924,19930003,-,caller=T393;ipam: Unknown symbol gsi_write_channel_scratch (err -2)
+4,925,19930009,-,caller=T393;ipam: Unknown symbol gsi_poll_n_channel (err -2)
+4,926,19930022,-,caller=T393;ipam: Unknown symbol gsi_reset_channel (err -2)
+4,927,19930029,-,caller=T393;ipam: Unknown symbol gsi_write_evt_ring_scratch (err -2)
+4,928,19930035,-,caller=T393;ipam: Unknown symbol gsi_query_channel_db_addr (err -2)
+4,929,19930041,-,caller=T393;ipam: Unknown symbol gsi_write_device_scratch (err -2)
+4,930,19930047,-,caller=T393;ipam: Unknown symbol gsi_enable_flow_control_ee (err -2)
+4,931,19930054,-,caller=T393;ipam: Unknown symbol gsi_query_channel_info (err -2)
+4,932,19930060,-,caller=T393;ipam: Unknown symbol gsi_query_flow_control_state_ee (err -2)
+4,933,19930076,-,caller=T393;ipam: Unknown symbol gsi_get_inst_ram_offset_and_size (err -2)
+4,934,19930082,-,caller=T393;ipam: Unknown symbol gsi_ntn3_client_stats_get (err -2)
+4,935,19930089,-,caller=T393;ipam: Unknown symbol gsi_get_refetch_reg (err -2)
+4,936,19930095,-,caller=T393;ipam: Unknown symbol gsi_get_drop_stats (err -2)
+4,937,19930102,-,caller=T393;ipam: Unknown symbol gsi_get_wp (err -2)
+4,938,19930109,-,caller=T393;ipam: Unknown symbol gsi_stop_channel (err -2)
+4,939,19930115,-,caller=T393;ipam: Unknown symbol gsi_is_channel_empty (err -2)
+4,940,19930122,-,caller=T393;ipam: Unknown symbol gsi_map_virtual_ch_to_per_ep (err -2)
+4,941,19930139,-,caller=T393;ipam: Unknown symbol gsi_wdi3_write_evt_ring_db (err -2)
+4,942,19930145,-,caller=T393;ipam: Unknown symbol gsi_read_channel_scratch (err -2)
+4,943,19930151,-,caller=T393;ipam: Unknown symbol gsi_write_channel_scratch3_reg (err -2)
+4,944,19930158,-,caller=T393;ipam: Unknown symbol gsi_write_channel_scratch2_reg (err -2)
+4,945,19930168,-,caller=T393;ipam: Unknown symbol gsi_poll_channel (err -2)
+4,946,19930175,-,caller=T393;ipam: Unknown symbol gsi_update_mhi_channel_scratch (err -2)
+4,947,19930181,-,caller=T393;ipam: Unknown symbol gsi_ring_evt_ring_db (err -2)
+4,948,19930187,-,caller=T393;ipam: Unknown symbol gsi_update_almst_empty_thrshold (err -2)
+4,949,19930198,-,caller=T393;ipam: Unknown symbol gsi_query_evt_ring_db_addr (err -2)
+4,950,19930204,-,caller=T393;ipam: Unknown symbol gsi_read_wdi3_channel_scratch2_reg (err -2)
+4,951,19930210,-,caller=T393;ipam: Unknown symbol gsi_write_wdi3_channel_scratch2_reg (err -2)
+4,952,19930216,-,caller=T393;ipam: Unknown symbol gsi_ring_ch_ring_db (err -2)
+4,953,19930229,-,caller=T393;ipam: Unknown symbol gsi_query_msi_addr (err -2)
+4,954,19930251,-,caller=T393;ipam: Unknown symbol gsi_get_chan_prot_type (err -2)
+4,955,19930257,-,caller=T393;ipam: Unknown symbol gsi_get_chan_state (err -2)
+4,956,19930263,-,caller=T393;ipam: Unknown symbol gsi_get_chan_stop_stm (err -2)
+4,957,19930269,-,caller=T393;ipam: Unknown symbol gsi_get_peripheral_ee (err -2)
+4,958,19930275,-,caller=T393;ipam: Unknown symbol gsi_get_chan_poll_mode (err -2)
+4,959,19930281,-,caller=T393;ipam: Unknown symbol gsi_get_ring_len (err -2)
+4,960,19930288,-,caller=T393;ipam: Unknown symbol gsi_get_chan_props_db_in_bytes (err -2)
+4,961,19930294,-,caller=T393;ipam: Unknown symbol gsi_read_chan_ring_bp (err -2)
+4,962,19930300,-,caller=T393;ipam: Unknown symbol gsi_read_chan_ring_rp (err -2)
+4,963,19930306,-,caller=T393;ipam: Unknown symbol gsi_read_chan_ring_wp (err -2)
+4,964,19930312,-,caller=T393;ipam: Unknown symbol gsi_get_evt_ring_re_size (err -2)
+4,965,19930318,-,caller=T393;ipam: Unknown symbol gsi_get_evt_ring_len (err -2)
+4,966,19930324,-,caller=T393;ipam: Unknown symbol gsi_read_event_ring_bp (err -2)
+4,967,19930330,-,caller=T393;ipam: Unknown symbol gsi_get_evt_ring_rp (err -2)
+4,968,19930336,-,caller=T393;ipam: Unknown symbol gsi_read_event_ring_wp (err -2)
+4,969,19979575,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_notify_clients_registered (err -2)
+4,970,19979585,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_qdss_register (err -2)
+4,971,19979606,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_get_ipc_logbuf_low (err -2)
+4,972,19979621,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_deregister_client_callback (err -2)
+4,973,19979634,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_get_ipc_logbuf (err -2)
+4,974,19979656,-,caller=T394;ipa_clientsm: Unknown symbol rndis_ipa_init (err -2)
+4,975,19979662,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_register_client_callback (err -2)
+4,976,19979669,-,caller=T394;ipa_clientsm: Unknown symbol ipa_pm_register (err -2)
+4,977,19979675,-,caller=T394;ipa_clientsm: Unknown symbol ipa_pm_associate_ipa_cons_to_client (err -2)
+4,978,19979681,-,caller=T394;ipa_clientsm: Unknown symbol ipa_pm_deregister (err -2)
+4,979,19979688,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_teth_bridge_init (err -2)
+4,980,19979699,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_get_r_rev_version (err -2)
+4,981,19979705,-,caller=T394;ipa_clientsm: Unknown symbol ipa_smmu_store_sgt (err -2)
+4,982,19979712,-,caller=T394;ipa_clientsm: Unknown symbol ipa_smmu_free_sgt (err -2)
+4,983,19979717,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_request_gsi_channel (err -2)
+4,984,19979723,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_smmu_map_peer_reg (err -2)
+4,985,19979729,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_smmu_map_peer_buff (err -2)
+4,986,19979735,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_set_usb_max_packet_size (err -2)
+4,987,19979741,-,caller=T394;ipa_clientsm: Unknown symbol ipa_pm_set_throughput (err -2)
+4,988,19979747,-,caller=T394;ipa_clientsm: Unknown symbol ipa_pm_activate_sync (err -2)
+4,989,19979753,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_is_mhip_offload_enabled (err -2)
+4,990,19979759,-,caller=T394;ipa_clientsm: Unknown symbol ipa_mpm_mhip_xdci_pipe_enable (err -2)
+4,991,19979764,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_xdci_start (err -2)
+4,992,19979770,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_xdci_disconnect (err -2)
+4,993,19979776,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_reset_gsi_channel (err -2)
+4,994,19979782,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_reset_gsi_event_ring (err -2)
+4,995,19979788,-,caller=T394;ipa_clientsm: Unknown symbol ipa_mpm_mhip_xdci_pipe_disable (err -2)
+4,996,19979794,-,caller=T394;ipa_clientsm: Unknown symbol ipa_pm_deactivate_sync (err -2)
+4,997,19979800,-,caller=T394;ipa_clientsm: Unknown symbol rndis_ipa_pipe_connect_notify (err -2)
+4,998,19979806,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_teth_bridge_connect (err -2)
+4,999,19979812,-,caller=T394;ipa_clientsm: Unknown symbol rndis_ipa_pipe_disconnect_notify (err -2)
+4,1000,19979819,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_teth_bridge_disconnect (err -2)
+4,1001,19979825,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_release_gsi_channel (err -2)
+4,1002,19979830,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_cfg_ep_holb (err -2)
+4,1003,19979836,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_xdci_ep_delay_rm (err -2)
+4,1004,19979842,-,caller=T394;ipa_clientsm: Unknown symbol rndis_ipa_cleanup (err -2)
+4,1005,19979848,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_xdci_suspend (err -2)
+4,1006,19979853,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_xdci_resume (err -2)
+4,1007,19979859,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_xdci_connect (err -2)
+4,1008,19979869,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_start_gsi_channel (err -2)
+4,1009,19979875,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_stop_gsi_channel (err -2)
+4,1010,19979881,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_ctx (err -2)
+4,1011,19979892,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_create_wdi_mapping (err -2)
+4,1012,19979902,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_release_wdi_mapping (err -2)
+4,1013,19979907,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_set_wlan_tx_info (err -2)
+4,1014,19979926,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_conn_wdi3_pipes (err -2)
+4,1015,19979932,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_connect_wdi_pipe (err -2)
+4,1016,19979938,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_disconnect_wdi_pipe (err -2)
+4,1017,19979948,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_del_hdr (err -2)
+4,1018,19979954,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_deregister_intf (err -2)
+4,1019,19979960,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_disable_wdi3_pipes (err -2)
+4,1020,19979966,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_suspend_wdi_pipe (err -2)
+4,1021,19979972,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_disable_wdi_pipe (err -2)
+4,1022,19979977,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_disconn_wdi3_pipes (err -2)
+4,1023,19979983,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_enable_wdi3_pipes (err -2)
+4,1024,19979989,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_enable_wdi_pipe (err -2)
+4,1025,19979994,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_resume_wdi_pipe (err -2)
+4,1026,19980000,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_uc_reg_rdyCB (err -2)
+4,1027,19980006,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_get_smmu_params (err -2)
+4,1028,19980016,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_get_ctx (err -2)
+4,1029,19980022,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_register_intf (err -2)
+4,1030,19980029,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_add_hdr (err -2)
+4,1031,19980035,-,caller=T394;ipa_clientsm: Unknown symbol ipa_pm_wrapper_wdi_set_perf_profile_internal (err -2)
+4,1032,19980065,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_setup_uc_ntn_pipes (err -2)
+4,1033,19980071,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_ntn_uc_reg_rdyCB (err -2)
+4,1034,19980077,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_ntn_uc_dereg_rdyCB (err -2)
+4,1035,19980091,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_tear_down_uc_offload_pipes (err -2)
+4,1036,19980100,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_wigig_internal_init (err -2)
+4,1037,19980110,-,caller=T394;ipa_clientsm: Unknown symbol ipa_wigig_send_wlan_msg (err -2)
+4,1038,19980116,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_uc_state_check (err -2)
+4,1039,19980121,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_wigig_uc_msi_init (err -2)
+4,1040,19980127,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_conn_wigig_rx_pipe_i (err -2)
+4,1041,19980133,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_disconn_wigig_pipe_i (err -2)
+4,1042,19980140,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_conn_wigig_client_i (err -2)
+4,1043,19980146,-,caller=T394;ipa_clientsm: Unknown symbol ipa_wigig_send_msg (err -2)
+4,1044,19980155,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_enable_wigig_pipe_i (err -2)
+4,1045,19980161,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_disable_wigig_pipe_i (err -2)
+4,1046,19980176,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_get_dma_dev (err -2)
+4,1047,19980194,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_mhi_destroy_channel (err -2)
+4,1048,19980208,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_mhi_init_engine (err -2)
+4,1049,19980214,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_inc_client_enable_clks (err -2)
+4,1050,19980220,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_connect_mhi_pipe (err -2)
+4,1051,19980225,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_dec_client_disable_clks (err -2)
+4,1052,19980231,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_update_mhi_ctrl_state (err -2)
+4,1053,19980236,-,caller=T394;ipa_clientsm: Unknown symbol ipa_assert (err -2)
+4,1054,19980242,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_mhi_reset_channel_internal (err -2)
+4,1055,19980248,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_mhi_stop_gsi_channel (err -2)
+4,1056,19980253,-,caller=T394;ipa_clientsm: Unknown symbol ipahal_get_ep_bit (err -2)
+4,1057,19980259,-,caller=T394;ipa_clientsm: Unknown symbol ipahal_get_ep_reg_idx (err -2)
+4,1058,19980265,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_qmi_enable_force_clear_datapath_send (err -2)
+4,1059,19980270,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_qmi_disable_force_clear_datapath_send (err -2)
+4,1060,19980276,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_get_client_mapping (err -2)
+4,1061,19980282,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_disconnect_mhi_pipe (err -2)
+4,1062,19980288,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_set_tag_process_before_gating (err -2)
+4,1063,19980294,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_has_open_aggr_frame (err -2)
+4,1064,19980299,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_mhi_query_ch_info (err -2)
+4,1065,19980305,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_mhi_resume_channels_internal (err -2)
+4,1066,19980311,-,caller=T394;ipa_clientsm: Unknown symbol ipa_clients_strings (err -2)
+4,1067,19980320,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_uc_register_ready_cb (err -2)
+4,1068,19980326,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_uc_loaded_check (err -2)
+4,1069,19980332,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_eth_debugfs_init (err -2)
+4,1070,19980337,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_eth_debugfs_add_node (err -2)
+4,1071,19980343,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_eth_connect (err -2)
+4,1072,19980351,-,caller=T394;ipa_clientsm: Unknown symbol ipa3_eth_disconnect (err -2)
+4,1073,20029715,-,caller=T395;rndisipam: Unknown symbol ipa3_is_ulso_supported (err -2)
+4,1074,20029732,-,caller=T395;rndisipam: Unknown symbol ipa_hdrs_hpc_destroy (err -2)
+4,1075,20029759,-,caller=T395;rndisipam: Unknown symbol ipa_pm_activate (err -2)
+4,1076,20029767,-,caller=T395;rndisipam: Unknown symbol qmap_encapsulate_skb (err -2)
+4,1077,20029778,-,caller=T395;rndisipam: Unknown symbol ipa_pm_deferred_deactivate (err -2)
+4,1078,20029792,-,caller=T395;rndisipam: Unknown symbol ipa3_add_hdr_hpc (err -2)
+4,1079,20029799,-,caller=T395;rndisipam: Unknown symbol ipa_set_pkt_init_ex_hdr_ofst (err -2)
+4,1080,20029805,-,caller=T395;rndisipam: Unknown symbol ipa3_add_hdr (err -2)
+4,1081,20029811,-,caller=T395;rndisipam: Unknown symbol ipa3_del_hdr (err -2)
+4,1082,20029817,-,caller=T395;rndisipam: Unknown symbol ipa3_register_intf (err -2)
+4,1083,20029823,-,caller=T395;rndisipam: Unknown symbol ipa3_deregister_intf (err -2)
+4,1084,20029829,-,caller=T395;rndisipam: Unknown symbol ipa_pm_register (err -2)
+4,1085,20029835,-,caller=T395;rndisipam: Unknown symbol ipa_pm_deactivate_sync (err -2)
+4,1086,20029841,-,caller=T395;rndisipam: Unknown symbol ipa_pm_deregister (err -2)
+4,1087,20029847,-,caller=T395;rndisipam: Unknown symbol ipa3_cfg_ep (err -2)
+4,1088,20080722,-,caller=T396;ipanetm: Unknown symbol ipa3_wwan_platform_driver_register (err -2)
+4,1089,20080732,-,caller=T396;ipanetm: Unknown symbol ipa3_wwan_cleanup (err -2)
+4,1090,20080740,-,caller=T396;ipanetm: Unknown symbol ipa3_ctx (err -2)
+4,1091,20133769,-,caller=T379;gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:gpio_keys
+4,1092,20185561,-,caller=T160;printk: worker: 22 output lines suppressed due to ratelimiting
+4,1093,20218044,-,caller=T1;FAT-fs (sde6): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+9,1094,20222464,-,caller=T398;nx679j: journal mirror: 21547 bytes (file open, kmsg=1 pmsg=2 rd=8)
+9,1095,20222467,-,caller=T398;nx679j: journal mirror: 21547 bytes (file open, kmsg=1 pmsg=2 rd=8)
+9,1096,20273110,-,caller=T399;nx679j: journal mirror: 21728 bytes (file open, kmsg=1 pmsg=2 rd=8)
+9,1097,20273113,-,caller=T399;nx679j: journal mirror: 21728 bytes (file open, kmsg=1 pmsg=2 rd=8)
+9,1098,20325385,-,caller=T400;nx679j: journal mirror: 21893 bytes (file open, kmsg=2 pmsg=3 rd=8)
+6,1099,20376882,-,caller=T1;remoteproc remoteproc4: 188101c.remoteproc-spss is available
+ SUBSYSTEM=remoteproc
+ DEVICE=c243:4
+4,1100,20377216,-,caller=T240;gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:gpio_keys
+9,1101,20378274,-,caller=T402;nx679j: journal mirror: 44026 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1102,20429052,-,caller=T404;nx679j: journal mirror: 44213 bytes (file open, kmsg=3 pmsg=4 rd=8)
+6,1103,20433503,-,caller=T403;DATARMNET163e93649e(): Starting rmnet SHS module 43a6b 
+6,1104,20434841,-,caller=T403;DATARMNETb1c42acd9c(): rmnet_offload initializing
+6,1105,20436252,-,caller=T403;DATARMNET63abbdc3d3(): Loading
+6,1106,20437175,-,caller=T403;DATARMNET5e4be08a32(): Loading
+6,1107,20438440,-,caller=T403;aps: init (1.0)
+4,1108,20438663,-,caller=T403;rndisipam: Unknown symbol ipa3_is_ulso_supported (err -2)
+4,1109,20438679,-,caller=T403;rndisipam: Unknown symbol ipa_hdrs_hpc_destroy (err -2)
+4,1110,20438703,-,caller=T403;rndisipam: Unknown symbol ipa_pm_activate (err -2)
+4,1111,20438711,-,caller=T403;rndisipam: Unknown symbol qmap_encapsulate_skb (err -2)
+4,1112,20438723,-,caller=T403;rndisipam: Unknown symbol ipa_pm_deferred_deactivate (err -2)
+4,1113,20438737,-,caller=T403;rndisipam: Unknown symbol ipa3_add_hdr_hpc (err -2)
+4,1114,20438744,-,caller=T403;rndisipam: Unknown symbol ipa_set_pkt_init_ex_hdr_ofst (err -2)
+4,1115,20438751,-,caller=T403;rndisipam: Unknown symbol ipa3_add_hdr (err -2)
+4,1116,20438758,-,caller=T403;rndisipam: Unknown symbol ipa3_del_hdr (err -2)
+4,1117,20438765,-,caller=T403;rndisipam: Unknown symbol ipa3_register_intf (err -2)
+4,1118,20438772,-,caller=T403;rndisipam: Unknown symbol ipa3_deregister_intf (err -2)
+4,1119,20438779,-,caller=T403;rndisipam: Unknown symbol ipa_pm_register (err -2)
+4,1120,20438785,-,caller=T403;rndisipam: Unknown symbol ipa_pm_deactivate_sync (err -2)
+4,1121,20438792,-,caller=T403;rndisipam: Unknown symbol ipa_pm_deregister (err -2)
+4,1122,20438799,-,caller=T403;rndisipam: Unknown symbol ipa3_cfg_ep (err -2)
+4,1123,20439889,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_notify_clients_registered (err -2)
+4,1124,20439897,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_qdss_register (err -2)
+4,1125,20439916,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_get_ipc_logbuf_low (err -2)
+4,1126,20439930,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_deregister_client_callback (err -2)
+4,1127,20439939,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_get_ipc_logbuf (err -2)
+4,1128,20439956,-,caller=T403;ipa_clientsm: Unknown symbol rndis_ipa_init (err -2)
+4,1129,20439963,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_register_client_callback (err -2)
+4,1130,20439970,-,caller=T403;ipa_clientsm: Unknown symbol ipa_pm_register (err -2)
+4,1131,20439977,-,caller=T403;ipa_clientsm: Unknown symbol ipa_pm_associate_ipa_cons_to_client (err -2)
+4,1132,20439983,-,caller=T403;ipa_clientsm: Unknown symbol ipa_pm_deregister (err -2)
+4,1133,20439990,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_teth_bridge_init (err -2)
+4,1134,20440003,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_get_r_rev_version (err -2)
+4,1135,20440009,-,caller=T403;ipa_clientsm: Unknown symbol ipa_smmu_store_sgt (err -2)
+4,1136,20440017,-,caller=T403;ipa_clientsm: Unknown symbol ipa_smmu_free_sgt (err -2)
+4,1137,20440023,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_request_gsi_channel (err -2)
+4,1138,20440029,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_smmu_map_peer_reg (err -2)
+4,1139,20440035,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_smmu_map_peer_buff (err -2)
+4,1140,20440042,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_set_usb_max_packet_size (err -2)
+4,1141,20440049,-,caller=T403;ipa_clientsm: Unknown symbol ipa_pm_set_throughput (err -2)
+4,1142,20440055,-,caller=T403;ipa_clientsm: Unknown symbol ipa_pm_activate_sync (err -2)
+4,1143,20440061,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_is_mhip_offload_enabled (err -2)
+4,1144,20440068,-,caller=T403;ipa_clientsm: Unknown symbol ipa_mpm_mhip_xdci_pipe_enable (err -2)
+4,1145,20440075,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_xdci_start (err -2)
+4,1146,20440081,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_xdci_disconnect (err -2)
+4,1147,20440087,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_reset_gsi_channel (err -2)
+4,1148,20440094,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_reset_gsi_event_ring (err -2)
+4,1149,20440100,-,caller=T403;ipa_clientsm: Unknown symbol ipa_mpm_mhip_xdci_pipe_disable (err -2)
+4,1150,20440107,-,caller=T403;ipa_clientsm: Unknown symbol ipa_pm_deactivate_sync (err -2)
+4,1151,20440114,-,caller=T403;ipa_clientsm: Unknown symbol rndis_ipa_pipe_connect_notify (err -2)
+4,1152,20440120,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_teth_bridge_connect (err -2)
+4,1153,20440127,-,caller=T403;ipa_clientsm: Unknown symbol rndis_ipa_pipe_disconnect_notify (err -2)
+4,1154,20440134,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_teth_bridge_disconnect (err -2)
+4,1155,20440140,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_release_gsi_channel (err -2)
+4,1156,20440146,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_cfg_ep_holb (err -2)
+4,1157,20440153,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_xdci_ep_delay_rm (err -2)
+4,1158,20440160,-,caller=T403;ipa_clientsm: Unknown symbol rndis_ipa_cleanup (err -2)
+4,1159,20440166,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_xdci_suspend (err -2)
+4,1160,20440172,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_xdci_resume (err -2)
+4,1161,20440178,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_xdci_connect (err -2)
+4,1162,20440189,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_start_gsi_channel (err -2)
+4,1163,20440196,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_stop_gsi_channel (err -2)
+4,1164,20440203,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_ctx (err -2)
+4,1165,20440214,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_create_wdi_mapping (err -2)
+4,1166,20440225,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_release_wdi_mapping (err -2)
+4,1167,20440231,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_set_wlan_tx_info (err -2)
+4,1168,20440252,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_conn_wdi3_pipes (err -2)
+4,1169,20440258,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_connect_wdi_pipe (err -2)
+4,1170,20440265,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_disconnect_wdi_pipe (err -2)
+4,1171,20440276,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_del_hdr (err -2)
+4,1172,20440282,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_deregister_intf (err -2)
+4,1173,20440289,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_disable_wdi3_pipes (err -2)
+4,1174,20440295,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_suspend_wdi_pipe (err -2)
+4,1175,20440301,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_disable_wdi_pipe (err -2)
+4,1176,20440307,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_disconn_wdi3_pipes (err -2)
+4,1177,20440314,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_enable_wdi3_pipes (err -2)
+4,1178,20440320,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_enable_wdi_pipe (err -2)
+4,1179,20440326,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_resume_wdi_pipe (err -2)
+4,1180,20440332,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_uc_reg_rdyCB (err -2)
+4,1181,20440338,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_get_smmu_params (err -2)
+4,1182,20440350,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_get_ctx (err -2)
+4,1183,20440356,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_register_intf (err -2)
+4,1184,20440363,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_add_hdr (err -2)
+4,1185,20440370,-,caller=T403;ipa_clientsm: Unknown symbol ipa_pm_wrapper_wdi_set_perf_profile_internal (err -2)
+4,1186,20440402,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_setup_uc_ntn_pipes (err -2)
+4,1187,20440408,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_ntn_uc_reg_rdyCB (err -2)
+4,1188,20440414,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_ntn_uc_dereg_rdyCB (err -2)
+4,1189,20440430,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_tear_down_uc_offload_pipes (err -2)
+4,1190,20440440,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_wigig_internal_init (err -2)
+4,1191,20440451,-,caller=T403;ipa_clientsm: Unknown symbol ipa_wigig_send_wlan_msg (err -2)
+4,1192,20440457,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_uc_state_check (err -2)
+4,1193,20440464,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_wigig_uc_msi_init (err -2)
+4,1194,20440470,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_conn_wigig_rx_pipe_i (err -2)
+4,1195,20440476,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_disconn_wigig_pipe_i (err -2)
+4,1196,20440484,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_conn_wigig_client_i (err -2)
+4,1197,20440490,-,caller=T403;ipa_clientsm: Unknown symbol ipa_wigig_send_msg (err -2)
+4,1198,20440500,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_enable_wigig_pipe_i (err -2)
+4,1199,20440506,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_disable_wigig_pipe_i (err -2)
+4,1200,20440522,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_get_dma_dev (err -2)
+4,1201,20440542,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_mhi_destroy_channel (err -2)
+4,1202,20440558,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_mhi_init_engine (err -2)
+4,1203,20440564,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_inc_client_enable_clks (err -2)
+4,1204,20440570,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_connect_mhi_pipe (err -2)
+4,1205,20440577,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_dec_client_disable_clks (err -2)
+4,1206,20440583,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_update_mhi_ctrl_state (err -2)
+4,1207,20440589,-,caller=T403;ipa_clientsm: Unknown symbol ipa_assert (err -2)
+4,1208,20440595,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_mhi_reset_channel_internal (err -2)
+4,1209,20440602,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_mhi_stop_gsi_channel (err -2)
+4,1210,20440608,-,caller=T403;ipa_clientsm: Unknown symbol ipahal_get_ep_bit (err -2)
+4,1211,20440614,-,caller=T403;ipa_clientsm: Unknown symbol ipahal_get_ep_reg_idx (err -2)
+4,1212,20440620,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_qmi_enable_force_clear_datapath_send (err -2)
+4,1213,20440627,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_qmi_disable_force_clear_datapath_send (err -2)
+4,1214,20440633,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_get_client_mapping (err -2)
+4,1215,20440639,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_disconnect_mhi_pipe (err -2)
+4,1216,20440646,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_set_tag_process_before_gating (err -2)
+4,1217,20440652,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_has_open_aggr_frame (err -2)
+4,1218,20440658,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_mhi_query_ch_info (err -2)
+4,1219,20440664,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_mhi_resume_channels_internal (err -2)
+4,1220,20440671,-,caller=T403;ipa_clientsm: Unknown symbol ipa_clients_strings (err -2)
+4,1221,20440682,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_uc_register_ready_cb (err -2)
+4,1222,20440688,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_uc_loaded_check (err -2)
+4,1223,20440694,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_eth_debugfs_init (err -2)
+4,1224,20440700,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_eth_debugfs_add_node (err -2)
+4,1225,20440706,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_eth_connect (err -2)
+4,1226,20440715,-,caller=T403;ipa_clientsm: Unknown symbol ipa3_eth_disconnect (err -2)
+4,1227,20440824,-,caller=T403;ipanetm: Unknown symbol ipa3_wwan_platform_driver_register (err -2)
+4,1228,20440831,-,caller=T403;ipanetm: Unknown symbol ipa3_wwan_cleanup (err -2)
+4,1229,20440838,-,caller=T403;ipanetm: Unknown symbol ipa3_ctx (err -2)
+4,1230,20457241,-,caller=T240;gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:gpio_keys
+4,1231,20457365,-,caller=T240;gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:gpio_keys
+6,1232,20457412,-,caller=T403;ipa 3e00000.qcom,ipa:ipa_smmu_ap: Adding to iommu group 6
+ SUBSYSTEM=platform
+ DEVICE=+platform:3e00000.qcom,ipa:ipa_smmu_ap
+4,1233,20458289,-,caller=T240;gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:gpio_keys
+6,1234,20458328,-,caller=T403;ipa 3e00000.qcom,ipa:ipa_smmu_wlan: Adding to iommu group 7
+ SUBSYSTEM=platform
+ DEVICE=+platform:3e00000.qcom,ipa:ipa_smmu_wlan
+4,1235,20458507,-,caller=T240;gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:gpio_keys
+6,1236,20458539,-,caller=T403;ipa 3e00000.qcom,ipa:ipa_smmu_uc: Adding to iommu group 8
+ SUBSYSTEM=platform
+ DEVICE=+platform:3e00000.qcom,ipa:ipa_smmu_uc
+4,1237,20458732,-,caller=T240;gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:gpio_keys
+6,1238,20458765,-,caller=T403;ipa 3e00000.qcom,ipa:ipa_smmu_11ad: Adding to iommu group 9
+ SUBSYSTEM=platform
+ DEVICE=+platform:3e00000.qcom,ipa:ipa_smmu_11ad
+4,1239,20458912,-,caller=T240;gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:gpio_keys
+6,1240,20462828,-,caller=T403;RNDIS_IPA module is loaded.
+6,1241,20465623,-,caller=T403;IPA clients manager init
+6,1242,20465624,-,caller=T403;ipa_usb driver init
+6,1243,20465998,-,caller=T403;ipa_usb registered successfully
+6,1244,20465999,-,caller=T403;exit: IPA_USB init success!
+6,1245,20466000,-,caller=T403;ipa_wdi3 registered successfully
+6,1246,20466000,-,caller=T403;ipa_gsb registered successfully
+6,1247,20466001,-,caller=T403;ipa_uc_offload registered successfully
+6,1248,20466002,-,caller=T403;ipa_mhi registered successfully
+6,1249,20466003,-,caller=T403;ipa_wigig registered successfully
+6,1250,20466004,-,caller=T403;ipa_eth registered successfully
+6,1251,20466005,-,caller=T403;ipa_qdss registered successfully
+6,1252,20467304,-,caller=T403;rmnet_ipa3 started initialization
+4,1253,20467683,-,caller=T379;gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:gpio_keys
+9,1254,20474468,-,caller=T416;nx679j: journal mirror: 44374 bytes (file open, kmsg=31 pmsg=32 rd=8)
+9,1255,20479225,-,caller=T417;nx679j: journal mirror: 44553 bytes (file open, kmsg=3 pmsg=4 rd=8)
+6,1256,20528478,-,caller=T240;[ZtemtUSB] [dwc3_otg_sm_work: 5805] Otg drd_state = undefined
+7,1257,20530205,-,caller=T240;msm-usb-ssphy-qmp 88e8000.ssphy: QMP PHY set_suspend for resume called with cable disconnected
+ SUBSYSTEM=platform
+ DEVICE=+platform:88e8000.ssphy
+7,1258,20530206,-,caller=T240;msm-usb-ssphy-qmp 88e8000.ssphy: msm_ssphy_qmp_set_suspend: USB PHY is already resumed.
+ SUBSYSTEM=platform
+ DEVICE=+platform:88e8000.ssphy
+6,1259,20530219,-,caller=T240;msm-dwc3 a600000.ssusb: DWC3 exited from low power mode
+ SUBSYSTEM=platform
+ DEVICE=+platform:a600000.ssusb
+6,1260,20530353,-,caller=T240;dwc3 a600000.dwc3: Adding to iommu group 10
+ SUBSYSTEM=platform
+ DEVICE=+platform:a600000.dwc3
+7,1261,20531192,-,caller=T240;msm-usb-ssphy-qmp 88e8000.ssphy: Initializing QMP phy
+ SUBSYSTEM=platform
+ DEVICE=+platform:88e8000.ssphy
+7,1262,20531193,-,caller=T240;msm-usb-ssphy-qmp 88e8000.ssphy: reg (HPM)
+ SUBSYSTEM=platform
+ DEVICE=+platform:88e8000.ssphy
+7,1263,20531615,-,caller=T240;msm-usb-ssphy-qmp 88e8000.ssphy: min_vol:912000 max_vol:912000
+ SUBSYSTEM=platform
+ DEVICE=+platform:88e8000.ssphy
+7,1264,20531731,-,caller=T240;msm-usb-ssphy-qmp 88e8000.ssphy: msm_ssphy_qmp_enable_clks(): clk_enabled:0 on:1
+ SUBSYSTEM=platform
+ DEVICE=+platform:88e8000.ssphy
+7,1265,20531734,-,caller=T240;msm-usb-ssphy-qmp 88e8000.ssphy: Global reset of QMP DP combo phy
+ SUBSYSTEM=platform
+ DEVICE=+platform:88e8000.ssphy
+7,1266,20556783,-,caller=T240;msm-usb-ssphy-qmp 88e8000.ssphy: QMP PHY set_suspend for resume called with cable disconnected
+ SUBSYSTEM=platform
+ DEVICE=+platform:88e8000.ssphy
+7,1267,20556786,-,caller=T240;msm-usb-ssphy-qmp 88e8000.ssphy: msm_ssphy_qmp_set_suspend: USB PHY is already resumed.
+ SUBSYSTEM=platform
+ DEVICE=+platform:88e8000.ssphy
+6,1268,20557034,-,caller=T240;[ZtemtUSB] [dwc3_otg_start_peripheral: 5681] Turn 1 the gadget.
+4,1269,20557197,-,caller=T380;gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+ SUBSYSTEM=platform
+ DEVICE=+platform:soc:gpio_keys
+7,1270,20661869,-,caller=T414;msm-usb-ssphy-qmp 88e8000.ssphy: Initializing QMP phy
+ SUBSYSTEM=platform
+ DEVICE=+platform:88e8000.ssphy
+7,1271,20661872,-,caller=T414;msm-usb-ssphy-qmp 88e8000.ssphy: reg (HPM)
+ SUBSYSTEM=platform
+ DEVICE=+platform:88e8000.ssphy
+7,1272,20661874,-,caller=T414;msm-usb-ssphy-qmp 88e8000.ssphy: PHYs' regulators status 1
+ SUBSYSTEM=platform
+ DEVICE=+platform:88e8000.ssphy
+7,1273,20661875,-,caller=T414;msm-usb-ssphy-qmp 88e8000.ssphy: msm_ssphy_qmp_enable_clks(): clk_enabled:1 on:1
+ SUBSYSTEM=platform
+ DEVICE=+platform:88e8000.ssphy
+7,1274,20661877,-,caller=T414;msm-usb-ssphy-qmp 88e8000.ssphy: Global reset of QMP DP combo phy
+ SUBSYSTEM=platform
+ DEVICE=+platform:88e8000.ssphy
+7,1275,20685183,-,caller=T240;msm-usb-ssphy-qmp 88e8000.ssphy: QMP phy connect notification
+ SUBSYSTEM=platform
+ DEVICE=+platform:88e8000.ssphy
+6,1276,20686430,-,caller=T240;[ZtemtUSB] [dwc3_otg_sm_work: 5805] Otg drd_state = peripheral
+4,1277,21528693,-,caller=T418;using random self ethernet address
+4,1278,21528696,-,caller=T418;using random host ethernet address
+6,1279,21528923,-,caller=T418;usb0: HOST MAC xx:xx:xx:xx:xx:xx
+6,1280,21528935,-,caller=T418;usb0: MAC xx:xx:xx:xx:xx:xx
+6,1281,21533647,-,caller=T418;dwc3 a600000.dwc3: Set IRQ thread:irq/301-dwc3 pid:420 to SCHED_NORMAL prio
+ SUBSYSTEM=platform
+ DEVICE=+platform:a600000.dwc3
+3,1282,22037037,-,caller=T243;msm-usb-hsphy 88e3000.hsphy: Could not get usb psy
+ SUBSYSTEM=platform
+ DEVICE=+platform:88e3000.hsphy
+6,1283,22160936,-,caller=T243;android_work: sent uevent USB_STATE=CONNECTED
+3,1284,22196000,-,caller=T243;msm-usb-hsphy 88e3000.hsphy: Could not get usb psy
+ SUBSYSTEM=platform
+ DEVICE=+platform:88e3000.hsphy
+6,1285,22196012,-,caller=T243;android_work: sent uevent USB_STATE=CONFIGURED
+5,1286,22788801,-,caller=T58;sd 0:0:0:5: [sdf] Synchronizing SCSI cache
+ SUBSYSTEM=scsi
+ DEVICE=+scsi:0:0:0:5
+5,1287,22788848,-,caller=T62;sd 0:0:0:3: [sdd] Synchronizing SCSI cache
+ SUBSYSTEM=scsi
+ DEVICE=+scsi:0:0:0:3
+5,1288,22788855,-,caller=T414;sd 0:0:0:1: [sdb] Synchronizing SCSI cache
+ SUBSYSTEM=scsi
+ DEVICE=+scsi:0:0:0:1
+5,1289,23161240,-,caller=T194;sd 0:0:0:2: [sdc] Synchronizing SCSI cache
+ SUBSYSTEM=scsi
+ DEVICE=+scsi:0:0:0:2
+9,1290,23535202,-,caller=T418;nx679j: journal mirror: 45154 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1291,23547708,-,caller=T421;nx679j: journal mirror: 45367 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1292,23597786,-,caller=T423;nx679j: journal mirror: 45602 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1293,23648919,-,caller=T425;nx679j: journal mirror: 45757 bytes (file open, kmsg=3 pmsg=4 rd=8)
+5,1294,23800803,-,caller=T58;sd 0:0:0:4: [sde] Synchronizing SCSI cache
+ SUBSYSTEM=scsi
+ DEVICE=+scsi:0:0:0:4
+6,1295,26614171,-,caller=T380;(virq:irq_count)- 2:3921 11:2924 1:1959 6:539 30:312 35:210 301:106 21:11 37:5 28:3 
+6,1296,26614179,-,caller=T380;(cpu:irq_count)- 0:1704 1:1146 2:643 3:657 4:724 5:823 6:805 7:3499 
+6,1297,26614183,-,caller=T380;(ipi:irq_count)- 0:1959 1:3921 2:0 3:0 4:0 5:539 6:0 
+5,1298,27352798,-,caller=T58;sd 0:0:0:0: [sda] Synchronizing SCSI cache
+ SUBSYSTEM=scsi
+ DEVICE=+scsi:0:0:0:0
+4,1299,27354891,-,caller=C7;scsi 0:0:0:49488: Power-on or device reset occurred
+ SUBSYSTEM=scsi
+ DEVICE=+scsi:0:0:0:49488
+9,1300,27732245,-,caller=T468;nx679j: journal mirror: 46656 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1301,29784467,-,caller=T469;nx679j: journal mirror: 47304 bytes (file open, kmsg=3 pmsg=4 rd=8)
+6,1302,31732844,-,caller=T58;display_panel_avdd: disabling
+9,1303,31821995,-,caller=T476;nx679j: journal mirror: 48796 bytes (file open, kmsg=3 pmsg=4 rd=8)
+5,1304,33721801,-,caller=T552;random: jshn: uninitialized urandom read (4 bytes read)
+5,1305,33725448,-,caller=T555;random: jshn: uninitialized urandom read (4 bytes read)
+5,1306,33727029,-,caller=T558;random: jshn: uninitialized urandom read (4 bytes read)
+9,1307,33854345,-,caller=T489;nx679j: journal mirror: 61400 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1308,35890711,-,caller=T842;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+6,1309,36084829,-,caller=T240;(virq:irq_count)- 1:11021 11:4299 2:4151 6:1090 30:337 35:298 301:118 37:21 21:11 28:3 
+6,1310,36084836,-,caller=T240;(cpu:irq_count)- 0:2100 1:1146 2:645 3:657 4:1699 5:1939 6:1636 7:11538 
+6,1311,36084839,-,caller=T240;(ipi:irq_count)- 0:11021 1:4151 2:0 3:0 4:0 5:1090 6:0 
+4,1312,37769574,-,caller=T8031;urandom_read: 6 callbacks suppressed
+5,1313,37769575,-,caller=T8031;random: jshn: uninitialized urandom read (4 bytes read)
+9,1314,37944883,-,caller=T4639;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1315,40000119,-,caller=T8036;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1316,42037862,-,caller=T8039;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+5,1317,42456774,-,caller=C7;random: crng init done
+9,1318,44070445,-,caller=T8040;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+6,1319,45557800,-,caller=T379;(virq:irq_count)- 1:17535 11:5641 2:4404 6:1580 30:349 35:343 301:120 37:26 21:11 28:3 
+6,1320,45557806,-,caller=T379;(cpu:irq_count)- 0:2429 1:1146 2:645 3:657 4:2371 5:2702 6:2412 7:17661 
+6,1321,45557809,-,caller=T379;(ipi:irq_count)- 0:17535 1:4404 2:0 3:0 4:0 5:1580 6:0 
+9,1322,46104571,-,caller=T8042;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1323,48141132,-,caller=T8044;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1324,50180541,-,caller=T8045;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1325,52217709,-,caller=T8046;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1326,54257932,-,caller=T8047;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+6,1327,55029800,-,caller=T380;(virq:irq_count)- 1:17593 11:5993 2:4467 6:1854 35:373 30:364 301:121 37:26 21:11 28:3 
+6,1328,55029806,-,caller=T380;(cpu:irq_count)- 0:2548 1:1146 2:645 3:657 4:2381 5:2704 6:2416 7:18319 
+6,1329,55029808,-,caller=T380;(ipi:irq_count)- 0:17593 1:4467 2:0 3:0 4:0 5:1854 6:0 
+9,1330,56296489,-,caller=T8048;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1331,58335005,-,caller=T8049;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1332,60372186,-,caller=T8050;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1333,62411553,-,caller=T8051;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1334,64451005,-,caller=T8052;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+6,1335,64501731,-,caller=T379;(virq:irq_count)- 1:17646 11:6334 2:4529 6:2114 35:399 30:379 301:122 37:26 21:11 28:3 
+6,1336,64501737,-,caller=T379;(cpu:irq_count)- 0:2662 1:1146 2:645 3:657 4:2381 5:2704 6:2420 7:18959 
+6,1337,64501740,-,caller=T379;(ipi:irq_count)- 0:17646 1:4529 2:0 3:0 4:0 5:2114 6:0 
+9,1338,66488437,-,caller=T8058;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1339,68525770,-,caller=T8059;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1340,70560815,-,caller=T8060;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1341,72599416,-,caller=T8061;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+6,1342,73973775,-,caller=T379;(virq:irq_count)- 1:17684 11:6652 2:4584 6:2365 35:421 30:391 301:122 37:26 21:11 28:3 
+6,1343,73973783,-,caller=T379;(cpu:irq_count)- 0:2759 1:1146 2:645 3:657 4:2381 5:2704 6:2420 7:19558 
+6,1344,73973788,-,caller=T379;(ipi:irq_count)- 0:17684 1:4584 2:0 3:0 4:0 5:2365 6:0 
+9,1345,74639264,-,caller=T8062;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1346,76677743,-,caller=T8063;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1347,78717187,-,caller=T8064;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1348,80754202,-,caller=T8065;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1349,82791498,-,caller=T8066;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+6,1350,83444824,-,caller=T380;(virq:irq_count)- 1:17730 11:6991 2:4651 6:2623 35:447 30:406 301:128 37:26 21:11 28:3 
+6,1351,83444832,-,caller=T380;(cpu:irq_count)- 0:2885 1:1147 2:645 3:657 4:2381 5:2704 6:2420 7:20188 
+6,1352,83444837,-,caller=T380;(ipi:irq_count)- 0:17730 1:4651 2:0 3:0 4:0 5:2623 6:0 
+9,1353,84829527,-,caller=T8067;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1354,86869967,-,caller=T8068;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1355,88908377,-,caller=T8069;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1356,90944987,-,caller=T8070;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+6,1357,92917741,-,caller=T379;(virq:irq_count)- 1:17792 11:7342 2:4709 6:2890 35:473 30:418 301:172 37:26 21:11 28:3 
+6,1358,92917749,-,caller=T379;(cpu:irq_count)- 0:3052 1:1147 2:645 3:657 4:2384 5:2706 6:2423 7:20833 
+6,1359,92917753,-,caller=T379;(ipi:irq_count)- 0:17792 1:4709 2:0 3:0 4:0 5:2890 6:0 
+9,1360,92984751,-,caller=T8071;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1361,95020051,-,caller=T8074;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1362,97035537,-,caller=T8075;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1363,99051323,-,caller=T8076;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1364,101068932,-,caller=T8077;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+6,1365,102389793,-,caller=T379;(virq:irq_count)- 1:17849 11:7694 2:4779 6:3155 35:501 30:433 301:190 37:26 21:11 28:3 
+6,1366,102389800,-,caller=T379;(cpu:irq_count)- 0:3202 1:1147 2:645 3:657 4:2384 5:2709 6:2424 7:21484 
+6,1367,102389803,-,caller=T379;(ipi:irq_count)- 0:17849 1:4779 2:0 3:0 4:0 5:3155 6:0 
+9,1368,103104398,-,caller=T8078;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1369,105141928,-,caller=T8079;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1370,107177364,-,caller=T8080;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1371,109215466,-,caller=T8081;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1372,111254883,-,caller=T8082;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+6,1373,111861769,-,caller=T9;(virq:irq_count)- 1:17903 11:8056 2:4844 6:3423 35:531 30:448 301:205 37:26 21:11 28:3 
+6,1374,111861777,-,caller=T9;(cpu:irq_count)- 0:3334 1:1147 2:645 3:657 4:2384 5:2709 6:2427 7:22158 
+6,1375,111861782,-,caller=T9;(ipi:irq_count)- 0:17903 1:4844 2:0 3:0 4:0 5:3423 6:0 
+9,1376,113292986,-,caller=T8083;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1377,115333457,-,caller=T8084;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1378,117372063,-,caller=T8085;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1379,119408401,-,caller=T8086;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+6,1380,121332835,-,caller=T240;(virq:irq_count)- 1:17943 11:8387 2:4898 6:3683 35:553 30:460 301:217 37:26 21:11 28:3 
+6,1381,121332841,-,caller=T240;(cpu:irq_count)- 0:3448 1:1147 2:645 3:657 4:2386 5:2709 6:2427 7:22773 
+6,1382,121332844,-,caller=T240;(ipi:irq_count)- 0:17943 1:4898 2:0 3:0 4:0 5:3683 6:0 
+9,1383,121448585,-,caller=T8087;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1384,123485087,-,caller=T8088;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1385,125523304,-,caller=T8089;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1386,127562150,-,caller=T8090;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1387,129596414,-,caller=T8091;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+6,1388,130804826,-,caller=T240;(virq:irq_count)- 1:17988 11:8732 2:4970 6:3949 35:581 30:475 301:229 37:26 21:11 28:3 
+6,1389,130804834,-,caller=T240;(cpu:irq_count)- 0:3585 1:1147 2:647 3:657 4:2386 5:2709 6:2427 7:23417 
+6,1390,130804837,-,caller=T240;(ipi:irq_count)- 0:17988 1:4970 2:0 3:0 4:0 5:3949 6:0 
+9,1391,131634421,-,caller=T8092;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1392,133671200,-,caller=T8093;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1393,135708279,-,caller=T8094;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1394,137744560,-,caller=T8095;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1395,139779684,-,caller=T8096;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+6,1396,140276832,-,caller=T379;(virq:irq_count)- 1:18035 11:9079 2:5040 6:4221 35:607 30:490 301:244 37:26 21:11 28:3 
+6,1397,140276839,-,caller=T379;(cpu:irq_count)- 0:3724 1:1147 2:647 3:657 4:2386 5:2709 6:2427 7:24070 
+6,1398,140276842,-,caller=T379;(ipi:irq_count)- 0:18035 1:5040 2:0 3:0 4:0 5:4221 6:0 
+9,1399,141817641,-,caller=T8097;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1400,143855563,-,caller=T8098;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1401,145894075,-,caller=T8099;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1402,147930023,-,caller=T8100;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+6,1403,149749088,-,caller=T240;(virq:irq_count)- 1:18082 11:9414 2:5097 6:4480 35:631 30:502 301:263 37:26 21:11 28:3 
+6,1404,149749095,-,caller=T240;(cpu:irq_count)- 0:3856 1:1147 2:647 3:657 4:2386 5:2709 6:2427 7:24691 
+6,1405,149749098,-,caller=T240;(ipi:irq_count)- 0:18082 1:5097 2:0 3:0 4:0 5:4480 6:0 
+9,1406,149968707,-,caller=T8101;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1407,152006038,-,caller=T8102;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1408,154043260,-,caller=T8103;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1409,156081635,-,caller=T8104;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1410,158118843,-,caller=T8105;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+6,1411,159221763,-,caller=T9;(virq:irq_count)- 1:18132 11:9765 2:5163 6:4755 35:659 30:517 301:279 37:26 21:11 28:3 
+6,1412,159221770,-,caller=T9;(cpu:irq_count)- 0:3994 1:1147 2:647 3:657 4:2386 5:2709 6:2427 7:25354 
+6,1413,159221773,-,caller=T9;(ipi:irq_count)- 0:18132 1:5163 2:0 3:0 4:0 5:4755 6:0 
+9,1414,160157055,-,caller=T8106;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1415,162193780,-,caller=T8107;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1416,164230906,-,caller=T8108;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1417,166267791,-,caller=T8109;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1418,168303762,-,caller=T8110;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+6,1419,168693695,-,caller=T240;(virq:irq_count)- 1:18189 11:10129 2:5237 6:5033 35:687 30:532 301:303 37:26 21:11 28:3 
+6,1420,168693702,-,caller=T240;(cpu:irq_count)- 0:4158 1:1147 2:647 3:657 4:2386 5:2709 6:2427 7:26030 
+6,1421,168693705,-,caller=T240;(ipi:irq_count)- 0:18189 1:5237 2:0 3:0 4:0 5:5033 6:0 
+9,1422,170342774,-,caller=T8111;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1423,172380109,-,caller=T8112;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1424,174419471,-,caller=T8113;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1425,176456633,-,caller=T8114;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+6,1426,178165760,-,caller=T240;(virq:irq_count)- 1:18227 11:10456 2:5299 6:5297 35:709 30:544 301:313 37:26 21:11 28:3 
+6,1427,178165766,-,caller=T240;(cpu:irq_count)- 0:4271 1:1147 2:647 3:657 4:2386 5:2709 6:2427 7:26652 
+6,1428,178165769,-,caller=T240;(ipi:irq_count)- 0:18227 1:5299 2:0 3:0 4:0 5:5297 6:0 
+9,1429,178492910,-,caller=T8115;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1430,180528291,-,caller=T8116;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1431,182565369,-,caller=T8117;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1432,184604492,-,caller=T8118;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1433,186642746,-,caller=T8119;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+6,1434,187637655,-,caller=T9;(virq:irq_count)- 1:18274 11:10800 6:5563 2:5362 35:737 30:559 301:325 37:26 21:11 28:3 
+6,1435,187637662,-,caller=T9;(cpu:irq_count)- 0:4400 1:1147 2:647 3:657 4:2386 5:2709 6:2427 7:27298 
+6,1436,187637664,-,caller=T9;(ipi:irq_count)- 0:18274 1:5362 2:0 3:0 4:0 5:5563 6:0 
+9,1437,188679940,-,caller=T8120;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1438,190714556,-,caller=T8121;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1439,192751771,-,caller=T8122;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1440,194790875,-,caller=T8123;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1441,196825325,-,caller=T8124;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+6,1442,197109752,-,caller=T9;(virq:irq_count)- 1:18321 11:11148 6:5825 2:5427 35:765 30:574 301:339 37:26 21:11 28:3 
+6,1443,197109759,-,caller=T9;(cpu:irq_count)- 0:4533 1:1147 2:647 3:657 4:2386 5:2709 6:2427 7:27944 
+6,1444,197109762,-,caller=T9;(ipi:irq_count)- 0:18321 1:5427 2:0 3:0 4:0 5:5825 6:0 
+9,1445,198864064,-,caller=T8125;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1446,200899543,-,caller=T8126;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1447,202936817,-,caller=T8127;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1448,204974305,-,caller=T8128;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+6,1449,206581693,-,caller=T240;(virq:irq_count)- 1:18360 11:11479 6:6077 2:5479 35:787 30:586 301:349 37:26 21:11 28:3 
+6,1450,206581700,-,caller=T240;(cpu:irq_count)- 0:4639 1:1147 2:647 3:657 4:2386 5:2709 6:2427 7:28556 
+6,1451,206581703,-,caller=T240;(ipi:irq_count)- 0:18360 1:5479 2:0 3:0 4:0 5:6077 6:0 
+9,1452,207011588,-,caller=T8129;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1453,209047743,-,caller=T8130;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1454,211085975,-,caller=T8131;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1455,213124942,-,caller=T8132;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1456,215163518,-,caller=T8133;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+6,1457,216053766,-,caller=T380;(virq:irq_count)- 1:18406 11:11826 6:6343 2:5540 35:813 30:601 301:365 37:26 21:11 28:3 
+6,1458,216053772,-,caller=T380;(cpu:irq_count)- 0:4768 1:1147 2:647 3:657 4:2386 5:2709 6:2427 7:29204 
+6,1459,216053775,-,caller=T380;(ipi:irq_count)- 0:18406 1:5540 2:0 3:0 4:0 5:6343 6:0 
+9,1460,217200656,-,caller=T8134;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1461,219238759,-,caller=T8135;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1462,221276861,-,caller=T8136;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1463,223314730,-,caller=T8137;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1464,225353299,-,caller=T8138;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+6,1465,225525740,-,caller=T379;(virq:irq_count)- 1:18455 11:12188 6:6625 2:5615 35:839 30:616 301:383 37:26 21:11 28:3 
+6,1466,225525747,-,caller=T379;(cpu:irq_count)- 0:4917 1:1147 2:647 3:657 4:2386 5:2709 6:2429 7:29880 
+6,1467,225525750,-,caller=T379;(ipi:irq_count)- 0:18455 1:5615 2:0 3:0 4:0 5:6625 6:0 
+9,1468,227389700,-,caller=T8139;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1469,229427724,-,caller=T8140;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1470,231463468,-,caller=T8141;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1471,233501145,-,caller=T8142;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+6,1472,234997751,-,caller=T380;(virq:irq_count)- 1:18493 11:12523 6:6888 2:5680 35:861 30:628 301:394 37:26 21:11 28:3 
+6,1473,234997757,-,caller=T380;(cpu:irq_count)- 0:5037 1:1147 2:647 3:657 4:2388 5:2709 6:2429 7:30504 
+6,1474,234997761,-,caller=T380;(ipi:irq_count)- 0:18493 1:5680 2:0 3:0 4:0 5:6888 6:0 
+9,1475,235540235,-,caller=T8143;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1476,237576419,-,caller=T8144;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1477,239614486,-,caller=T8145;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1478,241652458,-,caller=T8146;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1479,243691528,-,caller=T8147;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+6,1480,244469669,-,caller=T380;(virq:irq_count)- 1:18539 11:12862 6:7149 2:5745 35:889 30:643 301:408 37:26 21:11 28:3 
+6,1481,244469675,-,caller=T380;(cpu:irq_count)- 0:5169 1:1147 2:647 3:657 4:2388 5:2709 6:2429 7:31140 
+6,1482,244469678,-,caller=T380;(ipi:irq_count)- 0:18539 1:5745 2:0 3:0 4:0 5:7149 6:0 
+9,1483,245729429,-,caller=T8148;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1484,247765697,-,caller=T8149;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1485,249803819,-,caller=T8150;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1486,251842353,-,caller=T8151;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1487,253879893,-,caller=T8152;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+6,1488,253941727,-,caller=T240;(virq:irq_count)- 1:18583 11:13205 6:7412 2:5807 35:915 30:658 301:420 37:26 21:11 28:3 
+6,1489,253941735,-,caller=T240;(cpu:irq_count)- 0:5291 1:1147 2:647 3:657 4:2388 5:2709 6:2429 7:31783 
+6,1490,253941738,-,caller=T240;(ipi:irq_count)- 0:18583 1:5807 2:0 3:0 4:0 5:7412 6:0 
+9,1491,255917707,-,caller=T8153;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1492,257954377,-,caller=T8154;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1493,259993124,-,caller=T8155;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1494,262031278,-,caller=T8156;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+6,1495,263413742,-,caller=T379;(virq:irq_count)- 1:18632 11:13532 6:7669 2:5865 35:941 30:670 301:433 37:26 21:11 28:3 
+6,1496,263413749,-,caller=T379;(cpu:irq_count)- 0:5415 1:1147 2:647 3:657 4:2388 5:2709 6:2429 7:32401 
+6,1497,263413752,-,caller=T379;(ipi:irq_count)- 0:18632 1:5865 2:0 3:0 4:0 5:7669 6:0 
+9,1498,264068712,-,caller=T8157;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1499,266107399,-,caller=T8158;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1500,268142625,-,caller=T8159;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1501,270179919,-,caller=T8160;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1502,272218029,-,caller=T8161;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+6,1503,272885752,-,caller=T379;(virq:irq_count)- 1:18687 11:13888 6:7946 2:5938 35:969 30:685 301:454 37:26 21:11 28:3 
+6,1504,272885759,-,caller=T379;(cpu:irq_count)- 0:5574 1:1147 2:647 3:657 4:2388 5:2709 6:2429 7:33067 
+6,1505,272885762,-,caller=T379;(ipi:irq_count)- 0:18687 1:5938 2:0 3:0 4:0 5:7946 6:0 
+9,1506,274254956,-,caller=T8162;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1507,276293082,-,caller=T8163;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1508,278330917,-,caller=T8164;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1509,280370016,-,caller=T8165;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+6,1510,282357745,-,caller=T240;(virq:irq_count)- 1:18732 11:14221 6:8210 2:6001 35:991 30:697 301:469 37:26 21:11 28:3 
+6,1511,282357752,-,caller=T240;(cpu:irq_count)- 0:5697 1:1147 2:647 3:657 4:2388 5:2709 6:2429 7:33698 
+6,1512,282357755,-,caller=T240;(ipi:irq_count)- 0:18732 1:6001 2:0 3:0 4:0 5:8210 6:0 
+9,1513,282407647,-,caller=T8166;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1514,284443829,-,caller=T8167;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1515,286479349,-,caller=T8168;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1516,288515698,-,caller=T8169;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1517,290554025,-,caller=T8170;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+6,1518,291829747,-,caller=T380;(virq:irq_count)- 1:18779 11:14567 6:8474 2:6062 35:1017 30:712 301:484 37:26 21:11 28:3 
+6,1519,291829754,-,caller=T380;(cpu:irq_count)- 0:5826 1:1147 2:647 3:657 4:2388 5:2709 6:2429 7:34343 
+6,1520,291829757,-,caller=T380;(ipi:irq_count)- 0:18779 1:6062 2:0 3:0 4:0 5:8474 6:0 
+9,1521,292592991,-,caller=T8171;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1522,294630172,-,caller=T8172;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1523,296665780,-,caller=T8173;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1524,298705025,-,caller=T8174;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1525,300743312,-,caller=T8175;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+6,1526,301301733,-,caller=T380;(virq:irq_count)- 1:18825 11:14913 6:8735 2:6122 35:1045 30:727 301:496 37:26 21:11 28:3 
+6,1527,301301741,-,caller=T380;(cpu:irq_count)- 0:5954 1:1147 2:647 3:657 4:2388 5:2709 6:2429 7:34983 
+6,1528,301301746,-,caller=T380;(ipi:irq_count)- 0:18825 1:6122 2:0 3:0 4:0 5:8735 6:0 
+9,1529,302782659,-,caller=T8176;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1530,304819402,-,caller=T8177;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1531,306856808,-,caller=T8178;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1532,308893231,-,caller=T8179;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+6,1533,310773755,-,caller=T9;(virq:irq_count)- 1:18861 11:15240 6:8989 2:6176 35:1065 30:739 301:508 37:26 21:11 28:3 
+6,1534,310773765,-,caller=T9;(cpu:irq_count)- 0:6065 1:1147 2:647 3:657 4:2388 5:2709 6:2429 7:35587 
+6,1535,310773770,-,caller=T9;(ipi:irq_count)- 0:18861 1:6176 2:0 3:0 4:0 5:8989 6:0 
+9,1536,310930405,-,caller=T8180;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1537,312968246,-,caller=T8181;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1538,315006561,-,caller=T8182;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1539,317042995,-,caller=T8183;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1540,319080994,-,caller=T8184;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+6,1541,320245747,-,caller=T380;(virq:irq_count)- 1:18911 11:15589 6:9254 2:6243 35:1095 30:754 301:522 37:26 21:11 28:3 
+6,1542,320245755,-,caller=T380;(cpu:irq_count)- 0:6201 1:1147 2:647 3:657 4:2388 5:2709 6:2429 7:36241 
+6,1543,320245760,-,caller=T380;(ipi:irq_count)- 0:18911 1:6243 2:0 3:0 4:0 5:9254 6:0 
+9,1544,321117624,-,caller=T8185;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1545,323156022,-,caller=T8186;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1546,325194176,-,caller=T8187;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1547,327228716,-,caller=T8188;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1548,329268030,-,caller=T8189;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+6,1549,329716813,-,caller=T240;(virq:irq_count)- 1:18961 11:15939 6:9521 2:6309 35:1123 30:769 301:536 37:26 21:11 28:3 
+6,1550,329716821,-,caller=T240;(cpu:irq_count)- 0:6340 1:1147 2:647 3:657 4:2388 5:2709 6:2430 7:36891 
+6,1551,329716826,-,caller=T240;(ipi:irq_count)- 0:18961 1:6309 2:0 3:0 4:0 5:9521 6:0 
+9,1552,331306247,-,caller=T8190;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1553,333343653,-,caller=T8191;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1554,335381299,-,caller=T8192;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1555,337418429,-,caller=T8193;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+6,1556,339188819,-,caller=T9;(virq:irq_count)- 1:18998 11:16267 6:9785 2:6371 35:1143 30:781 301:546 37:26 21:11 28:3 
+6,1557,339188826,-,caller=T9;(cpu:irq_count)- 0:6453 1:1147 2:647 3:657 4:2388 5:2709 6:2430 7:37511 
+6,1558,339188829,-,caller=T9;(ipi:irq_count)- 0:18998 1:6371 2:0 3:0 4:0 5:9785 6:0 
+9,1559,339455114,-,caller=T8194;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1560,341493121,-,caller=T8195;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1561,343532084,-,caller=T8196;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1562,345570191,-,caller=T8197;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1563,347607553,-,caller=T8198;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+6,1564,348661764,-,caller=T9;(virq:irq_count)- 1:19049 11:16611 6:10051 2:6435 35:1171 30:796 301:564 37:26 21:11 28:3 
+6,1565,348661770,-,caller=T9;(cpu:irq_count)- 0:6592 1:1147 2:647 3:657 4:2389 5:2709 6:2430 7:38157 
+6,1566,348661773,-,caller=T9;(ipi:irq_count)- 0:19049 1:6435 2:0 3:0 4:0 5:10051 6:0 
+9,1567,349645711,-,caller=T8199;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1568,351683533,-,caller=T8200;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1569,353720842,-,caller=T8201;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1570,355758614,-,caller=T8202;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1571,357795852,-,caller=T8203;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+6,1572,358133755,-,caller=T9;(virq:irq_count)- 1:19095 11:16959 6:10313 2:6498 35:1197 30:811 301:578 37:26 21:11 28:3 
+6,1573,358133763,-,caller=T9;(cpu:irq_count)- 0:6724 1:1147 2:647 3:657 4:2389 5:2709 6:2430 7:38799 
+6,1574,358133768,-,caller=T9;(ipi:irq_count)- 0:19095 1:6498 2:0 3:0 4:0 5:10313 6:0 
+9,1575,359834088,-,caller=T8204;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1576,361870287,-,caller=T8205;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1577,363907547,-,caller=T8206;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1578,365947061,-,caller=T8207;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+6,1579,367605751,-,caller=T380;(virq:irq_count)- 1:19137 11:17287 6:10566 2:6559 35:1221 30:823 301:588 37:26 21:11 28:3 
+6,1580,367605758,-,caller=T380;(cpu:irq_count)- 0:6841 1:1147 2:647 3:657 4:2389 5:2709 6:2430 7:39412 
+6,1581,367605761,-,caller=T380;(ipi:irq_count)- 0:19137 1:6559 2:0 3:0 4:0 5:10566 6:0 
+9,1582,367983227,-,caller=T8208;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1583,370019861,-,caller=T8209;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1584,372057756,-,caller=T8210;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1585,374095841,-,caller=T8211;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1586,376134278,-,caller=T8212;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+6,1587,377077701,-,caller=T9;(virq:irq_count)- 1:19187 11:17632 6:10831 2:6622 35:1249 30:838 301:600 37:26 21:11 28:3 
+6,1588,377077707,-,caller=T9;(cpu:irq_count)- 0:6968 1:1147 2:647 3:657 4:2389 5:2709 6:2430 7:40063 
+6,1589,377077710,-,caller=T9;(ipi:irq_count)- 0:19187 1:6622 2:0 3:0 4:0 5:10831 6:0 
+9,1590,378170539,-,caller=T8213;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1591,380206699,-,caller=T8214;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1592,382245030,-,caller=T8215;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1593,384283281,-,caller=T8216;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1594,386319245,-,caller=T8217;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+6,1595,386549690,-,caller=T9;(virq:irq_count)- 1:19241 11:17982 6:11106 2:6695 35:1275 30:853 301:618 37:26 21:11 28:3 
+6,1596,386549697,-,caller=T9;(cpu:irq_count)- 0:7113 1:1147 2:647 3:657 4:2389 5:2709 6:2430 7:40729 
+6,1597,386549700,-,caller=T9;(ipi:irq_count)- 0:19241 1:6695 2:0 3:0 4:0 5:11106 6:0 
+9,1598,388356260,-,caller=T8218;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1599,390390529,-,caller=T8219;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1600,392428818,-,caller=T8220;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1601,394466845,-,caller=T8221;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+6,1602,396021706,-,caller=T240;(virq:irq_count)- 1:19282 11:18320 6:11371 2:6758 35:1299 30:865 301:632 37:26 21:11 28:3 
+6,1603,396021713,-,caller=T240;(cpu:irq_count)- 0:7242 1:1148 2:647 3:657 4:2389 5:2709 6:2430 7:41356 
+6,1604,396021716,-,caller=T240;(ipi:irq_count)- 0:19282 1:6758 2:0 3:0 4:0 5:11371 6:0 
+9,1605,396503297,-,caller=T8222;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1606,398539425,-,caller=T8223;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1607,400577562,-,caller=T8224;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1608,402614827,-,caller=T8225;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1609,404652285,-,caller=T8226;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+6,1610,405493760,-,caller=T380;(virq:irq_count)- 1:19331 11:18680 6:11636 2:6822 35:1321 30:880 301:653 37:26 21:11 28:3 
+6,1611,405493767,-,caller=T380;(cpu:irq_count)- 0:7385 1:1153 2:647 3:657 4:2389 5:2709 6:2430 7:42004 
+6,1612,405493770,-,caller=T380;(ipi:irq_count)- 0:19331 1:6822 2:0 3:0 4:0 5:11636 6:0 
+9,1613,406690502,-,caller=T8227;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1614,408725703,-,caller=T8228;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1615,410763836,-,caller=T8229;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1616,412803008,-,caller=T8230;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1617,414839103,-,caller=T8231;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+6,1618,414965676,-,caller=T240;(virq:irq_count)- 1:19379 11:19029 6:11897 2:6883 35:1345 30:895 301:667 37:26 21:11 28:3 
+6,1619,414965683,-,caller=T240;(cpu:irq_count)- 0:7508 1:1153 2:647 3:657 4:2389 5:2709 6:2430 7:42653 
+6,1620,414965687,-,caller=T240;(ipi:irq_count)- 0:19379 1:6883 2:0 3:0 4:0 5:11897 6:0 
+9,1621,416877465,-,caller=T8232;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1622,418916332,-,caller=T8233;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1623,420955563,-,caller=T8234;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1624,422993605,-,caller=T8235;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+6,1625,424437756,-,caller=T380;(virq:irq_count)- 1:19417 11:19357 6:12154 2:6945 35:1369 30:907 301:677 37:26 21:11 28:3 
+6,1626,424437763,-,caller=T380;(cpu:irq_count)- 0:7626 1:1153 2:647 3:657 4:2389 5:2709 6:2430 7:43266 
+6,1627,424437765,-,caller=T380;(ipi:irq_count)- 0:19417 1:6945 2:0 3:0 4:0 5:12154 6:0 
+9,1628,425030853,-,caller=T8236;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1629,427067306,-,caller=T8237;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1630,429105812,-,caller=T8238;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1631,431143220,-,caller=T8239;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1632,433181493,-,caller=T8240;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+6,1633,433909661,-,caller=T9;(virq:irq_count)- 11:19705 1:19464 6:12427 2:7010 35:1397 30:922 301:690 37:26 21:11 28:3 
+6,1634,433909667,-,caller=T9;(cpu:irq_count)- 0:7760 1:1153 2:647 3:657 4:2389 5:2709 6:2432 7:43919 
+6,1635,433909670,-,caller=T9;(ipi:irq_count)- 0:19464 1:7010 2:0 3:0 4:0 5:12427 6:0 
+9,1636,435219602,-,caller=T8241;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1637,437256147,-,caller=T8242;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1638,439295600,-,caller=T8243;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1639,441332100,-,caller=T8244;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1640,443369579,-,caller=T8245;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+6,1641,443380809,-,caller=T9;(virq:irq_count)- 11:20036 1:19509 6:12691 2:7070 35:1423 30:936 301:703 37:26 21:11 28:3 
+6,1642,443380815,-,caller=T9;(cpu:irq_count)- 0:7881 1:1153 2:647 3:657 4:2389 5:2709 6:2432 7:44551 
+6,1643,443380818,-,caller=T9;(ipi:irq_count)- 0:19509 1:7070 2:0 3:0 4:0 5:12691 6:0 
+9,1644,445405965,-,caller=T8246;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1645,447442429,-,caller=T8247;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1646,449481051,-,caller=T8248;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1647,451519215,-,caller=T8249;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+6,1648,452853742,-,caller=T380;(virq:irq_count)- 11:20377 1:19552 6:12956 2:7133 35:1449 30:949 301:715 37:26 21:11 28:3 
+6,1649,452853749,-,caller=T380;(cpu:irq_count)- 0:8006 1:1153 2:647 3:657 4:2391 5:2709 6:2432 7:45187 
+6,1650,452853752,-,caller=T380;(ipi:irq_count)- 0:19552 1:7133 2:0 3:0 4:0 5:12956 6:0 
+9,1651,453558762,-,caller=T8250;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1652,455596098,-,caller=T8251;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1653,457634109,-,caller=T8252;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1654,459672083,-,caller=T8253;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1655,461709576,-,caller=T8254;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+6,1656,462325764,-,caller=T240;(virq:irq_count)- 11:20730 1:19602 6:13237 2:7207 35:1477 30:964 301:730 37:26 21:11 28:3 
+6,1657,462325771,-,caller=T240;(cpu:irq_count)- 0:8154 1:1153 2:647 3:657 4:2391 5:2709 6:2432 7:45855 
+6,1658,462325774,-,caller=T240;(ipi:irq_count)- 0:19602 1:7207 2:0 3:0 4:0 5:13237 6:0 
+9,1659,463748759,-,caller=T8255;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1660,465786954,-,caller=T8256;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1661,467823378,-,caller=T8257;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1662,469862737,-,caller=T8258;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+6,1663,471797754,-,caller=T240;(virq:irq_count)- 11:21064 1:19644 6:13502 2:7267 35:1499 30:976 301:743 37:26 21:11 28:3 
+6,1664,471797760,-,caller=T240;(cpu:irq_count)- 0:8275 1:1153 2:647 3:657 4:2391 5:2709 6:2432 7:46482 
+6,1665,471797764,-,caller=T240;(ipi:irq_count)- 0:19644 1:7267 2:0 3:0 4:0 5:13502 6:0 
+9,1666,471900242,-,caller=T8259;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1667,473937173,-,caller=T8260;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1668,475972631,-,caller=T8261;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1669,478009161,-,caller=T8262;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1670,480047568,-,caller=T8263;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+6,1671,481269763,-,caller=T380;(virq:irq_count)- 11:21407 1:19691 6:13759 2:7324 35:1525 30:991 301:755 37:26 21:11 28:3 
+6,1672,481269770,-,caller=T380;(cpu:irq_count)- 0:8395 1:1153 2:647 3:657 4:2391 5:2709 6:2432 7:47119 
+6,1673,481269773,-,caller=T380;(ipi:irq_count)- 0:19691 1:7324 2:0 3:0 4:0 5:13759 6:0 
+9,1674,482085824,-,caller=T8264;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1675,484125348,-,caller=T8265;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1676,486162143,-,caller=T8266;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1677,488200697,-,caller=T8267;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1678,490238185,-,caller=T8268;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+6,1679,490741734,-,caller=T9;(virq:irq_count)- 11:21753 1:19741 6:14022 2:7383 35:1553 30:1006 301:769 37:26 21:11 28:3 
+6,1680,490741741,-,caller=T9;(cpu:irq_count)- 0:8522 1:1153 2:647 3:657 4:2391 5:2709 6:2432 7:47767 
+6,1681,490741744,-,caller=T9;(ipi:irq_count)- 0:19741 1:7383 2:0 3:0 4:0 5:14022 6:0 
+9,1682,492275487,-,caller=T8269;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1683,494312724,-,caller=T8270;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1684,496351436,-,caller=T8271;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1685,498389001,-,caller=T8272;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+6,1686,500212814,-,caller=T240;(virq:irq_count)- 11:22080 1:19782 6:14279 2:7438 35:1575 30:1018 301:779 37:26 21:11 28:3 
+6,1687,500212821,-,caller=T240;(cpu:irq_count)- 0:8630 1:1153 2:647 3:657 4:2391 5:2709 6:2432 7:48383 
+6,1688,500212823,-,caller=T240;(ipi:irq_count)- 0:19782 1:7438 2:0 3:0 4:0 5:14279 6:0 
+9,1689,500425447,-,caller=T8273;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1690,502464307,-,caller=T8274;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1691,504502714,-,caller=T8275;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1692,506538134,-,caller=T8276;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+9,1693,508576239,-,caller=T8277;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+6,1694,509684829,-,caller=T380;(virq:irq_count)- 11:22423 1:19829 6:14550 2:7500 35:1601 30:1033 301:800 37:26 21:11 28:3 
+6,1695,509684835,-,caller=T380;(cpu:irq_count)- 0:8766 1:1153 2:647 3:657 4:2391 5:2709 6:2432 7:49032 
+6,1696,509684838,-,caller=T380;(ipi:irq_count)- 0:19829 1:7500 2:0 3:0 4:0 5:14550 6:0 
+9,1697,510613620,-,caller=T8278;nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)

@@ -1,0 +1,32 @@
+
+Elf file type is EXEC (Executable file)
+Entry point 0x4007c0
+There are 7 program headers, starting at offset 64
+
+Program Headers:
+  Type           Offset             VirtAddr           PhysAddr
+                 FileSiz            MemSiz              Flags  Align
+  LOAD           0x00************** 0x00************** 0x00**************
+                 0x000000000007bb30 0x000000000007bb30  R E    0x10000
+  LOAD           0x000000000007c618 0x000000000048c618 0x000000000048c618
+                 0x00*************c 0x000000000000a7f0  RW     0x10000
+  NOTE           0x00000000000001c8 0x00000000004001c8 0x00000000004001c8
+                 0x00************** 0x00**************  R      0x4
+  NOTE           0x000000000007bb10 0x000000000047bb10 0x000000000047bb10
+                 0x00************** 0x00**************  R      0x4
+  TLS            0x000000000007c618 0x000000000048c618 0x000000000048c618
+                 0x00************** 0x00**************  R      0x8
+  GNU_STACK      0x00************** 0x00************** 0x00**************
+                 0x00************** 0x00**************  RW     0x10
+  GNU_RELRO      0x000000000007c618 0x000000000048c618 0x000000000048c618
+                 0x00000000000039e8 0x00000000000039e8  R      0x1
+
+ Section to Segment mapping:
+  Segment Sections...
+   00     .note.gnu.build-id .rela.plt .init .plt .text .fini .rodata .eh_frame .gcc_except_table .note.ABI-tag 
+   01     .tdata .init_array .fini_array .data.rel.ro .got .got.plt .data .bss 
+   02     .note.gnu.build-id 
+   03     .note.ABI-tag 
+   04     .tdata .tbss 
+   05     
+   06     .tdata .init_array .fini_array .data.rel.ro .got 

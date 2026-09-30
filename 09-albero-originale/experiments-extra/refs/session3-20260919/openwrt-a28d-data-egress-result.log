@@ -1,0 +1,9 @@
+DATA_STAGE_BEGIN=egress uptime=1586.90 12300.49
+CHECKPOINT_DURABLE index=18 label=before_egress
+NETDEV features_block=0 active=0x00004000 available=0x001d4813
+NETDEV features_block=1 active=0x00000000 available=0x02800302
+EGRESS selector=6 flags=0xa
+EGRESS accepted
+DATA_STAGE=egress EXIT=0 uptime=1586.92 12300.52
+CHECKPOINT_DURABLE index=19 label=after_egress
+DATA_STAGE_COMPLETE=egress uptime=1586.93 12300.54

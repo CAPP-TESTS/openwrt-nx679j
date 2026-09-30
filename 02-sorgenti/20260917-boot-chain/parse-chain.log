@@ -1,0 +1,204 @@
+
+==============================================================================
+## 1. GPT di sde: decodifica dei bit di attributo (metadati A/B)
+==============================================================================
+file: runtime-v2/sde-primary-entries.bin  dim=12288  sha256=cffa4f48b829fea9d936e71811dac3415de929e1b9afdbf8769faee0924e89c8
+geometria sde: ['4096', '12582912'] settori da 4096
+  entry  0  uefi_a                 lba        6..1285      attr=0x107f000000000000  prio=3 succ=1 tries=7 unbootable=1  altri_bit=[60]
+  entry  1  aop_a                  lba     1286..1413      attr=0x107f000000000000  prio=3 succ=1 tries=7 unbootable=1  altri_bit=[60]
+  entry  2  aop_config_a           lba     1414..1541      attr=0x107f000000000000  prio=3 succ=1 tries=7 unbootable=1  altri_bit=[60]
+  entry  3  tz_a                   lba     1542..2565      attr=0x107f000000000000  prio=3 succ=1 tries=7 unbootable=1  altri_bit=[60]
+  entry  4  hyp_a                  lba     2566..4613      attr=0x7f000000000000  prio=3 succ=1 tries=7 unbootable=1  altri_bit=[]
+  entry  5  modem_a                lba     4614..81413     attr=0x107f000000000000  prio=3 succ=1 tries=7 unbootable=1  altri_bit=[60]
+  entry  6  bluetooth_a            lba    81414..82437     attr=0x107f000000000000  prio=3 succ=1 tries=7 unbootable=1  altri_bit=[60]
+  entry  7  mdtpsecapp_a           lba    82438..83461     attr=0x107f000000000000  prio=3 succ=1 tries=7 unbootable=1  altri_bit=[60]
+  entry  8  mdtp_a                 lba    83462..91653     attr=0x107f000000000000  prio=3 succ=1 tries=7 unbootable=1  altri_bit=[60]
+  entry  9  abl_a                  lba    91654..91909     attr=0x107f000000000000  prio=3 succ=1 tries=7 unbootable=1  altri_bit=[60]
+  entry 10  dsp_a                  lba    91910..108293    attr=0x107f000000000000  prio=3 succ=1 tries=7 unbootable=1  altri_bit=[60]
+  entry 11  keymaster_a            lba   108294..108421    attr=0x107f000000000000  prio=3 succ=1 tries=7 unbootable=1  altri_bit=[60]
+  entry 12  boot_a                 lba   108422..132997    attr=0x7f000000000000  prio=3 succ=1 tries=7 unbootable=1  altri_bit=[]
+  entry 13  devcfg_a               lba   132998..133029    attr=0x7f000000000000  prio=3 succ=1 tries=7 unbootable=1  altri_bit=[]
+  entry 14  qupfw_a                lba   133030..133049    attr=0x7f000000000000  prio=3 succ=1 tries=7 unbootable=1  altri_bit=[]
+  entry 15  vbmeta_a               lba   133050..133065    attr=0x107f000000000000  prio=3 succ=1 tries=7 unbootable=1  altri_bit=[60]
+  entry 16  dtbo_a                 lba   133066..139209    attr=0x7f000000000000  prio=3 succ=1 tries=7 unbootable=1  altri_bit=[]
+  entry 17  uefisecapp_a           lba   139210..139721    attr=0x7f000000000000  prio=3 succ=1 tries=7 unbootable=1  altri_bit=[]
+  entry 18  imagefv_a              lba   139722..140233    attr=0x7f000000000001  prio=3 succ=1 tries=7 unbootable=1  altri_bit=[0]
+  entry 19  shrm_a                 lba   140234..140265    attr=0x107f000000000000  prio=3 succ=1 tries=7 unbootable=1  altri_bit=[60]
+  entry 20  vm-bootsys_a           lba   140266..207374    attr=0x7f000000000000  prio=3 succ=1 tries=7 unbootable=1  altri_bit=[]
+  entry 21  cpucp_a                lba   207375..207630    attr=0x107f000000000000  prio=3 succ=1 tries=7 unbootable=1  altri_bit=[60]
+  entry 22  featenabler_a          lba   207631..207662    attr=0x7f000000000000  prio=3 succ=1 tries=7 unbootable=1  altri_bit=[]
+  entry 23  vendor_boot_a          lba   207663..232238    attr=0x7f000000000000  prio=3 succ=1 tries=7 unbootable=1  altri_bit=[]
+  entry 25  qweslicstore_a         lba   239919..239982    attr=0x107f000000000000  prio=3 succ=1 tries=7 unbootable=1  altri_bit=[60]
+  entry 26  recovery_a             lba   239983..265582    attr=0x7f000000000000  prio=3 succ=1 tries=7 unbootable=1  altri_bit=[]
+  entry 27  xbl_ramdump_a          lba   265583..266094    attr=0x7f000000000000  prio=3 succ=1 tries=7 unbootable=1  altri_bit=[]
+  entry 28  uefi_b                 lba   266095..267374    attr=0x107b000000000000  prio=3 succ=0 tries=7 unbootable=1  altri_bit=[60]
+  entry 29  aop_b                  lba   267375..267502    attr=0x7b000000000000  prio=3 succ=0 tries=7 unbootable=1  altri_bit=[]
+  entry 30  aop_config_b           lba   267503..267630    attr=0x7b000000000000  prio=3 succ=0 tries=7 unbootable=1  altri_bit=[]
+  entry 31  tz_b                   lba   267631..268654    attr=0x7b000000000000  prio=3 succ=0 tries=7 unbootable=1  altri_bit=[]
+
+Partizioni con attributi NON nulli (tutte):
+    uefi_a                   0x107f000000000000
+    aop_a                    0x107f000000000000
+    aop_config_a             0x107f000000000000
+    tz_a                     0x107f000000000000
+    hyp_a                    0x7f000000000000
+    modem_a                  0x107f000000000000
+    bluetooth_a              0x107f000000000000
+    mdtpsecapp_a             0x107f000000000000
+    mdtp_a                   0x107f000000000000
+    abl_a                    0x107f000000000000
+    dsp_a                    0x107f000000000000
+    keymaster_a              0x107f000000000000
+    boot_a                   0x7f000000000000
+    devcfg_a                 0x7f000000000000
+    qupfw_a                  0x7f000000000000
+    vbmeta_a                 0x107f000000000000
+    dtbo_a                   0x7f000000000000
+    uefisecapp_a             0x7f000000000000
+    imagefv_a                0x7f000000000001
+    shrm_a                   0x107f000000000000
+    vm-bootsys_a             0x7f000000000000
+    cpucp_a                  0x107f000000000000
+    featenabler_a            0x7f000000000000
+    vendor_boot_a            0x7f000000000000
+    qmcs                     0x0
+    qweslicstore_a           0x107f000000000000
+    recovery_a               0x7f000000000000
+    xbl_ramdump_a            0x7f000000000000
+    uefi_b                   0x107b000000000000
+    aop_b                    0x7b000000000000
+    aop_config_b             0x7b000000000000
+    tz_b                     0x7b000000000000
+
+==============================================================================
+## 2. boot_a.img — header v4 completo
+==============================================================================
+file: /home/user/nx679j-stock/experiments/20260916-122926-native-baseline/current-readback/boot_a.img  dim=100663296  sha256=0cd94d5627501f3c65c94542093ad18b1ec6c1c215dc6a7ecab4f941057e8364
+magic=b'ANDROID!' kernel_size=49108324 ramdisk_size=2200983 os_version=0x18000162 header_size=1584
+reserved=(0, 0, 0, 0) header_version=4 signature_size=4096
+cmdline grezza (bytes 44..1579) = b''
+byte non-zero nella cmdline: 0 / 1536
+layout atteso: kernel @4096 (0x1000) len 49108324 | ramdisk @49112420 len 2200983 | signature @51313403 len 4096 | fine dati @51317499
+  kernel           49108324 B  sha256=f0aa949c95d1421381850cb1982bd2a505e96fcd7565543ec28d5b1f7d81a0cc
+  ramdisk           2200983 B  sha256=adb917c51de2b9a58a74053d2aa39c2762abaeac29a7f605f5f4eda2ba692b84
+  boot_signature       4096 B  sha256=89269bf0af7d754a2da06d5e5ff250e9698416d6d4af1062da16a49e645327e7
+
+==============================================================================
+## 3. vendor_boot_a.img — header v4
+==============================================================================
+file: /home/user/nx679j-stock/experiments/20260916-122926-native-baseline/current-readback/vendor_boot_a.img dim=100663296 sha256=6db6d4d76059a9ef3a6bcc904911aac53a20044224a675014a6396a8f5d9d168
+magic=b'VNDRBOOT' header_version=4 page_size=4096
+kernel_addr=0x8000 ramdisk_addr=0x1000000 vendor_ramdisk_size=10041284
+vendor cmdline = b'video=vfb:640x400,bpp=32,memsize=3072000 qcom-dload-mode.download_mode=1 bootconfig'
+tags_addr=0x100 name=b'' header_size=2128 dtb_size=3879360 dtb_addr=0x1f00000
+vendor_ramdisk_table_size=108 table_entry_num=1 entry_size=108 bootconfig_size=85
+  vendor_boot_a: vendor_ramdisk00 10041284 B sha=8e9280413248b94e7e03685965087ca691777e85f51e3a494875582d2c62fb51
+  vendor_boot_a: dtb              3879360 B sha=b67334af3954fc47bc07cefb8d7fc1c7a59ce8258c2b4c8a55bed92fee5c88ad
+  vendor_boot_a: bootconfig       85 B sha=fbab70e49b81a2c679a7802d8e27712323ed79a2a7116bab037cf29b5198cba6
+  vendor_boot_b: vendor_ramdisk00 10041284 B sha=8e9280413248b94e7e03685965087ca691777e85f51e3a494875582d2c62fb51
+  vendor_boot_b: dtb              3879360 B sha=d6891d5ec81be11319f072ddaa6ccd002aec2d0d01a6297af2b2bbf171ca3441
+  vendor_boot_b: bootconfig       85 B sha=fbab70e49b81a2c679a7802d8e27712323ed79a2a7116bab037cf29b5198cba6
+
+bootconfig (testo, vendor_boot_a):
+androidboot.hardware=qcom
+androidboot.memcg=1
+androidboot.usbcontroller=a600000.dwc3
+
+
+==============================================================================
+## 4. dtbo_a.img / dtbo_b.img — tabella DTBO
+==============================================================================
+
+dtbo_a.img dim=25165824 sha256=9ee95463abce517d140eae3c5c892c2b38fd1344d6fb0a6e2da2af76a86de6a1
+  magic=0xd7b7ab1e total_size=9447224 header_size=32 dt_entry_size=32 dt_entry_count=44 dt_entries_offset=32 page_size=4096 version=0
+  entry  0: dt_size=109475   dt_offset=1440      id=0x00000000 rev=0x00000000 custom=0x00000000
+  entry  1: dt_size=109802   dt_offset=110915    id=0x00000000 rev=0x00000000 custom=0x00000000
+  entry  2: dt_size=123023   dt_offset=220717    id=0x00000000 rev=0x00000000 custom=0x00000000
+  entry  3: dt_size=123380   dt_offset=343740    id=0x00000000 rev=0x00000000 custom=0x00000000
+  entry  4: dt_size=121338   dt_offset=467120    id=0x00000000 rev=0x00000000 custom=0x00000000
+  entry  5: dt_size=121695   dt_offset=588458    id=0x00000000 rev=0x00000000 custom=0x00000000
+  entry 42: dt_size=210479   dt_offset=8932908   id=0x00000000 rev=0x00000000 custom=0x00000000
+  entry 43: dt_size=303837   dt_offset=9143387   id=0x00000000 rev=0x00000000 custom=0x00000000
+  voci con contenuto non nullo: 44 / 44
+
+dtbo_b.img dim=25165824 sha256=9ee95463abce517d140eae3c5c892c2b38fd1344d6fb0a6e2da2af76a86de6a1
+  magic=0xd7b7ab1e total_size=9447224 header_size=32 dt_entry_size=32 dt_entry_count=44 dt_entries_offset=32 page_size=4096 version=0
+  entry  0: dt_size=109475   dt_offset=1440      id=0x00000000 rev=0x00000000 custom=0x00000000
+  entry  1: dt_size=109802   dt_offset=110915    id=0x00000000 rev=0x00000000 custom=0x00000000
+  entry  2: dt_size=123023   dt_offset=220717    id=0x00000000 rev=0x00000000 custom=0x00000000
+  entry  3: dt_size=123380   dt_offset=343740    id=0x00000000 rev=0x00000000 custom=0x00000000
+  entry  4: dt_size=121338   dt_offset=467120    id=0x00000000 rev=0x00000000 custom=0x00000000
+  entry  5: dt_size=121695   dt_offset=588458    id=0x00000000 rev=0x00000000 custom=0x00000000
+  entry 42: dt_size=210479   dt_offset=8932908   id=0x00000000 rev=0x00000000 custom=0x00000000
+  entry 43: dt_size=303837   dt_offset=9143387   id=0x00000000 rev=0x00000000 custom=0x00000000
+  voci con contenuto non nullo: 44 / 44
+
+==============================================================================
+## 5. vbmeta_a.img / vbmeta_b.img — header AVB
+==============================================================================
+
+vbmeta_a.img dim=65536 sha256=cc0de687c935714a9b6de4bf3492391474e640d2e23f752f6c626f6413b07e22
+  magic=b'AVB0'
+  required_libavb_version=1.0
+  auth_block_size=576 aux_block_size=5824 algorithm_type=2 rollback_index=0
+  flags=0x00000000 -> HASHTREE_DISABLED=0 VERIFICATION_DISABLED=0
+  rollback_index_location=0 release_string@0 len=137438953472
+  release_string=b'(oltre i 256 B letti)'
+  public_key_metadata_size=0
+
+vbmeta_b.img dim=65536 sha256=cc0de687c935714a9b6de4bf3492391474e640d2e23f752f6c626f6413b07e22
+  magic=b'AVB0'
+  required_libavb_version=1.0
+  auth_block_size=576 aux_block_size=5824 algorithm_type=2 rollback_index=0
+  flags=0x00000000 -> HASHTREE_DISABLED=0 VERIFICATION_DISABLED=0
+  rollback_index_location=0 release_string@0 len=137438953472
+  release_string=b'(oltre i 256 B letti)'
+  public_key_metadata_size=0
+
+==============================================================================
+## 6. misc.img — primo KiB (BCB atteso: 'bootonce-bootloader')
+==============================================================================
+file sha256=6c93debe281b2edb75e7733391b65d8a0dd64e349eb9a229a58867a3956f341d
+primi 64 B = b'bootonce-bootloader\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+offset 0..31 come stringa = b'bootonce-bootloader'
+byte non-zero nei primi 4096: 19
+probe-v7-devstate/misc-now.bin (12:13 del 17/9) primi 32 B = b'bootonce-bootloader'
+
+==============================================================================
+## 7. xbl_a/b e abl_a/b — confronto
+==============================================================================
+  xbl_a.img      3670016 B sha256=685f0a75fbff851bb6ef55ba158b7f86ea14a44c527c5388605ece94f47d637a
+  xbl_b.img      3670016 B sha256=685f0a75fbff851bb6ef55ba158b7f86ea14a44c527c5388605ece94f47d637a
+  abl_a.img      1048576 B sha256=443d1956e836aea3fe30ac13113dae787d88223c1e24f875c6831f69d86acea3
+  abl_b.img      1048576 B sha256=443d1956e836aea3fe30ac13113dae787d88223c1e24f875c6831f69d86acea3
+  xbl_a.img vs xbl_b.img: lunghezze 3670016/3670016, byte diversi=0
+  abl_a.img vs abl_b.img: lunghezze 1048576/1048576, byte diversi=0
+
+==============================================================================
+## 8. /proc/config.gz del kernel in esecuzione (runtime-v2/config.gz)
+==============================================================================
+righe=6700 sha256(config.gz)=f4bc378e7daf728096f4bf45f43a402700014dad1beee668d621defc300c14e4
+  CONFIG_RD_GZIP                         = y
+  CONFIG_RD_LZ4                          = y
+  CONFIG_RD_ZSTD                         = y
+  CONFIG_RD_XZ                           = (non presente)
+  CONFIG_RD_LZO                          = (non presente)
+  CONFIG_BLK_DEV_INITRD                  = y
+  CONFIG_INITRAMFS_SOURCE                = ""
+  CONFIG_BINFMT_SCRIPT                   = y
+  CONFIG_BINFMT_ELF                      = y
+  CONFIG_PANIC_TIMEOUT                   = -1
+  CONFIG_PANIC_ON_OOPS                   = y
+  CONFIG_KALLSYMS                        = y
+  CONFIG_DEVTMPFS                        = (non presente)
+  CONFIG_MODULES                         = y
+  CONFIG_MODULE_FORCE_LOAD               = (non presente)
+  CONFIG_USB_CONFIGFS                    = y
+  CONFIG_USB_F_NCM                       = y
+  CONFIG_USB_F_RNDIS                     = y
+  CONFIG_USB_F_ACM                       = y
+  CONFIG_SCSI_UFS_QCOM                   = (non presente)
+  CONFIG_PHY_QCOM_QMP_UFS                = (non presente)
+  CONFIG_PHY_QCOM_USB_SNPS_FEMTO_V2      = (non presente)
+  CONFIG_USB_DWC3                        = y
+  CONFIG_USB_DWC3_MSM                    = (non presente)

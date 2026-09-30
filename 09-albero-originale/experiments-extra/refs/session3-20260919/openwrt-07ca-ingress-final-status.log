@@ -1,0 +1,8 @@
+1315.04 10129.20
+IPC_COLLECTOR_FINISHED uptime=1263.11 9869.86
+11140
+71
+/tmp/ipa-ingress.pid pid=11177 exited
+/tmp/ipa-ipc-collector.pid pid=11086 State:	Z (zombie)
+/tmp/dpm-session.pid pid=11140 State:	S (sleeping)
+/tmp/crashlog-dump.pid pid=8736 State:	S (sleeping)

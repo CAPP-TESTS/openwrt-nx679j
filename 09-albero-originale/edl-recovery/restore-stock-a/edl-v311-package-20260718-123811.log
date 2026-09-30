@@ -1,0 +1,2354 @@
+=== 2026-07-18T14:38:11+02:00 v311 package restore start ===
+Bus 006 Device 005: ID 05c6:9008 Qualcomm, Inc. Gobi Wireless Modem (QDL mode)
+CMD: /home/user/venvs/edk2/bin/edl w gpt /home/user/nx679j-stock/native-openwrt-usb-build/headless-upstream/abl-compat-v12/artifacts/partition-analysis/gpt-patch/sdb_restore_pri.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs --lun=1
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+sahara - Protocol version: 3, Version supported: 1
+main - Mode detected: sahara
+sahara - 
+Reading Chip Info : OK
+sahara - - Sahara version  : 3
+sahara - - Chip Serial Number : 4324a099072
+sahara - - OEM PKHASH : fbc0a90afe54b2e38d7961e51aab31e5dbcef21f53b5d67c5d98561d74bdd4c0e9371fdb6519e7ecb032f691674fb644
+sahara - - Note: V3 extended info (cmd=0x0A) not available
+sahara - Protocol version: 3, Version supported: 1
+sahara - Uploading loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+sahara - 64-Bit mode detected.
+sahara - Loader successfully uploaded.
+main - Trying to connect to firehose loader ...
+firehose - INFO: Binary build date: Jul  6 2022 @ 22:16:30
+firehose - INFO: Binary build date: Jul  6 2022 @ 22:16:30 
+firehose - INFO: Chip serial num: 0 (0x0)
+firehose - INFO: Supported Functions (15):
+firehose - INFO: program
+firehose - INFO: read
+firehose - INFO: nop
+firehose - INFO: patch
+firehose - INFO: configure
+firehose - INFO: setbootablestoragedrive
+firehose - INFO: erase
+firehose - INFO: power
+firehose - INFO: firmwarewrite
+firehose - INFO: getstorageinfo
+firehose - INFO: benchmark
+firehose - INFO: emmc
+firehose - INFO: ufs
+firehose - INFO: fixgpt
+firehose - INFO: getsha256digest
+firehose - INFO: End of supported functions 15
+firehose
+firehose - [LIB]: [33mCouldn't detect MaxPayloadSizeFromTargetinBytes[0m
+firehose
+firehose - [LIB]: [33mCouldn't detect TargetName[0m
+firehose - TargetName=Unknown
+firehose - MemoryName=UFS
+firehose - Version=1
+firehose - Trying to read first storage sector...
+firehose - Running configure...
+firehose - Storage report:
+firehose - total_blocks:60884992
+firehose - block_size:4096
+firehose - page_size:4096
+firehose - num_physical:6
+firehose - manufacturer_id:462
+firehose - serial_num:1297306958
+firehose - fw_version:400
+firehose - mem_type:UFS
+firehose - prod_name:KLUEG8UHDC-B0E1
+firehose_client - Supported functions:
+-----------------
+program,read,nop,patch,configure,setbootablestoragedrive,erase,power,firmwarewrite,getstorageinfo,benchmark,emmc,ufs,fixgpt,getsha256digest
+firehose - 
+Writing to physical partition 1, sector 0, sectors 16
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x10) 0.00 MB/s                 
+Progress: |██████████| 100.0% Write (Sector 0x10 of 0x10, ) 160.53 MB/s       
+Wrote /home/user/nx679j-stock/native-openwrt-usb-build/headless-upstream/abl-compat-v12/artifacts/partition-analysis/gpt-patch/sdb_restore_pri.bin to sector 0.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w gpt /home/user/nx679j-stock/native-openwrt-usb-build/headless-upstream/abl-compat-v12/artifacts/partition-analysis/gpt-patch/sdc_restore_pri.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs --lun=2
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x10) 0.00 MB/s                 
+Progress: |██████████| 100.0% Write (Sector 0x10 of 0x10, ) 84.40 MB/s        
+Wrote /home/user/nx679j-stock/native-openwrt-usb-build/headless-upstream/abl-compat-v12/artifacts/partition-analysis/gpt-patch/sdc_restore_pri.bin to sector 0.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w gpt /home/user/nx679j-stock/native-openwrt-usb-build/headless-upstream/abl-compat-v12/artifacts/partition-analysis/gpt-patch/sde_restore_pri.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs --lun=4
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x10) 0.00 MB/s                 
+Progress: |██████████| 100.0% Write (Sector 0x10 of 0x10, ) 125.49 MB/s       
+Wrote /home/user/nx679j-stock/native-openwrt-usb-build/headless-upstream/abl-compat-v12/artifacts/partition-analysis/gpt-patch/sde_restore_pri.bin to sector 0.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w xbl_a /home/user/nx679j-stock/edl-recovery/v311-padded/xbl.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x380) 0.00 MB/s                
+Progress: |███-------|  28.6% Write (Sector 0x100 of 0x380, ) 199.63 MB/s     
+Progress: |██████----|  57.1% Write (Sector 0x200 of 0x380, ) 216.21 MB/s     
+Progress: |█████████-|  85.7% Write (Sector 0x300 of 0x380, ) 237.23 MB/s     
+Progress: |██████████| 100.0% Write (Sector 0x380 of 0x380, ) 234.58 MB/s     
+Wrote /home/user/nx679j-stock/edl-recovery/v311-padded/xbl.bin to sector 6.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w xbl_config_a /home/user/nx679j-stock/edl-recovery/v311-padded/xbl_config.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x4B) 0.00 MB/s                 
+Progress: |██████████| 100.0% Write (Sector 0x4B of 0x4B, ) 156.75 MB/s       
+Wrote /home/user/nx679j-stock/edl-recovery/v311-padded/xbl_config.bin to sector 902.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w multiimgqti_a /home/user/nx679j-stock/edl-recovery/v311-padded/multiimgqti.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x8) 0.00 MB/s                  
+Progress: |██████████| 100.0% Write (Sector 0x8 of 0x8, ) 105.36 MB/s         
+Wrote /home/user/nx679j-stock/edl-recovery/v311-padded/multiimgqti.bin to sector 977.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w multiimgoem_a /home/user/nx679j-stock/edl-recovery/v311-padded/multiimgoem.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x8) 0.00 MB/s                  
+Progress: |██████████| 100.0% Write (Sector 0x8 of 0x8, ) 78.44 MB/s          
+Wrote /home/user/nx679j-stock/edl-recovery/v311-padded/multiimgoem.bin to sector 985.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w xbl_b /home/user/nx679j-stock/edl-recovery/v311-padded/xbl.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x380) 0.00 MB/s                
+Progress: |███-------|  28.6% Write (Sector 0x100 of 0x380, ) 226.07 MB/s     
+Progress: |██████----|  57.1% Write (Sector 0x200 of 0x380, ) 230.41 MB/s     
+Progress: |█████████-|  85.7% Write (Sector 0x300 of 0x380, ) 98.81 MB/s      
+Progress: |██████████| 100.0% Write (Sector 0x380 of 0x380, ) 60.32 MB/s      
+Wrote /home/user/nx679j-stock/edl-recovery/v311-padded/xbl.bin to sector 6.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w xbl_config_b /home/user/nx679j-stock/edl-recovery/v311-padded/xbl_config.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x4B) 0.00 MB/s                 
+Progress: |██████████| 100.0% Write (Sector 0x4B of 0x4B, ) 168.10 MB/s       
+Wrote /home/user/nx679j-stock/edl-recovery/v311-padded/xbl_config.bin to sector 902.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w multiimgqti_b /home/user/nx679j-stock/edl-recovery/v311-padded/multiimgqti.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x8) 0.00 MB/s                  
+Progress: |██████████| 100.0% Write (Sector 0x8 of 0x8, ) 72.34 MB/s          
+Wrote /home/user/nx679j-stock/edl-recovery/v311-padded/multiimgqti.bin to sector 977.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w multiimgoem_b /home/user/nx679j-stock/edl-recovery/v311-padded/multiimgoem.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x8) 0.00 MB/s                  
+Progress: |██████████| 100.0% Write (Sector 0x8 of 0x8, ) 89.04 MB/s          
+Wrote /home/user/nx679j-stock/edl-recovery/v311-padded/multiimgoem.bin to sector 985.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w uefi_a /home/user/nx679j-stock/edl-recovery/v311-padded/uefi.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x500) 0.00 MB/s                
+Progress: |██--------|  20.0% Write (Sector 0x100 of 0x500, ) 205.08 MB/s     
+Progress: |████------|  40.0% Write (Sector 0x200 of 0x500, ) 232.11 MB/s     
+Progress: |██████----|  60.0% Write (Sector 0x300 of 0x500, ) 237.65 MB/s     
+Progress: |████████--|  80.0% Write (Sector 0x400 of 0x500, ) 95.47 MB/s      
+Progress: |██████████| 100.0% Write (Sector 0x500 of 0x500, ) 241.82 MB/s     
+Wrote /home/user/nx679j-stock/edl-recovery/v311-padded/uefi.bin to sector 6.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w aop_a /home/user/nx679j-stock/edl-recovery/v311-padded/aop.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x80) 0.00 MB/s                 
+Progress: |██████████| 100.0% Write (Sector 0x80 of 0x80, ) 175.19 MB/s       
+Wrote /home/user/nx679j-stock/edl-recovery/v311-padded/aop.bin to sector 1286.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w aop_config_a /home/user/nx679j-stock/edl-recovery/v311-padded/aop_config.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x80) 0.00 MB/s                 
+Progress: |██████████| 100.0% Write (Sector 0x80 of 0x80, ) 200.65 MB/s       
+Wrote /home/user/nx679j-stock/edl-recovery/v311-padded/aop_config.bin to sector 1414.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w tz_a /home/user/nx679j-stock/edl-recovery/v311-padded/tz.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x400) 0.00 MB/s                
+Progress: |██--------|  25.0% Write (Sector 0x100 of 0x400, ) 208.71 MB/s     
+Progress: |█████-----|  50.0% Write (Sector 0x200 of 0x400, ) 231.55 MB/s     
+Progress: |████████--|  75.0% Write (Sector 0x300 of 0x400, ) 239.06 MB/s     
+Progress: |██████████| 100.0% Write (Sector 0x400 of 0x400, ) 237.65 MB/s     
+Wrote /home/user/nx679j-stock/edl-recovery/v311-padded/tz.bin to sector 1542.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w hyp_a /home/user/nx679j-stock/edl-recovery/v311-padded/hyp.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x800) 0.00 MB/s                
+Progress: |█---------|  12.5% Write (Sector 0x100 of 0x800, ) 184.06 MB/s     
+Progress: |██--------|  25.0% Write (Sector 0x200 of 0x800, ) 220.67 MB/s     
+Progress: |████------|  37.5% Write (Sector 0x300 of 0x800, ) 242.64 MB/s     
+Progress: |█████-----|  50.0% Write (Sector 0x400 of 0x800, ) 243.78 MB/s     
+Progress: |██████----|  62.5% Write (Sector 0x500 of 0x800, ) 212.56 MB/s     
+Progress: |████████--|  75.0% Write (Sector 0x600 of 0x800, ) 232.58 MB/s     
+Progress: |█████████-|  87.5% Write (Sector 0x700 of 0x800, ) 222.99 MB/s     
+Progress: |██████████| 100.0% Write (Sector 0x800 of 0x800, ) 212.25 MB/s     
+Wrote /home/user/nx679j-stock/edl-recovery/v311-padded/hyp.bin to sector 2566.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w modem_a /home/user/nx679j-stock/edl-recovery/v311-padded/modem.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x12C00) 0.00 MB/s              
+Progress: |----------|   0.3% Write (Sector 0x100 of 0x12C00, 01s left) 187.00 MB/s
+Progress: |----------|   0.7% Write (Sector 0x200 of 0x12C00, 01s left) 182.29 MB/s
+Progress: |----------|   1.0% Write (Sector 0x300 of 0x12C00, 01s left) 222.80 MB/s
+Progress: |----------|   1.3% Write (Sector 0x400 of 0x12C00, 01s left) 253.36 MB/s
+Progress: |----------|   1.7% Write (Sector 0x500 of 0x12C00, 01s left) 250.75 MB/s
+Progress: |----------|   2.0% Write (Sector 0x600 of 0x12C00, 01s left) 252.52 MB/s
+Progress: |----------|   2.3% Write (Sector 0x700 of 0x12C00, 01s left) 251.70 MB/s
+Progress: |----------|   2.7% Write (Sector 0x800 of 0x12C00, 01s left) 248.18 MB/s
+Progress: |----------|   3.0% Write (Sector 0x900 of 0x12C00, 01s left) 221.78 MB/s
+Progress: |----------|   3.3% Write (Sector 0xA00 of 0x12C00, 01s left) 242.31 MB/s
+Progress: |----------|   3.7% Write (Sector 0xB00 of 0x12C00, 01s left) 247.22 MB/s
+Progress: |----------|   4.0% Write (Sector 0xC00 of 0x12C00, 01s left) 231.73 MB/s
+Progress: |----------|   4.3% Write (Sector 0xD00 of 0x12C00, 01s left) 218.17 MB/s
+Progress: |----------|   4.7% Write (Sector 0xE00 of 0x12C00, 01s left) 245.51 MB/s
+Progress: |----------|   5.0% Write (Sector 0xF00 of 0x12C00, 01s left) 243.13 MB/s
+Progress: |█---------|   5.3% Write (Sector 0x1000 of 0x12C00, 01s left) 235.42 MB/s
+Progress: |█---------|   5.7% Write (Sector 0x1100 of 0x12C00, 01s left) 239.22 MB/s
+Progress: |█---------|   6.0% Write (Sector 0x1200 of 0x12C00, 01s left) 254.97 MB/s
+Progress: |█---------|   6.3% Write (Sector 0x1300 of 0x12C00, 01s left) 237.84 MB/s
+Progress: |█---------|   6.7% Write (Sector 0x1400 of 0x12C00, 01s left) 251.41 MB/s
+Progress: |█---------|   7.0% Write (Sector 0x1500 of 0x12C00, 01s left) 253.92 MB/s
+Progress: |█---------|   7.3% Write (Sector 0x1600 of 0x12C00, 01s left) 243.15 MB/s
+Progress: |█---------|   7.7% Write (Sector 0x1700 of 0x12C00, 01s left) 240.75 MB/s
+Progress: |█---------|   8.0% Write (Sector 0x1800 of 0x12C00, 01s left) 232.29 MB/s
+Progress: |█---------|   8.3% Write (Sector 0x1900 of 0x12C00, 01s left) 243.47 MB/s
+Progress: |█---------|   8.7% Write (Sector 0x1A00 of 0x12C00, 01s left) 184.82 MB/s
+Progress: |█---------|   9.0% Write (Sector 0x1B00 of 0x12C00, 01s left) 159.58 MB/s
+Progress: |█---------|   9.3% Write (Sector 0x1C00 of 0x12C00, 01s left) 138.61 MB/s
+Progress: |█---------|   9.7% Write (Sector 0x1D00 of 0x12C00, 01s left) 128.98 MB/s
+Progress: |█---------|  10.0% Write (Sector 0x1E00 of 0x12C00, 01s left) 125.76 MB/s
+Progress: |█---------|  10.3% Write (Sector 0x1F00 of 0x12C00, 01s left) 125.41 MB/s
+Progress: |█---------|  10.7% Write (Sector 0x2000 of 0x12C00, 01s left) 129.21 MB/s
+Progress: |█---------|  11.0% Write (Sector 0x2100 of 0x12C00, 01s left) 140.87 MB/s
+Progress: |█---------|  11.3% Write (Sector 0x2200 of 0x12C00, 01s left) 148.71 MB/s
+Progress: |█---------|  11.7% Write (Sector 0x2300 of 0x12C00, 01s left) 158.16 MB/s
+Progress: |█---------|  12.0% Write (Sector 0x2400 of 0x12C00, 01s left) 199.42 MB/s
+Progress: |█---------|  12.3% Write (Sector 0x2500 of 0x12C00, 01s left) 222.20 MB/s
+Progress: |█---------|  12.7% Write (Sector 0x2600 of 0x12C00, 01s left) 250.38 MB/s
+Progress: |█---------|  13.0% Write (Sector 0x2700 of 0x12C00, 01s left) 255.77 MB/s
+Progress: |█---------|  13.3% Write (Sector 0x2800 of 0x12C00, 01s left) 256.16 MB/s
+Progress: |█---------|  13.7% Write (Sector 0x2900 of 0x12C00, 01s left) 237.36 MB/s
+Progress: |█---------|  14.0% Write (Sector 0x2A00 of 0x12C00, 01s left) 236.30 MB/s
+Progress: |█---------|  14.3% Write (Sector 0x2B00 of 0x12C00, 01s left) 241.80 MB/s
+Progress: |█---------|  14.7% Write (Sector 0x2C00 of 0x12C00, 01s left) 244.75 MB/s
+Progress: |██--------|  15.0% Write (Sector 0x2D00 of 0x12C00, 01s left) 242.26 MB/s
+Progress: |██--------|  15.3% Write (Sector 0x2E00 of 0x12C00, 01s left) 249.59 MB/s
+Progress: |██--------|  15.7% Write (Sector 0x2F00 of 0x12C00, 01s left) 247.71 MB/s
+Progress: |██--------|  16.0% Write (Sector 0x3000 of 0x12C00, 01s left) 236.83 MB/s
+Progress: |██--------|  16.3% Write (Sector 0x3100 of 0x12C00, 01s left) 240.36 MB/s
+Progress: |██--------|  16.7% Write (Sector 0x3200 of 0x12C00, 01s left) 243.47 MB/s
+Progress: |██--------|  17.0% Write (Sector 0x3300 of 0x12C00, 01s left) 248.43 MB/s
+Progress: |██--------|  17.3% Write (Sector 0x3400 of 0x12C00, 01s left) 245.80 MB/s
+Progress: |██--------|  17.7% Write (Sector 0x3500 of 0x12C00, 01s left) 243.40 MB/s
+Progress: |██--------|  18.0% Write (Sector 0x3600 of 0x12C00, 01s left) 245.57 MB/s
+Progress: |██--------|  18.3% Write (Sector 0x3700 of 0x12C00, 01s left) 245.70 MB/s
+Progress: |██--------|  18.7% Write (Sector 0x3800 of 0x12C00, 01s left) 246.48 MB/s
+Progress: |██--------|  19.0% Write (Sector 0x3900 of 0x12C00, 01s left) 243.71 MB/s
+Progress: |██--------|  19.3% Write (Sector 0x3A00 of 0x12C00, 01s left) 256.05 MB/s
+Progress: |██--------|  19.7% Write (Sector 0x3B00 of 0x12C00, 01s left) 241.45 MB/s
+Progress: |██--------|  20.0% Write (Sector 0x3C00 of 0x12C00, 01s left) 251.52 MB/s
+Progress: |██--------|  20.3% Write (Sector 0x3D00 of 0x12C00, 01s left) 242.70 MB/s
+Progress: |██--------|  20.7% Write (Sector 0x3E00 of 0x12C00, 01s left) 222.88 MB/s
+Progress: |██--------|  21.0% Write (Sector 0x3F00 of 0x12C00, 01s left) 249.54 MB/s
+Progress: |██--------|  21.3% Write (Sector 0x4000 of 0x12C00, 01s left) 248.37 MB/s
+Progress: |██--------|  21.7% Write (Sector 0x4100 of 0x12C00, 01s left) 232.97 MB/s
+Progress: |██--------|  22.0% Write (Sector 0x4200 of 0x12C00, 01s left) 241.77 MB/s
+Progress: |██--------|  22.3% Write (Sector 0x4300 of 0x12C00, 01s left) 242.52 MB/s
+Progress: |██--------|  22.7% Write (Sector 0x4400 of 0x12C00, 01s left) 210.37 MB/s
+Progress: |██--------|  23.0% Write (Sector 0x4500 of 0x12C00, 01s left) 217.25 MB/s
+Progress: |██--------|  23.3% Write (Sector 0x4600 of 0x12C00, 01s left) 242.35 MB/s
+Progress: |██--------|  23.7% Write (Sector 0x4700 of 0x12C00, 01s left) 255.39 MB/s
+Progress: |██--------|  24.0% Write (Sector 0x4800 of 0x12C00, 01s left) 212.92 MB/s
+Progress: |██--------|  24.3% Write (Sector 0x4900 of 0x12C00, 01s left) 246.07 MB/s
+Progress: |██--------|  24.7% Write (Sector 0x4A00 of 0x12C00, 01s left) 249.85 MB/s
+Progress: |██--------|  25.0% Write (Sector 0x4B00 of 0x12C00, 01s left) 252.40 MB/s
+Progress: |███-------|  25.3% Write (Sector 0x4C00 of 0x12C00, 01s left) 254.05 MB/s
+Progress: |███-------|  25.7% Write (Sector 0x4D00 of 0x12C00, 01s left) 234.06 MB/s
+Progress: |███-------|  26.0% Write (Sector 0x4E00 of 0x12C00, 01s left) 254.91 MB/s
+Progress: |███-------|  26.3% Write (Sector 0x4F00 of 0x12C00, 01s left) 247.67 MB/s
+Progress: |███-------|  26.7% Write (Sector 0x5000 of 0x12C00, ) 256.67 MB/s  
+Progress: |███-------|  27.0% Write (Sector 0x5100 of 0x12C00, ) 249.65 MB/s  
+Progress: |███-------|  27.3% Write (Sector 0x5200 of 0x12C00, ) 244.92 MB/s  
+Progress: |███-------|  27.7% Write (Sector 0x5300 of 0x12C00, ) 245.22 MB/s  
+Progress: |███-------|  28.0% Write (Sector 0x5400 of 0x12C00, ) 254.74 MB/s  
+Progress: |███-------|  28.3% Write (Sector 0x5500 of 0x12C00, ) 250.59 MB/s  
+Progress: |███-------|  28.7% Write (Sector 0x5600 of 0x12C00, ) 247.85 MB/s  
+Progress: |███-------|  29.0% Write (Sector 0x5700 of 0x12C00, ) 249.53 MB/s  
+Progress: |███-------|  29.3% Write (Sector 0x5800 of 0x12C00, ) 255.28 MB/s  
+Progress: |███-------|  29.7% Write (Sector 0x5900 of 0x12C00, ) 236.95 MB/s  
+Progress: |███-------|  30.0% Write (Sector 0x5A00 of 0x12C00, ) 206.01 MB/s  
+Progress: |███-------|  30.3% Write (Sector 0x5B00 of 0x12C00, ) 189.17 MB/s  
+Progress: |███-------|  30.7% Write (Sector 0x5C00 of 0x12C00, ) 173.50 MB/s  
+Progress: |███-------|  31.0% Write (Sector 0x5D00 of 0x12C00, ) 157.76 MB/s  
+Progress: |███-------|  31.3% Write (Sector 0x5E00 of 0x12C00, ) 159.80 MB/s  
+Progress: |███-------|  31.7% Write (Sector 0x5F00 of 0x12C00, ) 146.65 MB/s  
+Progress: |███-------|  32.0% Write (Sector 0x6000 of 0x12C00, ) 145.13 MB/s  
+Progress: |███-------|  32.3% Write (Sector 0x6100 of 0x12C00, ) 143.92 MB/s  
+Progress: |███-------|  32.7% Write (Sector 0x6200 of 0x12C00, ) 142.40 MB/s  
+Progress: |███-------|  33.0% Write (Sector 0x6300 of 0x12C00, ) 148.63 MB/s  
+Progress: |███-------|  33.3% Write (Sector 0x6400 of 0x12C00, ) 147.88 MB/s  
+Progress: |███-------|  33.7% Write (Sector 0x6500 of 0x12C00, ) 154.63 MB/s  
+Progress: |███-------|  34.0% Write (Sector 0x6600 of 0x12C00, ) 161.15 MB/s  
+Progress: |███-------|  34.3% Write (Sector 0x6700 of 0x12C00, ) 168.70 MB/s  
+Progress: |███-------|  34.7% Write (Sector 0x6800 of 0x12C00, ) 184.59 MB/s  
+Progress: |████------|  35.0% Write (Sector 0x6900 of 0x12C00, ) 199.38 MB/s  
+Progress: |████------|  35.3% Write (Sector 0x6A00 of 0x12C00, ) 212.69 MB/s  
+Progress: |████------|  35.7% Write (Sector 0x6B00 of 0x12C00, ) 84.11 MB/s   
+Progress: |████------|  36.0% Write (Sector 0x6C00 of 0x12C00, ) 250.75 MB/s  
+Progress: |████------|  36.3% Write (Sector 0x6D00 of 0x12C00, ) 225.61 MB/s  
+Progress: |████------|  36.7% Write (Sector 0x6E00 of 0x12C00, ) 252.50 MB/s  
+Progress: |████------|  37.0% Write (Sector 0x6F00 of 0x12C00, ) 257.13 MB/s  
+Progress: |████------|  37.3% Write (Sector 0x7000 of 0x12C00, ) 251.68 MB/s  
+Progress: |████------|  37.7% Write (Sector 0x7100 of 0x12C00, ) 248.36 MB/s  
+Progress: |████------|  38.0% Write (Sector 0x7200 of 0x12C00, ) 252.18 MB/s  
+Progress: |████------|  38.3% Write (Sector 0x7300 of 0x12C00, ) 254.69 MB/s  
+Progress: |████------|  38.7% Write (Sector 0x7400 of 0x12C00, ) 245.94 MB/s  
+Progress: |████------|  39.0% Write (Sector 0x7500 of 0x12C00, ) 250.99 MB/s  
+Progress: |████------|  39.3% Write (Sector 0x7600 of 0x12C00, ) 254.51 MB/s  
+Progress: |████------|  39.7% Write (Sector 0x7700 of 0x12C00, ) 252.36 MB/s  
+Progress: |████------|  40.0% Write (Sector 0x7800 of 0x12C00, ) 247.35 MB/s  
+Progress: |████------|  40.3% Write (Sector 0x7900 of 0x12C00, ) 258.33 MB/s  
+Progress: |████------|  40.7% Write (Sector 0x7A00 of 0x12C00, ) 243.60 MB/s  
+Progress: |████------|  41.0% Write (Sector 0x7B00 of 0x12C00, ) 251.25 MB/s  
+Progress: |████------|  41.3% Write (Sector 0x7C00 of 0x12C00, ) 255.86 MB/s  
+Progress: |████------|  41.7% Write (Sector 0x7D00 of 0x12C00, ) 249.62 MB/s  
+Progress: |████------|  42.0% Write (Sector 0x7E00 of 0x12C00, ) 216.76 MB/s  
+Progress: |████------|  42.3% Write (Sector 0x7F00 of 0x12C00, ) 234.17 MB/s  
+Progress: |████------|  42.7% Write (Sector 0x8000 of 0x12C00, ) 237.62 MB/s  
+Progress: |████------|  43.0% Write (Sector 0x8100 of 0x12C00, ) 250.89 MB/s  
+Progress: |████------|  43.3% Write (Sector 0x8200 of 0x12C00, ) 241.76 MB/s  
+Progress: |████------|  43.7% Write (Sector 0x8300 of 0x12C00, ) 244.71 MB/s  
+Progress: |████------|  44.0% Write (Sector 0x8400 of 0x12C00, ) 247.35 MB/s  
+Progress: |████------|  44.3% Write (Sector 0x8500 of 0x12C00, ) 245.45 MB/s  
+Progress: |████------|  44.7% Write (Sector 0x8600 of 0x12C00, ) 252.93 MB/s  
+Progress: |████------|  45.0% Write (Sector 0x8700 of 0x12C00, ) 256.94 MB/s  
+Progress: |█████-----|  45.3% Write (Sector 0x8800 of 0x12C00, ) 248.29 MB/s  
+Progress: |█████-----|  45.7% Write (Sector 0x8900 of 0x12C00, ) 252.71 MB/s  
+Progress: |█████-----|  46.0% Write (Sector 0x8A00 of 0x12C00, ) 207.10 MB/s  
+Progress: |█████-----|  46.3% Write (Sector 0x8B00 of 0x12C00, ) 242.94 MB/s  
+Progress: |█████-----|  46.7% Write (Sector 0x8C00 of 0x12C00, ) 245.22 MB/s  
+Progress: |█████-----|  47.0% Write (Sector 0x8D00 of 0x12C00, ) 236.26 MB/s  
+Progress: |█████-----|  47.3% Write (Sector 0x8E00 of 0x12C00, ) 237.69 MB/s  
+Progress: |█████-----|  47.7% Write (Sector 0x8F00 of 0x12C00, ) 253.40 MB/s  
+Progress: |█████-----|  48.0% Write (Sector 0x9000 of 0x12C00, ) 232.94 MB/s  
+Progress: |█████-----|  48.3% Write (Sector 0x9100 of 0x12C00, ) 239.39 MB/s  
+Progress: |█████-----|  48.7% Write (Sector 0x9200 of 0x12C00, ) 246.33 MB/s  
+Progress: |█████-----|  49.0% Write (Sector 0x9300 of 0x12C00, ) 243.52 MB/s  
+Progress: |█████-----|  49.3% Write (Sector 0x9400 of 0x12C00, ) 237.31 MB/s  
+Progress: |█████-----|  49.7% Write (Sector 0x9500 of 0x12C00, ) 239.61 MB/s  
+Progress: |█████-----|  50.0% Write (Sector 0x9600 of 0x12C00, ) 239.99 MB/s  
+Progress: |█████-----|  50.3% Write (Sector 0x9700 of 0x12C00, ) 248.43 MB/s  
+Progress: |█████-----|  50.7% Write (Sector 0x9800 of 0x12C00, ) 247.28 MB/s  
+Progress: |█████-----|  51.0% Write (Sector 0x9900 of 0x12C00, ) 245.70 MB/s  
+Progress: |█████-----|  51.3% Write (Sector 0x9A00 of 0x12C00, ) 246.25 MB/s  
+Progress: |█████-----|  51.7% Write (Sector 0x9B00 of 0x12C00, ) 244.99 MB/s  
+Progress: |█████-----|  52.0% Write (Sector 0x9C00 of 0x12C00, ) 244.79 MB/s  
+Progress: |█████-----|  52.3% Write (Sector 0x9D00 of 0x12C00, ) 243.97 MB/s  
+Progress: |█████-----|  52.7% Write (Sector 0x9E00 of 0x12C00, ) 234.41 MB/s  
+Progress: |█████-----|  53.0% Write (Sector 0x9F00 of 0x12C00, ) 242.91 MB/s  
+Progress: |█████-----|  53.3% Write (Sector 0xA000 of 0x12C00, ) 247.58 MB/s  
+Progress: |█████-----|  53.7% Write (Sector 0xA100 of 0x12C00, ) 242.89 MB/s  
+Progress: |█████-----|  54.0% Write (Sector 0xA200 of 0x12C00, ) 241.73 MB/s  
+Progress: |█████-----|  54.3% Write (Sector 0xA300 of 0x12C00, ) 241.30 MB/s  
+Progress: |█████-----|  54.7% Write (Sector 0xA400 of 0x12C00, ) 242.45 MB/s  
+Progress: |██████----|  55.0% Write (Sector 0xA500 of 0x12C00, ) 224.05 MB/s  
+Progress: |██████----|  55.3% Write (Sector 0xA600 of 0x12C00, ) 244.98 MB/s  
+Progress: |██████----|  55.7% Write (Sector 0xA700 of 0x12C00, ) 68.54 MB/s   
+Progress: |██████----|  56.0% Write (Sector 0xA800 of 0x12C00, ) 227.73 MB/s  
+Progress: |██████----|  56.3% Write (Sector 0xA900 of 0x12C00, ) 246.16 MB/s  
+Progress: |██████----|  56.7% Write (Sector 0xAA00 of 0x12C00, ) 236.91 MB/s  
+Progress: |██████----|  57.0% Write (Sector 0xAB00 of 0x12C00, ) 242.80 MB/s  
+Progress: |██████----|  57.3% Write (Sector 0xAC00 of 0x12C00, ) 232.84 MB/s  
+Progress: |██████----|  57.7% Write (Sector 0xAD00 of 0x12C00, ) 249.66 MB/s  
+Progress: |██████----|  58.0% Write (Sector 0xAE00 of 0x12C00, ) 242.89 MB/s  
+Progress: |██████----|  58.3% Write (Sector 0xAF00 of 0x12C00, ) 244.20 MB/s  
+Progress: |██████----|  58.7% Write (Sector 0xB000 of 0x12C00, ) 250.05 MB/s  
+Progress: |██████----|  59.0% Write (Sector 0xB100 of 0x12C00, ) 248.73 MB/s  
+Progress: |██████----|  59.3% Write (Sector 0xB200 of 0x12C00, ) 231.05 MB/s  
+Progress: |██████----|  59.7% Write (Sector 0xB300 of 0x12C00, ) 238.52 MB/s  
+Progress: |██████----|  60.0% Write (Sector 0xB400 of 0x12C00, ) 232.17 MB/s  
+Progress: |██████----|  60.3% Write (Sector 0xB500 of 0x12C00, ) 242.05 MB/s  
+Progress: |██████----|  60.7% Write (Sector 0xB600 of 0x12C00, ) 243.54 MB/s  
+Progress: |██████----|  61.0% Write (Sector 0xB700 of 0x12C00, ) 242.46 MB/s  
+Progress: |██████----|  61.3% Write (Sector 0xB800 of 0x12C00, ) 247.89 MB/s  
+Progress: |██████----|  61.7% Write (Sector 0xB900 of 0x12C00, ) 250.12 MB/s  
+Progress: |██████----|  62.0% Write (Sector 0xBA00 of 0x12C00, ) 212.23 MB/s  
+Progress: |██████----|  62.3% Write (Sector 0xBB00 of 0x12C00, ) 247.22 MB/s  
+Progress: |██████----|  62.7% Write (Sector 0xBC00 of 0x12C00, ) 204.27 MB/s  
+Progress: |██████----|  63.0% Write (Sector 0xBD00 of 0x12C00, ) 199.83 MB/s  
+Progress: |██████----|  63.3% Write (Sector 0xBE00 of 0x12C00, ) 175.19 MB/s  
+Progress: |██████----|  63.7% Write (Sector 0xBF00 of 0x12C00, ) 169.56 MB/s  
+Progress: |██████----|  64.0% Write (Sector 0xC000 of 0x12C00, ) 175.22 MB/s  
+Progress: |██████----|  64.3% Write (Sector 0xC100 of 0x12C00, ) 179.34 MB/s  
+Progress: |██████----|  64.7% Write (Sector 0xC200 of 0x12C00, ) 140.46 MB/s  
+Progress: |██████----|  65.0% Write (Sector 0xC300 of 0x12C00, ) 184.80 MB/s  
+Progress: |███████---|  65.3% Write (Sector 0xC400 of 0x12C00, ) 163.88 MB/s  
+Progress: |███████---|  65.7% Write (Sector 0xC500 of 0x12C00, ) 158.65 MB/s  
+Progress: |███████---|  66.0% Write (Sector 0xC600 of 0x12C00, ) 158.77 MB/s  
+Progress: |███████---|  66.3% Write (Sector 0xC700 of 0x12C00, ) 156.47 MB/s  
+Progress: |███████---|  66.7% Write (Sector 0xC800 of 0x12C00, ) 166.99 MB/s  
+Progress: |███████---|  67.0% Write (Sector 0xC900 of 0x12C00, ) 169.88 MB/s  
+Progress: |███████---|  67.3% Write (Sector 0xCA00 of 0x12C00, ) 166.70 MB/s  
+Progress: |███████---|  67.7% Write (Sector 0xCB00 of 0x12C00, ) 179.91 MB/s  
+Progress: |███████---|  68.0% Write (Sector 0xCC00 of 0x12C00, ) 180.69 MB/s  
+Progress: |███████---|  68.3% Write (Sector 0xCD00 of 0x12C00, ) 185.01 MB/s  
+Progress: |███████---|  68.7% Write (Sector 0xCE00 of 0x12C00, ) 205.36 MB/s  
+Progress: |███████---|  69.0% Write (Sector 0xCF00 of 0x12C00, ) 178.48 MB/s  
+Progress: |███████---|  69.3% Write (Sector 0xD000 of 0x12C00, ) 231.55 MB/s  
+Progress: |███████---|  69.7% Write (Sector 0xD100 of 0x12C00, ) 241.58 MB/s  
+Progress: |███████---|  70.0% Write (Sector 0xD200 of 0x12C00, ) 237.30 MB/s  
+Progress: |███████---|  70.3% Write (Sector 0xD300 of 0x12C00, ) 240.82 MB/s  
+Progress: |███████---|  70.7% Write (Sector 0xD400 of 0x12C00, ) 235.58 MB/s  
+Progress: |███████---|  71.0% Write (Sector 0xD500 of 0x12C00, ) 238.56 MB/s  
+Progress: |███████---|  71.3% Write (Sector 0xD600 of 0x12C00, ) 239.83 MB/s  
+Progress: |███████---|  71.7% Write (Sector 0xD700 of 0x12C00, ) 241.52 MB/s  
+Progress: |███████---|  72.0% Write (Sector 0xD800 of 0x12C00, ) 236.74 MB/s  
+Progress: |███████---|  72.3% Write (Sector 0xD900 of 0x12C00, ) 246.74 MB/s  
+Progress: |███████---|  72.7% Write (Sector 0xDA00 of 0x12C00, ) 248.45 MB/s  
+Progress: |███████---|  73.0% Write (Sector 0xDB00 of 0x12C00, ) 237.61 MB/s  
+Progress: |███████---|  73.3% Write (Sector 0xDC00 of 0x12C00, ) 234.36 MB/s  
+Progress: |███████---|  73.7% Write (Sector 0xDD00 of 0x12C00, ) 249.45 MB/s  
+Progress: |███████---|  74.0% Write (Sector 0xDE00 of 0x12C00, ) 246.29 MB/s  
+Progress: |███████---|  74.3% Write (Sector 0xDF00 of 0x12C00, ) 244.25 MB/s  
+Progress: |███████---|  74.7% Write (Sector 0xE000 of 0x12C00, ) 238.72 MB/s  
+Progress: |████████--|  75.0% Write (Sector 0xE100 of 0x12C00, ) 247.79 MB/s  
+Progress: |████████--|  75.3% Write (Sector 0xE200 of 0x12C00, ) 234.92 MB/s  
+Progress: |████████--|  75.7% Write (Sector 0xE300 of 0x12C00, ) 243.43 MB/s  
+Progress: |████████--|  76.0% Write (Sector 0xE400 of 0x12C00, ) 232.97 MB/s  
+Progress: |████████--|  76.3% Write (Sector 0xE500 of 0x12C00, ) 104.45 MB/s  
+Progress: |████████--|  76.7% Write (Sector 0xE600 of 0x12C00, ) 245.11 MB/s  
+Progress: |████████--|  77.0% Write (Sector 0xE700 of 0x12C00, ) 237.83 MB/s  
+Progress: |████████--|  77.3% Write (Sector 0xE800 of 0x12C00, ) 220.61 MB/s  
+Progress: |████████--|  77.7% Write (Sector 0xE900 of 0x12C00, ) 239.43 MB/s  
+Progress: |████████--|  78.0% Write (Sector 0xEA00 of 0x12C00, ) 239.32 MB/s  
+Progress: |████████--|  78.3% Write (Sector 0xEB00 of 0x12C00, ) 219.54 MB/s  
+Progress: |████████--|  78.7% Write (Sector 0xEC00 of 0x12C00, ) 236.69 MB/s  
+Progress: |████████--|  79.0% Write (Sector 0xED00 of 0x12C00, ) 242.73 MB/s  
+Progress: |████████--|  79.3% Write (Sector 0xEE00 of 0x12C00, ) 246.71 MB/s  
+Progress: |████████--|  79.7% Write (Sector 0xEF00 of 0x12C00, ) 241.32 MB/s  
+Progress: |████████--|  80.0% Write (Sector 0xF000 of 0x12C00, ) 231.69 MB/s  
+Progress: |████████--|  80.3% Write (Sector 0xF100 of 0x12C00, ) 242.75 MB/s  
+Progress: |████████--|  80.7% Write (Sector 0xF200 of 0x12C00, ) 246.22 MB/s  
+Progress: |████████--|  81.0% Write (Sector 0xF300 of 0x12C00, ) 233.86 MB/s  
+Progress: |████████--|  81.3% Write (Sector 0xF400 of 0x12C00, ) 241.52 MB/s  
+Progress: |████████--|  81.7% Write (Sector 0xF500 of 0x12C00, ) 247.93 MB/s  
+Progress: |████████--|  82.0% Write (Sector 0xF600 of 0x12C00, ) 239.01 MB/s  
+Progress: |████████--|  82.3% Write (Sector 0xF700 of 0x12C00, ) 240.22 MB/s  
+Progress: |████████--|  82.7% Write (Sector 0xF800 of 0x12C00, ) 242.12 MB/s  
+Progress: |████████--|  83.0% Write (Sector 0xF900 of 0x12C00, ) 245.37 MB/s  
+Progress: |████████--|  83.3% Write (Sector 0xFA00 of 0x12C00, ) 251.28 MB/s  
+Progress: |████████--|  83.7% Write (Sector 0xFB00 of 0x12C00, ) 245.12 MB/s  
+Progress: |████████--|  84.0% Write (Sector 0xFC00 of 0x12C00, ) 246.90 MB/s  
+Progress: |████████--|  84.3% Write (Sector 0xFD00 of 0x12C00, ) 243.05 MB/s  
+Progress: |████████--|  84.7% Write (Sector 0xFE00 of 0x12C00, ) 244.27 MB/s  
+Progress: |████████--|  85.0% Write (Sector 0xFF00 of 0x12C00, ) 242.98 MB/s  
+Progress: |█████████-|  85.3% Write (Sector 0x10000 of 0x12C00, ) 243.80 MB/s 
+Progress: |█████████-|  85.7% Write (Sector 0x10100 of 0x12C00, ) 219.28 MB/s 
+Progress: |█████████-|  86.0% Write (Sector 0x10200 of 0x12C00, ) 240.89 MB/s 
+Progress: |█████████-|  86.3% Write (Sector 0x10300 of 0x12C00, ) 232.09 MB/s 
+Progress: |█████████-|  86.7% Write (Sector 0x10400 of 0x12C00, ) 245.40 MB/s 
+Progress: |█████████-|  87.0% Write (Sector 0x10500 of 0x12C00, ) 241.26 MB/s 
+Progress: |█████████-|  87.3% Write (Sector 0x10600 of 0x12C00, ) 238.86 MB/s 
+Progress: |█████████-|  87.7% Write (Sector 0x10700 of 0x12C00, ) 243.11 MB/s 
+Progress: |█████████-|  88.0% Write (Sector 0x10800 of 0x12C00, ) 247.22 MB/s 
+Progress: |█████████-|  88.3% Write (Sector 0x10900 of 0x12C00, ) 226.85 MB/s 
+Progress: |█████████-|  88.7% Write (Sector 0x10A00 of 0x12C00, ) 245.84 MB/s 
+Progress: |█████████-|  89.0% Write (Sector 0x10B00 of 0x12C00, ) 224.93 MB/s 
+Progress: |█████████-|  89.3% Write (Sector 0x10C00 of 0x12C00, ) 246.81 MB/s 
+Progress: |█████████-|  89.7% Write (Sector 0x10D00 of 0x12C00, ) 236.35 MB/s 
+Progress: |█████████-|  90.0% Write (Sector 0x10E00 of 0x12C00, ) 242.33 MB/s 
+Progress: |█████████-|  90.3% Write (Sector 0x10F00 of 0x12C00, ) 241.47 MB/s 
+Progress: |█████████-|  90.7% Write (Sector 0x11000 of 0x12C00, ) 249.20 MB/s 
+Progress: |█████████-|  91.0% Write (Sector 0x11100 of 0x12C00, ) 241.77 MB/s 
+Progress: |█████████-|  91.3% Write (Sector 0x11200 of 0x12C00, ) 237.76 MB/s 
+Progress: |█████████-|  91.7% Write (Sector 0x11300 of 0x12C00, ) 234.41 MB/s 
+Progress: |█████████-|  92.0% Write (Sector 0x11400 of 0x12C00, ) 247.82 MB/s 
+Progress: |█████████-|  92.3% Write (Sector 0x11500 of 0x12C00, ) 239.21 MB/s 
+Progress: |█████████-|  92.7% Write (Sector 0x11600 of 0x12C00, ) 234.10 MB/s 
+Progress: |█████████-|  93.0% Write (Sector 0x11700 of 0x12C00, ) 242.50 MB/s 
+Progress: |█████████-|  93.3% Write (Sector 0x11800 of 0x12C00, ) 242.46 MB/s 
+Progress: |█████████-|  93.7% Write (Sector 0x11900 of 0x12C00, ) 241.97 MB/s 
+Progress: |█████████-|  94.0% Write (Sector 0x11A00 of 0x12C00, ) 248.24 MB/s 
+Progress: |█████████-|  94.3% Write (Sector 0x11B00 of 0x12C00, ) 239.81 MB/s 
+Progress: |█████████-|  94.7% Write (Sector 0x11C00 of 0x12C00, ) 240.40 MB/s 
+Progress: |██████████|  95.0% Write (Sector 0x11D00 of 0x12C00, ) 234.71 MB/s 
+Progress: |██████████|  95.3% Write (Sector 0x11E00 of 0x12C00, ) 241.26 MB/s 
+Progress: |██████████|  95.7% Write (Sector 0x11F00 of 0x12C00, ) 245.09 MB/s 
+Progress: |██████████|  96.0% Write (Sector 0x12000 of 0x12C00, ) 245.09 MB/s 
+Progress: |██████████|  96.3% Write (Sector 0x12100 of 0x12C00, ) 238.27 MB/s 
+Progress: |██████████|  96.7% Write (Sector 0x12200 of 0x12C00, ) 243.77 MB/s 
+Progress: |██████████|  97.0% Write (Sector 0x12300 of 0x12C00, ) 240.64 MB/s 
+Progress: |██████████|  97.3% Write (Sector 0x12400 of 0x12C00, ) 238.61 MB/s 
+Progress: |██████████|  97.7% Write (Sector 0x12500 of 0x12C00, ) 229.32 MB/s 
+Progress: |██████████|  98.0% Write (Sector 0x12600 of 0x12C00, ) 240.43 MB/s 
+Progress: |██████████|  98.3% Write (Sector 0x12700 of 0x12C00, ) 235.34 MB/s 
+Progress: |██████████|  98.7% Write (Sector 0x12800 of 0x12C00, ) 229.56 MB/s 
+Progress: |██████████|  99.0% Write (Sector 0x12900 of 0x12C00, ) 207.39 MB/s 
+Progress: |██████████|  99.3% Write (Sector 0x12A00 of 0x12C00, ) 190.27 MB/s 
+Progress: |██████████|  99.7% Write (Sector 0x12B00 of 0x12C00, ) 210.73 MB/s 
+Progress: |██████████| 100.0% Write (Sector 0x12C00 of 0x12C00, ) 184.58 MB/s 
+Wrote /home/user/nx679j-stock/edl-recovery/v311-padded/modem.bin to sector 4614.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w bluetooth_a /home/user/nx679j-stock/edl-recovery/v311-padded/bluetooth.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x400) 0.00 MB/s                
+Progress: |██--------|  25.0% Write (Sector 0x100 of 0x400, ) 214.78 MB/s     
+Progress: |█████-----|  50.0% Write (Sector 0x200 of 0x400, ) 235.09 MB/s     
+Progress: |████████--|  75.0% Write (Sector 0x300 of 0x400, ) 169.04 MB/s     
+Progress: |██████████| 100.0% Write (Sector 0x400 of 0x400, ) 161.50 MB/s     
+Wrote /home/user/nx679j-stock/edl-recovery/v311-padded/bluetooth.bin to sector 81414.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w abl_a /home/user/nx679j-stock/edl-recovery/v311-padded/abl.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x100) 0.00 MB/s                
+Progress: |██████████| 100.0% Write (Sector 0x100 of 0x100, ) 195.88 MB/s     
+Wrote /home/user/nx679j-stock/edl-recovery/v311-padded/abl.bin to sector 91654.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w dsp_a /home/user/nx679j-stock/edl-recovery/v311-padded/dsp.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x4000) 0.00 MB/s               
+Progress: |----------|   1.6% Write (Sector 0x100 of 0x4000, ) 187.87 MB/s    
+Progress: |----------|   3.1% Write (Sector 0x200 of 0x4000, ) 233.64 MB/s    
+Progress: |----------|   4.7% Write (Sector 0x300 of 0x4000, ) 164.73 MB/s    
+Progress: |█---------|   6.2% Write (Sector 0x400 of 0x4000, ) 162.93 MB/s    
+Progress: |█---------|   7.8% Write (Sector 0x500 of 0x4000, ) 163.87 MB/s    
+Progress: |█---------|   9.4% Write (Sector 0x600 of 0x4000, ) 167.02 MB/s    
+Progress: |█---------|  10.9% Write (Sector 0x700 of 0x4000, ) 167.02 MB/s    
+Progress: |█---------|  12.5% Write (Sector 0x800 of 0x4000, ) 178.38 MB/s    
+Progress: |█---------|  14.1% Write (Sector 0x900 of 0x4000, ) 176.52 MB/s    
+Progress: |██--------|  15.6% Write (Sector 0xA00 of 0x4000, ) 181.89 MB/s    
+Progress: |██--------|  17.2% Write (Sector 0xB00 of 0x4000, ) 191.98 MB/s    
+Progress: |██--------|  18.8% Write (Sector 0xC00 of 0x4000, ) 194.65 MB/s    
+Progress: |██--------|  20.3% Write (Sector 0xD00 of 0x4000, ) 188.50 MB/s    
+Progress: |██--------|  21.9% Write (Sector 0xE00 of 0x4000, ) 214.27 MB/s    
+Progress: |██--------|  23.4% Write (Sector 0xF00 of 0x4000, ) 239.61 MB/s    
+Progress: |██--------|  25.0% Write (Sector 0x1000 of 0x4000, ) 232.14 MB/s   
+Progress: |███-------|  26.6% Write (Sector 0x1100 of 0x4000, ) 232.98 MB/s   
+Progress: |███-------|  28.1% Write (Sector 0x1200 of 0x4000, ) 246.91 MB/s   
+Progress: |███-------|  29.7% Write (Sector 0x1300 of 0x4000, ) 246.88 MB/s   
+Progress: |███-------|  31.2% Write (Sector 0x1400 of 0x4000, ) 240.51 MB/s   
+Progress: |███-------|  32.8% Write (Sector 0x1500 of 0x4000, ) 240.02 MB/s   
+Progress: |███-------|  34.4% Write (Sector 0x1600 of 0x4000, ) 233.12 MB/s   
+Progress: |████------|  35.9% Write (Sector 0x1700 of 0x4000, ) 245.41 MB/s   
+Progress: |████------|  37.5% Write (Sector 0x1800 of 0x4000, ) 244.42 MB/s   
+Progress: |████------|  39.1% Write (Sector 0x1900 of 0x4000, ) 239.02 MB/s   
+Progress: |████------|  40.6% Write (Sector 0x1A00 of 0x4000, ) 235.09 MB/s   
+Progress: |████------|  42.2% Write (Sector 0x1B00 of 0x4000, ) 247.55 MB/s   
+Progress: |████------|  43.8% Write (Sector 0x1C00 of 0x4000, ) 244.49 MB/s   
+Progress: |█████-----|  45.3% Write (Sector 0x1D00 of 0x4000, ) 246.91 MB/s   
+Progress: |█████-----|  46.9% Write (Sector 0x1E00 of 0x4000, ) 249.78 MB/s   
+Progress: |█████-----|  48.4% Write (Sector 0x1F00 of 0x4000, ) 238.38 MB/s   
+Progress: |█████-----|  50.0% Write (Sector 0x2000 of 0x4000, ) 243.84 MB/s   
+Progress: |█████-----|  51.6% Write (Sector 0x2100 of 0x4000, ) 248.33 MB/s   
+Progress: |█████-----|  53.1% Write (Sector 0x2200 of 0x4000, ) 243.81 MB/s   
+Progress: |█████-----|  54.7% Write (Sector 0x2300 of 0x4000, ) 241.83 MB/s   
+Progress: |██████----|  56.2% Write (Sector 0x2400 of 0x4000, ) 247.93 MB/s   
+Progress: |██████----|  57.8% Write (Sector 0x2500 of 0x4000, ) 244.72 MB/s   
+Progress: |██████----|  59.4% Write (Sector 0x2600 of 0x4000, ) 243.63 MB/s   
+Progress: |██████----|  60.9% Write (Sector 0x2700 of 0x4000, ) 250.11 MB/s   
+Progress: |██████----|  62.5% Write (Sector 0x2800 of 0x4000, ) 252.53 MB/s   
+Progress: |██████----|  64.1% Write (Sector 0x2900 of 0x4000, ) 226.07 MB/s   
+Progress: |███████---|  65.6% Write (Sector 0x2A00 of 0x4000, ) 250.33 MB/s   
+Progress: |███████---|  67.2% Write (Sector 0x2B00 of 0x4000, ) 251.19 MB/s   
+Progress: |███████---|  68.8% Write (Sector 0x2C00 of 0x4000, ) 248.52 MB/s   
+Progress: |███████---|  70.3% Write (Sector 0x2D00 of 0x4000, ) 247.93 MB/s   
+Progress: |███████---|  71.9% Write (Sector 0x2E00 of 0x4000, ) 193.38 MB/s   
+Progress: |███████---|  73.4% Write (Sector 0x2F00 of 0x4000, ) 235.60 MB/s   
+Progress: |████████--|  75.0% Write (Sector 0x3000 of 0x4000, ) 246.46 MB/s   
+Progress: |████████--|  76.6% Write (Sector 0x3100 of 0x4000, ) 252.29 MB/s   
+Progress: |████████--|  78.1% Write (Sector 0x3200 of 0x4000, ) 240.71 MB/s   
+Progress: |████████--|  79.7% Write (Sector 0x3300 of 0x4000, ) 248.99 MB/s   
+Progress: |████████--|  81.2% Write (Sector 0x3400 of 0x4000, ) 251.28 MB/s   
+Progress: |████████--|  82.8% Write (Sector 0x3500 of 0x4000, ) 247.07 MB/s   
+Progress: |████████--|  84.4% Write (Sector 0x3600 of 0x4000, ) 243.08 MB/s   
+Progress: |█████████-|  85.9% Write (Sector 0x3700 of 0x4000, ) 245.08 MB/s   
+Progress: |█████████-|  87.5% Write (Sector 0x3800 of 0x4000, ) 245.30 MB/s   
+Progress: |█████████-|  89.1% Write (Sector 0x3900 of 0x4000, ) 241.45 MB/s   
+Progress: |█████████-|  90.6% Write (Sector 0x3A00 of 0x4000, ) 247.99 MB/s   
+Progress: |█████████-|  92.2% Write (Sector 0x3B00 of 0x4000, ) 241.73 MB/s   
+Progress: |█████████-|  93.8% Write (Sector 0x3C00 of 0x4000, ) 252.41 MB/s   
+Progress: |██████████|  95.3% Write (Sector 0x3D00 of 0x4000, ) 246.88 MB/s   
+Progress: |██████████|  96.9% Write (Sector 0x3E00 of 0x4000, ) 253.77 MB/s   
+Progress: |██████████|  98.4% Write (Sector 0x3F00 of 0x4000, ) 246.20 MB/s   
+Progress: |██████████| 100.0% Write (Sector 0x4000 of 0x4000, ) 240.44 MB/s   
+Wrote /home/user/nx679j-stock/edl-recovery/v311-padded/dsp.bin to sector 91910.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w keymaster_a /home/user/nx679j-stock/edl-recovery/v311-padded/keymaster.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x80) 0.00 MB/s                 
+Progress: |██████████| 100.0% Write (Sector 0x80 of 0x80, ) 207.02 MB/s       
+Wrote /home/user/nx679j-stock/edl-recovery/v311-padded/keymaster.bin to sector 108294.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w boot_a /home/user/nx679j-stock/edl-recovery/v311-padded/boot.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x6000) 0.00 MB/s               
+Progress: |----------|   1.0% Write (Sector 0x100 of 0x6000, ) 224.10 MB/s    
+Progress: |----------|   2.1% Write (Sector 0x200 of 0x6000, ) 231.54 MB/s    
+Progress: |----------|   3.1% Write (Sector 0x300 of 0x6000, ) 239.67 MB/s    
+Progress: |----------|   4.2% Write (Sector 0x400 of 0x6000, ) 241.73 MB/s    
+Progress: |█---------|   5.2% Write (Sector 0x500 of 0x6000, ) 217.55 MB/s    
+Progress: |█---------|   6.2% Write (Sector 0x600 of 0x6000, ) 240.65 MB/s    
+Progress: |█---------|   7.3% Write (Sector 0x700 of 0x6000, ) 241.75 MB/s    
+Progress: |█---------|   8.3% Write (Sector 0x800 of 0x6000, ) 242.60 MB/s    
+Progress: |█---------|   9.4% Write (Sector 0x900 of 0x6000, ) 247.00 MB/s    
+Progress: |█---------|  10.4% Write (Sector 0xA00 of 0x6000, ) 245.48 MB/s    
+Progress: |█---------|  11.5% Write (Sector 0xB00 of 0x6000, ) 247.03 MB/s    
+Progress: |█---------|  12.5% Write (Sector 0xC00 of 0x6000, ) 244.04 MB/s    
+Progress: |█---------|  13.5% Write (Sector 0xD00 of 0x6000, ) 243.77 MB/s    
+Progress: |█---------|  14.6% Write (Sector 0xE00 of 0x6000, ) 249.14 MB/s    
+Progress: |██--------|  15.6% Write (Sector 0xF00 of 0x6000, ) 249.33 MB/s    
+Progress: |██--------|  16.7% Write (Sector 0x1000 of 0x6000, ) 252.09 MB/s   
+Progress: |██--------|  17.7% Write (Sector 0x1100 of 0x6000, ) 246.01 MB/s   
+Progress: |██--------|  18.8% Write (Sector 0x1200 of 0x6000, ) 251.31 MB/s   
+Progress: |██--------|  19.8% Write (Sector 0x1300 of 0x6000, ) 249.23 MB/s   
+Progress: |██--------|  20.8% Write (Sector 0x1400 of 0x6000, ) 241.59 MB/s   
+Progress: |██--------|  21.9% Write (Sector 0x1500 of 0x6000, ) 218.01 MB/s   
+Progress: |██--------|  22.9% Write (Sector 0x1600 of 0x6000, ) 232.55 MB/s   
+Progress: |██--------|  24.0% Write (Sector 0x1700 of 0x6000, ) 240.69 MB/s   
+Progress: |██--------|  25.0% Write (Sector 0x1800 of 0x6000, ) 247.36 MB/s   
+Progress: |███-------|  26.0% Write (Sector 0x1900 of 0x6000, ) 247.28 MB/s   
+Progress: |███-------|  27.1% Write (Sector 0x1A00 of 0x6000, ) 244.69 MB/s   
+Progress: |███-------|  28.1% Write (Sector 0x1B00 of 0x6000, ) 244.74 MB/s   
+Progress: |███-------|  29.2% Write (Sector 0x1C00 of 0x6000, ) 248.83 MB/s   
+Progress: |███-------|  30.2% Write (Sector 0x1D00 of 0x6000, ) 244.68 MB/s   
+Progress: |███-------|  31.2% Write (Sector 0x1E00 of 0x6000, ) 244.59 MB/s   
+Progress: |███-------|  32.3% Write (Sector 0x1F00 of 0x6000, ) 233.04 MB/s   
+Progress: |███-------|  33.3% Write (Sector 0x2000 of 0x6000, ) 242.40 MB/s   
+Progress: |███-------|  34.4% Write (Sector 0x2100 of 0x6000, ) 244.48 MB/s   
+Progress: |████------|  35.4% Write (Sector 0x2200 of 0x6000, ) 246.10 MB/s   
+Progress: |████------|  36.5% Write (Sector 0x2300 of 0x6000, ) 249.51 MB/s   
+Progress: |████------|  37.5% Write (Sector 0x2400 of 0x6000, ) 239.44 MB/s   
+Progress: |████------|  38.5% Write (Sector 0x2500 of 0x6000, ) 249.53 MB/s   
+Progress: |████------|  39.6% Write (Sector 0x2600 of 0x6000, ) 247.01 MB/s   
+Progress: |████------|  40.6% Write (Sector 0x2700 of 0x6000, ) 246.23 MB/s   
+Progress: |████------|  41.7% Write (Sector 0x2800 of 0x6000, ) 250.65 MB/s   
+Progress: |████------|  42.7% Write (Sector 0x2900 of 0x6000, ) 248.98 MB/s   
+Progress: |████------|  43.8% Write (Sector 0x2A00 of 0x6000, ) 239.03 MB/s   
+Progress: |████------|  44.8% Write (Sector 0x2B00 of 0x6000, ) 247.25 MB/s   
+Progress: |█████-----|  45.8% Write (Sector 0x2C00 of 0x6000, ) 254.56 MB/s   
+Progress: |█████-----|  46.9% Write (Sector 0x2D00 of 0x6000, ) 251.74 MB/s   
+Progress: |█████-----|  47.9% Write (Sector 0x2E00 of 0x6000, ) 252.46 MB/s   
+Progress: |█████-----|  49.0% Write (Sector 0x2F00 of 0x6000, ) 246.39 MB/s   
+Progress: |█████-----|  50.0% Write (Sector 0x3000 of 0x6000, ) 249.33 MB/s   
+Progress: |█████-----|  51.0% Write (Sector 0x3100 of 0x6000, ) 248.08 MB/s   
+Progress: |█████-----|  52.1% Write (Sector 0x3200 of 0x6000, ) 244.20 MB/s   
+Progress: |█████-----|  53.1% Write (Sector 0x3300 of 0x6000, ) 241.34 MB/s   
+Progress: |█████-----|  54.2% Write (Sector 0x3400 of 0x6000, ) 228.73 MB/s   
+Progress: |██████----|  55.2% Write (Sector 0x3500 of 0x6000, ) 240.66 MB/s   
+Progress: |██████----|  56.2% Write (Sector 0x3600 of 0x6000, ) 233.00 MB/s   
+Progress: |██████----|  57.3% Write (Sector 0x3700 of 0x6000, ) 228.27 MB/s   
+Progress: |██████----|  58.3% Write (Sector 0x3800 of 0x6000, ) 110.01 MB/s   
+Progress: |██████----|  59.4% Write (Sector 0x3900 of 0x6000, ) 211.92 MB/s   
+Progress: |██████----|  60.4% Write (Sector 0x3A00 of 0x6000, ) 214.49 MB/s   
+Progress: |██████----|  61.5% Write (Sector 0x3B00 of 0x6000, ) 181.25 MB/s   
+Progress: |██████----|  62.5% Write (Sector 0x3C00 of 0x6000, ) 205.59 MB/s   
+Progress: |██████----|  63.5% Write (Sector 0x3D00 of 0x6000, ) 191.82 MB/s   
+Progress: |██████----|  64.6% Write (Sector 0x3E00 of 0x6000, ) 182.56 MB/s   
+Progress: |███████---|  65.6% Write (Sector 0x3F00 of 0x6000, ) 183.97 MB/s   
+Progress: |███████---|  66.7% Write (Sector 0x4000 of 0x6000, ) 158.57 MB/s   
+Progress: |███████---|  67.7% Write (Sector 0x4100 of 0x6000, ) 195.58 MB/s   
+Progress: |███████---|  68.8% Write (Sector 0x4200 of 0x6000, ) 171.42 MB/s   
+Progress: |███████---|  69.8% Write (Sector 0x4300 of 0x6000, ) 175.31 MB/s   
+Progress: |███████---|  70.8% Write (Sector 0x4400 of 0x6000, ) 168.88 MB/s   
+Progress: |███████---|  71.9% Write (Sector 0x4500 of 0x6000, ) 176.64 MB/s   
+Progress: |███████---|  72.9% Write (Sector 0x4600 of 0x6000, ) 156.31 MB/s   
+Progress: |███████---|  74.0% Write (Sector 0x4700 of 0x6000, ) 183.99 MB/s   
+Progress: |████████--|  75.0% Write (Sector 0x4800 of 0x6000, ) 154.32 MB/s   
+Progress: |████████--|  76.0% Write (Sector 0x4900 of 0x6000, ) 194.65 MB/s   
+Progress: |████████--|  77.1% Write (Sector 0x4A00 of 0x6000, ) 161.02 MB/s   
+Progress: |████████--|  78.1% Write (Sector 0x4B00 of 0x6000, ) 198.24 MB/s   
+Progress: |████████--|  79.2% Write (Sector 0x4C00 of 0x6000, ) 177.96 MB/s   
+Progress: |████████--|  80.2% Write (Sector 0x4D00 of 0x6000, ) 185.04 MB/s   
+Progress: |████████--|  81.2% Write (Sector 0x4E00 of 0x6000, ) 184.49 MB/s   
+Progress: |████████--|  82.3% Write (Sector 0x4F00 of 0x6000, ) 186.18 MB/s   
+Progress: |████████--|  83.3% Write (Sector 0x5000 of 0x6000, ) 193.76 MB/s   
+Progress: |████████--|  84.4% Write (Sector 0x5100 of 0x6000, ) 211.25 MB/s   
+Progress: |█████████-|  85.4% Write (Sector 0x5200 of 0x6000, ) 201.62 MB/s   
+Progress: |█████████-|  86.5% Write (Sector 0x5300 of 0x6000, ) 224.96 MB/s   
+Progress: |█████████-|  87.5% Write (Sector 0x5400 of 0x6000, ) 220.89 MB/s   
+Progress: |█████████-|  88.5% Write (Sector 0x5500 of 0x6000, ) 231.03 MB/s   
+Progress: |█████████-|  89.6% Write (Sector 0x5600 of 0x6000, ) 239.55 MB/s   
+Progress: |█████████-|  90.6% Write (Sector 0x5700 of 0x6000, ) 219.00 MB/s   
+Progress: |█████████-|  91.7% Write (Sector 0x5800 of 0x6000, ) 248.67 MB/s   
+Progress: |█████████-|  92.7% Write (Sector 0x5900 of 0x6000, ) 246.46 MB/s   
+Progress: |█████████-|  93.8% Write (Sector 0x5A00 of 0x6000, ) 251.04 MB/s   
+Progress: |█████████-|  94.8% Write (Sector 0x5B00 of 0x6000, ) 243.77 MB/s   
+Progress: |██████████|  95.8% Write (Sector 0x5C00 of 0x6000, ) 256.41 MB/s   
+Progress: |██████████|  96.9% Write (Sector 0x5D00 of 0x6000, ) 241.84 MB/s   
+Progress: |██████████|  97.9% Write (Sector 0x5E00 of 0x6000, ) 240.24 MB/s   
+Progress: |██████████|  99.0% Write (Sector 0x5F00 of 0x6000, ) 252.81 MB/s   
+Progress: |██████████| 100.0% Write (Sector 0x6000 of 0x6000, ) 245.87 MB/s   
+Wrote /home/user/nx679j-stock/edl-recovery/v311-padded/boot.bin to sector 108422.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w devcfg_a /home/user/nx679j-stock/edl-recovery/v311-padded/devcfg.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x20) 0.00 MB/s                 
+Progress: |██████████| 100.0% Write (Sector 0x20 of 0x20, ) 155.48 MB/s       
+Wrote /home/user/nx679j-stock/edl-recovery/v311-padded/devcfg.bin to sector 132998.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w qupfw_a /home/user/nx679j-stock/edl-recovery/v311-padded/qupfw.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x14) 0.00 MB/s                 
+Progress: |██████████| 100.0% Write (Sector 0x14 of 0x14, ) 141.36 MB/s       
+Wrote /home/user/nx679j-stock/edl-recovery/v311-padded/qupfw.bin to sector 133030.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w vbmeta_a /home/user/nx679j-stock/edl-recovery/v311-padded/vbmeta.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x10) 0.00 MB/s                 
+Progress: |██████████| 100.0% Write (Sector 0x10 of 0x10, ) 89.68 MB/s        
+Wrote /home/user/nx679j-stock/edl-recovery/v311-padded/vbmeta.bin to sector 133050.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w dtbo_a /home/user/nx679j-stock/edl-recovery/v311-padded/dtbo.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x1800) 0.00 MB/s               
+Progress: |----------|   4.2% Write (Sector 0x100 of 0x1800, ) 219.93 MB/s    
+Progress: |█---------|   8.3% Write (Sector 0x200 of 0x1800, ) 238.98 MB/s    
+Progress: |█---------|  12.5% Write (Sector 0x300 of 0x1800, ) 250.26 MB/s    
+Progress: |██--------|  16.7% Write (Sector 0x400 of 0x1800, ) 204.63 MB/s    
+Progress: |██--------|  20.8% Write (Sector 0x500 of 0x1800, ) 198.61 MB/s    
+Progress: |██--------|  25.0% Write (Sector 0x600 of 0x1800, ) 241.89 MB/s    
+Progress: |███-------|  29.2% Write (Sector 0x700 of 0x1800, ) 187.80 MB/s    
+Progress: |███-------|  33.3% Write (Sector 0x800 of 0x1800, ) 232.38 MB/s    
+Progress: |████------|  37.5% Write (Sector 0x900 of 0x1800, ) 252.08 MB/s    
+Progress: |████------|  41.7% Write (Sector 0xA00 of 0x1800, ) 206.74 MB/s    
+Progress: |█████-----|  45.8% Write (Sector 0xB00 of 0x1800, ) 234.90 MB/s    
+Progress: |█████-----|  50.0% Write (Sector 0xC00 of 0x1800, ) 233.91 MB/s    
+Progress: |█████-----|  54.2% Write (Sector 0xD00 of 0x1800, ) 221.65 MB/s    
+Progress: |██████----|  58.3% Write (Sector 0xE00 of 0x1800, ) 235.45 MB/s    
+Progress: |██████----|  62.5% Write (Sector 0xF00 of 0x1800, ) 240.57 MB/s    
+Progress: |███████---|  66.7% Write (Sector 0x1000 of 0x1800, ) 241.16 MB/s   
+Progress: |███████---|  70.8% Write (Sector 0x1100 of 0x1800, ) 244.34 MB/s   
+Progress: |████████--|  75.0% Write (Sector 0x1200 of 0x1800, ) 250.74 MB/s   
+Progress: |████████--|  79.2% Write (Sector 0x1300 of 0x1800, ) 248.52 MB/s   
+Progress: |████████--|  83.3% Write (Sector 0x1400 of 0x1800, ) 211.02 MB/s   
+Progress: |█████████-|  87.5% Write (Sector 0x1500 of 0x1800, ) 243.97 MB/s   
+Progress: |█████████-|  91.7% Write (Sector 0x1600 of 0x1800, ) 234.99 MB/s   
+Progress: |██████████|  95.8% Write (Sector 0x1700 of 0x1800, ) 229.11 MB/s   
+Progress: |██████████| 100.0% Write (Sector 0x1800 of 0x1800, ) 242.89 MB/s   
+Wrote /home/user/nx679j-stock/edl-recovery/v311-padded/dtbo.bin to sector 133066.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w uefisecapp_a /home/user/nx679j-stock/edl-recovery/v311-padded/uefisecapp.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x200) 0.00 MB/s                
+Progress: |█████-----|  50.0% Write (Sector 0x100 of 0x200, ) 183.14 MB/s     
+Progress: |██████████| 100.0% Write (Sector 0x200 of 0x200, ) 207.66 MB/s     
+Wrote /home/user/nx679j-stock/edl-recovery/v311-padded/uefisecapp.bin to sector 139210.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w imagefv_a /home/user/nx679j-stock/edl-recovery/v311-padded/imagefv.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x200) 0.00 MB/s                
+Progress: |█████-----|  50.0% Write (Sector 0x100 of 0x200, ) 210.62 MB/s     
+Progress: |██████████| 100.0% Write (Sector 0x200 of 0x200, ) 240.51 MB/s     
+Wrote /home/user/nx679j-stock/edl-recovery/v311-padded/imagefv.bin to sector 139722.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w shrm_a /home/user/nx679j-stock/edl-recovery/v311-padded/shrm.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x20) 0.00 MB/s                 
+Progress: |██████████| 100.0% Write (Sector 0x20 of 0x20, ) 161.12 MB/s       
+Wrote /home/user/nx679j-stock/edl-recovery/v311-padded/shrm.bin to sector 140234.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w cpucp_a /home/user/nx679j-stock/edl-recovery/v311-padded/cpucp.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x100) 0.00 MB/s                
+Progress: |██████████| 100.0% Write (Sector 0x100 of 0x100, ) 217.11 MB/s     
+Wrote /home/user/nx679j-stock/edl-recovery/v311-padded/cpucp.bin to sector 207375.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w featenabler_a /home/user/nx679j-stock/edl-recovery/v311-padded/featenabler.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x20) 0.00 MB/s                 
+Progress: |██████████| 100.0% Write (Sector 0x20 of 0x20, ) 152.63 MB/s       
+Wrote /home/user/nx679j-stock/edl-recovery/v311-padded/featenabler.bin to sector 207631.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w vendor_boot_a /home/user/nx679j-stock/edl-recovery/v311-padded/vendor_boot.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x6000) 0.00 MB/s               
+Progress: |----------|   1.0% Write (Sector 0x100 of 0x6000, ) 203.03 MB/s    
+Progress: |----------|   2.1% Write (Sector 0x200 of 0x6000, ) 231.68 MB/s    
+Progress: |----------|   3.1% Write (Sector 0x300 of 0x6000, ) 247.06 MB/s    
+Progress: |----------|   4.2% Write (Sector 0x400 of 0x6000, ) 221.82 MB/s    
+Progress: |█---------|   5.2% Write (Sector 0x500 of 0x6000, ) 240.33 MB/s    
+Progress: |█---------|   6.2% Write (Sector 0x600 of 0x6000, ) 226.14 MB/s    
+Progress: |█---------|   7.3% Write (Sector 0x700 of 0x6000, ) 244.98 MB/s    
+Progress: |█---------|   8.3% Write (Sector 0x800 of 0x6000, ) 229.01 MB/s    
+Progress: |█---------|   9.4% Write (Sector 0x900 of 0x6000, ) 238.45 MB/s    
+Progress: |█---------|  10.4% Write (Sector 0xA00 of 0x6000, ) 245.51 MB/s    
+Progress: |█---------|  11.5% Write (Sector 0xB00 of 0x6000, ) 244.08 MB/s    
+Progress: |█---------|  12.5% Write (Sector 0xC00 of 0x6000, ) 245.34 MB/s    
+Progress: |█---------|  13.5% Write (Sector 0xD00 of 0x6000, ) 248.67 MB/s    
+Progress: |█---------|  14.6% Write (Sector 0xE00 of 0x6000, ) 245.57 MB/s    
+Progress: |██--------|  15.6% Write (Sector 0xF00 of 0x6000, ) 244.42 MB/s    
+Progress: |██--------|  16.7% Write (Sector 0x1000 of 0x6000, ) 243.23 MB/s   
+Progress: |██--------|  17.7% Write (Sector 0x1100 of 0x6000, ) 239.03 MB/s   
+Progress: |██--------|  18.8% Write (Sector 0x1200 of 0x6000, ) 248.17 MB/s   
+Progress: |██--------|  19.8% Write (Sector 0x1300 of 0x6000, ) 244.34 MB/s   
+Progress: |██--------|  20.8% Write (Sector 0x1400 of 0x6000, ) 241.16 MB/s   
+Progress: |██--------|  21.9% Write (Sector 0x1500 of 0x6000, ) 244.88 MB/s   
+Progress: |██--------|  22.9% Write (Sector 0x1600 of 0x6000, ) 244.20 MB/s   
+Progress: |██--------|  24.0% Write (Sector 0x1700 of 0x6000, ) 244.34 MB/s   
+Progress: |██--------|  25.0% Write (Sector 0x1800 of 0x6000, ) 239.66 MB/s   
+Progress: |███-------|  26.0% Write (Sector 0x1900 of 0x6000, ) 243.02 MB/s   
+Progress: |███-------|  27.1% Write (Sector 0x1A00 of 0x6000, ) 217.13 MB/s   
+Progress: |███-------|  28.1% Write (Sector 0x1B00 of 0x6000, ) 227.60 MB/s   
+Progress: |███-------|  29.2% Write (Sector 0x1C00 of 0x6000, ) 231.72 MB/s   
+Progress: |███-------|  30.2% Write (Sector 0x1D00 of 0x6000, ) 244.38 MB/s   
+Progress: |███-------|  31.2% Write (Sector 0x1E00 of 0x6000, ) 248.68 MB/s   
+Progress: |███-------|  32.3% Write (Sector 0x1F00 of 0x6000, ) 246.84 MB/s   
+Progress: |███-------|  33.3% Write (Sector 0x2000 of 0x6000, ) 221.52 MB/s   
+Progress: |███-------|  34.4% Write (Sector 0x2100 of 0x6000, ) 243.80 MB/s   
+Progress: |████------|  35.4% Write (Sector 0x2200 of 0x6000, ) 250.09 MB/s   
+Progress: |████------|  36.5% Write (Sector 0x2300 of 0x6000, ) 247.79 MB/s   
+Progress: |████------|  37.5% Write (Sector 0x2400 of 0x6000, ) 240.03 MB/s   
+Progress: |████------|  38.5% Write (Sector 0x2500 of 0x6000, ) 235.16 MB/s   
+Progress: |████------|  39.6% Write (Sector 0x2600 of 0x6000, ) 246.12 MB/s   
+Progress: |████------|  40.6% Write (Sector 0x2700 of 0x6000, ) 250.47 MB/s   
+Progress: |████------|  41.7% Write (Sector 0x2800 of 0x6000, ) 229.32 MB/s   
+Progress: |████------|  42.7% Write (Sector 0x2900 of 0x6000, ) 242.07 MB/s   
+Progress: |████------|  43.8% Write (Sector 0x2A00 of 0x6000, ) 244.98 MB/s   
+Progress: |████------|  44.8% Write (Sector 0x2B00 of 0x6000, ) 249.56 MB/s   
+Progress: |█████-----|  45.8% Write (Sector 0x2C00 of 0x6000, ) 241.79 MB/s   
+Progress: |█████-----|  46.9% Write (Sector 0x2D00 of 0x6000, ) 241.76 MB/s   
+Progress: |█████-----|  47.9% Write (Sector 0x2E00 of 0x6000, ) 232.77 MB/s   
+Progress: |█████-----|  49.0% Write (Sector 0x2F00 of 0x6000, ) 227.65 MB/s   
+Progress: |█████-----|  50.0% Write (Sector 0x3000 of 0x6000, ) 242.94 MB/s   
+Progress: |█████-----|  51.0% Write (Sector 0x3100 of 0x6000, ) 229.40 MB/s   
+Progress: |█████-----|  52.1% Write (Sector 0x3200 of 0x6000, ) 241.72 MB/s   
+Progress: |█████-----|  53.1% Write (Sector 0x3300 of 0x6000, ) 221.23 MB/s   
+Progress: |█████-----|  54.2% Write (Sector 0x3400 of 0x6000, ) 202.28 MB/s   
+Progress: |██████----|  55.2% Write (Sector 0x3500 of 0x6000, ) 227.95 MB/s   
+Progress: |██████----|  56.2% Write (Sector 0x3600 of 0x6000, ) 241.00 MB/s   
+Progress: |██████----|  57.3% Write (Sector 0x3700 of 0x6000, ) 242.29 MB/s   
+Progress: |██████----|  58.3% Write (Sector 0x3800 of 0x6000, ) 243.95 MB/s   
+Progress: |██████----|  59.4% Write (Sector 0x3900 of 0x6000, ) 235.46 MB/s   
+Progress: |██████----|  60.4% Write (Sector 0x3A00 of 0x6000, ) 238.86 MB/s   
+Progress: |██████----|  61.5% Write (Sector 0x3B00 of 0x6000, ) 241.97 MB/s   
+Progress: |██████----|  62.5% Write (Sector 0x3C00 of 0x6000, ) 242.49 MB/s   
+Progress: |██████----|  63.5% Write (Sector 0x3D00 of 0x6000, ) 243.95 MB/s   
+Progress: |██████----|  64.6% Write (Sector 0x3E00 of 0x6000, ) 232.31 MB/s   
+Progress: |███████---|  65.6% Write (Sector 0x3F00 of 0x6000, ) 244.20 MB/s   
+Progress: |███████---|  66.7% Write (Sector 0x4000 of 0x6000, ) 247.50 MB/s   
+Progress: |███████---|  67.7% Write (Sector 0x4100 of 0x6000, ) 238.60 MB/s   
+Progress: |███████---|  68.8% Write (Sector 0x4200 of 0x6000, ) 246.27 MB/s   
+Progress: |███████---|  69.8% Write (Sector 0x4300 of 0x6000, ) 245.78 MB/s   
+Progress: |███████---|  70.8% Write (Sector 0x4400 of 0x6000, ) 241.11 MB/s   
+Progress: |███████---|  71.9% Write (Sector 0x4500 of 0x6000, ) 242.82 MB/s   
+Progress: |███████---|  72.9% Write (Sector 0x4600 of 0x6000, ) 248.46 MB/s   
+Progress: |███████---|  74.0% Write (Sector 0x4700 of 0x6000, ) 252.17 MB/s   
+Progress: |████████--|  75.0% Write (Sector 0x4800 of 0x6000, ) 242.71 MB/s   
+Progress: |████████--|  76.0% Write (Sector 0x4900 of 0x6000, ) 242.94 MB/s   
+Progress: |████████--|  77.1% Write (Sector 0x4A00 of 0x6000, ) 252.06 MB/s   
+Progress: |████████--|  78.1% Write (Sector 0x4B00 of 0x6000, ) 241.70 MB/s   
+Progress: |████████--|  79.2% Write (Sector 0x4C00 of 0x6000, ) 244.52 MB/s   
+Progress: |████████--|  80.2% Write (Sector 0x4D00 of 0x6000, ) 247.93 MB/s   
+Progress: |████████--|  81.2% Write (Sector 0x4E00 of 0x6000, ) 237.77 MB/s   
+Progress: |████████--|  82.3% Write (Sector 0x4F00 of 0x6000, ) 246.42 MB/s   
+Progress: |████████--|  83.3% Write (Sector 0x5000 of 0x6000, ) 246.67 MB/s   
+Progress: |████████--|  84.4% Write (Sector 0x5100 of 0x6000, ) 245.97 MB/s   
+Progress: |█████████-|  85.4% Write (Sector 0x5200 of 0x6000, ) 241.98 MB/s   
+Progress: |█████████-|  86.5% Write (Sector 0x5300 of 0x6000, ) 237.83 MB/s   
+Progress: |█████████-|  87.5% Write (Sector 0x5400 of 0x6000, ) 238.33 MB/s   
+Progress: |█████████-|  88.5% Write (Sector 0x5500 of 0x6000, ) 237.95 MB/s   
+Progress: |█████████-|  89.6% Write (Sector 0x5600 of 0x6000, ) 239.69 MB/s   
+Progress: |█████████-|  90.6% Write (Sector 0x5700 of 0x6000, ) 246.33 MB/s   
+Progress: |█████████-|  91.7% Write (Sector 0x5800 of 0x6000, ) 239.84 MB/s   
+Progress: |█████████-|  92.7% Write (Sector 0x5900 of 0x6000, ) 245.47 MB/s   
+Progress: |█████████-|  93.8% Write (Sector 0x5A00 of 0x6000, ) 248.51 MB/s   
+Progress: |█████████-|  94.8% Write (Sector 0x5B00 of 0x6000, ) 248.32 MB/s   
+Progress: |██████████|  95.8% Write (Sector 0x5C00 of 0x6000, ) 238.26 MB/s   
+Progress: |██████████|  96.9% Write (Sector 0x5D00 of 0x6000, ) 242.12 MB/s   
+Progress: |██████████|  97.9% Write (Sector 0x5E00 of 0x6000, ) 243.40 MB/s   
+Progress: |██████████|  99.0% Write (Sector 0x5F00 of 0x6000, ) 252.52 MB/s   
+Progress: |██████████| 100.0% Write (Sector 0x6000 of 0x6000, ) 246.78 MB/s   
+Wrote /home/user/nx679j-stock/edl-recovery/v311-padded/vendor_boot.bin to sector 207663.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w qweslicstore_a /home/user/nx679j-stock/edl-recovery/v311-padded/qweslicstore.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x40) 0.00 MB/s                 
+Progress: |██████████| 100.0% Write (Sector 0x40 of 0x40, ) 199.35 MB/s       
+Wrote /home/user/nx679j-stock/edl-recovery/v311-padded/qweslicstore.bin to sector 239919.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w recovery_a /home/user/nx679j-stock/edl-recovery/v311-padded/recovery.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x6400) 0.00 MB/s               
+Progress: |----------|   1.0% Write (Sector 0x100 of 0x6400, ) 216.51 MB/s    
+Progress: |----------|   2.0% Write (Sector 0x200 of 0x6400, ) 241.14 MB/s    
+Progress: |----------|   3.0% Write (Sector 0x300 of 0x6400, ) 48.55 MB/s     
+Progress: |----------|   4.0% Write (Sector 0x400 of 0x6400, ) 224.37 MB/s    
+Progress: |----------|   5.0% Write (Sector 0x500 of 0x6400, ) 237.70 MB/s    
+Progress: |█---------|   6.0% Write (Sector 0x600 of 0x6400, ) 234.38 MB/s    
+Progress: |█---------|   7.0% Write (Sector 0x700 of 0x6400, ) 247.12 MB/s    
+Progress: |█---------|   8.0% Write (Sector 0x800 of 0x6400, ) 240.57 MB/s    
+Progress: |█---------|   9.0% Write (Sector 0x900 of 0x6400, ) 233.12 MB/s    
+Progress: |█---------|  10.0% Write (Sector 0xA00 of 0x6400, ) 234.49 MB/s    
+Progress: |█---------|  11.0% Write (Sector 0xB00 of 0x6400, ) 233.68 MB/s    
+Progress: |█---------|  12.0% Write (Sector 0xC00 of 0x6400, ) 227.52 MB/s    
+Progress: |█---------|  13.0% Write (Sector 0xD00 of 0x6400, ) 238.52 MB/s    
+Progress: |█---------|  14.0% Write (Sector 0xE00 of 0x6400, ) 217.54 MB/s    
+Progress: |██--------|  15.0% Write (Sector 0xF00 of 0x6400, ) 232.71 MB/s    
+Progress: |██--------|  16.0% Write (Sector 0x1000 of 0x6400, ) 241.11 MB/s   
+Progress: |██--------|  17.0% Write (Sector 0x1100 of 0x6400, ) 242.26 MB/s   
+Progress: |██--------|  18.0% Write (Sector 0x1200 of 0x6400, ) 247.47 MB/s   
+Progress: |██--------|  19.0% Write (Sector 0x1300 of 0x6400, ) 249.13 MB/s   
+Progress: |██--------|  20.0% Write (Sector 0x1400 of 0x6400, ) 246.68 MB/s   
+Progress: |██--------|  21.0% Write (Sector 0x1500 of 0x6400, ) 241.77 MB/s   
+Progress: |██--------|  22.0% Write (Sector 0x1600 of 0x6400, ) 239.50 MB/s   
+Progress: |██--------|  23.0% Write (Sector 0x1700 of 0x6400, ) 251.02 MB/s   
+Progress: |██--------|  24.0% Write (Sector 0x1800 of 0x6400, ) 242.92 MB/s   
+Progress: |██--------|  25.0% Write (Sector 0x1900 of 0x6400, ) 239.78 MB/s   
+Progress: |███-------|  26.0% Write (Sector 0x1A00 of 0x6400, ) 247.71 MB/s   
+Progress: |███-------|  27.0% Write (Sector 0x1B00 of 0x6400, ) 233.34 MB/s   
+Progress: |███-------|  28.0% Write (Sector 0x1C00 of 0x6400, ) 243.09 MB/s   
+Progress: |███-------|  29.0% Write (Sector 0x1D00 of 0x6400, ) 242.31 MB/s   
+Progress: |███-------|  30.0% Write (Sector 0x1E00 of 0x6400, ) 250.80 MB/s   
+Progress: |███-------|  31.0% Write (Sector 0x1F00 of 0x6400, ) 244.42 MB/s   
+Progress: |███-------|  32.0% Write (Sector 0x2000 of 0x6400, ) 241.75 MB/s   
+Progress: |███-------|  33.0% Write (Sector 0x2100 of 0x6400, ) 247.22 MB/s   
+Progress: |███-------|  34.0% Write (Sector 0x2200 of 0x6400, ) 240.83 MB/s   
+Progress: |████------|  35.0% Write (Sector 0x2300 of 0x6400, ) 241.96 MB/s   
+Progress: |████------|  36.0% Write (Sector 0x2400 of 0x6400, ) 240.90 MB/s   
+Progress: |████------|  37.0% Write (Sector 0x2500 of 0x6400, ) 240.35 MB/s   
+Progress: |████------|  38.0% Write (Sector 0x2600 of 0x6400, ) 238.41 MB/s   
+Progress: |████------|  39.0% Write (Sector 0x2700 of 0x6400, ) 241.02 MB/s   
+Progress: |████------|  40.0% Write (Sector 0x2800 of 0x6400, ) 235.89 MB/s   
+Progress: |████------|  41.0% Write (Sector 0x2900 of 0x6400, ) 242.50 MB/s   
+Progress: |████------|  42.0% Write (Sector 0x2A00 of 0x6400, ) 230.68 MB/s   
+Progress: |████------|  43.0% Write (Sector 0x2B00 of 0x6400, ) 236.35 MB/s   
+Progress: |████------|  44.0% Write (Sector 0x2C00 of 0x6400, ) 203.24 MB/s   
+Progress: |████------|  45.0% Write (Sector 0x2D00 of 0x6400, ) 240.44 MB/s   
+Progress: |█████-----|  46.0% Write (Sector 0x2E00 of 0x6400, ) 238.92 MB/s   
+Progress: |█████-----|  47.0% Write (Sector 0x2F00 of 0x6400, ) 233.80 MB/s   
+Progress: |█████-----|  48.0% Write (Sector 0x3000 of 0x6400, ) 226.62 MB/s   
+Progress: |█████-----|  49.0% Write (Sector 0x3100 of 0x6400, ) 240.60 MB/s   
+Progress: |█████-----|  50.0% Write (Sector 0x3200 of 0x6400, ) 233.95 MB/s   
+Progress: |█████-----|  51.0% Write (Sector 0x3300 of 0x6400, ) 239.65 MB/s   
+Progress: |█████-----|  52.0% Write (Sector 0x3400 of 0x6400, ) 243.42 MB/s   
+Progress: |█████-----|  53.0% Write (Sector 0x3500 of 0x6400, ) 244.28 MB/s   
+Progress: |█████-----|  54.0% Write (Sector 0x3600 of 0x6400, ) 231.47 MB/s   
+Progress: |██████----|  55.0% Write (Sector 0x3700 of 0x6400, ) 250.68 MB/s   
+Progress: |██████----|  56.0% Write (Sector 0x3800 of 0x6400, ) 230.58 MB/s   
+Progress: |██████----|  57.0% Write (Sector 0x3900 of 0x6400, ) 245.51 MB/s   
+Progress: |██████----|  58.0% Write (Sector 0x3A00 of 0x6400, ) 234.96 MB/s   
+Progress: |██████----|  59.0% Write (Sector 0x3B00 of 0x6400, ) 242.04 MB/s   
+Progress: |██████----|  60.0% Write (Sector 0x3C00 of 0x6400, ) 233.97 MB/s   
+Progress: |██████----|  61.0% Write (Sector 0x3D00 of 0x6400, ) 219.94 MB/s   
+Progress: |██████----|  62.0% Write (Sector 0x3E00 of 0x6400, ) 209.48 MB/s   
+Progress: |██████----|  63.0% Write (Sector 0x3F00 of 0x6400, ) 210.56 MB/s   
+Progress: |██████----|  64.0% Write (Sector 0x4000 of 0x6400, ) 195.20 MB/s   
+Progress: |██████----|  65.0% Write (Sector 0x4100 of 0x6400, ) 189.00 MB/s   
+Progress: |███████---|  66.0% Write (Sector 0x4200 of 0x6400, ) 192.42 MB/s   
+Progress: |███████---|  67.0% Write (Sector 0x4300 of 0x6400, ) 178.72 MB/s   
+Progress: |███████---|  68.0% Write (Sector 0x4400 of 0x6400, ) 171.84 MB/s   
+Progress: |███████---|  69.0% Write (Sector 0x4500 of 0x6400, ) 178.37 MB/s   
+Progress: |███████---|  70.0% Write (Sector 0x4600 of 0x6400, ) 165.10 MB/s   
+Progress: |███████---|  71.0% Write (Sector 0x4700 of 0x6400, ) 163.62 MB/s   
+Progress: |███████---|  72.0% Write (Sector 0x4800 of 0x6400, ) 163.51 MB/s   
+Progress: |███████---|  73.0% Write (Sector 0x4900 of 0x6400, ) 159.96 MB/s   
+Progress: |███████---|  74.0% Write (Sector 0x4A00 of 0x6400, ) 162.42 MB/s   
+Progress: |████████--|  75.0% Write (Sector 0x4B00 of 0x6400, ) 150.73 MB/s   
+Progress: |████████--|  76.0% Write (Sector 0x4C00 of 0x6400, ) 160.88 MB/s   
+Progress: |████████--|  77.0% Write (Sector 0x4D00 of 0x6400, ) 159.56 MB/s   
+Progress: |████████--|  78.0% Write (Sector 0x4E00 of 0x6400, ) 135.91 MB/s   
+Progress: |████████--|  79.0% Write (Sector 0x4F00 of 0x6400, ) 183.25 MB/s   
+Progress: |████████--|  80.0% Write (Sector 0x5000 of 0x6400, ) 153.00 MB/s   
+Progress: |████████--|  81.0% Write (Sector 0x5100 of 0x6400, ) 156.52 MB/s   
+Progress: |████████--|  82.0% Write (Sector 0x5200 of 0x6400, ) 150.66 MB/s   
+Progress: |████████--|  83.0% Write (Sector 0x5300 of 0x6400, ) 163.00 MB/s   
+Progress: |████████--|  84.0% Write (Sector 0x5400 of 0x6400, ) 148.71 MB/s   
+Progress: |████████--|  85.0% Write (Sector 0x5500 of 0x6400, ) 168.81 MB/s   
+Progress: |█████████-|  86.0% Write (Sector 0x5600 of 0x6400, ) 159.25 MB/s   
+Progress: |█████████-|  87.0% Write (Sector 0x5700 of 0x6400, ) 161.82 MB/s   
+Progress: |█████████-|  88.0% Write (Sector 0x5800 of 0x6400, ) 167.91 MB/s   
+Progress: |█████████-|  89.0% Write (Sector 0x5900 of 0x6400, ) 155.18 MB/s   
+Progress: |█████████-|  90.0% Write (Sector 0x5A00 of 0x6400, ) 185.84 MB/s   
+Progress: |█████████-|  91.0% Write (Sector 0x5B00 of 0x6400, ) 154.42 MB/s   
+Progress: |█████████-|  92.0% Write (Sector 0x5C00 of 0x6400, ) 106.78 MB/s   
+Progress: |█████████-|  93.0% Write (Sector 0x5D00 of 0x6400, ) 190.24 MB/s   
+Progress: |█████████-|  94.0% Write (Sector 0x5E00 of 0x6400, ) 195.50 MB/s   
+Progress: |██████████|  95.0% Write (Sector 0x5F00 of 0x6400, ) 199.96 MB/s   
+Progress: |██████████|  96.0% Write (Sector 0x6000 of 0x6400, ) 206.16 MB/s   
+Progress: |██████████|  97.0% Write (Sector 0x6100 of 0x6400, ) 217.20 MB/s   
+Progress: |██████████|  98.0% Write (Sector 0x6200 of 0x6400, ) 206.74 MB/s   
+Progress: |██████████|  99.0% Write (Sector 0x6300 of 0x6400, ) 252.26 MB/s   
+Progress: |██████████| 100.0% Write (Sector 0x6400 of 0x6400, ) 216.28 MB/s   
+Wrote /home/user/nx679j-stock/edl-recovery/v311-padded/recovery.bin to sector 239983.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w xbl_ramdump_a /home/user/nx679j-stock/edl-recovery/v311-padded/xbl_ramdump.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x200) 0.00 MB/s                
+Progress: |█████-----|  50.0% Write (Sector 0x100 of 0x200, ) 211.13 MB/s     
+Progress: |██████████| 100.0% Write (Sector 0x200 of 0x200, ) 241.57 MB/s     
+Wrote /home/user/nx679j-stock/edl-recovery/v311-padded/xbl_ramdump.bin to sector 265583.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w uefi_b /home/user/nx679j-stock/edl-recovery/v311-padded/uefi.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x500) 0.00 MB/s                
+Progress: |██--------|  20.0% Write (Sector 0x100 of 0x500, ) 199.42 MB/s     
+Progress: |████------|  40.0% Write (Sector 0x200 of 0x500, ) 238.83 MB/s     
+Progress: |██████----|  60.0% Write (Sector 0x300 of 0x500, ) 246.65 MB/s     
+Progress: |████████--|  80.0% Write (Sector 0x400 of 0x500, ) 246.75 MB/s     
+Progress: |██████████| 100.0% Write (Sector 0x500 of 0x500, ) 246.59 MB/s     
+Wrote /home/user/nx679j-stock/edl-recovery/v311-padded/uefi.bin to sector 266095.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w aop_b /home/user/nx679j-stock/edl-recovery/v311-padded/aop.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x80) 0.00 MB/s                 
+Progress: |██████████| 100.0% Write (Sector 0x80 of 0x80, ) 208.36 MB/s       
+Wrote /home/user/nx679j-stock/edl-recovery/v311-padded/aop.bin to sector 267375.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w aop_config_b /home/user/nx679j-stock/edl-recovery/v311-padded/aop_config.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x80) 0.00 MB/s                 
+Progress: |██████████| 100.0% Write (Sector 0x80 of 0x80, ) 195.67 MB/s       
+Wrote /home/user/nx679j-stock/edl-recovery/v311-padded/aop_config.bin to sector 267503.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w tz_b /home/user/nx679j-stock/edl-recovery/v311-padded/tz.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x400) 0.00 MB/s                
+Progress: |██--------|  25.0% Write (Sector 0x100 of 0x400, ) 198.47 MB/s     
+Progress: |█████-----|  50.0% Write (Sector 0x200 of 0x400, ) 209.47 MB/s     
+Progress: |████████--|  75.0% Write (Sector 0x300 of 0x400, ) 190.77 MB/s     
+Progress: |██████████| 100.0% Write (Sector 0x400 of 0x400, ) 238.54 MB/s     
+Wrote /home/user/nx679j-stock/edl-recovery/v311-padded/tz.bin to sector 267631.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w hyp_b /home/user/nx679j-stock/edl-recovery/v311-padded/hyp.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x800) 0.00 MB/s                
+Progress: |█---------|  12.5% Write (Sector 0x100 of 0x800, ) 191.27 MB/s     
+Progress: |██--------|  25.0% Write (Sector 0x200 of 0x800, ) 223.18 MB/s     
+Progress: |████------|  37.5% Write (Sector 0x300 of 0x800, ) 238.83 MB/s     
+Progress: |█████-----|  50.0% Write (Sector 0x400 of 0x800, ) 228.80 MB/s     
+Progress: |██████----|  62.5% Write (Sector 0x500 of 0x800, ) 235.70 MB/s     
+Progress: |████████--|  75.0% Write (Sector 0x600 of 0x800, ) 233.50 MB/s     
+Progress: |█████████-|  87.5% Write (Sector 0x700 of 0x800, ) 241.30 MB/s     
+Progress: |██████████| 100.0% Write (Sector 0x800 of 0x800, ) 239.18 MB/s     
+Wrote /home/user/nx679j-stock/edl-recovery/v311-padded/hyp.bin to sector 268655.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w modem_b /home/user/nx679j-stock/edl-recovery/v311-padded/modem.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x12C00) 0.00 MB/s              
+Progress: |----------|   0.3% Write (Sector 0x100 of 0x12C00, 01s left) 228.98 MB/s
+Progress: |----------|   0.7% Write (Sector 0x200 of 0x12C00, 01s left) 240.90 MB/s
+Progress: |----------|   1.0% Write (Sector 0x300 of 0x12C00, 01s left) 250.11 MB/s
+Progress: |----------|   1.3% Write (Sector 0x400 of 0x12C00, 01s left) 255.25 MB/s
+Progress: |----------|   1.7% Write (Sector 0x500 of 0x12C00, 01s left) 248.99 MB/s
+Progress: |----------|   2.0% Write (Sector 0x600 of 0x12C00, 01s left) 49.87 MB/s
+Progress: |----------|   2.3% Write (Sector 0x700 of 0x12C00, 01s left) 246.39 MB/s
+Progress: |----------|   2.7% Write (Sector 0x800 of 0x12C00, 01s left) 249.47 MB/s
+Progress: |----------|   3.0% Write (Sector 0x900 of 0x12C00, 01s left) 255.21 MB/s
+Progress: |----------|   3.3% Write (Sector 0xA00 of 0x12C00, 01s left) 253.22 MB/s
+Progress: |----------|   3.7% Write (Sector 0xB00 of 0x12C00, 01s left) 251.16 MB/s
+Progress: |----------|   4.0% Write (Sector 0xC00 of 0x12C00, 01s left) 208.15 MB/s
+Progress: |----------|   4.3% Write (Sector 0xD00 of 0x12C00, 01s left) 247.51 MB/s
+Progress: |----------|   4.7% Write (Sector 0xE00 of 0x12C00, 01s left) 249.65 MB/s
+Progress: |----------|   5.0% Write (Sector 0xF00 of 0x12C00, 01s left) 250.27 MB/s
+Progress: |█---------|   5.3% Write (Sector 0x1000 of 0x12C00, 01s left) 253.88 MB/s
+Progress: |█---------|   5.7% Write (Sector 0x1100 of 0x12C00, 01s left) 253.03 MB/s
+Progress: |█---------|   6.0% Write (Sector 0x1200 of 0x12C00, 01s left) 221.48 MB/s
+Progress: |█---------|   6.3% Write (Sector 0x1300 of 0x12C00, 01s left) 253.34 MB/s
+Progress: |█---------|   6.7% Write (Sector 0x1400 of 0x12C00, 01s left) 248.43 MB/s
+Progress: |█---------|   7.0% Write (Sector 0x1500 of 0x12C00, 01s left) 253.29 MB/s
+Progress: |█---------|   7.3% Write (Sector 0x1600 of 0x12C00, 01s left) 245.21 MB/s
+Progress: |█---------|   7.7% Write (Sector 0x1700 of 0x12C00, 01s left) 247.99 MB/s
+Progress: |█---------|   8.0% Write (Sector 0x1800 of 0x12C00, 01s left) 254.93 MB/s
+Progress: |█---------|   8.3% Write (Sector 0x1900 of 0x12C00, 01s left) 248.11 MB/s
+Progress: |█---------|   8.7% Write (Sector 0x1A00 of 0x12C00, 01s left) 251.77 MB/s
+Progress: |█---------|   9.0% Write (Sector 0x1B00 of 0x12C00, 01s left) 254.23 MB/s
+Progress: |█---------|   9.3% Write (Sector 0x1C00 of 0x12C00, 01s left) 255.83 MB/s
+Progress: |█---------|   9.7% Write (Sector 0x1D00 of 0x12C00, 01s left) 254.85 MB/s
+Progress: |█---------|  10.0% Write (Sector 0x1E00 of 0x12C00, 01s left) 252.36 MB/s
+Progress: |█---------|  10.3% Write (Sector 0x1F00 of 0x12C00, 01s left) 246.27 MB/s
+Progress: |█---------|  10.7% Write (Sector 0x2000 of 0x12C00, 01s left) 255.25 MB/s
+Progress: |█---------|  11.0% Write (Sector 0x2100 of 0x12C00, 01s left) 256.38 MB/s
+Progress: |█---------|  11.3% Write (Sector 0x2200 of 0x12C00, 01s left) 251.19 MB/s
+Progress: |█---------|  11.7% Write (Sector 0x2300 of 0x12C00, 01s left) 252.70 MB/s
+Progress: |█---------|  12.0% Write (Sector 0x2400 of 0x12C00, 01s left) 254.57 MB/s
+Progress: |█---------|  12.3% Write (Sector 0x2500 of 0x12C00, 01s left) 254.02 MB/s
+Progress: |█---------|  12.7% Write (Sector 0x2600 of 0x12C00, 01s left) 256.38 MB/s
+Progress: |█---------|  13.0% Write (Sector 0x2700 of 0x12C00, 01s left) 256.49 MB/s
+Progress: |█---------|  13.3% Write (Sector 0x2800 of 0x12C00, 01s left) 255.84 MB/s
+Progress: |█---------|  13.7% Write (Sector 0x2900 of 0x12C00, 01s left) 253.46 MB/s
+Progress: |█---------|  14.0% Write (Sector 0x2A00 of 0x12C00, 01s left) 250.15 MB/s
+Progress: |█---------|  14.3% Write (Sector 0x2B00 of 0x12C00, 01s left) 231.42 MB/s
+Progress: |█---------|  14.7% Write (Sector 0x2C00 of 0x12C00, 01s left) 221.57 MB/s
+Progress: |██--------|  15.0% Write (Sector 0x2D00 of 0x12C00, 01s left) 234.94 MB/s
+Progress: |██--------|  15.3% Write (Sector 0x2E00 of 0x12C00, 01s left) 232.53 MB/s
+Progress: |██--------|  15.7% Write (Sector 0x2F00 of 0x12C00, 01s left) 244.12 MB/s
+Progress: |██--------|  16.0% Write (Sector 0x3000 of 0x12C00, 01s left) 252.29 MB/s
+Progress: |██--------|  16.3% Write (Sector 0x3100 of 0x12C00, 01s left) 256.38 MB/s
+Progress: |██--------|  16.7% Write (Sector 0x3200 of 0x12C00, 01s left) 247.29 MB/s
+Progress: |██--------|  17.0% Write (Sector 0x3300 of 0x12C00, 01s left) 248.29 MB/s
+Progress: |██--------|  17.3% Write (Sector 0x3400 of 0x12C00, 01s left) 205.26 MB/s
+Progress: |██--------|  17.7% Write (Sector 0x3500 of 0x12C00, 01s left) 254.77 MB/s
+Progress: |██--------|  18.0% Write (Sector 0x3600 of 0x12C00, 01s left) 254.00 MB/s
+Progress: |██--------|  18.3% Write (Sector 0x3700 of 0x12C00, 01s left) 236.82 MB/s
+Progress: |██--------|  18.7% Write (Sector 0x3800 of 0x12C00, 01s left) 226.14 MB/s
+Progress: |██--------|  19.0% Write (Sector 0x3900 of 0x12C00, 01s left) 248.82 MB/s
+Progress: |██--------|  19.3% Write (Sector 0x3A00 of 0x12C00, 01s left) 235.37 MB/s
+Progress: |██--------|  19.7% Write (Sector 0x3B00 of 0x12C00, 01s left) 231.15 MB/s
+Progress: |██--------|  20.0% Write (Sector 0x3C00 of 0x12C00, 01s left) 248.24 MB/s
+Progress: |██--------|  20.3% Write (Sector 0x3D00 of 0x12C00, 01s left) 246.75 MB/s
+Progress: |██--------|  20.7% Write (Sector 0x3E00 of 0x12C00, 01s left) 225.85 MB/s
+Progress: |██--------|  21.0% Write (Sector 0x3F00 of 0x12C00, 01s left) 246.27 MB/s
+Progress: |██--------|  21.3% Write (Sector 0x4000 of 0x12C00, 01s left) 246.46 MB/s
+Progress: |██--------|  21.7% Write (Sector 0x4100 of 0x12C00, 01s left) 249.01 MB/s
+Progress: |██--------|  22.0% Write (Sector 0x4200 of 0x12C00, 01s left) 229.82 MB/s
+Progress: |██--------|  22.3% Write (Sector 0x4300 of 0x12C00, 01s left) 232.77 MB/s
+Progress: |██--------|  22.7% Write (Sector 0x4400 of 0x12C00, ) 251.31 MB/s  
+Progress: |██--------|  23.0% Write (Sector 0x4500 of 0x12C00, ) 248.54 MB/s  
+Progress: |██--------|  23.3% Write (Sector 0x4600 of 0x12C00, ) 243.02 MB/s  
+Progress: |██--------|  23.7% Write (Sector 0x4700 of 0x12C00, ) 245.55 MB/s  
+Progress: |██--------|  24.0% Write (Sector 0x4800 of 0x12C00, ) 234.98 MB/s  
+Progress: |██--------|  24.3% Write (Sector 0x4900 of 0x12C00, ) 241.00 MB/s  
+Progress: |██--------|  24.7% Write (Sector 0x4A00 of 0x12C00, ) 251.76 MB/s  
+Progress: |██--------|  25.0% Write (Sector 0x4B00 of 0x12C00, ) 235.23 MB/s  
+Progress: |███-------|  25.3% Write (Sector 0x4C00 of 0x12C00, ) 239.62 MB/s  
+Progress: |███-------|  25.7% Write (Sector 0x4D00 of 0x12C00, ) 247.33 MB/s  
+Progress: |███-------|  26.0% Write (Sector 0x4E00 of 0x12C00, ) 244.91 MB/s  
+Progress: |███-------|  26.3% Write (Sector 0x4F00 of 0x12C00, ) 247.74 MB/s  
+Progress: |███-------|  26.7% Write (Sector 0x5000 of 0x12C00, ) 249.62 MB/s  
+Progress: |███-------|  27.0% Write (Sector 0x5100 of 0x12C00, ) 252.49 MB/s  
+Progress: |███-------|  27.3% Write (Sector 0x5200 of 0x12C00, ) 237.65 MB/s  
+Progress: |███-------|  27.7% Write (Sector 0x5300 of 0x12C00, ) 237.58 MB/s  
+Progress: |███-------|  28.0% Write (Sector 0x5400 of 0x12C00, ) 247.85 MB/s  
+Progress: |███-------|  28.3% Write (Sector 0x5500 of 0x12C00, ) 223.53 MB/s  
+Progress: |███-------|  28.7% Write (Sector 0x5600 of 0x12C00, ) 229.40 MB/s  
+Progress: |███-------|  29.0% Write (Sector 0x5700 of 0x12C00, ) 235.70 MB/s  
+Progress: |███-------|  29.3% Write (Sector 0x5800 of 0x12C00, ) 239.01 MB/s  
+Progress: |███-------|  29.7% Write (Sector 0x5900 of 0x12C00, ) 223.46 MB/s  
+Progress: |███-------|  30.0% Write (Sector 0x5A00 of 0x12C00, ) 243.70 MB/s  
+Progress: |███-------|  30.3% Write (Sector 0x5B00 of 0x12C00, ) 234.76 MB/s  
+Progress: |███-------|  30.7% Write (Sector 0x5C00 of 0x12C00, ) 245.54 MB/s  
+Progress: |███-------|  31.0% Write (Sector 0x5D00 of 0x12C00, ) 247.22 MB/s  
+Progress: |███-------|  31.3% Write (Sector 0x5E00 of 0x12C00, ) 240.20 MB/s  
+Progress: |███-------|  31.7% Write (Sector 0x5F00 of 0x12C00, ) 215.50 MB/s  
+Progress: |███-------|  32.0% Write (Sector 0x6000 of 0x12C00, ) 232.65 MB/s  
+Progress: |███-------|  32.3% Write (Sector 0x6100 of 0x12C00, ) 240.53 MB/s  
+Progress: |███-------|  32.7% Write (Sector 0x6200 of 0x12C00, ) 233.94 MB/s  
+Progress: |███-------|  33.0% Write (Sector 0x6300 of 0x12C00, ) 243.52 MB/s  
+Progress: |███-------|  33.3% Write (Sector 0x6400 of 0x12C00, ) 246.62 MB/s  
+Progress: |███-------|  33.7% Write (Sector 0x6500 of 0x12C00, ) 244.68 MB/s  
+Progress: |███-------|  34.0% Write (Sector 0x6600 of 0x12C00, ) 236.07 MB/s  
+Progress: |███-------|  34.3% Write (Sector 0x6700 of 0x12C00, ) 237.01 MB/s  
+Progress: |███-------|  34.7% Write (Sector 0x6800 of 0x12C00, ) 235.19 MB/s  
+Progress: |████------|  35.0% Write (Sector 0x6900 of 0x12C00, ) 239.83 MB/s  
+Progress: |████------|  35.3% Write (Sector 0x6A00 of 0x12C00, ) 246.56 MB/s  
+Progress: |████------|  35.7% Write (Sector 0x6B00 of 0x12C00, ) 245.09 MB/s  
+Progress: |████------|  36.0% Write (Sector 0x6C00 of 0x12C00, ) 247.26 MB/s  
+Progress: |████------|  36.3% Write (Sector 0x6D00 of 0x12C00, ) 241.97 MB/s  
+Progress: |████------|  36.7% Write (Sector 0x6E00 of 0x12C00, ) 248.32 MB/s  
+Progress: |████------|  37.0% Write (Sector 0x6F00 of 0x12C00, ) 241.68 MB/s  
+Progress: |████------|  37.3% Write (Sector 0x7000 of 0x12C00, ) 253.92 MB/s  
+Progress: |████------|  37.7% Write (Sector 0x7100 of 0x12C00, ) 232.31 MB/s  
+Progress: |████------|  38.0% Write (Sector 0x7200 of 0x12C00, ) 224.31 MB/s  
+Progress: |████------|  38.3% Write (Sector 0x7300 of 0x12C00, ) 238.64 MB/s  
+Progress: |████------|  38.7% Write (Sector 0x7400 of 0x12C00, ) 251.04 MB/s  
+Progress: |████------|  39.0% Write (Sector 0x7500 of 0x12C00, ) 216.95 MB/s  
+Progress: |████------|  39.3% Write (Sector 0x7600 of 0x12C00, ) 238.58 MB/s  
+Progress: |████------|  39.7% Write (Sector 0x7700 of 0x12C00, ) 243.20 MB/s  
+Progress: |████------|  40.0% Write (Sector 0x7800 of 0x12C00, ) 245.45 MB/s  
+Progress: |████------|  40.3% Write (Sector 0x7900 of 0x12C00, ) 245.90 MB/s  
+Progress: |████------|  40.7% Write (Sector 0x7A00 of 0x12C00, ) 248.07 MB/s  
+Progress: |████------|  41.0% Write (Sector 0x7B00 of 0x12C00, ) 244.82 MB/s  
+Progress: |████------|  41.3% Write (Sector 0x7C00 of 0x12C00, ) 247.25 MB/s  
+Progress: |████------|  41.7% Write (Sector 0x7D00 of 0x12C00, ) 248.63 MB/s  
+Progress: |████------|  42.0% Write (Sector 0x7E00 of 0x12C00, ) 241.29 MB/s  
+Progress: |████------|  42.3% Write (Sector 0x7F00 of 0x12C00, ) 237.46 MB/s  
+Progress: |████------|  42.7% Write (Sector 0x8000 of 0x12C00, ) 104.28 MB/s  
+Progress: |████------|  43.0% Write (Sector 0x8100 of 0x12C00, ) 245.40 MB/s  
+Progress: |████------|  43.3% Write (Sector 0x8200 of 0x12C00, ) 246.69 MB/s  
+Progress: |████------|  43.7% Write (Sector 0x8300 of 0x12C00, ) 250.75 MB/s  
+Progress: |████------|  44.0% Write (Sector 0x8400 of 0x12C00, ) 246.85 MB/s  
+Progress: |████------|  44.3% Write (Sector 0x8500 of 0x12C00, ) 239.43 MB/s  
+Progress: |████------|  44.7% Write (Sector 0x8600 of 0x12C00, ) 241.47 MB/s  
+Progress: |████------|  45.0% Write (Sector 0x8700 of 0x12C00, ) 242.17 MB/s  
+Progress: |█████-----|  45.3% Write (Sector 0x8800 of 0x12C00, ) 241.76 MB/s  
+Progress: |█████-----|  45.7% Write (Sector 0x8900 of 0x12C00, ) 246.04 MB/s  
+Progress: |█████-----|  46.0% Write (Sector 0x8A00 of 0x12C00, ) 242.46 MB/s  
+Progress: |█████-----|  46.3% Write (Sector 0x8B00 of 0x12C00, ) 208.92 MB/s  
+Progress: |█████-----|  46.7% Write (Sector 0x8C00 of 0x12C00, ) 245.32 MB/s  
+Progress: |█████-----|  47.0% Write (Sector 0x8D00 of 0x12C00, ) 247.82 MB/s  
+Progress: |█████-----|  47.3% Write (Sector 0x8E00 of 0x12C00, ) 232.04 MB/s  
+Progress: |█████-----|  47.7% Write (Sector 0x8F00 of 0x12C00, ) 248.02 MB/s  
+Progress: |█████-----|  48.0% Write (Sector 0x9000 of 0x12C00, ) 238.95 MB/s  
+Progress: |█████-----|  48.3% Write (Sector 0x9100 of 0x12C00, ) 240.49 MB/s  
+Progress: |█████-----|  48.7% Write (Sector 0x9200 of 0x12C00, ) 239.22 MB/s  
+Progress: |█████-----|  49.0% Write (Sector 0x9300 of 0x12C00, ) 254.57 MB/s  
+Progress: |█████-----|  49.3% Write (Sector 0x9400 of 0x12C00, ) 241.29 MB/s  
+Progress: |█████-----|  49.7% Write (Sector 0x9500 of 0x12C00, ) 243.44 MB/s  
+Progress: |█████-----|  50.0% Write (Sector 0x9600 of 0x12C00, ) 225.03 MB/s  
+Progress: |█████-----|  50.3% Write (Sector 0x9700 of 0x12C00, ) 235.01 MB/s  
+Progress: |█████-----|  50.7% Write (Sector 0x9800 of 0x12C00, ) 238.84 MB/s  
+Progress: |█████-----|  51.0% Write (Sector 0x9900 of 0x12C00, ) 242.35 MB/s  
+Progress: |█████-----|  51.3% Write (Sector 0x9A00 of 0x12C00, ) 237.80 MB/s  
+Progress: |█████-----|  51.7% Write (Sector 0x9B00 of 0x12C00, ) 248.58 MB/s  
+Progress: |█████-----|  52.0% Write (Sector 0x9C00 of 0x12C00, ) 245.17 MB/s  
+Progress: |█████-----|  52.3% Write (Sector 0x9D00 of 0x12C00, ) 249.62 MB/s  
+Progress: |█████-----|  52.7% Write (Sector 0x9E00 of 0x12C00, ) 230.89 MB/s  
+Progress: |█████-----|  53.0% Write (Sector 0x9F00 of 0x12C00, ) 248.95 MB/s  
+Progress: |█████-----|  53.3% Write (Sector 0xA000 of 0x12C00, ) 246.49 MB/s  
+Progress: |█████-----|  53.7% Write (Sector 0xA100 of 0x12C00, ) 230.63 MB/s  
+Progress: |█████-----|  54.0% Write (Sector 0xA200 of 0x12C00, ) 229.54 MB/s  
+Progress: |█████-----|  54.3% Write (Sector 0xA300 of 0x12C00, ) 244.04 MB/s  
+Progress: |█████-----|  54.7% Write (Sector 0xA400 of 0x12C00, ) 234.37 MB/s  
+Progress: |██████----|  55.0% Write (Sector 0xA500 of 0x12C00, ) 247.92 MB/s  
+Progress: |██████----|  55.3% Write (Sector 0xA600 of 0x12C00, ) 230.85 MB/s  
+Progress: |██████----|  55.7% Write (Sector 0xA700 of 0x12C00, ) 244.61 MB/s  
+Progress: |██████----|  56.0% Write (Sector 0xA800 of 0x12C00, ) 238.72 MB/s  
+Progress: |██████----|  56.3% Write (Sector 0xA900 of 0x12C00, ) 245.61 MB/s  
+Progress: |██████----|  56.7% Write (Sector 0xAA00 of 0x12C00, ) 240.76 MB/s  
+Progress: |██████----|  57.0% Write (Sector 0xAB00 of 0x12C00, ) 234.00 MB/s  
+Progress: |██████----|  57.3% Write (Sector 0xAC00 of 0x12C00, ) 248.82 MB/s  
+Progress: |██████----|  57.7% Write (Sector 0xAD00 of 0x12C00, ) 249.79 MB/s  
+Progress: |██████----|  58.0% Write (Sector 0xAE00 of 0x12C00, ) 237.49 MB/s  
+Progress: |██████----|  58.3% Write (Sector 0xAF00 of 0x12C00, ) 221.60 MB/s  
+Progress: |██████----|  58.7% Write (Sector 0xB000 of 0x12C00, ) 194.74 MB/s  
+Progress: |██████----|  59.0% Write (Sector 0xB100 of 0x12C00, ) 246.81 MB/s  
+Progress: |██████----|  59.3% Write (Sector 0xB200 of 0x12C00, ) 196.47 MB/s  
+Progress: |██████----|  59.7% Write (Sector 0xB300 of 0x12C00, ) 193.36 MB/s  
+Progress: |██████----|  60.0% Write (Sector 0xB400 of 0x12C00, ) 180.91 MB/s  
+Progress: |██████----|  60.3% Write (Sector 0xB500 of 0x12C00, ) 177.09 MB/s  
+Progress: |██████----|  60.7% Write (Sector 0xB600 of 0x12C00, ) 170.49 MB/s  
+Progress: |██████----|  61.0% Write (Sector 0xB700 of 0x12C00, ) 163.01 MB/s  
+Progress: |██████----|  61.3% Write (Sector 0xB800 of 0x12C00, ) 159.59 MB/s  
+Progress: |██████----|  61.7% Write (Sector 0xB900 of 0x12C00, ) 158.94 MB/s  
+Progress: |██████----|  62.0% Write (Sector 0xBA00 of 0x12C00, ) 149.73 MB/s  
+Progress: |██████----|  62.3% Write (Sector 0xBB00 of 0x12C00, ) 150.58 MB/s  
+Progress: |██████----|  62.7% Write (Sector 0xBC00 of 0x12C00, ) 143.57 MB/s  
+Progress: |██████----|  63.0% Write (Sector 0xBD00 of 0x12C00, ) 138.80 MB/s  
+Progress: |██████----|  63.3% Write (Sector 0xBE00 of 0x12C00, ) 146.09 MB/s  
+Progress: |██████----|  63.7% Write (Sector 0xBF00 of 0x12C00, ) 137.32 MB/s  
+Progress: |██████----|  64.0% Write (Sector 0xC000 of 0x12C00, ) 135.16 MB/s  
+Progress: |██████----|  64.3% Write (Sector 0xC100 of 0x12C00, ) 136.15 MB/s  
+Progress: |██████----|  64.7% Write (Sector 0xC200 of 0x12C00, ) 132.73 MB/s  
+Progress: |██████----|  65.0% Write (Sector 0xC300 of 0x12C00, ) 123.69 MB/s  
+Progress: |███████---|  65.3% Write (Sector 0xC400 of 0x12C00, ) 138.63 MB/s  
+Progress: |███████---|  65.7% Write (Sector 0xC500 of 0x12C00, ) 133.16 MB/s  
+Progress: |███████---|  66.0% Write (Sector 0xC600 of 0x12C00, ) 129.83 MB/s  
+Progress: |███████---|  66.3% Write (Sector 0xC700 of 0x12C00, ) 129.35 MB/s  
+Progress: |███████---|  66.7% Write (Sector 0xC800 of 0x12C00, ) 128.40 MB/s  
+Progress: |███████---|  67.0% Write (Sector 0xC900 of 0x12C00, ) 130.61 MB/s  
+Progress: |███████---|  67.3% Write (Sector 0xCA00 of 0x12C00, ) 128.89 MB/s  
+Progress: |███████---|  67.7% Write (Sector 0xCB00 of 0x12C00, ) 127.59 MB/s  
+Progress: |███████---|  68.0% Write (Sector 0xCC00 of 0x12C00, ) 132.28 MB/s  
+Progress: |███████---|  68.3% Write (Sector 0xCD00 of 0x12C00, ) 133.83 MB/s  
+Progress: |███████---|  68.7% Write (Sector 0xCE00 of 0x12C00, ) 125.57 MB/s  
+Progress: |███████---|  69.0% Write (Sector 0xCF00 of 0x12C00, ) 143.03 MB/s  
+Progress: |███████---|  69.3% Write (Sector 0xD000 of 0x12C00, ) 134.30 MB/s  
+Progress: |███████---|  69.7% Write (Sector 0xD100 of 0x12C00, ) 137.92 MB/s  
+Progress: |███████---|  70.0% Write (Sector 0xD200 of 0x12C00, ) 137.86 MB/s  
+Progress: |███████---|  70.3% Write (Sector 0xD300 of 0x12C00, ) 135.25 MB/s  
+Progress: |███████---|  70.7% Write (Sector 0xD400 of 0x12C00, ) 147.29 MB/s  
+Progress: |███████---|  71.0% Write (Sector 0xD500 of 0x12C00, ) 137.49 MB/s  
+Progress: |███████---|  71.3% Write (Sector 0xD600 of 0x12C00, ) 152.07 MB/s  
+Progress: |███████---|  71.7% Write (Sector 0xD700 of 0x12C00, ) 150.70 MB/s  
+Progress: |███████---|  72.0% Write (Sector 0xD800 of 0x12C00, ) 153.87 MB/s  
+Progress: |███████---|  72.3% Write (Sector 0xD900 of 0x12C00, ) 157.36 MB/s  
+Progress: |███████---|  72.7% Write (Sector 0xDA00 of 0x12C00, ) 169.75 MB/s  
+Progress: |███████---|  73.0% Write (Sector 0xDB00 of 0x12C00, ) 167.04 MB/s  
+Progress: |███████---|  73.3% Write (Sector 0xDC00 of 0x12C00, ) 172.44 MB/s  
+Progress: |███████---|  73.7% Write (Sector 0xDD00 of 0x12C00, ) 182.09 MB/s  
+Progress: |███████---|  74.0% Write (Sector 0xDE00 of 0x12C00, ) 183.47 MB/s  
+Progress: |███████---|  74.3% Write (Sector 0xDF00 of 0x12C00, ) 195.66 MB/s  
+Progress: |███████---|  74.7% Write (Sector 0xE000 of 0x12C00, ) 196.82 MB/s  
+Progress: |████████--|  75.0% Write (Sector 0xE100 of 0x12C00, ) 209.25 MB/s  
+Progress: |████████--|  75.3% Write (Sector 0xE200 of 0x12C00, ) 221.25 MB/s  
+Progress: |████████--|  75.7% Write (Sector 0xE300 of 0x12C00, ) 226.71 MB/s  
+Progress: |████████--|  76.0% Write (Sector 0xE400 of 0x12C00, ) 226.45 MB/s  
+Progress: |████████--|  76.3% Write (Sector 0xE500 of 0x12C00, ) 242.98 MB/s  
+Progress: |████████--|  76.7% Write (Sector 0xE600 of 0x12C00, ) 118.89 MB/s  
+Progress: |████████--|  77.0% Write (Sector 0xE700 of 0x12C00, ) 238.48 MB/s  
+Progress: |████████--|  77.3% Write (Sector 0xE800 of 0x12C00, ) 228.44 MB/s  
+Progress: |████████--|  77.7% Write (Sector 0xE900 of 0x12C00, ) 236.93 MB/s  
+Progress: |████████--|  78.0% Write (Sector 0xEA00 of 0x12C00, ) 244.61 MB/s  
+Progress: |████████--|  78.3% Write (Sector 0xEB00 of 0x12C00, ) 233.78 MB/s  
+Progress: |████████--|  78.7% Write (Sector 0xEC00 of 0x12C00, ) 245.94 MB/s  
+Progress: |████████--|  79.0% Write (Sector 0xED00 of 0x12C00, ) 245.58 MB/s  
+Progress: |████████--|  79.3% Write (Sector 0xEE00 of 0x12C00, ) 241.80 MB/s  
+Progress: |████████--|  79.7% Write (Sector 0xEF00 of 0x12C00, ) 244.45 MB/s  
+Progress: |████████--|  80.0% Write (Sector 0xF000 of 0x12C00, ) 242.99 MB/s  
+Progress: |████████--|  80.3% Write (Sector 0xF100 of 0x12C00, ) 248.30 MB/s  
+Progress: |████████--|  80.7% Write (Sector 0xF200 of 0x12C00, ) 241.61 MB/s  
+Progress: |████████--|  81.0% Write (Sector 0xF300 of 0x12C00, ) 239.09 MB/s  
+Progress: |████████--|  81.3% Write (Sector 0xF400 of 0x12C00, ) 239.78 MB/s  
+Progress: |████████--|  81.7% Write (Sector 0xF500 of 0x12C00, ) 229.46 MB/s  
+Progress: |████████--|  82.0% Write (Sector 0xF600 of 0x12C00, ) 244.89 MB/s  
+Progress: |████████--|  82.3% Write (Sector 0xF700 of 0x12C00, ) 231.31 MB/s  
+Progress: |████████--|  82.7% Write (Sector 0xF800 of 0x12C00, ) 242.82 MB/s  
+Progress: |████████--|  83.0% Write (Sector 0xF900 of 0x12C00, ) 233.78 MB/s  
+Progress: |████████--|  83.3% Write (Sector 0xFA00 of 0x12C00, ) 115.21 MB/s  
+Progress: |████████--|  83.7% Write (Sector 0xFB00 of 0x12C00, ) 237.30 MB/s  
+Progress: |████████--|  84.0% Write (Sector 0xFC00 of 0x12C00, ) 234.69 MB/s  
+Progress: |████████--|  84.3% Write (Sector 0xFD00 of 0x12C00, ) 250.74 MB/s  
+Progress: |████████--|  84.7% Write (Sector 0xFE00 of 0x12C00, ) 243.04 MB/s  
+Progress: |████████--|  85.0% Write (Sector 0xFF00 of 0x12C00, ) 237.14 MB/s  
+Progress: |█████████-|  85.3% Write (Sector 0x10000 of 0x12C00, ) 234.07 MB/s 
+Progress: |█████████-|  85.7% Write (Sector 0x10100 of 0x12C00, ) 251.17 MB/s 
+Progress: |█████████-|  86.0% Write (Sector 0x10200 of 0x12C00, ) 237.26 MB/s 
+Progress: |█████████-|  86.3% Write (Sector 0x10300 of 0x12C00, ) 250.35 MB/s 
+Progress: |█████████-|  86.7% Write (Sector 0x10400 of 0x12C00, ) 252.14 MB/s 
+Progress: |█████████-|  87.0% Write (Sector 0x10500 of 0x12C00, ) 247.54 MB/s 
+Progress: |█████████-|  87.3% Write (Sector 0x10600 of 0x12C00, ) 242.12 MB/s 
+Progress: |█████████-|  87.7% Write (Sector 0x10700 of 0x12C00, ) 246.72 MB/s 
+Progress: |█████████-|  88.0% Write (Sector 0x10800 of 0x12C00, ) 248.73 MB/s 
+Progress: |█████████-|  88.3% Write (Sector 0x10900 of 0x12C00, ) 238.27 MB/s 
+Progress: |█████████-|  88.7% Write (Sector 0x10A00 of 0x12C00, ) 244.88 MB/s 
+Progress: |█████████-|  89.0% Write (Sector 0x10B00 of 0x12C00, ) 248.80 MB/s 
+Progress: |█████████-|  89.3% Write (Sector 0x10C00 of 0x12C00, ) 245.18 MB/s 
+Progress: |█████████-|  89.7% Write (Sector 0x10D00 of 0x12C00, ) 239.80 MB/s 
+Progress: |█████████-|  90.0% Write (Sector 0x10E00 of 0x12C00, ) 229.21 MB/s 
+Progress: |█████████-|  90.3% Write (Sector 0x10F00 of 0x12C00, ) 241.83 MB/s 
+Progress: |█████████-|  90.7% Write (Sector 0x11000 of 0x12C00, ) 248.98 MB/s 
+Progress: |█████████-|  91.0% Write (Sector 0x11100 of 0x12C00, ) 231.51 MB/s 
+Progress: |█████████-|  91.3% Write (Sector 0x11200 of 0x12C00, ) 229.49 MB/s 
+Progress: |█████████-|  91.7% Write (Sector 0x11300 of 0x12C00, ) 232.91 MB/s 
+Progress: |█████████-|  92.0% Write (Sector 0x11400 of 0x12C00, ) 250.41 MB/s 
+Progress: |█████████-|  92.3% Write (Sector 0x11500 of 0x12C00, ) 245.17 MB/s 
+Progress: |█████████-|  92.7% Write (Sector 0x11600 of 0x12C00, ) 244.34 MB/s 
+Progress: |█████████-|  93.0% Write (Sector 0x11700 of 0x12C00, ) 243.04 MB/s 
+Progress: |█████████-|  93.3% Write (Sector 0x11800 of 0x12C00, ) 249.84 MB/s 
+Progress: |█████████-|  93.7% Write (Sector 0x11900 of 0x12C00, ) 245.61 MB/s 
+Progress: |█████████-|  94.0% Write (Sector 0x11A00 of 0x12C00, ) 240.73 MB/s 
+Progress: |█████████-|  94.3% Write (Sector 0x11B00 of 0x12C00, ) 243.95 MB/s 
+Progress: |█████████-|  94.7% Write (Sector 0x11C00 of 0x12C00, ) 167.79 MB/s 
+Progress: |██████████|  95.0% Write (Sector 0x11D00 of 0x12C00, ) 147.64 MB/s 
+Progress: |██████████|  95.3% Write (Sector 0x11E00 of 0x12C00, ) 223.80 MB/s 
+Progress: |██████████|  95.7% Write (Sector 0x11F00 of 0x12C00, ) 215.40 MB/s 
+Progress: |██████████|  96.0% Write (Sector 0x12000 of 0x12C00, ) 218.34 MB/s 
+Progress: |██████████|  96.3% Write (Sector 0x12100 of 0x12C00, ) 208.59 MB/s 
+Progress: |██████████|  96.7% Write (Sector 0x12200 of 0x12C00, ) 230.44 MB/s 
+Progress: |██████████|  97.0% Write (Sector 0x12300 of 0x12C00, ) 221.04 MB/s 
+Progress: |██████████|  97.3% Write (Sector 0x12400 of 0x12C00, ) 208.13 MB/s 
+Progress: |██████████|  97.7% Write (Sector 0x12500 of 0x12C00, ) 213.28 MB/s 
+Progress: |██████████|  98.0% Write (Sector 0x12600 of 0x12C00, ) 216.51 MB/s 
+Progress: |██████████|  98.3% Write (Sector 0x12700 of 0x12C00, ) 229.72 MB/s 
+Progress: |██████████|  98.7% Write (Sector 0x12800 of 0x12C00, ) 189.73 MB/s 
+Progress: |██████████|  99.0% Write (Sector 0x12900 of 0x12C00, ) 202.01 MB/s 
+Progress: |██████████|  99.3% Write (Sector 0x12A00 of 0x12C00, ) 207.04 MB/s 
+Progress: |██████████|  99.7% Write (Sector 0x12B00 of 0x12C00, ) 97.33 MB/s  
+Progress: |██████████| 100.0% Write (Sector 0x12C00 of 0x12C00, ) 211.57 MB/s 
+Wrote /home/user/nx679j-stock/edl-recovery/v311-padded/modem.bin to sector 270703.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w bluetooth_b /home/user/nx679j-stock/edl-recovery/v311-padded/bluetooth.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x400) 0.00 MB/s                
+Progress: |██--------|  25.0% Write (Sector 0x100 of 0x400, ) 218.41 MB/s     
+Progress: |█████-----|  50.0% Write (Sector 0x200 of 0x400, ) 227.37 MB/s     
+Progress: |████████--|  75.0% Write (Sector 0x300 of 0x400, ) 237.06 MB/s     
+Progress: |██████████| 100.0% Write (Sector 0x400 of 0x400, ) 247.92 MB/s     
+Wrote /home/user/nx679j-stock/edl-recovery/v311-padded/bluetooth.bin to sector 347503.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w abl_b /home/user/nx679j-stock/edl-recovery/v311-padded/abl.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x100) 0.00 MB/s                
+Progress: |██████████| 100.0% Write (Sector 0x100 of 0x100, ) 201.16 MB/s     
+Wrote /home/user/nx679j-stock/edl-recovery/v311-padded/abl.bin to sector 357743.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w dsp_b /home/user/nx679j-stock/edl-recovery/v311-padded/dsp.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x4000) 0.00 MB/s               
+Progress: |----------|   1.6% Write (Sector 0x100 of 0x4000, ) 218.78 MB/s    
+Progress: |----------|   3.1% Write (Sector 0x200 of 0x4000, ) 241.25 MB/s    
+Progress: |----------|   4.7% Write (Sector 0x300 of 0x4000, ) 239.98 MB/s    
+Progress: |█---------|   6.2% Write (Sector 0x400 of 0x4000, ) 246.64 MB/s    
+Progress: |█---------|   7.8% Write (Sector 0x500 of 0x4000, ) 246.46 MB/s    
+Progress: |█---------|   9.4% Write (Sector 0x600 of 0x4000, ) 238.79 MB/s    
+Progress: |█---------|  10.9% Write (Sector 0x700 of 0x4000, ) 247.76 MB/s    
+Progress: |█---------|  12.5% Write (Sector 0x800 of 0x4000, ) 250.86 MB/s    
+Progress: |█---------|  14.1% Write (Sector 0x900 of 0x4000, ) 237.99 MB/s    
+Progress: |██--------|  15.6% Write (Sector 0xA00 of 0x4000, ) 249.38 MB/s    
+Progress: |██--------|  17.2% Write (Sector 0xB00 of 0x4000, ) 220.29 MB/s    
+Progress: |██--------|  18.8% Write (Sector 0xC00 of 0x4000, ) 228.03 MB/s    
+Progress: |██--------|  20.3% Write (Sector 0xD00 of 0x4000, ) 231.37 MB/s    
+Progress: |██--------|  21.9% Write (Sector 0xE00 of 0x4000, ) 237.88 MB/s    
+Progress: |██--------|  23.4% Write (Sector 0xF00 of 0x4000, ) 244.92 MB/s    
+Progress: |██--------|  25.0% Write (Sector 0x1000 of 0x4000, ) 240.06 MB/s   
+Progress: |███-------|  26.6% Write (Sector 0x1100 of 0x4000, ) 248.74 MB/s   
+Progress: |███-------|  28.1% Write (Sector 0x1200 of 0x4000, ) 235.54 MB/s   
+Progress: |███-------|  29.7% Write (Sector 0x1300 of 0x4000, ) 242.75 MB/s   
+Progress: |███-------|  31.2% Write (Sector 0x1400 of 0x4000, ) 247.45 MB/s   
+Progress: |███-------|  32.8% Write (Sector 0x1500 of 0x4000, ) 241.77 MB/s   
+Progress: |███-------|  34.4% Write (Sector 0x1600 of 0x4000, ) 248.39 MB/s   
+Progress: |████------|  35.9% Write (Sector 0x1700 of 0x4000, ) 243.33 MB/s   
+Progress: |████------|  37.5% Write (Sector 0x1800 of 0x4000, ) 234.16 MB/s   
+Progress: |████------|  39.1% Write (Sector 0x1900 of 0x4000, ) 245.32 MB/s   
+Progress: |████------|  40.6% Write (Sector 0x1A00 of 0x4000, ) 179.31 MB/s   
+Progress: |████------|  42.2% Write (Sector 0x1B00 of 0x4000, ) 154.23 MB/s   
+Progress: |████------|  43.8% Write (Sector 0x1C00 of 0x4000, ) 142.22 MB/s   
+Progress: |█████-----|  45.3% Write (Sector 0x1D00 of 0x4000, ) 137.18 MB/s   
+Progress: |█████-----|  46.9% Write (Sector 0x1E00 of 0x4000, ) 135.17 MB/s   
+Progress: |█████-----|  48.4% Write (Sector 0x1F00 of 0x4000, ) 145.35 MB/s   
+Progress: |█████-----|  50.0% Write (Sector 0x2000 of 0x4000, ) 146.24 MB/s   
+Progress: |█████-----|  51.6% Write (Sector 0x2100 of 0x4000, ) 166.45 MB/s   
+Progress: |█████-----|  53.1% Write (Sector 0x2200 of 0x4000, ) 188.28 MB/s   
+Progress: |█████-----|  54.7% Write (Sector 0x2300 of 0x4000, ) 210.06 MB/s   
+Progress: |██████----|  56.2% Write (Sector 0x2400 of 0x4000, ) 229.84 MB/s   
+Progress: |██████----|  57.8% Write (Sector 0x2500 of 0x4000, ) 245.02 MB/s   
+Progress: |██████----|  59.4% Write (Sector 0x2600 of 0x4000, ) 240.90 MB/s   
+Progress: |██████----|  60.9% Write (Sector 0x2700 of 0x4000, ) 241.97 MB/s   
+Progress: |██████----|  62.5% Write (Sector 0x2800 of 0x4000, ) 232.26 MB/s   
+Progress: |██████----|  64.1% Write (Sector 0x2900 of 0x4000, ) 243.76 MB/s   
+Progress: |███████---|  65.6% Write (Sector 0x2A00 of 0x4000, ) 246.33 MB/s   
+Progress: |███████---|  67.2% Write (Sector 0x2B00 of 0x4000, ) 235.48 MB/s   
+Progress: |███████---|  68.8% Write (Sector 0x2C00 of 0x4000, ) 244.94 MB/s   
+Progress: |███████---|  70.3% Write (Sector 0x2D00 of 0x4000, ) 247.61 MB/s   
+Progress: |███████---|  71.9% Write (Sector 0x2E00 of 0x4000, ) 245.11 MB/s   
+Progress: |███████---|  73.4% Write (Sector 0x2F00 of 0x4000, ) 249.38 MB/s   
+Progress: |████████--|  75.0% Write (Sector 0x3000 of 0x4000, ) 238.95 MB/s   
+Progress: |████████--|  76.6% Write (Sector 0x3100 of 0x4000, ) 248.45 MB/s   
+Progress: |████████--|  78.1% Write (Sector 0x3200 of 0x4000, ) 237.83 MB/s   
+Progress: |████████--|  79.7% Write (Sector 0x3300 of 0x4000, ) 241.96 MB/s   
+Progress: |████████--|  81.2% Write (Sector 0x3400 of 0x4000, ) 236.02 MB/s   
+Progress: |████████--|  82.8% Write (Sector 0x3500 of 0x4000, ) 246.54 MB/s   
+Progress: |████████--|  84.4% Write (Sector 0x3600 of 0x4000, ) 244.18 MB/s   
+Progress: |█████████-|  85.9% Write (Sector 0x3700 of 0x4000, ) 233.48 MB/s   
+Progress: |█████████-|  87.5% Write (Sector 0x3800 of 0x4000, ) 234.88 MB/s   
+Progress: |█████████-|  89.1% Write (Sector 0x3900 of 0x4000, ) 241.98 MB/s   
+Progress: |█████████-|  90.6% Write (Sector 0x3A00 of 0x4000, ) 239.07 MB/s   
+Progress: |█████████-|  92.2% Write (Sector 0x3B00 of 0x4000, ) 238.22 MB/s   
+Progress: |█████████-|  93.8% Write (Sector 0x3C00 of 0x4000, ) 238.46 MB/s   
+Progress: |██████████|  95.3% Write (Sector 0x3D00 of 0x4000, ) 241.20 MB/s   
+Progress: |██████████|  96.9% Write (Sector 0x3E00 of 0x4000, ) 240.53 MB/s   
+Progress: |██████████|  98.4% Write (Sector 0x3F00 of 0x4000, ) 247.47 MB/s   
+Progress: |██████████| 100.0% Write (Sector 0x4000 of 0x4000, ) 221.89 MB/s   
+Wrote /home/user/nx679j-stock/edl-recovery/v311-padded/dsp.bin to sector 357999.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w keymaster_b /home/user/nx679j-stock/edl-recovery/v311-padded/keymaster.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x80) 0.00 MB/s                 
+Progress: |██████████| 100.0% Write (Sector 0x80 of 0x80, ) 204.30 MB/s       
+Wrote /home/user/nx679j-stock/edl-recovery/v311-padded/keymaster.bin to sector 374383.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w boot_b /home/user/nx679j-stock/edl-recovery/v311-padded/boot.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x6000) 0.00 MB/s               
+Progress: |----------|   1.0% Write (Sector 0x100 of 0x6000, ) 205.13 MB/s    
+Progress: |----------|   2.1% Write (Sector 0x200 of 0x6000, ) 198.29 MB/s    
+Progress: |----------|   3.1% Write (Sector 0x300 of 0x6000, ) 235.77 MB/s    
+Progress: |----------|   4.2% Write (Sector 0x400 of 0x6000, ) 231.36 MB/s    
+Progress: |█---------|   5.2% Write (Sector 0x500 of 0x6000, ) 199.24 MB/s    
+Progress: |█---------|   6.2% Write (Sector 0x600 of 0x6000, ) 240.86 MB/s    
+Progress: |█---------|   7.3% Write (Sector 0x700 of 0x6000, ) 218.29 MB/s    
+Progress: |█---------|   8.3% Write (Sector 0x800 of 0x6000, ) 218.44 MB/s    
+Progress: |█---------|   9.4% Write (Sector 0x900 of 0x6000, ) 236.27 MB/s    
+Progress: |█---------|  10.4% Write (Sector 0xA00 of 0x6000, ) 234.00 MB/s    
+Progress: |█---------|  11.5% Write (Sector 0xB00 of 0x6000, ) 227.30 MB/s    
+Progress: |█---------|  12.5% Write (Sector 0xC00 of 0x6000, ) 238.06 MB/s    
+Progress: |█---------|  13.5% Write (Sector 0xD00 of 0x6000, ) 223.09 MB/s    
+Progress: |█---------|  14.6% Write (Sector 0xE00 of 0x6000, ) 242.15 MB/s    
+Progress: |██--------|  15.6% Write (Sector 0xF00 of 0x6000, ) 229.21 MB/s    
+Progress: |██--------|  16.7% Write (Sector 0x1000 of 0x6000, ) 239.52 MB/s   
+Progress: |██--------|  17.7% Write (Sector 0x1100 of 0x6000, ) 217.97 MB/s   
+Progress: |██--------|  18.8% Write (Sector 0x1200 of 0x6000, ) 227.03 MB/s   
+Progress: |██--------|  19.8% Write (Sector 0x1300 of 0x6000, ) 215.77 MB/s   
+Progress: |██--------|  20.8% Write (Sector 0x1400 of 0x6000, ) 214.75 MB/s   
+Progress: |██--------|  21.9% Write (Sector 0x1500 of 0x6000, ) 220.63 MB/s   
+Progress: |██--------|  22.9% Write (Sector 0x1600 of 0x6000, ) 192.14 MB/s   
+Progress: |██--------|  24.0% Write (Sector 0x1700 of 0x6000, ) 214.66 MB/s   
+Progress: |██--------|  25.0% Write (Sector 0x1800 of 0x6000, ) 200.62 MB/s   
+Progress: |███-------|  26.0% Write (Sector 0x1900 of 0x6000, ) 176.19 MB/s   
+Progress: |███-------|  27.1% Write (Sector 0x1A00 of 0x6000, ) 181.89 MB/s   
+Progress: |███-------|  28.1% Write (Sector 0x1B00 of 0x6000, ) 172.25 MB/s   
+Progress: |███-------|  29.2% Write (Sector 0x1C00 of 0x6000, ) 174.94 MB/s   
+Progress: |███-------|  30.2% Write (Sector 0x1D00 of 0x6000, ) 183.67 MB/s   
+Progress: |███-------|  31.2% Write (Sector 0x1E00 of 0x6000, ) 178.88 MB/s   
+Progress: |███-------|  32.3% Write (Sector 0x1F00 of 0x6000, ) 184.45 MB/s   
+Progress: |███-------|  33.3% Write (Sector 0x2000 of 0x6000, ) 197.70 MB/s   
+Progress: |███-------|  34.4% Write (Sector 0x2100 of 0x6000, ) 193.22 MB/s   
+Progress: |████------|  35.4% Write (Sector 0x2200 of 0x6000, ) 242.11 MB/s   
+Progress: |████------|  36.5% Write (Sector 0x2300 of 0x6000, ) 202.92 MB/s   
+Progress: |████------|  37.5% Write (Sector 0x2400 of 0x6000, ) 249.23 MB/s   
+Progress: |████------|  38.5% Write (Sector 0x2500 of 0x6000, ) 247.12 MB/s   
+Progress: |████------|  39.6% Write (Sector 0x2600 of 0x6000, ) 214.74 MB/s   
+Progress: |████------|  40.6% Write (Sector 0x2700 of 0x6000, ) 236.43 MB/s   
+Progress: |████------|  41.7% Write (Sector 0x2800 of 0x6000, ) 253.95 MB/s   
+Progress: |████------|  42.7% Write (Sector 0x2900 of 0x6000, ) 242.08 MB/s   
+Progress: |████------|  43.8% Write (Sector 0x2A00 of 0x6000, ) 231.28 MB/s   
+Progress: |████------|  44.8% Write (Sector 0x2B00 of 0x6000, ) 246.83 MB/s   
+Progress: |█████-----|  45.8% Write (Sector 0x2C00 of 0x6000, ) 251.47 MB/s   
+Progress: |█████-----|  46.9% Write (Sector 0x2D00 of 0x6000, ) 244.21 MB/s   
+Progress: |█████-----|  47.9% Write (Sector 0x2E00 of 0x6000, ) 243.74 MB/s   
+Progress: |█████-----|  49.0% Write (Sector 0x2F00 of 0x6000, ) 244.89 MB/s   
+Progress: |█████-----|  50.0% Write (Sector 0x3000 of 0x6000, ) 227.52 MB/s   
+Progress: |█████-----|  51.0% Write (Sector 0x3100 of 0x6000, ) 240.50 MB/s   
+Progress: |█████-----|  52.1% Write (Sector 0x3200 of 0x6000, ) 246.33 MB/s   
+Progress: |█████-----|  53.1% Write (Sector 0x3300 of 0x6000, ) 235.16 MB/s   
+Progress: |█████-----|  54.2% Write (Sector 0x3400 of 0x6000, ) 230.71 MB/s   
+Progress: |██████----|  55.2% Write (Sector 0x3500 of 0x6000, ) 244.05 MB/s   
+Progress: |██████----|  56.2% Write (Sector 0x3600 of 0x6000, ) 240.46 MB/s   
+Progress: |██████----|  57.3% Write (Sector 0x3700 of 0x6000, ) 225.82 MB/s   
+Progress: |██████----|  58.3% Write (Sector 0x3800 of 0x6000, ) 235.81 MB/s   
+Progress: |██████----|  59.4% Write (Sector 0x3900 of 0x6000, ) 240.24 MB/s   
+Progress: |██████----|  60.4% Write (Sector 0x3A00 of 0x6000, ) 234.10 MB/s   
+Progress: |██████----|  61.5% Write (Sector 0x3B00 of 0x6000, ) 244.74 MB/s   
+Progress: |██████----|  62.5% Write (Sector 0x3C00 of 0x6000, ) 240.21 MB/s   
+Progress: |██████----|  63.5% Write (Sector 0x3D00 of 0x6000, ) 237.96 MB/s   
+Progress: |██████----|  64.6% Write (Sector 0x3E00 of 0x6000, ) 237.91 MB/s   
+Progress: |███████---|  65.6% Write (Sector 0x3F00 of 0x6000, ) 254.86 MB/s   
+Progress: |███████---|  66.7% Write (Sector 0x4000 of 0x6000, ) 251.85 MB/s   
+Progress: |███████---|  67.7% Write (Sector 0x4100 of 0x6000, ) 250.00 MB/s   
+Progress: |███████---|  68.8% Write (Sector 0x4200 of 0x6000, ) 213.05 MB/s   
+Progress: |███████---|  69.8% Write (Sector 0x4300 of 0x6000, ) 236.78 MB/s   
+Progress: |███████---|  70.8% Write (Sector 0x4400 of 0x6000, ) 241.01 MB/s   
+Progress: |███████---|  71.9% Write (Sector 0x4500 of 0x6000, ) 244.31 MB/s   
+Progress: |███████---|  72.9% Write (Sector 0x4600 of 0x6000, ) 232.40 MB/s   
+Progress: |███████---|  74.0% Write (Sector 0x4700 of 0x6000, ) 243.15 MB/s   
+Progress: |████████--|  75.0% Write (Sector 0x4800 of 0x6000, ) 238.34 MB/s   
+Progress: |████████--|  76.0% Write (Sector 0x4900 of 0x6000, ) 230.89 MB/s   
+Progress: |████████--|  77.1% Write (Sector 0x4A00 of 0x6000, ) 235.04 MB/s   
+Progress: |████████--|  78.1% Write (Sector 0x4B00 of 0x6000, ) 240.06 MB/s   
+Progress: |████████--|  79.2% Write (Sector 0x4C00 of 0x6000, ) 236.41 MB/s   
+Progress: |████████--|  80.2% Write (Sector 0x4D00 of 0x6000, ) 234.73 MB/s   
+Progress: |████████--|  81.2% Write (Sector 0x4E00 of 0x6000, ) 238.57 MB/s   
+Progress: |████████--|  82.3% Write (Sector 0x4F00 of 0x6000, ) 242.15 MB/s   
+Progress: |████████--|  83.3% Write (Sector 0x5000 of 0x6000, ) 229.77 MB/s   
+Progress: |████████--|  84.4% Write (Sector 0x5100 of 0x6000, ) 243.61 MB/s   
+Progress: |█████████-|  85.4% Write (Sector 0x5200 of 0x6000, ) 215.36 MB/s   
+Progress: |█████████-|  86.5% Write (Sector 0x5300 of 0x6000, ) 231.36 MB/s   
+Progress: |█████████-|  87.5% Write (Sector 0x5400 of 0x6000, ) 227.40 MB/s   
+Progress: |█████████-|  88.5% Write (Sector 0x5500 of 0x6000, ) 214.58 MB/s   
+Progress: |█████████-|  89.6% Write (Sector 0x5600 of 0x6000, ) 217.04 MB/s   
+Progress: |█████████-|  90.6% Write (Sector 0x5700 of 0x6000, ) 215.77 MB/s   
+Progress: |█████████-|  91.7% Write (Sector 0x5800 of 0x6000, ) 192.21 MB/s   
+Progress: |█████████-|  92.7% Write (Sector 0x5900 of 0x6000, ) 191.38 MB/s   
+Progress: |█████████-|  93.8% Write (Sector 0x5A00 of 0x6000, ) 208.64 MB/s   
+Progress: |█████████-|  94.8% Write (Sector 0x5B00 of 0x6000, ) 193.67 MB/s   
+Progress: |██████████|  95.8% Write (Sector 0x5C00 of 0x6000, ) 189.81 MB/s   
+Progress: |██████████|  96.9% Write (Sector 0x5D00 of 0x6000, ) 180.50 MB/s   
+Progress: |██████████|  97.9% Write (Sector 0x5E00 of 0x6000, ) 196.35 MB/s   
+Progress: |██████████|  99.0% Write (Sector 0x5F00 of 0x6000, ) 195.34 MB/s   
+Progress: |██████████| 100.0% Write (Sector 0x6000 of 0x6000, ) 176.16 MB/s   
+Wrote /home/user/nx679j-stock/edl-recovery/v311-padded/boot.bin to sector 374511.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w devcfg_b /home/user/nx679j-stock/edl-recovery/v311-padded/devcfg.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x20) 0.00 MB/s                 
+Progress: |██████████| 100.0% Write (Sector 0x20 of 0x20, ) 176.59 MB/s       
+Wrote /home/user/nx679j-stock/edl-recovery/v311-padded/devcfg.bin to sector 399087.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w qupfw_b /home/user/nx679j-stock/edl-recovery/v311-padded/qupfw.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x14) 0.00 MB/s                 
+Progress: |██████████| 100.0% Write (Sector 0x14 of 0x14, ) 136.08 MB/s       
+Wrote /home/user/nx679j-stock/edl-recovery/v311-padded/qupfw.bin to sector 399119.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w vbmeta_b /home/user/nx679j-stock/edl-recovery/v311-padded/vbmeta.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x10) 0.00 MB/s                 
+Progress: |██████████| 100.0% Write (Sector 0x10 of 0x10, ) 154.84 MB/s       
+Wrote /home/user/nx679j-stock/edl-recovery/v311-padded/vbmeta.bin to sector 399139.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w dtbo_b /home/user/nx679j-stock/edl-recovery/v311-padded/dtbo.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x1800) 0.00 MB/s               
+Progress: |----------|   4.2% Write (Sector 0x100 of 0x1800, ) 224.99 MB/s    
+Progress: |█---------|   8.3% Write (Sector 0x200 of 0x1800, ) 202.92 MB/s    
+Progress: |█---------|  12.5% Write (Sector 0x300 of 0x1800, ) 213.66 MB/s    
+Progress: |██--------|  16.7% Write (Sector 0x400 of 0x1800, ) 241.55 MB/s    
+Progress: |██--------|  20.8% Write (Sector 0x500 of 0x1800, ) 226.13 MB/s    
+Progress: |██--------|  25.0% Write (Sector 0x600 of 0x1800, ) 246.16 MB/s    
+Progress: |███-------|  29.2% Write (Sector 0x700 of 0x1800, ) 246.64 MB/s    
+Progress: |███-------|  33.3% Write (Sector 0x800 of 0x1800, ) 239.32 MB/s    
+Progress: |████------|  37.5% Write (Sector 0x900 of 0x1800, ) 229.13 MB/s    
+Progress: |████------|  41.7% Write (Sector 0xA00 of 0x1800, ) 250.50 MB/s    
+Progress: |█████-----|  45.8% Write (Sector 0xB00 of 0x1800, ) 248.29 MB/s    
+Progress: |█████-----|  50.0% Write (Sector 0xC00 of 0x1800, ) 243.42 MB/s    
+Progress: |█████-----|  54.2% Write (Sector 0xD00 of 0x1800, ) 244.89 MB/s    
+Progress: |██████----|  58.3% Write (Sector 0xE00 of 0x1800, ) 245.94 MB/s    
+Progress: |██████----|  62.5% Write (Sector 0xF00 of 0x1800, ) 246.58 MB/s    
+Progress: |███████---|  66.7% Write (Sector 0x1000 of 0x1800, ) 238.60 MB/s   
+Progress: |███████---|  70.8% Write (Sector 0x1100 of 0x1800, ) 242.52 MB/s   
+Progress: |████████--|  75.0% Write (Sector 0x1200 of 0x1800, ) 243.68 MB/s   
+Progress: |████████--|  79.2% Write (Sector 0x1300 of 0x1800, ) 240.25 MB/s   
+Progress: |████████--|  83.3% Write (Sector 0x1400 of 0x1800, ) 246.85 MB/s   
+Progress: |█████████-|  87.5% Write (Sector 0x1500 of 0x1800, ) 246.56 MB/s   
+Progress: |█████████-|  91.7% Write (Sector 0x1600 of 0x1800, ) 127.54 MB/s   
+Progress: |██████████|  95.8% Write (Sector 0x1700 of 0x1800, ) 248.73 MB/s   
+Progress: |██████████| 100.0% Write (Sector 0x1800 of 0x1800, ) 250.54 MB/s   
+Wrote /home/user/nx679j-stock/edl-recovery/v311-padded/dtbo.bin to sector 399155.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w uefisecapp_b /home/user/nx679j-stock/edl-recovery/v311-padded/uefisecapp.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x200) 0.00 MB/s                
+Progress: |█████-----|  50.0% Write (Sector 0x100 of 0x200, ) 204.54 MB/s     
+Progress: |██████████| 100.0% Write (Sector 0x200 of 0x200, ) 237.37 MB/s     
+Wrote /home/user/nx679j-stock/edl-recovery/v311-padded/uefisecapp.bin to sector 405299.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w imagefv_b /home/user/nx679j-stock/edl-recovery/v311-padded/imagefv.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x200) 0.00 MB/s                
+Progress: |█████-----|  50.0% Write (Sector 0x100 of 0x200, ) 210.89 MB/s     
+Progress: |██████████| 100.0% Write (Sector 0x200 of 0x200, ) 213.94 MB/s     
+Wrote /home/user/nx679j-stock/edl-recovery/v311-padded/imagefv.bin to sector 405811.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w shrm_b /home/user/nx679j-stock/edl-recovery/v311-padded/shrm.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x20) 0.00 MB/s                 
+Progress: |██████████| 100.0% Write (Sector 0x20 of 0x20, ) 163.02 MB/s       
+Wrote /home/user/nx679j-stock/edl-recovery/v311-padded/shrm.bin to sector 406323.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w cpucp_b /home/user/nx679j-stock/edl-recovery/v311-padded/cpucp.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x100) 0.00 MB/s                
+Progress: |██████████| 100.0% Write (Sector 0x100 of 0x100, ) 216.19 MB/s     
+Wrote /home/user/nx679j-stock/edl-recovery/v311-padded/cpucp.bin to sector 473464.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w featenabler_b /home/user/nx679j-stock/edl-recovery/v311-padded/featenabler.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x20) 0.00 MB/s                 
+Progress: |██████████| 100.0% Write (Sector 0x20 of 0x20, ) 165.39 MB/s       
+Wrote /home/user/nx679j-stock/edl-recovery/v311-padded/featenabler.bin to sector 473720.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w vendor_boot_b /home/user/nx679j-stock/edl-recovery/v311-padded/vendor_boot.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x6000) 0.00 MB/s               
+Progress: |----------|   1.0% Write (Sector 0x100 of 0x6000, ) 208.47 MB/s    
+Progress: |----------|   2.1% Write (Sector 0x200 of 0x6000, ) 233.12 MB/s    
+Progress: |----------|   3.1% Write (Sector 0x300 of 0x6000, ) 249.11 MB/s    
+Progress: |----------|   4.2% Write (Sector 0x400 of 0x6000, ) 246.72 MB/s    
+Progress: |█---------|   5.2% Write (Sector 0x500 of 0x6000, ) 233.03 MB/s    
+Progress: |█---------|   6.2% Write (Sector 0x600 of 0x6000, ) 250.71 MB/s    
+Progress: |█---------|   7.3% Write (Sector 0x700 of 0x6000, ) 246.72 MB/s    
+Progress: |█---------|   8.3% Write (Sector 0x800 of 0x6000, ) 247.25 MB/s    
+Progress: |█---------|   9.4% Write (Sector 0x900 of 0x6000, ) 243.50 MB/s    
+Progress: |█---------|  10.4% Write (Sector 0xA00 of 0x6000, ) 244.21 MB/s    
+Progress: |█---------|  11.5% Write (Sector 0xB00 of 0x6000, ) 246.84 MB/s    
+Progress: |█---------|  12.5% Write (Sector 0xC00 of 0x6000, ) 243.85 MB/s    
+Progress: |█---------|  13.5% Write (Sector 0xD00 of 0x6000, ) 239.41 MB/s    
+Progress: |█---------|  14.6% Write (Sector 0xE00 of 0x6000, ) 252.03 MB/s    
+Progress: |██--------|  15.6% Write (Sector 0xF00 of 0x6000, ) 247.85 MB/s    
+Progress: |██--------|  16.7% Write (Sector 0x1000 of 0x6000, ) 247.32 MB/s   
+Progress: |██--------|  17.7% Write (Sector 0x1100 of 0x6000, ) 237.30 MB/s   
+Progress: |██--------|  18.8% Write (Sector 0x1200 of 0x6000, ) 242.52 MB/s   
+Progress: |██--------|  19.8% Write (Sector 0x1300 of 0x6000, ) 237.53 MB/s   
+Progress: |██--------|  20.8% Write (Sector 0x1400 of 0x6000, ) 232.77 MB/s   
+Progress: |██--------|  21.9% Write (Sector 0x1500 of 0x6000, ) 229.36 MB/s   
+Progress: |██--------|  22.9% Write (Sector 0x1600 of 0x6000, ) 245.84 MB/s   
+Progress: |██--------|  24.0% Write (Sector 0x1700 of 0x6000, ) 236.91 MB/s   
+Progress: |██--------|  25.0% Write (Sector 0x1800 of 0x6000, ) 233.51 MB/s   
+Progress: |███-------|  26.0% Write (Sector 0x1900 of 0x6000, ) 245.40 MB/s   
+Progress: |███-------|  27.1% Write (Sector 0x1A00 of 0x6000, ) 246.55 MB/s   
+Progress: |███-------|  28.1% Write (Sector 0x1B00 of 0x6000, ) 246.69 MB/s   
+Progress: |███-------|  29.2% Write (Sector 0x1C00 of 0x6000, ) 248.30 MB/s   
+Progress: |███-------|  30.2% Write (Sector 0x1D00 of 0x6000, ) 242.38 MB/s   
+Progress: |███-------|  31.2% Write (Sector 0x1E00 of 0x6000, ) 245.42 MB/s   
+Progress: |███-------|  32.3% Write (Sector 0x1F00 of 0x6000, ) 243.54 MB/s   
+Progress: |███-------|  33.3% Write (Sector 0x2000 of 0x6000, ) 243.76 MB/s   
+Progress: |███-------|  34.4% Write (Sector 0x2100 of 0x6000, ) 237.48 MB/s   
+Progress: |████------|  35.4% Write (Sector 0x2200 of 0x6000, ) 242.91 MB/s   
+Progress: |████------|  36.5% Write (Sector 0x2300 of 0x6000, ) 247.88 MB/s   
+Progress: |████------|  37.5% Write (Sector 0x2400 of 0x6000, ) 229.62 MB/s   
+Progress: |████------|  38.5% Write (Sector 0x2500 of 0x6000, ) 236.67 MB/s   
+Progress: |████------|  39.6% Write (Sector 0x2600 of 0x6000, ) 250.50 MB/s   
+Progress: |████------|  40.6% Write (Sector 0x2700 of 0x6000, ) 246.62 MB/s   
+Progress: |████------|  41.7% Write (Sector 0x2800 of 0x6000, ) 240.91 MB/s   
+Progress: |████------|  42.7% Write (Sector 0x2900 of 0x6000, ) 247.35 MB/s   
+Progress: |████------|  43.8% Write (Sector 0x2A00 of 0x6000, ) 242.15 MB/s   
+Progress: |████------|  44.8% Write (Sector 0x2B00 of 0x6000, ) 247.00 MB/s   
+Progress: |█████-----|  45.8% Write (Sector 0x2C00 of 0x6000, ) 246.19 MB/s   
+Progress: |█████-----|  46.9% Write (Sector 0x2D00 of 0x6000, ) 229.66 MB/s   
+Progress: |█████-----|  47.9% Write (Sector 0x2E00 of 0x6000, ) 230.32 MB/s   
+Progress: |█████-----|  49.0% Write (Sector 0x2F00 of 0x6000, ) 230.72 MB/s   
+Progress: |█████-----|  50.0% Write (Sector 0x3000 of 0x6000, ) 247.90 MB/s   
+Progress: |█████-----|  51.0% Write (Sector 0x3100 of 0x6000, ) 242.35 MB/s   
+Progress: |█████-----|  52.1% Write (Sector 0x3200 of 0x6000, ) 239.11 MB/s   
+Progress: |█████-----|  53.1% Write (Sector 0x3300 of 0x6000, ) 251.83 MB/s   
+Progress: |█████-----|  54.2% Write (Sector 0x3400 of 0x6000, ) 246.85 MB/s   
+Progress: |██████----|  55.2% Write (Sector 0x3500 of 0x6000, ) 250.02 MB/s   
+Progress: |██████----|  56.2% Write (Sector 0x3600 of 0x6000, ) 248.24 MB/s   
+Progress: |██████----|  57.3% Write (Sector 0x3700 of 0x6000, ) 249.78 MB/s   
+Progress: |██████----|  58.3% Write (Sector 0x3800 of 0x6000, ) 244.75 MB/s   
+Progress: |██████----|  59.4% Write (Sector 0x3900 of 0x6000, ) 249.62 MB/s   
+Progress: |██████----|  60.4% Write (Sector 0x3A00 of 0x6000, ) 251.40 MB/s   
+Progress: |██████----|  61.5% Write (Sector 0x3B00 of 0x6000, ) 223.11 MB/s   
+Progress: |██████----|  62.5% Write (Sector 0x3C00 of 0x6000, ) 246.52 MB/s   
+Progress: |██████----|  63.5% Write (Sector 0x3D00 of 0x6000, ) 255.03 MB/s   
+Progress: |██████----|  64.6% Write (Sector 0x3E00 of 0x6000, ) 231.26 MB/s   
+Progress: |███████---|  65.6% Write (Sector 0x3F00 of 0x6000, ) 229.11 MB/s   
+Progress: |███████---|  66.7% Write (Sector 0x4000 of 0x6000, ) 247.39 MB/s   
+Progress: |███████---|  67.7% Write (Sector 0x4100 of 0x6000, ) 223.71 MB/s   
+Progress: |███████---|  68.8% Write (Sector 0x4200 of 0x6000, ) 238.83 MB/s   
+Progress: |███████---|  69.8% Write (Sector 0x4300 of 0x6000, ) 232.33 MB/s   
+Progress: |███████---|  70.8% Write (Sector 0x4400 of 0x6000, ) 241.83 MB/s   
+Progress: |███████---|  71.9% Write (Sector 0x4500 of 0x6000, ) 243.84 MB/s   
+Progress: |███████---|  72.9% Write (Sector 0x4600 of 0x6000, ) 245.38 MB/s   
+Progress: |███████---|  74.0% Write (Sector 0x4700 of 0x6000, ) 243.53 MB/s   
+Progress: |████████--|  75.0% Write (Sector 0x4800 of 0x6000, ) 243.66 MB/s   
+Progress: |████████--|  76.0% Write (Sector 0x4900 of 0x6000, ) 239.51 MB/s   
+Progress: |████████--|  77.1% Write (Sector 0x4A00 of 0x6000, ) 245.63 MB/s   
+Progress: |████████--|  78.1% Write (Sector 0x4B00 of 0x6000, ) 234.95 MB/s   
+Progress: |████████--|  79.2% Write (Sector 0x4C00 of 0x6000, ) 254.51 MB/s   
+Progress: |████████--|  80.2% Write (Sector 0x4D00 of 0x6000, ) 245.64 MB/s   
+Progress: |████████--|  81.2% Write (Sector 0x4E00 of 0x6000, ) 250.33 MB/s   
+Progress: |████████--|  82.3% Write (Sector 0x4F00 of 0x6000, ) 241.45 MB/s   
+Progress: |████████--|  83.3% Write (Sector 0x5000 of 0x6000, ) 244.71 MB/s   
+Progress: |████████--|  84.4% Write (Sector 0x5100 of 0x6000, ) 227.35 MB/s   
+Progress: |█████████-|  85.4% Write (Sector 0x5200 of 0x6000, ) 233.65 MB/s   
+Progress: |█████████-|  86.5% Write (Sector 0x5300 of 0x6000, ) 231.08 MB/s   
+Progress: |█████████-|  87.5% Write (Sector 0x5400 of 0x6000, ) 248.02 MB/s   
+Progress: |█████████-|  88.5% Write (Sector 0x5500 of 0x6000, ) 217.19 MB/s   
+Progress: |█████████-|  89.6% Write (Sector 0x5600 of 0x6000, ) 247.99 MB/s   
+Progress: |█████████-|  90.6% Write (Sector 0x5700 of 0x6000, ) 232.94 MB/s   
+Progress: |█████████-|  91.7% Write (Sector 0x5800 of 0x6000, ) 209.22 MB/s   
+Progress: |█████████-|  92.7% Write (Sector 0x5900 of 0x6000, ) 191.53 MB/s   
+Progress: |█████████-|  93.8% Write (Sector 0x5A00 of 0x6000, ) 181.06 MB/s   
+Progress: |█████████-|  94.8% Write (Sector 0x5B00 of 0x6000, ) 169.07 MB/s   
+Progress: |██████████|  95.8% Write (Sector 0x5C00 of 0x6000, ) 150.16 MB/s   
+Progress: |██████████|  96.9% Write (Sector 0x5D00 of 0x6000, ) 153.65 MB/s   
+Progress: |██████████|  97.9% Write (Sector 0x5E00 of 0x6000, ) 141.76 MB/s   
+Progress: |██████████|  99.0% Write (Sector 0x5F00 of 0x6000, ) 137.46 MB/s   
+Progress: |██████████| 100.0% Write (Sector 0x6000 of 0x6000, ) 137.56 MB/s   
+Wrote /home/user/nx679j-stock/edl-recovery/v311-padded/vendor_boot.bin to sector 473752.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w qweslicstore_b /home/user/nx679j-stock/edl-recovery/v311-padded/qweslicstore.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x40) 0.00 MB/s                 
+Progress: |██████████| 100.0% Write (Sector 0x40 of 0x40, ) 183.38 MB/s       
+Wrote /home/user/nx679j-stock/edl-recovery/v311-padded/qweslicstore.bin to sector 498328.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w recovery_b /home/user/nx679j-stock/edl-recovery/v311-padded/recovery.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x6400) 0.00 MB/s               
+Progress: |----------|   1.0% Write (Sector 0x100 of 0x6400, ) 212.41 MB/s    
+Progress: |----------|   2.0% Write (Sector 0x200 of 0x6400, ) 236.74 MB/s    
+Progress: |----------|   3.0% Write (Sector 0x300 of 0x6400, ) 127.66 MB/s    
+Progress: |----------|   4.0% Write (Sector 0x400 of 0x6400, ) 125.84 MB/s    
+Progress: |----------|   5.0% Write (Sector 0x500 of 0x6400, ) 124.59 MB/s    
+Progress: |█---------|   6.0% Write (Sector 0x600 of 0x6400, ) 126.13 MB/s    
+Progress: |█---------|   7.0% Write (Sector 0x700 of 0x6400, ) 131.88 MB/s    
+Progress: |█---------|   8.0% Write (Sector 0x800 of 0x6400, ) 131.52 MB/s    
+Progress: |█---------|   9.0% Write (Sector 0x900 of 0x6400, ) 129.45 MB/s    
+Progress: |█---------|  10.0% Write (Sector 0xA00 of 0x6400, ) 137.57 MB/s    
+Progress: |█---------|  11.0% Write (Sector 0xB00 of 0x6400, ) 141.32 MB/s    
+Progress: |█---------|  12.0% Write (Sector 0xC00 of 0x6400, ) 138.40 MB/s    
+Progress: |█---------|  13.0% Write (Sector 0xD00 of 0x6400, ) 150.63 MB/s    
+Progress: |█---------|  14.0% Write (Sector 0xE00 of 0x6400, ) 152.38 MB/s    
+Progress: |██--------|  15.0% Write (Sector 0xF00 of 0x6400, ) 164.72 MB/s    
+Progress: |██--------|  16.0% Write (Sector 0x1000 of 0x6400, ) 176.05 MB/s   
+Progress: |██--------|  17.0% Write (Sector 0x1100 of 0x6400, ) 181.10 MB/s   
+Progress: |██--------|  18.0% Write (Sector 0x1200 of 0x6400, ) 195.99 MB/s   
+Progress: |██--------|  19.0% Write (Sector 0x1300 of 0x6400, ) 206.40 MB/s   
+Progress: |██--------|  20.0% Write (Sector 0x1400 of 0x6400, ) 228.39 MB/s   
+Progress: |██--------|  21.0% Write (Sector 0x1500 of 0x6400, ) 244.92 MB/s   
+Progress: |██--------|  22.0% Write (Sector 0x1600 of 0x6400, ) 242.11 MB/s   
+Progress: |██--------|  23.0% Write (Sector 0x1700 of 0x6400, ) 247.17 MB/s   
+Progress: |██--------|  24.0% Write (Sector 0x1800 of 0x6400, ) 219.77 MB/s   
+Progress: |██--------|  25.0% Write (Sector 0x1900 of 0x6400, ) 159.03 MB/s   
+Progress: |███-------|  26.0% Write (Sector 0x1A00 of 0x6400, ) 240.25 MB/s   
+Progress: |███-------|  27.0% Write (Sector 0x1B00 of 0x6400, ) 255.22 MB/s   
+Progress: |███-------|  28.0% Write (Sector 0x1C00 of 0x6400, ) 240.43 MB/s   
+Progress: |███-------|  29.0% Write (Sector 0x1D00 of 0x6400, ) 245.25 MB/s   
+Progress: |███-------|  30.0% Write (Sector 0x1E00 of 0x6400, ) 250.78 MB/s   
+Progress: |███-------|  31.0% Write (Sector 0x1F00 of 0x6400, ) 249.90 MB/s   
+Progress: |███-------|  32.0% Write (Sector 0x2000 of 0x6400, ) 250.72 MB/s   
+Progress: |███-------|  33.0% Write (Sector 0x2100 of 0x6400, ) 249.39 MB/s   
+Progress: |███-------|  34.0% Write (Sector 0x2200 of 0x6400, ) 249.72 MB/s   
+Progress: |████------|  35.0% Write (Sector 0x2300 of 0x6400, ) 251.56 MB/s   
+Progress: |████------|  36.0% Write (Sector 0x2400 of 0x6400, ) 254.68 MB/s   
+Progress: |████------|  37.0% Write (Sector 0x2500 of 0x6400, ) 257.62 MB/s   
+Progress: |████------|  38.0% Write (Sector 0x2600 of 0x6400, ) 200.43 MB/s   
+Progress: |████------|  39.0% Write (Sector 0x2700 of 0x6400, ) 253.63 MB/s   
+Progress: |████------|  40.0% Write (Sector 0x2800 of 0x6400, ) 254.52 MB/s   
+Progress: |████------|  41.0% Write (Sector 0x2900 of 0x6400, ) 246.40 MB/s   
+Progress: |████------|  42.0% Write (Sector 0x2A00 of 0x6400, ) 227.68 MB/s   
+Progress: |████------|  43.0% Write (Sector 0x2B00 of 0x6400, ) 236.70 MB/s   
+Progress: |████------|  44.0% Write (Sector 0x2C00 of 0x6400, ) 203.58 MB/s   
+Progress: |████------|  45.0% Write (Sector 0x2D00 of 0x6400, ) 230.76 MB/s   
+Progress: |█████-----|  46.0% Write (Sector 0x2E00 of 0x6400, ) 238.37 MB/s   
+Progress: |█████-----|  47.0% Write (Sector 0x2F00 of 0x6400, ) 247.73 MB/s   
+Progress: |█████-----|  48.0% Write (Sector 0x3000 of 0x6400, ) 242.95 MB/s   
+Progress: |█████-----|  49.0% Write (Sector 0x3100 of 0x6400, ) 248.57 MB/s   
+Progress: |█████-----|  50.0% Write (Sector 0x3200 of 0x6400, ) 247.66 MB/s   
+Progress: |█████-----|  51.0% Write (Sector 0x3300 of 0x6400, ) 239.13 MB/s   
+Progress: |█████-----|  52.0% Write (Sector 0x3400 of 0x6400, ) 241.27 MB/s   
+Progress: |█████-----|  53.0% Write (Sector 0x3500 of 0x6400, ) 244.00 MB/s   
+Progress: |█████-----|  54.0% Write (Sector 0x3600 of 0x6400, ) 220.65 MB/s   
+Progress: |██████----|  55.0% Write (Sector 0x3700 of 0x6400, ) 240.24 MB/s   
+Progress: |██████----|  56.0% Write (Sector 0x3800 of 0x6400, ) 245.14 MB/s   
+Progress: |██████----|  57.0% Write (Sector 0x3900 of 0x6400, ) 238.11 MB/s   
+Progress: |██████----|  58.0% Write (Sector 0x3A00 of 0x6400, ) 236.10 MB/s   
+Progress: |██████----|  59.0% Write (Sector 0x3B00 of 0x6400, ) 250.29 MB/s   
+Progress: |██████----|  60.0% Write (Sector 0x3C00 of 0x6400, ) 241.76 MB/s   
+Progress: |██████----|  61.0% Write (Sector 0x3D00 of 0x6400, ) 243.74 MB/s   
+Progress: |██████----|  62.0% Write (Sector 0x3E00 of 0x6400, ) 243.39 MB/s   
+Progress: |██████----|  63.0% Write (Sector 0x3F00 of 0x6400, ) 237.42 MB/s   
+Progress: |██████----|  64.0% Write (Sector 0x4000 of 0x6400, ) 237.88 MB/s   
+Progress: |██████----|  65.0% Write (Sector 0x4100 of 0x6400, ) 238.41 MB/s   
+Progress: |███████---|  66.0% Write (Sector 0x4200 of 0x6400, ) 240.40 MB/s   
+Progress: |███████---|  67.0% Write (Sector 0x4300 of 0x6400, ) 236.89 MB/s   
+Progress: |███████---|  68.0% Write (Sector 0x4400 of 0x6400, ) 241.11 MB/s   
+Progress: |███████---|  69.0% Write (Sector 0x4500 of 0x6400, ) 246.67 MB/s   
+Progress: |███████---|  70.0% Write (Sector 0x4600 of 0x6400, ) 244.89 MB/s   
+Progress: |███████---|  71.0% Write (Sector 0x4700 of 0x6400, ) 240.26 MB/s   
+Progress: |███████---|  72.0% Write (Sector 0x4800 of 0x6400, ) 248.42 MB/s   
+Progress: |███████---|  73.0% Write (Sector 0x4900 of 0x6400, ) 240.55 MB/s   
+Progress: |███████---|  74.0% Write (Sector 0x4A00 of 0x6400, ) 236.69 MB/s   
+Progress: |████████--|  75.0% Write (Sector 0x4B00 of 0x6400, ) 245.88 MB/s   
+Progress: |████████--|  76.0% Write (Sector 0x4C00 of 0x6400, ) 246.64 MB/s   
+Progress: |████████--|  77.0% Write (Sector 0x4D00 of 0x6400, ) 229.74 MB/s   
+Progress: |████████--|  78.0% Write (Sector 0x4E00 of 0x6400, ) 240.97 MB/s   
+Progress: |████████--|  79.0% Write (Sector 0x4F00 of 0x6400, ) 245.88 MB/s   
+Progress: |████████--|  80.0% Write (Sector 0x5000 of 0x6400, ) 246.36 MB/s   
+Progress: |████████--|  81.0% Write (Sector 0x5100 of 0x6400, ) 240.04 MB/s   
+Progress: |████████--|  82.0% Write (Sector 0x5200 of 0x6400, ) 216.65 MB/s   
+Progress: |████████--|  83.0% Write (Sector 0x5300 of 0x6400, ) 226.96 MB/s   
+Progress: |████████--|  84.0% Write (Sector 0x5400 of 0x6400, ) 247.61 MB/s   
+Progress: |████████--|  85.0% Write (Sector 0x5500 of 0x6400, ) 227.28 MB/s   
+Progress: |█████████-|  86.0% Write (Sector 0x5600 of 0x6400, ) 243.22 MB/s   
+Progress: |█████████-|  87.0% Write (Sector 0x5700 of 0x6400, ) 253.74 MB/s   
+Progress: |█████████-|  88.0% Write (Sector 0x5800 of 0x6400, ) 253.26 MB/s   
+Progress: |█████████-|  89.0% Write (Sector 0x5900 of 0x6400, ) 253.74 MB/s   
+Progress: |█████████-|  90.0% Write (Sector 0x5A00 of 0x6400, ) 248.80 MB/s   
+Progress: |█████████-|  91.0% Write (Sector 0x5B00 of 0x6400, ) 249.87 MB/s   
+Progress: |█████████-|  92.0% Write (Sector 0x5C00 of 0x6400, ) 251.17 MB/s   
+Progress: |█████████-|  93.0% Write (Sector 0x5D00 of 0x6400, ) 251.13 MB/s   
+Progress: |█████████-|  94.0% Write (Sector 0x5E00 of 0x6400, ) 249.10 MB/s   
+Progress: |██████████|  95.0% Write (Sector 0x5F00 of 0x6400, ) 252.40 MB/s   
+Progress: |██████████|  96.0% Write (Sector 0x6000 of 0x6400, ) 253.62 MB/s   
+Progress: |██████████|  97.0% Write (Sector 0x6100 of 0x6400, ) 226.22 MB/s   
+Progress: |██████████|  98.0% Write (Sector 0x6200 of 0x6400, ) 235.78 MB/s   
+Progress: |██████████|  99.0% Write (Sector 0x6300 of 0x6400, ) 246.74 MB/s   
+Progress: |██████████| 100.0% Write (Sector 0x6400 of 0x6400, ) 239.10 MB/s   
+Wrote /home/user/nx679j-stock/edl-recovery/v311-padded/recovery.bin to sector 498392.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w xbl_ramdump_b /home/user/nx679j-stock/edl-recovery/v311-padded/xbl_ramdump.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x200) 0.00 MB/s                
+Progress: |█████-----|  50.0% Write (Sector 0x100 of 0x200, ) 223.09 MB/s     
+Progress: |██████████| 100.0% Write (Sector 0x200 of 0x200, ) 242.64 MB/s     
+Wrote /home/user/nx679j-stock/edl-recovery/v311-padded/xbl_ramdump.bin to sector 523992.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w vbmeta_system_a /home/user/nx679j-stock/edl-recovery/v311-padded/vbmeta_system.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x10) 0.00 MB/s                 
+Progress: |██████████| 100.0% Write (Sector 0x10 of 0x10, ) 113.98 MB/s       
+Wrote /home/user/nx679j-stock/edl-recovery/v311-padded/vbmeta_system.bin to sector 2368264.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w vbmeta_system_b /home/user/nx679j-stock/edl-recovery/v311-padded/vbmeta_system.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x10) 0.00 MB/s                 
+Progress: |██████████| 100.0% Write (Sector 0x10 of 0x10, ) 129.26 MB/s       
+Wrote /home/user/nx679j-stock/edl-recovery/v311-padded/vbmeta_system.bin to sector 2368280.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w misc /home/user/nx679j-stock/edl-recovery/recon-20260717-183330/analysis/misc-clear-bcb-2k.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x100) 0.00 MB/s                
+Progress: |██████████| 100.0% Write (Sector 0x100 of 0x100, ) 191.49 MB/s     
+Wrote /home/user/nx679j-stock/edl-recovery/recon-20260717-183330/analysis/misc-clear-bcb-2k.bin to sector 8200.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl setactiveslot a --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl getactiveslot --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+Current active slot: a
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl r xbl_a /tmp/v311_xbl_a.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Read (Sector 0x0 of 0x380) 0.00 MB/s                 
+Progress: |███-------|  28.6% Read (Sector 0x100 of 0x380, ) 198.45 MB/s      
+Progress: |██████----|  57.1% Read (Sector 0x200 of 0x380, ) 258.25 MB/s      
+Progress: |█████████-|  85.7% Read (Sector 0x300 of 0x380, ) 280.91 MB/s      
+Progress: |██████████| 100.0% Read (Sector 0x380 of 0x380, ) 262.54 MB/s      
+Dumped sector 6 with sector count 896 as /tmp/v311_xbl_a.bin.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl r abl_a /tmp/v311_abl_a.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Read (Sector 0x0 of 0x100) 0.00 MB/s                 
+Progress: |██████████| 100.0% Read (Sector 0x100 of 0x100, ) 258.91 MB/s      
+Dumped sector 91654 with sector count 256 as /tmp/v311_abl_a.bin.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl r uefi_a /tmp/v311_uefi_a.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Read (Sector 0x0 of 0x500) 0.00 MB/s                 
+Progress: |██--------|  20.0% Read (Sector 0x100 of 0x500, ) 229.15 MB/s      
+Progress: |████------|  40.0% Read (Sector 0x200 of 0x500, ) 231.78 MB/s      
+Progress: |██████----|  60.0% Read (Sector 0x300 of 0x500, ) 260.87 MB/s      
+Progress: |████████--|  80.0% Read (Sector 0x400 of 0x500, ) 250.35 MB/s      
+Progress: |██████████| 100.0% Read (Sector 0x500 of 0x500, ) 268.99 MB/s      
+Dumped sector 6 with sector count 1280 as /tmp/v311_uefi_a.bin.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl r tz_a /tmp/v311_tz_a.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Read (Sector 0x0 of 0x400) 0.00 MB/s                 
+Progress: |██--------|  25.0% Read (Sector 0x100 of 0x400, ) 262.82 MB/s      
+Progress: |█████-----|  50.0% Read (Sector 0x200 of 0x400, ) 255.70 MB/s      
+Progress: |████████--|  75.0% Read (Sector 0x300 of 0x400, ) 268.30 MB/s      
+Progress: |██████████| 100.0% Read (Sector 0x400 of 0x400, ) 269.07 MB/s      
+Dumped sector 1542 with sector count 1024 as /tmp/v311_tz_a.bin.
+RC=0
+XBL_OK
+ABL_OK
+UEFI_OK
+TZ_OK
+CMD: /home/user/venvs/edk2/bin/edl reset --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --resetmode=reset
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+DeviceClass - USBError(19, 'No such device (it may have been disconnected)')
+RC=0
+=== 2026-07-18T14:42:01+02:00 v311 package restore done LOG=/home/user/nx679j-stock/edl-recovery/restore-stock-a/edl-v311-package-20260718-123811.log ===

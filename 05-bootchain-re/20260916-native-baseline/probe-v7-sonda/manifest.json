@@ -1,0 +1,115 @@
+{
+  "purpose": "does the kernel reach userspace when the ramdisk is ours?",
+  "built_by": "build-probe-v7.py",
+  "toolchain": {
+    "cc": "aarch64-linux-gnu-gcc (GCC) 16.1.0",
+    "cflags": [
+      "-static",
+      "-Os",
+      "-s",
+      "-Wall",
+      "-Wextra",
+      "-Wno-unused-result"
+    ],
+    "source": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/probe-v7-sonda/candidate-init-sonda.c"
+  },
+  "init": {
+    "bytes": 532352,
+    "sha256": "a1376c22ac8a02fbdf7e7e1e3b8bb2fe0b7888c9c6b4d7dcf97da36dbaf51dd7",
+    "file": "ELF 64-bit LSB executable, ARM aarch64, version 1 (SYSV), statically linked, BuildID[sha1]=07ca1c2c52108e5bd5e3d576131d564286aee91e, for GNU/Linux 3.7.0, stripped",
+    "elf_type": "EXEC",
+    "machine": "AArch64",
+    "pt_interp": 0,
+    "dt_needed": 0
+  },
+  "container": {
+    "path": "/home/user/nx679j-stock/magisk_patched-30700_Zx2eF.img",
+    "sha256": "0cd94d5627501f3c65c94542093ad18b1ec6c1c215dc6a7ecab4f941057e8364",
+    "kernel_offset": 4096,
+    "ramdisk_offset": 49115136,
+    "full_size": 100663296,
+    "signature_size": 4096,
+    "header_version": 4,
+    "kernel_size": 49108324,
+    "kernel_sha256": "f0aa949c95d1421381850cb1982bd2a505e96fcd7565543ec28d5b1f7d81a0cc",
+    "kernel_area_bytes": 49111040,
+    "kernel_area_sha256": "f7ea707eb916bf1f1800c9277779c1a51f6850cb5a1171cd8258ef32361b19c9",
+    "ramdisk_original_bytes": 2200983
+  },
+  "ramdisk_sources": {
+    "v6": {
+      "path": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/candidate-minimal-gadget-v6/work/ramdisk.cpio.gz",
+      "gz_bytes": 901952,
+      "gz_sha256": "8378e9a3398f55bfee72166b8bcd2df94b5cca098418d948cf3bf44019a9d035",
+      "cpio_bytes": 3237608,
+      "cpio_sha256": "2169b384f8726fc8b29433b190bd160e96ee32c242ffe40a92179f553cebf78a",
+      "entries": 66
+    },
+    "android": {
+      "path": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/probe-v7-sonda/inputs/magisk-android-ramdisk.cpio",
+      "cpio_bytes": 2306300,
+      "cpio_sha256": "6fd2630909eab5458196edc25b8c41b4c15b401c0c92fdeab65fedaec13a0594",
+      "entries": 30
+    }
+  },
+  "images": {
+    "v7": {
+      "path": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/probe-v7-sonda/boot_b-probe-v7.img",
+      "bytes": 100663296,
+      "sha256": "77d7675eb54a65d9b3ca45042731b8180d1d927d6006a5c80e8f9775e1c3c2a5",
+      "header": {
+        "magic": "ANDROID!",
+        "kernel_size": 49108324,
+        "ramdisk_size": 1014155,
+        "header_size": 1584,
+        "header_version": 4,
+        "signature_size": 4096,
+        "os_version": "0x18000162"
+      },
+      "kernel_identical": true,
+      "ramdisk_bytes": 1014155,
+      "ramdisk_sha256": "4f94f0ceb481741329cf32ad1f76df4bda88081fe8460b0d5a81732c4c43e306",
+      "ramdisk_lz4_offset": 49115136,
+      "ramdisk_cpio_bytes": 3106504,
+      "ramdisk_cpio_sha256": "bfeb2f907ce9e5842f4fe37d4ebcf67ad83630fcf32e43d7f2590151cc53c4e0",
+      "init_sha256": "a1376c22ac8a02fbdf7e7e1e3b8bb2fe0b7888c9c6b4d7dcf97da36dbaf51dd7",
+      "init_bytes": 532352,
+      "tail_identical_absolute": true,
+      "diff_count": 1008392,
+      "leftover_old_ramdisk_bytes": 1186828
+    },
+    "v7b": {
+      "path": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/probe-v7-sonda/boot_b-probe-v7b.img",
+      "bytes": 100663296,
+      "sha256": "7424a599a6a9b7e105ad1ed59b53b9dfe6763238ca16e88f9d7ad9adaba48e20",
+      "header": {
+        "magic": "ANDROID!",
+        "kernel_size": 49108324,
+        "ramdisk_size": 2352880,
+        "header_size": 1584,
+        "header_version": 4,
+        "signature_size": 4096,
+        "os_version": "0x18000162"
+      },
+      "kernel_identical": true,
+      "ramdisk_bytes": 2352880,
+      "ramdisk_sha256": "ef965ae0bf72b9974dbaa6edb1f4ddb8b51db3f8d5e1bfa485a4144edef2d337",
+      "ramdisk_lz4_offset": 49115136,
+      "ramdisk_cpio_bytes": 2574724,
+      "ramdisk_cpio_sha256": "c6b800bced1018a4f4372f4353e541630207c975db57b78b34fa7c38542079d6",
+      "init_sha256": "a1376c22ac8a02fbdf7e7e1e3b8bb2fe0b7888c9c6b4d7dcf97da36dbaf51dd7",
+      "init_bytes": 532352,
+      "tail_identical_absolute": true,
+      "diff_count": 1449862,
+      "leftover_old_ramdisk_bytes": 0
+    }
+  },
+  "lz4": {
+    "args": [
+      "lz4",
+      "-l",
+      "-9"
+    ],
+    "version": "*** lz4 v1.10.0 64-bit multithread, by Yann Collet ***"
+  }
+}

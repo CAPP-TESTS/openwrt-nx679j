@@ -1,0 +1,12 @@
+# tracer: nop
+#
+# entries-in-buffer/entries-written: 1/1   #P:8
+#
+#                                _-----=> irqs-off
+#                               / _----=> need-resched
+#                              | / _---=> hardirq/softirq
+#                              || / _--=> preempt-depth
+#                              ||| /     delay
+#           TASK-PID     CPU#  ||||   TIMESTAMP  FUNCTION
+#              | |         |   ||||      |         |
+ kprobe-write-fi-8895    [006] d..1  1373.875836: write: (vfs_write+0x0/0x37c) count=32 caller=0xffffffecfab57050 raw0=0x37************** raw1=0x66************** raw2=0x37************** raw3=0x66**************

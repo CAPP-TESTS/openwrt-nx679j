@@ -1,0 +1,608 @@
+
+=== /sys/kernel/debug/pinctrl/soc:spf_core_platform:lpi_pinctrl@3440000/pinmux-pins ===
+Pinmux settings per pin
+Format: pin (name): mux_owner gpio_owner hog?
+pin 0 (gpio0): soc:spf_core_platform:tx_swr_clk_data_pinctrl (GPIO UNCLAIMED) function func1 group gpio0
+pin 1 (gpio1): soc:spf_core_platform:tx_swr_clk_data_pinctrl (GPIO UNCLAIMED) function func1 group gpio1
+pin 2 (gpio2): soc:spf_core_platform:tx_swr_clk_data_pinctrl (GPIO UNCLAIMED) function func1 group gpio2
+pin 3 (gpio3): soc:spf_core_platform:rx_swr_clk_data_pinctrl (GPIO UNCLAIMED) function func1 group gpio3
+pin 4 (gpio4): soc:spf_core_platform:rx_swr_clk_data_pinctrl (GPIO UNCLAIMED) function func1 group gpio4
+pin 5 (gpio5): soc:spf_core_platform:rx_swr_clk_data_pinctrl (GPIO UNCLAIMED) function func1 group gpio5
+pin 6 (gpio6): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 7 (gpio7): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 8 (gpio8): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 9 (gpio9): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 10 (gpio10): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 11 (gpio11): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 12 (gpio12): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 13 (gpio13): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 14 (gpio14): soc:spf_core_platform:tx_swr_clk_data_pinctrl (GPIO UNCLAIMED) function func1 group gpio14
+pin 15 (gpio15): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 16 (gpio16): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 17 (gpio17): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 18 (gpio18): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 19 (gpio19): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 20 (gpio20): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 21 (gpio21): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 22 (gpio22): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+
+=== /sys/kernel/debug/pinctrl/soc:spf_core_platform:lpi_pinctrl@3440000/pins ===
+registered pins: 23
+pin 0 (gpio0) 0:soc:spf_core_platform:lpi_pinctrl@3440000 
+pin 1 (gpio1) 1:soc:spf_core_platform:lpi_pinctrl@3440000 
+pin 2 (gpio2) 2:soc:spf_core_platform:lpi_pinctrl@3440000 
+pin 3 (gpio3) 3:soc:spf_core_platform:lpi_pinctrl@3440000 
+pin 4 (gpio4) 4:soc:spf_core_platform:lpi_pinctrl@3440000 
+pin 5 (gpio5) 5:soc:spf_core_platform:lpi_pinctrl@3440000 
+pin 6 (gpio6) 6:soc:spf_core_platform:lpi_pinctrl@3440000 
+pin 7 (gpio7) 7:soc:spf_core_platform:lpi_pinctrl@3440000 
+pin 8 (gpio8) 8:soc:spf_core_platform:lpi_pinctrl@3440000 
+pin 9 (gpio9) 9:soc:spf_core_platform:lpi_pinctrl@3440000 
+pin 10 (gpio10) 10:soc:spf_core_platform:lpi_pinctrl@3440000 
+pin 11 (gpio11) 11:soc:spf_core_platform:lpi_pinctrl@3440000 
+pin 12 (gpio12) 12:soc:spf_core_platform:lpi_pinctrl@3440000 
+pin 13 (gpio13) 13:soc:spf_core_platform:lpi_pinctrl@3440000 
+pin 14 (gpio14) 14:soc:spf_core_platform:lpi_pinctrl@3440000 
+pin 15 (gpio15) 15:soc:spf_core_platform:lpi_pinctrl@3440000 
+pin 16 (gpio16) 16:soc:spf_core_platform:lpi_pinctrl@3440000 
+pin 17 (gpio17) 17:soc:spf_core_platform:lpi_pinctrl@3440000 
+pin 18 (gpio18) 18:soc:spf_core_platform:lpi_pinctrl@3440000 
+pin 19 (gpio19) 19:soc:spf_core_platform:lpi_pinctrl@3440000 
+pin 20 (gpio20) 20:soc:spf_core_platform:lpi_pinctrl@3440000 
+pin 21 (gpio21) 21:soc:spf_core_platform:lpi_pinctrl@3440000 
+pin 22 (gpio22) 22:soc:spf_core_platform:lpi_pinctrl@3440000 
+
+=== /sys/kernel/debug/pinctrl/c42d000.qcom,spmi:qcom,pm8450@7:pinctrl@8800/pinmux-pins ===
+Pinmux settings per pin
+Format: pin (name): mux_owner gpio_owner hog?
+pin 0 (gpio1): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 1 (gpio2): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 2 (gpio3): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 3 (gpio4): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+
+=== /sys/kernel/debug/pinctrl/c42d000.qcom,spmi:qcom,pm8450@7:pinctrl@8800/pins ===
+registered pins: 4
+pin 0 (gpio1) 0:c42d000.qcom,spmi:qcom,pm8450@7:pinctrl@8800 
+pin 1 (gpio2) 1:c42d000.qcom,spmi:qcom,pm8450@7:pinctrl@8800 
+pin 2 (gpio3) 2:c42d000.qcom,spmi:qcom,pm8450@7:pinctrl@8800 
+pin 3 (gpio4) 3:c42d000.qcom,spmi:qcom,pm8450@7:pinctrl@8800 
+
+=== /sys/kernel/debug/pinctrl/c42d000.qcom,spmi:qcom,pmr735a@4:pinctrl@8800/pinmux-pins ===
+Pinmux settings per pin
+Format: pin (name): mux_owner gpio_owner hog?
+pin 0 (gpio1): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 1 (gpio2): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 2 (gpio3): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 3 (gpio4): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+
+=== /sys/kernel/debug/pinctrl/c42d000.qcom,spmi:qcom,pmr735a@4:pinctrl@8800/pins ===
+registered pins: 4
+pin 0 (gpio1) 0:c42d000.qcom,spmi:qcom,pmr735a@4:pinctrl@8800 
+pin 1 (gpio2) 1:c42d000.qcom,spmi:qcom,pmr735a@4:pinctrl@8800 
+pin 2 (gpio3) 2:c42d000.qcom,spmi:qcom,pmr735a@4:pinctrl@8800 
+pin 3 (gpio4) 3:c42d000.qcom,spmi:qcom,pmr735a@4:pinctrl@8800 
+
+=== /sys/kernel/debug/pinctrl/c42d000.qcom,spmi:qcom,pm8350b@3:pinctrl@8800/pinmux-pins ===
+Pinmux settings per pin
+Format: pin (name): mux_owner gpio_owner hog?
+pin 0 (gpio1): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 1 (gpio2): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 2 (gpio3): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 3 (gpio4): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 4 (gpio5): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 5 (gpio6): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 6 (gpio7): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 7 (gpio8): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+
+=== /sys/kernel/debug/pinctrl/c42d000.qcom,spmi:qcom,pm8350b@3:pinctrl@8800/pins ===
+registered pins: 8
+pin 0 (gpio1) 0:c42d000.qcom,spmi:qcom,pm8350b@3:pinctrl@8800 
+pin 1 (gpio2) 1:c42d000.qcom,spmi:qcom,pm8350b@3:pinctrl@8800 
+pin 2 (gpio3) 2:c42d000.qcom,spmi:qcom,pm8350b@3:pinctrl@8800 
+pin 3 (gpio4) 3:c42d000.qcom,spmi:qcom,pm8350b@3:pinctrl@8800 
+pin 4 (gpio5) 4:c42d000.qcom,spmi:qcom,pm8350b@3:pinctrl@8800 
+pin 5 (gpio6) 5:c42d000.qcom,spmi:qcom,pm8350b@3:pinctrl@8800 
+pin 6 (gpio7) 6:c42d000.qcom,spmi:qcom,pm8350b@3:pinctrl@8800 
+pin 7 (gpio8) 7:c42d000.qcom,spmi:qcom,pm8350b@3:pinctrl@8800 
+
+=== /sys/kernel/debug/pinctrl/c42d000.qcom,spmi:qcom,pm8350c@2:pinctrl@8800/pinmux-pins ===
+Pinmux settings per pin
+Format: pin (name): mux_owner gpio_owner hog?
+pin 0 (gpio1): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 1 (gpio2): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 2 (gpio3): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 3 (gpio4): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 4 (gpio5): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 5 (gpio6): 12-002a (GPIO UNCLAIMED) function normal group gpio6
+pin 6 (gpio7): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 7 (gpio8): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 8 (gpio9): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+
+=== /sys/kernel/debug/pinctrl/c42d000.qcom,spmi:qcom,pm8350c@2:pinctrl@8800/pins ===
+registered pins: 9
+pin 0 (gpio1) 0:c42d000.qcom,spmi:qcom,pm8350c@2:pinctrl@8800 
+pin 1 (gpio2) 1:c42d000.qcom,spmi:qcom,pm8350c@2:pinctrl@8800 
+pin 2 (gpio3) 2:c42d000.qcom,spmi:qcom,pm8350c@2:pinctrl@8800 
+pin 3 (gpio4) 3:c42d000.qcom,spmi:qcom,pm8350c@2:pinctrl@8800 
+pin 4 (gpio5) 4:c42d000.qcom,spmi:qcom,pm8350c@2:pinctrl@8800 
+pin 5 (gpio6) 5:c42d000.qcom,spmi:qcom,pm8350c@2:pinctrl@8800 
+pin 6 (gpio7) 6:c42d000.qcom,spmi:qcom,pm8350c@2:pinctrl@8800 
+pin 7 (gpio8) 7:c42d000.qcom,spmi:qcom,pm8350c@2:pinctrl@8800 
+pin 8 (gpio9) 8:c42d000.qcom,spmi:qcom,pm8350c@2:pinctrl@8800 
+
+=== /sys/kernel/debug/pinctrl/c42d000.qcom,spmi:qcom,pm8350@1:pinctrl@8800/pinmux-pins ===
+Pinmux settings per pin
+Format: pin (name): mux_owner gpio_owner hog?
+pin 0 (gpio1): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 1 (gpio2): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 2 (gpio3): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 3 (gpio4): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 4 (gpio5): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 5 (gpio6): soc:gpio_keys c42d000.qcom,spmi:qcom,pm8350@1:pinctrl@8800:292 function normal group gpio6
+pin 6 (gpio7): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 7 (gpio8): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 8 (gpio9): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 9 (gpio10): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+
+=== /sys/kernel/debug/pinctrl/c42d000.qcom,spmi:qcom,pm8350@1:pinctrl@8800/pins ===
+registered pins: 10
+pin 0 (gpio1) 0:c42d000.qcom,spmi:qcom,pm8350@1:pinctrl@8800 
+pin 1 (gpio2) 1:c42d000.qcom,spmi:qcom,pm8350@1:pinctrl@8800 
+pin 2 (gpio3) 2:c42d000.qcom,spmi:qcom,pm8350@1:pinctrl@8800 
+pin 3 (gpio4) 3:c42d000.qcom,spmi:qcom,pm8350@1:pinctrl@8800 
+pin 4 (gpio5) 4:c42d000.qcom,spmi:qcom,pm8350@1:pinctrl@8800 
+pin 5 (gpio6) 5:c42d000.qcom,spmi:qcom,pm8350@1:pinctrl@8800 
+pin 6 (gpio7) 6:c42d000.qcom,spmi:qcom,pm8350@1:pinctrl@8800 
+pin 7 (gpio8) 7:c42d000.qcom,spmi:qcom,pm8350@1:pinctrl@8800 
+pin 8 (gpio9) 8:c42d000.qcom,spmi:qcom,pm8350@1:pinctrl@8800 
+pin 9 (gpio10) 9:c42d000.qcom,spmi:qcom,pm8350@1:pinctrl@8800 
+
+=== /sys/kernel/debug/pinctrl/c42d000.qcom,spmi:qcom,pmk8350@0:pinctrl@b000/pinmux-pins ===
+Pinmux settings per pin
+Format: pin (name): mux_owner gpio_owner hog?
+pin 0 (gpio1): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 1 (gpio2): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 2 (gpio3): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 3 (gpio4): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+
+=== /sys/kernel/debug/pinctrl/c42d000.qcom,spmi:qcom,pmk8350@0:pinctrl@b000/pins ===
+registered pins: 4
+pin 0 (gpio1) 0:c42d000.qcom,spmi:qcom,pmk8350@0:pinctrl@b000 
+pin 1 (gpio2) 1:c42d000.qcom,spmi:qcom,pmk8350@0:pinctrl@b000 
+pin 2 (gpio3) 2:c42d000.qcom,spmi:qcom,pmk8350@0:pinctrl@b000 
+pin 3 (gpio4) 3:c42d000.qcom,spmi:qcom,pmk8350@0:pinctrl@b000 
+
+=== /sys/kernel/debug/pinctrl/f000000.pinctrl/pinmux-pins ===
+Pinmux settings per pin
+Format: pin (name): mux_owner gpio_owner hog?
+pin 0 (GPIO_0): soc:qcom,dsi-display-primary f000000.pinctrl:301 function gpio group gpio0
+pin 1 (GPIO_1): soc:wsa_spkr_en1_pinctrl f000000.pinctrl:302 function gpio group gpio1
+pin 2 (GPIO_2): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 3 (GPIO_3): soc:wsa2_spkr_en2_pinctrl (GPIO UNCLAIMED) function gpio group gpio3
+pin 4 (GPIO_4): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 5 (GPIO_5): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 6 (GPIO_6): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 7 (GPIO_7): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 8 (GPIO_8): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 9 (GPIO_9): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 10 (GPIO_10): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 11 (GPIO_11): (MUX UNCLAIMED) f000000.pinctrl:312
+pin 12 (GPIO_12): (MUX UNCLAIMED) f000000.pinctrl:313
+pin 13 (GPIO_13): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 14 (GPIO_14): (MUX UNCLAIMED) f000000.pinctrl:315
+pin 15 (GPIO_15): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 16 (GPIO_16): 990000.i2c (GPIO UNCLAIMED) function gpio group gpio16
+pin 17 (GPIO_17): 990000.i2c (GPIO UNCLAIMED) function gpio group gpio17
+pin 18 (GPIO_18): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 19 (GPIO_19): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 20 (GPIO_20): (MUX UNCLAIMED) f000000.pinctrl:321
+pin 21 (GPIO_21): (MUX UNCLAIMED) f000000.pinctrl:322
+pin 22 (GPIO_22): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 23 (GPIO_23): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 24 (GPIO_24): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 25 (GPIO_25): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 26 (GPIO_26): 99c000.qcom,qup_uart (GPIO UNCLAIMED) function qup7 group gpio26
+pin 27 (GPIO_27): 99c000.qcom,qup_uart (GPIO UNCLAIMED) function qup7 group gpio27
+pin 28 (GPIO_28): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 29 (GPIO_29): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 30 (GPIO_30): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 31 (GPIO_31): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 32 (GPIO_32): a84000.i2c (GPIO UNCLAIMED) function gpio group gpio32
+pin 33 (GPIO_33): a84000.i2c (GPIO UNCLAIMED) function gpio group gpio33
+pin 34 (GPIO_34): (MUX UNCLAIMED) f000000.pinctrl:335
+pin 35 (GPIO_35): 9-0027 (GPIO UNCLAIMED) function gpio group gpio35
+pin 36 (GPIO_36): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 37 (GPIO_37): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 38 (GPIO_38): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 39 (GPIO_39): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 40 (GPIO_40): soc:goodix_fp (GPIO UNCLAIMED) function gpio group gpio40
+pin 41 (GPIO_41): soc:goodix_fp f000000.pinctrl:342 function gpio group gpio41
+pin 42 (GPIO_42): soc:goodix_fp (GPIO UNCLAIMED) function gpio group gpio42
+pin 43 (GPIO_43): soc:msm_cdc_pinctrl@32 (GPIO UNCLAIMED) function gpio group gpio43
+pin 44 (GPIO_44): soc:goodix_fp (GPIO UNCLAIMED) function gpio group gpio44
+pin 45 (GPIO_45): (MUX UNCLAIMED) f000000.pinctrl:346
+pin 46 (GPIO_46): 9-0027 f000000.pinctrl:347 function gpio group gpio46
+pin 47 (GPIO_47): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 48 (GPIO_48): a94000.i2c (GPIO UNCLAIMED) function gpio group gpio48
+pin 49 (GPIO_49): a94000.i2c (GPIO UNCLAIMED) function gpio group gpio49
+pin 50 (GPIO_50): 10-0012 f000000.pinctrl:351 function gpio group gpio50
+pin 51 (GPIO_51): 11-0013 f000000.pinctrl:352 function gpio group gpio51
+pin 52 (GPIO_52): a98000.i2c (GPIO UNCLAIMED) function gpio group gpio52
+pin 53 (GPIO_53): a98000.i2c (GPIO UNCLAIMED) function gpio group gpio53
+pin 54 (GPIO_54): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 55 (GPIO_55): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 56 (GPIO_56): 9-006a f000000.pinctrl:357 function gpio group gpio56
+pin 57 (GPIO_57): 9-006a f000000.pinctrl:358 function gpio group gpio57
+pin 58 (GPIO_58): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 59 (GPIO_59): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 60 (GPIO_60): 884000.i2c (GPIO UNCLAIMED) function gpio group gpio60
+pin 61 (GPIO_61): 884000.i2c (GPIO UNCLAIMED) function gpio group gpio61
+pin 62 (GPIO_62): (MUX UNCLAIMED) f000000.pinctrl:363
+pin 63 (GPIO_63): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 64 (GPIO_64): 888000.i2c f000000.pinctrl:365 function gpio group gpio64
+pin 65 (GPIO_65): 888000.i2c (GPIO UNCLAIMED) function gpio group gpio65
+pin 66 (GPIO_66): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 67 (GPIO_67): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 68 (GPIO_68): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 69 (GPIO_69): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 70 (GPIO_70): (MUX UNCLAIMED) f000000.pinctrl:371
+pin 71 (GPIO_71): soc:wsa2_spkr_en1_pinctrl (GPIO UNCLAIMED) function gpio group gpio71
+pin 72 (GPIO_72): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 73 (GPIO_73): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 74 (GPIO_74): (MUX UNCLAIMED) f000000.pinctrl:375
+pin 75 (GPIO_75): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 76 (GPIO_76): 894000.qcom,qup_uart (GPIO UNCLAIMED) function qup20 group gpio76
+pin 77 (GPIO_77): 894000.qcom,qup_uart (GPIO UNCLAIMED) function qup20 group gpio77
+pin 78 (GPIO_78): 894000.qcom,qup_uart (GPIO UNCLAIMED) function qup20 group gpio78
+pin 79 (GPIO_79): 894000.qcom,qup_uart (GPIO UNCLAIMED) function gpio group gpio79
+pin 80 (GPIO_80): b0000000.qcom,cnss-qca6490 (GPIO UNCLAIMED) function gpio group gpio80
+pin 81 (GPIO_81): soc:bt_qca6490 (GPIO UNCLAIMED) function gpio group gpio81
+pin 82 (GPIO_82): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 83 (GPIO_83): soc:wsa_spkr_en2_pinctrl (GPIO UNCLAIMED) function gpio group gpio83
+pin 84 (GPIO_84): soc:gpio_keys_nubia f000000.pinctrl:385 function gpio group gpio84
+pin 85 (GPIO_85): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 86 (GPIO_86): soc:qcom,dsi-display-primary (GPIO UNCLAIMED) function mdp_vsync group gpio86
+pin 87 (GPIO_87): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 88 (GPIO_88): (MUX UNCLAIMED) f000000.pinctrl:389
+pin 89 (GPIO_89): (MUX UNCLAIMED) f000000.pinctrl:390
+pin 90 (GPIO_90): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 91 (GPIO_91): 88e8000.ssphy (GPIO UNCLAIMED) function usb_phy group gpio91
+pin 92 (GPIO_92): (MUX UNCLAIMED) f000000.pinctrl:393
+pin 93 (GPIO_93): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 94 (GPIO_94): 1c00000.qcom,pcie f000000.pinctrl:395 function gpio group gpio94
+pin 95 (GPIO_95): 1c00000.qcom,pcie (GPIO UNCLAIMED) function gpio group gpio95
+pin 96 (GPIO_96): 1c00000.qcom,pcie f000000.pinctrl:397 function gpio group gpio96
+pin 97 (GPIO_97): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 98 (GPIO_98): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 99 (GPIO_99): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 100 (GPIO_100): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 101 (GPIO_101): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 102 (GPIO_102): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 103 (GPIO_103): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 104 (GPIO_104): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 105 (GPIO_105): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 106 (GPIO_106): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 107 (GPIO_107): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 108 (GPIO_108): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 109 (GPIO_109): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 110 (GPIO_110): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 111 (GPIO_111): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 112 (GPIO_112): ac15000.qcom,cci0 (GPIO UNCLAIMED) function cci_i2c group gpio112
+pin 113 (GPIO_113): ac15000.qcom,cci0 (GPIO UNCLAIMED) function cci_i2c group gpio113
+pin 114 (GPIO_114): ac16000.qcom,cci1 (GPIO UNCLAIMED) function cci_i2c group gpio114
+pin 115 (GPIO_115): ac16000.qcom,cci1 (GPIO UNCLAIMED) function cci_i2c group gpio115
+pin 116 (GPIO_116): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 117 (GPIO_117): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 118 (GPIO_118): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 119 (GPIO_119): soc:nubia_hw_gpio_ctrl f000000.pinctrl:420 function gpio group gpio119
+pin 120 (GPIO_120): soc:nubia_hw_gpio_ctrl f000000.pinctrl:421 function gpio group gpio120
+pin 121 (GPIO_121): soc:nubia_hw_gpio_ctrl f000000.pinctrl:422 function gpio group gpio121
+pin 122 (GPIO_122): soc:nubia_hw_gpio_ctrl f000000.pinctrl:423 function gpio group gpio122
+pin 123 (GPIO_123): (MUX UNCLAIMED) f000000.pinctrl:424
+pin 124 (GPIO_124): (MUX UNCLAIMED) f000000.pinctrl:425
+pin 125 (GPIO_125): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 126 (GPIO_126): soc:spf_core_platform:pri_mi2s_pinctrl (GPIO UNCLAIMED) function gpio group gpio126
+pin 127 (GPIO_127): soc:spf_core_platform:pri_mi2s_pinctrl (GPIO UNCLAIMED) function gpio group gpio127
+pin 128 (GPIO_128): soc:spf_core_platform:pri_mi2s_pinctrl (GPIO UNCLAIMED) function gpio group gpio128
+pin 129 (GPIO_129): soc:spf_core_platform:pri_mi2s_pinctrl (GPIO UNCLAIMED) function gpio group gpio129
+pin 130 (GPIO_130): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 131 (GPIO_131): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 132 (GPIO_132): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 133 (GPIO_133): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 134 (GPIO_134): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 135 (GPIO_135): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 136 (GPIO_136): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 137 (GPIO_137): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 138 (GPIO_138): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 139 (GPIO_139): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 140 (GPIO_140): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 141 (GPIO_141): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 142 (GPIO_142): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 143 (GPIO_143): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 144 (GPIO_144): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 145 (GPIO_145): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 146 (GPIO_146): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 147 (GPIO_147): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 148 (GPIO_148): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 149 (GPIO_149): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 150 (GPIO_150): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 151 (GPIO_151): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 152 (GPIO_152): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 153 (GPIO_153): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 154 (GPIO_154): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 155 (GPIO_155): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 156 (GPIO_156): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 157 (GPIO_157): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 158 (GPIO_158): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 159 (GPIO_159): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 160 (GPIO_160): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 161 (GPIO_161): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 162 (GPIO_162): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 163 (GPIO_163): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 164 (GPIO_164): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 165 (GPIO_165): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 166 (GPIO_166): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 167 (GPIO_167): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 168 (GPIO_168): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 169 (GPIO_169): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 170 (GPIO_170): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 171 (GPIO_171): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 172 (GPIO_172): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 173 (GPIO_173): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 174 (GPIO_174): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 175 (GPIO_175): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 176 (GPIO_176): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 177 (GPIO_177): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 178 (GPIO_178): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 179 (GPIO_179): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 180 (GPIO_180): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 181 (GPIO_181): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 182 (GPIO_182): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 183 (GPIO_183): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 184 (GPIO_184): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 185 (GPIO_185): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 186 (GPIO_186): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 187 (GPIO_187): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 188 (GPIO_188): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 189 (GPIO_189): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 190 (GPIO_190): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 191 (GPIO_191): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 192 (GPIO_192): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 193 (GPIO_193): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 194 (GPIO_194): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 195 (GPIO_195): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 196 (GPIO_196): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 197 (GPIO_197): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 198 (GPIO_198): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 199 (GPIO_199): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 200 (GPIO_200): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 201 (GPIO_201): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 202 (GPIO_202): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 203 (GPIO_203): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 204 (GPIO_204): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 205 (GPIO_205): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 206 (GPIO_206): 994000.i2c (GPIO UNCLAIMED) function gpio group gpio206
+pin 207 (GPIO_207): 994000.i2c (GPIO UNCLAIMED) function gpio group gpio207
+pin 208 (GPIO_208): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 209 (GPIO_209): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 210 (UFS_RESET): (MUX UNCLAIMED) f000000.pinctrl:511
+pin 211 (SDC2_CLK): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 212 (SDC2_CMD): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 213 (SDC2_DATA): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+
+=== /sys/kernel/debug/pinctrl/f000000.pinctrl/pins ===
+registered pins: 214
+pin 0 (GPIO_0) 0:f000000.pinctrl 
+pin 1 (GPIO_1) 1:f000000.pinctrl 
+pin 2 (GPIO_2) 2:f000000.pinctrl 
+pin 3 (GPIO_3) 3:f000000.pinctrl 
+pin 4 (GPIO_4) 4:f000000.pinctrl 
+pin 5 (GPIO_5) 5:f000000.pinctrl 
+pin 6 (GPIO_6) 6:f000000.pinctrl 
+pin 7 (GPIO_7) 7:f000000.pinctrl 
+pin 8 (GPIO_8) 8:f000000.pinctrl 
+pin 9 (GPIO_9) 9:f000000.pinctrl 
+pin 10 (GPIO_10) 10:f000000.pinctrl 
+pin 11 (GPIO_11) 11:f000000.pinctrl 
+pin 12 (GPIO_12) 12:f000000.pinctrl 
+pin 13 (GPIO_13) 13:f000000.pinctrl 
+pin 14 (GPIO_14) 14:f000000.pinctrl 
+pin 15 (GPIO_15) 15:f000000.pinctrl 
+pin 16 (GPIO_16) 16:f000000.pinctrl 
+pin 17 (GPIO_17) 17:f000000.pinctrl 
+pin 18 (GPIO_18) 18:f000000.pinctrl 
+pin 19 (GPIO_19) 19:f000000.pinctrl 
+pin 20 (GPIO_20) 20:f000000.pinctrl 
+pin 21 (GPIO_21) 21:f000000.pinctrl 
+pin 22 (GPIO_22) 22:f000000.pinctrl 
+pin 23 (GPIO_23) 23:f000000.pinctrl 
+pin 24 (GPIO_24) 24:f000000.pinctrl 
+pin 25 (GPIO_25) 25:f000000.pinctrl 
+pin 26 (GPIO_26) 26:f000000.pinctrl 
+pin 27 (GPIO_27) 27:f000000.pinctrl 
+pin 28 (GPIO_28) 28:f000000.pinctrl 
+pin 29 (GPIO_29) 29:f000000.pinctrl 
+pin 30 (GPIO_30) 30:f000000.pinctrl 
+pin 31 (GPIO_31) 31:f000000.pinctrl 
+pin 32 (GPIO_32) 32:f000000.pinctrl 
+pin 33 (GPIO_33) 33:f000000.pinctrl 
+pin 34 (GPIO_34) 34:f000000.pinctrl 
+pin 35 (GPIO_35) 35:f000000.pinctrl 
+pin 36 (GPIO_36) 36:f000000.pinctrl 
+pin 37 (GPIO_37) 37:f000000.pinctrl 
+pin 38 (GPIO_38) 38:f000000.pinctrl 
+pin 39 (GPIO_39) 39:f000000.pinctrl 
+pin 40 (GPIO_40) 40:f000000.pinctrl 
+pin 41 (GPIO_41) 41:f000000.pinctrl 
+pin 42 (GPIO_42) 42:f000000.pinctrl 
+pin 43 (GPIO_43) 43:f000000.pinctrl 
+pin 44 (GPIO_44) 44:f000000.pinctrl 
+pin 45 (GPIO_45) 45:f000000.pinctrl 
+pin 46 (GPIO_46) 46:f000000.pinctrl 
+pin 47 (GPIO_47) 47:f000000.pinctrl 
+pin 48 (GPIO_48) 48:f000000.pinctrl 
+pin 49 (GPIO_49) 49:f000000.pinctrl 
+pin 50 (GPIO_50) 50:f000000.pinctrl 
+pin 51 (GPIO_51) 51:f000000.pinctrl 
+pin 52 (GPIO_52) 52:f000000.pinctrl 
+pin 53 (GPIO_53) 53:f000000.pinctrl 
+pin 54 (GPIO_54) 54:f000000.pinctrl 
+pin 55 (GPIO_55) 55:f000000.pinctrl 
+pin 56 (GPIO_56) 56:f000000.pinctrl 
+pin 57 (GPIO_57) 57:f000000.pinctrl 
+pin 58 (GPIO_58) 58:f000000.pinctrl 
+pin 59 (GPIO_59) 59:f000000.pinctrl 
+pin 60 (GPIO_60) 60:f000000.pinctrl 
+pin 61 (GPIO_61) 61:f000000.pinctrl 
+pin 62 (GPIO_62) 62:f000000.pinctrl 
+pin 63 (GPIO_63) 63:f000000.pinctrl 
+pin 64 (GPIO_64) 64:f000000.pinctrl 
+pin 65 (GPIO_65) 65:f000000.pinctrl 
+pin 66 (GPIO_66) 66:f000000.pinctrl 
+pin 67 (GPIO_67) 67:f000000.pinctrl 
+pin 68 (GPIO_68) 68:f000000.pinctrl 
+pin 69 (GPIO_69) 69:f000000.pinctrl 
+pin 70 (GPIO_70) 70:f000000.pinctrl 
+pin 71 (GPIO_71) 71:f000000.pinctrl 
+pin 72 (GPIO_72) 72:f000000.pinctrl 
+pin 73 (GPIO_73) 73:f000000.pinctrl 
+pin 74 (GPIO_74) 74:f000000.pinctrl 
+pin 75 (GPIO_75) 75:f000000.pinctrl 
+pin 76 (GPIO_76) 76:f000000.pinctrl 
+pin 77 (GPIO_77) 77:f000000.pinctrl 
+pin 78 (GPIO_78) 78:f000000.pinctrl 
+pin 79 (GPIO_79) 79:f000000.pinctrl 
+pin 80 (GPIO_80) 80:f000000.pinctrl 
+pin 81 (GPIO_81) 81:f000000.pinctrl 
+pin 82 (GPIO_82) 82:f000000.pinctrl 
+pin 83 (GPIO_83) 83:f000000.pinctrl 
+pin 84 (GPIO_84) 84:f000000.pinctrl 
+pin 85 (GPIO_85) 85:f000000.pinctrl 
+pin 86 (GPIO_86) 86:f000000.pinctrl 
+pin 87 (GPIO_87) 87:f000000.pinctrl 
+pin 88 (GPIO_88) 88:f000000.pinctrl 
+pin 89 (GPIO_89) 89:f000000.pinctrl 
+pin 90 (GPIO_90) 90:f000000.pinctrl 
+pin 91 (GPIO_91) 91:f000000.pinctrl 
+pin 92 (GPIO_92) 92:f000000.pinctrl 
+pin 93 (GPIO_93) 93:f000000.pinctrl 
+pin 94 (GPIO_94) 94:f000000.pinctrl 
+pin 95 (GPIO_95) 95:f000000.pinctrl 
+pin 96 (GPIO_96) 96:f000000.pinctrl 
+pin 97 (GPIO_97) 97:f000000.pinctrl 
+pin 98 (GPIO_98) 98:f000000.pinctrl 
+pin 99 (GPIO_99) 99:f000000.pinctrl 
+pin 100 (GPIO_100) 100:f000000.pinctrl 
+pin 101 (GPIO_101) 101:f000000.pinctrl 
+pin 102 (GPIO_102) 102:f000000.pinctrl 
+pin 103 (GPIO_103) 103:f000000.pinctrl 
+pin 104 (GPIO_104) 104:f000000.pinctrl 
+pin 105 (GPIO_105) 105:f000000.pinctrl 
+pin 106 (GPIO_106) 106:f000000.pinctrl 
+pin 107 (GPIO_107) 107:f000000.pinctrl 
+pin 108 (GPIO_108) 108:f000000.pinctrl 
+pin 109 (GPIO_109) 109:f000000.pinctrl 
+pin 110 (GPIO_110) 110:f000000.pinctrl 
+pin 111 (GPIO_111) 111:f000000.pinctrl 
+pin 112 (GPIO_112) 112:f000000.pinctrl 
+pin 113 (GPIO_113) 113:f000000.pinctrl 
+pin 114 (GPIO_114) 114:f000000.pinctrl 
+pin 115 (GPIO_115) 115:f000000.pinctrl 
+pin 116 (GPIO_116) 116:f000000.pinctrl 
+pin 117 (GPIO_117) 117:f000000.pinctrl 
+pin 118 (GPIO_118) 118:f000000.pinctrl 
+pin 119 (GPIO_119) 119:f000000.pinctrl 
+pin 120 (GPIO_120) 120:f000000.pinctrl 
+pin 121 (GPIO_121) 121:f000000.pinctrl 
+pin 122 (GPIO_122) 122:f000000.pinctrl 
+pin 123 (GPIO_123) 123:f000000.pinctrl 
+pin 124 (GPIO_124) 124:f000000.pinctrl 
+pin 125 (GPIO_125) 125:f000000.pinctrl 
+pin 126 (GPIO_126) 126:f000000.pinctrl 
+pin 127 (GPIO_127) 127:f000000.pinctrl 
+pin 128 (GPIO_128) 128:f000000.pinctrl 
+pin 129 (GPIO_129) 129:f000000.pinctrl 
+pin 130 (GPIO_130) 130:f000000.pinctrl 
+pin 131 (GPIO_131) 131:f000000.pinctrl 
+pin 132 (GPIO_132) 132:f000000.pinctrl 
+pin 133 (GPIO_133) 133:f000000.pinctrl 
+pin 134 (GPIO_134) 134:f000000.pinctrl 
+pin 135 (GPIO_135) 135:f000000.pinctrl 
+pin 136 (GPIO_136) 136:f000000.pinctrl 
+pin 137 (GPIO_137) 137:f000000.pinctrl 
+pin 138 (GPIO_138) 138:f000000.pinctrl 
+pin 139 (GPIO_139) 139:f000000.pinctrl 
+pin 140 (GPIO_140) 140:f000000.pinctrl 
+pin 141 (GPIO_141) 141:f000000.pinctrl 
+pin 142 (GPIO_142) 142:f000000.pinctrl 
+pin 143 (GPIO_143) 143:f000000.pinctrl 
+pin 144 (GPIO_144) 144:f000000.pinctrl 
+pin 145 (GPIO_145) 145:f000000.pinctrl 
+pin 146 (GPIO_146) 146:f000000.pinctrl 
+pin 147 (GPIO_147) 147:f000000.pinctrl 
+pin 148 (GPIO_148) 148:f000000.pinctrl 
+pin 149 (GPIO_149) 149:f000000.pinctrl 
+pin 150 (GPIO_150) 150:f000000.pinctrl 
+pin 151 (GPIO_151) 151:f000000.pinctrl 
+pin 152 (GPIO_152) 152:f000000.pinctrl 
+pin 153 (GPIO_153) 153:f000000.pinctrl 
+pin 154 (GPIO_154) 154:f000000.pinctrl 
+pin 155 (GPIO_155) 155:f000000.pinctrl 
+pin 156 (GPIO_156) 156:f000000.pinctrl 
+pin 157 (GPIO_157) 157:f000000.pinctrl 
+pin 158 (GPIO_158) 158:f000000.pinctrl 
+pin 159 (GPIO_159) 159:f000000.pinctrl 
+pin 160 (GPIO_160) 160:f000000.pinctrl 
+pin 161 (GPIO_161) 161:f000000.pinctrl 
+pin 162 (GPIO_162) 162:f000000.pinctrl 
+pin 163 (GPIO_163) 163:f000000.pinctrl 
+pin 164 (GPIO_164) 164:f000000.pinctrl 
+pin 165 (GPIO_165) 165:f000000.pinctrl 
+pin 166 (GPIO_166) 166:f000000.pinctrl 
+pin 167 (GPIO_167) 167:f000000.pinctrl 
+pin 168 (GPIO_168) 168:f000000.pinctrl 
+pin 169 (GPIO_169) 169:f000000.pinctrl 
+pin 170 (GPIO_170) 170:f000000.pinctrl 
+pin 171 (GPIO_171) 171:f000000.pinctrl 
+pin 172 (GPIO_172) 172:f000000.pinctrl 
+pin 173 (GPIO_173) 173:f000000.pinctrl 
+pin 174 (GPIO_174) 174:f000000.pinctrl 
+pin 175 (GPIO_175) 175:f000000.pinctrl 
+pin 176 (GPIO_176) 176:f000000.pinctrl 
+pin 177 (GPIO_177) 177:f000000.pinctrl 
+pin 178 (GPIO_178) 178:f000000.pinctrl 
+pin 179 (GPIO_179) 179:f000000.pinctrl 
+pin 180 (GPIO_180) 180:f000000.pinctrl 
+pin 181 (GPIO_181) 181:f000000.pinctrl 
+pin 182 (GPIO_182) 182:f000000.pinctrl 
+pin 183 (GPIO_183) 183:f000000.pinctrl 
+pin 184 (GPIO_184) 184:f000000.pinctrl 
+pin 185 (GPIO_185) 185:f000000.pinctrl 
+pin 186 (GPIO_186) 186:f000000.pinctrl 
+pin 187 (GPIO_187) 187:f000000.pinctrl 
+pin 188 (GPIO_188) 188:f000000.pinctrl 
+pin 189 (GPIO_189) 189:f000000.pinctrl 
+pin 190 (GPIO_190) 190:f000000.pinctrl 
+pin 191 (GPIO_191) 191:f000000.pinctrl 
+pin 192 (GPIO_192) 192:f000000.pinctrl 
+pin 193 (GPIO_193) 193:f000000.pinctrl 
+pin 194 (GPIO_194) 194:f000000.pinctrl 
+pin 195 (GPIO_195) 195:f000000.pinctrl 
+pin 196 (GPIO_196) 196:f000000.pinctrl 
+pin 197 (GPIO_197) 197:f000000.pinctrl 
+pin 198 (GPIO_198) 198:f000000.pinctrl 
+pin 199 (GPIO_199) 199:f000000.pinctrl 
+pin 200 (GPIO_200) 200:f000000.pinctrl 
+pin 201 (GPIO_201) 201:f000000.pinctrl 
+pin 202 (GPIO_202) 202:f000000.pinctrl 
+pin 203 (GPIO_203) 203:f000000.pinctrl 
+pin 204 (GPIO_204) 204:f000000.pinctrl 
+pin 205 (GPIO_205) 205:f000000.pinctrl 
+pin 206 (GPIO_206) 206:f000000.pinctrl 
+pin 207 (GPIO_207) 207:f000000.pinctrl 
+pin 208 (GPIO_208) 208:f000000.pinctrl 
+pin 209 (GPIO_209) 209:f000000.pinctrl 
+pin 210 (UFS_RESET) 210:f000000.pinctrl 
+pin 211 (SDC2_CLK) 0:? 
+pin 212 (SDC2_CMD) 0:? 
+pin 213 (SDC2_DATA) 0:? 

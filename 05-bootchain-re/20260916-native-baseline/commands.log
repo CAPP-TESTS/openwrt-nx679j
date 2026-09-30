@@ -1,0 +1,79 @@
+baseline_start=2026-09-16T12:33:05+02:00
+serial=0123456789ABCDEF
+Linux user-Mini 7.2.5-1-cachyos #1 SMP PREEMPT_DYNAMIC Sun, 13 Sep 2026 08:30:47 +0000 x86_64 GNU/Linux
+
+=== host-usb.txt ===
+argv: lsusb -nn
+started=2026-09-16T12:33:05+02:00
+finished=2026-09-16T12:33:05+02:00 rc=1
+
+=== adb-state.txt ===
+argv: adb -s 0123456789ABCDEF get-state
+started=2026-09-16T12:33:05+02:00
+finished=2026-09-16T12:33:05+02:00 rc=0
+
+=== adb-device.txt ===
+argv: adb -s 0123456789ABCDEF devices -l
+started=2026-09-16T12:33:05+02:00
+finished=2026-09-16T12:33:05+02:00 rc=0
+
+=== adb-props.txt ===
+argv: adb -s 0123456789ABCDEF shell getprop
+started=2026-09-16T12:33:05+02:00
+finished=2026-09-16T12:33:05+02:00 rc=0
+
+=== adb-id.txt ===
+argv: adb -s 0123456789ABCDEF shell su -c id
+started=2026-09-16T12:33:05+02:00
+finished=2026-09-16T12:33:05+02:00 rc=0
+
+=== adb-uname.txt ===
+argv: adb -s 0123456789ABCDEF shell su -c uname -a
+started=2026-09-16T12:33:05+02:00
+finished=2026-09-16T12:33:05+02:00 rc=0
+
+=== adb-security.txt ===
+argv: adb -s 0123456789ABCDEF shell su -c getenforce\;\ printf\ \"cmdline=\"\;\ tr\ \"\\\\000\"\ \"\ \"\ \</proc/cmdline\;\ printf\ \"\\\\n\"
+started=2026-09-16T12:33:05+02:00
+finished=2026-09-16T12:33:05+02:00 rc=0
+
+=== adb-partitions.txt ===
+argv: adb -s 0123456789ABCDEF shell su -c for\ n\ in\ boot_a\ boot_b\ vendor_boot_a\ vendor_boot_b\ dtbo_a\ dtbo_b\ vbmeta_a\ vbmeta_b\ misc\ rawdump\ logdump\ abl_a\ abl_b\ xbl_a\ xbl_b\ xbl_ramdump_a\ xbl_ramdump_b\;\ do\ p=/dev/block/by-name/\$n\;\ if\ \[\ -e\ \"\$p\"\ \]\;\ then\ printf\ \"%s\ -\>\ \"\ \"\$n\"\;\ readlink\ -f\ \"\$p\"\;\ stat\ -c\ \"size=%s\ mode=%a\"\ \"\$p\"\ 2\>\&1\;\ else\ printf\ \"%s\ -\>\ MISSING\\\\n\"\ \"\$n\"\;\ fi\;\ done
+started=2026-09-16T12:33:05+02:00
+finished=2026-09-16T12:33:06+02:00 rc=1
+
+=== adb-mounts.txt ===
+argv: adb -s 0123456789ABCDEF shell su -c mount
+started=2026-09-16T12:33:06+02:00
+finished=2026-09-16T12:33:06+02:00 rc=0
+
+=== adb-pstore-list.txt ===
+argv: adb -s 0123456789ABCDEF shell su -c for\ p\ in\ /sys/fs/pstore/\*\;\ do\ \[\ -e\ \"\$p\"\ \]\ \&\&\ \{\ printf\ \"%s\ \"\ \"\$p\"\;\ stat\ -c\ \"size=%s\ mode=%a\"\ \"\$p\"\;\ \}\;\ done
+started=2026-09-16T12:33:06+02:00
+finished=2026-09-16T12:33:06+02:00 rc=1
+
+=== adb-udc.txt ===
+argv: adb -s 0123456789ABCDEF shell su -c for\ p\ in\ /sys/class/udc/\*\;\ do\ \[\ -e\ \"\$p\"\ \]\ \&\&\ \{\ printf\ \"udc=%s\ target=\"\ \"\$p\"\;\ readlink\ -f\ \"\$p\"\;\ printf\ \"state=\"\;\ \[\ -r\ \"\$p/state\"\ \]\ \&\&\ tr\ \"\\\\000\"\ \"\ \"\ \<\"\$p/state\"\;\ printf\ \"\\\\n\"\;\ \}\;\ done
+started=2026-09-16T12:33:06+02:00
+finished=2026-09-16T12:33:06+02:00 rc=1
+
+=== adb-usb-dumpsys.txt ===
+argv: adb -s 0123456789ABCDEF shell dumpsys usb
+started=2026-09-16T12:33:06+02:00
+finished=2026-09-16T12:33:06+02:00 rc=0
+
+=== adb-network.txt ===
+argv: adb -s 0123456789ABCDEF shell su -c ip\ -details\ link\;\ printf\ \"---\ addresses\ ---\\\\n\"\;\ ip\ -details\ address
+started=2026-09-16T12:33:06+02:00
+finished=2026-09-16T12:33:06+02:00 rc=0
+
+=== adb-dmesg.txt ===
+argv: adb -s 0123456789ABCDEF shell su -c dmesg\ -T
+started=2026-09-16T12:33:06+02:00
+finished=2026-09-16T12:33:06+02:00 rc=0
+
+=== adb-logcat-all.txt ===
+argv: adb -s 0123456789ABCDEF logcat -b all -d -v threadtime
+started=2026-09-16T12:33:06+02:00
+finished=2026-09-16T12:33:10+02:00 rc=0
+baseline_end=2026-09-16T12:33:10+02:00

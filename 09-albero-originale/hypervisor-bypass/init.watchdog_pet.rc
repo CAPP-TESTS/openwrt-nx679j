@@ -1,0 +1,12 @@
+# Gunyah watchdog petting service
+# This keeps the watchdog happy by petting it every second
+
+service watchdog_pet /system/bin/watchdog_pet.sh
+    class core
+    user root
+    group root
+    seclabel u:r:init:s0
+    oneshot
+
+on boot
+    start watchdog_pet

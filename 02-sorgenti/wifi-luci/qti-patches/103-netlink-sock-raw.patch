@@ -1,0 +1,13 @@
+--- a/src/libqmi-glib/qmi-net-port-manager-rmnet.c
++++ b/src/libqmi-glib/qmi-net-port-manager-rmnet.c
+@@ -638,7 +638,9 @@
+     GSocket                *gsocket;
+     GError                 *inner_error = NULL;
+ 
+-    socket_fd = socket (AF_NETLINK, SOCK_DGRAM, NETLINK_ROUTE);
++    /* NX679J local: use SOCK_RAW as plain netlink tooling does; the vendor
++     * kernel's rmnet handler does not create the link for SOCK_DGRAM sockets. */
++    socket_fd = socket (AF_NETLINK, SOCK_RAW | SOCK_CLOEXEC, NETLINK_ROUTE);
+     if (socket_fd < 0) {
+         g_set_error (error,
+                      QMI_CORE_ERROR,

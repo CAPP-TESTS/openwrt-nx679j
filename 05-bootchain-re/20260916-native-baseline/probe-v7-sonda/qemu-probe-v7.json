@@ -1,0 +1,158 @@
+{
+  "checks": [
+    {
+      "check": "v7: kernel+ramdisk extracted from the image match the manifest",
+      "pass": true,
+      "detail": "kernel f0aa949c95d14213 ramdisk 4f94f0ceb4817413 (1014155 B at offset 49115136)"
+    },
+    {
+      "check": "v7: kernel reached userspace and ran /init as PID 1",
+      "pass": true,
+      "detail": "['[    0.615094][    T1] nx679j-sonda: init reached userspace as pid 1 attempt=1 uptime_ms=605', '[    0.615494][    T1] nx679j-sonda: marker channel /dev/kmsg attempt=1 uptime_ms=606']"
+    },
+    {
+      "check": "v7: the marker channel worked (kmsg created/resolved by /init)",
+      "pass": true,
+      "detail": "['[    0.615094][    T1] nx679j-sonda: init reached userspace as pid 1 attempt=1 uptime_ms=605']"
+    },
+    {
+      "check": "v7: /init called reboot(2) LINUX_REBOOT_CMD_RESTART",
+      "pass": true,
+      "detail": "['[    0.617437][    T1] reboot: Restarting system']"
+    },
+    {
+      "check": "v7: the kernel performed the restart (QEMU -no-reboot exited)",
+      "pass": true,
+      "detail": "qemu exit code 0"
+    },
+    {
+      "check": "v7: no panic and PID 1 never died before the restart",
+      "pass": true,
+      "detail": "clean"
+    },
+    {
+      "check": "v7b: kernel+ramdisk extracted from the image match the manifest",
+      "pass": true,
+      "detail": "kernel f0aa949c95d14213 ramdisk ef965ae0bf72b997 (2352880 B at offset 49115136)"
+    },
+    {
+      "check": "v7b: kernel reached userspace and ran /init as PID 1",
+      "pass": true,
+      "detail": "['[    0.676806][    T1] nx679j-sonda: init reached userspace as pid 1 attempt=1 uptime_ms=603', '[    0.677204][    T1] nx679j-sonda: marker channel /dev/kmsg attempt=1 uptime_ms=605']"
+    },
+    {
+      "check": "v7b: the marker channel worked (kmsg created/resolved by /init)",
+      "pass": true,
+      "detail": "['[    0.676806][    T1] nx679j-sonda: init reached userspace as pid 1 attempt=1 uptime_ms=603']"
+    },
+    {
+      "check": "v7b: /init called reboot(2) LINUX_REBOOT_CMD_RESTART",
+      "pass": true,
+      "detail": "['[    0.679002][    T1] reboot: Restarting system']"
+    },
+    {
+      "check": "v7b: the kernel performed the restart (QEMU -no-reboot exited)",
+      "pass": true,
+      "detail": "qemu exit code 0"
+    },
+    {
+      "check": "v7b: no panic and PID 1 never died before the restart",
+      "pass": true,
+      "detail": "clean"
+    }
+  ],
+  "images": {
+    "v7": {
+      "image": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/probe-v7-sonda/boot_b-probe-v7.img",
+      "image_sha256": "77d7675eb54a65d9b3ca45042731b8180d1d927d6006a5c80e8f9775e1c3c2a5",
+      "ramdisk_sha256": "4f94f0ceb481741329cf32ad1f76df4bda88081fe8460b0d5a81732c4c43e306",
+      "ramdisk_bytes": 1014155,
+      "qemu_cmd": [
+        "qemu-system-aarch64",
+        "-machine",
+        "virt",
+        "-cpu",
+        "cortex-a57",
+        "-accel",
+        "tcg",
+        "-smp",
+        "2",
+        "-m",
+        "2048",
+        "-nodefaults",
+        "-nic",
+        "none",
+        "-display",
+        "none",
+        "-monitor",
+        "none",
+        "-serial",
+        "stdio",
+        "-no-reboot",
+        "-kernel",
+        "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/probe-v7-sonda/qemu/v7-kernel",
+        "-initrd",
+        "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/probe-v7-sonda/qemu/v7-ramdisk",
+        "-append",
+        "console=ttyAMA0 earlycon loglevel=8 panic=10 rdinit=/init"
+      ],
+      "qemu_log": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/probe-v7-sonda/qemu/boot-v7.log",
+      "qemu_exit_code": 0,
+      "qemu_exited_by_itself": true,
+      "marker_lines": [
+        "[    0.615094][    T1] nx679j-sonda: init reached userspace as pid 1 attempt=1 uptime_ms=605",
+        "[    0.615494][    T1] nx679j-sonda: marker channel /dev/kmsg attempt=1 uptime_ms=606",
+        "[    0.615699][    T1] nx679j-sonda: calling reboot(2) LINUX_REBOOT_CMD_RESTART attempt=1 uptime_ms=606"
+      ],
+      "panics": []
+    },
+    "v7b": {
+      "image": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/probe-v7-sonda/boot_b-probe-v7b.img",
+      "image_sha256": "7424a599a6a9b7e105ad1ed59b53b9dfe6763238ca16e88f9d7ad9adaba48e20",
+      "ramdisk_sha256": "ef965ae0bf72b9974dbaa6edb1f4ddb8b51db3f8d5e1bfa485a4144edef2d337",
+      "ramdisk_bytes": 2352880,
+      "qemu_cmd": [
+        "qemu-system-aarch64",
+        "-machine",
+        "virt",
+        "-cpu",
+        "cortex-a57",
+        "-accel",
+        "tcg",
+        "-smp",
+        "2",
+        "-m",
+        "2048",
+        "-nodefaults",
+        "-nic",
+        "none",
+        "-display",
+        "none",
+        "-monitor",
+        "none",
+        "-serial",
+        "stdio",
+        "-no-reboot",
+        "-kernel",
+        "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/probe-v7-sonda/qemu/v7b-kernel",
+        "-initrd",
+        "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/probe-v7-sonda/qemu/v7b-ramdisk",
+        "-append",
+        "console=ttyAMA0 earlycon loglevel=8 panic=10 rdinit=/init"
+      ],
+      "qemu_log": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/probe-v7-sonda/qemu/boot-v7b.log",
+      "qemu_exit_code": 0,
+      "qemu_exited_by_itself": true,
+      "marker_lines": [
+        "[    0.676806][    T1] nx679j-sonda: init reached userspace as pid 1 attempt=1 uptime_ms=603",
+        "[    0.677204][    T1] nx679j-sonda: marker channel /dev/kmsg attempt=1 uptime_ms=605",
+        "[    0.677385][    T1] nx679j-sonda: calling reboot(2) LINUX_REBOOT_CMD_RESTART attempt=1 uptime_ms=605"
+      ],
+      "panics": []
+    }
+  },
+  "summary": {
+    "passed": 12,
+    "total": 12
+  }
+}

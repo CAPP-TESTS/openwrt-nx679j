@@ -1,0 +1,668 @@
+8881  13:50:00.968762 openat(AT_FDCWD, "/etc/ld-musl-aarch64.path", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+8881  13:50:00.968826 openat(AT_FDCWD, "/lib/libgcc_s.so.1", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+8881  13:50:00.968920 close(3)          = 0
+8881  13:50:00.969134 openat(AT_FDCWD, "/tmp/ipa-trace-smoke3.sh", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+8881  13:50:00.969190 close(3)          = 0
+8882  13:50:00.969447 close(10)         = 0
+8882  13:50:00.969499 close(3)          = 0
+8882  13:50:00.969539 close(4)          = 0
+8882  13:50:00.969864 openat(AT_FDCWD, "/etc/ld-musl-aarch64.path", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+8882  13:50:00.969896 openat(AT_FDCWD, "/lib/libgcc_s.so.1", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+8882  13:50:00.969984 close(3)          = 0
+8882  13:50:00.970107 openat(AT_FDCWD, "/sys/class/remoteproc/remoteproc3/state", O_RDONLY|O_LARGEFILE) = 3
+8882  13:50:00.970184 close(3)          = 0
+8882  13:50:00.970207 exit_group(0)     = ?
+8882  13:50:00.970255 +++ exited with 0 +++
+8881  13:50:00.970312 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=8882, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+8881  13:50:00.970355 close(4)          = 0
+8881  13:50:00.970405 close(3)          = 0
+8883  13:50:00.970779 close(10)         = 0
+8883  13:50:00.971031 openat(AT_FDCWD, "/etc/ld-musl-aarch64.path", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+8883  13:50:00.971377 openat(AT_FDCWD, "/lib/libgcc_s.so.1", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+8883  13:50:00.971480 close(3)          = 0
+8883  13:50:00.971627 mkdirat(AT_FDCWD, "/tmp/nxipa-smoke3", 0777) = 0
+8883  13:50:00.971662 exit_group(0)     = ?
+8883  13:50:00.971718 +++ exited with 0 +++
+8881  13:50:00.972112 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=8883, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+8881  13:50:00.972382 openat(AT_FDCWD, "/tmp/nxipa-smoke3/boot-id", O_WRONLY|O_CREAT|O_TRUNC|O_LARGEFILE, 0666) = 3
+8881  13:50:00.972440 close(3)          = 0
+8884  13:50:00.972646 close(10)         = 0
+8884  13:50:00.973563 openat(AT_FDCWD, "/etc/ld-musl-aarch64.path", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+8884  13:50:00.973602 openat(AT_FDCWD, "/lib/libgcc_s.so.1", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+8884  13:50:00.973718 close(3)          = 0
+8884  13:50:00.973867 openat(AT_FDCWD, "/proc/sys/kernel/random/boot_id", O_RDONLY|O_LARGEFILE) = 3
+8884  13:50:00.973968 close(3)          = 0
+8884  13:50:00.973992 exit_group(0)     = ?
+8884  13:50:00.974059 +++ exited with 0 +++
+8881  13:50:00.974313 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=8884, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+8881  13:50:00.974376 close(11)         = 0
+8885  13:50:00.974612 close(10)         = 0
+8885  13:50:00.974702 close(3)          = 0
+8885  13:50:00.974737 close(4)          = 0
+8885  13:50:00.975012 openat(AT_FDCWD, "/etc/ld-musl-aarch64.path", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+8885  13:50:00.975046 openat(AT_FDCWD, "/lib/libgcc_s.so.1", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+8885  13:50:00.975142 close(3)          = 0
+8885  13:50:00.975273 openat(AT_FDCWD, "/proc/uptime", O_RDONLY|O_LARGEFILE) = 3
+8885  13:50:00.975332 close(3)          = 0
+8885  13:50:00.975355 exit_group(0)     = ?
+8885  13:50:00.975402 +++ exited with 0 +++
+8881  13:50:00.975462 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=8885, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+8881  13:50:00.975497 close(4)          = 0
+8881  13:50:00.975545 close(3)          = 0
+8881  13:50:00.975657 writev(1, [{iov_base="SMOKE_STAGE create_instance uptime=1373.79 10581.33", iov_len=51}, {iov_base="\n", iov_len=1}], 2) = 52
+8886  13:50:00.975910 close(10)         = 0
+8886  13:50:00.976552 openat(AT_FDCWD, "/etc/ld-musl-aarch64.path", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+8886  13:50:00.976596 openat(AT_FDCWD, "/lib/libgcc_s.so.1", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+8886  13:50:00.976725 close(3)          = 0
+8886  13:50:00.976845 mkdirat(AT_FDCWD, "/sys/kernel/tracing/instances/nxipa_smoke3", 0777) = 0
+8886  13:50:00.985320 exit_group(0)     = ?
+8886  13:50:00.985462 +++ exited with 0 +++
+8881  13:50:00.985494 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=8886, si_uid=0, si_status=0, si_utime=0, si_stime=1 /* 0.01 s */} ---
+8881  13:50:00.985810 close(4)          = 0
+8887  13:50:00.987290 close(10)         = 0
+8887  13:50:00.988903 close(3)          = 0
+8887  13:50:00.989689 close(4)          = 0
+8887  13:50:00.990051 openat(AT_FDCWD, "/etc/ld-musl-aarch64.path", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+8887  13:50:00.990099 openat(AT_FDCWD, "/lib/libgcc_s.so.1", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+8887  13:50:00.990240 close(3)          = 0
+8887  13:50:00.990440 openat(AT_FDCWD, "/proc/uptime", O_RDONLY|O_LARGEFILE) = 3
+8887  13:50:00.991231 close(3)          = 0
+8887  13:50:00.991645 exit_group(0)     = ?
+8887  13:50:00.991735 +++ exited with 0 +++
+8881  13:50:00.991740 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=8887, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+8881  13:50:00.991782 close(3)          = 0
+8881  13:50:00.991889 writev(1, [{iov_base="SMOKE_STAGE stop_instance uptime=1373.81 10581.40\n", iov_len=50}, {iov_base=NULL, iov_len=0}], 2) = 50
+8881  13:50:00.992004 openat(AT_FDCWD, "/sys/kernel/tracing/instances/nxipa_smoke3/tracing_on", O_WRONLY|O_CREAT|O_TRUNC|O_LARGEFILE, 0666) = 3
+8881  13:50:00.992113 close(3)          = 0
+8881  13:50:00.992177 writev(1, [{iov_base="0\n", iov_len=2}, {iov_base=NULL, iov_len=0}], 2) = 2
+8881  13:50:00.992229 close(11)         = 0
+8881  13:50:00.992480 close(4)          = 0
+8888  13:50:00.993061 close(10)         = 0
+8888  13:50:00.993165 close(3)          = 0
+8888  13:50:00.993210 close(4)          = 0
+8888  13:50:00.993524 openat(AT_FDCWD, "/etc/ld-musl-aarch64.path", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+8888  13:50:00.993561 openat(AT_FDCWD, "/lib/libgcc_s.so.1", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+8888  13:50:00.993699 close(3)          = 0
+8888  13:50:00.993860 openat(AT_FDCWD, "/proc/uptime", O_RDONLY|O_LARGEFILE) = 3
+8888  13:50:00.993967 close(3)          = 0
+8888  13:50:00.994001 exit_group(0)     = ?
+8888  13:50:00.994079 +++ exited with 0 +++
+8881  13:50:00.994084 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=8888, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+8881  13:50:00.994128 close(3)          = 0
+8881  13:50:00.994229 writev(1, [{iov_base="SMOKE_STAGE filter_pid uptime=1373.81 10581.43\n", iov_len=47}, {iov_base=NULL, iov_len=0}], 2) = 47
+8881  13:50:00.994297 openat(AT_FDCWD, "/sys/kernel/tracing/instances/nxipa_smoke3/set_event_pid", O_WRONLY|O_CREAT|O_TRUNC|O_LARGEFILE, 0666) = 3
+8881  13:50:00.994397 close(3)          = 0
+8881  13:50:00.994442 writev(1, [{iov_base="8881\n", iov_len=5}, {iov_base=NULL, iov_len=0}], 2) = 5
+8881  13:50:00.995323 close(11)         = 0
+8881  13:50:00.995561 close(4)          = 0
+8889  13:50:00.995639 close(10)         = 0
+8889  13:50:00.995746 close(3)          = 0
+8889  13:50:00.995791 close(4)          = 0
+8889  13:50:00.996104 openat(AT_FDCWD, "/etc/ld-musl-aarch64.path", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+8889  13:50:00.996165 openat(AT_FDCWD, "/lib/libgcc_s.so.1", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+8889  13:50:00.996302 close(3)          = 0
+8889  13:50:00.996459 openat(AT_FDCWD, "/proc/uptime", O_RDONLY|O_LARGEFILE) = 3
+8889  13:50:00.996570 close(3)          = 0
+8889  13:50:00.996606 exit_group(0)     = ?
+8889  13:50:00.996687 +++ exited with 0 +++
+8881  13:50:00.996692 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=8889, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+8881  13:50:00.996737 close(3)          = 0
+8881  13:50:00.996838 writev(1, [{iov_base="SMOKE_STAGE register_probe uptime=1373.82 10581.45\n", iov_len=51}, {iov_base=NULL, iov_len=0}], 2) = 51
+8881  13:50:00.996943 openat(AT_FDCWD, "/sys/kernel/tracing/kprobe_events", O_WRONLY|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 3
+8881  13:50:00.997048 close(3)          = 0
+8881  13:50:00.997093 writev(1, [{iov_base="p:nxipa_smoke3/write vfs_write count=%x2:u64 caller=%x30:x64 raw0=+u0(%x1):x64 raw1=+u8(%x1):x64 raw2=+u16(%x1):x64 raw3=+u24(%x1):x64\n", iov_len=135}, {iov_base=NULL, iov_len=0}], 2) = 135
+8881  13:50:00.999768 close(11)         = 0
+8881  13:50:01.000005 close(4)          = 0
+8890  13:50:01.000062 close(10)         = 0
+8890  13:50:01.000240 close(3)          = 0
+8890  13:50:01.000273 close(4)          = 0
+8890  13:50:01.000526 openat(AT_FDCWD, "/etc/ld-musl-aarch64.path", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+8890  13:50:01.000566 openat(AT_FDCWD, "/lib/libgcc_s.so.1", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+8890  13:50:01.000663 close(3)          = 0
+8890  13:50:01.000792 openat(AT_FDCWD, "/proc/uptime", O_RDONLY|O_LARGEFILE) = 3
+8890  13:50:01.000923 close(3)          = 0
+8890  13:50:01.000954 exit_group(0)     = ?
+8881  13:50:01.001043 close(3 <unfinished ...>
+8890  13:50:01.001057 +++ exited with 0 +++
+8881  13:50:01.001073 <... close resumed>) = 0
+8881  13:50:01.001093 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=8890, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+8881  13:50:01.001180 writev(1, [{iov_base="SMOKE_STAGE filter_count uptime=1373.82 10977.07\n", iov_len=49}, {iov_base=NULL, iov_len=0}], 2) = 49
+8881  13:50:01.001296 openat(AT_FDCWD, "/sys/kernel/tracing/instances/nxipa_smoke3/events/nxipa_smoke3/write/filter", O_WRONLY|O_CREAT|O_TRUNC|O_LARGEFILE, 0666) = 3
+8881  13:50:01.001373 close(3)          = 0
+8881  13:50:01.001402 writev(1, [{iov_base="count == 32\n", iov_len=12}, {iov_base=NULL, iov_len=0}], 2) = 12
+8881  13:50:01.001446 close(11)         = 0
+8881  13:50:01.001660 close(4)          = 0
+8891  13:50:01.001746 close(10)         = 0
+8891  13:50:01.001842 close(3)          = 0
+8891  13:50:01.001879 close(4)          = 0
+8891  13:50:01.002122 openat(AT_FDCWD, "/etc/ld-musl-aarch64.path", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+8891  13:50:01.002157 openat(AT_FDCWD, "/lib/libgcc_s.so.1", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+8891  13:50:01.002255 close(3)          = 0
+8891  13:50:01.002384 openat(AT_FDCWD, "/proc/uptime", O_RDONLY|O_LARGEFILE) = 3
+8891  13:50:01.002474 close(3)          = 0
+8891  13:50:01.002503 exit_group(0)     = ?
+8881  13:50:01.002582 close(3)          = 0
+8891  13:50:01.002606 +++ exited with 0 +++
+8881  13:50:01.002615 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=8891, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+8881  13:50:01.002708 writev(1, [{iov_base="SMOKE_STAGE read_format uptime=1373.82 10977.07\n", iov_len=48}, {iov_base=NULL, iov_len=0}], 2) = 48
+8881  13:50:01.002784 openat(AT_FDCWD, "/tmp/nxipa-smoke3/event-format", O_WRONLY|O_CREAT|O_TRUNC|O_LARGEFILE, 0666) = 3
+8881  13:50:01.002868 close(3)          = 0
+8892  13:50:01.003119 close(10)         = 0
+8892  13:50:01.003422 openat(AT_FDCWD, "/etc/ld-musl-aarch64.path", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+8892  13:50:01.003457 openat(AT_FDCWD, "/lib/libgcc_s.so.1", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+8892  13:50:01.003553 close(3)          = 0
+8892  13:50:01.003670 openat(AT_FDCWD, "/sys/kernel/tracing/instances/nxipa_smoke3/events/nxipa_smoke3/write/format", O_RDONLY|O_LARGEFILE) = 3
+8892  13:50:01.003739 write(1, "name: write\nID: 1507\nformat:\n\tfield:unsigned short common_type;\toffset:0;\tsize:2;\tsigned:0;\n\tfield:unsigned char common_flags;\toffset:2;\tsize:1;\tsigned:0;\n\tfield:unsigned char common_preempt_count;\toffset:3;\tsize:1;\tsigned:0;\n\tfield:int common_pid;\toffset:"..., 791) = 791
+8892  13:50:01.003780 close(3)          = 0
+8892  13:50:01.003802 exit_group(0)     = ?
+8892  13:50:01.003860 +++ exited with 0 +++
+8881  13:50:01.003883 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=8892, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+8881  13:50:01.003952 close(11)         = 0
+8881  13:50:01.004133 close(4)          = 0
+8893  13:50:01.004230 close(10)         = 0
+8893  13:50:01.004315 close(3)          = 0
+8893  13:50:01.004348 close(4)          = 0
+8893  13:50:01.004581 openat(AT_FDCWD, "/etc/ld-musl-aarch64.path", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+8893  13:50:01.004613 openat(AT_FDCWD, "/lib/libgcc_s.so.1", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+8893  13:50:01.004709 close(3)          = 0
+8893  13:50:01.004829 openat(AT_FDCWD, "/proc/uptime", O_RDONLY|O_LARGEFILE) = 3
+8893  13:50:01.004922 close(3)          = 0
+8893  13:50:01.004949 exit_group(0)     = ?
+8881  13:50:01.005035 close(3 <unfinished ...>
+8893  13:50:01.005044 +++ exited with 0 +++
+8881  13:50:01.005058 <... close resumed>) = 0
+8881  13:50:01.005077 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=8893, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+8881  13:50:01.005157 writev(1, [{iov_base="SMOKE_STAGE enable_event uptime=1373.82 10977.08\n", iov_len=49}, {iov_base=NULL, iov_len=0}], 2) = 49
+8881  13:50:01.005229 openat(AT_FDCWD, "/sys/kernel/tracing/instances/nxipa_smoke3/events/nxipa_smoke3/write/enable", O_WRONLY|O_CREAT|O_TRUNC|O_LARGEFILE, 0666) = 3
+8881  13:50:01.005305 close(3)          = 0
+8881  13:50:01.005340 writev(1, [{iov_base="1\n", iov_len=2}, {iov_base=NULL, iov_len=0}], 2) = 2
+8881  13:50:01.005824 close(11)         = 0
+8881  13:50:01.006013 close(4)          = 0
+8894  13:50:01.006095 close(10)         = 0
+8894  13:50:01.006186 close(3)          = 0
+8894  13:50:01.006222 close(4)          = 0
+8894  13:50:01.006458 openat(AT_FDCWD, "/etc/ld-musl-aarch64.path", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+8894  13:50:01.006495 openat(AT_FDCWD, "/lib/libgcc_s.so.1", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+8894  13:50:01.006594 close(3)          = 0
+8894  13:50:01.006719 openat(AT_FDCWD, "/proc/uptime", O_RDONLY|O_LARGEFILE) = 3
+8894  13:50:01.006820 close(3)          = 0
+8894  13:50:01.006850 exit_group(0)     = ?
+8881  13:50:01.006940 close(3 <unfinished ...>
+8894  13:50:01.006952 +++ exited with 0 +++
+8881  13:50:01.006959 <... close resumed>) = 0
+8881  13:50:01.006977 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=8894, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+8881  13:50:01.007063 writev(1, [{iov_base="SMOKE_STAGE start_instance uptime=1373.83 10977.11\n", iov_len=51}, {iov_base=NULL, iov_len=0}], 2) = 51
+8881  13:50:01.007136 openat(AT_FDCWD, "/sys/kernel/tracing/instances/nxipa_smoke3/tracing_on", O_WRONLY|O_CREAT|O_TRUNC|O_LARGEFILE, 0666) = 3
+8881  13:50:01.007213 close(3)          = 0
+8881  13:50:01.007243 writev(1, [{iov_base="1\n", iov_len=2}, {iov_base=NULL, iov_len=0}], 2) = 2
+8881  13:50:01.007278 close(11)         = 0
+8895  13:50:01.007519 close(10)         = 0
+8895  13:50:01.008074 openat(AT_FDCWD, "/sys/kernel/tracing/instances/nxipa_smoke3/set_event_pid", O_WRONLY|O_TRUNC|O_NOFOLLOW|O_CLOEXEC) = 3
+8895  13:50:01.024211 write(3, "8895\n", 5) = 5
+8895  13:50:01.024766 close(3)          = 0
+8895  13:50:01.024797 openat(AT_FDCWD, "/tmp/nxipa-smoke3/fixture", O_WRONLY|O_CREAT|O_EXCL|O_NOFOLLOW|O_CLOEXEC, 0600) = 3
+8895  13:50:01.024837 write(3, "0123456789abcdef0123456789abcdef", 32) = 32
+8895  13:50:01.024873 close(3)          = 0
+8895  13:50:01.024903 exit_group(0)     = ?
+8895  13:50:01.024974 +++ exited with 0 +++
+8881  13:50:01.025006 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=8895, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+8881  13:50:01.025080 openat(AT_FDCWD, "/sys/kernel/tracing/instances/nxipa_smoke3/tracing_on", O_WRONLY|O_CREAT|O_TRUNC|O_LARGEFILE, 0666) = 3
+8881  13:50:01.025176 close(3)          = 0
+8881  13:50:01.025222 writev(1, [{iov_base="0\n", iov_len=2}, {iov_base=NULL, iov_len=0}], 2) = 2
+8881  13:50:01.025272 close(11)         = 0
+8881  13:50:01.025479 close(4)          = 0
+8896  13:50:01.026801 close(10)         = 0
+8896  13:50:01.028285 close(3)          = 0
+8896  13:50:01.028339 close(4)          = 0
+8896  13:50:01.028646 openat(AT_FDCWD, "/etc/ld-musl-aarch64.path", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+8896  13:50:01.028686 openat(AT_FDCWD, "/lib/libgcc_s.so.1", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+8896  13:50:01.028821 close(3)          = 0
+8896  13:50:01.028982 openat(AT_FDCWD, "/proc/uptime", O_RDONLY|O_LARGEFILE) = 3
+8896  13:50:01.029717 close(3)          = 0
+8896  13:50:01.030111 exit_group(0)     = ?
+8896  13:50:01.030188 +++ exited with 0 +++
+8881  13:50:01.030193 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=8896, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+8881  13:50:01.030236 close(3)          = 0
+8881  13:50:01.030337 writev(1, [{iov_base="SMOKE_STAGE read_trace uptime=1373.85 10977.20\n", iov_len=47}, {iov_base=NULL, iov_len=0}], 2) = 47
+8881  13:50:01.030412 openat(AT_FDCWD, "/tmp/nxipa-smoke3/trace", O_WRONLY|O_CREAT|O_TRUNC|O_LARGEFILE, 0666) = 3
+8881  13:50:01.030511 close(3)          = 0
+8897  13:50:01.032021 close(10)         = 0
+8897  13:50:01.032385 openat(AT_FDCWD, "/etc/ld-musl-aarch64.path", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+8897  13:50:01.032424 openat(AT_FDCWD, "/lib/libgcc_s.so.1", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+8897  13:50:01.032526 close(3)          = 0
+8897  13:50:01.032654 openat(AT_FDCWD, "/sys/kernel/tracing/instances/nxipa_smoke3/trace", O_RDONLY|O_LARGEFILE) = 3
+8897  13:50:01.032758 write(1, "# tracer: nop\n#\n# entries-in-buffer/entries-written: 1/1   #P:8\n#\n#                                _-----=> irqs-off\n#                               / _----=> need-resched\n#                              | / _---=> hardirq/softirq\n#                         "..., 654) = 654
+8897  13:50:01.032801 close(3)          = 0
+8897  13:50:01.032909 exit_group(0)     = ?
+8897  13:50:01.032969 +++ exited with 0 +++
+8881  13:50:01.032993 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=8897, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+8881  13:50:01.033073 close(11)         = 0
+8881  13:50:01.033126 openat(AT_FDCWD, "/sys/kernel/tracing/instances/nxipa_smoke3/events/nxipa_smoke3/write/enable", O_WRONLY|O_CREAT|O_TRUNC|O_LARGEFILE, 0666) = 3
+8881  13:50:01.033204 close(3)          = 0
+8881  13:50:01.033236 writev(1, [{iov_base="0\n", iov_len=2}, {iov_base=NULL, iov_len=0}], 2) = 2
+8881  13:50:01.034542 close(11)         = 0
+8881  13:50:01.034732 close(4)          = 0
+8898  13:50:01.034818 close(10)         = 0
+8898  13:50:01.034909 close(3)          = 0
+8898  13:50:01.034948 close(4)          = 0
+8898  13:50:01.035203 openat(AT_FDCWD, "/etc/ld-musl-aarch64.path", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+8898  13:50:01.035241 openat(AT_FDCWD, "/lib/libgcc_s.so.1", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+8898  13:50:01.035348 close(3)          = 0
+8898  13:50:01.035479 openat(AT_FDCWD, "/proc/uptime", O_RDONLY|O_LARGEFILE) = 3
+8898  13:50:01.035571 close(3)          = 0
+8898  13:50:01.035598 exit_group(0)     = ?
+8881  13:50:01.035677 close(3)          = 0
+8898  13:50:01.035702 +++ exited with 0 +++
+8881  13:50:01.035709 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=8898, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+8881  13:50:01.035805 writev(1, [{iov_base="SMOKE_STAGE validate uptime=1373.85 10977.33\n", iov_len=45}, {iov_base=NULL, iov_len=0}], 2) = 45
+8881  13:50:01.036031 close(4)          = 0
+8899  13:50:01.036111 close(10)         = 0
+8899  13:50:01.036243 close(3)          = 0
+8899  13:50:01.036283 close(4)          = 0
+8899  13:50:01.036320 openat(AT_FDCWD, "/tmp/nxipa-smoke3/fixture", O_RDONLY|O_LARGEFILE) = 3
+8899  13:50:01.036395 close(3)          = 0
+8899  13:50:01.036656 openat(AT_FDCWD, "/etc/ld-musl-aarch64.path", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+8899  13:50:01.036691 openat(AT_FDCWD, "/lib/libgcc_s.so.1", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+8899  13:50:01.036788 close(3)          = 0
+8899  13:50:01.036947 writev(1, [{iov_base="32", iov_len=2}, {iov_base="\n", iov_len=1}], 2) = 3
+8899  13:50:01.037009 exit_group(0)     = ?
+8881  13:50:01.037099 close(3 <unfinished ...>
+8899  13:50:01.037110 +++ exited with 0 +++
+8881  13:50:01.037118 <... close resumed>) = 0
+8881  13:50:01.037135 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=8899, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+8881  13:50:01.037369 close(4)          = 0
+8900  13:50:01.037447 close(10)         = 0
+8900  13:50:01.037535 close(3)          = 0
+8900  13:50:01.037574 close(4)          = 0
+8900  13:50:01.037905 openat(AT_FDCWD, "/etc/ld-musl-aarch64.path", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+8900  13:50:01.037942 openat(AT_FDCWD, "/lib/libgcc_s.so.1", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+8900  13:50:01.038058 close(3)          = 0
+8900  13:50:01.038191 openat(AT_FDCWD, "/tmp/nxipa-smoke3/trace", O_RDONLY|O_LARGEFILE) = 3
+8900  13:50:01.038401 writev(1, [{iov_base="1", iov_len=1}, {iov_base="\n", iov_len=1}], 2) = 2
+8900  13:50:01.038457 close(3)          = 0
+8900  13:50:01.038498 exit_group(0)     = ?
+8881  13:50:01.038582 close(3 <unfinished ...>
+8900  13:50:01.038592 +++ exited with 0 +++
+8881  13:50:01.038600 <... close resumed>) = 0
+8881  13:50:01.038618 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=8900, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+8901  13:50:01.038940 close(10)         = 0
+8901  13:50:01.039243 openat(AT_FDCWD, "/etc/ld-musl-aarch64.path", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+8901  13:50:01.039276 openat(AT_FDCWD, "/lib/libgcc_s.so.1", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+8901  13:50:01.039369 close(3)          = 0
+8901  13:50:01.039499 openat(AT_FDCWD, "/tmp/nxipa-smoke3/trace", O_RDONLY|O_LARGEFILE) = 3
+8901  13:50:01.039689 writev(1, [{iov_base=" kprobe-write-fi-8895    [006] d..1  1373.875836: write: (vfs_write+0x0/0x37c) count=32 caller=0xffffffecfab57050 raw0=0x37************** raw1=0x66************** raw2=0x37************** raw3=0x66**************", iov_len=209}, {iov_base="\n", iov_len=1}], 2) = 210
+8901  13:50:01.039771 close(3)          = 0
+8901  13:50:01.039817 exit_group(0)     = ?
+8901  13:50:01.039878 +++ exited with 0 +++
+8881  13:50:01.039902 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=8901, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+8902  13:50:01.040205 close(10)         = 0
+8902  13:50:01.040513 openat(AT_FDCWD, "/etc/ld-musl-aarch64.path", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+8902  13:50:01.040551 openat(AT_FDCWD, "/lib/libgcc_s.so.1", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+8902  13:50:01.040647 close(3)          = 0
+8902  13:50:01.040771 openat(AT_FDCWD, "/tmp/nxipa-smoke3/trace", O_RDONLY|O_LARGEFILE) = 3
+8902  13:50:01.041303 exit_group(0)     = ?
+8902  13:50:01.041361 +++ exited with 0 +++
+8881  13:50:01.041382 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=8902, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+8881  13:50:01.041597 close(4)          = 0
+8903  13:50:01.041675 close(10)         = 0
+8903  13:50:01.041763 close(3)          = 0
+8903  13:50:01.041802 close(4)          = 0
+8903  13:50:01.042040 openat(AT_FDCWD, "/etc/ld-musl-aarch64.path", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+8903  13:50:01.042074 openat(AT_FDCWD, "/lib/libgcc_s.so.1", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+8903  13:50:01.042167 close(3)          = 0
+8903  13:50:01.042301 openat(AT_FDCWD, "/sys/class/remoteproc/remoteproc3/state", O_RDONLY|O_LARGEFILE) = 3
+8903  13:50:01.042417 close(3)          = 0
+8903  13:50:01.042446 exit_group(0)     = ?
+8881  13:50:01.042531 close(3)          = 0
+8903  13:50:01.042559 +++ exited with 0 +++
+8881  13:50:01.042566 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=8903, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+8881  13:50:01.042808 close(4)          = 0
+8904  13:50:01.042883 close(10)         = 0
+8904  13:50:01.042970 close(3)          = 0
+8904  13:50:01.043008 close(4)          = 0
+8904  13:50:01.043258 openat(AT_FDCWD, "/etc/ld-musl-aarch64.path", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+8904  13:50:01.043294 openat(AT_FDCWD, "/lib/libgcc_s.so.1", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+8904  13:50:01.043406 close(3)          = 0
+8904  13:50:01.043533 openat(AT_FDCWD, "/proc/sys/kernel/random/boot_id", O_RDONLY|O_LARGEFILE) = 3
+8904  13:50:01.043654 close(3)          = 0
+8904  13:50:01.043685 exit_group(0)     = ?
+8881  13:50:01.043777 close(3 <unfinished ...>
+8904  13:50:01.043790 +++ exited with 0 +++
+8881  13:50:01.043797 <... close resumed>) = 0
+8881  13:50:01.043813 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=8904, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+8881  13:50:01.044043 close(4)          = 0
+8905  13:50:01.044123 close(10)         = 0
+8905  13:50:01.044262 close(3)          = 0
+8905  13:50:01.044298 close(4)          = 0
+8905  13:50:01.044533 openat(AT_FDCWD, "/etc/ld-musl-aarch64.path", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+8905  13:50:01.044566 openat(AT_FDCWD, "/lib/libgcc_s.so.1", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+8905  13:50:01.044657 close(3)          = 0
+8905  13:50:01.044777 openat(AT_FDCWD, "/proc/uptime", O_RDONLY|O_LARGEFILE) = 3
+8905  13:50:01.044889 close(3)          = 0
+8905  13:50:01.044917 exit_group(0)     = ?
+8881  13:50:01.044999 close(3 <unfinished ...>
+8905  13:50:01.045009 +++ exited with 0 +++
+8881  13:50:01.045024 <... close resumed>) = 0
+8881  13:50:01.045042 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=8905, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+8881  13:50:01.045115 writev(1, [{iov_base="SMOKE_PASS raw32_matches_fixture boot=f2064c04-e0b0-41fa-b9ed-746808a2b741 uptime=1373.86 10977.34\n", iov_len=99}, {iov_base=NULL, iov_len=0}], 2) = 99
+8881  13:50:01.045260 writev(1, [{iov_base="SMOKE_EXIT stage=complete exit=0\n", iov_len=33}, {iov_base=NULL, iov_len=0}], 2) = 33
+8881  13:50:01.045321 openat(AT_FDCWD, "/tmp/nxipa-smoke3/error-log", O_WRONLY|O_CREAT|O_TRUNC|O_LARGEFILE, 0666) = 3
+8881  13:50:01.045407 close(3)          = 0
+8906  13:50:01.045991 close(10)         = 0
+8906  13:50:01.046265 openat(AT_FDCWD, "/etc/ld-musl-aarch64.path", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+8906  13:50:01.046297 openat(AT_FDCWD, "/lib/libgcc_s.so.1", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+8906  13:50:01.046387 close(3)          = 0
+8906  13:50:01.046500 openat(AT_FDCWD, "/sys/kernel/tracing/error_log", O_RDONLY|O_LARGEFILE) = 3
+8906  13:50:01.046555 write(1, "[ 1241.985923] trace_kprobe: error: String accepts only memory argument\n  Command: p:nxipa_smoke2/write vfs_write count=%x2:u64 caller=%x30:x64 raw=+u0(%x1):x64[4]\n                                                                                     ^\n", 251) = 251
+8906  13:50:01.046593 close(3)          = 0
+8906  13:50:01.046614 exit_group(0)     = ?
+8906  13:50:01.046672 +++ exited with 0 +++
+8881  13:50:01.047039 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=8906, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+8881  13:50:01.047102 close(11)         = 0
+8881  13:50:01.047130 openat(AT_FDCWD, "/tmp/nxipa-smoke3/kprobe-events", O_WRONLY|O_CREAT|O_TRUNC|O_LARGEFILE, 0666) = 3
+8881  13:50:01.047225 close(3)          = 0
+8907  13:50:01.047415 close(10)         = 0
+8907  13:50:01.048316 openat(AT_FDCWD, "/etc/ld-musl-aarch64.path", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+8907  13:50:01.049536 openat(AT_FDCWD, "/lib/libgcc_s.so.1", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+8907  13:50:01.053301 close(3)          = 0
+8907  13:50:01.055900 openat(AT_FDCWD, "/sys/kernel/tracing/kprobe_events", O_RDONLY|O_LARGEFILE) = 3
+8907  13:50:01.057783 write(1, "p:nxipa_smoke3/write vfs_write count=%x2:u64 caller=%x30:x64 raw0=+u0(%x1):x64 raw1=+u8(%x1):x64 raw2=+u16(%x1):x64 raw3=+u24(%x1):x64\n", 135) = 135
+8907  13:50:01.059039 close(3)          = 0
+8907  13:50:01.059682 exit_group(0)     = ?
+8907  13:50:01.060350 +++ exited with 0 +++
+8881  13:50:01.060962 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=8907, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+8881  13:50:01.062858 close(11)         = 0
+8881  13:50:01.063502 openat(AT_FDCWD, "/tmp/nxipa-smoke3/kprobe-list", O_WRONLY|O_CREAT|O_TRUNC|O_LARGEFILE, 0666) = 3
+8881  13:50:01.064207 close(3)          = 0
+8908  13:50:01.064430 close(10)         = 0
+8908  13:50:01.065009 openat(AT_FDCWD, "/etc/ld-musl-aarch64.path", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+8908  13:50:01.065046 openat(AT_FDCWD, "/lib/libgcc_s.so.1", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+8908  13:50:01.065174 close(3)          = 0
+8908  13:50:01.065319 openat(AT_FDCWD, "/sys/kernel/debug/kprobes/list", O_RDONLY|O_LARGEFILE) = 3
+8908  13:50:01.065402 write(1, "ffffffecfb4d98b4  r  dwc3_send_gadget_ep_cmd+0x0    \nffffffecfb4e0c3c  r  dwc3_gadget_pullup+0x0    \nffffffecfb4e5ba8  r  dwc3_gadget_run_stop+0x0    \nffffffecfb4e3574  r  dwc3_gadget_reset_interrupt+0x0    \nffffffecfb4e3b1c  r  dwc3_gadget_conndone_interr"..., 317) = 317
+8908  13:50:01.065444 close(3)          = 0
+8908  13:50:01.065469 exit_group(0)     = ?
+8908  13:50:01.065531 +++ exited with 0 +++
+8881  13:50:01.065912 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=8908, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+8881  13:50:01.065985 close(11)         = 0
+8881  13:50:01.066018 openat(AT_FDCWD, "/tmp/nxipa-smoke3/dmesg", O_WRONLY|O_CREAT|O_TRUNC|O_LARGEFILE, 0666) = 3
+8881  13:50:01.066115 close(3)          = 0
+8909  13:50:01.066359 close(10)         = 0
+8909  13:50:01.066621 openat(AT_FDCWD, "/etc/ld-musl-aarch64.path", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+8909  13:50:01.066974 openat(AT_FDCWD, "/lib/libgcc_s.so.1", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+8909  13:50:01.067074 close(3)          = 0
+8909  13:50:01.068694 writev(1, [{iov_base="[    0.000000][    T0] Booting Linux on physical CPU 0x0000000000 [0x410fd462]", iov_len=78}, {iov_base="\n", iov_len=1}], 2) = 79
+8909  13:50:01.068734 writev(1, [{iov_base="[    0.000000][    T0] Linux version 5.10.66-android12-9-00005-gf6e6376090be-ab8060604 (build-user@build-host) (Android (7284624, based on r416183b) clang version 12.0.5 (https://android.googlesource.com/toolchain/llvm-project c935d99d7cf2016289302412d7086"..., iov_len=1024}, {iov_base="e", iov_len=1}], 2) = 1025
+8909  13:50:01.068758 writev(1, [{iov_base=" 28 MiB\n[    0.000000][    T0] OF: reserved mem: initialized node audio_cma_region, compatible id shared-dma-pool\n[    0.000000][    T0] Reserved memory: created CMA memory pool at 0x0000000bff000000, size 16 MiB\n[    0.000000][    T0] OF: reserved mem: in"..., iov_len=1024}, {iov_base="f", iov_len=1}], 2) = 1025
+8909  13:50:01.068782 writev(1, [{iov_base="ac00000, size 20 MiB\n[    0.000000][    T0] OF: reserved mem: initialized node qseecom_region, compatible id shared-dma-pool\n[    0.000000][    T0] Reserved memory: created CMA memory pool at 0x00000000f8c00000, size 32 MiB\n[    0.000000][    T0] OF: reser"..., iov_len=1024}, {iov_base="6", iov_len=1}], 2) = 1025
+8909  13:50:01.068805 writev(1, [{iov_base="800000, size 16 MiB\n[    0.000000][    T0] OF: reserved mem: initialized node sp_region, compatible id shared-dma-pool\n[    0.000000][    T0] Reserved memory: created CMA memory pool at 0x00000000e6400000, size 4 MiB\n[    0.000000][    T0] OF: reserved mem"..., iov_len=1024}, {iov_base="0", iov_len=1}], 2) = 1025
+8909  13:50:01.068830 writev(1, [{iov_base="000][    T0]   node   0: [mem 0x00**************-0x00000000808f3fff]\n[    0.000000][    T0]   node   0: [mem 0x00000000808f4000-0x00000000808fffff]\n[    0.000000][    T0]   node   0: [mem 0x00**************-0x00000000851fffff]\n[    0.000000][    T0]   node"..., iov_len=1024}, {iov_base="0", iov_len=1}], 2) = 1025
+8909  13:50:01.068854 writev(1, [{iov_base="00000][    T0]   node   0: [mem 0x00000000a7000000-0x00000000baffffff]\n[    0.000000][    T0]   node   0: [mem 0x00000000bb000000-0x00000000bfffffff]\n[    0.000000][    T0]   node   0: [mem 0x00000000c0000000-0x00000000dfffffff]\n[    0.000000][    T0]   no"..., iov_len=1024}, {iov_base="6", iov_len=1}], 2) = 1025
+8909  13:50:01.068878 writev(1, [{iov_base="3\n[    0.000000][    T0]   Normal zone: 64992 pages used for memmap\n[    0.000000][    T0]   Normal zone: 4159488 pages, LIFO batch:63\n[    0.000000][    T0] psci: probing for conduit method from DT.\n[    0.000000][    T0] psci: PSCIv1.1 detected in firmwa"..., iov_len=1024}, {iov_base=" ", iov_len=1}], 2) = 1025
+8909  13:50:01.068903 writev(1, [{iov_base=" T0] CPU features: kernel page table isolation forced OFF by kpti command line option\n[    0.000000][    T0] CPU features: detected: Hardware dirty bit management\n[    0.000000][    T0] CPU features: detected: Spectre-v4\n[    0.000000][    T0] CPU features"..., iov_len=1024}, {iov_base=" ", iov_len=1}], 2) = 1025
+8909  13:50:01.068928 writev(1, [{iov_base="irqaffinity=0-3 ftrace_dump_on_oops pstore.compress=none fsa4480_i2c.async_probe=1 can.stats_timer=0 video=vfb:640x400,bpp=32,memsize=3072000 qcom-dload-mode.download_mode=1 bootconfig  msm_drm.dsi_display0=qcom,mdss_dsi_r6130_1080_2400_amoled_cmd: rootwai"..., iov_len=1024}, {iov_base=".", iov_len=1}], 2) = 1025
+8909  13:50:01.068952 writev(1, [{iov_base="000000][    T0] random: get_random_u64 called from kmem_cache_open+0x2c/0x39c with crng_init=0\n[    0.000000][    T0] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=8, Nodes=1\n[    0.000000][    T0] rcu: Preemptible hierarchical RCU implementation.\n[    0"..., iov_len=1024}, {iov_base="l", iov_len=1}], 2) = 1025
+8909  13:50:01.068976 writev(1, [{iov_base="emented\n[    0.000000][    T0] GICv3: Distributor has no Range Selector support\n[    0.000000][    T0] GICv3: 16 PPIs implemented\n[    0.000000][    T0] GICv3: Enabling SGIs without active state\n[    0.000000][    T0] GICv3: CPU0: found redistributor 0 reg"..., iov_len=1024}, {iov_base="i", iov_len=1}], 2) = 1025
+8909  13:50:01.068999 writev(1, [{iov_base="tialized - using 524288 bytes for 63 objects at 0x(____ptrval____)-0x(____ptrval____)\n[    0.000000][    T0] arch_timer: cp15 and mmio timer(s) running at 19.20MHz (virt/virt).\n[    0.000000][    T0] clocksource: arch_sys_counter: mask: 0xffffffffffffff ma"..., iov_len=1024}, {iov_base="e", iov_len=1}], 2) = 1025
+8909  13:50:01.069024 writev(1, [{iov_base="ated\n[    0.008715][    T1] PCI/MSI: /soc/interrupt-controller@17100000/msi-controller@17140000 domain created\n[    0.009395][    T1] EFI services will not be available.\n[    0.009673][    T1] smp: Bringing up secondary CPUs ...\n[    0.010597][    T0] Dete"..., iov_len=1024}, {iov_base=":", iov_len=1}], 2) = 1025
+8909  13:50:01.069047 writev(1, [{iov_base=" CPU3: using allocated LPI pending table @0x00**************\n[    0.013039][    T0] CPU3: Booted secondary processor 0x0000000300 [0x410fd462]\n[    0.016077][    T0] Detected PIPT I-cache on CPU4\n[    0.016081][    T0] CPU features: SANITY CHECK: Unexpecte"..., iov_len=1024}, {iov_base="d", iov_len=1}], 2) = 1025
+8909  13:50:01.069070 writev(1, [{iov_base=" LPI pending table @0x00**************\n[    0.017234][    T0] CPU5: Booted secondary processor 0x0000000500 [0x412fd470]\n[    0.018149][    T0] Detected PIPT I-cache on CPU6\n[    0.018153][    T0] CPU features: SANITY CHECK: Unexpected variation in SYS_ID_"..., iov_len=1024}, {iov_base="0", iov_len=1}], 2) = 1025
+8909  13:50:01.069093 writev(1, [{iov_base="0700 [0x412fd480]\n[    0.021384][    T1] smp: Brought up 1 node, 8 CPUs\n[    0.021409][    T1] SMP: Total of 8 processors activated.\n[    0.021413][    T1] CPU features: detected: Privileged Access Never\n[    0.021417][    T1] CPU features: detected: LSE a"..., iov_len=1024}, {iov_base="4", iov_len=1}], 2) = 1025
+8909  13:50:01.069117 writev(1, [{iov_base=" Translation Table Level\n[    0.021447][    T1] CPU features: detected: TLB range maintenance instructions\n[    0.021450][    T1] CPU features: detected: RCpc load-acquire (LDAPR)\n[    0.021452][    T1] CPU features: detected: Protected KVM\n[    0.067710]["..., iov_len=1024}, {iov_base=" ", iov_len=1}], 2) = 1025
+8909  13:50:01.069140 writev(1, [{iov_base="  T1] Registered setend emulation handler\n[    0.165000][    T1] KASLR enabled\n[    0.165035][    T1] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 76************** ns\n[    0.165045][    T1] futex hash table entries: 2048 (ord"..., iov_len=1024}, {iov_base="i", iov_len=1}], 2) = 1025
+8909  13:50:01.069164 writev(1, [{iov_base="dle: using governor menu\n[    0.170795][    T1] hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.\n[    0.170905][    T1] ASID allocator initialised with 65536 entries\n[    0.170924][    T1] Serial: AMBA PL011 UART driver\n[    0.171039][    T1] "..., iov_len=1024}, {iov_base=" ", iov_len=1}], 2) = 1025
+8909  13:50:01.069187 writev(1, [{iov_base="0.198328][    T1] videodev: Linux video capture interface: v2.00\n[    0.198341][    T1] EDAC MC: Ver: 3.0.0\n[    0.198449][    T1] CPUidle PSCI: Initialized CPU PM domain topology\n[    0.198699][    T1] Advanced Linux Sound Architecture Driver Initialized."..., iov_len=1024}, {iov_base="q", iov_len=1}], 2) = 1025
+8909  13:50:01.069211 writev(1, [{iov_base="uot-cache hash table entries: 512 (order 0, 4096 bytes)\n[    0.209568][    T1] NET: Registered protocol family 2\n[    0.209671][    T1] IP idents hash table entries: 262144 (order: 9, 2097152 bytes, linear)\n[    0.211209][    T1] tcp_listen_portaddr_hash h"..., iov_len=1024}, {iov_base=" ", iov_len=1}], 2) = 1025
+8909  13:50:01.069234 writev(1, [{iov_base="Freeing initrd memory: 20948K\n[    0.264593][    T1] hw perfevents: enabled with armv8_pmuv3 PMU driver, 7 counters available\n[    0.264971][    T1] kvm [1]: HYP mode not available\n[    0.267930][    T1] Initialise system trusted keyrings\n[    0.268082][  "..., iov_len=1024}, {iov_base=" ", iov_len=1}], 2) = 1025
+8909  13:50:01.069257 writev(1, [{iov_base=" T1] wireguard: Copyright (C) 2015-2019 Jason A. Donenfeld <Jason@zx2c4.com>. All Rights Reserved.\n[    0.286338][    T1] libphy: Fixed MDIO Bus: probed\n[    0.286339][    T1] tun: Universal TUN/TAP device driver, 1.6\n[    0.286348][    T1] CAN device driv"..., iov_len=1024}, {iov_base="e", iov_len=1}], 2) = 1025
+8909  13:50:01.069281 writev(1, [{iov_base="w interface driver aqc111\n[    0.286730][    T1] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver\n[    0.286731][    T1] ehci-pci: EHCI PCI platform driver\n[    0.286737][    T1] ehci-platform: EHCI generic platform driver\n[    0.287017][    T1] "..., iov_len=1024}, {iov_base="P", iov_len=1}], 2) = 1025
+8909  13:50:01.069305 writev(1, [{iov_base="roduct: Dummy host controller\n[    0.287309][    T1] usb usb1: Manufacturer: Linux 5.10.66-android12-9-00005-gf6e6376090be-ab8060604 dummy_hcd\n[    0.287309][    T1] usb usb1: SerialNumber: dummy_hcd.0\n[    0.287366][    T1] hub 1-0:1.0: USB hub found\n[   "..., iov_len=1024}, {iov_base="r", iov_len=1}], 2) = 1025
+8909  13:50:01.069329 writev(1, [{iov_base="otocol QCA registered\n[    0.288180][    T1] sdhci: Secure Digital Host Controller Interface driver\n[    0.288180][    T1] sdhci: Copyright(c) Pierre Ossman\n[    0.288181][    T1] sdhci-pltfm: SDHCI platform and OF driver helper\n[    0.288250][    T1] hid:"..., iov_len=1024}, {iov_base="]", iov_len=1}], 2) = 1025
+8909  13:50:01.069352 writev(1, [{iov_base=" gre: GRE over IPv4 demultiplexor driver\n[    0.289361][    T1] ip_gre: GRE over IPv4 tunneling driver\n[    0.289479][    T1] IPv4 over IPsec tunneling driver\n[    0.289581][    T1] Initializing XFRM netlink socket\n[    0.289585][    T1] IPsec XFRM device "..., iov_len=1024}, {iov_base="o", iov_len=1}], 2) = 1025
+8909  13:50:01.069375 writev(1, [{iov_base="oth: RFCOMM socket layer initialized\n[    0.290396][    T1] Bluetooth: RFCOMM ver 1.11\n[    0.290398][    T1] Bluetooth: HIDP (Human Interface Emulation) ver 1.2\n[    0.290399][    T1] Bluetooth: HIDP socket layer initialized\n[    0.290404][    T1] l2tp_co"..., iov_len=1024}, {iov_base="]", iov_len=1}], 2) = 1025
+8909  13:50:01.069399 writev(1, [{iov_base="   No soundcards found.\n[    0.293324][    T1] Warning: unable to open an initial console.\n[    0.293748][    T1] Freeing unused kernel memory: 3072K\n[    0.318166][    T1] Run /init as init process\n[    0.318170][    T1]   with arguments:\n[    0.318171][ "..., iov_len=1024}, {iov_base="\n", iov_len=1}], 2) = 1025
+8909  13:50:01.069423 writev(1, [{iov_base="[    0.525742][  T156] nx679j: journal mirror: 1472 bytes (file open, kmsg=1 pmsg=2 rd=-1)\n[    0.575173][  T157] nx679j: journal mirror: 1647 bytes (file open, kmsg=1 pmsg=2 rd=-1)\n[    0.575178][  T157] nx679j: journal mirror: 1647 bytes (file open, kmsg"..., iov_len=1024}, {iov_base=" ", iov_len=1}], 2) = 1025
+8909  13:50:01.069446 writev(1, [{iov_base="bytes (file open, kmsg=1 pmsg=2 rd=-1)\n[   13.400365][  T179] Minidump: Enabled with max number of regions 200\n[   13.549420][  T183] NET: Registered protocol family 42\n[   13.597526][  T160] nx679j: journal mirror: 4727 bytes (file open, kmsg=1 pmsg=2 rd="..., iov_len=1024}, {iov_base="t", iov_len=1}], 2) = 1025
+8909  13:50:01.069469 writev(1, [{iov_base="ed 'qcom,secure-pixel'\n[   14.264644][  T200] qcom_secure_system_heap_create: DMA-BUF Heap: Created 'qcom,secure-non-pixel'\n[   14.264749][  T200] platform soc:qcom,dma-heaps:qcom,adsp: assigned reserved memory node sdsp_region\n[   14.264804][  T200] platf"..., iov_len=1024}, {iov_base="[", iov_len=1}], 2) = 1025
+8909  13:50:01.069494 writev(1, [{iov_base="   14.264990][  T200] qcom_dma_heap_probe: DMA-BUF Heap: Created qcom,adsp\n[   14.306869][  T200] qcom_dma_heap_probe: DMA-BUF Heap: Created qcom,secure-cdsp\n[   14.306888][  T200] qcom_dma_heap_probe: DMA-BUF Heap: Created qcom,sp-hlos\n[   14.307457][  T2"..., iov_len=1024}, {iov_base="r", iov_len=1}], 2) = 1025
+8909  13:50:01.069517 writev(1, [{iov_base=": 6678 bytes (file open, kmsg=1 pmsg=2 rd=-1)\n[   14.674192][  T210] IPA framework init\n[   15.439704][  T227] qcom_dma_iommu soc:dma_dev@0x0: assigned reserved memory node linux,cma\n[   15.441307][  T227] DMA: preallocated 256 KiB pool for atomic allocati"..., iov_len=1024}, {iov_base="m", iov_len=1}], 2) = 1025
+8909  13:50:01.069539 writev(1, [{iov_base="8350c_l7: Bringing 3000000uV into 3008000-3008000uV\n[   16.570444][  T250] rpmh_regulator_probe: ldof1: could not find RPMh address for resource\n[   16.570457][  T250] rpmh_regulator_probe: ldof2: could not find RPMh address for resource\n[   16.570469][  T"..., iov_len=1024}, {iov_base="e", iov_len=1}], 2) = 1025
+8909  13:50:01.069562 writev(1, [{iov_base=": ldoj6: could not find RPMh address for resource\n[   16.571197][  T250] rpmh_regulator_probe: ldoj7: could not find RPMh address for resource\n[   16.916282][  T257] gh_msgq: Registered client for label: 1\n[   16.965496][  T259] v0.15, id=457, ver=2.2, raw"..., iov_len=1024}, {iov_base=" ", iov_len=1}], 2) = 1025
+8909  13:50:01.069586 writev(1, [{iov_base="   T7] qnoc-waipio soc:interconnect@1: failed to register ICC provider\n[   17.376127][  T268] qnoc-waipio 1740000.interconnect: failed to register ICC provider\n[   17.376179][  T268] qnoc-waipio 19100000.interconnect: failed to register ICC provider\n[   17"..., iov_len=1024}, {iov_base=" ", iov_len=1}], 2) = 1025
+8909  13:50:01.069609 writev(1, [{iov_base="ICC provider\n[   17.935068][    T7] qnoc-waipio 19100000.interconnect: failed to register ICC provider\n[   17.980990][  T283] msm_mmrm: loading out-of-tree module taints kernel.\n[   17.984793][    T7] qnoc-waipio soc:interconnect@1: failed to register ICC "..., iov_len=1024}, {iov_base="t", iov_len=1}], 2) = 1025
+8909  13:50:01.069632 writev(1, [{iov_base=": failed to register ICC provider\n[   18.038000][    T7] spmi spmi-1: PMIC arbiter version v7 (0x70000000)\n[   18.038518][    T7] gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency\n[   18.039027][    T7] qnoc-waipio soc:interconnect@1: fa"..., iov_len=1024}, {iov_base="7", iov_len=1}], 2) = 1025
+8909  13:50:01.069654 writev(1, [{iov_base="] [msm-dp-info]nubia_usb_switch_dp_probe -\n[   18.186456][    T7] gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency\n[   18.187026][    T7] qnoc-waipio soc:interconnect@1: failed to register ICC provider\n[   18.187103][    T7] qnoc-waipio"..., iov_len=1024}, {iov_base="b", iov_len=1}], 2) = 1025
+8909  13:50:01.069679 writev(1, [{iov_base="ase=(____ptrval____)\n[   18.458632][  T292] [drm:dsi_pll_clock_register_5nm [msm_drm]] [msm-dsi-info]: DSI_PLL_0: Registered clocks successfully\n[   18.458729][  T292] [drm:dsi_phy_driver_probe$f82802b0bf108c90655d299f84d4d244 [msm_drm]] [msm-dsi-info]: DS"..., iov_len=1024}, {iov_base="o", iov_len=1}], 2) = 1025
+8909  13:50:01.069703 writev(1, [{iov_base=" 1740000.interconnect: failed to register ICC provider\n[   18.459549][    T7] qnoc-waipio 19100000.interconnect: failed to register ICC provider\n[   18.459640][  T292] zxb get panel_name from uefi: i=0, name=\n[   18.459741][  T292] [drm:dsi_display_registe"..., iov_len=1024}, {iov_base="c", iov_len=1}], 2) = 1025
+8909  13:50:01.069726 writev(1, [{iov_base="-waipio 19100000.interconnect: failed to register ICC provider\n[   18.746427][    T7] arm-scmi soc:qcom,scmi: SCMI Notifications - Core Enabled.\n[   18.747203][    T7] arm-scmi soc:qcom,scmi: SCMI Protocol v2.0 'Qualcomm:' Firmware version 0x10000\n[   18.7"..., iov_len=1024}, {iov_base="4", iov_len=1}], 2) = 1025
+8909  13:50:01.069748 writev(1, [{iov_base="21][    T7] qnoc-waipio 19100000.interconnect: failed to register ICC provider\n[   18.845366][  T160] nx679j: journal mirror: 17377 bytes (file open, kmsg=1 pmsg=2 rd=-1)\n[   18.845377][  T160] nx679j: journal mirror: 17377 bytes (file open, kmsg=1 pmsg=2 "..., iov_len=1024}, {iov_base="m", iov_len=1}], 2) = 1025
+8909  13:50:01.069773 writev(1, [{iov_base="mcx_voter_level\n[   18.926035][    T7] video_cc_mvs1c_gdsc: supplied by pm8350c_s2_mmcx_voter_level\n[   18.926226][    T7] gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency\n[   18.926291][    T7] cam_cc_bps_gdsc: supplied by pm8350c_s2_m"..., iov_len=1024}, {iov_base="T", iov_len=1}], 2) = 1025
+8909  13:50:01.069796 writev(1, [{iov_base="7] disp_cc_mdss_core_int2_gdsc: supplied by pm8450_s4_level\n[   18.927980][    T7] cpu cpu0: EM: created perf domain\n[   18.930156][    T7] cpu cpu4: EM: created perf domain\n[   18.932163][    T7] cpu cpu7: EM: created perf domain\n[   18.936056][    T7] [d"..., iov_len=1024}, {iov_base="C", iov_len=1}], 2) = 1025
+8909  13:50:01.069819 writev(1, [{iov_base="PU7 state\n[   18.937180][    T7] [drm:dsi_display_dev_probe [msm_drm]] [nubia-dsi-debug]: mdp_node name is qcom,mdss_mdp ++\n[   18.937470][    T7] [drm:dsi_display_dev_probe [msm_drm]] [nubia-dsi-debug]: mdp_node full name is qcom,mdss_mdp@ae00000 ++\n[   1"..., iov_len=1024}, {iov_base=" ", iov_len=1}], 2) = 1025
+8909  13:50:01.069842 writev(1, [{iov_base="[msm-dsi-warn]: secondary default panel not found\n[   18.939941][    T7] [drm:dsi_display_dev_probe [msm_drm]] [nubia-dsi-debug]: get disply :[(null)]++ \n[   18.940011][    T7] [drm:dsi_display_dev_probe [msm_drm]] *ERROR* [msm-dsi-error]: resources requir"..., iov_len=1024}, {iov_base="s", iov_len=1}], 2) = 1025
+8909  13:50:01.069866 writev(1, [{iov_base="i-display-primary] , pdev->dev.of_node->name is qcom,dsi-display-primary, pdev->dev.of_node->full_name is qcom,dsi-display-primary\n[   18.952075][    T7] [drm:dsi_display_dev_probe [msm_drm]] [nubia-dsi-debug]: mdp_node name is qcom,mdss_mdp ++\n[   18.9521"..., iov_len=1024}, {iov_base="s", iov_len=1}], 2) = 1025
+8909  13:50:01.069889 writev(1, [{iov_base="play_dev_probe [msm_drm]] [nubia-dsi-debug]: mdp_node full name is qcom,mdss_mdp@ae00000 ++\n[   18.952677][    T7] [drm] [msm-dsi-warn]: secondary default panel not found\n[   18.952746][    T7] [drm:dsi_display_dev_probe [msm_drm]] [nubia-dsi-debug]: get d"..., iov_len=1024}, {iov_base=" ", iov_len=1}], 2) = 1025
+8909  13:50:01.069913 writev(1, [{iov_base="  T7] [drm:dsi_display_dev_probe [msm_drm]] [nubia-dsi-debug]: 8450 dsi_display_dev_probe [soc:qcom,dsi-display-primary] , pdev->dev.of_node->name is qcom,dsi-display-primary, pdev->dev.of_node->full_name is qcom,dsi-display-primary\n[   18.954683][    T7] "..., iov_len=1024}, {iov_base="e", iov_len=1}], 2) = 1025
+8909  13:50:01.069936 writev(1, [{iov_base="rror -2\n[   18.955067][  T120] [drm:dsi_display_firmware_display$1ae4955404bb03e2af56b768bf162ccf [msm_drm]] [msm-dsi-info]: no firmware available, fallback to device node\n[   18.955132][  T120] [drm:dsi_display_init [msm_drm]] [nubia-dsi-debug]: dsi_displ"..., iov_len=1024}, {iov_base="s", iov_len=1}], 2) = 1025
+8909  13:50:01.069963 writev(1, [{iov_base="s_mdp@ae00000 ++\n[   18.955611][    T7] [drm] [msm-dsi-warn]: secondary default panel not found\n[   18.955685][    T7] [drm:dsi_display_dev_probe [msm_drm]] [nubia-dsi-debug]: get disply :[(null)]++ \n[   18.955689][    T7] [ZtemtDisp] [nubia_set_dsi_ctrl: "..., iov_len=1024}, {iov_base="e", iov_len=1}], 2) = 1025
+8909  13:50:01.069986 writev(1, [{iov_base="ferred probe timeout, ignoring dependency\n[   19.100901][  T173] gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency\n[   19.101404][  T173] gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency\n[   19.101889][  T173] gpio-ke"..., iov_len=1024}, {iov_base="t", iov_len=1}], 2) = 1025
+8909  13:50:01.070009 writev(1, [{iov_base="able walk\n[   19.105475][  T325] arm-smmu 15000000.apps-smmu: \tstream matching with 113 register groups\n[   19.106488][  T173] ufshcd-qcom 1d84000.ufshc: Adding to iommu group 0\n[   19.107858][  T173] ufshcd-qcom 1d84000.ufshc: ufshcd_populate_vreg: unable"..., iov_len=1024}, {iov_base="c", iov_len=1}], 2) = 1025
+8909  13:50:01.070032 writev(1, [{iov_base="ure=0\n[   19.121410][  T173] msmdrm_smmu soc:qcom,smmu_sde_sec_cb: Adding to iommu group 5\n[   19.121671][  T173] [drm] probing device qcom,smmu_sde_sec\n[   19.121672][  T173] [drm] Created domain mdp_s, secure=1\n[   19.121831][  T173] [drm:dsi_display_bin"..., iov_len=1024}, {iov_base="3", iov_len=1}], 2) = 1025
+8909  13:50:01.070056 writev(1, [{iov_base="] msm_drm ae00000.qcom,mdss_mdp: bound ae90000.qcom,dp_display (ops dp_display_comp_ops [msm_drm])\n[   19.122324][  T173] msm_drm ae00000.qcom,mdss_mdp: bound af20000.qcom,sde_rscc (ops sde_rsc_comp_ops [msm_drm])\n[   19.122338][  T173] [drm] mapped mdp ad"..., iov_len=1024}, {iov_base="-", iov_len=1}], 2) = 1025
+8909  13:50:01.070080 writev(1, [{iov_base="info]: roi alignment: [540, 20, 20, 20, 1080, 20]\n[   19.124229][  T173] [drm:dsi_panel_get_mode [msm_drm]] [msm-dsi-info]: default topology: lm: 2 comp_enc:2 intf: 1\n[   19.124312][  T173] [drm:dsi_panel_get_mode [msm_drm]] [msm-dsi-info]: roi alignment: "..., iov_len=1024}, {iov_base="f", iov_len=1}], 2) = 1025
+8909  13:50:01.070105 writev(1, [{iov_base="ier gh_irq_lend gh_mem_notifier altmode_glink usb_switch_dp msm_ext_display fsa4480_i2c spmi_pmic_arb msm_mmrm(O) pinctrl_waipio hwkm qnoc_diwali rtc_pm8xxx phy_qcom_ufs_qmp_v4_diwali pinctrl_cape stub_regulator cfg80211 smp2p dispcc_diwali mem_hooks qnoc_"..., iov_len=1024}, {iov_base="a", iov_len=1}], 2) = 1025
+8909  13:50:01.070130 writev(1, [{iov_base="oss qcom_dload_mode mdt_loader qcom_sysmon qcom_dma_heaps mem_buf_dev secure_buffer qcom_scm msm_dma_iommu_mapping mhi pci_msm_drv rproc_qcom_common qcom_glink_smem qcom_glink qcom_smd smp2p_sleepstate phy_qcom_ufs qmi_helpers qrtr ns qcom_ipc_logging mini"..., iov_len=1024}, {iov_base="x", iov_len=1}], 2) = 1025
+8909  13:50:01.070157 writev(1, [{iov_base="29: ffffffc011ae3920 x28: 00************** \n[   19.126210][  T173] x27: ffffffecfa11f328 x26: ffffff8781e68000 \n[   19.126211][  T173] x25: ffffff8795e868b8 x24: ffffff8795e86de0 \n[   19.126212][  T173] x23: 00************** x22: ffffff8781e7b780 \n[   19.1"..., iov_len=1024}, {iov_base="t", iov_len=1}], 2) = 1025
+8909  13:50:01.070182 writev(1, [{iov_base="race:\n[   19.126230][  T173]  kthread_queue_work+0x194/0x254\n[   19.126297][  T173]  msm_drm_bind$98f8e18cfc04c71c4ebc615b0054683d+0x3f0/0x860 [msm_drm]\n[   19.126300][  T173]  try_to_bring_up_master+0x1f4/0x25c\n[   19.126301][  T173]  __component_add+0xf0"..., iov_len=1024}, {iov_base="3", iov_len=1}], 2) = 1025
+8909  13:50:01.070207 writev(1, [{iov_base="0ca22e865a1a ]---\n[   19.129686][  T173] [drm] Initialized msm_drm 1.4.0 20130625 for ae00000.qcom,mdss_mdp on minor 0\n[   19.129688][  T173] [drm] cont_splash enabled in 1 of 1 display(s)\n[   19.129798][  T173] [drm:dsi_ctrl_isr_configure [msm_drm]] [msm-"..., iov_len=1024}, {iov_base=" ", iov_len=1}], 2) = 1025
+8909  13:50:01.070233 writev(1, [{iov_base="19.132739][  T173] 894000.qcom,qup_uart: ttyHS0 at MMIO 0x894000 (irq = 85, base_baud = 0) is a MSM\n[   19.133066][  T173] gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency\n[   19.149422][  T173] gpio-keys soc:gpio_keys: deferred probe t"..., iov_len=1024}, {iov_base="9", iov_len=1}], 2) = 1025
+8909  13:50:01.070259 writev(1, [{iov_base=".254054][  T173] remoteproc remoteproc2: 2400000.remoteproc-slpi is available\n[   19.254321][  T173] remoteproc remoteproc3: 4080000.remoteproc-mss is available\n[   19.254660][  T173] tmecom-qmp-client soc:qcom,tmecom-qmp-client: tmecom probe success\n[   1"..., iov_len=1024}, {iov_base="0", iov_len=1}], 2) = 1025
+8909  13:50:01.070284 writev(1, [{iov_base=":0:49456: Well-known LUN    SAMSUNG  KLUEG8UHDC-B0E1  0400 PQ: 0 ANSI: 6\n[   19.310178][    T7] scsi 0:0:0:0: Direct-Access     SAMSUNG  KLUEG8UHDC-B0E1  0400 PQ: 0 ANSI: 6\n[   19.312425][    C7] sd 0:0:0:0: Power-on or device reset occurred\n[   19.312529]"..., iov_len=1024}, {iov_base="4", iov_len=1}], 2) = 1025
+8909  13:50:01.070309 writev(1, [{iov_base="8 4096-byte logical blocks: (8.39 MB/8.00 MiB)\n[   19.313196][    T7] scsi 0:0:0:3: Direct-Access     SAMSUNG  KLUEG8UHDC-B0E1  0400 PQ: 0 ANSI: 6\n[   19.313205][  T173] sd 0:0:0:1: [sdb] Write Protect is off\n[   19.313207][  T173] sd 0:0:0:1: [sdb] Mode S"..., iov_len=1024}, {iov_base="a", iov_len=1}], 2) = 1025
+8909  13:50:01.070334 writev(1, [{iov_base="l transfer size 524288 bytes\n[   19.314291][    C0] random: fast init done\n[   19.314757][    C4] sd 0:0:0:3: Power-on or device reset occurred\n[   19.315745][    C7] sd 0:0:0:4: Power-on or device reset occurred\n[   19.315754][    C7] sd 0:0:0:5: Power-on"..., iov_len=1024}, {iov_base="4", iov_len=1}], 2) = 1025
+8909  13:50:01.070360 writev(1, [{iov_base="][  T376] sd 0:0:0:5: [sdf] Write Protect is off\n[   19.319826][  T376] sd 0:0:0:5: [sdf] Mode Sense: 00 32 00 10\n[   19.319827][  T374] sd 0:0:0:4: [sde] Write Protect is off\n[   19.319829][  T374] sd 0:0:0:4: [sde] Mode Sense: 00 32 00 10\n[   19.319957]["..., iov_len=1024}, {iov_base="T", iov_len=1}], 2) = 1025
+8909  13:50:01.070385 writev(1, [{iov_base="9] sd 0:0:0:2: [sdc] Attached SCSI disk\n[   19.322356][  T378] gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency\n[   19.325069][  T376]  sdf: sdf1 sdf2 sdf3 sdf4 sdf5\n[   19.325629][  T374]  sde: sde1 sde2 sde3 sde4 sde5 sde6 sde7 sde8 s"..., iov_len=1024}, {iov_base="3", iov_len=1}], 2) = 1025
+8909  13:50:01.070410 writev(1, [{iov_base="25][  T374] gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency\n[   19.349805][  T376] gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency\n[   19.349919][  T376] gpio-keys soc:gpio_keys: deferred probe timeout, ignoring de"..., iov_len=1024}, {iov_base="g", iov_len=1}], 2) = 1025
+8909  13:50:01.070436 writev(1, [{iov_base="pio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency\n[   19.350937][  T376] gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency\n[   19.350959][  T380] rtc-pm8xxx c42d000.qcom,spmi:qcom,pmk8350@0:rtc@6100: registered as rtc0\n"..., iov_len=1024}, {iov_base="e", iov_len=1}], 2) = 1025
+8909  13:50:01.070462 writev(1, [{iov_base="pendency\n[   19.352808][  T376] gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency\n[   19.352950][  T376] gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency\n[   19.353045][  T376] gpio-keys soc:gpio_keys: deferred probe "..., iov_len=1024}, {iov_base="9", iov_len=1}], 2) = 1025
+8909  13:50:01.070486 writev(1, [{iov_base=".449166][  T383] rmnet_shs: Unknown symbol rmnet_shs_switch (err -2)\n[   19.449177][  T383] rmnet_shs: Unknown symbol rmnet_is_real_dev_registered (err -2)\n[   19.449185][  T383] rmnet_shs: Unknown symbol rmnet_rx_handler (err -2)\n[   19.449212][  T383] rm"..., iov_len=1024}, {iov_base="r", iov_len=1}], 2) = 1025
+8909  13:50:01.070512 writev(1, [{iov_base="mnet_shs: Unknown symbol __tracepoint_rmnet_shs_wq_high (err -2)\n[   19.449306][  T383] rmnet_shs: Unknown symbol __traceiter_rmnet_freq_boost (err -2)\n[   19.449313][  T383] rmnet_shs: Unknown symbol __traceiter_rmnet_freq_reset (err -2)\n[   19.449323][  "..., iov_len=1024}, {iov_base="5", iov_len=1}], 2) = 1025
+8909  13:50:01.070538 writev(1, [{iov_base="52890][  T385] rmnet_offload: Unknown symbol qmi_rmnet_ps_ind_deregister (err -2)\n[   19.552896][  T385] rmnet_offload: Unknown symbol rmnet_map_dl_ind_deregister (err -2)\n[   19.552904][  T385] rmnet_offload: Unknown symbol rmnet_frag_deliver (err -2)\n[  "..., iov_len=1024}, {iov_base="b", iov_len=1}], 2) = 1025
+8909  13:50:01.070565 writev(1, [{iov_base="ol rmnet_perf_tether_ingress_hook (err -2)\n[   19.755967][  T389] rmnet_perf_tether: Unknown symbol rmnet_perf_tether_egress_hook (err -2)\n[   19.755974][  T389] rmnet_perf_tether: Unknown symbol rmnet_perf_tether_cmd_hook (err -2)\n[   19.862733][  T391] i"..., iov_len=1024}, {iov_base=")", iov_len=1}], 2) = 1025
+8909  13:50:01.070589 writev(1, [{iov_base="\n[   19.863064][  T391] ipam: Unknown symbol gsi_queue_xfer (err -2)\n[   19.863072][  T391] ipam: Unknown symbol gsi_start_channel (err -2)\n[   19.863081][  T391] ipam: Unknown symbol gsi_dealloc_channel (err -2)\n[   19.863086][  T391] ipam: Unknown symbol"..., iov_len=1024}, {iov_base="h", iov_len=1}], 2) = 1025
+8909  13:50:01.070614 writev(1, [{iov_base="annel_db_addr (err -2)\n[   19.863260][  T391] ipam: Unknown symbol gsi_write_device_scratch (err -2)\n[   19.863265][  T391] ipam: Unknown symbol gsi_enable_flow_control_ee (err -2)\n[   19.863271][  T391] ipam: Unknown symbol gsi_query_channel_info (err -2)"..., iov_len=1024}, {iov_base=" ", iov_len=1}], 2) = 1025
+8909  13:50:01.070639 writev(1, [{iov_base=" 19.863357][  T391] ipam: Unknown symbol gsi_read_channel_scratch (err -2)\n[   19.863363][  T391] ipam: Unknown symbol gsi_write_channel_scratch3_reg (err -2)\n[   19.863369][  T391] ipam: Unknown symbol gsi_write_channel_scratch2_reg (err -2)\n[   19.863379"..., iov_len=1024}, {iov_base=" ", iov_len=1}], 2) = 1025
+8909  13:50:01.070665 writev(1, [{iov_base="(err -2)\n[   19.863463][  T391] ipam: Unknown symbol gsi_get_chan_state (err -2)\n[   19.863468][  T391] ipam: Unknown symbol gsi_get_chan_stop_stm (err -2)\n[   19.863474][  T391] ipam: Unknown symbol gsi_get_peripheral_ee (err -2)\n[   19.863480][  T391] ip"..., iov_len=1024}, {iov_base="s", iov_len=1}], 2) = 1025
+8909  13:50:01.070690 writev(1, [{iov_base="ymbol gsi_read_event_ring_wp (err -2)\n[   19.912737][  T392] ipa_clientsm: Unknown symbol ipa3_notify_clients_registered (err -2)\n[   19.912748][  T392] ipa_clientsm: Unknown symbol ipa3_qdss_register (err -2)\n[   19.912770][  T392] ipa_clientsm: Unknown s"..., iov_len=1024}, {iov_base="i", iov_len=1}], 2) = 1025
+8909  13:50:01.070715 writev(1, [{iov_base="pa3_get_r_rev_version (err -2)\n[   19.912862][  T392] ipa_clientsm: Unknown symbol ipa_smmu_store_sgt (err -2)\n[   19.912868][  T392] ipa_clientsm: Unknown symbol ipa_smmu_free_sgt (err -2)\n[   19.912874][  T392] ipa_clientsm: Unknown symbol ipa3_request_g"..., iov_len=1024}, {iov_base="o", iov_len=1}], 2) = 1025
+8909  13:50:01.070741 writev(1, [{iov_base="nnect (err -2)\n[   19.912931][  T392] ipa_clientsm: Unknown symbol ipa3_reset_gsi_channel (err -2)\n[   19.912937][  T392] ipa_clientsm: Unknown symbol ipa3_reset_gsi_event_ring (err -2)\n[   19.912943][  T392] ipa_clientsm: Unknown symbol ipa_mpm_mhip_xdci_"..., iov_len=1024}, {iov_base="i", iov_len=1}], 2) = 1025
+8909  13:50:01.070767 writev(1, [{iov_base="s_ipa_cleanup (err -2)\n[   19.913003][  T392] ipa_clientsm: Unknown symbol ipa3_xdci_suspend (err -2)\n[   19.913008][  T392] ipa_clientsm: Unknown symbol ipa3_xdci_resume (err -2)\n[   19.913014][  T392] ipa_clientsm: Unknown symbol ipa3_xdci_connect (err -"..., iov_len=1024}, {iov_base="i", iov_len=1}], 2) = 1025
+8909  13:50:01.070792 writev(1, [{iov_base="pa_clientsm: Unknown symbol ipa3_del_hdr (err -2)\n[   19.913107][  T392] ipa_clientsm: Unknown symbol ipa3_deregister_intf (err -2)\n[   19.913113][  T392] ipa_clientsm: Unknown symbol ipa3_disable_wdi3_pipes (err -2)\n[   19.913118][  T392] ipa_clientsm: Un"..., iov_len=1024}, {iov_base="r", iov_len=1}], 2) = 1025
+8909  13:50:01.070819 writev(1, [{iov_base="r -2)\n[   19.913180][  T392] ipa_clientsm: Unknown symbol ipa3_add_hdr (err -2)\n[   19.913187][  T392] ipa_clientsm: Unknown symbol ipa_pm_wrapper_wdi_set_perf_profile_internal (err -2)\n[   19.913216][  T392] ipa_clientsm: Unknown symbol ipa3_setup_uc_ntn_"..., iov_len=1024}, {iov_base="g", iov_len=1}], 2) = 1025
+8909  13:50:01.070844 writev(1, [{iov_base="_pipe_i (err -2)\n[   19.913289][  T392] ipa_clientsm: Unknown symbol ipa3_conn_wigig_client_i (err -2)\n[   19.913295][  T392] ipa_clientsm: Unknown symbol ipa_wigig_send_msg (err -2)\n[   19.913304][  T392] ipa_clientsm: Unknown symbol ipa3_enable_wigig_pip"..., iov_len=1024}, {iov_base="[", iov_len=1}], 2) = 1025
+8909  13:50:01.070877 writev(1, [{iov_base="   19.913391][  T392] ipa_clientsm: Unknown symbol ipa3_mhi_reset_channel_internal (err -2)\n[   19.913397][  T392] ipa_clientsm: Unknown symbol ipa3_mhi_stop_gsi_channel (err -2)\n[   19.913402][  T392] ipa_clientsm: Unknown symbol ipahal_get_ep_bit (err -2"..., iov_len=1024}, {iov_base="k", iov_len=1}], 2) = 1025
+8909  13:50:01.070906 writev(1, [{iov_base="nown symbol ipa3_mhi_resume_channels_internal (err -2)\n[   19.913459][  T392] ipa_clientsm: Unknown symbol ipa_clients_strings (err -2)\n[   19.913469][  T392] ipa_clientsm: Unknown symbol ipa3_uc_register_ready_cb (err -2)\n[   19.913475][  T392] ipa_client"..., iov_len=1024}, {iov_base="e", iov_len=1}], 2) = 1025
+8909  13:50:01.070934 writev(1, [{iov_base="rr -2)\n[   19.962959][  T393] rndisipam: Unknown symbol ipa3_add_hdr_hpc (err -2)\n[   19.962965][  T393] rndisipam: Unknown symbol ipa_set_pkt_init_ex_hdr_ofst (err -2)\n[   19.962971][  T393] rndisipam: Unknown symbol ipa3_add_hdr (err -2)\n[   19.962977][ "..., iov_len=1024}, {iov_base="o", iov_len=1}], 2) = 1025
+8909  13:50:01.070963 writev(1, [{iov_base="-keys soc:gpio_keys: deferred probe timeout, ignoring dependency\n[   20.119238][  T160] printk: worker: 22 output lines suppressed due to ratelimiting\n[   20.156606][    T1] FAT-fs (sde6): Volume was not properly unmounted. Some data may be corrupt. Please"..., iov_len=1024}, {iov_base="n", iov_len=1}], 2) = 1025
+8909  13:50:01.070994 writev(1, [{iov_base="al mirror: 44213 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[   20.372024][  T402] DATARMNET163e93649e(): Starting rmnet SHS module 43a6b \n[   20.372937][  T402] DATARMNETb1c42acd9c(): rmnet_offload initializing\n[   20.374186][  T402] DATARMNET63abbdc3d3(): Loa"..., iov_len=1024}, {iov_base="w", iov_len=1}], 2) = 1025
+8909  13:50:01.071020 writev(1, [{iov_base="n symbol ipa3_del_hdr (err -2)\n[   20.376468][  T402] rndisipam: Unknown symbol ipa3_register_intf (err -2)\n[   20.376475][  T402] rndisipam: Unknown symbol ipa3_deregister_intf (err -2)\n[   20.376482][  T402] rndisipam: Unknown symbol ipa_pm_register (err"..., iov_len=1024}, {iov_base="i", iov_len=1}], 2) = 1025
+8909  13:50:01.071046 writev(1, [{iov_base="entsm: Unknown symbol ipa3_register_client_callback (err -2)\n[   20.377666][  T402] ipa_clientsm: Unknown symbol ipa_pm_register (err -2)\n[   20.377673][  T402] ipa_clientsm: Unknown symbol ipa_pm_associate_ipa_cons_to_client (err -2)\n[   20.377679][  T402"..., iov_len=1024}, {iov_base="k", iov_len=1}], 2) = 1025
+8909  13:50:01.071073 writev(1, [{iov_base="nown symbol ipa_pm_set_throughput (err -2)\n[   20.377751][  T402] ipa_clientsm: Unknown symbol ipa_pm_activate_sync (err -2)\n[   20.377758][  T402] ipa_clientsm: Unknown symbol ipa3_is_mhip_offload_enabled (err -2)\n[   20.377765][  T402] ipa_clientsm: Unkn"..., iov_len=1024}, {iov_base=":", iov_len=1}], 2) = 1025
+8909  13:50:01.071100 writev(1, [{iov_base=" Unknown symbol rndis_ipa_pipe_disconnect_notify (err -2)\n[   20.377831][  T402] ipa_clientsm: Unknown symbol ipa3_teth_bridge_disconnect (err -2)\n[   20.377837][  T402] ipa_clientsm: Unknown symbol ipa3_release_gsi_channel (err -2)\n[   20.377844][  T402] "..., iov_len=1024}, {iov_base="r", iov_len=1}], 2) = 1025
+8909  13:50:01.071128 writev(1, [{iov_base="r -2)\n[   20.377924][  T402] ipa_clientsm: Unknown symbol ipa3_release_wdi_mapping (err -2)\n[   20.377930][  T402] ipa_clientsm: Unknown symbol ipa3_set_wlan_tx_info (err -2)\n[   20.377951][  T402] ipa_clientsm: Unknown symbol ipa3_conn_wdi3_pipes (err -2)"..., iov_len=1024}, {iov_base=" ", iov_len=1}], 2) = 1025
+8909  13:50:01.071154 writev(1, [{iov_base="ipa_clientsm: Unknown symbol ipa3_enable_wdi_pipe (err -2)\n[   20.378026][  T402] ipa_clientsm: Unknown symbol ipa3_resume_wdi_pipe (err -2)\n[   20.378033][  T402] ipa_clientsm: Unknown symbol ipa3_uc_reg_rdyCB (err -2)\n[   20.378040][  T402] ipa_clientsm:"..., iov_len=1024}, {iov_base="w", iov_len=1}], 2) = 1025
+8909  13:50:01.071181 writev(1, [{iov_base="n symbol ipa3_wigig_internal_init (err -2)\n[   20.378153][  T402] ipa_clientsm: Unknown symbol ipa_wigig_send_wlan_msg (err -2)\n[   20.378160][  T402] ipa_clientsm: Unknown symbol ipa3_uc_state_check (err -2)\n[   20.378166][  T402] ipa_clientsm: Unknown sy"..., iov_len=1024}, {iov_base="a", iov_len=1}], 2) = 1025
+8909  13:50:01.071209 writev(1, [{iov_base="3_mhi_init_engine (err -2)\n[   20.378268][  T402] ipa_clientsm: Unknown symbol ipa3_inc_client_enable_clks (err -2)\n[   20.378274][  T402] ipa_clientsm: Unknown symbol ipa3_connect_mhi_pipe (err -2)\n[   20.378281][  T402] ipa_clientsm: Unknown symbol ipa3_"..., iov_len=1024}, {iov_base="_", iov_len=1}], 2) = 1025
+8909  13:50:01.071235 writev(1, [{iov_base="clientsm: Unknown symbol ipa3_get_client_mapping (err -2)\n[   20.378344][  T402] ipa_clientsm: Unknown symbol ipa3_disconnect_mhi_pipe (err -2)\n[   20.378351][  T402] ipa_clientsm: Unknown symbol ipa3_set_tag_process_before_gating (err -2)\n[   20.378357][ "..., iov_len=1024}, {iov_base="]", iov_len=1}], 2) = 1025
+8909  13:50:01.071261 writev(1, [{iov_base=" ipa_clientsm: Unknown symbol ipa3_eth_disconnect (err -2)\n[   20.378490][  T402] ipanetm: Unknown symbol ipa3_wwan_platform_driver_register (err -2)\n[   20.378497][  T402] ipanetm: Unknown symbol ipa3_wwan_cleanup (err -2)\n[   20.378504][  T402] ipanetm: "..., iov_len=1024}, {iov_base="i", iov_len=1}], 2) = 1025
+8909  13:50:01.071288 writev(1, [{iov_base="o_keys: deferred probe timeout, ignoring dependency\n[   20.402766][  T402] RNDIS_IPA module is loaded.\n[   20.405326][  T402] IPA clients manager init\n[   20.405327][  T402] ipa_usb driver init\n[   20.405705][  T402] ipa_usb registered successfully\n[   20."..., iov_len=1024}, {iov_base="d", iov_len=1}], 2) = 1025
+8909  13:50:01.071315 writev(1, [{iov_base="=8)\n[   20.466917][  T374] [ZtemtUSB] [dwc3_otg_sm_work: 5805] Otg drd_state = undefined\n[   20.468665][  T374] msm-usb-ssphy-qmp 88e8000.ssphy: QMP PHY set_suspend for resume called with cable disconnected\n[   20.468666][  T374] msm-usb-ssphy-qmp 88e8000."..., iov_len=1024}, {iov_base="4", iov_len=1}], 2) = 1025
+8909  13:50:01.071342 writev(1, [{iov_base="] msm-usb-ssphy-qmp 88e8000.ssphy: msm_ssphy_qmp_set_suspend: USB PHY is already resumed.\n[   20.495633][  T378] gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency\n[   20.495819][  T374] [ZtemtUSB] [dwc3_otg_start_peripheral: 5681] Turn 1"..., iov_len=1024}, {iov_base="4", iov_len=1}], 2) = 1025
+8909  13:50:01.071368 writev(1, [{iov_base="d:4b\n[   21.467397][  T417] usb0: MAC xx:xx:xx:xx:xx:xx\n[   21.472118][  T417] dwc3 a600000.dwc3: Set IRQ thread:irq/301-dwc3 pid:419 to SCHED_NORMAL prio\n[   22.076080][  T162] msm-usb-hsphy 88e3000.hsphy: Could not get usb psy\n[   22.199577][  T162] andr"..., iov_len=1024}, {iov_base="h", iov_len=1}], 2) = 1025
+8909  13:50:01.071395 writev(1, [{iov_base="ronizing SCSI cache\n[   23.587066][  T424] nx679j: journal mirror: 45757 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[   26.615591][  T378] (virq:irq_count)- 2:3942 11:2813 1:1851 6:506 30:335 35:202 301:105 21:11 37:4 28:3 \n[   26.615598][  T378] (cpu:irq_count"..., iov_len=1024}, {iov_base="2", iov_len=1}], 2) = 1025
+8909  13:50:01.071423 writev(1, [{iov_base="][  T557] random: jshn: uninitialized urandom read (4 bytes read)\n[   33.800673][  T488] nx679j: journal mirror: 62975 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[   35.834690][  T861] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[   36."..., iov_len=1024}, {iov_base=":", iov_len=1}], 2) = 1025
+8909  13:50:01.071450 writev(1, [{iov_base=" journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[   45.560147][  T376] (virq:irq_count)- 1:17424 11:5560 2:4445 6:1543 35:383 30:372 301:119 37:43 21:11 28:3 \n[   45.560154][  T376] (cpu:irq_count)- 0:2433 1:769 2:846 3:511 4:2595 5:2544 6:25"..., iov_len=1024}, {iov_base="6", iov_len=1}], 2) = 1025
+8909  13:50:01.071477 writev(1, [{iov_base="4][  T374] (ipi:irq_count)- 0:17486 1:4518 2:0 3:0 4:0 5:1814 6:0 \n[   56.185574][ T8098] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[   58.223818][ T8099] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[   6"..., iov_len=1024}, {iov_base="j", iov_len=1}], 2) = 1025
+8909  13:50:01.071503 writev(1, [{iov_base=": journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[   72.440788][ T8115] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[   73.976110][  T378] (virq:irq_count)- 1:17704 11:6748 2:4690 6:2358 301:777 35:477 30:446 37:44 21"..., iov_len=1024}, {iov_base="]", iov_len=1}], 2) = 1025
+8909  13:50:01.071531 writev(1, [{iov_base="[  T376] (cpu:irq_count)- 0:3703 1:778 2:848 3:513 4:2599 5:2574 6:2622 7:20380 \n[   83.448120][  T376] (ipi:irq_count)- 0:17749 1:4760 2:0 3:0 4:0 5:2618 6:0 \n[   84.654441][ T8121] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[   "..., iov_len=1024}, {iov_base="9", iov_len=1}], 2) = 1025
+8909  13:50:01.071557 writev(1, [{iov_base="j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[   98.914144][ T8128] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  100.950911][ T8129] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  102.3"..., iov_len=1024}, {iov_base="q", iov_len=1}], 2) = 1025
+8909  13:50:01.071583 writev(1, [{iov_base="_count)- 1:17878 11:8075 2:4958 6:3404 301:783 35:579 30:503 37:44 21:11 28:3 \n[  111.864106][  T374] (cpu:irq_count)- 0:4026 1:778 2:848 3:513 4:2599 5:2575 6:2622 7:22287 \n[  111.864108][  T374] (ipi:irq_count)- 0:17878 1:4958 2:0 3:0 4:0 5:3404 6:0 \n[  "..., iov_len=1024}, {iov_base="7", iov_len=1}], 2) = 1025
+8909  13:50:01.071609 writev(1, [{iov_base="9j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  125.397231][ T8141] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  127.433824][ T8142] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  129."..., iov_len=1024}, {iov_base=" ", iov_len=1}], 2) = 1025
+8909  13:50:01.071637 writev(1, [{iov_base="journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  140.280145][  T378] (virq:irq_count)- 1:18011 11:9063 2:5139 6:4174 301:790 35:653 30:545 37:44 21:11 28:3 \n[  140.280151][  T378] (cpu:irq_count)- 0:4337 1:779 2:848 3:515 4:2599 5:2575 6:262"..., iov_len=1024}, {iov_base="6", iov_len=1}], 2) = 1025
+8909  13:50:01.071663 writev(1, [{iov_base="79j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  151.882609][ T8154] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  153.919295][ T8155] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  155"..., iov_len=1024}, {iov_base=":", iov_len=1}], 2) = 1025
+8909  13:50:01.071689 writev(1, [{iov_base=" journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  168.185046][ T8162] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  168.696144][  T374] (virq:irq_count)- 1:18140 11:10056 2:5343 6:4977 301:802 35:729 30:587 37:44 21"..., iov_len=1024}, {iov_base="8", iov_len=1}], 2) = 1025
+8909  13:50:01.071715 writev(1, [{iov_base="148][  T376] (ipi:irq_count)- 0:18177 1:5406 2:0 3:0 4:0 5:5237 6:0 \n[  178.376169][ T8167] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  180.410206][ T8168] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  "..., iov_len=1024}, {iov_base="6", iov_len=1}], 2) = 1025
+8909  13:50:01.071744 writev(1, [{iov_base="79j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  194.677262][ T8175] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  196.714515][ T8176] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  197"..., iov_len=1024}, {iov_base="8", iov_len=1}], 2) = 1025
+8909  13:50:01.071770 writev(1, [{iov_base="3214][  T376] (cpu:irq_count)- 0:5096 1:779 2:848 3:515 4:2599 5:2575 6:2622 7:28553 \n[  206.583217][  T376] (ipi:irq_count)- 0:18303 1:5593 2:0 3:0 4:0 5:6000 6:0 \n[  206.903954][ T8181] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)"..., iov_len=1024}, {iov_base="]", iov_len=1}], 2) = 1025
+8909  13:50:01.071796 writev(1, [{iov_base=" nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  221.167275][ T8188] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  223.206967][ T8189] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[ "..., iov_len=1024}, {iov_base="v", iov_len=1}], 2) = 1025
+8909  13:50:01.071821 writev(1, [{iov_base="irq:irq_count)- 1:18430 11:12333 6:6784 2:5789 35:903 301:814 30:683 37:44 21:11 28:3 \n[  235.000145][  T376] (cpu:irq_count)- 0:5420 1:779 2:848 3:517 4:2599 5:2575 6:2622 7:30444 \n[  235.000148][  T376] (ipi:irq_count)- 0:18430 1:5789 2:0 3:0 4:0 5:6784 "..., iov_len=1024}, {iov_base="8", iov_len=1}], 2) = 1025
+8909  13:50:01.071848 writev(1, [{iov_base="200] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  247.659664][ T8201] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  249.697507][ T8202] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8"..., iov_len=1024}, {iov_base="8", iov_len=1}], 2) = 1025
+8909  13:50:01.071873 writev(1, [{iov_base="] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  263.416136][  T374] (virq:irq_count)- 1:18554 11:13307 6:7547 2:5976 35:979 301:814 30:725 37:44 21:11 28:3 \n[  263.416142][  T374] (cpu:irq_count)- 0:5725 1:779 2:848 3:517 4:2599 5"..., iov_len=1024}, {iov_base="\n", iov_len=1}], 2) = 1025
+8909  13:50:01.071898 writev(1, [{iov_base="[  272.888156][    T7] (ipi:irq_count)- 0:18607 1:6046 2:0 3:0 4:0 5:7821 6:0 \n[  274.153245][ T8214] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  276.192222][ T8215] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4"..., iov_len=1024}, {iov_base="[", iov_len=1}], 2) = 1025
+8909  13:50:01.071925 writev(1, [{iov_base=" T8221] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  290.455301][ T8222] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  291.832124][    T7] (virq:irq_count)- 1:18686 11:14299 6:8342 2:6168 35:1053 301:828"..., iov_len=1024}, {iov_base="8", iov_len=1}], 2) = 1025
+8909  13:50:01.071952 writev(1, [{iov_base=":3 \n[  301.304150][  T378] (cpu:irq_count)- 0:6181 1:779 2:848 3:517 4:2599 5:2575 6:2622 7:34837 \n[  301.304154][  T378] (ipi:irq_count)- 0:18731 1:6234 2:0 3:0 4:0 5:8602 6:0 \n[  302.682268][ T8228] nx679j: journal mirror: 262143 bytes (file open, kmsg=3"..., iov_len=1024}, {iov_base="9", iov_len=1}], 2) = 1025
+8909  13:50:01.071977 writev(1, [{iov_base="12194][ T8234] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  316.949905][ T8235] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  318.988791][ T8236] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 p"..., iov_len=1024}, {iov_base="9", iov_len=1}], 2) = 1025
+8909  13:50:01.072003 writev(1, [{iov_base="553][  T378] (virq:irq_count)- 1:18855 11:15613 6:9372 2:6424 35:1153 301:835 30:824 37:44 21:11 28:3 \n[  329.719559][  T378] (cpu:irq_count)- 0:6497 1:779 2:848 3:517 4:2599 5:2575 6:2622 7:36707 \n[  329.719562][  T378] (ipi:irq_count)- 0:18855 1:6424 2:0"..., iov_len=1024}, {iov_base="[", iov_len=1}], 2) = 1025
+8909  13:50:01.072030 writev(1, [{iov_base="  341.400762][ T8247] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  343.438780][ T8248] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  345.477354][ T8249] nx679j: journal mirror: 262143 bytes (file open, k"..., iov_len=1024}, {iov_base=" ", iov_len=1}], 2) = 1025
+8909  13:50:01.072059 writev(1, [{iov_base="357.706371][ T8255] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  358.136154][    T7] (virq:irq_count)- 1:18985 11:16607 6:10154 2:6627 35:1229 30:866 301:838 37:44 21:11 28:3 \n[  358.136162][    T7] (cpu:irq_count)- 0:6826 1:781 "..., iov_len=1024}, {iov_base="1", iov_len=1}], 2) = 1025
+8909  13:50:01.072085 writev(1, [{iov_base="0410 6:0 \n[  367.895531][ T8260] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  369.935059][ T8261] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  371.973869][ T8262] nx679j: journal mirror: 262143 bytes (f"..., iov_len=1024}, {iov_base="s", iov_len=1}], 2) = 1025
+8909  13:50:01.072110 writev(1, [{iov_base="g=4 rd=8)\n[  384.197414][ T8268] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  386.233634][ T8269] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  386.552172][  T374] (virq:irq_count)- 1:19105 11:17591 6:10"..., iov_len=1024}, {iov_base="3", iov_len=1}], 2) = 1025
+8909  13:50:01.072146 writev(1, [{iov_base=":518 4:2599 5:2575 6:2622 7:41075 \n[  396.024161][    T7] (ipi:irq_count)- 0:19145 1:6882 2:0 3:0 4:0 5:11183 6:0 \n[  396.424311][ T8274] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  398.461662][ T8275] nx679j: journal mirror: 26"..., iov_len=1024}, {iov_base="e", iov_len=1}], 2) = 1025
+8909  13:50:01.072211 writev(1, [{iov_base="n, kmsg=3 pmsg=4 rd=8)\n[  410.690634][ T8281] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  412.729289][ T8282] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  414.767255][ T8283] nx679j: journal mirror: 26"..., iov_len=1024}, {iov_base="7", iov_len=1}], 2) = 1025
+8909  13:50:01.072237 writev(1, [{iov_base="073 35:1401 30:962 301:857 37:44 21:11 28:3 \n[  424.440095][  T376] (cpu:irq_count)- 0:7583 1:782 2:848 3:518 4:2599 5:2575 6:2622 7:42960 \n[  424.440098][  T376] (ipi:irq_count)- 0:19278 1:7073 2:0 3:0 4:0 5:11954 6:0 \n[  424.955381][ T8288] nx679j: journ"..., iov_len=1024}, {iov_base="y", iov_len=1}], 2) = 1025
+8909  13:50:01.072263 writev(1, [{iov_base="tes (file open, kmsg=3 pmsg=4 rd=8)\n[  437.180082][ T8294] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  439.218170][ T8295] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  441.256449][ T8296] nx679j: journ"..., iov_len=1024}, {iov_base="y", iov_len=1}], 2) = 1025
+8909  13:50:01.072290 writev(1, [{iov_base="tes (file open, kmsg=3 pmsg=4 rd=8)\n[  452.856144][    T7] (virq:irq_count)- 11:19878 1:19405 6:12718 2:7267 35:1475 30:1004 301:864 37:44 21:11 28:3 \n[  452.856150][    T7] (cpu:irq_count)- 0:7913 1:782 2:848 3:518 4:2599 5:2575 6:2622 7:44822 \n[  452.856"..., iov_len=1024}, {iov_base="i", iov_len=1}], 2) = 1025
+8909  13:50:01.072317 writev(1, [{iov_base="rq_count)- 0:19450 1:7337 2:0 3:0 4:0 5:12984 6:0 \n[  463.677493][ T8307] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  465.717461][ T8308] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  467.756234][ T8309"..., iov_len=1024}, {iov_base="m", iov_len=1}], 2) = 1025
+8909  13:50:01.072343 writev(1, [{iov_base="irror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  479.984976][ T8315] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  481.272158][  T376] (virq:irq_count)- 11:20879 1:19528 6:13500 2:7473 35:1549 30:1046 301:869 37:44 21:11 28:"..., iov_len=1024}, {iov_base=" ", iov_len=1}], 2) = 1025
+8909  13:50:01.072370 writev(1, [{iov_base=" T376] (cpu:irq_count)- 0:8347 1:783 2:848 3:519 4:2599 5:2575 6:2622 7:47345 \n[  490.744147][  T376] (ipi:irq_count)- 0:19571 1:7530 2:0 3:0 4:0 5:13755 6:0 \n[  492.214964][ T8321] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  49"..., iov_len=1024}, {iov_base="n", iov_len=1}], 2) = 1025
+8909  13:50:01.072396 writev(1, [{iov_base="x679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  506.485535][ T8328] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  508.522945][ T8329] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  5"..., iov_len=1024}, {iov_base=" ", iov_len=1}], 2) = 1025
+8909  13:50:01.072422 writev(1, [{iov_base="(virq:irq_count)- 11:22211 1:19704 6:14537 2:7730 35:1653 30:1103 301:882 37:44 21:11 28:3 \n[  519.159240][  T376] (cpu:irq_count)- 0:8697 1:784 2:848 3:519 4:2599 5:2575 6:2622 7:49244 \n[  519.159243][  T376] (ipi:irq_count)- 0:19704 1:7730 2:0 3:0 4:0 5:"..., iov_len=1024}, {iov_base="9", iov_len=1}], 2) = 1025
+8909  13:50:01.072447 writev(1, [{iov_base="41314][ T8340] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  532.980150][ T8341] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  535.019293][ T8342] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 p"..., iov_len=1024}, {iov_base=".", iov_len=1}], 2) = 1025
+8909  13:50:01.072472 writev(1, [{iov_base="245984][ T8348] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  547.576147][    T7] (virq:irq_count)- 11:23191 1:19838 6:15306 2:7917 35:1729 30:1145 301:890 37:44 21:11 28:3 \n[  547.576154][    T7] (cpu:irq_count)- 0:9025 1:784 2:8"..., iov_len=1024}, {iov_base="5", iov_len=1}], 2) = 1025
+8909  13:50:01.072497 writev(1, [{iov_base="65 6:0 \n[  557.434538][ T8353] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  559.474357][ T8354] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  561.511447][ T8355] nx679j: journal mirror: 262143 bytes (fil"..., iov_len=1024}, {iov_base="g", iov_len=1}], 2) = 1025
+8909  13:50:01.072524 writev(1, [{iov_base="=4 rd=8)\n[  573.738154][ T8361] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  575.774490][ T8362] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  575.992175][  T374] (virq:irq_count)- 11:24191 1:19967 6:160"..., iov_len=1024}, {iov_base=" ", iov_len=1}], 2) = 1025
+8909  13:50:01.072549 writev(1, [{iov_base="3:520 4:2599 5:2575 6:2622 7:53619 \n[  585.464163][    T7] (ipi:irq_count)- 0:20005 1:8179 2:0 3:0 4:0 5:16341 6:0 \n[  585.964978][ T8367] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  588.002351][ T8368] nx679j: journal mirror: 2"..., iov_len=1024}, {iov_base="o", iov_len=1}], 2) = 1025
+8909  13:50:01.072574 writev(1, [{iov_base="pen, kmsg=3 pmsg=4 rd=8)\n[  600.236479][ T8374] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  602.274814][ T8375] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  604.315343][ T8376] nx679j: journal mirror: "..., iov_len=1024}, {iov_base=" ", iov_len=1}], 2) = 1025
+8909  13:50:01.072599 writev(1, [{iov_base="2:8330 35:1905 30:1241 301:902 37:44 21:11 28:3 \n[  613.880175][    T7] (cpu:irq_count)- 0:9741 1:786 2:848 3:520 4:2599 5:2575 6:2622 7:55399 \n[  613.880178][    T7] (ipi:irq_count)- 0:20129 1:8330 2:0 3:0 4:0 5:17077 6:0 \n[  614.507234][ T8381] nx679j: j"..., iov_len=1024}, {iov_base="1", iov_len=1}], 2) = 1025
+8909  13:50:01.072626 writev(1, [{iov_base="43 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  626.730398][ T8394] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  628.767833][ T8395] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  630.806823][ T8396] nx679j: "..., iov_len=1024}, {iov_base="6", iov_len=1}], 2) = 1025
+8909  13:50:01.072651 writev(1, [{iov_base="2143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  642.296153][  T374] (virq:irq_count)- 11:26411 1:20295 6:17846 2:8513 35:1986 30:1283 301:947 37:44 21:11 28:3 \n[  642.296159][  T374] (cpu:irq_count)- 0:10119 1:787 2:848 3:520 4:2603 5:2576 6:2628 7:57268 \n[ "..., iov_len=1024}, {iov_base="T", iov_len=1}], 2) = 1025
+8909  13:50:01.072678 writev(1, [{iov_base="7] (ipi:irq_count)- 0:20345 1:8574 2:0 3:0 4:0 5:18101 6:0 \n[  653.231875][ T8407] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  655.272003][ T8408] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  657.31127"..., iov_len=1024}, {iov_base=":", iov_len=1}], 2) = 1025
+8909  13:50:01.072703 writev(1, [{iov_base=" journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  669.540852][ T8415] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  670.712163][  T374] (virq:irq_count)- 11:27347 1:20426 6:18597 2:8682 35:2060 30:1325 301:953 37:44"..., iov_len=1024}, {iov_base="8", iov_len=1}], 2) = 1025
+8909  13:50:01.072730 writev(1, [{iov_base="0.184153][  T374] (cpu:irq_count)- 0:10607 1:791 2:848 3:520 4:2609 5:2579 6:2638 7:59761 \n[  680.184156][  T374] (ipi:irq_count)- 0:20518 1:8753 2:0 3:0 4:0 5:18881 6:0 \n[  681.763350][ T8429] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4"..., iov_len=1024}, {iov_base="3", iov_len=1}], 2) = 1025
+8909  13:50:01.072755 writev(1, [{iov_base="93][ T8435] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  696.032898][ T8436] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  698.072487][ T8437] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg"..., iov_len=1024}, {iov_base="6", iov_len=1}], 2) = 1025
+8909  13:50:01.072779 writev(1, [{iov_base="00147][    T7] (virq:irq_count)- 11:28658 1:20671 6:19649 2:8924 35:2169 30:1382 301:1030 37:44 21:11 28:3 \n[  708.600153][    T7] (cpu:irq_count)- 0:10946 1:792 2:848 3:521 4:2615 5:2586 6:2644 7:61599 \n[  708.600156][    T7] (ipi:irq_count)- 0:20671 1:89"..., iov_len=1024}, {iov_base="m", iov_len=1}], 2) = 1025
+8909  13:50:01.072804 writev(1, [{iov_base="sg=4 rd=8)\n[  720.492211][ T8454] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  722.531337][ T8455] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  724.570247][ T8456] nx679j: journal mirror: 262143 bytes ("..., iov_len=1024}, {iov_base="3", iov_len=1}], 2) = 1025
+8909  13:50:01.072830 writev(1, [{iov_base=" pmsg=4 rd=8)\n[  736.804879][ T8462] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  737.016146][  T374] (virq:irq_count)- 11:29584 1:20801 6:20393 2:9096 35:2243 30:1424 301:1034 37:44 21:11 28:3 \n[  737.016152][  T374] (cpu:irq_co"..., iov_len=1024}, {iov_base="6", iov_len=1}], 2) = 1025
+8909  13:50:01.072855 writev(1, [{iov_base=" 1:9146 2:0 3:0 4:0 5:20643 6:0 \n[  746.994549][ T8467] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  749.030613][ T8468] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  751.067734][ T8469] nx679j: journal "..., iov_len=1024}, {iov_base="y", iov_len=1}], 2) = 1025
+8909  13:50:01.072880 writev(1, [{iov_base="tes (file open, kmsg=3 pmsg=4 rd=8)\n[  763.299921][ T8475] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  765.339111][ T8476] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  765.431182][    T7] (virq:irq_cou"..., iov_len=1024}, {iov_base="i", iov_len=1}], 2) = 1025
+8909  13:50:01.072905 writev(1, [{iov_base="rq_count)- 0:11643 1:792 2:848 3:521 4:2616 5:2587 6:2644 7:65785 \n[  774.904160][    T7] (ipi:irq_count)- 0:20973 1:9319 2:0 3:0 4:0 5:21395 6:0 \n[  775.531818][ T8481] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  777.570802][ T"..., iov_len=1024}, {iov_base="u", iov_len=1}], 2) = 1025
+8909  13:50:01.072932 writev(1, [{iov_base="rnal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  789.804134][ T8490] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  791.841966][ T8491] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  793.848155]"..., iov_len=1024}, {iov_base="r", iov_len=1}], 2) = 1025
+8909  13:50:01.072958 writev(1, [{iov_base="q_count)- 11:31776 6:22164 1:21131 2:9493 35:2425 30:1520 301:1087 37:44 21:11 28:3 \n[  803.320158][  T376] (cpu:irq_count)- 0:12015 1:792 2:848 3:523 4:2617 5:2589 6:2646 7:67634 \n[  803.320161][  T376] (ipi:irq_count)- 0:21131 1:9493 2:0 3:0 4:0 5:22164 "..., iov_len=1024}, {iov_base="5", iov_len=1}], 2) = 1025
+8909  13:50:01.072983 writev(1, [{iov_base="0][ T8502] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  816.303599][ T8503] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  818.343799][ T8504] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg="..., iov_len=1024}, {iov_base="7", iov_len=1}], 2) = 1025
+8909  13:50:01.073008 writev(1, [{iov_base="9315][ T8510] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  831.736073][    T7] (virq:irq_count)- 11:32693 6:22908 1:21261 2:9658 35:2501 30:1562 301:1096 37:44 21:11 28:3 \n[  831.736079][    T7] (cpu:irq_count)- 0:12316 1:792 2:8"..., iov_len=1024}, {iov_base="5", iov_len=1}], 2) = 1025
+8909  13:50:01.073035 writev(1, [{iov_base=":2589 6:2646 7:70014 \n[  841.208159][  T374] (ipi:irq_count)- 0:21308 1:9709 2:0 3:0 4:0 5:23155 6:0 \n[  842.811531][ T8516] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  844.850875][ T8517] nx679j: journal mirror: 262143 bytes (f"..., iov_len=1024}, {iov_base=" ", iov_len=1}], 2) = 1025
+8909  13:50:01.073060 writev(1, [{iov_base="pmsg=4 rd=8)\n[  857.082407][ T8523] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  859.119428][ T8524] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  860.152160][  T374] (virq:irq_count)- 11:33609 6:23648 1"..., iov_len=1024}, {iov_base=":", iov_len=1}], 2) = 1025
+8909  13:50:01.073085 writev(1, [{iov_base="2604 30:1619 301:1106 37:44 21:11 28:3 \n[  869.624180][  T374] (cpu:irq_count)- 0:12717 1:794 2:848 3:523 4:2617 5:2589 6:2646 7:71804 \n[  869.624183][  T374] (ipi:irq_count)- 0:21439 1:9880 2:0 3:0 4:0 5:23900 6:0 \n[  871.353758][ T8530] nx679j: journal m"..., iov_len=1024}, {iov_base="t", iov_len=1}], 2) = 1025
+8909  13:50:01.073110 writev(1, [{iov_base="es (file open, kmsg=3 pmsg=4 rd=8)\n[  883.580000][ T8540] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  885.620170][ T8541] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  887.656548][ T8542] nx679j: journa"..., iov_len=1024}, {iov_base="4", iov_len=1}], 2) = 1025
+8909  13:50:01.073137 writev(1, [{iov_base="3 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  898.039214][  T376] (virq:irq_count)- 11:35114 6:24737 1:22366 2:10117 35:2701 30:1661 301:1181 37:44 21:11 28:3 \n[  898.039220][  T376] (cpu:irq_count)- 0:13203 1:795 2:848 3:523 4:2678 5:2650 6:2736 7:74512 \n[  "..., iov_len=1024}, {iov_base="j", iov_len=1}], 2) = 1025
+8909  13:50:01.073162 writev(1, [{iov_base=": journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  910.074259][ T8566] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  912.110325][ T8567] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  914.14"..., iov_len=1024}, {iov_base="n", iov_len=1}], 2) = 1025
+8909  13:50:01.073187 writev(1, [{iov_base="x679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  926.379950][ T8574] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  926.456137][  T374] (virq:irq_count)- 11:36053 6:25493 1:22505 2:10285 35:2777 30:1703 301:11"..., iov_len=1024}, {iov_base="8", iov_len=1}], 2) = 1025
+8909  13:50:01.073211 writev(1, [{iov_base=" 7:76904 \n[  935.927189][  T378] (ipi:irq_count)- 0:22540 1:10330 2:0 3:0 4:0 5:25737 6:0 \n[  936.571357][ T8579] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  938.610786][ T8580] nx679j: journal mirror: 262143 bytes (file open, k"..., iov_len=1024}, {iov_base="d", iov_len=1}], 2) = 1025
+8909  13:50:01.073241 writev(1, [{iov_base="=8)\n[  950.846045][ T8586] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  952.884528][ T8587] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  954.872153][  T374] (virq:irq_count)- 11:36970 6:26229 1:22624 2:"..., iov_len=1024}, {iov_base="3", iov_len=1}], 2) = 1025
+8909  13:50:01.073265 writev(1, [{iov_base="0:1757 301:1200 37:44 21:11 28:3 \n[  964.344107][  T374] (cpu:irq_count)- 0:13898 1:796 2:848 3:525 4:2678 5:2650 6:2738 7:78704 \n[  964.344110][  T374] (ipi:irq_count)- 0:22667 1:10506 2:0 3:0 4:0 5:26478 6:0 \n[  965.117597][ T8593] nx679j: journal mirror"..., iov_len=1024}, {iov_base=" ", iov_len=1}], 2) = 1025
+8909  13:50:01.073290 writev(1, [{iov_base="(file open, kmsg=3 pmsg=4 rd=8)\n[  977.349242][ T8599] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  979.386535][ T8600] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[  981.425055][ T8601] nx679j: journal m"..., iov_len=1024}, {iov_base="b", iov_len=1}], 2) = 1025
+8909  13:50:01.073314 writev(1, [{iov_base="ytes (file open, kmsg=3 pmsg=4 rd=8)\n[  992.760169][  T378] (virq:irq_count)- 11:38281 6:27258 1:22857 2:10695 35:2958 30:1799 301:1239 37:46 21:11 28:3 \n[  992.760175][  T378] (cpu:irq_count)- 0:14283 1:798 2:848 3:525 4:2701 5:2662 6:2752 7:80589 \n[  992"..., iov_len=1024}, {iov_base="4", iov_len=1}], 2) = 1025
+8909  13:50:01.073340 writev(1, [{iov_base="] (ipi:irq_count)- 0:22905 1:10754 2:0 3:0 4:0 5:27501 6:0 \n[ 1003.855795][ T8622] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[ 1005.895341][ T8630] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[ 1007.93507"..., iov_len=1024}, {iov_base="7", iov_len=1}], 2) = 1025
+8909  13:50:01.073365 writev(1, [{iov_base="9j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[ 1020.171064][ T8637] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[ 1021.176155][  T374] (virq:irq_count)- 11:39243 6:28002 1:23018 2:10868 35:3037 30:1841 301:1280 "..., iov_len=1024}, {iov_base=":", iov_len=1}], 2) = 1025
+8909  13:50:01.073392 writev(1, [{iov_base="3 \n[ 1030.648162][  T374] (cpu:irq_count)- 0:14792 1:798 2:848 3:527 4:2707 5:2684 6:2765 7:83107 \n[ 1030.648165][  T374] (ipi:irq_count)- 0:23114 1:10925 2:0 3:0 4:0 5:28276 6:0 \n[ 1032.405146][ T8652] nx679j: journal mirror: 262143 bytes (file open, kmsg"..., iov_len=1024}, {iov_base=")", iov_len=1}], 2) = 1025
+8909  13:50:01.073417 writev(1, [{iov_base="\n[ 1044.637765][ T8658] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[ 1046.678076][ T8659] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[ 1048.715632][ T8660] nx679j: journal mirror: 262143 bytes (file open,"..., iov_len=1024}, {iov_base=" ", iov_len=1}], 2) = 1025
+8909  13:50:01.073444 writev(1, [{iov_base="rd=8)\n[ 1059.064160][  T374] (virq:irq_count)- 11:40563 6:29052 1:23294 2:11082 35:3147 30:1898 301:1357 37:47 21:11 28:3 \n[ 1059.064166][  T374] (cpu:irq_count)- 0:15135 1:798 2:848 3:527 4:2715 5:2696 6:2780 7:84966 \n[ 1059.064169][  T374] (ipi:irq_count"..., iov_len=1024}, {iov_base="i", iov_len=1}], 2) = 1025
+8909  13:50:01.073469 writev(1, [{iov_base="le open, kmsg=3 pmsg=4 rd=8)\n[ 1071.147652][ T8679] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[ 1073.183701][ T8680] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[ 1075.225288][ T8681] nx679j: journal mirr"..., iov_len=1024}, {iov_base="e", iov_len=1}], 2) = 1025
+8909  13:50:01.073495 writev(1, [{iov_base="s (file open, kmsg=3 pmsg=4 rd=8)\n[ 1087.460474][ T8687] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[ 1087.479208][  T378] (virq:irq_count)- 11:41488 6:29790 1:23425 2:11257 35:3221 30:1940 301:1362 37:47 21:11 28:3 \n[ 1087.479213"..., iov_len=1024}, {iov_base="(", iov_len=1}], 2) = 1025
+8909  13:50:01.073520 writev(1, [{iov_base="ipi:irq_count)- 0:23468 1:11308 2:0 3:0 4:0 5:30037 6:0 \n[ 1097.653652][ T8692] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[ 1099.692215][ T8693] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[ 1101.732958]["..., iov_len=1024}, {iov_base=":", iov_len=1}], 2) = 1025
+8909  13:50:01.073548 writev(1, [{iov_base=" journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[ 1113.966507][ T8700] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[ 1115.895180][  T378] (virq:irq_count)- 11:42402 6:30545 1:23553 2:11420 35:3295 30:1979 301:1372 37:"..., iov_len=1024}, {iov_base="\n", iov_len=1}], 2) = 1025
+8909  13:50:01.073573 writev(1, [{iov_base="[ 1125.368166][    T7] (cpu:irq_count)- 0:15857 1:799 2:848 3:527 4:2716 5:2697 6:2781 7:89144 \n[ 1125.368169][    T7] (ipi:irq_count)- 0:23607 1:11480 2:0 3:0 4:0 5:30795 6:0 \n[ 1126.200724][ T8706] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 "..., iov_len=1024}, {iov_base=" ", iov_len=1}], 2) = 1025
+8909  13:50:01.073600 writev(1, [{iov_base="1138.435374][ T8722] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[ 1140.474074][ T8723] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[ 1142.509807][ T8724] nx679j: journal mirror: 262143 bytes (file open, km"..., iov_len=1024}, {iov_base="=", iov_len=1}], 2) = 1025
+8909  13:50:01.073625 writev(1, [{iov_base="8)\n[ 1153.784168][  T378] (virq:irq_count)- 11:43689 6:31565 1:23785 2:11649 35:3408 30:2036 301:1421 37:48 21:11 28:3 \n[ 1153.784175][  T378] (cpu:irq_count)- 0:16217 1:799 2:848 3:528 4:2720 5:2710 6:2799 7:91005 \n[ 1153.784178][  T378] (ipi:irq_count)- "..., iov_len=1024}, {iov_base="3", iov_len=1}], 2) = 1025
+8909  13:50:01.073652 writev(1, [{iov_base=" 2:0 3:0 4:0 5:31810 6:0 \n[ 1164.940640][ T8735] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[ 1166.980351][ T8736] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[ 1169.020051][ T8737] nx679j: journal mirror:"..., iov_len=1024}, {iov_base="(", iov_len=1}], 2) = 1025
+8909  13:50:01.073678 writev(1, [{iov_base="file open, kmsg=3 pmsg=4 rd=8)\n[ 1181.255806][ T8743] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[ 1182.200164][  T378] (virq:irq_count)- 11:44604 6:32300 1:23919 2:11804 35:3484 30:2078 301:1432 37:48 21:11 28:3 \n[ 1182.200170][ "..., iov_len=1024}, {iov_base="q", iov_len=1}], 2) = 1025
+8909  13:50:01.073704 writev(1, [{iov_base="_count)- 0:16624 1:800 2:848 3:528 4:2720 5:2710 6:2799 7:93368 \n[ 1191.672172][  T374] (ipi:irq_count)- 0:23966 1:11860 2:0 3:0 4:0 5:32544 6:0 \n[ 1193.488949][ T8749] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[ 1195.528271][ T8"..., iov_len=1024}, {iov_base="o", iov_len=1}], 2) = 1025
+8909  13:50:01.073729 writev(1, [{iov_base="urnal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[ 1207.759913][ T8756] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[ 1209.798725][ T8757] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[ 1210.616168"..., iov_len=1024}, {iov_base="q", iov_len=1}], 2) = 1025
+8909  13:50:01.073756 writev(1, [{iov_base=":irq_count)- 11:45844 6:33292 1:24091 2:12032 35:3582 30:2135 301:1438 37:48 21:11 28:3 \n[ 1220.087233][  T374] (cpu:irq_count)- 0:16915 1:800 2:848 3:528 4:2720 5:2710 6:2799 7:95167 \n[ 1220.087236][  T374] (ipi:irq_count)- 0:24091 1:12032 2:0 3:0 4:0 5:3"..., iov_len=1024}, {iov_base="3", iov_len=1}], 2) = 1025
+8909  13:50:01.073782 writev(1, [{iov_base="2.226751][ T8768] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[ 1234.260135][ T8779] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[ 1236.298888][ T8780] nx679j: journal mirror: 262143 bytes (file open, kmsg="..., iov_len=1024}, {iov_base="\n", iov_len=1}], 2) = 1025
+8909  13:50:01.073808 writev(1, [{iov_base="[ 1248.504132][  T374] (virq:irq_count)- 11:47030 6:34227 1:25041 2:12227 35:3681 30:2174 301:1704 37:51 21:11 38:5 \n[ 1248.504138][  T374] (cpu:irq_count)- 0:17623 1:807 2:850 3:532 4:2830 5:2830 6:2980 7:97710 \n[ 1248.504141][  T374] (ipi:irq_count)- 0:2"..., iov_len=1024}, {iov_base=":", iov_len=1}], 2) = 1025
+8909  13:50:01.073836 writev(1, [{iov_base="0 3:0 4:0 5:34470 6:0 \n[ 1258.714570][ T8812] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[ 1260.752694][ T8813] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[ 1262.790835][ T8814] nx679j: journal mirror: 26"..., iov_len=1024}, {iov_base="l", iov_len=1}], 2) = 1025
+8909  13:50:01.073863 writev(1, [{iov_base="e open, kmsg=3 pmsg=4 rd=8)\n[ 1275.016170][ T8820] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[ 1276.920134][    T7] (virq:irq_count)- 11:47942 6:34956 1:25162 2:12373 35:3751 30:2216 301:1707 37:51 21:11 38:5 \n[ 1276.920141][    "..., iov_len=1024}, {iov_base="o", iov_len=1}], 2) = 1025
+8909  13:50:01.073889 writev(1, [{iov_base="unt)- 0:18008 1:807 2:850 3:532 4:2830 5:2830 6:2980 7:100080 \n[ 1286.392136][  T374] (ipi:irq_count)- 0:25215 1:12432 2:0 3:0 4:0 5:35211 6:0 \n[ 1287.240574][ T8826] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[ 1289.279675][ T882"..., iov_len=1024}, {iov_base="u", iov_len=1}], 2) = 1025
+8909  13:50:01.073916 writev(1, [{iov_base="rnal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[ 1301.504468][ T8833] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[ 1303.542606][ T8834] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[ 1305.336127]"..., iov_len=1024}, {iov_base="q", iov_len=1}], 2) = 1025
+8909  13:50:01.073942 writev(1, [{iov_base=":irq_count)- 11:49186 6:35957 1:25345 2:12610 35:3853 30:2273 301:1719 37:51 21:11 38:5 \n[ 1314.808141][  T378] (cpu:irq_count)- 0:18319 1:807 2:850 3:532 4:2830 5:2830 6:2980 7:101873 \n[ 1314.808144][  T378] (ipi:irq_count)- 0:25345 1:12610 2:0 3:0 4:0 5:"..., iov_len=1024}, {iov_base="1", iov_len=1}], 2) = 1025
+8909  13:50:01.073970 writev(1, [{iov_base="325.956103][ T8845] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[ 1327.993458][ T8846] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[ 1330.032671][ T8847] nx679j: journal mirror: 262143 bytes (file open, kms"..., iov_len=1024}, {iov_base="=", iov_len=1}], 2) = 1025
+8909  13:50:01.073996 writev(1, [{iov_base="8)\n[ 1342.257991][ T8853] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[ 1343.224124][  T378] (virq:irq_count)- 11:50106 6:36698 1:25482 2:12781 35:3931 30:2315 301:1722 37:51 21:11 38:5 \n[ 1343.224131][  T378] (cpu:irq_count)- 0:18"..., iov_len=1024}, {iov_base="5", iov_len=1}], 2) = 1025
+8909  13:50:01.074022 writev(1, [{iov_base="0 3:532 4:2832 5:2831 6:2981 7:104258 \n[ 1352.696157][    T7] (ipi:irq_count)- 0:25530 1:12842 2:0 3:0 4:0 5:36950 6:0 \n[ 1354.484952][ T8859] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[ 1356.521712][ T8860] nx679j: journal mirro"..., iov_len=1024}, {iov_base="e", iov_len=1}], 2) = 1025
+8909  13:50:01.074050 writev(1, [{iov_base="s (file open, kmsg=3 pmsg=4 rd=8)\n[ 1368.748783][ T8866] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[ 1370.786967][ T8867] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)\n[ 1371.639209][  T374] (virq:irq_count"..., iov_len=605}, {iov_base=NULL, iov_len=0}], 2) = 605
+8909  13:50:01.074075 exit_group(0)     = ?
+8909  13:50:01.074149 +++ exited with 0 +++
+8881  13:50:01.074538 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=8909, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+8881  13:50:01.074603 close(11)         = 0
+8881  13:50:01.074655 openat(AT_FDCWD, "/tmp/nxipa-smoke3/event-filter", O_WRONLY|O_CREAT|O_TRUNC|O_LARGEFILE, 0666) = 3
+8881  13:50:01.074719 close(3)          = 0
+8910  13:50:01.075530 close(10)         = 0
+8910  13:50:01.075800 openat(AT_FDCWD, "/etc/ld-musl-aarch64.path", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+8910  13:50:01.075832 openat(AT_FDCWD, "/lib/libgcc_s.so.1", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+8910  13:50:01.075923 close(3)          = 0
+8910  13:50:01.076040 openat(AT_FDCWD, "/sys/kernel/tracing/instances/nxipa_smoke3/events/nxipa_smoke3/write/filter", O_RDONLY|O_LARGEFILE) = 3
+8910  13:50:01.076096 write(1, "count == 32\n", 12) = 12
+8910  13:50:01.076130 close(3)          = 0
+8910  13:50:01.076604 exit_group(0)     = ?
+8910  13:50:01.076683 +++ exited with 0 +++
+8881  13:50:01.076941 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=8910, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+8881  13:50:01.077008 close(11)         = 0
+8881  13:50:01.077038 openat(AT_FDCWD, "/sys/kernel/tracing/instances/nxipa_smoke3/tracing_on", O_WRONLY|O_CREAT|O_TRUNC|O_LARGEFILE, 0666) = 3
+8881  13:50:01.077129 close(3)          = 0
+8881  13:50:01.077161 writev(1, [{iov_base="0\n", iov_len=2}, {iov_base=NULL, iov_len=0}], 2) = 2
+8881  13:50:01.077198 close(11)         = 0
+8881  13:50:01.077240 openat(AT_FDCWD, "/sys/kernel/tracing/instances/nxipa_smoke3/events/nxipa_smoke3/write/enable", O_WRONLY|O_CREAT|O_TRUNC|O_LARGEFILE, 0666) = 3
+8881  13:50:01.077299 close(3)          = 0
+8881  13:50:01.077329 writev(1, [{iov_base="0\n", iov_len=2}, {iov_base=NULL, iov_len=0}], 2) = 2
+8881  13:50:01.077365 close(11)         = 0
+8881  13:50:01.077390 openat(AT_FDCWD, "/sys/kernel/tracing/kprobe_events", O_WRONLY|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 3
+8881  13:50:01.077455 close(3)          = 0
+8881  13:50:01.077489 writev(1, [{iov_base="-:nxipa_smoke3/write\n", iov_len=21}, {iov_base=NULL, iov_len=0}], 2) = 21
+8881  13:50:01.077580 close(11)         = 0
+8911  13:50:01.077828 close(10)         = 0
+8911  13:50:01.078071 openat(AT_FDCWD, "/etc/ld-musl-aarch64.path", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+8911  13:50:01.078108 openat(AT_FDCWD, "/lib/libgcc_s.so.1", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+8911  13:50:01.078192 close(3)          = 0
+8911  13:50:01.078334 unlinkat(AT_FDCWD, "/sys/kernel/tracing/instances/nxipa_smoke3", AT_REMOVEDIR) = 0
+8911  13:50:01.109510 exit_group(0)     = ?
+8911  13:50:01.109903 +++ exited with 0 +++
+8881  13:50:01.110224 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=8911, si_uid=0, si_status=0, si_utime=0, si_stime=1 /* 0.01 s */} ---
+8881  13:50:01.113540 close(4)          = 0
+8912  13:50:01.114172 close(10)         = 0
+8912  13:50:01.114218 close(3)          = 0
+8912  13:50:01.114273 close(4)          = 0
+8912  13:50:01.114547 openat(AT_FDCWD, "/etc/ld-musl-aarch64.path", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+8912  13:50:01.114586 openat(AT_FDCWD, "/lib/libgcc_s.so.1", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+8912  13:50:01.114673 close(3)          = 0
+8912  13:50:01.114803 openat(AT_FDCWD, "/proc/sys/kernel/random/boot_id", O_RDONLY|O_LARGEFILE) = 3
+8912  13:50:01.114921 close(3)          = 0
+8912  13:50:01.114950 exit_group(0)     = ?
+8912  13:50:01.115011 +++ exited with 0 +++
+8881  13:50:01.115244 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=8912, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+8881  13:50:01.115305 close(3)          = 0
+8913  13:50:01.115577 close(10)         = 0
+8913  13:50:01.115630 close(3)          = 0
+8913  13:50:01.115667 close(4)          = 0
+8881  13:50:01.115893 close(4)          = 0
+8913  13:50:01.117105 openat(AT_FDCWD, "/etc/ld-musl-aarch64.path", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+8913  13:50:01.117143 openat(AT_FDCWD, "/lib/libgcc_s.so.1", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+8913  13:50:01.117236 close(3)          = 0
+8913  13:50:01.117357 openat(AT_FDCWD, "/proc/uptime", O_RDONLY|O_LARGEFILE) = 3
+8913  13:50:01.117448 close(3)          = 0
+8913  13:50:01.117474 exit_group(0)     = ?
+8913  13:50:01.117535 +++ exited with 0 +++
+8881  13:50:01.117793 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=8913, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+8881  13:50:01.117847 close(3)          = 0
+8881  13:50:01.117930 writev(1, [{iov_base="SMOKE_CLEANUP exit=0 boot=f2064c04-e0b0-41fa-b9ed-746808a2b741 uptime=1373.94 10977.66\n", iov_len=87}, {iov_base=NULL, iov_len=0}], 2) = 87
+8881  13:50:01.118060 exit_group(0)     = ?
+8881  13:50:01.118138 +++ exited with 0 +++

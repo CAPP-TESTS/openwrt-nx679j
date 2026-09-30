@@ -1,0 +1,579 @@
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Trying with no loader given ...
+main - Waiting for the device
+main - Device detected :)
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95m['  File "/tmp/edl/edl.py", line 419, in <module>\n    run()\n', '  File "/tmp/edl/edl.py", line 412, in run\n    base.run()\n', '  File "/tmp/edl/edl.py", line 305, in run\n    conninfo = self.doconnect(loop)\n', '  File "/tmp/edl/edl.py", line 232, in doconnect\n    resp = self.sahara.connect()\n'][0m
+DeviceClass
+DeviceClass - [LIB]: [95mTX:<?xml version="1.0" ?><data><nop /></data>[0m
+DeviceClass
+DeviceClass - [LIB]: [95mread:0x10[0m
+DeviceClass
+DeviceClass - [LIB]: [95m['  File "/tmp/edl/edl.py", line 419, in <module>\n    run()\n', '  File "/tmp/edl/edl.py", line 412, in run\n    base.run()\n', '  File "/tmp/edl/edl.py", line 305, in run\n    conninfo = self.doconnect(loop)\n', '  File "/tmp/edl/edl.py", line 232, in doconnect\n    resp = self.sahara.connect()\n', '  File "/tmp/edl/edlclient/Library/sahara.py", line 138, in connect\n    res = self.cdc.read(timeout=1)\n'][0m
+DeviceClass
+DeviceClass - [LIB]: [95mRX:04******************************[0m
+main - Mode detected: sahara
+DeviceClass
+DeviceClass - [LIB]: [95m['  File "/tmp/edl/edl.py", line 419, in <module>\n    run()\n', '  File "/tmp/edl/edl.py", line 412, in run\n    base.run()\n', '  File "/tmp/edl/edl.py", line 388, in run\n    sc.handle_streaming(cmd, options)\n', '  File "/tmp/edl/edlclient/Library/streaming_client.py", line 83, in handle_streaming\n    if self.streaming.connect(mode):\n', '  File "/tmp/edl/edlclient/Library/streaming.py", line 783, in connect\n    resp = self.send(cmdbuf, True)\n', '  File "/tmp/edl/edlclient/Library/streaming.py", line 1000, in send\n    return self.hdlc.send_cmd_np(cmd, nocrc)\n', '  File "/tmp/edl/edlclient/Library/hdlc.py", line 232, in send_cmd_np\n    return self.send_cmd_base(outdata, 0, nocrc)\n', '  File "/tmp/edl/edlclient/Library/hdlc.py", line 221, in send_cmd_base\n    if self.send_unframed_buf(packet, prefixflag):\n'][0m
+DeviceClass
+DeviceClass - [LIB]: [95mTX:11001200a0e30000c1e50140a0e31eff2fe14bd97e[0m
+DeviceClass
+DeviceClass - [LIB]: [95mread:0x10[0m
+DeviceClass
+DeviceClass - [LIB]: [95m['  File "/tmp/edl/edl.py", line 419, in <module>\n    run()\n', '  File "/tmp/edl/edl.py", line 412, in run\n    base.run()\n', '  File "/tmp/edl/edl.py", line 388, in run\n    sc.handle_streaming(cmd, options)\n', '  File "/tmp/edl/edlclient/Library/streaming_client.py", line 83, in handle_streaming\n    if self.streaming.connect(mode):\n', '  File "/tmp/edl/edlclient/Library/streaming.py", line 783, in connect\n    resp = self.send(cmdbuf, True)\n', '  File "/tmp/edl/edlclient/Library/streaming.py", line 1000, in send\n    return self.hdlc.send_cmd_np(cmd, nocrc)\n', '  File "/tmp/edl/edlclient/Library/hdlc.py", line 232, in send_cmd_np\n    return self.send_cmd_base(outdata, 0, nocrc)\n', '  File "/tmp/edl/edlclient/Library/hdlc.py", line 223, in send_cmd_base\n    return self.receive_reply_nocrc()\n', '  File "/tmp/edl/edlclient/Library/hdlc.py", line 177, in receive_reply_nocrc\n    tmp = self.cdc.read(timeout=timeout)\n'][0m
+DeviceClass
+DeviceClass - [LIB]: [95mRX:04******************************[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+DeviceClass
+DeviceClass - [LIB]: [95mTimed out[0m
+
+[!] Exiting cleanly…

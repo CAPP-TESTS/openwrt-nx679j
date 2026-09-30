@@ -1,0 +1,4 @@
+model=cat: /proc/device-tree/model: Permission denied
+"ncompatible="/system/bin/sh: can't open /proc/device-tree/compatible: Permission denied
+"nbootargs="cat: /proc/device-tree/chosen/bootargs: Permission denied
+"nstdout="cat: /proc/device-tree/chosen/stdout-path: Permission denied

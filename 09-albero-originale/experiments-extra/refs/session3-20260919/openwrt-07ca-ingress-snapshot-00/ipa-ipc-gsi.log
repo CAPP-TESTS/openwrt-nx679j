@@ -1,0 +1,69 @@
+IPC=gsi UPTIME=1260.10 9857.68
+[    20.071954019/        0x278275b9] msm_gsi_probe:5831 Num MSIs=2
+[    20.388056207/        0x27df1163] gsi_map_base:1292 GSI base(0x0000000003e04000) mapped to ((____ptrval____)) with len (0xfc000)
+[    20.388061207/        0x27df11c3] gsihal_init:16 initializing GSI HAL, GSI ver 10, base = (____ptrval____)
+[  1259.115911029/       0x5b17b9e37] gsi_register_device:1528 succeeded to register isr for 40
+[  1259.115915404/       0x5b17b9e8b] gsi_register_device:1534 GSI irq is wake enabled 40
+[  1259.115915769/       0x5b17b9e92] __gsi_allocate_msis:1388 gsi_ctx->dev = 18******************, gsi_ctx->msi.num = 2
+[  1259.115959415/       0x5b17ba1d8] __gsi_allocate_msis:1395 MSI allocating is succesful
+[  1259.115959883/       0x5b17ba1e1] __gsi_allocate_msis:1412 desc->irq =359
+[  1259.115976133/       0x5b17ba319] __gsi_msi_write_msg:1350 saved msi 0 msg data 0 addr 0x00**************, MSI:0x17150040
+[  1259.115988790/       0x5b17ba40c] __gsi_allocate_msis:1421 Requesting IRQ succesful
+[  1259.115989206/       0x5b17ba414] __gsi_allocate_msis:1412 desc->irq =360
+[  1259.116001394/       0x5b17ba4fe] __gsi_msi_write_msg:1350 saved msi 1 msg data 1 addr 0x00**************, MSI:0x17150040
+[  1259.116010821/       0x5b17ba5b3] __gsi_allocate_msis:1421 Requesting IRQ succesful
+[  1259.116012071/       0x5b17ba5cb] gsi_get_max_channels:1201 max channels 28
+[  1259.116012748/       0x5b17ba5d8] gsi_get_max_event_rings:1241 max event rings 27
+[  1259.116014571/       0x5b17ba5fb] __gsi_config_all_ieob_irq:174 current IEO_IRQ_MSK: 0xffffffff, change to: 0xffffffff
+[  1259.116023425/       0x5b17ba6a5] gsi_alloc_evt_ring:2189 Using 0 as virt evt id
+[  1259.116023894/       0x5b17ba6ae] gsi_alloc_evt_ring:2193 Using DDR to read event RP for virt evt id: 0
+[  1259.116346081/       0x5b17bbed9] gsi_handle_ev_ctrl:409 ev 1
+[  1259.116350665/       0x5b17bbf30] gsi_handle_ev_ctrl:426 evt 0 state updated to 1
+[  1259.116366029/       0x5b17bc057] gsi_program_evt_ring_ctx:1861 intf=2 intr=1 re=16
+[  1259.116371654/       0x5b17bc0c3] __gsi_config_ieob_irq_k:187 current IEO_IRQ_MSK: 0xffffffff, change to: 0xffffffff
+[  1259.116478685/       0x5b17bc8c9] gsi_alloc_evt_ring:2189 Using 1 as virt evt id
+[  1259.116478998/       0x5b17bc8d0] gsi_alloc_evt_ring:2193 Using DDR to read event RP for virt evt id: 1
+[  1259.116833477/       0x5b17be367] gsi_handle_ev_ctrl:409 ev 2
+[  1259.116837279/       0x5b17be3b0] gsi_handle_ev_ctrl:426 evt 1 state updated to 1
+[  1259.116852383/       0x5b17be4d1] gsi_program_evt_ring_ctx:1861 intf=2 intr=1 re=16
+[  1259.116857331/       0x5b17be530] __gsi_config_ieob_irq_k:187 current IEO_IRQ_MSK: 0xffffffff, change to: 0xffffffff
+[  1259.116870508/       0x5b17be62e] gsi_handle_ch_ctrl:345 ch 1000
+[  1259.116873685/       0x5b17be66b] gsi_handle_ch_ctrl:362 ch 12 state updated to 1
+[  1259.116890456/       0x5b17be7ac] gsi_start_channel:3396 GSI Channel Start, waiting for completion
+[  1259.116896758/       0x5b17be826] gsi_handle_ch_ctrl:345 ch 1000
+[  1259.116898946/       0x5b17be850] gsi_handle_ch_ctrl:362 ch 12 state updated to 2
+[  1259.116909050/       0x5b17be911] gsi_start_channel:3413 GSI Channel=12 Start success
+[  1259.117384935/       0x5b17c0cc2] gsi_alloc_evt_ring:2189 Using 2 as virt evt id
+[  1259.117385300/       0x5b17c0cc9] gsi_alloc_evt_ring:2193 Using DDR to read event RP for virt evt id: 2
+[  1259.117392071/       0x5b17c0d4c] gsi_handle_ev_ctrl:409 ev 4
+[  1259.117394415/       0x5b17c0d78] gsi_handle_ev_ctrl:426 evt 2 state updated to 1
+[  1259.117403998/       0x5b17c0e30] gsi_program_evt_ring_ctx:1861 intf=2 intr=1 re=16
+[  1259.117408894/       0x5b17c0e8e] __gsi_config_ieob_irq_k:187 current IEO_IRQ_MSK: 0xffffffff, change to: 0xffffffff
+[  1259.117417227/       0x5b17c0f2f] gsi_handle_ch_ctrl:345 ch 2000
+[  1259.117419415/       0x5b17c0f58] gsi_handle_ch_ctrl:362 ch 13 state updated to 1
+[  1259.117548633/       0x5b17c1909] gsi_start_channel:3396 GSI Channel Start, waiting for completion
+[  1259.117554467/       0x5b17c197a] gsi_handle_ch_ctrl:345 ch 2000
+[  1259.117556446/       0x5b17c19a0] gsi_handle_ch_ctrl:362 ch 13 state updated to 2
+[  1259.117566446/       0x5b17c1a5f] gsi_start_channel:3413 GSI Channel=13 Start success
+[  1259.117669154/       0x5b17c2214] gsi_handle_ch_ctrl:345 ch 80000
+[  1259.117671185/       0x5b17c223a] gsi_handle_ch_ctrl:362 ch 19 state updated to 1
+[  1259.117685196/       0x5b17c2347] gsi_start_channel:3396 GSI Channel Start, waiting for completion
+[  1259.117691133/       0x5b17c23b9] gsi_handle_ch_ctrl:345 ch 80000
+[  1259.117693321/       0x5b17c23e3] gsi_handle_ch_ctrl:362 ch 19 state updated to 2
+[  1259.117702852/       0x5b17c249a] gsi_start_channel:3413 GSI Channel=19 Start success
+[  1259.118336498/       0x5b17c5420] gsi_query_device_msi_addr:5561 Device MSI Addr: 0x17150040
+[  1259.119705144/       0x5b17cbac7] __gsi_config_ieob_irq_k:187 current IEO_IRQ_MSK: 0xffffffff, change to: 0xfffffffb
+[  1259.119707644/       0x5b17cbaf6] gsi_config_channel_mode:4508 set gsi_ctx evtr_id 2 to 1 mode
+[  1259.119752748/       0x5b17cbe58] __gsi_config_ieob_irq_k:187 current IEO_IRQ_MSK: 0xfffffffb, change to: 0xffffffff
+[  1259.119754935/       0x5b17cbe82] gsi_config_channel_mode:4537 set gsi_ctx evtr_id 2 to 0 mode
+[  1259.216553946/       0x5b1991a6f] gsi_stop_channel:3565 GSI Channel Stop, waiting for completion: 0x1
+[  1259.216906602/       0x5b19934e3] gsi_handle_ch_ctrl:345 ch 2000
+[  1259.216912071/       0x5b199354c] gsi_handle_ch_ctrl:362 ch 13 state updated to 3
+[  1259.217754884/       0x5b1997481] __gsi_config_ieob_irq_k:187 current IEO_IRQ_MSK: 0xffffffff, change to: 0xfffffffb
+[  1259.217756186/       0x5b199749a] gsi_config_channel_mode:4508 set gsi_ctx evtr_id 2 to 1 mode
+[  1259.217757488/       0x5b19974b3] gsi_is_channel_empty:4039 ch=13 ev=2 RP=0x20032010 WP=0x20032ff0 RP_LOCAL=0x20032010
+[  1259.217762488/       0x5b1997513] gsi_stop_channel:3565 GSI Channel Stop, waiting for completion: 0x1
+[  1259.218203477/       0x5b1999627] gsi_handle_ch_ctrl:345 ch 80000
+[  1259.218212748/       0x5b19996d9] gsi_handle_ch_ctrl:362 ch 19 state updated to 3
+IPC=gsi UPTIME=1261.10 9862.75
+IPC=gsi UPTIME=1262.10 9867.78

@@ -1,0 +1,205 @@
+{
+  "checks": [
+    {
+      "check": "the relay under test is the one inside the shipped image",
+      "pass": true,
+      "detail": "598152 bytes sha256=f84e75dcbbeba83e... (manifest f84e75dcbbeba83e...)"
+    },
+    {
+      "check": "the relay starts and listens (accept() succeeds)",
+      "pass": true,
+      "detail": "listening after 0.2 s on 40833"
+    },
+    {
+      "check": "`nc 127.0.0.1 <port>` returns a dump and exits 0 (the relay closes)",
+      "pass": true,
+      "detail": "15643 bytes, nc rc=0, finished=True"
+    },
+    {
+      "check": "the dump says what it is: READ-ONLY, and how to reconnect",
+      "pass": true,
+      "detail": "# nx679j v9 DIAGNOSTIC RELAY - READ-ONLY SNAPSHOT"
+    },
+    {
+      "check": "all ten sections are present, in order",
+      "pass": true,
+      "detail": "[1], [2], [3], [4], [5], [6], [7], [8], [9], [10]"
+    },
+    {
+      "check": "the dump is readable text (printable ASCII + \\n/\\t only)",
+      "pass": true,
+      "detail": "0 non-printable bytes"
+    },
+    {
+      "check": "the journal section carries the real journal, line by line",
+      "pass": true,
+      "detail": "202 of 200 journal lines present"
+    },
+    {
+      "check": "the journal hashes in the dump are the hashes of the file on disk",
+      "pass": true,
+      "detail": "full 0x346be3c8c7c0c64f == 0x346be3c8c7c0c64f, window 0x346be3c8c7c0c64f == 0x346be3c8c7c0c64f"
+    },
+    {
+      "check": "the relay reports the address the kernel really bound and shows it is present on an interface here",
+      "pass": true,
+      "detail": "[relay] version=nx679j-relay-v9 port=40833 bind=127.0.0.1 bind_all=0 listen_ok=1 | [relay] wanted_ip=127.0.0.1 on_an_interface=yes(lo) nonlocal_bind=-"
+    },
+    {
+      "check": "client 1 (prefix 0 bytes) is served completely",
+      "pass": true,
+      "detail": "15643 bytes"
+    },
+    {
+      "check": "client 2 (prefix 25 bytes) is served completely",
+      "pass": true,
+      "detail": "15643 bytes"
+    },
+    {
+      "check": "client 3 (prefix 10 bytes) is served completely",
+      "pass": true,
+      "detail": "15643 bytes"
+    },
+    {
+      "check": "what the client SENDS changes nothing: sections [1]..[8] are the same for all three clients (only live /proc counters may differ)",
+      "pass": true,
+      "detail": "0 differing lines, all live counters: []"
+    },
+    {
+      "check": "the SHIPPED relay announces its own 30 s client deadline",
+      "pass": true,
+      "detail": "[relay] client_deadline_s=30 file_cap=65536 journal_window=524288 (one client is killed on that deadline, so a reader that stops reading cannot hold the relay)"
+    },
+    {
+      "check": "the deadline is configurable for tests (V9_RELAY_DEADLINE=5 here)",
+      "pass": true,
+      "detail": "[relay] client_deadline_s=5 file_cap=65536 journal_window=524288 (one client is killed on that deadline, so a reader that stops reading cannot hold the relay)"
+    },
+    {
+      "check": "another client is served while the rude one is still hanging",
+      "pass": true,
+      "detail": "served in 0.0 s, 15642 bytes"
+    },
+    {
+      "check": "after the deadline the rude client is gone: the relay reports no leftover serving child",
+      "pass": true,
+      "detail": "serving_children=1 (1 = only this client)"
+    },
+    {
+      "check": "with no argument the shipped relay listens on 9999 and says so in the dump (this is the port the phone uses)",
+      "pass": true,
+      "detail": "[relay] version=nx679j-relay-v9 port=9999 bind=127.0.0.1 bind_all=0 listen_ok=1"
+    },
+    {
+      "check": "nothing in the device tree was touched by any of it",
+      "pass": true,
+      "detail": "30 files hashed before and after, 0 differences"
+    },
+    {
+      "check": "a 2.8 MB journal still yields a bounded dump whose hashes are exact",
+      "pass": true,
+      "detail": "324137 bytes, file 2940000 B, window 318549 B"
+    },
+    {
+      "check": "the window is the NEWEST complete lines of the journal, and says so",
+      "pass": true,
+      "detail": "window starts with b'nx679j: filler journal l'"
+    },
+    {
+      "check": "the dump grew by less than the journal did (it is a window, not a copy)",
+      "pass": true,
+      "detail": "324137 vs journal 2940000"
+    },
+    {
+      "check": "no file is ever opened for writing",
+      "pass": true,
+      "detail": "100 opens, all O_RDONLY (\"/home/user/nx679j-stock/experiments/20)"
+    },
+    {
+      "check": "no syscall that mutates the device is executed at all",
+      "pass": true,
+      "detail": "32 distinct syscalls, none of them a write to the system"
+    },
+    {
+      "check": "the network is only READ, never configured (no SIOCSIFADDR)",
+      "pass": true,
+      "detail": "28 ioctl calls, SIOCGIFADDR present, SIOCSIFADDR absent"
+    },
+    {
+      "check": "every write goes to the console (fd 1/2) or to a socket: nothing is ever written to a file, a device or the rawdump",
+      "pass": true,
+      "detail": "702 writes, targets (pid,fd): {('2866543', '1'): 4, ('2866546', '4'): 178, ('2866548', '4'): 213, ('2866551', '4'): 307}, socket fds seen: ['3', '4', '5']"
+    },
+    {
+      "check": "the relay really served both clients in the traced run",
+      "pass": true,
+      "detail": "accept=4 bind=1 listen=1"
+    },
+    {
+      "check": "the relay process ends when it is terminated (it never traps signals, so it cannot refuse to die)",
+      "pass": true,
+      "detail": "rc -15 and -15"
+    }
+  ],
+  "nc_small": {
+    "bytes": 15643,
+    "rc": 0,
+    "finished": true
+  },
+  "small_clients": [
+    15643,
+    15643,
+    15643
+  ],
+  "nc_big": {
+    "bytes": 324137,
+    "rc": 0,
+    "finished": true
+  },
+  "strace_syscalls": {
+    "accept": 4,
+    "bind": 1,
+    "brk": 4,
+    "clock_gettime": 2,
+    "clone": 3,
+    "close": 112,
+    "exit_group": 2,
+    "fstat": 22,
+    "getdents64": 34,
+    "getpid": 2,
+    "getppid": 2,
+    "getrandom": 2,
+    "getsockname": 1,
+    "ioctl": 28,
+    "listen": 1,
+    "mprotect": 1,
+    "newfstatat": 73,
+    "openat": 100,
+    "prlimit64": 1,
+    "read": 61,
+    "readlinkat": 6,
+    "rseq": 1,
+    "rt_sigaction": 6,
+    "rt_sigprocmask": 7,
+    "set_robust_list": 1,
+    "set_tid_address": 1,
+    "setitimer": 2,
+    "setsockopt": 1,
+    "socket": 28,
+    "uname": 3,
+    "wait4": 4,
+    "write": 702
+  },
+  "nc": {
+    "path": "/home/user/nx679j-stock/experiments/20260917-init-v9/tools/bin/nc",
+    "sha256": "ba7fa16a4c432837814b2d9bfca2ac95daaa2edc2e0580e4048913c7f5058794"
+  },
+  "relay_from_image": {
+    "sha256": "f84e75dcbbeba83e25f9106b27a3ed1e3721bdac57558402af22ed6500e70f95",
+    "bytes": 598152
+  },
+  "summary": {
+    "passed": 28,
+    "total": 28
+  }
+}

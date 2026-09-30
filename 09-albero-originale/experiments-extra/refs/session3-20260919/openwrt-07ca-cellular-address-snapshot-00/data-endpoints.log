@@ -1,0 +1,7 @@
+interface=rmnet_ipa0 ioctl=0x89fd struct_size=24
+driver=rmnet_ipa0
+features=7 (0x7)
+endpoint=1 (0x1)
+pipes consumer=2 producer=23
+mru=1000 (0x3e8)
+scatter_gather=1 (0x1)

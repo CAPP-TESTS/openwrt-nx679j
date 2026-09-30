@@ -1,0 +1,18 @@
+  0.000s UTC 2026-07-17T13:08:11.438672+00:00 GPT boot_b ab=0x43 SUCCESS=1 retry=0 test
+  0.005s pre current-slot: current-slot: b | Finished. Total time: 0.002s
+  0.009s pre slot-successful:b: slot-successful:b: no | Finished. Total time: 0.002s
+  0.014s pre slot-retry-count:b: slot-retry-count:b: 7 | Finished. Total time: 0.003s
+  0.018s pre slot-unbootable:b: slot-unbootable:b: no | Finished. Total time: 0.002s
+  0.071s reboot: Rebooting                                          OKAY [  0.000s] | Finished. Total time: 0.050s
+  0.080s USB disconnected (boot attempt)
+ 14.830s FASTBOOT RETURN: 3dbd****	 fastboot
+ 14.830s OUTCOME FASTBOOT_RETURN elapsed=14.830s
+ 14.843s post current-slot: current-slot: b | Finished. Total time: 0.010s
+ 14.848s post slot-successful:b: slot-successful:b: no | Finished. Total time: 0.003s
+ 14.864s post slot-retry-count:b: slot-retry-count:b: 7 | Finished. Total time: 0.013s
+ 14.869s post slot-unbootable:b: slot-unbootable:b: no | Finished. Total time: 0.003s
+ 14.874s post slot-successful:a: slot-successful:a: yes | Finished. Total time: 0.002s
+ 14.879s post slot-retry-count:a: slot-retry-count:a: 7 | Finished. Total time: 0.003s
+ 14.923s set_active a: Setting current slot to 'a'                        OKAY [  0.040s] | Finished. Total time: 0.042s
+ 14.977s recovery reboot: Rebooting                                          OKAY [  0.000s] | Finished. Total time: 0.050s
+ 44.417s RECOVERY OK: 1 | _a

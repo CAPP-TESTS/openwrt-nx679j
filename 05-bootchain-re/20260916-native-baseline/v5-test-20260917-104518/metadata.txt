@@ -1,0 +1,3 @@
+img=candidate-minimal-gadget-v5/boot_b-minimal-gadget-v5.img size=50266112 sha=62c7fa4bb28cdd5ec96faa960b431ed8b5faf734a9e298405ea1400040b8b1f4
+push=62c7fa4bb28cdd5ec96faa960b431ed8b5faf734a9e298405ea1400040b8b1f4
+readback=62c7fa4bb28cdd5ec96faa960b431ed8b5faf734a9e298405ea1400040b8b1f4

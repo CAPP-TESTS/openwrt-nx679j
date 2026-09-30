@@ -1,0 +1,4 @@
+STAGE=ping BEGIN uptime=2930.59 23157.49
+CHECKPOINT_DURABLE index=12 label=before_ping
+PING_EXEC uptime=2930.60 23157.53
+CHECKPOINT_DURABLE index=14 label=before_ping_exec

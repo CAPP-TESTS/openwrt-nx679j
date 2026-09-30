@@ -1,0 +1,14 @@
+SMOKE_STAGE create_instance uptime=1373.79 10581.33
+SMOKE_STAGE stop_instance uptime=1373.81 10581.40
+SMOKE_STAGE filter_pid uptime=1373.81 10581.43
+SMOKE_STAGE register_probe uptime=1373.82 10581.45
+SMOKE_STAGE filter_count uptime=1373.82 10977.07
+SMOKE_STAGE read_format uptime=1373.82 10977.07
+SMOKE_STAGE enable_event uptime=1373.82 10977.08
+SMOKE_STAGE start_instance uptime=1373.83 10977.11
+SMOKE_STAGE read_trace uptime=1373.85 10977.20
+SMOKE_STAGE validate uptime=1373.85 10977.33
+ kprobe-write-fi-8895    [006] d..1  1373.875836: write: (vfs_write+0x0/0x37c) count=32 caller=0xffffffecfab57050 raw0=0x37************** raw1=0x66************** raw2=0x37************** raw3=0x66**************
+SMOKE_PASS raw32_matches_fixture boot=f2064c04-e0b0-41fa-b9ed-746808a2b741 uptime=1373.86 10977.34
+SMOKE_EXIT stage=complete exit=0
+SMOKE_CLEANUP exit=0 boot=f2064c04-e0b0-41fa-b9ed-746808a2b741 uptime=1373.94 10977.66

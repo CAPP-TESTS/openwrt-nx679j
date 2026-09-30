@@ -1,0 +1,9 @@
+== /sys/class/block/sde
+12582912
+4096
+== /sys/class/block/sdb
+16384
+4096
+== /sys/class/block/sdc
+16384
+4096

@@ -1,0 +1,27 @@
+{
+  "sec_part_lba": 1572860,
+  "entry_lbAs": 3,
+  "backup": 1572863,
+  "changes": [
+    [
+      "boot_b",
+      58,
+      123
+    ],
+    [
+      "vbmeta_b",
+      67,
+      123
+    ],
+    [
+      "dtbo_b",
+      67,
+      123
+    ],
+    [
+      "vendor_boot_b",
+      67,
+      123
+    ]
+  ]
+}

@@ -1,0 +1,21 @@
+Accesso temporaneo impostato durante il port (2026-09-17).
+
+  LuCI:   http://10.0.0.1/   utente: root
+  Password temporanea: nx679j
+
+CAMBIA QUESTA PASSWORD SUBITO. Da terminale, con la chiave SSH (nessuna password):
+
+  ssh -i ~/.ssh/nx679j_key -o StrictHostKeyChecking=no root@10.0.0.1
+  (poi, dentro il telefono:)  passwd
+
+Oppure, senza entrare, via LuCI: System -> Administration -> Router Password.
+
+Nota: l'accesso amministrativo a chiave e' gia' configurato
+(/root/.ssh/authorized_keys sul telefono), quindi cambiare la password NON ti
+taglia fuori.
+
+--- Stato al momento della scrittura ---
+OpenWrt 25.12.5 r33051-f5dae5ece4 (armsr/armv8) su kernel stock 5.10.66 NX679J.
+Servizi avviati a mano (procd non li lancia da solo): /sbin/ubusd, /sbin/rpcd,
+/usr/sbin/uhttpd.  SSH: dropbear.  usb0 = 10.0.0.1/24 (nostro init).
+Regola: NON far toccare usb0 a netifd, o il percorso cade (successo una volta).

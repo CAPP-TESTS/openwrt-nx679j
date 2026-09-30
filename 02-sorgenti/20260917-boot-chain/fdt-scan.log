@@ -1,0 +1,23 @@
+sezione dtb vendor_boot_a: 3879360 B sha256=b67334af3954fc47bc07cefb8d7fc1c7a59ce8258c2b4c8a55bed92fee5c88ad
+occorrenze di magic FDT (d00dfeed): 9
+  offset         0 (0x000000) totalsize=431264    version=17  fine=431264  OK
+      sha256=e87cae0b81a087e086bab76bc242c79f75a11fa426a600feb5865d8f8ea4541a  model = "Qualcomm Technologies, Inc. Cape LTE Only SoC"; | qcom,msm-id = <0x212 0x10000>; | qcom,board-id = <0x00 0x00>; | qcom,gpu-model = "Adreno730v3"; | 
+  offset    431264 (0x0694a0) totalsize=431252    version=17  fine=862516  OK
+      sha256=e060906ae83ff5c8822c775c190859919bd76227184e2440c3d92487e7bf6d3e  model = "Qualcomm Technologies, Inc. Cape SoC"; | qcom,msm-id = <0x212 0x10000>; | qcom,board-id = <0x00 0x00>; | qcom,gpu-model = "Adreno730v3"; | 
+  offset    862516 (0x0d2934) totalsize=347467    version=17  fine=1209983  OK
+      sha256=80f781a8855ebdde4a85e5d8cd82758572ca9dd5bf2559f34c7e29c95fc90950  model = "Qualcomm Technologies, Inc. CapeP SoC"; | qcom,msm-id = <0x213 0x10000>; | qcom,board-id = <0x00 0x00>; | qcom,gpu-model = "Adreno730v3"; | 
+  offset   1209983 (0x12767f) totalsize=298995    version=17  fine=1508978  OK
+      sha256=cfec6d4c507dae0707cb2bd5a288f67d6005435873656bc45fdd70ceb7e30844  model = "Qualcomm Technologies, Inc. Diwali HSP SoC"; | qcom,msm-id = <0x1fa 0x10000>; | qcom,board-id = <0x00 0x02>; | 
+  offset   1508978 (0x170672) totalsize=387498    version=17  fine=1896476  OK
+      sha256=51e8dd638a6fd61803d6c487dad06e36bf93b87bd80792ce98c6de617e9b0874  model = "Qualcomm Technologies, Inc. Diwali SoC"; | qcom,msm-id = <0x1fa 0x10000>; | qcom,board-id = <0x00 0x00>; | 
+  offset   1896476 (0x1cf01c) totalsize=496030    version=17  fine=2392506  OK
+      sha256=45304e9c2f43d7818626353bb82fd82b746bdb14b870efe4542bb17fe3e84f9f  model = "Qualcomm Technologies, Inc. Waipio v2 SoC"; | qcom,msm-id = <0x1c9 0x20000>; | qcom,board-id = <0x00 0x00>; | qcom,gpu-model = "Adreno730v2"; | 
+  offset   2392506 (0x2481ba) totalsize=495598    version=17  fine=2888104  OK
+      sha256=e19209a78bc711ea8da0eda3ce068bf47356ef5696e6cd4266f79c8992a7a00d  model = "Qualcomm Technologies, Inc. Waipio SoC"; | qcom,msm-id = <0x1c9 0x10000>; | qcom,board-id = <0x00 0x00>; | qcom,gpu-model = "Adreno730v1"; | 
+  offset   2888104 (0x2c11a8) totalsize=495630    version=17  fine=3383734  OK
+      sha256=693aed29a2ed645f3602ed2785a849c946cb5a31083d54dbe518928cff3ef01d  model = "Qualcomm Technologies, Inc. WaipioP v2 SoC"; | qcom,msm-id = <0x1e2 0x20000>; | qcom,board-id = <0x00 0x00>; | qcom,gpu-model = "Adreno730v1"; | 
+  offset   3383734 (0x33a1b6) totalsize=495626    version=17  fine=3879360  OK
+      sha256=3e04ad0a38dc5a8b4b2e43e962122b0d62c3d1413faced957f1a1381fd099beb  model = "Qualcomm Technologies, Inc. WaipioP SoC"; | qcom,msm-id = <0x1e2 0x10000>; | qcom,board-id = <0x00 0x00>; | qcom,gpu-model = "Adreno730v1"; | 
+
+byte dopo l'ultima FDT: 0
+coda non-zero: 0 B

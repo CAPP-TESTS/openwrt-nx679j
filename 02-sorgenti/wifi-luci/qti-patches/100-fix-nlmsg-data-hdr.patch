@@ -1,0 +1,11 @@
+--- a/src/libqmi-glib/qmi-net-port-manager-rmnet.c
++++ b/src/libqmi-glib/qmi-net-port-manager-rmnet.c
+@@ -407,7 +407,7 @@
+         if (!tr)
+             continue;
+ 
+-        err = NLMSG_DATA (buf);
++        err = NLMSG_DATA (hdr);
+         transaction_complete (tr, err->error);
+     }
+     return G_SOURCE_CONTINUE;

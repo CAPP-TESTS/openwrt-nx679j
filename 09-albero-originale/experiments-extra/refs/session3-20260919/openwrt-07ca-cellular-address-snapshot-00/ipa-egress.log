@@ -1,0 +1,4 @@
+NETDEV features_block=0 active=0x00004000 available=0x001d4813
+NETDEV features_block=1 active=0x00000000 available=0x02800302
+EGRESS selector=6 flags=0xa
+EGRESS accepted

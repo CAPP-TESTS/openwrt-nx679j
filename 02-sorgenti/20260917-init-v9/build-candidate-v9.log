@@ -1,0 +1,41 @@
+=== build-candidate-v9 (v8 + the read-only diagnostic relay) ===
+
+[1] container      magisk_patched-30700_Zx2eF.img sha256=0cd94d5627501f3c... ok
+[2] ramdisk base   /home/user/nx679j-stock/experiments/20260917-init-v8/work/v8-ramdisk.cpio
+                    3305244 bytes sha256=4ba9ff83fbe47eb58004c081b0292d87dbe7c5da141a4a449b5f2e4f23c8bc37
+                    (the image built from it: boot_b-init-v8.img, sha256=04e7f9b2be943097... the artifact whose init+HW behaviour this experiment extends)
+[3] worker         copied from the v8 build, 663536 bytes sha256=ac4a6ff8069bbce3... (not recompiled)
+[4] compiling /init v9 (freestanding) and /nx679j/relay (static)
+    init    67384 bytes  (v8 init was 67312 bytes)
+    relay   598152 bytes
+[5] PID 1 audit: which syscalls can the shipped bytes execute?
+    svc #0 -> clock_gettime (1 call sites)
+    svc #0 -> clone (2 call sites)
+    svc #0 -> execve (2 call sites)
+    svc #0 -> exit_group (2 call sites)
+    svc #0 -> kill (1 call sites)
+    svc #0 -> nanosleep (2 call sites)
+    svc #0 -> reboot (1 call sites)
+    svc #0 -> wait4 (2 call sites)
+    same 8 syscalls as v8, no libc, no finit_module/mount/lib-module strings, relay logic present (keep_relay, mkrelay)
+    call targets: _start+0x10c, _start+0x140, _start+0x150, _start+0xbc, keep_relay, keep_relay+0x140, keep_relay+0x1a8, keep_relay+0x1b4, keep_relay+0xb0, memcpy, memcpy+0x4, memmove+0x1c, memset+0x4, mkmsg, mkrelay, now_ms, report_op, run_op, run_op+0x38, run_op+0xa0, run_op+0xc8, run_op+0xf8, scpy, u2s, u2s+0x4c
+[6] relay audit: is the new child really read-only?
+    598152 bytes static=True aarch64=True
+    own functions: 10, call targets reachable from them: 54 distinct, all on the read-only whitelist
+    PLT (IFUNC) calls resolved: .plt=__libc_memmove_ifunc
+    nothing reachable that mutates the system (20 forbidden substrings checked), no module-loader strings, no TIMEOUT-KILLED
+    markers present: READ-ONLY, nx679j-relay-v9, /nx679j-journal, hash_fnv1a64_full
+[7] ramdisk: splice /init, add /nx679j/relay, COPY the v8 worker
+[8] the v9 = v8 + relay claim, checked structurally on the archives
+    68 v8 entries -> 69 v9 entries: 68 entries byte-identical (header+payload), /init replaced, /nx679j/relay added
+    the 4 programs/entries that matter: init, nx679j/worker, nx679j/relay (+ the nx679j directory)
+    cpio 3305244 -> 3903592 bytes, 69 entries
+[9] lz4 -l legacy compression + round trip
+    3903592 -> 1410906 bytes, legacy magic 02214c18, round trip byte-identical
+[10] UNPACK the compressed ramdisk and look at the real files: this is the check the kernel will do
+    init 67384 ok, nx679j/worker 663536 ok (== v8 worker), nx679j/relay 598152 ok, all executable, all hashes match
+[11] boot image: in-place graft into the container
+    boot_b-init-v9.img 100663296 bytes sha256=e0a07aa28c98c7dd34d384a8c69e45026b4040b59ca8f7e4358e19df66bbc5d9
+    header: {'magic': 'ANDROID!', 'kernel_size': 49108324, 'ramdisk_size': 1410906, 'header_size': 1584, 'os_version': '0x18000162', 'signature_size': 4096}
+    kernel identical, ramdisk identical, tail identical, 1402730 bytes differ from the container (all inside the size field + ramdisk region)
+    leftover bytes of the old ramdisk left in place: 790077

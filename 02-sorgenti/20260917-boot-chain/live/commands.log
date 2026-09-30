@@ -1,0 +1,115 @@
+### identity :: id; uname -r; getprop ro.boot.slot_suffix; getprop ro.boot.verifiedbootstate; getprop ro.boot.veritymode; getprop ro.boot.dtb_idx; getprop ro.boot.dtbo_idx; getprop ro.boot.hardware; getprop ro.boot.baseband; getprop ro.boot.serialno; cat /proc/uptime
+rc=0 b=169
+### cmdline :: cat /proc/cmdline
+rc=0 b=718
+### bootconfig :: cat /proc/bootconfig
+rc=0 b=887
+### firmware_android :: ls -l /proc/device-tree/firmware/android/; for f in /proc/device-tree/firmware/android/*; do echo "--- $f"; cat "$f"; echo; done
+rc=0 b=548
+### dt_chosen :: for f in /proc/device-tree/chosen/*; do echo "--- $f"; head -c 300 "$f"; echo; done
+rc=0 b=661
+### dt_model :: tr -d "\0" < /proc/device-tree/model; echo; tr -d "\0" < /proc/device-tree/compatible; echo
+rc=0 b=86
+### dt_root :: ls /proc/device-tree/ | head -50
+rc=0 b=209
+### init1 :: ls -l /proc/1/exe; tr "\0" " " < /proc/1/cmdline; echo; cat /proc/1/comm
+rc=0 b=110
+### mounts :: cat /proc/mounts
+rc=0 b=11932
+### devices_chr :: head -25 /proc/devices; echo ===; ls -l /dev | head -25
+rc=0 b=2208
+### modules_count :: wc -l /proc/modules
+rc=0 b=18
+### modules_list :: cat /proc/modules
+rc=0 b=24491
+### lib_modules :: ls /lib/modules/ | wc -l; ls /lib/modules/ | head -8; echo "--- modules.load:"; cat /lib/modules/modules.load; echo "--- fine modules.load"
+rc=0 b=190
+### lib_modules_recovery :: wc -l /lib/modules/modules.load.recovery; head -4 /lib/modules/modules.load.recovery
+rc=0 b=134
+### modules_dep :: head -6 /lib/modules/modules.dep; echo ===softdep; head -6 /lib/modules/modules.softdep; echo ===alias; head -4 /lib/modules/modules.alias; echo ===blocklist; cat /lib/modules/modules.blocklist
+rc=0 b=276
+### ko_dirs :: ls -d /vendor/lib/modules /vendor_dlkm/lib/modules /system/lib/modules 2>&1; ls /vendor/lib/modules 2>&1 | head -5
+rc=0 b=185
+### kernel_modprobe_path :: cat /proc/sys/kernel/modprobe; ls -l /system/bin/modprobe /vendor/bin/modprobe /sbin/modprobe 2>&1
+rc=0 b=197
+### initstate_sample :: for m in gh_virt_wdt qcom_wdt_core smem socinfo qrtr boot_stats icnss2 cnss2 cdsp-loader atmel_mxt_ts aw9620x fsa4480_i2c mhi_dev_drv mhi_dev_netdev ipa_fmwk; do printf "%-18s initstate=%s\n" "$m" "$(cat /sys/module/$m/initstate 2>/dev/null || echo ASSENTE)"; done
+rc=0 b=513
+### rc_vendor :: ls /vendor/etc/init/
+rc=0 b=3756
+### rc_vendor_hw :: ls -R /vendor/etc/init/hw/ 2>&1 | head -30
+rc=0 b=420
+### rc_system :: ls /system/etc/init/
+rc=0 b=1832
+### rc_hw :: ls -R /system/etc/init/hw/ 2>&1 | head -20
+rc=0 b=99
+### rc_grep_modules :: grep -rnE "insmod|modprobe|modules.load|finit_module" /vendor/etc/init/ /system/etc/init/ 2>/dev/null | head -40
+rc=0 b=3319
+### rc_grep_uevent :: grep -rnE "insmod|modprobe" /vendor/etc/ueventd.rc /system/etc/ueventd.rc /vendor/ueventd.rc 2>/dev/null | head -20
+rc=0 b=0
+### selinux :: getenforce; getprop | grep -iE "magisk|selinux|verity|vbmeta" | head -20
+rc=0 b=439
+### magiskver :: magisk -v 2>&1; ls -l /data/adb/magisk 2>&1 | head -25; echo ===; cat /data/adb/magisk/config 2>&1
+rc=0 b=789
+### pstore :: ls -laR /sys/fs/pstore/ 2>&1 | head -20
+rc=0 b=119
+### dmesg_head :: dmesg | head -3
+rc=0 b=195
+### dmesg_modules :: dmesg | grep -iE "Loading module|modules.load|finit_module|init: " | head -30
+rc=0 b=4233
+### dmesg_verity :: dmesg | grep -iE "verity|avb|bootconfig|dtbo" | head -30
+rc=0 b=66
+### gpt_sde_entries :: dd if=/dev/block/sde bs=4096 skip=2 count=1 2>/dev/null | base64 -w0
+rc=0 b=5464
+### gpt_sde_header :: dd if=/dev/block/sde bs=4096 skip=1 count=1 2>/dev/null | base64 -w0
+rc=0 b=5464
+### gpt_sdb_entries :: dd if=/dev/block/sdb bs=4096 skip=2 count=1 2>/dev/null | base64 -w0
+rc=0 b=5464
+### gpt_sdc_entries :: dd if=/dev/block/sdc bs=4096 skip=2 count=1 2>/dev/null | base64 -w0
+rc=0 b=5464
+### misc_head :: dd if=/dev/block/by-name/misc bs=4096 count=1 2>/dev/null | base64 -w0
+rc=0 b=5464
+### byname :: ls -l /dev/block/by-name/
+rc=0 b=7877
+### hashes_boot :: sha256sum /dev/block/by-name/boot_a /dev/block/by-name/boot_b /dev/block/by-name/vendor_boot_a /dev/block/by-name/vendor_boot_b /dev/block/by-name/dtbo_a /dev/block/by-name/dtbo_b /dev/block/by-name/vbmeta_a /dev/block/by-name/vbmeta_b
+rc=0 b=754
+### hashes_bl :: sha256sum /dev/block/by-name/xbl_a /dev/block/by-name/xbl_b /dev/block/by-name/abl_a /dev/block/by-name/abl_b
+rc=0 b=364
+### blocksize :: cat /sys/block/sde/queue/logical_block_size /sys/block/sde/queue/physical_block_size /sys/block/sde/size /sys/block/sdb/size /sys/block/sdc/size
+rc=0 b=31
+### avb_dt :: ls -lR /proc/device-tree/firmware/android/vbmeta/ /proc/device-tree/firmware/android/fstab/
+rc=0 b=818
+### avb_dt_vals :: for d in /proc/device-tree/firmware/android/vbmeta /proc/device-tree/firmware/android/fstab; do echo "=== $d"; for f in $d/*; do echo "--- $f"; tr "\0" "\n" < "$f"; done; done
+### boottime :: getprop | grep -E "ro.boottime|ro.boot.veritymode|ro.boot.slot"
+rc=0 b=8850
+### chosen_bootargs :: cat /proc/device-tree/chosen/bootargs | base64 -w0; echo; cat /proc/device-tree/chosen/stdout-path | base64 -w0; echo; od -An -tx1 /proc/device-tree/chosen/linux,initrd-start; od -An -tx1 /proc/device-tree/chosen/linux,initrd-end
+rc=0 b=908
+### fstab_dt :: for f in dev type mnt_flags fsmgr_flags compatible status; do echo -n "+ fstab/vendor/$f : "; timeout 5 cat /proc/device-tree/firmware/android/fstab/vendor/$f | base64 -w0; echo; done
+rc=0 b=325
+### vbmeta_dt_parts :: timeout 5 cat /proc/device-tree/firmware/android/vbmeta/parts | base64 -w0; echo
+rc=0 b=57
+### gpt_sde_all :: dd if=/dev/block/sde bs=4096 skip=2 count=3 2>/dev/null | base64 -w0
+rc=0 b=16384
+### modules_order :: cat /proc/modules | cut -d" " -f1 | tail -40
+rc=0 b=455
+### modules_count2 :: grep -c . /proc/modules; ls /sys/module | wc -l
+rc=0 b=8
+### ko_vendor_count :: ls /vendor/lib/modules/*.ko 2>/dev/null | wc -l; ls /vendor_dlkm/lib/modules/*.ko 2>/dev/null | wc -l; ls /vendor/lib/modules/ | wc -l; ls /vendor_dlkm/lib/modules/ | wc -l
+rc=0 b=16
+### vendor_modprobe_sh :: cat /vendor/bin/vendor_modprobe.sh
+rc=0 b=1515
+### init_qti_kernel_rc :: sed -n "1,60p" /vendor/etc/init/hw/init.qti.kernel.rc; echo =====; sed -n "170,200p" /vendor/etc/init/hw/init.qti.kernel.rc
+rc=0 b=3287
+### init_rc_head :: sed -n "1,40p" /system/etc/init/hw/init.rc
+rc=0 b=1402
+### dmesg_init :: dmesg | grep -iE "init:|Loading module|modules.load" | head -30
+rc=0 b=4374
+### dmesg_module_timing :: dmesg | grep -iE "ueventd|Loading module|modprobe" | head -20
+rc=0 b=3696
+### sys_module_all :: ls /sys/module | tr "\n" " "
+rc=0 b=6115
+### pstore2 :: ls -la /sys/fs/pstore/ 2>&1; cat /proc/pstore 2>&1 | head -5
+rc=0 b=148
+### ufs_info :: for d in /sys/class/block/sde /sys/class/block/sdb /sys/class/block/sdc; do echo "== $d"; cat $d/size $d/queue/logical_block_size 2>/dev/null; done
+rc=0 b=108
+### aliases :: od -An -c /proc/device-tree/aliases/ufshc 2>/dev/null; echo; od -An -c /proc/device-tree/aliases/serial0 2>/dev/null
+rc=0 b=107

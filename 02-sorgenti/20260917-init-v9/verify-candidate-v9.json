@@ -1,0 +1,165 @@
+{
+  "checks": [
+    {
+      "check": "the image is the boot partition size",
+      "pass": true,
+      "detail": "100663296 bytes"
+    },
+    {
+      "check": "the image magic is ANDROID!",
+      "pass": true,
+      "detail": "b'ANDROID!'"
+    },
+    {
+      "check": "the ramdisk is an lz4 legacy frame at the measured offset",
+      "pass": true,
+      "detail": "1410906 bytes at 49115136, magic 02214c18"
+    },
+    {
+      "check": "the kernel bytes are the container kernel, untouched",
+      "pass": true,
+      "detail": "49108324 bytes, sha256=f0aa949c95d14213"
+    },
+    {
+      "check": "everything after the ramdisk is the container, untouched",
+      "pass": true,
+      "detail": "50137254 bytes identical"
+    },
+    {
+      "check": "the only differing bytes are the ramdisk size field and the ramdisk",
+      "pass": true,
+      "detail": "1402730 differing bytes, 0 outside"
+    },
+    {
+      "check": "the archive contains the three programs",
+      "pass": true,
+      "detail": "['init', 'nx679j/relay', 'nx679j/worker']"
+    },
+    {
+      "check": "init is an aarch64 static ELF, executable",
+      "pass": true,
+      "detail": "67384 bytes, mode 0o100755"
+    },
+    {
+      "check": "nx679j/worker is an aarch64 static ELF, executable",
+      "pass": true,
+      "detail": "663536 bytes, mode 0o100755"
+    },
+    {
+      "check": "nx679j/relay is an aarch64 static ELF, executable",
+      "pass": true,
+      "detail": "598152 bytes, mode 0o100755"
+    },
+    {
+      "check": "PID 1 syscall audit: every svc resolves to a known number",
+      "pass": true,
+      "detail": "clean"
+    },
+    {
+      "check": "PID 1 executes ONLY clock_gettime/clone/execve/exit_group/kill/nanosleep/reboot/wait4 (exactly as in v8)",
+      "pass": true,
+      "detail": "{'exit_group': 2, 'nanosleep': 2, 'clock_gettime': 1, 'kill': 1, 'reboot': 1, 'clone': 2, 'execve': 2, 'wait4': 2}"
+    },
+    {
+      "check": "PID 1 cannot open/read/write/mount/ioctl/socket/finit_module",
+      "pass": true,
+      "detail": "none present"
+    },
+    {
+      "check": "PID 1 contains no module-loading / device strings",
+      "pass": true,
+      "detail": "none"
+    },
+    {
+      "check": "PID 1 DOES reference the relay (so the audit above is meaningful)",
+      "pass": true,
+      "detail": "{'/nx679j/relay': True, 'v9-relay-started': True, 'v9-relay-died': True, 'v9-relay-restarted': True, 'v9-summary': True}"
+    },
+    {
+      "check": "the relay is a static aarch64 ELF with no interpreter",
+      "pass": true,
+      "detail": "598152 bytes, sha256=f84e75dcbbeba83e, no dynamic section"
+    },
+    {
+      "check": "nothing reachable from the relay's own code can unlink/rename/mount/load a module/kill/reboot/exec",
+      "pass": true,
+      "detail": "clean"
+    },
+    {
+      "check": "every PLT (=IFUNC) call of the relay resolves to a memory helper",
+      "pass": true,
+      "detail": "{'.plt': '__libc_memmove_ifunc'}"
+    },
+    {
+      "check": "the relay really does the socket/open/read/write work it claims",
+      "pass": true,
+      "detail": "socket, bind, listen, accept, open, read, write"
+    },
+    {
+      "check": "the shipped binary states its address, interface and format",
+      "pass": true,
+      "detail": "['10.0.0.1', 'usb0', 'READ-ONLY', 'nx679j-relay-v9', '/nx679j-journal', 'hash_fnv1a64_full']"
+    },
+    {
+      "check": "the shipped default port 9999 is in the binary",
+      "pass": true,
+      "detail": "1 occurrence(s) of 0x270f"
+    },
+    {
+      "check": "the relay contains no module-loading strings at all",
+      "pass": true,
+      "detail": "none"
+    },
+    {
+      "check": "the relay entry is a NEW file (not in the v8 archive)",
+      "pass": true,
+      "detail": "598152 bytes, mode 0o100755"
+    },
+    {
+      "check": "every v8 archive entry is byte-identical in v9 except /init and the new relay",
+      "pass": true,
+      "detail": "67 entries identical, /init 67312 -> 67384 bytes"
+    },
+    {
+      "check": "the worker in the v9 image is byte-identical to the v8 worker",
+      "pass": true,
+      "detail": "sha256=ac4a6ff8069bbce3"
+    },
+    {
+      "check": "the /init in the v9 image is NOT the v8 /init (it changed)",
+      "pass": true,
+      "detail": "v8 sha256=6fa91dec86dceafc, v9 sha256=9f241361e5e3844c"
+    },
+    {
+      "check": "v8 and v9 PID 1 have exactly the same syscall set",
+      "pass": true,
+      "detail": "v8 ['clock_gettime', 'clone', 'execve', 'exit_group', 'kill', 'nanosleep', 'reboot', 'wait4']"
+    }
+  ],
+  "image": {
+    "bytes": 100663296,
+    "sha256": "e0a07aa28c98c7dd34d384a8c69e45026b4040b59ca8f7e4358e19df66bbc5d9",
+    "ramdisk_lz4": {
+      "bytes": 1410906,
+      "sha256": "a65e5a5329d1f28c2d20d085ce9d366b3ae066e32aa0e11a8c0a5b3b16e8c478"
+    }
+  },
+  "programs": {
+    "init": {
+      "bytes": 67384,
+      "sha256": "9f241361e5e3844c60ac01c85b5f667c242ab7ecf4466d69364b924ec56f9b09"
+    },
+    "nx679j/worker": {
+      "bytes": 663536,
+      "sha256": "ac4a6ff8069bbce36d77d566f76ac2e247e4dd9308edcf38920a5daed487be29"
+    },
+    "nx679j/relay": {
+      "bytes": 598152,
+      "sha256": "f84e75dcbbeba83e25f9106b27a3ed1e3721bdac57558402af22ed6500e70f95"
+    }
+  },
+  "summary": {
+    "passed": 27,
+    "total": 27
+  }
+}

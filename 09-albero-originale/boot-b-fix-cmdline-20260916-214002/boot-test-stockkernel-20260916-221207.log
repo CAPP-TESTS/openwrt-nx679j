@@ -1,0 +1,74 @@
+=== Boot test started at 22:12:09 ===
+--- Check 1/30 (22:12:09.935) ---
+--- Check 2/30 (22:12:11.450) ---
+--- Check 3/30 (22:12:12.965) ---
+--- Check 4/30 (22:12:14.480) ---
+--- Check 5/30 (22:12:15.994) ---
+--- Check 6/30 (22:12:17.509) ---
+--- Check 7/30 (22:12:19.025) ---
+--- Check 8/30 (22:12:20.540) ---
+--- Check 9/30 (22:12:22.055) ---
+--- Check 10/30 (22:12:23.569) ---
+Bus 006 Device 011: ID 18d1:d00d Google Inc. Xiaomi Mi/Redmi 2 (fastboot)
+⚠ FASTBOOT — boot failed, returned to bootloader
+--- Check 11/30 (22:12:25.084) ---
+Bus 006 Device 011: ID 18d1:d00d Google Inc. Xiaomi Mi/Redmi 2 (fastboot)
+⚠ FASTBOOT — boot failed, returned to bootloader
+--- Check 12/30 (22:12:26.599) ---
+Bus 006 Device 011: ID 18d1:d00d Google Inc. Xiaomi Mi/Redmi 2 (fastboot)
+⚠ FASTBOOT — boot failed, returned to bootloader
+--- Check 13/30 (22:12:28.115) ---
+Bus 006 Device 011: ID 18d1:d00d Google Inc. Xiaomi Mi/Redmi 2 (fastboot)
+⚠ FASTBOOT — boot failed, returned to bootloader
+--- Check 14/30 (22:12:29.631) ---
+Bus 006 Device 011: ID 18d1:d00d Google Inc. Xiaomi Mi/Redmi 2 (fastboot)
+⚠ FASTBOOT — boot failed, returned to bootloader
+--- Check 15/30 (22:12:31.147) ---
+Bus 006 Device 011: ID 18d1:d00d Google Inc. Xiaomi Mi/Redmi 2 (fastboot)
+⚠ FASTBOOT — boot failed, returned to bootloader
+--- Check 16/30 (22:12:32.663) ---
+Bus 006 Device 011: ID 18d1:d00d Google Inc. Xiaomi Mi/Redmi 2 (fastboot)
+⚠ FASTBOOT — boot failed, returned to bootloader
+--- Check 17/30 (22:12:34.178) ---
+Bus 006 Device 011: ID 18d1:d00d Google Inc. Xiaomi Mi/Redmi 2 (fastboot)
+⚠ FASTBOOT — boot failed, returned to bootloader
+--- Check 18/30 (22:12:35.695) ---
+Bus 006 Device 011: ID 18d1:d00d Google Inc. Xiaomi Mi/Redmi 2 (fastboot)
+⚠ FASTBOOT — boot failed, returned to bootloader
+--- Check 19/30 (22:12:37.210) ---
+Bus 006 Device 011: ID 18d1:d00d Google Inc. Xiaomi Mi/Redmi 2 (fastboot)
+⚠ FASTBOOT — boot failed, returned to bootloader
+--- Check 20/30 (22:12:38.726) ---
+Bus 006 Device 011: ID 18d1:d00d Google Inc. Xiaomi Mi/Redmi 2 (fastboot)
+⚠ FASTBOOT — boot failed, returned to bootloader
+--- Check 21/30 (22:12:40.241) ---
+Bus 006 Device 011: ID 18d1:d00d Google Inc. Xiaomi Mi/Redmi 2 (fastboot)
+⚠ FASTBOOT — boot failed, returned to bootloader
+--- Check 22/30 (22:12:41.760) ---
+Bus 006 Device 011: ID 18d1:d00d Google Inc. Xiaomi Mi/Redmi 2 (fastboot)
+⚠ FASTBOOT — boot failed, returned to bootloader
+--- Check 23/30 (22:12:43.276) ---
+Bus 006 Device 011: ID 18d1:d00d Google Inc. Xiaomi Mi/Redmi 2 (fastboot)
+⚠ FASTBOOT — boot failed, returned to bootloader
+--- Check 24/30 (22:12:44.791) ---
+Bus 006 Device 011: ID 18d1:d00d Google Inc. Xiaomi Mi/Redmi 2 (fastboot)
+⚠ FASTBOOT — boot failed, returned to bootloader
+--- Check 25/30 (22:12:46.308) ---
+Bus 006 Device 011: ID 18d1:d00d Google Inc. Xiaomi Mi/Redmi 2 (fastboot)
+⚠ FASTBOOT — boot failed, returned to bootloader
+--- Check 26/30 (22:12:47.823) ---
+Bus 006 Device 011: ID 18d1:d00d Google Inc. Xiaomi Mi/Redmi 2 (fastboot)
+⚠ FASTBOOT — boot failed, returned to bootloader
+--- Check 27/30 (22:12:49.339) ---
+Bus 006 Device 011: ID 18d1:d00d Google Inc. Xiaomi Mi/Redmi 2 (fastboot)
+⚠ FASTBOOT — boot failed, returned to bootloader
+--- Check 28/30 (22:12:50.856) ---
+Bus 006 Device 011: ID 18d1:d00d Google Inc. Xiaomi Mi/Redmi 2 (fastboot)
+⚠ FASTBOOT — boot failed, returned to bootloader
+--- Check 29/30 (22:12:52.372) ---
+Bus 006 Device 011: ID 18d1:d00d Google Inc. Xiaomi Mi/Redmi 2 (fastboot)
+⚠ FASTBOOT — boot failed, returned to bootloader
+--- Check 30/30 (22:12:53.888) ---
+Bus 006 Device 011: ID 18d1:d00d Google Inc. Xiaomi Mi/Redmi 2 (fastboot)
+⚠ FASTBOOT — boot failed, returned to bootloader
+=== Monitor ended ===

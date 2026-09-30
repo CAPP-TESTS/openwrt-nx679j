@@ -1,0 +1,21 @@
+{
+  "boot_a": {
+    "path": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/current-readback/boot_a.img",
+    "sha256": "0cd94d5627501f3c65c94542093ad18b1ec6c1c215dc6a7ecab4f941057e8364"
+  },
+  "kernel": {
+    "bytes": 49108324,
+    "sha256": "f0aa949c95d1421381850cb1982bd2a505e96fcd7565543ec28d5b1f7d81a0cc"
+  },
+  "openwrt_rootfs": {
+    "path": "/home/user/nx679j-stock/port-work/openwrt-phase1/openwrt-rootfs.cpio.gz",
+    "sha256": "b7dfd262f7d408ba2931cb71bb0196c2e3b92c3c8534ad4e849cdbcbd5d0458d",
+    "entries": 1253
+  },
+  "vendor_ramdisk00": {
+    "path": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/unpacked-current/vendor_boot_a/vendor_ramdisk00",
+    "sha256": "8e9280413248b94e7e03685965087ca691777e85f51e3a494875582d2c62fb51",
+    "modules": 327,
+    "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64"
+  }
+}

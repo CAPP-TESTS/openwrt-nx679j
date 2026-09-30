@@ -1,0 +1,3 @@
+SUBSYSTEM=="net", KERNEL=="rmnet_ipa0", ENV{ID_MM_PHYSDEV_UID}="qcom-soc"
+SUBSYSTEM=="net", KERNEL=="rmnet_data0", ENV{ID_MM_PORT_IGNORE}="1"
+SUBSYSTEM=="net", KERNEL=="qmapmux*", ENV{ID_MM_PHYSDEV_UID}="qcom-soc"

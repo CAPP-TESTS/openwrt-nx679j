@@ -1,0 +1,14 @@
+[dspawn] pid=12302 log=/tmp/ipa-ingress-diagnostic.log
+IPA_TRIGGER uptime=2094.21 16660.53
+IPA_WRITE device=503:0 payload=ASCII_1 length=1
+IPA_WRITE returned=1
+interface=rmnet_ipa0 ioctl=0x89fd struct_size=24
+driver=rmnet_ipa0
+features=7 (0x7)
+endpoint=1 (0x1)
+pipes consumer=2 producer=23
+mru=1000 (0x3e8)
+scatter_gather=1 (0x1)
+ENABLE_IPA_LOW_RAM_LOG uptime=2095.25 16662.48
+[dspawn] pid=12375 log=/tmp/ipa-ipc-collector.log
+DPM_OPEN uptime=2096.25 16665.66

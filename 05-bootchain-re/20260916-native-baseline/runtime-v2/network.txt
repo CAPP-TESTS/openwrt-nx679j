@@ -1,0 +1,150 @@
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000
+    link/loopback xx:xx:xx:xx:xx:xx brd xx:xx:xx:xx:xx:xx promiscuity 0 addrgenmode eui64 numtxqueues 1 numrxqueues 1 gso_max_size 65536 gso_max_segs 65535 
+2: dummy0: <BROADCAST,NOARP,UP,LOWER_UP> mtu 1500 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000
+    link/ether xx:xx:xx:xx:xx:xx brd xx:xx:xx:xx:xx:xx promiscuity 0 
+    dummy addrgenmode eui64 numtxqueues 1 numrxqueues 1 gso_max_size 65536 gso_max_segs 65535 
+3: ifb0: <BROADCAST,NOARP> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 32
+    link/ether xx:xx:xx:xx:xx:xx brd xx:xx:xx:xx:xx:xx promiscuity 0 
+    ifb addrgenmode eui64 numtxqueues 1 numrxqueues 1 gso_max_size 65536 gso_max_segs 65535 
+4: ifb1: <BROADCAST,NOARP> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 32
+    link/ether xx:xx:xx:xx:xx:xx brd xx:xx:xx:xx:xx:xx promiscuity 0 
+    ifb addrgenmode eui64 numtxqueues 1 numrxqueues 1 gso_max_size 65536 gso_max_segs 65535 
+5: tunl0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/ipip 0.0.0.0 brd 0.0.0.0 promiscuity 0 
+    ipip remote any local any nopmtudisc addrgenmode eui64 numtxqueues 1 numrxqueues 1 gso_max_size 65536 gso_max_segs 65535 
+6: gre0@NONE: <NOARP> mtu 1476 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/gre 0.0.0.0 brd 0.0.0.0 promiscuity 0 
+    gre remote any local any nopmtudisc addrgenmode eui64 numtxqueues 1 numrxqueues 1 gso_max_size 65536 gso_max_segs 65535 
+7: gretap0@NONE: <BROADCAST,MULTICAST> mtu 1462 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/ether xx:xx:xx:xx:xx:xx brd xx:xx:xx:xx:xx:xx promiscuity 0 
+    gretap remote any local any nopmtudisc addrgenmode eui64 numtxqueues 1 numrxqueues 1 gso_max_size 65536 gso_max_segs 65535 
+8: erspan0@NONE: <BROADCAST,MULTICAST> mtu 1450 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/ether xx:xx:xx:xx:xx:xx brd xx:xx:xx:xx:xx:xx promiscuity 0 
+    erspan remote any local any nopmtudisc okey 0.0.0.0 erspan_index 0 addrgenmode eui64 numtxqueues 1 numrxqueues 1 gso_max_size 65536 gso_max_segs 65535 
+9: ip_vti0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/ipip 0.0.0.0 brd 0.0.0.0 promiscuity 0 
+    vti remote any local any addrgenmode eui64 numtxqueues 1 numrxqueues 1 gso_max_size 65536 gso_max_segs 65535 
+10: ip6_vti0@NONE: <NOARP> mtu 1364 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/tunnel6 :: brd :: promiscuity 0 
+    vti6 remote :: local :: ikey 0.0.0.0 okey 0.0.0.0 addrgenmode eui64 numtxqueues 1 numrxqueues 1 gso_max_size 65536 gso_max_segs 65535 
+11: sit0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/sit 0.0.0.0 brd 0.0.0.0 promiscuity 0 
+    sit remote any local any ttl 64 nopmtudisc addrgenmode eui64 numtxqueues 1 numrxqueues 1 gso_max_size 65536 gso_max_segs 65535 
+12: ip6tnl0@NONE: <NOARP> mtu 1452 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/tunnel6 :: brd :: promiscuity 0 
+    ip6tnl ip6ip6 remote :: local :: encaplimit 0 hoplimit 0 tclass 0x00 flowlabel 0x00000 (flowinfo 0x00000000) addrgenmode eui64 numtxqueues 1 numrxqueues 1 gso_max_size 65536 gso_max_segs 65535 
+13: ip6gre0@NONE: <NOARP> mtu 1448 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/gre6 xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:00:00:00:00 brd xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:00:00:00:00 promiscuity 0 
+    ip6gre remote any local any encaplimit 0 flowlabel 0x00000 tclass 0x00 addrgenmode eui64 numtxqueues 1 numrxqueues 1 gso_max_size 65536 gso_max_segs 65535 
+15: rmnet_ipa0: <UP,LOWER_UP> mtu 9216 qdisc pfifo_fast state UNKNOWN mode DEFAULT group default qlen 1000
+    link/[519]  promiscuity 0 addrgenmode eui64 numtxqueues 1 numrxqueues 2 gso_max_size 64000 gso_max_segs 65535 
+16: rmnet_data0@rmnet_ipa0: <UP,LOWER_UP> mtu 1500 qdisc mq state UNKNOWN mode DEFAULT group default qlen 1000
+    link/[519]  promiscuity 0 
+    rmnet addrgenmode eui64 numtxqueues 31 numrxqueues 1 gso_max_size 64000 gso_max_segs 65535 
+17: rmnet_data1@rmnet_ipa0: <UP,LOWER_UP> mtu 1500 qdisc mq state UNKNOWN mode DEFAULT group default qlen 1000
+    link/[519]  promiscuity 0 
+    rmnet addrgenmode eui64 numtxqueues 31 numrxqueues 1 gso_max_size 64000 gso_max_segs 65535 
+18: rmnet_data2@rmnet_ipa0: <> mtu 1500 qdisc mq state DOWN mode DEFAULT group default qlen 1000
+    link/[519]  promiscuity 0 
+    rmnet addrgenmode eui64 numtxqueues 31 numrxqueues 1 gso_max_size 64000 gso_max_segs 65535 
+19: rmnet_data3@rmnet_ipa0: <> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/[519]  promiscuity 0 
+    rmnet addrgenmode eui64 numtxqueues 31 numrxqueues 1 gso_max_size 64000 gso_max_segs 65535 
+20: rmnet_data4@rmnet_ipa0: <> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/[519]  promiscuity 0 
+    rmnet addrgenmode eui64 numtxqueues 31 numrxqueues 1 gso_max_size 64000 gso_max_segs 65535 
+21: rmnet_data5@rmnet_ipa0: <> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/[519]  promiscuity 0 
+    rmnet addrgenmode eui64 numtxqueues 31 numrxqueues 1 gso_max_size 64000 gso_max_segs 65535 
+22: r_rmnet_data0@rmnet_ipa0: <> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/[519]  promiscuity 0 
+    rmnet addrgenmode eui64 numtxqueues 31 numrxqueues 1 gso_max_size 64000 gso_max_segs 65535 
+23: r_rmnet_data1@rmnet_ipa0: <> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/[519]  promiscuity 0 
+    rmnet addrgenmode eui64 numtxqueues 31 numrxqueues 1 gso_max_size 64000 gso_max_segs 65535 
+24: r_rmnet_data2@rmnet_ipa0: <> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/[519]  promiscuity 0 
+    rmnet addrgenmode eui64 numtxqueues 31 numrxqueues 1 gso_max_size 64000 gso_max_segs 65535 
+25: r_rmnet_data3@rmnet_ipa0: <> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/[519]  promiscuity 0 
+    rmnet addrgenmode eui64 numtxqueues 31 numrxqueues 1 gso_max_size 64000 gso_max_segs 65535 
+26: usb0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP mode DEFAULT group default qlen 1000
+    link/ether xx:xx:xx:xx:xx:xx brd xx:xx:xx:xx:xx:xx promiscuity 0 addrgenmode eui64 numtxqueues 1 numrxqueues 1 gso_max_size 65536 gso_max_segs 65535 
+27: wlan0: <BROADCAST,MULTICAST> mtu 1500 qdisc mq state DOWN mode DEFAULT group default qlen 3000
+    link/ether xx:xx:xx:xx:xx:xx brd xx:xx:xx:xx:xx:xx promiscuity 0 addrgenmode eui64 numtxqueues 17 numrxqueues 5 gso_max_size 65536 gso_max_segs 65535 
+28: p2p0: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 3000
+    link/ether xx:xx:xx:xx:xx:xx brd xx:xx:xx:xx:xx:xx promiscuity 0 addrgenmode eui64 numtxqueues 17 numrxqueues 5 gso_max_size 65536 gso_max_segs 65535 
+29: wifi-aware0: <BROADCAST,MULTICAST> mtu 1500 qdisc mq state DOWN mode DEFAULT group default qlen 3000
+    link/ether xx:xx:xx:xx:xx:xx brd xx:xx:xx:xx:xx:xx promiscuity 0 addrgenmode eui64 numtxqueues 17 numrxqueues 5 gso_max_size 65536 gso_max_segs 65535 
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback xx:xx:xx:xx:xx:xx brd xx:xx:xx:xx:xx:xx
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: dummy0: <BROADCAST,NOARP,UP,LOWER_UP> mtu 1500 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/ether xx:xx:xx:xx:xx:xx brd xx:xx:xx:xx:xx:xx
+    inet6 fe80::c402:52ff:fe64:23ef/64 scope link 
+       valid_lft forever preferred_lft forever
+3: ifb0: <BROADCAST,NOARP> mtu 1500 qdisc noop state DOWN group default qlen 32
+    link/ether xx:xx:xx:xx:xx:xx brd xx:xx:xx:xx:xx:xx
+4: ifb1: <BROADCAST,NOARP> mtu 1500 qdisc noop state DOWN group default qlen 32
+    link/ether xx:xx:xx:xx:xx:xx brd xx:xx:xx:xx:xx:xx
+5: tunl0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN group default qlen 1000
+    link/ipip 0.0.0.0 brd 0.0.0.0
+6: gre0@NONE: <NOARP> mtu 1476 qdisc noop state DOWN group default qlen 1000
+    link/gre 0.0.0.0 brd 0.0.0.0
+7: gretap0@NONE: <BROADCAST,MULTICAST> mtu 1462 qdisc noop state DOWN group default qlen 1000
+    link/ether xx:xx:xx:xx:xx:xx brd xx:xx:xx:xx:xx:xx
+8: erspan0@NONE: <BROADCAST,MULTICAST> mtu 1450 qdisc noop state DOWN group default qlen 1000
+    link/ether xx:xx:xx:xx:xx:xx brd xx:xx:xx:xx:xx:xx
+9: ip_vti0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN group default qlen 1000
+    link/ipip 0.0.0.0 brd 0.0.0.0
+10: ip6_vti0@NONE: <NOARP> mtu 1364 qdisc noop state DOWN group default qlen 1000
+    link/tunnel6 :: brd ::
+11: sit0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN group default qlen 1000
+    link/sit 0.0.0.0 brd 0.0.0.0
+12: ip6tnl0@NONE: <NOARP> mtu 1452 qdisc noop state DOWN group default qlen 1000
+    link/tunnel6 :: brd ::
+13: ip6gre0@NONE: <NOARP> mtu 1448 qdisc noop state DOWN group default qlen 1000
+    link/gre6 xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:00:00:00:00 brd xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:00:00:00:00
+15: rmnet_ipa0: <UP,LOWER_UP> mtu 9216 qdisc pfifo_fast state UNKNOWN group default qlen 1000
+    link/[519] 
+16: rmnet_data0@rmnet_ipa0: <UP,LOWER_UP> mtu 1500 qdisc mq state UNKNOWN group default qlen 1000
+    link/[519] 
+    inet6 fe80::6816:fcff:fe6d:d007/64 scope link 
+       valid_lft forever preferred_lft forever
+17: rmnet_data1@rmnet_ipa0: <UP,LOWER_UP> mtu 1500 qdisc mq state UNKNOWN group default qlen 1000
+    link/[519] 
+    inet6 2a02:b025:2005:6e91:181e:87ff:fe70:4068/64 scope global dynamic mngtmpaddr 
+       valid_lft forever preferred_lft forever
+    inet6 fe80::181e:87ff:fe70:4068/64 scope link 
+       valid_lft forever preferred_lft forever
+18: rmnet_data2@rmnet_ipa0: <> mtu 1500 qdisc mq state DOWN group default qlen 1000
+    link/[519] 
+19: rmnet_data3@rmnet_ipa0: <> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/[519] 
+20: rmnet_data4@rmnet_ipa0: <> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/[519] 
+21: rmnet_data5@rmnet_ipa0: <> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/[519] 
+22: r_rmnet_data0@rmnet_ipa0: <> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/[519] 
+23: r_rmnet_data1@rmnet_ipa0: <> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/[519] 
+24: r_rmnet_data2@rmnet_ipa0: <> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/[519] 
+25: r_rmnet_data3@rmnet_ipa0: <> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/[519] 
+26: usb0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether xx:xx:xx:xx:xx:xx brd xx:xx:xx:xx:xx:xx
+    inet 10.0.0.1/24 brd 10.0.0.255 scope global usb0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::1882:b2ff:fe6f:2fa/64 scope link 
+       valid_lft forever preferred_lft forever
+27: wlan0: <BROADCAST,MULTICAST> mtu 1500 qdisc mq state DOWN group default qlen 3000
+    link/ether xx:xx:xx:xx:xx:xx brd xx:xx:xx:xx:xx:xx
+28: p2p0: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 3000
+    link/ether xx:xx:xx:xx:xx:xx brd xx:xx:xx:xx:xx:xx
+29: wifi-aware0: <BROADCAST,MULTICAST> mtu 1500 qdisc mq state DOWN group default qlen 3000
+    link/ether xx:xx:xx:xx:xx:xx brd xx:xx:xx:xx:xx:xx

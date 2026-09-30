@@ -1,0 +1,15 @@
+{
+	"luci-app-nx679j-modem": {
+		"description": "Modem X65 (QRTR/QMI) status and control without ModemManager",
+		"read": {
+			"ubus": {
+				"luci.nx679j-modem": [ "getStatus", "getImsi" ]
+			}
+		},
+		"write": {
+			"ubus": {
+				"luci.nx679j-modem": [ "doReconnect", "doPin" ]
+			}
+		}
+	}
+}

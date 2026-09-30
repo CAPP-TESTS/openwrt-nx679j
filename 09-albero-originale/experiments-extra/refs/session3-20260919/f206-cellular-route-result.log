@@ -1,0 +1,16 @@
+STAGE=inspect BEGIN uptime=2478.75 19468.15
+CHECKPOINT_DURABLE index=0 label=before_inspect
+STAGE=inspect RETURNED uptime=2478.78 19468.24
+CHECKPOINT_DURABLE index=1 label=after_inspect
+STAGE=mtu BEGIN uptime=2479.09 19469.67
+CHECKPOINT_DURABLE index=2 label=before_mtu
+STAGE=mtu RETURNED uptime=2479.10 19469.71
+CHECKPOINT_DURABLE index=3 label=after_mtu
+STAGE=address BEGIN uptime=2479.37 19470.93
+CHECKPOINT_DURABLE index=4 label=before_address
+STAGE=address RETURNED uptime=2479.39 19471.02
+CHECKPOINT_DURABLE index=5 label=after_address
+STAGE=route BEGIN uptime=2479.70 19472.43
+CHECKPOINT_DURABLE index=6 label=before_route
+STAGE=route RETURNED uptime=2479.72 19472.50
+CHECKPOINT_DURABLE index=7 label=after_route

@@ -1,0 +1,27 @@
+#!/bin/sh /etc/rc.common
+# nx679j-display-touch — touch (Goodix GT9897) + nodi /dev per display DRM.
+# I driver sono moduli: gpi dipende da ipc_logging/minidump/smem, l'i2c-geni
+# senza gpi va in deferred probe e il bus non compare -> il client goodix
+# non viene istanziato. Ordine: gpi -> i2c-msm-geni -> goodix_core.
+#
+# ATTENZIONE (21/9): questo servizio NON e' nel rcS-default (lista in
+# nx679j-boot-services.sh). Il bring-up touch+display al boot e' instabile:
+#  - caricare questi moduli insieme all'avvio della chain (MSS) = RESET HW
+#  - il touchpaint (mode-set DSI) nei primi minuti = RESET HW
+# Il boot usa il launcher ritardato nx679j-display-late.sh (uptime alto);
+# questo servizio resta come strumento MANUALE:
+#   sh /etc/init.d/nx679j-display-touch boot   (moduli+nodi, touch pronto)
+#   /usr/lib/nx679j/modem/nx679j-touchpaint 0  (display acceso, disegno col dito)
+USE_PROCD=1
+START=94
+
+start_service() {
+	M=/proc/1/root/lib/modules
+	mkdir -p /dev/dri /dev/input
+	mknod /dev/dri/card0 c 226 0 2>/dev/null
+	mknod /dev/dri/renderD128 c 226 128 2>/dev/null
+	mknod /dev/input/event0 c 13 64 2>/dev/null
+	for m in panel_event_notifier gpi i2c-msm-geni goodix_core; do
+		[ -e "$M/$m.ko" ] && /usr/lib/nx679j/modem/finitmod "$M/$m.ko" 2>/dev/null
+	done
+}

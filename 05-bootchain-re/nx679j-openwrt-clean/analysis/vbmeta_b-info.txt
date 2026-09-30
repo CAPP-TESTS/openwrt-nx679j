@@ -1,0 +1,101 @@
+Minimum libavb version:   1.0
+Header Block:             256 bytes
+Authentication Block:     576 bytes
+Auxiliary Block:          5824 bytes
+Public key (sha1):        f43904b57d85ac17dfbfa33e632c3cdf2875fa96
+Algorithm:                SHA256_RSA4096
+Rollback Index:           0
+Flags:                    0
+Rollback Index Location:  0
+Release String:           'avbtool 1.2.0'
+Descriptors:
+    Chain Partition descriptor:
+      Partition Name:          recovery
+      Rollback Index Location: 1
+      Public key (sha1):       2597c218aae470a130f61162feaae70afd97f011
+      Flags:                   0
+    Chain Partition descriptor:
+      Partition Name:          vbmeta_system
+      Rollback Index Location: 2
+      Public key (sha1):       cdbb77177f731920bbe0a0f94f84d9038ae0617d
+      Flags:                   0
+    Prop: com.android.build.vendor.fingerprint -> 'nubia/NX679J-UN/NX679J-UN:12/SKQ1.211113.001/eng.nubia.20220308.204459:user/release-keys'
+    Prop: com.android.build.vendor.os_version -> '12'
+    Prop: com.android.build.vendor.security_patch -> '2021-10-05'
+    Prop: com.android.build.vendor.security_patch -> '2021-10-05'
+    Prop: com.android.build.vendor_boot.fingerprint -> 'nubia/NX679J-UN/NX679J-UN:12/SKQ1.211113.001/eng.nubia.20220308.204459:user/release-keys'
+    Prop: com.android.build.boot.fingerprint -> 'nubia/NX679J-UN/NX679J-UN:12/SKQ1.211113.001/eng.nubia.20220308.204459:user/release-keys'
+    Prop: com.android.build.boot.os_version -> '12'
+    Prop: com.android.build.boot.security_patch -> '2021-10-05'
+    Prop: com.android.build.boot.security_patch -> '2021-10-05'
+    Prop: com.android.build.odm.fingerprint -> 'nubia/NX679J-UN/NX679J-UN:12/SKQ1.211113.001/eng.nubia.20220308.204459:user/release-keys'
+    Prop: com.android.build.odm.os_version -> '12'
+    Prop: com.android.build.vendor_dlkm.fingerprint -> 'nubia/NX679J-UN/NX679J-UN:12/SKQ1.211113.001/eng.nubia.20220308.204459:user/release-keys'
+    Prop: com.android.build.vendor_dlkm.os_version -> '12'
+    Prop: com.android.build.dtbo.fingerprint -> 'nubia/NX679J-UN/NX679J-UN:12/SKQ1.211113.001/eng.nubia.20220308.204459:user/release-keys'
+    Hash descriptor:
+      Image Size:            50499584 bytes
+      Hash Algorithm:        sha256
+      Partition Name:        boot
+      Salt:                  aecce9546a2bf506396deb64f4f81ffaec499ab1bd9a8fddb00c6594b1c55e85
+      Digest:                f0abae29b198534160dc5c0123a28bf6ae392bb50ada970b4a5d041003407ece
+      Flags:                 0
+    Hash descriptor:
+      Image Size:            9447224 bytes
+      Hash Algorithm:        sha256
+      Partition Name:        dtbo
+      Salt:                  b820916196427acf9a2cf38093307383fc1c93160ef095aa6c8411b16f7d76ad
+      Digest:                f6d5549645dcf8125ee5abcebcce0dbdd04cfec01c3c81d7e40e4d59f3ac9ed7
+      Flags:                 0
+    Hash descriptor:
+      Image Size:            13938688 bytes
+      Hash Algorithm:        sha256
+      Partition Name:        vendor_boot
+      Salt:                  ffdf3a903df0558df5582330c8f6c88544a2ad1876e375ed4af447312cf5f8d7
+      Digest:                5220a76ba4c970e1e2a7c0d17861bfee2e40179af46328b4068b0c028ec5100e
+      Flags:                 0
+    Hashtree descriptor:
+      Version of dm-verity:  1
+      Image Size:            1097728 bytes
+      Tree Offset:           1097728
+      Tree Size:             16384 bytes
+      Data Block Size:       4096 bytes
+      Hash Block Size:       4096 bytes
+      FEC num roots:         2
+      FEC offset:            1114112
+      FEC size:              16384 bytes
+      Hash Algorithm:        sha256
+      Partition Name:        odm
+      Salt:                  d790240ec84a79e21c5f2d35d3ac6d02c7a8933e89cb1c6fe8720c9d626491a1
+      Root Digest:           fee0187dd18b0e13c9c47cbe2c5a0f01d25a3d8dd7bab533f471e4fd77d80983
+      Flags:                 0
+    Hashtree descriptor:
+      Version of dm-verity:  1
+      Image Size:            1621602304 bytes
+      Tree Offset:           1621602304
+      Tree Size:             12775424 bytes
+      Data Block Size:       4096 bytes
+      Hash Block Size:       4096 bytes
+      FEC num roots:         2
+      FEC offset:            1634377728
+      FEC size:              12926976 bytes
+      Hash Algorithm:        sha256
+      Partition Name:        vendor
+      Salt:                  d790240ec84a79e21c5f2d35d3ac6d02c7a8933e89cb1c6fe8720c9d626491a1
+      Root Digest:           33472435ff127e94b8613a18a95ccde5d1dff62ac73ca5c347cc11c6b7be172a
+      Flags:                 0
+    Hashtree descriptor:
+      Version of dm-verity:  1
+      Image Size:            69967872 bytes
+      Tree Offset:           69967872
+      Tree Size:             561152 bytes
+      Data Block Size:       4096 bytes
+      Hash Block Size:       4096 bytes
+      FEC num roots:         2
+      FEC offset:            70529024
+      FEC size:              565248 bytes
+      Hash Algorithm:        sha256
+      Partition Name:        vendor_dlkm
+      Salt:                  d790240ec84a79e21c5f2d35d3ac6d02c7a8933e89cb1c6fe8720c9d626491a1
+      Root Digest:           b051c4da7f27965e86680703cb83f45246e0d87759cd61a6174245489d4eaafd
+      Flags:                 0

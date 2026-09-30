@@ -1,0 +1,8 @@
+CHECKPOINT index=3 label=after_mtu boot=a609cace-9d94-43e6-8cbf-432d9fff1ca6 uptime=1233.19 9383.00
+STAGE=inspect BEGIN uptime=1157.66 8933.16
+CHECKPOINT_DURABLE index=0 label=before_inspect
+STAGE=inspect RETURNED uptime=1157.67 8933.18
+CHECKPOINT_DURABLE index=1 label=after_inspect
+STAGE=mtu BEGIN uptime=1233.18 9382.97
+CHECKPOINT_DURABLE index=2 label=before_mtu
+STAGE=mtu RETURNED uptime=1233.19 9383.00

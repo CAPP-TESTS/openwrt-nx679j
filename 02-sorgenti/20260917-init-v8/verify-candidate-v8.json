@@ -1,0 +1,73 @@
+{
+  "checks": [
+    {
+      "check": "image is the boot partition size",
+      "pass": true,
+      "detail": "100663296 bytes"
+    },
+    {
+      "check": "image magic is ANDROID!",
+      "pass": true,
+      "detail": "b'ANDROID!'"
+    },
+    {
+      "check": "ramdisk is an lz4 legacy frame at the measured offset",
+      "pass": true,
+      "detail": "1076975 bytes at 49115136, magic 02214c18"
+    },
+    {
+      "check": "lz4 decompresses back to the cpio",
+      "pass": true,
+      "detail": "3305244 bytes"
+    },
+    {
+      "check": "the archive contains /init and /nx679j/worker",
+      "pass": true,
+      "detail": "{'init': 67312, 'nx679j/worker': 663536}"
+    },
+    {
+      "check": "init is an aarch64 static ELF",
+      "pass": true,
+      "detail": "67312 bytes"
+    },
+    {
+      "check": "nx679j/worker is an aarch64 static ELF",
+      "pass": true,
+      "detail": "663536 bytes"
+    },
+    {
+      "check": "PID 1 syscall audit: every svc resolves to a known number",
+      "pass": true,
+      "detail": "clean"
+    },
+    {
+      "check": "PID 1 executes ONLY clock_gettime/clone/execve/exit_group/kill/nanosleep/reboot/wait4",
+      "pass": true,
+      "detail": "{'exit_group': 1, 'nanosleep': 2, 'clock_gettime': 1, 'kill': 1, 'reboot': 1, 'clone': 1, 'execve': 1, 'wait4': 1}"
+    },
+    {
+      "check": "PID 1 cannot call open/read/write/mount/ioctl/socket/finit_module",
+      "pass": true,
+      "detail": "none present"
+    },
+    {
+      "check": "PID 1 contains no module-loading / device strings",
+      "pass": true,
+      "detail": "none"
+    },
+    {
+      "check": "the worker DOES contain them (so the audit above is meaningful)",
+      "pass": true,
+      "detail": "{'/lib/modules': True, '/modules.load': True, 'TIMEOUT-KILLED': True}"
+    },
+    {
+      "check": "the worker does not use modules.load.recovery",
+      "pass": true,
+      "detail": "absent"
+    }
+  ],
+  "summary": {
+    "passed": 13,
+    "total": 13
+  }
+}

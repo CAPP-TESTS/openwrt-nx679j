@@ -1,0 +1,8 @@
+### bl/uefi_a.img (5242880 B) — firmware volume trovati: [('0x1000', 2752512, 72)]
+[FV uefi_a.img@1000 off=0x1000 len=2752512 (2752512 B) headerlen=72]
+### bl/xbl_a.img (3670016 B) — firmware volume trovati: []
+...
+### bl/uefi_a.img (5242880 B) — firmware volume trovati: [('0x1000', 2752512, 72)]
+[FV uefi_a.img@1000 off=0x1000 len=2752512 (2752512 B) headerlen=72]
+### bl/xbl_a.img (3670016 B) — firmware volume trovati: []
+STATS {'files': 0, 'sections': 0, 'decompressed': 0, 'failed': 0, 'leaf': 0}

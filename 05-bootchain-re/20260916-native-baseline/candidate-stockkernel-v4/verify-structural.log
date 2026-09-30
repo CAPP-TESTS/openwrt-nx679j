@@ -1,0 +1,116 @@
+image /home/user/nx679j-stock/experiments/20260916-122926-native-baseline/candidate-stockkernel-v4/boot_b-stockkernel-openwrt-v4.img
+      61169664 bytes sha256=1a46f350376ba5fc609e2da52cce22e9086fc3b850d3ed22f425066e4e3f941b
+[PASS] header magic ANDROID! :: b'ANDROID!'
+      kernel_size=49108324 ramdisk_size=12051145 os_version=0x18000162 header_size=1584 header_version=4
+[PASS] header_version == 4 :: 4
+      cmdline(725 bytes) = stack_depot_disable=on kasan.stacktrace=off kvm-arm.mode=protected cgroup_disable=pressure cgroup.memory=nokmem console=ttyMSM0,115200n8 loglevel=6 kpti=0 log_buf_len=256K kernel.panic_on_rcu_stall=1 swiotlb=noforce loop.max_part=7 cgroup.memory=nokmem,nosocket pcie_ports=compat service_locator.enable=1 msm_rtb.filter=0x237 allow_mismatched_32bit_el0 cpufreq.default_governor=performance pelt=8 kasan=off rcupdate.rcu_expedited=1 rcu_nocbs=0-7 irqaffinity=0-3 ftrace_dump_on_oops pstore.compress=none fsa4480_i2c.async_probe=1 can.stats_timer=0 video=vfb:640x400,bpp=32,memsize=3072000 qcom-dload-mode.download_mode=1 bootconfig msm_drm.dsi_display0=qcom,mdss_dsi_r6130_1080_2400_amoled_cmd: rootwait ro init=/init panic=10
+[PASS] kernel_size == manifest :: 49108324/49108324
+[PASS] ramdisk_size == manifest :: 12051145/12051145
+[PASS] image bytes == manifest :: 61169664/61169664
+[PASS] kernel sha256 == device stock kernel :: f0aa949c95d1421381850cb1982bd2a505e96fcd7565543ec28d5b1f7d81a0cc
+[PASS] kernel != trailing zeros
+[PASS] size <= 96 MiB (0x6000000) :: 61169664 <= 100663296 (39493632 bytes headroom)
+[PASS] cmdline carries panic=10
+[PASS] cmdline has exactly one panic= token :: panic=10
+[PASS] cmdline == v2 cmdline + " panic=10"
+[PASS] cmdline prefix byte-identical to v2
+[PASS] v2 cmdline tail "rootwait ro init=/init" preserved verbatim :: led_cmd: rootwait ro init=/init panic=10
+[PASS] header cmdline == manifest cmdline
+[PASS] cmdline byte-identical to v3
+[PASS] kernel identical to the v3 kernel :: f0aa949c95d1421381850cb1982bd2a505e96fcd7565543ec28d5b1f7d81a0cc
+[PASS] ramdisk sha256 == manifest :: e87ae90d25d659cfc811496ac4e92a83a2f6475d451e6610d36b075862489589
+[PASS] gzip -t accepts ramdisk
+[PASS] newc parses to TRAILER!!!
+[PASS] entry count == manifest :: 1541 vs 1541
+[PASS] ramdisk contains init
+[PASS] ramdisk contains sbin/init
+[PASS] ramdisk contains bin/busybox
+[PASS] ramdisk contains dev/console
+[PASS] ramdisk contains dev/kmsg
+[PASS] ramdisk contains dev/pmsg0
+[PASS] ramdisk contains proc
+[PASS] ramdisk contains sys
+[PASS] ramdisk contains sys/kernel/config
+[PASS] ramdisk contains lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/dwc3-msm.ko
+[PASS] ramdisk contains lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/phy-msm-snps-hs.ko
+[PASS] ramdisk contains lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/fsa4480-i2c.ko
+[PASS] 6 static device nodes :: 6
+[PASS] 327 vendor modules packed :: 327
+[PASS] init is executable script :: 0o100755
+[PASS] init sha256 == manifest :: 79b6213a3a18e9a7a2c763a7789614bffa7742eb480acc312fb9093cc3c9a306
+[PASS] init v4 diff = exactly 2 change regions (header comment, module loop) :: @@ -2 +2,15 @@ | @@ -106,2 +120,7 @@ | @@ -110 +129,12 @@ | @@ -114 +144 @@ (the loop split into 3 blocks by the matcher)
+[PASS] everything between the header comment and the module loop is byte-identical :: 70 lines
+[PASS] everything after the module loop is byte-identical :: 63 lines
+[PASS] no changed code line lies outside the header comment and the module loop :: 4 old / 19 new code lines changed; stray=[]
+[PASS] the module loop was actually rewritten :: 4 old code lines replaced by 19 new ones in the loop
+[PASS] module list identical token-for-token :: 40 names
+[PASS] init v4 keeps breadcrumb journal on the 524288-sector partition :: 524288
+[PASS] init v4 keeps NCM configfs gadget :: functions/ncm.usb0
+[PASS] init v4 keeps exec /sbin/init handover :: exec /sbin/init
+[PASS] init v4 keeps rawdump flush() :: flush()
+[PASS] init v4 keeps never aborts (no set -e) :: set -e
+      module names in init v4: 40; mixed-spelling aliases: {'nvmem_qcom_spmi_sdam': 'nvmem_qcom-spmi-sdam.ko'}
+      phy_qcom_emu                   -> phy-qcom-emu.ko                    [all-hyphens]
+      phy_msm_snps_eusb2             -> phy-msm-snps-eusb2.ko              [all-hyphens]
+      repeater                       -> repeater.ko                        [literal]
+      phy_qcom_ufs_qmp_v4_lahaina    -> phy-qcom-ufs-qmp-v4-lahaina.ko     [all-hyphens]
+      qcom_glink_spss                -> qcom_glink_spss.ko                 [literal]
+      phy_qcom_ufs_qmp_14nm          -> phy-qcom-ufs-qmp-14nm.ko           [all-hyphens]
+      phy_qcom_ufs_qmp_v3            -> phy-qcom-ufs-qmp-v3.ko             [all-hyphens]
+      nvmem_qfprom                   -> nvmem_qfprom.ko                    [literal]
+      fsa4480_i2c                    -> fsa4480-i2c.ko                     [all-hyphens]
+      altmode_glink                  -> altmode-glink.ko                   [all-hyphens]
+      dwc3_msm                       -> dwc3-msm.ko                        [all-hyphens]
+      phy_msm_ssusb_qmp              -> phy-msm-ssusb-qmp.ko               [all-hyphens]
+      phy_msm_snps_hs                -> phy-msm-snps-hs.ko                 [all-hyphens]
+      ssusb_redriver_nb7vpq904m      -> ssusb-redriver-nb7vpq904m.ko       [all-hyphens]
+      ucsi_glink                     -> ucsi_glink.ko                      [literal]
+      pmic_glink                     -> pmic_glink.ko                      [literal]
+      pdr_interface                  -> pdr_interface.ko                   [literal]
+      qmi_helpers                    -> qmi_helpers.ko                     [literal]
+      rproc_qcom_common              -> rproc_qcom_common.ko               [literal]
+      qcom_smd                       -> qcom_smd.ko                        [literal]
+      qcom_glink_smem                -> qcom_glink_smem.ko                 [literal]
+      qcom_glink                     -> qcom_glink.ko                      [literal]
+      ufs_qcom                       -> ufs_qcom.ko                        [literal]
+      ufshcd_crypto_qti              -> ufshcd-crypto-qti.ko               [all-hyphens]
+      qti_regmap_debugfs             -> qti-regmap-debugfs.ko              [all-hyphens]
+      phy_qcom_ufs_qmp_v4_cape       -> phy-qcom-ufs-qmp-v4-cape.ko        [all-hyphens]
+      phy_qcom_ufs_qmp_v4_diwali     -> phy-qcom-ufs-qmp-v4-diwali.ko      [all-hyphens]
+      phy_qcom_ufs_qmp_v4_waipio     -> phy-qcom-ufs-qmp-v4-waipio.ko      [all-hyphens]
+      phy_qcom_ufs                   -> phy-qcom-ufs.ko                    [all-hyphens]
+      nvmem_qcom_spmi_sdam           -> nvmem_qcom-spmi-sdam.ko            [mixed-spelling alias]
+      crypto_qti_common              -> crypto-qti-common.ko               [all-hyphens]
+      crypto_qti_hwkm                -> crypto-qti-hwkm.ko                 [all-hyphens]
+      clk_qcom                       -> clk-qcom.ko                        [all-hyphens]
+      gdsc_regulator                 -> gdsc-regulator.ko                  [all-hyphens]
+      proxy_consumer                 -> proxy-consumer.ko                  [all-hyphens]
+      debug_regulator                -> debug-regulator.ko                 [all-hyphens]
+      qcom_ipc_logging               -> qcom_ipc_logging.ko                [literal]
+      qcom_scm                       -> qcom-scm.ko                        [all-hyphens]
+      minidump                       -> minidump.ko                        [literal]
+      smem                           -> smem.ko                            [literal]
+[PASS] all init v4 module names resolve in the ramdisk :: 40/40 resolved; unresolved: []
+[PASS] exactly one name needs the documented mixed-spelling alias :: [('nvmem_qcom_spmi_sdam', 'nvmem_qcom-spmi-sdam.ko')]
+[PASS] the mixed-spelling name is nvmem_qcom_spmi_sdam -> nvmem_qcom-spmi-sdam.ko
+      tool unpack_bootimg: /usr/bin/unpack_bootimg
+      tool cpio: /usr/bin/cpio
+      unpack_bootimg: boot magic: ANDROID! | kernel_size: 49108324 | ramdisk size: 12051145 | os version: 12.0.0 | os patch level: 2022-02 | boot image header version: 4 | command line args: stack_depot_disable=on kasan.stacktrace=off kvm-arm.mode=protected cgroup_disable=pressure cgroup.memory=nokmem console=ttyMSM0,115200n8 loglevel=6 kpti=0 log_buf_len=256K kernel.panic_on_rcu_stall=1 swiotlb=noforce loop.max_part=7 cgroup.memory=nokmem,nosocket pcie_ports=compat service_locator.enable=1 msm_rtb.filter=0x237 allow_mismatched_32bit_el0 cpufreq.default_governor=performance pelt=8 kasan=off rcupdate.rcu_expedited=1 rcu_nocbs=0-7 irqaffinity=0-3 ftrace_dump_on_oops pstore.compress=none fsa4480_i2c.async_probe=1 can.stats_timer=0 video=vfb:640x400,bpp=32,memsize=3072000 qcom-dload-mode.download_mode=1 bootconfig msm_drm.dsi_display0=qcom,mdss_dsi_r6130_1080_2400_amoled_cmd: rootwait ro init=/init panic=10 | boot.img signature size: 0
+[PASS] unpack_bootimg kernel sha256 matches
+
+51/51 checks passed
+{
+  "image": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/candidate-stockkernel-v4/boot_b-stockkernel-openwrt-v4.img",
+  "bytes": 61169664,
+  "sha256": "1a46f350376ba5fc609e2da52cce22e9086fc3b850d3ed22f425066e4e3f941b",
+  "header_version": 4,
+  "kernel_bytes": 49108324,
+  "kernel_sha256": "f0aa949c95d1421381850cb1982bd2a505e96fcd7565543ec28d5b1f7d81a0cc",
+  "ramdisk_bytes": 12051145,
+  "ramdisk_sha256": "e87ae90d25d659cfc811496ac4e92a83a2f6475d451e6610d36b075862489589",
+  "ramdisk_entries": 1541,
+  "checks_total": 51,
+  "checks_failed": [],
+  "cmdline_bytes": 725,
+  "cmdline": "stack_depot_disable=on kasan.stacktrace=off kvm-arm.mode=protected cgroup_disable=pressure cgroup.memory=nokmem console=ttyMSM0,115200n8 loglevel=6 kpti=0 log_buf_len=256K kernel.panic_on_rcu_stall=1 swiotlb=noforce loop.max_part=7 cgroup.memory=nokmem,nosocket pcie_ports=compat service_locator.enable=1 msm_rtb.filter=0x237 allow_mismatched_32bit_el0 cpufreq.default_governor=performance pelt=8 kasan=off rcupdate.rcu_expedited=1 rcu_nocbs=0-7 irqaffinity=0-3 ftrace_dump_on_oops pstore.compress=none fsa4480_i2c.async_probe=1 can.stats_timer=0 video=vfb:640x400,bpp=32,memsize=3072000 qcom-dload-mode.download_mode=1 bootconfig msm_drm.dsi_display0=qcom,mdss_dsi_r6130_1080_2400_amoled_cmd: rootwait ro init=/init panic=10"
+}

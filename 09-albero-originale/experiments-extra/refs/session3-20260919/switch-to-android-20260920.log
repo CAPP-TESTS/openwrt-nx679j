@@ -1,0 +1,17 @@
+SSH ended by host timeout after reboot request
+$ fastboot -s 3dbd**** getvar current-slot
+current-slot: b
+Finished. Total time: 0.012s
+
+$ fastboot -s 3dbd**** set_active a
+Setting current slot to 'a'                        OKAY [  0.040s]
+Finished. Total time: 0.042s
+
+$ fastboot -s 3dbd**** getvar current-slot
+current-slot: a
+Finished. Total time: 0.002s
+
+$ fastboot -s 3dbd**** reboot
+Rebooting                                          OKAY [  0.000s]
+Finished. Total time: 0.050s
+

@@ -1,0 +1,143 @@
+svc.wpad=wpad attivo auto
+svc.rcS=rcS spento off
+svc.nx679j-modem=nx679j-modem spento auto
+svc.nx679j-display-touch=nx679j-display-touch spento off
+svc.modemmanager=modemmanager spento auto
+svc.mm-netlink-watch=mm-netlink-watch spento auto
+svc.dbus=dbus attivo auto
+svc.urngd=urngd spento auto
+svc.urandom_seed=urandom_seed spento auto
+svc.umount=umount spento off
+svc.uhttpd=uhttpd attivo auto
+svc.ucitrack=ucitrack spento auto
+svc.system=system spento auto
+svc.sysntpd=sysntpd spento auto
+svc.sysfixtime=sysfixtime spento auto
+svc.sysctl=sysctl spento auto
+svc.rpcd=rpcd attivo auto
+svc.packet_steering=packet_steering spento auto
+svc.odhcpd=odhcpd spento auto
+svc.network=network attivo auto
+svc.log=log attivo auto
+svc.led=led spento auto
+svc.gpio_switch=gpio_switch spento auto
+svc.firewall=firewall spento auto
+svc.dropbear=dropbear spento auto
+svc.done=done spento auto
+svc.dnsmasq=dnsmasq attivo auto
+svc.cron=cron spento auto
+svc.boot=boot spento auto
+net.if.lan_wifi=lan_wifi up phy0-ap0 192.168.77.1/24
+net.if.loopback=loopback up lo 127.0.0.1/8
+net.if.modem=modem down - -
+net.if.wan_early=wan_early up rmnet_data0 10.181.72.183/28
+wifi.state=up
+wifi.disabled=false
+wifi.channel=6
+wifi.ssid=NX679J-TEST
+wifi.clients=1
+wifi.signal=0 dBm  Noise: -100 dBm
+log.1=Fri Jan  9 00:22:39 1970 user.alert kernel: [ 1690.113337][T28254] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+log.2=Fri Jan  9 00:22:41 1970 user.alert kernel: [ 1692.165623][T28378] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+log.3=Fri Jan  9 00:22:42 1970 kern.err kernel: [ 1693.391526][T10750] [hostap][0x7a27ff3b5][00:22:42.465959] qca6490: [10750:E:HDD] wlan_hdd_cfg80211_start
+log.4=Fri Jan  9 00:22:42 1970 kern.info kernel: [ 1693.391556][T10750] [hostap][0x7a27ff606][00:22:42.465990] qca6490: [10750:I:HDD] wlan_hdd_cfg80211_star
+log.5=Fri Jan  9 00:22:42 1970 kern.warn kernel: [ 1693.391591][T10750] [hostap][0x7a27ff8a2][00:22:42.466025] qca6490: [10750:W:SME] csr_save_to_channel_po
+log.6=Fri Jan  9 00:22:42 1970 kern.info kernel: [ 1693.687895][  T375] (virq:irq_count)- 11:974684 1:725112 259:219239 6:173068 366:24026 35:19830 2:18668 
+log.7=Fri Jan  9 00:22:42 1970 kern.info kernel: [ 1693.687903][  T375] (cpu:irq_count)- 0:281421 1:1825 2:26201 3:1094 4:783150 5:35841 6:50032 7:1000931
+log.8=Fri Jan  9 00:22:42 1970 kern.info kernel: [ 1693.687907][  T375] (ipi:irq_count)- 0:725112 1:18668 2:0 3:0 4:0 5:173068 6:0
+log.9=Fri Jan  9 00:22:43 1970 kern.debug kernel: [ 1694.015821][   T58] cnss: Firmware does not support non-DRV suspend, reject
+log.10=Fri Jan  9 00:22:43 1970 user.alert kernel: [ 1694.218185][T28516] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+log.11=Fri Jan  9 00:22:45 1970 user.alert kernel: [ 1696.270759][T28663] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+log.12=Fri Jan  9 00:22:47 1970 user.alert kernel: [ 1698.323007][T28971] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+log.13=Fri Jan  9 00:22:48 1970 kern.err kernel: [ 1699.391751][T10750] [hostap][0x7a95dd47c][00:22:48.466183] qca6490: [10750:E:HDD] wlan_hdd_cfg80211_start
+log.14=Fri Jan  9 00:22:48 1970 kern.info kernel: [ 1699.391780][T10750] [hostap][0x7a95dd6d4][00:22:48.466214] qca6490: [10750:I:HDD] wlan_hdd_cfg80211_star
+log.15=Fri Jan  9 00:22:48 1970 kern.warn kernel: [ 1699.392014][T10750] [hostap][0x7a95de838][00:22:48.466446] qca6490: [10750:W:SME] csr_save_to_channel_po
+log.16=Fri Jan  9 00:22:49 1970 kern.debug kernel: [ 1700.017344][   T63] cnss: Firmware does not support non-DRV suspend, reject
+log.17=Fri Jan  9 00:22:49 1970 user.alert kernel: [ 1700.375363][T29109] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+log.18=Fri Jan  9 00:22:51 1970 user.alert kernel: [ 1702.427899][T29129] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+log.19=Fri Jan  9 00:22:52 1970 kern.info kernel: [ 1703.159897][  T377] (virq:irq_count)- 11:980165 1:728805 259:220527 6:173991 366:24102 35:19920 2:18734 
+log.20=Fri Jan  9 00:22:52 1970 kern.info kernel: [ 1703.159905][  T377] (cpu:irq_count)- 0:282979 1:1829 2:26278 3:1095 4:787468 5:36020 6:50358 7:1006192
+log.21=Fri Jan  9 00:22:52 1970 kern.info kernel: [ 1703.159909][  T377] (ipi:irq_count)- 0:728805 1:18734 2:0 3:0 4:0 5:173991 6:0
+log.22=Fri Jan  9 00:22:53 1970 user.alert kernel: [ 1704.480203][T29248] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+log.23=Fri Jan  9 00:22:54 1970 kern.err kernel: [ 1705.392180][T10750] [hostap][0x7b03bc4c9][00:22:54.466614] qca6490: [10750:E:HDD] wlan_hdd_cfg80211_start
+log.24=Fri Jan  9 00:22:54 1970 kern.info kernel: [ 1705.392213][T10750] [hostap][0x7b03bc74b][00:22:54.466647] qca6490: [10750:I:HDD] wlan_hdd_cfg80211_star
+log.25=Fri Jan  9 00:22:54 1970 kern.warn kernel: [ 1705.392249][T10750] [hostap][0x7b03bca09][00:22:54.466684] qca6490: [10750:W:SME] csr_save_to_channel_po
+log.26=Fri Jan  9 00:22:55 1970 kern.debug kernel: [ 1706.017581][   T63] cnss: Firmware does not support non-DRV suspend, reject
+log.27=Fri Jan  9 00:22:55 1970 user.alert kernel: [ 1706.532537][T29702] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+log.28=Fri Jan  9 00:22:57 1970 user.alert kernel: [ 1708.585020][T29703] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+log.29=Fri Jan  9 00:22:58 1970 kern.err kernel: [ 1709.560706][T30460] [iwinfo][0x7b501041c][00:22:58.635138] qca6490: [30460:E:HDD] wlan_hdd_get_station_re
+log.30=Fri Jan  9 00:22:58 1970 kern.err kernel: [ 1709.568582][T30464] [iwinfo][0x7b50352ce][00:22:58.643014] qca6490: [30464:E:HDD] wlan_hdd_get_station_re
+klog.1=[ 1696.270759][T28663] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+klog.2=[ 1698.323007][T28971] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+klog.3=[ 1699.391751][T10750] [hostap][0x7a95dd47c][00:22:48.466183] qca6490: [10750:E:HDD] wlan_hdd_cfg80211_start_bss: beacon protection 1
+klog.4=[ 1699.391780][T10750] [hostap][0x7a95dd6d4][00:22:48.466214] qca6490: [10750:I:HDD] wlan_hdd_cfg80211_start_bss: orig phymode 32 new phymode 8
+klog.5=[ 1699.392014][T10750] [hostap][0x7a95de838][00:22:48.466446] qca6490: [10750:W:SME] csr_save_to_channel_power2_g_5_g: Invalid Channel freq 5955 Prese
+klog.6=[ 1700.017344][   T63] cnss: Firmware does not support non-DRV suspend, reject
+klog.7=[ 1700.375363][T29109] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+klog.8=[ 1702.427899][T29129] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+klog.9=[ 1703.159897][  T377] (virq:irq_count)- 11:980165 1:728805 259:220527 6:173991 366:24102 35:19920 2:18734 30:7942 358:4161 28:3909 
+klog.10=[ 1703.159905][  T377] (cpu:irq_count)- 0:282979 1:1829 2:26278 3:1095 4:787468 5:36020 6:50358 7:1006192 
+klog.11=[ 1703.159909][  T377] (ipi:irq_count)- 0:728805 1:18734 2:0 3:0 4:0 5:173991 6:0 
+klog.12=[ 1704.480203][T29248] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+klog.13=[ 1705.392180][T10750] [hostap][0x7b03bc4c9][00:22:54.466614] qca6490: [10750:E:HDD] wlan_hdd_cfg80211_start_bss: beacon protection 1
+klog.14=[ 1705.392213][T10750] [hostap][0x7b03bc74b][00:22:54.466647] qca6490: [10750:I:HDD] wlan_hdd_cfg80211_start_bss: orig phymode 32 new phymode 8
+klog.15=[ 1705.392249][T10750] [hostap][0x7b03bca09][00:22:54.466684] qca6490: [10750:W:SME] csr_save_to_channel_power2_g_5_g: Invalid Channel freq 5955 Prese
+klog.16=[ 1706.017581][   T63] cnss: Firmware does not support non-DRV suspend, reject
+klog.17=[ 1706.532537][T29702] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+klog.18=[ 1708.585020][T29703] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+klog.19=[ 1709.560706][T30460] [iwinfo][0x7b501041c][00:22:58.635138] qca6490: [30460:E:HDD] wlan_hdd_get_station_remote: peer xx:xx:xx:xx:xx:xx not found
+klog.20=[ 1709.568582][T30464] [iwinfo][0x7b50352ce][00:22:58.643014] qca6490: [30464:E:HDD] wlan_hdd_get_station_remote: peer xx:xx:xx:xx:xx:xx not found
+proc.1=1 156 /init
+proc.2=2 0 [kthreadd]
+proc.3=3 0 [rcu_gp]
+proc.4=4 0 [rcu_par_gp]
+proc.5=5 0 [kworker/0:0-mm_]
+proc.6=6 0 [kworker/0:0H]
+proc.7=7 0 [kworker/u16:0-e]
+proc.8=8 0 [mm_percpu_wq]
+proc.9=9 0 [kworker/u16:1-u]
+proc.10=10 0 [rcu_tasks_kthre]
+proc.11=11 0 [rcu_tasks_trace]
+proc.12=12 0 [ksoftirqd/0]
+proc.13=13 0 [rcu_preempt]
+proc.14=14 0 [rcuog/0]
+proc.15=15 0 [rcuop/0]
+proc.16=16 0 [migration/0]
+route.1=default via 10.181.72.184 dev rmnet_data0 
+route.2=10.0.0.0/24 dev usb0 scope link  src 10.0.0.1 
+route.3=10.181.72.176/28 dev rmnet_data0 scope link  src 10.181.72.183 
+route.4=192.168.77.0/24 dev phy0-ap0 scope link  src 192.168.77.1 
+net.gw=10.181.72.184
+mnt.2=rootfs / 149.4M/8.0G
+set.hostname=OpenWrt
+set.tzname=UTC
+set.timezone=GMT0
+set.ntp=1
+set.lan_ip=192.168.77.1
+set.lan_mask=255.255.255.0
+set.wan_proto=nx679j
+set.dhcp_sec=lan
+set.dhcp_on=
+set.dhcp_from=100
+set.dhcp_limit=150
+set.dhcp_leasetime=12h
+set.hosts=0
+set.dns=
+set.domain=lan
+set.wifi_ssid=NX679J-TEST
+set.wifi_key_len=12
+set.wifi_enc=psk2
+set.wifi_disabled=0
+set.fw=false
+set.rc_local=4
+set.crontab=0
+0
+set.rootpw=impostata
+set.time=00:22:58
+set.date=1970-01-09
+set.upgrade=OpenWrt 25.12.5 r33051-f5dae5ece4
+sys.uptime=1709
+sys.load=0.44 0.34 0.28
+sys.mem=15999 MB
+sys.temp=42
+modem.health=up 1684 fails=0

@@ -1,0 +1,6 @@
+/system/etc/init/hw:
+init.rc
+init.usb.configfs.rc
+init.usb.rc
+init.zygote32.rc
+init.zygote64_32.rc

@@ -1,0 +1,115 @@
+{
+  "composite_order": "ours+vendor",
+  "vendor_has_init": false,
+  "ramdisk_bytes": 9058263,
+  "checks": {
+    "our /init still won over the appended vendor ramdisk": {
+      "check": "our /init still won over the appended vendor ramdisk",
+      "ok": true,
+      "detail": [
+        "[    0.871992][    T1] nx679j-v6: init v6 entered pid=1 channels kmsg=0 console=0"
+      ]
+    },
+    "both ramdisks are visible: /lib/modules holds the device .ko set": {
+      "check": "both ramdisks are visible: /lib/modules holds the device .ko set",
+      "ok": true,
+      "detail": "indexed 327 .ko files (47 ours + 327 vendor)"
+    },
+    "primary path used the device metadata": {
+      "check": "primary path used the device metadata",
+      "ok": true,
+      "detail": [
+        "[    0.922172][    T1] nx679j-v6: modload source=device modules.load=98 recovery=329 parsed deps=389 softdep pre=4 post=0"
+      ]
+    },
+    "modules.load parsed first (98) and modules.load.recovery appended (329)": {
+      "check": "modules.load parsed first (98) and modules.load.recovery appended (329)",
+      "ok": true,
+      "detail": [
+        "[    0.922172][    T1] nx679j-v6: modload source=device modules.load=98 recovery=329 parsed deps=389 softdep pre=4 post=0"
+      ]
+    },
+    "a long chain was really attempted (>=300 modules)": {
+      "check": "a long chain was really attempted (>=300 modules)",
+      "ok": true,
+      "detail": [
+        "nx679j-v6: modload summary loaded=294 skipped=0 failed=8 missing=2 dwc3_seen=1"
+      ]
+    },
+    "dwc3_msm loaded": {
+      "check": "dwc3_msm loaded",
+      "ok": true,
+      "detail": [
+        "nx679j-v6: modload dwc3_msm rc=0 /lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/dwc3-msm.ko"
+      ]
+    },
+    "ufs_qcom loaded (the goal that makes rawdump visible)": {
+      "check": "ufs_qcom loaded (the goal that makes rawdump visible)",
+      "ok": true,
+      "detail": [
+        "nx679j-v6: modload ufs_qcom rc=0 /lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/ufs_qcom.ko"
+      ]
+    },
+    "softdep obeyed: qcom_hwspinlock before smem": {
+      "check": "softdep obeyed: qcom_hwspinlock before smem",
+      "ok": true,
+      "detail": "qcom_hwspinlock 20733 < smem 20847"
+    },
+    "softdep obeyed: phy_generic and eud before dwc3_msm": {
+      "check": "softdep obeyed: phy_generic and eud before dwc3_msm",
+      "ok": true,
+      "detail": "phy_generic 25950 eud 30601 dwc3_msm 30699"
+    },
+    "gadget attempted after the chain and after dwc3_msm": {
+      "check": "gadget attempted after the chain and after dwc3_msm",
+      "ok": true,
+      "detail": "gadget after dwc3_msm"
+    },
+    "every module got a journal line with its rc": {
+      "check": "every module got a journal line with its rc",
+      "ok": true,
+      "detail": "314 lines"
+    },
+    "PID 1 survived the whole chain and kept cycling": {
+      "check": "PID 1 survived the whole chain and kept cycling",
+      "ok": true,
+      "detail": "cycles=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24] alive=True"
+    },
+    "no panic from loading the vendor set in QEMU": {
+      "check": "no panic from loading the vendor set in QEMU",
+      "ok": true,
+      "detail": "clean"
+    }
+  },
+  "init_log_lines": 438,
+  "cycles": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24
+  ],
+  "still_running": true,
+  "summary_line": "modload summary loaded=294 skipped=0 failed=8 missing=2",
+  "source_line": "[    0.922172][    T1] nx679j-v6: modload source=device modules.load=98 recovery=329 parsed deps=389 softdep pre=4 post=0",
+  "indexed_ko": 327
+}

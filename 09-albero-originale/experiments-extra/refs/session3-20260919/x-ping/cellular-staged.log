@@ -1,0 +1,51 @@
+STAGE=inspect BEGIN uptime=6153.82 44193.38
+CHECKPOINT_DURABLE index=0 label=before_inspect
+STAGE=inspect RETURNED uptime=6153.83 44193.40
+CHECKPOINT_DURABLE index=1 label=after_inspect
+STAGE=mtu BEGIN uptime=6174.53 44296.57
+CHECKPOINT_DURABLE index=2 label=before_mtu
+STAGE=mtu RETURNED uptime=6174.54 44296.58
+CHECKPOINT_DURABLE index=3 label=after_mtu
+STAGE=address BEGIN uptime=6188.72 44367.32
+CHECKPOINT_DURABLE index=4 label=before_address
+STAGE=address RETURNED uptime=6188.73 44367.33
+CHECKPOINT_DURABLE index=5 label=after_address
+STAGE=route BEGIN uptime=6198.77 44413.39
+CHECKPOINT_DURABLE index=6 label=before_route
+STAGE=route RETURNED uptime=6198.79 44413.40
+CHECKPOINT_DURABLE index=7 label=after_route
+STAGE=route-get BEGIN uptime=6209.78 44471.71
+CHECKPOINT_DURABLE index=8 label=before_route-get
+16: rmnet_data0@rmnet_ipa0: <UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UNKNOWN qlen 1000
+    inet 10.176.226.211/29 scope global rmnet_data0
+       valid_lft forever preferred_lft forever
+default via 10.176.226.212 dev rmnet_data0 
+10.0.0.0/24 dev usb0 scope link  src 10.0.0.1 
+10.176.226.208/29 dev rmnet_data0 scope link  src 10.176.226.211 
+8.8.8.8 via 10.176.226.212 dev rmnet_data0  src 10.176.226.211 
+STAGE=route-get RETURNED uptime=6209.79 44471.72
+CHECKPOINT_DURABLE index=9 label=after_route-get
+STAGE=stats BEGIN uptime=6221.94 44532.85
+CHECKPOINT_DURABLE index=10 label=before_stats
+BEFORE rx_packets=0
+BEFORE tx_packets=10
+BEFORE rx_bytes=0
+BEFORE tx_bytes=616
+STAGE=stats RETURNED uptime=6221.95 44532.86
+CHECKPOINT_DURABLE index=11 label=after_stats
+STAGE=ping BEGIN uptime=6325.49 50509.34
+CHECKPOINT_DURABLE index=12 label=before_ping
+PING_EXEC uptime=6325.51 50509.35
+CHECKPOINT_DURABLE index=14 label=before_ping_exec
+PING 8.8.8.8 (8.8.8.8): 56 data bytes
+64 bytes from 8.8.8.8: seq=0 ttl=110 time=50.806 ms
+64 bytes from 8.8.8.8: seq=1 ttl=110 time=26.341 ms
+64 bytes from 8.8.8.8: seq=2 ttl=110 time=39.512 ms
+
+--- 8.8.8.8 ping statistics ---
+3 packets transmitted, 3 packets received, 0% packet loss
+round-trip min/avg/max = 26.341/38.886/50.806 ms
+PING_EXIT=0
+STAGE=ping RETURNED uptime=6327.55 50517.19
+CHECKPOINT_DURABLE index=13 label=after_ping
+CELLULAR_CRITERIA_PASS uptime=6327.56 50518.83

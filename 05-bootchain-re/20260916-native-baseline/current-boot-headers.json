@@ -1,0 +1,22 @@
+[
+  {
+    "path": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/current-readback/boot_a.img",
+    "version": 4,
+    "kernel_size": 49108324,
+    "ramdisk_size": 2200983,
+    "signature_size": 4096,
+    "kernel_sha256": "f0aa949c95d1421381850cb1982bd2a505e96fcd7565543ec28d5b1f7d81a0cc",
+    "ramdisk_sha256": "adb917c51de2b9a58a74053d2aa39c2762abaeac29a7f605f5f4eda2ba692b84",
+    "cmdline": ""
+  },
+  {
+    "path": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/current-readback/boot_b.img",
+    "version": 4,
+    "kernel_size": 35312128,
+    "ramdisk_size": 57120448,
+    "signature_size": 0,
+    "kernel_sha256": "69d6f75c4b064c848ec65d402c3de5f0262420033110c2fae2d46d06b9f7d9eb",
+    "ramdisk_sha256": "0780f62babd8b550597dadeeb5c52206d95a03e9aee2a1414778bbb754b967f1",
+    "cmdline": ""
+  }
+]

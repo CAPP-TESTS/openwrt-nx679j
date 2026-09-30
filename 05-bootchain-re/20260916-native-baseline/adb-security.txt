@@ -1,0 +1,3 @@
+Enforcing
+cmdline=/system/bin/sh: can't open /proc/cmdline: Permission denied
+

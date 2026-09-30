@@ -1,0 +1,7 @@
+[000.00s] baseline links: enp98s0,enp99s0,lo,wlan0,ztmjfmwg7f
+[000.05s] fastboot reboot rc=0: Rebooting                                          OKAY [  0.000s]
+Finished. Total time: 0.050s
+[000.06s] state fastboot=False usb=none new_links=none
+[014.80s] state fastboot=True usb=('Bus 008 Device 095: ID 18d1:d00d Google Inc. Xiaomi Mi/Redmi 2 (fastboot)',) new_links=none
+[014.80s] RESULT: fastboot returned after disappearance; stopping monitor immediately
+[014.80s] final result=fastboot-returned

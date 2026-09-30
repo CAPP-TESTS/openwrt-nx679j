@@ -1,0 +1,12 @@
+lrwxrwxrwx 1 root root 16 1970-01-01 01:08 /dev/block/by-name/abl_a -> /dev/block/sde10
+lrwxrwxrwx 1 root root 16 1970-01-01 01:08 /dev/block/by-name/abl_b -> /dev/block/sde38
+lrwxrwxrwx 1 root root 16 1970-01-01 01:07 /dev/block/by-name/boot_a -> /dev/block/sde13
+lrwxrwxrwx 1 root root 16 1970-01-01 01:08 /dev/block/by-name/boot_b -> /dev/block/sde41
+lrwxrwxrwx 1 root root 16 1970-01-01 01:07 /dev/block/by-name/dtbo_a -> /dev/block/sde17
+lrwxrwxrwx 1 root root 16 1970-01-01 01:08 /dev/block/by-name/dtbo_b -> /dev/block/sde45
+lrwxrwxrwx 1 root root 15 1970-01-01 01:08 /dev/block/by-name/uefi_a -> /dev/block/sde1
+lrwxrwxrwx 1 root root 16 1970-01-01 01:08 /dev/block/by-name/uefi_b -> /dev/block/sde29
+lrwxrwxrwx 1 root root 16 1970-01-01 01:07 /dev/block/by-name/vbmeta_a -> /dev/block/sde16
+lrwxrwxrwx 1 root root 16 1970-01-01 01:08 /dev/block/by-name/vbmeta_b -> /dev/block/sde44
+lrwxrwxrwx 1 root root 16 1970-01-01 01:08 /dev/block/by-name/vendor_boot_a -> /dev/block/sde24
+lrwxrwxrwx 1 root root 16 1970-01-01 01:08 /dev/block/by-name/vendor_boot_b -> /dev/block/sde52

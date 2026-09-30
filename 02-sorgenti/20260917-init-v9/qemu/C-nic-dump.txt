@@ -1,0 +1,515 @@
+####################################################################
+# nx679j v9 DIAGNOSTIC RELAY - READ-ONLY SNAPSHOT
+# nx679j-relay-v9
+# This program never opens a file for writing and never changes the
+# device: it only READS /proc, /sys and the boot journal, and writes
+# this text to the socket.  Nothing the client sends is looked at.
+####################################################################
+[relay] version=nx679j-relay-v9 port=9999 bind=0.0.0.0 bind_all=1 listen_ok=1
+[relay] iface=usb0 if_index=0 present=0 ipv4=- wanted_ip=10.0.0.1
+[relay] wanted_ip=10.0.0.1 on_an_interface=no(-) nonlocal_bind=0
+[relay] clients_accepted=1 serving_children=0 uptime_s=27 since_start_s=0 root=(/)
+[relay] client_deadline_s=30 file_cap=65536 journal_window=524288 (one client is killed on that deadline, so a reader that stops reading cannot hold the relay)
+[relay] the journal is in section [8]; a copy of the same text is on the boot console
+[client] peer=10.0.2.2:39263
+
+[1] KERNEL
+  uname                        : Linux 6.6.60 #1 SMP PREEMPT Thu Aug  6 23:41:56 CEST 2026 aarch64
+  version                      : 150 bytes
+ | Linux version 6.6.60 (user@user-Mini) (aarch64-linux-gnu-gcc (GCC) 16.1.0, GNU ld (GNU Binutils) 2.47) #1 SMP PREEMPT Thu Aug  6 23:41:56 CEST 2026
+  cmdline                      : 105 bytes
+ | console=ttyAMA0 earlycon loglevel=8 panic=10 rdinit=/init ip=10.0.2.15::10.0.2.2:255.255.255.0::eth0:off
+  uptime                       : 12 bytes
+ | 27.77 53.78
+  loadavg                      : 23 bytes
+ | 0.00 0.00 0.00 1/54 69
+  meminfo (capped)             : 1420 bytes
+ | MemTotal:        1957136 kB
+ | MemFree:         1927752 kB
+ | MemAvailable:    1894384 kB
+ | Buffers:               0 kB
+ | Cached:             3900 kB
+ | SwapCached:            0 kB
+ | Active:              636 kB
+ | Inactive:           3364 kB
+ | Active(anon):        636 kB
+ | Inactive(anon):     3364 kB
+ | Active(file):          0 kB
+ | Inactive(file):        0 kB
+ | Unevictable:           0 kB
+ | Mlocked:               0 kB
+ | SwapTotal:             0 kB
+ | SwapFree:              0 kB
+ | Dirty:                 0 kB
+ | Writeback:             0 kB
+ | AnonPages:           116 kB
+ | Mapped:              580 kB
+ | Shmem:              3900 kB
+ | KReclaimable:        848 kB
+ | Slab:               6516 kB
+ | SReclaimable:        848 kB
+ | SUnreclaim:         5668 kB
+ | KernelStack:         896 kB
+ | PageTables:           80 kB
+ | SecPageTables:         0 kB
+ | NFS_Unstable:          0 kB
+ | Bounce:                0 kB
+ | WritebackTmp:          0 kB
+ | CommitLimit:      978568 kB
+ | Committed_AS:       7252 kB
+ | VmallocTotal:   133141626880 kB
+ | VmallocUsed:         992 kB
+ | VmallocChunk:          0 kB
+ | Percpu:              176 kB
+ | HardwareCorrupted:     0 kB
+ | AnonHugePages:         0 kB
+ | ShmemHugePages:        0 kB
+ | ShmemPmdMapped:        0 kB
+ | FileHugePages:         0 kB
+ | FilePmdMapped:         0 kB
+ | CmaTotal:          32768 kB
+ | CmaFree:           32000 kB
+ | HugePages_Total:       0
+ | HugePages_Free:        0
+ | HugePages_Rsvd:        0
+ | HugePages_Surp:        0
+ | Hugepagesize:       2048 kB
+ | Hugetlb:               0 kB
+  devices                      : 638 bytes
+ | Character devices:
+ |   1 mem
+ |   2 pty
+ |   3 ttyp
+ |   4 /dev/vc/0
+ |   4 tty
+ |   4 ttyS
+ |   5 /dev/tty
+ |   5 /dev/console
+ |   5 /dev/ptmx
+ |   7 vcs
+ |  10 misc
+ |  13 input
+ |  29 fb
+ |  89 i2c
+ |  90 mtd
+ | 116 alsa
+ | 128 ptm
+ | 136 pts
+ | 180 usb
+ | 189 usb_device
+ | 204 ttyAMA
+ | 207 ttymxc
+ | 234 rpmb
+ | 235 vfio
+ | 236 megaraid_sas_ioctl
+ | 237 ttyOWL
+ | 238 ttySTM
+ | 239 ttyLF
+ | 240 ttyLP
+ | 241 ttyTHS
+ | 242 ttyHS
+ | 243 ttyMSM
+ | 244 ttyMSM
+ | 245 bsg
+ | 246 watchdog
+ | 247 tee
+ | 248 iio
+ | 249 ptp
+ | 250 pps
+ | 251 rtc
+ | 252 tpm
+ | 253 ttyMV
+ | 254 gpiochip
+ | 
+ | Block devices:
+ |   7 loop
+ |   8 sd
+ |  31 mtdblock
+ |  65 sd
+ |  66 sd
+ |  67 sd
+ |  68 sd
+ |  69 sd
+ |  70 sd
+ |  71 sd
+ | 128 sd
+ | 129 sd
+ | 130 sd
+ | 131 sd
+ | 132 sd
+ | 133 sd
+ | 134 sd
+ | 135 sd
+ | 179 mmc
+ | 254 virtblk
+ | 259 blkext
+
+[2] NETWORK INTERFACES (read with ioctl: nothing is configured here)
+  lo         addr=127.0.0.1       mask=255.0.0.0       mtu=65536 flags=0x0049 (up=1 running=1) operstate=unknown
+  eth0       addr=10.0.2.15       mask=255.255.255.0   mtu=1500 flags=0x1043 (up=1 running=1) operstate=up
+  interfaces seen: 2
+
+[3] USB GADGET
+  udcs: 0
+  usb_role nodes               : 0 entries
+  gadget g1 UDC                : (absent)
+  g1 idVendor                  : (absent)
+  g1 idProduct                 : (absent)
+  g1 functions                 : (absent: No such file or directory)
+  g1 configs                   : (absent: No such file or directory)
+  g1 product string            : (absent)
+
+[4] STORAGE / MOUNTS / RAWDUMP
+  loop1          size=0            sectors dev=7:1
+  loop6          size=0            sectors dev=7:6
+  loop4          size=0            sectors dev=7:4
+  mtdblock0      size=262144       sectors dev=31:0
+  loop2          size=0            sectors dev=7:2
+  loop0          size=0            sectors dev=7:0
+  loop7          size=0            sectors dev=7:7
+  loop5          size=0            sectors dev=7:5
+  loop3          size=0            sectors dev=7:3
+  block devices listed: 9
+  /dev/block/by-name           : (absent: No such file or directory)
+  mounts                       : 216 bytes
+ | rootfs / rootfs rw,size=960184k,nr_inodes=240046 0 0
+ | proc /proc proc rw,relatime 0 0
+ | sysfs /sys sysfs rw,relatime 0 0
+ | configfs /sys/kernel/config configfs rw,relatime 0 0
+ | pstore /sys/fs/pstore pstore rw,relatime 0 0
+  /sys/.../1d84000.ufshc       : ABSENT
+  /dev/rd (rawdump node)       : absent
+  /dev/kmsg                    : present
+  /dev/pmsg0                   : present
+  /dev/console                 : present
+
+[5] PSTORE / RAMOOPS
+  /sys/fs/pstore               : 0 entries
+
+[6] MODULES LOADED (/sys/module)
+  /sys/module (loaded)         : 141 entries
+    8250
+    8250_core
+    acpi
+    acpiphp
+    ahci
+    ahci_ceva
+    ahci_xgene
+    amd_xgbe
+    arm_smc_wdt
+    arm_smmu
+    arm_smmu_v3
+    armmmci
+    auth_rpcgss
+    battery
+    blk_cgroup
+    block
+    bq27xxx_battery
+    button
+    clk_imx8mm
+    clk_imx8mn
+    clk_imx8mp
+    clk_imx8mq
+    clk_imx93
+    configfs
+    cpufreq
+    cpuidle
+    crc64_rocksoft
+    crc_t10dif
+    cros_ec_dev
+    cryptomgr
+    dns_resolver
+    e1000
+    e1000e
+    edac_core
+    efi_pstore
+    ehci_hcd
+    fb
+    firmware_class
+    fsl_dpa
+    gpiolib_acpi
+    grant_table
+    hclge
+    hdma
+    hdma_mgmt
+    hid
+    hid_apple
+    hisi_rng
+    hisi_sas_main
+    hisi_sas_v3_hw
+    hnae3
+    hns3
+    hns_dsaf
+    i2c_algo_bit
+    i2c_qup
+    kernel
+    keyboard
+    kvm
+    libahci
+    libata
+    lockd
+    loop
+    megaraid_sas
+    memory_hotplug
+    mmcblk
+    module
+    mtk_wdt
+    musb_hdrc
+    mvneta
+    mvpp2
+    netfs
+    nfs
+    nfs_layout_flexfiles
+    nfs_layout_nfsv41_files
+    nfsv4
+    nicpf
+    nvmem_qfprom
+    optee
+    page_reporting
+    pata_platform
+    pci_hotplug
+    pcie_aspm
+    phy_xgene
+    pnp
+    printk
+    processor
+    psmouse
+    pstore
+    random
+    rcupdate
+    rcutree
+    rng_core
+    sata_sil24
+    sbsa_gwdt
+    scsi_mod
+    sdhci
+    secretmem
+    sky2
+    smc91x
+    smsc911x
+    snd
+    snd_pcm
+    snd_soc_core
+    snd_timer
+    snps_udc_core
+    snps_udc_plat
+    spurious
+    srcutree
+    sunrpc
+    sysrq
+    tcp_cubic
+    tee
+    thermal
+    thunder_bgx
+    thunder_xcv
+    tpm
+    tpm_i2c_infineon
+    ufshcd_core
+    usb_storage
+    usbcore
+    usbhid
+    vfio
+    vfio_iommu_type1
+    vfio_pci
+    virtio_blk
+    virtio_net
+    virtio_pci
+    virtio_pci_legacy_dev
+    virtio_pci_modern_dev
+    vt
+    watchdog
+    workqueue
+    xen
+    xen_blkfront
+    xen_gntalloc
+    xen_gntdev
+    xen_kbdfront
+    xen_netfront
+    xen_privcmd
+    xhci_hcd
+    xilinx_uartps
+    xz_dec
+
+[7] MODULE FILES (/lib/modules)
+  /lib/modules                 : 0 .ko files
+
+[8] THE BOOT JOURNAL /nx679j-journal
+  journal_file_bytes=7940 window_bytes=7940
+  hash_fnv1a64_full=0xd581b56e787e3998 hash_fnv1a64_window=0xd581b56e787e3998
+  ----8<---- nx679j-journal ----8<----
+nx679j: mounts: start (uid=0 pid=56)
+nx679j: ATTEMPT mount -t proc /proc
+nx679j: mount proc      rc=0
+nx679j: ATTEMPT mount -t sysfs /sys
+nx679j: mount sysfs     rc=0
+nx679j: ATTEMPT mount -t configfs /sys/kernel/config
+nx679j: mount configfs  rc=0
+nx679j: ATTEMPT mount -t pstore /sys/fs/pstore
+nx679j: mount pstore    rc=0
+nx679j: cmdline: console=ttyAMA0 earlycon loglevel=8 panic=10 rdinit=/init ip=10.0.2.15::10.0.2.2:255.255.255.0::eth0:off
+nx679j: kernel 6.6.60 aarch64
+nx679j: /proc/devices: pmsg=no
+nx679j: configfs usb_gadget=absent
+nx679j: 0 .ko files visible in /lib/modules
+nx679j: mounts: done
+nx679j: FIRST JOURNAL WRITE, no module loaded yet (device tree nodes UFS=absent USB=present)
+nx679j: /dev/block/by-name present: no
+nx679j: /dev present: kmsg=yes pmsg0=yes console=yes
+nx679j: ---- dump (first journal write: NO rawdump partition found) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: journal is durable on rawdump: no
+nx679j: PID1-OP-FAILED op=journal rc=1 journal=0 gadget=0
+nx679j: ---- dump (PID1-OP-FAILED op=journal rc=1 journal=0 gadget=0) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: gadget: start
+nx679j: usb_role nodes set to device: 0
+nx679j: ATTEMPT wait for a real UDC (1/12)
+nx679j: ATTEMPT wait for a real UDC (2/12)
+nx679j: ATTEMPT wait for a real UDC (3/12)
+nx679j: ATTEMPT wait for a real UDC (4/12)
+nx679j: ATTEMPT wait for a real UDC (5/12)
+nx679j: ATTEMPT wait for a real UDC (6/12)
+nx679j: ATTEMPT wait for a real UDC (7/12)
+nx679j: ATTEMPT wait for a real UDC (8/12)
+nx679j: ATTEMPT wait for a real UDC (9/12)
+nx679j: ATTEMPT wait for a real UDC (10/12)
+nx679j: ATTEMPT wait for a real UDC (11/12)
+nx679j: ATTEMPT wait for a real UDC (12/12)
+nx679j: gadget: NO UDC after 12 s (dwc3_msm not up?)
+nx679j: gadget: rc=-1
+nx679j: ---- dump (end of gadget step) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: PID1-OP-FAILED op=gadget rc=1 journal=0 gadget=0
+nx679j: ---- dump (PID1-OP-FAILED op=gadget rc=1 journal=0 gadget=0) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: chain: start
+nx679j: chain: 47 modules to try, 0 .ko visible
+nx679j: MOD phy_qcom_emu                       MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: MOD repeater                           MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_scm                           MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_msm_snps_eusb2                 MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs                       MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs_qmp_v4_lahaina        MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_hwspinlock                    MISSING (no .ko in /lib/modules)
+nx679j: MOD smem                               MISSING (no .ko in /lib/modules)
+nx679j: MOD minidump                           MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: MOD qcom_ipc_logging                   MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_glink                         MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_glink_spss                    MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs_qmp_14nm              MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs_qmp_v3                MISSING (no .ko in /lib/modules)
+nx679j: MOD nvmem_qfprom                       already-loaded
+nx679j: MOD qti_regmap_debugfs                 MISSING (no .ko in /lib/modules)
+nx679j: MOD ns                                 MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: MOD qrtr                               MISSING (no .ko in /lib/modules)
+nx679j: MOD qmi_helpers                        MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_smd                           MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_glink_smem                    MISSING (no .ko in /lib/modules)
+nx679j: MOD rproc_qcom_common                  MISSING (no .ko in /lib/modules)
+nx679j: MOD pdr_interface                      MISSING (no .ko in /lib/modules)
+nx679j: MOD pmic_glink                         MISSING (no .ko in /lib/modules)
+nx679j: MOD ucsi_glink                         MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: MOD fsa4480_i2c                        MISSING (no .ko in /lib/modules)
+nx679j: MOD altmode_glink                      MISSING (no .ko in /lib/modules)
+nx679j: MOD proxy_consumer                     MISSING (no .ko in /lib/modules)
+nx679j: MOD debug_regulator                    MISSING (no .ko in /lib/modules)
+nx679j: MOD gdsc_regulator                     MISSING (no .ko in /lib/modules)
+nx679j: MOD clk_qcom                           MISSING (no .ko in /lib/modules)
+nx679j: MOD ssusb_redriver_nb7vpq904m          MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_generic                        MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: MOD phy_msm_snps_hs                    MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_msm_ssusb_qmp                  MISSING (no .ko in /lib/modules)
+nx679j: MOD eud                                MISSING (no .ko in /lib/modules)
+nx679j: MOD dwc3_msm                           MISSING (no .ko in /lib/modules)
+nx679j: MOD tmecom_intf                        MISSING (no .ko in /lib/modules)
+nx679j: MOD hwkm                               MISSING (no .ko in /lib/modules)
+nx679j: MOD crypto_qti_hwkm                    MISSING (no .ko in /lib/modules)
+nx679j: MOD crypto_qti_common                  MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: MOD ufshcd_crypto_qti                  MISSING (no .ko in /lib/modules)
+nx679j: MOD ufs_qcom                           MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs_qmp_v4_cape           MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs_qmp_v4_diwali         MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_qcom_ufs_qmp_v4_waipio         MISSING (no .ko in /lib/modules)
+nx679j: MOD nvmem_qcom_spmi_sdam               MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: chain: done in 70 ms: ok=1 timeout-killed=0 failed/missing=46 skipped=0
+nx679j: ---- dump (end of chain) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: gadget: start
+nx679j: usb_role nodes set to device: 0
+nx679j: ATTEMPT wait for a real UDC (1/12)
+nx679j: ATTEMPT wait for a real UDC (2/12)
+nx679j: ATTEMPT wait for a real UDC (3/12)
+nx679j: ATTEMPT wait for a real UDC (4/12)
+nx679j: ATTEMPT wait for a real UDC (5/12)
+nx679j: ATTEMPT wait for a real UDC (6/12)
+nx679j: ATTEMPT wait for a real UDC (7/12)
+nx679j: ATTEMPT wait for a real UDC (8/12)
+nx679j: ATTEMPT wait for a real UDC (9/12)
+nx679j: ATTEMPT wait for a real UDC (10/12)
+nx679j: ATTEMPT wait for a real UDC (11/12)
+nx679j: ATTEMPT wait for a real UDC (12/12)
+nx679j: gadget: NO UDC after 12 s (dwc3_msm not up?)
+nx679j: gadget: rc=-1
+nx679j: ---- dump (end of gadget step) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: PID1-OP-FAILED op=gadget rc=1 journal=0 gadget=0
+nx679j: ---- dump (PID1-OP-FAILED op=gadget rc=1 journal=0 gadget=0) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: v9-summary op=dump rc=0 journal=0 gadget=0
+nx679j: ---- dump (v9-summary op=dump rc=0 journal=0 gadget=0) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: v9-relay-started op=relay rc=0 n=1 journal=0 gadget=0
+nx679j: ---- dump (v9-relay-started op=relay rc=0 n=1 journal=0 gadget=0) ----
+nx679j: pmsg unavailable (no ramoops this boot)
+  ---->8---- end of journal ---->8----
+
+[9] RELAY SELF-CHECK (the world this program is running in)
+  pid/ppid                    : 69 / 65
+  stat /                      : dev=2 ino=1
+  stat /proc                  : present
+  stat /sys                   : present
+  /proc/self/ns/mnt           : mnt:[4026531841]
+  /proc/1/ns/mnt (PID 1)      : mnt:[4026531841]
+  ---- /proc/self/mountinfo, first 30 lines ----
+  /proc/self/mountinfo         : 281 bytes
+    1 1 0:2 / / rw - rootfs rootfs rw,size=960184k,nr_inodes=240046
+    22 1 0:21 / /proc rw,relatime - proc proc rw
+    23 1 0:22 / /sys rw,relatime - sysfs sysfs rw
+    24 23 0:20 / /sys/kernel/config rw,relatime - configfs configfs rw
+    25 23 0:23 / /sys/fs/pstore rw,relatime - pstore pstore rw
+    
+  ---- raw errno for a fixed list of paths (stat / open) ----
+  /                           stat=0  (ok) open=0  (ok) dir
+  /proc                       stat=0  (ok) open=0  (ok) dir
+  /proc/version               stat=0  (ok) open=0  (ok) file
+  /proc/self                  stat=0  (ok) open=0  (ok) dir
+  /proc/self/mountinfo        stat=0  (ok) open=0  (ok) file
+  /proc/1/ns/mnt              stat=0  (ok) open=0  (ok) file
+  /sys                        stat=0  (ok) open=0  (ok) dir
+  /sys/class/net              stat=0  (ok) open=0  (ok) dir
+  /sys/kernel/config          stat=0  (ok) open=0  (ok) dir
+  /dev/kmsg                   stat=0  (ok) open=0  (ok) file
+  /nx679j-journal             stat=0  (ok) open=0  (ok) file
+  /nx679j                     stat=0  (ok) open=0  (ok) dir
+  /nx679j/relay               stat=0  (ok) open=0  (ok) file
+  /init                       stat=0  (ok) open=0  (ok) file
+  ---- the journal file itself ----
+  /nx679j-journal (first 2 lines) : 7940 bytes
+    nx679j: mounts: start (uid=0 pid=56)
+    nx679j: ATTEMPT mount -t proc /proc
+
+[10] END OF DUMP - 17920 bytes, nx679j-relay-v9.  Reconnect (`nc 0.0.0.0 9999`) for a new snapshot.

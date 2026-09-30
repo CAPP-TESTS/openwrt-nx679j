@@ -1,0 +1,1 @@
+savedcmd_/home/user/nx679j-stock/hypervisor-bypass/kexec_injector.ko := aarch64-linux-gnu-ld -r -EL  -maarch64elf -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T scripts/module.lds -o /home/user/nx679j-stock/hypervisor-bypass/kexec_injector.ko /home/user/nx679j-stock/hypervisor-bypass/kexec_injector.o /home/user/nx679j-stock/hypervisor-bypass/kexec_injector.mod.o;  true

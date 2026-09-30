@@ -1,0 +1,146 @@
+{
+  "checks": [
+    {
+      "check": "container is the measured Magisk image",
+      "pass": true,
+      "detail": "100663296 bytes 0cd94d5627501f3c"
+    },
+    {
+      "check": "v7: sha256 matches the manifest",
+      "pass": true,
+      "detail": "77d7675eb54a65d9b3ca45042731b8180d1d927d6006a5c80e8f9775e1c3c2a5"
+    },
+    {
+      "check": "v7: length is the full partition",
+      "pass": true,
+      "detail": "100663296 bytes"
+    },
+    {
+      "check": "v7: header v4 consistent (kernel/ramdisk/header/signature size)",
+      "pass": true,
+      "detail": "kernel_size=49108324 ramdisk_size=1014155 header_size=1584 header_version=4 signature_size=4096"
+    },
+    {
+      "check": "v7: kernel area byte-identical to the container",
+      "pass": true,
+      "detail": "49111040 bytes sha f7ea707eb916bf1f"
+    },
+    {
+      "check": "v7: bytes after the ramdisk identical at the same absolute offsets",
+      "pass": true,
+      "detail": "50534005 bytes tail"
+    },
+    {
+      "check": "v7: every differing byte is in the size field or the ramdisk",
+      "pass": true,
+      "detail": "1008392 differing bytes, outside: 0"
+    },
+    {
+      "check": "v7: stored ramdisk is an lz4 legacy frame",
+      "pass": true,
+      "detail": "02214c18"
+    },
+    {
+      "check": "v7: decompressed ramdisk sha256 matches the manifest",
+      "pass": true,
+      "detail": "bfeb2f907ce9e5842f4fe37d4ebcf67ad83630fcf32e43d7f2590151cc53c4e0"
+    },
+    {
+      "check": "v7: extracted tree == the v6 tree except /init",
+      "pass": true,
+      "detail": "only in source: [], only in image: [], content differs: ['init'], entry types differ: []"
+    },
+    {
+      "check": "v7: 59 entries, all names and their mode/nlink/uid/gid identical to the v6 archive",
+      "pass": true,
+      "detail": "source has 59 entries, image 59; metadata differs on: []"
+    },
+    {
+      "check": "v7: /init in the image is the probe binary",
+      "pass": true,
+      "detail": "532352 bytes a1376c22ac8a02fb"
+    },
+    {
+      "check": "v7: /init keeps the source entry mode",
+      "pass": true,
+      "detail": "source -rwxr-xr-x -> image -rwxr-xr-x (expected -rwxr-xr-x)"
+    },
+    {
+      "check": "v7b: sha256 matches the manifest",
+      "pass": true,
+      "detail": "7424a599a6a9b7e105ad1ed59b53b9dfe6763238ca16e88f9d7ad9adaba48e20"
+    },
+    {
+      "check": "v7b: length is the full partition",
+      "pass": true,
+      "detail": "100663296 bytes"
+    },
+    {
+      "check": "v7b: header v4 consistent (kernel/ramdisk/header/signature size)",
+      "pass": true,
+      "detail": "kernel_size=49108324 ramdisk_size=2352880 header_size=1584 header_version=4 signature_size=4096"
+    },
+    {
+      "check": "v7b: kernel area byte-identical to the container",
+      "pass": true,
+      "detail": "49111040 bytes sha f7ea707eb916bf1f"
+    },
+    {
+      "check": "v7b: bytes after the ramdisk identical at the same absolute offsets",
+      "pass": true,
+      "detail": "49195280 bytes tail"
+    },
+    {
+      "check": "v7b: every differing byte is in the size field or the ramdisk",
+      "pass": true,
+      "detail": "1449862 differing bytes, outside: 0"
+    },
+    {
+      "check": "v7b: stored ramdisk is an lz4 legacy frame",
+      "pass": true,
+      "detail": "02214c18"
+    },
+    {
+      "check": "v7b: decompressed ramdisk sha256 matches the manifest",
+      "pass": true,
+      "detail": "c6b800bced1018a4f4372f4353e541630207c975db57b78b34fa7c38542079d6"
+    },
+    {
+      "check": "v7b: extracted tree == the android tree except /init",
+      "pass": true,
+      "detail": "only in source: [], only in image: [], content differs: ['init'], entry types differ: []"
+    },
+    {
+      "check": "v7b: 29 entries, all names and their mode/nlink/uid/gid identical to the android archive",
+      "pass": true,
+      "detail": "source has 29 entries, image 29; metadata differs on: []"
+    },
+    {
+      "check": "v7b: /init in the image is the probe binary",
+      "pass": true,
+      "detail": "532352 bytes a1376c22ac8a02fb"
+    },
+    {
+      "check": "v7b: /init keeps the source entry mode",
+      "pass": true,
+      "detail": "source -rwxr-x--- -> image -rwxr-x--- (expected -rwxr-x---)"
+    },
+    {
+      "check": "probe: static aarch64 ELF, no interpreter, no DT_NEEDED",
+      "pass": true,
+      "detail": "ELF 64-bit LSB executable, ARM aarch64, version 1 (SYSV), statically linked, BuildID[sha1]=07ca1c2c52108e5bd5e3d576131d564286aee91e, for GNU/Linux 3.7.0, stripped; INTERP=0 NEEDED=0"
+    },
+    {
+      "check": "probe: the source contains no exit/_exit/abort call",
+      "pass": true,
+      "detail": "none"
+    },
+    {
+      "check": "probe: main() cannot return (no return instruction, no branch to exit/abort, ends in an unconditional branch)",
+      "pass": true,
+      "detail": "137 instructions, return instructions: none, branches to exit/abort: none, last instruction: b 40056c <main+0xb4>"
+    }
+  ],
+  "passed": 28,
+  "total": 28
+}

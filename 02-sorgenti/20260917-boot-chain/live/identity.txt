@@ -1,0 +1,11 @@
+uid=0(root) gid=0(root) groups=0(root) context=u:r:magisk:s0
+5.10.66-android12-9-00005-gf6e6376090be-ab8060604
+_a
+orange
+enforcing
+5
+35
+qcom
+msm
+3dbd****
+405.09 2392.55

@@ -1,0 +1,674 @@
+=== 2026-07-17T20:24:22+02:00 EDL restore start ===
+Bus 006 Device 003: ID 05c6:9008 Qualcomm, Inc. Gobi Wireless Modem (QDL mode)
+CMD: /home/user/venvs/edk2/bin/edl --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs w xbl_a /home/user/nx679j-stock/edl-recovery/restore-stock-a/xbl_a_from_b.bin
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+sahara - Protocol version: 3, Version supported: 1
+main - Mode detected: sahara
+sahara - 
+Reading Chip Info : OK
+sahara - - Sahara version  : 3
+sahara - - Chip Serial Number : 4324a099072
+sahara - - OEM PKHASH : fbc0a90afe54b2e38d7961e51aab31e5dbcef21f53b5d67c5d98561d74bdd4c0e9371fdb6519e7ecb032f691674fb644
+sahara - - Note: V3 extended info (cmd=0x0A) not available
+sahara - Protocol version: 3, Version supported: 1
+sahara - Uploading loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+sahara - 64-Bit mode detected.
+sahara - Loader successfully uploaded.
+main - Trying to connect to firehose loader ...
+firehose - INFO: Binary build date: Jul  6 2022 @ 22:16:30
+firehose - INFO: Binary build date: Jul  6 2022 @ 22:16:30 
+firehose - INFO: Chip serial num: 0 (0x0)
+firehose - INFO: Supported Functions (15):
+firehose - INFO: program
+firehose - INFO: read
+firehose - INFO: nop
+firehose - INFO: patch
+firehose - INFO: configure
+firehose - INFO: setbootablestoragedrive
+firehose - INFO: erase
+firehose - INFO: power
+firehose - INFO: firmwarewrite
+firehose - INFO: getstorageinfo
+firehose - INFO: benchmark
+firehose - INFO: emmc
+firehose - INFO: ufs
+firehose - INFO: fixgpt
+firehose - INFO: getsha256digest
+firehose - INFO: End of supported functions 15
+firehose
+firehose - [LIB]: [33mCouldn't detect MaxPayloadSizeFromTargetinBytes[0m
+firehose
+firehose - [LIB]: [33mCouldn't detect TargetName[0m
+firehose - TargetName=Unknown
+firehose - MemoryName=UFS
+firehose - Version=1
+firehose - Trying to read first storage sector...
+firehose - Running configure...
+firehose - Storage report:
+firehose - total_blocks:60884992
+firehose - block_size:4096
+firehose - page_size:4096
+firehose - num_physical:6
+firehose - manufacturer_id:462
+firehose - serial_num:1297306958
+firehose - fw_version:400
+firehose - mem_type:UFS
+firehose - prod_name:KLUEG8UHDC-B0E1
+firehose_client - Supported functions:
+-----------------
+program,read,nop,patch,configure,setbootablestoragedrive,erase,power,firmwarewrite,getstorageinfo,benchmark,emmc,ufs,fixgpt,getsha256digest
+firehose - 
+Writing to physical partition 1, sector 6, sectors 896
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x380) 0.00 MB/s                
+Progress: |███-------|  28.6% Write (Sector 0x100 of 0x380, ) 190.71 MB/s     
+Progress: |██████----|  57.1% Write (Sector 0x200 of 0x380, ) 242.46 MB/s     
+Progress: |█████████-|  85.7% Write (Sector 0x300 of 0x380, ) 246.71 MB/s     
+Progress: |██████████| 100.0% Write (Sector 0x380 of 0x380, ) 218.77 MB/s     
+Wrote /home/user/nx679j-stock/edl-recovery/restore-stock-a/xbl_a_from_b.bin to sector 6.
+CMD: /home/user/venvs/edk2/bin/edl --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs w xbl_config_a /home/user/nx679j-stock/edl-recovery/restore-stock-a/xbl_config_a_from_b.bin
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x4B) 0.00 MB/s                 
+Progress: |██████████| 100.0% Write (Sector 0x4B of 0x4B, ) 156.34 MB/s       
+Wrote /home/user/nx679j-stock/edl-recovery/restore-stock-a/xbl_config_a_from_b.bin to sector 902.
+CMD: /home/user/venvs/edk2/bin/edl --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs w abl_a /home/user/nx679j-stock/edl-recovery/restore-stock-a/abl_a_from_b.bin
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x100) 0.00 MB/s                
+Progress: |██████████| 100.0% Write (Sector 0x100 of 0x100, ) 182.72 MB/s     
+Wrote /home/user/nx679j-stock/edl-recovery/restore-stock-a/abl_a_from_b.bin to sector 91654.
+CMD: /home/user/venvs/edk2/bin/edl --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs w xbl_b /home/user/nx679j-stock/edl-recovery/restore-stock-a/xbl_a_from_b.bin
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x380) 0.00 MB/s                
+Progress: |███-------|  28.6% Write (Sector 0x100 of 0x380, ) 213.46 MB/s     
+Progress: |██████----|  57.1% Write (Sector 0x200 of 0x380, ) 219.93 MB/s     
+Progress: |█████████-|  85.7% Write (Sector 0x300 of 0x380, ) 109.64 MB/s     
+Progress: |██████████| 100.0% Write (Sector 0x380 of 0x380, ) 66.39 MB/s      
+Wrote /home/user/nx679j-stock/edl-recovery/restore-stock-a/xbl_a_from_b.bin to sector 6.
+CMD: /home/user/venvs/edk2/bin/edl --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs w xbl_config_b /home/user/nx679j-stock/edl-recovery/restore-stock-a/xbl_config_a_from_b.bin
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x4B) 0.00 MB/s                 
+Progress: |██████████| 100.0% Write (Sector 0x4B of 0x4B, ) 198.83 MB/s       
+Wrote /home/user/nx679j-stock/edl-recovery/restore-stock-a/xbl_config_a_from_b.bin to sector 902.
+CMD: /home/user/venvs/edk2/bin/edl --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs w abl_b /home/user/nx679j-stock/edl-recovery/restore-stock-a/abl_a_from_b.bin
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x100) 0.00 MB/s                
+Progress: |██████████| 100.0% Write (Sector 0x100 of 0x100, ) 194.41 MB/s     
+Wrote /home/user/nx679j-stock/edl-recovery/restore-stock-a/abl_a_from_b.bin to sector 357743.
+CMD: /home/user/venvs/edk2/bin/edl --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs w uefi_a /home/user/nx679j-stock/edl-recovery/restore-stock-a/uefi.padded.img
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x500) 0.00 MB/s                
+Progress: |██--------|  20.0% Write (Sector 0x100 of 0x500, ) 102.09 MB/s     
+Progress: |████------|  40.0% Write (Sector 0x200 of 0x500, ) 243.02 MB/s     
+Progress: |██████----|  60.0% Write (Sector 0x300 of 0x500, ) 96.48 MB/s      
+Progress: |████████--|  80.0% Write (Sector 0x400 of 0x500, ) 242.73 MB/s     
+Progress: |██████████| 100.0% Write (Sector 0x500 of 0x500, ) 245.05 MB/s     
+Wrote /home/user/nx679j-stock/edl-recovery/restore-stock-a/uefi.padded.img to sector 6.
+CMD: /home/user/venvs/edk2/bin/edl --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs w imagefv_a /home/user/nx679j-stock/edl-recovery/restore-stock-a/imagefv.padded.img
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x200) 0.00 MB/s                
+Progress: |█████-----|  50.0% Write (Sector 0x100 of 0x200, ) 138.13 MB/s     
+Progress: |██████████| 100.0% Write (Sector 0x200 of 0x200, ) 247.74 MB/s     
+Wrote /home/user/nx679j-stock/edl-recovery/restore-stock-a/imagefv.padded.img to sector 139722.
+CMD: /home/user/venvs/edk2/bin/edl --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs w shrm_a /home/user/nx679j-stock/edl-recovery/restore-stock-a/shrm.padded.img
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x20) 0.00 MB/s                 
+Progress: |██████████| 100.0% Write (Sector 0x20 of 0x20, ) 103.55 MB/s       
+Wrote /home/user/nx679j-stock/edl-recovery/restore-stock-a/shrm.padded.img to sector 140234.
+CMD: /home/user/venvs/edk2/bin/edl --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs w aop_a /home/user/nx679j-stock/edl-recovery/restore-stock-a/aop.padded.img
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x80) 0.00 MB/s                 
+Progress: |██████████| 100.0% Write (Sector 0x80 of 0x80, ) 198.86 MB/s       
+Wrote /home/user/nx679j-stock/edl-recovery/restore-stock-a/aop.padded.img to sector 1286.
+CMD: /home/user/venvs/edk2/bin/edl --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs w devcfg_a /home/user/nx679j-stock/edl-recovery/restore-stock-a/devcfg.padded.img
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x20) 0.00 MB/s                 
+Progress: |██████████| 100.0% Write (Sector 0x20 of 0x20, ) 149.97 MB/s       
+Wrote /home/user/nx679j-stock/edl-recovery/restore-stock-a/devcfg.padded.img to sector 132998.
+CMD: /home/user/venvs/edk2/bin/edl --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs w featenabler_a /home/user/nx679j-stock/edl-recovery/restore-stock-a/featenabler.padded.img
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x20) 0.00 MB/s                 
+Progress: |██████████| 100.0% Write (Sector 0x20 of 0x20, ) 87.12 MB/s        
+Wrote /home/user/nx679j-stock/edl-recovery/restore-stock-a/featenabler.padded.img to sector 207631.
+CMD: /home/user/venvs/edk2/bin/edl --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs w xbl_ramdump_a /home/user/nx679j-stock/edl-recovery/restore-stock-a/xbl_ramdump.padded.img
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x200) 0.00 MB/s                
+Progress: |█████-----|  50.0% Write (Sector 0x100 of 0x200, ) 172.31 MB/s     
+Progress: |██████████| 100.0% Write (Sector 0x200 of 0x200, ) 233.84 MB/s     
+Wrote /home/user/nx679j-stock/edl-recovery/restore-stock-a/xbl_ramdump.padded.img to sector 265583.
+CMD: /home/user/venvs/edk2/bin/edl --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs w uefi_b /home/user/nx679j-stock/edl-recovery/restore-stock-a/uefi.padded.img
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x500) 0.00 MB/s                
+Progress: |██--------|  20.0% Write (Sector 0x100 of 0x500, ) 198.02 MB/s     
+Progress: |████------|  40.0% Write (Sector 0x200 of 0x500, ) 234.14 MB/s     
+Progress: |██████----|  60.0% Write (Sector 0x300 of 0x500, ) 232.87 MB/s     
+Progress: |████████--|  80.0% Write (Sector 0x400 of 0x500, ) 244.71 MB/s     
+Progress: |██████████| 100.0% Write (Sector 0x500 of 0x500, ) 244.99 MB/s     
+Wrote /home/user/nx679j-stock/edl-recovery/restore-stock-a/uefi.padded.img to sector 266095.
+CMD: /home/user/venvs/edk2/bin/edl --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs w imagefv_b /home/user/nx679j-stock/edl-recovery/restore-stock-a/imagefv.padded.img
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x200) 0.00 MB/s                
+Progress: |█████-----|  50.0% Write (Sector 0x100 of 0x200, ) 186.50 MB/s     
+Progress: |██████████| 100.0% Write (Sector 0x200 of 0x200, ) 201.35 MB/s     
+Wrote /home/user/nx679j-stock/edl-recovery/restore-stock-a/imagefv.padded.img to sector 405811.
+CMD: /home/user/venvs/edk2/bin/edl --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs w shrm_b /home/user/nx679j-stock/edl-recovery/restore-stock-a/shrm.padded.img
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x20) 0.00 MB/s                 
+Progress: |██████████| 100.0% Write (Sector 0x20 of 0x20, ) 150.27 MB/s       
+Wrote /home/user/nx679j-stock/edl-recovery/restore-stock-a/shrm.padded.img to sector 406323.
+CMD: /home/user/venvs/edk2/bin/edl --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs w aop_b /home/user/nx679j-stock/edl-recovery/restore-stock-a/aop.padded.img
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x80) 0.00 MB/s                 
+Progress: |██████████| 100.0% Write (Sector 0x80 of 0x80, ) 163.72 MB/s       
+Wrote /home/user/nx679j-stock/edl-recovery/restore-stock-a/aop.padded.img to sector 267375.
+CMD: /home/user/venvs/edk2/bin/edl --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs w devcfg_b /home/user/nx679j-stock/edl-recovery/restore-stock-a/devcfg.padded.img
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x20) 0.00 MB/s                 
+Progress: |██████████| 100.0% Write (Sector 0x20 of 0x20, ) 100.02 MB/s       
+Wrote /home/user/nx679j-stock/edl-recovery/restore-stock-a/devcfg.padded.img to sector 399087.
+CMD: /home/user/venvs/edk2/bin/edl --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs w featenabler_b /home/user/nx679j-stock/edl-recovery/restore-stock-a/featenabler.padded.img
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x20) 0.00 MB/s                 
+Progress: |██████████| 100.0% Write (Sector 0x20 of 0x20, ) 177.18 MB/s       
+Wrote /home/user/nx679j-stock/edl-recovery/restore-stock-a/featenabler.padded.img to sector 473720.
+CMD: /home/user/venvs/edk2/bin/edl --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs w xbl_ramdump_b /home/user/nx679j-stock/edl-recovery/restore-stock-a/xbl_ramdump.padded.img
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x200) 0.00 MB/s                
+Progress: |█████-----|  50.0% Write (Sector 0x100 of 0x200, ) 194.37 MB/s     
+Progress: |██████████| 100.0% Write (Sector 0x200 of 0x200, ) 222.80 MB/s     
+Wrote /home/user/nx679j-stock/edl-recovery/restore-stock-a/xbl_ramdump.padded.img to sector 523992.
+CMD: /home/user/venvs/edk2/bin/edl --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs w boot_a /home/user/nx679j-stock/edl-recovery/recon-20260717-183330/boot_a.bin
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x6000) 0.00 MB/s               
+Progress: |----------|   1.0% Write (Sector 0x100 of 0x6000, ) 105.87 MB/s    
+Progress: |----------|   2.1% Write (Sector 0x200 of 0x6000, ) 230.03 MB/s    
+Progress: |----------|   3.1% Write (Sector 0x300 of 0x6000, ) 215.82 MB/s    
+Progress: |----------|   4.2% Write (Sector 0x400 of 0x6000, ) 112.09 MB/s    
+Progress: |█---------|   5.2% Write (Sector 0x500 of 0x6000, ) 246.58 MB/s    
+Progress: |█---------|   6.2% Write (Sector 0x600 of 0x6000, ) 227.95 MB/s    
+Progress: |█---------|   7.3% Write (Sector 0x700 of 0x6000, ) 245.02 MB/s    
+Progress: |█---------|   8.3% Write (Sector 0x800 of 0x6000, ) 119.27 MB/s    
+Progress: |█---------|   9.4% Write (Sector 0x900 of 0x6000, ) 235.75 MB/s    
+Progress: |█---------|  10.4% Write (Sector 0xA00 of 0x6000, ) 251.49 MB/s    
+Progress: |█---------|  11.5% Write (Sector 0xB00 of 0x6000, ) 247.83 MB/s    
+Progress: |█---------|  12.5% Write (Sector 0xC00 of 0x6000, ) 138.14 MB/s    
+Progress: |█---------|  13.5% Write (Sector 0xD00 of 0x6000, ) 242.36 MB/s    
+Progress: |█---------|  14.6% Write (Sector 0xE00 of 0x6000, ) 242.04 MB/s    
+Progress: |██--------|  15.6% Write (Sector 0xF00 of 0x6000, ) 237.07 MB/s    
+Progress: |██--------|  16.7% Write (Sector 0x1000 of 0x6000, ) 130.22 MB/s   
+Progress: |██--------|  17.7% Write (Sector 0x1100 of 0x6000, ) 248.51 MB/s   
+Progress: |██--------|  18.8% Write (Sector 0x1200 of 0x6000, ) 247.55 MB/s   
+Progress: |██--------|  19.8% Write (Sector 0x1300 of 0x6000, ) 236.29 MB/s   
+Progress: |██--------|  20.8% Write (Sector 0x1400 of 0x6000, ) 198.14 MB/s   
+Progress: |██--------|  21.9% Write (Sector 0x1500 of 0x6000, ) 237.70 MB/s   
+Progress: |██--------|  22.9% Write (Sector 0x1600 of 0x6000, ) 247.20 MB/s   
+Progress: |██--------|  24.0% Write (Sector 0x1700 of 0x6000, ) 236.49 MB/s   
+Progress: |██--------|  25.0% Write (Sector 0x1800 of 0x6000, ) 106.76 MB/s   
+Progress: |███-------|  26.0% Write (Sector 0x1900 of 0x6000, ) 247.35 MB/s   
+Progress: |███-------|  27.1% Write (Sector 0x1A00 of 0x6000, ) 244.21 MB/s   
+Progress: |███-------|  28.1% Write (Sector 0x1B00 of 0x6000, ) 243.40 MB/s   
+Progress: |███-------|  29.2% Write (Sector 0x1C00 of 0x6000, ) 92.46 MB/s    
+Progress: |███-------|  30.2% Write (Sector 0x1D00 of 0x6000, ) 243.26 MB/s   
+Progress: |███-------|  31.2% Write (Sector 0x1E00 of 0x6000, ) 249.44 MB/s   
+Progress: |███-------|  32.3% Write (Sector 0x1F00 of 0x6000, ) 69.50 MB/s    
+Progress: |███-------|  33.3% Write (Sector 0x2000 of 0x6000, ) 97.64 MB/s    
+Progress: |███-------|  34.4% Write (Sector 0x2100 of 0x6000, ) 242.26 MB/s   
+Progress: |████------|  35.4% Write (Sector 0x2200 of 0x6000, ) 247.07 MB/s   
+Progress: |████------|  36.5% Write (Sector 0x2300 of 0x6000, ) 249.79 MB/s   
+Progress: |████------|  37.5% Write (Sector 0x2400 of 0x6000, ) 106.46 MB/s   
+Progress: |████------|  38.5% Write (Sector 0x2500 of 0x6000, ) 237.37 MB/s   
+Progress: |████------|  39.6% Write (Sector 0x2600 of 0x6000, ) 243.57 MB/s   
+Progress: |████------|  40.6% Write (Sector 0x2700 of 0x6000, ) 242.00 MB/s   
+Progress: |████------|  41.7% Write (Sector 0x2800 of 0x6000, ) 65.56 MB/s    
+Progress: |████------|  42.7% Write (Sector 0x2900 of 0x6000, ) 247.80 MB/s   
+Progress: |████------|  43.8% Write (Sector 0x2A00 of 0x6000, ) 246.33 MB/s   
+Progress: |████------|  44.8% Write (Sector 0x2B00 of 0x6000, ) 252.21 MB/s   
+Progress: |█████-----|  45.8% Write (Sector 0x2C00 of 0x6000, ) 134.31 MB/s   
+Progress: |█████-----|  46.9% Write (Sector 0x2D00 of 0x6000, ) 234.34 MB/s   
+Progress: |█████-----|  47.9% Write (Sector 0x2E00 of 0x6000, ) 207.33 MB/s   
+Progress: |█████-----|  49.0% Write (Sector 0x2F00 of 0x6000, ) 227.58 MB/s   
+Progress: |█████-----|  50.0% Write (Sector 0x3000 of 0x6000, ) 209.32 MB/s   
+Progress: |█████-----|  51.0% Write (Sector 0x3100 of 0x6000, ) 242.31 MB/s   
+Progress: |█████-----|  52.1% Write (Sector 0x3200 of 0x6000, ) 253.78 MB/s   
+Progress: |█████-----|  53.1% Write (Sector 0x3300 of 0x6000, ) 258.08 MB/s   
+Progress: |█████-----|  54.2% Write (Sector 0x3400 of 0x6000, ) 147.80 MB/s   
+Progress: |██████----|  55.2% Write (Sector 0x3500 of 0x6000, ) 230.17 MB/s   
+Progress: |██████----|  56.2% Write (Sector 0x3600 of 0x6000, ) 249.62 MB/s   
+Progress: |██████----|  57.3% Write (Sector 0x3700 of 0x6000, ) 254.09 MB/s   
+Progress: |██████----|  58.3% Write (Sector 0x3800 of 0x6000, ) 159.92 MB/s   
+Progress: |██████----|  59.4% Write (Sector 0x3900 of 0x6000, ) 255.05 MB/s   
+Progress: |██████----|  60.4% Write (Sector 0x3A00 of 0x6000, ) 252.62 MB/s   
+Progress: |██████----|  61.5% Write (Sector 0x3B00 of 0x6000, ) 233.98 MB/s   
+Progress: |██████----|  62.5% Write (Sector 0x3C00 of 0x6000, ) 153.46 MB/s   
+Progress: |██████----|  63.5% Write (Sector 0x3D00 of 0x6000, ) 249.42 MB/s   
+Progress: |██████----|  64.6% Write (Sector 0x3E00 of 0x6000, ) 249.08 MB/s   
+Progress: |███████---|  65.6% Write (Sector 0x3F00 of 0x6000, ) 241.98 MB/s   
+Progress: |███████---|  66.7% Write (Sector 0x4000 of 0x6000, ) 182.76 MB/s   
+Progress: |███████---|  67.7% Write (Sector 0x4100 of 0x6000, ) 243.56 MB/s   
+Progress: |███████---|  68.8% Write (Sector 0x4200 of 0x6000, ) 248.42 MB/s   
+Progress: |███████---|  69.8% Write (Sector 0x4300 of 0x6000, ) 244.49 MB/s   
+Progress: |███████---|  70.8% Write (Sector 0x4400 of 0x6000, ) 175.79 MB/s   
+Progress: |███████---|  71.9% Write (Sector 0x4500 of 0x6000, ) 254.42 MB/s   
+Progress: |███████---|  72.9% Write (Sector 0x4600 of 0x6000, ) 251.01 MB/s   
+Progress: |███████---|  74.0% Write (Sector 0x4700 of 0x6000, ) 251.46 MB/s   
+Progress: |████████--|  75.0% Write (Sector 0x4800 of 0x6000, ) 211.20 MB/s   
+Progress: |████████--|  76.0% Write (Sector 0x4900 of 0x6000, ) 254.37 MB/s   
+Progress: |████████--|  77.1% Write (Sector 0x4A00 of 0x6000, ) 251.29 MB/s   
+Progress: |████████--|  78.1% Write (Sector 0x4B00 of 0x6000, ) 248.12 MB/s   
+Progress: |████████--|  79.2% Write (Sector 0x4C00 of 0x6000, ) 191.90 MB/s   
+Progress: |████████--|  80.2% Write (Sector 0x4D00 of 0x6000, ) 250.32 MB/s   
+Progress: |████████--|  81.2% Write (Sector 0x4E00 of 0x6000, ) 251.96 MB/s   
+Progress: |████████--|  82.3% Write (Sector 0x4F00 of 0x6000, ) 250.95 MB/s   
+Progress: |████████--|  83.3% Write (Sector 0x5000 of 0x6000, ) 210.67 MB/s   
+Progress: |████████--|  84.4% Write (Sector 0x5100 of 0x6000, ) 250.56 MB/s   
+Progress: |█████████-|  85.4% Write (Sector 0x5200 of 0x6000, ) 249.13 MB/s   
+Progress: |█████████-|  86.5% Write (Sector 0x5300 of 0x6000, ) 203.79 MB/s   
+Progress: |█████████-|  87.5% Write (Sector 0x5400 of 0x6000, ) 156.08 MB/s   
+Progress: |█████████-|  88.5% Write (Sector 0x5500 of 0x6000, ) 249.81 MB/s   
+Progress: |█████████-|  89.6% Write (Sector 0x5600 of 0x6000, ) 246.58 MB/s   
+Progress: |█████████-|  90.6% Write (Sector 0x5700 of 0x6000, ) 250.56 MB/s   
+Progress: |█████████-|  91.7% Write (Sector 0x5800 of 0x6000, ) 156.01 MB/s   
+Progress: |█████████-|  92.7% Write (Sector 0x5900 of 0x6000, ) 240.24 MB/s   
+Progress: |█████████-|  93.8% Write (Sector 0x5A00 of 0x6000, ) 197.56 MB/s   
+Progress: |█████████-|  94.8% Write (Sector 0x5B00 of 0x6000, ) 152.95 MB/s   
+Progress: |██████████|  95.8% Write (Sector 0x5C00 of 0x6000, ) 104.91 MB/s   
+Progress: |██████████|  96.9% Write (Sector 0x5D00 of 0x6000, ) 124.22 MB/s   
+Progress: |██████████|  97.9% Write (Sector 0x5E00 of 0x6000, ) 96.20 MB/s    
+Progress: |██████████|  99.0% Write (Sector 0x5F00 of 0x6000, ) 88.90 MB/s    
+Progress: |██████████| 100.0% Write (Sector 0x6000 of 0x6000, ) 85.54 MB/s    
+Wrote /home/user/nx679j-stock/edl-recovery/recon-20260717-183330/boot_a.bin to sector 108422.
+CMD: /home/user/venvs/edk2/bin/edl --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs w vendor_boot_a /home/user/nx679j-stock/edl-recovery/recon-20260717-183330/vendor_boot_a.bin
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x6000) 0.00 MB/s               
+Progress: |----------|   1.0% Write (Sector 0x100 of 0x6000, ) 128.06 MB/s    
+Progress: |----------|   2.1% Write (Sector 0x200 of 0x6000, ) 237.03 MB/s    
+Progress: |----------|   3.1% Write (Sector 0x300 of 0x6000, ) 80.04 MB/s     
+Progress: |----------|   4.2% Write (Sector 0x400 of 0x6000, ) 77.52 MB/s     
+Progress: |█---------|   5.2% Write (Sector 0x500 of 0x6000, ) 88.82 MB/s     
+Progress: |█---------|   6.2% Write (Sector 0x600 of 0x6000, ) 85.85 MB/s     
+Progress: |█---------|   7.3% Write (Sector 0x700 of 0x6000, ) 60.37 MB/s     
+Progress: |█---------|   8.3% Write (Sector 0x800 of 0x6000, ) 83.99 MB/s     
+Progress: |█---------|   9.4% Write (Sector 0x900 of 0x6000, ) 143.14 MB/s    
+Progress: |█---------|  10.4% Write (Sector 0xA00 of 0x6000, ) 117.24 MB/s    
+Progress: |█---------|  11.5% Write (Sector 0xB00 of 0x6000, ) 135.94 MB/s    
+Progress: |█---------|  12.5% Write (Sector 0xC00 of 0x6000, ) 127.34 MB/s    
+Progress: |█---------|  13.5% Write (Sector 0xD00 of 0x6000, ) 230.04 MB/s    
+Progress: |█---------|  14.6% Write (Sector 0xE00 of 0x6000, ) 199.85 MB/s    
+Progress: |██--------|  15.6% Write (Sector 0xF00 of 0x6000, ) 236.86 MB/s    
+Progress: |██--------|  16.7% Write (Sector 0x1000 of 0x6000, ) 215.14 MB/s   
+Progress: |██--------|  17.7% Write (Sector 0x1100 of 0x6000, ) 237.66 MB/s   
+Progress: |██--------|  18.8% Write (Sector 0x1200 of 0x6000, ) 246.55 MB/s   
+Progress: |██--------|  19.8% Write (Sector 0x1300 of 0x6000, ) 242.57 MB/s   
+Progress: |██--------|  20.8% Write (Sector 0x1400 of 0x6000, ) 219.28 MB/s   
+Progress: |██--------|  21.9% Write (Sector 0x1500 of 0x6000, ) 249.88 MB/s   
+Progress: |██--------|  22.9% Write (Sector 0x1600 of 0x6000, ) 248.14 MB/s   
+Progress: |██--------|  24.0% Write (Sector 0x1700 of 0x6000, ) 240.84 MB/s   
+Progress: |██--------|  25.0% Write (Sector 0x1800 of 0x6000, ) 145.85 MB/s   
+Progress: |███-------|  26.0% Write (Sector 0x1900 of 0x6000, ) 252.64 MB/s   
+Progress: |███-------|  27.1% Write (Sector 0x1A00 of 0x6000, ) 244.34 MB/s   
+Progress: |███-------|  28.1% Write (Sector 0x1B00 of 0x6000, ) 247.50 MB/s   
+Progress: |███-------|  29.2% Write (Sector 0x1C00 of 0x6000, ) 136.29 MB/s   
+Progress: |███-------|  30.2% Write (Sector 0x1D00 of 0x6000, ) 246.42 MB/s   
+Progress: |███-------|  31.2% Write (Sector 0x1E00 of 0x6000, ) 243.53 MB/s   
+Progress: |███-------|  32.3% Write (Sector 0x1F00 of 0x6000, ) 242.81 MB/s   
+Progress: |███-------|  33.3% Write (Sector 0x2000 of 0x6000, ) 168.98 MB/s   
+Progress: |███-------|  34.4% Write (Sector 0x2100 of 0x6000, ) 241.70 MB/s   
+Progress: |████------|  35.4% Write (Sector 0x2200 of 0x6000, ) 243.90 MB/s   
+Progress: |████------|  36.5% Write (Sector 0x2300 of 0x6000, ) 226.12 MB/s   
+Progress: |████------|  37.5% Write (Sector 0x2400 of 0x6000, ) 166.10 MB/s   
+Progress: |████------|  38.5% Write (Sector 0x2500 of 0x6000, ) 250.21 MB/s   
+Progress: |████------|  39.6% Write (Sector 0x2600 of 0x6000, ) 247.83 MB/s   
+Progress: |████------|  40.6% Write (Sector 0x2700 of 0x6000, ) 247.96 MB/s   
+Progress: |████------|  41.7% Write (Sector 0x2800 of 0x6000, ) 166.16 MB/s   
+Progress: |████------|  42.7% Write (Sector 0x2900 of 0x6000, ) 234.80 MB/s   
+Progress: |████------|  43.8% Write (Sector 0x2A00 of 0x6000, ) 239.55 MB/s   
+Progress: |████------|  44.8% Write (Sector 0x2B00 of 0x6000, ) 251.38 MB/s   
+Progress: |█████-----|  45.8% Write (Sector 0x2C00 of 0x6000, ) 162.37 MB/s   
+Progress: |█████-----|  46.9% Write (Sector 0x2D00 of 0x6000, ) 240.97 MB/s   
+Progress: |█████-----|  47.9% Write (Sector 0x2E00 of 0x6000, ) 247.57 MB/s   
+Progress: |█████-----|  49.0% Write (Sector 0x2F00 of 0x6000, ) 249.97 MB/s   
+Progress: |█████-----|  50.0% Write (Sector 0x3000 of 0x6000, ) 172.73 MB/s   
+Progress: |█████-----|  51.0% Write (Sector 0x3100 of 0x6000, ) 245.57 MB/s   
+Progress: |█████-----|  52.1% Write (Sector 0x3200 of 0x6000, ) 251.01 MB/s   
+Progress: |█████-----|  53.1% Write (Sector 0x3300 of 0x6000, ) 245.05 MB/s   
+Progress: |█████-----|  54.2% Write (Sector 0x3400 of 0x6000, ) 171.25 MB/s   
+Progress: |██████----|  55.2% Write (Sector 0x3500 of 0x6000, ) 216.23 MB/s   
+Progress: |██████----|  56.2% Write (Sector 0x3600 of 0x6000, ) 247.73 MB/s   
+Progress: |██████----|  57.3% Write (Sector 0x3700 of 0x6000, ) 240.66 MB/s   
+Progress: |██████----|  58.3% Write (Sector 0x3800 of 0x6000, ) 176.61 MB/s   
+Progress: |██████----|  59.4% Write (Sector 0x3900 of 0x6000, ) 242.92 MB/s   
+Progress: |██████----|  60.4% Write (Sector 0x3A00 of 0x6000, ) 247.70 MB/s   
+Progress: |██████----|  61.5% Write (Sector 0x3B00 of 0x6000, ) 231.70 MB/s   
+Progress: |██████----|  62.5% Write (Sector 0x3C00 of 0x6000, ) 178.11 MB/s   
+Progress: |██████----|  63.5% Write (Sector 0x3D00 of 0x6000, ) 246.62 MB/s   
+Progress: |██████----|  64.6% Write (Sector 0x3E00 of 0x6000, ) 241.55 MB/s   
+Progress: |███████---|  65.6% Write (Sector 0x3F00 of 0x6000, ) 242.08 MB/s   
+Progress: |███████---|  66.7% Write (Sector 0x4000 of 0x6000, ) 187.25 MB/s   
+Progress: |███████---|  67.7% Write (Sector 0x4100 of 0x6000, ) 250.48 MB/s   
+Progress: |███████---|  68.8% Write (Sector 0x4200 of 0x6000, ) 245.86 MB/s   
+Progress: |███████---|  69.8% Write (Sector 0x4300 of 0x6000, ) 245.91 MB/s   
+Progress: |███████---|  70.8% Write (Sector 0x4400 of 0x6000, ) 153.49 MB/s   
+Progress: |███████---|  71.9% Write (Sector 0x4500 of 0x6000, ) 245.11 MB/s   
+Progress: |███████---|  72.9% Write (Sector 0x4600 of 0x6000, ) 247.90 MB/s   
+Progress: |███████---|  74.0% Write (Sector 0x4700 of 0x6000, ) 243.27 MB/s   
+Progress: |████████--|  75.0% Write (Sector 0x4800 of 0x6000, ) 166.67 MB/s   
+Progress: |████████--|  76.0% Write (Sector 0x4900 of 0x6000, ) 250.72 MB/s   
+Progress: |████████--|  77.1% Write (Sector 0x4A00 of 0x6000, ) 250.15 MB/s   
+Progress: |████████--|  78.1% Write (Sector 0x4B00 of 0x6000, ) 251.14 MB/s   
+Progress: |████████--|  79.2% Write (Sector 0x4C00 of 0x6000, ) 217.07 MB/s   
+Progress: |████████--|  80.2% Write (Sector 0x4D00 of 0x6000, ) 215.60 MB/s   
+Progress: |████████--|  81.2% Write (Sector 0x4E00 of 0x6000, ) 250.00 MB/s   
+Progress: |████████--|  82.3% Write (Sector 0x4F00 of 0x6000, ) 237.21 MB/s   
+Progress: |████████--|  83.3% Write (Sector 0x5000 of 0x6000, ) 207.96 MB/s   
+Progress: |████████--|  84.4% Write (Sector 0x5100 of 0x6000, ) 244.10 MB/s   
+Progress: |█████████-|  85.4% Write (Sector 0x5200 of 0x6000, ) 247.19 MB/s   
+Progress: |█████████-|  86.5% Write (Sector 0x5300 of 0x6000, ) 242.60 MB/s   
+Progress: |█████████-|  87.5% Write (Sector 0x5400 of 0x6000, ) 180.02 MB/s   
+Progress: |█████████-|  88.5% Write (Sector 0x5500 of 0x6000, ) 247.39 MB/s   
+Progress: |█████████-|  89.6% Write (Sector 0x5600 of 0x6000, ) 250.38 MB/s   
+Progress: |█████████-|  90.6% Write (Sector 0x5700 of 0x6000, ) 233.98 MB/s   
+Progress: |█████████-|  91.7% Write (Sector 0x5800 of 0x6000, ) 176.86 MB/s   
+Progress: |█████████-|  92.7% Write (Sector 0x5900 of 0x6000, ) 242.67 MB/s   
+Progress: |█████████-|  93.8% Write (Sector 0x5A00 of 0x6000, ) 243.08 MB/s   
+Progress: |█████████-|  94.8% Write (Sector 0x5B00 of 0x6000, ) 250.29 MB/s   
+Progress: |██████████|  95.8% Write (Sector 0x5C00 of 0x6000, ) 237.34 MB/s   
+Progress: |██████████|  96.9% Write (Sector 0x5D00 of 0x6000, ) 242.85 MB/s   
+Progress: |██████████|  97.9% Write (Sector 0x5E00 of 0x6000, ) 247.22 MB/s   
+Progress: |██████████|  99.0% Write (Sector 0x5F00 of 0x6000, ) 251.80 MB/s   
+Progress: |██████████| 100.0% Write (Sector 0x6000 of 0x6000, ) 245.87 MB/s   
+Wrote /home/user/nx679j-stock/edl-recovery/recon-20260717-183330/vendor_boot_a.bin to sector 207663.
+CMD: /home/user/venvs/edk2/bin/edl --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs w dtbo_a /home/user/nx679j-stock/edl-recovery/recon-20260717-183330/dtbo_a.bin
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x1800) 0.00 MB/s               
+Progress: |----------|   4.2% Write (Sector 0x100 of 0x1800, ) 113.37 MB/s    
+Progress: |█---------|   8.3% Write (Sector 0x200 of 0x1800, ) 238.99 MB/s    
+Progress: |█---------|  12.5% Write (Sector 0x300 of 0x1800, ) 243.12 MB/s    
+Progress: |██--------|  16.7% Write (Sector 0x400 of 0x1800, ) 155.67 MB/s    
+Progress: |██--------|  20.8% Write (Sector 0x500 of 0x1800, ) 243.01 MB/s    
+Progress: |██--------|  25.0% Write (Sector 0x600 of 0x1800, ) 248.35 MB/s    
+Progress: |███-------|  29.2% Write (Sector 0x700 of 0x1800, ) 242.05 MB/s    
+Progress: |███-------|  33.3% Write (Sector 0x800 of 0x1800, ) 193.11 MB/s    
+Progress: |████------|  37.5% Write (Sector 0x900 of 0x1800, ) 236.89 MB/s    
+Progress: |████------|  41.7% Write (Sector 0xA00 of 0x1800, ) 244.05 MB/s    
+Progress: |█████-----|  45.8% Write (Sector 0xB00 of 0x1800, ) 242.00 MB/s    
+Progress: |█████-----|  50.0% Write (Sector 0xC00 of 0x1800, ) 187.61 MB/s    
+Progress: |█████-----|  54.2% Write (Sector 0xD00 of 0x1800, ) 237.77 MB/s    
+Progress: |██████----|  58.3% Write (Sector 0xE00 of 0x1800, ) 235.99 MB/s    
+Progress: |██████----|  62.5% Write (Sector 0xF00 of 0x1800, ) 239.56 MB/s    
+Progress: |███████---|  66.7% Write (Sector 0x1000 of 0x1800, ) 182.89 MB/s   
+Progress: |███████---|  70.8% Write (Sector 0x1100 of 0x1800, ) 233.94 MB/s   
+Progress: |████████--|  75.0% Write (Sector 0x1200 of 0x1800, ) 246.48 MB/s   
+Progress: |████████--|  79.2% Write (Sector 0x1300 of 0x1800, ) 244.69 MB/s   
+Progress: |████████--|  83.3% Write (Sector 0x1400 of 0x1800, ) 239.33 MB/s   
+Progress: |█████████-|  87.5% Write (Sector 0x1500 of 0x1800, ) 250.48 MB/s   
+Progress: |█████████-|  91.7% Write (Sector 0x1600 of 0x1800, ) 245.94 MB/s   
+Progress: |██████████|  95.8% Write (Sector 0x1700 of 0x1800, ) 243.60 MB/s   
+Progress: |██████████| 100.0% Write (Sector 0x1800 of 0x1800, ) 251.35 MB/s   
+Wrote /home/user/nx679j-stock/edl-recovery/recon-20260717-183330/dtbo_a.bin to sector 133066.
+CMD: /home/user/venvs/edk2/bin/edl --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs w vbmeta_a /home/user/nx679j-stock/edl-recovery/recon-20260717-183330/vbmeta_a.bin
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x10) 0.00 MB/s                 
+Progress: |██████████| 100.0% Write (Sector 0x10 of 0x10, ) 99.83 MB/s        
+Wrote /home/user/nx679j-stock/edl-recovery/recon-20260717-183330/vbmeta_a.bin to sector 133050.
+CMD: /home/user/venvs/edk2/bin/edl --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs w misc /home/user/nx679j-stock/edl-recovery/recon-20260717-183330/analysis/misc-clear-bcb-2k.bin
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x100) 0.00 MB/s                
+Progress: |██████████| 100.0% Write (Sector 0x100 of 0x100, ) 178.14 MB/s     
+Wrote /home/user/nx679j-stock/edl-recovery/recon-20260717-183330/analysis/misc-clear-bcb-2k.bin to sector 8200.
+CMD: /home/user/venvs/edk2/bin/edl --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs r xbl_a /tmp/xbl_a_post.bin
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Read (Sector 0x0 of 0x380) 0.00 MB/s                 
+Progress: |███-------|  28.6% Read (Sector 0x100 of 0x380, ) 219.28 MB/s      
+Progress: |██████----|  57.1% Read (Sector 0x200 of 0x380, ) 235.48 MB/s      
+Progress: |█████████-|  85.7% Read (Sector 0x300 of 0x380, ) 258.52 MB/s      
+Progress: |██████████| 100.0% Read (Sector 0x380 of 0x380, ) 229.45 MB/s      
+Dumped sector 6 with sector count 896 as /tmp/xbl_a_post.bin.
+CMD: /home/user/venvs/edk2/bin/edl --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs r abl_a /tmp/abl_a_post.bin
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Read (Sector 0x0 of 0x100) 0.00 MB/s                 
+Progress: |██████████| 100.0% Read (Sector 0x100 of 0x100, ) 226.88 MB/s      
+Dumped sector 91654 with sector count 256 as /tmp/abl_a_post.bin.
+685f0a75fbff851bb6ef55ba158b7f86ea14a44c527c5388605ece94f47d637a  /home/user/nx679j-stock/edl-recovery/restore-stock-a/xbl_a_from_b.bin
+685f0a75fbff851bb6ef55ba158b7f86ea14a44c527c5388605ece94f47d637a  /tmp/xbl_a_post.bin
+443d1956e836aea3fe30ac13113dae787d88223c1e24f875c6831f69d86acea3  /home/user/nx679j-stock/edl-recovery/restore-stock-a/abl_a_from_b.bin
+443d1956e836aea3fe30ac13113dae787d88223c1e24f875c6831f69d86acea3  /tmp/abl_a_post.bin
+XBL_A_OK
+ABL_A_OK
+CMD: /home/user/venvs/edk2/bin/edl --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs reset
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Usage:
+    edl.py -h | --help
+    edl.py [--vid=vid] [--pid=pid] [--portname=portname] [--serial]
+    edl.py [--loader=filename] [--memory=memtype] [--portname=portname] [--serial]
+    edl.py [--debugmode] [--portname=portname] [--serial]
+    edl.py [--gpt-num-part-entries=number] [--gpt-part-entry-size=number] [--gpt-part-entry-start-lba=number] [--portname=portname] [--serial]
+    edl.py [--memory=memtype] [--skipstorageinit] [--maxpayload=bytes] [--sectorsize==bytes] [--pagesperblock=number] [--portname=portname] [--serial]
+    edl.py server [--tcpport=portnumber] [--loader=filename] [--debugmode] [--skipresponse] [--vid=vid] [--pid=pid] [--skipstorageinit] [--portname=portname] [--serial]  [--devicemodel=value]
+    edl.py memorydump [--partitions=partnames] [--debugmode] [--vid=vid] [--pid=pid] [--portname=portname] [--serial] [--serial_number=serial_number]
+    edl.py printgpt [--memory=memtype] [--lun=lun] [--sectorsize==bytes] [--pagesperblock=number] [--loader=filename] [--debugmode]  [--skipresponse] [--vid=vid] [--pid=pid] [--skipstorageinit] [--portname=portname] [--serial] [--devicemodel=value]
+    edl.py gpt <directory> [--memory=memtype] [--lun=lun] [--genxml] [--loader=filename]  [--skipresponse] [--debugmode] [--vid=vid] [--pid=pid] [--skipstorageinit] [--pagesperblock=number] [--portname=portname] [--serial] [--devicemodel=value]
+    edl.py r <partitionname> <filename> [--memory=memtype] [--sectorsize==bytes] [--pagesperblock=number] [--lun=lun] [--loader=filename]  [--skipresponse] [--debugmode] [--vid=vid] [--pid=pid] [--skipstorageinit] [--portname=portname] [--serial] [--devicemodel=value]
+    edl.py rl <directory> [--memory=memtype] [--lun=lun] [--sectorsize==bytes] [--pagesperblock=number] [--skip=partnames] [--genxml]  [--skipresponse] [--loader=filename] [--debugmode] [--vid=vid] [--pid=pid] [--skipstorageinit] [--portname=portname] [--serial] [--devicemodel=value]
+    edl.py rf <filename> [--memory=memtype] [--lun=lun] [--sectorsize==bytes] [--pagesperblock=number] [--loader=filename] [--debugmode]  [--skipresponse] [--vid=vid] [--pid=pid] [--skipstorageinit] [--portname=portname] [--serial] [--devicemodel=value]
+    edl.py rs <start_sector> <sectors> <filename> [--lun=lun] [--sectorsize==bytes] [--pagesperblock=number] [--memory=memtype] [--loader=filename] [--debugmode] [--skipresponse] [--vid=vid] [--pid=pid] [--skipstorageinit] [--portname=portname] [--serial] [--devicemodel=value]
+    edl.py w <partitionname> <filename> [--partitionfilename=filename] [--memory=memtype] [--lun=lun] [--sectorsize==bytes] [--pagesperblock=number] [--skipwrite] [--skipresponse] [--loader=filename] [--debugmode] [--vid=vid] [--pid=pid] [--devicemodel=value] [--skipstorageinit] [--portname=portname] [--serial]
+    edl.py wl <directory> [--memory=memtype] [--lun=lun] [--sectorsize==bytes] [--pagesperblock=number] [--skip=partnames] [--skipresponse] [--loader=filename] [--debugmode] [--vid=vid] [--pid=pid] [--devicemodel=value] [--skipstorageinit] [--portname=portname] [--serial]
+    edl.py wf <filename> [--memory=memtype] [--lun=lun] [--sectorsize==bytes] [--pagesperblock=number] [--loader=filename] [--skipresponse] [--debugmode] [--vid=vid] [--pid=pid] [--devicemodel=value] [--skipstorageinit] [--portname=portname] [--serial]
+    edl.py ws <start_sector> <filename> [--memory=memtype] [--lun=lun] [--sectorsize==bytes] [--pagesperblock=number] [--skipwrite] [--skipresponse] [--loader=filename] [--debugmode] [--vid=vid] [--pid=pid] [--devicemodel=value] [--skipstorageinit] [--portname=portname] [--serial]
+    edl.py e <partitionname> [--memory=memtype] [--skipwrite] [--lun=lun] [--sectorsize==bytes] [--pagesperblock=number] [--loader=filename] [--debugmode] [--skipresponse] [--vid=vid] [--pid=pid] [--devicemodel=value] [--skipstorageinit] [--portname=portname] [--serial]
+    edl.py es <start_sector> <sectors> [--memory=memtype] [--lun=lun] [--sectorsize==bytes] [--pagesperblock=number] [--skipwrite] [--loader=filename] [--skipresponse] [--debugmode] [--vid=vid] [--pid=pid] [--devicemodel=value] [--skipstorageinit] [--portname=portname] [--serial]
+    edl.py ep <partitionname> <sectors> [--memory=memtype] [--skipwrite] [--lun=lun] [--sectorsize==bytes] [--pagesperblock=number] [--loader=filename] [--debugmode] [--skipresponse] [--vid=vid] [--pid=pid] [--devicemodel=value] [--skipstorageinit] [--portname=portname] [--serial]
+    edl.py footer <filename> [--memory=memtype] [--lun=lun] [--loader=filename] [--debugmode] [--skipresponse] [--vid=vid] [--pid=pid] [--skipstorageinit] [--portname=portname] [--serial]  [--devicemodel=value]
+    edl.py peek <offset> <length> <filename> [--loader=filename] [--debugmode] [--skipresponse] [--vid=vid] [--pid=pid] [--portname=portname] [--serial]
+    edl.py peekhex <offset> <length> [--loader=filename] [--debugmode] [--vid=vid] [--pid=pid] [--portname=portname] [--serial]
+    edl.py peekdword <offset> [--loader=filename] [--debugmode] [--vid=vid] [--pid=pid] [--skipstorageinit] [--portname=portname] [--serial]
+    edl.py peekqword <offset> [--loader=filename] [--debugmode] [--vid=vid] [--pid=pid] [--skipstorageinit] [--portname=portname] [--serial]
+    edl.py memtbl <filename> [--loader=filename] [--debugmode] [--vid=vid] [--pid=pid] [--skipstorageinit] [--portname=portname] [--serial]
+    edl.py poke <offset> <filename> [--loader=filename] [--debugmode] [--vid=vid] [--pid=pid] [--skipstorageinit] [--portname=portname] [--serial]
+    edl.py pokehex <offset> <data> [--loader=filename] [--debugmode] [--vid=vid] [--pid=pid] [--skipstorageinit] [--portname=portname] [--serial]
+    edl.py pokedword <offset> <data> [--loader=filename] [--debugmode] [--vid=vid] [--pid=pid] [--skipstorageinit] [--portname=portname] [--serial]
+    edl.py pokeqword <offset> <data> [--loader=filename] [--debugmode] [--vid=vid] [--pid=pid] [--skipstorageinit] [--portname=portname] [--serial]
+    edl.py memcpy <offset> <size> [--loader=filename] [--debugmode] [--vid=vid] [--pid=pid] [--portname=portname] [--serial]
+    edl.py secureboot [--loader=filename] [--debugmode] [--vid=vid] [--pid=pid] [--skipstorageinit] [--portname=portname] [--serial]
+    edl.py pbl <filename> [--loader=filename] [--debugmode] [--vid=vid] [--pid=pid] [--skipstorageinit] [--portname=portname] [--serial]
+    edl.py qfp <filename> [--loader=filename] [--debugmode] [--vid=vid] [--pid=pid] [--skipstorageinit] [--portname=portname] [--serial]
+    edl.py getstorageinfo [--loader=filename] [--memory=memtype] [--pagesperblock=number] [--debugmode] [--skipresponse] [--vid=vid] [--pid=pid] [--skipstorageinit] [--portname=portname] [--serial]  [--devicemodel=value]
+    edl.py setbootablestoragedrive <lun> [--loader=filename] [--debugmode] [--skipresponse] [--vid=vid] [--pid=pid] [--portname=portname] [--serial]  [--devicemodel=value]
+    edl.py getactiveslot [--memory=memtype] [--loader=filename] [--debugmode] [--vid=vid] [--pid=pid] [--portname=portname] [--serial]  [--devicemodel=value]
+    edl.py setactiveslot <slot> [--loader=filename] [--debugmode] [--skipresponse] [--vid=vid] [--pid=pid] [--portname=portname] [--serial]  [--devicemodel=value]
+    edl.py send <command> [--loader=filename] [--debugmode] [--skipresponse] [--vid=vid] [--pid=pid] [--portname=portname] [--serial]  [--devicemodel=value]
+    edl.py xml <xmlfile> [--loader=filename] [--debugmode] [--skipresponse] [--vid=vid] [--pid=pid] [--skipstorageinit] [--portname=portname] [--serial]  [--devicemodel=value]
+    edl.py rawxml <xmlstring> [--loader=filename] [--debugmode] [--skipresponse] [--vid=vid] [--pid=pid] [--skipstorageinit] [--portname=portname] [--serial]  [--devicemodel=value]
+    edl.py reset [--resetmode=mode] [--loader=filename] [--debugmode] [--vid=vid] [--pid=pid] [--portname=portname] [--serial] [--devicemodel=value]
+    edl.py nop [--loader=filename] [--debugmode] [--vid=vid] [--pid=pid] [--skipstorageinit] [--portname=portname] [--serial] [--devicemodel=value]
+    edl.py modules <command> <options> [--memory=memtype] [--lun=lun] [--loader=filename] [--debugmode] [--skipresponse] [--vid=vid] [--pid=pid] [--devicemodel=value] [--portname=portname] [--serial]
+    edl.py provision <xmlfile> [--loader=filename] [--debugmode] [--skipresponse] [--vid=vid] [--pid=pid] [--portname=portname] [--serial]  [--devicemodel=value]
+    edl.py qfil <rawprogram> <patch> <imagedir> [--loader=filename] [--memory=memtype] [--pagesperblock=number] [--debugmode] [--skipresponse] [--vid=vid] [--pid=pid] [--portname=portname] [--serial]  [--devicemodel=value]
+=== 2026-07-17T20:25:57+02:00 EDL restore done ===

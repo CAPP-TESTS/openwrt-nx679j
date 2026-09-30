@@ -1,0 +1,13 @@
+[PASS] t1: every module was attempted with an ATTEMPT line first: 6 ATTEMPT lines for 6 modules
+[PASS] t1: a result line per module (loaded / failed), never silent: 20 MOD lines
+[PASS] t1: no TIMEOUT-KILLED when nothing hangs: 
+[PASS] t1: the chain finished and exited 0 (a failed load is not fatal): rc=0
+[PASS] t2: the stuck module is named in an ATTEMPT line written before the call: altmode-glink.ko
+[PASS] t2: the child was KILLED on the deadline and journalled as TIMEOUT-KILLED: ['nx679j: MOD altmode_glink                      TIMEOUT-KILLED after 15000 ms (stuck in finit_module, see ATTEMPT line above)']
+[PASS] t2: the walk CONTINUED after the kill (later modules were attempted): [' after 15000 ms (stuck in finit_module, see ATTEMPT line above)', 'nx679j: ATTEMPT finit_module /home/user/nx679j-stock/experiments/20260917-init-v8/localtest/modules/clk-qcom.ko']
+[PASS] t2: the cost of the stuck module was the deadline, not forever: 15.3 s
+[PASS] t2: the chain still reported its summary and exited 0: rc=0
+[PASS] t2: loaded and TIMEOUT-KILLED are different strings in the same journal: both present
+[PASS] t3: a module with no .ko is reported MISSING, not silently skipped: ['nx679j: MOD ghost_module                       MISSING (no .ko in /lib/modules)', 'nx679j: MOD second_ghost                       MISSING (no .ko in /lib/modules)']
+
+=== 11/11 checks passed -> localtest-worker.json

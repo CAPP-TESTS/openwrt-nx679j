@@ -1,0 +1,2 @@
+#!/bin/sh
+exec "/home/user/nx679j-stock/experiments/20260917-init-v9/tools/bin/busybox-nc-x86_64" nc "$@"

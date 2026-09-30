@@ -1,0 +1,35 @@
+[2026-07-11T18:55:23+02:00] preflight slot=_a boot_completed=1
+[2026-07-11T18:55:34+02:00] fastboot=3dbd****	 fastboot
+current-slot: a
+Finished. Total time: 0.002s
+c58e03fea9cd3dc1c3d228d4be90b1168fb9482d8b5bd742a46c6e0caa4a62d3  /home/user/nx679j-stock/native-openwrt-usb-build/headless-upstream/panic30-v6/artifacts/boot-nx679j-headless-openwrt.img
+7377123e9d211edef5454fe3912daa834799c4ab7ca12a8a4fa8271f705d6226  /home/user/nx679j-stock/native-openwrt-usb-build/headless-upstream/panic30-v6/artifacts/vendor_boot-nx679j-headless-openwrt.img
+Sending 'vendor_boot_b' (9920 KB)                  OKAY [  0.024s]
+Writing 'vendor_boot_b'                            OKAY [  0.015s]
+Finished. Total time: 0.054s
+Sending 'boot_b' (42568 KB)                        OKAY [  0.101s]
+Writing 'boot_b'                                   OKAY [  0.076s]
+Finished. Total time: 0.198s
+Setting current slot to 'b'                        OKAY [  0.039s]
+Finished. Total time: 0.041s
+current-slot: b
+Finished. Total time: 0.002s
+[2026-07-11T18:55:34+02:00] t=0.000s rebooting panic=30 slot B
+Rebooting                                          OKAY [  0.000s]
+Finished. Total time: 0.050s
+[2026-07-11T18:55:35+02:00] t=0.055s fastboot disappeared
+[2026-07-11T18:55:49+02:00] t=14.436s FASTBOOT_RETURN 3dbd****	 fastboot
+slot-unbootable:b: no
+Finished. Total time: 0.003s
+slot-retry-count:b: 7
+Finished. Total time: 0.011s
+[2026-07-11T18:55:49+02:00] restoring active slot A
+Setting current slot to 'a'                        OKAY [  0.040s]
+Finished. Total time: 0.042s
+Rebooting                                          OKAY [  0.000s]
+Finished. Total time: 0.050s
+slot=_a
+boot_completed=1
+bootreason=bootloader
+selinux=Enforcing
+[2026-07-11T18:56:19+02:00] result flashed=1 returned=1 success=0

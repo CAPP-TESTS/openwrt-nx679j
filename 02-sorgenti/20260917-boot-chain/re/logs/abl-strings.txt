@@ -1,0 +1,2119 @@
+   1037 `.data
+   1060 .reloc
+   16d8 +ih8J	
+   3910 kjjx?=
+   3b61 zxxhj88
+   3e06 (kD	@z
+   77c6 @9i.@8j
+   77ce @9kO@8
+   7846 @9KO@8
+   7946 @9NM@8O
+   794e @9J	@9l
+   7c6e @9MM@8N
+   7c76 @9J	@9+
+   7c96 @9nM@8o
+   7c9e @9k	@9L
+   8ccc +ih8J	
+   90cf 3CN@8E
+   91de @9MM@8N
+   943a @9,	@9-
+   9446 @9oM@8q
+   95a1 	@97=p
+   982e @9+	@9)
+   a016 @9NM@8O
+   a4cc Kik8+%
+   a612 @9i	@9j
+   a65a @9i	@9j
+   a686 @9MM@8N
+   a68e @9J	@9+
+   b9a2 @9LM@8M
+   ba42 @9,M@8-
+   bb12 @9LM@8
+   bb22 @9J	@9a
+   bc06 @9LM@8M
+   bcd2 @9LM@8
+   bce2 @9J	@9a
+   bdae @9mM@8n
+   bdf6 @9+	@9-
+   beb2 @9J	@9
+   c02e @9J	@9
+   c05b 3DN@8E
+   c0ea @9MM@8N
+   c20d 	@9C}`
+   c28a @9MM@8N
+   c2d6 @9NM@8O
+   c806 @9NM@8O
+   c852 @9NM@8O
+   c91a @9NM@8
+   dc02 @9+	@9,
+   dc28 jMB8lM^8m}@9ny@9ou@9p
+   dc3e @9q	@9k
+   de46 @9)	@9
+   dfad U@9+MA8,
+   dfb6 @9)	@9K
+   e055 U@9+MA8,
+   e05e @9)	@9K
+   e70e @9M	@9J
+   e9ba @9-M@8.
+   ea29 V@9@OA8I
+   eace @9*	@9)
+   eb36 @9NM@8O
+   eb3e @9J	@9l
+   ed5e @9LM@8M
+   ede2 @9,M@8-
+   edea @9)	@9
+   f0b2 @9MM@8N
+   f0ba @9J	@9+
+   f682 @9-M@8.
+   f6ca @9i/@8j
+   f86a @9NM@8O
+   f872 @9J	@9l
+   fa12 @9-M@8.
+   fa8b 9 OA8(
+   fafe @9NM@8O
+   fb06 @9J	@9l
+  144d2 @9I	@9i
+  15392 @9j	@9
+  153ba @9j	@9
+  153e2 @9j	@9
+  1540a @9j	@9
+  155ce @9I	@9i
+  1563a @9j	@9
+  15662 @9j	@9
+  1568a @9j	@9
+  156b2 @9I	@9i
+  1585e @9I	@9i
+  158ca @9j	@9
+  158f2 @9j	@9
+  1672a @9H	@9(
+  1678e @9		@9I
+  17cc2 @9I	@9i
+  17cf6 @9I	@9i
+  17d1a @9I	@9i
+  17d3e @9I	@9i
+  17d62 @9I	@9i
+  17e3e @9I	@9i
+  17e62 @9I	@9i
+  17e86 @9I	@9i
+  17eaa @9I	@9i
+  18082 @9I	@9i
+  18232 @9I	@9i
+  18256 @9I	@9i
+  1842e @9I	@9i
+  188ea @9		@9I
+  18cda @9I	@9i
+  18d36 @9(	@9H
+  18daa @9*	@9j
+  18dd6 @9(	@9H
+  18e3a @9I	@9i
+  18e96 @9(	@9H
+  18ee6 @9		@9I
+  18f4a @9H	@9(
+  19086 @9*	@9j
+  190b2 @9(	@9H
+  191c6 @9J	@9
+  1924f *H	@9h
+  1fdf8 	ij8	i*
+  21276 @9)	@9
+  212b2 @9k	@9
+  212bd 	@91&@9
+  21332 @9)	@9i
+  2136e @9J	@9
+  23252 @9I	@9i
+  2327a @9I	@9i
+  232a2 @9I	@9i
+  232d2 @9(	@9H
+  2331a @9I	@9i
+  23342 @9I	@9i
+  23372 @9(	@9H
+  233be 	*i	@9I
+  233de @9)	@9
+  2341f *H	@9h
+  23486 	*i	@9I
+  234a6 @9)	@9
+  234e7 *H	@9h
+  2eec6 @9I	@9i
+  2ef42 @9		@9
+  31552 @8#M@8*
+  31572 @9(	@9H
+  315e2 A8#M@8*
+  31602 @9(	@9H
+  31676 @9(	@9H
+  316ba @9I	@9i
+  316e2 @9I	@9i
+  3676f *ji,8)
+  38468 (AA9*EA9H
+  38473 3*IA9H
+  3847b 3)MA9(
+  3848c (QA9*UA9H
+  38497 3*YA9H
+  3849f 3)]A9(
+  39c3c (!A9*%A9H
+  39d34 (!A9*%A9H
+  3d7fa @9I	@9i
+  3d8b6 	*i	@9I
+  3d8d6 @9)	@9
+  3d916 @9*	@9j
+  3d942 @9(	@9H
+  3df84 (1@9*5@9H
+  3df8f 3*9@9H
+  3df97 3)=@9(
+  3e0ac (A@9*E@9H
+  3e0b7 3*I@9H
+  3e0bf 3)M@9(
+  3e264 (a@9*e@9H
+  3e26f 3*i@9H
+  3e277 3)m@9(
+  3e2dc (AA9*EA9H
+  3e2e7 3*IA9H
+  3e2ef 3)MA9(
+  3e304 (QA9*UA9H
+  3e30f 3*YA9H
+  3e317 3)]A9(
+  4778e @9,	@9-
+  4779a @9nM@8p
+  4782a @9P	@9Q
+  47894 E5@92<p
+  47a7a @9/	@90
+  47a8d 	@9"N@8E
+  47aa2 @9^	@9#
+  48c15 k(8kk(8
+  48c7a @9,	@9-
+  48c86 @9nM@8p
+  48d16 @9P	@9Q
+  48d80 E5@92<p
+  48ef6 @9N	@9/
+  48f0a @9!	@9"N@8
+  48f83 Thki8+
+  48f95 k)8jk)8
+  496c2 @9M	@9N
+  4975e @9q	@9r
+  497b1 	@9#N@8$
+  497c8 f5@9@<p
+  49942 @9n	@9O
+  49956 @9A	@9"N@8#
+  4a16a @9-	@9
+  4a202 @9P	@9Q
+  4a20e @9`M@8a
+  4a26c E5@92<p
+  4a3e2 @9N	@9/
+  4a3f6 @9!	@9"N@8
+  4a4d2 @9-	@9
+  4a56a @9P	@9Q
+  4a576 @9`M@8a
+  4a5d4 E5@92<p
+  4a8be @9N	@9/
+  4a8d2 @9!	@9"N@8
+  4aae6 @9,	@9-
+  4aaf2 @9nM@8p
+  4ab82 @9P	@9Q
+  4abec E5@92<p
+  4add2 @9/	@90
+  4ade5 	@9"N@8E
+  4adfa @9]	@9#
+  4d661 #=),)@)-%A)
+  4dbd9 A]8?K)8(K=8
+  4dfe2 @9,	@9-M@8.
+  4e6d8 jih8)	
+  4ff77 R	q@y?
+  54c4b T)hh8	h(8
+  557ed kw8)]x
+  56259 6@9c4=
+  57196 _8(hi8
+  5a80c +ih8J	
+  5bc2b TH#Ey(
+  5c316 @9%L@8&
+  5c36a @9'6@9d
+  5c714 J/@)HS@
+  5cd76 @9\6@9
+  5d0ea @9^6@9
+  5d1e6 @9EN@8S
+  5d3ae @9^6@9
+  5d4b6 @9EN@8
+  5d9b1 	@9Y6@9
+  5dc5a @9$N@8%
+  5dddf T)hj8K
+  5dfc3 NvN@8w
+  5dff7 3[TDOv>
+  5e369 VDO|VDO
+  5e7e3 R1!]x_
+  5eabc ;hyx\jy8y$
+  5ee00 LinuxLoader
+  5ee0d ASSERT_EFI_ERROR (Status = %r)
+  5ee2d /home/nubia/SCMWork/nrom/NX679J_Z69_UN_ZML1S_V311/20220308142115/app/out/target/product/taro/obj/ABL_OBJ/Build/DEBUG_CLANG35/AARCH64/QcomModulePkg/Application/LinuxLoader/LinuxLoader/DEBUG/AutoGen.c
+  5eef4 !EFI_ERROR (Status)
+  5ef09 ASSERT_RETURN_ERROR (Status = %r)
+  5ef2c !RETURN_ERROR (Status)
+  5ef83 Loader Build Info: %a %a
+  5ef9d Mar  8 2022
+  5efa9 20:55:17
+  5efb2 LinuxLoader Load Address to debug ABL: 0x%llx
+  5efe1 LinuxLoaderEntry Address: 0x%llx
+  5f003 Unable to Allocate memory for Unsafe Stack: %r
+  5f033 Initialize the device info failed: %r
+  5f05a LinuxLoader: Could not enumerate partitions: %r
+  5f08b Multi Slot boot is supported
+  5f0a9 Error reading key status: %r
+  5f0c7 Failed to get Reboot reason: %r
+  5f0e8 VB Reset Device State error: %r
+  5f109 Boot reason: 0x%x not handled, defaulting to Normal Boot
+  5f143 RecoveryInit failed ignore: %r
+  5f163 Error finding board information: %r
+  5f188 KeyPress:%u, BootReason:%u
+  5f1a4 Fastboot=%d, Recovery:%d
+  5f1be VM Hyp calls not present
+  5f1d8 LoadImageAndAuth failed: %r
+  5f1f5 Launching fastboot
+  5f209 Failed to Launch Fastboot App: %d
+  5f22c Error locating the reset reason protocol
+  5f256 nubia reboot reason: %d
+  5f287 /home/nubia/SCMWork/nrom/NX679J_Z69_UN_ZML1S_V311/20220308142115/app/bootable/bootloader/edk2/MdeModulePkg/Library/PeiDxeDebugLibReportStatusCode/DebugLib.c
+  5f324 Format != ((void *) 0)
+  5f33b (CHAR8 *)BaseListMarkerPointer <= FormatString
+  5f36f /home/nubia/SCMWork/nrom/NX679J_Z69_UN_ZML1S_V311/20220308142115/app/bootable/bootloader/edk2/MdePkg/Library/BaseLib/SafeString.c
+  5f3f1 ((UINTN) String & 0x00000001) == 0
+  5f414 ((UINTN) Destination & 0x00000001) == 0
+  5f43c ((UINTN) Source & 0x00000001) == 0
+  5f45f (Destination != ((void *) 0))
+  5f47d (Source != ((void *) 0))
+  5f496 (DestMax <= (_gPcd_FixedAtBuild_PcdMaximumUnicodeStringLength))
+  5f4d6 (DestMax != 0)
+  5f4e5 (DestMax > SourceLen)
+  5f4fb InternalSafeStringNoStrOverlap (Destination, DestMax, (CHAR16 *)Source, SourceLen + 1)
+  5f552 (Length <= (_gPcd_FixedAtBuild_PcdMaximumUnicodeStringLength))
+  5f591 (CopyLen != 0)
+  5f5a0 (CopyLen > SourceLen)
+  5f5b6 (String != ((void *) 0))
+  5f5cf (Data != ((void *) 0))
+  5f5e6 (StrnLenS (String, (_gPcd_FixedAtBuild_PcdMaximumUnicodeStringLength) + 1) <= (_gPcd_FixedAtBuild_PcdMaximumUnicodeStringLength))
+  5f668 (Address != ((void *) 0))
+  5f682 AddressIndex + 1 < (sizeof (Address->Addr) / sizeof ((Address->Addr)[0]))
+  5f6cc (Guid != ((void *) 0))
+  5f6e3 (Buffer != ((void *) 0))
+  5f6fc ((Length & 0x00000001) == 0)
+  5f719 (MaxBufferSize >= Length / 2)
+  5f737 (DestMax <= (_gPcd_FixedAtBuild_PcdMaximumAsciiStringLength))
+  5f775 InternalSafeStringNoAsciiStrOverlap (Destination, DestMax, (CHAR8 *)Source, SourceLen + 1)
+  5f7d0 (Length <= (_gPcd_FixedAtBuild_PcdMaximumAsciiStringLength))
+  5f80d (AsciiStrnLenS (String, (_gPcd_FixedAtBuild_PcdMaximumAsciiStringLength) + 1) <= (_gPcd_FixedAtBuild_PcdMaximumAsciiStringLength))
+  5f890 !InternalSafeStringIsOverlap (Destination, DestMax, (void *)Source, (SourceLen + 1) * sizeof(CHAR16))
+  5f8f6 *Source < 0x100
+  5f906 (DestinationLength != ((void *) 0))
+  5f92a !InternalSafeStringIsOverlap (Destination, DestMax * sizeof(CHAR16), (void *)Source, SourceLen + 1)
+  5f98e /home/nubia/SCMWork/nrom/NX679J_Z69_UN_ZML1S_V311/20220308142115/app/bootable/bootloader/edk2/MdePkg/Library/BaseLib/String.c
+  5fa0c Destination != ((void *) 0)
+  5fa28 (UINTN)(Destination - Source) > StrLen (Source)
+  5fa58 (UINTN)(Source - Destination) > StrLen (Source)
+  5fa88 (UINTN)(Source - Destination) >= Length
+  5fab0 Length <= _gPcd_FixedAtBuild_PcdMaximumUnicodeStringLength
+  5faeb String != ((void *) 0)
+  5fb02 Length < _gPcd_FixedAtBuild_PcdMaximumUnicodeStringLength
+  5fb3c StrSize (FirstString) != 0
+  5fb57 StrSize (SecondString) != 0
+  5fb73 (UINTN) (Destination - (CHAR8 *) Source) >= StrSize (Source)
+  5fbb0 (UINTN) ((CHAR8 *) Source - Destination) > StrLen (Source)
+  5fbeb AsciiStrSize (ReturnValue) != 0
+  5fc0b (UINTN)(Destination - Source) > AsciiStrLen (Source)
+  5fc40 (UINTN)(Source - Destination) > AsciiStrLen (Source)
+  5fc75 Length <= _gPcd_FixedAtBuild_PcdMaximumAsciiStringLength
+  5fcae Length < _gPcd_FixedAtBuild_PcdMaximumAsciiStringLength
+  5fce6 AsciiStrSize (FirstString)
+  5fd01 AsciiStrSize (SecondString)
+  5fd1d AsciiStrSize (Destination) != 0
+  5fd3d AsciiStrSize (String) != 0
+  5fd58 AsciiStrSize (SearchString) != 0
+  5fd79 AsciiStrSize (Source) != 0
+  5fd94 (UINTN) ((CHAR8 *) Destination - Source) > AsciiStrLen (Source)
+  5fdd4 (UINTN) (Source - (CHAR8 *) Destination) >= (AsciiStrSize (Source) * sizeof (CHAR16))
+  5fe2a ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
+  5fe6b SixBitGroupsConsumed == 4
+  5fe85 Value < 100
+  5fe91 Value < 0xa0
+  5fe9e (Value & 0xf) < 0xa
+  5feb2 detected buffer overflow in %a, line %d
+  5fedb /home/nubia/SCMWork/nrom/NX679J_Z69_UN_ZML1S_V311/20220308142115/app/bootable/bootloader/edk2/MdePkg/Library/BaseLib/RShiftU64.c
+  5ff5c Count < 64
+  5ff67 /home/nubia/SCMWork/nrom/NX679J_Z69_UN_ZML1S_V311/20220308142115/app/bootable/bootloader/edk2/MdePkg/Library/BaseLib/LShiftU64.c
+  5ffe8 /home/nubia/SCMWork/nrom/NX679J_Z69_UN_ZML1S_V311/20220308142115/app/bootable/bootloader/edk2/MdePkg/Library/BaseLib/DivU64x32.c
+  60069 Divisor != 0
+  60076 /home/nubia/SCMWork/nrom/NX679J_Z69_UN_ZML1S_V311/20220308142115/app/bootable/bootloader/edk2/MdePkg/Library/UefiBootServicesTableLib/UefiBootServicesTableLib.c
+  60117 gImageHandle != ((void *) 0)
+  60134 gST != ((void *) 0)
+  60148 gBS != ((void *) 0)
+  6015c /home/nubia/SCMWork/nrom/NX679J_Z69_UN_ZML1S_V311/20220308142115/app/bootable/bootloader/edk2/MdePkg/Library/UefiRuntimeServicesTableLib/UefiRuntimeServicesTableLib.c
+  60203 gRT != ((void *) 0)
+  60217 /home/nubia/SCMWork/nrom/NX679J_Z69_UN_ZML1S_V311/20220308142115/app/bootable/bootloader/edk2/MdePkg/Library/UefiLib/UefiLib.c
+  60296 TableGuid != ((void *) 0)
+  602b0 Table != ((void *) 0)
+  602c6 ProtocolGuid != ((void *) 0)
+  602e3 NotifyFunction != ((void *) 0)
+  60302 Registration != ((void *) 0)
+  6031f Name != ((void *) 0)
+  60334 NotifyTpl <= 31
+  60344 Lock != ((void *) 0)
+  60359 Priority <= 31
+  60368 Lock->Lock == EfiLockReleased
+  60386 Lock->Lock != EfiLockUninitialized
+  603a9 Lock->Lock == EfiLockAcquired
+  603c7 Name != ((void *) 0) && Guid != ((void *) 0) && Value != ((void *) 0)
+  6040d *Value != ((void *) 0)
+  60424 SupportedLanguages != ((void *) 0)
+  60447 /home/nubia/SCMWork/nrom/NX679J_Z69_UN_ZML1S_V311/20220308142115/app/bootable/bootloader/edk2/MdePkg/Library/DxeServicesTableLib/DxeServicesTableLib.c
+  604de gDS != ((void *) 0)
+  60500 Invalid parameter Info
+  60518 Recovery partition doesn't exist; continue normal boot
+  60550 Recovery partition has no kernel
+  60572 Booting Into Recovery Mode
+  6058e Booting into Recovery Mode via Boot
+  605b3 Booting Into Mission Mode
+  605ce Err: line:%d %a() status: %r
+  605ec LoadImageAndAuth
+  605fd No bootable slot
+  6060f MultiSlot %a, partition name %s
+  60630 AVB version %d
+  60640 LoadImageAndAuth failed %r
+  6065c Sending Milestone Call
+  60674 Error sending milestone call to TZ
+  60698 FreeVerifiedBootResource
+  606b2 GetCertFingerPrint: Invalid parameters
+  606da GetCertFingerPrint
+  606ed LoadPartitionImageHeader
+  60706 StrnCpyS
+  6070f StrnCatS
+  6071e VB CmdLine allocation failed!
+  6073d Invalid boot image header:%r
+  6075b ERROR: Failed to allocate AvbOpsUserData
+  60785 ERROR: Failed to allocate AvbOps
+  607ac AppendVBCmdLine
+  607bc AsciiStrLen
+  607c8 Unable to locate VB protocol: %r
+  607ea AppendVBCommonCmdLine
+  60800  androidboot.verifiedbootstate=
+  60826 orange
+  6082d yellow
+  60834  androidboot.keymaster=1
+  6084d LoadImageAndAuthVB2
+  60861 ERROR: Can not determine slot suffix
+  60887 LoadImageAndAuthVB2: Error int TZ Rollback Version syscall; ScmCall Status: (0x%x)
+  608dc Slot: %a, allow verification error: %a
+  60904 State: Unlocked, AvbSlotVerify returned %a, continue boot
+  6093f ERROR: Device State %a,AvbSlotVerify returned %a
+  60971 Unlocked
+  6097a Locked
+  60981 Recovery HeaderVersion %d 
+  6099d Invalid vendor_boot partition. Skipping
+  609c6 ERROR: Device State %a, AvbSlotVerify returned %a
+  609f9 Requested Partition: %a
+  60a12 Loaded Partition: %a
+  60a28 NumLoadedPartition(%d) too large max images(%d)
+  60a59 ERROR: AvbSlotVerify slot data error: num of loaded partitions %d, requested %d
+  60aaa Total loaded partition %d
+  60ac5 ERROR: Failed to allocate VB2Data
+  60ae8 Invalid boot image header size: %u
+  60b0c vendor_boot
+  60b18 DateSupport: %d
+  60b29 com.android.build.boot.security_patch
+  60b4f VB2: Authenticate complete! boot state is: %a
+  60b7e No bootable slots found enter fastboot mode
+  60bab Non Multi-slot: Unbootable entering fastboot mode
+  60bde VB2: boot state: %a(%d)
+  60bf7 vbmeta
+  60bfe IsValidPartition
+  60c0f No Ffbm cookie found, ignore: %r
+  60c31 Boot State is : %d
+  60c45 Your device is corrupt. It can't be trusted and will not boot.
+  60c84 Your device will shutdown in 30s
+  60ca6 Your device has loaded a different operating system.
+  60cdb Wait for 5 seconds before proceeding
+  60d01 Device will boot into FFBM mode
+  60d22 Device is unlocked, Skipping boot verification
+  60e30 KeyMasterStartApp: Invalid Handle
+  60e53 Unable to locate QSEECom protocol: %r
+  60e7a keymaster
+  60e84 KeyMasterStartApp: QseecomStartApp failed status: %r
+  60eba keymaster app id %d
+  60ecf KeyMasterStartApp: Get Version err, status: %d, response status: %d, Major: %d
+  60f1f KeyMasterStartApp success AppId: 0x%x, Major: %d
+  60f51 Invalid parameter BootState
+  60f6e Invalid state to boot!
+  60f86 KeyMasterSetRotAndBootState
+  60fa2 KeyMasterSendRotAndBootState: Set ROT err, Status: %r, response status: %d
+  60fee KeyMasterSendRotAndBootState: Set BootState err, Status: %r, response status: %d
+  61040 KeyMasterSetRotAndBootState: SetFuse (TZ_HLOS_IMG_TAMPER_FUSE) fails!
+  61087 KeyMasterSetRotAndBootState: SetFuse (TZ_HLOS_TAMPER_NOTIFY_FUSE) fails!
+  610d1 KeyMasterSetRotAndBootState success
+  610f6 Vbh input params invalid
+  61110 SetVerifiedBootHash
+  61124 Set Vbh Error, Status: %r, response status: %d
+  61154 VBH not supported in keymaster
+  61174 KeyMasterGetDateSupport
+  6118c Keymaster: Get date support error, status: %d, response status: %d
+  611d0 Date in patch level not supported in keymaster
+  61200 avb_sha256_init
+  61210 avb_sha256_update failed, Data is NULL
+  61238 avb_sha256_update failed, Ctx->user_data is NULL
+  6126a avb_sha256_update: HashUpdate failed
+  61290 avb_sha256_final failed, Ctx->user_data is NULL
+  612c1 avb_sha256_final
+  612d2 /home/nubia/SCMWork/nrom/NX679J_Z69_UN_ZML1S_V311/20220308142115/app/bootable/bootloader/edk2/QcomModulePkg/Library/avb/libavb/avb_property_descriptor.c
+  6136e : ERROR: 
+  61378 Invalid tag for property descriptor.
+  6139e Overflow while adding up sizes.
+  613c2 Descriptor payload size overflow.
+  613ec Invalid digit.
+  613ff No terminating NUL byte in key.
+  61426 /home/nubia/SCMWork/nrom/NX679J_Z69_UN_ZML1S_V311/20220308142115/app/bootable/bootloader/edk2/QcomModulePkg/Library/avb/libavb/avb_slot_verify.c
+  614bc : FATAL: 
+  614c6 assert fail: ops->read_is_device_unlocked != NULL
+  614fe assert fail: ops->read_from_partition != NULL
+  61532 assert fail: ops->get_size_of_partition != NULL
+  61568 assert fail: ops->read_rollback_index != NULL
+  6159c assert fail: ops->get_unique_guid_for_partition != NULL
+  615da assert fail: ops->validate_public_key_for_partition != NULL
+  6161c AVB_SLOT_VERIFY_FLAGS_NO_VBMETA_PARTITION was passed but the validate_public_key_for_partition() operation isn't implemented.
+  616a0 assert fail: ops->validate_vbmeta_public_key != NULL
+  616db Requested partitions cannot be empty when using AVB_SLOT_VERIFY_FLAGS_NO_VBMETA_PARTITION
+  6173a assert fail: avb_strcmp(slot_data->vbmeta_images[0].partition_name, "boot") == 0
+  61791 assert fail: slot_data->cmdline == NULL
+  617ba root=PARTUUID=$(ANDROID_SYSTEM_PARTUUID)
+  617e8 assert fail: ret == AVB_SLOT_VERIFY_RESULT_OK
+  6181a ERROR_OOM
+  61824 ERROR_IO
+  6182d ERROR_VERIFICATION
+  61840 ERROR_ROLLBACK_INDEX
+  61855 ERROR_PUBLIC_KEY_REJECTED
+  6186f ERROR_INVALID_METADATA
+  61886 ERROR_UNSUPPORTED_VERSION
+  618a0 ERROR_INVALID_ARGUMENT
+  618bc Unknown AvbSlotVerifyResult value.
+  618e0 (unknown)
+  618ee Partition name is not valid UTF-8.
+  61916 Partition name and suffix does not fit.
+  61943 : Error loading footer.
+  61960 assert fail: footer_num_read == AVB_FOOTER_SIZE
+  61995 : DEBUG: 
+  6199f : No footer detected.
+  619ba : Invalid vbmeta size in footer.
+  619e0 Loading vbmeta struct in footer from partition '
+  61a19 Loading vbmeta struct from partition '
+  61a44 : No such partition. Trying 'boot' instead.
+  61a71 : Error loading vbmeta data.
+  61a93 assert fail: vbmeta_num_read <= vbmeta_size
+  61ac4 assert fail: pk_data != NULL && pk_len > 0
+  61af4 : Error verifying vbmeta image: 
+  61b19 : Error verifying vbmeta image: invalid vbmeta header
+  61b54 : Error verifying vbmeta image: unsupported AVB version
+  61b91 : chained vbmeta image has non-zero flags
+  61bc0 assert fail: !is_main_vbmeta
+  61be2 : Public key used to sign data does not match key in chain partition descriptor.
+  61c38 assert fail: is_main_vbmeta
+  61c59 : Error while checking public key used to sign data.
+  61c93 : Public key used to sign data rejected.
+  61cc1 : Error getting rollback index for location.
+  61cf3 : Error storing rollback index for location nubia.
+  61d2b : Error storing rollback index for location.
+  61d5d assert fail: slot_data->num_vbmeta_images == 0
+  61d91 assert fail: slot_data->num_vbmeta_images > 0
+  61dc4 : Too many vbmeta images.
+  61de3 : VERIFICATION_DISABLED bit is set.
+  61e0c : Descriptor is invalid.
+  61e2a : Encountered chain descriptor not in main image.
+  61e61 : Chain partition descriptor is invalid.
+  61e8f : Chain partition has invalid rollback_index_location field.
+  61ed1 : Kernel cmdline descriptor is invalid.
+  61efe : Kernel cmdline is not valid UTF-8.
+  61f28 : Invalid rollback_index_location.
+  61f54 : Error determining partition size.
+  61f7d : Loading entire partition.
+  61f9e : Error loading data from partition.
+  61fc8 : Read fewer than requested bytes.
+  61ff0 : Too many loaded partitions.
+  62027 sha256
+  6202e sha512
+  62035 : Unsupported hash algorithm.
+  62058 : Digest in descriptor not of expected size.
+  6208a : Hash of data does not match digest in descriptor.
+  620c3 : success: Image verification completed
+  620f5 System partition name and suffix does not fit.
+  6212a No system partition.
+  62145 Error getting unique GUID for system partition.
+  62176 androidboot.vbmeta.device
+  62190 PARTUUID=$(ANDROID_VBMETA_PARTUUID)
+  621b4 androidboot.vbmeta.avb_version
+  621d8 Error getting device state.
+  621f5 androidboot.vbmeta.device_state
+  62215 unlocked
+  6221e androidboot.vbmeta.hash_alg
+  6223a androidboot.vbmeta.size
+  62252 androidboot.vbmeta.digest
+  62271 assert_not_reached()
+  62287 disabled
+  62290 androidboot.vbmeta.invalidate_on_error
+  622bb enforcing
+  622c5 restart_on_corruption
+  622df ignore_zero_blocks
+  622f2 logging
+  622fa ignore_corruption
+  6230c $(ANDROID_VERITY_MODE)
+  62323 androidboot.veritymode
+  6233a 0123456789abcdef
+  6234b $(ANDROID_BOOT_PARTUUID)
+  6236e Error getting unique GUID for partition.
+  62410 avb_abort!
+  6241b /home/nubia/SCMWork/nrom/NX679J_Z69_UN_ZML1S_V311/20220308142115/app/bootable/bootloader/edk2/QcomModulePkg/Library/avb/libavb/avb_util.c
+  624a9 assert fail: value != NULL
+  624c9 Overflow when adding values.
+  624eb Overflow when adding string sizes.
+  62513 Insufficient buffer space.
+  62533 Failed to allocate memory.
+  6254f Overflow while determining total length.
+  62579 Too many strings passed.
+  62597 assert fail: dest == ret + total_length
+  625c0 ReadSecurityState: Locate SCM Status: (0x%x)
+  625ef ReadSecurityState: ScmSipSysCall Status: (0x%x)
+  62621 ReadSecurityState: ScmSysCall failed: Status = (0x%x)
+  62659 Invalid parameter is_secure
+  62676 ReadSecurityState failed!
+  62691 LocateProtocol failed for SetFuse!
+  626b5 ScmSipSysCall failed for SetFuse!
+  626d8 LocateProtocol failed for GetFuse!
+  626fc ScmSipSysCall failed for GetFuse!
+  6271f KeyMasterSetRotAndBootState: ScmGetFeatureVersion fails!
+  62759 TZ didn't support this feature! Version: major = %d, minor = %d, patch = %d
+  627a6 Not updating rollbackindex as current slot is unbootable
+  627e0 UpdateRollbackSyscall: Locate SCM Status: (0x%x)
+  62813 UpdateRollbackSyscall: ScmGetFeatureVersion fails!
+  62846 UpdateRollbackSyscall: ScmCall Status: (0x%x)
+  62876 TZ_UPDATE_ROLLBACK_VERSION_ID failed, Status = (0x%x)
+  628ae UpdateRollbackSyscall: Older TZ, skipping update
+  628df Invalid parameter Version
+  628fa LocateProtocol failed for ScmGetFeatureVersion!
+  6292b ScmSipSysCall failed for ScmGetFeatureVersion!
+  6295b TZ_INFO_GET_FEATURE_VERSION_ID failed, Status = (0x%x)
+  62999 /home/nubia/SCMWork/nrom/NX679J_Z69_UN_ZML1S_V311/20220308142115/app/bootable/bootloader/edk2/QcomModulePkg/Library/avb/libavb/avb_vbmeta_image.c
+  62a2b Magic is incorrect.
+  62a43 Length is smaller than header.
+  62a63 Mismatch between image version and libavb version.
+  62a9a Release string does not end with a NUL byte.
+  62acb Block size is not a multiple of 64.
+  62af0 Overflow while computing size of boot image.
+  62b1e Block sizes add up to more than given length.
+  62b51 Boot image location and length mismatch.
+  62b7f Hash is not entirely in its block.
+  62ba7 Signature is not entirely in its block.
+  62bd4 Public key is not entirely in its block.
+  62c02 Public key metadata is not entirely in its block.
+  62c39 Invalid or unknown algorithm.
+  62c5c Embedded hash has wrong size.
+  62c7f Unknown algorithm.
+  62c97 Hash does not match!
+  62cad OK_NOT_SIGNED
+  62cbb INVALID_VBMETA_HEADER
+  62cd1 HASH_MISMATCH
+  62cdf SIGNATURE_MISMATCH
+  62cf6 Unknown AvbVBMetaVerifyResult value.
+  62d50 bad input paramaters
+  62d66 AvbGetSizeOfPartition: GetHandleInfo failed
+  62d92 Negative Offset outside range.
+  62db2 negative Offset (%d) converted to (%u) 
+  62ddb read from %a, 0x%x bytes at Offset 0x%x, partition size 0x%x
+  62e19 Allocate for partial read failed!
+  62e3b StartBlock 0x%llx, ReadOffset 0x%llx, read_size 0x%x
+  62e71 StartBlock 0x%llx, ReadOffset 0x%llx,read_size 0x%x outside range.
+  62eb5 ReadBlocks failed %d
+  62ecb LastBlock 0x%llx, ReadOffset 0x%llx, read_size 0x%x
+  62f00 LastBlock 0x%llx, ReadOffset 0x%llx, read_size 0x%x outside range.
+  62f44 FullBlock 0x%llx, ReadOffset 0x%x, read_size 0x%x outside range.
+  62f86 Load Image %a total time: %lu ms 
+  62fa9 ValidateVbmetaPublicKey PublicKeyLength %d, PublicKeyMetadataLength %d
+  62ff1 GetUserKey failed!, %r
+  63009 ValidateVbmetaPublicKey: public key length too large %d
+  63042 ValidateVbmetaPublicKey OutIsTrusted %d, UserKey %d
+  63077 ValidatePartitionPublicKey PublicKeyLength %d, PublicKeyMetadataLength %d
+  630c2 ValidatePartitionPublicKey: public key length too large %d
+  630fe ValidatePartitionPublicKey OutIsTrusted %d, UserKey %d
+  63136 ReadRollbackIndex failed! %r
+  63154 ReadRollbackIndex Location %d, RollbackIndex %d
+  63185 WriteRollbackIndex Location %d, RollbackIndex %d
+  631b7 Updating rollback index %d, for location %d
+  631e4 No PartitionRecord!
+  631f9 AvbGetUniqueGuidForPartition: Partition %a, name too large
+  63235 %s uuid: %a
+  63242 AvbGetSizeOfPartition invalid parameter pointers
+  63274 AvbGetSizeOfImage: GetHandleInfo failed
+  6329c ERROR: Failed to load image header: %r
+  632c4 ANDROID!
+  632cd VNDRBOOT
+  632d6 Integer Overflow: OutSizeNumBytes=%u, tmp_size=%u
+  63309 Error allocating memory for AvbOps.
+  6332e GetHandleInfo: Partition %a, name too large
+  6335b GetHandleInfo: GetBlkIOHandles failed!
+  63383 GetHandleInfo: No media!
+  6339d GetHandleInfo: More than one result!
+  63710 `#e~&hv
+  637cb /home/nubia/SCMWork/nrom/NX679J_Z69_UN_ZML1S_V311/20220308142115/app/bootable/bootloader/edk2/QcomModulePkg/Library/avb/libavb/avb_chain_partition_descriptor.c
+  6386b Invalid tag for chain partition descriptor.
+  63898 Invalid rollback index location value.
+  6459f @/home/nubia/SCMWork/nrom/NX679J_Z69_UN_ZML1S_V311/20220308142115/app/bootable/bootloader/edk2/QcomModulePkg/Library/avb/libavb/avb_descriptor.c
+  64630 Descriptor size is not divisible by 8.
+  64658 image_data is NULL
+  6466d foreach_func is NULL
+  64684 assert fail: (((uintptr_t)image_data) & (AVB_ALIGNMENT_SIZE - 1)) == 0
+  646cc Descriptors not inside passed-in data.
+  646f7 assert fail: (((uintptr_t)dh) & (AVB_ALIGNMENT_SIZE - 1)) == 0
+  64737 Invalid descriptor length.
+  64753 Invalid data in descriptors array.
+  64777 assert fail: data.descriptor_number == num_descriptors
+  647b4 /home/nubia/SCMWork/nrom/NX679J_Z69_UN_ZML1S_V311/20220308142115/app/bootable/bootloader/edk2/QcomModulePkg/Library/avb/libavb/avb_footer.c
+  64840 Footer magic is incorrect.
+  6485f No support for footer version.
+  6487f /home/nubia/SCMWork/nrom/NX679J_Z69_UN_ZML1S_V311/20220308142115/app/bootable/bootloader/edk2/QcomModulePkg/Library/avb/libavb/avb_hash_descriptor.c
+  64914 Invalid tag for hash descriptor.
+  64936 /home/nubia/SCMWork/nrom/NX679J_Z69_UN_ZML1S_V311/20220308142115/app/bootable/bootloader/edk2/QcomModulePkg/Library/avb/libavb/avb_kernel_cmdline_descriptor.c
+  649d5 Invalid tag for kernel cmdline descriptor.
+  64a01 /home/nubia/SCMWork/nrom/NX679J_Z69_UN_ZML1S_V311/20220308142115/app/bootable/bootloader/edk2/QcomModulePkg/Library/avb/libavb/avb_rsa.c
+  64a8a Invalid key.
+  64a98 Unexpected key length.
+  64ab0 Key does not match expected length.
+  64ad5 Invalid input.
+  64ae9 Error parsing key.
+  64b01 Signature length does not match key length.
+  64b2e Padding length does not match hash and signature lengths.
+  64b6d Error allocating memory.
+  64b8b Padding check failed.
+  64ba6 Hash check failed.
+  64c0d D7q/;M
+  64e7e DlError locating PRNG protocol, using default canary :%r
+  64eb8 Error getting PRNG random number, using default canary: %r
+  64ef4 Error: Stack Smashing Detected. Halting...
+  64f20 /home/nubia/SCMWork/nrom/NX679J_Z69_UN_ZML1S_V311/20220308142115/app/bootable/bootloader/edk2/ArmPkg/Library/ArmArchTimerLib/ArmArchTimerLib.c
+  64faf (_gPcd_FixedAtBuild_PcdArmArchTimerFreqInHz/1000000U)
+  64fe5 ArmGenericTimerGetTimerFreq () != 0
+  65009 ARM Architectural Timer is not available in the CPU, hence this library cannot be used.
+  65062 /home/nubia/SCMWork/nrom/NX679J_Z69_UN_ZML1S_V311/20220308142115/app/bootable/bootloader/edk2/MdePkg/Library/DxeHobLib/HobLib.c
+  650e2 mHobList != ((void *) 0)
+  650fb HobStart != ((void *) 0)
+  65114 ((BOOLEAN)(0==1))
+  65126 Failed to allocate pages for memory map
+  6514f /home/nubia/SCMWork/nrom/NX679J_Z69_UN_ZML1S_V311/20220308142115/app/bootable/bootloader/edk2/QcomModulePkg/Library/BootLib/ShutdownServices.c
+  65210 Error returned from GetRamPartitions %r
+  65239 RamPartitions is NULL
+  65250 Locate EFI_RAMPARTITION_Protocol failed, Status = %r 
+  65287 WARNING: Unsupported EFI_RAMPARTITION_PROTOCOL
+  652b7 Failed to get MinPasrSize, Status = %r
+  652df Error returned from ReadRamPartitions %r
+  65309 Memory Base Address: 0x%x
+  65332 Error getting pmic model info: %r
+  65355 /home/nubia/SCMWork/nrom/NX679J_Z69_UN_ZML1S_V311/20220308142115/app/bootable/bootloader/edk2/QcomModulePkg/Library/BootLib/Board.c
+  653d9 PMIC Model 0x%x: 0x%x
+  653f0 Error finding board pmic info: %r
+  65413 PMIC Target 0x%x: 0x%x
+  65437 Raw Chip Id   : 0x%x
+  6544d Chip Version  : 0x%x
+  65463 Foundry Id    : 0x%x
+  65479 Chip BaseBand    : %a
+  65490 Fusion Value    : %d
+  654a6 HLOS SubType    : 0x%x
+  654be Error locating MemCardInfoProtocol:%x
+  654e5 This API not supported in Revision =%u
+  6550d Get BootLun =%u
+  6551e SetBootLun =%u
+  6552e Error calculating Crc of the unicode serial number: %x
+  65566 Error: HW Platform string is NULL
+  65589 Locate Protocol failed for gEfiChipInfoProtocolGuid
+  655be Failed to Get the ChipIdString
+  655de Error getting DDR size %r
+  655f9 Total DDR Size: 0x%016lx 
+  65614 Locate EFI_RAMPARTITION_Protocol failed, Status =  (0x%x)
+  65650 Failed to get RAM partitions
+  6566d Error Occured while populating RamPartitions
+  6569b Unknown
+  656a3 Device type unknown
+  656b8 Get BlkIohandles failed
+  656d1 Error locating pmic protocol: %r
+  656f3 Error getting pmic info: %r
+  65710 Error getting pmic info ext: %r
+  65731 Error: Failed to locate PlatformInfo protocol.
+  65761 Error: GetPlatformInfo failed.
+  65781 Error: Unknown platform type (%d).
+  657a5 Platform Info : 0x%x
+  657bb Invalid Type to GetLoadAddr():%d
+  657dd BootLinux: invalid parameter Info
+  65800 Failed to update HypData!! Status:%r
+  65826 BootLinux: Get%aImage failed!
+  65845 Recovery
+  65853 Base memory not found!!! Status:%r
+  65877 Integer Overflow: PageSize=%u, KernelSizeActual=%u
+  658ab Kernel Load Address: 0x%x
+  658c6 Kernel Size Actual: 0x%x
+  658e0 Second Size Actual: 0x%x
+  658fa Ramdisk Load Address: 0x%x
+  65916 Ramdisk Size Actual: 0x%x
+  65931 Ramdisk Offset: 0x%x
+  65947 Device Tree Load Address: 0x%x
+  6596d Error updating cmdline. Device Error %r
+  65996 Error getting kernel stack protocol. Error %r
+  659c5 Failed to get size of kernel region
+  659eb Shutting Down UEFI Boot Services: %lu ms
+  65a15 ERROR: Can not shutdown UEFI boot services. Status=0x%X
+  65a4e Invalid vendor_boot image header
+  65a70 Invalid vendor image pagesize. MAX: %u. PageSize: %u and VendorImageHdrSize: %u
+  65ac1 Integer Overflow: Vendor Ramdisk Size = %u
+  65aed Integer Overflow checking Recovery Ramdisk
+  65b19 Invalid vendor-img pagesize. MAX: %u. PageSize: %u and VendorImageHdrSize: %u
+  65b68 Invalid image Sizes
+  65b7d KernelSize: %u, PageSize=%u
+  65b9a Invalid image pagesize
+  65bb2 MAX: %u. PageSize: %u and ImageHdrSize: %u
+  65bde Integer Overflow: Kernel Size = %u
+  65c02 Integer Overflow: Ramdisk Size = %u
+  65c27 Integer Overflow: dt Size = %u
+  65c47 Integer Overflow: Actual Kernel size = %u
+  65c72 Integer Overflow: ImgSizeActual=%u, RamdiskActual=%u
+  65ca8 Integer Overflow: ImgSizeActual=%u, DtSizeActual=%u
+  65cdd Invalid boot image header: %d
+  65cfc DTB Image not present: DTB Size = %u
+  65d22 Integer Overflow: ImgSizeActual=%u, DtbActual=%u
+  65d54 Recovery Dtbo Size too big %x, Allowed size %x
+  65d84 Integer Overflow: RecoveryDtboOffset=%u RecoveryDtboActual=%u
+  65dc3 Integer Overflow: ImgSizeActual=%u, RecoveryDtboActual=%u
+  65dfe Boot Image Header Info...
+  65e19 Image Header version     : 0x%x
+  65e3a Kernel Size 1            : 0x%x
+  65e5b Kernel Size 2            : 0x%x
+  65e7c Ramdisk Size             : 0x%x
+  65e9d DTB Size                 : 0x%x
+  65ebe Vendor Ramdisk Size      : 0x%x
+  65edf Recovery Ramdisk Size    : 0x%x
+  65f00 Failed to allocate for Boot image Hdr
+  65f27 Integer Overflow: ImgSize=%u
+  65f45 Integer Overflow: in ALIGNMENT_MASK_4KB addition
+  65f77 No resources available for ImageBuffer
+  65f9f Failed Kernel Size   : 0x%x
+  65fbc GetImage: invalid parameters
+  65fda UpdateBootParamsSizeAndCmdLine: Failed to find vendor_boot image
+  6601c UpdateBootParamsSizeAndCmdLine: Failed to find recovery image
+  6605b UpdateBootParamsSizeAndCmdLine: vendor_boot image header not found
+  6609f UpdateBootParamsSizeAndCmdLine: Failed to cat cmdline
+  660d6 CatCmdLine: Failed to allocate memory for cmdline
+  66109 UNCOMPRESSED_IMG
+  6611a QueryBootParams Failed: 
+  66133 calculating dynamic offsets
+  66150 Not Enough space left to load kernel image
+  6617c Integer Overflow: the length of decompressed data = %u
+  661b4 Decompressing kernel image failed!!!
+  661da Decompress kernel size is smaller than image header size
+  66214 Decompressing kernel image total time: %lu ms
+  66243 Patched kernel detected
+  6625c DTB offset goes beyond kernel size.
+  66281 DTB header can get corrupted due to runtime kernel size
+  662ba Dtb offset goes beyond the image size
+  662e1 Not the single appended DTB
+  662fe Single appended DTB found
+  66319 Integer Overflow: in single dtb header addition
+  6634a Error: Device Tree blob not found
+  6636d Error: Appended Soc Device Tree blob not found
+  6639d Error: Board Dtbo blob not found
+  663bf Unable to Allocate buffer for Overlay DT
+  663e9 Error: HypOverlay DT is NULL
+  66407 HypInfo: Not overlaying hyp dtboDtbo :%d is null or Bad DT header
+  6644a Failed to allocate memory for HypDtbo %d
+  66474 Unable to Allocate buffer for HypOverlay DT num: %d
+  664a9 Unable to allocate buffer for Override DT
+  664d4 Error: Dtb overlay failed
+  664ef ApplyOverlay: Invalid input parameters
+  66517 ApplyOverlay: Overlay DT is NULL
+  66539 ApplyOverlay: Unable to Allocate Pre Buffer for Overlay
+  66572 ApplyOverlay: Install blob failed
+  66595 ApplyOverlay: ufdt apply overlay failed
+  665be ApplyOverlay: After overlay DTB size exceeded than supported
+  665fc Apply Overlay total time: %lu ms 
+  6661f Error: Ramdisk size is over the limit
+  66646 Integer Overflow: ImageBuffer=%u, RamdiskOffset=%u
+  6667a Integer Overflow: while Kernel image copy
+  666a5 Kernel size is over the limit
+  666c4 Failed to load Bootconfig 
+  666e0 Device Tree update failed Status:%r
+  66705 ERROR: Failed to switch to 32 bit mode.Status= %r
+  6676c the input data is not a gzip package.
+  66793 the available length: %u of out_buf is not enough, need %u.
+  667d0 allocating z_stream failed.
+  667ed header error
+  66801 inflateInit2 failed!
+  66817 Error in decompression: Output buffer full
+  66843 Error in decompression: Something went wrong while decompression
+  668b8 DTB offset is NULL
+  668cc Error while DTB parse continue with next DTB
+  668fa Error while DTB parsing RTIC prop continue with next DTB
+  66934 Best match DTB tags %u/%08x/0x%08x/%x/%x/%x/%x/%x/(offset)0x%08x/(size)0x%08x
+  66983 Using pmic info 0x%0x/0x%x/0x%x/0x%0x for device 0x%0x/0x%x/0x%x/0x%0x
+  669cb Current node is the end
+  669e4 Unable to find Base memory for DDR %r
+  66a0b Tags address is not valid
+  66a26 Tag size is over the limit
+  66a42 DTB offset is incorrect, kernel image does not have appended DTB
+  66a84 Exact DTB match found. DTBO search is not required
+  66ab8 Bestmatch = %x
+  66ac8 No match found for Soc Dtb type
+  66ae9 GetOvrdDtb
+  66af4 Override DTB: GetBlkIOHandles failed loading user_dtbo!
+  66b2d Override DTB: Buffer allocation failure
+  66b56 Override DTB: DtboImgBuffer loading falied
+  66b82 Override DTB: Integer overflow detected Dtbo address
+  66bb8 Override DTB: No proper DtTable
+  66bd9 Override DTB: Exceeding maximum supported dtb count in Image
+  66c17 Override DTB: No Valid DTB in image
+  66c3c Dtbo Img buffer is NULL
+  66c55 Integer overflow deteced with Dtbo address
+  66c81 Integer overflow detected with Dtbo address
+  66cae No Valid Dtb
+  66cbc Dtbo count = %u LocalBoardDtMatch = %x
+  66ce4 Unable to find the Board Dtb
+  66d02 DT Total number of entries: %d, DTB version: %d
+  66d33 ERROR: Unsupported version (%d) in dt node check 
+  66d66 Delete don't fit DTB entry %u/%08x/0x%08x/%x/%x/%x/%x/%x/%x/%x
+  66da6 DTs list: NULL
+  66dbc Failed to allocate memory for model
+  66de1 model does not exist in device tree
+  66e06 qcom,pmic-id
+  66e13 qcom,board-id
+  66e21 qcom,pmic-id (%d) or qcom,board-id(%d) in device tree is not a multiple of (%d %d)
+  66e75 qcom,board-id (%d) in device tree is not a multiple of (%d)
+  66eb2 qcom,msm-id
+  66ebe qcom,msm-id entry not found
+  66edb qcom, msm-id in device tree is (%d) not a multiple of (%d)
+  66f17 Failed to allocate memory for board_data
+  66f41 Failed to allocate memory for platform_data
+  66f6e Failed to allocate memory for pmic_data
+  66f97 NumEntries exceeds MAX_UINT64
+  66fb6 Failed to allocate memory for dt_entry_array
+  66fe4 Device tree exact match the board: <0x%x 0x%x 0x%x 0x%x> == <0x%x 0x%x 0x%x 0x%x>
+  67037 Device tree's msm_id doesn't match the board: <0x%x 0x%x 0x%x 0x%x> != <0x%x 0x%x 0x%x 0x%x>
+  67095 dt_node_tmp is NULL
+  670aa Add DTB entry 0x%x/%08x/0x%08x/0x%x/0x%x/0x%x/0x%x/0x%x/0x%x/0x%x
+  670ed Failed to allocate memory for dt_node_member
+  6711b Failed to allocate memory for dt_node_member->dt_entry_m
+  67155 Unable to locate root node
+  67171 Platform dt prop search failed.
+  67192 qcom, msm-id does not exist (or) is (%d) not a multiple of (%d)
+  671d3 Board dt prop search failed.
+  671f1 qcom,pmic-id-size
+  67203 LenPmicId(%d) is not multiple of PmicEntSz(%d)
+  67233 CurDtbInfo->DtMatchVal : 0x%llx  BestPmicInfo.DtMatchVal :0x%llx
+  67275 qcom,pmic-id does not exit
+  67291 Input parameters null
+  672a8 Boardsocid = %x, Dtsocid = %x
+  672c7 qcom,msm-id does not match
+  672e3 BoardSocRev = %x, DtSocRev =%x
+  67303 soc version does not match
+  6731f BoardFoundry = %x, DtFoundry = %x
+  67342 soc foundry does not match
+  6735e BoardVariant = %x, DtVariant = %x
+  67381 qcom,board-id does not match
+  6739f qcom,board-id major version does not match
+  673cb qcom,board-id minor version does not match
+  673f7 BoardSubtype = %x, DtSubType = %x
+  6741a subtype-id doesnot match
+  67434 ddr size does not match
+  6744d qcom,board-id does not exist (or) (%d) is not a multiple of (%d)
+  6748f pmic_data[%u].:%x
+  674a2 Pmic model does not match
+  674bd Pmic revision does not match
+  674db BestPmicInfo.DtMatchVal : 0x%llx CurPmicInfo[%u]->DtMatchVal : 0x%llx
+  67522 ERROR: Couldn't find the suitable DTB!
+  67562 Failed to add the memory information addr: %d
+  67591 Failed to add the memory information size: %d
+  675c0 DDR regions Buffer: Out of resources
+  675e6 Failed to update DDR regions info
+  67609 ddr_device_rank_ch 
+  6761d ddr_device_hbb_ch _rank 
+  67636 ERROR: Invalid device tree header ...
+  6765d ERROR: Integer Overflow: fdt size = %u
+  67685 ERROR: Failed to move/resize dtb buffer ...
+  676b2 /memory
+  676ba ERROR: Could not find memory node ...
+  676e1 ERROR: Cannot update memory node
+  67703 DDR Info Buffer: Out of resources
+  67726 DDR deviceType:%d
+  67739 ddr_device_type
+  67749 ERROR: Cannot update memory node [ddr_device_type]:0x%x
+  67782 ddr_device_type is added to memory node
+  677ab DDR rank is not enabled
+  677c4 /chosen
+  677cc ERROR: Could not find chosen node ...
+  677f3 bootargs
+  677fc ERROR: Cannot update chosen node [bootargs] - 0x%x
+  67830 rng-seed
+  67839 ERROR: Cannot update chosen node [rng-seed] - 0x%x
+  6786d ERROR: Cannot generate Random Seed - %r
+  67896 kaslr-seed
+  678a1 ERROR: Cannot update chosen node [kaslr-seed] - 0x%x
+  678d7 kaslr-Seed is added to chosen node
+  678fb ERROR: Cannot generate Kaslr Seed - %r
+  67923 linux,initrd-start
+  67936 ERROR: Cannot update chosen node [linux,initrd-start] - 0x%x
+  67974 linux,initrd-end
+  67985 ERROR: Cannot update chosen node [linux,initrd-end] - 0x%x
+  679c1 Start DT fstab node update: %lu ms
+  679e5 End DT fstab node update: %lu ms
+  67a07 Failed to update device tree for partial goods, Status=%r
+  67a42 Start DT ddr regions update: %lu ms
+  67a67 Failed to update DDR regions info, Status=%r
+  67a95 End DT ddr regions update: %lu ms
+  67ab8 Update Device Tree total time: %lu ms 
+  67ae0 Failed to Get parent node: fstab	error: %d
+  67b0c Node: %a found.
+  67b1d Boot device buffer: Out of resources
+  67b43 Failed to get Boot Device: %r
+  67b62 Property:%a is not found for sub-node:%a
+  67b8c Property:%a found for sub-node:%a	Property:%a
+  67bbb Disabling node status :%a
+  67bd6 ERROR: Failed to disable Node: %a
+  67bf9 Update property:%a value is not proper to update for sub-node:%a
+  67c3b String length mismatch b/w DT Bootdevice string (%d) and expected Bootdevice strings (%d)
+  67c96 ERROR: Unable to get DDR Info protocol:%r
+  67cc1 ERROR: Get DDR Regions info failed=%r
+  67ce8 DDR Header Revision =0x%x
+  67d03 DDr regions not supported in Revision=0x%x
+  67d2f Invalid memory configuration, check memory partition table: %r
+  67d6f ERROR: Not a valid memory node found!
+  67d96 RAM Partitions
+  67da7 Add Base: 0x%016lx Available Length: 0x%016lx 
+  67dd7 Add Base: 0x%016lx Length: 0x%016lx Fail
+  67e01 Error finding root offset
+  67e1c #address-cells
+  67e2b Error finding #address-cells property
+  67e52 #size-cells
+  67e5e Error finding #size-cells property
+  67e82 Error unsupported cell size value: #address-cell %d#size-cell
+  67ec1 Mismatch memory address cell and size cell size
+  67ef2 Unable to get Granule Size, Status = %r
+  67f1c /mem-offline
+  67f29 INFO: Could not find mem-offline node.
+  67f51 granule
+  67f59 INFO: Granule size update failed.
+  67f7c INFO: Unable to get DDR Info protocol:%r
+  67fa6 INFO: GetDDR details failed
+  67fc3 ddr_device_rank, HBB not supported in Revision=0x%x
+  67ff8 Unable to get splash buffer info, %r
+  6801e Version=%d
+  68029 Addr=0x%08x
+  68035 Size=0x%08x
+  68042 /reserved-memory/splash_region
+  68061 Splash region not found in device tree, powering down the display and controller
+  680b3 FB mem node name: %a
+  680c9 ERROR: Could not find the splash reg property
+  680f8 ERROR: splash mem reservation node size. Expected: %d, Actual: %d
+  6813b Splash memory region before updating:
+  68162 ERROR: integer Overflow while updating FBAddress
+  68193 ERROR: integer Overflow while updating FBSize
+  681c1 ERROR: Could not update splash mem info
+  681ea Splash memory region after updating:
+  68210 ERROR: Unable to get display power protocol,Status=%d
+  68247 ERROR: Fail to turn display off,Status=%d
+  68272 reg = <0x%08x 0x%08x 0x%08x 0x%08x>
+  68297 /reserved-memory/demura_region_0
+  682b8 /reserved-memory/demura_region_1
+  682d9 /soc/qcom,dsi-display-primary
+  682f7 /soc/qcom,dsi-display-secondary
+  68317 Could not find the demura reg property
+  6833f Invalid demura node size
+  68359 Could not update demura info
+  68377 qcom,demura-panel-id
+  6838c Could not find the panel id property
+  683b2 Invalid panel ID size
+  683c9 Could not update demura panel id
+  683eb Error locating PRNG protocol. Fail to generate random seed:%r
+  6842a Error getting PRNG random number. Fail to generate Kaslr seed:%r
+  6846c Failed to add ddr region node
+  6848b Failed to add ddr regions property
+  684af /ddr-regions
+  684bc Error adding ddr regions: %d
+  684da Attempted to create a ddr-regions node which already exists
+  68517 Incorrect DDr regions number: %d, please check the DDR info
+  68554 ERROR: Wrong number of DDR Region member
+  6857e ERROR: Failed to add DDR Regions : %a
+  685a5 /firmware/android/fstab
+  6861c Unable to get Filesystem Handle buffer %r
+  68647 Unable to get Filesystem Handle %r
+  6866b Loading Image Start : %u ms
+  68688 ExecImgFromVolume(): multiple partitions found.
+  686ba %s: GetBlkIOHandles failed: %r
+  686da LoadImageFromPartition
+  686f1 Loading Image Done : %lu ms
+  6870e Total Image Read size : %d Bytes
+  68730 Error getting counter property
+  68750 VBRwDevice failed with: %r
+  6876c Unable to locate NandPartiGuid protocol: %r
+  68799 NandPartiGuid GenGuid failed with: %r
+  687c0 NUll BlockIo or Image
+  687d7 WriteBlockToPartition: Input Handle is Null.
+  68805 Unable to locate Erase block protocol handle:%r
+  68836 Write the divisible Image failed :%r
+  6885c Failed to allocate zero pool for ImageBuffer
+  6888a Reading block failed :%r
+  688a4 Writing single block failed :%r
+  688c5 %s: multiple partitions found.
+  688e6 WriteToPartition
+  688f7 Write the Msg failed :%r
+  68911 Error Reading the secure state: %r
+  68935 Error Reseting device state: %r
+  68956 Unable to locate Erase block protocol handle: %r
+  68988 Unable to Erase Block: %r
+  689a3 Waiting for the erase event to signal the completion
+  689d9 Failed to get Boot Device Base address, %r
+  68a05 %x.ufshc
+  68a0e %x.sdhci
+  68a17 Unknown Boot Device type detected 
+  68a3b Failed to locate MDTP protocol, Status=%r
+  68a66 Failed to get mdtp state, Status=%r
+  68abc Charger Protocol is not available.
+  68ae0 Error finding charger protocol: %r
+  68b04 Error getting off mode charging info: %r
+  68b2e Error locating pmic pon protocol: %r
+  68b54 Error getting pon reason: %r
+  68b72 Error getting warm reset status: %r
+  68b97 Error getting charger info: %r
+  68bb7  PON Reason is %d cold_boot:%d charger path: %d
+  68be8 Error locating charger detect protocol
+  68c10 Error getting the info of charger: %r
+  68c37 Error battery voltage: %d Requireed voltage: %d, can flash: %d
+  68c77 Error battery check status: %r voltage: %d
+  68ca3 Failed to allocated memory for System path query
+  68cd5 System partition does not exist
+  68cf6  root=/dev/mmcblk0p%d
+  68d0c  rootfstype=squashfs root=/dev/mtdblock%d ubi.mtd=%d
+  68d41  rootfstype=ext4 ubi.mtd=%d ubi.block=0,0 root=/dev/dm-0
+  68d7a  rootfstype=ubifs rootflags=bulk_read root=ubi0:rootfs ubi.mtd=%d
+  68dbc  root=/dev/sd%c%d
+  68dce Unknown Device type
+  68de3 System Path - %a 
+  68df6 Failed to add %s to bootconfig! Out of memory
+  68e25 androidboot.
+  68e32 Error in Node entry 
+  68e48 Unable to read bsae struct 
+  68e65 Error Finding board serial num: %x
+  68e89 UpdateCmdLine VBCmdLine present len %d
+  68eb1 Failed to get LEVerityCmdLine: %r
+  68ed4 Recovery =%d
+  68ee2 Device will boot into off mode charging mode
+  68f10 Device reboot because of panic
+  68f30 Invalid BaseBand String
+  68f49  androidboot.baseband=
+  68f65 Cmdline: %a
+  68f72 BootConfig: %a
+  68f82 Error getting battery presence: %r
+  68fa6 Error getting battery voltage: %r
+  68fc9 Error getting charger presence: %r
+  68fed  androidboot.bootdevice=
+  69006  androidboot.boot_devices=soc/
+  69025  androidboot.serialno=
+  6903c  androidboot.mode=
+  6904f  androidboot.selinux=permissive
+  6906f  quite
+  69076  androidboot.mode=charger
+  69096  androidboot.alarmboot=true
+  690b8  androidboot.slot_suffix=
+  690d2  rootwait ro init=
+  690eb  skip_initramfs
+  690fb Unable to get Panel Config, %r
+  6911b  androidboot.dtbo_idx=
+  69132  androidboot.dtb_idx=
+  69148  androidboot.force_normal_boot=1
+  69169  androidboot.fstab_suffix=
+  69189 default
+  69191 offline-sizes
+  691a4 Offlining Memory Not Supported
+  691ca  memhp_default_state=online
+  691e6  movable_node
+  691f4 CMDLINE: Failed to allocate destination buffer
+  6927c Input Open protocol failed Status:%r 
+  692a3 Key Stroke Read
+  692b4 ScanCode = (0x%x), UnicodeChar =(0x%x)
+  692dc ShiftState=(0x%x), ToggleState==(0x%x)
+  69304 Error resetting the input key status: %x
+  6932e Error reading virtualab msg from misc partition: %r
+  69363 Error read virtualab msg version:%u magic:%u not valid
+  6939b read virtualab MergeStatus:%x
+  693ba Error Reading from misc partition: %r
+  693e1 Error in loading Data from misc partition
+  6940c Recovery command: %d %a
+  69430 ffbm-02
+  69438 Error Reading FFBM info from misc: %r
+  6945f parameter
+  69469 get %a partition info error(%d)
+  6948a alloc msg error
+  6949b read %a partition error(%d)
+  694b8 PARAMETER
+  694c2 FASTBOOT
+  694cb write parameter partition error(%d)
+  694f0 WriteVirtualABMessage
+  69506 Write the VirtualAbMsg failed :%r
+  69529 ReadFromPartitionOffset
+  69541 Error allocating memory for reading from Partition
+  69575 Error offset:%u passed is not multiple of blocksz:%u
+  695ab PartitionName= %s
+  695be Partition not found : %s
+  695d8 boot patition is root!!!!
+  695f3 nubia root flag init finish!!
+  69612 boot check: get boot patition info error(%d)
+  69640 BOOT_INFO
+  6964a first boot,update boot info
+  69667 boot image kernel size changed
+  69687 boot_a
+  6968e alloc system_head memory error
+  696ae read system partition error(%d)
+  696cf nubia_boot: ERROR: Invalid boot image header
+  696fd kernel: size=%x, addr=%x
+  69717 kernel_ramdisk: size=%x, addr=%x
+  69739 kernel: os_version=%x
+  69798 Failed to get Shared IMEM base, %r
+  697bc Failed to get MPM Sleep counter base, %r
+  697e6 Bad BootStat id: %u, Max: %u
+  69804 BootStats: ID-%d: Kernel Load Start:%u
+  6982c BootStats: ID-%d: Kernel Load Done:%u
+  69853 Failed to get width or height
+  69872 Height * Width overflow
+  6988b BufferSize * sizeof (EFI_GRAPHICS_OUTPUT_BLT_PIXEL) overflow
+  698c9 Error: Check the CHAR_NUM_PERROW: Y-axis(%d) is larger than Y-max(%d)
+  69910 Failed to allocate zero pool for BltBuffer.
+  6993d Failed to allocate zero pool for FontDisplayInfo.
+  69970 Failed to render a string to the display: %r
+  6999e Failed to allocate zero pool for message info.
+  699ce Backup the boot logo blt buffer failed: %r
+  699fa Failed to get the handle for the active console input device.
+  69a39 Failed to get the graphics output protocol.
+  69a66 Failed to get the width of the screen.
+  69a8e Failed to get the height of the screen.
+  69ab7 Failed to allocate zero pool for StrSourceTemp.
+  69ae8 AsciiStrSize
+  69ba8 Exit key detection timer
+  69bc2 Create keys detection event: %r
+  69be3 Unsupported menu type
+  69bfa ffbm-00
+  69c02 Failed to update fastboot option item
+  69c29 Failed to update option item's background
+  69c54 ERROR: Failed to set keys detection Timer: %r
+  69c83 Failed to allocate zero pool for device info.
+  69cb2 Unable to Read Device Info: %r
+  69cd2 Failed to update the unlock status: %r
+  69cfa Unable to show %a menu on screen: %r
+  69d20 Unlock
+  69d2c Creating unlock keys detect event
+  69d4f Display menu is not enabled!
+  69d88 Failed to allocate zero pool.
+  69da7 __________
+  69db2 Unable to show fastboot menu on screen: %r
+  69dde Creating fastboot menu keys detect event
+  69e08 DEVICE STATE - %a
+  69e1a DEVICE IS ROOT - %d
+  69e2e FASTBOOT UNLOCK COUNT - %d
+  69e49 Unable update nubia state!!(%r)
+  69e73 PRESS POWER KEY TO CONTINUE
+  69e8f ID: %a
+  69e97 unsupported
+  69ea3 Unable to show verified menu on screen: %r
+  69f02 Selected Lun : %d, handle: %d does not have partition record, ignore
+  69f48 Invalid parameter, pleae check BlockIo info!!!
+  69f78 Integer overflow while adding LastBlock and 1
+  69fa7 Integer overflow while multiplying LastBlock and BlockSize
+  69fe3 Unsupported  boot device type
+  6a002 Failed to get BlkIo for device. MaxHandles:%d - %r
+  6a036 Failed to get the BlockIo for device. MaxHandle:%d, %r
+  6a06e Unable to Allocate Memory for GptHdr 
+  6a095 Unable to read the media 
+  6a0b0  Skipping Lun:%d, i=%d
+  6a0c8 Error in GPT header, GUID is not match!
+  6a0f1 Invalid GPT header fields MaxPtnCount = %x, PtnEntrySz = %x
+  6a12e Error Calculating CRC32 on the Gpt header: %x
+  6a15d Error writing primary GPT header: %r
+  6a183 Error getting block IO handle for %d lun, Lun may be unused
+  6a1c0 Error populating block IO handles
+  6a1e3 Mibib Magic do not match
+  6a1fd Failed to get partition type from input gpt image
+  6a230 Updating GPT partition
+  6a248 Failed to write Gpt partition: %x
+  6a26b Invalid Partition type: %x
+  6a287 IsCurrentSlotBootable: no active slots found!
+  6a2b6 IsCurrentSlotBootable: No boot partition entry for slot %s
+  6a2f2 Slot suffix %s Part Attr 0x%lx
+  6a312 Slot %s is unbootable 
+  6a32a SetActiveSlot: input parameter invalid
+  6a352 SetActiveSlot
+  6a360 SetActiveSlot: No boot partition entry for slot %s
+  6a394 SetActiveSlot: %s already active slot
+  6a3bb Boot lun mismatch switch from 1 to 2
+  6a3e1 Reboot Required
+  6a3f2 Boot lun mismatch switch from 2 to 1
+  6a418 Alternate slot %s, New slot %s
+  6a438 HandleActiveSlotUnbootable
+  6a453 HandleActiveSlotUnbootable: No boot partition entry for slot %s
+  6a494 FirstBoot, skipping slot Unbootable
+  6a4b9 Alternate Slot %s is bootable
+  6a4d8 HandleActiveSlotUnbootable: Rebooting
+  6a4ff HandleActiveSlotUnbootable: gRT->Resetystem didn't work
+  6a538 ClearUnbootable: GetActiveSlot failed.
+  6a560 ClearUnbootable: No boot partition entry for slot %s
+  6a596 FindBootableSlot: input parameter invalid
+  6a5c1 FindBootableSlot
+  6a5d2 FindBootableSlot: No boot partition entry for slot %s
+  6a609 Active Slot %s is bootable
+  6a625 Active Slot %s is bootable, retry count %ld
+  6a652 A/B retry count NOT decremented
+  6a673 Slot %s is unbootable, trying alternate slot
+  6a6a1 BootLinux: failed to get dtbo image
+  6a6c6 DtboImgBuffer is NULL
+  6a6dc Dtbo hdr magic mismatch %x, with %x
+  6a701 Dtbo Table TotalSize got corrupted
+  6a725 Dtbo Table HeaderSize got corrupted
+  6a74a Dtbo Table DtEntrySize got corrupted
+  6a770 Dtbo Table DtEntryOffset got corrupted
+  6a798 DTB header is corrupted, DtEntryCount %x, DtEntrySize %x, DtboImgSize %x
+  6a7e2 DTB header is corrupted, DtEntryOffset %x, DtEntryCount %x,DtEntrySize %x, DtboImgSize %x
+  6a83d Error getting block IO handle for Emmc
+  6a865 Error getting block IO handle for Lun:%x
+  6a88f Gpt Image size is invalid
+  6a8aa MBR signature do not match
+  6a8c6 Input gpt image does not have gpt partition record data
+  6a8ff Failed to get the BlockIo for the device
+  6a929 Gpt Image size is invalid!
+  6a945 GPT: Error processing primary GPT header
+  6a96f Gpt Image size is invalid!!
+  6a98c GPT: Error processing backup GPT header
+  6a9b5 Failed to patch GPT
+  6a9ca Error erasing the storage device: %r
+  6a9f0 Error writing protective MBR: %x
+  6aa12 Error writing secondary GPT header: %x
+  6aa3a Error writing partition entries array for Primary Table: %x
+  6aa77 Error writing partition entries array for Secondary Table: %x
+  6aab6 Updated Partition Table Successfully
+  6aadc Gpt signature is not correct
+  6aafa GPT Header size is too small: %u
+  6ab1c GPT Header is too large: %u
+  6ab39 Header CRC mismatch CrcVal = %u and CrcOrig = %u
+  6ab6b GPT first usable LBA mismatch
+  6ab8a FirstUsableLba: %u out of Device capacity
+  6abb5 LastUsableLba: %u out of device capacity
+  6abdf Invalid partition entry size: %u
+  6ac01 Invalid Max Partition Count: %u
+  6ac22 Error calculating CRC for primary partition entry
+  6ac55 Error calculating CRC for secondary partition entry
+  6ac8a Error calculating CRC for primary gpt header
+  6acb8 Error calculating CRC for secondary gpt header
+  6ace8 GetBootPartitionEntry: No boot partition entry for slot %s
+  6ad24 GetBootPartitionEntry: No boot partition entry for slot %s, invalid index
+  6ad6f GetActiveSlot: bad parameter
+  6ad8d GetActiveSlot: No boot partition entry for slot %s
+  6adc1 GetActiveSlot
+  6adcf GetActiveSlot: found active slot %s, priority %d
+  6ae01 GetActiveSlot: First Boot: No boot partition entry for slot %s
+  6ae41 GetActiveSlot: First boot: set default slot _a
+  6ae71 GetActiveSlot: No active slot found
+  6ae96 GetActiveSlot: Slot attr: Priority %ld, Retry %ld, Active %ld, Success %ld, unboot %ld
+  6aeee Unable to get GetMultiSlotPartsList
+  6af13 Switching the boot lun from 1 to 2
+  6af37 Switching the boot lun from 2 to 1
+  6af5b Unable to Allocate Memory for MultiSlot Partition list
+  6af93 ValidateSlotGuids: No boot partition entry for slot %s
+  6afcb ValidateSlotGuids: No partition entry for %s
+  6aff9 ValidateSlotGuids: BootableSlot %s does not have valid guids
+  6b037 Boot GUID %g
+  6b045 %s GUID %g
+  6b051 ValidateSlotGuids
+  6b063 Boot lun: %x and BootableSlot: %s do not match
+  6b093 Unsupported Device Type
+  6b0ac Booting from slot (%s)
+  6b0c4 GetPartitionEntry: No partition entry for %s, invalid index
+  6b101 Integer Overflow: RecoveryDtboOffset=%u RecoveryDtboSize=%u
+  6b13e Invalid recovery dtbo: RecoveryDtboOffset=%u, RecoveryDtboSize=%u, ImageSize=%u
+  6b18f Image Header Version: 0x%x
+  6b1ab Recovery Dtbo Offset: 0x%x
+  6b1c7 Recovery Dtbo Size: 0x%x
+  6b206 Error %a charger screen: %r
+  6b223 Enabling
+  6b22c Disabling
+  6b236 Error %a nubia Tampered check: %r
+  6b259 VBRwDeviceState Returned error: %r
+  6b27d Unable to set the Value: %r
+  6b299 recovery
+  6b2a2 --wipe_data
+  6b2ae --reason=MasterClearConfirm
+  6b2ca --locale=en_US
+  6b2df Unable to Write Device Info: %r
+  6b300 ANDROID-BOOT!
+  6b30e Device Magic does not match
+  6b32b ReadRollbackIndex DeviceInfo not initalized 
+  6b359 ReadRollbackIndex Loc out of range, index: %d, array len: %d
+  6b397 WriteRollbackIndex DeviceInfo not initalized 
+  6b3c6 WriteRollbackIndex Loc out of range, index: %d, array len: %d
+  6b405 StoreUserKey DeviceInfo not initalized 
+  6b42e StoreUserKey, UserKeySize too large!
+  6b454 EraseUserKey DeviceInfo not initalized 
+  6b47d GetUserKey DeviceInfo not initalized 
+  6b4a4 Unable set the unlock value: %r
+  6b4c5 Unable set the unlock critical value: %r
+  6b506 qcom,rtic-id
+  6b513 qcom, rtic-id does not exist (or) is (%d) not a multiple of (%d)
+  6b555 MP_DATA
+  6b55d MP_DATA entry not found
+  6b576 Failed to allocate memory for MP Data
+  6b59d rtic-id (%x)
+  6b5ab MpData : (%x) 
+  6b5bb Length of MpData (%d)
+  6b5d2 MpData (%x) 
+  6b5e0 Locate SCM Protocol failed, Status = (0x%x)
+  6b60d Kernel base address (%x)
+  6b627 Kernel mode check 32/64: KernelLoadAddr->magic_64 (%x) KERNEL64_HDR_MAGIC = %x
+  6b677 ScmSipSysCall() failed, Status = (0x%x)
+  6b6a0 No mm partial goods found.
+  6b6bc PartialGoods for Multimedia: 0x%x
+  6b6df No partial goods for cpu ss found.
+  6b703 PartialGoods for Cluster[%d]: 0x%x
+  6b727 Failed to get MM defective[%d] part. %r
+  6b750 Failed to Get parent node: %a	error: %d
+  6b779 Subnode: %a is not present, ignore
+  6b79d Partial goods (%a) status property disabled
+  6b7ca Failed to update property: %a, ret =%d 
+  6b7f8 qcom,kgsl-3d0
+  6b806 qcom,gmu
+  6b80f kgsl-smmu
+  6b819 qcom,gpucc
+  6b824 qcom,vidc
+  6b82e qcom,vidc0
+  6b839 qcom,vidc1
+  6b844 qcom,videocc
+  6b851 qcom,cam-req-mgr
+  6b862 qcom,msm-cam
+  6b86f qcom,csiphy
+  6b87b qcom,csiphy0
+  6b888 qcom,csiphy1
+  6b895 qcom,csiphy2
+  6b8a2 qcom,csiphy3
+  6b8af qcom,csiphy4
+  6b8bc qcom,csiphy5
+  6b8c9 qcom,csid0
+  6b8d4 qcom,csid1
+  6b8df qcom,csid-lite0
+  6b8ef qcom,csid-lite1
+  6b8ff qcom,cam_smmu
+  6b90d qcom,cam-cpas
+  6b91b qcom,cam-cdm-intf
+  6b92d qcom,cpas-cdm0
+  6b93c qcom,cpas-cdm1
+  6b94b qcom,cpas-cdm2
+  6b95a qcom,cam-fd
+  6b966 qcom,fd
+  6b96e qcom,ife0
+  6b978 qcom,ife1
+  6b982 qcom,ife-lite0
+  6b991 qcom,ife-lite1
+  6b9a0 qcom,cci
+  6b9a9 qcom,cci0
+  6b9b3 qcom,cci1
+  6b9bd qcom,jpegenc
+  6b9ca qcom,jpegdma
+  6b9d7 qcom,camera-flash0
+  6b9ea qcom,camera-flash1
+  6b9fd qcom,cam-icp
+  6ba0a qcom,cam-isp
+  6ba17 qcom,a5
+  6ba1f qcom,ipe0
+  6ba29 qcom,bps
+  6ba32 qcom,cam-jpeg
+  6ba40 qcom,lrme
+  6ba4a qcom,ipe1
+  6ba54 qcom,vfe0
+  6ba5e qcom,vfe1
+  6ba68 qcom,camcc
+  6ba73 qcom,mdss_mdp
+  6ba81 qcom,mdss_rotator
+  6ba93 qcom,mdss_dsi0_ctrl
+  6baa7 qcom,mdss_dsi1_ctrl
+  6babb qcom,mdss_dsi_phy0
+  6bace qcom,mdss_dsi_phy1
+  6bae1 qcom,mdss_dsi0_pll
+  6baf4 qcom,mdss_dsi1_pll
+  6bb07 qcom,mdss_dsi_pll
+  6bb19 qcom,mdss_dp_pll
+  6bb2a qcom,msm-ext-disp
+  6bb3c qcom,sde_rscc
+  6bb4a qcom,dp_display
+  6bb5a qcom,dispcc
+  6bb66 qcom,msm-adsp-loader
+  6bb7b qcom,lpass
+  6bb86 qcom,msm-adsprpc-mem
+  6bb9b qcom,msm_fastrpc
+  6bbac qcom,mss
+  6bbb5 qcom,turing
+  6bbc1 qcom,ssc
+  6bbca qcom,npucc
+  6bbd5 qcom,npu
+  6bbde Failed to get CPU defective[%d] part. %r
+  6bc14 enable-method
+  6bc2c cpu@100
+  6bc34 cpu@200
+  6bc3c cpu@300
+  6bc44 cpu@400
+  6bc4c cpu@500
+  6bc54 cpu@600
+  6bc5c cpu@700
+  6bc64 cpu@101
+  6bc6c cpu@102
+  6bc74 cpu@103
+  6bc7c cpu@104
+  6bc84 cpu@105
+  6bc8c cpu@106
+  6bc94 cpu@107
+  6bc9c cpu@108
+  6bca4 verity=
+  6bcac verity="
+  6bcb5 Failed to allocate memory for SectorSize
+  6bcdf GetLEVerityCmdLine: Sector Size error 
+  6bd07 Failed to allocate memory for DataSize
+  6bd2f GetLEVerityCmdLine: Data Size error 
+  6bd55 Failed to allocate memory for Hash
+  6bd79 GetLEVerityCmdLine: Hash error 
+  6bd9a Failed to allocate memory for FecOff
+  6bdc0 GetLEVerityCmdLine: Fec Offset error 
+  6bde7 Partition name:%s
+  6bdfa GetLEVerityCmdLine: System partition does not exist 
+  6be30 Failed to allocate memory for DMTemp
+  6be56 LEVerityCmdLine buffer: Out of resources
+  6be80  %a dm-mod.create="%a,,,ro,0 %a %a 1 %a %a %a %a %a %d %a %a %a"
+  6bec1  %a dm-mod.create="%a,,,ro,0 %a %a 1 %a %a %a %a %a %d %a %a %a %d %a %a %a %a %a 2 %a %a %a %a"
+  6bf22 LEVerityCmdLine - %a - of length = %d 
+  6bf4a No verity command line found
+  6bf68 /dev/ubiblock0_0
+  6bf79 /dev/mmcblk0p
+  6bf87 verity
+  6bf93 aee087a5be3b982978c923f566a94613496b417f2af592639bc80d141e34dfe7
+  6bfd4 use_fec_from_device
+  6bfe8 fec_roots
+  6bff2 fec_blocks
+  6bffd fec_start
+  6c007 GetVmData: making ScmCall to get HypInfo
+  6c031 GetVmData: Locate SCM Protocol failed, Status: (0x%x)
+  6c068 GetVmData: No Vm data present! Status = (0x%x)
+  6c098 GetVmData: ScmSipSysCall returned NULL
+  6c0c0 HypInfo is NULL
+  6c0d1 Failed to map HypInfo!! Status:%r
+  6c0f4 Failed to update HypInfo!! Status:%r
+  6c11a Hyp version: %d
+  6c12b Could not retieve DXE services table
+  6c151 Failed to add memory space :0x%lx 0x%lx
+  6c17a Fail to set memory attibute: addr=0x%lx, size=0xlx
+  6c1ae Invalid HYP MAGIC
+  6c1c1 HypInfo: Invalid number of dtbos: %d max supported : %d
+  6c1fa HypInfo: Failed to allocate memory for DtboBaseAddr
+  6c22f Remove NULL thread pointer, drop it
+  6c254 try to remove a NULL node
+  6c26e  remove CurrentThread = %r stack
+  6c290 Add NULL thread pointer, drop it
+  6c2b2 Failed to Allocate memory for UnSafeStack 
+  6c2de AllocateUnSafeStackPtr CurrentThread = 0x%x,UnSafeStackPtr = 0x%x with API 
+  6c32b AllocateUnSafeStackPtr ThreadSetThreadUnsafeSPfailed, Status = %d 
+  6c36f AllocateUnSafeStackPtr CurrentThread = 0x%x with linktable 
+  6c3ac ThreadStackNodeAppend ThreadStackNode notcreated.
+  6c3df ThreadStackReleaseCb UnSafeStackPtr = 0x%x
+  6c40b multi stack is not supported, using global single stack.
+  6c445 SetThreadStackEnv () kernel version = 0x%x 
+  6c472 Unable to Init thread unsafe stack: %r.
+  6c49b getStackTableByThread ThreadStackNode notcreated
+  6c4cd getStackTableByThread CurrentThread is NULL 
+  6c4fb Failed to Allocate memory for ThreadStackNodeTmp
+  6c52d Failed to Allocate memory for ThreadStackNodeTmp->ThreadStackEntry
+  6c571 Failed to Allocate memory for ThreadStackNodeTmp->ThreadStackEntry->StackBottom 
+  6c5c3 Failed to Allocate memory for stack list 
+  6c61c /soc/dsi_pll_codes
+  6c62f Invalid parameter
+  6c642 Variable not exist, skip update pll codes
+  6c66d Invalid Pll codes size:%d
+  6c688 Cannot find dt node:%a
+  6c6a0 Invalid pll codes data property
+  6c6c1 Not enough space in DT node
+  6c6de Fail to alloc memory for pll codes
+  6c702 Fail get pll codes data from service variable
+  6c731 Fail to update pll codes data to DT node
+  6c75b TRAILER ALREADY PRESENT 
+  6c775 ERROR: %s():
+  6c782 ufdt_install_blob
+  6c794 Blob_size %zu smaller than the header size %zu
+  6c7c4 incompatible blob version: %d, should be: %d
+  6c7f1 error validating blob: %s
+  6c80b ufdt_apply_overlay
+  6c81e Bad overlay size!
+  6c831 Bad fdt size!
+  6c840 failed to allocate memory for DTB blob with overlays
+  6c876 Failed to dump the device tree to out_fdt_header
+  6c8a8 ufdt_apply_multi_overlay
+  6c8c1 Bad main fdt!
+  6c8d0 Dts list is invalid: NULL!
+  6c8ec Bad overlay fdt! index: %d
+  6c908 Failed to apply devie tree
+  6c924 Failed to apply devie tree, index: %d
+  6c94b ufdt_overlay_apply
+  6c95e Overlay_length %zu smaller than header size %zu
+  6c98f failed to perform local fixups in overlay
+  6c9ba failed to perform fixups in overlay
+  6c9df failed to apply fragments
+  6c9fa ufdt_overlay_local_ref_update
+  6ca18 linux,phandle
+  6ca26 /__local_fixups__
+  6ca38 /__symbols__
+  6ca45 /__fixups__
+  6ca51 ufdt_overlay_do_fixups
+  6ca68 Bad main_symbols in ufdt_overlay_do_fixups
+  6ca94 Bad overlay_fixups in ufdt_overlay_do_fixups
+  6cac2 Couldn't find '%s' symbol in main dtb
+  6cae9 Couldn't find '%s' path in main dtb
+  6cb0e Failed one fixup in ufdt_do_one_fixup
+  6cb35 ufdt_get_fixup_location
+  6cb4d Missing property part in '%s'
+  6cb6c Missing offset part in '%s'
+  6cb89 '%s' is not valid number
+  6cba3 Path '%s' not found
+  6cbb8 Property '%s' not found in  '%s' node
+  6cbdf %s: property length is too small for fixup
+  6cc0b target
+  6cc12 ufdt_apply_fragment
+  6cc26 failed to find target %04x
+  6cc42 target-path
+  6cc4e failed to find target-path %s
+  6cc6d __overlay__
+  6cc79 missing __overlay__ sub-node
+  6cc97 failed to overlay node %s to target %s
+  6ccbf /aliases
+  6ccc8 ufdt_get_node_by_path_len
+  6cce2 Failed to find alias %s
+  6ccfb ufdt_node_add_child
+  6cd0f invalid children tag type
+  6cd2a output_property_to_fdt
+  6cd41 Not enough space for the string space: %d
+  6cd78 UNKNOWN 
+  6cd81 node name is NULL.
+  6cd95 ufdt_node_dict_add
+  6cda8 failed to find new index in ufdt_node_dict add for entry :%s:
+  6cde7 %ld -> %s
+  6cdf2 ufdt_node_dict_resize
+  6ce08 failed to find new index in ufdt_node_dict resize for entry :%s:
+  6ce4a Fastboot USB: Unable to free Tx Buffer
+  6ce72 Fastboot USB: Unable to free Rx Buffer
+  6ce9a Fastboot Device connected
+  6ceb5 Fastboot Device disconnected
+  6ced3 Error, should not happen! Check your USB connection
+  6cf07 Fastboot Build Info: %a %a
+  6cf23 20:52:40
+  6cf2c couldnt Start fastboot usb device, exiting
+  6cf57 Error, failed to handle USB event
+  6cf7a Continue detected, Exiting App...
+  6cf9d couldnt uninit fastboot
+  6cfb6 Bulk in XFR aborted
+  6cfcb UsbDeviceTransferStatusCompleteOK
+  6cfee Bulk in xfr aborted
+  6d002 unhandled trasnfer status
+  6d01c Usb controller init event not signaled: %r
+  6d048 couldnt find USB device protocol, exiting now
+  6d076 couldnt init fastboot , exiting
+  6d096 Error start the usb device, cannot enter fastboot mode
+  6d0ce Error Allocate RX buffer, cannot enter fastboot mode
+  6d104 Error Allocate TX buffer, cannot enter fastboot mode
+  6d13a Fastboot: Processing commands
+  6d1f6 Error the array index out of bounds
+  6d21b Error Allocating memory for HS config descriptors
+  6d24e Error Allocating memory for SS config descriptors
+  6d29a Error getting the partition record for Lun %d and Handle: %d : %r
+  6d2dd Name:[%s] StartLba: %u EndLba:%u
+  6d2ff SparseImgFlashThread
+  6d314 Boot Partition is updated
+  6d32f Slot Change is not allowed in Lock State
+  6d359 This Command not supported
+  6d374 Invalid Input Parameters
+  6d38d Slot Change is not allowed in merging state
+  6d3b9 Invalid Slot
+  6d3c6 %a Invalid InputSlot Suffix
+  6d3e3 Invalid Slot Suffix
+  6d3f7 set_active _a or _b should be entered
+  6d41d set_active failed
+  6d42f DataReady %d
+  6d43d Failed to free up fastboot buffer
+  6d460 Multi thread is not supported.
+  6d480 DOWNLOAD
+  6d48f InitMultiThreadEnv successfully, will use thread to flash 
+  6d4cb Fastboot: Initializing...
+  6d4e6 Fastboot: Couldn't disable watchdog timer: %r
+  6d515 Couldn't create Fastboot protocol send event: %r
+  6d547 Failed to get free memory for fastboot buffer
+  6d576 ERROR: Allocation fail for minimim buffer for fastboot
+  6d5ae Not enough memory to Allocate Fastboot Buffer
+  6d5dd Fastboot Buffer Size allocated: %ld
+  6d602 Failed to allocate memory to cmd
+  6d629 Sending %d:%a
+  6d638 Integer overflow while adding Image and sz
+  6d664 BlockIo for %a is corrupted
+  6d681 EFI handle for %a is corrupted
+  6d6a1 Input image is invalid
+  6d6b9 Image is too large for the partition
+  6d6df Sparse header size mismatch
+  6d6fc Invalid block size in the sparse header
+  6d725 Unsupported sparse block size %x
+  6d747 === Sparse Image Header ===
+  6d764 magic: 0x%x
+  6d771 major_version: 0x%x
+  6d786 minor_version: 0x%x
+  6d79b file_hdr_sz: %d
+  6d7ac chunk_hdr_sz: %d
+  6d7be blk_sz: %d
+  6d7ca total_blks: %d
+  6d7da total_chunks: %d
+  6d7ec Size of image is too large for the partition
+  6d81a Integer overflow while adding Image and chunk header
+  6d850 buffer overreads occured due to invalid sparse header
+  6d887 === Chunk Header ===
+  6d89d chunk_type: 0x%x
+  6d8af chunk_data_sz: 0x%x
+  6d8c4 total_size: 0x%x
+  6d8d6 chunk header size mismatch
+  6d8f2 Chunk data size exceeds partition size
+  6d91a Wrote %d blocks, expected to write %d blocks
+  6d948 Sparse Image Write Failure
+  6d964 bogus size for chunk DONT CARE type
+  6d989 Bogus chunk size for chunk type CRC
+  6d9ae Bogus size for chunk type CRC
+  6d9cd Integer overflow while adding Image and chunk data sz
+  6da04 Unknown chunk type: %x
+  6da1c Bogus chunk size for chunk type Raw
+  6da41 Flash Write Failure
+  6da56 Bogus size for RAW chunk Type
+  6da75 Bogus chunk size for chunk type FILL
+  6da9b Malloc failed for: CHUNK_TYPE_FILL
+  6dabf Integer overflow while adding Image and uint32
+  6daef Buffer overread occured due to invalid sparse header
+  6db25 Chunk data size for fill type exceeds partition size
+  6db5b Flash write failure for FILL Chunk
+  6db7f Download Finished
+  6db92 AcceptData: Send %d
+  6dba7 Failed to creat event for waiting flash completely
+  6dbda Failed to set timer for waiting flash completely
+  6dc0b Fatal error sending command response. Exiting.
+  6dc3c ERROR: Undefined response get memory map
+  6dc66 ERROR: integer Overflow while adding additionalmemory to MemMapSize
+  6dcaa ERROR: Failed to allocate memory for memory map
+  6dcdb ERROR: Failed to query memory map
+  6dcfe Free Memory available: %ld
+  6dd1a Invalid input command
+  6dd30 Handling Cmd: %a
+  6dd42 %a : %r
+  6dd4a Error: Last flash failed
+  6dd69 fastboot: battery voltage: %d
+  6dd88 Warning: battery's capacity is very low
+  6ddb1 getvar:partition-type
+  6ddc8 Fastboot Send Fail
+  6dddc unknown command
+  6ddec flash:
+  6ddf3 erase:
+  6ddfa set_active
+  6de05 flashing get_unlock_ability
+  6de21 flashing unlock
+  6de31 flashing lock
+  6de3f oem enable-charger-screen
+  6de59 oem disable-charger-screen
+  6de74 oem off-mode-charge
+  6de88 oem select-display-panel
+  6dea1 oem device-info
+  6deb1 continue
+  6deba reboot-recovery
+  6deca reboot-fastboot
+  6deda reboot-bootloader
+  6deec getvar:
+  6def4 download:
+  6defe nubiaFastboot: start........
+  6df1c kernel
+  6df2c max-download-size
+  6df3e is-userspace
+  6df4b snapshot-update-status
+  6df62 product
+  6df6a serialno
+  6df73 secure
+  6df7a Failed to publish part info for all partitions
+  6dfb0 variant
+  6dfbe logical-block-size
+  6dfd1 erase-block-size
+  6dfe2 version-bootloader
+  6dff5 version-baseband
+  6e006 battery-voltage
+  6e016 battery-soc-ok
+  6e025 charger-screen-enabled
+  6e03c hw-revision
+  6e048 parallel-download-flash
+  6e060 IsAllowUnlock is %d
+  6e075 Error Reading FRP partition: %r
+  6e096 No data to flash
+  6e0a7 Invalid partition name
+  6e0be Flashing is not allowed in Lock State
+  6e0e4 Flashing is not allowed for Critical Partitions
+  6e115 Flashing of %s is not allowed in %a state
+  6e13f Failed to update snapshot state to cancel
+  6e169 flashing avb_custom_key
+  6e182 Flashing avb_custom_key failed
+  6e1a1 Invalid Lun number passed
+  6e1bc Attemping to update partition table
+  6e1e1 *************** Current partition Table Dump Start *******************
+  6e229 *************** Current partition Table Dump End   *******************
+  6e271 Error Updating partition Table
+  6e291 Partition %s has slot
+  6e2a8 Partition not found
+  6e2bc Partition error size
+  6e2d1 ERROR: Failed to allocate memory for ThreadFlashInfo
+  6e307 Failed to handle usb event: %r
+  6e32c (%s) No such partition
+  6e343 Error flashing partition
+  6e35c flash image status:  %r
+  6e375 failed to update verity mode:  %r
+  6e398 Partition not big enough.
+  6e3b3 Partition Size:	%d
+  6e3c6 Image Size:	%d
+  6e3d6 Writing Block to partition Failure
+  6e3fa Error boot partition for slot: %s not found
+  6e427 Error Creating event for Block Io refresh:%x
+  6e455 Error Signalling event for Block Io refresh:%x
+  6e485 Enumeration of partitions failed
+  6e4a7 Multi Slot boot is not supported
+  6e4c9 No change in Ptable
+  6e4de Nullifying A/B info
+  6e4f3 *************** New partition Table Dump Start *******************
+  6e537 *************** New partition Table Dump End   *******************
+  6e57b has-slot
+  6e584 current-slot
+  6e591 slot-retry-count
+  6e5a2 slot-unbootable
+  6e5b2 slot-successful
+  6e5c2 slot-suffixes
+  6e5d0 partition-type:system
+  6e5e6 partition-size:system
+  6e5fc Partition has slot=%d
+  6e613 Unable to get Parition Info
+  6e630 Input Size is invalid
+  6e647 UBI Image flashing not supported.
+  6e66a Unable to open UBI Protocol.
+  6e688 Unable to close UBI Protocol.
+  6e6a7 Error: The size is smaller than the image header size
+  6e6de Error: Number of images(%u)in meta_image are greater than expected
+  6e722 Error: The size is smaller than image header size + entry size
+  6e762 Integer overflow detected in %d, %a
+  6e787 HandleMetaImgFlash
+  6e79a Image size mismatch
+  6e7af ptn_name string not terminated properly
+  6e7d8 Meta Image Write Failure
+  6e7f2 Unable to Update DevInfo
+  6e80c Erase is not allowed in Lock State
+  6e82f Erase is not allowed for Critical Partitions
+  6e85d Erase of %s is not allowed in %a state
+  6e884 erasing avb_custom_key
+  6e89c Erasing avb_custom_key failed
+  6e8ba Check device console.
+  6e8d0 Couldn't erase image:  %r
+  6e8eb BlockIo for %s is corrupted
+  6e908 EFI handle for %s is corrupted
+  6e928 Partition Erase failed: %r
+  6e944 get_unlock_ability: %d
+  6e95b 	Device already : %a
+  6e970 unlocked!
+  6e97a Flashing Unlock is not allowed
+  6e99a Command not support: the display is not enabled
+  6e9ca 	Set device %a failed: %r
+  6e9e4 Display is not supported
+  6e9fe Display is enabled
+  6ea12 Enabling Charger Screen
+  6ea2b Failed to enable charger screen
+  6ea4b Disabling Charger Screen
+  6ea65 Failed to disable charger screen
+  6ea86 Invalid input entered
+  6ea9c Enter fastboot oem off-mode-charge 0/1
+  6eac3 : failed
+  6eacc : done
+  6ead3 existing panel name (%a)
+  6eaed Display get variable failed with status(%d)!
+  6eb1b Display set variable failed with status(%d)!
+  6eb49 Verity mode: %a
+  6eb59 Device unlocked: %a
+  6eb6d Device critical unlocked: %a
+  6eb8a Charger screen enabled: %a
+  6eba5 Failed to load image from partition: %r
+  6ebcd rebooting the device
+  6ebe3 Failed to reboot
+  6ebf4 Failed to reboot to recovery mode
+  6ec16 rebooting the device to recovery
+  6ec38 Failed to reboot to fastboot mode
+  6ec5a rebooting the device to fastbootd
+  6ec7d Rebooting the device into bootloader mode
+  6eca8 partition-
+  6ecb3 GetVar Variable Not found
+  6eccd ERROR: Fail to get the number of bytes to download.
+  6ed02 Failed to get the number of bytes to download
+  6ed30 ERROR: Data size (%d) is more than max download size (%d)
+  6ed6b Requested download size is more than max allowed
+  6ed9d CmdDownload: Send 12 %a
+  6edb6 oem nubia_unlock
+  6edc7 oem nubia_lock
+  6edd6 oem nubia_device-info
+  6edec oem nubia_unlock_critical
+  6ee06 oem nubia_lock_critical
+  6ee1e NUBIA_NX679J
+  6ee2b unlock password check fail!!
+  6ee48 password is error!!
+  6ee5c START update nubia fastboot unlock flag!!!
+  6ee87 update nubia fastboot unlock flag error(%d)!!!
+  6eeb6 set state to %d ok!!!
+  6eecc vbmeta rollback_index: %d
+  6eee6 system rollback_index: %d
+  6ef00 vm-linux rollback_index: %d
+  6ef1c Nubia fastboot unlocked: %a
+  6ef38 NUBIA_NX679J_CRITICAL
+  6ef4e Failed to publish a variable readable(%a): malloc error!
+  6ef88 unknown
+  6ef90 snapshotted
+  6ef9c merging
+  6efa4 cancelled
+  6efb0 slot-count
+  6efbb Unable to allocate memory for BootSlotInfo
+  6efed slot-successful:
+  6effe slot-unbootable:
+  6f00f slot-retry-count:
+  6f026 has-slot:boot
+  6f034 has-slot:system
+  6f044 has-slot:modem
+  6f053 partition-size:
+  6f063 partition-type:
+  6f073 Error Publishing size info for %s partition
+  6f0a0 Error Publishing type info for %s partition
+  6f0cd  0x%llx
+  6f0e3 Failed to Info for %s partition
+  6f104 Failed to allocate buffer for superblock %s
+  6f131 %s Found EXT FS type
+  6f147 %s Found F2FS FS type
+  6f15e %s No Known FS type Found
+  6f179 Failed to allocate memory for unlock value 
+  6f4c8 Set off mode charger: 
+  6f508 Selecting Panel: 
+  6f6d8 /home/nubia/SCMWork/nrom/NX679J_Z69_UN_ZML1S_V311/20220308142115/app/bootable/bootloader/edk2/MdeModulePkg/Library/DxeReportStatusCodeLib/ReportStatusCodeLib.c
+  6f778 PostCode != ((void *) 0)
+  6f791 Filename != ((void *) 0)
+  6f7aa Description != ((void *) 0)
+  6f7c6 LineNumber != ((void *) 0)
+  6f7e1 ErrorLevel != ((void *) 0)
+  6f7fc Marker != ((void *) 0)
+  6f813 DevicePath != ((void *) 0)
+  6f82e ExtendedData != ((void *) 0)
+  6f84b ExtendedDataSize != 0
+  6f861 !((ExtendedData == ((void *) 0)) && (ExtendedDataSize != 0))
+  6f89e !((ExtendedData != ((void *) 0)) && (ExtendedDataSize == 0))
+  6f8db /home/nubia/SCMWork/nrom/NX679J_Z69_UN_ZML1S_V311/20220308142115/app/bootable/bootloader/edk2/MdePkg/Library/BasePrintLib/PrintLib.c
+  6f960 (((UINTN) (StartOfBuffer)) & 0x01) == 0
+  6f988 (((UINTN) (FormatString)) & 0x01) == 0
+  6f9af (((UINTN) (Buffer)) & 0x01) == 0
+  6fa22 @0123456789ABCDEFSuccess
+  6fa3b Warning Unknown Glyph
+  6fa51 Warning Delete Failure
+  6fa68 Warning Write Failure
+  6fa7e Warning Buffer Too Small
+  6fa97 Warning Stale Data
+  6faaa Load Error
+  6fab5 Invalid Parameter
+  6fac7 Unsupported
+  6fad3 Bad Buffer Size
+  6fae3 Not Ready
+  6faed Device Error
+  6fafa Write Protected
+  6fb0a Out of Resources
+  6fb1b Volume Corrupt
+  6fb2a Volume Full
+  6fb36 No Media
+  6fb3f Media changed
+  6fb4d Not Found
+  6fb57 Access Denied
+  6fb65 No Response
+  6fb71 No mapping
+  6fb7c Time out
+  6fb85 Not started
+  6fb91 Already started
+  6fba1 Aborted
+  6fba9 ICMP Error
+  6fbb4 TFTP Error
+  6fbbf Protocol Error
+  6fbce Incompatible Version
+  6fbe3 Security Violation
+  6fbf6 CRC Error
+  6fc00 End of Media
+  6fc0d Reserved (29)
+  6fc1b Reserved (30)
+  6fc29 End of File
+  6fc35 Invalid Language
+  6fc46 Compromised Data
+  6fc57 /home/nubia/SCMWork/nrom/NX679J_Z69_UN_ZML1S_V311/20220308142115/app/bootable/bootloader/edk2/MdePkg/Library/BasePrintLib/PrintLibInternal.c
+  6fce4 Width < 38
+  6fcef (Flags & ~(0x01 | 0x08 | 0x20 | 0x80)) == 0
+  6fd1b ((Flags & 0x08) == 0) || ((Flags & 0x80) == 0)
+  6fd4a (BufferSize <= (_gPcd_FixedAtBuild_PcdMaximumAsciiStringLength))
+  6fd8b (BufferSize <= (_gPcd_FixedAtBuild_PcdMaximumUnicodeStringLength) * sizeof (CHAR16) + 1)
+  6fde4 ((Flags & ~(0x01 | 0x08 | 0x20 | 0x80)) == 0)
+  6fe12 (((Flags & 0x08) == 0) || ((Flags & 0x80) == 0))
+  6fe43 (Width < 38)
+  6fe50 (BufferSize >= (Width + 1) * Increment)
+  6fe78 (Format != ((void *) 0))
+  6fe91 (BufferSize <= (_gPcd_FixedAtBuild_PcdMaximumUnicodeStringLength))
+  6fed4 (StrnLenS ((CHAR16 *)Format, (_gPcd_FixedAtBuild_PcdMaximumUnicodeStringLength) + 1) <= (_gPcd_FixedAtBuild_PcdMaximumUnicodeStringLength))
+  6ff60 (AsciiStrnLenS (Format, (_gPcd_FixedAtBuild_PcdMaximumAsciiStringLength) + 1) <= (_gPcd_FixedAtBuild_PcdMaximumAsciiStringLength))
+  6ffe3 <null string>
+  6fff1 <null guid>
+  6fffd %08x-%04x-%04x-%02x%02x-%02x%02x%02x%02x%02x%02x
+  7002e <null time>
+  7003a %02d/%02d/%04d  %02d:%02d
+  70198 /home/nubia/SCMWork/nrom/NX679J_Z69_UN_ZML1S_V311/20220308142115/app/bootable/bootloader/edk2/MdePkg/Library/UefiMemoryAllocationLib/MemoryAllocationLib.c
+  70233 Pages != 0
+  7023e (Alignment & (Alignment - 1)) == 0
+  70261 RealPages > Pages
+  70273 AllocationSize <= (0xFFFFFFFFFFFFFFFFULL - (UINTN) Buffer + 1)
+  702b2 /home/nubia/SCMWork/nrom/NX679J_Z69_UN_ZML1S_V311/20220308142115/app/bootable/bootloader/edk2/MdePkg/Library/BaseMemoryLibOptDxe/Arm/MemLibGuid.c
+  70344 DestinationGuid != ((void *) 0)
+  70364 SourceGuid != ((void *) 0)
+  7037f Guid1 != ((void *) 0)
+  70395 Guid2 != ((void *) 0)
+  703ab ((UINTN)Buffer & (sizeof (Guid->Data1) - 1)) == 0
+  703dd Length <= (0xFFFFFFFFFFFFFFFFULL - (UINTN)Buffer + 1)
+  70413 (Length & (sizeof (*GuidPtr) - 1)) == 0
+  7043b /home/nubia/SCMWork/nrom/NX679J_Z69_UN_ZML1S_V311/20220308142115/app/bootable/bootloader/edk2/MdePkg/Library/BaseMemoryLibOptDxe/ScanMem8Wrapper.c
+  704ce (Length - 1) <= (0xFFFFFFFFFFFFFFFFULL - (UINTN)Buffer)
+  70506 /home/nubia/SCMWork/nrom/NX679J_Z69_UN_ZML1S_V311/20220308142115/app/bootable/bootloader/edk2/MdePkg/Library/BaseMemoryLibOptDxe/ZeroMemWrapper.c
+  70598 /home/nubia/SCMWork/nrom/NX679J_Z69_UN_ZML1S_V311/20220308142115/app/bootable/bootloader/edk2/MdePkg/Library/BaseMemoryLibOptDxe/CompareMemWrapper.c
+  7062d DestinationBuffer != ((void *) 0)
+  7064f SourceBuffer != ((void *) 0)
+  7066c (Length - 1) <= (0xFFFFFFFFFFFFFFFFULL - (UINTN)DestinationBuffer)
+  706af (Length - 1) <= (0xFFFFFFFFFFFFFFFFULL - (UINTN)SourceBuffer)
+  706ed /home/nubia/SCMWork/nrom/NX679J_Z69_UN_ZML1S_V311/20220308142115/app/bootable/bootloader/edk2/MdePkg/Library/BaseMemoryLibOptDxe/SetMemWrapper.c
+  7077e /home/nubia/SCMWork/nrom/NX679J_Z69_UN_ZML1S_V311/20220308142115/app/bootable/bootloader/edk2/MdePkg/Library/BaseMemoryLibOptDxe/CopyMemWrapper.c
+  70810 /home/nubia/SCMWork/nrom/NX679J_Z69_UN_ZML1S_V311/20220308142115/app/bootable/bootloader/edk2/MdePkg/Library/UefiDevicePathLib/DevicePathUtilities.c
+  708a5 Node != ((void *) 0)
+  708ba (Length >= sizeof (EFI_DEVICE_PATH_PROTOCOL)) && (Length < 0x00010000)
+  70901 Size != ((void *) 0)
+  70916 /home/nubia/SCMWork/nrom/NX679J_Z69_UN_ZML1S_V311/20220308142115/app/bootable/bootloader/edk2/MdePkg/Library/BaseLib/DivU64x64Remainder.c
+  709a0 /home/nubia/SCMWork/nrom/NX679J_Z69_UN_ZML1S_V311/20220308142115/app/bootable/bootloader/edk2/MdePkg/Library/BaseLib/DivU64x32Remainder.c
+  70a2a /home/nubia/SCMWork/nrom/NX679J_Z69_UN_ZML1S_V311/20220308142115/app/bootable/bootloader/edk2/MdePkg/Library/BaseLib/LinkedList.c
+  70aac List->ForwardLink != ((void *) 0)
+  70ace List->BackLink != ((void *) 0)
+  70aed InternalBaseLibIsListValid (FirstEntry)
+  70b15 SecondEntry != ((void *) 0)
+  70b31 ListHead != ((void *) 0)
+  70b4a ((BOOLEAN)(0==1)) == IsNodeInList ((ListHead), (Entry))
+  70b82 InternalBaseLibIsListValid (ListHead)
+  70ba8 InternalBaseLibIsListValid (List)
+  70bca ((BOOLEAN)(1==1)) == IsNodeInList ((List), (Node))
+  70bfd ((BOOLEAN)(1==1)) == IsNodeInList ((FirstEntry), (SecondEntry))
+  70c3d !IsListEmpty (Entry)
+  70c52 /home/nubia/SCMWork/nrom/NX679J_Z69_UN_ZML1S_V311/20220308142115/app/bootable/bootloader/edk2/MdePkg/Library/BaseLib/Arm/Unaligned.c
+  70cd7 /home/nubia/SCMWork/nrom/NX679J_Z69_UN_ZML1S_V311/20220308142115/app/bootable/bootloader/edk2/MdePkg/Library/UefiLib/UefiLibPrint.c
+  70d5b ((UINTN) Format & 0x00000001) == 0
+  70d7e Console != ((void *) 0)
+  70d96 ConsoleHandle != ((void *) 0)
+  70db4 (HorizontalResolution != 0) && (VerticalResolution !=0)
+  70dec Blt != ((void *) 0)
+  70e00 UgaDraw!= ((void *) 0)
+  70e17 Blt->Image.Bitmap != ((void *) 0)
+  70e39 RowInfoArray != ((void *) 0)
+  70e56 RowInfoArraySize <= 1
+  70e6c StrSize(BufferToReturn)==SizeRequired
+  70e92 compatible
+  70e9d <valid offset/length>
+  70eb3 <no error>
+  70ebe <unknown error>
+  70ece FDT_ERR_NOTFOUND
+  70edf FDT_ERR_EXISTS
+  70eee FDT_ERR_NOSPACE
+  70efe FDT_ERR_BADOFFSET
+  70f10 FDT_ERR_BADPATH
+  70f20 FDT_ERR_BADPHANDLE
+  70f33 FDT_ERR_BADSTATE
+  70f44 FDT_ERR_TRUNCATED
+  70f56 FDT_ERR_BADMAGIC
+  70f67 FDT_ERR_BADVERSION
+  70f7a FDT_ERR_BADSTRUCTURE
+  70f8f FDT_ERR_BADLAYOUT
+  70fa1 FDT_ERR_INTERNAL
+  70fb2 FDT_ERR_BADNCELLS
+  70fc4 FDT_ERR_BADVALUE
+  70fd5 FDT_ERR_BADOVERLAY
+  70fe8 FDT_ERR_NOPHANDLES
+  7111c incorrect header check
+  71133 unknown compression method
+  7114e invalid window size
+  71162 invalid block type
+  71175 invalid stored block lengths
+  71192 too many length or distance symbols
+  711b6 invalid code lengths set
+  711cf invalid bit length repeat
+  711e9 invalid code -- missing end-of-block
+  7120e invalid literal/lengths set
+  7122a invalid distances set
+  71240 invalid literal/length code
+  7125c invalid distance code
+  71272 invalid distance too far back
+  71290 incorrect data check
+  71db9 ir;"[N
+  71dc9 ir;E\z
+  71e9e rQSBQ}
+  726b2 By unlocking the bootloader, you will be able to install custom operating system on this phone. nubia cannot guarantee the full functionality for any custom ROM, certain function and offerings may cease to work. nubia will not be responsible for any unsigned custom ROM being flashed to your device after the bootloader is unlocked.
+  728c9 If you unlock the bootloader, you will void  the warranty of your device. See your device's warranty statement for details. Consequently, if nubia performs a warranty  repair, nubia will likely charge you a significant service fee for the additional  costs caused by your modification of the  software. 
+  72ae1 To prevent unauthorized access to your personal data, unlocking the bootloader will  also delete all personal data on your phone. You will lose all media and content on your device and device encryption support. 
+  72cf9 Press the Volume keys to select whether to  unlock the bootloader, then the Power button to continue.
+  72f10 __________
+  73128 DO NOT UNLOCK THE BOOTLOADER
+  73340 __________
+  73558 UNLOCK THE BOOTLOADER
+  73770 __________
+  73ba2 If you lock the bootloader, you will not be able to install custom operating system on this phone.
+  73db9 To prevent unauthorized access to your personal data, locking the bootloader will also delete all personal data on your phone.
+  73fd1 Press the Volume keys to select whether to unlock the bootloader, then the power button to continue.
+  741e8 __________
+  74400 DO NOT LOCK THE BOOTLOADER
+  74618 __________
+  74830 LOCK THE BOOTLOADER
+  74a48 __________
+  74c60 Reboot system now
+  74e78 Reboot to recovery mode
+  75090 Boot to edload
+  752a8 Power off
+  754c0 device info:
+  756d8 CPU SERIAL NUMBER - 
+  758f0 SECURE BOOT - 
+  75d20 DEVICE STATE - 
+  75f38 WARRENTY STATUS - 
+  76368 Reboot system now
+  76580 Reboot to recovery mode
+  76798 Boot to edload
+  769b0 Power off
+  76bc9 Now you are in FastBoot Mode
+  76de0 Press volume key to select above item, and press power key to confirm
+  77212 Your device has loaded a different operating system
+  77247 Visit this link on another device:
+  77428 g.co/ABH
+  77640 PRESS POWER KEY TO PAUSE BOOT
+  77c8a The boot loader is unlocked and software integrity cannot be guaranteed. Any data stored on the device may be available to attackers. Do not store any sensitive data on the device.
+  77d40 Visit this link on another device:
+  77ea0 g.co/ABH
+  780b8 PRESS POWER KEY TO PAUSE BOOT
+  78702 Your device is corrupt. It can't be trusted and will not boot
+  78741 Visit this link on another device:
+  78918 g.co/ABH
+  7917a Your device is corrupt. It can't be trusted and may not work properly
+  791c1 Visit this link on another device:
+  79390 g.co/ABH
+  795a8 PRESS POWER KEY TO CONTINUE
+  7ac91 #BOOTCONFIG
+  7ad44 system
+  7ad64 partition-size:
+  7ad84 partition-type:
+  7ae24 userdata
+  7ae44 partition-size:
+  7ae64 partition-type:
+  7af24 partition-size:
+  7af44 partition-type:
+  915cc /home/nubia/SCMWork/nrom/NX679J_Z69_UN_ZML1S_V311/20220308142115/app/out/target/product/taro/obj/ABL_OBJ/Build/DEBUG_CLANG35/AARCH64/QcomModulePkg/Application/LinuxLoader/LinuxLoader/DEBUG/LinuxLoader.dll

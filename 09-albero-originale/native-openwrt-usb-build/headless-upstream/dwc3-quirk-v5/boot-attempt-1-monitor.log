@@ -1,0 +1,49 @@
+[2026-07-11T18:45:39+02:00] rebooting healthy slot A Android to fastboot
+[2026-07-11T18:45:50+02:00] fastboot connected: 3dbd****	 fastboot
+current-slot: a
+Finished. Total time: 0.002s
+unlocked: yes
+Finished. Total time: 0.002s
+slot-successful:a: yes
+Finished. Total time: 0.012s
+slot-unbootable:a: no
+Finished. Total time: 0.002s
+slot-retry-count:a: 7
+Finished. Total time: 0.003s
+slot-successful:b: no
+Finished. Total time: 0.009s
+slot-unbootable:b: no
+Finished. Total time: 0.002s
+slot-retry-count:b: 7
+Finished. Total time: 0.007s
+993895dd16c89de1de4a144df77*************d597dc73e87eff942ee2c4e9  /home/user/nx679j-stock/native-openwrt-usb-build/headless-upstream/dwc3-quirk-v5/artifacts/boot-nx679j-headless-openwrt.img
+7377123e9d211edef5454fe3912daa834799c4ab7ca12a8a4fa8271f705d6226  /home/user/nx679j-stock/native-openwrt-usb-build/headless-upstream/dwc3-quirk-v5/artifacts/vendor_boot-nx679j-headless-openwrt.img
+Sending 'vendor_boot_b' (9920 KB)                  OKAY [  0.024s]
+Writing 'vendor_boot_b'                            OKAY [  0.021s]
+Finished. Total time: 0.071s
+Sending 'boot_b' (42568 KB)                        OKAY [  0.101s]
+Writing 'boot_b'                                   OKAY [  0.069s]
+Finished. Total time: 0.193s
+Setting current slot to 'b'                        OKAY [  0.031s]
+Finished. Total time: 0.033s
+current-slot: b
+Finished. Total time: 0.012s
+[2026-07-11T18:45:51+02:00] rebooting slot B and starting 250ms transition monitor
+Rebooting                                          OKAY [  0.000s]
+Finished. Total time: 0.050s
+[2026-07-11T18:45:51+02:00] t=0.055s fastboot disappeared
+[2026-07-11T18:46:05+02:00] t=14.803s FAILURE: fastboot returned: 3dbd****	 fastboot
+[2026-07-11T18:46:05+02:00] recovering immediately: activating slot A
+slot-unbootable:b: no
+Finished. Total time: 0.003s
+slot-retry-count:b: 7
+Finished. Total time: 0.011s
+Setting current slot to 'a'                        OKAY [  0.040s]
+Finished. Total time: 0.042s
+Rebooting                                          OKAY [  0.000s]
+Finished. Total time: 0.050s
+slot=_a
+boot_completed=
+bootreason=
+selinux=Enforcing
+[2026-07-11T18:46:33+02:00] final result: flash_ok=1 success=0 fastboot_returned=1

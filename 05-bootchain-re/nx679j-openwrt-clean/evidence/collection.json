@@ -1,0 +1,31 @@
+{
+  "created": "2026-09-17T00:01:39.032600+02:00",
+  "serial": "0123456789ABCDEF",
+  "results": [
+    {
+      "name": "usb-adb-state",
+      "rc": 0,
+      "bytes": 368
+    },
+    {
+      "name": "boot-properties",
+      "rc": 0,
+      "bytes": 90
+    },
+    {
+      "name": "runtime-tree-properties",
+      "rc": 1,
+      "bytes": 251
+    },
+    {
+      "name": "usb-display-state",
+      "rc": 0,
+      "bytes": 1847
+    },
+    {
+      "name": "bcb-misc",
+      "rc": 0,
+      "bytes": 1215
+    }
+  ]
+}

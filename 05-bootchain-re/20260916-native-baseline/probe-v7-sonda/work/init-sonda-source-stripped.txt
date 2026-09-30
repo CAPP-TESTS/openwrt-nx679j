@@ -1,0 +1,186 @@
+ 
+
+#define _GNU_SOURCE
+#include <errno.h>
+#include <fcntl.h>
+#include <linux/reboot.h>
+#include <stddef.h>
+#include <sys/stat.h>
+#include <sys/syscall.h>
+#include <sys/sysmacros.h>
+#include <time.h>
+#include <unistd.h>
+
+ 
+#define MARK  ""
+#define SLEEP_SECONDS 10
+#define SLEEP_TEXT ""
+
+ 
+
+ 
+static char *fmt_u64(unsigned long long v, char *end)
+{
+	*--end = '\0';
+	do {
+		*--end = (char)('0' + (v % 10));
+		v /= 10;
+	} while (v);
+	return end;
+}
+
+ 
+static void put(char **p, const char *s)
+{
+	while (*s)
+		*(*p)++ = *s++;
+}
+
+static int write_all(int fd, const char *buf, size_t len)
+{
+	while (len) {
+		ssize_t n = write(fd, buf, len);
+
+		if (n < 0) {
+			if (errno == EINTR)
+				continue;
+			return -1;
+		}
+		if (n == 0)
+			return -1;
+		buf += n;
+		len -= (size_t)n;
+	}
+	return 0;
+}
+
+ 
+static void ensure_node(const char *path, unsigned int major, unsigned int minor,
+			mode_t mode)
+{
+	if (access(path, F_OK) == 0)
+		return;
+	(void)mkdir("", 0755);	 
+	(void)mknod(path, S_IFCHR | mode, makedev(major, minor));
+}
+
+ 
+static int open_channel(const char **what)
+{
+	int fd;
+
+	ensure_node("", 1, 11, 0644);
+	fd = open("", O_WRONLY | O_CLOEXEC);
+	if (fd >= 0) {
+		*what = "";
+		return fd;
+	}
+
+	ensure_node("", 5, 1, 0600);
+	fd = open("", O_WRONLY | O_NONBLOCK | O_CLOEXEC);
+	if (fd >= 0) {
+		*what = "";
+		return fd;
+	}
+
+	 
+	if (write(2, "", 0) == 0) {
+		*what = "";
+		return 2;
+	}
+	if (write(1, "", 0) == 0) {
+		*what = "";
+		return 1;
+	}
+	*what = "";
+	return -1;
+}
+
+ 
+static void say(int fd, const char *event, const char *detail,
+		unsigned long long attempt, unsigned long long uptime_ms,
+		long rc, int err)
+{
+	char buf[256];
+	char *p = buf;
+	char num[24];
+
+	put(&p, "" MARK "");
+	put(&p, event);
+	if (detail && detail[0]) {
+		put(&p, "");
+		put(&p, detail);
+	}
+	put(&p, "");
+	put(&p, fmt_u64(attempt, num + sizeof(num)));
+	put(&p, "");
+	put(&p, fmt_u64(uptime_ms, num + sizeof(num)));
+	if (rc != 0 || err != 0) {
+		put(&p, "");
+		put(&p, fmt_u64((unsigned long long)rc, num + sizeof(num)));
+		put(&p, "");
+		put(&p, fmt_u64((unsigned long long)err, num + sizeof(num)));
+	}
+	*(p++) = '\n';
+
+	if (fd >= 0)
+		(void)write_all(fd, buf, (size_t)(p - buf));
+}
+
+static unsigned long long uptime_ms(void)
+{
+	struct timespec ts;
+
+	if (syscall(SYS_clock_gettime, CLOCK_MONOTONIC, &ts) != 0)
+		return 0;
+	return (unsigned long long)ts.tv_sec * 1000ULL
+	     + (unsigned long long)(ts.tv_nsec / 1000000L);
+}
+
+ 
+
+int main(void)
+{
+	const char *chan = "";
+	unsigned long long attempt = 0;
+	int fd = open_channel(&chan);
+
+	say(fd, "", "", ++attempt, uptime_ms(), 0, 0);
+	if (fd >= 0)
+		say(fd, "", chan[0] == '/' ? chan : "",
+		    attempt, uptime_ms(), 0, 0);
+
+	for (;;) {
+		long rc;
+		int err;
+		struct timespec ts;
+
+		say(fd, "", "", attempt,
+		    uptime_ms(), 0, 0);
+
+		 
+		errno = 0;
+		rc = syscall(SYS_reboot,
+			     (int)LINUX_REBOOT_MAGIC1,
+			     (int)LINUX_REBOOT_MAGIC2,
+			     (int)LINUX_REBOOT_CMD_RESTART,
+			     (void *)NULL);
+		err = errno;
+
+		attempt++;
+		say(fd, "", "", attempt,
+		    uptime_ms(), rc, err);
+
+		ts.tv_sec = SLEEP_SECONDS;
+		ts.tv_nsec = 0;
+		(void)syscall(SYS_nanosleep, &ts, (void *)NULL);
+		say(fd, "", SLEEP_TEXT, attempt, uptime_ms(), 0, 0);
+	}
+
+	 
+	for (;;) {
+		struct timespec ts = { 3600, 0 };
+
+		(void)syscall(SYS_nanosleep, &ts, (void *)NULL);
+	}
+}

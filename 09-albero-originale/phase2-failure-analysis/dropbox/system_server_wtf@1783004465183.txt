@@ -1,0 +1,37 @@
+Process: system_server
+PID: 2928
+UID: 1000
+Flags: 0x30c8be09
+Package: android v31 (12)
+Package: com.android.providers.settings v31 (12)
+Package: com.android.server.telecom v31 (12)
+Package: cn.nubia.forbid.selfstart.provider v11 (3.0)
+Foreground: No
+Subject: DisplayDeviceConfig
+Build: nubia/NX679J-UN/NX679J-UN:12/SKQ1.211113.001/eng.nubia.20220308.193302:user/release-keys
+
+android.util.Log$TerribleFailure: requesting nits when no mapping exists.
+	at android.util.Log.wtf(Log.java:474)
+	at android.util.Slog.wtf(Slog.java:98)
+	at com.android.server.display.DisplayDeviceConfig.getNitsFromBacklight(DisplayDeviceConfig.java:243)
+	at com.android.server.display.LocalDisplayAdapter$LocalDisplayDevice$1.backlightToNits(LocalDisplayAdapter.java:913)
+	at com.android.server.display.LocalDisplayAdapter$LocalDisplayDevice$1.setDisplayBrightness(LocalDisplayAdapter.java:888)
+	at com.android.server.display.LocalDisplayAdapter$LocalDisplayDevice$1.run(LocalDisplayAdapter.java:739)
+	at com.android.server.display.DisplayManagerService.handleLogicalDisplayAddedLocked(DisplayManagerService.java:1313)
+	at com.android.server.display.DisplayManagerService.access$1900(DisplayManagerService.java:188)
+	at com.android.server.display.DisplayManagerService$LogicalDisplayListener.onLogicalDisplayEventLocked(DisplayManagerService.java:2287)
+	at com.android.server.display.LogicalDisplayMapper.sendUpdatesForDisplaysLocked(LogicalDisplayMapper.java:510)
+	at com.android.server.display.LogicalDisplayMapper.updateLogicalDisplaysLocked(LogicalDisplayMapper.java:484)
+	at com.android.server.display.LogicalDisplayMapper.handleDisplayDeviceAddedLocked(LogicalDisplayMapper.java:365)
+	at com.android.server.display.LogicalDisplayMapper.onDisplayDeviceEventLocked(LogicalDisplayMapper.java:173)
+	at com.android.server.display.DisplayDeviceRepository.sendEventLocked(DisplayDeviceRepository.java:193)
+	at com.android.server.display.DisplayDeviceRepository.handleDisplayDeviceAdded(DisplayDeviceRepository.java:137)
+	at com.android.server.display.DisplayDeviceRepository.onDisplayDeviceEvent(DisplayDeviceRepository.java:80)
+	at com.android.server.display.DisplayAdapter.lambda$sendDisplayDeviceEventLocked$0$DisplayAdapter(DisplayAdapter.java:112)
+	at com.android.server.display.DisplayAdapter$$ExternalSyntheticLambda1.run(Unknown Source:6)
+	at android.os.Handler.handleCallback(Handler.java:938)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loopOnce(Looper.java:238)
+	at android.os.Looper.loop(Looper.java:379)
+	at android.os.HandlerThread.run(HandlerThread.java:67)
+	at com.android.server.ServiceThread.run(ServiceThread.java:44)

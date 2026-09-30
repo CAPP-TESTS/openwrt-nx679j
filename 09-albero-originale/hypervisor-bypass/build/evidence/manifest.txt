@@ -1,0 +1,15 @@
+timestamp_utc=2026-09-14T14:28:09Z
+project_root=/home/user/nx679j-stock/hypervisor-bypass
+kernel_tree=/home/user/nx679j-stock/kernel-patch-test/linux-6.6.60
+host=Linux user-Mini 7.2.5-1-cachyos #1 SMP PREEMPT_DYNAMIC Sun, 13 Sep 2026 08:30:47 +0000 x86_64 GNU/Linux
+compiler=aarch64-linux-gnu-gcc (GCC) 16.1.0
+make=GNU Make 4.4.1
+git_revision=unavailable
+7697d80501847aeeb33f1c7442488751b55cda847100b706eb5f52a719816e60  /home/user/nx679j-stock/hypervisor-bypass/Makefile
+f477a18fb886e3029caa66230e11a41c33335484ae51a8abeca0778d0423a580  /home/user/nx679j-stock/hypervisor-bypass/kexec_injector.c
+a3f95cad3e631de15a984743f60a41726256aa8bb7d11367a4d49c3eca49946f  /home/user/nx679j-stock/hypervisor-bypass/hyp_attack.c
+51ecd8a6049996f53204a0077767140b64d79d08df6cd7cfa8226a158f967ebf  /home/user/nx679j-stock/hypervisor-bypass/dtb_patch.dts
+6f51102f4cf64dadc6f66184399f96961c420a2133f55c8ea809decd09c16914  /home/user/nx679j-stock/hypervisor-bypass/magisk_module/module.prop
+4790d3e7a7136a6f00b1ee1eaec67c1175b0bbe75341550f3f38e58d3fe11e56  /home/user/nx679j-stock/hypervisor-bypass/build/hyp_attack
+6fc9b48dabe3f41681312a6c9849f7e1e1b129060f886a3c83e05c61a6499e8b  /home/user/nx679j-stock/hypervisor-bypass/build/gunyah_watchdog_pet.zip
+19662cf68a43ac66f68e9be4709e388789d033da4ba46220ec45628b38e245fb  /home/user/nx679j-stock/hypervisor-bypass/kexec_injector.ko

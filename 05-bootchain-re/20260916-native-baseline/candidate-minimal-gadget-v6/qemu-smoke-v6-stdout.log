@@ -1,0 +1,24 @@
+qemu cmd: qemu-system-aarch64 -machine virt -cpu cortex-a57 -accel tcg -smp 2 -m 2048 -nodefaults -nic none -display none -monitor none -serial stdio -no-reboot -kernel /home/user/nx679j-stock/experiments/20260916-122926-native-baseline/candidate-minimal-gadget-v6/qemu/kernel-from-image -initrd /home/user/nx679j-stock/experiments/20260916-122926-native-baseline/candidate-minimal-gadget-v6/qemu/ramdisk-from-image.gz -append console=ttyAMA0 earlycon loglevel=7 panic=10 rdinit=/init
+[PASS] kernel reached userspace: /init ran as PID 1: [    0.815167][    T1] nx679j-v6: init v6 entered pid=1 channels kmsg=0 console=0
+[PASS] PID 1 is our binary with its channel fds open: [    0.815167][    T1] nx679j-v6: init v6 entered pid=1 channels kmsg=0 console=0
+[PASS] configfs mounted and usb_gadget reachable: ['[    0.834154][    T1] nx679j-v6: configfs usb_gadget dir present=1 rc=0']
+[PASS] module chain runs before the gadget attempt (new order): enter=0 modules=10 gadget=79
+[PASS] no UDC in QEMU (expected: no Waipio DT, dwc3 never probes): ['[    6.139025][    T1] nx679j-v6: cycle=901 udc=NONE after 5s']
+[PASS] configfs layout is really created (g1 dirs) - logged only if UDC: skipped: no UDC in QEMU, gadget_cycle returns before mkdir
+[PASS] fallback path used (QEMU has no device modules.dep): ['nx679j-v6: modload source=fallback order=/lib/modules/fallback.order ok=47 fail=0 skip=0 missing=0']
+[PASS] the 47-module closure really loads in this kernel: ['nx679j-v6: modload summary loaded=47 skipped=0 failed=0 missing=0 dwc3_seen=1']
+[PASS] dwc3_msm appears in the chain and loads (rc=0): ['nx679j-v6: modload dwc3_msm rc=0 /lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/dwc3-msm.ko', 'nx679j-v6: dwc3_msm in -> gadget attempt now (fallback path)']
+[PASS] softdep order honoured on the wire: qcom_hwspinlock before smem: qcom_hwspinlock at 21224, smem at 21346
+[PASS] softdep order honoured on the wire: phy-generic/eud before dwc3-msm: phy_generic 24330 eud 24692 dwc3_msm 24790
+[PASS] every loaded/failed module is journalled with an rc: 58 per-module lines
+[PASS] the one unresolved module is named in the log, not skipped silently: []
+[PASS] rawdump (UFS) absent without a UFS host bind, and that is not fatal: ['[   36.235590][    T1] nx679j-v6: rawdump none (no block device yet: is ufs_qcom in?)']
+[PASS] pmsg breadcrumb channel: resolved from /proc/devices or declared unavailable: ['[    0.829931][    T1] nx679j-v6: pmsg0 unavailable (no pmsg major in /proc/devices: no ramoops this boot)']
+[PASS] retry loop keeps running (>= 2 cycles): 5 cycles: [1, 2, 3, 4, 5]
+[PASS] retry loop reached the requested depth: want >= 5, got 5
+[PASS] PID 1 still alive when the test stopped it: qemu still running=True (rc=0)
+[PASS] no kernel panic / no dead init in the whole log: clean
+[PASS] order on the wire: enter -> module chain -> udc=NONE -> gadget: enter=0 modules=10 gadget=79 udc=56
+[PASS] cycle numbering is monotonic and never resets: [1, 2, 3, 4, 5]
+
+[*] 21/21 checks passed; ran 98.1s, 104 init log lines

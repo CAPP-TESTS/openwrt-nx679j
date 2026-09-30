@@ -1,0 +1,6 @@
+ls: /lib/modules/: No such file or directory
+0
+ls: /lib/modules/: No such file or directory
+--- modules.load:
+cat: /lib/modules/modules.load: No such file or directory
+--- fine modules.load

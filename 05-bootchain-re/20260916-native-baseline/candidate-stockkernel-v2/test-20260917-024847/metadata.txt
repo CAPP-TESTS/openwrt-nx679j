@@ -1,0 +1,2 @@
+TESTDIR=candidate-stockkernel-v2/test-20260917-024847
+--- readback recorded ---

@@ -1,0 +1,460 @@
+[ns] service=14 version=1 instance=0 node=1 port=14
+[ns] service=64 version=1 instance=1 node=1 port=17081
+BOOT_ID=2ca42e08-8c9a-4d61-8ae3-2b632149d26a
+[dspawn] pid=27325 log=/tmp/crashlog-pd.log
+STOP uptime=28752
+spawned pid=27334: /sys/class/remoteproc/remoteproc3/state <- stop
+START uptime=28758
+spawned pid=27364: /sys/class/remoteproc/remoteproc3/state <- start
+[ns] service 2 not found (lookup returned 0 entries)
+SAMPLE phase=before-protective-restart uptime=28759 elapsed=1 mode=unknown services=18 state=running
+query failed
+SAMPLE phase=before-protective-restart uptime=28774 elapsed=16 mode=5 services=60 state=running
+[qrtr] local node=1 port=0
+[ns] service=2 version=1 instance=0 node=0 port=72
+[qmi] raw (18 bytes):
+  02 01 00 2d 00 0b 00 02 04 00 00 00 00 00 01 01 
+  00 05 
+[qmi] type=2 txn=1 msg_id=0x002d msg_len=11
+  TLV 0x02 len=4  u32=0 (0x00000000)  str=""
+  TLV 0x01 len=1  u8=5
+SAMPLE phase=before-protective-restart uptime=28789 elapsed=31 mode=5 services=60 state=running
+[qrtr] local node=1 port=0
+[ns] service=2 version=1 instance=0 node=0 port=72
+[qmi] raw (18 bytes):
+  02 01 00 2d 00 0b 00 02 04 00 00 00 00 00 01 01 
+  00 05 
+[qmi] type=2 txn=1 msg_id=0x002d msg_len=11
+  TLV 0x02 len=4  u32=0 (0x00000000)  str=""
+  TLV 0x01 len=1  u8=5
+SAMPLE phase=before-protective-restart uptime=28804 elapsed=46 mode=5 services=60 state=running
+[qrtr] local node=1 port=0
+[ns] service=2 version=1 instance=0 node=0 port=72
+[qmi] raw (18 bytes):
+  02 01 00 2d 00 0b 00 02 04 00 00 00 00 00 01 01 
+  00 05 
+[qmi] type=2 txn=1 msg_id=0x002d msg_len=11
+  TLV 0x02 len=4  u32=0 (0x00000000)  str=""
+  TLV 0x01 len=1  u8=5
+SAMPLE phase=before-protective-restart uptime=28819 elapsed=61 mode=5 services=60 state=running
+[qrtr] local node=1 port=0
+[ns] service=2 version=1 instance=0 node=0 port=72
+[qmi] raw (18 bytes):
+  02 01 00 2d 00 0b 00 02 04 00 00 00 00 00 01 01 
+  00 05 
+[qmi] type=2 txn=1 msg_id=0x002d msg_len=11
+  TLV 0x02 len=4  u32=0 (0x00000000)  str=""
+  TLV 0x01 len=1  u8=5
+SAMPLE phase=before-protective-restart uptime=28834 elapsed=76 mode=5 services=60 state=running
+[qrtr] local node=1 port=0
+[ns] service=2 version=1 instance=0 node=0 port=72
+[qmi] raw (18 bytes):
+  02 01 00 2d 00 0b 00 02 04 00 00 00 00 00 01 01 
+  00 05 
+[qmi] type=2 txn=1 msg_id=0x002d msg_len=11
+  TLV 0x02 len=4  u32=0 (0x00000000)  str=""
+  TLV 0x01 len=1  u8=5
+STOP uptime=28844
+spawned pid=27884: /sys/class/remoteproc/remoteproc3/state <- stop
+START uptime=28850
+spawned pid=27924: /sys/class/remoteproc/remoteproc3/state <- start
+[ns] service 2 not found (lookup returned 0 entries)
+SAMPLE phase=observation uptime=28851 elapsed=1 mode=unknown services=14 state=running
+query failed
+SAMPLE phase=observation uptime=28865 elapsed=15 mode=5 services=60 state=running
+[qrtr] local node=1 port=0
+[ns] service=2 version=1 instance=0 node=0 port=73
+[qmi] raw (18 bytes):
+  02 01 00 2d 00 0b 00 02 04 00 00 00 00 00 01 01 
+  00 05 
+[qmi] type=2 txn=1 msg_id=0x002d msg_len=11
+  TLV 0x02 len=4  u32=0 (0x00000000)  str=""
+  TLV 0x01 len=1  u8=5
+SAMPLE phase=observation uptime=28880 elapsed=30 mode=5 services=60 state=running
+[qrtr] local node=1 port=0
+[ns] service=2 version=1 instance=0 node=0 port=73
+[qmi] raw (18 bytes):
+  02 01 00 2d 00 0b 00 02 04 00 00 00 00 00 01 01 
+  00 05 
+[qmi] type=2 txn=1 msg_id=0x002d msg_len=11
+  TLV 0x02 len=4  u32=0 (0x00000000)  str=""
+  TLV 0x01 len=1  u8=5
+SAMPLE phase=observation uptime=28895 elapsed=45 mode=5 services=60 state=running
+[qrtr] local node=1 port=0
+[ns] service=2 version=1 instance=0 node=0 port=73
+[qmi] raw (18 bytes):
+  02 01 00 2d 00 0b 00 02 04 00 00 00 00 00 01 01 
+  00 05 
+[qmi] type=2 txn=1 msg_id=0x002d msg_len=11
+  TLV 0x02 len=4  u32=0 (0x00000000)  str=""
+  TLV 0x01 len=1  u8=5
+SAMPLE phase=observation uptime=28910 elapsed=60 mode=5 services=60 state=running
+[qrtr] local node=1 port=0
+[ns] service=2 version=1 instance=0 node=0 port=73
+[qmi] raw (18 bytes):
+  02 01 00 2d 00 0b 00 02 04 00 00 00 00 00 01 01 
+  00 05 
+[qmi] type=2 txn=1 msg_id=0x002d msg_len=11
+  TLV 0x02 len=4  u32=0 (0x00000000)  str=""
+  TLV 0x01 len=1  u8=5
+SAMPLE phase=observation uptime=28925 elapsed=75 mode=5 services=60 state=running
+[qrtr] local node=1 port=0
+[ns] service=2 version=1 instance=0 node=0 port=73
+[qmi] raw (18 bytes):
+  02 01 00 2d 00 0b 00 02 04 00 00 00 00 00 01 01 
+  00 05 
+[qmi] type=2 txn=1 msg_id=0x002d msg_len=11
+  TLV 0x02 len=4  u32=0 (0x00000000)  str=""
+  TLV 0x01 len=1  u8=5
+SAMPLE phase=observation uptime=28940 elapsed=90 mode=5 services=60 state=running
+[qrtr] local node=1 port=0
+[ns] service=2 version=1 instance=0 node=0 port=73
+[qmi] raw (18 bytes):
+  02 01 00 2d 00 0b 00 02 04 00 00 00 00 00 01 01 
+  00 05 
+[qmi] type=2 txn=1 msg_id=0x002d msg_len=11
+  TLV 0x02 len=4  u32=0 (0x00000000)  str=""
+  TLV 0x01 len=1  u8=5
+SAMPLE phase=observation uptime=28955 elapsed=105 mode=5 services=60 state=running
+[qrtr] local node=1 port=0
+[ns] service=2 version=1 instance=0 node=0 port=73
+[qmi] raw (18 bytes):
+  02 01 00 2d 00 0b 00 02 04 00 00 00 00 00 01 01 
+  00 05 
+[qmi] type=2 txn=1 msg_id=0x002d msg_len=11
+  TLV 0x02 len=4  u32=0 (0x00000000)  str=""
+  TLV 0x01 len=1  u8=5
+SAMPLE phase=observation uptime=28970 elapsed=120 mode=5 services=60 state=running
+[qrtr] local node=1 port=0
+[ns] service=2 version=1 instance=0 node=0 port=73
+[qmi] raw (18 bytes):
+  02 01 00 2d 00 0b 00 02 04 00 00 00 00 00 01 01 
+  00 05 
+[qmi] type=2 txn=1 msg_id=0x002d msg_len=11
+  TLV 0x02 len=4  u32=0 (0x00000000)  str=""
+  TLV 0x01 len=1  u8=5
+SAMPLE phase=observation uptime=28985 elapsed=135 mode=5 services=60 state=running
+[qrtr] local node=1 port=0
+[ns] service=2 version=1 instance=0 node=0 port=73
+[qmi] raw (18 bytes):
+  02 01 00 2d 00 0b 00 02 04 00 00 00 00 00 01 01 
+  00 05 
+[qmi] type=2 txn=1 msg_id=0x002d msg_len=11
+  TLV 0x02 len=4  u32=0 (0x00000000)  str=""
+  TLV 0x01 len=1  u8=5
+SAMPLE phase=observation uptime=29000 elapsed=150 mode=5 services=60 state=running
+[qrtr] local node=1 port=0
+[ns] service=2 version=1 instance=0 node=0 port=73
+[qmi] raw (18 bytes):
+  02 01 00 2d 00 0b 00 02 04 00 00 00 00 00 01 01 
+  00 05 
+[qmi] type=2 txn=1 msg_id=0x002d msg_len=11
+  TLV 0x02 len=4  u32=0 (0x00000000)  str=""
+  TLV 0x01 len=1  u8=5
+SAMPLE phase=observation uptime=29015 elapsed=165 mode=5 services=60 state=running
+[qrtr] local node=1 port=0
+[ns] service=2 version=1 instance=0 node=0 port=73
+[qmi] raw (18 bytes):
+  02 01 00 2d 00 0b 00 02 04 00 00 00 00 00 01 01 
+  00 05 
+[qmi] type=2 txn=1 msg_id=0x002d msg_len=11
+  TLV 0x02 len=4  u32=0 (0x00000000)  str=""
+  TLV 0x01 len=1  u8=5
+SAMPLE phase=observation uptime=29030 elapsed=180 mode=5 services=60 state=running
+[qrtr] local node=1 port=0
+[ns] service=2 version=1 instance=0 node=0 port=73
+[qmi] raw (18 bytes):
+  02 01 00 2d 00 0b 00 02 04 00 00 00 00 00 01 01 
+  00 05 
+[qmi] type=2 txn=1 msg_id=0x002d msg_len=11
+  TLV 0x02 len=4  u32=0 (0x00000000)  str=""
+  TLV 0x01 len=1  u8=5
+SAMPLE phase=observation uptime=29045 elapsed=195 mode=5 services=60 state=running
+[qrtr] local node=1 port=0
+[ns] service=2 version=1 instance=0 node=0 port=73
+[qmi] raw (18 bytes):
+  02 01 00 2d 00 0b 00 02 04 00 00 00 00 00 01 01 
+  00 05 
+[qmi] type=2 txn=1 msg_id=0x002d msg_len=11
+  TLV 0x02 len=4  u32=0 (0x00000000)  str=""
+  TLV 0x01 len=1  u8=5
+SAMPLE phase=observation uptime=29060 elapsed=210 mode=5 services=60 state=running
+[qrtr] local node=1 port=0
+[ns] service=2 version=1 instance=0 node=0 port=73
+[qmi] raw (18 bytes):
+  02 01 00 2d 00 0b 00 02 04 00 00 00 00 00 01 01 
+  00 05 
+[qmi] type=2 txn=1 msg_id=0x002d msg_len=11
+  TLV 0x02 len=4  u32=0 (0x00000000)  str=""
+  TLV 0x01 len=1  u8=5
+SAMPLE phase=observation uptime=29076 elapsed=226 mode=5 services=60 state=running
+[qrtr] local node=1 port=0
+[ns] service=2 version=1 instance=0 node=0 port=73
+[qmi] raw (18 bytes):
+  02 01 00 2d 00 0b 00 02 04 00 00 00 00 00 01 01 
+  00 05 
+[qmi] type=2 txn=1 msg_id=0x002d msg_len=11
+  TLV 0x02 len=4  u32=0 (0x00000000)  str=""
+  TLV 0x01 len=1  u8=5
+SAMPLE phase=observation uptime=29090 elapsed=240 mode=5 services=60 state=running
+[qrtr] local node=1 port=0
+[ns] service=2 version=1 instance=0 node=0 port=73
+[qmi] raw (18 bytes):
+  02 01 00 2d 00 0b 00 02 04 00 00 00 00 00 01 01 
+  00 05 
+[qmi] type=2 txn=1 msg_id=0x002d msg_len=11
+  TLV 0x02 len=4  u32=0 (0x00000000)  str=""
+  TLV 0x01 len=1  u8=5
+SAMPLE phase=observation uptime=29105 elapsed=255 mode=5 services=60 state=running
+[qrtr] local node=1 port=0
+[ns] service=2 version=1 instance=0 node=0 port=73
+[qmi] raw (18 bytes):
+  02 01 00 2d 00 0b 00 02 04 00 00 00 00 00 01 01 
+  00 05 
+[qmi] type=2 txn=1 msg_id=0x002d msg_len=11
+  TLV 0x02 len=4  u32=0 (0x00000000)  str=""
+  TLV 0x01 len=1  u8=5
+SAMPLE phase=observation uptime=29120 elapsed=270 mode=5 services=60 state=running
+[qrtr] local node=1 port=0
+[ns] service=2 version=1 instance=0 node=0 port=73
+[qmi] raw (18 bytes):
+  02 01 00 2d 00 0b 00 02 04 00 00 00 00 00 01 01 
+  00 05 
+[qmi] type=2 txn=1 msg_id=0x002d msg_len=11
+  TLV 0x02 len=4  u32=0 (0x00000000)  str=""
+  TLV 0x01 len=1  u8=5
+SAMPLE phase=observation uptime=29135 elapsed=285 mode=5 services=60 state=running
+[qrtr] local node=1 port=0
+[ns] service=2 version=1 instance=0 node=0 port=73
+[qmi] raw (18 bytes):
+  02 01 00 2d 00 0b 00 02 04 00 00 00 00 00 01 01 
+  00 05 
+[qmi] type=2 txn=1 msg_id=0x002d msg_len=11
+  TLV 0x02 len=4  u32=0 (0x00000000)  str=""
+  TLV 0x01 len=1  u8=5
+SAMPLE phase=observation uptime=29150 elapsed=300 mode=5 services=60 state=running
+[qrtr] local node=1 port=0
+[ns] service=2 version=1 instance=0 node=0 port=73
+[qmi] raw (18 bytes):
+  02 01 00 2d 00 0b 00 02 04 00 00 00 00 00 01 01 
+  00 05 
+[qmi] type=2 txn=1 msg_id=0x002d msg_len=11
+  TLV 0x02 len=4  u32=0 (0x00000000)  str=""
+  TLV 0x01 len=1  u8=5
+SAMPLE phase=observation uptime=29165 elapsed=315 mode=5 services=60 state=running
+[qrtr] local node=1 port=0
+[ns] service=2 version=1 instance=0 node=0 port=73
+[qmi] raw (18 bytes):
+  02 01 00 2d 00 0b 00 02 04 00 00 00 00 00 01 01 
+  00 05 
+[qmi] type=2 txn=1 msg_id=0x002d msg_len=11
+  TLV 0x02 len=4  u32=0 (0x00000000)  str=""
+  TLV 0x01 len=1  u8=5
+SAMPLE phase=observation uptime=29180 elapsed=330 mode=5 services=60 state=running
+[qrtr] local node=1 port=0
+[ns] service=2 version=1 instance=0 node=0 port=73
+[qmi] raw (18 bytes):
+  02 01 00 2d 00 0b 00 02 04 00 00 00 00 00 01 01 
+  00 05 
+[qmi] type=2 txn=1 msg_id=0x002d msg_len=11
+  TLV 0x02 len=4  u32=0 (0x00000000)  str=""
+  TLV 0x01 len=1  u8=5
+SAMPLE phase=observation uptime=29195 elapsed=345 mode=5 services=60 state=running
+[qrtr] local node=1 port=0
+[ns] service=2 version=1 instance=0 node=0 port=73
+[qmi] raw (18 bytes):
+  02 01 00 2d 00 0b 00 02 04 00 00 00 00 00 01 01 
+  00 05 
+[qmi] type=2 txn=1 msg_id=0x002d msg_len=11
+  TLV 0x02 len=4  u32=0 (0x00000000)  str=""
+  TLV 0x01 len=1  u8=5
+SAMPLE phase=observation uptime=29210 elapsed=360 mode=5 services=60 state=running
+[qrtr] local node=1 port=0
+[ns] service=2 version=1 instance=0 node=0 port=73
+[qmi] raw (18 bytes):
+  02 01 00 2d 00 0b 00 02 04 00 00 00 00 00 01 01 
+  00 05 
+[qmi] type=2 txn=1 msg_id=0x002d msg_len=11
+  TLV 0x02 len=4  u32=0 (0x00000000)  str=""
+  TLV 0x01 len=1  u8=5
+SAMPLE phase=observation uptime=29225 elapsed=375 mode=5 services=60 state=running
+[qrtr] local node=1 port=0
+[ns] service=2 version=1 instance=0 node=0 port=73
+[qmi] raw (18 bytes):
+  02 01 00 2d 00 0b 00 02 04 00 00 00 00 00 01 01 
+  00 05 
+[qmi] type=2 txn=1 msg_id=0x002d msg_len=11
+  TLV 0x02 len=4  u32=0 (0x00000000)  str=""
+  TLV 0x01 len=1  u8=5
+SAMPLE phase=observation uptime=29240 elapsed=390 mode=5 services=60 state=running
+[qrtr] local node=1 port=0
+[ns] service=2 version=1 instance=0 node=0 port=73
+[qmi] raw (18 bytes):
+  02 01 00 2d 00 0b 00 02 04 00 00 00 00 00 01 01 
+  00 05 
+[qmi] type=2 txn=1 msg_id=0x002d msg_len=11
+  TLV 0x02 len=4  u32=0 (0x00000000)  str=""
+  TLV 0x01 len=1  u8=5
+SAMPLE phase=observation uptime=29255 elapsed=405 mode=5 services=60 state=running
+[qrtr] local node=1 port=0
+[ns] service=2 version=1 instance=0 node=0 port=73
+[qmi] raw (18 bytes):
+  02 01 00 2d 00 0b 00 02 04 00 00 00 00 00 01 01 
+  00 05 
+[qmi] type=2 txn=1 msg_id=0x002d msg_len=11
+  TLV 0x02 len=4  u32=0 (0x00000000)  str=""
+  TLV 0x01 len=1  u8=5
+SAMPLE phase=observation uptime=29270 elapsed=420 mode=5 services=60 state=running
+[qrtr] local node=1 port=0
+[ns] service=2 version=1 instance=0 node=0 port=73
+[qmi] raw (18 bytes):
+  02 01 00 2d 00 0b 00 02 04 00 00 00 00 00 01 01 
+  00 05 
+[qmi] type=2 txn=1 msg_id=0x002d msg_len=11
+  TLV 0x02 len=4  u32=0 (0x00000000)  str=""
+  TLV 0x01 len=1  u8=5
+SAMPLE phase=observation uptime=29285 elapsed=435 mode=5 services=60 state=running
+[qrtr] local node=1 port=0
+[ns] service=2 version=1 instance=0 node=0 port=73
+[qmi] raw (18 bytes):
+  02 01 00 2d 00 0b 00 02 04 00 00 00 00 00 01 01 
+  00 05 
+[qmi] type=2 txn=1 msg_id=0x002d msg_len=11
+  TLV 0x02 len=4  u32=0 (0x00000000)  str=""
+  TLV 0x01 len=1  u8=5
+SAMPLE phase=observation uptime=29300 elapsed=450 mode=5 services=60 state=running
+[qrtr] local node=1 port=0
+[ns] service=2 version=1 instance=0 node=0 port=73
+[qmi] raw (18 bytes):
+  02 01 00 2d 00 0b 00 02 04 00 00 00 00 00 01 01 
+  00 05 
+[qmi] type=2 txn=1 msg_id=0x002d msg_len=11
+  TLV 0x02 len=4  u32=0 (0x00000000)  str=""
+  TLV 0x01 len=1  u8=5
+SAMPLE phase=observation uptime=29315 elapsed=465 mode=5 services=60 state=running
+[qrtr] local node=1 port=0
+[ns] service=2 version=1 instance=0 node=0 port=73
+[qmi] raw (18 bytes):
+  02 01 00 2d 00 0b 00 02 04 00 00 00 00 00 01 01 
+  00 05 
+[qmi] type=2 txn=1 msg_id=0x002d msg_len=11
+  TLV 0x02 len=4  u32=0 (0x00000000)  str=""
+  TLV 0x01 len=1  u8=5
+SAMPLE phase=observation uptime=29330 elapsed=480 mode=5 services=60 state=running
+[qrtr] local node=1 port=0
+[ns] service=2 version=1 instance=0 node=0 port=73
+[qmi] raw (18 bytes):
+  02 01 00 2d 00 0b 00 02 04 00 00 00 00 00 01 01 
+  00 05 
+[qmi] type=2 txn=1 msg_id=0x002d msg_len=11
+  TLV 0x02 len=4  u32=0 (0x00000000)  str=""
+  TLV 0x01 len=1  u8=5
+SAMPLE phase=observation uptime=29345 elapsed=495 mode=5 services=60 state=running
+[qrtr] local node=1 port=0
+[ns] service=2 version=1 instance=0 node=0 port=73
+[qmi] raw (18 bytes):
+  02 01 00 2d 00 0b 00 02 04 00 00 00 00 00 01 01 
+  00 05 
+[qmi] type=2 txn=1 msg_id=0x002d msg_len=11
+  TLV 0x02 len=4  u32=0 (0x00000000)  str=""
+  TLV 0x01 len=1  u8=5
+SAMPLE phase=observation uptime=29360 elapsed=510 mode=5 services=60 state=running
+[qrtr] local node=1 port=0
+[ns] service=2 version=1 instance=0 node=0 port=73
+[qmi] raw (18 bytes):
+  02 01 00 2d 00 0b 00 02 04 00 00 00 00 00 01 01 
+  00 05 
+[qmi] type=2 txn=1 msg_id=0x002d msg_len=11
+  TLV 0x02 len=4  u32=0 (0x00000000)  str=""
+  TLV 0x01 len=1  u8=5
+SAMPLE phase=observation uptime=29375 elapsed=525 mode=5 services=60 state=running
+[qrtr] local node=1 port=0
+[ns] service=2 version=1 instance=0 node=0 port=73
+[qmi] raw (18 bytes):
+  02 01 00 2d 00 0b 00 02 04 00 00 00 00 00 01 01 
+  00 05 
+[qmi] type=2 txn=1 msg_id=0x002d msg_len=11
+  TLV 0x02 len=4  u32=0 (0x00000000)  str=""
+  TLV 0x01 len=1  u8=5
+SAMPLE phase=observation uptime=29390 elapsed=540 mode=5 services=60 state=running
+[qrtr] local node=1 port=0
+[ns] service=2 version=1 instance=0 node=0 port=73
+[qmi] raw (18 bytes):
+  02 01 00 2d 00 0b 00 02 04 00 00 00 00 00 01 01 
+  00 05 
+[qmi] type=2 txn=1 msg_id=0x002d msg_len=11
+  TLV 0x02 len=4  u32=0 (0x00000000)  str=""
+  TLV 0x01 len=1  u8=5
+SAMPLE phase=observation uptime=29405 elapsed=555 mode=5 services=60 state=running
+[qrtr] local node=1 port=0
+[ns] service=2 version=1 instance=0 node=0 port=73
+[qmi] raw (18 bytes):
+  02 01 00 2d 00 0b 00 02 04 00 00 00 00 00 01 01 
+  00 05 
+[qmi] type=2 txn=1 msg_id=0x002d msg_len=11
+  TLV 0x02 len=4  u32=0 (0x00000000)  str=""
+  TLV 0x01 len=1  u8=5
+SAMPLE phase=observation uptime=29420 elapsed=570 mode=5 services=60 state=running
+[qrtr] local node=1 port=0
+[ns] service=2 version=1 instance=0 node=0 port=73
+[qmi] raw (18 bytes):
+  02 01 00 2d 00 0b 00 02 04 00 00 00 00 00 01 01 
+  00 05 
+[qmi] type=2 txn=1 msg_id=0x002d msg_len=11
+  TLV 0x02 len=4  u32=0 (0x00000000)  str=""
+  TLV 0x01 len=1  u8=5
+SAMPLE phase=observation uptime=29435 elapsed=585 mode=5 services=60 state=running
+[qrtr] local node=1 port=0
+[ns] service=2 version=1 instance=0 node=0 port=73
+[qmi] raw (18 bytes):
+  02 01 00 2d 00 0b 00 02 04 00 00 00 00 00 01 01 
+  00 05 
+[qmi] type=2 txn=1 msg_id=0x002d msg_len=11
+  TLV 0x02 len=4  u32=0 (0x00000000)  str=""
+  TLV 0x01 len=1  u8=5
+SAMPLE phase=observation uptime=29450 elapsed=600 mode=5 services=60 state=running
+[qrtr] local node=1 port=0
+[ns] service=2 version=1 instance=0 node=0 port=73
+[qmi] raw (18 bytes):
+  02 01 00 2d 00 0b 00 02 04 00 00 00 00 00 01 01 
+  00 05 
+[qmi] type=2 txn=1 msg_id=0x002d msg_len=11
+  TLV 0x02 len=4  u32=0 (0x00000000)  str=""
+  TLV 0x01 len=1  u8=5
+SAMPLE phase=observation uptime=29465 elapsed=615 mode=5 services=60 state=running
+[qrtr] local node=1 port=0
+[ns] service=2 version=1 instance=0 node=0 port=73
+[qmi] raw (18 bytes):
+  02 01 00 2d 00 0b 00 02 04 00 00 00 00 00 01 01 
+  00 05 
+[qmi] type=2 txn=1 msg_id=0x002d msg_len=11
+  TLV 0x02 len=4  u32=0 (0x00000000)  str=""
+  TLV 0x01 len=1  u8=5
+SAMPLE phase=observation uptime=29480 elapsed=630 mode=5 services=60 state=running
+[qrtr] local node=1 port=0
+[ns] service=2 version=1 instance=0 node=0 port=73
+[qmi] raw (18 bytes):
+  02 01 00 2d 00 0b 00 02 04 00 00 00 00 00 01 01 
+  00 05 
+[qmi] type=2 txn=1 msg_id=0x002d msg_len=11
+  TLV 0x02 len=4  u32=0 (0x00000000)  str=""
+  TLV 0x01 len=1  u8=5
+SAMPLE phase=observation uptime=29495 elapsed=645 mode=5 services=60 state=running
+[qrtr] local node=1 port=0
+[ns] service=2 version=1 instance=0 node=0 port=73
+[qmi] raw (18 bytes):
+  02 01 00 2d 00 0b 00 02 04 00 00 00 00 00 01 01 
+  00 05 
+[qmi] type=2 txn=1 msg_id=0x002d msg_len=11
+  TLV 0x02 len=4  u32=0 (0x00000000)  str=""
+  TLV 0x01 len=1  u8=5
+SAMPLE phase=observation uptime=29510 elapsed=660 mode=5 services=60 state=running
+[qrtr] local node=1 port=0
+[ns] service=2 version=1 instance=0 node=0 port=73
+[qmi] raw (18 bytes):
+  02 01 00 2d 00 0b 00 02 04 00 00 00 00 00 01 01 
+  00 05 
+[qmi] type=2 txn=1 msg_id=0x002d msg_len=11
+  TLV 0x02 len=4  u32=0 (0x00000000)  str=""
+  TLV 0x01 len=1  u8=5
+RESULT: no ONLINE transition in 660 seconds after protective restart

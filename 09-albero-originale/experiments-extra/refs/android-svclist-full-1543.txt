@@ -1,0 +1,297 @@
+== FULL SVC LIST qrtr-lookup:
+  Service Version Instance Node  Port
+       66       1      180    0     1 Service registry notification service
+       43       2       18    0     4 Subsystem control service
+       15       1        5    0    15 Test service
+       21       1        0    0    17 Modem embedded file system service
+       51       1       11    0    18 CoreSight remote tracing service
+       51       1        2    0    19 CoreSight remote tracing service
+       24       1        0    0    20 Thermal mitigation device service
+       22       1       16    0    21 Time service
+     4097     N/A        1    0    25 DIAG service (MODEM:CMD)
+       23       2        0    0    28 Thermal sensors service
+       23       1        0    0    29 Thermal sensors service
+       36       1        0    0    30 Persistent device configuration service
+     4097     N/A        3    0    31 DIAG service (MODEM:DCI_CMD)
+       49       1        2    0    34 IPA control service
+     1071       1        1    0    35 <unknown>
+       17       1        0    0    47 Specific absorption rate service
+       34       1        0    0    48 Coexistence service
+       41       1        1    0    52 RF radiated performance enhancement service
+     5004     239      222    0    53 <unknown>
+       85       1        0    0    56 <unknown>
+       76       1        0    0    57 <unknown>
+       55       1        2    0    60 <unknown>
+      227       1        0    0    64 <unknown>
+       50       1        0    0    65 <unknown>
+       12       1        0    0    66 Phonebook Management service
+        9       2        0    0    69 Voice service
+        3       1        0    0    70 Network Access Service
+       10       2        0    0    71 Card Application Toolkit service (v2)
+       47       1        0    0    72 <unknown>
+       11       1        0    0    73 User Identity Module service
+        1       1        0    0    75 Wireless Data Service
+        4       1        0    0    77 Quality Of Service service
+       26       1        0    0    78 Wireless data administrative service
+        8       1        0    0    79 AT service
+       77       1        0    0    80 <unknown>
+       75       1        0    0    81 <unknown>
+       74       1        0    0    82 <unknown>
+       42       1        0    0    86 Data system determination service
+        2       1        0    0    88 Device Management Service
+        5       1        0    0    89 Wireless Messaging Service
+       48       1        0    0    91 <unknown>
+       68       1        0    0    92 <unknown>
+       73       1        0    0    93 <unknown>
+       78       1        0    0    94 <unknown>
+       29       1        0    0    95 Circuit switched videotelephony service
+        7       1        0    0    96 Authentication service
+       33       1        0    0    97 IMS application service
+       18       1        0    0    99 IMS settings service
+       16       2        0    0   104 Location service (~ PDS v2)
+       71       1        0    0   109 <unknown>
+     1070       1        0    1 16385 <unknown>
+       52       1        1    1 16386 Dynamic Heap Memory Sharing
+     1053       1        0    1 16402 <unknown>
+     4097     N/A        0    1 16414 DIAG service (MODEM:CNTL)
+     4097     N/A        2    1 16416 DIAG service (MODEM:DATA)
+     4097     N/A        4    1 16417 DIAG service (MODEM:DCI)
+     4097     N/A       64    1 16419 DIAG service (LPASS:CNTL)
+     4097     N/A       66    1 16421 DIAG service (LPASS:DATA)
+     4097     N/A       68    1 16422 DIAG service (LPASS:DCI)
+     4097     N/A      128    1 16424 DIAG service (WCNSS:CNTL)
+     4097     N/A      130    1 16426 DIAG service (WCNSS:DATA)
+     4097     N/A      132    1 16427 DIAG service (WCNSS:DCI)
+     4097     N/A      192    1 16429 DIAG service (SENSORS:CNTL)
+     4097     N/A      194    1 16431 DIAG service (SENSORS:DATA)
+     4097     N/A      196    1 16432 DIAG service (SENSORS:DCI)
+     4097     N/A      256    1 16434 DIAG service (CDSP:CNTL)
+     4097     N/A      258    1 16436 DIAG service (CDSP:DATA)
+     4097     N/A      260    1 16437 DIAG service (CDSP:DCI)
+     4097     N/A      320    1 16439 DIAG service (WDSP:CNTL)
+     4097     N/A      322    1 16441 DIAG service (WDSP:DATA)
+     4097     N/A      324    1 16442 DIAG service (WDSP:DCI)
+     4097     N/A      384    1 16444 DIAG service (<unk>:CNTL)
+     4097     N/A      386    1 16446 DIAG service (<unk>:DATA)
+     4097     N/A      388    1 16447 DIAG service (<unk>:DCI)
+     4097     N/A      448    1 16449 DIAG service (<unk>:CNTL)
+     4097     N/A      450    1 16451 DIAG service (<unk>:DATA)
+     4097     N/A      452    1 16452 DIAG service (<unk>:DCI)
+     4097     N/A      512    1 16454 DIAG service (<unk>:CNTL)
+     4097     N/A      514    1 16456 DIAG service (<unk>:DATA)
+     4097     N/A      516    1 16457 DIAG service (<unk>:DCI)
+     4097     N/A      576    1 16459 DIAG service (<unk>:CNTL)
+     4097     N/A      578    1 16461 DIAG service (<unk>:DATA)
+     4097     N/A      580    1 16462 DIAG service (<unk>:DCI)
+     4097     N/A      640    1 16464 DIAG service (<unk>:CNTL)
+     4097     N/A      642    1 16466 DIAG service (<unk>:DATA)
+     4097     N/A      644    1 16467 DIAG service (<unk>:DCI)
+     5009       1        1    1 16471 <unknown>
+     1059       1        0    1 16476 <unknown>
+       49       1        1    1 16480 IPA control service
+       53       1       16    1 16481 <unknown>
+       14       1        0    1 16483 Remote file system service
+     4096       1        0    1 16484 <unknown>
+     4096       2        0    1 16485 <unknown>
+     4096       3        0    1 16486 <unknown>
+     4096       4        0    1 16487 <unknown>
+     4096       5        0    1 16488 <unknown>
+     4096       6        0    1 16489 <unknown>
+     4096       7        0    1 16490 <unknown>
+     4096       8        0    1 16491 <unknown>
+     4096       9        0    1 16492 <unknown>
+     4096      10        0    1 16493 <unknown>
+       64       1        1    1 16494 Service registry locator service
+      770       1        0    1 16530 <unknown>
+     5004       1        0    1 16566 <unknown>
+     5004       2        0    1 16567 <unknown>
+       40       1        0    1 17338 IMS RTP service
+       55       1        1    1 17345 <unknown>
+       15       1       32    5     1 Test service
+       43       2       20    5     2 Subsystem control service
+       66       1       74    5     3 Service registry notification service
+       51       1        5    5     6 CoreSight remote tracing service
+       24       1        1    5     8 Thermal mitigation device service
+     4097     N/A       65    5    11 DIAG service (LPASS:CMD)
+       15       1       33    5    17 Test service
+      769       1        0    5    19 SLIMbus control service
+       15       1        0    5    20 Test service
+       69       1        1    7     1 ATH10k WLAN firmware service
+       57       1        0    7     2 <unknown>
+       58       1        0    7     4 <unknown>
+       15       1       48    9     1 Test service
+       43       2       22    9     2 Subsystem control service
+       66       1       90    9     3 Service registry notification service
+       51       1        8    9     6 CoreSight remote tracing service
+       24       1       83    9     9 Thermal mitigation device service
+     4097     N/A      193    9    12 DIAG service (SENSORS:CMD)
+       15       1       49    9    15 Test service
+       51       1       12    9    17 CoreSight remote tracing service
+      400       1        0    9    18 <unknown>
+       56       1        0    9    33 <unknown>
+       15       1       64   10     1 Test service
+       43       2       23   10     2 Subsystem control service
+       66       1       76   10     3 Service registry notification service
+       51       1       13   10     6 CoreSight remote tracing service
+     4097     N/A      257   10    10 DIAG service (CDSP:CMD)
+       24       1       67   10    13 Thermal mitigation device service
+       23       2       67   10    15 Thermal sensors service
+== processes:
+  968 system       android.hardware.keymaster@4.1-service-qti
+  969 system       android.hardware.security.keymint-service-qti
+  971 system       vendor.qti.hardware.qseecom@1.0-service
+ 1049 radio        ipacm
+ 1054 system       android.hardware.gatekeeper@1.0-service-qti
+ 1055 system       vendor.qti.hardware.qteeconnector@1.0-service
+ 1390 system       ssgtzd
+ 1392 system       diag-router
+ 1402 bluetooth    android.hardware.bluetooth@1.0-service-qti
+ 1406 gps          android.hardware.gnss-aidl-service-qti
+ 1409 system       android.hardware.identity-service-qti
+ 1412 system       android.hardware.neuralnetworks-shim-service-qti
+ 1418 root         android.hardware.thermal@2.0-service.qti-v2
+ 1423 root         android.hardware.usb@1.2-service-qti
+ 1429 nobody       vendor.qti.hardware.memtrack-service
+ 1445 cameraserver vendor.qti.camera.provider@2.7-service_64
+ 1447 system       vendor.qti.hardware.AGMIPC@1.0-service
+ 1449 system       vendor.qti.hardware.capabilityconfigstore@1.0-service
+ 1455 system       vendor.qti.hardware.display.allocator-service
+ 1457 system       vendor.qti.hardware.display.composer-service
+ 1458 system       vendor.qti.hardware.display.demura-service
+ 1460 system       vendor.qti.hardware.eid@1.0-service
+ 1461 root         vendor.qti.hardware.iop@2.0-service
+ 1464 system       vendor.qti.hardware.lights.service
+ 1466 root         vendor.qti.hardware.limits@1.1-service
+ 1470 root         vendor.qti.hardware.perf-hal-service
+ 1473 system       vendor.qti.hardware.secureprocessor@1.0
+ 1474 system       vendor.qti.hardware.sensorscalibrate@1.0-service
+ 1477 system       vendor.qti.hardware.servicetracker@1.2-service
+ 1478 system       vendor.qti.hardware.soter@1.0-service
+ 1483 system       vendor.qti.hardware.trustedui@1.0-service-qti
+ 1487 system       vendor.qti.hardware.tui_comm@1.0-service-qti
+ 1489 system       vendor.qti.hardware.vibrator.service
+ 1515 system       vendor.qti.qspmhal@1.0-service
+ 1530 system       pd-mapper
+ 1565 vendor_rfs   tftp_server
+ 1575 system       sensors.qti
+ 1776 system       dpmQmiMgr
+ 1892 radio        qcrilNrd
+ 1893 radio        qcrilNrd
+ 1894 radio        qmipriod
+ 1989 radio        ipacm-diag
+ 2011 radio        netmgrd
+ 2014 radio        port-bridge
+ 2183 radio        qti
+ 3135 root         android.hardware.usb.gadget@1.1-service-qti
+ 3684 u0_a102      .qtidataservices
+ 3712 u0_a144      com.qti.phone
+ 3774 u0_a179      com.qualcomm.qtil.aptxacu
+ 3797 u0_a156      com.qualcomm.qtil.aptxals
+ 3825 system       vendor.qti.qesdk.sysservice
+ 3861 u0_a171      com.qti.qualcomm.mstatssystemservice
+ 3955 u0_a123      com.qualcomm.qti.devicestatisticsservice
+ 3997 system       com.qualcomm.qti.qdma
+ 4237 u0_a172      com.qualcomm.qti.qccauthmgr
+ 5575 u0_a165      com.qualcomm.qti.performancemode
+ 5625 u0_a176      com.qualcomm.qtil.aptxui
+== vendor bin related:
+athdiag
+cnss_diag
+debug-diag
+diag-router
+diag_StartWifi
+diag_TinyServer
+diag_callback_sample
+diag_dci_sample
+diag_klog
+diag_mdlog
+diag_socket_log
+diag_uart_log
+dpmQmiMgr
+ipacm-diag
+pd-mapper
+port-bridge
+qmi-framework-tests
+qmipriod
+rmt_storage
+ssgqmigd
+ssgtzd
+ssr_diag
+test_diag
+tftp_server
+== props:
+[init.svc.vendor.dataqti]: [running]
+[init.svc.vendor.pd_mapper]: [running]
+[init.svc.vendor.tftp_server]: [running]
+[init.svc_debug_pid.vendor.dataqti]: [2183]
+[init.svc_debug_pid.vendor.pd_mapper]: [1530]
+[init.svc_debug_pid.vendor.tftp_server]: [1565]
+[ro.boottime.vendor.dataqti]: [6491882027]
+[ro.boottime.vendor.pd_mapper]: [5621284892]
+[ro.boottime.vendor.tftp_server]: [5655369684]
+== block by name (modem/fsg/efs):
+fsc
+fsg
+modem_a
+modem_b
+modemst1
+modemst2
+== node 1 (AP) services:
+     1070       1        0    1 16385 <unknown>
+       52       1        1    1 16386 Dynamic Heap Memory Sharing
+     1053       1        0    1 16402 <unknown>
+     4097     N/A        0    1 16414 DIAG service (MODEM:CNTL)
+     4097     N/A        2    1 16416 DIAG service (MODEM:DATA)
+     4097     N/A        4    1 16417 DIAG service (MODEM:DCI)
+     4097     N/A       64    1 16419 DIAG service (LPASS:CNTL)
+     4097     N/A       66    1 16421 DIAG service (LPASS:DATA)
+     4097     N/A       68    1 16422 DIAG service (LPASS:DCI)
+     4097     N/A      128    1 16424 DIAG service (WCNSS:CNTL)
+     4097     N/A      130    1 16426 DIAG service (WCNSS:DATA)
+     4097     N/A      132    1 16427 DIAG service (WCNSS:DCI)
+     4097     N/A      192    1 16429 DIAG service (SENSORS:CNTL)
+     4097     N/A      194    1 16431 DIAG service (SENSORS:DATA)
+     4097     N/A      196    1 16432 DIAG service (SENSORS:DCI)
+     4097     N/A      256    1 16434 DIAG service (CDSP:CNTL)
+     4097     N/A      258    1 16436 DIAG service (CDSP:DATA)
+     4097     N/A      260    1 16437 DIAG service (CDSP:DCI)
+     4097     N/A      320    1 16439 DIAG service (WDSP:CNTL)
+     4097     N/A      322    1 16441 DIAG service (WDSP:DATA)
+     4097     N/A      324    1 16442 DIAG service (WDSP:DCI)
+     4097     N/A      384    1 16444 DIAG service (<unk>:CNTL)
+     4097     N/A      386    1 16446 DIAG service (<unk>:DATA)
+     4097     N/A      388    1 16447 DIAG service (<unk>:DCI)
+     4097     N/A      448    1 16449 DIAG service (<unk>:CNTL)
+     4097     N/A      450    1 16451 DIAG service (<unk>:DATA)
+     4097     N/A      452    1 16452 DIAG service (<unk>:DCI)
+     4097     N/A      512    1 16454 DIAG service (<unk>:CNTL)
+     4097     N/A      514    1 16456 DIAG service (<unk>:DATA)
+     4097     N/A      516    1 16457 DIAG service (<unk>:DCI)
+     4097     N/A      576    1 16459 DIAG service (<unk>:CNTL)
+     4097     N/A      578    1 16461 DIAG service (<unk>:DATA)
+     4097     N/A      580    1 16462 DIAG service (<unk>:DCI)
+     4097     N/A      640    1 16464 DIAG service (<unk>:CNTL)
+     4097     N/A      642    1 16466 DIAG service (<unk>:DATA)
+     4097     N/A      644    1 16467 DIAG service (<unk>:DCI)
+     5009       1        1    1 16471 <unknown>
+     1059       1        0    1 16476 <unknown>
+       49       1        1    1 16480 IPA control service
+       53       1       16    1 16481 <unknown>
+       14       1        0    1 16483 Remote file system service
+     4096       1        0    1 16484 <unknown>
+     4096       2        0    1 16485 <unknown>
+     4096       3        0    1 16486 <unknown>
+     4096       4        0    1 16487 <unknown>
+     4096       5        0    1 16488 <unknown>
+     4096       6        0    1 16489 <unknown>
+     4096       7        0    1 16490 <unknown>
+     4096       8        0    1 16491 <unknown>
+     4096       9        0    1 16492 <unknown>
+     4096      10        0    1 16493 <unknown>
+       64       1        1    1 16494 Service registry locator service
+      770       1        0    1 16530 <unknown>
+     5004       1        0    1 16566 <unknown>
+     5004       2        0    1 16567 <unknown>
+       40       1        0    1 17338 IMS RTP service
+       55       1        1    1 17345 <unknown>
+END

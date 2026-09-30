@@ -1,0 +1,15 @@
+gh_virt_wdt        initstate=live
+qcom_wdt_core      initstate=live
+smem               initstate=live
+socinfo            initstate=live
+qrtr               initstate=live
+boot_stats         initstate=live
+icnss2             initstate=live
+cnss2              initstate=live
+cdsp-loader        initstate=ASSENTE
+atmel_mxt_ts       initstate=live
+aw9620x            initstate=live
+fsa4480_i2c        initstate=live
+mhi_dev_drv        initstate=live
+mhi_dev_netdev     initstate=live
+ipa_fmwk           initstate=live

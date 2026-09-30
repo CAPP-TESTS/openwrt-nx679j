@@ -1,0 +1,42 @@
+nx679j-v6: channels: neither /dev/kmsg nor /dev/console opened, using fd 1
+nx679j-v6: channels: neither /dev/kmsg nor /dev/console opened, using fd 1
+nx679j-v6: init v6 entered pid=2695948 channels kmsg=-13 console=-13
+nx679j-v6: init v6 entered pid=2695948 channels kmsg=-13 console=-13
+nx679j-v6: mount proc on /proc rc=-1
+nx679j-v6: mount proc on /proc rc=-1
+nx679j-v6: mount sysfs on /sys rc=-1
+nx679j-v6: mount sysfs on /sys rc=-1
+nx679j-v6: mount configfs on /sys/kernel/config rc=-1
+nx679j-v6: mount configfs on /sys/kernel/config rc=-1
+nx679j-v6: mount pstore on /sys/fs/pstore rc=-1
+nx679j-v6: mount pstore on /sys/fs/pstore rc=-1
+nx679j-v6: pmsg0 unavailable (no pmsg major in /proc/devices: no ramoops this boot)
+nx679j-v6: pmsg0 unavailable (no pmsg major in /proc/devices: no ramoops this boot)
+nx679j-v6: kernel=7.2.5-1-cachyos aarch64
+nx679j-v6: kernel=7.2.5-1-cachyos aarch64
+nx679j-v6: cmdline=quiet nowatchdog splash rw rootflags=subvol=/@ root=UUID=a9d67d67-e35b-4517-958f-d006f6be01d3
+nx679j-v6: cmdline=quiet nowatchdog splash rw rootflags=subvol=/@ root=UUID=a9d67d67-e35b-4517-958f-d006f6be01d3
+nx679j-v6: configfs usb_gadget dir present=0 rc=-1
+nx679j-v6: configfs usb_gadget dir present=0 rc=-1
+nx679j-v6: stage2 module chain (device metadata if present, else fallback list)
+nx679j-v6: stage2 module chain (device metadata if present, else fallback list)
+nx679j-v6: modload: no /lib/modules/modules.dep
+nx679j-v6: modload: no /lib/modules/modules.dep
+nx679j-v6: modload indexed 0 .ko files on disk
+nx679j-v6: modload indexed 0 .ko files on disk
+nx679j-v6: modload: no /lib/modules/fallback.order either (nothing to load, not fatal)
+nx679j-v6: modload: no /lib/modules/fallback.order either (nothing to load, not fatal)
+nx679j-v6: modload summary loaded=0 skipped=0 failed=0 missing=0 dwc3_seen=0
+nx679j-v6: modload summary loaded=0 skipped=0 failed=0 missing=0 dwc3_seen=0
+nx679j-v6: stage3 gadget attempt (wait=1s for a real UDC)
+nx679j-v6: stage3 gadget attempt (wait=1s for a real UDC)
+nx679j-v6: cycle=0 udc=NONE after 1s
+nx679j-v6: cycle=0 udc=NONE after 1s
+nx679j-v6: stage3 result=-1
+nx679j-v6: stage3 result=-1
+nx679j-v6: rawdump none (no block device yet: is ufs_qcom in?)
+nx679j-v6: rawdump none (no block device yet: is ufs_qcom in?)
+nx679j-v6: cycle=1 uptime=265885.06 6190602.21 logs=19
+nx679j-v6: cycle=1 uptime=265885.06 6190602.21 logs=19
+nx679j-v6: cycle=1 udc=NONE after 5s
+nx679j-v6: cycle=1 udc=NONE after 5s

@@ -1,0 +1,7 @@
+ls: /system/lib/modules: No such file or directory
+/vendor/lib/modules  /vendor_dlkm/lib/modules
+adsp_loader_dlkm.ko
+adsp_sleepmon.ko
+altmode-glink.ko
+atmel_mxt_ts.ko
+audio_pkt_dlkm.ko

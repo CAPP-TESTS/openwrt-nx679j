@@ -1,0 +1,7 @@
+compatible= android,vendor
+dev= /dev/block/platform/soc/1d84000.ufshc/by-name/vendor
+fsmgr_flags= wait,slotselect,avb
+mnt_flags= ro,barrier=1,discard
+name= vendor
+status= disabled
+type= ext4

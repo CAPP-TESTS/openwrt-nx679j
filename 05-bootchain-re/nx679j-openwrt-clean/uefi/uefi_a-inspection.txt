@@ -1,0 +1,181 @@
+============================================================
+  Qualcomm Firmware Inspector  -  uefi_a.img
+============================================================
+  Author : Littlenine (github.com/LittlenineEnnea)
+  File: /home/user/nx679j-stock/nx679j-openwrt-clean/bootchain/uefi_a.img
+  Size: 5,242,880 bytes  (0x500000)
+  MD5:  b55498f1d800d6cdb933b6732e5effb9
+  SHA256: d32139de305aeb2aba1dc8c12b4996c49b09a09a6032307bf100ecb1ecb2d312
+
+[ELF Header]
+  Magic                          7f 45 4c 46 02 01 01 00 00 00 00 00 00 00 00 00
+  Class                          ELF64
+  Data                           2's complement, little endian
+  Version                        1 (current)
+  OS/ABI                         UNIX - System V
+  ABI Version                    0
+  Type                           EXEC (Executable file)
+  Machine                        ARM 32-bit architecture (AARCH32)  (0x28)
+  Version                        0x1
+  Entry point address            0xa7000000
+  Start of program headers       64 (bytes into file)
+  Start of section headers       0 (bytes into file)
+  Flags                          0x0
+  Size of this header            64 (bytes)
+  Size of program headers        56 (bytes)
+  Number of program headers      3
+  Number of section headers      0
+
+[Program Headers]
+  Idx Type    Offset              VirtAddr            FileSize            MemSize             Flg  Align               OS Segment Type
+  --------------------------------------------------------------------------------------------------------------
+  0   NULL    0x00**************  0x00**************  0x00000000000000e8  0x00**************  ---  0x00**************  PHDR (Encapsulates ELF Header and Program Header Table)
+  1   LOAD    0x00**************  0x00000000a7000000  0x00000000002a0000  0x00000000002a0000  RWE  0x00**************  0x0 (Meaning is OS specific)
+  2   NULL    0x00000000002a1000  0x00**************  0x0000000000000d58  0x0000000000000d58  ---  0x00**************  HASH (Hash Table Segment)
+
+[Hash Table Segment Header]
+  Version                        7
+  Common Metadata Size           24 (bytes)
+  QTI Metadata Size              0 (bytes)
+  OEM Metadata Size              224 (bytes)
+  Hash Table Size                144 (bytes)
+  QTI Signature Size             0 (bytes)
+  QTI Certificate Chain Size     0 (bytes)
+  OEM Signature Size             104 (bytes)
+  OEM Certificate Chain Size     2880 (bytes)
+
+[Common Metadata]
+  Major Version                  0
+  Minor Version                  0
+  Software ID                    0x9
+  Secondary Software ID          0x0
+  Hash Table Algorithm           SHA384
+  Measurement Register Target    Measurement not to be recorded
+
+[OEM Metadata]
+  Major Version                  2
+  Minor Version                  0
+  Anti-Rollback Version          0x0
+  Root Certificate Index         0
+  SoC Hardware Version           0xa001
+  SoC Feature ID                 0x0
+  JTAG ID                        0x0
+  OEM ID                         0x4
+  OEM Product ID                 0x0
+  OEM Lifecycle State            0x0
+  OEM Root Certificate Hash Algorithm NA
+  Bound to SoC Hardware Versions True
+  Bound to SoC Feature ID        False
+  Bound to JTAG ID               False
+  Bound to Serial Numbers        False
+  Bound to OEM ID                True
+  Bound to OEM Product ID        True
+  Bound to SoC Lifecycle State   False
+  Bound to OEM Lifecycle State   False
+  Bound to OEM Root Certificate Hash False
+  JTAG Debug                     Nop
+  Transfer Root                  False
+
+[Hash Table Entries]
+  Idx    Hash
+  --------------------------------------------------------------------------------
+  0      0x8dbe29689364622d79cc692e319c0dfe28982a48e79ecdc15a72f80d60d5b8327d58af066c0ef3d48ecc9df0b5e36f1d
+  1      0x5ea5c648d6209b4630a2f4383b451bc2e7edc8b4fbe6b47c3fa0a276592cf7590a21ae70f97e387c3340f029af7112ce
+  2      0x00**********************************************************************************************
+
+[OEM Signature Properties]
+  Algorithm                      ECDSA
+  Hash Algorithm                 SHA384
+  Curve                          secp384r1
+  R Size                         49 (bytes)
+  S Size                         49 (bytes)
+  R                              0xff8e5a67b34675daff468a9df10d3657a795555dbf24e9585474b30637b3cd73d917e43d86fd5c7ccaa78f1c1b781396
+  S                              0xbed84ae795d95d476c87b27cf3cce01234606b0026f6c7ad0aadebb8f3182241d3ad6db55c9a34ea135a619999c1fbb3
+  Key Size                       384
+
+[OEM Certificate Chain Properties]
+  Total Number of Certificates   3
+  Number of Attest Certificates  1
+  Number of CA Certificates      1
+  Number of Root Certificates    1
+
+[OEM Attest Certificate Properties]
+  Extended Key Usage             Code Signing
+  Signature Algorithm            ECDSA
+  Hash Algorithm                 SHA384
+  Curve                          secp384r1
+  R Size                         49 (bytes)
+  S Size                         48 (bytes)
+  R                              0xd9f784c58c25e98320268a79d3595750dcaa69006f1266307c65b58f6a9dfe85c0e365ecdc0e4cddf271b2c98a58e2ea
+  S                              0x0eb3fe48fc15b0dcb7f751abaf335edca8e70cff35de5f0e4bf65d1dc8d4d5e26ce838068ce3cb2f1743d13f8134ed1f
+  Key Size                       384
+
+[OEM CA Certificate Properties]
+  Signature Algorithm            ECDSA
+  Hash Algorithm                 SHA384
+  Curve                          secp384r1
+  R Size                         49 (bytes)
+  S Size                         49 (bytes)
+  R                              0xfe6406eed8a349730a633086380305cd5cf87620b7e0738ac96a226fac86ace9c748bcbf4a9a66765c1a7a4f730b42fd
+  S                              0xfd2d3f1ba9075d6d10843c85c7535060943ac78d488c7b2a13cb87cdc4eaeaa08726324bb707b1fcc6d04aa1b9a2ee59
+  Key Size                       384
+
+[OEM Root Certificate Properties]
+  Root Certificate Hash (SHA256) 0x5ad5c780085682ddc9cbe4281ffe476781f32ea2da881dba7a2944fa55e50ea5
+  Root Certificate Hash (SHA384) 0xfbc0a90afe54b2e38d7961e51aab31e5dbcef21f53b5d67c5d98561d74bdd4c0e9371fdb6519e7ecb032f691674fb644
+  Signature Algorithm            ECDSA
+  Hash Algorithm                 SHA384
+  Curve                          secp384r1
+  R Size                         49 (bytes)
+  S Size                         48 (bytes)
+  R                              0xef561fc4b05e368686b44f693fa8e659a014a449f06ae3ac053068a896ba97a0f19f47405d4944c9a37118a3e4521d54
+  S                              0x20daa8ecc3d1efe4d80921bd3d45111a49f5b4b03baaadf6701682257dad9e3bff369268aded5cb8c27435c4bac061f6
+  Key Size                       384
+
+[Hash Table Segment Properties]
+  Hash Table Entry Size          48 (bytes)
+  Hash of QTI Data (SHA256)      0x354d1e102721199986d0bc6fc19f4c619f4a5ebd6f1b52a226d9ef7ffcdfba36
+  Hash of QTI Data (SHA384)      0x5508961785b46ef020bc51e9ff51afd6f6bb0c68b1e3806fc37c0548d93c5732af121524fe292d316d1123b66d402087
+  Hash of OEM Data (SHA256)      0xa265aa51d8a648c4696feb064d6a869236bf91521653fd58081c56fcbca2ed00
+  Hash of OEM Data (SHA384)      0x036226be7ee77bf77cc7cd2bae6acd4cfdec63b17dbdf19cf5a7d7c80f1a615508574e082fce65f2cd04b35e98b7bc56
+  Padding                        0 (bytes)
+
+[Certificate Chains (X.509 details)]
+
+  OEM chain
+    [Root CA] @ 0x4e7
+      Subject : C=US, CN=Generated Ztemt Root CA, OU=CDMA Technologies, OU=General Use Ztemt Key, L=San Diego, O=SecTools, ST=California
+      Issuer  : C=US, CN=Generated Ztemt Root CA, OU=CDMA Technologies, OU=General Use Ztemt Key, L=San Diego, O=SecTools, ST=California
+      Validity: Oct  9 01:20:08 2021 GMT ~ Oct  4 01:20:08 2041 GMT
+      Sig Alg : ecdsa-with-SHA384
+      Cert-DER SHA256 (OEM_PK_HASH): 5ad5c780085682ddc9cbe4281ffe476781f32ea2da881dba7a2944fa55e50ea5
+      Cert-DER SHA384 (OEM_PK_HASH): fbc0a90afe54b2e38d7961e51aab31e5dbcef21f53b5d67c5d98561d74bdd4c0e9371fdb6519e7ecb032f691674fb644
+      SPKI SHA256 (pubkey only): 37*************bd375d9323f0ff57a32c0ae9203039a13cb4ad983f2e0c899
+      SPKI SHA384 (pubkey only): 7518a019531cc2c6095da13fd7759f18fc6bd0a380b7953dea4f4f2a5fe8d05cdd7af5950fe6124bf69e73827470d30f
+    [Cert] @ 0x23d
+      Subject : C=US, ST=California, CN=Generated Ztemt Attestation CA, O=SecTools, L=SanDiego
+      Issuer  : C=US, CN=Generated Ztemt Root CA, OU=CDMA Technologies, OU=General Use Ztemt Key, L=San Diego, O=SecTools, ST=California
+      Validity: Oct  9 01:21:27 2021 GMT ~ Oct  4 01:21:27 2041 GMT
+      Sig Alg : ecdsa-with-SHA384
+    [Cert] @ 0x0
+      Subject : C=US, ST=California, O=SecTools, L=San Diego
+      Issuer  : C=US, ST=California, CN=Generated Ztemt Attestation CA, O=SecTools, L=SanDiego
+      Validity: Mar  8 14:28:59 2022 GMT ~ Mar  3 14:28:59 2042 GMT
+      Sig Alg : ecdsa-with-SHA384
+
+============================================================
+  SUMMARY
+============================================================
+  Made by Littlenine Ennea
+
+[File]
+  Total size                     0x500000  (5,242,880 bytes)
+  Entropy                        4.9246 bits/byte
+
+[OEM_PK_HASH (device / QFIL Loader PK hash = SHA of FULL root cert DER)]
+
+  Root #1: C=US, CN=Generated Ztemt Root CA, OU=CDMA Technologies, OU=General Use Ztemt Key, L=San Diego, O=SecTools, ST=California
+  cert-DER SHA256            5ad5c780085682ddc9cbe4281ffe476781f32ea2da881dba7a2944fa55e50ea5  <- secboot_sha2_root
+  cert-DER SHA384            fbc0a90afe54b2e38d7961e51aab31e5dbcef21f53b5d67c5d98561d74bdd4c0e9371fdb6519e7ecb032f691674fb644  <- default sha384 root
+  SPKI SHA256 (pubkey only, NOT the fuse): 37*************bd375d9323f0ff57a32c0ae9203039a13cb4ad983f2e0c899
+  SPKI SHA384 (pubkey only, NOT the fuse): 7518a019531cc2c6095da13fd7759f18fc6bd0a380b7953dea4f4f2a5fe8d05cdd7af5950fe6124bf69e73827470d30f

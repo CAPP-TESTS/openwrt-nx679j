@@ -1,0 +1,6 @@
+{
+  "lun": "sdc",
+  "backup_lba": 2047,
+  "sec_part_lba": 2046,
+  "entry_lbAs": 1
+}

@@ -1,0 +1,58 @@
+image   /home/user/nx679j-stock/experiments/20260916-122926-native-baseline/candidate-minimal-gadget-v5/boot_b-minimal-gadget-v5.img
+        50266112 bytes sha256=62c7fa4bb28cdd5ec96faa960b431ed8b5faf734a9e298405ea1400040b8b1f4
+ramdisk 1147147 bytes compressed, 85 entries, 40 .ko
+        sha256=33f0cb1b30d3ce61cfcfa2b87400d43f87219bd3925981864ae66c4a3d6ed915
+init    /home/user/nx679j-stock/experiments/20260916-122926-native-baseline/candidate-init-v5.sh
+        sha256=4ebac295a09d24ec28e359b253c55d79acda50d596ff2748fd61dc760b1e0f8c
+module dir inside ramdisk: lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604
+names in init list: 40   mixed-spelling aliases: {'nvmem_qcom_spmi_sdam': 'nvmem_qcom-spmi-sdam.ko'}
+
+ #  init list name                   resolved file                      spelling
+--------------------------------------------------------------------------------------------
+ 1  phy_qcom_emu                     phy-qcom-emu.ko                    all-hyphens
+ 2  phy_msm_snps_eusb2               phy-msm-snps-eusb2.ko              all-hyphens
+ 3  repeater                         repeater.ko                        literal
+ 4  phy_qcom_ufs_qmp_v4_lahaina      phy-qcom-ufs-qmp-v4-lahaina.ko     all-hyphens
+ 5  qcom_glink_spss                  qcom_glink_spss.ko                 literal
+ 6  phy_qcom_ufs_qmp_14nm            phy-qcom-ufs-qmp-14nm.ko           all-hyphens
+ 7  phy_qcom_ufs_qmp_v3              phy-qcom-ufs-qmp-v3.ko             all-hyphens
+ 8  nvmem_qfprom                     nvmem_qfprom.ko                    literal
+ 9  fsa4480_i2c                      fsa4480-i2c.ko                     all-hyphens
+10  altmode_glink                    altmode-glink.ko                   all-hyphens
+11  dwc3_msm                         dwc3-msm.ko                        all-hyphens
+12  phy_msm_ssusb_qmp                phy-msm-ssusb-qmp.ko               all-hyphens
+13  phy_msm_snps_hs                  phy-msm-snps-hs.ko                 all-hyphens
+14  ssusb_redriver_nb7vpq904m        ssusb-redriver-nb7vpq904m.ko       all-hyphens
+15  ucsi_glink                       ucsi_glink.ko                      literal
+16  pmic_glink                       pmic_glink.ko                      literal
+17  pdr_interface                    pdr_interface.ko                   literal
+18  qmi_helpers                      qmi_helpers.ko                     literal
+19  rproc_qcom_common                rproc_qcom_common.ko               literal
+20  qcom_smd                         qcom_smd.ko                        literal
+21  qcom_glink_smem                  qcom_glink_smem.ko                 literal
+22  qcom_glink                       qcom_glink.ko                      literal
+23  ufs_qcom                         ufs_qcom.ko                        literal
+24  ufshcd_crypto_qti                ufshcd-crypto-qti.ko               all-hyphens
+25  qti_regmap_debugfs               qti-regmap-debugfs.ko              all-hyphens
+26  phy_qcom_ufs_qmp_v4_cape         phy-qcom-ufs-qmp-v4-cape.ko        all-hyphens
+27  phy_qcom_ufs_qmp_v4_diwali       phy-qcom-ufs-qmp-v4-diwali.ko      all-hyphens
+28  phy_qcom_ufs_qmp_v4_waipio       phy-qcom-ufs-qmp-v4-waipio.ko      all-hyphens
+29  phy_qcom_ufs                     phy-qcom-ufs.ko                    all-hyphens
+30  nvmem_qcom_spmi_sdam             nvmem_qcom-spmi-sdam.ko            mixed-spelling alias
+31  crypto_qti_common                crypto-qti-common.ko               all-hyphens
+32  crypto_qti_hwkm                  crypto-qti-hwkm.ko                 all-hyphens
+33  clk_qcom                         clk-qcom.ko                        all-hyphens
+34  gdsc_regulator                   gdsc-regulator.ko                  all-hyphens
+35  proxy_consumer                   proxy-consumer.ko                  all-hyphens
+36  debug_regulator                  debug-regulator.ko                 all-hyphens
+37  qcom_ipc_logging                 qcom_ipc_logging.ko                literal
+38  qcom_scm                         qcom-scm.ko                        all-hyphens
+39  minidump                         minidump.ko                        literal
+40  smem                             smem.ko                            literal
+
+resolved: 40/40
+NOT RESOLVED: none - no RESOLUTION-FAILED line is reachable for any name in the v5 list
+resolution mechanism histogram: {"all-hyphens": 24, "literal": 15, "mixed-spelling alias": 1}
+mixed-spelling file confirmed: nvmem_qcom_spmi_sdam -> nvmem_qcom-spmi-sdam.ko (present=True)
+packed .ko set == resolved set: True (40 packed, 40 resolved, stray=[])
+json -> /home/user/nx679j-stock/experiments/20260916-122926-native-baseline/candidate-minimal-gadget-v5/module-resolution-static.json

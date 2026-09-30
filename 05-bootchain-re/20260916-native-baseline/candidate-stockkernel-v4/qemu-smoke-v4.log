@@ -1,0 +1,444 @@
+qemu cmd: qemu-system-aarch64 -machine virt -cpu cortex-a57 -accel tcg -smp 2 -m 2048 -nodefaults -nic none -display none -monitor none -serial stdio -no-reboot -kernel /home/user/nx679j-stock/experiments/20260916-122926-native-baseline/candidate-stockkernel-v4/qemu/kernel-from-image -initrd /home/user/nx679j-stock/experiments/20260916-122926-native-baseline/candidate-stockkernel-v4/qemu/ramdisk-from-image.gz -append console=ttyAMA0 earlycon loglevel=7 panic=10 rdinit=/init
+    handover line seen at 38.6s
+{
+  "qemu_argv": [
+    "qemu-system-aarch64",
+    "-machine",
+    "virt",
+    "-cpu",
+    "cortex-a57",
+    "-accel",
+    "tcg",
+    "-smp",
+    "2",
+    "-m",
+    "2048",
+    "-nodefaults",
+    "-nic",
+    "none",
+    "-display",
+    "none",
+    "-monitor",
+    "none",
+    "-serial",
+    "stdio",
+    "-no-reboot",
+    "-kernel",
+    "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/candidate-stockkernel-v4/qemu/kernel-from-image",
+    "-initrd",
+    "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/candidate-stockkernel-v4/qemu/ramdisk-from-image.gz",
+    "-append",
+    "console=ttyAMA0 earlycon loglevel=7 panic=10 rdinit=/init"
+  ],
+  "append": "console=ttyAMA0 earlycon loglevel=7 panic=10 rdinit=/init",
+  "image": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/candidate-stockkernel-v4/boot_b-stockkernel-openwrt-v4.img",
+  "image_sha256": "1a46f350376ba5fc609e2da52cce22e9086fc3b850d3ed22f425066e4e3f941b",
+  "kernel_sha256": "f0aa949c95d1421381850cb1982bd2a505e96fcd7565543ec28d5b1f7d81a0cc",
+  "ramdisk_sha256": "e87ae90d25d659cfc811496ac4e92a83a2f6475d451e6610d36b075862489589",
+  "ramdisk_bytes": 12051145,
+  "elapsed_seconds": 63.93,
+  "qemu_returncode": 0,
+  "unpacking_initramfs_seen": true,
+  "unpack_evidence_line": "[    0.287792][    T1] Trying to unpack rootfs image as initramfs...",
+  "unpack_failed": false,
+  "run_init_as_init_process_seen": true,
+  "init_script_ran": true,
+  "stage0_cmdline_logged": true,
+  "insmod_lines": 80,
+  "insmod_resolved_literal_or_converted": 80,
+  "insmod_resolved_mixed": 2,
+  "insmod_resolution_failed_lines": 0,
+  "insmod_absent_lines_legacy_v3_grep": 0,
+  "resolution_failed_names": [],
+  "resolved_pairs": [
+    [
+      "phy_qcom_emu",
+      "phy-qcom-emu.ko"
+    ],
+    [
+      "phy_qcom_emu",
+      "phy-qcom-emu.ko"
+    ],
+    [
+      "phy_msm_snps_eusb2",
+      "phy-msm-snps-eusb2.ko"
+    ],
+    [
+      "phy_msm_snps_eusb2",
+      "phy-msm-snps-eusb2.ko"
+    ],
+    [
+      "repeater",
+      "repeater.ko"
+    ],
+    [
+      "repeater",
+      "repeater.ko"
+    ],
+    [
+      "phy_qcom_ufs_qmp_v4_lahaina",
+      "phy-qcom-ufs-qmp-v4-lahaina.ko"
+    ],
+    [
+      "phy_qcom_ufs_qmp_v4_lahaina",
+      "phy-qcom-ufs-qmp-v4-lahaina.ko"
+    ],
+    [
+      "qcom_glink_spss",
+      "qcom_glink_spss.ko"
+    ],
+    [
+      "qcom_glink_spss",
+      "qcom_glink_spss.ko"
+    ],
+    [
+      "phy_qcom_ufs_qmp_14nm",
+      "phy-qcom-ufs-qmp-14nm.ko"
+    ],
+    [
+      "phy_qcom_ufs_qmp_14nm",
+      "phy-qcom-ufs-qmp-14nm.ko"
+    ],
+    [
+      "phy_qcom_ufs_qmp_v3",
+      "phy-qcom-ufs-qmp-v3.ko"
+    ],
+    [
+      "phy_qcom_ufs_qmp_v3",
+      "phy-qcom-ufs-qmp-v3.ko"
+    ],
+    [
+      "nvmem_qfprom",
+      "nvmem_qfprom.ko"
+    ],
+    [
+      "nvmem_qfprom",
+      "nvmem_qfprom.ko"
+    ],
+    [
+      "fsa4480_i2c",
+      "fsa4480-i2c.ko"
+    ],
+    [
+      "fsa4480_i2c",
+      "fsa4480-i2c.ko"
+    ],
+    [
+      "altmode_glink",
+      "altmode-glink.ko"
+    ],
+    [
+      "altmode_glink",
+      "altmode-glink.ko"
+    ],
+    [
+      "dwc3_msm",
+      "dwc3-msm.ko"
+    ],
+    [
+      "dwc3_msm",
+      "dwc3-msm.ko"
+    ],
+    [
+      "phy_msm_ssusb_qmp",
+      "phy-msm-ssusb-qmp.ko"
+    ],
+    [
+      "phy_msm_ssusb_qmp",
+      "phy-msm-ssusb-qmp.ko"
+    ],
+    [
+      "phy_msm_snps_hs",
+      "phy-msm-snps-hs.ko"
+    ],
+    [
+      "phy_msm_snps_hs",
+      "phy-msm-snps-hs.ko"
+    ],
+    [
+      "ssusb_redriver_nb7vpq904m",
+      "ssusb-redriver-nb7vpq904m.ko"
+    ],
+    [
+      "ssusb_redriver_nb7vpq904m",
+      "ssusb-redriver-nb7vpq904m.ko"
+    ],
+    [
+      "ucsi_glink",
+      "ucsi_glink.ko"
+    ],
+    [
+      "ucsi_glink",
+      "ucsi_glink.ko"
+    ],
+    [
+      "pmic_glink",
+      "pmic_glink.ko"
+    ],
+    [
+      "pmic_glink",
+      "pmic_glink.ko"
+    ],
+    [
+      "pdr_interface",
+      "pdr_interface.ko"
+    ],
+    [
+      "pdr_interface",
+      "pdr_interface.ko"
+    ],
+    [
+      "qmi_helpers",
+      "qmi_helpers.ko"
+    ],
+    [
+      "qmi_helpers",
+      "qmi_helpers.ko"
+    ],
+    [
+      "rproc_qcom_common",
+      "rproc_qcom_common.ko"
+    ],
+    [
+      "rproc_qcom_common",
+      "rproc_qcom_common.ko"
+    ],
+    [
+      "qcom_smd",
+      "qcom_smd.ko"
+    ],
+    [
+      "qcom_smd",
+      "qcom_smd.ko"
+    ],
+    [
+      "qcom_glink_smem",
+      "qcom_glink_smem.ko"
+    ],
+    [
+      "qcom_glink_smem",
+      "qcom_glink_smem.ko"
+    ],
+    [
+      "qcom_glink",
+      "qcom_glink.ko"
+    ],
+    [
+      "qcom_glink",
+      "qcom_glink.ko"
+    ],
+    [
+      "ufs_qcom",
+      "ufs_qcom.ko"
+    ],
+    [
+      "ufs_qcom",
+      "ufs_qcom.ko"
+    ],
+    [
+      "ufshcd_crypto_qti",
+      "ufshcd-crypto-qti.ko"
+    ],
+    [
+      "ufshcd_crypto_qti",
+      "ufshcd-crypto-qti.ko"
+    ],
+    [
+      "qti_regmap_debugfs",
+      "qti-regmap-debugfs.ko"
+    ],
+    [
+      "qti_regmap_debugfs",
+      "qti-regmap-debugfs.ko"
+    ],
+    [
+      "phy_qcom_ufs_qmp_v4_cape",
+      "phy-qcom-ufs-qmp-v4-cape.ko"
+    ],
+    [
+      "phy_qcom_ufs_qmp_v4_cape",
+      "phy-qcom-ufs-qmp-v4-cape.ko"
+    ],
+    [
+      "phy_qcom_ufs_qmp_v4_diwali",
+      "phy-qcom-ufs-qmp-v4-diwali.ko"
+    ],
+    [
+      "phy_qcom_ufs_qmp_v4_diwali",
+      "phy-qcom-ufs-qmp-v4-diwali.ko"
+    ],
+    [
+      "phy_qcom_ufs_qmp_v4_waipio",
+      "phy-qcom-ufs-qmp-v4-waipio.ko"
+    ],
+    [
+      "phy_qcom_ufs_qmp_v4_waipio",
+      "phy-qcom-ufs-qmp-v4-waipio.ko"
+    ],
+    [
+      "phy_qcom_ufs",
+      "phy-qcom-ufs.ko"
+    ],
+    [
+      "phy_qcom_ufs",
+      "phy-qcom-ufs.ko"
+    ],
+    [
+      "nvmem_qcom_spmi_sdam",
+      "nvmem_qcom-spmi-sdam.ko"
+    ],
+    [
+      "nvmem_qcom_spmi_sdam",
+      "nvmem_qcom-spmi-sdam.ko"
+    ],
+    [
+      "crypto_qti_common",
+      "crypto-qti-common.ko"
+    ],
+    [
+      "crypto_qti_common",
+      "crypto-qti-common.ko"
+    ],
+    [
+      "crypto_qti_hwkm",
+      "crypto-qti-hwkm.ko"
+    ],
+    [
+      "crypto_qti_hwkm",
+      "crypto-qti-hwkm.ko"
+    ],
+    [
+      "clk_qcom",
+      "clk-qcom.ko"
+    ],
+    [
+      "clk_qcom",
+      "clk-qcom.ko"
+    ],
+    [
+      "gdsc_regulator",
+      "gdsc-regulator.ko"
+    ],
+    [
+      "gdsc_regulator",
+      "gdsc-regulator.ko"
+    ],
+    [
+      "proxy_consumer",
+      "proxy-consumer.ko"
+    ],
+    [
+      "proxy_consumer",
+      "proxy-consumer.ko"
+    ],
+    [
+      "debug_regulator",
+      "debug-regulator.ko"
+    ],
+    [
+      "debug_regulator",
+      "debug-regulator.ko"
+    ],
+    [
+      "qcom_ipc_logging",
+      "qcom_ipc_logging.ko"
+    ],
+    [
+      "qcom_ipc_logging",
+      "qcom_ipc_logging.ko"
+    ],
+    [
+      "qcom_scm",
+      "qcom-scm.ko"
+    ],
+    [
+      "qcom_scm",
+      "qcom-scm.ko"
+    ],
+    [
+      "minidump",
+      "minidump.ko"
+    ],
+    [
+      "minidump",
+      "minidump.ko"
+    ],
+    [
+      "smem",
+      "smem.ko"
+    ],
+    [
+      "smem",
+      "smem.ko"
+    ]
+  ],
+  "ufs_line": "[   18.035783][    T1] nx679j: ufs sda after 15s present=no",
+  "udc_line": "[   38.358144][    T1] nx679j: udc=NONE after 20s",
+  "handover_line": "[   38.369023][    T1] nx679j: handover init=present",
+  "procd_seen": true,
+  "kernel_panic": false,
+  "log": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/candidate-stockkernel-v4/qemu/boot.log",
+  "log_bytes": 42395,
+  "evidence_lines": [
+    "[    0.859223][    T1] Run /init as init process",
+    "[    0.935339][    T1] nx679j: init v2 entered",
+    "nx679j: init v2 entered",
+    "[    0.994250][    T1] nx679j: stage0 kernel=5.10.66-android12-9-00005-gf6e6376090be-ab8060604",
+    "nx679j: stage0 kernel=5.10.66-android12-9-00005-gf6e6376090be-ab8060604",
+    "[    1.004990][    T1] nx679j: stage0 cmdline=stack_depot_disable=on kasan.stacktrace=off kvm-arm.mode=protected cgroup_disable=pressure cgroup.memory=nokmem console=ttyAMA0 earlycon loglevel=7 panic=10 rdinit=/init",
+    "nx679j: stage0 cmdline=stack_depot_disable=on kasan.stacktrace=off kvm-arm.mode=protected cgroup_disable=pressure cgroup.memory=nokmem console=ttyAMA0 earlycon loglevel=7 panic=10 rdinit=/init",
+    "[    1.014861][    T1] nx679j: stage0 modprobe=/sbin/insmod",
+    "nx679j: stage0 modprobe=/sbin/insmod",
+    "[    1.131377][    T1] nx679j: modules dir=/lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604 insmod=/sbin/insmod count=327",
+    "nx679j: modules dir=/lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604 insmod=/sbin/insmod count=327",
+    "[    1.160302][    T1] nx679j: insmod phy_qcom_emu rc=0 resolved=phy-qcom-emu.ko ",
+    "nx679j: insmod phy_qcom_emu rc=0 resolved=phy-qcom-emu.ko ",
+    "[    1.232645][    T1] nx679j: insmod phy_msm_snps_eusb2 rc=255 resolved=phy-msm-snps-eusb2.ko ",
+    "nx679j: insmod phy_msm_snps_eusb2 rc=255 resolved=phy-msm-snps-eusb2.ko ",
+    "[    1.250650][    T1] nx679j: insmod repeater rc=0 resolved=repeater.ko ",
+    "nx679j: insmod repeater rc=0 resolved=repeater.ko ",
+    "[    1.306478][    T1] nx679j: insmod phy_qcom_ufs_qmp_v4_lahaina rc=255 resolved=phy-qcom-ufs-qmp-v4-lahaina.ko ",
+    "nx679j: insmod phy_qcom_ufs_qmp_v4_lahaina rc=255 resolved=phy-qcom-ufs-qmp-v4-lahaina.ko ",
+    "[    1.370068][    T1] nx679j: insmod qcom_glink_spss rc=255 resolved=qcom_glink_spss.ko ",
+    "nx679j: insmod qcom_glink_spss rc=255 resolved=qcom_glink_spss.ko ",
+    "[    1.434462][    T1] nx679j: insmod phy_qcom_ufs_qmp_14nm rc=255 resolved=phy-qcom-ufs-qmp-14nm.ko ",
+    "nx679j: insmod phy_qcom_ufs_qmp_14nm rc=255 resolved=phy-qcom-ufs-qmp-14nm.ko ",
+    "[    1.482538][    T1] nx679j: insmod phy_qcom_ufs_qmp_v3 rc=255 resolved=phy-qcom-ufs-qmp-v3.ko ",
+    "nx679j: insmod phy_qcom_ufs_qmp_v3 rc=255 resolved=phy-qcom-ufs-qmp-v3.ko ",
+    "[    1.502415][    T1] nx679j: insmod nvmem_qfprom rc=0 resolved=nvmem_qfprom.ko ",
+    "nx679j: insmod nvmem_qfprom rc=0 resolved=nvmem_qfprom.ko ",
+    "[    1.546215][    T1] nx679j: insmod fsa4480_i2c rc=255 resolved=fsa4480-i2c.ko ",
+    "nx679j: insmod fsa4480_i2c rc=255 resolved=fsa4480-i2c.ko ",
+    "[    1.582092][    T1] nx679j: insmod altmode_glink rc=255 resolved=altmode-glink.ko ",
+    "nx679j: insmod altmode_glink rc=255 resolved=altmode-glink.ko ",
+    "[    1.642583][    T1] nx679j: insmod dwc3_msm rc=255 resolved=dwc3-msm.ko ",
+    "nx679j: insmod dwc3_msm rc=255 resolved=dwc3-msm.ko ",
+    "[    1.660890][    T1] nx679j: insmod phy_msm_ssusb_qmp rc=0 resolved=phy-msm-ssusb-qmp.ko ",
+    "nx679j: insmod phy_msm_ssusb_qmp rc=0 resolved=phy-msm-ssusb-qmp.ko ",
+    "[    1.707849][    T1] nx679j: insmod phy_msm_snps_hs rc=255 resolved=phy-msm-snps-hs.ko ",
+    "nx679j: insmod phy_msm_snps_hs rc=255 resolved=phy-msm-snps-hs.ko ",
+    "[    1.770572][    T1] nx679j: insmod ssusb_redriver_nb7vpq904m rc=255 resolved=ssusb-redriver-nb7vpq904m.ko ",
+    "nx679j: insmod ssusb_redriver_nb7vpq904m rc=255 resolved=ssusb-redriver-nb7vpq904m.ko ",
+    "[    1.818930][    T1] nx679j: insmod ucsi_glink rc=255 resolved=ucsi_glink.ko ",
+    "nx679j: insmod ucsi_glink rc=255 resolved=ucsi_glink.ko ",
+    "[    1.866480][    T1] nx679j: insmod pmic_glink rc=255 resolved=pmic_glink.ko ",
+    "nx679j: insmod pmic_glink rc=255 resolved=pmic_glink.ko ",
+    "[    1.914818][    T1] nx679j: insmod pdr_interface rc=255 resolved=pdr_interface.ko ",
+    "nx679j: insmod pdr_interface rc=255 resolved=pdr_interface.ko ",
+    "[    1.932600][    T1] nx679j: insmod qmi_helpers rc=0 resolved=qmi_helpers.ko ",
+    "nx679j: insmod qmi_helpers rc=0 resolved=qmi_helpers.ko ",
+    "[    1.978508][    T1] nx679j: insmod rproc_qcom_common rc=255 resolved=rproc_qcom_common.ko ",
+    "nx679j: insmod rproc_qcom_common rc=255 resolved=rproc_qcom_common.ko ",
+    "[    2.026668][    T1] nx679j: insmod qcom_smd rc=255 resolved=qcom_smd.ko ",
+    "nx679j: insmod qcom_smd rc=255 resolved=qcom_smd.ko ",
+    "[    2.074581][    T1] nx679j: insmod qcom_glink_smem rc=255 resolved=qcom_glink_smem.ko ",
+    "nx679j: insmod qcom_glink_smem rc=255 resolved=qcom_glink_smem.ko ",
+    "[    2.122730][    T1] nx679j: insmod qcom_glink rc=255 resolved=qcom_glink.ko ",
+    "nx679j: insmod qcom_glink rc=255 resolved=qcom_glink.ko ",
+    "[    2.186460][    T1] nx679j: insmod ufs_qcom rc=255 resolved=ufs_qcom.ko ",
+    "nx679j: insmod ufs_qcom rc=255 resolved=ufs_qcom.ko ",
+    "[    2.249757][    T1] nx679j: insmod ufshcd_crypto_qti rc=255 resolved=ufshcd-crypto-qti.ko ",
+    "nx679j: insmod ufshcd_crypto_qti rc=255 resolved=ufshcd-crypto-qti.ko ",
+    "[    2.267870][    T1] nx679j: insmod qti_regmap_debugfs rc=0 resolved=qti-regmap-debugfs.ko "
+  ]
+}

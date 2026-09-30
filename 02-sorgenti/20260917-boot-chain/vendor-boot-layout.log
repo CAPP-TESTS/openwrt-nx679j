@@ -1,0 +1,17 @@
+file: 100663296 B sha256=6db6d4d76059a9ef3a6bcc904911aac53a20044224a675014a6396a8f5d9d168
+magic=b'VNDRBOOT' header_version=4 header_size=2128
+kernel_addr=0x8000 ramdisk_addr=0x1000000 vendor_ramdisk_size=10041284
+cmdline(83 byte)=b'video=vfb:640x400,bpp=32,memsize=3072000 qcom-dload-mode.download_mode=1 bootconfig'
+tags_addr=0x100 name=b'' dtb_size=3879360 dtb_addr=0x1f00000
+vendor_ramdisk_table_size=108 entry_num=1 entry_size=108 bootconfig_size=85
+offset calcolati: vendor_ramdisk=4096 dtb=10047488 tabella=13930496 bootconfig=13934592 (fine=13934677)
+  firme attese: ramdisk=02214c18 dtb=d00dfeed
+  primi 8 byte a 2128 (subito dopo l'header): 00**************
+  TABELLA VENDOR RAMDISK (108 byte) hex: c43*********************************************************************************************************************************************************************************************************************
+    entry0: ramdisk_size=10041284 ramdisk_offset=0 ramdisk_type=0x1 name=b'' board_id[0..3]=(0, 0, 0, 0)
+  BOOTCONFIG (85 byte) = b'androidboot.hardware=qcom\nandroidboot.memcg=1\nandroidboot.usbcontroller=a600000.dwc3\n'
+  /proc/bootconfig = 887 byte, sha256=1fe3616812e8fd3673cfa82832d34f9ba4bd0d8592f8bcdd27012b8c0fd6ee33
+  il vendor bootconfig e' un prefisso di /proc/bootconfig? False
+  chiavi vendor: ['androidboot.hardware=qcom', 'androidboot.memcg=1', 'androidboot.usbcontroller=a600000.dwc3']
+  chiavi /proc  : 22
+  chiavi aggiunte dal bootloader: ['androidboot.bootdevice', 'androidboot.boot_devices', 'androidboot.serialno', 'androidboot.baseband', 'androidboot.dtbo_idx', 'androidboot.dtb_idx', 'androidboot.force_normal_boot', 'androidboot.fstab_suffix', 'androidboot.verifiedbootstate', 'androidboot.keymaster', 'androidboot.vbmeta.device', 'androidboot.vbmeta.avb_version', 'androidboot.vbmeta.device_state', 'androidboot.vbmeta.hash_alg', 'androidboot.vbmeta.size', 'androidboot.vbmeta.digest', 'androidboot.vbmeta.invalidate_on_error', 'androidboot.veritymode', 'androidboot.slot_suffix']

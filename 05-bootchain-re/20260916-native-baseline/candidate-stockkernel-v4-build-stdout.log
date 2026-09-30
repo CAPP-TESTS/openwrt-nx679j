@@ -1,0 +1,33 @@
+### build-candidate-v4.py — run 1/2 (identical sha256)
+[*] extracting stock kernel from boot_a readback
+    kernel 49108324 bytes sha256=f0aa949c95d1421381850cb1982bd2a505e96fcd7565543ec28d5b1f7d81a0cc
+[*] reading OpenWrt rootfs
+    1253 entries
+[*] reading stock vendor modules
+    327 .ko modules
+    USB-chain vermagic verified: 5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64
+[*] stage 1 done -> /home/user/nx679j-stock/experiments/20260916-122926-native-baseline/candidate-stockkernel-v4/inputs.json
+[*] assembling ramdisk
+    1541 entries, cpio 48470996 -> gz 12051145 bytes
+    self-check: archive parses, 6 device nodes, required members present
+[*] image  /home/user/nx679j-stock/experiments/20260916-122926-native-baseline/candidate-stockkernel-v4/boot_b-stockkernel-openwrt-v4.img
+    61169664 bytes sha256=1a46f350376ba5fc609e2da52cce22e9086fc3b850d3ed22f425066e4e3f941b
+[*] cmdline (725 bytes) panic=10 appended; v2 prefix intact
+[*] manifest -> manifest.json
+
+### build-candidate-v4.py — run 2/2 (log kept below; image sha256 identical)
+[*] extracting stock kernel from boot_a readback
+    kernel 49108324 bytes sha256=f0aa949c95d1421381850cb1982bd2a505e96fcd7565543ec28d5b1f7d81a0cc
+[*] reading OpenWrt rootfs
+    1253 entries
+[*] reading stock vendor modules
+    327 .ko modules
+    USB-chain vermagic verified: 5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64
+[*] stage 1 done -> /home/user/nx679j-stock/experiments/20260916-122926-native-baseline/candidate-stockkernel-v4/inputs.json
+[*] assembling ramdisk
+    1541 entries, cpio 48470996 -> gz 12051145 bytes
+    self-check: archive parses, 6 device nodes, required members present
+[*] image  /home/user/nx679j-stock/experiments/20260916-122926-native-baseline/candidate-stockkernel-v4/boot_b-stockkernel-openwrt-v4.img
+    61169664 bytes sha256=1a46f350376ba5fc609e2da52cce22e9086fc3b850d3ed22f425066e4e3f941b
+[*] cmdline (725 bytes) panic=10 appended; v2 prefix intact
+[*] manifest -> manifest.json

@@ -1,0 +1,303 @@
+{
+  "image": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/candidate-stockkernel-v4/boot_b-stockkernel-openwrt-v4.img",
+  "image_bytes": 61169664,
+  "image_sha256": "1a46f350376ba5fc609e2da52cce22e9086fc3b850d3ed22f425066e4e3f941b",
+  "ramdisk_sha256": "e87ae90d25d659cfc811496ac4e92a83a2f6475d451e6610d36b075862489589",
+  "ramdisk_entries": 1541,
+  "mod_dir": "lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604",
+  "init": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/candidate-init-v4.sh",
+  "init_sha256": "79b6213a3a18e9a7a2c763a7789614bffa7742eb480acc312fb9093cc3c9a306",
+  "names": 40,
+  "resolved": 40,
+  "unresolved": [],
+  "histogram": {
+    "all-hyphens": 24,
+    "literal": 15,
+    "mixed-spelling alias": 1
+  },
+  "alias_table": {
+    "nvmem_qcom_spmi_sdam": "nvmem_qcom-spmi-sdam.ko"
+  },
+  "table": [
+    {
+      "i": 1,
+      "name": "phy_qcom_emu",
+      "file": "phy-qcom-emu.ko",
+      "spelling": "all-hyphens",
+      "present": true
+    },
+    {
+      "i": 2,
+      "name": "phy_msm_snps_eusb2",
+      "file": "phy-msm-snps-eusb2.ko",
+      "spelling": "all-hyphens",
+      "present": true
+    },
+    {
+      "i": 3,
+      "name": "repeater",
+      "file": "repeater.ko",
+      "spelling": "literal",
+      "present": true
+    },
+    {
+      "i": 4,
+      "name": "phy_qcom_ufs_qmp_v4_lahaina",
+      "file": "phy-qcom-ufs-qmp-v4-lahaina.ko",
+      "spelling": "all-hyphens",
+      "present": true
+    },
+    {
+      "i": 5,
+      "name": "qcom_glink_spss",
+      "file": "qcom_glink_spss.ko",
+      "spelling": "literal",
+      "present": true
+    },
+    {
+      "i": 6,
+      "name": "phy_qcom_ufs_qmp_14nm",
+      "file": "phy-qcom-ufs-qmp-14nm.ko",
+      "spelling": "all-hyphens",
+      "present": true
+    },
+    {
+      "i": 7,
+      "name": "phy_qcom_ufs_qmp_v3",
+      "file": "phy-qcom-ufs-qmp-v3.ko",
+      "spelling": "all-hyphens",
+      "present": true
+    },
+    {
+      "i": 8,
+      "name": "nvmem_qfprom",
+      "file": "nvmem_qfprom.ko",
+      "spelling": "literal",
+      "present": true
+    },
+    {
+      "i": 9,
+      "name": "fsa4480_i2c",
+      "file": "fsa4480-i2c.ko",
+      "spelling": "all-hyphens",
+      "present": true
+    },
+    {
+      "i": 10,
+      "name": "altmode_glink",
+      "file": "altmode-glink.ko",
+      "spelling": "all-hyphens",
+      "present": true
+    },
+    {
+      "i": 11,
+      "name": "dwc3_msm",
+      "file": "dwc3-msm.ko",
+      "spelling": "all-hyphens",
+      "present": true
+    },
+    {
+      "i": 12,
+      "name": "phy_msm_ssusb_qmp",
+      "file": "phy-msm-ssusb-qmp.ko",
+      "spelling": "all-hyphens",
+      "present": true
+    },
+    {
+      "i": 13,
+      "name": "phy_msm_snps_hs",
+      "file": "phy-msm-snps-hs.ko",
+      "spelling": "all-hyphens",
+      "present": true
+    },
+    {
+      "i": 14,
+      "name": "ssusb_redriver_nb7vpq904m",
+      "file": "ssusb-redriver-nb7vpq904m.ko",
+      "spelling": "all-hyphens",
+      "present": true
+    },
+    {
+      "i": 15,
+      "name": "ucsi_glink",
+      "file": "ucsi_glink.ko",
+      "spelling": "literal",
+      "present": true
+    },
+    {
+      "i": 16,
+      "name": "pmic_glink",
+      "file": "pmic_glink.ko",
+      "spelling": "literal",
+      "present": true
+    },
+    {
+      "i": 17,
+      "name": "pdr_interface",
+      "file": "pdr_interface.ko",
+      "spelling": "literal",
+      "present": true
+    },
+    {
+      "i": 18,
+      "name": "qmi_helpers",
+      "file": "qmi_helpers.ko",
+      "spelling": "literal",
+      "present": true
+    },
+    {
+      "i": 19,
+      "name": "rproc_qcom_common",
+      "file": "rproc_qcom_common.ko",
+      "spelling": "literal",
+      "present": true
+    },
+    {
+      "i": 20,
+      "name": "qcom_smd",
+      "file": "qcom_smd.ko",
+      "spelling": "literal",
+      "present": true
+    },
+    {
+      "i": 21,
+      "name": "qcom_glink_smem",
+      "file": "qcom_glink_smem.ko",
+      "spelling": "literal",
+      "present": true
+    },
+    {
+      "i": 22,
+      "name": "qcom_glink",
+      "file": "qcom_glink.ko",
+      "spelling": "literal",
+      "present": true
+    },
+    {
+      "i": 23,
+      "name": "ufs_qcom",
+      "file": "ufs_qcom.ko",
+      "spelling": "literal",
+      "present": true
+    },
+    {
+      "i": 24,
+      "name": "ufshcd_crypto_qti",
+      "file": "ufshcd-crypto-qti.ko",
+      "spelling": "all-hyphens",
+      "present": true
+    },
+    {
+      "i": 25,
+      "name": "qti_regmap_debugfs",
+      "file": "qti-regmap-debugfs.ko",
+      "spelling": "all-hyphens",
+      "present": true
+    },
+    {
+      "i": 26,
+      "name": "phy_qcom_ufs_qmp_v4_cape",
+      "file": "phy-qcom-ufs-qmp-v4-cape.ko",
+      "spelling": "all-hyphens",
+      "present": true
+    },
+    {
+      "i": 27,
+      "name": "phy_qcom_ufs_qmp_v4_diwali",
+      "file": "phy-qcom-ufs-qmp-v4-diwali.ko",
+      "spelling": "all-hyphens",
+      "present": true
+    },
+    {
+      "i": 28,
+      "name": "phy_qcom_ufs_qmp_v4_waipio",
+      "file": "phy-qcom-ufs-qmp-v4-waipio.ko",
+      "spelling": "all-hyphens",
+      "present": true
+    },
+    {
+      "i": 29,
+      "name": "phy_qcom_ufs",
+      "file": "phy-qcom-ufs.ko",
+      "spelling": "all-hyphens",
+      "present": true
+    },
+    {
+      "i": 30,
+      "name": "nvmem_qcom_spmi_sdam",
+      "file": "nvmem_qcom-spmi-sdam.ko",
+      "spelling": "mixed-spelling alias",
+      "present": true
+    },
+    {
+      "i": 31,
+      "name": "crypto_qti_common",
+      "file": "crypto-qti-common.ko",
+      "spelling": "all-hyphens",
+      "present": true
+    },
+    {
+      "i": 32,
+      "name": "crypto_qti_hwkm",
+      "file": "crypto-qti-hwkm.ko",
+      "spelling": "all-hyphens",
+      "present": true
+    },
+    {
+      "i": 33,
+      "name": "clk_qcom",
+      "file": "clk-qcom.ko",
+      "spelling": "all-hyphens",
+      "present": true
+    },
+    {
+      "i": 34,
+      "name": "gdsc_regulator",
+      "file": "gdsc-regulator.ko",
+      "spelling": "all-hyphens",
+      "present": true
+    },
+    {
+      "i": 35,
+      "name": "proxy_consumer",
+      "file": "proxy-consumer.ko",
+      "spelling": "all-hyphens",
+      "present": true
+    },
+    {
+      "i": 36,
+      "name": "debug_regulator",
+      "file": "debug-regulator.ko",
+      "spelling": "all-hyphens",
+      "present": true
+    },
+    {
+      "i": 37,
+      "name": "qcom_ipc_logging",
+      "file": "qcom_ipc_logging.ko",
+      "spelling": "literal",
+      "present": true
+    },
+    {
+      "i": 38,
+      "name": "qcom_scm",
+      "file": "qcom-scm.ko",
+      "spelling": "all-hyphens",
+      "present": true
+    },
+    {
+      "i": 39,
+      "name": "minidump",
+      "file": "minidump.ko",
+      "spelling": "literal",
+      "present": true
+    },
+    {
+      "i": 40,
+      "name": "smem",
+      "file": "smem.ko",
+      "spelling": "literal",
+      "present": true
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+logdump.img: size=536870912 nonzero_bytes=0
+logfs.img: size=8388608 nonzero_bytes=497
+misc.img: size=1048576 nonzero_bytes=25
+uefivarstore.img: size=524288 nonzero_bytes=896

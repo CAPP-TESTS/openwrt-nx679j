@@ -1,0 +1,1 @@
+p:nxipa_smoke3/write vfs_write count=%x2:u64 caller=%x30:x64 raw0=+u0(%x1):x64 raw1=+u8(%x1):x64 raw2=+u16(%x1):x64 raw3=+u24(%x1):x64

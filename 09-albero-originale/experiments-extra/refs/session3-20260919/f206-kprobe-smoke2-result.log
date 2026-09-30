@@ -1,0 +1,6 @@
+SMOKE_STAGE create_instance uptime=1241.92 6364.14
+SMOKE_STAGE stop_instance uptime=1241.94 6364.21
+SMOKE_STAGE filter_pid uptime=1241.95 6364.27
+SMOKE_STAGE register_probe uptime=1241.95 9922.82
+SMOKE_EXIT stage=register_probe exit=1
+SMOKE_CLEANUP exit=1 boot=f2064c04-e0b0-41fa-b9ed-746808a2b741 uptime=1242.03 9923.06

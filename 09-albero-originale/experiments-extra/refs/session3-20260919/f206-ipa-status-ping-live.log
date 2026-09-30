@@ -1,0 +1,2 @@
+IPA_TRACE_REGISTERED phase=ping uptime=2847.65 22744.76
+          <idle>-0       [000] d.s2  2930.683119: parse: (ipahal_pkt_status_parse+0x0/0x16c [ipam]) pointer=0xffffff8799c16600 caller=0xffffffecfd31b818 raw0=0x0 raw1=0x0 raw2=0x0 raw3=0x0

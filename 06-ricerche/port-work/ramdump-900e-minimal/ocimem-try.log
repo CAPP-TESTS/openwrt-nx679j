@@ -1,0 +1,25 @@
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Trying with no loader given ...
+main - Waiting for the device
+Traceback (most recent call last):
+  File "/tmp/edl/edl.py", line 419, in <module>
+    run()
+    ~~~^^
+  File "/tmp/edl/edl.py", line 412, in run
+    base.run()
+    ~~~~~~~~^^
+  File "/tmp/edl/edl.py", line 305, in run
+    conninfo = self.doconnect(loop)
+  File "/tmp/edl/edl.py", line 212, in doconnect
+    self.cdc.connected = self.cdc.connect(portname=self.portname)
+                         ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/edl/edlclient/Library/Connection/usblib.py", line 230, in connect
+    self.serial_number = dev.serial_number
+                         ^^^^^^^^^^^^^^^^^
+  File "/home/user/.local/lib/python3.14/site-packages/usb/core.py", line 878, in serial_number
+    self._serial_number = util.get_string(self, self.iSerialNumber)
+                          ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/.local/lib/python3.14/site-packages/usb/util.py", line 309, in get_string
+    raise ValueError("The device has no langid"
+                     " (permission issue, no string descriptors supported or device error)")
+ValueError: The device has no langid (permission issue, no string descriptors supported or device error)

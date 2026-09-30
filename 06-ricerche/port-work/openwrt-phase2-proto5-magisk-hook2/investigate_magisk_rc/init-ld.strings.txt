@@ -1,0 +1,34 @@
+14206865
+__cxa_finalize
+__cxa_atexit
+__register_atfork
+security_load_policy
+unsetenv
+__open_2
+__stack_chk_fail
+libdl.so
+libinit-ld.so
+/dev/preload.so
+LD_PRELOAD
+/dev/sepolicy
+/dev/ack
+Linker: LLD 21.0.0 (https://android.googlesource.com/toolchain/llvm-project 5e96669f06077099aa41290cdb4c5e6fa0f59349)
+Android (13989888, +pgo, -bolt, +lto, -mlgo, based on r563880c) clang version 21.0.0 (https://android.googlesource.com/toolchain/llvm-project 5e96669f06077099aa41290cdb4c5e6fa0f59349)
+clang version 21.0.0 (https://android.googlesource.com/toolchain/llvm-project 5e96669f06077099aa41290cdb4c5e6fa0f59349)
+.init_array
+.fini_array
+.comment
+.note.android.ident
+.got.plt
+.rela.plt
+.eh_frame_hdr
+.gnu.version_r
+.data.rel.ro
+.rela.dyn
+.gnu.version
+.gnu.hash
+.relro_padding
+.eh_frame
+.note.gnu.build-id
+.dynamic
+.shstrtab

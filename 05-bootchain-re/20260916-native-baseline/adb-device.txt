@@ -1,0 +1,3 @@
+List of devices attached
+0123456789ABCDEF       device usb:6-1 product:NX679J-UN model:NX679J device:NX679J-UN transport_id:1
+

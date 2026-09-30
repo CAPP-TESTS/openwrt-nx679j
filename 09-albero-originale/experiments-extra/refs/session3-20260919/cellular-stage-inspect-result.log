@@ -1,0 +1,5 @@
+STAGE=inspect BEGIN uptime=1157.66 8933.16
+CHECKPOINT_DURABLE index=0 label=before_inspect
+STAGE=inspect RETURNED uptime=1157.67 8933.18
+CHECKPOINT_DURABLE index=1 label=after_inspect
+STAGE_EXIT=0

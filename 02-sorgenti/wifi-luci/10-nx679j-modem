@@ -1,0 +1,12 @@
+#!/bin/sh
+# hotplug: quando compare il netdev rmnet_data0 (catena modem su), alza
+# l'interfaccia netifd 'modem' cosi' LuCI la mostra attiva senza ifup manuale.
+# (con auto=0 l'interfaccia non riparte da sola; questo e' il retrigger.)
+[ "$ACTION" = "add" ] || exit 0
+[ "$DEVICENAME" = "rmnet_data0" ] || exit 0
+{
+  sleep 2
+  ubus call network.interface.modem up >/dev/null 2>&1
+  echo "nx679j-hotplug: ifup modem dopo rmnet_data0 ($(date +%s 2>/dev/null || echo ?))" >> /proc/1/root/nx679j-journal 2>/dev/null
+} &
+exit 0

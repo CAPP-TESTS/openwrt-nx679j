@@ -1,0 +1,2 @@
+boot_a	ANDROID!	0
+boot_b	ANDROID!	0

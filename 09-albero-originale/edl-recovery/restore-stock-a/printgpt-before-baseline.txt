@@ -1,0 +1,215 @@
+CMD: /home/user/venvs/edk2/bin/edl printgpt --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+sahara - Protocol version: 3, Version supported: 1
+main - Mode detected: sahara
+sahara - 
+Reading Chip Info : OK
+sahara - - Sahara version  : 3
+sahara - - Chip Serial Number : 4324a099072
+sahara - - OEM PKHASH : fbc0a90afe54b2e38d7961e51aab31e5dbcef21f53b5d67c5d98561d74bdd4c0e9371fdb6519e7ecb032f691674fb644
+sahara - - Note: V3 extended info (cmd=0x0A) not available
+sahara - Protocol version: 3, Version supported: 1
+sahara - Uploading loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+sahara - 64-Bit mode detected.
+sahara - Loader successfully uploaded.
+main - Trying to connect to firehose loader ...
+firehose - INFO: Binary build date: Jul  6 2022 @ 22:16:30
+firehose - INFO: Binary build date: Jul  6 2022 @ 22:16:30 
+firehose - INFO: Chip serial num: 0 (0x0)
+firehose - INFO: Supported Functions (15):
+firehose - INFO: program
+firehose - INFO: read
+firehose - INFO: nop
+firehose - INFO: patch
+firehose - INFO: configure
+firehose - INFO: setbootablestoragedrive
+firehose - INFO: erase
+firehose - INFO: power
+firehose - INFO: firmwarewrite
+firehose - INFO: getstorageinfo
+firehose - INFO: benchmark
+firehose - INFO: emmc
+firehose - INFO: ufs
+firehose - INFO: fixgpt
+firehose - INFO: getsha256digest
+firehose - INFO: End of supported functions 15
+firehose
+firehose - [LIB]: [33mCouldn't detect MaxPayloadSizeFromTargetinBytes[0m
+firehose
+firehose - [LIB]: [33mCouldn't detect TargetName[0m
+firehose - TargetName=Unknown
+firehose - MemoryName=UFS
+firehose - Version=1
+firehose - Trying to read first storage sector...
+firehose - Running configure...
+firehose - Storage report:
+firehose - total_blocks:60884992
+firehose - block_size:4096
+firehose - page_size:4096
+firehose - num_physical:6
+firehose - manufacturer_id:462
+firehose - serial_num:1297306958
+firehose - fw_version:400
+firehose - mem_type:UFS
+firehose - prod_name:KLUEG8UHDC-B0E1
+firehose_client - Supported functions:
+-----------------
+program,read,nop,patch,configure,setbootablestoragedrive,erase,power,firmwarewrite,getstorageinfo,benchmark,emmc,ufs,fixgpt,getsha256digest
+
+Parsing Lun 0:
+
+GPT Table:
+-------------
+ssd:                 Offset 0x00**************, Length 0x00**************, Flags 0x00**************, UUID a385d365-d43b-0e02-8f55-8b05174c04ae, Type 0x2c86e742, Active False
+persist:             Offset 0x00**************, Length 0x00**************, Flags 0x00**************, UUID 0f1871f8-066a-3c0c-a2b2-458a6b55792e, Type 0x6c95e238, Active False
+misc:                Offset 0x00**************, Length 0x00**************, Flags 0x00**************, UUID c12ae3c6-ff34-c969-8eac-be63e06115c9, Type 0x82acc91f, Active False
+parameter:           Offset 0x00**************, Length 0x00**************, Flags 0x00**************, UUID ea6b4eae-4ed4-f94c-ca5c-1902a96c184c, Type 0x82acc91f, Active False
+keystore:            Offset 0x00**************, Length 0x00**************, Flags 0x00**************, UUID 1a3b1364-9769-a9c2-d939-8ce82f69f618, Type 0xde7d4029, Active False
+frp:                 Offset 0x00**************, Length 0x00**************, Flags 0x00**************, UUID d3491e46-7d98-78da-0be0-a68366d78673, Type 0x91b72d4d, Active False
+super:               Offset 0x00**************, Length 0x00**************, Flags 0x00**************, UUID d1685d8d-99d2-76ce-44a1-d51a3aa545b9, Type 0x89a12de1, Active False
+vbmeta_system_a:     Offset 0x00**************, Length 0x00**************, Flags 0x10**************, UUID 7c9574ad-b670-ab71-b246-c87172d7a512, Type 0xfe3ab853, Active True
+vbmeta_system_b:     Offset 0x00**************, Length 0x00**************, Flags 0x10**************, UUID 4268223e-4a03-4622-a346-e4960b5bb345, Type 0x1344859d, Active False
+metadata:            Offset 0x00**************, Length 0x00**************, Flags 0x00**************, UUID 943f044a-ab84-d35c-de89-17203aaa3a3a, Type 0x988a98c9, Active False
+rawdump:             Offset 0x00**************, Length 0x00**************, Flags 0x00**************, UUID 14809677-4734-b1f7-0c75-bcb9bdd2ad40, Type 0x66c9b323, Active False
+userdata:            Offset 0x00**************, Length 0x00000037bd4d3000, Flags 0x00**************, UUID 7f82aeaf-85ba-9ec9-3305-9d1d557ec034, Type 0x1b81e7e6, Active False
+
+Total disk size:0x0000003a10800000, sectors:0x0000000003a10800
+
+
+Parsing Lun 1:
+
+GPT Table:
+-------------
+xbl_a:               Offset 0x00**************, Length 0x00**************, Flags 0x10c4000000000000, UUID 23efbf16-fb0e-55fb-aa97-dadff934d219, Type 0xdea0ba2c, Active True
+xbl_config_a:        Offset 0x00**************, Length 0x000000000004b000, Flags 0x00c4000000000000, UUID 249e4164-5975-38d3-5e56-7d15f95ab22f, Type 0x5a325ae4, Active True
+multiimgqti_a:       Offset 0x00000000003d1000, Length 0x00**************, Flags 0x10c4000000000000, UUID 5bc9e000-03ac-7875-1500-b4e43edd410d, Type 0x846c6f05, Active True
+multiimgoem_a:       Offset 0x00000000003d9000, Length 0x00**************, Flags 0x10c4000000000000, UUID e525f566-a2f4-8864-e464-10094b58e7dc, Type 0xe126a436, Active True
+apdp:                Offset 0x00000000003e1000, Length 0x00**************, Flags 0x00**************, UUID 20b370d0-13bd-e56f-c09c-aec1cba7483a, Type 0xe6e98da2, Active False
+
+Total disk size:0x00**************, sectors:0x00**************
+
+
+Parsing Lun 2:
+
+GPT Table:
+-------------
+xbl_b:               Offset 0x00**************, Length 0x00**************, Flags 0x10c0000000000000, UUID a461468d-10a7-aa7d-d10b-822bdbeccb3e, Type 0xdea0ba2c, Active False
+xbl_config_b:        Offset 0x00**************, Length 0x000000000004b000, Flags 0x00c0000000000000, UUID 1463995e-c792-41ee-8309-e333a0baac46, Type 0x5a325ae4, Active False
+multiimgqti_b:       Offset 0x00000000003d1000, Length 0x00**************, Flags 0x10c0000000000000, UUID 8f0cb8cb-4ed5-9b2d-d37f-aec6ca57831c, Type 0x846c6f05, Active False
+multiimgoem_b:       Offset 0x00000000003d9000, Length 0x00**************, Flags 0x10c0000000000000, UUID 31a24952-0ad1-58a4-0cec-28ef709dd11f, Type 0xe126a436, Active False
+apdpb:               Offset 0x00000000003e1000, Length 0x00**************, Flags 0x00**************, UUID ff5cb0a8-8fea-9f7c-03fe-6f51d053782c, Type 0xe6e98da2, Active False
+
+Total disk size:0x00**************, sectors:0x00**************
+
+
+Parsing Lun 3:
+
+GPT Table:
+-------------
+ALIGN_TO_128K_1:     Offset 0x00**************, Length 0x000000000001a000, Flags 0x10**************, UUID 7620207a-411b-6f1f-e1f6-94b39311cdb0, Type 0xfde1604b, Active False
+cdt:                 Offset 0x00**************, Length 0x00**************, Flags 0x10**************, UUID 04269504-143f-d6fa-4030-872b2a09275a, Type 0xa19f205f, Active False
+ddr:                 Offset 0x00**************, Length 0x00**************, Flags 0x10**************, UUID f94cb2de-a23f-36a7-c6ae-398ae87ab786, Type 0x20a0c19c, Active False
+
+Total disk size:0x00**************, sectors:0x00**************
+
+
+Parsing Lun 4:
+
+GPT Table:
+-------------
+uefi_a:              Offset 0x00**************, Length 0x00**************, Flags 0x107f000000000000, UUID cb568f45-1f4c-158f-8317-58798414b776, Type 0x9f234b5b, Active True
+aop_a:               Offset 0x00**************, Length 0x00**************, Flags 0x107f000000000000, UUID f6edfaff-fa77-4243-558a-c3a802c15576, Type 0x77036cd4, Active True
+aop_config_a:        Offset 0x00**************, Length 0x00**************, Flags 0x107f000000000000, UUID 5e03d310-24f6-948b-ce2b-539c815132b9, Type 0x77036cd4, Active True
+tz_a:                Offset 0x00**************, Length 0x00**************, Flags 0x107f000000000000, UUID c87f74b9-0be0-0a39-cc77-b95c418993e6, Type 0x77036cd4, Active True
+hyp_a:               Offset 0x0000000000a06000, Length 0x00**************, Flags 0x007f000000000000, UUID efb9dd5f-8388-7a8e-0696-1d630980b846, Type 0x77036cd4, Active True
+modem_a:             Offset 0x00**************, Length 0x0000000012c00000, Flags 0x107f000000000000, UUID a457c7bb-7507-cf3f-8bb0-d34b1c9e226a, Type 0x77036cd4, Active True
+bluetooth_a:         Offset 0x0000000013e06000, Length 0x00**************, Flags 0x107f000000000000, UUID e5c8523f-3e3d-aab7-880b-cbbd12b07a3a, Type 0x77036cd4, Active True
+mdtpsecapp_a:        Offset 0x00**************, Length 0x00**************, Flags 0x107f000000000000, UUID 1c7d9881-6d8c-b239-08a9-4f99290a8eb0, Type 0x77036cd4, Active True
+mdtp_a:              Offset 0x00**************, Length 0x00**************, Flags 0x107f000000000000, UUID ef463601-1002-ce42-fe37-5249cca6950c, Type 0x77036cd4, Active True
+abl_a:               Offset 0x00**************, Length 0x00**************, Flags 0x107f000000000000, UUID 4ff4054c-45d3-ac9e-9158-ab2a0226a201, Type 0x77036cd4, Active True
+dsp_a:               Offset 0x00**************, Length 0x00**************, Flags 0x107f000000000000, UUID 5e52d67e-6210-bf59-8010-b416beebd3cd, Type 0x77036cd4, Active True
+keymaster_a:         Offset 0x000000001a706000, Length 0x00**************, Flags 0x107f000000000000, UUID 186d8683-2196-625c-5d57-524c006dbcc7, Type 0x77036cd4, Active True
+boot_a:              Offset 0x000000001a786000, Length 0x00**************, Flags 0x003f000000000000, UUID f689620e-1cf2-e957-46d3-12312ba605ac, Type 0x77036cd4, Active True
+devcfg_a:            Offset 0x00**************, Length 0x00**************, Flags 0x007f000000000000, UUID ad6f04e4-0090-3a53-d576-fee86c55eb8f, Type 0x77036cd4, Active True
+qupfw_a:             Offset 0x00000000207a6000, Length 0x00**************, Flags 0x007f000000000000, UUID b9c3359a-b095-883d-25d9-879e9ee969c0, Type 0x77036cd4, Active True
+vbmeta_a:            Offset 0x00000000207ba000, Length 0x00**************, Flags 0x107f000000000000, UUID ef598a96-a359-bf7a-6193-16bf46ef6b3c, Type 0x77036cd4, Active True
+dtbo_a:              Offset 0x00000000207ca000, Length 0x00**************, Flags 0x007f000000000000, UUID 3af49779-406e-9c7f-e86c-6479f427cc74, Type 0x77036cd4, Active True
+uefisecapp_a:        Offset 0x0000000021fca000, Length 0x00**************, Flags 0x007f000000000000, UUID 3fa4906c-4af3-4095-2d62-9a0da09e484c, Type 0x77036cd4, Active True
+imagefv_a:           Offset 0x00000000221ca000, Length 0x00**************, Flags 0x007f000000000001, UUID 674edd51-d1fc-9b1f-9c20-c36e554ddf51, Type 0x77036cd4, Active True
+shrm_a:              Offset 0x00000000223ca000, Length 0x00**************, Flags 0x107f000000000000, UUID 6a66001e-16ab-bffe-1dff-23b788ff1b55, Type 0x77036cd4, Active True
+vm-bootsys_a:        Offset 0x00000000223ea000, Length 0x00**************, Flags 0x007f000000000000, UUID 428f0122-d315-27c4-4866-2c881c047442, Type 0x77036cd4, Active True
+cpucp_a:             Offset 0x0000000032a0f000, Length 0x00**************, Flags 0x107f000000000000, UUID 7acc85a0-86e8-7bfd-ef16-1cbd2263c578, Type 0x77036cd4, Active True
+featenabler_a:       Offset 0x0000000032b0f000, Length 0x00**************, Flags 0x007f000000000000, UUID d371e940-82b0-ca9b-3fc1-8f339b08ba9b, Type 0x77036cd4, Active True
+vendor_boot_a:       Offset 0x0000000032b2f000, Length 0x00**************, Flags 0x007f000000000000, UUID 19bf45ce-7fb0-8294-5ddf-95f8bbbcc3fe, Type 0x77036cd4, Active True
+qmcs:                Offset 0x0000000038b2f000, Length 0x0000000001e00000, Flags 0x00**************, UUID e1f5ffd6-864a-f133-8b77-99516d8211da, Type 0x358740b1, Active False
+qweslicstore_a:      Offset 0x000000003a92f000, Length 0x00**************, Flags 0x107f000000000000, UUID 06c83c58-9d71-b1f1-20ca-18197c0d33d3, Type 0x77036cd4, Active True
+recovery_a:          Offset 0x000000003a96f000, Length 0x00**************, Flags 0x007f000000000000, UUID afef37d0-4124-8adb-eda8-5341980c2670, Type 0x77036cd4, Active True
+xbl_ramdump_a:       Offset 0x0000000040d6f000, Length 0x00**************, Flags 0x007f000000000000, UUID 54af39b8-a9c7-7d62-cfc4-9b15f07718c4, Type 0x382f197, Active True
+uefi_b:              Offset 0x0000000040f6f000, Length 0x00**************, Flags 0x10**************, UUID 9cf45dfb-e2db-a010-bcd9-44207ef6f984, Type 0x400ffdcd, Active False
+aop_b:               Offset 0x000000004146f000, Length 0x00**************, Flags 0x00**************, UUID 05e3d679-c660-15b0-9339-dc0743e6caec, Type 0xd69e90a5, Active False
+aop_config_b:        Offset 0x00000000414ef000, Length 0x00**************, Flags 0x00**************, UUID 94aa5773-1f47-fd08-bb76-b3fab31f6c53, Type 0x3d12f234, Active False
+tz_b:                Offset 0x000000004156f000, Length 0x00**************, Flags 0x00**************, UUID 777c1743-85ae-1acb-a8ad-f8867d81d244, Type 0xa053aa7f, Active False
+hyp_b:               Offset 0x000000004196f000, Length 0x00**************, Flags 0x00**************, UUID 8f6355ba-cff5-d436-8230-7667de67ad7b, Type 0xe1a6a689, Active False
+modem_b:             Offset 0x000000004216f000, Length 0x0000000012c00000, Flags 0x10**************, UUID 570a7fe9-f0aa-020c-d8dc-26587b3e4001, Type EFI_BASIC_DATA, Active False
+bluetooth_b:         Offset 0x0000000054d6f000, Length 0x00**************, Flags 0x10**************, UUID 1d0b7159-bbe2-8aad-8868-dfc128f559e4, Type 0x6cb747f1, Active False
+mdtpsecapp_b:        Offset 0x000000005516f000, Length 0x00**************, Flags 0x10**************, UUID 1697437a-bc40-8dc7-5ceb-6565167350bc, Type 0xea02d680, Active False
+mdtp_b:              Offset 0x000000005556f000, Length 0x00**************, Flags 0x10**************, UUID 6eb365a2-792b-74ad-052a-72d096d9167a, Type 0x3878408a, Active False
+abl_b:               Offset 0x000000005756f000, Length 0x00**************, Flags 0x10**************, UUID 91721b26-6a5f-4085-e1d8-bf1ac95798e3, Type 0xbd6928a1, Active False
+dsp_b:               Offset 0x000000005766f000, Length 0x00**************, Flags 0x10**************, UUID e3aabb74-29ec-cc3c-3aa9-38a7c8987790, Type 0x7efe5010, Active False
+keymaster_b:         Offset 0x000000005b66f000, Length 0x00**************, Flags 0x10**************, UUID aa183297-d552-655c-89f1-881c66afd584, Type 0xa11d2a7c, Active False
+boot_b:              Offset 0x000000005b6ef000, Length 0x00**************, Flags 0x006a000000000000, UUID 205e275d-ad2a-55fb-c47a-4c5a1755345e, Type 0x20117f86, Active False
+devcfg_b:            Offset 0x00000000616ef000, Length 0x00**************, Flags 0x00**************, UUID d9bfe18a-3845-20bb-b49a-9d22c186d2ed, Type 0xf65d4b16, Active False
+qupfw_b:             Offset 0x000000006170f000, Length 0x00**************, Flags 0x00**************, UUID 3dfaed75-9787-2c00-160e-06323a406907, Type 0x21d1219f, Active False
+vbmeta_b:            Offset 0x00**************, Length 0x00**************, Flags 0x10**************, UUID 2ac4553a-92b8-95d5-54da-0613828aaff2, Type 0x4b7a15d6, Active False
+dtbo_b:              Offset 0x00**************, Length 0x00**************, Flags 0x00**************, UUID 26328208-c729-58e6-1498-ca050637397c, Type 0x24d0d418, Active False
+uefisecapp_b:        Offset 0x0000000062f33000, Length 0x00**************, Flags 0x00**************, UUID b60de640-fa17-314c-95bf-4eb797486827, Type 0xbe8a7e08, Active False
+imagefv_b:           Offset 0x00**************, Length 0x00**************, Flags 0x00**************, UUID 8e3895d1-58c8-51a7-1cb0-ffa2ce7d9b58, Type 0x17911177, Active False
+shrm_b:              Offset 0x00**************, Length 0x00**************, Flags 0x10**************, UUID 975f29db-0bb2-4c7a-ef4c-e444853466a9, Type 0xcb74ca22, Active False
+vm-bootsys_b:        Offset 0x00**************, Length 0x00**************, Flags 0x00**************, UUID 905641a7-88b1-962b-1b84-08245cd7655f, Type 0x7b034c58, Active False
+cpucp_b:             Offset 0x00**************, Length 0x00**************, Flags 0x10**************, UUID b1c974b6-4e74-b40f-f929-e557b4f6cec5, Type 0x1e8615bd, Active False
+featenabler_b:       Offset 0x0000000073a78000, Length 0x00**************, Flags 0x00**************, UUID a2b206c7-81ec-1190-6f0f-e77b035294ff, Type 0x741813d2, Active False
+vendor_boot_b:       Offset 0x0000000073a98000, Length 0x00**************, Flags 0x00**************, UUID da2f36d6-c3c4-ea4b-4554-6c83cb13d5be, Type 0x6d286a7f, Active False
+qweslicstore_b:      Offset 0x0000000079a98000, Length 0x00**************, Flags 0x10**************, UUID 64db23fb-407e-4003-eac5-fe098a9c2a43, Type 0x7bab3c93, Active False
+recovery_b:          Offset 0x0000000079ad8000, Length 0x00**************, Flags 0x00**************, UUID 987d02d5-551f-22e2-965c-76592908199b, Type 0xd504d6db, Active False
+xbl_ramdump_b:       Offset 0x000000007fed8000, Length 0x00**************, Flags 0x00**************, UUID 836effe3-3ef7-7aa5-4a64-e98ac5be3d83, Type 0xc3e58b09, Active False
+devinfo:             Offset 0x00000000800d8000, Length 0x00**************, Flags 0x10**************, UUID cff23a01-482c-4944-b896-8a32c66a481a, Type 0x65addcf4, Active False
+dip:                 Offset 0x00000000800d9000, Length 0x00**************, Flags 0x10**************, UUID 5b2ceb0f-fb87-2c26-f75e-b8ec06a2dd82, Type 0x4114b077, Active False
+splash:              Offset 0x00000000801d9000, Length 0x00000000020a4000, Flags 0x00**************, UUID 1e12703c-e8b5-d1f9-f5ab-c0271a9784d9, Type 0xad99f201, Active False
+limits:              Offset 0x000000008227d000, Length 0x00**************, Flags 0x10**************, UUID 0632c568-91a5-daba-5f8b-a02075b589a4, Type 0x10a0c19c, Active False
+limits-cdsp:         Offset 0x000000008227e000, Length 0x00**************, Flags 0x10**************, UUID a99839f1-d86e-48e5-d4a9-486dad006d44, Type 0x545d3707, Active False
+toolsfv:             Offset 0x000000008227f000, Length 0x00**************, Flags 0x10**************, UUID d0c8c059-311a-3558-5f32-1650377b467b, Type 0x97745aba, Active False
+logfs:               Offset 0x000000008237f000, Length 0x00**************, Flags 0x00**************, UUID c3647aa7-d0ee-7cc9-67ce-58dda7139134, Type 0xbc0330eb, Active False
+logdump:             Offset 0x0000000082b7f000, Length 0x00**************, Flags 0x00**************, UUID 86d3cd53-a539-7387-2d64-2e2f2b2f269b, Type 0x5af80809, Active False
+storsec:             Offset 0x00000000a2b7f000, Length 0x00**************, Flags 0x10**************, UUID 0c26f3ca-4cc2-04df-8956-72c055792e7b, Type 0x2db45fe, Active False
+uefivarstore:        Offset 0x00000000a2b9f000, Length 0x00**************, Flags 0x10**************, UUID d64a334f-4f2c-2914-3d23-031e1a93fe3d, Type 0x165bd6bc, Active False
+secdata:             Offset 0x00000000a2c1f000, Length 0x00**************, Flags 0x10**************, UUID 3df6c615-e988-51e2-9383-24bfc27bcb49, Type 0x76cfc7ef, Active False
+vm-data:             Offset 0x00000000a2c26000, Length 0x00000000020a4000, Flags 0x00**************, UUID 237bae8b-03d3-661c-45ae-cfcbb503e3a7, Type 0x21adb864, Active False
+mdcompress:          Offset 0x00000000a4cca000, Length 0x00**************, Flags 0x10**************, UUID 1087f018-6c63-01fd-4c1e-6fca4a36498a, Type 0xc6a5a9f5, Active False
+connsec:             Offset 0x00000000a60ca000, Length 0x00**************, Flags 0x10**************, UUID 1ecd10e7-ec2a-7268-e03d-bbe994db7669, Type 0x6a716f7c, Active False
+tzsc:                Offset 0x00000000a60ea000, Length 0x00**************, Flags 0x10**************, UUID f840c98a-2911-d16b-5f9b-b7ecf027a9b5, Type 0x478dea49, Active False
+spunvm:              Offset 0x00000000a610a000, Length 0x00**************, Flags 0x00**************, UUID c6b96a93-a4e2-f789-a0e5-8d2a6956954d, Type 0xe42e2b4c, Active False
+rtice:               Offset 0x00000000a810a000, Length 0x00**************, Flags 0x10**************, UUID fe0e04ab-5bc2-e43b-6351-1c1ebad757f4, Type 0xe396d1ea, Active False
+xbl_sc_test_mode:    Offset 0x00000000a818a000, Length 0x00**************, Flags 0x00**************, UUID 61dedf8d-150d-b0d8-97a5-b38f69b3f0f3, Type 0x91fdd2b9, Active False
+xbl_sc_logs:         Offset 0x00000000a819a000, Length 0x00**************, Flags 0x00**************, UUID 689b4ebd-d4c4-96be-8fa2-52fe197a1c31, Type 0xf7eecb66, Active False
+
+Total disk size:0x00**************, sectors:0x00**************
+
+
+Parsing Lun 5:
+
+GPT Table:
+-------------
+ALIGN_TO_128K_2:     Offset 0x00**************, Length 0x000000000001a000, Flags 0x10**************, UUID 0ed44dcb-e8a3-7883-295d-44651134f29b, Type 0x6891a3b7, Active False
+modemst1:            Offset 0x00**************, Length 0x00**************, Flags 0x00**************, UUID 31c60430-3deb-f8c0-bcd7-53be51dc954e, Type 0xebbeadaf, Active False
+modemst2:            Offset 0x00**************, Length 0x00**************, Flags 0x00**************, UUID bfe6795f-9ac2-4467-3d8e-985ded9a8e7c, Type 0xa288b1f, Active False
+fsg:                 Offset 0x00**************, Length 0x00**************, Flags 0x10**************, UUID 1d87f609-b48a-2304-04fe-8f090f1c9f5e, Type 0x638ff8e2, Active False
+fsc:                 Offset 0x00**************, Length 0x00**************, Flags 0x00**************, UUID 6970d118-f6e9-1b9e-e94e-0911a4a22de6, Type 0x57b90a16, Active False
+
+Total disk size:0x00**************, sectors:0x00**************
+
+RC=0

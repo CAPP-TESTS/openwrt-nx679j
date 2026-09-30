@@ -1,0 +1,306 @@
+RAW_SLOT=95
+slot=95 uptime=950.24 boot=c8bf2d2d-3185-4fe4-be41-3591387b026f r3=running
+-- dmesg:
+[  758.068291][  T377] gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+[  828.231171][  T376] ipa ipa_smmu_perph_cb_probe:10174 cb 2 is disabled
+[  828.231183][  T376] ipa ipa_smmu_perph_cb_probe:10174 cb 5 is disabled
+[  828.231185][  T376] ipa ipa_smmu_perph_cb_probe:10174 cb 6 is disabled
+[  828.256334][  T376] IPA FW loaded successfully
+[  828.256737][  T376] gsi soc:qcom,msm_gsi: gsi_register_device:1534 GSI irq is wake enabled 40
+[  828.256829][  T376] gsi soc:qcom,msm_gsi: saved msi 0 msg data 0 addr 0x00**************
+[  828.256854][  T376] gsi soc:qcom,msm_gsi: saved msi 1 msg data 1 addr 0x00**************
+[  828.260465][  T376] ipa ipa3_rmnet_ctl_register_pm_client:739 rmnet_ctl register done
+[  828.260478][  T376] ipa ipa3_rmnet_ll_register_pm_client:964 rmnet_ll register done
+[  828.260484][  T376] IPA driver is now in ready state
+[  828.260497][  T376] ipa-lnx-stats ipa_spearhead_stats_ioctl_init:1856 IPA ipa_lnx_stats_ioctl major(497) initial ok :>>>>
+[  828.260499][  T376] ipa-lnx-stats ipa_spearhead_stats_init:1884 IPA_LNX_STATS_IOCTL init success
+[  828.260501][  T376] IPA driver initialization was successful.
+[  828.260505][ T8508] rmnet_ipa3 started initialization
+[  828.260507][ T8508] IPA SSR support = True
+[  828.260508][ T8508] IPA SG support = True
+[  828.260509][ T8508] IPA Napi Enable = True
+[  828.260510][ T8508] using default for wan-rx-desc-size = 256
+[  828.260637][ T8508] ipa-wan ipa3_wwan_register_netdev_pm_client:3474 rmnet_ipa%d register done
+[  828.260776][ T8508] ipa-wan ipa3_wwan_probe:3669 rmnet_ipa completed initialization
+[  828.261215][  T378] Sending QMI_IPA_INIT_MODEM_DRIVER_REQ_V01
+[  828.261460][  T377] ipa-wan ipa3_handle_indication_req:144 not send indication
+[  828.266460][  T376] ipa ipa3_uc_wdi_event_log_info_handler:373 WDI protocol missing 0x1
+[  828.266462][  T376] ipa ipa3_uc_ntn_event_log_info_handler:19 NTN protocol missing 0x1
+[  828.266479][  T376] ipa ipa_pc_qmp_enable:11184 mailbox channel request failed, ret=-19
+[  828.273753][  T378] QMI_IPA_INIT_MODEM_DRIVER_REQ_V01 response received
+[  829.273393][T10650] rmnet_ctl driver probed
+[  831.754960][ T8508] sd 0:0:0:4: [sde] Synchronizing SCSI cache
+[  851.322491][   T62] sd 0:0:0:5: [sdf] Synchronizing SCSI cache
+-- rmtfs:
+[RMTFS] packet; from: 1:-2
+[RMTFS] del_client 1:16481
+[RMTFS] packet; from: 1:-2
+[RMTFS] del_client 1:16482
+[RMTFS] packet; from: 1:-2
+[RMTFS] del_client 1:164-- tqftpserv:
+got del_client for 1:16548
+got del_client for 1:16548
+got del_client for 1:16548
+got del_client for 1:16548
+-- pd-mapper:
+[PD-MAPPER] request node=0 port=2 service=avs/audio domains=1
+[PD-MAPPER] request node=0 port=2 service=tms/servreg domains=7
+[PD-MAPPER] request node=0 port=2 service=tms/servreg domains=7
+[PD-MAPPER] request node=0 port=2 service=tms/pddump_disabled domains=0
+[PD-MAPPER] request node=0 port=2 service=avs/audio domains=1
+[PD-MAPPER] request node=0 port=2 service=tms/servreg domains=7
+-- IPA experiment:
+-- IPA-ready restart experiment:
+-- ADSP experiment:
+-- DPM experiment:
+  00 00 00 02 00 00 00 17 00 00 00 
+[qmi] raw (14 bytes):
+  02 01 00 20 00 07 00 02 04 00 00 00 00 00 
+[qmi] type=2 txn=1 msg_id=0x0020 msg_len=7
+  TLV 0x02 len=4  u32=0 (0x00000000)  str="\0\0\0\0"
+[dpm] OPENED endpoint=4:1 rx=2 tx=23 pid=10644 hold=3600
+-- IPA pipe experiment:
+NETDEV features_block=0 active=0x00004000 available=0x001d4813
+NETDEV features_block=1 active=0x00000000 available=0x02800302
+INGRESS selector=7 flags=0xe
+-- WDA experiment:
+-- rmnet mux experiment:
+-- observed-DMS bootstrap/test:
+  02 01 00 2d 00 0b 00 02 04 00 00 00 00 00 01 01 
+  00 05 
+[qmi] type=2 txn=1 msg_id=0x002d msg_len=11
+  TLV 0x02 len=4  u32=0 (0x00000000)  str="\0\0\0\0"
+  TLV 0x01 len=1  u8=5
+READY_FOR_OBSERVED_DMS_TEST uptime=772.49 6116.86
+[dms] ONLINE_VERIFIED; not a bearer or Internet proof
+OBSERVED_CLIENT_EXIT=0 UPTIME=816.34 6332.93
+[qrtr] local node=1 port=0
+[ns] service=2 version=1 instance=0 node=0 port=73
+[qmi] raw (18 bytes):
+  02 01 00 2d 00 0b 00 02 04 00 00 00 00 00 01 01 
+  00 00 
+[qmi] type=2 txn=1 msg_id=0x002d msg_len=11
+  TLV 0x02 len=4  u32=0 (0x00000000)  str="\0\0\0\0"
+  TLV 0x01 len=1  u8=0
+FRESH_CLIENT_EXIT=0
+OBSERVED_CHECK_FINISHED UPTIME=816.35 6335.86 EXIT=0
+-- online data setup/session:
+DPM_OPEN uptime=829.23 6400.73
+[qrtr] local node=1 port=0
+[ns] service=47 version=1 instance=0 node=0 port=60
+[request] (27 bytes):
+  00 01 00 20 00 14 00 11 11 00 01 04 00 00 00 01 
+  00 00 00 02 00 00 00 17 00 00 00 
+[qmi] raw (14 bytes):
+  02 01 00 20 00 07 00 02 04 00 00 00 00 00 
+[qmi] type=2 txn=1 msg_id=0x0020 msg_len=7
+  TLV 0x02 len=4  u32=0 (0x00000000)  str="\0\0\0\0"
+[dpm] OPENED endpoint=4:1 rx=2 tx=23 pid=10644 hold=3600
+PIPE_SETUP uptime=829.24 6400.75
+-- qrtr svc count:
+61
+
+RAW_SLOT=96
+slot=96 uptime=953.26 boot=c8bf2d2d-3185-4fe4-be41-3591387b026f r3=running
+-- dmesg:
+[  758.068291][  T377] gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+[  828.231171][  T376] ipa ipa_smmu_perph_cb_probe:10174 cb 2 is disabled
+[  828.231183][  T376] ipa ipa_smmu_perph_cb_probe:10174 cb 5 is disabled
+[  828.231185][  T376] ipa ipa_smmu_perph_cb_probe:10174 cb 6 is disabled
+[  828.256334][  T376] IPA FW loaded successfully
+[  828.256737][  T376] gsi soc:qcom,msm_gsi: gsi_register_device:1534 GSI irq is wake enabled 40
+[  828.256829][  T376] gsi soc:qcom,msm_gsi: saved msi 0 msg data 0 addr 0x00**************
+[  828.256854][  T376] gsi soc:qcom,msm_gsi: saved msi 1 msg data 1 addr 0x00**************
+[  828.260465][  T376] ipa ipa3_rmnet_ctl_register_pm_client:739 rmnet_ctl register done
+[  828.260478][  T376] ipa ipa3_rmnet_ll_register_pm_client:964 rmnet_ll register done
+[  828.260484][  T376] IPA driver is now in ready state
+[  828.260497][  T376] ipa-lnx-stats ipa_spearhead_stats_ioctl_init:1856 IPA ipa_lnx_stats_ioctl major(497) initial ok :>>>>
+[  828.260499][  T376] ipa-lnx-stats ipa_spearhead_stats_init:1884 IPA_LNX_STATS_IOCTL init success
+[  828.260501][  T376] IPA driver initialization was successful.
+[  828.260505][ T8508] rmnet_ipa3 started initialization
+[  828.260507][ T8508] IPA SSR support = True
+[  828.260508][ T8508] IPA SG support = True
+[  828.260509][ T8508] IPA Napi Enable = True
+[  828.260510][ T8508] using default for wan-rx-desc-size = 256
+[  828.260637][ T8508] ipa-wan ipa3_wwan_register_netdev_pm_client:3474 rmnet_ipa%d register done
+[  828.260776][ T8508] ipa-wan ipa3_wwan_probe:3669 rmnet_ipa completed initialization
+[  828.261215][  T378] Sending QMI_IPA_INIT_MODEM_DRIVER_REQ_V01
+[  828.261460][  T377] ipa-wan ipa3_handle_indication_req:144 not send indication
+[  828.266460][  T376] ipa ipa3_uc_wdi_event_log_info_handler:373 WDI protocol missing 0x1
+[  828.266462][  T376] ipa ipa3_uc_ntn_event_log_info_handler:19 NTN protocol missing 0x1
+[  828.266479][  T376] ipa ipa_pc_qmp_enable:11184 mailbox channel request failed, ret=-19
+[  828.273753][  T378] QMI_IPA_INIT_MODEM_DRIVER_REQ_V01 response received
+[  829.273393][T10650] rmnet_ctl driver probed
+[  831.754960][ T8508] sd 0:0:0:4: [sde] Synchronizing SCSI cache
+[  851.322491][   T62] sd 0:0:0:5: [sdf] Synchronizing SCSI cache
+-- rmtfs:
+[RMTFS] packet; from: 1:-2
+[RMTFS] del_client 1:16481
+[RMTFS] packet; from: 1:-2
+[RMTFS] del_client 1:16482
+[RMTFS] packet; from: 1:-2
+[RMTFS] del_client 1:164-- tqftpserv:
+got del_client for 1:16549
+got del_client for 1:16549
+got del_client for 1:16549
+got del_client for 1:16549
+-- pd-mapper:
+[PD-MAPPER] request node=0 port=2 service=avs/audio domains=1
+[PD-MAPPER] request node=0 port=2 service=tms/servreg domains=7
+[PD-MAPPER] request node=0 port=2 service=tms/servreg domains=7
+[PD-MAPPER] request node=0 port=2 service=tms/pddump_disabled domains=0
+[PD-MAPPER] request node=0 port=2 service=avs/audio domains=1
+[PD-MAPPER] request node=0 port=2 service=tms/servreg domains=7
+-- IPA experiment:
+-- IPA-ready restart experiment:
+-- ADSP experiment:
+-- DPM experiment:
+  00 00 00 02 00 00 00 17 00 00 00 
+[qmi] raw (14 bytes):
+  02 01 00 20 00 07 00 02 04 00 00 00 00 00 
+[qmi] type=2 txn=1 msg_id=0x0020 msg_len=7
+  TLV 0x02 len=4  u32=0 (0x00000000)  str="\0\0\0\0"
+[dpm] OPENED endpoint=4:1 rx=2 tx=23 pid=10644 hold=3600
+-- IPA pipe experiment:
+NETDEV features_block=0 active=0x00004000 available=0x001d4813
+NETDEV features_block=1 active=0x00000000 available=0x02800302
+INGRESS selector=7 flags=0xe
+-- WDA experiment:
+-- rmnet mux experiment:
+-- observed-DMS bootstrap/test:
+  02 01 00 2d 00 0b 00 02 04 00 00 00 00 00 01 01 
+  00 05 
+[qmi] type=2 txn=1 msg_id=0x002d msg_len=11
+  TLV 0x02 len=4  u32=0 (0x00000000)  str="\0\0\0\0"
+  TLV 0x01 len=1  u8=5
+READY_FOR_OBSERVED_DMS_TEST uptime=772.49 6116.86
+[dms] ONLINE_VERIFIED; not a bearer or Internet proof
+OBSERVED_CLIENT_EXIT=0 UPTIME=816.34 6332.93
+[qrtr] local node=1 port=0
+[ns] service=2 version=1 instance=0 node=0 port=73
+[qmi] raw (18 bytes):
+  02 01 00 2d 00 0b 00 02 04 00 00 00 00 00 01 01 
+  00 00 
+[qmi] type=2 txn=1 msg_id=0x002d msg_len=11
+  TLV 0x02 len=4  u32=0 (0x00000000)  str="\0\0\0\0"
+  TLV 0x01 len=1  u8=0
+FRESH_CLIENT_EXIT=0
+OBSERVED_CHECK_FINISHED UPTIME=816.35 6335.86 EXIT=0
+-- online data setup/session:
+DPM_OPEN uptime=829.23 6400.73
+[qrtr] local node=1 port=0
+[ns] service=47 version=1 instance=0 node=0 port=60
+[request] (27 bytes):
+  00 01 00 20 00 14 00 11 11 00 01 04 00 00 00 01 
+  00 00 00 02 00 00 00 17 00 00 00 
+[qmi] raw (14 bytes):
+  02 01 00 20 00 07 00 02 04 00 00 00 00 00 
+[qmi] type=2 txn=1 msg_id=0x0020 msg_len=7
+  TLV 0x02 len=4  u32=0 (0x00000000)  str="\0\0\0\0"
+[dpm] OPENED endpoint=4:1 rx=2 tx=23 pid=10644 hold=3600
+PIPE_SETUP uptime=829.24 6400.75
+-- qrtr svc count:
+61
+
+RAW_SLOT=97
+slot=97 uptime=956.27 boot=c8bf2d2d-3185-4fe4-be41-3591387b026f r3=running
+-- dmesg:
+[  758.068291][  T377] gpio-keys soc:gpio_keys: deferred probe timeout, ignoring dependency
+[  828.231171][  T376] ipa ipa_smmu_perph_cb_probe:10174 cb 2 is disabled
+[  828.231183][  T376] ipa ipa_smmu_perph_cb_probe:10174 cb 5 is disabled
+[  828.231185][  T376] ipa ipa_smmu_perph_cb_probe:10174 cb 6 is disabled
+[  828.256334][  T376] IPA FW loaded successfully
+[  828.256737][  T376] gsi soc:qcom,msm_gsi: gsi_register_device:1534 GSI irq is wake enabled 40
+[  828.256829][  T376] gsi soc:qcom,msm_gsi: saved msi 0 msg data 0 addr 0x00**************
+[  828.256854][  T376] gsi soc:qcom,msm_gsi: saved msi 1 msg data 1 addr 0x00**************
+[  828.260465][  T376] ipa ipa3_rmnet_ctl_register_pm_client:739 rmnet_ctl register done
+[  828.260478][  T376] ipa ipa3_rmnet_ll_register_pm_client:964 rmnet_ll register done
+[  828.260484][  T376] IPA driver is now in ready state
+[  828.260497][  T376] ipa-lnx-stats ipa_spearhead_stats_ioctl_init:1856 IPA ipa_lnx_stats_ioctl major(497) initial ok :>>>>
+[  828.260499][  T376] ipa-lnx-stats ipa_spearhead_stats_init:1884 IPA_LNX_STATS_IOCTL init success
+[  828.260501][  T376] IPA driver initialization was successful.
+[  828.260505][ T8508] rmnet_ipa3 started initialization
+[  828.260507][ T8508] IPA SSR support = True
+[  828.260508][ T8508] IPA SG support = True
+[  828.260509][ T8508] IPA Napi Enable = True
+[  828.260510][ T8508] using default for wan-rx-desc-size = 256
+[  828.260637][ T8508] ipa-wan ipa3_wwan_register_netdev_pm_client:3474 rmnet_ipa%d register done
+[  828.260776][ T8508] ipa-wan ipa3_wwan_probe:3669 rmnet_ipa completed initialization
+[  828.261215][  T378] Sending QMI_IPA_INIT_MODEM_DRIVER_REQ_V01
+[  828.261460][  T377] ipa-wan ipa3_handle_indication_req:144 not send indication
+[  828.266460][  T376] ipa ipa3_uc_wdi_event_log_info_handler:373 WDI protocol missing 0x1
+[  828.266462][  T376] ipa ipa3_uc_ntn_event_log_info_handler:19 NTN protocol missing 0x1
+[  828.266479][  T376] ipa ipa_pc_qmp_enable:11184 mailbox channel request failed, ret=-19
+[  828.273753][  T378] QMI_IPA_INIT_MODEM_DRIVER_REQ_V01 response received
+[  829.273393][T10650] rmnet_ctl driver probed
+[  831.754960][ T8508] sd 0:0:0:4: [sde] Synchronizing SCSI cache
+[  851.322491][   T62] sd 0:0:0:5: [sdf] Synchronizing SCSI cache
+-- rmtfs:
+[RMTFS] packet; from: 1:-2
+[RMTFS] del_client 1:16481
+[RMTFS] packet; from: 1:-2
+[RMTFS] del_client 1:16482
+[RMTFS] packet; from: 1:-2
+[RMTFS] del_client 1:164-- tqftpserv:
+got del_client for 1:16550
+got del_client for 1:16550
+got del_client for 1:16550
+got del_client for 1:16550
+-- pd-mapper:
+[PD-MAPPER] request node=0 port=2 service=avs/audio domains=1
+[PD-MAPPER] request node=0 port=2 service=tms/servreg domains=7
+[PD-MAPPER] request node=0 port=2 service=tms/servreg domains=7
+[PD-MAPPER] request node=0 port=2 service=tms/pddump_disabled domains=0
+[PD-MAPPER] request node=0 port=2 service=avs/audio domains=1
+[PD-MAPPER] request node=0 port=2 service=tms/servreg domains=7
+-- IPA experiment:
+-- IPA-ready restart experiment:
+-- ADSP experiment:
+-- DPM experiment:
+  00 00 00 02 00 00 00 17 00 00 00 
+[qmi] raw (14 bytes):
+  02 01 00 20 00 07 00 02 04 00 00 00 00 00 
+[qmi] type=2 txn=1 msg_id=0x0020 msg_len=7
+  TLV 0x02 len=4  u32=0 (0x00000000)  str="\0\0\0\0"
+[dpm] OPENED endpoint=4:1 rx=2 tx=23 pid=10644 hold=3600
+-- IPA pipe experiment:
+NETDEV features_block=0 active=0x00004000 available=0x001d4813
+NETDEV features_block=1 active=0x00000000 available=0x02800302
+INGRESS selector=7 flags=0xe
+-- WDA experiment:
+-- rmnet mux experiment:
+-- observed-DMS bootstrap/test:
+  02 01 00 2d 00 0b 00 02 04 00 00 00 00 00 01 01 
+  00 05 
+[qmi] type=2 txn=1 msg_id=0x002d msg_len=11
+  TLV 0x02 len=4  u32=0 (0x00000000)  str="\0\0\0\0"
+  TLV 0x01 len=1  u8=5
+READY_FOR_OBSERVED_DMS_TEST uptime=772.49 6116.86
+[dms] ONLINE_VERIFIED; not a bearer or Internet proof
+OBSERVED_CLIENT_EXIT=0 UPTIME=816.34 6332.93
+[qrtr] local node=1 port=0
+[ns] service=2 version=1 instance=0 node=0 port=73
+[qmi] raw (18 bytes):
+  02 01 00 2d 00 0b 00 02 04 00 00 00 00 00 01 01 
+  00 00 
+[qmi] type=2 txn=1 msg_id=0x002d msg_len=11
+  TLV 0x02 len=4  u32=0 (0x00000000)  str="\0\0\0\0"
+  TLV 0x01 len=1  u8=0
+FRESH_CLIENT_EXIT=0
+OBSERVED_CHECK_FINISHED UPTIME=816.35 6335.86 EXIT=0
+-- online data setup/session:
+DPM_OPEN uptime=829.23 6400.73
+[qrtr] local node=1 port=0
+[ns] service=47 version=1 instance=0 node=0 port=60
+[request] (27 bytes):
+  00 01 00 20 00 14 00 11 11 00 01 04 00 00 00 01 
+  00 00 00 02 00 00 00 17 00 00 00 
+[qmi] raw (14 bytes):
+  02 01 00 20 00 07 00 02 04 00 00 00 00 00 
+[qmi] type=2 txn=1 msg_id=0x0020 msg_len=7
+  TLV 0x02 len=4  u32=0 (0x00000000)  str="\0\0\0\0"
+[dpm] OPENED endpoint=4:1 rx=2 tx=23 pid=10644 hold=3600
+PIPE_SETUP uptime=829.24 6400.75
+-- qrtr svc count:
+61
+

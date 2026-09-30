@@ -1,0 +1,16 @@
+/sys/kernel/debug/pinctrl/soc:spf_core_platform:lpi_pinctrl@3440000/pinmux-pins
+/sys/kernel/debug/pinctrl/soc:spf_core_platform:lpi_pinctrl@3440000/pins
+/sys/kernel/debug/pinctrl/c42d000.qcom,spmi:qcom,pm8450@7:pinctrl@8800/pinmux-pins
+/sys/kernel/debug/pinctrl/c42d000.qcom,spmi:qcom,pm8450@7:pinctrl@8800/pins
+/sys/kernel/debug/pinctrl/c42d000.qcom,spmi:qcom,pmr735a@4:pinctrl@8800/pinmux-pins
+/sys/kernel/debug/pinctrl/c42d000.qcom,spmi:qcom,pmr735a@4:pinctrl@8800/pins
+/sys/kernel/debug/pinctrl/c42d000.qcom,spmi:qcom,pm8350b@3:pinctrl@8800/pinmux-pins
+/sys/kernel/debug/pinctrl/c42d000.qcom,spmi:qcom,pm8350b@3:pinctrl@8800/pins
+/sys/kernel/debug/pinctrl/c42d000.qcom,spmi:qcom,pm8350c@2:pinctrl@8800/pinmux-pins
+/sys/kernel/debug/pinctrl/c42d000.qcom,spmi:qcom,pm8350c@2:pinctrl@8800/pins
+/sys/kernel/debug/pinctrl/c42d000.qcom,spmi:qcom,pm8350@1:pinctrl@8800/pinmux-pins
+/sys/kernel/debug/pinctrl/c42d000.qcom,spmi:qcom,pm8350@1:pinctrl@8800/pins
+/sys/kernel/debug/pinctrl/c42d000.qcom,spmi:qcom,pmk8350@0:pinctrl@b000/pinmux-pins
+/sys/kernel/debug/pinctrl/c42d000.qcom,spmi:qcom,pmk8350@0:pinctrl@b000/pins
+/sys/kernel/debug/pinctrl/f000000.pinctrl/pinmux-pins
+/sys/kernel/debug/pinctrl/f000000.pinctrl/pins

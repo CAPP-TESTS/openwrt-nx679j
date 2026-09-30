@@ -1,0 +1,13 @@
+{
+	"admin/status/nx679j-modem": {
+		"title": "Cellular Network",
+		"order": 30,
+		"action": {
+			"type": "view",
+			"path": "nx679j-modem/status"
+		},
+		"depends": {
+			"acl": [ "luci-app-nx679j-modem" ]
+		}
+	}
+}

@@ -1,0 +1,30 @@
+Timed out
+Timed out
+Timed out
+Timed out
+Timed out
+Timed out
+Timed out
+Timed out
+Timed out
+Timed out
+['  File "<frozen runpy>", line 203, in _run_module_as_main\n', '  File "<frozen runpy>", line 88, in _run_code\n', '  File "/home/user/venvs/edk2/lib/python3.14/site-packages/edlclient/edl.py", line 419, in <module>\n    run()\n', '  File "/home/user/venvs/edk2/lib/python3.14/site-packages/edlclient/edl.py", line 412, in run\n    base.run()\n', '  File "/home/user/venvs/edk2/lib/python3.14/site-packages/edlclient/edl.py", line 305, in run\n    conninfo = self.doconnect(loop)\n', '  File "/home/user/venvs/edk2/lib/python3.14/site-packages/edlclient/edl.py", line 232, in doconnect\n    resp = self.sahara.connect()\n']
+TX:<?xml version="1.0" ?><data><nop /></data>
+read:0x10
+['  File "<frozen runpy>", line 203, in _run_module_as_main\n', '  File "<frozen runpy>", line 88, in _run_code\n', '  File "/home/user/venvs/edk2/lib/python3.14/site-packages/edlclient/edl.py", line 419, in <module>\n    run()\n', '  File "/home/user/venvs/edk2/lib/python3.14/site-packages/edlclient/edl.py", line 412, in run\n    base.run()\n', '  File "/home/user/venvs/edk2/lib/python3.14/site-packages/edlclient/edl.py", line 305, in run\n    conninfo = self.doconnect(loop)\n', '  File "/home/user/venvs/edk2/lib/python3.14/site-packages/edlclient/edl.py", line 232, in doconnect\n    resp = self.sahara.connect()\n', '  File "/home/user/venvs/edk2/lib/python3.14/site-packages/edlclient/Library/sahara.py", line 138, in connect\n    res = self.cdc.read(timeout=1)\n']
+RX:04******************************
+['  File "<frozen runpy>", line 203, in _run_module_as_main\n', '  File "<frozen runpy>", line 88, in _run_code\n', '  File "/home/user/venvs/edk2/lib/python3.14/site-packages/edlclient/edl.py", line 419, in <module>\n    run()\n', '  File "/home/user/venvs/edk2/lib/python3.14/site-packages/edlclient/edl.py", line 412, in run\n    base.run()\n', '  File "/home/user/venvs/edk2/lib/python3.14/site-packages/edlclient/edl.py", line 388, in run\n    sc.handle_streaming(cmd, options)\n', '  File "/home/user/venvs/edk2/lib/python3.14/site-packages/edlclient/Library/streaming_client.py", line 83, in handle_streaming\n    if self.streaming.connect(mode):\n', '  File "/home/user/venvs/edk2/lib/python3.14/site-packages/edlclient/Library/streaming.py", line 783, in connect\n    resp = self.send(cmdbuf, True)\n', '  File "/home/user/venvs/edk2/lib/python3.14/site-packages/edlclient/Library/streaming.py", line 1000, in send\n    return self.hdlc.send_cmd_np(cmd, nocrc)\n', '  File "/home/user/venvs/edk2/lib/python3.14/site-packages/edlclient/Library/hdlc.py", line 232, in send_cmd_np\n    return self.send_cmd_base(outdata, 0, nocrc)\n', '  File "/home/user/venvs/edk2/lib/python3.14/site-packages/edlclient/Library/hdlc.py", line 221, in send_cmd_base\n    if self.send_unframed_buf(packet, prefixflag):\n']
+TX:11001200a0e30000c1e50140a0e31eff2fe14bd97e
+read:0x10
+['  File "<frozen runpy>", line 203, in _run_module_as_main\n', '  File "<frozen runpy>", line 88, in _run_code\n', '  File "/home/user/venvs/edk2/lib/python3.14/site-packages/edlclient/edl.py", line 419, in <module>\n    run()\n', '  File "/home/user/venvs/edk2/lib/python3.14/site-packages/edlclient/edl.py", line 412, in run\n    base.run()\n', '  File "/home/user/venvs/edk2/lib/python3.14/site-packages/edlclient/edl.py", line 388, in run\n    sc.handle_streaming(cmd, options)\n', '  File "/home/user/venvs/edk2/lib/python3.14/site-packages/edlclient/Library/streaming_client.py", line 83, in handle_streaming\n    if self.streaming.connect(mode):\n', '  File "/home/user/venvs/edk2/lib/python3.14/site-packages/edlclient/Library/streaming.py", line 783, in connect\n    resp = self.send(cmdbuf, True)\n', '  File "/home/user/venvs/edk2/lib/python3.14/site-packages/edlclient/Library/streaming.py", line 1000, in send\n    return self.hdlc.send_cmd_np(cmd, nocrc)\n', '  File "/home/user/venvs/edk2/lib/python3.14/site-packages/edlclient/Library/hdlc.py", line 232, in send_cmd_np\n    return self.send_cmd_base(outdata, 0, nocrc)\n', '  File "/home/user/venvs/edk2/lib/python3.14/site-packages/edlclient/Library/hdlc.py", line 223, in send_cmd_base\n    return self.receive_reply_nocrc()\n', '  File "/home/user/venvs/edk2/lib/python3.14/site-packages/edlclient/Library/hdlc.py", line 177, in receive_reply_nocrc\n    tmp = self.cdc.read(timeout=timeout)\n']
+RX:04******************************
+Timed out
+Timed out
+Timed out
+Timed out
+Timed out
+Timed out
+Timed out
+Timed out
+Timed out
+Timed out

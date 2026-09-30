@@ -1,0 +1,15 @@
+== 16/09 12:45 runtime-v2/sde-primary-entries.bin (12288 B dal file)
+   boot_a    attr=0x007f000000000000 prio=3 succ=1 tries=7 b54=1 b55=0 b60=0
+   vbmeta_a  attr=0x107f000000000000 prio=3 succ=1 tries=7 b54=1 b55=0 b60=1
+   boot_b    attr=0x003a000000000000 prio=2 succ=0 tries=7 b54=0 b55=0 b60=0
+   vbmeta_b  attr=0x107b000000000000 prio=3 succ=0 tries=7 b54=1 b55=0 b60=1
+== 17/09 12:13 probe-v7-devstate/gpt-sde-now.bin (139264 B dal file)
+   boot_a    attr=0x007a000000000000 prio=2 succ=0 tries=7 b54=1 b55=0 b60=0
+   vbmeta_a  attr=0x107b000000000000 prio=3 succ=0 tries=7 b54=1 b55=0 b60=1
+   boot_b    attr=0x007f000000000000 prio=3 succ=1 tries=7 b54=1 b55=0 b60=0
+   vbmeta_b  attr=0x107f000000000000 prio=3 succ=1 tries=7 b54=1 b55=0 b60=1
+== 17/09 ~20:00 live/gpt_sde_all.txt (base64) (12288 B dal file)
+   boot_a    attr=0x007f000000000000 prio=3 succ=1 tries=7 b54=1 b55=0 b60=0
+   vbmeta_a  attr=0x107f000000000000 prio=3 succ=1 tries=7 b54=1 b55=0 b60=1
+   boot_b    attr=0x003a000000000000 prio=2 succ=0 tries=7 b54=0 b55=0 b60=0
+   vbmeta_b  attr=0x107b000000000000 prio=3 succ=0 tries=7 b54=1 b55=0 b60=1

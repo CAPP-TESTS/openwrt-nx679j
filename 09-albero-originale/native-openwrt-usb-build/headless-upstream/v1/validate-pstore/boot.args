@@ -1,0 +1,1 @@
+--header_version 4 --os_version 12.0.0 --os_patch_level 2022-02 --kernel /home/user/nx679j-stock/native-openwrt-usb-build/headless-upstream/v1/validate-pstore/boot/kernel --ramdisk /home/user/nx679j-stock/native-openwrt-usb-build/headless-upstream/v1/validate-pstore/boot/ramdisk --cmdline 'console=ttyMSM0,115200n8 console=tty0 loglevel=7 earlycon'

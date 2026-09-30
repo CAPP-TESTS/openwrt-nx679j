@@ -1,0 +1,15 @@
+8463 (sh) Z 1 8463 8463 0 -1 4227076 198 1519 0 0 0 0 1 0 20 0 1 0 95644 0 0 18****************** 0 0 0 0 0 0 0 4 65538 0 0 0 17 7 0 0 0 0 0 0 0 0 0 0 0 0 65280
+DISTRIB_ID='OpenWrt'
+DISTRIB_RELEASE='25.12.5'
+DISTRIB_REVISION='r33051-f5dae5ece4'
+DISTRIB_TARGET='armsr/armv8'
+DISTRIB_ARCH='aarch64_generic'
+DISTRIB_DESCRIPTION='OpenWrt 25.12.5 r33051-f5dae5ece4'
+DISTRIB_TAINTS=''
+-rwxr-xr-x    1 root     root         20545 Jun 29  2026 /sbin/kmodloader
+lrwxrwxrwx    1 root     root            16 Jun 29  2026 /sbin/rmmod -> /sbin/kmodloader
+drwxr-xr-x    3 root     root            60 Jun 29  2026 /lib/modules
+drwxr-xr-x    2 root     root          2300 Jun 29  2026 /lib/modules/6.12.94
+ls: /tmp/strace: No such file or directory
+ls: /tmp/strace-static: No such file or directory
+-list: applet not found

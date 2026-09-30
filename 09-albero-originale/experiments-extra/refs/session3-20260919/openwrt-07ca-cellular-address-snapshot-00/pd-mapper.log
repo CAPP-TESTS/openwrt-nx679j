@@ -1,0 +1,19 @@
+[PD-MAPPER] map tms/servreg -> msm/adsp/root_pd instance=74
+[PD-MAPPER] map tms/servreg -> msm/slpi/sensor_pd instance=90
+[PD-MAPPER] map tms/servreg -> msm/cdsp/root_pd instance=76
+[PD-MAPPER] map tms/servreg -> msm/slpi/root_pd instance=90
+[PD-MAPPER] map tms/servreg -> msm/adsp/audio_pd instance=74
+[PD-MAPPER] map avs/audio -> msm/adsp/audio_pd instance=74
+[PD-MAPPER] map tms/servreg -> msm/modem/root_pd instance=180
+[PD-MAPPER] map gps/gps_service -> msm/modem/root_pd instance=180
+[PD-MAPPER] map tms/servreg -> msm/adsp/charger_pd instance=74
+[PD-MAPPER] published service=64 version=0x101 instance=0
+[PD-MAPPER] request node=1 port=16384 service=tms/servreg domains=7
+[PD-MAPPER] request node=0 port=2 service=tms/servreg domains=7
+[PD-MAPPER] request node=0 port=2 service=tms/pddump_disabled domains=0
+[PD-MAPPER] request node=0 port=2 service=avs/audio domains=1
+[PD-MAPPER] request node=0 port=2 service=tms/servreg domains=7
+[PD-MAPPER] request node=0 port=2 service=tms/servreg domains=7
+[PD-MAPPER] request node=0 port=2 service=tms/pddump_disabled domains=0
+[PD-MAPPER] request node=0 port=2 service=avs/audio domains=1
+[PD-MAPPER] request node=0 port=2 service=tms/servreg domains=7

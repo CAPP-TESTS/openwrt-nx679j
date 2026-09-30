@@ -1,0 +1,4 @@
+PASS: QMI identity/result/TLVs, IPv4, transactions, DPM/WDA, servreg
+PASS: stock rmnet layouts, plain QMAP flags, bounded mux/name
+8f22bd99eb86863d536881a64f083795abb94d95843ce910e6f1ceaf7731bebf  /home/user/nx679j-stock/experiments/qrtr/qmi-qrtr-dpm
+f2790e70bec4a8255472bbc10a685d25ec69c845172b054e37bea285d9d60556  /home/user/nx679j-stock/experiments/qrtr/rmnet-config

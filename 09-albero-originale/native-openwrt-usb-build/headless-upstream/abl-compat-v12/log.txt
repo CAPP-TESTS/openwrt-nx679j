@@ -1,0 +1,4 @@
+Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+Waiting for the device
+Device detected :)
+Mode detected: sahara

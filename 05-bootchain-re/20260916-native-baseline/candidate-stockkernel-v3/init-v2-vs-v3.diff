@@ -1,0 +1,14 @@
+--- candidate-init-v2.sh	2026-09-17 02:48:12.139186647 +0200
++++ candidate-init-v3.sh	2026-09-17 03:45:57.906501323 +0200
+@@ -1,5 +1,10 @@
+ #!/bin/sh
+-# NX679J slot-B diagnostic init, v2.
++# NX679J slot-B diagnostic init, v3.
++#
++# v3 = v2 with the body below byte-identical. The single v3 change does not
++# live in this file: the boot-image kernel command line now carries panic=10,
++# so a kernel panic reboots the phone by itself instead of hanging until a
++# human holds the power key.
+ #
+ # v1 (candidate-init.sh) loaded the right modules but left no evidence behind:
+ # after the failed boot we could not say whether the kernel reached userspace.

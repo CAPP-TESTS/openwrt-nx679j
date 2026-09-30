@@ -1,0 +1,101 @@
+======================================================================
+xbl_a.img  3670016 B  sha256=685f0a75fbff851bb6ef55ba158b7f86ea14a44c527c5388605ece94f47d637a
+  entropia totale: 2.468 bit/byte
+  ELF: class=1 data=1 type=2 machine=0x0001 version=1 entry=0x2211c000 phoff=52 shoff=0 phnum=2 shentsize=0 shnum=0
+    phdr0 type=1 off=0x74       vaddr=0x2211c000  filesz=90112     memsz=90112     flags=0x1000007 align=0x1 entropia=5.706
+    phdr1 type=1 off=0x16074    vaddr=0x22143000  filesz=640       memsz=640       flags=0x1000007 align=0x1 entropia=7.032
+    magic gzip       occorrenze: 0
+    magic lz4legacy  occorrenze: 0
+    magic lz4frame   occorrenze: 0
+    magic xz         occorrenze: 0
+    magic zlib       occorrenze: 1
+    magic ANDROID!   occorrenze: 0
+    magic VNDRBOOT   occorrenze: 0
+  stringhe >=6: 1786
+     | CHIP_PROD_PROV_K_LBL
+     | CHIP_PROD_PROV_SESSION_K_LBL
+     | CHIP_PROD_SVCS_K_LBL
+     | ENTITY_DEV_FACT_PROV_K_LBL
+     | ENTITY_OTA_PROV_K_LBL
+     | ENTITY_IP_PROTECTION_K_LBL
+     | CHIP_ATTESTATION_SRVC_K_LBL
+     | CLIENT_EXTS_SRVC_K_LBL
+     | ENTITY_HW_ATTESTATION_SRVC_K_LBL
+     | """"3333DDDDUUUUffffwwww
+     | p~zJ0!l
+     | B8MbQp
+     | SEQ_FW_BUILD_TYPE_STRING=RELEASE
+     | SEQ_FW_RELEASE_BUILD_VERSION_STRING=r79
+     | DNC DNC 
+     | %Eo`0:
+     | p`EU*)$
+     | PP17EA
+     | @PP7UC
+     | poH\,@
+     | 0p}0A	
+     | HEHEHA
+     | GBH7eA
+     | HE@EH@c
+     | s E0y"
+  ... ultime 10:
+     | SecTools1
+     | California0
+     | 211009012008Z
+     | 411004012008Z0
+     | Generated Ztemt Root CA1
+     | CDMA Technologies1
+     | General Use Ztemt Key1
+     | 	San Diego1
+     | SecTools1
+     | California0v0
+======================================================================
+abl_a.img  1048576 B  sha256=443d1956e836aea3fe30ac13113dae787d88223c1e24f875c6831f69d86acea3
+  entropia totale: 1.852 bit/byte
+  ELF: class=1 data=1 type=2 machine=0x0028 version=1 entry=0x9fa00000 phoff=52 shoff=0 phnum=3 shentsize=0 shnum=0
+    phdr0 type=0 off=0x0        vaddr=0x0         filesz=148       memsz=0         flags=0x7000000 align=0x0 entropia=1.848
+    phdr1 type=1 off=0x1000     vaddr=0x9fa00000  filesz=163840    memsz=163840    flags=0x7 align=0x1000 entropia=7.724
+    phdr2 type=0 off=0x29000    vaddr=0x0         filesz=3416      memsz=3416      flags=0x2000000 align=0x1000 entropia=5.688
+    magic gzip       occorrenze: 0
+    magic lz4legacy  occorrenze: 0
+    magic lz4frame   occorrenze: 0
+    magic xz         occorrenze: 0
+    magic zlib       occorrenze: 1
+    magic ANDROID!   occorrenze: 0
+    magic VNDRBOOT   occorrenze: 0
+  stringhe >=6: 316
+     | ~JBea&Q7
+     | 0ux<W\
+     | =--zXd
+     | \4=j~;
+     | 9!!	hy
+     | SS$T?GBd6
+     | olB|ly
+     | mW8Ha<"
+     | U(E^:[nt
+     | $,ad !Yu4
+     | ;t)Aut
+     | Wy(Sl>
+     | UG@pH.
+     | L_`c81,
+     | mkP<	+
+     | Cpd!swW
+     | iz?ZaT,
+     | WB+^:x
+     | a2YG}8
+     | jRDSz-
+     | [mj4eCE,
+     | l/8"pO
+     | XVl|m2
+     | 2!S8EAO
+     | aZE9@R
+  ... ultime 10:
+     | SecTools1
+     | California0
+     | 211009012008Z
+     | 411004012008Z0
+     | Generated Ztemt Root CA1
+     | CDMA Technologies1
+     | General Use Ztemt Key1
+     | 	San Diego1
+     | SecTools1
+     | California0v0

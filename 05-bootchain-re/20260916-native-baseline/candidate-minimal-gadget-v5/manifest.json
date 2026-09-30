@@ -1,0 +1,432 @@
+{
+  "image": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/candidate-minimal-gadget-v5/boot_b-minimal-gadget-v5.img",
+  "bytes": 50266112,
+  "sha256": "62c7fa4bb28cdd5ec96faa960b431ed8b5faf734a9e298405ea1400040b8b1f4",
+  "header_version": 4,
+  "kernel_bytes": 49108324,
+  "kernel_sha256": "f0aa949c95d1421381850cb1982bd2a505e96fcd7565543ec28d5b1f7d81a0cc",
+  "ramdisk_bytes": 1147147,
+  "ramdisk_sha256": "33f0cb1b30d3ce61cfcfa2b87400d43f87219bd3925981864ae66c4a3d6ed915",
+  "ramdisk_cpio_bytes": 3598688,
+  "ramdisk_entries": 85,
+  "signature_size": 0,
+  "partition_capacity": 100663296,
+  "cmdline": "stack_depot_disable=on kasan.stacktrace=off kvm-arm.mode=protected cgroup_disable=pressure cgroup.memory=nokmem console=ttyMSM0,115200n8 loglevel=6 kpti=0 log_buf_len=256K kernel.panic_on_rcu_stall=1 swiotlb=noforce loop.max_part=7 cgroup.memory=nokmem,nosocket pcie_ports=compat service_locator.enable=1 msm_rtb.filter=0x237 allow_mismatched_32bit_el0 cpufreq.default_governor=performance pelt=8 kasan=off rcupdate.rcu_expedited=1 rcu_nocbs=0-7 irqaffinity=0-3 ftrace_dump_on_oops pstore.compress=none fsa4480_i2c.async_probe=1 can.stats_timer=0 video=vfb:640x400,bpp=32,memsize=3072000 qcom-dload-mode.download_mode=1 bootconfig msm_drm.dsi_display0=qcom,mdss_dsi_r6130_1080_2400_amoled_cmd: rootwait ro init=/init panic=10",
+  "cmdline_identical_to_v4": true,
+  "init": {
+    "path": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/candidate-init-v5.sh",
+    "sha256": "4ebac295a09d24ec28e359b253c55d79acda50d596ff2748fd61dc760b1e0f8c"
+  },
+  "module_vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+  "module_names": 40,
+  "modules_packed": [
+    "altmode-glink.ko",
+    "clk-qcom.ko",
+    "crypto-qti-common.ko",
+    "crypto-qti-hwkm.ko",
+    "debug-regulator.ko",
+    "dwc3-msm.ko",
+    "fsa4480-i2c.ko",
+    "gdsc-regulator.ko",
+    "minidump.ko",
+    "nvmem_qcom-spmi-sdam.ko",
+    "nvmem_qfprom.ko",
+    "pdr_interface.ko",
+    "phy-msm-snps-eusb2.ko",
+    "phy-msm-snps-hs.ko",
+    "phy-msm-ssusb-qmp.ko",
+    "phy-qcom-emu.ko",
+    "phy-qcom-ufs-qmp-14nm.ko",
+    "phy-qcom-ufs-qmp-v3.ko",
+    "phy-qcom-ufs-qmp-v4-cape.ko",
+    "phy-qcom-ufs-qmp-v4-diwali.ko",
+    "phy-qcom-ufs-qmp-v4-lahaina.ko",
+    "phy-qcom-ufs-qmp-v4-waipio.ko",
+    "phy-qcom-ufs.ko",
+    "pmic_glink.ko",
+    "proxy-consumer.ko",
+    "qcom-scm.ko",
+    "qcom_glink.ko",
+    "qcom_glink_smem.ko",
+    "qcom_glink_spss.ko",
+    "qcom_ipc_logging.ko",
+    "qcom_smd.ko",
+    "qmi_helpers.ko",
+    "qti-regmap-debugfs.ko",
+    "repeater.ko",
+    "rproc_qcom_common.ko",
+    "smem.ko",
+    "ssusb-redriver-nb7vpq904m.ko",
+    "ucsi_glink.ko",
+    "ufs_qcom.ko",
+    "ufshcd-crypto-qti.ko"
+  ],
+  "module_table": [
+    {
+      "name": "phy_qcom_emu",
+      "file": "phy-qcom-emu.ko",
+      "how": "all-hyphens",
+      "bytes": 16376,
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "vermagic_ok": true
+    },
+    {
+      "name": "phy_msm_snps_eusb2",
+      "file": "phy-msm-snps-eusb2.ko",
+      "how": "all-hyphens",
+      "bytes": 44520,
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "vermagic_ok": true
+    },
+    {
+      "name": "repeater",
+      "file": "repeater.ko",
+      "how": "literal",
+      "bytes": 16504,
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "vermagic_ok": true
+    },
+    {
+      "name": "phy_qcom_ufs_qmp_v4_lahaina",
+      "file": "phy-qcom-ufs-qmp-v4-lahaina.ko",
+      "how": "all-hyphens",
+      "bytes": 27208,
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "vermagic_ok": true
+    },
+    {
+      "name": "qcom_glink_spss",
+      "file": "qcom_glink_spss.ko",
+      "how": "literal",
+      "bytes": 20400,
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "vermagic_ok": true
+    },
+    {
+      "name": "phy_qcom_ufs_qmp_14nm",
+      "file": "phy-qcom-ufs-qmp-14nm.ko",
+      "how": "all-hyphens",
+      "bytes": 20088,
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "vermagic_ok": true
+    },
+    {
+      "name": "phy_qcom_ufs_qmp_v3",
+      "file": "phy-qcom-ufs-qmp-v3.ko",
+      "how": "all-hyphens",
+      "bytes": 24536,
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "vermagic_ok": true
+    },
+    {
+      "name": "nvmem_qfprom",
+      "file": "nvmem_qfprom.ko",
+      "how": "literal",
+      "bytes": 25832,
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "vermagic_ok": true
+    },
+    {
+      "name": "fsa4480_i2c",
+      "file": "fsa4480-i2c.ko",
+      "how": "all-hyphens",
+      "bytes": 22456,
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "vermagic_ok": true
+    },
+    {
+      "name": "altmode_glink",
+      "file": "altmode-glink.ko",
+      "how": "all-hyphens",
+      "bytes": 32800,
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "vermagic_ok": true
+    },
+    {
+      "name": "dwc3_msm",
+      "file": "dwc3-msm.ko",
+      "how": "all-hyphens",
+      "bytes": 237896,
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "vermagic_ok": true
+    },
+    {
+      "name": "phy_msm_ssusb_qmp",
+      "file": "phy-msm-ssusb-qmp.ko",
+      "how": "all-hyphens",
+      "bytes": 47888,
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "vermagic_ok": true
+    },
+    {
+      "name": "phy_msm_snps_hs",
+      "file": "phy-msm-snps-hs.ko",
+      "how": "all-hyphens",
+      "bytes": 36208,
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "vermagic_ok": true
+    },
+    {
+      "name": "ssusb_redriver_nb7vpq904m",
+      "file": "ssusb-redriver-nb7vpq904m.ko",
+      "how": "all-hyphens",
+      "bytes": 49088,
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "vermagic_ok": true
+    },
+    {
+      "name": "ucsi_glink",
+      "file": "ucsi_glink.ko",
+      "how": "literal",
+      "bytes": 37616,
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "vermagic_ok": true
+    },
+    {
+      "name": "pmic_glink",
+      "file": "pmic_glink.ko",
+      "how": "literal",
+      "bytes": 34320,
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "vermagic_ok": true
+    },
+    {
+      "name": "pdr_interface",
+      "file": "pdr_interface.ko",
+      "how": "literal",
+      "bytes": 30760,
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "vermagic_ok": true
+    },
+    {
+      "name": "qmi_helpers",
+      "file": "qmi_helpers.ko",
+      "how": "literal",
+      "bytes": 39480,
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "vermagic_ok": true
+    },
+    {
+      "name": "rproc_qcom_common",
+      "file": "rproc_qcom_common.ko",
+      "how": "literal",
+      "bytes": 63848,
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "vermagic_ok": true
+    },
+    {
+      "name": "qcom_smd",
+      "file": "qcom_smd.ko",
+      "how": "literal",
+      "bytes": 44760,
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "vermagic_ok": true
+    },
+    {
+      "name": "qcom_glink_smem",
+      "file": "qcom_glink_smem.ko",
+      "how": "literal",
+      "bytes": 20112,
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "vermagic_ok": true
+    },
+    {
+      "name": "qcom_glink",
+      "file": "qcom_glink.ko",
+      "how": "literal",
+      "bytes": 88136,
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "vermagic_ok": true
+    },
+    {
+      "name": "ufs_qcom",
+      "file": "ufs_qcom.ko",
+      "how": "literal",
+      "bytes": 156408,
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "vermagic_ok": true
+    },
+    {
+      "name": "ufshcd_crypto_qti",
+      "file": "ufshcd-crypto-qti.ko",
+      "how": "all-hyphens",
+      "bytes": 18200,
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "vermagic_ok": true
+    },
+    {
+      "name": "qti_regmap_debugfs",
+      "file": "qti-regmap-debugfs.ko",
+      "how": "all-hyphens",
+      "bytes": 29832,
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "vermagic_ok": true
+    },
+    {
+      "name": "phy_qcom_ufs_qmp_v4_cape",
+      "file": "phy-qcom-ufs-qmp-v4-cape.ko",
+      "how": "all-hyphens",
+      "bytes": 27208,
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "vermagic_ok": true
+    },
+    {
+      "name": "phy_qcom_ufs_qmp_v4_diwali",
+      "file": "phy-qcom-ufs-qmp-v4-diwali.ko",
+      "how": "all-hyphens",
+      "bytes": 27208,
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "vermagic_ok": true
+    },
+    {
+      "name": "phy_qcom_ufs_qmp_v4_waipio",
+      "file": "phy-qcom-ufs-qmp-v4-waipio.ko",
+      "how": "all-hyphens",
+      "bytes": 27208,
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "vermagic_ok": true
+    },
+    {
+      "name": "phy_qcom_ufs",
+      "file": "phy-qcom-ufs.ko",
+      "how": "all-hyphens",
+      "bytes": 40120,
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "vermagic_ok": true
+    },
+    {
+      "name": "nvmem_qcom_spmi_sdam",
+      "file": "nvmem_qcom-spmi-sdam.ko",
+      "how": "mixed-spelling alias",
+      "bytes": 14376,
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "vermagic_ok": true
+    },
+    {
+      "name": "crypto_qti_common",
+      "file": "crypto-qti-common.ko",
+      "how": "all-hyphens",
+      "bytes": 55472,
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "vermagic_ok": true
+    },
+    {
+      "name": "crypto_qti_hwkm",
+      "file": "crypto-qti-hwkm.ko",
+      "how": "all-hyphens",
+      "bytes": 17320,
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "vermagic_ok": true
+    },
+    {
+      "name": "clk_qcom",
+      "file": "clk-qcom.ko",
+      "how": "all-hyphens",
+      "bytes": 347896,
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "vermagic_ok": true
+    },
+    {
+      "name": "gdsc_regulator",
+      "file": "gdsc-regulator.ko",
+      "how": "all-hyphens",
+      "bytes": 33088,
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "vermagic_ok": true
+    },
+    {
+      "name": "proxy_consumer",
+      "file": "proxy-consumer.ko",
+      "how": "all-hyphens",
+      "bytes": 22472,
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "vermagic_ok": true
+    },
+    {
+      "name": "debug_regulator",
+      "file": "debug-regulator.ko",
+      "how": "all-hyphens",
+      "bytes": 53952,
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "vermagic_ok": true
+    },
+    {
+      "name": "qcom_ipc_logging",
+      "file": "qcom_ipc_logging.ko",
+      "how": "literal",
+      "bytes": 55808,
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "vermagic_ok": true
+    },
+    {
+      "name": "qcom_scm",
+      "file": "qcom-scm.ko",
+      "how": "all-hyphens",
+      "bytes": 202536,
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "vermagic_ok": true
+    },
+    {
+      "name": "minidump",
+      "file": "minidump.ko",
+      "how": "literal",
+      "bytes": 127424,
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "vermagic_ok": true
+    },
+    {
+      "name": "smem",
+      "file": "smem.ko",
+      "how": "literal",
+      "bytes": 25392,
+      "vermagic": "5.10.66-gki-g491fe99db339 SMP preempt mod_unload modversions aarch64",
+      "vermagic_ok": true
+    }
+  ],
+  "libraries": [
+    "libc.so",
+    "libgcc_s.so.1",
+    "libubox.so.20240329"
+  ],
+  "applets": [
+    "basename",
+    "cat",
+    "dd",
+    "head",
+    "ip",
+    "ln",
+    "ls",
+    "mkdir",
+    "mknod",
+    "mount",
+    "rm",
+    "sh",
+    "sleep",
+    "sync",
+    "tail",
+    "uname",
+    "wc",
+    "which"
+  ],
+  "device_nodes": 6,
+  "no_userspace": [
+    "no /sbin/init",
+    "no procd",
+    "no OpenWrt tree",
+    "no other 287 vendor modules"
+  ],
+  "size_vs_v4": {
+    "v4_ramdisk_bytes": 12051145,
+    "v5_ramdisk_bytes": 1147147,
+    "v4_image_bytes": 61169664,
+    "v5_image_bytes": 50266112,
+    "ramdisk_ratio_v5_over_v4": 0.0952,
+    "image_ratio_v5_over_v4": 0.8217
+  },
+  "success_signal": "host sees a new USB device 18d1:4ee7 (NCM gadget) - secondary: the host can ping 10.0.0.1 on the ncm link",
+  "not_yet_verified": [
+    "ABL/AVB acceptance of an unsigned boot image on this device",
+    "module load success on the real DT (QEMU cannot bind Qualcomm nodes)",
+    "DWC3 peripheral role, role-switch poke and NCM enumeration on hardware"
+  ]
+}

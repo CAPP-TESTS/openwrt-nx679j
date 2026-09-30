@@ -1,0 +1,158 @@
+=== boot reason props ===
+bootloader
+bootloader
+bootloader
+
+bootloader,1784291307
+reboot,fastboot,1784219393
+bootloader,1784219120
+
+1d84000.ufshc
+unknown
+qcom
+_a
+orange
+=== cmdline ===
+stack_depot_disable=on kasan.stacktrace=off kvm-arm.mode=protected cgroup_disable=pressure cgroup.memory=nokmem console=ttyMSM0,115200n8 loglevel=6 kpti=0 log_buf_len=256K kernel.panic_on_rcu_stall=1 swiotlb=noforce loop.max_part=7 cgroup.memory=nokmem,nosocket pcie_ports=compat service_locator.enable=1 msm_rtb.filter=0x237 allow_mismatched_32bit_el0 cpufreq.default_governor=performance pelt=8 kasan=off rcupdate.rcu_expedited=1 rcu_nocbs=0-7 irqaffinity=0-3 ftrace_dump_on_oops pstore.compress=none fsa4480_i2c.async_probe=1 can.stats_timer=0 video=vfb:640x400,bpp=32,memsize=3072000 qcom-dload-mode.download_mode=1 bootconfig  msm_drm.dsi_display0=qcom,mdss_dsi_r6130_1080_2400_amoled_cmd: rootwait ro init=/init
+=== dmesg first 80 lines (boot) ===
+[    2.135911] 
+[    6.660747] msm-ext-disp-audio-codec-rx soc:qcom,msm-ext-disp:qcom,msm-ext-disp-audio-codec-rx: msm_ext_disp_audio_type_get: get_audio_edid_blk() or get_intf_id is NULL
+[    6.660757] msm_ext_disp_update_audio_ops: Display not found (EXT_DISPLAY_TYPE_DP) ctld (0) stream (0)
+[    6.660759] msm-ext-disp-audio-codec-rx soc:qcom,msm-ext-disp:qcom,msm-ext-disp-audio-codec-rx: msm_ext_disp_audio_type_get: get_audio_edid_blk() or get_intf_id is NULL
+[    6.660793] msm-ext-disp-audio-codec-rx soc:qcom,msm-ext-disp:qcom,msm-ext-disp-audio-codec-rx: msm_ext_disp_audio_device_get: invalid dai id: 4
+[    6.670366] type=1400 audit(1784291308.680:2234): avc: denied { read } for comm="AGMIPC@1.0-serv" name="debug" dev="sysfs" ino=32141 scontext=u:r:vendor_agmservice_qti:s0 tcontext=u:object_r:sysfs:s0 tclass=dir permissive=0
+[    6.670451] type=1400 audit(1784291308.680:2235): avc: denied { read } for comm="AGMIPC@1.0-serv" name="debug" dev="sysfs" ino=32141 scontext=u:r:vendor_agmservice_qti:s0 tcontext=u:object_r:sysfs:s0 tclass=dir permissive=0
+[    6.670509] type=1400 audit(1784291308.680:2236): avc: denied { read } for comm="AGMIPC@1.0-serv" name="debug" dev="sysfs" ino=32141 scontext=u:r:vendor_agmservice_qti:s0 tcontext=u:object_r:sysfs:s0 tclass=dir permissive=0
+[    6.675391] CAM_ERR: CAM-CCI: cam_cci_irq: 303 Base:00**************,cci: 0, M0_Q1 NACK ERROR: 0x10000000
+[    6.675430] CAM_ERR: CAM-CCI: cam_cci_read: 1425 CCI0_I2C_M0_Q1 ERROR with Slave 0x6c
+[    6.675434] CAM_ERR: CAM-CCI: cam_cci_read_bytes: 1778 CCI0_I2C_M0 Failed to read rc:-22
+[    6.675437] CAM_ERR: CAM-SENSOR: cam_cci_i2c_read: 35 rc = -22
+[    6.675440] CAM_WARN: CAM-SENSOR: cam_sensor_match_id: 757 nx669j_front_ov16e1q read id: 0x0 expected id 0x1645:
+[    6.675443] CAM_ERR: CAM-SENSOR: cam_sensor_driver_cmd: 869 Probe failed for nx669j_front_ov16e1q slot:1, slave_addr:0x6c, sensor_id:0x1645
+[    6.700965] msm-usb-ssphy-qmp 88e8000.ssphy: Initializing QMP phy
+[    6.700970] msm-usb-ssphy-qmp 88e8000.ssphy: reg (HPM)
+[    6.700972] msm-usb-ssphy-qmp 88e8000.ssphy: PHYs' regulators status 1
+[    6.700973] msm-usb-ssphy-qmp 88e8000.ssphy: msm_ssphy_qmp_enable_clks(): clk_enabled:1 on:1
+[    6.700975] msm-usb-ssphy-qmp 88e8000.ssphy: Global reset of QMP DP combo phy
+[    6.704629] CAM_ERR: CAM-SENSOR: cam_sensor_subdev_ioctl: 55 Failed in Driver cmd: -19
+[    6.705076] CAM_ERR: CAM-SENSOR: cam_sensor_core_power_up: 2034 nubia debug Regulator  3
+[    6.707869] CAM_ERR: CAM-SENSOR: cam_sensor_core_power_up: 2034 nubia debug Regulator  1
+[    6.709900] CAM_ERR: CAM-SENSOR: cam_sensor_core_power_up: 2034 nubia debug Regulator  2
+[    6.711925] CAM_ERR: CAM-SENSOR: cam_sensor_core_power_up: 2034 nubia debug Regulator  0
+[    6.714047] CAM_ERR: CAM-SENSOR: cam_sensor_core_power_up: 2034 nubia debug Regulator  9
+[    6.715093] CAM_ERR: CAM-SENSOR: cam_sensor_core_power_up: 2034 nubia debug Regulator  8
+[    6.726059] init: Control message: Could not find 'vendor.qti.hardware.dpmservice@1.0::IDpmService/DpmService' for ctl.interface_start from pid: 326 (/system/bin/hwservicemanager)
+[    6.726265] msm-usb-ssphy-qmp 88e8000.ssphy: QMP phy connect notification
+[    6.727586] [ZtemtUSB] [dwc3_otg_sm_work: 5805] Otg drd_state = peripheral
+[    6.727987] [ZtemtUSB] [dwc3_otg_sm_work: 5805] Otg drd_state = peripheral
+[    6.727999] [ZtemtUSB] [handle_ucsi_notify: 232] receiver the data form adsp cc_orientation = 02.
+[    6.728346] CAM_INFO: CAM-SENSOR: cam_sensor_driver_cmd: 908 Probe success for nx669j_front_sensor slot:1,slave_addr:0x40,sensor_id:0x4608
+[    6.728637] [ZtemtUSB] [handle_ucsi_notify: 232] receiver the data form adsp cc_orientation = 02.
+[    6.764210] CAM_ERR: CAM-SENSOR: cam_sensor_core_power_up: 2034 nubia debug Regulator  8
+[    6.764939] read descriptors
+[    6.764948] read strings
+[    6.768609] CAM_ERR: CAM-SENSOR: cam_sensor_core_power_up: 2034 nubia debug Regulator  3
+[    6.774661] CAM_ERR: CAM-SENSOR: cam_sensor_core_power_up: 2034 nubia debug Regulator  2
+[    6.776626] CAM_ERR: CAM-SENSOR: cam_sensor_core_power_up: 2034 nubia debug Regulator  1
+[    6.781585] CAM_ERR: CAM-SENSOR: cam_sensor_core_power_up: 2034 nubia debug Regulator  0
+[    6.788616] CAM_ERR: CAM-SENSOR: cam_sensor_core_power_up: 2034 nubia debug Regulator  8
+[    6.791786] CAM_ERR: CAM-CCI: cam_cci_irq: 303 Base:00**************,cci: 0, M0_Q1 NACK ERROR: 0x10000000
+[    6.791874] CAM_ERR: CAM-CCI: cam_cci_read: 1425 CCI0_I2C_M0_Q1 ERROR with Slave 0x6e
+[    6.791878] CAM_ERR: CAM-CCI: cam_cci_read_bytes: 1778 CCI0_I2C_M0 Failed to read rc:-22
+[    6.791880] CAM_ERR: CAM-SENSOR: cam_cci_i2c_read: 35 rc = -22
+[    6.791881] CAM_ERR: CAM-SENSOR: cam_sensor_match_id: 738 conglin
+[    6.791883] CAM_WARN: CAM-SENSOR: cam_sensor_match_id: 757 nx669j_gc02m1 read id: 0x0 expected id 0x2e0:
+[    6.791885] CAM_ERR: CAM-SENSOR: cam_sensor_driver_cmd: 869 Probe failed for nx669j_gc02m1 slot:3, slave_addr:0x6e, sensor_id:0x2e0
+[    6.828616] CAM_ERR: CAM-SENSOR: cam_sensor_subdev_ioctl: 55 Failed in Driver cmd: -19
+[    6.828929] CAM_ERR: CAM-SENSOR: cam_sensor_core_power_up: 2034 nubia debug Regulator  9
+[    6.830944] CAM_ERR: CAM-SENSOR: cam_sensor_core_power_up: 2034 nubia debug Regulator  3
+[    6.831716] CAM_ERR: CAM-SENSOR: cam_sensor_core_power_up: 2034 nubia debug Regulator  1
+[    6.836261] CAM_ERR: CAM-SENSOR: cam_sensor_core_power_up: 2034 nubia debug Regulator  0
+[    6.838399] CAM_ERR: CAM-SENSOR: cam_sensor_core_power_up: 2034 nubia debug Regulator  9
+[    6.844427] CAM_ERR: CAM-SENSOR: cam_sensor_core_power_up: 2034 nubia debug Regulator  8
+[    6.845585] type=1400 audit(1784291308.856:2237): avc: denied { dac_read_search } for comm="woodpeckerd" capability=2 scontext=u:r:woodpeckerd:s0 tcontext=u:r:woodpeckerd:s0 tclass=capability permissive=0
+[    6.845665] type=1400 audit(1784291308.856:2238): avc: denied { dac_override } for comm="woodpeckerd" capability=1 scontext=u:r:woodpeckerd:s0 tcontext=u:r:woodpeckerd:s0 tclass=capability permissive=0
+[    6.845724] type=1400 audit(1784291308.856:2239): avc: denied { search } for comm="woodpeckerd" name="vendor" dev="tmpfs" ino=2 scontext=u:r:woodpeckerd:s0 tcontext=u:object_r:mnt_vendor_file:s0 tclass=dir permissive=0
+[    6.845750] init: Unable to set property 'persist.bluetooth.btsnoopenable' from uid:0 gid:0 pid:1975: SELinux permission check failed
+[    6.845785] type=1107 audit(1784291308.856:2240): uid=0 auid=4294967295 ses=4294967295 subj=u:r:init:s0 msg='avc: denied { set } for property=persist.bluetooth.btsnoopenable pid=1975 uid=0 gid=0 scontext=u:r:woodpeckerd:s0 tcontext=u:object_r:exported_bluetooth_prop:s0 tclass=property_service permissive=0'
+[    6.847760] CAM_ERR: CAM-SENSOR: cam_sensor_match_id: 738 conglin
+[    6.855752] CAM_INFO: CAM-SENSOR: cam_sensor_driver_cmd: 908 Probe success for nx669j_ov02a10 slot:3,slave_addr:0x7a,sensor_id:0x2509
+[    6.874274] CAM_ERR: CAM-SENSOR: cam_sensor_core_power_up: 2034 nubia debug Regulator  3
+[    6.877740] logd: logdr: UID=0 GID=0 PID=2475 n tail=5000 logMask=80 pid=0 start=0ns deadline=0ns
+[    6.880425] CAM_ERR: CAM-SENSOR: cam_sensor_core_power_up: 2034 nubia debug Regulator  1
+[    6.882483] CAM_ERR: CAM-SENSOR: cam_sensor_core_power_up: 2034 nubia debug Regulator  2
+[    6.884618] CAM_ERR: CAM-SENSOR: cam_sensor_core_power_up: 2034 nubia debug Regulator  0
+[    6.886600] CAM_ERR: CAM-SENSOR: cam_sensor_core_power_up: 2034 nubia debug Regulator  9
+[    6.888666] CAM_ERR: CAM-SENSOR: cam_sensor_core_power_up: 2034 nubia debug Regulator  8
+[    6.901971] CAM_INFO: CAM-SENSOR: cam_sensor_driver_cmd: 908 Probe success for nx669j_rear_aux_wide slot:2,slave_addr:0x40,sensor_id:0x4608
+[    6.953946] CAM_ERR: CAM-SENSOR: cam_sensor_core_power_up: 2034 nubia debug Regulator  8
+[    6.955177] CAM_ERR: CAM-SENSOR: cam_sensor_core_power_up: 2034 nubia debug Regulator  1
+[    6.955197] CAM_ERR: CAM-SENSOR: cam_sensor_core_power_up: 2034 nubia debug Regulator  3
+[    6.955961] CAM_ERR: CAM-SENSOR: cam_sensor_core_power_up: 2034 nubia debug Regulator  2
+[    6.957731] [STK3337] [sensor_read_file:5162] sensor_read_file:kernel request read file:/persist/sensors/calib/als_cal_data len:4.
+[    6.957749] [STK3337] [nb_stk3x_cal_read:4810] nb_stk3x_cal_read:kernel send cmd:aa55 to user.
+[    6.958291] [STK3337] [nb_stk3x_cal_write:4832] nb_stk3x_cal_write: copy from user len:9.
+[    6.958331] [STK3337] [sensor_read_file:5172] sensor_read_file:kernel success read file:/persist/sensors/calib/als_cal_data len:4 data:342.
+[    6.958351] [STK3337] [sensor_read_file:5162] sensor_read_file:kernel request read file:/persist/sensors/calib/als_fac_cal len:4.
+[    6.958356] [STK3337] [nb_stk3x_cal_read:4810] nb_stk3x_cal_read:kernel send cmd:aa55 to user.
+=== dmesg bootloader/reset ===
+[    6.700973] msm-usb-ssphy-qmp 88e8000.ssphy: msm_ssphy_qmp_enable_clks(): clk_enabled:1 on:1
+[    6.700975] msm-usb-ssphy-qmp 88e8000.ssphy: Global reset of QMP DP combo phy
+[    6.845750] init: Unable to set property 'persist.bluetooth.btsnoopenable' from uid:0 gid:0 pid:1975: SELinux permission check failed
+[    6.845785] type=1107 audit(1784291308.856:2240): uid=0 auid=4294967295 ses=4294967295 subj=u:r:init:s0 msg='avc: denied { set } for property=persist.bluetooth.btsnoopenable pid=1975 uid=0 gid=0 scontext=u:r:woodpeckerd:s0 tcontext=u:object_r:exported_bluetooth_prop:s0 tclass=property_service permissive=0'
+[    7.332509] adsprpc: fastrpc_restart_notifier_cb: mpss subsystem is up
+[    7.350902] [GOODIXFP] [gf_ioctl: 781] GF_IOC_ENABLE_IRQ
+[    7.350906] [GOODIXFP] [gf_enable_irq: 433] IRQ has been enabled.
+[    7.465138] coresight-remote-etm soc:modem2_etm0: Connection established between QMI handle and 11 service
+[    7.465374] coresight-remote-etm soc:modem_etm0: Connection established between QMI handle and 2 service
+[    7.529524] ipa ipa_pc_qmp_enable:11184 mailbox channel request failed, ret=-19
+[    7.537366] QMI_IPA_INIT_MODEM_DRIVER_REQ_V01 response received
+[    7.706729] aw9620x_sar 10-0012: [aw9620x_en_active:2782] enable_irq ok!!!
+[    7.755332] aw9620x_sar 11-0013: [aw9620x_en_active:2782] enable_irq ok!!!
+[    7.966557] USB cable not connected
+[    7.994391] QSEECOM: __qseecom_process_reentrancy_blocked_on_listener: Lsntr 10 is available, unblock session(1) app(2)
+[    8.035630] QSEECOM: __qseecom_process_reentrancy_blocked_on_listener: Lsntr 10 is available, unblock session(2) app(6)
+[    8.048769] cnss: Received IMS subscribe indication response
+[    8.055437] QSEECOM: __qseecom_process_reentrancy_blocked_on_listener: Lsntr 10 is available, unblock session(3) app(2)
+[    8.081946] QSEECOM: __qseecom_process_reentrancy_blocked_on_listener: Lsntr 10 is available, unblock session(4) app(6)
+[    8.097009] QSEECOM: __qseecom_process_reentrancy_blocked_on_listener: Lsntr 10 is available, unblock session(5) app(2)
+[    8.136627] QSEECOM: __qseecom_process_reentrancy_blocked_on_listener: Lsntr 10 is available, unblock session(6) app(6)
+[    8.179731] ipa ipa3_setup_apps_low_lat_data_prod_pipe:538 Not enabling deaggr on low_lat_prod
+[    8.355398] Connection established with the WDA Service, DL Marker enabled
+[    8.590743] init: processing action (init.svc.vendor.qti.hardware.display.composer=running && vendor.sys.nubia.fingerprint_pid=*) from (/vendor/etc/init/feature_enabler_client.rc:16)
+[    8.591029] init: starting service 'feature_enabler_client'...
+[    8.598870] type=1400 audit(1784291310.608:2297): avc: denied { read } for comm="feature_enabler" name="u:object_r:system_prop:s0" dev="tmpfs" ino=290 scontext=u:r:vendor_feature_enabler_client:s0 tcontext=u:object_r:system_prop:s0 tclass=file permissive=0
+[    8.599022] type=1400 audit(1784291310.608:2298): avc: denied { read } for comm="feature_enabler" name="u:object_r:system_prop:s0" dev="tmpfs" ino=290 scontext=u:r:vendor_feature_enabler_client:s0 tcontext=u:object_r:system_prop:s0 tclass=file permissive=0
+[    8.599081] type=1400 audit(1784291310.608:2299): avc: denied { read } for comm="feature_enabler" name="u:object_r:system_prop:s0" dev="tmpfs" ino=290 scontext=u:r:vendor_feature_enabler_client:s0 tcontext=u:object_r:system_prop:s0 tclass=file permissive=0
+[    8.599133] type=1400 audit(1784291310.608:2300): avc: denied { read } for comm="feature_enabler" name="u:object_r:system_prop:s0" dev="tmpfs" ino=290 scontext=u:r:vendor_feature_enabler_client:s0 tcontext=u:object_r:system_prop:s0 tclass=file permissive=0
+[    8.602981] QSEECOM: qseecom_load_app: App (featenabler) does'nt exist, loading apps for first time
+[    8.638040] QSEECOM: qseecom_load_app: App with id 7 (featenabler) now loaded
+[    9.407015] init: Unable to set property 'ro.vendor.ril.svlte1x' from uid:1001 gid:1001 pid:1951: Read-only property was already set
+[    9.407204] init: Unable to set property 'ro.vendor.ril.svdo' from uid:1001 gid:1001 pid:1951: Read-only property was already set
+[   11.169626] init: processing action (vendor.sys.usb.adb.disabled=*) from (/system/etc/init/hw/init.usb.rc:22)
+[   11.169845] init: processing action (sys.usb.adb.disabled=0) from (/vendor/etc/init/hw/init.qcom.usb.rc:1808)
+[   11.704355] AidlLazyServiceRegistrar: Process has 1 (of 1 available) client(s) in use after notification apexservice has clients: 1
+[   12.355834] cnss: Enable ADSP power collapse
+[   12.385721] mhi mhi_1103_00.01.00: [E][mhi_unprepare_channel] Current EE: DISABLE Required EE Mask: 0x4 for chan: IPCR
+[   12.385743] mhi mhi_1103_00.01.00: [E][mhi_unprepare_channel] Current EE: DISABLE Required EE Mask: 0x4 for chan: IPCR
+[   12.408658] msm_pcie_disable: PCIe: Assert the reset of endpoint of RC0.
+[   12.409355] cnss: Regulator vdd-wlan-rfa2 is being disabled
+[   12.409359] cnss: Regulator vdd-wlan-rfa1 is being disabled
+[   12.409376] cnss: Regulator vdd-wlan-dig is being disabled
+[   12.409385] cnss: Regulator vdd-wlan-aon is being disabled
+[   12.409395] cnss: Regulator wlan-ant-switch is being disabled
+[   12.409404] cnss: Regulator vdd-wlan-io is being disabled
+[   12.512775] cnss: Regulator vdd-wlan-io is being enabled
+[   12.512780] cnss: Regulator wlan-ant-switch is being enabled
+[   12.513601] cnss: Regulator vdd-wlan-aon is being enabled
+[   12.513812] cnss: Regulator vdd-wlan-dig is being enabled
+[   12.513889] cnss: Regulator vdd-wlan-rfa1 is being enabled
+[   12.513942] cnss: Regulator vdd-wlan-rfa2 is being enabled
+[   12.513997] cnss: BT_EN_GPIO State: Off. Delay WLAN_GPIO enable
+[   12.529224] selinux: SELinux: Could not get canonical path for /sys/kernel/fan/fan_enable restorecon: No such file or directory.
+[   12.620794] msm_pcie_enable: PCIe: Assert the reset of endpoint of RC0.
+[   12.624108] msm_pcie_enable: PCIe: RC0: PCIE20_PARF_INT_ALL_MASK: 0x7f80c202
+[   12.636853] msm_pcie_enable: PCIe: Release the reset of endpoint of RC0.
+[   12.668645] cnss_pci 0000:01:00.0: enabling device (0000 -> 0002)
+[   13.030984] selinux: SELinux: Could not get canonical path for /sys/kernel/fan/fan_enable restorecon: No such file or directory.
+[   13.431271] cnss: Disable ADSP power collapse

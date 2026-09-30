@@ -1,0 +1,184 @@
+{
+  "checks": [
+    {
+      "check": "v7: kernel+ramdisk extracted from the image match the manifest",
+      "pass": true,
+      "detail": "kernel f0aa949c95d14213 ramdisk 2cf26721dbb74adb (1014206 B at offset 49115136)"
+    },
+    {
+      "check": "v7: kernel reached userspace and ran /init as PID 1",
+      "pass": true,
+      "detail": "[    0.687058][    T1] nx679j-sonda: init reached userspace as pid 1 reboot reason=bootloader (LINUX_REBOOT_CMD_RESTART2) attempt=1 uptime_ms=626"
+    },
+    {
+      "check": "v7: the marker channel worked (kmsg created/resolved by /init)",
+      "pass": true,
+      "detail": "['[    0.687477][    T1] nx679j-sonda: marker channel /dev/kmsg attempt=1 uptime_ms=627']"
+    },
+    {
+      "check": "v7: /init announced the RESTART2 call with the bootloader reason",
+      "pass": true,
+      "detail": "['[    0.687058][    T1] nx679j-sonda: init reached userspace as pid 1 reboot reason=bootloader (LINUX_REBOOT_CMD_RESTART2) attempt=1 uptime_ms=626']"
+    },
+    {
+      "check": "v7: the kernel took the reason string from the pointer and logged it (Restarting system with command 'bootloader')",
+      "pass": true,
+      "detail": "[\"[    0.689374][    T1] reboot: Restarting system with command 'bootloader'\"]"
+    },
+    {
+      "check": "v7: the kernel performed the restart (QEMU -no-reboot exited)",
+      "pass": true,
+      "detail": "qemu exit code 0"
+    },
+    {
+      "check": "v7: no panic and PID 1 never died before the restart",
+      "pass": true,
+      "detail": "clean"
+    },
+    {
+      "check": "v7b: kernel+ramdisk extracted from the image match the manifest",
+      "pass": true,
+      "detail": "kernel f0aa949c95d14213 ramdisk 4501c801f9700b0c (2352934 B at offset 49115136)"
+    },
+    {
+      "check": "v7b: kernel reached userspace and ran /init as PID 1",
+      "pass": true,
+      "detail": "[    0.700198][    T1] nx679j-sonda: init reached userspace as pid 1 reboot reason=bootloader (LINUX_REBOOT_CMD_RESTART2) attempt=1 uptime_ms=651"
+    },
+    {
+      "check": "v7b: the marker channel worked (kmsg created/resolved by /init)",
+      "pass": true,
+      "detail": "['[    0.700702][    T1] nx679j-sonda: marker channel /dev/kmsg attempt=1 uptime_ms=652']"
+    },
+    {
+      "check": "v7b: /init announced the RESTART2 call with the bootloader reason",
+      "pass": true,
+      "detail": "['[    0.700198][    T1] nx679j-sonda: init reached userspace as pid 1 reboot reason=bootloader (LINUX_REBOOT_CMD_RESTART2) attempt=1 uptime_ms=651']"
+    },
+    {
+      "check": "v7b: the kernel took the reason string from the pointer and logged it (Restarting system with command 'bootloader')",
+      "pass": true,
+      "detail": "[\"[    0.703390][    T1] reboot: Restarting system with command 'bootloader'\"]"
+    },
+    {
+      "check": "v7b: the kernel performed the restart (QEMU -no-reboot exited)",
+      "pass": true,
+      "detail": "qemu exit code 0"
+    },
+    {
+      "check": "v7b: no panic and PID 1 never died before the restart",
+      "pass": true,
+      "detail": "clean"
+    }
+  ],
+  "images": {
+    "v7": {
+      "image": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/probe-v7-sonda-bootloader/sonda-bootloader-v7.img",
+      "image_sha256": "b099bf136895ad6ce3ace744a86d2f6beded63560cd295e2713f1dec1fe0fb51",
+      "ramdisk_sha256": "2cf26721dbb74adb0815dac4df0142695bd77d37d675d1f07b771021bc7e5873",
+      "ramdisk_bytes": 1014206,
+      "qemu_cmd": [
+        "qemu-system-aarch64",
+        "-machine",
+        "virt",
+        "-cpu",
+        "cortex-a57",
+        "-accel",
+        "tcg",
+        "-smp",
+        "2",
+        "-m",
+        "2048",
+        "-nodefaults",
+        "-nic",
+        "none",
+        "-display",
+        "none",
+        "-monitor",
+        "none",
+        "-serial",
+        "stdio",
+        "-no-reboot",
+        "-kernel",
+        "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/probe-v7-sonda-bootloader/qemu/v7-kernel",
+        "-initrd",
+        "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/probe-v7-sonda-bootloader/qemu/v7-ramdisk",
+        "-append",
+        "console=ttyAMA0 earlycon loglevel=8 panic=10 rdinit=/init"
+      ],
+      "qemu_log": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/probe-v7-sonda-bootloader/qemu/boot-v7.log",
+      "qemu_exit_code": 0,
+      "qemu_exited_by_itself": true,
+      "marker_lines": [
+        "[    0.687058][    T1] nx679j-sonda: init reached userspace as pid 1 reboot reason=bootloader (LINUX_REBOOT_CMD_RESTART2) attempt=1 uptime_ms=626",
+        "[    0.687477][    T1] nx679j-sonda: marker channel /dev/kmsg attempt=1 uptime_ms=627",
+        "[    0.687677][    T1] nx679j-sonda: calling reboot(2) LINUX_REBOOT_CMD_RESTART2 arg='bootloader' -> ABL is expected to come up in fastboot attempt=1 uptime_ms=627"
+      ],
+      "reboot_lines": [
+        "[    0.689374][    T1] reboot: Restarting system with command 'bootloader'"
+      ],
+      "restarting_system_lines": [
+        "[    0.689374][    T1] reboot: Restarting system with command 'bootloader'"
+      ],
+      "panics": []
+    },
+    "v7b": {
+      "image": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/probe-v7-sonda-bootloader/sonda-bootloader-v7b.img",
+      "image_sha256": "610cfea53d8e06b0b8accee4775b71e34d7077acba7aaa4e2a8d812c482050eb",
+      "ramdisk_sha256": "4501c801f9700b0cfa4c83887fa35cd63a53653aac2b4f41956c31f165301c5f",
+      "ramdisk_bytes": 2352934,
+      "qemu_cmd": [
+        "qemu-system-aarch64",
+        "-machine",
+        "virt",
+        "-cpu",
+        "cortex-a57",
+        "-accel",
+        "tcg",
+        "-smp",
+        "2",
+        "-m",
+        "2048",
+        "-nodefaults",
+        "-nic",
+        "none",
+        "-display",
+        "none",
+        "-monitor",
+        "none",
+        "-serial",
+        "stdio",
+        "-no-reboot",
+        "-kernel",
+        "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/probe-v7-sonda-bootloader/qemu/v7b-kernel",
+        "-initrd",
+        "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/probe-v7-sonda-bootloader/qemu/v7b-ramdisk",
+        "-append",
+        "console=ttyAMA0 earlycon loglevel=8 panic=10 rdinit=/init"
+      ],
+      "qemu_log": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/probe-v7-sonda-bootloader/qemu/boot-v7b.log",
+      "qemu_exit_code": 0,
+      "qemu_exited_by_itself": true,
+      "marker_lines": [
+        "[    0.700198][    T1] nx679j-sonda: init reached userspace as pid 1 reboot reason=bootloader (LINUX_REBOOT_CMD_RESTART2) attempt=1 uptime_ms=651",
+        "[    0.700702][    T1] nx679j-sonda: marker channel /dev/kmsg attempt=1 uptime_ms=652",
+        "[    0.700917][    T1] nx679j-sonda: calling reboot(2) LINUX_REBOOT_CMD_RESTART2 arg='bootloader' -> ABL is expected to come up in fastboot attempt=1 uptime_ms=652"
+      ],
+      "reboot_lines": [
+        "[    0.703390][    T1] reboot: Restarting system with command 'bootloader'"
+      ],
+      "restarting_system_lines": [
+        "[    0.703390][    T1] reboot: Restarting system with command 'bootloader'"
+      ],
+      "panics": []
+    }
+  },
+  "summary": {
+    "passed": 14,
+    "total": 14
+  },
+  "cannot_show": [
+    "that ABL/AVB accepts these images on the phone",
+    "that this unit's ABL acts on the reason 'bootloader' and presents fastboot (USB 18d1:d00d) -- no bootloader exists in QEMU"
+  ]
+}

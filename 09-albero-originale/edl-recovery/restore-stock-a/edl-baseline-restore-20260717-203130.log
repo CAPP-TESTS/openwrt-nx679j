@@ -1,0 +1,1113 @@
+=== 2026-07-17T22:31:30+02:00 baseline restore start ===
+Bus 006 Device 015: ID 05c6:9008 Qualcomm, Inc. Gobi Wireless Modem (QDL mode)
+CMD: /home/user/venvs/edk2/bin/edl printgpt --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+sahara - Protocol version: 3, Version supported: 1
+main - Mode detected: sahara
+sahara - 
+Reading Chip Info : OK
+sahara - - Sahara version  : 3
+sahara - - Chip Serial Number : 4324a099072
+sahara - - OEM PKHASH : fbc0a90afe54b2e38d7961e51aab31e5dbcef21f53b5d67c5d98561d74bdd4c0e9371fdb6519e7ecb032f691674fb644
+sahara - - Note: V3 extended info (cmd=0x0A) not available
+sahara - Protocol version: 3, Version supported: 1
+sahara - Uploading loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+sahara - 64-Bit mode detected.
+sahara - Loader successfully uploaded.
+main - Trying to connect to firehose loader ...
+firehose - INFO: Binary build date: Jul  6 2022 @ 22:16:30
+firehose - INFO: Binary build date: Jul  6 2022 @ 22:16:30 
+firehose - INFO: Chip serial num: 0 (0x0)
+firehose - INFO: Supported Functions (15):
+firehose - INFO: program
+firehose - INFO: read
+firehose - INFO: nop
+firehose - INFO: patch
+firehose - INFO: configure
+firehose - INFO: setbootablestoragedrive
+firehose - INFO: erase
+firehose - INFO: power
+firehose - INFO: firmwarewrite
+firehose - INFO: getstorageinfo
+firehose - INFO: benchmark
+firehose - INFO: emmc
+firehose - INFO: ufs
+firehose - INFO: fixgpt
+firehose - INFO: getsha256digest
+firehose - INFO: End of supported functions 15
+firehose
+firehose - [LIB]: [33mCouldn't detect MaxPayloadSizeFromTargetinBytes[0m
+firehose
+firehose - [LIB]: [33mCouldn't detect TargetName[0m
+firehose - TargetName=Unknown
+firehose - MemoryName=UFS
+firehose - Version=1
+firehose - Trying to read first storage sector...
+firehose - Running configure...
+firehose - Storage report:
+firehose - total_blocks:60884992
+firehose - block_size:4096
+firehose - page_size:4096
+firehose - num_physical:6
+firehose - manufacturer_id:462
+firehose - serial_num:1297306958
+firehose - fw_version:400
+firehose - mem_type:UFS
+firehose - prod_name:KLUEG8UHDC-B0E1
+firehose_client - Supported functions:
+-----------------
+program,read,nop,patch,configure,setbootablestoragedrive,erase,power,firmwarewrite,getstorageinfo,benchmark,emmc,ufs,fixgpt,getsha256digest
+
+Parsing Lun 0:
+
+GPT Table:
+-------------
+ssd:                 Offset 0x00**************, Length 0x00**************, Flags 0x00**************, UUID a385d365-d43b-0e02-8f55-8b05174c04ae, Type 0x2c86e742, Active False
+persist:             Offset 0x00**************, Length 0x00**************, Flags 0x00**************, UUID 0f1871f8-066a-3c0c-a2b2-458a6b55792e, Type 0x6c95e238, Active False
+misc:                Offset 0x00**************, Length 0x00**************, Flags 0x00**************, UUID c12ae3c6-ff34-c969-8eac-be63e06115c9, Type 0x82acc91f, Active False
+parameter:           Offset 0x00**************, Length 0x00**************, Flags 0x00**************, UUID ea6b4eae-4ed4-f94c-ca5c-1902a96c184c, Type 0x82acc91f, Active False
+keystore:            Offset 0x00**************, Length 0x00**************, Flags 0x00**************, UUID 1a3b1364-9769-a9c2-d939-8ce82f69f618, Type 0xde7d4029, Active False
+frp:                 Offset 0x00**************, Length 0x00**************, Flags 0x00**************, UUID d3491e46-7d98-78da-0be0-a68366d78673, Type 0x91b72d4d, Active False
+super:               Offset 0x00**************, Length 0x00**************, Flags 0x00**************, UUID d1685d8d-99d2-76ce-44a1-d51a3aa545b9, Type 0x89a12de1, Active False
+vbmeta_system_a:     Offset 0x00**************, Length 0x00**************, Flags 0x10**************, UUID 7c9574ad-b670-ab71-b246-c87172d7a512, Type 0xfe3ab853, Active True
+vbmeta_system_b:     Offset 0x00**************, Length 0x00**************, Flags 0x10**************, UUID 4268223e-4a03-4622-a346-e4960b5bb345, Type 0x1344859d, Active False
+metadata:            Offset 0x00**************, Length 0x00**************, Flags 0x00**************, UUID 943f044a-ab84-d35c-de89-17203aaa3a3a, Type 0x988a98c9, Active False
+rawdump:             Offset 0x00**************, Length 0x00**************, Flags 0x00**************, UUID 14809677-4734-b1f7-0c75-bcb9bdd2ad40, Type 0x66c9b323, Active False
+userdata:            Offset 0x00**************, Length 0x00000037bd4d3000, Flags 0x00**************, UUID 7f82aeaf-85ba-9ec9-3305-9d1d557ec034, Type 0x1b81e7e6, Active False
+
+Total disk size:0x0000003a10800000, sectors:0x0000000003a10800
+
+
+Parsing Lun 1:
+
+GPT Table:
+-------------
+xbl_a:               Offset 0x00**************, Length 0x00**************, Flags 0x10c4000000000000, UUID 23efbf16-fb0e-55fb-aa97-dadff934d219, Type 0xdea0ba2c, Active True
+xbl_config_a:        Offset 0x00**************, Length 0x000000000004b000, Flags 0x00c4000000000000, UUID 249e4164-5975-38d3-5e56-7d15f95ab22f, Type 0x5a325ae4, Active True
+multiimgqti_a:       Offset 0x00000000003d1000, Length 0x00**************, Flags 0x10c4000000000000, UUID 5bc9e000-03ac-7875-1500-b4e43edd410d, Type 0x846c6f05, Active True
+multiimgoem_a:       Offset 0x00000000003d9000, Length 0x00**************, Flags 0x10c4000000000000, UUID e525f566-a2f4-8864-e464-10094b58e7dc, Type 0xe126a436, Active True
+apdp:                Offset 0x00000000003e1000, Length 0x00**************, Flags 0x00**************, UUID 20b370d0-13bd-e56f-c09c-aec1cba7483a, Type 0xe6e98da2, Active False
+
+Total disk size:0x00**************, sectors:0x00**************
+
+
+Parsing Lun 2:
+
+GPT Table:
+-------------
+xbl_b:               Offset 0x00**************, Length 0x00**************, Flags 0x10c0000000000000, UUID a461468d-10a7-aa7d-d10b-822bdbeccb3e, Type 0xdea0ba2c, Active False
+xbl_config_b:        Offset 0x00**************, Length 0x000000000004b000, Flags 0x00c0000000000000, UUID 1463995e-c792-41ee-8309-e333a0baac46, Type 0x5a325ae4, Active False
+multiimgqti_b:       Offset 0x00000000003d1000, Length 0x00**************, Flags 0x10c0000000000000, UUID 8f0cb8cb-4ed5-9b2d-d37f-aec6ca57831c, Type 0x846c6f05, Active False
+multiimgoem_b:       Offset 0x00000000003d9000, Length 0x00**************, Flags 0x10c0000000000000, UUID 31a24952-0ad1-58a4-0cec-28ef709dd11f, Type 0xe126a436, Active False
+apdpb:               Offset 0x00000000003e1000, Length 0x00**************, Flags 0x00**************, UUID ff5cb0a8-8fea-9f7c-03fe-6f51d053782c, Type 0xe6e98da2, Active False
+
+Total disk size:0x00**************, sectors:0x00**************
+
+
+Parsing Lun 3:
+
+GPT Table:
+-------------
+ALIGN_TO_128K_1:     Offset 0x00**************, Length 0x000000000001a000, Flags 0x10**************, UUID 7620207a-411b-6f1f-e1f6-94b39311cdb0, Type 0xfde1604b, Active False
+cdt:                 Offset 0x00**************, Length 0x00**************, Flags 0x10**************, UUID 04269504-143f-d6fa-4030-872b2a09275a, Type 0xa19f205f, Active False
+ddr:                 Offset 0x00**************, Length 0x00**************, Flags 0x10**************, UUID f94cb2de-a23f-36a7-c6ae-398ae87ab786, Type 0x20a0c19c, Active False
+
+Total disk size:0x00**************, sectors:0x00**************
+
+
+Parsing Lun 4:
+
+GPT Table:
+-------------
+uefi_a:              Offset 0x00**************, Length 0x00**************, Flags 0x107f000000000000, UUID cb568f45-1f4c-158f-8317-58798414b776, Type 0x9f234b5b, Active True
+aop_a:               Offset 0x00**************, Length 0x00**************, Flags 0x107f000000000000, UUID f6edfaff-fa77-4243-558a-c3a802c15576, Type 0x77036cd4, Active True
+aop_config_a:        Offset 0x00**************, Length 0x00**************, Flags 0x107f000000000000, UUID 5e03d310-24f6-948b-ce2b-539c815132b9, Type 0x77036cd4, Active True
+tz_a:                Offset 0x00**************, Length 0x00**************, Flags 0x107f000000000000, UUID c87f74b9-0be0-0a39-cc77-b95c418993e6, Type 0x77036cd4, Active True
+hyp_a:               Offset 0x0000000000a06000, Length 0x00**************, Flags 0x007f000000000000, UUID efb9dd5f-8388-7a8e-0696-1d630980b846, Type 0x77036cd4, Active True
+modem_a:             Offset 0x00**************, Length 0x0000000012c00000, Flags 0x107f000000000000, UUID a457c7bb-7507-cf3f-8bb0-d34b1c9e226a, Type 0x77036cd4, Active True
+bluetooth_a:         Offset 0x0000000013e06000, Length 0x00**************, Flags 0x107f000000000000, UUID e5c8523f-3e3d-aab7-880b-cbbd12b07a3a, Type 0x77036cd4, Active True
+mdtpsecapp_a:        Offset 0x00**************, Length 0x00**************, Flags 0x107f000000000000, UUID 1c7d9881-6d8c-b239-08a9-4f99290a8eb0, Type 0x77036cd4, Active True
+mdtp_a:              Offset 0x00**************, Length 0x00**************, Flags 0x107f000000000000, UUID ef463601-1002-ce42-fe37-5249cca6950c, Type 0x77036cd4, Active True
+abl_a:               Offset 0x00**************, Length 0x00**************, Flags 0x107f000000000000, UUID 4ff4054c-45d3-ac9e-9158-ab2a0226a201, Type 0x77036cd4, Active True
+dsp_a:               Offset 0x00**************, Length 0x00**************, Flags 0x107f000000000000, UUID 5e52d67e-6210-bf59-8010-b416beebd3cd, Type 0x77036cd4, Active True
+keymaster_a:         Offset 0x000000001a706000, Length 0x00**************, Flags 0x107f000000000000, UUID 186d8683-2196-625c-5d57-524c006dbcc7, Type 0x77036cd4, Active True
+boot_a:              Offset 0x000000001a786000, Length 0x00**************, Flags 0x003f000000000000, UUID f689620e-1cf2-e957-46d3-12312ba605ac, Type 0x77036cd4, Active True
+devcfg_a:            Offset 0x00**************, Length 0x00**************, Flags 0x007f000000000000, UUID ad6f04e4-0090-3a53-d576-fee86c55eb8f, Type 0x77036cd4, Active True
+qupfw_a:             Offset 0x00000000207a6000, Length 0x00**************, Flags 0x007f000000000000, UUID b9c3359a-b095-883d-25d9-879e9ee969c0, Type 0x77036cd4, Active True
+vbmeta_a:            Offset 0x00000000207ba000, Length 0x00**************, Flags 0x107f000000000000, UUID ef598a96-a359-bf7a-6193-16bf46ef6b3c, Type 0x77036cd4, Active True
+dtbo_a:              Offset 0x00000000207ca000, Length 0x00**************, Flags 0x007f000000000000, UUID 3af49779-406e-9c7f-e86c-6479f427cc74, Type 0x77036cd4, Active True
+uefisecapp_a:        Offset 0x0000000021fca000, Length 0x00**************, Flags 0x007f000000000000, UUID 3fa4906c-4af3-4095-2d62-9a0da09e484c, Type 0x77036cd4, Active True
+imagefv_a:           Offset 0x00000000221ca000, Length 0x00**************, Flags 0x007f000000000001, UUID 674edd51-d1fc-9b1f-9c20-c36e554ddf51, Type 0x77036cd4, Active True
+shrm_a:              Offset 0x00000000223ca000, Length 0x00**************, Flags 0x107f000000000000, UUID 6a66001e-16ab-bffe-1dff-23b788ff1b55, Type 0x77036cd4, Active True
+vm-bootsys_a:        Offset 0x00000000223ea000, Length 0x00**************, Flags 0x007f000000000000, UUID 428f0122-d315-27c4-4866-2c881c047442, Type 0x77036cd4, Active True
+cpucp_a:             Offset 0x0000000032a0f000, Length 0x00**************, Flags 0x107f000000000000, UUID 7acc85a0-86e8-7bfd-ef16-1cbd2263c578, Type 0x77036cd4, Active True
+featenabler_a:       Offset 0x0000000032b0f000, Length 0x00**************, Flags 0x007f000000000000, UUID d371e940-82b0-ca9b-3fc1-8f339b08ba9b, Type 0x77036cd4, Active True
+vendor_boot_a:       Offset 0x0000000032b2f000, Length 0x00**************, Flags 0x007f000000000000, UUID 19bf45ce-7fb0-8294-5ddf-95f8bbbcc3fe, Type 0x77036cd4, Active True
+qmcs:                Offset 0x0000000038b2f000, Length 0x0000000001e00000, Flags 0x00**************, UUID e1f5ffd6-864a-f133-8b77-99516d8211da, Type 0x358740b1, Active False
+qweslicstore_a:      Offset 0x000000003a92f000, Length 0x00**************, Flags 0x107f000000000000, UUID 06c83c58-9d71-b1f1-20ca-18197c0d33d3, Type 0x77036cd4, Active True
+recovery_a:          Offset 0x000000003a96f000, Length 0x00**************, Flags 0x007f000000000000, UUID afef37d0-4124-8adb-eda8-5341980c2670, Type 0x77036cd4, Active True
+xbl_ramdump_a:       Offset 0x0000000040d6f000, Length 0x00**************, Flags 0x007f000000000000, UUID 54af39b8-a9c7-7d62-cfc4-9b15f07718c4, Type 0x382f197, Active True
+uefi_b:              Offset 0x0000000040f6f000, Length 0x00**************, Flags 0x10**************, UUID 9cf45dfb-e2db-a010-bcd9-44207ef6f984, Type 0x400ffdcd, Active False
+aop_b:               Offset 0x000000004146f000, Length 0x00**************, Flags 0x00**************, UUID 05e3d679-c660-15b0-9339-dc0743e6caec, Type 0xd69e90a5, Active False
+aop_config_b:        Offset 0x00000000414ef000, Length 0x00**************, Flags 0x00**************, UUID 94aa5773-1f47-fd08-bb76-b3fab31f6c53, Type 0x3d12f234, Active False
+tz_b:                Offset 0x000000004156f000, Length 0x00**************, Flags 0x00**************, UUID 777c1743-85ae-1acb-a8ad-f8867d81d244, Type 0xa053aa7f, Active False
+hyp_b:               Offset 0x000000004196f000, Length 0x00**************, Flags 0x00**************, UUID 8f6355ba-cff5-d436-8230-7667de67ad7b, Type 0xe1a6a689, Active False
+modem_b:             Offset 0x000000004216f000, Length 0x0000000012c00000, Flags 0x10**************, UUID 570a7fe9-f0aa-020c-d8dc-26587b3e4001, Type EFI_BASIC_DATA, Active False
+bluetooth_b:         Offset 0x0000000054d6f000, Length 0x00**************, Flags 0x10**************, UUID 1d0b7159-bbe2-8aad-8868-dfc128f559e4, Type 0x6cb747f1, Active False
+mdtpsecapp_b:        Offset 0x000000005516f000, Length 0x00**************, Flags 0x10**************, UUID 1697437a-bc40-8dc7-5ceb-6565167350bc, Type 0xea02d680, Active False
+mdtp_b:              Offset 0x000000005556f000, Length 0x00**************, Flags 0x10**************, UUID 6eb365a2-792b-74ad-052a-72d096d9167a, Type 0x3878408a, Active False
+abl_b:               Offset 0x000000005756f000, Length 0x00**************, Flags 0x10**************, UUID 91721b26-6a5f-4085-e1d8-bf1ac95798e3, Type 0xbd6928a1, Active False
+dsp_b:               Offset 0x000000005766f000, Length 0x00**************, Flags 0x10**************, UUID e3aabb74-29ec-cc3c-3aa9-38a7c8987790, Type 0x7efe5010, Active False
+keymaster_b:         Offset 0x000000005b66f000, Length 0x00**************, Flags 0x10**************, UUID aa183297-d552-655c-89f1-881c66afd584, Type 0xa11d2a7c, Active False
+boot_b:              Offset 0x000000005b6ef000, Length 0x00**************, Flags 0x006a000000000000, UUID 205e275d-ad2a-55fb-c47a-4c5a1755345e, Type 0x20117f86, Active False
+devcfg_b:            Offset 0x00000000616ef000, Length 0x00**************, Flags 0x00**************, UUID d9bfe18a-3845-20bb-b49a-9d22c186d2ed, Type 0xf65d4b16, Active False
+qupfw_b:             Offset 0x000000006170f000, Length 0x00**************, Flags 0x00**************, UUID 3dfaed75-9787-2c00-160e-06323a406907, Type 0x21d1219f, Active False
+vbmeta_b:            Offset 0x00**************, Length 0x00**************, Flags 0x10**************, UUID 2ac4553a-92b8-95d5-54da-0613828aaff2, Type 0x4b7a15d6, Active False
+dtbo_b:              Offset 0x00**************, Length 0x00**************, Flags 0x00**************, UUID 26328208-c729-58e6-1498-ca050637397c, Type 0x24d0d418, Active False
+uefisecapp_b:        Offset 0x0000000062f33000, Length 0x00**************, Flags 0x00**************, UUID b60de640-fa17-314c-95bf-4eb797486827, Type 0xbe8a7e08, Active False
+imagefv_b:           Offset 0x00**************, Length 0x00**************, Flags 0x00**************, UUID 8e3895d1-58c8-51a7-1cb0-ffa2ce7d9b58, Type 0x17911177, Active False
+shrm_b:              Offset 0x00**************, Length 0x00**************, Flags 0x10**************, UUID 975f29db-0bb2-4c7a-ef4c-e444853466a9, Type 0xcb74ca22, Active False
+vm-bootsys_b:        Offset 0x00**************, Length 0x00**************, Flags 0x00**************, UUID 905641a7-88b1-962b-1b84-08245cd7655f, Type 0x7b034c58, Active False
+cpucp_b:             Offset 0x00**************, Length 0x00**************, Flags 0x10**************, UUID b1c974b6-4e74-b40f-f929-e557b4f6cec5, Type 0x1e8615bd, Active False
+featenabler_b:       Offset 0x0000000073a78000, Length 0x00**************, Flags 0x00**************, UUID a2b206c7-81ec-1190-6f0f-e77b035294ff, Type 0x741813d2, Active False
+vendor_boot_b:       Offset 0x0000000073a98000, Length 0x00**************, Flags 0x00**************, UUID da2f36d6-c3c4-ea4b-4554-6c83cb13d5be, Type 0x6d286a7f, Active False
+qweslicstore_b:      Offset 0x0000000079a98000, Length 0x00**************, Flags 0x10**************, UUID 64db23fb-407e-4003-eac5-fe098a9c2a43, Type 0x7bab3c93, Active False
+recovery_b:          Offset 0x0000000079ad8000, Length 0x00**************, Flags 0x00**************, UUID 987d02d5-551f-22e2-965c-76592908199b, Type 0xd504d6db, Active False
+xbl_ramdump_b:       Offset 0x000000007fed8000, Length 0x00**************, Flags 0x00**************, UUID 836effe3-3ef7-7aa5-4a64-e98ac5be3d83, Type 0xc3e58b09, Active False
+devinfo:             Offset 0x00000000800d8000, Length 0x00**************, Flags 0x10**************, UUID cff23a01-482c-4944-b896-8a32c66a481a, Type 0x65addcf4, Active False
+dip:                 Offset 0x00000000800d9000, Length 0x00**************, Flags 0x10**************, UUID 5b2ceb0f-fb87-2c26-f75e-b8ec06a2dd82, Type 0x4114b077, Active False
+splash:              Offset 0x00000000801d9000, Length 0x00000000020a4000, Flags 0x00**************, UUID 1e12703c-e8b5-d1f9-f5ab-c0271a9784d9, Type 0xad99f201, Active False
+limits:              Offset 0x000000008227d000, Length 0x00**************, Flags 0x10**************, UUID 0632c568-91a5-daba-5f8b-a02075b589a4, Type 0x10a0c19c, Active False
+limits-cdsp:         Offset 0x000000008227e000, Length 0x00**************, Flags 0x10**************, UUID a99839f1-d86e-48e5-d4a9-486dad006d44, Type 0x545d3707, Active False
+toolsfv:             Offset 0x000000008227f000, Length 0x00**************, Flags 0x10**************, UUID d0c8c059-311a-3558-5f32-1650377b467b, Type 0x97745aba, Active False
+logfs:               Offset 0x000000008237f000, Length 0x00**************, Flags 0x00**************, UUID c3647aa7-d0ee-7cc9-67ce-58dda7139134, Type 0xbc0330eb, Active False
+logdump:             Offset 0x0000000082b7f000, Length 0x00**************, Flags 0x00**************, UUID 86d3cd53-a539-7387-2d64-2e2f2b2f269b, Type 0x5af80809, Active False
+storsec:             Offset 0x00000000a2b7f000, Length 0x00**************, Flags 0x10**************, UUID 0c26f3ca-4cc2-04df-8956-72c055792e7b, Type 0x2db45fe, Active False
+uefivarstore:        Offset 0x00000000a2b9f000, Length 0x00**************, Flags 0x10**************, UUID d64a334f-4f2c-2914-3d23-031e1a93fe3d, Type 0x165bd6bc, Active False
+secdata:             Offset 0x00000000a2c1f000, Length 0x00**************, Flags 0x10**************, UUID 3df6c615-e988-51e2-9383-24bfc27bcb49, Type 0x76cfc7ef, Active False
+vm-data:             Offset 0x00000000a2c26000, Length 0x00000000020a4000, Flags 0x00**************, UUID 237bae8b-03d3-661c-45ae-cfcbb503e3a7, Type 0x21adb864, Active False
+mdcompress:          Offset 0x00000000a4cca000, Length 0x00**************, Flags 0x10**************, UUID 1087f018-6c63-01fd-4c1e-6fca4a36498a, Type 0xc6a5a9f5, Active False
+connsec:             Offset 0x00000000a60ca000, Length 0x00**************, Flags 0x10**************, UUID 1ecd10e7-ec2a-7268-e03d-bbe994db7669, Type 0x6a716f7c, Active False
+tzsc:                Offset 0x00000000a60ea000, Length 0x00**************, Flags 0x10**************, UUID f840c98a-2911-d16b-5f9b-b7ecf027a9b5, Type 0x478dea49, Active False
+spunvm:              Offset 0x00000000a610a000, Length 0x00**************, Flags 0x00**************, UUID c6b96a93-a4e2-f789-a0e5-8d2a6956954d, Type 0xe42e2b4c, Active False
+rtice:               Offset 0x00000000a810a000, Length 0x00**************, Flags 0x10**************, UUID fe0e04ab-5bc2-e43b-6351-1c1ebad757f4, Type 0xe396d1ea, Active False
+xbl_sc_test_mode:    Offset 0x00000000a818a000, Length 0x00**************, Flags 0x00**************, UUID 61dedf8d-150d-b0d8-97a5-b38f69b3f0f3, Type 0x91fdd2b9, Active False
+xbl_sc_logs:         Offset 0x00000000a819a000, Length 0x00**************, Flags 0x00**************, UUID 689b4ebd-d4c4-96be-8fa2-52fe197a1c31, Type 0xf7eecb66, Active False
+
+Total disk size:0x00**************, sectors:0x00**************
+
+
+Parsing Lun 5:
+
+GPT Table:
+-------------
+ALIGN_TO_128K_2:     Offset 0x00**************, Length 0x000000000001a000, Flags 0x10**************, UUID 0ed44dcb-e8a3-7883-295d-44651134f29b, Type 0x6891a3b7, Active False
+modemst1:            Offset 0x00**************, Length 0x00**************, Flags 0x00**************, UUID 31c60430-3deb-f8c0-bcd7-53be51dc954e, Type 0xebbeadaf, Active False
+modemst2:            Offset 0x00**************, Length 0x00**************, Flags 0x00**************, UUID bfe6795f-9ac2-4467-3d8e-985ded9a8e7c, Type 0xa288b1f, Active False
+fsg:                 Offset 0x00**************, Length 0x00**************, Flags 0x10**************, UUID 1d87f609-b48a-2304-04fe-8f090f1c9f5e, Type 0x638ff8e2, Active False
+fsc:                 Offset 0x00**************, Length 0x00**************, Flags 0x00**************, UUID 6970d118-f6e9-1b9e-e94e-0911a4a22de6, Type 0x57b90a16, Active False
+
+Total disk size:0x00**************, sectors:0x00**************
+
+RC=0
+Restoring GPT primary on LUN 1 from /home/user/nx679j-stock/native-openwrt-usb-build/headless-upstream/abl-compat-v12/artifacts/partition-analysis/gpt-patch/sdb_restore_pri.bin
+CMD: /home/user/venvs/edk2/bin/edl w gpt /home/user/nx679j-stock/native-openwrt-usb-build/headless-upstream/abl-compat-v12/artifacts/partition-analysis/gpt-patch/sdb_restore_pri.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs --lun=1
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x10) 0.00 MB/s                 
+Progress: |██████████| 100.0% Write (Sector 0x10 of 0x10, ) 94.71 MB/s        
+Wrote /home/user/nx679j-stock/native-openwrt-usb-build/headless-upstream/abl-compat-v12/artifacts/partition-analysis/gpt-patch/sdb_restore_pri.bin to sector 0.
+RC=0
+Restoring GPT primary on LUN 2 from /home/user/nx679j-stock/native-openwrt-usb-build/headless-upstream/abl-compat-v12/artifacts/partition-analysis/gpt-patch/sdc_restore_pri.bin
+CMD: /home/user/venvs/edk2/bin/edl w gpt /home/user/nx679j-stock/native-openwrt-usb-build/headless-upstream/abl-compat-v12/artifacts/partition-analysis/gpt-patch/sdc_restore_pri.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs --lun=2
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x10) 0.00 MB/s                 
+Progress: |██████████| 100.0% Write (Sector 0x10 of 0x10, ) 78.44 MB/s        
+Wrote /home/user/nx679j-stock/native-openwrt-usb-build/headless-upstream/abl-compat-v12/artifacts/partition-analysis/gpt-patch/sdc_restore_pri.bin to sector 0.
+RC=0
+Restoring GPT primary on LUN 4 from /home/user/nx679j-stock/native-openwrt-usb-build/headless-upstream/abl-compat-v12/artifacts/partition-analysis/gpt-patch/sde_restore_pri.bin
+CMD: /home/user/venvs/edk2/bin/edl w gpt /home/user/nx679j-stock/native-openwrt-usb-build/headless-upstream/abl-compat-v12/artifacts/partition-analysis/gpt-patch/sde_restore_pri.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs --lun=4
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x10) 0.00 MB/s                 
+Progress: |██████████| 100.0% Write (Sector 0x10 of 0x10, ) 68.99 MB/s        
+Wrote /home/user/nx679j-stock/native-openwrt-usb-build/headless-upstream/abl-compat-v12/artifacts/partition-analysis/gpt-patch/sde_restore_pri.bin to sector 0.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w xbl_a /home/user/nx679j-stock/edl-recovery/restore-stock-a/xbl_a_from_b.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x380) 0.00 MB/s                
+Progress: |███-------|  28.6% Write (Sector 0x100 of 0x380, ) 195.03 MB/s     
+Progress: |██████----|  57.1% Write (Sector 0x200 of 0x380, ) 198.02 MB/s     
+Progress: |█████████-|  85.7% Write (Sector 0x300 of 0x380, ) 239.76 MB/s     
+Progress: |██████████| 100.0% Write (Sector 0x380 of 0x380, ) 238.12 MB/s     
+Wrote /home/user/nx679j-stock/edl-recovery/restore-stock-a/xbl_a_from_b.bin to sector 6.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w xbl_config_a /home/user/nx679j-stock/edl-recovery/restore-stock-a/xbl_config_a_from_b.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x4B) 0.00 MB/s                 
+Progress: |██████████| 100.0% Write (Sector 0x4B of 0x4B, ) 121.47 MB/s       
+Wrote /home/user/nx679j-stock/edl-recovery/restore-stock-a/xbl_config_a_from_b.bin to sector 902.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w abl_a /home/user/nx679j-stock/edl-recovery/restore-stock-a/abl_a_from_b.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x100) 0.00 MB/s                
+Progress: |██████████| 100.0% Write (Sector 0x100 of 0x100, ) 193.52 MB/s     
+Wrote /home/user/nx679j-stock/edl-recovery/restore-stock-a/abl_a_from_b.bin to sector 91654.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w xbl_b /home/user/nx679j-stock/edl-recovery/restore-stock-a/xbl_a_from_b.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x380) 0.00 MB/s                
+Progress: |███-------|  28.6% Write (Sector 0x100 of 0x380, ) 208.44 MB/s     
+Progress: |██████----|  57.1% Write (Sector 0x200 of 0x380, ) 244.85 MB/s     
+Progress: |█████████-|  85.7% Write (Sector 0x300 of 0x380, ) 104.88 MB/s     
+Progress: |██████████| 100.0% Write (Sector 0x380 of 0x380, ) 73.23 MB/s      
+Wrote /home/user/nx679j-stock/edl-recovery/restore-stock-a/xbl_a_from_b.bin to sector 6.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w xbl_config_b /home/user/nx679j-stock/edl-recovery/restore-stock-a/xbl_config_a_from_b.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x4B) 0.00 MB/s                 
+Progress: |██████████| 100.0% Write (Sector 0x4B of 0x4B, ) 177.96 MB/s       
+Wrote /home/user/nx679j-stock/edl-recovery/restore-stock-a/xbl_config_a_from_b.bin to sector 902.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w abl_b /home/user/nx679j-stock/edl-recovery/restore-stock-a/abl_a_from_b.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x100) 0.00 MB/s                
+Progress: |██████████| 100.0% Write (Sector 0x100 of 0x100, ) 209.37 MB/s     
+Wrote /home/user/nx679j-stock/edl-recovery/restore-stock-a/abl_a_from_b.bin to sector 357743.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w boot_a /home/user/nx679j-stock/edl-recovery/recon-20260717-183330/boot_a.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x6000) 0.00 MB/s               
+Progress: |----------|   1.0% Write (Sector 0x100 of 0x6000, ) 160.95 MB/s    
+Progress: |----------|   2.1% Write (Sector 0x200 of 0x6000, ) 167.46 MB/s    
+Progress: |----------|   3.1% Write (Sector 0x300 of 0x6000, ) 106.38 MB/s    
+Progress: |----------|   4.2% Write (Sector 0x400 of 0x6000, ) 63.82 MB/s     
+Progress: |█---------|   5.2% Write (Sector 0x500 of 0x6000, ) 236.01 MB/s    
+Progress: |█---------|   6.2% Write (Sector 0x600 of 0x6000, ) 243.71 MB/s    
+Progress: |█---------|   7.3% Write (Sector 0x700 of 0x6000, ) 244.72 MB/s    
+Progress: |█---------|   8.3% Write (Sector 0x800 of 0x6000, ) 189.28 MB/s    
+Progress: |█---------|   9.4% Write (Sector 0x900 of 0x6000, ) 241.15 MB/s    
+Progress: |█---------|  10.4% Write (Sector 0xA00 of 0x6000, ) 194.33 MB/s    
+Progress: |█---------|  11.5% Write (Sector 0xB00 of 0x6000, ) 206.02 MB/s    
+Progress: |█---------|  12.5% Write (Sector 0xC00 of 0x6000, ) 136.91 MB/s    
+Progress: |█---------|  13.5% Write (Sector 0xD00 of 0x6000, ) 248.74 MB/s    
+Progress: |█---------|  14.6% Write (Sector 0xE00 of 0x6000, ) 250.03 MB/s    
+Progress: |██--------|  15.6% Write (Sector 0xF00 of 0x6000, ) 249.08 MB/s    
+Progress: |██--------|  16.7% Write (Sector 0x1000 of 0x6000, ) 183.34 MB/s   
+Progress: |██--------|  17.7% Write (Sector 0x1100 of 0x6000, ) 243.70 MB/s   
+Progress: |██--------|  18.8% Write (Sector 0x1200 of 0x6000, ) 247.42 MB/s   
+Progress: |██--------|  19.8% Write (Sector 0x1300 of 0x6000, ) 247.80 MB/s   
+Progress: |██--------|  20.8% Write (Sector 0x1400 of 0x6000, ) 207.96 MB/s   
+Progress: |██--------|  21.9% Write (Sector 0x1500 of 0x6000, ) 243.54 MB/s   
+Progress: |██--------|  22.9% Write (Sector 0x1600 of 0x6000, ) 213.34 MB/s   
+Progress: |██--------|  24.0% Write (Sector 0x1700 of 0x6000, ) 235.15 MB/s   
+Progress: |██--------|  25.0% Write (Sector 0x1800 of 0x6000, ) 150.72 MB/s   
+Progress: |███-------|  26.0% Write (Sector 0x1900 of 0x6000, ) 247.52 MB/s   
+Progress: |███-------|  27.1% Write (Sector 0x1A00 of 0x6000, ) 247.57 MB/s   
+Progress: |███-------|  28.1% Write (Sector 0x1B00 of 0x6000, ) 248.74 MB/s   
+Progress: |███-------|  29.2% Write (Sector 0x1C00 of 0x6000, ) 202.39 MB/s   
+Progress: |███-------|  30.2% Write (Sector 0x1D00 of 0x6000, ) 241.41 MB/s   
+Progress: |███-------|  31.2% Write (Sector 0x1E00 of 0x6000, ) 220.12 MB/s   
+Progress: |███-------|  32.3% Write (Sector 0x1F00 of 0x6000, ) 240.49 MB/s   
+Progress: |███-------|  33.3% Write (Sector 0x2000 of 0x6000, ) 135.39 MB/s   
+Progress: |███-------|  34.4% Write (Sector 0x2100 of 0x6000, ) 244.57 MB/s   
+Progress: |████------|  35.4% Write (Sector 0x2200 of 0x6000, ) 248.68 MB/s   
+Progress: |████------|  36.5% Write (Sector 0x2300 of 0x6000, ) 247.57 MB/s   
+Progress: |████------|  37.5% Write (Sector 0x2400 of 0x6000, ) 146.46 MB/s   
+Progress: |████------|  38.5% Write (Sector 0x2500 of 0x6000, ) 243.76 MB/s   
+Progress: |████------|  39.6% Write (Sector 0x2600 of 0x6000, ) 247.38 MB/s   
+Progress: |████------|  40.6% Write (Sector 0x2700 of 0x6000, ) 246.72 MB/s   
+Progress: |████------|  41.7% Write (Sector 0x2800 of 0x6000, ) 137.18 MB/s   
+Progress: |████------|  42.7% Write (Sector 0x2900 of 0x6000, ) 247.77 MB/s   
+Progress: |████------|  43.8% Write (Sector 0x2A00 of 0x6000, ) 147.81 MB/s   
+Progress: |████------|  44.8% Write (Sector 0x2B00 of 0x6000, ) 117.66 MB/s   
+Progress: |█████-----|  45.8% Write (Sector 0x2C00 of 0x6000, ) 113.48 MB/s   
+Progress: |█████-----|  46.9% Write (Sector 0x2D00 of 0x6000, ) 132.00 MB/s   
+Progress: |█████-----|  47.9% Write (Sector 0x2E00 of 0x6000, ) 112.87 MB/s   
+Progress: |█████-----|  49.0% Write (Sector 0x2F00 of 0x6000, ) 116.89 MB/s   
+Progress: |█████-----|  50.0% Write (Sector 0x3000 of 0x6000, ) 112.35 MB/s   
+Progress: |█████-----|  51.0% Write (Sector 0x3100 of 0x6000, ) 151.93 MB/s   
+Progress: |█████-----|  52.1% Write (Sector 0x3200 of 0x6000, ) 149.23 MB/s   
+Progress: |█████-----|  53.1% Write (Sector 0x3300 of 0x6000, ) 170.05 MB/s   
+Progress: |█████-----|  54.2% Write (Sector 0x3400 of 0x6000, ) 135.91 MB/s   
+Progress: |██████----|  55.2% Write (Sector 0x3500 of 0x6000, ) 233.13 MB/s   
+Progress: |██████----|  56.2% Write (Sector 0x3600 of 0x6000, ) 236.95 MB/s   
+Progress: |██████----|  57.3% Write (Sector 0x3700 of 0x6000, ) 238.84 MB/s   
+Progress: |██████----|  58.3% Write (Sector 0x3800 of 0x6000, ) 197.03 MB/s   
+Progress: |██████----|  59.4% Write (Sector 0x3900 of 0x6000, ) 241.15 MB/s   
+Progress: |██████----|  60.4% Write (Sector 0x3A00 of 0x6000, ) 229.80 MB/s   
+Progress: |██████----|  61.5% Write (Sector 0x3B00 of 0x6000, ) 239.83 MB/s   
+Progress: |██████----|  62.5% Write (Sector 0x3C00 of 0x6000, ) 201.64 MB/s   
+Progress: |██████----|  63.5% Write (Sector 0x3D00 of 0x6000, ) 239.81 MB/s   
+Progress: |██████----|  64.6% Write (Sector 0x3E00 of 0x6000, ) 242.04 MB/s   
+Progress: |███████---|  65.6% Write (Sector 0x3F00 of 0x6000, ) 242.22 MB/s   
+Progress: |███████---|  66.7% Write (Sector 0x4000 of 0x6000, ) 202.20 MB/s   
+Progress: |███████---|  67.7% Write (Sector 0x4100 of 0x6000, ) 240.51 MB/s   
+Progress: |███████---|  68.8% Write (Sector 0x4200 of 0x6000, ) 244.28 MB/s   
+Progress: |███████---|  69.8% Write (Sector 0x4300 of 0x6000, ) 250.93 MB/s   
+Progress: |███████---|  70.8% Write (Sector 0x4400 of 0x6000, ) 194.88 MB/s   
+Progress: |███████---|  71.9% Write (Sector 0x4500 of 0x6000, ) 232.02 MB/s   
+Progress: |███████---|  72.9% Write (Sector 0x4600 of 0x6000, ) 219.20 MB/s   
+Progress: |███████---|  74.0% Write (Sector 0x4700 of 0x6000, ) 236.10 MB/s   
+Progress: |████████--|  75.0% Write (Sector 0x4800 of 0x6000, ) 206.29 MB/s   
+Progress: |████████--|  76.0% Write (Sector 0x4900 of 0x6000, ) 235.29 MB/s   
+Progress: |████████--|  77.1% Write (Sector 0x4A00 of 0x6000, ) 236.67 MB/s   
+Progress: |████████--|  78.1% Write (Sector 0x4B00 of 0x6000, ) 242.67 MB/s   
+Progress: |████████--|  79.2% Write (Sector 0x4C00 of 0x6000, ) 185.21 MB/s   
+Progress: |████████--|  80.2% Write (Sector 0x4D00 of 0x6000, ) 233.35 MB/s   
+Progress: |████████--|  81.2% Write (Sector 0x4E00 of 0x6000, ) 232.05 MB/s   
+Progress: |████████--|  82.3% Write (Sector 0x4F00 of 0x6000, ) 235.37 MB/s   
+Progress: |████████--|  83.3% Write (Sector 0x5000 of 0x6000, ) 210.93 MB/s   
+Progress: |████████--|  84.4% Write (Sector 0x5100 of 0x6000, ) 253.36 MB/s   
+Progress: |█████████-|  85.4% Write (Sector 0x5200 of 0x6000, ) 247.29 MB/s   
+Progress: |█████████-|  86.5% Write (Sector 0x5300 of 0x6000, ) 241.61 MB/s   
+Progress: |█████████-|  87.5% Write (Sector 0x5400 of 0x6000, ) 150.15 MB/s   
+Progress: |█████████-|  88.5% Write (Sector 0x5500 of 0x6000, ) 240.57 MB/s   
+Progress: |█████████-|  89.6% Write (Sector 0x5600 of 0x6000, ) 237.88 MB/s   
+Progress: |█████████-|  90.6% Write (Sector 0x5700 of 0x6000, ) 243.32 MB/s   
+Progress: |█████████-|  91.7% Write (Sector 0x5800 of 0x6000, ) 204.50 MB/s   
+Progress: |█████████-|  92.7% Write (Sector 0x5900 of 0x6000, ) 243.83 MB/s   
+Progress: |█████████-|  93.8% Write (Sector 0x5A00 of 0x6000, ) 245.07 MB/s   
+Progress: |█████████-|  94.8% Write (Sector 0x5B00 of 0x6000, ) 243.18 MB/s   
+Progress: |██████████|  95.8% Write (Sector 0x5C00 of 0x6000, ) 232.63 MB/s   
+Progress: |██████████|  96.9% Write (Sector 0x5D00 of 0x6000, ) 242.92 MB/s   
+Progress: |██████████|  97.9% Write (Sector 0x5E00 of 0x6000, ) 241.69 MB/s   
+Progress: |██████████|  99.0% Write (Sector 0x5F00 of 0x6000, ) 246.96 MB/s   
+Progress: |██████████| 100.0% Write (Sector 0x6000 of 0x6000, ) 248.11 MB/s   
+Wrote /home/user/nx679j-stock/edl-recovery/recon-20260717-183330/boot_a.bin to sector 108422.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w vendor_boot_a /home/user/nx679j-stock/edl-recovery/recon-20260717-183330/vendor_boot_a.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x6000) 0.00 MB/s               
+Progress: |----------|   1.0% Write (Sector 0x100 of 0x6000, ) 166.12 MB/s    
+Progress: |----------|   2.1% Write (Sector 0x200 of 0x6000, ) 184.83 MB/s    
+Progress: |----------|   3.1% Write (Sector 0x300 of 0x6000, ) 203.35 MB/s    
+Progress: |----------|   4.2% Write (Sector 0x400 of 0x6000, ) 204.36 MB/s    
+Progress: |█---------|   5.2% Write (Sector 0x500 of 0x6000, ) 238.56 MB/s    
+Progress: |█---------|   6.2% Write (Sector 0x600 of 0x6000, ) 242.19 MB/s    
+Progress: |█---------|   7.3% Write (Sector 0x700 of 0x6000, ) 243.87 MB/s    
+Progress: |█---------|   8.3% Write (Sector 0x800 of 0x6000, ) 210.29 MB/s    
+Progress: |█---------|   9.4% Write (Sector 0x900 of 0x6000, ) 246.81 MB/s    
+Progress: |█---------|  10.4% Write (Sector 0xA00 of 0x6000, ) 239.35 MB/s    
+Progress: |█---------|  11.5% Write (Sector 0xB00 of 0x6000, ) 248.96 MB/s    
+Progress: |█---------|  12.5% Write (Sector 0xC00 of 0x6000, ) 170.38 MB/s    
+Progress: |█---------|  13.5% Write (Sector 0xD00 of 0x6000, ) 247.92 MB/s    
+Progress: |█---------|  14.6% Write (Sector 0xE00 of 0x6000, ) 236.01 MB/s    
+Progress: |██--------|  15.6% Write (Sector 0xF00 of 0x6000, ) 248.10 MB/s    
+Progress: |██--------|  16.7% Write (Sector 0x1000 of 0x6000, ) 187.12 MB/s   
+Progress: |██--------|  17.7% Write (Sector 0x1100 of 0x6000, ) 219.70 MB/s   
+Progress: |██--------|  18.8% Write (Sector 0x1200 of 0x6000, ) 158.10 MB/s   
+Progress: |██--------|  19.8% Write (Sector 0x1300 of 0x6000, ) 180.38 MB/s   
+Progress: |██--------|  20.8% Write (Sector 0x1400 of 0x6000, ) 137.21 MB/s   
+Progress: |██--------|  21.9% Write (Sector 0x1500 of 0x6000, ) 161.08 MB/s   
+Progress: |██--------|  22.9% Write (Sector 0x1600 of 0x6000, ) 129.83 MB/s   
+Progress: |██--------|  24.0% Write (Sector 0x1700 of 0x6000, ) 148.10 MB/s   
+Progress: |██--------|  25.0% Write (Sector 0x1800 of 0x6000, ) 122.17 MB/s   
+Progress: |███-------|  26.0% Write (Sector 0x1900 of 0x6000, ) 153.14 MB/s   
+Progress: |███-------|  27.1% Write (Sector 0x1A00 of 0x6000, ) 130.48 MB/s   
+Progress: |███-------|  28.1% Write (Sector 0x1B00 of 0x6000, ) 66.43 MB/s    
+Progress: |███-------|  29.2% Write (Sector 0x1C00 of 0x6000, ) 116.97 MB/s   
+Progress: |███-------|  30.2% Write (Sector 0x1D00 of 0x6000, ) 230.66 MB/s   
+Progress: |███-------|  31.2% Write (Sector 0x1E00 of 0x6000, ) 173.48 MB/s   
+Progress: |███-------|  32.3% Write (Sector 0x1F00 of 0x6000, ) 200.85 MB/s   
+Progress: |███-------|  33.3% Write (Sector 0x2000 of 0x6000, ) 171.06 MB/s   
+Progress: |███-------|  34.4% Write (Sector 0x2100 of 0x6000, ) 245.63 MB/s   
+Progress: |████------|  35.4% Write (Sector 0x2200 of 0x6000, ) 249.57 MB/s   
+Progress: |████------|  36.5% Write (Sector 0x2300 of 0x6000, ) 250.02 MB/s   
+Progress: |████------|  37.5% Write (Sector 0x2400 of 0x6000, ) 209.29 MB/s   
+Progress: |████------|  38.5% Write (Sector 0x2500 of 0x6000, ) 240.61 MB/s   
+Progress: |████------|  39.6% Write (Sector 0x2600 of 0x6000, ) 245.55 MB/s   
+Progress: |████------|  40.6% Write (Sector 0x2700 of 0x6000, ) 221.06 MB/s   
+Progress: |████------|  41.7% Write (Sector 0x2800 of 0x6000, ) 164.42 MB/s   
+Progress: |████------|  42.7% Write (Sector 0x2900 of 0x6000, ) 238.07 MB/s   
+Progress: |████------|  43.8% Write (Sector 0x2A00 of 0x6000, ) 205.38 MB/s   
+Progress: |████------|  44.8% Write (Sector 0x2B00 of 0x6000, ) 244.84 MB/s   
+Progress: |█████-----|  45.8% Write (Sector 0x2C00 of 0x6000, ) 214.88 MB/s   
+Progress: |█████-----|  46.9% Write (Sector 0x2D00 of 0x6000, ) 246.71 MB/s   
+Progress: |█████-----|  47.9% Write (Sector 0x2E00 of 0x6000, ) 249.23 MB/s   
+Progress: |█████-----|  49.0% Write (Sector 0x2F00 of 0x6000, ) 251.08 MB/s   
+Progress: |█████-----|  50.0% Write (Sector 0x3000 of 0x6000, ) 202.69 MB/s   
+Progress: |█████-----|  51.0% Write (Sector 0x3100 of 0x6000, ) 232.04 MB/s   
+Progress: |█████-----|  52.1% Write (Sector 0x3200 of 0x6000, ) 238.92 MB/s   
+Progress: |█████-----|  53.1% Write (Sector 0x3300 of 0x6000, ) 245.42 MB/s   
+Progress: |█████-----|  54.2% Write (Sector 0x3400 of 0x6000, ) 199.79 MB/s   
+Progress: |██████----|  55.2% Write (Sector 0x3500 of 0x6000, ) 239.67 MB/s   
+Progress: |██████----|  56.2% Write (Sector 0x3600 of 0x6000, ) 238.48 MB/s   
+Progress: |██████----|  57.3% Write (Sector 0x3700 of 0x6000, ) 240.86 MB/s   
+Progress: |██████----|  58.3% Write (Sector 0x3800 of 0x6000, ) 176.98 MB/s   
+Progress: |██████----|  59.4% Write (Sector 0x3900 of 0x6000, ) 241.52 MB/s   
+Progress: |██████----|  60.4% Write (Sector 0x3A00 of 0x6000, ) 244.62 MB/s   
+Progress: |██████----|  61.5% Write (Sector 0x3B00 of 0x6000, ) 250.65 MB/s   
+Progress: |██████----|  62.5% Write (Sector 0x3C00 of 0x6000, ) 179.64 MB/s   
+Progress: |██████----|  63.5% Write (Sector 0x3D00 of 0x6000, ) 215.99 MB/s   
+Progress: |██████----|  64.6% Write (Sector 0x3E00 of 0x6000, ) 249.69 MB/s   
+Progress: |███████---|  65.6% Write (Sector 0x3F00 of 0x6000, ) 251.38 MB/s   
+Progress: |███████---|  66.7% Write (Sector 0x4000 of 0x6000, ) 183.94 MB/s   
+Progress: |███████---|  67.7% Write (Sector 0x4100 of 0x6000, ) 237.36 MB/s   
+Progress: |███████---|  68.8% Write (Sector 0x4200 of 0x6000, ) 242.19 MB/s   
+Progress: |███████---|  69.8% Write (Sector 0x4300 of 0x6000, ) 245.34 MB/s   
+Progress: |███████---|  70.8% Write (Sector 0x4400 of 0x6000, ) 207.33 MB/s   
+Progress: |███████---|  71.9% Write (Sector 0x4500 of 0x6000, ) 242.91 MB/s   
+Progress: |███████---|  72.9% Write (Sector 0x4600 of 0x6000, ) 220.51 MB/s   
+Progress: |███████---|  74.0% Write (Sector 0x4700 of 0x6000, ) 242.64 MB/s   
+Progress: |████████--|  75.0% Write (Sector 0x4800 of 0x6000, ) 176.77 MB/s   
+Progress: |████████--|  76.0% Write (Sector 0x4900 of 0x6000, ) 243.06 MB/s   
+Progress: |████████--|  77.1% Write (Sector 0x4A00 of 0x6000, ) 249.87 MB/s   
+Progress: |████████--|  78.1% Write (Sector 0x4B00 of 0x6000, ) 248.15 MB/s   
+Progress: |████████--|  79.2% Write (Sector 0x4C00 of 0x6000, ) 210.29 MB/s   
+Progress: |████████--|  80.2% Write (Sector 0x4D00 of 0x6000, ) 238.37 MB/s   
+Progress: |████████--|  81.2% Write (Sector 0x4E00 of 0x6000, ) 244.85 MB/s   
+Progress: |████████--|  82.3% Write (Sector 0x4F00 of 0x6000, ) 245.90 MB/s   
+Progress: |████████--|  83.3% Write (Sector 0x5000 of 0x6000, ) 190.42 MB/s   
+Progress: |████████--|  84.4% Write (Sector 0x5100 of 0x6000, ) 235.57 MB/s   
+Progress: |█████████-|  85.4% Write (Sector 0x5200 of 0x6000, ) 239.70 MB/s   
+Progress: |█████████-|  86.5% Write (Sector 0x5300 of 0x6000, ) 241.82 MB/s   
+Progress: |█████████-|  87.5% Write (Sector 0x5400 of 0x6000, ) 187.51 MB/s   
+Progress: |█████████-|  88.5% Write (Sector 0x5500 of 0x6000, ) 236.19 MB/s   
+Progress: |█████████-|  89.6% Write (Sector 0x5600 of 0x6000, ) 231.92 MB/s   
+Progress: |█████████-|  90.6% Write (Sector 0x5700 of 0x6000, ) 241.25 MB/s   
+Progress: |█████████-|  91.7% Write (Sector 0x5800 of 0x6000, ) 186.70 MB/s   
+Progress: |█████████-|  92.7% Write (Sector 0x5900 of 0x6000, ) 239.51 MB/s   
+Progress: |█████████-|  93.8% Write (Sector 0x5A00 of 0x6000, ) 245.28 MB/s   
+Progress: |█████████-|  94.8% Write (Sector 0x5B00 of 0x6000, ) 240.20 MB/s   
+Progress: |██████████|  95.8% Write (Sector 0x5C00 of 0x6000, ) 217.55 MB/s   
+Progress: |██████████|  96.9% Write (Sector 0x5D00 of 0x6000, ) 189.59 MB/s   
+Progress: |██████████|  97.9% Write (Sector 0x5E00 of 0x6000, ) 219.34 MB/s   
+Progress: |██████████|  99.0% Write (Sector 0x5F00 of 0x6000, ) 237.52 MB/s   
+Progress: |██████████| 100.0% Write (Sector 0x6000 of 0x6000, ) 242.40 MB/s   
+Wrote /home/user/nx679j-stock/edl-recovery/recon-20260717-183330/vendor_boot_a.bin to sector 207663.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w dtbo_a /home/user/nx679j-stock/edl-recovery/recon-20260717-183330/dtbo_a.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x1800) 0.00 MB/s               
+Progress: |----------|   4.2% Write (Sector 0x100 of 0x1800, ) 139.11 MB/s    
+Progress: |█---------|   8.3% Write (Sector 0x200 of 0x1800, ) 189.91 MB/s    
+Progress: |█---------|  12.5% Write (Sector 0x300 of 0x1800, ) 178.12 MB/s    
+Progress: |██--------|  16.7% Write (Sector 0x400 of 0x1800, ) 207.68 MB/s    
+Progress: |██--------|  20.8% Write (Sector 0x500 of 0x1800, ) 235.26 MB/s    
+Progress: |██--------|  25.0% Write (Sector 0x600 of 0x1800, ) 249.19 MB/s    
+Progress: |███-------|  29.2% Write (Sector 0x700 of 0x1800, ) 244.87 MB/s    
+Progress: |███-------|  33.3% Write (Sector 0x800 of 0x1800, ) 200.94 MB/s    
+Progress: |████------|  37.5% Write (Sector 0x900 of 0x1800, ) 245.41 MB/s    
+Progress: |████------|  41.7% Write (Sector 0xA00 of 0x1800, ) 247.38 MB/s    
+Progress: |█████-----|  45.8% Write (Sector 0xB00 of 0x1800, ) 245.84 MB/s    
+Progress: |█████-----|  50.0% Write (Sector 0xC00 of 0x1800, ) 189.49 MB/s    
+Progress: |█████-----|  54.2% Write (Sector 0xD00 of 0x1800, ) 246.93 MB/s    
+Progress: |██████----|  58.3% Write (Sector 0xE00 of 0x1800, ) 206.97 MB/s    
+Progress: |██████----|  62.5% Write (Sector 0xF00 of 0x1800, ) 195.77 MB/s    
+Progress: |███████---|  66.7% Write (Sector 0x1000 of 0x1800, ) 147.49 MB/s   
+Progress: |███████---|  70.8% Write (Sector 0x1100 of 0x1800, ) 228.54 MB/s   
+Progress: |████████--|  75.0% Write (Sector 0x1200 of 0x1800, ) 165.24 MB/s   
+Progress: |████████--|  79.2% Write (Sector 0x1300 of 0x1800, ) 162.81 MB/s   
+Progress: |████████--|  83.3% Write (Sector 0x1400 of 0x1800, ) 135.46 MB/s   
+Progress: |█████████-|  87.5% Write (Sector 0x1500 of 0x1800, ) 173.38 MB/s   
+Progress: |█████████-|  91.7% Write (Sector 0x1600 of 0x1800, ) 152.30 MB/s   
+Progress: |██████████|  95.8% Write (Sector 0x1700 of 0x1800, ) 133.10 MB/s   
+Progress: |██████████| 100.0% Write (Sector 0x1800 of 0x1800, ) 164.72 MB/s   
+Wrote /home/user/nx679j-stock/edl-recovery/recon-20260717-183330/dtbo_a.bin to sector 133066.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w vbmeta_a /home/user/nx679j-stock/edl-recovery/recon-20260717-183330/vbmeta_a.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x10) 0.00 MB/s                 
+Progress: |██████████| 100.0% Write (Sector 0x10 of 0x10, ) 88.38 MB/s        
+Wrote /home/user/nx679j-stock/edl-recovery/recon-20260717-183330/vbmeta_a.bin to sector 133050.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w boot_b /home/user/nx679j-stock/edl-recovery/recon-20260717-183330/boot_a.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x6000) 0.00 MB/s               
+Progress: |----------|   1.0% Write (Sector 0x100 of 0x6000, ) 172.50 MB/s    
+Progress: |----------|   2.1% Write (Sector 0x200 of 0x6000, ) 223.07 MB/s    
+Progress: |----------|   3.1% Write (Sector 0x300 of 0x6000, ) 153.98 MB/s    
+Progress: |----------|   4.2% Write (Sector 0x400 of 0x6000, ) 158.23 MB/s    
+Progress: |█---------|   5.2% Write (Sector 0x500 of 0x6000, ) 158.65 MB/s    
+Progress: |█---------|   6.2% Write (Sector 0x600 of 0x6000, ) 151.96 MB/s    
+Progress: |█---------|   7.3% Write (Sector 0x700 of 0x6000, ) 190.13 MB/s    
+Progress: |█---------|   8.3% Write (Sector 0x800 of 0x6000, ) 186.80 MB/s    
+Progress: |█---------|   9.4% Write (Sector 0x900 of 0x6000, ) 193.72 MB/s    
+Progress: |█---------|  10.4% Write (Sector 0xA00 of 0x6000, ) 205.12 MB/s    
+Progress: |█---------|  11.5% Write (Sector 0xB00 of 0x6000, ) 231.22 MB/s    
+Progress: |█---------|  12.5% Write (Sector 0xC00 of 0x6000, ) 238.72 MB/s    
+Progress: |█---------|  13.5% Write (Sector 0xD00 of 0x6000, ) 242.53 MB/s    
+Progress: |█---------|  14.6% Write (Sector 0xE00 of 0x6000, ) 244.48 MB/s    
+Progress: |██--------|  15.6% Write (Sector 0xF00 of 0x6000, ) 249.39 MB/s    
+Progress: |██--------|  16.7% Write (Sector 0x1000 of 0x6000, ) 242.61 MB/s   
+Progress: |██--------|  17.7% Write (Sector 0x1100 of 0x6000, ) 241.00 MB/s   
+Progress: |██--------|  18.8% Write (Sector 0x1200 of 0x6000, ) 239.77 MB/s   
+Progress: |██--------|  19.8% Write (Sector 0x1300 of 0x6000, ) 245.63 MB/s   
+Progress: |██--------|  20.8% Write (Sector 0x1400 of 0x6000, ) 248.96 MB/s   
+Progress: |██--------|  21.9% Write (Sector 0x1500 of 0x6000, ) 246.54 MB/s   
+Progress: |██--------|  22.9% Write (Sector 0x1600 of 0x6000, ) 250.53 MB/s   
+Progress: |██--------|  24.0% Write (Sector 0x1700 of 0x6000, ) 249.99 MB/s   
+Progress: |██--------|  25.0% Write (Sector 0x1800 of 0x6000, ) 214.20 MB/s   
+Progress: |███-------|  26.0% Write (Sector 0x1900 of 0x6000, ) 251.02 MB/s   
+Progress: |███-------|  27.1% Write (Sector 0x1A00 of 0x6000, ) 250.00 MB/s   
+Progress: |███-------|  28.1% Write (Sector 0x1B00 of 0x6000, ) 249.29 MB/s   
+Progress: |███-------|  29.2% Write (Sector 0x1C00 of 0x6000, ) 256.38 MB/s   
+Progress: |███-------|  30.2% Write (Sector 0x1D00 of 0x6000, ) 102.03 MB/s   
+Progress: |███-------|  31.2% Write (Sector 0x1E00 of 0x6000, ) 243.97 MB/s   
+Progress: |███-------|  32.3% Write (Sector 0x1F00 of 0x6000, ) 226.51 MB/s   
+Progress: |███-------|  33.3% Write (Sector 0x2000 of 0x6000, ) 249.16 MB/s   
+Progress: |███-------|  34.4% Write (Sector 0x2100 of 0x6000, ) 245.45 MB/s   
+Progress: |████------|  35.4% Write (Sector 0x2200 of 0x6000, ) 253.72 MB/s   
+Progress: |████------|  36.5% Write (Sector 0x2300 of 0x6000, ) 254.51 MB/s   
+Progress: |████------|  37.5% Write (Sector 0x2400 of 0x6000, ) 247.64 MB/s   
+Progress: |████------|  38.5% Write (Sector 0x2500 of 0x6000, ) 242.92 MB/s   
+Progress: |████------|  39.6% Write (Sector 0x2600 of 0x6000, ) 254.43 MB/s   
+Progress: |████------|  40.6% Write (Sector 0x2700 of 0x6000, ) 254.69 MB/s   
+Progress: |████------|  41.7% Write (Sector 0x2800 of 0x6000, ) 208.41 MB/s   
+Progress: |████------|  42.7% Write (Sector 0x2900 of 0x6000, ) 212.96 MB/s   
+Progress: |████------|  43.8% Write (Sector 0x2A00 of 0x6000, ) 225.40 MB/s   
+Progress: |████------|  44.8% Write (Sector 0x2B00 of 0x6000, ) 244.64 MB/s   
+Progress: |█████-----|  45.8% Write (Sector 0x2C00 of 0x6000, ) 242.73 MB/s   
+Progress: |█████-----|  46.9% Write (Sector 0x2D00 of 0x6000, ) 242.42 MB/s   
+Progress: |█████-----|  47.9% Write (Sector 0x2E00 of 0x6000, ) 176.54 MB/s   
+Progress: |█████-----|  49.0% Write (Sector 0x2F00 of 0x6000, ) 247.44 MB/s   
+Progress: |█████-----|  50.0% Write (Sector 0x3000 of 0x6000, ) 241.68 MB/s   
+Progress: |█████-----|  51.0% Write (Sector 0x3100 of 0x6000, ) 241.08 MB/s   
+Progress: |█████-----|  52.1% Write (Sector 0x3200 of 0x6000, ) 251.68 MB/s   
+Progress: |█████-----|  53.1% Write (Sector 0x3300 of 0x6000, ) 245.51 MB/s   
+Progress: |█████-----|  54.2% Write (Sector 0x3400 of 0x6000, ) 241.07 MB/s   
+Progress: |██████----|  55.2% Write (Sector 0x3500 of 0x6000, ) 241.59 MB/s   
+Progress: |██████----|  56.2% Write (Sector 0x3600 of 0x6000, ) 247.85 MB/s   
+Progress: |██████----|  57.3% Write (Sector 0x3700 of 0x6000, ) 245.64 MB/s   
+Progress: |██████----|  58.3% Write (Sector 0x3800 of 0x6000, ) 240.94 MB/s   
+Progress: |██████----|  59.4% Write (Sector 0x3900 of 0x6000, ) 242.67 MB/s   
+Progress: |██████----|  60.4% Write (Sector 0x3A00 of 0x6000, ) 240.78 MB/s   
+Progress: |██████----|  61.5% Write (Sector 0x3B00 of 0x6000, ) 250.39 MB/s   
+Progress: |██████----|  62.5% Write (Sector 0x3C00 of 0x6000, ) 246.46 MB/s   
+Progress: |██████----|  63.5% Write (Sector 0x3D00 of 0x6000, ) 247.39 MB/s   
+Progress: |██████----|  64.6% Write (Sector 0x3E00 of 0x6000, ) 250.12 MB/s   
+Progress: |███████---|  65.6% Write (Sector 0x3F00 of 0x6000, ) 247.96 MB/s   
+Progress: |███████---|  66.7% Write (Sector 0x4000 of 0x6000, ) 222.30 MB/s   
+Progress: |███████---|  67.7% Write (Sector 0x4100 of 0x6000, ) 243.05 MB/s   
+Progress: |███████---|  68.8% Write (Sector 0x4200 of 0x6000, ) 239.31 MB/s   
+Progress: |███████---|  69.8% Write (Sector 0x4300 of 0x6000, ) 247.67 MB/s   
+Progress: |███████---|  70.8% Write (Sector 0x4400 of 0x6000, ) 243.73 MB/s   
+Progress: |███████---|  71.9% Write (Sector 0x4500 of 0x6000, ) 239.25 MB/s   
+Progress: |███████---|  72.9% Write (Sector 0x4600 of 0x6000, ) 241.05 MB/s   
+Progress: |███████---|  74.0% Write (Sector 0x4700 of 0x6000, ) 249.13 MB/s   
+Progress: |████████--|  75.0% Write (Sector 0x4800 of 0x6000, ) 241.32 MB/s   
+Progress: |████████--|  76.0% Write (Sector 0x4900 of 0x6000, ) 239.26 MB/s   
+Progress: |████████--|  77.1% Write (Sector 0x4A00 of 0x6000, ) 243.32 MB/s   
+Progress: |████████--|  78.1% Write (Sector 0x4B00 of 0x6000, ) 250.32 MB/s   
+Progress: |████████--|  79.2% Write (Sector 0x4C00 of 0x6000, ) 241.27 MB/s   
+Progress: |████████--|  80.2% Write (Sector 0x4D00 of 0x6000, ) 245.70 MB/s   
+Progress: |████████--|  81.2% Write (Sector 0x4E00 of 0x6000, ) 242.56 MB/s   
+Progress: |████████--|  82.3% Write (Sector 0x4F00 of 0x6000, ) 250.99 MB/s   
+Progress: |████████--|  83.3% Write (Sector 0x5000 of 0x6000, ) 246.30 MB/s   
+Progress: |████████--|  84.4% Write (Sector 0x5100 of 0x6000, ) 243.73 MB/s   
+Progress: |█████████-|  85.4% Write (Sector 0x5200 of 0x6000, ) 245.57 MB/s   
+Progress: |█████████-|  86.5% Write (Sector 0x5300 of 0x6000, ) 217.68 MB/s   
+Progress: |█████████-|  87.5% Write (Sector 0x5400 of 0x6000, ) 232.28 MB/s   
+Progress: |█████████-|  88.5% Write (Sector 0x5500 of 0x6000, ) 243.54 MB/s   
+Progress: |█████████-|  89.6% Write (Sector 0x5600 of 0x6000, ) 242.74 MB/s   
+Progress: |█████████-|  90.6% Write (Sector 0x5700 of 0x6000, ) 249.62 MB/s   
+Progress: |█████████-|  91.7% Write (Sector 0x5800 of 0x6000, ) 243.42 MB/s   
+Progress: |█████████-|  92.7% Write (Sector 0x5900 of 0x6000, ) 244.44 MB/s   
+Progress: |█████████-|  93.8% Write (Sector 0x5A00 of 0x6000, ) 244.31 MB/s   
+Progress: |█████████-|  94.8% Write (Sector 0x5B00 of 0x6000, ) 241.15 MB/s   
+Progress: |██████████|  95.8% Write (Sector 0x5C00 of 0x6000, ) 244.12 MB/s   
+Progress: |██████████|  96.9% Write (Sector 0x5D00 of 0x6000, ) 244.94 MB/s   
+Progress: |██████████|  97.9% Write (Sector 0x5E00 of 0x6000, ) 241.96 MB/s   
+Progress: |██████████|  99.0% Write (Sector 0x5F00 of 0x6000, ) 242.24 MB/s   
+Progress: |██████████| 100.0% Write (Sector 0x6000 of 0x6000, ) 248.98 MB/s   
+Wrote /home/user/nx679j-stock/edl-recovery/recon-20260717-183330/boot_a.bin to sector 374511.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w vendor_boot_b /home/user/nx679j-stock/edl-recovery/recon-20260717-183330/vendor_boot_a.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x6000) 0.00 MB/s               
+Progress: |----------|   1.0% Write (Sector 0x100 of 0x6000, ) 182.46 MB/s    
+Progress: |----------|   2.1% Write (Sector 0x200 of 0x6000, ) 230.72 MB/s    
+Progress: |----------|   3.1% Write (Sector 0x300 of 0x6000, ) 224.58 MB/s    
+Progress: |----------|   4.2% Write (Sector 0x400 of 0x6000, ) 228.93 MB/s    
+Progress: |█---------|   5.2% Write (Sector 0x500 of 0x6000, ) 250.50 MB/s    
+Progress: |█---------|   6.2% Write (Sector 0x600 of 0x6000, ) 248.37 MB/s    
+Progress: |█---------|   7.3% Write (Sector 0x700 of 0x6000, ) 252.94 MB/s    
+Progress: |█---------|   8.3% Write (Sector 0x800 of 0x6000, ) 251.40 MB/s    
+Progress: |█---------|   9.4% Write (Sector 0x900 of 0x6000, ) 247.41 MB/s    
+Progress: |█---------|  10.4% Write (Sector 0xA00 of 0x6000, ) 246.67 MB/s    
+Progress: |█---------|  11.5% Write (Sector 0xB00 of 0x6000, ) 238.37 MB/s    
+Progress: |█---------|  12.5% Write (Sector 0xC00 of 0x6000, ) 215.10 MB/s    
+Progress: |█---------|  13.5% Write (Sector 0xD00 of 0x6000, ) 187.06 MB/s    
+Progress: |█---------|  14.6% Write (Sector 0xE00 of 0x6000, ) 238.43 MB/s    
+Progress: |██--------|  15.6% Write (Sector 0xF00 of 0x6000, ) 250.32 MB/s    
+Progress: |██--------|  16.7% Write (Sector 0x1000 of 0x6000, ) 241.89 MB/s   
+Progress: |██--------|  17.7% Write (Sector 0x1100 of 0x6000, ) 233.52 MB/s   
+Progress: |██--------|  18.8% Write (Sector 0x1200 of 0x6000, ) 219.76 MB/s   
+Progress: |██--------|  19.8% Write (Sector 0x1300 of 0x6000, ) 207.14 MB/s   
+Progress: |██--------|  20.8% Write (Sector 0x1400 of 0x6000, ) 186.20 MB/s   
+Progress: |██--------|  21.9% Write (Sector 0x1500 of 0x6000, ) 187.79 MB/s   
+Progress: |██--------|  22.9% Write (Sector 0x1600 of 0x6000, ) 174.25 MB/s   
+Progress: |██--------|  24.0% Write (Sector 0x1700 of 0x6000, ) 167.89 MB/s   
+Progress: |██--------|  25.0% Write (Sector 0x1800 of 0x6000, ) 162.02 MB/s   
+Progress: |███-------|  26.0% Write (Sector 0x1900 of 0x6000, ) 158.52 MB/s   
+Progress: |███-------|  27.1% Write (Sector 0x1A00 of 0x6000, ) 149.43 MB/s   
+Progress: |███-------|  28.1% Write (Sector 0x1B00 of 0x6000, ) 154.86 MB/s   
+Progress: |███-------|  29.2% Write (Sector 0x1C00 of 0x6000, ) 146.84 MB/s   
+Progress: |███-------|  30.2% Write (Sector 0x1D00 of 0x6000, ) 150.57 MB/s   
+Progress: |███-------|  31.2% Write (Sector 0x1E00 of 0x6000, ) 147.56 MB/s   
+Progress: |███-------|  32.3% Write (Sector 0x1F00 of 0x6000, ) 143.63 MB/s   
+Progress: |███-------|  33.3% Write (Sector 0x2000 of 0x6000, ) 145.80 MB/s   
+Progress: |███-------|  34.4% Write (Sector 0x2100 of 0x6000, ) 146.24 MB/s   
+Progress: |████------|  35.4% Write (Sector 0x2200 of 0x6000, ) 133.96 MB/s   
+Progress: |████------|  36.5% Write (Sector 0x2300 of 0x6000, ) 158.86 MB/s   
+Progress: |████------|  37.5% Write (Sector 0x2400 of 0x6000, ) 149.36 MB/s   
+Progress: |████------|  38.5% Write (Sector 0x2500 of 0x6000, ) 157.04 MB/s   
+Progress: |████------|  39.6% Write (Sector 0x2600 of 0x6000, ) 154.32 MB/s   
+Progress: |████------|  40.6% Write (Sector 0x2700 of 0x6000, ) 160.00 MB/s   
+Progress: |████------|  41.7% Write (Sector 0x2800 of 0x6000, ) 168.11 MB/s   
+Progress: |████------|  42.7% Write (Sector 0x2900 of 0x6000, ) 166.89 MB/s   
+Progress: |████------|  43.8% Write (Sector 0x2A00 of 0x6000, ) 177.50 MB/s   
+Progress: |████------|  44.8% Write (Sector 0x2B00 of 0x6000, ) 188.95 MB/s   
+Progress: |█████-----|  45.8% Write (Sector 0x2C00 of 0x6000, ) 187.91 MB/s   
+Progress: |█████-----|  46.9% Write (Sector 0x2D00 of 0x6000, ) 202.36 MB/s   
+Progress: |█████-----|  47.9% Write (Sector 0x2E00 of 0x6000, ) 215.91 MB/s   
+Progress: |█████-----|  49.0% Write (Sector 0x2F00 of 0x6000, ) 232.31 MB/s   
+Progress: |█████-----|  50.0% Write (Sector 0x3000 of 0x6000, ) 207.90 MB/s   
+Progress: |█████-----|  51.0% Write (Sector 0x3100 of 0x6000, ) 227.83 MB/s   
+Progress: |█████-----|  52.1% Write (Sector 0x3200 of 0x6000, ) 244.10 MB/s   
+Progress: |█████-----|  53.1% Write (Sector 0x3300 of 0x6000, ) 231.63 MB/s   
+Progress: |█████-----|  54.2% Write (Sector 0x3400 of 0x6000, ) 238.72 MB/s   
+Progress: |██████----|  55.2% Write (Sector 0x3500 of 0x6000, ) 247.95 MB/s   
+Progress: |██████----|  56.2% Write (Sector 0x3600 of 0x6000, ) 247.48 MB/s   
+Progress: |██████----|  57.3% Write (Sector 0x3700 of 0x6000, ) 213.64 MB/s   
+Progress: |██████----|  58.3% Write (Sector 0x3800 of 0x6000, ) 241.97 MB/s   
+Progress: |██████----|  59.4% Write (Sector 0x3900 of 0x6000, ) 242.53 MB/s   
+Progress: |██████----|  60.4% Write (Sector 0x3A00 of 0x6000, ) 249.50 MB/s   
+Progress: |██████----|  61.5% Write (Sector 0x3B00 of 0x6000, ) 243.71 MB/s   
+Progress: |██████----|  62.5% Write (Sector 0x3C00 of 0x6000, ) 242.21 MB/s   
+Progress: |██████----|  63.5% Write (Sector 0x3D00 of 0x6000, ) 242.25 MB/s   
+Progress: |██████----|  64.6% Write (Sector 0x3E00 of 0x6000, ) 251.58 MB/s   
+Progress: |███████---|  65.6% Write (Sector 0x3F00 of 0x6000, ) 244.82 MB/s   
+Progress: |███████---|  66.7% Write (Sector 0x4000 of 0x6000, ) 242.14 MB/s   
+Progress: |███████---|  67.7% Write (Sector 0x4100 of 0x6000, ) 243.35 MB/s   
+Progress: |███████---|  68.8% Write (Sector 0x4200 of 0x6000, ) 189.57 MB/s   
+Progress: |███████---|  69.8% Write (Sector 0x4300 of 0x6000, ) 245.42 MB/s   
+Progress: |███████---|  70.8% Write (Sector 0x4400 of 0x6000, ) 243.74 MB/s   
+Progress: |███████---|  71.9% Write (Sector 0x4500 of 0x6000, ) 254.60 MB/s   
+Progress: |███████---|  72.9% Write (Sector 0x4600 of 0x6000, ) 253.65 MB/s   
+Progress: |███████---|  74.0% Write (Sector 0x4700 of 0x6000, ) 248.82 MB/s   
+Progress: |████████--|  75.0% Write (Sector 0x4800 of 0x6000, ) 243.60 MB/s   
+Progress: |████████--|  76.0% Write (Sector 0x4900 of 0x6000, ) 247.98 MB/s   
+Progress: |████████--|  77.1% Write (Sector 0x4A00 of 0x6000, ) 255.73 MB/s   
+Progress: |████████--|  78.1% Write (Sector 0x4B00 of 0x6000, ) 250.65 MB/s   
+Progress: |████████--|  79.2% Write (Sector 0x4C00 of 0x6000, ) 238.11 MB/s   
+Progress: |████████--|  80.2% Write (Sector 0x4D00 of 0x6000, ) 248.23 MB/s   
+Progress: |████████--|  81.2% Write (Sector 0x4E00 of 0x6000, ) 255.19 MB/s   
+Progress: |████████--|  82.3% Write (Sector 0x4F00 of 0x6000, ) 250.20 MB/s   
+Progress: |████████--|  83.3% Write (Sector 0x5000 of 0x6000, ) 245.55 MB/s   
+Progress: |████████--|  84.4% Write (Sector 0x5100 of 0x6000, ) 244.44 MB/s   
+Progress: |█████████-|  85.4% Write (Sector 0x5200 of 0x6000, ) 253.85 MB/s   
+Progress: |█████████-|  86.5% Write (Sector 0x5300 of 0x6000, ) 252.00 MB/s   
+Progress: |█████████-|  87.5% Write (Sector 0x5400 of 0x6000, ) 245.41 MB/s   
+Progress: |█████████-|  88.5% Write (Sector 0x5500 of 0x6000, ) 244.42 MB/s   
+Progress: |█████████-|  89.6% Write (Sector 0x5600 of 0x6000, ) 252.87 MB/s   
+Progress: |█████████-|  90.6% Write (Sector 0x5700 of 0x6000, ) 250.95 MB/s   
+Progress: |█████████-|  91.7% Write (Sector 0x5800 of 0x6000, ) 247.51 MB/s   
+Progress: |█████████-|  92.7% Write (Sector 0x5900 of 0x6000, ) 245.80 MB/s   
+Progress: |█████████-|  93.8% Write (Sector 0x5A00 of 0x6000, ) 220.07 MB/s   
+Progress: |█████████-|  94.8% Write (Sector 0x5B00 of 0x6000, ) 249.14 MB/s   
+Progress: |██████████|  95.8% Write (Sector 0x5C00 of 0x6000, ) 248.83 MB/s   
+Progress: |██████████|  96.9% Write (Sector 0x5D00 of 0x6000, ) 241.18 MB/s   
+Progress: |██████████|  97.9% Write (Sector 0x5E00 of 0x6000, ) 254.35 MB/s   
+Progress: |██████████|  99.0% Write (Sector 0x5F00 of 0x6000, ) 254.37 MB/s   
+Progress: |██████████| 100.0% Write (Sector 0x6000 of 0x6000, ) 218.93 MB/s   
+Wrote /home/user/nx679j-stock/edl-recovery/recon-20260717-183330/vendor_boot_a.bin to sector 473752.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w dtbo_b /home/user/nx679j-stock/edl-recovery/recon-20260717-183330/dtbo_a.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x1800) 0.00 MB/s               
+Progress: |----------|   4.2% Write (Sector 0x100 of 0x1800, ) 201.88 MB/s    
+Progress: |█---------|   8.3% Write (Sector 0x200 of 0x1800, ) 198.93 MB/s    
+Progress: |█---------|  12.5% Write (Sector 0x300 of 0x1800, ) 243.83 MB/s    
+Progress: |██--------|  16.7% Write (Sector 0x400 of 0x1800, ) 248.82 MB/s    
+Progress: |██--------|  20.8% Write (Sector 0x500 of 0x1800, ) 240.21 MB/s    
+Progress: |██--------|  25.0% Write (Sector 0x600 of 0x1800, ) 245.80 MB/s    
+Progress: |███-------|  29.2% Write (Sector 0x700 of 0x1800, ) 249.20 MB/s    
+Progress: |███-------|  33.3% Write (Sector 0x800 of 0x1800, ) 241.00 MB/s    
+Progress: |████------|  37.5% Write (Sector 0x900 of 0x1800, ) 217.48 MB/s    
+Progress: |████------|  41.7% Write (Sector 0xA00 of 0x1800, ) 244.20 MB/s    
+Progress: |█████-----|  45.8% Write (Sector 0xB00 of 0x1800, ) 230.48 MB/s    
+Progress: |█████-----|  50.0% Write (Sector 0xC00 of 0x1800, ) 242.11 MB/s    
+Progress: |█████-----|  54.2% Write (Sector 0xD00 of 0x1800, ) 242.54 MB/s    
+Progress: |██████----|  58.3% Write (Sector 0xE00 of 0x1800, ) 247.35 MB/s    
+Progress: |██████----|  62.5% Write (Sector 0xF00 of 0x1800, ) 248.73 MB/s    
+Progress: |███████---|  66.7% Write (Sector 0x1000 of 0x1800, ) 242.40 MB/s   
+Progress: |███████---|  70.8% Write (Sector 0x1100 of 0x1800, ) 243.22 MB/s   
+Progress: |████████--|  75.0% Write (Sector 0x1200 of 0x1800, ) 248.88 MB/s   
+Progress: |████████--|  79.2% Write (Sector 0x1300 of 0x1800, ) 246.77 MB/s   
+Progress: |████████--|  83.3% Write (Sector 0x1400 of 0x1800, ) 242.46 MB/s   
+Progress: |█████████-|  87.5% Write (Sector 0x1500 of 0x1800, ) 242.47 MB/s   
+Progress: |█████████-|  91.7% Write (Sector 0x1600 of 0x1800, ) 210.47 MB/s   
+Progress: |██████████|  95.8% Write (Sector 0x1700 of 0x1800, ) 248.60 MB/s   
+Progress: |██████████| 100.0% Write (Sector 0x1800 of 0x1800, ) 226.61 MB/s   
+Wrote /home/user/nx679j-stock/edl-recovery/recon-20260717-183330/dtbo_a.bin to sector 399155.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w vbmeta_b /home/user/nx679j-stock/edl-recovery/recon-20260717-183330/vbmeta_a.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x10) 0.00 MB/s                 
+Progress: |██████████| 100.0% Write (Sector 0x10 of 0x10, ) 72.16 MB/s        
+Wrote /home/user/nx679j-stock/edl-recovery/recon-20260717-183330/vbmeta_a.bin to sector 399139.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl w misc /home/user/nx679j-stock/edl-recovery/recon-20260717-183330/analysis/misc-clear-bcb-2k.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Write (Sector 0x0 of 0x100) 0.00 MB/s                
+Progress: |██████████| 100.0% Write (Sector 0x100 of 0x100, ) 186.07 MB/s     
+Wrote /home/user/nx679j-stock/edl-recovery/recon-20260717-183330/analysis/misc-clear-bcb-2k.bin to sector 8200.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl setactiveslot a --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl getactiveslot --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+Current active slot: a
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl printgpt --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Parsing Lun 0:
+
+GPT Table:
+-------------
+ssd:                 Offset 0x00**************, Length 0x00**************, Flags 0x00**************, UUID a385d365-d43b-0e02-8f55-8b05174c04ae, Type 0x2c86e742, Active False
+persist:             Offset 0x00**************, Length 0x00**************, Flags 0x00**************, UUID 0f1871f8-066a-3c0c-a2b2-458a6b55792e, Type 0x6c95e238, Active False
+misc:                Offset 0x00**************, Length 0x00**************, Flags 0x00**************, UUID c12ae3c6-ff34-c969-8eac-be63e06115c9, Type 0x82acc91f, Active False
+parameter:           Offset 0x00**************, Length 0x00**************, Flags 0x00**************, UUID ea6b4eae-4ed4-f94c-ca5c-1902a96c184c, Type 0x82acc91f, Active False
+keystore:            Offset 0x00**************, Length 0x00**************, Flags 0x00**************, UUID 1a3b1364-9769-a9c2-d939-8ce82f69f618, Type 0xde7d4029, Active False
+frp:                 Offset 0x00**************, Length 0x00**************, Flags 0x00**************, UUID d3491e46-7d98-78da-0be0-a68366d78673, Type 0x91b72d4d, Active False
+super:               Offset 0x00**************, Length 0x00**************, Flags 0x00**************, UUID d1685d8d-99d2-76ce-44a1-d51a3aa545b9, Type 0x89a12de1, Active False
+vbmeta_system_a:     Offset 0x00**************, Length 0x00**************, Flags 0x10**************, UUID 7c9574ad-b670-ab71-b246-c87172d7a512, Type 0xfe3ab853, Active True
+vbmeta_system_b:     Offset 0x00**************, Length 0x00**************, Flags 0x10**************, UUID 4268223e-4a03-4622-a346-e4960b5bb345, Type 0x1344859d, Active False
+metadata:            Offset 0x00**************, Length 0x00**************, Flags 0x00**************, UUID 943f044a-ab84-d35c-de89-17203aaa3a3a, Type 0x988a98c9, Active False
+rawdump:             Offset 0x00**************, Length 0x00**************, Flags 0x00**************, UUID 14809677-4734-b1f7-0c75-bcb9bdd2ad40, Type 0x66c9b323, Active False
+userdata:            Offset 0x00**************, Length 0x00000037bd4d3000, Flags 0x00**************, UUID 7f82aeaf-85ba-9ec9-3305-9d1d557ec034, Type 0x1b81e7e6, Active False
+
+Total disk size:0x0000003a10800000, sectors:0x0000000003a10800
+
+
+Parsing Lun 1:
+
+GPT Table:
+-------------
+xbl_a:               Offset 0x00**************, Length 0x00**************, Flags 0x10c4000000000000, UUID 23efbf16-fb0e-55fb-aa97-dadff934d219, Type 0xdea0ba2c, Active True
+xbl_config_a:        Offset 0x00**************, Length 0x000000000004b000, Flags 0x00c4000000000000, UUID 249e4164-5975-38d3-5e56-7d15f95ab22f, Type 0x5a325ae4, Active True
+multiimgqti_a:       Offset 0x00000000003d1000, Length 0x00**************, Flags 0x10c4000000000000, UUID 5bc9e000-03ac-7875-1500-b4e43edd410d, Type 0x846c6f05, Active True
+multiimgoem_a:       Offset 0x00000000003d9000, Length 0x00**************, Flags 0x10c4000000000000, UUID e525f566-a2f4-8864-e464-10094b58e7dc, Type 0xe126a436, Active True
+apdp:                Offset 0x00000000003e1000, Length 0x00**************, Flags 0x00**************, UUID 20b370d0-13bd-e56f-c09c-aec1cba7483a, Type 0xe6e98da2, Active False
+
+Total disk size:0x00**************, sectors:0x00**************
+
+
+Parsing Lun 2:
+
+GPT Table:
+-------------
+xbl_b:               Offset 0x00**************, Length 0x00**************, Flags 0x10c0000000000000, UUID a461468d-10a7-aa7d-d10b-822bdbeccb3e, Type 0xdea0ba2c, Active False
+xbl_config_b:        Offset 0x00**************, Length 0x000000000004b000, Flags 0x00c0000000000000, UUID 1463995e-c792-41ee-8309-e333a0baac46, Type 0x5a325ae4, Active False
+multiimgqti_b:       Offset 0x00000000003d1000, Length 0x00**************, Flags 0x10c0000000000000, UUID 8f0cb8cb-4ed5-9b2d-d37f-aec6ca57831c, Type 0x846c6f05, Active False
+multiimgoem_b:       Offset 0x00000000003d9000, Length 0x00**************, Flags 0x10c0000000000000, UUID 31a24952-0ad1-58a4-0cec-28ef709dd11f, Type 0xe126a436, Active False
+apdpb:               Offset 0x00000000003e1000, Length 0x00**************, Flags 0x00**************, UUID ff5cb0a8-8fea-9f7c-03fe-6f51d053782c, Type 0xe6e98da2, Active False
+
+Total disk size:0x00**************, sectors:0x00**************
+
+
+Parsing Lun 3:
+
+GPT Table:
+-------------
+ALIGN_TO_128K_1:     Offset 0x00**************, Length 0x000000000001a000, Flags 0x10**************, UUID 7620207a-411b-6f1f-e1f6-94b39311cdb0, Type 0xfde1604b, Active False
+cdt:                 Offset 0x00**************, Length 0x00**************, Flags 0x10**************, UUID 04269504-143f-d6fa-4030-872b2a09275a, Type 0xa19f205f, Active False
+ddr:                 Offset 0x00**************, Length 0x00**************, Flags 0x10**************, UUID f94cb2de-a23f-36a7-c6ae-398ae87ab786, Type 0x20a0c19c, Active False
+
+Total disk size:0x00**************, sectors:0x00**************
+
+
+Parsing Lun 4:
+
+GPT Table:
+-------------
+uefi_a:              Offset 0x00**************, Length 0x00**************, Flags 0x107f000000000000, UUID cb568f45-1f4c-158f-8317-58798414b776, Type 0x400ffdcd, Active True
+aop_a:               Offset 0x00**************, Length 0x00**************, Flags 0x107f000000000000, UUID f6edfaff-fa77-4243-558a-c3a802c15576, Type 0xd69e90a5, Active True
+aop_config_a:        Offset 0x00**************, Length 0x00**************, Flags 0x107f000000000000, UUID 5e03d310-24f6-948b-ce2b-539c815132b9, Type 0x3d12f234, Active True
+tz_a:                Offset 0x00**************, Length 0x00**************, Flags 0x107f000000000000, UUID c87f74b9-0be0-0a39-cc77-b95c418993e6, Type 0xa053aa7f, Active True
+hyp_a:               Offset 0x0000000000a06000, Length 0x00**************, Flags 0x007f000000000000, UUID efb9dd5f-8388-7a8e-0696-1d630980b846, Type 0xe1a6a689, Active True
+modem_a:             Offset 0x00**************, Length 0x0000000012c00000, Flags 0x107f000000000000, UUID a457c7bb-7507-cf3f-8bb0-d34b1c9e226a, Type EFI_BASIC_DATA, Active True
+bluetooth_a:         Offset 0x0000000013e06000, Length 0x00**************, Flags 0x107f000000000000, UUID e5c8523f-3e3d-aab7-880b-cbbd12b07a3a, Type 0x6cb747f1, Active True
+mdtpsecapp_a:        Offset 0x00**************, Length 0x00**************, Flags 0x107f000000000000, UUID 1c7d9881-6d8c-b239-08a9-4f99290a8eb0, Type 0xea02d680, Active True
+mdtp_a:              Offset 0x00**************, Length 0x00**************, Flags 0x107f000000000000, UUID ef463601-1002-ce42-fe37-5249cca6950c, Type 0x3878408a, Active True
+abl_a:               Offset 0x00**************, Length 0x00**************, Flags 0x107f000000000000, UUID 4ff4054c-45d3-ac9e-9158-ab2a0226a201, Type 0xbd6928a1, Active True
+dsp_a:               Offset 0x00**************, Length 0x00**************, Flags 0x107f000000000000, UUID 5e52d67e-6210-bf59-8010-b416beebd3cd, Type 0x7efe5010, Active True
+keymaster_a:         Offset 0x000000001a706000, Length 0x00**************, Flags 0x107f000000000000, UUID 186d8683-2196-625c-5d57-524c006dbcc7, Type 0xa11d2a7c, Active True
+boot_a:              Offset 0x000000001a786000, Length 0x00**************, Flags 0x007f000000000000, UUID f689620e-1cf2-e957-46d3-12312ba605ac, Type 0x20117f86, Active True
+devcfg_a:            Offset 0x00**************, Length 0x00**************, Flags 0x007f000000000000, UUID ad6f04e4-0090-3a53-d576-fee86c55eb8f, Type 0xf65d4b16, Active True
+qupfw_a:             Offset 0x00000000207a6000, Length 0x00**************, Flags 0x007f000000000000, UUID b9c3359a-b095-883d-25d9-879e9ee969c0, Type 0x21d1219f, Active True
+vbmeta_a:            Offset 0x00000000207ba000, Length 0x00**************, Flags 0x107f000000000000, UUID ef598a96-a359-bf7a-6193-16bf46ef6b3c, Type 0x4b7a15d6, Active True
+dtbo_a:              Offset 0x00000000207ca000, Length 0x00**************, Flags 0x007f000000000000, UUID 3af49779-406e-9c7f-e86c-6479f427cc74, Type 0x24d0d418, Active True
+uefisecapp_a:        Offset 0x0000000021fca000, Length 0x00**************, Flags 0x007f000000000000, UUID 3fa4906c-4af3-4095-2d62-9a0da09e484c, Type 0xbe8a7e08, Active True
+imagefv_a:           Offset 0x00000000221ca000, Length 0x00**************, Flags 0x007f000000000001, UUID 674edd51-d1fc-9b1f-9c20-c36e554ddf51, Type 0x17911177, Active True
+shrm_a:              Offset 0x00000000223ca000, Length 0x00**************, Flags 0x107f000000000000, UUID 6a66001e-16ab-bffe-1dff-23b788ff1b55, Type 0xcb74ca22, Active True
+vm-bootsys_a:        Offset 0x00000000223ea000, Length 0x00**************, Flags 0x007f000000000000, UUID 428f0122-d315-27c4-4866-2c881c047442, Type 0x7b034c58, Active True
+cpucp_a:             Offset 0x0000000032a0f000, Length 0x00**************, Flags 0x107f000000000000, UUID 7acc85a0-86e8-7bfd-ef16-1cbd2263c578, Type 0x1e8615bd, Active True
+featenabler_a:       Offset 0x0000000032b0f000, Length 0x00**************, Flags 0x007f000000000000, UUID d371e940-82b0-ca9b-3fc1-8f339b08ba9b, Type 0x741813d2, Active True
+vendor_boot_a:       Offset 0x0000000032b2f000, Length 0x00**************, Flags 0x007f000000000000, UUID 19bf45ce-7fb0-8294-5ddf-95f8bbbcc3fe, Type 0x6d286a7f, Active True
+qmcs:                Offset 0x0000000038b2f000, Length 0x0000000001e00000, Flags 0x00**************, UUID e1f5ffd6-864a-f133-8b77-99516d8211da, Type 0x358740b1, Active False
+qweslicstore_a:      Offset 0x000000003a92f000, Length 0x00**************, Flags 0x107f000000000000, UUID 06c83c58-9d71-b1f1-20ca-18197c0d33d3, Type 0x7bab3c93, Active True
+recovery_a:          Offset 0x000000003a96f000, Length 0x00**************, Flags 0x007f000000000000, UUID afef37d0-4124-8adb-eda8-5341980c2670, Type 0xd504d6db, Active True
+xbl_ramdump_a:       Offset 0x0000000040d6f000, Length 0x00**************, Flags 0x007f000000000000, UUID 54af39b8-a9c7-7d62-cfc4-9b15f07718c4, Type 0xc3e58b09, Active True
+uefi_b:              Offset 0x0000000040f6f000, Length 0x00**************, Flags 0x107b000000000000, UUID 9cf45dfb-e2db-a010-bcd9-44207ef6f984, Type 0x9f234b5b, Active False
+aop_b:               Offset 0x000000004146f000, Length 0x00**************, Flags 0x007b000000000000, UUID 05e3d679-c660-15b0-9339-dc0743e6caec, Type 0x77036cd4, Active False
+aop_config_b:        Offset 0x00000000414ef000, Length 0x00**************, Flags 0x007b000000000000, UUID 94aa5773-1f47-fd08-bb76-b3fab31f6c53, Type 0x77036cd4, Active False
+tz_b:                Offset 0x000000004156f000, Length 0x00**************, Flags 0x007b000000000000, UUID 777c1743-85ae-1acb-a8ad-f8867d81d244, Type 0x77036cd4, Active False
+hyp_b:               Offset 0x000000004196f000, Length 0x00**************, Flags 0x007b000000000000, UUID 8f6355ba-cff5-d436-8230-7667de67ad7b, Type 0x77036cd4, Active False
+modem_b:             Offset 0x000000004216f000, Length 0x0000000012c00000, Flags 0x107b000000000000, UUID 570a7fe9-f0aa-020c-d8dc-26587b3e4001, Type 0x77036cd4, Active False
+bluetooth_b:         Offset 0x0000000054d6f000, Length 0x00**************, Flags 0x107b000000000000, UUID 1d0b7159-bbe2-8aad-8868-dfc128f559e4, Type 0x77036cd4, Active False
+mdtpsecapp_b:        Offset 0x000000005516f000, Length 0x00**************, Flags 0x107b000000000000, UUID 1697437a-bc40-8dc7-5ceb-6565167350bc, Type 0x77036cd4, Active False
+mdtp_b:              Offset 0x000000005556f000, Length 0x00**************, Flags 0x107b000000000000, UUID 6eb365a2-792b-74ad-052a-72d096d9167a, Type 0x77036cd4, Active False
+abl_b:               Offset 0x000000005756f000, Length 0x00**************, Flags 0x107b000000000000, UUID 91721b26-6a5f-4085-e1d8-bf1ac95798e3, Type 0x77036cd4, Active False
+dsp_b:               Offset 0x000000005766f000, Length 0x00**************, Flags 0x107b000000000000, UUID e3aabb74-29ec-cc3c-3aa9-38a7c8987790, Type 0x77036cd4, Active False
+keymaster_b:         Offset 0x000000005b66f000, Length 0x00**************, Flags 0x107b000000000000, UUID aa183297-d552-655c-89f1-881c66afd584, Type 0x77036cd4, Active False
+boot_b:              Offset 0x000000005b6ef000, Length 0x00**************, Flags 0x007b000000000000, UUID 205e275d-ad2a-55fb-c47a-4c5a1755345e, Type 0x77036cd4, Active False
+devcfg_b:            Offset 0x00000000616ef000, Length 0x00**************, Flags 0x007b000000000000, UUID d9bfe18a-3845-20bb-b49a-9d22c186d2ed, Type 0x77036cd4, Active False
+qupfw_b:             Offset 0x000000006170f000, Length 0x00**************, Flags 0x007b000000000000, UUID 3dfaed75-9787-2c00-160e-06323a406907, Type 0x77036cd4, Active False
+vbmeta_b:            Offset 0x00**************, Length 0x00**************, Flags 0x107b000000000000, UUID 2ac4553a-92b8-95d5-54da-0613828aaff2, Type 0x77036cd4, Active False
+dtbo_b:              Offset 0x00**************, Length 0x00**************, Flags 0x007b000000000000, UUID 26328208-c729-58e6-1498-ca050637397c, Type 0x77036cd4, Active False
+uefisecapp_b:        Offset 0x0000000062f33000, Length 0x00**************, Flags 0x007b000000000000, UUID b60de640-fa17-314c-95bf-4eb797486827, Type 0x77036cd4, Active False
+imagefv_b:           Offset 0x00**************, Length 0x00**************, Flags 0x007b000000000001, UUID 8e3895d1-58c8-51a7-1cb0-ffa2ce7d9b58, Type 0x77036cd4, Active False
+shrm_b:              Offset 0x00**************, Length 0x00**************, Flags 0x107b000000000000, UUID 975f29db-0bb2-4c7a-ef4c-e444853466a9, Type 0x77036cd4, Active False
+vm-bootsys_b:        Offset 0x00**************, Length 0x00**************, Flags 0x007b000000000000, UUID 905641a7-88b1-962b-1b84-08245cd7655f, Type 0x77036cd4, Active False
+cpucp_b:             Offset 0x00**************, Length 0x00**************, Flags 0x107b000000000000, UUID b1c974b6-4e74-b40f-f929-e557b4f6cec5, Type 0x77036cd4, Active False
+featenabler_b:       Offset 0x0000000073a78000, Length 0x00**************, Flags 0x007b000000000000, UUID a2b206c7-81ec-1190-6f0f-e77b035294ff, Type 0x77036cd4, Active False
+vendor_boot_b:       Offset 0x0000000073a98000, Length 0x00**************, Flags 0x007b000000000000, UUID da2f36d6-c3c4-ea4b-4554-6c83cb13d5be, Type 0x77036cd4, Active False
+qweslicstore_b:      Offset 0x0000000079a98000, Length 0x00**************, Flags 0x107b000000000000, UUID 64db23fb-407e-4003-eac5-fe098a9c2a43, Type 0x77036cd4, Active False
+recovery_b:          Offset 0x0000000079ad8000, Length 0x00**************, Flags 0x007b000000000000, UUID 987d02d5-551f-22e2-965c-76592908199b, Type 0x77036cd4, Active False
+xbl_ramdump_b:       Offset 0x000000007fed8000, Length 0x00**************, Flags 0x007b000000000000, UUID 836effe3-3ef7-7aa5-4a64-e98ac5be3d83, Type 0x382f197, Active False
+devinfo:             Offset 0x00000000800d8000, Length 0x00**************, Flags 0x10**************, UUID cff23a01-482c-4944-b896-8a32c66a481a, Type 0x65addcf4, Active False
+dip:                 Offset 0x00000000800d9000, Length 0x00**************, Flags 0x10**************, UUID 5b2ceb0f-fb87-2c26-f75e-b8ec06a2dd82, Type 0x4114b077, Active False
+splash:              Offset 0x00000000801d9000, Length 0x00000000020a4000, Flags 0x00**************, UUID 1e12703c-e8b5-d1f9-f5ab-c0271a9784d9, Type 0xad99f201, Active False
+limits:              Offset 0x000000008227d000, Length 0x00**************, Flags 0x10**************, UUID 0632c568-91a5-daba-5f8b-a02075b589a4, Type 0x10a0c19c, Active False
+limits-cdsp:         Offset 0x000000008227e000, Length 0x00**************, Flags 0x10**************, UUID a99839f1-d86e-48e5-d4a9-486dad006d44, Type 0x545d3707, Active False
+toolsfv:             Offset 0x000000008227f000, Length 0x00**************, Flags 0x10**************, UUID d0c8c059-311a-3558-5f32-1650377b467b, Type 0x97745aba, Active False
+logfs:               Offset 0x000000008237f000, Length 0x00**************, Flags 0x00**************, UUID c3647aa7-d0ee-7cc9-67ce-58dda7139134, Type 0xbc0330eb, Active False
+logdump:             Offset 0x0000000082b7f000, Length 0x00**************, Flags 0x00**************, UUID 86d3cd53-a539-7387-2d64-2e2f2b2f269b, Type 0x5af80809, Active False
+storsec:             Offset 0x00000000a2b7f000, Length 0x00**************, Flags 0x10**************, UUID 0c26f3ca-4cc2-04df-8956-72c055792e7b, Type 0x2db45fe, Active False
+uefivarstore:        Offset 0x00000000a2b9f000, Length 0x00**************, Flags 0x10**************, UUID d64a334f-4f2c-2914-3d23-031e1a93fe3d, Type 0x165bd6bc, Active False
+secdata:             Offset 0x00000000a2c1f000, Length 0x00**************, Flags 0x10**************, UUID 3df6c615-e988-51e2-9383-24bfc27bcb49, Type 0x76cfc7ef, Active False
+vm-data:             Offset 0x00000000a2c26000, Length 0x00000000020a4000, Flags 0x00**************, UUID 237bae8b-03d3-661c-45ae-cfcbb503e3a7, Type 0x21adb864, Active False
+mdcompress:          Offset 0x00000000a4cca000, Length 0x00**************, Flags 0x10**************, UUID 1087f018-6c63-01fd-4c1e-6fca4a36498a, Type 0xc6a5a9f5, Active False
+connsec:             Offset 0x00000000a60ca000, Length 0x00**************, Flags 0x10**************, UUID 1ecd10e7-ec2a-7268-e03d-bbe994db7669, Type 0x6a716f7c, Active False
+tzsc:                Offset 0x00000000a60ea000, Length 0x00**************, Flags 0x10**************, UUID f840c98a-2911-d16b-5f9b-b7ecf027a9b5, Type 0x478dea49, Active False
+spunvm:              Offset 0x00000000a610a000, Length 0x00**************, Flags 0x00**************, UUID c6b96a93-a4e2-f789-a0e5-8d2a6956954d, Type 0xe42e2b4c, Active False
+rtice:               Offset 0x00000000a810a000, Length 0x00**************, Flags 0x10**************, UUID fe0e04ab-5bc2-e43b-6351-1c1ebad757f4, Type 0xe396d1ea, Active False
+xbl_sc_test_mode:    Offset 0x00000000a818a000, Length 0x00**************, Flags 0x00**************, UUID 61dedf8d-150d-b0d8-97a5-b38f69b3f0f3, Type 0x91fdd2b9, Active False
+xbl_sc_logs:         Offset 0x00000000a819a000, Length 0x00**************, Flags 0x00**************, UUID 689b4ebd-d4c4-96be-8fa2-52fe197a1c31, Type 0xf7eecb66, Active False
+
+Total disk size:0x00**************, sectors:0x00**************
+
+
+Parsing Lun 5:
+
+GPT Table:
+-------------
+ALIGN_TO_128K_2:     Offset 0x00**************, Length 0x000000000001a000, Flags 0x10**************, UUID 0ed44dcb-e8a3-7883-295d-44651134f29b, Type 0x6891a3b7, Active False
+modemst1:            Offset 0x00**************, Length 0x00**************, Flags 0x00**************, UUID 31c60430-3deb-f8c0-bcd7-53be51dc954e, Type 0xebbeadaf, Active False
+modemst2:            Offset 0x00**************, Length 0x00**************, Flags 0x00**************, UUID bfe6795f-9ac2-4467-3d8e-985ded9a8e7c, Type 0xa288b1f, Active False
+fsg:                 Offset 0x00**************, Length 0x00**************, Flags 0x10**************, UUID 1d87f609-b48a-2304-04fe-8f090f1c9f5e, Type 0x638ff8e2, Active False
+fsc:                 Offset 0x00**************, Length 0x00**************, Flags 0x00**************, UUID 6970d118-f6e9-1b9e-e94e-0911a4a22de6, Type 0x57b90a16, Active False
+
+Total disk size:0x00**************, sectors:0x00**************
+
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl r xbl_a /tmp/xbl_a_post.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Read (Sector 0x0 of 0x380) 0.00 MB/s                 
+Progress: |███-------|  28.6% Read (Sector 0x100 of 0x380, ) 202.43 MB/s      
+Progress: |██████----|  57.1% Read (Sector 0x200 of 0x380, ) 221.96 MB/s      
+Progress: |█████████-|  85.7% Read (Sector 0x300 of 0x380, ) 255.67 MB/s      
+Progress: |██████████| 100.0% Read (Sector 0x380 of 0x380, ) 235.34 MB/s      
+Dumped sector 6 with sector count 896 as /tmp/xbl_a_post.bin.
+RC=0
+CMD: /home/user/venvs/edk2/bin/edl r abl_a /tmp/abl_a_post.bin --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --memory=ufs
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+
+Done |----------|   0.0% Read (Sector 0x0 of 0x100) 0.00 MB/s                 
+Progress: |██████████| 100.0% Read (Sector 0x100 of 0x100, ) 211.58 MB/s      
+Dumped sector 91654 with sector count 256 as /tmp/abl_a_post.bin.
+RC=0
+685f0a75fbff851bb6ef55ba158b7f86ea14a44c527c5388605ece94f47d637a  /home/user/nx679j-stock/edl-recovery/restore-stock-a/xbl_a_from_b.bin
+685f0a75fbff851bb6ef55ba158b7f86ea14a44c527c5388605ece94f47d637a  /tmp/xbl_a_post.bin
+443d1956e836aea3fe30ac13113dae787d88223c1e24f875c6831f69d86acea3  /home/user/nx679j-stock/edl-recovery/restore-stock-a/abl_a_from_b.bin
+443d1956e836aea3fe30ac13113dae787d88223c1e24f875c6831f69d86acea3  /tmp/abl_a_post.bin
+XBL_A_OK
+ABL_A_OK
+CMD: /home/user/venvs/edk2/bin/edl reset --loader=/home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf --resetmode=reset
+Capstone library is missing (optional).
+Keystone library is missing (optional).
+Qualcomm Sahara / Firehose Client V3.62 (c) B.Kerler 2018-2025.
+main - Using loader /home/user/nx679j-stock/edl-recovery/prog_firehose_ddr.melf ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+DeviceClass - USBError(19, 'No such device (it may have been disconnected)')
+RC=0
+=== 2026-07-17T22:32:39+02:00 baseline restore done; monitor host for adb/fastboot ===
+LOG=/home/user/nx679j-stock/edl-recovery/restore-stock-a/edl-baseline-restore-20260717-203130.log

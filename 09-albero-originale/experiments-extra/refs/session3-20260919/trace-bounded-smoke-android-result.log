@@ -1,0 +1,3 @@
+TIMEOUT_EXIT=124
+TracerPid:	0
+PASS: bounded tracer, full decoder options, detached live fixture

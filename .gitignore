@@ -1,0 +1,12 @@
+# artefatti locali / trasporto
+*.zip
+*.tar.gz
+
+# scratch
+scratch/
+*.tmp
+*.log.tmp
+
+# sistemi
+.DS_Store
+Thumbs.db

@@ -1,0 +1,17 @@
+=== qemu-probe-v7: does the probe really run and really reboot? ===
+[PASS] v7: kernel+ramdisk extracted from the image match the manifest: kernel f0aa949c95d14213 ramdisk 4f94f0ceb4817413 (1014155 B at offset 49115136)
+[$] v7 qemu cmd: qemu-system-aarch64 -machine virt -cpu cortex-a57 -accel tcg -smp 2 -m 2048 -nodefaults -nic none -display none -monitor none -serial stdio -no-reboot -kernel /home/user/nx679j-stock/experiments/20260916-122926-native-baseline/probe-v7-sonda/qemu/v7-kernel -initrd /home/user/nx679j-stock/experiments/20260916-122926-native-baseline/probe-v7-sonda/qemu/v7-ramdisk -append console=ttyAMA0 earlycon loglevel=8 panic=10 rdinit=/init
+[PASS] v7: kernel reached userspace and ran /init as PID 1: ['[    0.615094][    T1] nx679j-sonda: init reached userspace as pid 1 attempt=1 uptime_ms=605', '[    0.615494][    T1] nx679j-sonda: marker channel /dev/kmsg attempt=1 uptime_ms=606']
+[PASS] v7: the marker channel worked (kmsg created/resolved by /init): ['[    0.615094][    T1] nx679j-sonda: init reached userspace as pid 1 attempt=1 uptime_ms=605']
+[PASS] v7: /init called reboot(2) LINUX_REBOOT_CMD_RESTART: ['[    0.617437][    T1] reboot: Restarting system']
+[PASS] v7: the kernel performed the restart (QEMU -no-reboot exited): qemu exit code 0
+[PASS] v7: no panic and PID 1 never died before the restart: clean
+[PASS] v7b: kernel+ramdisk extracted from the image match the manifest: kernel f0aa949c95d14213 ramdisk ef965ae0bf72b997 (2352880 B at offset 49115136)
+[$] v7b qemu cmd: qemu-system-aarch64 -machine virt -cpu cortex-a57 -accel tcg -smp 2 -m 2048 -nodefaults -nic none -display none -monitor none -serial stdio -no-reboot -kernel /home/user/nx679j-stock/experiments/20260916-122926-native-baseline/probe-v7-sonda/qemu/v7b-kernel -initrd /home/user/nx679j-stock/experiments/20260916-122926-native-baseline/probe-v7-sonda/qemu/v7b-ramdisk -append console=ttyAMA0 earlycon loglevel=8 panic=10 rdinit=/init
+[PASS] v7b: kernel reached userspace and ran /init as PID 1: ['[    0.676806][    T1] nx679j-sonda: init reached userspace as pid 1 attempt=1 uptime_ms=603', '[    0.677204][    T1] nx679j-sonda: marker channel /dev/kmsg attempt=1 uptime_ms=605']
+[PASS] v7b: the marker channel worked (kmsg created/resolved by /init): ['[    0.676806][    T1] nx679j-sonda: init reached userspace as pid 1 attempt=1 uptime_ms=603']
+[PASS] v7b: /init called reboot(2) LINUX_REBOOT_CMD_RESTART: ['[    0.679002][    T1] reboot: Restarting system']
+[PASS] v7b: the kernel performed the restart (QEMU -no-reboot exited): qemu exit code 0
+[PASS] v7b: no panic and PID 1 never died before the restart: clean
+
+=== 12/12 checks passed -> /home/user/nx679j-stock/experiments/20260916-122926-native-baseline/probe-v7-sonda/qemu-probe-v7.json

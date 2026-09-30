@@ -1,0 +1,51 @@
+=== verify-probe-v7bl: independent re-check of the RESTART2 images ===
+[PASS] container is the measured Magisk image: 100663296 bytes 0cd94d5627501f3c
+[i] source tree v6: 49 files
+[i] source tree android: 8 files
+
+--- v7: /home/user/nx679j-stock/experiments/20260916-122926-native-baseline/probe-v7-sonda-bootloader/sonda-bootloader-v7.img
+[PASS] v7: sha256 matches the manifest: b099bf136895ad6ce3ace744a86d2f6beded63560cd295e2713f1dec1fe0fb51
+[PASS] v7: length is the full partition: 100663296 bytes
+[PASS] v7: name in the manifest matches the file: sonda-bootloader-v7.img
+[PASS] v7: header v4 consistent (kernel/ramdisk/header/signature size): kernel_size=49108324 ramdisk_size=1014206 header_size=1584 header_version=4 signature_size=4096
+[PASS] v7: kernel area byte-identical to the container: 49111040 bytes sha f7ea707eb916bf1f
+[PASS] v7: bytes after the ramdisk identical at the same absolute offsets: 50533954 bytes tail
+[PASS] v7: every differing byte is in the size field or the ramdisk: 1008331 differing bytes, outside: 0
+[PASS] v7: differs from boot_b-probe-v7.img only in the size field and the ramdisk region: 953908 differing bytes, outside: 0 (ramdisk region 49115136..50129342)
+[PASS] v7: stored ramdisk is an lz4 legacy frame: 02214c18
+[PASS] v7: decompressed ramdisk sha256 matches the manifest: afbbf255318a05a6ee789347fc6e0903d4f982bab4b42736fd80e71bb4e4aaac
+[PASS] v7: extracted tree == the v6 tree except /init: only in source: [], only in image: [], content differs: ['init'], entry types differ: []
+[PASS] v7: 59 entries, all names and their mode/nlink/uid/gid identical to the v6 archive: source has 59 entries, image 59; metadata differs on: []
+[PASS] v7: /init in the image is the probe binary: 532352 bytes 7b2e0859173909e1
+[PASS] v7: /init contains the literal "bootloader\0": at offset 349961
+[PASS] v7: /init keeps the source entry mode: source -rwxr-xr-x -> image -rwxr-xr-x (expected -rwxr-xr-x)
+
+--- v7b: /home/user/nx679j-stock/experiments/20260916-122926-native-baseline/probe-v7-sonda-bootloader/sonda-bootloader-v7b.img
+[PASS] v7b: sha256 matches the manifest: 610cfea53d8e06b0b8accee4775b71e34d7077acba7aaa4e2a8d812c482050eb
+[PASS] v7b: length is the full partition: 100663296 bytes
+[PASS] v7b: name in the manifest matches the file: sonda-bootloader-v7b.img
+[PASS] v7b: header v4 consistent (kernel/ramdisk/header/signature size): kernel_size=49108324 ramdisk_size=2352934 header_size=1584 header_version=4 signature_size=4096
+[PASS] v7b: kernel area byte-identical to the container: 49111040 bytes sha f7ea707eb916bf1f
+[PASS] v7b: bytes after the ramdisk identical at the same absolute offsets: 49195226 bytes tail
+[PASS] v7b: every differing byte is in the size field or the ramdisk: 1449800 differing bytes, outside: 0
+[PASS] v7b: differs from boot_b-probe-v7b.img only in the size field and the ramdisk region: 1415450 differing bytes, outside: 0 (ramdisk region 49115136..51468070)
+[PASS] v7b: stored ramdisk is an lz4 legacy frame: 02214c18
+[PASS] v7b: decompressed ramdisk sha256 matches the manifest: 98204ed099c7f1567383f73f4682ad0398bed3df1a804a24f971fe9898406bc1
+[PASS] v7b: extracted tree == the android tree except /init: only in source: [], only in image: [], content differs: ['init'], entry types differ: []
+[PASS] v7b: 29 entries, all names and their mode/nlink/uid/gid identical to the android archive: source has 29 entries, image 29; metadata differs on: []
+[PASS] v7b: /init in the image is the probe binary: 532352 bytes 7b2e0859173909e1
+[PASS] v7b: /init contains the literal "bootloader\0": at offset 349961
+[PASS] v7b: /init keeps the source entry mode: source -rwxr-x--- -> image -rwxr-x--- (expected -rwxr-x---)
+
+--- probe binary (extracted from the image)
+[PASS] probe: static aarch64 ELF EXEC, no interpreter, no DT_NEEDED: ELF 64-bit LSB executable, ARM aarch64, version 1 (SYSV), statically linked, BuildID[sha1]=1e833558d7aa204f6495937e01d464f33e90d485, for GNU/Linux 3.7.0, stripped; INTERP=0 NEEDED=0
+[PASS] probe: the source contains no exit/_exit/abort call: none
+[PASS] probe: the source asks for LINUX_REBOOT_CMD_RESTART2 with reason "bootloader": uses RESTART2 (not RESTART) and the literal "bootloader"
+[PASS] probe: the .text of the binary extracted from the image equals the .text of a fresh build of the source: 348776 bytes sha a19de3c219f3aa04
+[PASS] probe: main() cannot return (no ret, no branch to exit/abort, ends in an unconditional branch): 141 instructions, ret: none, exit/abort targets: none, last: 4006e8:	17ffffa1 	b	40056c <main+0xb4>
+[PASS] probe: main() contains exactly one reboot syscall, and it is not the plain RESTART command (0x1234567): cmd = mov w3,#0xc3d4 + movk w3,#0xa1b2,lsl #16 = 0xa1b2c3d4 (LINUX_REBOOT_CMD_RESTART2); 0x1234567 nowhere in main()
+[PASS] probe: disassembly shows SYS_reboot with RESTART2 and an adrp/add argument (textual scan, method a): 1 call site(s): mov w3,#0xc3d4 + movk w3,#0xa1b2,lsl #16 (cmd=0xa1b2c3d4 = RESTART2) with mov x0,#0x8e (__NR_reboot) immediately before bl syscall; 4th argument built by adrp/add at 0x455709
+[PASS] probe: an address built in main() points at the literal "bootloader\0" in .rodata (objdump -s dump, method b): 1 adrp/add target(s) whose bytes are "bootloader\0": 0x455709 (dump line '455700 736c6565 70696e67 00626f6f 746c6f61  sleeping.bootloa')
+[PASS] probe: that address maps, through the PT_LOAD headers of the image's own /init, onto the bytes of the string (method c): 0x455709 -> PT_LOAD file offset 349961 = b'bootloader\x00'
+
+=== 40/40 checks passed

@@ -1,0 +1,1072 @@
+=== SECTION.root ===
+drwxr-xr-x   18 root     root           400 Jan  4 14:54 .
+drwxr-xr-x   18 root     root           400 Jan  4 14:54 ..
+drwxr-xr-x    2 root     root          1200 Jun 29  2026 bin
+drwxr-xr-x    3 root     root           240 Jan  4 15:38 dev
+drwxr-xr-x   26 root     root          1260 Jan  4 14:17 etc
+drwxr-xr-x   11 root     root           520 Jun 29  2026 lib
+lrwxrwxrwx    1 root     root             3 Jun 29  2026 lib64 -> lib
+drwxr-xr-x    2 root     root            40 Jun 29  2026 mnt
+drwxr-xr-x    2 root     root            40 Jun 29  2026 overlay
+dr-xr-xr-x  307 root     root             0 Jan  4 14:16 proc
+drwxr-xr-x    4 root     root            80 Jan  4 14:57 rfs
+drwxr-xr-x    2 root     root            60 Jun 29  2026 rom
+drwxr-x---    2 root     root            40 Jun 29  2026 root
+drwxr-xr-x    2 root     root            40 Jan  4 14:16 run
+drwxr-xr-x    2 root     root          1140 Jun 29  2026 sbin
+dr-xr-xr-x   13 root     root             0 Jan  1 00:00 sys
+drwxr-xr-x   28 root     root          2620 Jan  4 16:01 tmp
+drwxr-xr-x    7 root     root           160 Jun 29  2026 usr
+lrwxrwxrwx    1 root     root             3 Jun 29  2026 var -> tmp
+drwxr-xr-x    4 root     root           100 Jun 29  2026 www
+=== SECTION.cmdline ===
+stack_depot_disable=on kasan.stacktrace=off kvm-arm.mode=protected cgroup_disable=pressure cgroup.memory=nokmem console=ttyMSM0,115200n8 loglevel=6 kpti=0 log_buf_len=256K kernel.panic_on_rcu_stall=1 swiotlb=noforce loop.max_part=7 cgroup.memory=nokmem,nosocket pcie_ports=compat service_locator.enable=1 msm_rtb.filter=0x237 allow_mismatched_32bit_el0 cpufreq.default_governor=performance pelt=8 kasan=off rcupdate.rcu_expedited=1 rcu_nocbs=0-7 irqaffinity=0-3 ftrace_dump_on_oops pstore.compress=none fsa4480_i2c.async_probe=1 can.stats_timer=0 video=vfb:640x400,bpp=32,memsize=3072000 qcom-dload-mode.download_mode=1 bootconfig  msm_drm.dsi_display0=qcom,mdss_dsi_r6130_1080_2400_amoled_cmd: rootwait ro init=/init
+=== SECTION.uname ===
+Linux (none) 5.10.66-android12-9-00005-gf6e6376090be-ab8060604 #1 SMP PREEMPT Fri Jan 7 14:51:36 UTC 2022 aarch64 GNU/Linux
+Linux version 5.10.66-android12-9-00005-gf6e6376090be-ab8060604 (build-user@build-host) (Android (7284624, based on r416183b) clang version 12.0.5 (https://android.googlesource.com/toolchain/llvm-project c935d99d7cf2016289302412d708641d52d2f7ee), LLD 12.0.5 (/buildbot/src/android/llvm-toolchain/out/llvm-project/lld c935d99d7cf2016289302412d708641d52d2f7ee)) #1 SMP PREEMPT Fri Jan 7 14:51:36 UTC 2022
+=== SECTION.bootid ===
+ca60b6b2-9f6d-4a73-bed2-fe3b1b15fe7f
+ 17:40:31 up  3:24,  load average: 0.10, 0.07, 0.01
+=== SECTION.net ===
+BusyBox v1.37.0 (2026-06-29 12:59:20 UTC) multi-call binary.
+
+Usage: ip [OPTIONS] address|route|link|neigh|rule [ARGS]
+
+OPTIONS := -f[amily] inet|inet6|link | -o[neline]
+
+ip addr add|del IFADDR dev IFACE | show|flush [dev IFACE] [to PREFIX]
+ip route list|flush|add|del|change|append|replace|test ROUTE
+ip link set IFACE [up|down] [arp on|off] [multicast on|off]
+	[promisc on|off] [mtu NUM] [name NAME] [qlen NUM] [address MAC]
+	[master IFACE | nomaster] [netns PID]
+ip neigh show|flush [to PREFIX] [dev DEV] [nud STATE]
+ip rule [list] | add|del SELECTOR ACTION
+dummy0    Link encap:Ethernet  HWaddr xx:xx:xx:xx:xx:xx  
+          BROADCAST NOARP  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+
+erspan0   Link encap:Ethernet  HWaddr xx:xx:xx:xx:xx:xx  
+          BROADCAST MULTICAST  MTU:1450  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+
+gre0      Link encap:UNSPEC  HWaddr 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  
+          NOARP  MTU:1476  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+
+gretap0   Link encap:Ethernet  HWaddr xx:xx:xx:xx:xx:xx  
+          BROADCAST MULTICAST  MTU:1462  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+
+ifb0      Link encap:Ethernet  HWaddr xx:xx:xx:xx:xx:xx  
+          BROADCAST NOARP  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:32 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+
+ifb1      Link encap:Ethernet  HWaddr xx:xx:xx:xx:xx:xx  
+          BROADCAST NOARP  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:32 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+
+ip6_vti0  Link encap:UNSPEC  HWaddr 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  
+          NOARP  MTU:1364  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+
+ip6gre0   Link encap:UNSPEC  HWaddr 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  
+          NOARP  MTU:1448  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+
+ip6tnl0   Link encap:UNSPEC  HWaddr 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  
+          NOARP  MTU:1452  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+
+ip_vti0   Link encap:UNSPEC  HWaddr 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  
+          NOARP  MTU:1480  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+
+lo        Link encap:Local Loopback  
+          LOOPBACK  MTU:65536  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+
+rmnet_data0 Link encap:UNSPEC  HWaddr 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  
+          inet addr:10.176.226.211  Mask:255.255.255.248
+          inet6 addr: fe80::6ccc:85ff:fec3:6b3/64 Scope:Link
+          UP RUNNING  MTU:1500  Metric:1
+          RX packets:3 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:19 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:252 (252.0 B)  TX bytes:1156 (1.1 KiB)
+
+rmnet_ipa0 Link encap:UNSPEC  HWaddr 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  
+          inet6 addr: fe80::200:ff:fe00:0/64 Scope:Link
+          UP RUNNING  MTU:9216  Metric:1
+          RX packets:6 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:19 errors:0 dropped:16 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:276 (276.0 B)  TX bytes:1232 (1.2 KiB)
+
+sit0      Link encap:IPv6-in-IPv4  
+          NOARP  MTU:1480  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+
+tunl0     Link encap:UNSPEC  HWaddr 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  
+          NOARP  MTU:1480  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+
+usb0      Link encap:Ethernet  HWaddr xx:xx:xx:xx:xx:xx  
+          inet addr:10.0.0.1  Bcast:10.0.0.255  Mask:255.255.255.0
+          inet6 addr: fe80::54d0:31ff:febb:ace8/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:71754 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:7989 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:85254171 (81.3 MiB)  TX bytes:68408780 (65.2 MiB)
+
+1: lo: <LOOPBACK> mtu 65536 qdisc noop state DOWN qlen 1000
+    link/loopback xx:xx:xx:xx:xx:xx brd xx:xx:xx:xx:xx:xx
+2: dummy0: <BROADCAST,NOARP> mtu 1500 qdisc noop state DOWN qlen 1000
+    link/ether xx:xx:xx:xx:xx:xx brd xx:xx:xx:xx:xx:xx
+3: ifb0: <BROADCAST,NOARP> mtu 1500 qdisc noop state DOWN qlen 32
+    link/ether xx:xx:xx:xx:xx:xx brd xx:xx:xx:xx:xx:xx
+4: ifb1: <BROADCAST,NOARP> mtu 1500 qdisc noop state DOWN qlen 32
+    link/ether xx:xx:xx:xx:xx:xx brd xx:xx:xx:xx:xx:xx
+5: tunl0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN qlen 1000
+    link/ipip 0.0.0.0 brd 0.0.0.0
+6: gre0@NONE: <NOARP> mtu 1476 qdisc noop state DOWN qlen 1000
+    link/gre 0.0.0.0 brd 0.0.0.0
+7: gretap0@NONE: <BROADCAST,MULTICAST> mtu 1462 qdisc noop state DOWN qlen 1000
+    link/ether xx:xx:xx:xx:xx:xx brd xx:xx:xx:xx:xx:xx
+8: erspan0@NONE: <BROADCAST,MULTICAST> mtu 1450 qdisc noop state DOWN qlen 1000
+    link/ether xx:xx:xx:xx:xx:xx brd xx:xx:xx:xx:xx:xx
+9: ip_vti0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN qlen 1000
+    link/ipip 0.0.0.0 brd 0.0.0.0
+10: ip6_vti0@NONE: <NOARP> mtu 1364 qdisc noop state DOWN qlen 1000
+    link/tunnel6 xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:00:00:00:00 brd xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:00:00:00:00
+11: sit0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN qlen 1000
+    link/sit 0.0.0.0 brd 0.0.0.0
+12: ip6tnl0@NONE: <NOARP> mtu 1452 qdisc noop state DOWN qlen 1000
+    link/tunnel6 xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:00:00:00:00 brd xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:00:00:00:00
+13: ip6gre0@NONE: <NOARP> mtu 1448 qdisc noop state DOWN qlen 1000
+    link/[823] xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:00:00:00:00 brd xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:00:00:00:00
+14: usb0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP qlen 1000
+    link/ether xx:xx:xx:xx:xx:xx brd xx:xx:xx:xx:xx:xx
+    inet 10.0.0.1/24 brd 10.0.0.255 scope global usb0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::54d0:31ff:febb:ace8/64 scope link 
+       valid_lft forever preferred_lft forever
+15: rmnet_ipa0: <UP,LOWER_UP> mtu 9216 qdisc pfifo_fast state UNKNOWN qlen 1000
+    link/[519] 
+    inet6 fe80::200:ff:fe00:0/64 scope link 
+       valid_lft forever preferred_lft forever
+16: rmnet_data0@rmnet_ipa0: <UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UNKNOWN qlen 1000
+    link/[519] 
+    inet 10.176.226.211/29 scope global rmnet_data0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::6ccc:85ff:fec3:6b3/64 scope link 
+       valid_lft forever preferred_lft forever
+default via 10.176.226.212 dev rmnet_data0 
+10.0.0.0/24 dev usb0 scope link  src 10.0.0.1 
+10.176.226.208/29 dev rmnet_data0 scope link  src 10.176.226.211 
+=== SECTION.ieee80211 ===
+drwxr-xr-x    2 root     root             0 Jan  4 17:40 .
+drwxr-xr-x   84 root     root             0 Jan  1 00:00 ..
+=== SECTION.pci ===
+=== SECTION.platform-matches ===
+17110040.qcom,pcie1_msi
+1c00000.qcom,pcie
+3e00000.qcom,ipa:ipa_smmu_wlan
+b0000000.qcom,cnss-qca6490
+soc:mhi_qrtr_cnss
+=== SECTION.modules ===
+qrtr_smd 16384 0 - Live 0xffffffe3aae1d000
+msm_sharedmem 16384 1 - Live 0xffffffe3aae18000
+ipanetm 16384 0 - Live 0xffffffe3aae25000 (O)
+ipa_clientsm 249856 0 - Live 0xffffffe3aae3e000 (O)
+rndisipam 69632 1 ipa_clientsm, Live 0xffffffe3aaff2000 (O)
+ipam 4079616 3 ipanetm,ipa_clientsm,rndisipam, Live 0xffffffe3ab26f000 (O)
+rmnet_aps 20480 0 - Live 0xffffffe3aae12000 (O)
+rmnet_perf_tether 20480 0 - Live 0xffffffe3aae0c000 (O)
+rmnet_perf 16384 0 - Live 0xffffffe3aae07000 (O)
+rmnet_offload 32768 0 - Live 0xffffffe3aad7a000 (O)
+rmnet_shs 196608 1 rmnet_perf, Live 0xffffffe3aadd6000 (O)
+rmnet_core 331776 6 rmnet_aps,rmnet_perf_tether,rmnet_perf,rmnet_offload,rmnet_shs, Live 0xffffffe3aad84000 (O)
+qcom_spss 28672 0 - Live 0xffffffe3aad72000
+qcom_glink_spss 20480 1 qcom_spss, Live 0xffffffe3aad62000
+gsim 274432 1 ipam, Live 0xffffffe3ab22b000 (O)
+rmnet_ctl 20480 1 rmnet_core, Live 0xffffffe3aad6c000 (O)
+rmnet_wlan 49152 0 - Live 0xffffffe3aad55000 (O)
+rmnet_sch 16384 0 - Live 0xffffffe3aae39000 (O)
+qcom_spmi_pmic 20480 0 - Live 0xffffffe3aad4f000
+mac80211 1302528 0 - Live 0xffffffe3aac10000
+qcom_ipcc 24576 7 - Live 0xffffffe3aac09000
+glink_pkt 36864 0 - Live 0xffffffe3aabff000
+pmu_scmi 16384 0 - Live 0xffffffe3aabfa000
+arm_smmu 208896 11 - Live 0xffffffe3aabc6000
+qti_fixed_regulator 16384 0 - Live 0xffffffe3aabc1000
+nvmem_qcom_spmi_sdam 16384 1 - Live 0xffffffe3aabbc000
+ufs_qcom 90112 1 - Live 0xffffffe3aaba5000
+clk_rpmh 45056 16 - Live 0xffffffe3aab99000
+regmap_spmi 16384 1 qcom_spmi_pmic, Live 0xffffffe3aab94000
+cqhci 53248 0 - Live 0xffffffe3aab86000
+qcom_rimps 20480 1 - Live 0xffffffe3aab80000
+msm_qmp 32768 1 - Live 0xffffffe3aab77000
+pmu_vendor 16384 1 - Live 0xffffffe3aab72000
+ufshcd_crypto_qti 20480 1 ufs_qcom, Live 0xffffffe3aab6c000
+crypto_qti_common 36864 3 ufs_qcom,cqhci,ufshcd_crypto_qti, Live 0xffffffe3aab62000
+crypto_qti_hwkm 20480 1 crypto_qti_common, Live 0xffffffe3aab5c000
+msm_drm 2637824 3 - Live 0xffffffe3aa8d7000 (O)
+panel_event_notifier 16384 1 msm_drm, Live 0xffffffe3aa8d2000
+gh_irq_lend 20480 1 msm_drm, Live 0xffffffe3aa8cc000
+gh_mem_notifier 16384 1 msm_drm, Live 0xffffffe3aa8c7000
+altmode_glink 24576 1 msm_drm, Live 0xffffffe3aa8c0000
+usb_switch_dp 16384 1 msm_drm, Live 0xffffffe3aa8bb000
+msm_ext_display 16384 1 msm_drm,[permanent], Live 0xffffffe3aa8b6000
+fsa4480_i2c 16384 1 msm_drm, Live 0xffffffe3aa8b1000
+spmi_pmic_arb 53248 1 msm_drm, Live 0xffffffe3aa8a3000
+msm_mmrm 53248 1 msm_drm, Live 0xffffffe3aa895000 (O)
+pinctrl_waipio 106496 7 - Live 0xffffffe3aa87a000
+hwkm 24576 1 crypto_qti_hwkm, Live 0xffffffe3aa873000
+qnoc_diwali 167936 0 - Live 0xffffffe3aa849000
+rtc_pm8xxx 16384 1 - Live 0xffffffe3aa844000
+phy_qcom_ufs_qmp_v4_diwali 24576 0 - Live 0xffffffe3aa83d000
+pinctrl_cape 106496 0 - Live 0xffffffe3aa822000
+stub_regulator 16384 0 - Live 0xffffffe3aa81d000
+cfg80211 1335296 1 mac80211, Live 0xffffffe3aa6d6000
+smp2p 28672 0 - Live 0xffffffe3aa6ce000
+dispcc_diwali 61440 0 - Live 0xffffffe3aa6be000
+mem_hooks 16384 0 - Live 0xffffffe3aa6b9000
+qnoc_waipio 180224 0 - Live 0xffffffe3aa68c000
+mhi_cntrl_qcom 49152 0 - Live 0xffffffe3aa67f000
+qcom_esoc 98304 1 mhi_cntrl_qcom, Live 0xffffffe3aa666000
+kryo_arm64_edac 16384 0 - Live 0xffffffe3aa661000
+memory_dump_v2 24576 0 - Live 0xffffffe3aa65a000
+bwmon 65536 0 - Live 0xffffffe3aa649000
+gh_virt_wdt 16384 0 - Live 0xffffffe3aa644000
+c1dcvs_scmi 24576 0 - Live 0xffffffe3aa63d000
+socinfo 32768 0 - Live 0xffffffe3aa634000
+mem_buf 45056 0 - Live 0xffffffe3aa628000
+qti_regmap_debugfs 28672 2 qcom_spmi_pmic,fsa4480_i2c, Live 0xffffffe3aa620000
+gcc_diwali 81920 0 - Live 0xffffffe3aa60b000
+qcom_gic_intr_routing 28672 0 [permanent], Live 0xffffffe3aa603000
+qcom_wdt_core 32768 1 gh_virt_wdt, Live 0xffffffe3aa5fa000
+pinctrl_diwali 86016 0 - Live 0xffffffe3aa5e4000
+dispcc_waipio 65536 29 - Live 0xffffffe3aa5d3000
+rpmh_regulator 32768 64 - Live 0xffffffe3aa5ca000
+gcc_waipio 110592 83 - Live 0xffffffe3aa5ae000
+reboot_mode 16384 0 - Live 0xffffffe3aa5a9000
+tmecom_intf 28672 1 hwkm, Live 0xffffffe3aa5a1000
+msm_geni_serial 81920 0 - Live 0xffffffe3aa58c000
+iommu_logger 16384 1 arm_smmu, Live 0xffffffe3aa587000
+qcom_cpu_vendor_hooks 20480 0 - Live 0xffffffe3aa581000
+qcom_q6v5_pas 45056 0 - Live 0xffffffe3aa575000
+qcom_q6v5 20480 1 qcom_q6v5_pas, Live 0xffffffe3aa56f000
+qcom_pil_info 20480 1 qcom_q6v5_pas, Live 0xffffffe3aa569000
+qcom_dcvs 73728 1 bwmon, Live 0xffffffe3aa556000
+dcvs_fp 16384 1 qcom_dcvs, Live 0xffffffe3aa551000
+llcc_qcom 32768 1 msm_drm, Live 0xffffffe3aa548000
+qcom_pmu_lib 40960 1 pmu_scmi, Live 0xffffffe3aa53d000
+qcom_llcc_pmu 24576 1 qcom_pmu_lib, Live 0xffffffe3aa536000
+icc_rpmh 24576 2 qnoc_diwali,qnoc_waipio, Live 0xffffffe3aa52f000
+icc_bcm_voter 16384 1 icc_rpmh, Live 0xffffffe3aa52a000
+qcom_rpmh 57344 5 clk_rpmh,msm_drm,rpmh_regulator,dcvs_fp,icc_bcm_voter,[permanent], Live 0xffffffe3aa51b000
+cmd_db 16384 5 clk_rpmh,rpmh_regulator,dcvs_fp,icc_rpmh,qcom_rpmh,[permanent], Live 0xffffffe3aa516000
+qnoc_qos 16384 2 qnoc_diwali,qnoc_waipio, Live 0xffffffe3aa511000
+msm_geni_se 57344 1 msm_geni_serial, Live 0xffffffe3aa502000
+pinctrl_msm 57344 23 msm_drm,pinctrl_waipio,pinctrl_cape,pinctrl_diwali, Live 0xffffffe3aa4f3000
+qcom_iommu_util 77824 2 arm_smmu,msm_drm, Live 0xffffffe3aa4df000
+icc_debug 16384 1 icc_rpmh, Live 0xffffffe3aa4da000
+gh_ctrl 20480 0 - Live 0xffffffe3aa4d4000
+phy_qcom_ufs_qmp_v4_waipio 24576 1 - Live 0xffffffe3aa4cd000
+c1dcvs_vendor 16384 1 - Live 0xffffffe3aa4c8000
+usb_f_gsi 90112 0 - Live 0xffffffe3aa4b1000
+dwc3_msm 135168 4 msm_drm,usb_f_gsi, Live 0xffffffe3aa48f000
+eud 32768 0 - Live 0xffffffe3aa486000
+phy_msm_ssusb_qmp 32768 3 - Live 0xffffffe3aa47d000
+phy_msm_snps_hs 28672 2 - Live 0xffffffe3aa475000
+phy_generic 20480 0 - Live 0xffffffe3aa46f000
+ssusb_redriver_nb7vpq904m 40960 1 dwc3_msm, Live 0xffffffe3aa464000
+ucsi_glink 28672 3 fsa4480_i2c,dwc3_msm,ssusb_redriver_nb7vpq904m, Live 0xffffffe3aa45c000
+pmic_glink 24576 2 altmode_glink,ucsi_glink, Live 0xffffffe3aa455000
+pdr_interface 24576 1 pmic_glink, Live 0xffffffe3aa44e000
+ipa_fmwk 126976 6 ipa_clientsm,rndisipam,ipam,rmnet_core,rmnet_ctl,usb_f_gsi, Live 0xffffffe3aa42e000
+phy_qcom_ufs_qmp_v4_cape 24576 0 - Live 0xffffffe3aa427000
+qcom_pdc 28672 0 - Live 0xffffffe3aa41f000
+qcom_reboot_reason 16384 0 - Live 0xffffffe3aa41a000
+qcom_aoss 32768 2 msm_qmp,qcom_q6v5_pas, Live 0xffffffe3aa411000
+qcom_dload_mode 24576 0 - Live 0xffffffe3aa40a000
+mdt_loader 16384 3 ipam,qcom_spss,qcom_q6v5_pas, Live 0xffffffe3aa405000
+qcom_sysmon 32768 4 qcom_spss,qcom_esoc,qcom_q6v5_pas,qcom_q6v5, Live 0xffffffe3aa3fc000
+qcom_dma_heaps 65536 1 mem_buf,[permanent], Live 0xffffffe3aa3eb000
+mem_buf_dev 106496 2 mem_buf,qcom_dma_heaps, Live 0xffffffe3aa3d0000
+secure_buffer 40960 4 msm_sharedmem,arm_smmu,qcom_dma_heaps,mem_buf_dev, Live 0xffffffe3aa3c5000
+qcom_scm 118784 16 ipam,qcom_spss,arm_smmu,ufs_qcom,crypto_qti_hwkm,msm_drm,memory_dump_v2,qcom_wdt_core,qcom_q6v5_pas,pinctrl_msm,eud,phy_msm_snps_hs,qcom_pdc,qcom_dload_mode,mdt_loader,secure_buffer, Live 0xffffffe3aa3a7000
+msm_dma_iommu_mapping 28672 2 msm_drm,qcom_dma_heaps, Live 0xffffffe3aa39f000
+mhi 139264 2 ipam,mhi_cntrl_qcom, Live 0xffffffe3aa37c000
+pci_msm_drv 245760 2 mhi_cntrl_qcom,mhi, Live 0xffffffe3aa33f000
+rproc_qcom_common 45056 8 ipam,qcom_spss,qcom_q6v5_pas,qcom_q6v5,pmic_glink,pdr_interface,qcom_sysmon,pci_msm_drv, Live 0xffffffe3aa333000
+qcom_glink_smem 16384 1 rproc_qcom_common, Live 0xffffffe3aa32e000
+qcom_glink 53248 5 qrtr_smd,qcom_spss,qcom_glink_spss,rproc_qcom_common,qcom_glink_smem, Live 0xffffffe3aa320000
+qcom_smd 32768 1 rproc_qcom_common, Live 0xffffffe3aa317000
+smp2p_sleepstate 16384 0 [permanent], Live 0xffffffe3aa312000
+phy_qcom_ufs 28672 4 ufs_qcom,phy_qcom_ufs_qmp_v4_diwali,phy_qcom_ufs_qmp_v4_waipio,phy_qcom_ufs_qmp_v4_cape, Live 0xffffffe3aa30a000
+qmi_helpers 28672 4 ipam,rmnet_core,pdr_interface,qcom_sysmon, Live 0xffffffe3aa302000
+qrtr 53248 47 qrtr_smd, Live 0xffffffe3aa2f4000
+ns 40960 1 qrtr, Live 0xffffffe3aa2e9000
+qcom_ipc_logging 40960 26 ipanetm,ipa_clientsm,rndisipam,ipam,gsim,rmnet_ctl,glink_pkt,ufs_qcom,msm_qmp,altmode_glink,smp2p,mhi_cntrl_qcom,qcom_esoc,msm_geni_serial,qcom_rpmh,msm_geni_se,usb_f_gsi,dwc3_msm,ucsi_glink,qcom_pdc,qcom_aoss,mhi,pci_msm_drv,qcom_glink,qrtr,ns,[permanent], Live 0xffffffe3aa2de000
+minidump 1130496 4 memory_dump_v2,qcom_wdt_core,qcom_dload_mode,qcom_ipc_logging, Live 0xffffffe3aa1c9000
+smem 24576 10 ipam,qcom_glink_spss,msm_qmp,smp2p,socinfo,qcom_q6v5,rproc_qcom_common,qcom_glink_smem,qcom_smd,minidump, Live 0xffffffe3aa1c2000
+qcom_hwspinlock 16384 1 - Live 0xffffffe3aa1bd000
+sched_walt 405504 0 [permanent], Live 0xffffffe3aa159000
+qcom_cpufreq_hw 32768 1 sched_walt, Live 0xffffffe3aa150000
+gh_rm_drv 61440 4 msm_drm,gh_irq_lend,gh_mem_notifier,mem_buf_dev, Live 0xffffffe3aa140000
+gh_arm_drv 16384 1 gh_rm_drv, Live 0xffffffe3aa13b000
+gh_msgq 24576 3 msm_drm,mem_buf,gh_rm_drv, Live 0xffffffe3aa134000
+gh_dbl 24576 1 gh_rm_drv, Live 0xffffffe3aa12d000
+clk_dummy 16384 1 gcc_waipio, Live 0xffffffe3aa128000
+clk_qcom 225280 8 ufs_qcom,msm_mmrm,dispcc_diwali,gcc_diwali,dispcc_waipio,gcc_waipio,dwc3_msm,clk_dummy, Live 0xffffffe3aa0f0000
+gdsc_regulator 24576 7 clk_qcom, Live 0xffffffe3aa0e9000
+proxy_consumer 16384 3 qti_fixed_regulator,rpmh_regulator,gdsc_regulator, Live 0xffffffe3aa0e4000
+debug_regulator 40960 4 qti_fixed_regulator,stub_regulator,rpmh_regulator,gdsc_regulator, Live 0xffffffe3aa0d9000
+=== SECTION.module_count ===
+149
+=== SECTION.dmesg_wifi ===
+[ 9489.141345][T24304] (virq:irq_count)- 11:4983020 6:614868 2:204411 1:110100 35:25487 30:17585 301:10944 28:774 358:422 359:399 
+[ 9489.141353][T24304] (ipi:irq_count)- 0:110100 1:204411 2:0 3:0 4:0 5:614868 6:0 
+[ 9498.613346][T24304] (virq:irq_count)- 11:4987974 6:615470 2:204604 1:110138 35:25503 30:17597 301:10948 28:774 358:422 359:399 
+[ 9498.613354][T24304] (ipi:irq_count)- 0:110138 1:204605 2:0 3:0 4:0 5:615470 6:0 
+[ 9508.085342][T17627] (virq:irq_count)- 11:4992934 6:616073 2:204803 1:110179 35:25523 30:17612 301:10952 28:774 358:422 359:399 
+[ 9508.085350][T17627] (ipi:irq_count)- 0:110179 1:204803 2:0 3:0 4:0 5:616073 6:0 
+[ 9545.973328][ T5246] (virq:irq_count)- 11:5012763 6:618480 2:205583 1:110335 35:25599 30:17669 301:10958 28:774 358:422 359:399 
+[ 9545.973335][ T5246] (ipi:irq_count)- 0:110335 1:205583 2:0 3:0 4:0 5:618480 6:0 
+[ 9555.445339][T17627] (virq:irq_count)- 11:5017718 6:619082 2:205779 1:110377 35:25615 30:17681 301:10964 28:774 358:422 359:399 
+[ 9555.445347][T17627] (ipi:irq_count)- 0:110377 1:205779 2:0 3:0 4:0 5:619082 6:0 
+[ 9706.997341][T17627] (virq:irq_count)- 11:5097023 6:628716 2:208911 1:111032 35:25915 30:17903 301:11001 28:776 358:422 359:401 
+[ 9706.997350][T17627] (ipi:irq_count)- 0:111032 1:208911 2:0 3:0 4:0 5:628716 6:0 
+[ 9754.357343][T24304] (virq:irq_count)- 11:5121791 6:631727 2:209889 1:111231 35:26007 30:17972 301:11013 28:779 358:422 359:404 
+[ 9763.829347][T24304] (virq:irq_count)- 11:5126744 6:632328 2:210084 1:111269 35:26027 30:17987 301:11013 28:779 358:422 359:404 
+[ 9773.301346][ T5246] (virq:irq_count)- 11:5131690 6:632930 2:210281 1:111302 35:26043 30:17999 301:11014 28:779 358:422 359:404 
+[ 9782.773342][T17627] (virq:irq_count)- 11:5136640 6:633531 2:210476 1:111345 35:26063 30:18014 301:11014 28:779 358:422 359:404 
+[ 9792.245346][T17627] (virq:irq_count)- 11:5141595 6:634133 2:210672 1:111391 35:26081 30:18028 301:11019 28:779 358:422 359:404 
+[ 9858.549344][T24304] (virq:irq_count)- 11:5176251 6:638348 2:212039 1:111681 35:26213 30:18125 301:11033 28:779 358:422 359:404 
+[ 9868.021347][T17627] (virq:irq_count)- 11:5181198 6:638950 2:212235 1:111720 35:26229 30:18137 301:11037 28:779 358:422 359:404 
+[10152.181351][T24304] (virq:irq_count)- 11:5329718 6:657002 2:218107 1:112949 35:26791 30:18554 301:11101 28:779 358:422 359:404 
+[10531.081101][ T5919] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[10938.357357][T17627] (cpu:irq_count)- 0:293771 1:928 2:686 3:813 4:3131103 5:4771 6:7765 7:3419914 
+[11011.329822][ T6153] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[11013.382129][ T6154] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[11014.133358][T17627] (virq:irq_count)- 11:5780238 6:711763 2:235921 1:116715 35:28510 30:19825 301:11297 28:782 358:422 359:407 
+[11014.133363][T17627] (cpu:irq_count)- 0:295612 1:928 2:686 3:813 4:3152490 5:4771 6:7789 7:3443271 
+[11014.133366][T17627] (ipi:irq_count)- 0:116715 1:235921 2:0 3:0 4:0 5:711763 6:0 
+[11015.434453][ T6155] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[11017.486793][ T6156] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[11019.539156][ T6157] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[11031.853263][ T6163] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[11033.077353][T24304] (virq:irq_count)- 11:5790138 6:712966 2:236310 1:116788 35:28546 30:19852 301:11300 28:782 358:422 359:407 
+[11033.077358][T24304] (cpu:irq_count)- 0:296063 1:928 2:686 3:813 4:3157761 5:4771 6:7795 7:3449174 
+[11033.077361][T24304] (ipi:irq_count)- 0:116788 1:236310 2:0 3:0 4:0 5:712966 6:0 
+[11033.905618][ T6164] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[11035.957923][ T6165] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[11038.010268][ T6166] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[11101.632910][ T6197] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[11103.685252][ T6198] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+=== SECTION.dmesg_tail ===
+[12191.427044][ T6728] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[12193.479394][ T6729] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[12195.531726][ T6730] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[12197.584082][ T6731] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[12198.133352][T17627] (virq:irq_count)- 11:6399095 6:786963 2:260400 1:121864 35:30866 30:21567 301:11589 28:784 358:422 359:409 
+[12198.133357][T17627] (cpu:irq_count)- 0:324332 1:932 2:686 3:813 4:3485692 5:4771 6:8164 7:3809049 
+[12198.133360][T17627] (ipi:irq_count)- 0:121864 1:260400 2:0 3:0 4:0 5:786963 6:0 
+[12199.636407][ T6732] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[12201.688744][ T6733] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[12203.741114][ T6734] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[12205.793728][ T6735] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[12207.605389][T24304] (virq:irq_count)- 11:6404065 6:787573 2:260598 1:121924 35:30888 30:21579 301:11618 28:784 358:422 359:409 
+[12207.605397][T24304] (cpu:irq_count)- 0:324602 1:933 2:686 3:813 4:3488328 5:4772 6:8170 7:3812036 
+[12207.605401][T24304] (ipi:irq_count)- 0:121924 1:260598 2:0 3:0 4:0 5:787573 6:0 
+[12207.845920][ T6741] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[12209.898167][ T6742] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[12211.950458][ T6743] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[12214.002823][ T6744] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[12216.055170][ T6745] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[12217.077361][T17627] (virq:irq_count)- 11:6409016 6:788175 2:260793 1:121971 35:30908 30:21594 301:11621 28:784 358:422 359:409 
+[12217.077366][T17627] (cpu:irq_count)- 0:324836 1:933 2:686 3:813 4:3490955 5:4772 6:8173 7:3815005 
+[12217.077369][T17627] (ipi:irq_count)- 0:121971 1:260793 2:0 3:0 4:0 5:788175 6:0 
+[12218.107518][ T6746] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[12220.159850][ T6747] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[12222.212195][ T6748] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[12224.264531][ T6749] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[12226.316869][ T6750] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[12226.549360][T24304] (virq:irq_count)- 11:6413972 6:788777 2:260988 1:122020 35:30928 30:21609 301:11626 28:784 358:422 359:409 
+[12226.549365][T24304] (cpu:irq_count)- 0:325073 1:933 2:686 3:813 4:3493582 5:4772 6:8176 7:3817980 
+[12226.549368][T24304] (ipi:irq_count)- 0:122020 1:260988 2:0 3:0 4:0 5:788777 6:0 
+[12228.369350][ T6751] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[12230.421635][ T6752] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[12231.977042][  T120] sd 0:0:0:5: [sdf] Synchronizing SCSI cache
+[12232.473935][ T6753] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[12234.526269][ T6754] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[12236.021369][ T5246] (virq:irq_count)- 11:6418926 6:789380 2:261190 1:122080 35:30956 30:21632 301:11629 28:786 358:422 359:411 
+[12236.021374][ T5246] (cpu:irq_count)- 0:325328 1:933 2:686 3:813 4:3496226 5:4772 6:8179 7:3820955 
+[12236.021377][ T5246] (ipi:irq_count)- 0:122080 1:261190 2:0 3:0 4:0 5:789380 6:0 
+[12236.578582][ T6755] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+[12238.630922][ T6756] nx679j: journal mirror: 262143 bytes (file open, kmsg=3 pmsg=4 rd=8)
+=== SECTION.rfkill ===
+sh: rfkill: not found
+=== SECTION.ubus ===
+Failed to connect to ubus
+=== SECTION.ps ===
+  PID USER       VSZ STAT COMMAND
+    1 root       156 S    /init
+    2 root         0 SW   [kthreadd]
+    3 root         0 IW<  [rcu_gp]
+    4 root         0 IW<  [rcu_par_gp]
+    6 root         0 IW<  [kworker/0:0H]
+    8 root         0 IW<  [mm_percpu_wq]
+   10 root         0 SW   [rcu_tasks_kthre]
+   11 root         0 SW   [rcu_tasks_trace]
+   12 root         0 SW   [ksoftirqd/0]
+   13 root         0 IW   [rcu_preempt]
+   14 root         0 SW   [rcuog/0]
+   15 root         0 SW   [rcuop/0]
+   16 root         0 SW   [migration/0]
+   17 root         0 SW   [cpuhp/0]
+   18 root         0 SW   [cpuhp/1]
+   19 root         0 SW   [migration/1]
+   20 root         0 SW   [ksoftirqd/1]
+   21 root         0 IW   [kworker/1:0-rcu]
+   22 root         0 IW<  [kworker/1:0H]
+   23 root         0 SW   [rcuop/1]
+   24 root         0 SW   [cpuhp/2]
+   25 root         0 SW   [migration/2]
+   26 root         0 SW   [ksoftirqd/2]
+   27 root         0 IW   [kworker/2:0-eve]
+   28 root         0 IW<  [kworker/2:0H]
+   29 root         0 SW   [rcuop/2]
+   30 root         0 SW   [cpuhp/3]
+   31 root         0 SW   [migration/3]
+   32 root         0 SW   [ksoftirqd/3]
+   33 root         0 IW   [kworker/3:0-mm_]
+   34 root         0 IW<  [kworker/3:0H]
+   35 root         0 SW   [rcuop/3]
+   36 root         0 SW   [cpuhp/4]
+   37 root         0 SW   [migration/4]
+   38 root         0 SW   [ksoftirqd/4]
+   40 root         0 IW<  [kworker/4:0H-ev]
+   41 root         0 SW   [rcuog/4]
+   42 root         0 SW   [rcuop/4]
+   43 root         0 SW   [cpuhp/5]
+   44 root         0 SW   [migration/5]
+   45 root         0 SW   [ksoftirqd/5]
+   47 root         0 IW<  [kworker/5:0H-ev]
+   48 root         0 SW   [rcuop/5]
+   49 root         0 SW   [cpuhp/6]
+   50 root         0 SW   [migration/6]
+   51 root         0 SW   [ksoftirqd/6]
+   53 root         0 IW<  [kworker/6:0H-kb]
+   54 root         0 SW   [rcuop/6]
+   55 root         0 SW   [cpuhp/7]
+   56 root         0 SW   [migration/7]
+   57 root         0 SW   [ksoftirqd/7]
+   59 root         0 IW<  [kworker/7:0H-ev]
+   60 root         0 SW   [rcuop/7]
+   61 root         0 IW<  [netns]
+   63 root         0 IW   [kworker/0:1-eve]
+   64 root         0 IW   [kworker/1:1-rcu]
+   65 root         0 IW   [kworker/5:1-eve]
+   66 root         0 IW   [kworker/4:1-rcu]
+   67 root         0 IW   [kworker/6:1-rcu]
+   68 root         0 IW   [kworker/2:1-rcu]
+   69 root         0 IW   [kworker/3:1-mm_]
+   70 root         0 SW   [kauditd]
+   71 root         0 SW   [khungtaskd]
+   72 root         0 SW   [oom_reaper]
+   73 root         0 IW<  [writeback]
+   74 root         0 SW   [kcompactd0]
+   75 root         0 SWN  [khugepaged]
+  117 root         0 IW<  [kblockd]
+  118 root         0 IW<  [blkcg_punt_bio]
+  119 root         0 IW<  [edac-poller]
+  120 root         0 IW   [kworker/7:2-eve]
+  121 root         0 IW<  [devfreq_wq]
+  122 root         0 SW   [watchdogd]
+  123 root         0 IW<  [kworker/7:1H-ev]
+  144 root         0 SW   [kswapd0]
+  145 root         0 IW<  [kworker/u17:0-u]
+  147 root         0 SWN  [dmabuf-deferred]
+  148 root         0 IW<  [uas]
+  149 root         0 IW<  [dm_bufio_cache]
+  150 root         0 IW<  [ipv6_addrconf]
+  151 root         0 SW<  [krfcommd]
+  164 root         0 IW   [kworker/1:2-mm_]
+  168 root         0 IW   [kworker/2:2-eve]
+  173 root         0 SW   [gh_rm_recv_task]
+  183 root         0 SW   [qrtr_ns]
+  188 root         0 IW   [kworker/6:2-eve]
+  193 root         0 IW<  [mpcie_wq]
+  197 root         0 SW   [irq/15-qcom-scm]
+  201 root         0 SWN  [qcom,system-poo]
+  202 root         0 IW   [kworker/4:2-eve]
+  213 root         0 IW<  [pmic_glink_rx]
+  222 root         0 IW<  [k_ipa_usb]
+  258 root         0 SW   [mem_buf_rcvr]
+  262 root         0 SW   [gh-watchdog]
+  275 root         0 IW<  [kworker/4:1H-ev]
+  276 root         0 IW<  [cfg80211]
+  303 root         0 SW   [irq/16-dcvsh-ir]
+  304 root         0 SW   [irq/17-dcvsh-ir]
+  305 root         0 SW   [irq/18-dcvsh-ir]
+  306 root         0 IW<  [kworker/5:1H-kb]
+  307 root         0 IW   [kworker/5:3]
+  308 root         0 SW   [core_ctl]
+  309 root         0 IW<  [dsi_post_cmd_tx]
+  310 root         0 IW<  [dsi_post_cmd_tx]
+  311 root         0 IW<  [dsi_post_cmd_tx]
+  312 root         0 IW<  [dsi_post_cmd_tx]
+  313 root         0 SW   [irq/297-pwr_eve]
+  314 root         0 SW   [irq/298-dp_hs_p]
+  315 root         0 SW   [irq/299-dm_hs_p]
+  316 root         0 SW   [irq/300-ss_phy_]
+  317 root         0 IW<  [bwmon_wq]
+  318 root         0 SW   [irq/37-190b6400]
+  319 root         0 SW   [irq/38-19091000]
+  320 root         0 IW<  [dsi_post_cmd_tx]
+  321 root         0 IW<  [dsi_post_cmd_tx]
+  323 root         0 IW<  [drm_dp]
+  324 root         0 IW<  [dsi_post_cmd_tx]
+  325 root         0 IW<  [dsi_post_cmd_tx]
+  329 root         0 SW   [irq/112-arm-smm]
+  330 root         0 SW   [irq/113-arm-smm]
+  331 root         0 SW   [irq/114-arm-smm]
+  332 root         0 SW   [irq/115-arm-smm]
+  333 root         0 SW   [irq/212-int_glo]
+  334 root         0 SW   [irq/116-arm-smm]
+  335 root         0 SW   [irq/117-arm-smm]
+  336 root         0 IW<  [sdm_dp_audio_no]
+  338 root         0 SW   [crtc_commit:153]
+  339 root         0 SW   [crtc_event:153]
+  340 root         0 SW   [crtc_commit:215]
+  341 root         0 SW   [crtc_event:215]
+  342 root         0 SW   [crtc_commit:224]
+  343 root         0 SW   [crtc_event:224]
+  344 root         0 SW   [crtc_commit:233]
+  345 root         0 SW   [crtc_event:233]
+  346 root         0 SW   [crtc_commit:242]
+  347 root         0 SW   [crtc_event:242]
+  348 root         0 SW   [pp_event]
+  349 root         0 SW   [card0-crtc0]
+  350 root         0 SW   [card0-crtc1]
+  351 root         0 SW   [card0-crtc2]
+  352 root         0 SW   [card0-crtc3]
+  353 root         0 SW   [card0-crtc4]
+  354 root         0 SW   [irq/118-arm-smm]
+  355 root         0 SW   [scsi_eh_0]
+  356 root         0 IW<  [scsi_tmf_0]
+  357 root         0 IW<  [qc_ufs_qos_swq]
+  358 root         0 IW<  [ufs_eh_wq_0]
+  359 root         0 IW<  [ufs_clk_gating_]
+  360 root         0 IW<  [ufs_clkscaling_]
+  364 root         0 SW   [irq/306-qcom,qm]
+  366 root         0 IW<  [pmic_glink_rx]
+  367 root         0 IW<  [pdr_notifier_wq]
+  368 root         0 SW   [irq/308-smp2p]
+  369 root         0 SW   [irq/309-smp2p]
+  370 root         0 SW   [irq/310-smp2p]
+  371 root         0 SW   [irq/311-smp2p]
+  372 root         0 SW   [irq/24-q6v5 wdo]
+  373 root         0 SW   [irq/316-q6v5 wd]
+  374 root         0 SW   [irq/25-q6v5 wdo]
+  375 root         0 SW   [irq/327-q6v5 wd]
+  380 root         0 IW<  [kworker/6:1H-kb]
+  382 root         0 IW<  [kworker/u17:1]
+  400 root         0 SW   [irq/26-generic-]
+  403 root         0 IW   [kworker/7:4-eve]
+  404 root         0 Z    [init]
+  406 root         0 IW<  [ipa_power_mgmt]
+  407 root         0 IW<  [transport_power]
+  408 root         0 IW<  [ipa_pm_activate]
+  409 root         0 IW<  [rmnet_ctlwq]
+  410 root         0 IW<  [rmnet_llwq]
+  411 root         0 SW   [irq/119-arm-smm]
+  412 root         0 SW   [irq/120-arm-smm]
+  413 root         0 SW   [irq/121-arm-smm]
+  414 root         0 SW   [irq/122-arm-smm]
+  415 root         0 IW<  [ipa_usb_wq]
+  419 root         0 SW   [irq/123-arm-smm]
+  420 root         0 SW<  [irq/301-dwc3]
+  422 root      2232 S    /nx679j/relay
+  424 root      1352 S    {switch.sh} /owrt/bin/busybox sh /nx679j/switch.sh
+  454 root         0 Z    [busybox]
+  505 root      1352 S    {switch.sh} /owrt/bin/busybox sh /nx679j/switch.sh
+  507 root      1320 S    /sbin/procd
+  511 root         0 Z    [procd]
+  584 root         0 Z    [lock]
+ 1930 root         0 Z    [ipa-status-trac]
+ 3904 root         0 Z    [sleep]
+ 5246 root         0 IW   [kworker/u16:0-b]
+ 6757 root      2084 S    /nx679j/worker maint
+ 6758 root      1148 S    /usr/sbin/dropbear -F -E -p 22 -2 8
+ 6759 root      1328 S    sh -s
+ 6782 root      1332 R    ps w
+ 9290 root         0 Z    [lock]
+ 9318 root      1132 S    /usr/sbin/dropbear -F -E -p 22
+10601 root         0 Z    [rmtfs]
+10622 root         0 Z    [tqftpserv]
+10624 root         0 Z    [pd-mapper]
+10630 root         0 Z    [crashlog-dump.s]
+10673 root         0 Z    [rprocstart]
+10681 root         0 IW   [kworker/0:0-eve]
+11882 root         0 Z    [rprocstart]
+11959 root         0 Z    [rprocstart]
+14331 root         0 Z    [rprocstart]
+15369 root         0 Z    [sleep]
+16274 root         0 Z    [rmtfs]
+16281 root         0 Z    [tqftpserv]
+16283 root         0 Z    [pd-mapper]
+16291 root         0 Z    [crashlog-dump.s]
+17486 root         0 Z    [sleep]
+17556 root      4548 S    /tmp/rmtfs -P -o /tmp/efs -v
+17563 root      2612 S    /tmp/tqftpserv -d
+17565 root      1220 S    /tmp/pd-mapper
+17574 root         0 Z    [crashlog-dump.s]
+17622 root         0 Z    [rprocstart]
+17627 root         0 IW   [kworker/u16:1-b]
+18911 root         0 Z    [rprocstart]
+18991 root         0 Z    [rprocstart]
+18998 root         0 SW   [glink_modem]
+19034 root         0 SW   [irq/359-glink-n]
+19035 root         0 SW   [qrtr_rx]
+24295 root         0 IW<  [ipa_interrupt_w]
+24296 root         0 IW<  [ipawq36]
+24297 root         0 IW<  [iparepwq36]
+24298 root         0 IW<  [ipawq33]
+24299 root         0 IW<  [iparepwq33]
+24300 root         0 IW<  [ipawq32]
+24301 root         0 IW<  [iparepwq32]
+24302 root         0 IW<  [ipa_uc_holb_wq]
+24303 root         0 IW<  [clnt_req]
+24304 root         0 IW   [kworker/u16:3-u]
+24314 root         0 Z    [sh]
+24335 root         0 Z    [qmi-qrtr-observ]
+26645 root         0 Z    [sleep]
+27115 root         0 Z    [sh]
+27876 root         0 Z    [sh]
+27896 root         0 Z    [qmi-qrtr-observ]
+27916 root         0 IW<  [ipawq35]
+27917 root         0 IW<  [iparepwq35]
+27918 root         0 IW<  [ipawq105]
+27919 root         0 IW<  [iparepwq105]
+29843 root         0 Z    [sleep]
+30274 root         0 Z    [crashlog-dump.s]
+30319 root         0 Z    [qmi-qrtr-observ]
+30675 root         0 IW<  [ipawq34]
+30676 root         0 IW<  [iparepwq34]
+30677 root         0 IW<  [ipawq104]
+30678 root         0 IW<  [iparepwq104]
+31725 root         0 Z    [qmi-qrtr-observ]
+=== SECTION.listen ===
+sh: ss: not found
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      9318/dropbear
+tcp        0      0 10.0.0.1:9999           0.0.0.0:*               LISTEN      422/relay
+tcp        0      0 :::22                   :::*                    LISTEN      9318/dropbear
+=== SECTION.tools ===
+iw: MISSING
+iwconfig: MISSING
+wpa_supplicant: MISSING
+wpa_cli: MISSING
+wpad: MISSING
+hostapd: MISSING
+ubus: /bin/ubus
+ubusd: /sbin/ubusd
+uhttpd: /usr/sbin/uhttpd
+rpcd: /sbin/rpcd
+dropbear: /usr/sbin/dropbear
+netifd: /sbin/netifd
+iwpriv: MISSING
+iperf3: MISSING
+udhcpc: /sbin/udhcpc
+=== SECTION.firmware_libfw ===
+drwxr-xr-x    2 root     root            40 Jun 29  2026 .
+drwxr-xr-x   11 root     root           520 Jun 29  2026 ..
+=== SECTION.firmware_vendor_mnt ===
+ls: /vendor/firmware_mnt/: No such file or directory
+ls: /vendor/firmware_mnt/image/: No such file or directory
+=== SECTION.mounts ===
+rootfs / rootfs rw,noatime,size=8404832k,nr_inodes=2101208 0 0
+proc /proc proc rw,relatime 0 0
+sysfs /sys sysfs rw,relatime 0 0
+debugfs /sys/kernel/debug debugfs rw,relatime 0 0
+tracefs /sys/kernel/tracing tracefs rw,relatime 0 0
+=== SECTION.owrt_config ===
+drwxr-xr-x    2 root     root           200 Jan  4 14:17 .
+drwxr-xr-x   26 root     root          1260 Jan  4 14:17 ..
+-rw-------    1 root     root          1183 Jun 29  2026 dhcp
+-rw-------    1 root     root           286 Jun 29  2026 dropbear
+-rw-r--r--    1 root     root          4064 Jun 29  2026 firewall
+-rw-r--r--    1 root     root           687 Jun 29  2026 luci
+-rw-r--r--    1 root     root           275 Sep 18  2026 network
+-rw-------    1 root     root           167 Jun 29  2026 rpcd
+-rw-------    1 root     root           382 Jan  4 14:17 system
+-rw-------    1 root     root          4546 Jun 29  2026 uhttpd
+--- /etc/config/network:
+config interface 'loopback'
+	option device 'lo'
+	option proto 'static'
+	option ipaddr '127.0.0.1'
+	option netmask '255.0.0.0'
+
+config interface 'usb0'
+	option device 'usb0'
+	option proto 'static'
+	option ipaddr '10.0.0.1'
+	option netmask '255.255.255.0'
+	option delegate '0'
+--- /etc/config/wireless:
+cat: can't open '/etc/config/wireless': No such file or directory
+--- /etc/config/firewall:
+config defaults
+	option syn_flood	1
+	option input		REJECT
+	option output		ACCEPT
+	option forward		REJECT
+# Uncomment this line to disable ipv6 rules
+#	option disable_ipv6	1
+
+config zone
+	option name		lan
+	list   network		'lan'
+	option input		ACCEPT
+	option output		ACCEPT
+	option forward		ACCEPT
+
+config zone
+	option name		wan
+	list   network		'wan'
+	list   network		'wan6'
+	option input		REJECT
+	option output		ACCEPT
+	option forward		DROP
+	option masq		1
+	option mtu_fix		1
+
+config forwarding
+	option src		lan
+	option dest		wan
+
+# We need to accept udp packets on port 68,
+# see https://dev.openwrt.org/ticket/4108
+config rule
+	option name		Allow-DHCP-Renew
+	option src		wan
+	option proto		udp
+	option dest_port	68
+	option target		ACCEPT
+	option family		ipv4
+
+# Allow IPv4 ping
+config rule
+	option name		Allow-Ping
+	option src		wan
+	option proto		icmp
+	option icmp_type	echo-request
+	option family		ipv4
+	option target		ACCEPT
+
+config rule
+	option name		Allow-IGMP
+	option src		wan
+	option proto		igmp
+	option family		ipv4
+	option target		ACCEPT
+
+# Allow DHCPv6 replies
+# see https://github.com/openwrt/openwrt/issues/5066
+config rule
+	option name		Allow-DHCPv6
+	option src		wan
+	option proto		udp
+	option dest_port	546
+	option family		ipv6
+	option target		ACCEPT
+
+config rule
+	option name		Allow-MLD
+	option src		wan
+	option proto		icmp
+	option src_ip		fe80::/10
+	list icmp_type		'130/0'
+	list icmp_type		'131/0'
+	list icmp_type		'132/0'
+	list icmp_type		'143/0'
+	option family		ipv6
+	option target		ACCEPT
+
+# Allow essential incoming IPv6 ICMP traffic
+config rule
+	option name		Allow-ICMPv6-Input
+	option src		wan
+	option proto	icmp
+	list icmp_type		echo-request
+	list icmp_type		echo-reply
+	list icmp_type		destination-unreachable
+	list icmp_type		packet-too-big
+	list icmp_type		time-exceeded
+	list icmp_type		bad-header
+	list icmp_type		unknown-header-type
+	list icmp_type		router-solicitation
+	list icmp_type		neighbour-solicitation
+	list icmp_type		router-advertisement
+	list icmp_type		neighbour-advertisement
+	option limit		1000/sec
+	option family		ipv6
+	option target		ACCEPT
+
+# Allow essential forwarded IPv6 ICMP traffic
+config rule
+	option name		Allow-ICMPv6-Forward
+	option src		wan
+	option dest		*
+	option proto		icmp
+	list icmp_type		echo-request
+	list icmp_type		echo-reply
+	list icmp_type		destination-unreachable
+	list icmp_type		packet-too-big
+	list icmp_type		time-exceeded
+	list icmp_type		bad-header
+	list icmp_type		unknown-header-type
+	option limit		1000/sec
+	option family		ipv6
+	option target		ACCEPT
+
+config rule
+	option name		Allow-IPSec-ESP
+	option src		wan
+	option dest		lan
+	option proto		esp
+	option target		ACCEPT
+
+config rule
+	option name		Allow-ISAKMP
+	option src		wan
+	option dest		lan
+	option dest_port	500
+	option proto		udp
+	option target		ACCEPT
+
+
+### EXAMPLE CONFIG SECTIONS
+# do not allow a specific ip to access wan
+#config rule
+#	option src		lan
+#	option src_ip	192.168.45.2
+#	option dest		wan
+#	option proto	tcp
+#	option target	REJECT
+
+# block a specific mac on wan
+#config rule
+#	option dest		wan
+#	option src_mac	xx:xx:xx:xx:xx:xx
+#	option target	REJECT
+
+# block incoming ICMP traffic on a zone
+#config rule
+#	option src		lan
+#	option proto	ICMP
+#	option target	DROP
+
+# port redirect port coming in on wan to lan
+#config redirect
+#	option src			wan
+#	option src_dport	80
+#	option dest			lan
+#	option dest_ip		192.168.16.235
+#	option dest_port	80
+#	option proto		tcp
+
+# port redirect of remapped ssh port (22001) on wan
+#config redirect
+#	option src		wan
+#	option src_dport	22001
+#	option dest		lan
+#	option dest_port	22
+#	option proto		tcp
+
+### FULL CONFIG SECTIONS
+#config rule
+#	option src		lan
+#	option src_ip	192.168.45.2
+#	option src_mac	xx:xx:xx:xx:xx:xx
+#	option src_port	80
+#	option dest		wan
+#	option dest_ip	194.25.2.129
+#	option dest_port	120
+#	option proto	tcp
+#	option target	REJECT
+
+#config redirect
+#	option src		lan
+#	option src_ip	192.168.45.2
+#	option src_mac	xx:xx:xx:xx:xx:xx
+#	option src_port		1024
+#	option src_dport	80
+#	option dest_ip	194.25.2.129
+#	option dest_port	120
+#	option proto	tcp
+--- /etc/config/dhcp:
+config dnsmasq
+	option domainneeded	1
+	option boguspriv	1
+	option filterwin2k	0  # enable for dial on demand
+	option localise_queries	1
+	option rebind_protection 1  # disable if upstream must serve RFC1918 addresses
+	option rebind_localhost 1  # enable for RBL checking and similar services
+	#list rebind_domain example.lan  # whitelist RFC1918 responses for domains
+	option local	'/lan/'
+	option domain	'lan'
+	option expandhosts	1
+	option nonegcache	0
+	option cachesize	1000
+	option authoritative	1
+	option readethers	1
+	option leasefile	'/tmp/dhcp.leases'
+	option resolvfile	'/tmp/resolv.conf.d/resolv.conf.auto'
+	#list server		'/mycompany.local/1.2.3.4'
+	option nonwildcard	1 # bind to & keep track of interfaces
+	#list interface		br-lan
+	#list notinterface	lo
+	#list bogusnxdomain     '64.94.110.11'
+	option localservice	1  # disable to allow DNS requests from non-local subnets
+	option ednspacket_max	1232
+	option filter_aaaa	0
+	option filter_a		0
+	#list addnmount		/some/path # read-only mount path to expose it to dnsmasq
+
+config dhcp lan
+	option interface	lan
+	option start 	100
+	option limit	150
+	option leasetime	12h
+
+config dhcp wan
+	option interface	wan
+	option ignore	1
+--- /etc/config/system:
+
+config system
+	option hostname 'OpenWrt'
+	option timezone 'GMT0'
+	option zonename 'UTC'
+	option ttylogin '0'
+	option log_size '128'
+	option urandom_seed '0'
+
+config timeserver 'ntp'
+	option enabled '1'
+	option enable_server '0'
+	list server '0.openwrt.pool.ntp.org'
+	list server '1.openwrt.pool.ntp.org'
+	list server '2.openwrt.pool.ntp.org'
+	list server '3.openwrt.pool.ntp.org'
+
+=== SECTION.initd ===
+boot
+cron
+dnsmasq
+done
+dropbear
+firewall
+gpio_switch
+led
+log
+network
+odhcpd
+packet_steering
+rpcd
+sysctl
+sysfixtime
+sysntpd
+system
+ucitrack
+uhttpd
+umount
+urandom_seed
+urngd
+=== SECTION.rcd ===
+drwxr-xr-x    2 root     root           620 Jun 29  2026 .
+drwxr-xr-x   26 root     root          1260 Jan  4 14:17 ..
+lrwxrwxrwx    1 root     root            21 Jun 29  2026 K10gpio_switch -> ../init.d/gpio_switch
+lrwxrwxrwx    1 root     root            18 Jun 29  2026 K50dropbear -> ../init.d/dropbear
+lrwxrwxrwx    1 root     root            16 Jun 29  2026 K85odhcpd -> ../init.d/odhcpd
+lrwxrwxrwx    1 root     root            13 Jun 29  2026 K89log -> ../init.d/log
+lrwxrwxrwx    1 root     root            14 Jun 29  2026 K90boot -> ../init.d/boot
+lrwxrwxrwx    1 root     root            17 Jun 29  2026 K90network -> ../init.d/network
+lrwxrwxrwx    1 root     root            20 Jun 29  2026 K90sysfixtime -> ../init.d/sysfixtime
+lrwxrwxrwx    1 root     root            16 Jun 29  2026 K90umount -> ../init.d/umount
+lrwxrwxrwx    1 root     root            20 Jun 29  2026 S00sysfixtime -> ../init.d/sysfixtime
+lrwxrwxrwx    1 root     root            15 Jun 29  2026 S00urngd -> ../init.d/urngd
+lrwxrwxrwx    1 root     root            14 Jun 29  2026 S10boot -> ../init.d/boot
+lrwxrwxrwx    1 root     root            16 Jun 29  2026 S10system -> ../init.d/system
+lrwxrwxrwx    1 root     root            16 Jun 29  2026 S11sysctl -> ../init.d/sysctl
+lrwxrwxrwx    1 root     root            13 Jun 29  2026 S12log -> ../init.d/log
+lrwxrwxrwx    1 root     root            14 Jun 29  2026 S12rpcd -> ../init.d/rpcd
+lrwxrwxrwx    1 root     root            17 Jun 29  2026 S19dnsmasq -> ../init.d/dnsmasq
+lrwxrwxrwx    1 root     root            18 Jun 29  2026 S19dropbear -> ../init.d/dropbear
+lrwxrwxrwx    1 root     root            18 Jun 29  2026 S19firewall -> ../init.d/firewall
+lrwxrwxrwx    1 root     root            17 Jun 29  2026 S20network -> ../init.d/network
+lrwxrwxrwx    1 root     root            25 Jun 29  2026 S25packet_steering -> ../init.d/packet_steering
+lrwxrwxrwx    1 root     root            16 Jun 29  2026 S35odhcpd -> ../init.d/odhcpd
+lrwxrwxrwx    1 root     root            14 Jun 29  2026 S50cron -> ../init.d/cron
+lrwxrwxrwx    1 root     root            16 Jun 29  2026 S50uhttpd -> ../init.d/uhttpd
+lrwxrwxrwx    1 root     root            18 Jun 29  2026 S80ucitrack -> ../init.d/ucitrack
+lrwxrwxrwx    1 root     root            21 Jun 29  2026 S94gpio_switch -> ../init.d/gpio_switch
+lrwxrwxrwx    1 root     root            14 Jun 29  2026 S95done -> ../init.d/done
+lrwxrwxrwx    1 root     root            13 Jun 29  2026 S96led -> ../init.d/led
+lrwxrwxrwx    1 root     root            17 Jun 29  2026 S98sysntpd -> ../init.d/sysntpd
+lrwxrwxrwx    1 root     root            22 Jun 29  2026 S99urandom_seed -> ../init.d/urandom_seed
+=== SECTION.procd ===
+  507 root      1320 S    /sbin/procd
+  511 root         0 Z    [procd]
+ 6758 root      1148 S    /usr/sbin/dropbear -F -E -p 22 -2 8
+ 6815 root      1348 S    grep -E procd|ubusd|rpcd|uhttpd|dropbear|netifd|dnsmasq
+ 9318 root      1132 S    /usr/sbin/dropbear -F -E -p 22
+=== SECTION.journal_tail ===
+no journal
+=== SECTION.END ===

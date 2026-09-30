@@ -1,0 +1,4 @@
+nx679j-relay-v9: interfaces in this namespace (2): lo=127.0.0.1 usb0=- 
+nx679j-relay-v9: wanted 127.0.0.1 is ON an interface in this namespace (nonlocal_bind=-); bound 127.0.0.1:9999
+nx679j-relay-v9: READ-ONLY relay up: nc 127.0.0.1 9999  (iface lo ip 127.0.0.1, wildcard_fallback=0)
+nx679j-relay-v9: it never opens a file for writing; the answer is a snapshot of /proc, /sys and /nx679j-journal

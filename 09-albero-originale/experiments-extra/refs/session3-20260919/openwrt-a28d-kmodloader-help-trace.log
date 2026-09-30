@@ -1,0 +1,61 @@
+HELP_EXIT=255
+execve("/sbin/rmmod", ["/sbin/rmmod", "--help"], 0x7ff47807a0 /* 9 vars */) = 0
+set_tid_address(0x7fb5f34e88)           = 8640
+brk(NULL)                               = 0x12193000
+brk(0x12195000)                         = 0x12195000
+mmap(0x12193000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x12193000
+openat(AT_FDCWD, "/etc/ld-musl-aarch64.path", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib/libubox.so.20260213", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=65633, ...}) = 0
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 960) = 960
+mmap(NULL, 73728, PROT_READ|PROT_EXEC, MAP_PRIVATE, 3, 0) = 0x7fb5f1b000
+mmap(0x7fb5f2b000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 3, 0xf000) = 0x7fb5f2b000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/libgcc_s.so.1", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=131088, ...}) = 0
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 960) = 960
+mmap(NULL, 200704, PROT_READ|PROT_EXEC, MAP_PRIVATE, 3, 0) = 0x7fb5e61000
+mmap(0x7fb5e90000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 3, 0x1f000) = 0x7fb5e90000
+close(3)                                = 0
+mprotect(0x7fb5f2b000, 4096, PROT_READ) = 0
+mprotect(0x7fb5e90000, 4096, PROT_READ) = 0
+mprotect(0x405000, 4096, PROT_READ)     = 0
+openat(AT_FDCWD, "/proc/modules", O_RDONLY|O_LARGEFILE) = 3
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb5f1a000
+read(3, "ipanetm 16384 0 - Live 0xffffffe"..., 1024) = 1024
+read(3, " 6 - Live 0xffffffe7cf357000\ngli"..., 1024) = 1024
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb5f19000
+read(3, "ode_glink 24576 1 msm_drm, Live "..., 1024) = 1024
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb5e60000
+read(3, "b4000\nkryo_arm64_edac 16384 0 - "..., 1024) = 1024
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb5e5f000
+read(3, "com_q6v5_pas 45056 0 - Live 0xff"..., 1024) = 1024
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb5e5e000
+read(3, "m_drm, Live 0xffffffe7cec2d000\ni"..., 1024) = 1024
+read(3, "ot_reason 16384 0 - Live 0xfffff"..., 1024) = 1024
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb5e5d000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb5e5c000
+read(3, "com_q6v5,pmic_glink,pdr_interfac"..., 1024) = 1024
+read(3, "_wdt_core,qcom_dload_mode,qcom_i"..., 1024) = 1024
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb5e5b000
+read(3, "stub_regulator,rpmh_regulator,gd"..., 1024) = 70
+read(3, "", 1024)                       = 0
+close(3)                                = 0
+munmap(0x7fb5f1a000, 4096)              = 0
+uname({sysname="Linux", nodename="(none)", ...}) = 0
+newfstatat(AT_FDCWD, "/lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/", 0x7fd6638eb0, 0) = -1 ENOENT (No such file or directory)
+ioctl(1, TIOCGWINSZ, 0x7fd6638e18)      = -1 ENOTTY (Inappropriate ioctl for device)
+ioctl(1, TIOCGWINSZ, 0x7fd6638e18)      = -1 ENOTTY (Inappropriate ioctl for device)
+openat(AT_FDCWD, "/proc/self/status", O_RDONLY|O_LARGEFILE) = 3
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb5f1a000
+read(3, "Name:\trmmod\nUmask:\t0022\nState:\tR"..., 1024) = 971
+lseek(3, -959, SEEK_CUR)                = 12
+close(3)                                = 0
+munmap(0x7fb5f1a000, 4096)              = 0
+socket(AF_UNIX, SOCK_DGRAM|SOCK_CLOEXEC, 0) = 3
+connect(3, {sa_family=AF_UNIX, sun_path="/dev/log"}, 12) = -1 ENOENT (No such file or directory)
+sendto(3, "<27>Jan  4 13:17:55 rmmod: no mo"..., 120, 0, NULL, 0) = -1 ENOTCONN (Transport endpoint is not connected)
+connect(3, {sa_family=AF_UNIX, sun_path="/dev/log"}, 12) = -1 ENOENT (No such file or directory)
+exit_group(-1)                          = ?

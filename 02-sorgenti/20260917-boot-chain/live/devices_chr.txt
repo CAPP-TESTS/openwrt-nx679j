@@ -1,0 +1,51 @@
+Character devices:
+  1 mem
+  4 ttyS
+  5 /dev/tty
+  5 /dev/console
+  5 /dev/ptmx
+ 10 misc
+ 13 input
+ 21 sg
+ 81 video4linux
+108 ppp
+116 alsa
+128 ptm
+136 pts
+166 ttyACM
+180 usb
+189 usb_device
+208 f_monitor
+216 rfcomm
+226 drm
+229 hvc
+234 binder
+235 roccat
+236 hidraw
+237 rpmb
+===
+total 12
+crw-------  1 root        root            240,   4 1970-01-01 14:01 0:0:0:0
+crw-------  1 root        root            240,   5 1970-01-01 14:01 0:0:0:1
+crw-------  1 root        root            240,   6 1970-01-01 14:01 0:0:0:2
+crw-------  1 root        root            240,   7 1970-01-01 14:01 0:0:0:3
+crw-------  1 root        root            240,   8 1970-01-01 14:01 0:0:0:4
+crw-------  1 root        root            240,   2 1970-01-01 14:01 0:0:0:49456
+crw-------  1 system      system          240,   1 1970-01-01 14:01 0:0:0:49476
+crw-------  1 root        root            240,   0 1970-01-01 14:01 0:0:0:49488
+crw-------  1 root        root            240,   9 1970-01-01 14:01 0:0:0:5
+drwx--x--x  2 root        root                7380 1970-01-01 14:01 __properties__
+crw-------  1 root        root            483,   0 1970-01-01 14:01 accel
+crw-rw-r--  1 system      system          487,   0 1970-01-01 14:01 adsprpc-smd
+crw-r--r--  1 system      system          487,   1 1970-01-01 14:01 adsprpc-smd-secure
+crw-------  1 root        root            504,   1 1970-01-01 14:01 apr_apps2
+crw-rw-rw-  1 root        root             10, 127 1970-01-01 14:01 ashmem
+crw-rw-rw-  1 root        root             10, 127 1970-01-01 14:01 ashmemdfb97421-ee4e-49f0-8abb-a5c6e7403a0f
+crw-r-----  1 radio       radio           504,   0 1970-01-01 14:01 at_mdm0
+crw-r-----  1 radio       radio           470,   0 1970-01-01 14:01 at_usb0
+crw-------  1 root        root            470,   1 1970-01-01 14:01 at_usb1
+crw-------  1 root        root            470,   2 1970-01-01 14:01 at_usb2
+crw-rw----  1 system      audio           477,   0 1970-01-01 14:01 aud_pasthru_adsp
+lrwxrwxrwx  1 root        root                  20 1970-01-01 14:01 binder -> /dev/binderfs/binder
+drwxr-xr-x  3 root        root                   0 1970-01-01 14:01 binderfs
+dr-xr-xr-x  3 system      system                 0 1970-01-01 14:01 blkio

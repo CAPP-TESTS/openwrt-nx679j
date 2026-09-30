@@ -1,0 +1,99 @@
+=== build-probe-v7bl: two slot-B probe images with LINUX_REBOOT_CMD_RESTART2 reason=bootloader ===
+
+[1] container  /home/user/nx679j-stock/magisk_patched-30700_Zx2eF.img
+    100663296 bytes sha256=0cd94d5627501f3c65c94542093ad18b1ec6c1c215dc6a7ecab4f941057e8364
+    (the control run on 2026-09-17 booted this image from slot B)
+[2] Android ramdisk  /home/user/nx679j-stock/experiments/20260916-122926-native-baseline/probe-v7-sonda/inputs/magisk-android-ramdisk.cpio
+    2306300 bytes sha256=6fd2630909eab5458196edc25b8c41b4c15b401c0c92fdeab65fedaec13a0594
+    30 entries (incl. TRAILER!!!), parses to 2306300 bytes
+[3] v6 ramdisk       /home/user/nx679j-stock/experiments/20260916-122926-native-baseline/candidate-minimal-gadget-v6/work/ramdisk.cpio.gz
+    gz 901952 bytes sha256=8378e9a3398f55bfee72166b8bcd2df94b5cca098418d948cf3bf44019a9d035
+    cpio 3237608 bytes sha256=2169b384f8726fc8b29433b190bd160e96ee32c242ffe40a92179f553cebf78a
+    66 entries, parses to 3237608 bytes
+
+[4] values taken from the toolchain headers (not hardcoded here)
+    /usr/lib/gcc/aarch64-linux-gnu/16.1.0/../../../../aarch64-linux-gnu/include/asm/unistd.h
+    /usr/lib/gcc/aarch64-linux-gnu/16.1.0/../../../../aarch64-linux-gnu/include/linux/reboot.h
+    __NR_reboot=142  LINUX_REBOOT_MAGIC1=0xfee1dead MAGIC2=0x28121969
+    LINUX_REBOOT_CMD_RESTART=0x1234567  LINUX_REBOOT_CMD_RESTART2=0xa1b2c3d4
+
+[5] probe /init compiled statically
+    aarch64-linux-gnu-gcc (GCC) 16.1.0
+    aarch64-linux-gnu-gcc -static -Os -s -Wall -Wextra -Wno-unused-result -o /home/user/nx679j-stock/experiments/20260916-122926-native-baseline/probe-v7-sonda-bootloader/work/init-sonda-bootloader /home/user/nx679j-stock/experiments/20260916-122926-native-baseline/probe-v7-sonda-bootloader/candidate-init-sonda-bootloader.c
+    compiler diagnostics: none (-Wall -Wextra clean)
+    file: ELF 64-bit LSB executable, ARM aarch64, version 1 (SYSV), statically linked, BuildID[sha1]=1e833558d7aa204f6495937e01d464f33e90d485, for GNU/Linux 3.7.0, stripped
+    readelf -h: Type=EXEC Machine=AArch64
+    readelf -l: PT_INTERP entries = 0 []
+    readelf -d: DT_NEEDED entries = 0 []
+    /init 532352 bytes sha256=7b2e0859173909e10e7bc27c945e446a13656506d1a03a3bfa753810b10174af
+    source grep (comments/strings stripped) for exit/_exit/abort/quick_exit: none
+    .text section: 348776 bytes sha256=a19de3c219f3aa046b4b06dad0203e116572bd89df70e802e698ba07930402f3
+    shipped vs unstripped rebuild: 714 differing bytes, confined to the ELF header (e_shoff=530880), the build-id note [('.note.gnu.build-id', 456, 36)] and the section name table: True; differing bytes inside any other allocated section: 0
+    objdump main(): 154 lines -> work/objdump-main-sonda-bootloader.txt
+    main() cannot return to the C runtime (which would call exit(3)): True [141 instructions, return instructions: none, branches to exit/abort: none, last instruction: b 40056c <main+0xb4>]
+
+[6] disassembly proof of the restart2 call (main(), shipped /init)
+    0x40064c: bl syscall  with x0=142 (__NR_reboot), x1=0xfee1dead (MAGIC1), x2=0x28121969 (MAGIC2), x3=0xa1b2c3d4 (LINUX_REBOOT_CMD_RESTART2), x4=0x455709 -> file offset 349961 = b'bootloader\x00'
+    verdict: True [0x40064c: bl syscall  with x0=142 (__NR_reboot), x1=0xfee1dead (MAGIC1), x2=0x28121969 (MAGIC2), x3=0xa1b2c3d4 (LINUX_REBOOT_CMD_RESTART2), x4=0x455709 -> file offset 349961 = b'bootloader\x00']
+
+Read : 0 MiB   ==> inf%   
+                                                                               
+Compressed 2306300 bytes into 2201314 bytes ==> 95.45% 
+
+[7] lz4 self-test against the frame measured to boot Android
+    *** lz4 v1.10.0 64-bit multithread, by Yann Collet ***
+    lz4 -l -9  /tmp/p6.cpio  -> 2201314 bytes sha256=c90e61fbf60ad0e4a32360386e8d07c383e80a06eeef0b9e2827c47933aeeaf0
+    probe6 ramdisk in the booted image: c90e61fbf60ad0e4a32360386e8d07c383e80a06eeef0b9e2827c47933aeeaf0
+    identical: this is the exact compressor of the probe6 image
+
+[8] ramdisk v7 = v6 ramdisk (66 entries: 65 + TRAILER!!!) with /init replaced by the probe
+    cpio 3106504 bytes sha256=afbbf255318a05a6ee789347fc6e0903d4f982bab4b42736fd80e71bb4e4aaac (v6 was 3237608)
+    prefix bytes 0..116 and the suffix after the init entry are byte-identical to the v6 ramdisk
+
+[9] ramdisk v7b = Android ramdisk (30 entries) with its own /init replaced
+    cpio 2574724 bytes sha256=98204ed099c7f1567383f73f4682ad0398bed3df1a804a24f971fe9898406bc1 (android was 2306300)
+    Android /init was 263928 bytes (mode 0o100750), probe is 532352 bytes (same mode)
+
+[10] lz4 -l legacy compression + round trip
+
+Read : 0 MiB   ==> inf%   
+                                                                               
+Compressed 3106504 bytes into 1014206 bytes ==> 32.65% 
+    v7: cpio 3106504 -> lz4 1014206 bytes (legacy magic 02214c18, level 9)
+        round trip OK: decompresses to the exact cpio, 66 entries, /init sha256=7b2e0859173909e1
+        sha256=2cf26721dbb74adb0815dac4df0142695bd77d37d675d1f07b771021bc7e5873
+
+Read : 0 MiB   ==> inf%   
+                                                                               
+Compressed 2574724 bytes into 2352934 bytes ==> 91.39% 
+    v7b: cpio 2574724 -> lz4 2352934 bytes (legacy magic 02214c18, level 9)
+        round trip OK: decompresses to the exact cpio, 30 entries, /init sha256=7b2e0859173909e1
+        sha256=4501c801f9700b0cfa4c83887fa35cd63a53653aac2b4f41956c31f165301c5f
+
+[11] container graft (in-place patch of the Magisk image)
+    v7: /home/user/nx679j-stock/experiments/20260916-122926-native-baseline/probe-v7-sonda-bootloader/sonda-bootloader-v7.img
+        100663296 bytes sha256=b099bf136895ad6ce3ace744a86d2f6beded63560cd295e2713f1dec1fe0fb51
+        header: kernel_size=49108324 ramdisk_size=1014206 signature_size=4096 header_version=4
+        kernel byte-identical: True
+        ramdisk stored as intended: True
+        tail identical at the same absolute offsets: True (50533954 bytes)
+        bytes differing from the source container: 1008331 (min 12 max 50129341), none outside the size field / ramdisk region
+        NOT overwritten: 1186777 bytes of the PREVIOUS ramdisk between the new ramdisk end and the old one (all-zero: False); outside the declared ramdisk_size, so the kernel never reads them
+    v7b: /home/user/nx679j-stock/experiments/20260916-122926-native-baseline/probe-v7-sonda-bootloader/sonda-bootloader-v7b.img
+        100663296 bytes sha256=610cfea53d8e06b0b8accee4775b71e34d7077acba7aaa4e2a8d812c482050eb
+        header: kernel_size=49108324 ramdisk_size=2352934 signature_size=4096 header_version=4
+        kernel byte-identical: True
+        ramdisk stored as intended: True
+        tail identical at the same absolute offsets: True (49195226 bytes)
+        bytes differing from the source container: 1449800 (min 12 max 51468065), none outside the size field / ramdisk region
+
+manifest -> /home/user/nx679j-stock/experiments/20260916-122926-native-baseline/probe-v7-sonda-bootloader/manifest.json
+log      -> /home/user/nx679j-stock/experiments/20260916-122926-native-baseline/probe-v7-sonda-bootloader/build-probe-v7bl.log
+
+result:
+  v7   /home/user/nx679j-stock/experiments/20260916-122926-native-baseline/probe-v7-sonda-bootloader/sonda-bootloader-v7.img
+       sha256=b099bf136895ad6ce3ace744a86d2f6beded63560cd295e2713f1dec1fe0fb51
+  v7b  /home/user/nx679j-stock/experiments/20260916-122926-native-baseline/probe-v7-sonda-bootloader/sonda-bootloader-v7b.img
+       sha256=610cfea53d8e06b0b8accee4775b71e34d7077acba7aaa4e2a8d812c482050eb
+
+next: verify-probe-v7bl.py, then qemu-probe-v7bl.py (no phone involved)

@@ -1,0 +1,1044 @@
+[
+  {
+    "disk": "sda",
+    "logical_sector_size": 4096,
+    "sectors": 60884992,
+    "primary": {
+      "revision": 65536,
+      "header_size": 92,
+      "header_crc": 533904240,
+      "current_lba": 1,
+      "alternate_lba": 60884991,
+      "first_usable": 6,
+      "last_usable": 60884986,
+      "table_lba": 2,
+      "entries": 32,
+      "entry_size": 128,
+      "table_crc": 323861129
+    },
+    "backup": {
+      "revision": 65536,
+      "header_size": 92,
+      "header_crc": 3997084023,
+      "current_lba": 60884991,
+      "alternate_lba": 1,
+      "first_usable": 6,
+      "last_usable": 60884986,
+      "table_lba": 60884987,
+      "entries": 32,
+      "entry_size": 128,
+      "table_crc": 323861129
+    },
+    "crc_valid": true,
+    "tables_identical": true,
+    "partitions": [
+      {
+        "index": 1,
+        "name": "ssd",
+        "first_lba": 6,
+        "last_lba": 7,
+        "size_bytes": 8192,
+        "attributes": "0x00**************"
+      },
+      {
+        "index": 2,
+        "name": "persist",
+        "first_lba": 8,
+        "last_lba": 8199,
+        "size_bytes": 33554432,
+        "attributes": "0x00**************"
+      },
+      {
+        "index": 3,
+        "name": "misc",
+        "first_lba": 8200,
+        "last_lba": 8455,
+        "size_bytes": 1048576,
+        "attributes": "0x00**************"
+      },
+      {
+        "index": 4,
+        "name": "parameter",
+        "first_lba": 8456,
+        "last_lba": 8711,
+        "size_bytes": 1048576,
+        "attributes": "0x00**************"
+      },
+      {
+        "index": 5,
+        "name": "keystore",
+        "first_lba": 8712,
+        "last_lba": 8839,
+        "size_bytes": 524288,
+        "attributes": "0x00**************"
+      },
+      {
+        "index": 6,
+        "name": "frp",
+        "first_lba": 8840,
+        "last_lba": 8967,
+        "size_bytes": 524288,
+        "attributes": "0x00**************"
+      },
+      {
+        "index": 7,
+        "name": "super",
+        "first_lba": 8968,
+        "last_lba": 2368263,
+        "size_bytes": 9663676416,
+        "attributes": "0x00**************"
+      },
+      {
+        "index": 8,
+        "name": "vbmeta_system_a",
+        "first_lba": 2368264,
+        "last_lba": 2368279,
+        "size_bytes": 65536,
+        "attributes": "0x10**************"
+      },
+      {
+        "index": 9,
+        "name": "vbmeta_system_b",
+        "first_lba": 2368280,
+        "last_lba": 2368295,
+        "size_bytes": 65536,
+        "attributes": "0x10**************"
+      },
+      {
+        "index": 10,
+        "name": "metadata",
+        "first_lba": 2368296,
+        "last_lba": 2372391,
+        "size_bytes": 16777216,
+        "attributes": "0x00**************"
+      },
+      {
+        "index": 11,
+        "name": "rawdump",
+        "first_lba": 2372392,
+        "last_lba": 2437927,
+        "size_bytes": 268435456,
+        "attributes": "0x00**************"
+      },
+      {
+        "index": 12,
+        "name": "userdata",
+        "first_lba": 2437928,
+        "last_lba": 60884986,
+        "size_bytes": 239399153664,
+        "attributes": "0x00**************"
+      }
+    ]
+  },
+  {
+    "disk": "sdb",
+    "logical_sector_size": 4096,
+    "sectors": 2048,
+    "primary": {
+      "revision": 65536,
+      "header_size": 92,
+      "header_crc": 3389711662,
+      "current_lba": 1,
+      "alternate_lba": 2047,
+      "first_usable": 6,
+      "last_usable": 2042,
+      "table_lba": 2,
+      "entries": 32,
+      "entry_size": 128,
+      "table_crc": 4000279793
+    },
+    "backup": {
+      "revision": 65536,
+      "header_size": 92,
+      "header_crc": 761884791,
+      "current_lba": 2047,
+      "alternate_lba": 1,
+      "first_usable": 6,
+      "last_usable": 2042,
+      "table_lba": 2043,
+      "entries": 32,
+      "entry_size": 128,
+      "table_crc": 4000279793
+    },
+    "crc_valid": true,
+    "tables_identical": true,
+    "partitions": [
+      {
+        "index": 1,
+        "name": "xbl_a",
+        "first_lba": 6,
+        "last_lba": 901,
+        "size_bytes": 3670016,
+        "attributes": "0x10c4000000000000"
+      },
+      {
+        "index": 2,
+        "name": "xbl_config_a",
+        "first_lba": 902,
+        "last_lba": 976,
+        "size_bytes": 307200,
+        "attributes": "0x00c4000000000000"
+      },
+      {
+        "index": 3,
+        "name": "multiimgqti_a",
+        "first_lba": 977,
+        "last_lba": 984,
+        "size_bytes": 32768,
+        "attributes": "0x10c4000000000000"
+      },
+      {
+        "index": 4,
+        "name": "multiimgoem_a",
+        "first_lba": 985,
+        "last_lba": 992,
+        "size_bytes": 32768,
+        "attributes": "0x10c4000000000000"
+      },
+      {
+        "index": 5,
+        "name": "apdp",
+        "first_lba": 993,
+        "last_lba": 1056,
+        "size_bytes": 262144,
+        "attributes": "0x00**************"
+      }
+    ]
+  },
+  {
+    "disk": "sdc",
+    "logical_sector_size": 4096,
+    "sectors": 2048,
+    "primary": {
+      "revision": 65536,
+      "header_size": 92,
+      "header_crc": 1849882571,
+      "current_lba": 1,
+      "alternate_lba": 2047,
+      "first_usable": 6,
+      "last_usable": 2042,
+      "table_lba": 2,
+      "entries": 32,
+      "entry_size": 128,
+      "table_crc": 3822540975
+    },
+    "backup": {
+      "revision": 65536,
+      "header_size": 92,
+      "header_crc": 2300666514,
+      "current_lba": 2047,
+      "alternate_lba": 1,
+      "first_usable": 6,
+      "last_usable": 2042,
+      "table_lba": 2043,
+      "entries": 32,
+      "entry_size": 128,
+      "table_crc": 3822540975
+    },
+    "crc_valid": true,
+    "tables_identical": true,
+    "partitions": [
+      {
+        "index": 1,
+        "name": "xbl_b",
+        "first_lba": 6,
+        "last_lba": 901,
+        "size_bytes": 3670016,
+        "attributes": "0x10c0000000000000"
+      },
+      {
+        "index": 2,
+        "name": "xbl_config_b",
+        "first_lba": 902,
+        "last_lba": 976,
+        "size_bytes": 307200,
+        "attributes": "0x00c0000000000000"
+      },
+      {
+        "index": 3,
+        "name": "multiimgqti_b",
+        "first_lba": 977,
+        "last_lba": 984,
+        "size_bytes": 32768,
+        "attributes": "0x10c0000000000000"
+      },
+      {
+        "index": 4,
+        "name": "multiimgoem_b",
+        "first_lba": 985,
+        "last_lba": 992,
+        "size_bytes": 32768,
+        "attributes": "0x10c0000000000000"
+      },
+      {
+        "index": 5,
+        "name": "apdpb",
+        "first_lba": 993,
+        "last_lba": 1056,
+        "size_bytes": 262144,
+        "attributes": "0x00**************"
+      }
+    ]
+  },
+  {
+    "disk": "sdd",
+    "logical_sector_size": 4096,
+    "sectors": 8192,
+    "primary": {
+      "revision": 65536,
+      "header_size": 92,
+      "header_crc": 3433048548,
+      "current_lba": 1,
+      "alternate_lba": 8191,
+      "first_usable": 6,
+      "last_usable": 8186,
+      "table_lba": 2,
+      "entries": 32,
+      "entry_size": 128,
+      "table_crc": 1699564347
+    },
+    "backup": {
+      "revision": 65536,
+      "header_size": 92,
+      "header_crc": 3890063078,
+      "current_lba": 8191,
+      "alternate_lba": 1,
+      "first_usable": 6,
+      "last_usable": 8186,
+      "table_lba": 8187,
+      "entries": 32,
+      "entry_size": 128,
+      "table_crc": 1699564347
+    },
+    "crc_valid": true,
+    "tables_identical": true,
+    "partitions": [
+      {
+        "index": 1,
+        "name": "ALIGN_TO_128K_1",
+        "first_lba": 6,
+        "last_lba": 31,
+        "size_bytes": 106496,
+        "attributes": "0x10**************"
+      },
+      {
+        "index": 2,
+        "name": "cdt",
+        "first_lba": 32,
+        "last_lba": 63,
+        "size_bytes": 131072,
+        "attributes": "0x10**************"
+      },
+      {
+        "index": 3,
+        "name": "ddr",
+        "first_lba": 64,
+        "last_lba": 319,
+        "size_bytes": 1048576,
+        "attributes": "0x10**************"
+      }
+    ]
+  },
+  {
+    "disk": "sde",
+    "logical_sector_size": 4096,
+    "sectors": 1572864,
+    "primary": {
+      "revision": 65536,
+      "header_size": 92,
+      "header_crc": 874798359,
+      "current_lba": 1,
+      "alternate_lba": 1572863,
+      "first_usable": 6,
+      "last_usable": 1572858,
+      "table_lba": 2,
+      "entries": 96,
+      "entry_size": 128,
+      "table_crc": 1129271107
+    },
+    "backup": {
+      "revision": 65536,
+      "header_size": 92,
+      "header_crc": 4142607861,
+      "current_lba": 1572863,
+      "alternate_lba": 1,
+      "first_usable": 6,
+      "last_usable": 1572858,
+      "table_lba": 1572859,
+      "entries": 96,
+      "entry_size": 128,
+      "table_crc": 1129271107
+    },
+    "crc_valid": true,
+    "tables_identical": true,
+    "partitions": [
+      {
+        "index": 1,
+        "name": "uefi_a",
+        "first_lba": 6,
+        "last_lba": 1285,
+        "size_bytes": 5242880,
+        "attributes": "0x107f000000000000"
+      },
+      {
+        "index": 2,
+        "name": "aop_a",
+        "first_lba": 1286,
+        "last_lba": 1413,
+        "size_bytes": 524288,
+        "attributes": "0x107f000000000000"
+      },
+      {
+        "index": 3,
+        "name": "aop_config_a",
+        "first_lba": 1414,
+        "last_lba": 1541,
+        "size_bytes": 524288,
+        "attributes": "0x107f000000000000"
+      },
+      {
+        "index": 4,
+        "name": "tz_a",
+        "first_lba": 1542,
+        "last_lba": 2565,
+        "size_bytes": 4194304,
+        "attributes": "0x107f000000000000"
+      },
+      {
+        "index": 5,
+        "name": "hyp_a",
+        "first_lba": 2566,
+        "last_lba": 4613,
+        "size_bytes": 8388608,
+        "attributes": "0x007f000000000000"
+      },
+      {
+        "index": 6,
+        "name": "modem_a",
+        "first_lba": 4614,
+        "last_lba": 81413,
+        "size_bytes": 314572800,
+        "attributes": "0x107f000000000000"
+      },
+      {
+        "index": 7,
+        "name": "bluetooth_a",
+        "first_lba": 81414,
+        "last_lba": 82437,
+        "size_bytes": 4194304,
+        "attributes": "0x107f000000000000"
+      },
+      {
+        "index": 8,
+        "name": "mdtpsecapp_a",
+        "first_lba": 82438,
+        "last_lba": 83461,
+        "size_bytes": 4194304,
+        "attributes": "0x107f000000000000"
+      },
+      {
+        "index": 9,
+        "name": "mdtp_a",
+        "first_lba": 83462,
+        "last_lba": 91653,
+        "size_bytes": 33554432,
+        "attributes": "0x107f000000000000"
+      },
+      {
+        "index": 10,
+        "name": "abl_a",
+        "first_lba": 91654,
+        "last_lba": 91909,
+        "size_bytes": 1048576,
+        "attributes": "0x107f000000000000"
+      },
+      {
+        "index": 11,
+        "name": "dsp_a",
+        "first_lba": 91910,
+        "last_lba": 108293,
+        "size_bytes": 67108864,
+        "attributes": "0x107f000000000000"
+      },
+      {
+        "index": 12,
+        "name": "keymaster_a",
+        "first_lba": 108294,
+        "last_lba": 108421,
+        "size_bytes": 524288,
+        "attributes": "0x107f000000000000"
+      },
+      {
+        "index": 13,
+        "name": "boot_a",
+        "first_lba": 108422,
+        "last_lba": 132997,
+        "size_bytes": 100663296,
+        "attributes": "0x007f000000000000"
+      },
+      {
+        "index": 14,
+        "name": "devcfg_a",
+        "first_lba": 132998,
+        "last_lba": 133029,
+        "size_bytes": 131072,
+        "attributes": "0x007f000000000000"
+      },
+      {
+        "index": 15,
+        "name": "qupfw_a",
+        "first_lba": 133030,
+        "last_lba": 133049,
+        "size_bytes": 81920,
+        "attributes": "0x007f000000000000"
+      },
+      {
+        "index": 16,
+        "name": "vbmeta_a",
+        "first_lba": 133050,
+        "last_lba": 133065,
+        "size_bytes": 65536,
+        "attributes": "0x107f000000000000"
+      },
+      {
+        "index": 17,
+        "name": "dtbo_a",
+        "first_lba": 133066,
+        "last_lba": 139209,
+        "size_bytes": 25165824,
+        "attributes": "0x007f000000000000"
+      },
+      {
+        "index": 18,
+        "name": "uefisecapp_a",
+        "first_lba": 139210,
+        "last_lba": 139721,
+        "size_bytes": 2097152,
+        "attributes": "0x007f000000000000"
+      },
+      {
+        "index": 19,
+        "name": "imagefv_a",
+        "first_lba": 139722,
+        "last_lba": 140233,
+        "size_bytes": 2097152,
+        "attributes": "0x007f000000000001"
+      },
+      {
+        "index": 20,
+        "name": "shrm_a",
+        "first_lba": 140234,
+        "last_lba": 140265,
+        "size_bytes": 131072,
+        "attributes": "0x107f000000000000"
+      },
+      {
+        "index": 21,
+        "name": "vm-bootsys_a",
+        "first_lba": 140266,
+        "last_lba": 207374,
+        "size_bytes": 274878464,
+        "attributes": "0x007f000000000000"
+      },
+      {
+        "index": 22,
+        "name": "cpucp_a",
+        "first_lba": 207375,
+        "last_lba": 207630,
+        "size_bytes": 1048576,
+        "attributes": "0x107f000000000000"
+      },
+      {
+        "index": 23,
+        "name": "featenabler_a",
+        "first_lba": 207631,
+        "last_lba": 207662,
+        "size_bytes": 131072,
+        "attributes": "0x007f000000000000"
+      },
+      {
+        "index": 24,
+        "name": "vendor_boot_a",
+        "first_lba": 207663,
+        "last_lba": 232238,
+        "size_bytes": 100663296,
+        "attributes": "0x007f000000000000"
+      },
+      {
+        "index": 25,
+        "name": "qmcs",
+        "first_lba": 232239,
+        "last_lba": 239918,
+        "size_bytes": 31457280,
+        "attributes": "0x00**************"
+      },
+      {
+        "index": 26,
+        "name": "qweslicstore_a",
+        "first_lba": 239919,
+        "last_lba": 239982,
+        "size_bytes": 262144,
+        "attributes": "0x107f000000000000"
+      },
+      {
+        "index": 27,
+        "name": "recovery_a",
+        "first_lba": 239983,
+        "last_lba": 265582,
+        "size_bytes": 104857600,
+        "attributes": "0x007f000000000000"
+      },
+      {
+        "index": 28,
+        "name": "xbl_ramdump_a",
+        "first_lba": 265583,
+        "last_lba": 266094,
+        "size_bytes": 2097152,
+        "attributes": "0x007f000000000000"
+      },
+      {
+        "index": 29,
+        "name": "uefi_b",
+        "first_lba": 266095,
+        "last_lba": 267374,
+        "size_bytes": 5242880,
+        "attributes": "0x107b000000000000"
+      },
+      {
+        "index": 30,
+        "name": "aop_b",
+        "first_lba": 267375,
+        "last_lba": 267502,
+        "size_bytes": 524288,
+        "attributes": "0x007b000000000000"
+      },
+      {
+        "index": 31,
+        "name": "aop_config_b",
+        "first_lba": 267503,
+        "last_lba": 267630,
+        "size_bytes": 524288,
+        "attributes": "0x007b000000000000"
+      },
+      {
+        "index": 32,
+        "name": "tz_b",
+        "first_lba": 267631,
+        "last_lba": 268654,
+        "size_bytes": 4194304,
+        "attributes": "0x007b000000000000"
+      },
+      {
+        "index": 33,
+        "name": "hyp_b",
+        "first_lba": 268655,
+        "last_lba": 270702,
+        "size_bytes": 8388608,
+        "attributes": "0x007b000000000000"
+      },
+      {
+        "index": 34,
+        "name": "modem_b",
+        "first_lba": 270703,
+        "last_lba": 347502,
+        "size_bytes": 314572800,
+        "attributes": "0x107b000000000000"
+      },
+      {
+        "index": 35,
+        "name": "bluetooth_b",
+        "first_lba": 347503,
+        "last_lba": 348526,
+        "size_bytes": 4194304,
+        "attributes": "0x107b000000000000"
+      },
+      {
+        "index": 36,
+        "name": "mdtpsecapp_b",
+        "first_lba": 348527,
+        "last_lba": 349550,
+        "size_bytes": 4194304,
+        "attributes": "0x107b000000000000"
+      },
+      {
+        "index": 37,
+        "name": "mdtp_b",
+        "first_lba": 349551,
+        "last_lba": 357742,
+        "size_bytes": 33554432,
+        "attributes": "0x107b000000000000"
+      },
+      {
+        "index": 38,
+        "name": "abl_b",
+        "first_lba": 357743,
+        "last_lba": 357998,
+        "size_bytes": 1048576,
+        "attributes": "0x107b000000000000"
+      },
+      {
+        "index": 39,
+        "name": "dsp_b",
+        "first_lba": 357999,
+        "last_lba": 374382,
+        "size_bytes": 67108864,
+        "attributes": "0x107b000000000000"
+      },
+      {
+        "index": 40,
+        "name": "keymaster_b",
+        "first_lba": 374383,
+        "last_lba": 374510,
+        "size_bytes": 524288,
+        "attributes": "0x107b000000000000"
+      },
+      {
+        "index": 41,
+        "name": "boot_b",
+        "first_lba": 374511,
+        "last_lba": 399086,
+        "size_bytes": 100663296,
+        "attributes": "0x003a000000000000"
+      },
+      {
+        "index": 42,
+        "name": "devcfg_b",
+        "first_lba": 399087,
+        "last_lba": 399118,
+        "size_bytes": 131072,
+        "attributes": "0x007b000000000000"
+      },
+      {
+        "index": 43,
+        "name": "qupfw_b",
+        "first_lba": 399119,
+        "last_lba": 399138,
+        "size_bytes": 81920,
+        "attributes": "0x007b000000000000"
+      },
+      {
+        "index": 44,
+        "name": "vbmeta_b",
+        "first_lba": 399139,
+        "last_lba": 399154,
+        "size_bytes": 65536,
+        "attributes": "0x107b000000000000"
+      },
+      {
+        "index": 45,
+        "name": "dtbo_b",
+        "first_lba": 399155,
+        "last_lba": 405298,
+        "size_bytes": 25165824,
+        "attributes": "0x007b000000000000"
+      },
+      {
+        "index": 46,
+        "name": "uefisecapp_b",
+        "first_lba": 405299,
+        "last_lba": 405810,
+        "size_bytes": 2097152,
+        "attributes": "0x007b000000000000"
+      },
+      {
+        "index": 47,
+        "name": "imagefv_b",
+        "first_lba": 405811,
+        "last_lba": 406322,
+        "size_bytes": 2097152,
+        "attributes": "0x007b000000000001"
+      },
+      {
+        "index": 48,
+        "name": "shrm_b",
+        "first_lba": 406323,
+        "last_lba": 406354,
+        "size_bytes": 131072,
+        "attributes": "0x107b000000000000"
+      },
+      {
+        "index": 49,
+        "name": "vm-bootsys_b",
+        "first_lba": 406355,
+        "last_lba": 473463,
+        "size_bytes": 274878464,
+        "attributes": "0x007b000000000000"
+      },
+      {
+        "index": 50,
+        "name": "cpucp_b",
+        "first_lba": 473464,
+        "last_lba": 473719,
+        "size_bytes": 1048576,
+        "attributes": "0x107b000000000000"
+      },
+      {
+        "index": 51,
+        "name": "featenabler_b",
+        "first_lba": 473720,
+        "last_lba": 473751,
+        "size_bytes": 131072,
+        "attributes": "0x007b000000000000"
+      },
+      {
+        "index": 52,
+        "name": "vendor_boot_b",
+        "first_lba": 473752,
+        "last_lba": 498327,
+        "size_bytes": 100663296,
+        "attributes": "0x007b000000000000"
+      },
+      {
+        "index": 53,
+        "name": "qweslicstore_b",
+        "first_lba": 498328,
+        "last_lba": 498391,
+        "size_bytes": 262144,
+        "attributes": "0x107b000000000000"
+      },
+      {
+        "index": 54,
+        "name": "recovery_b",
+        "first_lba": 498392,
+        "last_lba": 523991,
+        "size_bytes": 104857600,
+        "attributes": "0x007b000000000000"
+      },
+      {
+        "index": 55,
+        "name": "xbl_ramdump_b",
+        "first_lba": 523992,
+        "last_lba": 524503,
+        "size_bytes": 2097152,
+        "attributes": "0x007b000000000000"
+      },
+      {
+        "index": 56,
+        "name": "devinfo",
+        "first_lba": 524504,
+        "last_lba": 524504,
+        "size_bytes": 4096,
+        "attributes": "0x10**************"
+      },
+      {
+        "index": 57,
+        "name": "dip",
+        "first_lba": 524505,
+        "last_lba": 524760,
+        "size_bytes": 1048576,
+        "attributes": "0x10**************"
+      },
+      {
+        "index": 58,
+        "name": "splash",
+        "first_lba": 524761,
+        "last_lba": 533116,
+        "size_bytes": 34226176,
+        "attributes": "0x00**************"
+      },
+      {
+        "index": 59,
+        "name": "limits",
+        "first_lba": 533117,
+        "last_lba": 533117,
+        "size_bytes": 4096,
+        "attributes": "0x10**************"
+      },
+      {
+        "index": 60,
+        "name": "limits-cdsp",
+        "first_lba": 533118,
+        "last_lba": 533118,
+        "size_bytes": 4096,
+        "attributes": "0x10**************"
+      },
+      {
+        "index": 61,
+        "name": "toolsfv",
+        "first_lba": 533119,
+        "last_lba": 533374,
+        "size_bytes": 1048576,
+        "attributes": "0x10**************"
+      },
+      {
+        "index": 62,
+        "name": "logfs",
+        "first_lba": 533375,
+        "last_lba": 535422,
+        "size_bytes": 8388608,
+        "attributes": "0x00**************"
+      },
+      {
+        "index": 63,
+        "name": "logdump",
+        "first_lba": 535423,
+        "last_lba": 666494,
+        "size_bytes": 536870912,
+        "attributes": "0x00**************"
+      },
+      {
+        "index": 64,
+        "name": "storsec",
+        "first_lba": 666495,
+        "last_lba": 666526,
+        "size_bytes": 131072,
+        "attributes": "0x10**************"
+      },
+      {
+        "index": 65,
+        "name": "uefivarstore",
+        "first_lba": 666527,
+        "last_lba": 666654,
+        "size_bytes": 524288,
+        "attributes": "0x10**************"
+      },
+      {
+        "index": 66,
+        "name": "secdata",
+        "first_lba": 666655,
+        "last_lba": 666661,
+        "size_bytes": 28672,
+        "attributes": "0x10**************"
+      },
+      {
+        "index": 67,
+        "name": "vm-data",
+        "first_lba": 666662,
+        "last_lba": 675017,
+        "size_bytes": 34226176,
+        "attributes": "0x00**************"
+      },
+      {
+        "index": 68,
+        "name": "mdcompress",
+        "first_lba": 675018,
+        "last_lba": 680137,
+        "size_bytes": 20971520,
+        "attributes": "0x10**************"
+      },
+      {
+        "index": 69,
+        "name": "connsec",
+        "first_lba": 680138,
+        "last_lba": 680169,
+        "size_bytes": 131072,
+        "attributes": "0x10**************"
+      },
+      {
+        "index": 70,
+        "name": "tzsc",
+        "first_lba": 680170,
+        "last_lba": 680201,
+        "size_bytes": 131072,
+        "attributes": "0x10**************"
+      },
+      {
+        "index": 71,
+        "name": "spunvm",
+        "first_lba": 680202,
+        "last_lba": 688393,
+        "size_bytes": 33554432,
+        "attributes": "0x00**************"
+      },
+      {
+        "index": 72,
+        "name": "rtice",
+        "first_lba": 688394,
+        "last_lba": 688521,
+        "size_bytes": 524288,
+        "attributes": "0x10**************"
+      },
+      {
+        "index": 73,
+        "name": "xbl_sc_test_mode",
+        "first_lba": 688522,
+        "last_lba": 688537,
+        "size_bytes": 65536,
+        "attributes": "0x00**************"
+      },
+      {
+        "index": 74,
+        "name": "xbl_sc_logs",
+        "first_lba": 688538,
+        "last_lba": 688569,
+        "size_bytes": 131072,
+        "attributes": "0x00**************"
+      }
+    ]
+  },
+  {
+    "disk": "sdf",
+    "logical_sector_size": 4096,
+    "sectors": 8192,
+    "primary": {
+      "revision": 65536,
+      "header_size": 92,
+      "header_crc": 3606161990,
+      "current_lba": 1,
+      "alternate_lba": 8191,
+      "first_usable": 6,
+      "last_usable": 8186,
+      "table_lba": 2,
+      "entries": 32,
+      "entry_size": 128,
+      "table_crc": 2451951039
+    },
+    "backup": {
+      "revision": 65536,
+      "header_size": 92,
+      "header_crc": 4253820228,
+      "current_lba": 8191,
+      "alternate_lba": 1,
+      "first_usable": 6,
+      "last_usable": 8186,
+      "table_lba": 8187,
+      "entries": 32,
+      "entry_size": 128,
+      "table_crc": 2451951039
+    },
+    "crc_valid": true,
+    "tables_identical": true,
+    "partitions": [
+      {
+        "index": 1,
+        "name": "ALIGN_TO_128K_2",
+        "first_lba": 6,
+        "last_lba": 31,
+        "size_bytes": 106496,
+        "attributes": "0x10**************"
+      },
+      {
+        "index": 2,
+        "name": "modemst1",
+        "first_lba": 32,
+        "last_lba": 799,
+        "size_bytes": 3145728,
+        "attributes": "0x00**************"
+      },
+      {
+        "index": 3,
+        "name": "modemst2",
+        "first_lba": 800,
+        "last_lba": 1567,
+        "size_bytes": 3145728,
+        "attributes": "0x00**************"
+      },
+      {
+        "index": 4,
+        "name": "fsg",
+        "first_lba": 1568,
+        "last_lba": 2335,
+        "size_bytes": 3145728,
+        "attributes": "0x10**************"
+      },
+      {
+        "index": 5,
+        "name": "fsc",
+        "first_lba": 2336,
+        "last_lba": 2367,
+        "size_bytes": 131072,
+        "attributes": "0x00**************"
+      }
+    ]
+  }
+]

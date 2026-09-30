@@ -1,0 +1,1950 @@
+{
+  "/system/vendor/bin/netmgrd": [
+    {
+      "name": "linux-vdso.so.1",
+      "target": "[vdso]"
+    },
+    {
+      "name": "libdsutils.so",
+      "target": "/vendor/lib64/libdsutils.so"
+    },
+    {
+      "name": "libconfigdb.so",
+      "target": "/vendor/lib64/libconfigdb.so"
+    },
+    {
+      "name": "libdiag.so",
+      "target": "/vendor/lib64/libdiag.so"
+    },
+    {
+      "name": "librmnetctl.so",
+      "target": "/vendor/lib64/librmnetctl.so"
+    },
+    {
+      "name": "libnetmgr_utils.so",
+      "target": "/vendor/lib64/libnetmgr_utils.so"
+    },
+    {
+      "name": "libnlnetmgr.so",
+      "target": "/vendor/lib64/libnlnetmgr.so"
+    },
+    {
+      "name": "libnetmgr.so",
+      "target": "/vendor/lib64/libnetmgr.so"
+    },
+    {
+      "name": "libnetmgr_common.so",
+      "target": "/vendor/lib64/libnetmgr_common.so"
+    },
+    {
+      "name": "libqmiservices.so",
+      "target": "/vendor/lib64/libqmiservices.so"
+    },
+    {
+      "name": "libqmi_common_so.so",
+      "target": "/vendor/lib64/libqmi_common_so.so"
+    },
+    {
+      "name": "libqmi_cci.so",
+      "target": "/vendor/lib64/libqmi_cci.so"
+    },
+    {
+      "name": "libqmi_client_qmux.so",
+      "target": "/vendor/lib64/libqmi_client_qmux.so"
+    },
+    {
+      "name": "libqmi_client_helper.so",
+      "target": "/vendor/lib64/libqmi_client_helper.so"
+    },
+    {
+      "name": "libqmi.so",
+      "target": "/vendor/lib64/libqmi.so"
+    },
+    {
+      "name": "libqti_vndfwk_detect_vendor.so",
+      "target": "/vendor/lib64/libqti_vndfwk_detect_vendor.so"
+    },
+    {
+      "name": "libnetmgrxfrmutils.so",
+      "target": "/vendor/lib64/libnetmgrxfrmutils.so"
+    },
+    {
+      "name": "libnetmgrmodemproxy.so",
+      "target": "/vendor/lib64/libnetmgrmodemproxy.so"
+    },
+    {
+      "name": "libnetmgr_sscm3.so",
+      "target": "/vendor/lib64/libnetmgr_sscm3.so"
+    },
+    {
+      "name": "libcneapiclient.so",
+      "target": "/vendor/lib64/libcneapiclient.so"
+    },
+    {
+      "name": "libmdmdetect.so",
+      "target": "/vendor/lib64/libmdmdetect.so"
+    },
+    {
+      "name": "libxml.so",
+      "target": "/vendor/lib64/libxml.so"
+    },
+    {
+      "name": "android.system.net.netd@1.1.so",
+      "target": "/vendor/lib64/android.system.net.netd@1.1.so"
+    },
+    {
+      "name": "libidl.so",
+      "target": "/vendor/lib64/libidl.so"
+    },
+    {
+      "name": "libqmi_encdec.so",
+      "target": "/vendor/lib64/libqmi_encdec.so"
+    },
+    {
+      "name": "libnetmgrportutils.so",
+      "target": "/vendor/lib64/libnetmgrportutils.so"
+    },
+    {
+      "name": "libnetmgr_datapath_proxy.so",
+      "target": "/vendor/lib64/libnetmgr_datapath_proxy.so"
+    },
+    {
+      "name": "vendor.qti.hardware.data.cne.internal.api@1.0.so",
+      "target": "/vendor/lib64/vendor.qti.hardware.data.cne.internal.api@1.0.so"
+    },
+    {
+      "name": "vendor.qti.data.factory@2.0.so",
+      "target": "/vendor/lib64/vendor.qti.data.factory@2.0.so"
+    },
+    {
+      "name": "android.system.net.netd@1.0.so",
+      "target": "/vendor/lib64/android.system.net.netd@1.0.so"
+    },
+    {
+      "name": "vendor.qti.hardware.data.cne.internal.constants@1.0.so",
+      "target": "/vendor/lib64/vendor.qti.hardware.data.cne.internal.constants@1.0.so"
+    },
+    {
+      "name": "vendor.qti.hardware.data.cne.internal.server@1.0.so",
+      "target": "/vendor/lib64/vendor.qti.hardware.data.cne.internal.server@1.0.so"
+    },
+    {
+      "name": "vendor.qti.hardware.data.dynamicdds@1.0.so",
+      "target": "/vendor/lib64/vendor.qti.hardware.data.dynamicdds@1.0.so"
+    },
+    {
+      "name": "vendor.qti.hardware.data.qmi@1.0.so",
+      "target": "/vendor/lib64/vendor.qti.hardware.data.qmi@1.0.so"
+    },
+    {
+      "name": "vendor.qti.ims.rcsconfig@1.0.so",
+      "target": "/vendor/lib64/vendor.qti.ims.rcsconfig@1.0.so"
+    },
+    {
+      "name": "vendor.qti.latency@2.0.so",
+      "target": "/vendor/lib64/vendor.qti.latency@2.0.so"
+    },
+    {
+      "name": "libcutils.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libcutils.so"
+    },
+    {
+      "name": "libbase.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libbase.so"
+    },
+    {
+      "name": "libc++.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libc++.so"
+    },
+    {
+      "name": "liblog.so",
+      "target": "/system/lib64/liblog.so"
+    },
+    {
+      "name": "libc++.so",
+      "target": "/system/lib64/libc++.so"
+    },
+    {
+      "name": "libc.so",
+      "target": "/apex/com.android.runtime/lib64/bionic/libc.so"
+    },
+    {
+      "name": "libm.so",
+      "target": "/apex/com.android.runtime/lib64/bionic/libm.so"
+    },
+    {
+      "name": "libdl.so",
+      "target": "/apex/com.android.runtime/lib64/bionic/libdl.so"
+    },
+    {
+      "name": "libnetutils.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libnetutils.so"
+    },
+    {
+      "name": "libutils.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libutils.so"
+    },
+    {
+      "name": "libprocessgroup.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libprocessgroup.so"
+    },
+    {
+      "name": "libbinder.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libbinder.so"
+    },
+    {
+      "name": "libhidlbase.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libhidlbase.so"
+    },
+    {
+      "name": "libandroid_net.so",
+      "target": "/system/lib64/libandroid_net.so"
+    },
+    {
+      "name": "libnetd_client.so",
+      "target": "/system/lib64/libnetd_client.so"
+    },
+    {
+      "name": "libhardware_legacy.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libhardware_legacy.so"
+    },
+    {
+      "name": "android.system.suspend@1.0.so",
+      "target": "/apex/com.android.vndk.v31/lib64/android.system.suspend@1.0.so"
+    },
+    {
+      "name": "libvndksupport.so",
+      "target": "/system/lib64/libvndksupport.so"
+    },
+    {
+      "name": "libdl_android.so",
+      "target": "/apex/com.android.runtime/lib64/bionic/libdl_android.so"
+    },
+    {
+      "name": "libcgrouprc.so",
+      "target": "/system/lib64/libcgrouprc.so"
+    },
+    {
+      "name": "libbase.so",
+      "target": "/system/lib64/libbase.so"
+    }
+  ],
+  "/system/vendor/bin/hw/qcrilNrd": [
+    {
+      "name": "linux-vdso.so.1",
+      "target": "[vdso]"
+    },
+    {
+      "name": "libqcrilNr.so",
+      "target": "/vendor/lib64/libqcrilNr.so"
+    },
+    {
+      "name": "qtiwakelock.so",
+      "target": "/vendor/lib64/qtiwakelock.so"
+    },
+    {
+      "name": "libavservices_minijail.so",
+      "target": "/vendor/lib64/libavservices_minijail.so"
+    },
+    {
+      "name": "qcrild_libqcrilnr.so",
+      "target": "/vendor/lib64/qcrild_libqcrilnr.so"
+    },
+    {
+      "name": "libqcrilNrImsModule.so",
+      "target": "/vendor/lib64/libqcrilNrImsModule.so"
+    },
+    {
+      "name": "qcrilInterfaces.so",
+      "target": "/vendor/lib64/qcrilInterfaces.so"
+    },
+    {
+      "name": "vendor.qti.hardware.data.latency@1.0.so",
+      "target": "/vendor/lib64/vendor.qti.hardware.data.latency@1.0.so"
+    },
+    {
+      "name": "vendor.qti.hardware.radio.am@1.0.so",
+      "target": "/vendor/lib64/vendor.qti.hardware.radio.am@1.0.so"
+    },
+    {
+      "name": "vendor.qti.hardware.radio.qcrilhook@1.0.so",
+      "target": "/vendor/lib64/vendor.qti.hardware.radio.qcrilhook@1.0.so"
+    },
+    {
+      "name": "vendor.qti.hardware.radio.uim@1.0.so",
+      "target": "/vendor/lib64/vendor.qti.hardware.radio.uim@1.0.so"
+    },
+    {
+      "name": "vendor.qti.hardware.radio.uim@1.1.so",
+      "target": "/vendor/lib64/vendor.qti.hardware.radio.uim@1.1.so"
+    },
+    {
+      "name": "vendor.qti.hardware.radio.uim@1.2.so",
+      "target": "/vendor/lib64/vendor.qti.hardware.radio.uim@1.2.so"
+    },
+    {
+      "name": "vendor.qti.hardware.radio.uim_remote_server@1.0.so",
+      "target": "/vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so"
+    },
+    {
+      "name": "vendor.qti.hardware.radio.uim_remote_client@1.0.so",
+      "target": "/vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0.so"
+    },
+    {
+      "name": "vendor.qti.hardware.radio.uim_remote_client@1.1.so",
+      "target": "/vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.1.so"
+    },
+    {
+      "name": "vendor.qti.hardware.radio.uim_remote_client@1.2.so",
+      "target": "/vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.2.so"
+    },
+    {
+      "name": "vendor.qti.hardware.radio.lpa@1.0.so",
+      "target": "/vendor/lib64/vendor.qti.hardware.radio.lpa@1.0.so"
+    },
+    {
+      "name": "vendor.qti.hardware.radio.lpa@1.1.so",
+      "target": "/vendor/lib64/vendor.qti.hardware.radio.lpa@1.1.so"
+    },
+    {
+      "name": "vendor.qti.hardware.radio.lpa@1.2.so",
+      "target": "/vendor/lib64/vendor.qti.hardware.radio.lpa@1.2.so"
+    },
+    {
+      "name": "vendor.qti.hardware.radio.qtiradio@1.0.so",
+      "target": "/vendor/lib64/vendor.qti.hardware.radio.qtiradio@1.0.so"
+    },
+    {
+      "name": "vendor.qti.hardware.radio.qtiradio@2.0.so",
+      "target": "/vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.0.so"
+    },
+    {
+      "name": "vendor.qti.hardware.radio.qtiradio@2.1.so",
+      "target": "/vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.1.so"
+    },
+    {
+      "name": "vendor.qti.hardware.radio.qtiradio@2.2.so",
+      "target": "/vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.2.so"
+    },
+    {
+      "name": "vendor.qti.hardware.radio.qtiradio@2.3.so",
+      "target": "/vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.3.so"
+    },
+    {
+      "name": "vendor.qti.hardware.radio.qtiradio@2.4.so",
+      "target": "/vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.4.so"
+    },
+    {
+      "name": "vendor.qti.hardware.radio.qtiradio@2.5.so",
+      "target": "/vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.5.so"
+    },
+    {
+      "name": "vendor.qti.hardware.radio.qtiradio@2.6.so",
+      "target": "/vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.6.so"
+    },
+    {
+      "name": "android.hardware.radio@1.0.so",
+      "target": "/vendor/lib64/android.hardware.radio@1.0.so"
+    },
+    {
+      "name": "android.hardware.radio.config@1.0.so",
+      "target": "/vendor/lib64/android.hardware.radio.config@1.0.so"
+    },
+    {
+      "name": "android.hardware.radio.config@1.1.so",
+      "target": "/vendor/lib64/android.hardware.radio.config@1.1.so"
+    },
+    {
+      "name": "android.hardware.radio.config@1.2.so",
+      "target": "/vendor/lib64/android.hardware.radio.config@1.2.so"
+    },
+    {
+      "name": "android.hardware.radio.config@1.3.so",
+      "target": "/vendor/lib64/android.hardware.radio.config@1.3.so"
+    },
+    {
+      "name": "libqcrilNrFramework.so",
+      "target": "/vendor/lib64/libqcrilNrFramework.so"
+    },
+    {
+      "name": "android.hardware.secure_element@1.0.so",
+      "target": "/vendor/lib64/android.hardware.secure_element@1.0.so"
+    },
+    {
+      "name": "android.hardware.secure_element@1.1.so",
+      "target": "/vendor/lib64/android.hardware.secure_element@1.1.so"
+    },
+    {
+      "name": "android.hardware.secure_element@1.2.so",
+      "target": "/vendor/lib64/android.hardware.secure_element@1.2.so"
+    },
+    {
+      "name": "qcrild_libqcrilnrutils.so",
+      "target": "/vendor/lib64/qcrild_libqcrilnrutils.so"
+    },
+    {
+      "name": "libqmi_cci.so",
+      "target": "/vendor/lib64/libqmi_cci.so"
+    },
+    {
+      "name": "libqmi_client_qmux.so",
+      "target": "/vendor/lib64/libqmi_client_qmux.so"
+    },
+    {
+      "name": "libdiag.so",
+      "target": "/vendor/lib64/libdiag.so"
+    },
+    {
+      "name": "libqmiservices.so",
+      "target": "/vendor/lib64/libqmiservices.so"
+    },
+    {
+      "name": "librilqmimiscservices.so",
+      "target": "/vendor/lib64/librilqmimiscservices.so"
+    },
+    {
+      "name": "libqmi_client_helper.so",
+      "target": "/vendor/lib64/libqmi_client_helper.so"
+    },
+    {
+      "name": "libidl.so",
+      "target": "/vendor/lib64/libidl.so"
+    },
+    {
+      "name": "libmdmdetect.so",
+      "target": "/vendor/lib64/libmdmdetect.so"
+    },
+    {
+      "name": "libperipheral_client.so",
+      "target": "/vendor/lib64/libperipheral_client.so"
+    },
+    {
+      "name": "libqcrilNrLogger.so",
+      "target": "/vendor/lib64/libqcrilNrLogger.so"
+    },
+    {
+      "name": "android.hardware.radio@1.1.so",
+      "target": "/vendor/lib64/android.hardware.radio@1.1.so"
+    },
+    {
+      "name": "android.hardware.radio@1.2.so",
+      "target": "/vendor/lib64/android.hardware.radio@1.2.so"
+    },
+    {
+      "name": "android.hardware.radio@1.3.so",
+      "target": "/vendor/lib64/android.hardware.radio@1.3.so"
+    },
+    {
+      "name": "android.hardware.radio@1.4.so",
+      "target": "/vendor/lib64/android.hardware.radio@1.4.so"
+    },
+    {
+      "name": "android.hardware.radio@1.5.so",
+      "target": "/vendor/lib64/android.hardware.radio@1.5.so"
+    },
+    {
+      "name": "android.hardware.radio@1.6.so",
+      "target": "/vendor/lib64/android.hardware.radio@1.6.so"
+    },
+    {
+      "name": "android.hardware.radio.deprecated@1.0.so",
+      "target": "/vendor/lib64/android.hardware.radio.deprecated@1.0.so"
+    },
+    {
+      "name": "libqcrilNrQtiMutex.so",
+      "target": "/vendor/lib64/libqcrilNrQtiMutex.so"
+    },
+    {
+      "name": "libprotobuf-cpp-full-3.9.1.so",
+      "target": "/vendor/lib64/libprotobuf-cpp-full-3.9.1.so"
+    },
+    {
+      "name": "libconfigdb.so",
+      "target": "/vendor/lib64/libconfigdb.so"
+    },
+    {
+      "name": "libxml.so",
+      "target": "/vendor/lib64/libxml.so"
+    },
+    {
+      "name": "libqcrilNrQtiBus.so",
+      "target": "/vendor/lib64/libqcrilNrQtiBus.so"
+    },
+    {
+      "name": "qtiril-utils.so",
+      "target": "/vendor/lib64/qtiril-utils.so"
+    },
+    {
+      "name": "qcrilMarshal.so",
+      "target": "/vendor/lib64/qcrilMarshal.so"
+    },
+    {
+      "name": "libril-db.so",
+      "target": "/vendor/lib64/libril-db.so"
+    },
+    {
+      "name": "libril-legacy.so",
+      "target": "/vendor/lib64/libril-legacy.so"
+    },
+    {
+      "name": "qcrilNrQmiModule.so",
+      "target": "/vendor/lib64/qcrilNrQmiModule.so"
+    },
+    {
+      "name": "libQtiRilLoadable.so",
+      "target": "/vendor/lib64/libQtiRilLoadable.so"
+    },
+    {
+      "name": "qtiPeripheralMgr.so",
+      "target": "/vendor/lib64/qtiPeripheralMgr.so"
+    },
+    {
+      "name": "vendor.qti.hardware.radio.ims-V4-ndk_platform.so",
+      "target": "/vendor/lib64/vendor.qti.hardware.radio.ims-V4-ndk_platform.so"
+    },
+    {
+      "name": "vendor.qti.hardware.radio.qtiradio-V4-ndk_platform.so",
+      "target": "/vendor/lib64/vendor.qti.hardware.radio.qtiradio-V4-ndk_platform.so"
+    },
+    {
+      "name": "libsystem_health_mon.so",
+      "target": "/vendor/lib64/libsystem_health_mon.so"
+    },
+    {
+      "name": "libqmi_encdec.so",
+      "target": "/vendor/lib64/libqmi_encdec.so"
+    },
+    {
+      "name": "libdsutils.so",
+      "target": "/vendor/lib64/libdsutils.so"
+    },
+    {
+      "name": "libqmi_common_so.so",
+      "target": "/vendor/lib64/libqmi_common_so.so"
+    },
+    {
+      "name": "libpdmapper.so",
+      "target": "/vendor/lib64/libpdmapper.so"
+    },
+    {
+      "name": "libpdnotifier.so",
+      "target": "/vendor/lib64/libpdnotifier.so"
+    },
+    {
+      "name": "libjson.so",
+      "target": "/vendor/lib64/libjson.so"
+    },
+    {
+      "name": "libcutils.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libcutils.so"
+    },
+    {
+      "name": "libbase.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libbase.so"
+    },
+    {
+      "name": "libc++.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libc++.so"
+    },
+    {
+      "name": "liblog.so",
+      "target": "/system/lib64/liblog.so"
+    },
+    {
+      "name": "libc++.so",
+      "target": "/system/lib64/libc++.so"
+    },
+    {
+      "name": "libc.so",
+      "target": "/apex/com.android.runtime/lib64/bionic/libc.so"
+    },
+    {
+      "name": "libm.so",
+      "target": "/apex/com.android.runtime/lib64/bionic/libm.so"
+    },
+    {
+      "name": "libdl.so",
+      "target": "/apex/com.android.runtime/lib64/bionic/libdl.so"
+    },
+    {
+      "name": "libutils.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libutils.so"
+    },
+    {
+      "name": "libprocessgroup.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libprocessgroup.so"
+    },
+    {
+      "name": "libhidlbase.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libhidlbase.so"
+    },
+    {
+      "name": "libhardware_legacy.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libhardware_legacy.so"
+    },
+    {
+      "name": "libbinder.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libbinder.so"
+    },
+    {
+      "name": "android.system.suspend@1.0.so",
+      "target": "/apex/com.android.vndk.v31/lib64/android.system.suspend@1.0.so"
+    },
+    {
+      "name": "libsqlite.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libsqlite.so"
+    },
+    {
+      "name": "libvndksupport.so",
+      "target": "/system/lib64/libvndksupport.so"
+    },
+    {
+      "name": "libdl_android.so",
+      "target": "/apex/com.android.runtime/lib64/bionic/libdl_android.so"
+    },
+    {
+      "name": "libz.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libz.so"
+    },
+    {
+      "name": "libbinder_ndk.so",
+      "target": "/system/lib64/libbinder_ndk.so"
+    },
+    {
+      "name": "libandroid_runtime_lazy.so",
+      "target": "/system/lib64/libandroid_runtime_lazy.so"
+    },
+    {
+      "name": "libbase.so",
+      "target": "/system/lib64/libbase.so"
+    },
+    {
+      "name": "libbinder.so",
+      "target": "/system/lib64/libbinder.so"
+    },
+    {
+      "name": "libutils.so",
+      "target": "/system/lib64/libutils.so"
+    },
+    {
+      "name": "libcutils.so",
+      "target": "/system/lib64/libcutils.so"
+    },
+    {
+      "name": "libprocessgroup.so",
+      "target": "/system/lib64/libprocessgroup.so"
+    },
+    {
+      "name": "libcgrouprc.so",
+      "target": "/system/lib64/libcgrouprc.so"
+    },
+    {
+      "name": "libxml2.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libxml2.so"
+    },
+    {
+      "name": "libminijail.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libminijail.so"
+    },
+    {
+      "name": "libcap.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libcap.so"
+    },
+    {
+      "name": "android.hidl.safe_union@1.0.so",
+      "target": "/apex/com.android.vndk.v31/lib64/android.hidl.safe_union@1.0.so"
+    },
+    {
+      "name": "libnetutils.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libnetutils.so"
+    }
+  ],
+  "/system/vendor/bin/dpmQmiMgr": [
+    {
+      "name": "linux-vdso.so.1",
+      "target": "[vdso]"
+    },
+    {
+      "name": "libqmi_cci.so",
+      "target": "/vendor/lib64/libqmi_cci.so"
+    },
+    {
+      "name": "libqmi_client_helper.so",
+      "target": "/vendor/lib64/libqmi_client_helper.so"
+    },
+    {
+      "name": "libqmiservices.so",
+      "target": "/vendor/lib64/libqmiservices.so"
+    },
+    {
+      "name": "libdpmqmihal.so",
+      "target": "/vendor/lib64/libdpmqmihal.so"
+    },
+    {
+      "name": "com.qualcomm.qti.dpm.api@1.0.so",
+      "target": "/vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so"
+    },
+    {
+      "name": "libqmi_encdec.so",
+      "target": "/vendor/lib64/libqmi_encdec.so"
+    },
+    {
+      "name": "libdiag.so",
+      "target": "/vendor/lib64/libdiag.so"
+    },
+    {
+      "name": "libdsutils.so",
+      "target": "/vendor/lib64/libdsutils.so"
+    },
+    {
+      "name": "libqmi_client_qmux.so",
+      "target": "/vendor/lib64/libqmi_client_qmux.so"
+    },
+    {
+      "name": "libidl.so",
+      "target": "/vendor/lib64/libidl.so"
+    },
+    {
+      "name": "libmdmdetect.so",
+      "target": "/vendor/lib64/libmdmdetect.so"
+    },
+    {
+      "name": "libcutils.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libcutils.so"
+    },
+    {
+      "name": "libbase.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libbase.so"
+    },
+    {
+      "name": "libc++.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libc++.so"
+    },
+    {
+      "name": "liblog.so",
+      "target": "/system/lib64/liblog.so"
+    },
+    {
+      "name": "libc++.so",
+      "target": "/system/lib64/libc++.so"
+    },
+    {
+      "name": "libc.so",
+      "target": "/apex/com.android.runtime/lib64/bionic/libc.so"
+    },
+    {
+      "name": "libm.so",
+      "target": "/apex/com.android.runtime/lib64/bionic/libm.so"
+    },
+    {
+      "name": "libdl.so",
+      "target": "/apex/com.android.runtime/lib64/bionic/libdl.so"
+    },
+    {
+      "name": "libutils.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libutils.so"
+    },
+    {
+      "name": "libprocessgroup.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libprocessgroup.so"
+    },
+    {
+      "name": "libhardware_legacy.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libhardware_legacy.so"
+    },
+    {
+      "name": "libbinder.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libbinder.so"
+    },
+    {
+      "name": "libhidlbase.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libhidlbase.so"
+    },
+    {
+      "name": "android.system.suspend@1.0.so",
+      "target": "/apex/com.android.vndk.v31/lib64/android.system.suspend@1.0.so"
+    },
+    {
+      "name": "libhardware.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libhardware.so"
+    },
+    {
+      "name": "libvndksupport.so",
+      "target": "/system/lib64/libvndksupport.so"
+    },
+    {
+      "name": "libdl_android.so",
+      "target": "/apex/com.android.runtime/lib64/bionic/libdl_android.so"
+    },
+    {
+      "name": "libcgrouprc.so",
+      "target": "/system/lib64/libcgrouprc.so"
+    },
+    {
+      "name": "libbase.so",
+      "target": "/system/lib64/libbase.so"
+    },
+    {
+      "name": "libnetutils.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libnetutils.so"
+    }
+  ],
+  "/system/vendor/bin/vendor.dpmd": [
+    {
+      "name": "linux-vdso.so.1",
+      "target": "[vdso]"
+    },
+    {
+      "name": "vendor.libdpmframework.so",
+      "target": "/vendor/lib64/vendor.libdpmframework.so"
+    },
+    {
+      "name": "libdiag.so",
+      "target": "/vendor/lib64/libdiag.so"
+    },
+    {
+      "name": "com.qualcomm.qti.dpm.api@1.0.so",
+      "target": "/vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so"
+    },
+    {
+      "name": "vendor.qti.hardware.dpmservice@1.0.so",
+      "target": "/vendor/lib64/vendor.qti.hardware.dpmservice@1.0.so"
+    },
+    {
+      "name": "libhardware_legacy.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libhardware_legacy.so"
+    },
+    {
+      "name": "libbase.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libbase.so"
+    },
+    {
+      "name": "libbinder.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libbinder.so"
+    },
+    {
+      "name": "libcutils.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libcutils.so"
+    },
+    {
+      "name": "libhidlbase.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libhidlbase.so"
+    },
+    {
+      "name": "libutils.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libutils.so"
+    },
+    {
+      "name": "android.system.suspend@1.0.so",
+      "target": "/apex/com.android.vndk.v31/lib64/android.system.suspend@1.0.so"
+    },
+    {
+      "name": "libc++.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libc++.so"
+    },
+    {
+      "name": "libprocessgroup.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libprocessgroup.so"
+    },
+    {
+      "name": "libc.so",
+      "target": "/apex/com.android.runtime/lib64/bionic/libc.so"
+    },
+    {
+      "name": "libdl.so",
+      "target": "/apex/com.android.runtime/lib64/bionic/libdl.so"
+    },
+    {
+      "name": "libm.so",
+      "target": "/apex/com.android.runtime/lib64/bionic/libm.so"
+    },
+    {
+      "name": "liblog.so",
+      "target": "/system/lib64/liblog.so"
+    },
+    {
+      "name": "libc++.so",
+      "target": "/system/lib64/libc++.so"
+    },
+    {
+      "name": "libhardware.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libhardware.so"
+    },
+    {
+      "name": "libvndksupport.so",
+      "target": "/system/lib64/libvndksupport.so"
+    },
+    {
+      "name": "libdl_android.so",
+      "target": "/apex/com.android.runtime/lib64/bionic/libdl_android.so"
+    },
+    {
+      "name": "libcgrouprc.so",
+      "target": "/system/lib64/libcgrouprc.so"
+    },
+    {
+      "name": "libbase.so",
+      "target": "/system/lib64/libbase.so"
+    }
+  ],
+  "/system/vendor/bin/qmipriod": [
+    {
+      "name": "linux-vdso.so.1",
+      "target": "[vdso]"
+    },
+    {
+      "name": "libqmi_cci.so",
+      "target": "/vendor/lib64/libqmi_cci.so"
+    },
+    {
+      "name": "libqmiservices.so",
+      "target": "/vendor/lib64/libqmiservices.so"
+    },
+    {
+      "name": "libqmi_client_helper.so",
+      "target": "/vendor/lib64/libqmi_client_helper.so"
+    },
+    {
+      "name": "libqmi_encdec.so",
+      "target": "/vendor/lib64/libqmi_encdec.so"
+    },
+    {
+      "name": "libidl.so",
+      "target": "/vendor/lib64/libidl.so"
+    },
+    {
+      "name": "libdiag.so",
+      "target": "/vendor/lib64/libdiag.so"
+    },
+    {
+      "name": "libdsutils.so",
+      "target": "/vendor/lib64/libdsutils.so"
+    },
+    {
+      "name": "libqmi_client_qmux.so",
+      "target": "/vendor/lib64/libqmi_client_qmux.so"
+    },
+    {
+      "name": "libmdmdetect.so",
+      "target": "/vendor/lib64/libmdmdetect.so"
+    },
+    {
+      "name": "libcutils.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libcutils.so"
+    },
+    {
+      "name": "libbase.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libbase.so"
+    },
+    {
+      "name": "libc++.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libc++.so"
+    },
+    {
+      "name": "libc.so",
+      "target": "/apex/com.android.runtime/lib64/bionic/libc.so"
+    },
+    {
+      "name": "libdl.so",
+      "target": "/apex/com.android.runtime/lib64/bionic/libdl.so"
+    },
+    {
+      "name": "libm.so",
+      "target": "/apex/com.android.runtime/lib64/bionic/libm.so"
+    },
+    {
+      "name": "libutils.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libutils.so"
+    },
+    {
+      "name": "libprocessgroup.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libprocessgroup.so"
+    },
+    {
+      "name": "liblog.so",
+      "target": "/system/lib64/liblog.so"
+    },
+    {
+      "name": "libc++.so",
+      "target": "/system/lib64/libc++.so"
+    },
+    {
+      "name": "libvndksupport.so",
+      "target": "/system/lib64/libvndksupport.so"
+    },
+    {
+      "name": "libdl_android.so",
+      "target": "/apex/com.android.runtime/lib64/bionic/libdl_android.so"
+    },
+    {
+      "name": "libnetutils.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libnetutils.so"
+    },
+    {
+      "name": "libcgrouprc.so",
+      "target": "/system/lib64/libcgrouprc.so"
+    },
+    {
+      "name": "libbase.so",
+      "target": "/system/lib64/libbase.so"
+    }
+  ],
+  "/system/vendor/bin/modemManager": [
+    {
+      "name": "linux-vdso.so.1",
+      "target": "[vdso]"
+    },
+    {
+      "name": "libavservices_minijail.so",
+      "target": "/vendor/lib64/libavservices_minijail.so"
+    },
+    {
+      "name": "libdiag.so",
+      "target": "/vendor/lib64/libdiag.so"
+    },
+    {
+      "name": "libqesdk.so",
+      "target": "/vendor/lib64/libqesdk.so"
+    },
+    {
+      "name": "libqti_vndfwk_detect_vendor.so",
+      "target": "/vendor/lib64/libqti_vndfwk_detect_vendor.so"
+    },
+    {
+      "name": "vendor.qti.data.factory@2.3.so",
+      "target": "/vendor/lib64/vendor.qti.data.factory@2.3.so"
+    },
+    {
+      "name": "vendor.qti.hardware.data.lce@1.0.so",
+      "target": "/vendor/lib64/vendor.qti.hardware.data.lce@1.0.so"
+    },
+    {
+      "name": "vendor.qti.latency@2.0.so",
+      "target": "/vendor/lib64/vendor.qti.latency@2.0.so"
+    },
+    {
+      "name": "vendor.qti.latency@2.1.so",
+      "target": "/vendor/lib64/vendor.qti.latency@2.1.so"
+    },
+    {
+      "name": "vendor.qti.data.factory@2.0.so",
+      "target": "/vendor/lib64/vendor.qti.data.factory@2.0.so"
+    },
+    {
+      "name": "vendor.qti.data.factory@2.1.so",
+      "target": "/vendor/lib64/vendor.qti.data.factory@2.1.so"
+    },
+    {
+      "name": "vendor.qti.data.factory@2.2.so",
+      "target": "/vendor/lib64/vendor.qti.data.factory@2.2.so"
+    },
+    {
+      "name": "vendor.qti.data.mwqem@1.0.so",
+      "target": "/vendor/lib64/vendor.qti.data.mwqem@1.0.so"
+    },
+    {
+      "name": "vendor.qti.data.slm@1.0.so",
+      "target": "/vendor/lib64/vendor.qti.data.slm@1.0.so"
+    },
+    {
+      "name": "vendor.qti.hardware.data.cne.internal.api@1.0.so",
+      "target": "/vendor/lib64/vendor.qti.hardware.data.cne.internal.api@1.0.so"
+    },
+    {
+      "name": "vendor.qti.hardware.data.cne.internal.constants@1.0.so",
+      "target": "/vendor/lib64/vendor.qti.hardware.data.cne.internal.constants@1.0.so"
+    },
+    {
+      "name": "vendor.qti.hardware.data.cne.internal.server@1.0.so",
+      "target": "/vendor/lib64/vendor.qti.hardware.data.cne.internal.server@1.0.so"
+    },
+    {
+      "name": "vendor.qti.hardware.data.dynamicdds@1.0.so",
+      "target": "/vendor/lib64/vendor.qti.hardware.data.dynamicdds@1.0.so"
+    },
+    {
+      "name": "vendor.qti.hardware.data.qmi@1.0.so",
+      "target": "/vendor/lib64/vendor.qti.hardware.data.qmi@1.0.so"
+    },
+    {
+      "name": "vendor.qti.ims.rcsconfig@1.0.so",
+      "target": "/vendor/lib64/vendor.qti.ims.rcsconfig@1.0.so"
+    },
+    {
+      "name": "vendor.qti.ims.rcsconfig@1.1.so",
+      "target": "/vendor/lib64/vendor.qti.ims.rcsconfig@1.1.so"
+    },
+    {
+      "name": "libcutils.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libcutils.so"
+    },
+    {
+      "name": "libbase.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libbase.so"
+    },
+    {
+      "name": "libc++.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libc++.so"
+    },
+    {
+      "name": "liblog.so",
+      "target": "/system/lib64/liblog.so"
+    },
+    {
+      "name": "libc++.so",
+      "target": "/system/lib64/libc++.so"
+    },
+    {
+      "name": "libc.so",
+      "target": "/apex/com.android.runtime/lib64/bionic/libc.so"
+    },
+    {
+      "name": "libm.so",
+      "target": "/apex/com.android.runtime/lib64/bionic/libm.so"
+    },
+    {
+      "name": "libdl.so",
+      "target": "/apex/com.android.runtime/lib64/bionic/libdl.so"
+    },
+    {
+      "name": "libhidlbase.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libhidlbase.so"
+    },
+    {
+      "name": "libutils.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libutils.so"
+    },
+    {
+      "name": "libprocessgroup.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libprocessgroup.so"
+    },
+    {
+      "name": "libbinder.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libbinder.so"
+    },
+    {
+      "name": "libjsoncpp.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libjsoncpp.so"
+    },
+    {
+      "name": "libminijail.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libminijail.so"
+    },
+    {
+      "name": "libcap.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libcap.so"
+    },
+    {
+      "name": "libvndksupport.so",
+      "target": "/system/lib64/libvndksupport.so"
+    },
+    {
+      "name": "libdl_android.so",
+      "target": "/apex/com.android.runtime/lib64/bionic/libdl_android.so"
+    },
+    {
+      "name": "libcgrouprc.so",
+      "target": "/system/lib64/libcgrouprc.so"
+    },
+    {
+      "name": "libbase.so",
+      "target": "/system/lib64/libbase.so"
+    }
+  ],
+  "/system/vendor/bin/adpl": [
+    {
+      "name": "linux-vdso.so.1",
+      "target": "[vdso]"
+    },
+    {
+      "name": "libdiag.so",
+      "target": "/vendor/lib64/libdiag.so"
+    },
+    {
+      "name": "libdsutils.so",
+      "target": "/vendor/lib64/libdsutils.so"
+    },
+    {
+      "name": "librmnetctl.so",
+      "target": "/vendor/lib64/librmnetctl.so"
+    },
+    {
+      "name": "libqmi_cci.so",
+      "target": "/vendor/lib64/libqmi_cci.so"
+    },
+    {
+      "name": "libqmiservices.so",
+      "target": "/vendor/lib64/libqmiservices.so"
+    },
+    {
+      "name": "libqmi_client_qmux.so",
+      "target": "/vendor/lib64/libqmi_client_qmux.so"
+    },
+    {
+      "name": "libqmi_encdec.so",
+      "target": "/vendor/lib64/libqmi_encdec.so"
+    },
+    {
+      "name": "libqcmaputils.so",
+      "target": "/vendor/lib64/libqcmaputils.so"
+    },
+    {
+      "name": "libmdmdetect.so",
+      "target": "/vendor/lib64/libmdmdetect.so"
+    },
+    {
+      "name": "libidl.so",
+      "target": "/vendor/lib64/libidl.so"
+    },
+    {
+      "name": "libc.so",
+      "target": "/apex/com.android.runtime/lib64/bionic/libc.so"
+    },
+    {
+      "name": "libdl.so",
+      "target": "/apex/com.android.runtime/lib64/bionic/libdl.so"
+    },
+    {
+      "name": "liblog.so",
+      "target": "/system/lib64/liblog.so"
+    },
+    {
+      "name": "libc++.so",
+      "target": "/system/lib64/libc++.so"
+    },
+    {
+      "name": "libm.so",
+      "target": "/apex/com.android.runtime/lib64/bionic/libm.so"
+    },
+    {
+      "name": "libnetutils.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libnetutils.so"
+    },
+    {
+      "name": "libcutils.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libcutils.so"
+    },
+    {
+      "name": "libc++.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libc++.so"
+    },
+    {
+      "name": "libbase.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libbase.so"
+    },
+    {
+      "name": "libutils.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libutils.so"
+    },
+    {
+      "name": "libprocessgroup.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libprocessgroup.so"
+    },
+    {
+      "name": "libvndksupport.so",
+      "target": "/system/lib64/libvndksupport.so"
+    },
+    {
+      "name": "libdl_android.so",
+      "target": "/apex/com.android.runtime/lib64/bionic/libdl_android.so"
+    },
+    {
+      "name": "libcgrouprc.so",
+      "target": "/system/lib64/libcgrouprc.so"
+    },
+    {
+      "name": "libbase.so",
+      "target": "/system/lib64/libbase.so"
+    }
+  ],
+  "/system/vendor/bin/qti": [
+    {
+      "name": "linux-vdso.so.1",
+      "target": "[vdso]"
+    },
+    {
+      "name": "libdiag.so",
+      "target": "/vendor/lib64/libdiag.so"
+    },
+    {
+      "name": "libdsutils.so",
+      "target": "/vendor/lib64/libdsutils.so"
+    },
+    {
+      "name": "librmnetctl.so",
+      "target": "/vendor/lib64/librmnetctl.so"
+    },
+    {
+      "name": "libqmi_cci.so",
+      "target": "/vendor/lib64/libqmi_cci.so"
+    },
+    {
+      "name": "libqmiservices.so",
+      "target": "/vendor/lib64/libqmiservices.so"
+    },
+    {
+      "name": "libqmi_client_qmux.so",
+      "target": "/vendor/lib64/libqmi_client_qmux.so"
+    },
+    {
+      "name": "libqmi_encdec.so",
+      "target": "/vendor/lib64/libqmi_encdec.so"
+    },
+    {
+      "name": "libqcmaputils.so",
+      "target": "/vendor/lib64/libqcmaputils.so"
+    },
+    {
+      "name": "libmdmdetect.so",
+      "target": "/vendor/lib64/libmdmdetect.so"
+    },
+    {
+      "name": "libidl.so",
+      "target": "/vendor/lib64/libidl.so"
+    },
+    {
+      "name": "libc.so",
+      "target": "/apex/com.android.runtime/lib64/bionic/libc.so"
+    },
+    {
+      "name": "libdl.so",
+      "target": "/apex/com.android.runtime/lib64/bionic/libdl.so"
+    },
+    {
+      "name": "liblog.so",
+      "target": "/system/lib64/liblog.so"
+    },
+    {
+      "name": "libc++.so",
+      "target": "/system/lib64/libc++.so"
+    },
+    {
+      "name": "libm.so",
+      "target": "/apex/com.android.runtime/lib64/bionic/libm.so"
+    },
+    {
+      "name": "libnetutils.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libnetutils.so"
+    },
+    {
+      "name": "libcutils.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libcutils.so"
+    },
+    {
+      "name": "libc++.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libc++.so"
+    },
+    {
+      "name": "libbase.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libbase.so"
+    },
+    {
+      "name": "libutils.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libutils.so"
+    },
+    {
+      "name": "libprocessgroup.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libprocessgroup.so"
+    },
+    {
+      "name": "libvndksupport.so",
+      "target": "/system/lib64/libvndksupport.so"
+    },
+    {
+      "name": "libdl_android.so",
+      "target": "/apex/com.android.runtime/lib64/bionic/libdl_android.so"
+    },
+    {
+      "name": "libcgrouprc.so",
+      "target": "/system/lib64/libcgrouprc.so"
+    },
+    {
+      "name": "libbase.so",
+      "target": "/system/lib64/libbase.so"
+    }
+  ],
+  "/vendor/bin/ssgqmigd": [
+    {
+      "name": "linux-vdso.so.1",
+      "target": "[vdso]"
+    },
+    {
+      "name": "liblog.so",
+      "target": "/system/lib/liblog.so"
+    },
+    {
+      "name": "libc++.so",
+      "target": "/system/lib/libc++.so"
+    },
+    {
+      "name": "libc.so",
+      "target": "/apex/com.android.runtime/lib/bionic/libc.so"
+    },
+    {
+      "name": "libm.so",
+      "target": "/apex/com.android.runtime/lib/bionic/libm.so"
+    },
+    {
+      "name": "libdl.so",
+      "target": "/apex/com.android.runtime/lib/bionic/libdl.so"
+    }
+  ],
+  "/vendor/bin/ATFWD-daemon": [
+    {
+      "name": "linux-vdso.so.1",
+      "target": "[vdso]"
+    },
+    {
+      "name": "libqmi_cci.so",
+      "target": "/vendor/lib64/libqmi_cci.so"
+    },
+    {
+      "name": "libqmi.so",
+      "target": "/vendor/lib64/libqmi.so"
+    },
+    {
+      "name": "libmdmdetect.so",
+      "target": "/vendor/lib64/libmdmdetect.so"
+    },
+    {
+      "name": "libqmi_client_qmux.so",
+      "target": "/vendor/lib64/libqmi_client_qmux.so"
+    },
+    {
+      "name": "libqmi_client_helper.so",
+      "target": "/vendor/lib64/libqmi_client_helper.so"
+    },
+    {
+      "name": "libqmiservices.so",
+      "target": "/vendor/lib64/libqmiservices.so"
+    },
+    {
+      "name": "libavservices_minijail.so",
+      "target": "/vendor/lib64/libavservices_minijail.so"
+    },
+    {
+      "name": "libqmi_common_so.so",
+      "target": "/vendor/lib64/libqmi_common_so.so"
+    },
+    {
+      "name": "vendor.qti.hardware.radio.atcmdfwd@1.0.so",
+      "target": "/vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so"
+    },
+    {
+      "name": "libqmi_encdec.so",
+      "target": "/vendor/lib64/libqmi_encdec.so"
+    },
+    {
+      "name": "libdiag.so",
+      "target": "/vendor/lib64/libdiag.so"
+    },
+    {
+      "name": "libdsutils.so",
+      "target": "/vendor/lib64/libdsutils.so"
+    },
+    {
+      "name": "libidl.so",
+      "target": "/vendor/lib64/libidl.so"
+    },
+    {
+      "name": "libcutils.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libcutils.so"
+    },
+    {
+      "name": "libbase.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libbase.so"
+    },
+    {
+      "name": "libc++.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libc++.so"
+    },
+    {
+      "name": "libutils.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libutils.so"
+    },
+    {
+      "name": "libprocessgroup.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libprocessgroup.so"
+    },
+    {
+      "name": "liblog.so",
+      "target": "/system/lib64/liblog.so"
+    },
+    {
+      "name": "libc++.so",
+      "target": "/system/lib64/libc++.so"
+    },
+    {
+      "name": "libc.so",
+      "target": "/apex/com.android.runtime/lib64/bionic/libc.so"
+    },
+    {
+      "name": "libm.so",
+      "target": "/apex/com.android.runtime/lib64/bionic/libm.so"
+    },
+    {
+      "name": "libdl.so",
+      "target": "/apex/com.android.runtime/lib64/bionic/libdl.so"
+    },
+    {
+      "name": "libhidlbase.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libhidlbase.so"
+    },
+    {
+      "name": "libvndksupport.so",
+      "target": "/system/lib64/libvndksupport.so"
+    },
+    {
+      "name": "libdl_android.so",
+      "target": "/apex/com.android.runtime/lib64/bionic/libdl_android.so"
+    },
+    {
+      "name": "libminijail.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libminijail.so"
+    },
+    {
+      "name": "libcap.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libcap.so"
+    },
+    {
+      "name": "libcgrouprc.so",
+      "target": "/system/lib64/libcgrouprc.so"
+    },
+    {
+      "name": "libbase.so",
+      "target": "/system/lib64/libbase.so"
+    },
+    {
+      "name": "libnetutils.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libnetutils.so"
+    }
+  ],
+  "/system/vendor/bin/imsdaemon": [
+    {
+      "name": "linux-vdso.so.1",
+      "target": "[vdso]"
+    },
+    {
+      "name": "lib-imscommon.so",
+      "target": "/vendor/lib64/lib-imscommon.so"
+    },
+    {
+      "name": "vendor.qti.ims.factory@2.0.so",
+      "target": "/vendor/lib64/vendor.qti.ims.factory@2.0.so"
+    },
+    {
+      "name": "libqti_vndfwk_detect_vendor.so",
+      "target": "/vendor/lib64/libqti_vndfwk_detect_vendor.so"
+    },
+    {
+      "name": "libqmi_cci.so",
+      "target": "/vendor/lib64/libqmi_cci.so"
+    },
+    {
+      "name": "libqmi_csi.so",
+      "target": "/vendor/lib64/libqmi_csi.so"
+    },
+    {
+      "name": "libqmiservices.so",
+      "target": "/vendor/lib64/libqmiservices.so"
+    },
+    {
+      "name": "libqmi_encdec.so",
+      "target": "/vendor/lib64/libqmi_encdec.so"
+    },
+    {
+      "name": "libdsi_netctrl.so",
+      "target": "/vendor/lib64/libdsi_netctrl.so"
+    },
+    {
+      "name": "libdiag.so",
+      "target": "/vendor/lib64/libdiag.so"
+    },
+    {
+      "name": "libqmi_common_so.so",
+      "target": "/vendor/lib64/libqmi_common_so.so"
+    },
+    {
+      "name": "libcneapiclient.so",
+      "target": "/vendor/lib64/libcneapiclient.so"
+    },
+    {
+      "name": "vendor.qti.ims.factory@1.0.so",
+      "target": "/vendor/lib64/vendor.qti.ims.factory@1.0.so"
+    },
+    {
+      "name": "vendor.qti.ims.factory@1.1.so",
+      "target": "/vendor/lib64/vendor.qti.ims.factory@1.1.so"
+    },
+    {
+      "name": "vendor.qti.ims.connection@1.0.so",
+      "target": "/vendor/lib64/vendor.qti.ims.connection@1.0.so"
+    },
+    {
+      "name": "vendor.qti.ims.callcapability@1.0.so",
+      "target": "/vendor/lib64/vendor.qti.ims.callcapability@1.0.so"
+    },
+    {
+      "name": "vendor.qti.ims.rcsuce@1.0.so",
+      "target": "/vendor/lib64/vendor.qti.ims.rcsuce@1.0.so"
+    },
+    {
+      "name": "vendor.qti.ims.rcssip@1.0.so",
+      "target": "/vendor/lib64/vendor.qti.ims.rcssip@1.0.so"
+    },
+    {
+      "name": "vendor.qti.ims.configservice@1.0.so",
+      "target": "/vendor/lib64/vendor.qti.ims.configservice@1.0.so"
+    },
+    {
+      "name": "libidl.so",
+      "target": "/vendor/lib64/libidl.so"
+    },
+    {
+      "name": "libqdi.so",
+      "target": "/vendor/lib64/libqdi.so"
+    },
+    {
+      "name": "libnetmgr.so",
+      "target": "/vendor/lib64/libnetmgr.so"
+    },
+    {
+      "name": "libdsutils.so",
+      "target": "/vendor/lib64/libdsutils.so"
+    },
+    {
+      "name": "libconfigdb.so",
+      "target": "/vendor/lib64/libconfigdb.so"
+    },
+    {
+      "name": "libqmi_client_qmux.so",
+      "target": "/vendor/lib64/libqmi_client_qmux.so"
+    },
+    {
+      "name": "libqmi_client_helper.so",
+      "target": "/vendor/lib64/libqmi_client_helper.so"
+    },
+    {
+      "name": "libqmi.so",
+      "target": "/vendor/lib64/libqmi.so"
+    },
+    {
+      "name": "vendor.qti.hardware.data.cne.internal.api@1.0.so",
+      "target": "/vendor/lib64/vendor.qti.hardware.data.cne.internal.api@1.0.so"
+    },
+    {
+      "name": "vendor.qti.data.factory@2.0.so",
+      "target": "/vendor/lib64/vendor.qti.data.factory@2.0.so"
+    },
+    {
+      "name": "vendor.qti.ims.rcsconfig@2.0.so",
+      "target": "/vendor/lib64/vendor.qti.ims.rcsconfig@2.0.so"
+    },
+    {
+      "name": "vendor.qti.ims.rcsconfig@2.1.so",
+      "target": "/vendor/lib64/vendor.qti.ims.rcsconfig@2.1.so"
+    },
+    {
+      "name": "libnetmgrxfrmutils.so",
+      "target": "/vendor/lib64/libnetmgrxfrmutils.so"
+    },
+    {
+      "name": "libmdmdetect.so",
+      "target": "/vendor/lib64/libmdmdetect.so"
+    },
+    {
+      "name": "libxml.so",
+      "target": "/vendor/lib64/libxml.so"
+    },
+    {
+      "name": "vendor.qti.hardware.data.cne.internal.constants@1.0.so",
+      "target": "/vendor/lib64/vendor.qti.hardware.data.cne.internal.constants@1.0.so"
+    },
+    {
+      "name": "vendor.qti.hardware.data.cne.internal.server@1.0.so",
+      "target": "/vendor/lib64/vendor.qti.hardware.data.cne.internal.server@1.0.so"
+    },
+    {
+      "name": "vendor.qti.hardware.data.dynamicdds@1.0.so",
+      "target": "/vendor/lib64/vendor.qti.hardware.data.dynamicdds@1.0.so"
+    },
+    {
+      "name": "vendor.qti.hardware.data.qmi@1.0.so",
+      "target": "/vendor/lib64/vendor.qti.hardware.data.qmi@1.0.so"
+    },
+    {
+      "name": "vendor.qti.ims.rcsconfig@1.0.so",
+      "target": "/vendor/lib64/vendor.qti.ims.rcsconfig@1.0.so"
+    },
+    {
+      "name": "vendor.qti.latency@2.0.so",
+      "target": "/vendor/lib64/vendor.qti.latency@2.0.so"
+    },
+    {
+      "name": "liblog.so",
+      "target": "/system/lib64/liblog.so"
+    },
+    {
+      "name": "libc++.so",
+      "target": "/system/lib64/libc++.so"
+    },
+    {
+      "name": "libc.so",
+      "target": "/apex/com.android.runtime/lib64/bionic/libc.so"
+    },
+    {
+      "name": "libm.so",
+      "target": "/apex/com.android.runtime/lib64/bionic/libm.so"
+    },
+    {
+      "name": "libdl.so",
+      "target": "/apex/com.android.runtime/lib64/bionic/libdl.so"
+    },
+    {
+      "name": "libbase.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libbase.so"
+    },
+    {
+      "name": "libc++.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libc++.so"
+    },
+    {
+      "name": "libhidlbase.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libhidlbase.so"
+    },
+    {
+      "name": "libutils.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libutils.so"
+    },
+    {
+      "name": "libcutils.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libcutils.so"
+    },
+    {
+      "name": "libprocessgroup.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libprocessgroup.so"
+    },
+    {
+      "name": "libvndksupport.so",
+      "target": "/system/lib64/libvndksupport.so"
+    },
+    {
+      "name": "libdl_android.so",
+      "target": "/apex/com.android.runtime/lib64/bionic/libdl_android.so"
+    },
+    {
+      "name": "libhardware_legacy.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libhardware_legacy.so"
+    },
+    {
+      "name": "libbinder.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libbinder.so"
+    },
+    {
+      "name": "android.system.suspend@1.0.so",
+      "target": "/apex/com.android.vndk.v31/lib64/android.system.suspend@1.0.so"
+    },
+    {
+      "name": "libandroid_net.so",
+      "target": "/system/lib64/libandroid_net.so"
+    },
+    {
+      "name": "libnetd_client.so",
+      "target": "/system/lib64/libnetd_client.so"
+    },
+    {
+      "name": "libnetutils.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libnetutils.so"
+    },
+    {
+      "name": "libz.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libz.so"
+    },
+    {
+      "name": "libcgrouprc.so",
+      "target": "/system/lib64/libcgrouprc.so"
+    },
+    {
+      "name": "libbase.so",
+      "target": "/system/lib64/libbase.so"
+    }
+  ],
+  "/system/vendor/bin/ims_rtp_daemon": [
+    {
+      "name": "linux-vdso.so.1",
+      "target": "[vdso]"
+    },
+    {
+      "name": "libdiag.so",
+      "target": "/vendor/lib64/libdiag.so"
+    },
+    {
+      "name": "lib-imsvtcore.so",
+      "target": "/vendor/lib64/lib-imsvtcore.so"
+    },
+    {
+      "name": "lib-imsdpl.so",
+      "target": "/vendor/lib64/lib-imsdpl.so"
+    },
+    {
+      "name": "lib-rtpsl.so",
+      "target": "/vendor/lib64/lib-rtpsl.so"
+    },
+    {
+      "name": "lib-rtpcore.so",
+      "target": "/vendor/lib64/lib-rtpcore.so"
+    },
+    {
+      "name": "lib-rtpcommon.so",
+      "target": "/vendor/lib64/lib-rtpcommon.so"
+    },
+    {
+      "name": "libqmiservices.so",
+      "target": "/vendor/lib64/libqmiservices.so"
+    },
+    {
+      "name": "libqmi_csi.so",
+      "target": "/vendor/lib64/libqmi_csi.so"
+    },
+    {
+      "name": "libqmi_cci.so",
+      "target": "/vendor/lib64/libqmi_cci.so"
+    },
+    {
+      "name": "vendor.qti.imsrtpservice@3.0.so",
+      "target": "/vendor/lib64/vendor.qti.imsrtpservice@3.0.so"
+    },
+    {
+      "name": "vendor.qti.imsrtpservice@3.0-service-Impl.so",
+      "target": "/vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so"
+    },
+    {
+      "name": "libavservices_minijail.so",
+      "target": "/vendor/lib64/libavservices_minijail.so"
+    },
+    {
+      "name": "librcc.so",
+      "target": "/vendor/lib64/librcc.so"
+    },
+    {
+      "name": "libtime_genoff.so",
+      "target": "/vendor/lib64/libtime_genoff.so"
+    },
+    {
+      "name": "libqti_vndfwk_detect_vendor.so",
+      "target": "/vendor/lib64/libqti_vndfwk_detect_vendor.so"
+    },
+    {
+      "name": "libidl.so",
+      "target": "/vendor/lib64/libidl.so"
+    },
+    {
+      "name": "libqmi_encdec.so",
+      "target": "/vendor/lib64/libqmi_encdec.so"
+    },
+    {
+      "name": "libcutils.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libcutils.so"
+    },
+    {
+      "name": "libbase.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libbase.so"
+    },
+    {
+      "name": "libc++.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libc++.so"
+    },
+    {
+      "name": "liblog.so",
+      "target": "/system/lib64/liblog.so"
+    },
+    {
+      "name": "libc++.so",
+      "target": "/system/lib64/libc++.so"
+    },
+    {
+      "name": "libc.so",
+      "target": "/apex/com.android.runtime/lib64/bionic/libc.so"
+    },
+    {
+      "name": "libm.so",
+      "target": "/apex/com.android.runtime/lib64/bionic/libm.so"
+    },
+    {
+      "name": "libdl.so",
+      "target": "/apex/com.android.runtime/lib64/bionic/libdl.so"
+    },
+    {
+      "name": "libutils.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libutils.so"
+    },
+    {
+      "name": "libprocessgroup.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libprocessgroup.so"
+    },
+    {
+      "name": "libhidlbase.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libhidlbase.so"
+    },
+    {
+      "name": "libion.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libion.so"
+    },
+    {
+      "name": "libcrypto.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libcrypto.so"
+    },
+    {
+      "name": "libssl.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libssl.so"
+    },
+    {
+      "name": "libandroid_net.so",
+      "target": "/system/lib64/libandroid_net.so"
+    },
+    {
+      "name": "libnetd_client.so",
+      "target": "/system/lib64/libnetd_client.so"
+    },
+    {
+      "name": "libhardware_legacy.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libhardware_legacy.so"
+    },
+    {
+      "name": "libbinder.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libbinder.so"
+    },
+    {
+      "name": "android.system.suspend@1.0.so",
+      "target": "/apex/com.android.vndk.v31/lib64/android.system.suspend@1.0.so"
+    },
+    {
+      "name": "libhardware.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libhardware.so"
+    },
+    {
+      "name": "libvndksupport.so",
+      "target": "/system/lib64/libvndksupport.so"
+    },
+    {
+      "name": "libdl_android.so",
+      "target": "/apex/com.android.runtime/lib64/bionic/libdl_android.so"
+    },
+    {
+      "name": "libminijail.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libminijail.so"
+    },
+    {
+      "name": "libcap.so",
+      "target": "/apex/com.android.vndk.v31/lib64/libcap.so"
+    },
+    {
+      "name": "libcgrouprc.so",
+      "target": "/system/lib64/libcgrouprc.so"
+    },
+    {
+      "name": "libbase.so",
+      "target": "/system/lib64/libbase.so"
+    }
+  ]
+}

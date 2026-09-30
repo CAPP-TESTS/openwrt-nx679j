@@ -1,0 +1,42 @@
+
+/home/user/nx679j-stock/experiments/data-modules/dm/ipam.ko:     file format elf64-littleaarch64
+
+
+Disassembly of section .text:
+
+0000000000056f68 <ipa3_rx_napi_chain+0x78>:
+   56f68:	6b17029f 	cmp	w20, w23
+   56f6c:	54000540 	b.eq	57014 <ipa3_rx_napi_chain+0x124>  // b.none
+   56f70:	9b3956e0 	smaddl	x0, w23, w25, x21
+   56f74:	94000000 	bl	0 <__cfi_check>
+			56f74: R_AARCH64_CALL26	.text+0x5cdf8
+   56f78:	b4ffff60 	cbz	x0, 56f64 <ipa3_rx_napi_chain+0x74>
+   56f7c:	f10002df 	cmp	x22, #0x0
+   56f80:	9a960016 	csel	x22, x0, x22, eq	// eq = none
+   56f84:	b4fffef8 	cbz	x24, 56f60 <ipa3_rx_napi_chain+0x70>
+   56f88:	f9406b08 	ldr	x8, [x24, #208]
+   56f8c:	b940cf09 	ldr	w9, [x24, #204]
+   56f90:	8b090108 	add	x8, x8, x9
+   56f94:	f9000500 	str	x0, [x8, #8]
+   56f98:	17fffff2 	b	56f60 <ipa3_rx_napi_chain+0x70>
+   56f9c:	340005b4 	cbz	w20, 57050 <ipa3_rx_napi_chain+0x160>
+   56fa0:	aa1f03f8 	mov	x24, xzr
+   56fa4:	aa1f03f6 	mov	x22, xzr
+   56fa8:	2a1f03f7 	mov	w23, wzr
+   56fac:	90000019 	adrp	x25, 10 <__cfi_check+0x10>
+			56fac: R_AARCH64_ADR_PREL_PG_HI21	ipa3_ctx
+   56fb0:	5295adda 	mov	w26, #0xad6e                	// #44398
+   56fb4:	5280031b 	mov	w27, #0x18                  	// #24
+   56fb8:	14000005 	b	56fcc <ipa3_rx_napi_chain+0xdc>
+   56fbc:	aa0003f8 	mov	x24, x0
+   56fc0:	110006f7 	add	w23, w23, #0x1
+   56fc4:	6b17029f 	cmp	w20, w23
+   56fc8:	54000260 	b.eq	57014 <ipa3_rx_napi_chain+0x124>  // b.none
+   56fcc:	f9400328 	ldr	x8, [x25]
+			56fcc: R_AARCH64_LDST64_ABS_LO12_NC	ipa3_ctx
+   56fd0:	9b3b56e0 	smaddl	x0, w23, w27, x21
+   56fd4:	387a6908 	ldrb	w8, [x8, x26]
+   56fd8:	34000088 	cbz	w8, 56fe8 <ipa3_rx_napi_chain+0xf8>
+   56fdc:	94000000 	bl	0 <__cfi_check>
+			56fdc: R_AARCH64_CALL26	.text+0x5cdf8
+   56fe0:	b50000a0 	cbnz	x0, 56ff4 <ipa3_rx_napi_chain+0x104>

@@ -1,0 +1,4 @@
+[dspawn] pid=9227 log=/tmp/observed-bootstrap.log
+BOOTSTRAP_BEGIN uptime=1869.73 14693.82
+loaded /proc/1/root/lib/modules/msm_sharedmem.ko
+[dspawn] pid=9255 log=/tmp/rmtfs.log

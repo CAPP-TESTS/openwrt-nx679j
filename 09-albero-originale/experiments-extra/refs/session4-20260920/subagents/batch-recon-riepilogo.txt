@@ -1,0 +1,1153 @@
+Evidenza raccolta completa. Ecco il report.
+
+---
+
+# Evidenze WLAN — dump NX679J stock
+
+**Root analizzata:** `/home/user/nx679j-stock/port-work/vboot-dtb-swap/stock_dump/`
+Tutti i path sotto sono relativi a questa root. Nessun file modificato. Nessun accesso al device.
+
+## Nota preliminare sul metodo (importante)
+
+Due scoperte cambiano le fonti rispetto a quanto assunto nel briefing:
+
+1. **`partitions/all_partitions.txt` è vuoto** (330 byte di soli spazi, 110 righe) → non contiene la mappa partizioni. Non esistono file GPT nel dump.
+2. **`dmesg_complete.txt` e `dmesg_full.txt` NON contengono l'enumerazione PCIe.** Il log buffer (256K) ha riciclato le righe iniziali. L'enumerazione PCIe completa **esiste** in `firmware/adsp/crash-capture/*/dmesg.txt` (208 catture). Ho quindi usato una cattura rappresentativa come fonte primaria per (b).
+
+| file | righe | finestra temporale |
+|---|---|---|
+| `dmesg_full.txt` | 2481 | 2.040706 → 208.888488 s |
+| `dmesg_complete.txt` | 2570 | 2.040706 → 1610.743905 s |
+| `firmware/adsp/crash-capture/early-3-03a4f048-aa43-49e6-9474-f9c7801ba1b5-post-fs-data/dmesg.txt` | 2713 | boot completo, enumerazione PCIe inclusa |
+
+`dmesg_full.txt` è **più completo in testa** di `dmesg_complete.txt`: contiene 7 righe cnss alle 7.15–7.65 s assenti in `complete` (`dmesg_full.txt:305` `cnss: COEX server arrive: node 0 port 49`, `:306` `COEX Server Connected: 0xe0200f`, `dmesg_full.txt:311` `IMS server arrive: node 0 port 80`, `:315` `QMI DMS service connected, state: 0xf0600f`). Nessuna attività WLAN in nessuno dei due dopo **75.679386 s**.
+
+---
+
+# (a) Nodi DTS — `running_fdt.dts` (34091 righe)
+
+## a.1 — Nodi con `cnss` nel nome
+
+### `cnss_wlan_region` — righe 332–339
+```
+332|		cnss_wlan_region {
+333|			compatible = "shared-dma-pool";
+334|			alloc-ranges = <0x00 0x00 0x00 0xffffffff>;
+335|			reusable;
+336|			alignment = <0x00 0x400000>;
+337|			size = <0x00 0x2000000>;
+338|			phandle = <0x24a>;
+339|		};
+```
+> Nessun `reg`, nessun `no-map`: pool DMA **riutilizzabile allocato a runtime**, 32 MiB, allineamento 4 MiB.
+> Corroborato da `reserved_memory_regs.txt:11` → `cnss_wlan_region: ` (valore **vuoto**, nessun indirizzo).
+
+### `cnss_pins` / `cnss_wlan_en_active` / `cnss_wlan_en_sleep` — righe 4572–4605
+```
+4572|			cnss_pins {
+4573|
+4574|				cnss_wlan_en_active {
+4575|					phandle = <0xc7>;
+4576|
+4577|					mux {
+4578|						pins = "gpio80";
+4579|						function = "gpio";
+4580|					};
+4581|
+4582|					config {
+4583|						pins = "gpio80";
+4584|						drive-strength = <0x10>;
+4585|						output-high;
+4586|						bias-pull-up;
+4587|					};
+4588|				};
+4589|
+4590|				cnss_wlan_en_sleep {
+4591|					phandle = <0xc8>;
+4592|
+4593|					mux {
+4594|						pins = "gpio80";
+4595|						function = "gpio";
+4596|					};
+4597|
+4598|					config {
+4599|						pins = "gpio80";
+4600|						drive-strength = <0x02>;
+4601|						output-low;
+4602|						bias-pull-down;
+4603|					};
+4604|				};
+4605|			};
+```
+
+### `qcom,cnss-qca6490@b0000000` — righe 12972–13010 (nodo completo)
+```
+12972|		qcom,cnss-qca6490@b0000000 {
+12973|			compatible = "qcom,cnss-qca6490";
+12974|			reg = <0xb0000000 0x10000>;
+12975|			reg-names = "smmu_iova_ipa";
+12976|			wlan-en-gpio = <0x9e 0x50 0x00>;
+12977|			qcom,bt-en-gpio = <0x9e 0x51 0x00>;
+12978|			qcom,sw-ctrl-gpio = <0x9e 0x52 0x00>;
+12979|			pinctrl-names = "wlan_en_active", "wlan_en_sleep";
+12980|			pinctrl-0 = <0xc7>;
+12981|			pinctrl-1 = <0xc8>;
+12982|			qcom,wlan;
+12983|			qcom,wlan-rc-num = <0x00>;
+12984|			qcom,wlan-ramdump-dynamic = <0x420000>;
+12985|			qcom,wlan-cbc-enabled;
+12986|			use-pm-domain;
+12987|			cnss-enable-self-recovery;
+12988|			qcom,same-dt-multi-dev;
+12989|			mboxes = <0xa4 0x00>;
+12990|			qcom,vreg_ipa = "s3e";
+12991|			qcom,xo-clk-gpio = <0x9e 0xcc 0x00>;
+12992|			vdd-wlan-aon-supply = <0xc9>;
+12993|			qcom,vdd-wlan-aon-config = <0xf7120 0xf7120 0x00 0x00 0x01>;
+12994|			vdd-wlan-dig-supply = <0xab>;
+12995|			qcom,vdd-wlan-dig-config = <0xebd70 0xebd70 0x00 0x00 0x01>;
+12996|			vdd-wlan-io-supply = <0xca>;
+12997|			qcom,vdd-wlan-io-config = <0x1b7740 0x1b7740 0x00 0x00 0x01>;
+12998|			vdd-wlan-rfa1-supply = <0xac>;
+12999|			qcom,vdd-wlan-rfa1-config = <0x1cfde0 0x200b20 0x00 0x00 0x01>;
+13000|			vdd-wlan-rfa2-supply = <0xad>;
+13001|			qcom,vdd-wlan-rfa2-config = <0x149970 0x149970 0x00 0x00 0x01>;
+13002|			wlan-ant-switch-supply = <0xae>;
+13003|			qcom,wlan-ant-switch-config = <0x2ab980 0x2ab980 0x00 0x00 0x01>;
+13004|			interconnects = <0xcb 0x33 0xcb 0x23c 0x9c 0x1d 0x43 0x200>;
+13005|			interconnect-names = "pcie_to_memnoc", "memnoc_to_ddr";
+13006|			qcom,icc-path-count = <0x02>;
+13007|			qcom,bus-bw-cfg-count = <0x09>;
+13008|			qcom,bus-bw-cfg = <0x00 0x00 0x8ca 0x186a00 0x1d4c 0x186a00 0x7530 0x186a00 0x186a0 0x186a00 0x2ab98 0x626380 0x2ab98 0x626380 0x2ab98 0x822080 0x1d4c 0x30d400 0x00 0x00 0x8ca 0x1b8a00 0x1d4c 0x1b8a00 0x7530 0x1b8a00 0x186a0 0x1b8a00 0x2ab98 0x5eec00 0x2ab98 0x7faf80 0x2ab98 0xc35000 0x1d4c 0x216600>;
+13009|			phandle = <0x365>;
+13010|		};
+```
+> **Risoluzione phandle (FATTO, da `running_fdt.dts`):** `0x9e` = TLMM gpio controller (riga 1519). `0xa4` = `qcom,qmp-aop` mailbox (riga 6427), quindi `mboxes = <&aop>`. Regolatori: `0xc9`=`regulator-pmr735a-s2` (riga 10655), `0xab`=`regulator-pm8350-s11` (10135), `0xca`=`regulator-pm8350-s10` (10121), `0xac`=`regulator-pm8350c-s1` (10329), `0xad`=`regulator-pm8350-s12` (10149), `0xae`=`regulator-pmr735a-l7` (10794).
+
+### `cnss_pci` + `cnss_pci_iommu_group` — righe 19932–19948
+```
+19932|				cnss_pci {
+19933|					reg = <0x00 0x00 0x00 0x00 0x00>;
+19934|					qcom,iommu-group = <0x249>;
+19935|					memory-region = <0x24a>;
+19936|					#address-cells = <0x01>;
+19937|					#size-cells = <0x01>;
+19938|					phandle = <0x439>;
+19939|
+19940|					cnss_pci_iommu_group {
+19941|						qcom,iommu-msi-size = <0x1000>;
+19942|						qcom,iommu-dma-addr-pool = <0xa0000000 0x10000000>;
+19943|						qcom,iommu-dma = "fastmap";
+19944|						qcom,iommu-pagetable = "coherent";
+19945|						qcom,iommu-faults = "stall-disable", "HUPCF", "no-CFRE", "non-fatal";
+19946|						phandle = <0x249>;
+19947|					};
+19948|				};
+```
+> `memory-region = <0x24a>` → **`cnss_wlan_region`** (riga 338). Catena verificata. Finestra SMMU `0xa0000000` + `0x10000000` coincide con dmesg (`cnss: smmu_iova_start: 0x00000000a0000000, smmu_iova_len: 0x10000000`).
+
+### `mhi_qrtr_cnss` — righe 13124–13129
+```
+13124|		mhi_qrtr_cnss {
+13125|			compatible = "qcom,qrtr-mhi";
+13126|			qcom,dev-id = <0x1103>;
+13127|			qcom,net-id = <0x00>;
+13128|			qcom,low-latency;
+13129|		};
+```
+
+## a.2 — Nodi PCIe
+
+### `qcom,pcie@1c00000` (RC0, il controller usato da WLAN) — righe 19868–19950
+```
+19868|		qcom,pcie@1c00000 {
+19869|			compatible = "qcom,pci-msm";
+19870|			reg = <0x1c00000 0x3000 0x1c06000 0x2000 0x60000000 0xf1d 0x60000f20 0xa8 0x60001000 0x1000 0x60100000 0x100000>;
+19871|			reg-names = "parf", "phy", "dm_core", "elbi", "iatu", "conf";
+19872|			cell-index = <0x00>;
+19873|			linux,pci-domain = <0x00>;
+19874|			#address-cells = <0x03>;
+19875|			#size-cells = <0x02>;
+19876|			ranges = <0x1000000 0x00 0x60200000 0x60200000 0x00 0x100000 0x2000000 0x00 0x60300000 0x60300000 0x00 0x3d00000>;
+19877|			interrupt-parent = <0x243>;
+19878|			interrupts = <0x00 0x01 0x02 0x03 0x04>;
+19879|			interrupt-names = "int_global_int", "int_a", "int_b", "int_c", "int_d";
+19880|			#interrupt-cells = <0x01>;
+19881|			interrupt-map-mask = <0x00 0x00 0x00 0xffffffff>;
+19882|			interrupt-map = <0x00 0x00 0x00 0x00 0x01 0x00 0x8c 0x04 0x00 0x00 0x00 0x01 0x01 0x00 0x95 0x04 0x00 0x00 0x00 0x02 0x01 0x00 0x96 0x04 0x00 0x00 0x00 0x03 0x01 0x00 0x97 0x04 0x00 0x00 0x00 0x04 0x01 0x00 0x98 0x04>;
+19883|			msi-map = <0x00 0xbe 0x5980 0x01 0x100 0xbe 0x5981 0x20>;
+19884|			perst-gpio = <0x9e 0x5e 0x00>;
+19885|			wake-gpio = <0x9e 0x60 0x00>;
+19886|			pinctrl-names = "default", "sleep";
+19887|			pinctrl-0 = <0x244 0x245 0x246>;
+19888|			pinctrl-1 = <0x244 0x247 0x246>;
+19889|			gdsc-vdd-supply = <0x248>;
+19890|			vreg-1p8-supply = <0x142>;
+19891|			vreg-0p9-supply = <0x13e>;
+19892|			vreg-cx-supply = <0x1d>;
+19893|			vreg-mx-supply = <0x1e>;
+19894|			qcom,vreg-1p8-voltage-level = <0x124f80 0x124f80 0x4718>;
+19895|			qcom,vreg-0p9-voltage-level = <0xd6d80 0xd6d80 0x13c04>;
+19896|			qcom,vreg-cx-voltage-level = <0xffff 0x100 0x00>;
+19897|			qcom,vreg-mx-voltage-level = <0xffff 0x100 0x00>;
+19898|			qcom,bw-scale = <0x40 0x40 0x124f800 0x40 0x40 0x124f800 0x100 0x100 0x5f5e100>;
+19899|			interconnect-names = "icc_path";
+19900|			interconnects = <0xcb 0x33 0x43 0x200>;
+19901|			clocks = <0x23 0x36 0x1f 0x00 0x23 0x2f 0x23 0x31 0x23 0x33 0x23 0x38 0x23 0x32 0x23 0x39 0x23 0x34 0x23 0x1a 0x23 0x08 0x23 0x09 0x23 0x37 0x23 0x01>;
+19902|			clock-names = "pcie_0_pipe_clk", "pcie_0_ref_clk_src", "pcie_0_aux_clk", "pcie_0_cfg_ahb_clk", "pcie_0_mstr_axi_clk", "pcie_0_slv_axi_clk", "pcie_0_ldo", "pcie_0_slv_q2a_axi_clk", "pcie_phy_refgen_clk", "pcie_ddrss_sf_tbu_clk", "pcie_aggre_noc_0_axi_clk", "pcie_aggre_noc_1_axi_clk", "pcie_pipe_clk_mux", "pcie_pipe_clk_ext_src";
+19903|			max-clock-frequency-hz = <0x00 0x00 0x124f800 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x5f5e100 0x00 0x00 0x00 0x00>;
+19904|			resets = <0x23 0x04 0x23 0x07>;
+19905|			reset-names = "pcie_0_core_reset", "pcie_0_phy_reset";
+19906|			dma-coherent;
+19907|			qcom,smmu-sid-base = <0x1c00>;
+19908|			iommu-map = <0x00 0x96 0x1c00 0x01 0x100 0x96 0x1c01 0x01>;
+19909|			qcom,boot-option = <0x01>;
+19910|			qcom,aux-clk-freq = <0x14>;
+19911|			qcom,drv-supported;
+19912|			qcom,drv-l1ss-timeout-us = <0x1388>;
+19913|			qcom,l1-2-th-scale = <0x02>;
+19914|			qcom,l1-2-th-value = <0x96>;
+19915|			qcom,slv-addr-space-size = <0x4000000>;
+19916|			qcom,ep-latency = <0x0a>;
+19917|			qcom,num-parf-testbus-sel = <0xb9>;
+19918|			qcom,config-recovery;
+19919|			qcom,pcie-phy-ver = <0x68>;
+19920|			qcom,phy-status-offset = <0x214>;
+19921|			qcom,phy-status-bit = <0x06>;
+19922|			qcom,phy-power-down-offset = <0x240>;
+19923|			qcom,phy-sequence = <0x240 0x03 0x00 0x94 0x08 0x00 … [~2.4 kB, 1 linea unica — testo integrale a running_fdt.dts:19923] … 0x244 0x03 0x00>;
+19924|			phandle = <0x243>;
+19925|
+19926|			pcie0_rp {
+19927|				reg = <0x00 0x00 0x00 0x00 0x00>;
+19928|				#address-cells = <0x05>;
+19929|				#size-cells = <0x00>;
+19930|				phandle = <0x438>;
+19931|
+19932|				cnss_pci {            <-- vedi a.1
+19933|				…
+19949|			};
+19950|		};
+```
+> **Punti caldi per il port OpenWrt:**
+> - `qcom,drv-supported` (19911) + `qcom,boot-option = <0x01>` (19909) → modalità **PCIe "DRV"**: è cnss2 a controllare il link. Confermato da dmesg `cnss: PCIe DRV is supported` e `cnss: Use PCIe DRV suspend`.
+> - `msi-map = <0x00 0xbe 0x5980 0x01 0x100 0xbe 0x5981 0x20>` (19883) → `0xbe` è `msi-controller@17140000` (`arm,gic-v3-its`, riga 1314–1319). La RC0 usa **ITS/GICv3**, non il controller MSI legacy.
+> - `qcom,pcie0_msi@0x17110040` (vedi sotto) è `status = "disabled"`.
+
+### `qcom,pcie0_msi@0x17110040` — righe 19952–19960
+```
+19952|		qcom,pcie0_msi@0x17110040 {
+19953|			compatible = "qcom,pci-msi";
+19954|			msi-controller;
+19955|			reg = <0x17110040 0x00>;
+19956|			interrupt-parent = <0x01>;
+19957|			interrupts = <0x00 0x300 0x01 0x00 0x301 0x01 0x00 0x302 0x01 0x00 0x303 0x01 0x00 0x304 0x01 0x00 0x305 0x01 0x00 0x306 0x01 0x00 0x307 0x01 0x00 0x308 0x01 0x00 0x309 0x01 0x00 0x30a 0x01 0x00 0x30b 0x01 0x00 0x30c 0x01 0x00 0x30d 0x01 0x00 0x30e 0x01 0x00 0x30f 0x01 0x00 0x310 0x01 0x00 0x311 0x01 0x00 0x312 0x01 0x00 0x313 0x01 0x00 0x314 0x01 0x00 0x315 0x01 0x00 0x316 0x01 0x00 0x317 0x01 0x00 0x318 0x01 0x00 0x319 0x01 0x00 0x31a 0x01 0x00 0x31b 0x01 0x00 0x31c 0x01 0x00 0x31d 0x01 0x00 0x31e 0x01 0x00 0x31f 0x01>;
+19958|			status = "disabled";
+19959|			phandle = <0x43a>;
+19960|		};
+```
+
+### `qcom,pcie@1c08000` (RC1) — righe 19962–20028
+```
+19962|		qcom,pcie@1c08000 {
+19963|			compatible = "qcom,pci-msm";
+19964|			status = "disabled";
+19965|			reg = <0x1c08000 0x3000 0x1c0e000 0x2000 0x40000000 0xf1d 0x40000f20 0xa8 0x40001000 0x1000 0x40100000 0x100000>;
+19966|			reg-names = "parf", "phy", "dm_core", "elbi", "iatu", "conf";
+19967|			cell-index = <0x01>;
+19968|			linux,pci-domain = <0x01>;
+19969|			#address-cells = <0x03>;
+19970|			#size-cells = <0x02>;
+19971|			ranges = <0x1000000 0x00 0x40200000 0x40200000 0x00 0x100000 0x2000000 0x00 0x40300000 0x40300000 0x00 0x1fd00000>;
+19972|			interrupt-parent = <0x24b>;
+19973|			interrupts = <0x00 0x01 0x02 0x03 0x04>;
+19974|			interrupt-names = "int_global_int", "int_a", "int_b", "int_c", "int_d";
+19975|			#interrupt-cells = <0x01>;
+19976|			interrupt-map-mask = <0x00 0x00 0x00 0xffffffff>;
+19977|			interrupt-map = <0x00 0x00 0x00 0x00 0x01 0x00 0x132 0x04 0x00 0x00 0x00 0x01 0x01 0x00 0x1b2 0x04 0x00 0x00 0x00 0x02 0x01 0x00 0x1b3 0x04 0x00 0x00 0x00 0x03 0x01 0x00 0x1b6 0x04 0x00 0x00 0x00 0x04 0x01 0x00 0x1b7 0x04>;
+19978|			msi-parent = <0x24c>;
+19979|			perst-gpio = <0x9e 0xb1 0x00>;
+19980|			wake-gpio = <0x9e 0x8e 0x00>;
+19981|			pinctrl-names = "default", "sleep";
+19982|			pinctrl-0 = <0x24d 0x24e 0x24f>;
+19983|			pinctrl-1 = <0x24d 0x250 0x24f>;
+19984|			gdsc-vdd-supply = <0x251>;
+19985|			vreg-1p8-supply = <0x142>;
+19986|			vreg-0p9-supply = <0x252>;
+19987|			vreg-qref-supply = <0x13e>;
+19988|			vreg-cx-supply = <0x1d>;
+19989|			vreg-mx-supply = <0x1e>;
+19990|			qcom,target-link-speed = <0x03>;
+19991|			qcom,vreg-1p8-voltage-level = <0x124f80 0x124f80 0x65f4>;
+19992|			qcom,vreg-0p9-voltage-level = <0xdea80 0xdea80 0x2f1e8>;
+19993|			qcom,vreg-cx-voltage-level = <0xffff 0x40 0x00>;
+19994|			qcom,vreg-mx-voltage-level = <0xffff 0x40 0x00>;
+19995|			qcom,vreg-qref-voltage-level = <0xd6d80 0xd6d80 0x6464>;
+19996|			qcom,bw-scale = <0x40 0x40 0x124f800 0x40 0x40 0x124f800 0x40 0x40 0x5f5e100>;
+19997|			interconnect-names = "icc_path";
+19998|			interconnects = <0xcb 0x34 0x43 0x200>;
+19999|			clocks = <0x23 0x43 0x1f 0x00 0x23 0x3a 0x23 0x3c 0x23 0x3e 0x23 0x45 0x23 0x3d 0x23 0x46 0x23 0x41 0x23 0x1a 0x23 0x09 0x23 0x44 0x23 0x03 0x23 0x3f 0x23 0x40 0x23 0x02>;
+20000|			clock-names = "pcie_1_pipe_clk", "pcie_1_ref_clk_src", "pcie_1_aux_clk", "pcie_1_cfg_ahb_clk", "pcie_1_mstr_axi_clk", "pcie_1_slv_axi_clk", "pcie_1_ldo", "pcie_1_slv_q2a_axi_clk", "pcie_phy_refgen_clk", "pcie_ddrss_sf_tbu_clk", "pcie_aggre_noc_1_axi_clk", "pcie_pipe_clk_mux", "pcie_pipe_clk_ext_src", "pcie_phy_aux_clk", "pcie_phy_aux_clk_mux", "pcie_phy_aux_clk_ext_src";
+20001|			max-clock-frequency-hz = <0x00 0x00 0x124f800 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x5f5e100 0x00 0x00 0x00 0x00 0x00 0x00 0x00>;
+20002|			resets = <0x23 0x09 0x23 0x0c>;
+20003|			reset-names = "pcie_1_core_reset", "pcie_1_phy_reset";
+20004|			dma-coherent;
+20005|			qcom,smmu-sid-base = <0x1c80>;
+20006|			iommu-map = <0x00 0x96 0x1c80 0x01 0x100 0x96 0x1c81 0x01>;
+20007|			qcom,boot-option = <0x01>;
+20008|			qcom,drv-supported;
+20009|			qcom,drv-l1ss-timeout-us = <0x1388>;
+20010|			qcom,aux-clk-freq = <0x11>;
+20011|			qcom,eq-fmdc-t-min-phase23 = <0x01>;
+20012|			qcom,slv-addr-space-size = <0x20000000>;
+20013|			qcom,ep-latency = <0x0a>;
+20014|			qcom,num-parf-testbus-sel = <0xb9>;
+20015|			qcom,l1-2-th-scale = <0x02>;
+20016|			qcom,l1-2-th-value = <0x96>;
+20017|			qcom,pcie-phy-ver = <0x6c>;
+20018|			qcom,phy-status-offset = <0x1214>;
+20019|			qcom,phy-status-bit = <0x07>;
+20020|			qcom,phy-power-down-offset = <0x1240>;
+20021|			qcom,phy-sequence = <0x1240 0x03 0x00 … [~2.9 kB, 1 linea unica — testo integrale a running_fdt.dts:20021] … >;
+20022|			phandle = <0x24b>;
+20023|
+20024|			pcie1_rp {
+20025|				reg = <0x00 0x00 0x00 0x00 0x00>;
+20026|				phandle = <0x43b>;
+20027|			};
+20028|		};
+```
+
+### `qcom,pcie1_msi@17110040` — righe 20030–20037
+```
+20030|		qcom,pcie1_msi@17110040 {
+20031|			compatible = "qcom,pci-msi";
+20032|			msi-controller;
+20033|			reg = <0x17110040 0x00>;
+20034|			interrupt-parent = <0x01>;
+20035|			interrupts = <0x00 0x320 0x01 0x00 0x321 0x01 0x00 0x322 0x01 0x00 0x323 0x01 0x00 0x324 0x01 0x00 0x325 0x01 0x00 0x326 0x01 0x00 0x327 0x01 0x00 0x328 0x01 0x00 0x329 0x01 0x00 0x32a 0x01 0x00 0x32b 0x01 0x00 0x32c 0x01 0x00 0x32d 0x01 0x00 0x32e 0x01 0x00 0x32f 0x01 0x00 0x330 0x01 0x00 0x331 0x01 0x00 0x332 0x01 0x00 0x333 0x01 0x00 0x334 0x01 0x00 0x335 0x01 0x00 0x336 0x01 0x00 0x337 0x01 0x00 0x338 0x01 0x00 0x339 0x01 0x00 0x33a 0x01 0x00 0x33b 0x01 0x00 0x33c 0x01 0x00 0x33d 0x01 0x00 0x33e 0x01 0x00 0x33f 0x01>;
+20036|			phandle = <0x24c>;
+20037|		};
+```
+> `pcie@1c08000` usa `msi-parent = <0x24c>` = `pcie1_msi` (**enabled**); RC0 invece `msi-map` → ITS. Asimmetria confermata.
+
+### `qcom,pcie@40002000` (endpoint mode) — righe 20050–20092
+```
+20050|		qcom,pcie@40002000 {
+20051|			compatible = "qcom,pcie-ep";
+20052|			reg = <0x40002000 0x1000 0x40000000 0xf1d 0x40000f20 0xa8 0x40001000 0x1000 0x40002000 0x2000 0x1c08000 0x3000 0x1c0e000 0x2000 0x1c0b000 0x1000>;
+20053|			reg-names = "msi", "dm_core", "elbi", "iatu", "edma", "parf", "phy", "mmio";
+20054|			#address-cells = <0x00>;
+20055|			interrupt-parent = <0x253>;
+20056|			interrupts = <0x00>;
+20057|			#interrupt-cells = <0x01>;
+20058|			interrupt-map-mask = <0xffffffff>;
+20059|			interrupt-map = <0x00 0x01 0x00 0x132 0x00>;
+20060|			interrupt-names = "int_global";
+20061|			clkreq-gpio = <0x9e 0x62 0x00>;
+20062|			perst-gpio = <0x9e 0x61 0x00>;
+20063|			wake-gpio = <0x9e 0x63 0x00>;
+20064|			qcom,pcie-perst-enum;
+20065|			gdsc-vdd-supply = <0x251>;
+20066|			vreg-1p8-supply = <0x142>;
+20067|			vreg-0p9-supply = <0x252>;
+20068|			vreg-mx-supply = <0x1e>;
+20069|			qcom,vreg-1p2-voltage-level = <0x124f80 0x124f80 0x7530>;
+20070|			qcom,vreg-0p9-voltage-level = <0xdea80 0xdea80 0x2f1e8>;
+20071|			qcom,vreg-mx-voltage-level = <0xffff 0x100 0x00>;
+20072|			clocks = <0x23 0x43 0x23 0x3c 0x23 0x3e 0x23 0x45 0x23 0x3a 0x23 0x3d 0x23 0x46 0x23 0x1a 0x23 0x09 0x23 0x41 0x23 0x3f 0x23 0x44 0x23 0x03 0x1f 0x00>;
+20073|			clock-names = "pcie_pipe_clk", "pcie_cfg_ahb_clk", "pcie_mstr_axi_clk", "pcie_slv_axi_clk", "pcie_aux_clk", "pcie_ldo", "pcie_slv_q2a_axi_clk", "pcie_ddrss_sf_tbu_clk", "pcie_aggre_noc_0_axi_clk", "pcie_phy_refgen_clk", "pcie_phy_aux_clk", "pcie_pipe_clk_mux", "pcie_pipe_clk_ext_src", "pcie_0_ref_clk_src";
+20074|			resets = <0x23 0x09 0x23 0x0c>;
+20075|			reset-names = "pcie_core_reset", "pcie_phy_reset";
+20076|			interconnect-names = "icc_path";
+20077|			interconnects = <0xcb 0x34 0x43 0x200>;
+20078|			qcom,pcie-vendor-id = [17 cb];
+20079|			qcom,pcie-device-id = [01 10];
+20080|			qcom,tcsr-not-supported;
+20081|			qcom,pcie-aggregated-irq;
+20082|			qcom,pcie-mhi-a7-irq;
+20083|			qcom,pcie-link-speed = <0x03>;
+20084|			qcom,pcie-phy-ver = <0x06>;
+20085|			qcom,phy-status-reg2 = <0x1214>;
+20086|			qcom,phy-init = <0x1240 0x01 0x00 … [~3.3 kB, 1 linea unica — testo integrale a running_fdt.dts:20086] … >;
+20087|			edma-parent = <0x254>;
+20088|			iommus = <0x96 0x1c80 0x00>;
+20089|			qcom,pcie-edma;
+20090|			status = "disabled";
+20091|			phandle = <0x253>;
+20092|		};
+```
+> Nodo **endpoint** (il telefono fa da PCIe EP verso un host esterno), `status = "disabled"`, con `qcom,pcie-vendor-id = [17 cb]` / `qcom,pcie-device-id = [01 10]` — RI: `0x17cb` è Qualcomm come **vendor**, `0x0110` è il device ID presentato in EP mode. **NON è la strada WLAN** (la WLAN è RC0 + `cnss_pci`, con EP visto come `17cb:1103`). Da notare anche `qcom,pcie1_edma@40002000` a righe 20039–20048 (`status = "disabled"`).
+
+## a.3 — reserved-memory rilevanti a WLAN
+
+### `ipa_fw_region@8b900000` — righe 130–134
+```
+130|			ipa_fw_region@8b900000 {
+131|				no-map;
+132|				reg = <0x00 0x8b900000 0x00 0x10000>;
+133|				phandle = <0x26b>;
+134|			};
+```
+
+### `ipa_gsi_region@8b910000` — righe 136–140
+```
+136|			ipa_gsi_region@8b910000 {
+137|				no-map;
+138|				reg = <0x00 0x8b910000 0x00 0xa000>;
+139|				phandle = <0xcc>;
+140|			};
+```
+> `0xcc` è referenziato da `qcom,ipa@3e00000` → `memory-regions = <0xcc>` (riga 13018). IPA è il datapath WLAN-offload (`ipa_smmu_wlan`, righe 13097–13103), quindi rilevante.
+
+### `cnss_wlan_region` — vedi a.1 (righe 332–339). **Nessun `reg`, nessun `no-map`.**
+
+### Nodo collegato: `ipa_smmu_wlan` — righe 13097–13103
+```
+13097|			ipa_smmu_wlan {
+13098|				compatible = "qcom,ipa-smmu-wlan-cb";
+13099|				iommus = <0x96 0x5c1 0x00>;
+13100|				qcom,iommu-dma = "atomic";
+13101|				dma-coherent;
+13102|				phandle = <0x368>;
+13103|			};
+```
+
+### Nodo collegato: `qmi-tmd-devices/modem/wlan` — righe 20684–20688
+```
+20684|					wlan {
+20685|						qcom,qmi-dev-name = "wlan";
+20686|						#cooling-cells = <0x02>;
+20687|						phandle = <0x45b>;
+20688|					};
+```
+
+## a.4 — `__symbols__` (mappa phandle→path, per verifica)
+
+| riga | contenuto |
+|---|---|
+| `running_fdt.dts:33519` | `wlan = "/soc/qcom,cnss-qca6490@b0000000";` |
+| `running_fdt.dts:33522` | `ipa_smmu_wlan = "/soc/qcom,ipa@3e00000/ipa_smmu_wlan";` |
+| `running_fdt.dts:34000` | `cnss_pci = "/soc/qcom,pcie@1c00000/pcie0_rp/cnss_pci";` |
+| `running_fdt.dts:34001` | `cnss_pci_iommu_group = "/soc/qcom,pcie@1c00000/pcie0_rp/cnss_pci/cnss_pci_iommu_group";` |
+| `running_fdt.dts:33998` | `pcie0 = "/soc/qcom,pcie@1c00000";` |
+| `running_fdt.dts:34002` | `pcie0_msi = "/soc/qcom,pcie0_msi@0x17110040";` |
+| `running_fdt.dts:34003` | `pcie1 = "/soc/qcom,pcie@1c08000";` |
+| `running_fdt.dts:34005` | `pcie1_msi = "/soc/qcom,pcie1_msi@17110040";` |
+| `running_fdt.dts:34007` | `pcie_ep = "/soc/qcom,pcie@40002000";` |
+| `running_fdt.dts:32881-32882` | `ipa_fw_mem`, `ipa_gsi_mem` |
+| `running_fdt.dts:32911` | `cnss_wlan_mem = "/reserved-memory/cnss_wlan_region";` |
+| `running_fdt.dts:33233-33234` | `cnss_wlan_en_active` / `cnss_wlan_en_sleep` |
+| `running_fdt.dts:34055` | `qmi_wlan = "/soc/qmi-tmd-devices/modem/wlan";` |
+
+---
+
+# (b) Sequenza cronologica WLAN — controllo positivo
+
+**Fonti:** `dmesg_full.txt` (2.04→208.9 s, più ricco in testa), `dmesg_complete.txt` (2.04→1610.7 s), e la cattura rappresentativa `firmware/adsp/crash-capture/early-3-03a4f048-aa43-49e6-9474-f9c7801ba1b5-post-fs-data/dmesg.txt` (l'unica che conserva l'enumerazione PCIe).
+
+### Conteggi (dai due dmesg principali)
+- Unione righe WLAN-rilevanti `dmesg_complete` ∪ `dmesg_full` = **1211**; ultima = `75.679386`.
+- `dmesg_complete` è **superset** di `dmesg_full` tranne 7 righe iniziali (7.15–7.65 s).
+- Pattern assenti in **entrambi**: `icnss`/`ICNSS` (0 occorrenze — il driver in uso è `cnss2`, non `icnss2`), `qcacld` (0), `wcn6855` (0), `qca6750` (0 come driver caricato), `17cb` (0 letterale: appare solo come `PCI is probing, vendor ID: 0x17cb`).
+- Pattern `pci 0000` presente solo come `cnss_pci 0000:01:00.0`.
+
+### FASE 0 — modprobe (1.755 → 2.09 s)
+```
+1.755524  modprobe: Loading module /vendor/lib/modules/wlan_firmware_service.ko
+1.785866  modprobe: Loaded kernel module /vendor/lib/modules/wlan_firmware_service.ko
+1.790063  modprobe: Loaded kernel module /vendor/lib/modules/cnss_plat_ipc_qmi_svc.ko
+1.790719  modprobe: Loaded kernel module /vendor/lib/modules/cnss_utils.ko
+1.804895  cnss_prealloc: created mempool cnss-pool-8k  of min size 22 * 8192
+1.804919  cnss_prealloc: created mempool cnss-pool-16k of min size 16 * 16384
+1.804937  cnss_prealloc: created mempool cnss-pool-32k of min size 6 * 32768
+1.804967  cnss_prealloc: created mempool cnss-pool-64k of min size 8 * 65536
+1.804987  cnss_prealloc: created mempool cnss-pool-128k of min size 2 * 131072
+1.805058  modprobe: Loaded kernel module /vendor/lib/modules/cnss_prealloc.ko
+1.805701  modprobe: Loaded kernel module /vendor/lib/modules/cnss_nl.ko
+1.838724  cnss_plat: CNSS Platform IPC QMI Service is started
+1.844415  modprobe: Loading module /vendor/lib/modules/icnss2.ko          <-- caricato ma NON usato
+1.857067  modprobe: Loaded kernel module /vendor/lib/modules/icnss2.ko
+1.882664  pci-msm 1c00000.qcom,pcie: PCIe: msm_pcie_probe
+1.883218  msm_pcie_get_reg: PCIe: RC0: no mhi resource found.
+1.883222  msm_pcie_get_reg: PCIe: RC0: no tcsr resource found.
+1.883224  msm_pcie_get_reg: PCIe: RC0: no rumi resource found.
+1.886330  modprobe: Loaded kernel module /vendor/lib/modules/pci-msm-drv.ko
+1.903968  modprobe: Loading module /vendor/lib/modules/pci-msm-drv.ko
+1.914263  modprobe: Loading module /vendor/lib/modules/wlan_firmware_service.ko
+1.914458  modprobe: Loading module /vendor/lib/modules/icnss2.ko
+1.914936 / 1.916063  modprobe: Loading module /vendor/lib/modules/qca_cld3_qca6750.ko
+1.923464  modprobe: Loading module /vendor/lib/modules/cnss2.ko
+1.953438  cnss: use-pm-domain is 1
+1.953442  cnss: set_wlaon_pwr_ctrl is 0
+1.953445  cnss: TCS CMD address is not present for CPR
+1.953447  cnss: TCS CMD not configured
+1.953450  cnss: Vreg for OL CPR not configured
+1.953467  cnss: Mbox channel initialized
+1.953567  cnss: Got regulator: vdd-wlan-io,     min_uv: 1800000, max_uv: 1800000, need_unvote: 1
+1.953659  cnss: Got regulator: wlan-ant-switch, min_uv: 2800000, max_uv: 2800000, need_unvote: 1
+1.953714  cnss: Got regulator: vdd-wlan-aon,    min_uv: 1012000, max_uv: 1012000, need_unvote: 1
+1.953755  cnss: Got regulator: vdd-wlan-dig,    min_uv:  966000, max_uv:  966000, need_unvote: 1
+1.953783  cnss: Got regulator: vdd-wlan-rfa1,   min_uv: 1900000, max_uv: 2100000, need_unvote: 1
+1.953808  cnss: Got regulator: vdd-wlan-rfa2,   min_uv: 1350000, max_uv: 1350000, need_unvote: 1
+1.953817  cnss: Failed to get optional clock rf_clk, err = -2
+1.953846  cnss: BT GPIO: 382
+1.953849  cnss: QCA6490 XO_CLK GPIO: 505
+1.953852  cnss: Switch control GPIO: 383
+1.953855  cnss: ICC Path_Count: 2 BW_CFG_Count: 9
+1.953863  cnss: ICC Vote CFG for path: pcie_to_memnoc
+1.953865…1.953875  cnss: ICC Vote BW: 0..8 (avg/peak)   [9 righe]
+1.953899  cnss: ICC Vote CFG for path: memnoc_to_ddr
+1.953900…1.953910  cnss: ICC Vote BW: 0..8 (avg/peak)   [9 righe]
+1.953987  cnss: Regulator vdd-wlan-io is being enabled
+1.955900  cnss: Regulator wlan-ant-switch is being enabled
+1.976119  cnss: Regulator vdd-wlan-aon is being enabled
+1.976313  cnss: Regulator vdd-wlan-dig is being enabled
+1.976501  cnss: Regulator vdd-wlan-rfa1 is being enabled
+1.976600  cnss: Regulator vdd-wlan-rfa2 is being enabled
+1.976931  cnss: BT_EN_GPIO State: Off. Delay WLAN_GPIO enable     <-- dipendenza BT→WLAN
+```
+
+### FASE 1 — Cold-boot calibration + enumerazione PCIe RC0 (2.04 → 12.3 s)
+```
+2.034170  modprobe: Loading module /vendor/lib/modules/rmnet_wlan.ko
+2.043787  qca6750: Loading driver v5.2.1.3B +PANIC_ON_BUG; cld:; cmn:; dev:qca6750
+2.053992  modprobe: Loading module /vendor/lib/modules/pci-msm-drv.ko
+2.058054  wlan_pld:pld_register_driver:375:: Fail to register ipci driver
+2.066824  modprobe: Failed to insmod '/vendor/lib/modules/qca_cld3_qca6750.ko' with args '': Invalid argument
+2.066875  modprobe: LoadWithAliases was unable to load qca_cld3_qca6750.ko
+2.066896  modprobe: Failed to load module qca_cld3_qca6750.ko: Invalid argument
+2.073426  DATARMNET7eb0fa5c8f(): rmnet_wlan initializing
+2.073918  modprobe: Loaded kernel module /vendor/lib/modules/rmnet_wlan.ko
+2.084617  cnss: Assert WLAN_EN GPIO successfully
+2.084631  cnss: Trying to enumerate with PCIe RC0
+2.084640  msm_pcie_enable: PCIe: Assert the reset of endpoint of RC0.
+2.087972  msm_pcie_enable: PCIe: RC0: PCIE20_PARF_INT_ALL_MASK: 0x7f80c202
+2.090265  pcie_phy_init: PCIe RC0 PHY is ready!
+2.096184  ipa 3e00000.qcom,ipa:ipa_smmu_wlan: Adding to iommu group 36
+2.100385  msm_pcie_enable: PCIe: Release the reset of endpoint of RC0.
+2.117020  msm_pcie_link_train: PCIe RC0 link initialized
+2.117299  pci-msm 1c00000.qcom,pcie: host bridge /soc/qcom,pcie@1c00000 ranges:
+2.117314  pci-msm 1c00000.qcom,pcie:   No bus range found for /soc/qcom,pcie@1c00000, using [bus 00-ff]
+2.117343  pci-msm 1c00000.qcom,pcie:      MEM 0x0060200000..0x0063ffffff -> 0x0060200000
+2.117495  pci-msm 1c00000.qcom,pcie: PCI host bridge to bus 0000:00
+2.117505  pci_bus 0000:00: root bus resource [bus 00-ff]
+2.117512  pci_bus 0000:00: root bus resource [mem 0x60200000-0x63ffffff]
+2.117591  pci 0000:00:00.0: [17cb:0110] type 01 class 0x060400            <== RC root complex
+2.117652  pci 0000:00:00.0: reg 0x10: [mem 0x00000000-0x00000fff 64bit]
+2.117920  pci 0000:00:00.0: PME# supported from D0 D3hot D3cold
+2.143202  pci 0000:00:00.0: bridge configuration invalid ([bus 00-00]), reconfiguring
+2.143340  wlan_pld:pld_register_driver:375:: Fail to register ipci driver
+2.143494  pci 0000:01:00.0: [17cb:1103] type 00 class 0x028000            <== WLAN EP
+2.143579  pci 0000:01:00.0: reg 0x10: [mem 0x00000000-0x001fffff 64bit]
+2.144020  pci 0000:01:00.0: PME# supported from D0 D3hot D3cold
+2.144172  pci 0000:01:00.0: 4.000 Gb/s available PCIe bandwidth, limited by 5.0 GT/s PCIe x1 link at 0000:00:00.0 (capable of 7.876 Gb/s with 8.0 GT/s PCIe x1 link)
+2.153977  modprobe: Failed to insmod '/vendor/lib/modules/qca_cld3_qca6750.ko': Invalid argument
+2.165908  pci_bus 0000:01: busn_res: [bus 01-ff] end is updated to 01
+2.165946  pci 0000:00:00.0: BAR 14: assigned [mem 0x60200000-0x603fffff]
+2.165953  pci 0000:00:00.0: BAR 15: assigned [mem 0x60400000-0x605fffff 64bit pref]
+2.165959  pci 0000:00:00.0: BAR 0:  assigned [mem 0x60600000-0x60600fff 64bit]
+2.165991  pci 0000:00:00.0: BAR 13: no space for [io  size 0x1000]
+2.165996  pci 0000:00:00.0: BAR 13: failed to assign [io  size 0x1000]
+2.166005  pci 0000:01:00.0: BAR 0:  assigned [mem 0x60200000-0x603fffff 64bit]
+2.166049  pci 0000:00:00.0: PCI bridge to [bus 01]
+2.166065  pci 0000:00:00.0:   bridge window [mem 0x60200000-0x603fffff]
+2.166078  pci 0000:00:00.0:   bridge window [mem 0x60400000-0x605fffff 64bit pref]
+2.166630  msm_pcie_enumerate: PCIe: RC0: has already been enumerated.
+2.167234  cnss_pci 0000:01:00.0: Adding to iommu group 45
+2.171668  cnss: PCI is probing, vendor ID: 0x17cb, device ID: 0x1103
+2.171681  cnss_pci 0000:01:00.0: assigned reserved memory node cnss_wlan_region
+2.171683  cnss: CMA area is cnss_wlan_region
+2.171689  cnss: Ramdump size 0x420000
+2.171693  cnss: Initializing SMMU
+2.171696  cnss: Enabling SMMU S1 stage
+2.171701  cnss: smmu_iova_start: 0x00000000a0000000, smmu_iova_len: 0x10000000
+2.171705  cnss: smmu_iova_ipa_start: 0x00000000b0000000, smmu_iova_ipa_len: 0x10000
+2.171711  cnss: iommu_geometry: 0
+2.171716  cnss: PCIe DRV is supported
+2.171732  cnss_pci 0000:01:00.0: BAR 0: assigned [mem 0x60200000-0x603fffff 64bit]
+2.171775  cnss_pci 0000:01:00.0: enabling device (0000 -> 0002)
+2.171807  cnss: Set PCI DMA MASK (0xfffffffff)
+2.172458  cnss: MSI base data is 0
+2.172460  cnss: BAR starts at 0x00**************, length is 200000
+2.172463  cnss: Assign MSI to user: MHI, num_vectors: 3, user_base_data: 0, base_vector: 0
+2.172465  cnss: Number of assigned MSI for MHI is 3, base vector is 0
+2.172466  cnss: Get IRQ number 366 for vector index 0
+2.172468  cnss: Get IRQ number 367 for vector index 1
+2.172469  cnss: Get IRQ number 368 for vector index 2
+2.172641  cnss: Get device version info, family number: 0x4, device number: 0xc, major version: 0x2, minor version: 0x10
+2.172645  cnss: FW name added with prefix: qca6490/amss20.bin
+2.172646  cnss: FW name is qca6490/amss20.bin, FW fallback name is amss20.bin
+2.172654  cnss: Get PCI link status register: 4114
+2.172655  cnss: Default PCI link speed is 0x2, link width is 0x1
+2.188620  cnss: Suspending PCI link
+2.292603  msm_pcie_disable: PCIe: Assert the reset of endpoint of RC0.
+2.292855  cnss: De-assert WLAN_EN GPIO successfully
+2.292858  cnss: Regulator vdd-wlan-rfa2 is being disabled
+… (rfa1, dig, aon, ant-switch, io) 2.292871–2.292930
+2.293016  cnss: Platform driver probed successfully.
+2.293341  modprobe: Loaded kernel module /vendor/lib/modules/cnss2.ko
+2.293532/2.293535  modprobe: Loading module /vendor/lib/modules/qca_cld3_qca6490.ko
+2.335226  qca6490: Loading driver v5.2.1.3B +PANIC_ON_BUG; cld:; cmn:; dev:qca6490
+2.335696  cnss: WLAN register driver deferred for Calibration     <== defer per cal
+2.335727  wlan_hdd_state wlan major(471) initialized
+2.338204  modprobe: Loaded kernel module /vendor/lib/modules/qca_cld3_qca6490.ko
+```
+> **Nota critica:** lo stack tenta **prima `qca_cld3_qca6750.ko`** (con dipendenza `icnss2.ko`) e **fallisce** (`Invalid argument`); poi carica `qca_cld3_qca6490.ko` (dipendenza `cnss2.ko`) e riesce. Le due catene sono parallele in `modem_pr`/`mdep`.
+
+### FASE 2 — Calibrazione cold-boot (12.038 s)
+```
+12.038482  cnss: Received QMI WLFW pin connect result indication
+12.038490  cnss: Pin connect Result: pwr_pin: 0x0 phy_io_pin: 0x0 rf_io_pin: 0x2b
+12.038549  cnss: Received Cal done indication. File size: 4502688
+12.038552  cnss: Calibration took 6516 ms
+12.038555  cnss: Posting event: COLD_BOOT_CAL_DONE(6), state: 0xf0600f flags: 0x0
+12.038604  cnss: Calibration completed successfully
+12.038606  cnss: Sending mode message, mode: OFF(4), state: 0xf0600f
+12.089358  cnss: Sending coex antenna switch_to_mdm
+12.090060  cnss: WLFW server exiting
+12.090064  cnss: Posting event: SERVER_EXIT(1), state: 0xf8600f flags: 0x0
+12.090205  cnss: Skip driver remove
+12.090936  cnss: Enable ADSP power collapse
+12.090940  cnss: Setting MHI state: POWER_OFF(4)
+12.136294  cnss: Suspending PCI link
+12.144791  cnss: Setting MHI state: DEINIT(1)
+12.144828  cnss: De-assert WLAN_EN GPIO successfully
+12.144831…12.144889  cnss: Regulator (rfa2,rfa1,dig,aon,ant-switch,io) is being disabled
+12.248766  cnss: CAL DB file not required as per BDF
+12.248773  cnss: Schedule WLAN driver load
+12.248795  cnss: QMI WLFW service disconnected, state: 0xfa6000
+12.248807  cnss: Posting event: REGISTER_DRIVER(7)-sync, state: 0xfa6000 flags: 0x5
+```
+
+### FASE 3 — REGISTER_DRIVER → FW ready (12.249 → 13.6 s)
+```
+12.249215  cnss: Processing driver event: REGISTER_DRIVER-sync(7), state: 0xf26000
+12.249221…12.249875  cnss: Regulator (io, ant-switch, aon, dig, rfa1, rfa2) is being enabled
+12.249933  cnss: BT_EN_GPIO State: Off. Delay WLAN_GPIO enable
+12.357132  cnss: Assert WLAN_EN GPIO successfully
+12.357140  cnss: Resuming PCI link
+12.404283  cnss_pci 0000:01:00.0: enabling device (0000 -> 0002)
+12.404531  cnss: Setting MHI state: INIT(0)
+12.404584  cnss: Setting MHI state: POWER_ON(2)
+12.405811  cnss_pci 0000:01:00.0: Direct firmware load for amss20.bin failed with error -2   <== nome "secco" NON esiste
+12.405816  cnss_pci 0000:01:00.0: Falling back to sysfs fallback for: amss20.bin
+12.407315  ueventd: firmware: loading 'amss20.bin' for '/devices/platform/soc/1c00000.qcom,pcie/pci0000:00/0000:00:00.0/0000:01:00.0/firmware/amss20.bin'
+12.415708  ueventd: loading …/amss20.bin took 8ms
+13.166738  cnss: MHI status cb is called with reason MISSION_MODE(5)
+13.166751  cnss: Disable ADSP power collapse
+13.166775  cnss: Completed event: REGISTER_DRIVER(7), state: 0xf26010, ret: 0/0
+13.172393  cnss: Setting link speed:0x2, width:0x1
+13.185157  cnss: WLFW server arriving: node 7 port 1
+13.185305  cnss: Processing driver event: SERVER_ARRIVE(0), state: 0xf26010
+13.185309  cnss: QMI WLFW service connected, state: 0xf26011
+13.185312  cnss: Sending indication register message, state: 0xf26011
+13.187139  cnss: Sending host capability message, state: 0xf26011
+13.187204  cnss: Number of clients is 1
+13.187212  cnss: WAKE MSI base data is 13
+13.187214  cnss: Calibration done is 1
+13.187217  cnss: Sending iova starting 0xa0000000 with size 0x10010000
+13.187220  cnss: Sending feature list 0x7
+13.189160  cnss: Received QMI WLFW request memory indication
+13.189164  cnss: FW requests for memory, size: 0x5e0000, type: 1
+13.189166  cnss: FW requests for memory, size: 0x44c000, type: 4
+13.189204  cnss: Memory for FW, va: 0x0, pa: 0x00000000a1000000, size: 0x5e0000, type: 1
+13.189206  cnss: Memory for FW, va: 0x0, pa: 0x00000000a1800000, size: 0x44c000, type: 4
+13.194317  cnss: Received QMI WLFW FW memory ready indication
+13.194339  cnss: Sending target capability message, state: 0xf26013
+13.206018  cnss: Voltage for CPR: 949mV
+13.206029  cnss: Device frequency is 19200000 HZ
+13.206032  cnss: Target capability: chip_id: 0x2, chip_family: 0xb, board_id: 0xff, soc_id: 0x400c0210, otp_version: 0x480102
+13.206034  cnss: fw_version: 0x200205a2, fw_build_timestamp: 2022-02-04 15:29,
+           fw_build_id: QC_IMAGE_VERSION_STRING=WLAN.HSP.2.0-01442-QCAHSPSWPL_V1_V2_SILICONZ-1
+13.206037  cnss: Sending BDF download message, state: 0xf26013, type: 4
+13.208478  ueventd: firmware: loading 'regdb.bin' for '/devices/platform/soc/b0000000.qcom,cnss-qca6490/firmware/regdb.bin'
+13.208887  cnss: Downloading BDF: regdb.bin, size: 24278
+13.218698  cnss: Sending BDF download message, state: 0xf26013, type: 1
+13.220764  ueventd: firmware: loading 'bdwlan.elf' for '/devices/platform/soc/b0000000.qcom,cnss-qca6490/firmware/bdwlan.elf'
+13.221498  cnss: Downloading BDF: bdwlan.elf, size: 59844
+13.243851  cnss: IPA Vreg already configured
+13.243858  cnss: Host BDF config: HW_XPA: 0 CalDB: 0
+13.243863  cnss: Sending M3 information message, state: 0xf26013
+13.243867  cnss: M3 memory, va: 0x0, pa: 0x00000000a1d80000, size: 0x411bc
+13.245563  cnss: Sending QDSS config download message, state: 0xf26013
+13.245978  cnss: Received QMI WLFW FW initialization done indication
+13.245982  cnss: Posting event: FW_READY(4), state: 0xf26013 flags: 0x0
+13.250959  ueventd: firmware: loading 'qdss_trace_config_v2.cfg'
+13.251763  cnss: Unable to load qdss_trace_config_v2.cfg     <== non bloccante
+13.251789  cnss: PCIE Gen speed not setup
+13.251794  cnss: Requesting DMS MAC address
+13.252160  cnss: Received DMS MAC: [xx:xx:xx:xx:xx:xx]
+13.252166  cnss: Sending WLAN mac req [xx:xx:xx:xx:xx:xx], state: 0xf26017
+13.260322  ueventd: firmware: loading 'wlan/qca_cld/qca6490/WCNSS_qcom_cfg.ini'
+13.264602  ueventd: loading …WCNSS_qcom_cfg.ini took 4ms
+13.291129  cnss: Sending ini sync request, state: 0xf26017, fw_log_mode: 1
+```
+> **BDF effettivamente scaricato = `bdwlan.elf` (59844 byte) + `regdb.bin` (24278 byte).** Non `bdwlan.eXX`. Il file `bdwlan.elf` **esiste** in `firmware/all_firmware/fw_image/bdwlan.elf` (59844 byte, sha md5 `8216392e1c06dc5e46f1575f1afe5791`), identico a `bdwlang.elf`.
+
+### FASE 4 — qcacld `qca6490` su (13.294 → 13.63 s)
+```
+13.294333  qca6490: [1406:I:HIF] hif_pci_enable_bus: con_mode = 0x0, WLAN_SOC_device_id = 0x1103
+13.294352  qca6490: [1406:I:HIF] hif_pci_get_soc_info_pld: fam num 4 dev ver 12 maj ver 2 min ver 16
+13.294380  qca6490: [1406:I:HIF] hif_pci_enable_bus: hif_enable_pci done
+13.294465  qca6490: [1406:I:HIF] hif_get_device_type:  *********** QCA6490 *************
+13.294473  qca6490: [1406:I:HIF] hif_pci_enable_bus: hif_type = 0x16, target_type = 0x1b
+13.294481  qca6490: [1406:I:HIF] hif_register_tbl_attach: HIF_TYPE_QCA6490
+13.294489  qca6490: [1406:I:HIF] hif_target_register_tbl_attach: TARGET_TYPE_QCA6490
+13.294496  qca6490: [1406:I:HIF] hif_pci_enable_bus: Skip tgt_wake up for srng devices
+13.295154  cnss: Mode: 0, config: 00**************, host_version: 5.2.1.3B
+13.295161  cnss: Sending WLAN config message, state: 0xf26017
+13.295929  cnss: Sending mode message, mode: MISSION(0), state: 0xf26017
+13.319716  cnss: Received QMI WLFW pin connect result indication
+13.319721  cnss: Pin connect Result: pwr_pin: 0x1 phy_io_pin: 0x0 rf_io_pin: 0x0
+13.319977  qca6490: [1406:I:HIF] hif_configure_irq: E
+13.320491  cnss: Platform cap_flag is 0x4
+13.322946  qca6490: [1406:F:WMA] WMA --> wmi_unified_attach - success
+13.324615  qca6490: [1406:E:QDF] htc_wait_target: Target Ready! TX resource : 1 size:2176, MaxMsgsPerHTCBundle = 1
+13.324736  qca6490: [1406:I:DP] dp_soc_tx_desc_sw_pools_alloc Tx Desc Alloc num_pool = 4, descs = 6144
+13.328024  qca6490: [1406:I:HAL] hal_reo_set_err_dst_remap_6490: HWIO_REO_R0_ERROR_DESTINATION_MAPPING_IX_0 0x55555
+13.328039  qca6490: [1406:I:HAL] hal_reo_set_err_dst_remap_6490: HWIO_REO_R0_ERROR_DESTINATION_MAPPING_IX_1 0x5555550
+13.328358  qca6490: [1406:I:scan] scm_channel_list_db_init: min_freq 5935 max_freq 7115
+13.328579  qca6490: [1406:I:DP] Peer pool init
+13.328671  qca6490: [1406:E:DP] dp_rx_fst_attach: FST setup params FT size 128, hash_mask 0x7f, skid_length 2
+13.332128…13.332278  qca6490: [1406:I:HIF] hif_event_history_init: SRNG events history initialized for group: 0..8   [9 righe]
+13.333846  qca6490: [1406:I:QDF] pktlogmod_init: Initialize pkt_log module
+13.334834  qca6490: [217:I:WMA] wma_rx_service_ready_event: Firmware build version : 200205a2
+13.334840  qca6490: [217:I:WMA] wma_rx_service_ready_event: Board id: 0, Board version: 8 0 0 0 1
+13.337638  qca6490: [217:I:WMA] wma_is_dbs_mandatory: MAC0 does not support both bands 2 DBS is mandatory
+13.337740  qca6490: [217:E:TIF] init_deinit_populate_dbs_or_sbs_cap_ext2: Extraction of twt capability failed
+13.603278  qca6490: [238:E:QDF] ready_extract_init_status_tlv: ready_extract_init_status_tlv:0
+13.603720  qca6490: [238:I:dfs] WLAN_DEBUG_DFS_ALWAYS : wlan_dfs_pdev_obj_create_notification: dfs_offload 1
+13.603772  qca6490: [238:I:IPA] ipa_pdev_obj_create_notification: IPA is disabled     <== IPA NON usato dal driver
+13.604202  qca6490: [238:I:REGULATORY] reg_set_band: same band 7
+13.604376  qca6490: [1406:I:WMA] wma_wait_for_ready_event: FW ready event received
+13.604864  qca6490: [1406:E:TXRX] dp_rxdma_ring_config: DBS enabled max_mac_rings 2
+13.626328  qca6490: [1406:I:HIF] hif_pm_runtime_start: Enabling RUNTIME PM, Delay: 500 ms
+13.626611  cnss_utils: WLAN MAC address is not set, type 0
+13.629408  ueventd: firmware: loading 'wlan/qca_cld/qca6490/wlan_mac.bin'
+13.629785  qca6490: [1406:E:HDD] hdd_update_mac_config: num_provisioned_addr 3 set custom_mac_addr as:xx:xx:xx:xx:xx:xx
+13.629807  qca6490: [1406:I:HDD] hdd_initialize_mac_address: using MAC address from wlan_mac.bin
+13.633110  cnss: Config PCIe remap window register to 0x4000003f
+13.633178  cnss: Host time = 28091130 us, device time = 1257240 us, offset = 26833890 us
+13.633200  cnss: Updated time sync regs [0x984] = 0x19973e2, [0x988] = 0x0
+13.633211…13.633273  cnss: Removing vote for Regulator (rfa2,rfa1,dig,aon,ant-switch,io)
+13.633286  cnss-daemon: no interop issues ap currently
+```
+> Righe 13.294–13.63: presenti ~30 righe `hif_print_hal_shadow_register_cfg` + ~30 righe `Assign MSI to user: CE <n>` / `Get MSI low addr` omesse qui (rumore di registro, nessuna informazione di controllo).
+
+### FASE 5 — Primo scan e idle shutdown (14.456 → 75.679 s)
+```
+14.456395  qca6490: [4483:I:OSIF] scan start scan id 40961
+15.596891  qca6490: [4483:I:OSIF] vdev 0, scan id 40961 type COMPLETED(1) reason COMPLETED(1) scan found 5 bss
+16.736727  cnss: Runtime suspend start
+16.737001  qca6490: [21:I:PMO] pmo_core_enable_wow_in_fw: RTPM wow
+16.759034  qca6490: [21:I:HIF] hif_try_complete_tasks: waiting for tasklets 0 grp tasklets 0 work 2
+16.772289  cnss: Setting MHI state: SUSPEND(6)
+16.772312  cnss: Suspending PCI link
+16.772318  cnss: Use PCIe DRV suspend
+16.774942  cnss: Runtime suspend status: 0
+17.147846  cnss: Runtime resume start
+17.149945  cnss: Set PCI link status to: 2
+17.150430  qca6490: [64:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+17.185527  qca6490: [4483:I:OSIF] scan start scan id 40962
+18.328715  qca6490: [4483:I:OSIF] vdev 0, scan id 40962 scan found 6 bss
+18.936008  cnss: Runtime suspend start  … 18.970812  Runtime suspend status: 0
+24.687268  cnss: Runtime resume start   … 24.719958  Runtime resume status: 0
+24.698768  cnss: Retry MHI suspend #1
+25.325442  cnss: Runtime suspend start  … 25.359338  status: 0
+31.897180  cnss: Runtime resume start   … 31.949320  scan start scan id 40963
+33.090549  qca6490: vdev 0, scan id 40963 scan found 5 bss
+33.696318  cnss: Runtime suspend start  … 33.742025  status: 0
+58.900540  cnss: Runtime resume start
+59.501466  cnss: Runtime suspend start  … 59.547509  status: 0
+60.983178  init: Sending signal 9 to service 'cnss-daemon' (pid 2201) process group...
+60.986340  cnss: Runtime PM resume is requested by cnss_mhi_pm_runtime_get… [cnss2]
+60.988700  cnss_plat: cnss_plat_ipc_qmi_disconnect_cb: QMI client disconnect. QMI Socket Node:1 Port:16541 ID: 1
+60.988723  cnss: CNSS Daemon disconnected
+61.629997  cnss: Runtime suspend start  … 61.662357  status: 0
+62.031094  cnss: Runtime resume start
+62.069291  qca6490: [4483:E:WMA] wma_vdev_detach_callback: vdev del response received for VDEV_0
+62.675869  cnss: Runtime suspend start  … 62.725818  status: 0
+64.151563  cnss: Runtime resume start
+64.467205  qca6490: wma_vdev_detach_callback: vdev del response received for VDEV_0
+65.112126  cnss: Runtime suspend start  … 65.155945  status: 0
+75.508501  qca6490: [1808:I:HDD] hdd_psoc_idle_timeout_callback: Psoc idle timeout elapsed; starting psoc shutdown
+75.508535  cnss: Doing idle shutdown
+75.508550  cnss: Posting event: IDLE_SHUTDOWN(14)-sync, state: 0xd26107 flags: 0x3
+75.508864  cnss: Runtime PM resume is requested by cnss_pci_dev_shutdown [cnss2]
+75.545664  qca6490: [221:I:WMI] WMI Stop
+75.545680  qca6490: [221:I:HTC] htc_stop: endpoints cleanup
+75.550097  qca6490: [221:I:HTC] htc_stop: flush endpoints Tx lookup queue
+75.554457…75.554573  qca6490: [221:I:HIF] hif_event_history_deinit: … group: 0..8
+75.571870  qca6490: [221:I:QDF] pktlogmod_exit: pkt_log module cleanup
+75.606661  qca6490: [221:I:SPECTRAL] target_if_spectral_detach: spectral detach
+75.612091  qca6490: [221:I:HIF] hif_pci_disable_bus: X
+75.612103  cnss: Sending mode message, mode: OFF(4), state: 0xd26187
+75.622064  cnss: Enable ADSP power collapse
+75.622070  cnss: Setting MHI state: POWER_OFF(4)
+75.628593  cnss: WLFW server exiting
+75.672600  cnss: Suspending PCI link
+75.678567  cnss: Setting MHI state: DEINIT(1)
+75.678682  cnss: De-assert WLAN_EN GPIO successfully
+75.678690…75.678857  cnss: Regulator (rfa2,rfa1,dig,aon,ant-switch,io) is being disabled
+75.678907  cnss: QMI WLFW service disconnected, state: 0xda6100
+75.678960  cnss: Completed event: IDLE_SHUTDOWN(14), state: 0xda6100, ret: 0/0
+75.679386  cnss: PM relax, state: 0xd26100, count: 0     <== ULTIMA riga WLAN nei dmesg
+```
+> `wlan0` compare come `vdevid-0` (`dmesg_complete.txt:884` `osif_cm_disconnect: wlan0(vdevid-0)`). 3 scan completati (5/6/5 BSS). Nessuna associazione stabile. **Il WLAN non è mai andato in stato connesso** nel log catturato, ma l'intera pipeline tecnica (PCIe enum → cnss2 → MHI → BDF → qcacld → WMI ready → wlan0 + scan) è **esercitata con successo**.
+
+---
+
+# (c) Contenuto WLAN di `firmware/`
+
+`firmware/` ha **2 sottodirectory**: `firmware/adsp/` (2623 file) e `firmware/all_firmware/` (681 file, che contiene la sola `fw_image/`).
+
+## c.1 — `firmware/all_firmware/fw_image/` — 517 file, 217 MB
+
+### BDF (Board Data File) — **192 file `bdwlan*`**
+| file | dim. | note |
+|---|---|---|
+| `bdwlan.elf` | **59844** | **è il file che Android ha scaricato** (`dmesg_complete.txt:580` `Downloading BDF: bdwlan.elf, size: 59844`). md5 `8216392e1c06dc5e46f1575f1afe5791` |
+| `bdwlang.elf` | 59844 | md5 **identico** a `bdwlan.elf` |
+| `bdwlan.e01` … `bdwlan.ee1` | 59932 (×164) | set `eXX`. **Presenti: 165 suffissi**; assenti `e1b`, `e58`, `e8f…e96` (parziali), `e99`, `e9d`, `ea0`, `ea2…ea5`, `ea8`, `eaa`, `eab`, `eb2…eb4`, `eb7…ee0` |
+| `bdwlan.eac`, `.ead`, `.eb5`, `.eb6` | 59868 (×4) | varianti |
+| `bdwlang.e8b`…`bdwlang.eb6` | 59936 (×18) | variante "g" (5 GHz/BT-coex?) |
+| `bdwlang.eac`, `.ead`, `.eb5`, `.eb6` | 59872 (×4) | |
+
+**Suffissi `bdwlan.eXX` presenti (165):** `e01 e02 e03 e04 e05 e06 e07 e08 e09 e0a e0b e0c e0d e0e e0f e10 e11 e12 e13 e14 e15 e16 e17 e18 e19 e1a e1c e1d e1e e1f e20 e21 e22 e23 e24 e25 e26 e27 e28 e29 e2a e2b e2c e2d e2e e2f e30 e31 e32 e33 e34 e35 e36 e37 e38 e39 e3a e3b e3c e3d e3e e3f e40 e41 e42 e43 e44 e45 e46 e47 e48 e49 e4a e4b e4c e4d e4e e4f e50 e51 e52 e53 e54 e55 e56 e57 e59 e5a e5b e5c e5d e5e e5f e60 e61 e62 e63 e64 e65 e66 e67 e68 e69 e6a e6b e6c e6d e6e e6f e70 e71 e72 e73 e74 e75 e76 e77 e78 e79 e7a e7b e7c e7d e7e e7f e80 e81 e82 e83 e84 e85 e86 e87 e88 e89 e8a e8b e8c e8d e8e e8f e90 e91 e92 e93 e94 e95 e96 e97 e98 e9a e9b e9c e9e e9f ea1 ea6 ea7 ea9 eac ead eae eaf eb0 eb1 eb5 eb6 ee1`
+(suffisso `eXX` = board-id nel formato Diag/`hw_id`.)
+
+### Altri file WLAN-rilevanti in `fw_image/`
+| path | dim. | cosa è |
+|---|---|---|
+| `bdwlan.elf`, `bdwlang.elf` | 59844 | BDF attivi (v. sopra) |
+| `regdb.bin` | **24278** | regulatory DB — scaricato a runtime (`dmesg_complete.txt:575`) |
+| `qca6490/Data20.msc` | 929072 | tabella/calibrazione WLAN per qca6490 |
+| `Data.msc` | 909586 | variante `Data` (root di `fw_image/`) |
+| `amss.bin` | 5478416 | firmware WCNSS `amss` — è la **"WLAN firmware"** richiesta come `qca6490/amss20.bin` / fallback `amss20.bin` |
+| `amss20.bin` | 5300224 | idem, variante `20` (usata a runtime: `dmesg_complete.txt:479`) |
+| `adspr.jsn`, `adspua.jsn` | 513 / 703 | manifest PIL ADSP (non WLAN ma stesso formato) |
+| `modemr.jsn`, `cdspr.jsn`, `slpir.jsn`, `slpius.jsn`, `battmgr.jsn` | 513–710 | altri manifest |
+| `modem.b02`…`modem.b28` | fino a 40 MB (`modem.b23` = 40017984) | **modem**, non WLAN |
+| `adsp.b00`…`adsp.b24`, `adsp.mdt` | — | ADSP, non WLAN |
+| `cdsp.b*`, `slpi.b*`, `spss1p/t.*`, `fingerpr.*`, `goodixfp.*`, `widevine.mbn`, `rtic.mbn`, `eid.mbn`, `tuiauthapp.mbn`, `smplap64.*`, `m3.bin`, `ic3.b01`, `cpusys_vm.b01` | — | non WLAN |
+| `waipio/qdsp6m.qdb` | 6258632 | modem DSP |
+| `modem_pr/` | ~200 file | profili modem (`mcfg_sw.mbn` per operatore, `so/8xx_*.mbn`) → **modem** |
+| `gptauuid.xml` | 208 righe | UUID immagini — **nessuna voce `wlan`/`cnss`/`qca`/`bdwlan`/`vendor_dlkm`** (grep vuoto) |
+
+> **`firmware/adsp/`** — WLAN: **nessun file `bdwlan*`, nessun `wlan*`**. Presenti solo `adspr.jsn` (513) e `adspua.jsn` (703), che sono manifest ADSP, più `adsp.b00`…`adsp.b24` + `adsp.mdt`. Il resto è materiale di lavoro del port (immagini boot/vendor_boot, `openwrt-*`, `crash-capture/`, `vendor_modules.tar`, `native_bundle.tar.gz`, `mdep`, `malias`, ecc.).
+> **File WLAN-rilevanti fuori dai due alberi:** nessuno.
+
+**File `*.jsn` in tutto il dump:**
+```
+firmware/adsp/adspr.jsn                        513
+firmware/adsp/adspua.jsn                       703
+firmware/all_firmware/fw_image/adspr.jsn       513
+firmware/all_firmware/fw_image/adspua.jsn      703
+firmware/all_firmware/fw_image/battmgr.jsn     516
+firmware/all_firmware/fw_image/cdspr.jsn       513
+firmware/all_firmware/fw_image/modemr.jsn      710
+firmware/all_firmware/fw_image/slpir.jsn       513
+firmware/all_firmware/fw_image/slpius.jsn      515
+```
+Nessun `.jsn` per `wlan`/`wcnss`/`wpss`.
+
+## c.2 — Provenienza delle partizioni (deduzione supportata)
+
+`fstab.qcom` (estratto da `vendor_etc.tar:./fstab.qcom`) dichiara:
+```
+/dev/block/bootdevice/by-name/modem       /vendor/firmware_mnt   vfat   … wait,slotselect
+/dev/block/bootdevice/by-name/dsp         /vendor/dsp            ext4   … wait,slotselect
+/dev/block/bootdevice/by-name/bluetooth   /vendor/bt_firmware    vfat   … wait,slotselect
+```
+→ **IPOTESI (forte):**
+- `firmware/all_firmware/fw_image/` = contenuto della **partizione `modem`** (FAT, montata `/vendor/firmware_mnt`). Evidenza: contiene esattamente il set `modem.bXX` + `amss.bin`/`amss20.bin` + `bdwlan.eXX`/`bdwlan.elf` + `regdb.bin` + `*.jsn` + `gptauuid.xml` + `modem_pr/`. I nomi `adspr.jsn`/`modemr.jsn` sono i manifest PIL risolti da lì.
+- `firmware/adsp/` = contenuto della **partizione `dsp`** (`adsp.b00..b24` + `adsp.mdt` + `adspr.jsn` + `adspua.jsn`) **misto** ad artefatti di lavoro del port (immagini boot, `openwrt-*`, `crash-capture/`).
+
+**Conseguenza operativa:** i BDF stanno **nella partizione `modem` (vfat)**, non in `/vendor/firmware`. Per OpenWrt vanno portati in `/lib/firmware/` (o dove `request_firmware` li cerca).
+
+---
+
+# (d) Contenuto tar — filtrato `wlan|bdwlan|WCNSS|wifi|qca`
+
+## d.1 — `vendor_firmware.tar` (33214976 byte) — 33.2 MB
+```
+drwxr-xr-x root/shell        0 ./wlan/
+drwxr-xr-x root/shell        0 ./wlan/qca_cld/
+drwxr-xr-x root/shell        0 ./wlan/qca_cld/qca6490/
+lrw-r--r-- root/root         0 ./wlan/qca_cld/qca6490/wlan_mac.bin        -> /mnt/vendor/persist/wlan_mac.bin
+lrw-r--r-- root/root         0 ./wlan/qca_cld/qca6490/WCNSS_qcom_cfg.ini -> /vendor/etc/wifi/qca6490/WCNSS_qcom_cfg.ini
+drwxr-xr-x root/shell        0 ./wlan/qca_cld/qca6750/
+lrw-r--r-- root/root         0 ./wlan/qca_cld/qca6750/wlan_mac.bin        -> /mnt/vendor/persist/wlan_mac.bin
+lrw-r--r-- root/root         0 ./wlan/qca_cld/qca6750/WCNSS_qcom_cfg.ini -> /vendor/etc/wifi/qca6750/WCNSS_qcom_cfg.ini
+lrw-r--r-- root/root         0 ./wlan/qca_cld/WCNSS_qcom_cfg.ini          -> /vendor/etc/wifi/WCNSS_qcom_cfg.ini
+lrw-r--r-- root/root         0 ./wlanmdsp.otaupdate                          -> /data/vendor/firmware/wlanmdsp.mbn
+```
+Tutte **symlink**, dimensione 0. Nessun `bdwlan*`. Nessuna cartella `qca6490/` con BDF.
+
+## d.2 — `vendor_etc.tar` (235058688 byte) — 235 MB
+```
+./init/android.hardware.wifi.supplicant-service.rc          1097
+./init/android.hardware.wifi@1.0-service.rc                  503
+./init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc        288
+./init/init.vendor.wlan.rc                                   242
+./init/vendor.qti.hardware.wifi.wifilearner@1.0-service.rc   421
+./init/vendor.wlan.lowirpcd.rc                               458
+./init/wifi-diag.rc                                          951
+./permissions/android.hardware.wifi.aware.xml                837
+./permissions/android.hardware.wifi.xml                      829
+./permissions/android.hardware.wifi.rtt.xml                  849
+./permissions/android.hardware.wifi.passpoint.xml            845
+./permissions/android.hardware.wifi.direct.xml               843
+./seccomp_policy/wifidisplayhalservice.policy               1922
+./vintf/manifest/android.hardware.wifi.supplicant.xml        618
+./vintf/manifest/android.hardware.wifi@1.0-service.xml       313
+./vintf/manifest/android.hardware.wifi.hostapd.xml           606
+drwxr-xr-x root/shell        0 ./wifi/
+./wifi/wpa_supplicant.conf                                   122
+./wifi/qca6490/WCNSS_qcom_cfg.ini                           3993
+./wifi/wpa_supplicant_diag.conf                              381
+./wifi/qca6750/WCNSS_qcom_cfg.ini                           3993
+./wifi/vendor_cmd.xml                                      53085
+./wifi/wpa_supplicant_overlay.conf                           203
+./wifi/p2p_supplicant_overlay.conf                           124
+./wifi/icm.conf                                             2902
+./wifi/flt.conf                                              282
+./xtwifi.conf                                               3517
+```
+Nessun `bdwlan*` in nessuno dei due tar.
+
+**Contenuto di `init.vendor.wlan.rc` (242 byte) — per intero:**
+```
+# Copyright (c) 2021 Qualcomm Technologies, Inc.
+# All Rights Reserved.
+# [marchio di riservatezza rimosso]
+
+#on early-boot
+#    write /sys/kernel/icnss/wlan_en_delay 500
+#    write /sys/kernel/icnss/wpss_boot 1
+```
+→ **tutto commentato**, e i path sono quelli di **icnss** (non cnss2). Residuo del ramo `qca6750`. L'unica azione reale la fa `cnss2.ko` via DT.
+
+**`vendor.wlan.lowirpcd.rc`:** servizio `vendor.lowi` → `/vendor/bin/lowirpcd`, `class core`, `user system`, `group system wakelock`, `capabilities BLOCK_SUSPEND`. (Modalità low-power IR, non necessaria al basic bring-up.)
+
+**`WCNSS_qcom_cfg.ini` (qca6490, 3993 byte)** — primi valori: `gDot11Mode=0`, `gEnableApOBSSProt=0` (commento "nubia set as 0 from 1"), `RTSThreshold=1048576`, `g11dSupportEnabled=0`, `gEnableDFSMasterCap=0`, `FastRoamEnabled=1`, `gChannelBondingMode5GHz=1`, `gSetTxChainmask1x1=1`, `gSetRxChainmask1x1=1`, `gWlanMccToSccSwitchMode=3`, `gEnableTxBFeeSAP=1`, `gEnableTxSUBeamformer=1`, `gRrmEnable=1`. Identico (3993) per `qca6750`.
+
+---
+
+# (e) `vendor_modules/` — hash, dimensioni, strings
+
+**Dir con 283 file.**
+```
+size       sha256                                                            file
+889800     1d034ac3bfa7edfe927defdda6cf026ce04b2d42ad91318ed006af5f22bc66bd  cnss2.ko
+15459152   91b4678346b4ec183c0884b59a714bc5eb369525900d2809f2344550485c329a  qca_cld3_qca6490.ko
+15359456   d288e3ae3ee87f9091d299802727f64a1a1d67d98602362b92ffd9f8b555bfbf  qca_cld3_qca6750.ko
+76984      2af6995fe6b503f7739ede6e85407d6d33818338c7ec42ac9883530a668cf774  wlan_firmware_service.ko
+16264      38dff8c7063742f2759d42f76db9152fe1c6a3a0aea3fa9ef837f186f251f8a3  cnss_nl.ko
+33568      789372407cd2046331c07d29e2073244c6981e3e09606db4f2433c9f4e8e0bf5  cnss_utils.ko
+58928      c4cb2fe14f074b573372510348faaa444aee104c24b24909ffa029806135868a  cnss_plat_ipc_qmi_svc.ko
+```
+**Moduli WLAN aggiuntivi presenti e caricati (non richiesti ma rilevanti):**
+```
+375960   a323627f9636ae74e1cbc931c0c23abe6e77c6b5d0b2f5cde3e384651417ea3d  icnss2.ko
+65840    f8d0cfed651c3875a11b877b8a86cb4d2b891817f7cc840baf19ce5be7bd9936  rmnet_wlan.ko
+18616    4b201204ffaa3a56076f13eaa06605ec581cb5749f641cb6f34eed60809c7e81  cnss_prealloc.ko
+```
+
+## e.1 — `strings -a` sui due `qca_cld3`
+```
+                    qca_cld3_qca6490.ko   qca_cld3_qca6750.ko
+"qca6490"                      128                    3
+"qca6750"                        3                  128
+"QCA6490"                        7                    2
+"wcn6855"                        0                    0
+"WCN6855"                        0                    0
+"qca6390"                        3                    3
+"wcn6750"                        0                    0
+```
+→ **Nessuno dei due cita `wcn6855`.** Ogni modulo è il proprio SoC; i 3 riferimenti incrociati sono generici (tabella comune).
+
+## e.2 — File `.ini`/`.bin` richiesti a runtime
+**`qca_cld3_qca6490.ko`:**
+```
+qca6490/athsetup.bin
+qca6490/athwlan.bin
+qca6490/epping.bin
+qca6490/fakeboar.bin
+qca6490/otp.bin
+qca6490/utf.bin
+%s: using MAC address from wlan_mac.bin
+wifi_module_param.ini
+wlan-connection-roaming.ini
+wlan-connection-roaming-backup.ini
+wlan/qca_cld/qca6490/WCNSS_qcom_cfg.ini
+wlan/qca_cld/qca6490/wlan_mac.bin
+```
+**`qca_cld3_qca6750.ko`:** identico con `qca6750` al posto di `qca6490`.
+> **Nessuna delle due varianti richiede `bdwlan.eXX`**: la BDF la passa `cnss2` (in questo dump `bdwlan.elf`). Nessuno dei due nomina `amss*.bin` — quello è di `cnss2`.
+
+## e.3 — Dipendenze moduli (da `firmware/adsp/mdep`, file di lk2nd/modprobe)
+```
+/vendor/lib/modules/qca_cld3_qca6490.ko: cnss2.ko wlan_firmware_service.ko cnss_plat_ipc_qmi_svc.ko
+    cnss_prealloc.ko cnss_nl.ko cnss_utils.ko qcom_ramdump.ko ipa_fmwk.ko qmi_helpers.ko
+    mhi.ko pci-msm-drv.ko rproc_qcom_common.ko qcom_smd.ko qcom_glink_smem.ko qcom_glink.ko
+/vendor/lib/modules/qca_cld3_qca6750.ko: icnss2.ko qti-adc-tm.ko wlan_firmware_service.ko
+    cnss_prealloc.ko cnss_nl.ko cnss_utils.ko ipa_fmwk.ko pdr_interface.ko qmi_helpers.ko
+    rproc_qcom_common.ko qcom_smd.ko qcom_glink_smem.ko qcom_glink.ko
+/vendor/lib/modules/cnss2.ko: wlan_firmware_service.ko cnss_plat_ipc_qmi_svc.ko qcom_ramdump.ko
+    qmi_helpers.ko mhi.ko pci-msm-drv.ko rproc_qcom_common.ko qcom_smd.ko qcom_glink_smem.ko qcom_glink.ko
+```
+**Alias DT/Pci (`firmware/adsp/malias`):**
+```
+alias of:N*T*Cqcom,cnss-qca6490               cnss2
+alias of:N*T*Cqcom,cnss-qca6490C*             cnss2
+alias pci:v000017CBd00001100sv*sd*bc*sc*i*    cnss2
+alias pci:v000017CBd00001101sv*sd*bc*sc*i*    cnss2
+alias pci:v000017CBd00001103sv*sd*bc*sc*i*    cnss2
+alias pci:v000017CBd00001107sv*sd*bc*sc*i*    cnss2
+alias pci:v0000168Cd0000003Esv*sd*bc*sc*i*    cnss2
+alias of:N*T*Cqcom,wcn6750 / Cqcom,icnss       icnss2
+```
+→ `cnss2` è bindato **o** da `compatible = "qcom,cnss-qca6490"` del nodo DT **o** dal PCI ID **`17cb:1103`**. Questo è il gancio esatto che serve in OpenWrt. `cnss2` accetta anche `1100/1101/1107` (QCA6390/QCA6490/WCN7850).
+
+---
+
+# (f) Partizioni
+
+## f.1 — FATTO: `partitions/all_partitions.txt` è inutilizzabile
+- 330 byte, 110 righe di soli spazi (verificato con `od -c`). Nessun contenuto.
+- `partitions/` contiene solo 14 immagini estratte (dimensione reale su disco): `aop_a.img` 524288, `aop_config_a.img` 524288, `bluetooth_a.img` 4194304, `cpucp_a.img` 1048576, `devcfg_a.img` 131072, `dsp_a.img` 67108864, `featenabler_a.img` 131072, `hyp_a.img` 8388608, `imagefv_a.img` 2097152, `qupfw_a.img` 81920, `shrm_a.img` 131072, `tz_a.img` 4194304, `xbl_a.img` 3670016, `xbl_config_a.img` 307200.
+- **Nessun file GPT** in tutto il dump (`gptauuid.xml` sono UUID immagini, non una GPT).
+
+## f.2 — FATTO: layout UFS e partizioni visibili
+`firmware/adsp/crash-capture/1782977739-…-late-service/getprop.txt`:
+```
+[ro.boot.boot_devices]: [soc/1d84000.ufshc]
+[ro.boot.dynamic_partitions]: [true]
+[ro.boot.hardware]: [qcom]
+[ro.boot.slot_suffix]: [_b]
+[ro.boot.verifiedbootstate]: [orange]
+[persist.vendor.mmi.misc_dev_path]: [/dev/block/sda3]
+[ro.product.ab_ota_partitions]: [system,system_ext,product,vbmeta_system]
+```
+
+**LUN UFS e numero di partizioni per LUN** (`…/logcat_main.txt`, es. cattura `early-3-03a4f048-…`):
+```
+sda : sda1 … sda12                 (12 partizioni)
+sdb : sdb1 … sdb5                  ( 5)
+sdc : sdc1 … sdc5                  ( 5)
+sdd : sdd1 … sdd3                  ( 3)
+sde : sde1 … sde74                 (74)  <== LUN principale
+sdf : sdf1 … sdf5                  ( 5)
+```
+
+**Nomi `by-name` referenziati nei log (64 nomi distinti)** — da `…/logcat_main.txt` e `…/dmesg.txt`:
+`abl_a, abl_b, aop_a, aop_b, aop_config_a, aop_config_b, bluetooth_a, bluetooth_b, boot_a, boot_b, cpucp_a, cpucp_b, devcfg_a, devcfg_b, devinfo, dsp_a, dsp_b, dtbo_b, featenabler_a, featenabler_b, hyp_a, hyp_b, imagefv_a, imagefv_b, keymaster_a, keymaster_b, metadata, modem_a, modem_b, multiimgoem_a, multiimgoem_b, multiimgqti_b, persist, qmcs, qupfw_a, qupfw_b, qweslicstore_b, rawdump, recovery_b, shrm_a, shrm_b, spunvm, super, tz_a, tz_b, uefi_a, uefi_b, uefisecapp_a, uefisecapp_b, userdata, vbmeta_b, vbmeta_system_b, vendor_boot_b, vm-bootsys_a, vm-bootsys_b, xbl_a, xbl_b, xbl_config_a, xbl_config_b, xbl_ramdump_a, xbl_ramdump_b`
+
+**Coppie `nome → device node` direttamente osservate nei log (poche, non sistematiche):**
+| nome | dev node | fonte |
+|---|---|---|
+| `persist` | `sda2` | `EXT4-fs (sda2)` a 2.xxx s contestuale a `superblock …,/dev/block/bootdevice/by-name/persist` |
+| `dsp_b` | `sde39` | `EXT4-fs (sde39): mounted … barrier=1` immediatamente dopo `superblock …/by-name/dsp_b` |
+| `dsp_a` | `sde11` (slot a) / `sde25` | `FAT-fs (sde25)`/`EXT4-fs (sde11)` nelle catture slot-a; incoerente tra catture |
+| `qmc s` | `sde25` | `avc: denied … dev="sde25" … u:object_r:vendor_qmcs_file` |
+| `vm-bootsys` | `sde49` | `mount_with_alternatives(): … mountpoint=/vendor/vm-system blk_dev=/dev/block/sde49` |
+| `userdata` | `sda12` | `mount_with_alternatives(): … mountpoint=/data blk_dev=/dev/block/sda12` |
+| `misc` | `sda3` | prop `persist.vendor.mmi.misc_dev_path` (nome prop, non mount) |
+
+## f.3 — FATTO: `vendor`, `vendor_dlkm`, `system`, `product`, `odm`, `system_ext` **NON sono partizioni statiche**
+`vendor_etc.tar:./fstab.qcom`:
+```
+system        /system        ext4 ro,barrier=1,discard  wait,slotselect,avb=vbmeta_system,logical,first_stage_mount,…
+system_ext    /system_ext    ext4 …                     wait,slotselect,avb=vbmeta_system,logical,first_stage_mount
+product       /product       ext4 …                     wait,slotselect,avb=vbmeta_system,logical,first_stage_mount
+vendor        /vendor        ext4 …                     wait,slotselect,avb,logical,first_stage_mount
+vendor_dlkm   /vendor_dlkm   ext4 …                     wait,slotselect,avb,logical,first_stage_mount
+odm           /odm           ext4 …                     wait,slotselect,avb,logical,first_stage_mount
+```
+→ sono **partizioni logiche dentro `super`** (device-mapper `dm-N`). **Non hanno un `sdeN` proprio.**
+
+**Mount osservati (device-mapper, numerazione NON stabile tra boot):**
+```
+__mount(source=/dev/block/dm-9, target=/system)
+__mount(source=/dev/block/dm-10,target=/system)          __mount(source=/dev/block/dm-10,target=/system_ext)
+__mount(source=/dev/block/dm-11,target=/product)         __mount(source=/dev/block/dm-11,target=/system_ext)
+__mount(source=/dev/block/dm-12,target=/product)         __mount(source=/dev/block/dm-12,target=/vendor)
+__mount(source=/dev/block/dm-13,target=/vendor)          __mount(source=/dev/block/dm-13,target=/vendor_dlkm)
+__mount(source=/dev/block/dm-14,target=/odm)             __mount(source=/dev/block/dm-14,target=/vendor_dlkm)
+__mount(source=/dev/block/dm-15,target=/data)            __mount(source=/dev/block/dm-15,target=/odm)
+__mount(source=/dev/block/dm-16,target=/data)
+__mount(source=/dev/block/dm-13,target=/vendor_dlkm,type=ext4)=0: Success
+```
+**`vendor_dlkm` = `dm-13` in una cattura, `dm-14` in un'altra** → il numero è assegnato a runtime, non citabile come costante.
+
+**Partizioni fisiche (by-name) effettivamente referenziate da fstab come statiche:**
+`metadata`, `persist`, `userdata`, `misc`, `modem` (→ `/vendor/firmware_mnt`), `dsp` (→ `/vendor/dsp`), `vm-bootsys` (→ `/vendor/vm-system`), `bluetooth` (→ `/vendor/bt_firmware`), `qmcs` (→ `/mnt/vendor/qmcs`).
+
+## f.4 — NON RISOLTO (sezione f)
+- **Non è ricavabile dal dump la mappa completa `nome → sdeN` con dimensione.** Servirebbe `ls -l /dev/block/by-name/` o una GPT; non ci sono. `partitions/all_partitions.txt` è vuoto. Nessun `ls` di block device in nessuno dei 2623 file di `firmware/adsp/` né nei 208 crash-capture (`find` per `*ls*`/`*block*`/`*parted*` → solo `pstore_ls.txt` che elenca una dir pstore vuota).
+- **Nessuna dimensione di partizione** è disponibile da nessuna fonte nel dump.
+- `vendor_dlkm`, `vendor`, `modem`, `boot`, `vendor_boot` per **entrambi gli slot**: i *nomi* `_a`/`_b` esistono (`vendor_boot_b`, `modem_a`/`modem_b`, `dsp_a`/`dsp_b`…), ma il device node e la dimensione **non sono osservabili**. L'unico appiglio: `ro.boot.slot_suffix = [_b]` → il sistema era avviato da slot **B**; e in `firmware/adsp/` esistono `vendor_boot_b.img`, `boot_b.stock.img`, `abl_b.img`, `hdr_boot_b`, `hdr_vendor_boot_b` (immagini 100663296 byte = 96 MiB per boot/vendor_boot).
+
+---
+
+# (g) `cmdline.txt`, `regulator_summary.txt`, `iomem*.txt`
+
+## g.1 — `cmdline.txt` (718 byte, 1 riga)
+**Nessuna occorrenza di `wlan`/`cnss`/`wl`/`wifi`** (grep case-insensitive: 0 righe).
+Testo integrale:
+```
+stack_depot_disable=on kasan.stacktrace=off kvm-arm.mode=protected cgroup_disable=pressure cgroup.memory=nokmem console=ttyMSM0,115200n8 loglevel=6 kpti=0 log_buf_len=256K kernel.panic_on_rcu_stall=1 swiotlb=noforce loop.max_part=7 cgroup.memory=nokmem,nosocket pcie_ports=compat service_locator.enable=1 msm_rtb.filter=0x237 allow_mismatched_32bit_el0 cpufreq.default_governor=performance pelt=8 kasan=off rcupdate.rcu_expedited=1 rcu_nocbs=0-7 irqaffinity=0-3 ftrace_dump_on_oops pstore.compress=none fsa4480_i2c.async_probe=1 can.stats_timer=0 video=vfb:640x400,bpp=32,memsize=3072000 qcom-dload-mode.download_mode=1 bootconfig  msm_drm.dsi_display0=qcom,mdss_dsi_r6130_1080_2400_amoled_cmd: rootwait ro init=/init
+```
+Rilevante indirettamente: **`pcie_ports=compat`** (disabilita il PCIe port service nativo; `pcieport`/`PME` gestiti dal driver Qualcomm) e `log_buf_len=256K` (→ è questa la causa della perdita delle righe iniziali in `dmesg_complete`/`dmesg_full`).
+
+## g.2 — `regulator_summary.txt` / `clk_summary.txt` / `pstore.txt`
+**Tutti 0 byte.** Nessun dato. Nessuna riga estraibile.
+
+## g.3 — `iomem.txt` / `iomem_full.txt` (identici, 13893 byte) — righe WLAN
+```
+iomem_full.txt:288   60200000-63ffffff : qcom,pcie@1c00000
+iomem_full.txt:289     60200000-603fffff : PCI Bus 0000:01
+iomem_full.txt:291       60200000-603fffff : cnss
+iomem_full.txt:292     60400000-605fffff : PCI Bus 0000:01
+```
+`iomem_full.txt:290` è il livello `0000:01:00.0` intermedio. **`cnss` è il nome del resource registrato da `cnss2.ko` sulla BAR0** — controprova runtime che il driver si è bindato alla BAR0 2 MiB.
+
+Le altre righe di `iomem.txt` attorno a 288–292 (non WLAN): `qcom,pcie0_msi@0x17110040` (0x17110040), `pcie1_msi@17110040` (0x17110040), `parf` 0x1c00000.
+
+**Nessuna riga con `wl`/`wlan` in `iomem*.txt`.** Nessun alias GPIO `wl_en` in nessun file del dump (grep `wl_en`/`wlan-en`/`vdd-wlan`: solo righe `cnss:` di dmesg e le righe DTS già citate).
+
+---
+
+# IPOTESI (non osservate direttamente — dedotte da evidenza)
+
+1. **`firmware/all_firmware/fw_image/` = partizione `modem`.** Supporto: il set di file coincide con il contenuto tipico della FAT `/vendor/firmware_mnt` (fstab) e include i manifest PIL e `gptauuid.xml`. Il nome `all_firmware` non è un nome di partizione del device.
+2. **`firmware/adsp/` = partizione `dsp` + artefatti di lavoro.** Il sottoinsieme `adsp.b00..b24`/`adsp.mdt`/`adspr.jsn` corrisponde a `/vendor/dsp` (fstab); il resto (`boot_*.img`, `openwrt-*`, `crash-capture/`, `native_bundle.tar.gz`, `mdep`, `malias`) è materiale di port.
+3. **`bdwlan.eXX` è la BDF del modem-partition, ma il driver in uso (via cnss2) scarica `bdwlan.elf`.** Il suffisso `eXX` è il board-id; `cnss2` riceve il nome dal target/DT e in questo dump ha chiesto `bdwlan.elf` (59844 B) — non `.eXX`. Il mapping board-id → `eXX` non è nel dump.
+4. **GPIO globali ricavati dalla numerazione dmesg.** Con `cnss: BT GPIO: 382`, `QCA6490 XO_CLK GPIO: 505`, `Switch control GPIO: 383` e i valori DTS gpio81/gpio204/gpio82, la base TLMM risulta **301**; quindi **`wlan-en-gpio` (TLMM gpio80) = GPIO globale 381**. Coerente ma non osservato direttamente (nessuna riga dmesg stampa il numero globale di WLAN_EN).
+5. **Il boot catturato è in modalità `smmu`/PCIe "DRV"**, guidata da `qcom,drv-supported` + `qcom,boot-option=1` (DT) e da `cnss: PCIe DRV is supported`. Un port OpenWrt che non abiliti i due flag non rientrerà nel medesimo percorso di suspend/resume del link.
+6. **In OpenWrt il nodo `qcom,cnss-qca6490@b0000000` non basta**: serve anche il sottoalbero `pcie0_rp/cnss_pci` (con `memory-region` e `qcom,iommu-group`) e i 6 regolatori PM8350/PM8350C/PMR735A. Il DTS OpenWrt attuale (non in questo dump) va confrontato su questi punti.
+7. **Il ramo `qca6750` è deliberatamente presente ma inerte**: `icnss2.ko` + `qca_cld3_qca6750.ko` vengono caricati, la `compatible` `qcom,cnss-qca6490` bindа `cnss2`, e `init.vendor.wlan.rc` è tutto commentato su path `icnss`. Probabilmente la ROM è condivisa tra due SKU.
+
+---
+
+# NON RISOLTO
+
+1. **Mappa completa `nome partizione → device node` con dimensione.** Impossibile: `partitions/all_partitions.txt` vuoto, nessuna GPT, nessun `ls /dev/block/by-name`. Disponibili solo: layout LUN/count, elenco dei 64 nomi `by-name`, i 7 abbinamenti parziali di f.2, e i nodi `dm-N` delle partizioni logiche.
+2. **Dimensioni di `vendor_dlkm`, `vendor`, `modem`, `boot` per slot A e B.** Nessuna fonte nel dump.
+3. **L'enumerazione PCIe NON è in `dmesg_complete.txt` né in `dmesg_full.txt`.** Va presa da `firmware/adsp/crash-capture/*/dmesg.txt`. Se il parent assumeva `dmesg_complete` come fonte unica, quel ramo di evidenza era **assente**.
+4. **`regulator_summary.txt` e `clk_summary.txt` sono vuoti** → impossibile elencare i consumatori dei regolatori `vdd-wlan-*` dal summary. Solo le righe `cnss:`/DTS sono disponibili.
+5. **Nessun alias `wl_en`/`vdd-wlan`** è definibile da `cmdline.txt` (nessuna occorrenza) né da altri file.
+6. **Il numero `dm-N` di `vendor_dlkm` non è stabile** (13 in una cattura, 14 in un'altra) → non citabile.
+7. **Board-id → file `bdwlan.eXX`.** Il board-id osservato (`board_id: 0xff` da `Target capability`, `Board id: 0` da WMI) non permette di scegliere il suffisso `eXX`; il runtime ha usato `bdwlan.elf`.
+8. **Nessuna prova nel dump che il WLAN sia mai giunto a stato connesso.** Solo 3 scan completati; il PSOC è andato in idle shutdown a 75.5 s. Una sonda live sul device è necessaria per determinare la connettività reale (fuori scope, come da regole).
+
+---
+
+## Riepilogo operativo
+
+- **Il controllo positivo è dimostrato e completo**: Android enumera `17cb:1103` su RC0 `1c00000` (BAR0 2 MiB a `0x60200000`, 3 MSI, IOMMU group), `cnss2` fa cold-boot cal (6516 ms), scarica `qca6490/amss20.bin`, `regdb.bin`, `bdwlan.elf`, `WCNSS_qcom_cfg.ini`, `wlan_mac.bin`, poi `qca_cld3_qca6490.ko` sale (`HIF_TYPE_QCA6490`, `TARGET_TYPE_QCA6490`), WMI ready, `wlan0` + 3 scan.
+- **Le 5 cose che OpenWrt deve avere per replicarlo**: (1) alias PCI `17cb:1103` → `cnss2`; (2) `qcom,drv-supported` + `boot-option=1` sulla RC0 **e** `msi-map` verso la GIC ITS (il nodo `pcie0_msi` è `disabled`); (3) sottoalbero `pcie0_rp/cnss_pci` con `memory-region = cnss_wlan_region` e iommu-group `dma-addr-pool 0xa0000000+0x10000000`; (4) i 6 regolatori `vdd-wlan-ao n/dig/io/rfa1/rfa2` + `wlan-ant-switch`; (5) firmware `bdwlan.elf`+`regdb.bin`+`amss20.bin` dalla **partizione modem vfat** (non da `/vendor/firmware`).
+- **Trappola**: `cnss_wlan_region` non ha `reg` → è un `shared-dma-pool` **riutilizzabile allocato a runtime** (32 MiB / allineamento 4 MiB). Un DTS OpenWrt che la dichiari con `reg` fisso cambia il comportamento del ramdump.
+- **Trappola 2**: `smmu_iova_ipa` è `<0xb0000000 0x10000>` — indipendente dalla finestra SMMU principale.

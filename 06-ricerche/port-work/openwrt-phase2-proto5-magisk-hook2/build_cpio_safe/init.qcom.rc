@@ -1,0 +1,6 @@
+
+on post-fs-data
+    exec -- /system/bin/sh /openwrt-phase2-proto5.sh post-fs-data
+
+on property:sys.boot_completed=1
+    exec -- /system/bin/sh /openwrt-phase2-proto5.sh boot-completed

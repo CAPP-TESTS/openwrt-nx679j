@@ -1,0 +1,40 @@
+# Copyright (C) 2012 The Android Open Source Project
+#
+# IMPORTANT: Do not create world writable files or directories.
+# This is a common source of Android security bugs.
+#
+
+import /init.environ.rc
+import /system/etc/init/hw/init.usb.rc
+import /init.${ro.hardware}.rc
+import /vendor/etc/init/hw/init.${ro.hardware}.rc
+import /system/etc/init/hw/init.usb.configfs.rc
+import /system/etc/init/hw/init.${ro.zygote}.rc
+
+# Cgroups are mounted right before early-init using list from /etc/cgroups.json
+on early-init
+    # Disable sysrq from keyboard
+    write /proc/sys/kernel/sysrq 0
+
+    # Android doesn't need kernel module autoloading, and it causes SELinux
+    # denials.  So disable it by setting modprobe to the empty string.  Note: to
+    # explicitly set a sysctl to an empty string, a trailing newline is needed.
+    write /proc/sys/kernel/modprobe \n
+
+    # Set the security context of /adb_keys if present.
+    restorecon /adb_keys
+
+    # Set the security context of /postinstall if present.
+    restorecon /postinstall
+
+    mkdir /acct/uid
+
+    # memory.pressure_level used by lmkd
+    chown root system /dev/memcg/memory.pressure_level
+    chmod 0040 /dev/memcg/memory.pressure_level
+
+    # app mem cgroups, used by activity manager, lmkd and zygote
+    mkdir /dev/memcg/apps/ 0755 system system
+    write /dev/memcg/apps/memory.swappiness 100
+
+    # cgroup for system_server and surfaceflinger

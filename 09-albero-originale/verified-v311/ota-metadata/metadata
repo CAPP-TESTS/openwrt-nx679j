@@ -1,0 +1,10 @@
+ota-property-files=payload_metadata.bin:3829:218538,payload.bin:3829:3916276682,payload_properties.txt:3916280569:183,care_map.pb:2882:900,metadata:69:651,metadata.pb:788:1366                  
+ota-required-cache=0
+ota-streaming-property-files=payload.bin:3829:3916276682,payload_properties.txt:3916280569:183,care_map.pb:2882:900,metadata:69:651,metadata.pb:788:1366                    
+ota-type=AB
+post-build=nubia/NX679J-UN/NX679J-UN:12/SKQ1.211113.001/eng.nubia.20220308.193302:user/release-keys
+post-build-incremental=eng.nubia.20220308.193302
+post-sdk-level=31
+post-security-patch-level=2022-01-01
+post-timestamp=1646738922
+pre-device=NX679J-UN

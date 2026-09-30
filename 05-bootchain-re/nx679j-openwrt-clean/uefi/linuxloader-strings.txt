@@ -1,0 +1,200 @@
+  > Scheduler up on Core %d
+Init %ld aux cores of %ld
+bootstrap
+Invalid aux_cpu_num %d, SMP_MAX_CPUS %d
+Invalid secondary cpu num %d, SMP_MAX_CPUS %d, secondary_bootstrap_thread_count %d
+Invalid aux_cpu_count %d, SMP_MAX_CPUS %d
+AuxBootStrap_%d
+Shutdown_%d
+Continue booting UEFI on Core %d
+Hit object count ceiling %d
+Hit object count ceiling
+--
+%s:%d: Failed to initialize timer, frequency is 0
+e->magic == EVENT_MAGIC
+kernel/event.c
+DEBUG ASSERT FAILED at (%s:%d): %s
+m->magic == MUTEX_MAGIC
+kernel/mutex.c
+DEBUG ASSERT FAILED at (%s:%d): %s
+mutex_destroy: thread %p (%s) tried to release mutex %p it doesn't own. owned by %p (%s)
+mutex_acquire_timeout: thread %p (%s) tried to acquire mutex %p it already owns.
+t->magic == THREAD_MAGIC
+kernel/thread.c
+DEBUG ASSERT FAILED at (%s:%d): %s
+t->state == THREAD_READY
+--
+t->state == THREAD_BLOCKED
+!thread_is_idle(t)
+bootstrap
+idle %d
+idle %u
+--
+thread_is_idle(t)
+arch_ints_disabled()
+kernel/timer.c
+DEBUG ASSERT FAILED at (%s:%d): %s
+timer && timer->magic == TIMER_MAGIC
+--
+(chunk->len % sizeof(void *)) == 0
+chunk->len >= size
+%s:%d: failed to grow kernel heap by 0x%zx bytes
+as->magic == HEAP_MAGIC
+end > start
+--
+WARNING: Bad SBL Pointer!!
+UEFI Start     [%5d]
+ - 0x%09X [%5d] Sec.efi
+ASLR          : ON [WARNING Using constant]
+ASLR          : ON
+--
+Build Info    : 64b %a %a
+20:42:31
+Boot Device   : UFS
+Boot Device   : Flashless
+Boot Device   : NAND
+Boot Device   : eMMC
+Boot Device   : SDC
+Boot Device   : NVME
+Boot Device   : SPI
+Unable to determine boot device ...
+FwVersion.c
+PROD Mode     : TRUE
+--
+XBL Log Buffer
+Error Allocating buffer for UART log 
+SecFdtInitRootHandle: DTBBlob NULL!
+SecFdtGetNodeHandle: DTBBlob NULL!
+SecDtb.c
+BootSharedImemCookiePtr != ((void *) 0)
+fdt_set_blob_handle: %d
+/sw/boot
+fdt_get_node_handle: %d
+config
+--
+DB:Support:
+DB:Stop:
+LoadImage:
+StartImage:
+PeiPerformanceLib.c
+Source != ((void *) 0)
+--
+mPreloadRamPartitionTableEntryCount <= 32
+WARNING: Unable to read memory partition table from SMEM
+ERROR: Failed to Get Shared Imem Boot Device type 
+OverRideSharedImemBootCfg
+QC_IMAGE_VERSION_STRING=BOOT.MXF.2.0-00608-WAIPIO-1.465557.1
+Unknown exception type %d
+ArmExceptionLib.c
+--
+Error: DecompressFvHobInit Failed - %r
+Error: GetDecompressedFvBufferInfo Failed - %r
+Error: KernelInterfaceInit failed 
+ERROR: Unable to add to FV info HOB %g
+ERROR: DecompressThreadEntry failed for %g
+--
+ERROR: SMC_ID_WDOG_PET failed - (%d)
+%BasePeCoff.c
+ImageContext != ((void *) 0)
+(UINTN)FixupData <= (UINTN)ImageContext->FixupData + ImageContext->FixupDataSize
+ReadSize != ((void *) 0)
+FileHandle != ((void *) 0)
+--
+smem.c
+SMEM base addr=0x%08X, size=%d memory mapping failed.
+SMEM is not initialized by Boot.
+smem_init: major version (%d) does not match all procs!
+Invalid SMEM memory type, %d, requested.
+--
+WDog_%d
+ERROR: Failed to enable DEP
+ERROR: Encountered NULL ImageContext
+global &%aPkg
+global &%aBinToSrcRelPath
+--
+\DEBUG\
+@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopq
+/home/nubia/SCMWork/nrom/NX679J_Z69_UN_ZML1S_V311/20220308142115/modem/BOOT.MXF.2.0/boot_images/Build/WaipioLAA/Core/RELEASE_CLANG120LINUX/AARCH64/QcomPkg/XBLCore/XBLCore/DEBUG/Sec.dll
+[Config]
+Version = 3
+--
+0x80900000, 0x00200000, "SMEM",              AddMem, MEM_RES, UNCACHEABLE, Reserv, UNCACHED_UNBUFFERED_XN
+0x85200000, 0x1C200000, "PIL Reserved",      AddMem, MEM_RES, UNCACHEABLE, Reserv, UNCACHED_UNBUFFERED_XN
+0xA1400000, 0x02B00000, "Display Demura",    AddMem, MEM_RES, SYS_MEM_CAP, Reserv, WRITE_THROUGH_XN
+0xA6000000, 0x00F00000, "DBI Dump",          NoHob,  MMAP_IO, INITIALIZED, Conv,   UNCACHED_UNBUFFERED_XN
+0xA7000000, 0x00400000, "UEFI FD",           AddMem, SYS_MEM, SYS_MEM_CAP, BsData, WRITE_BACK
+--
+0xA7AD9000, 0x00400000, "FV Region",         AddMem, SYS_MEM, SYS_MEM_CAP, BsData, WRITE_BACK_XN
+0xA7ED9000, 0x00127000, "UEFI RESV",         AddMem, SYS_MEM, SYS_MEM_CAP, BsData, WRITE_BACK_XN
+0xA8000000, 0x10000000, "Kernel",            AddMem, SYS_MEM, SYS_MEM_CAP, Reserv, WRITE_BACK_XN
+0xB8000000, 0x02B00000, "Display Reserved",  AddMem, MEM_RES, SYS_MEM_CAP, Reserv, WRITE_THROUGH_XN
+0xBB000000, 0x05000000, "OEM VM",            AddMem, SYS_MEM, SYS_MEM_CAP, Reserv, WRITE_BACK_XN
+0xC0000000, 0x20000000, "MTE Reserved",      AddDynamicMem, SYS_MEM, SYS_MEM_CAP, Reserv, WRITE_BACK_XN 
+--
+0x01FC0000, 0x00030000, "TCSR_TCSR_REGS",     AddDev, MMAP_IO, UNCACHEABLE, MmIO,   NS_DEVICE
+0x08800000, 0x00100000, "PERIPH_SS",          AddDev, MMAP_IO, UNCACHEABLE, MmIO,   NS_DEVICE
+0x0A600000, 0x00200000, "USB",                AddDev, MMAP_IO, UNCACHEABLE, MmIO,   NS_DEVICE
+0x0B000000, 0x04000000, "AOSS",               AddDev, MMAP_IO, UNCACHEABLE, MmIO,   NS_DEVICE
+0x0F000000, 0x01000000, "TLMM",               AddDev, MMAP_IO, UNCACHEABLE, MmIO,   NS_DEVICE
+--
+PlatConfigFileName = "uefiplatLA.cfg"
+OsTypeString = "LA"
+# Force booting to shell whilst in pre-silicon phase
+EnableShell = 0x1
+# Tune based on Sec heap needs for FV decompression and MMU tables through Dxe/BDS
+SecPagePoolCount = 0x800
+--
+# UEFI memory use
+UefiMemUseThreshold = 0x1900
+## USB ##
+USBHS1_Config = 0x0
+UsbFnIoRevNum = 0x00010001
+## Buttons / KeyPad ##
+PwrBtnShutdownFlag = 0x0
+--
+## SDHC Mode 0:Legacy Mode, Non-zero: SDHC Mode ##
+EnableSDHCSwitch = 0x1
+## UFS
+EnableUfsIOC = 1
+UfsSmmuConfigForOtherBootDev = 1
+## Security flag ##
+SecurityFlag = 0xC4
+# SecBootEnableFlag = 0x1               i.e. 0b00000001
+# TreeTpmEnableFlag = 0x2               i.e. 0b00000010
+# CommonMbnLoadFlag = 0x4               i.e. 0b00000100
+# DxHdcp2LoadFlag = 0x8                 i.e. 0b00001000
+# VariableServicesFlag = 0x10           i.e. 0b00010000
+# WinsecappFlag = 0x20                  i.e. 0b00100000
+# LoadSecAppFlag = 0x40                 i.e. 0b01000000
+# LoadKeymasterFlag = 0x80              i.e. 0b10000000
+# EnableQseeLogsFlag = 0x100            i.e. 0b 00000001 00000000
+## Default app to boot in platform BDS init
+DefaultChargerApp = "QcomChargerApp"
+DefaultBDSBootApp = "LinuxLoader"
+## Enable HotKey detection in RETAIL devices
+DetectRetailUserAttentionHotkey = 0x00
+--
+EnableMultiThreading = 1
+MaxCoreCnt = 8
+# Keep the following number of cores active, including the boot core
+EarlyInitCoreCnt = 2
+## Get TZ App Logs ##
+--
+## NOTE: Recommend disabling feature for Retail devices
+AllowNonPersistentVarsInRetail = 0x1
+# Initialize Display panel in its own thread to run in parallel to booting
+EnableDisplayThread = 0x1
+# Using imagefv to load display logo
+EnableDisplayImageFv = 0x1
+# Render default logo1.bmp for primary display
+PrimaryLogoIndex = 3
+# Render logo2.bmp for secondary display
+SecondaryLogoIndex = 2
+## Dynamic UART Log Buffer Size
+--
+#  FV Decompression on multicore option
+EnableMultiCoreFvDecompression = 1
+## Enable/Disable Variable Policy Engine ##
+EnableVariablePolicyEngine = 0
+## Allow individual ACPI tables loading ## 
+EnableACPIFallback = 0x0

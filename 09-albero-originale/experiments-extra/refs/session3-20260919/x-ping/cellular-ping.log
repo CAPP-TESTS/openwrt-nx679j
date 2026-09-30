@@ -1,0 +1,8 @@
+PING 8.8.8.8 (8.8.8.8): 56 data bytes
+64 bytes from 8.8.8.8: seq=0 ttl=110 time=50.806 ms
+64 bytes from 8.8.8.8: seq=1 ttl=110 time=26.341 ms
+64 bytes from 8.8.8.8: seq=2 ttl=110 time=39.512 ms
+
+--- 8.8.8.8 ping statistics ---
+3 packets transmitted, 3 packets received, 0% packet loss
+round-trip min/avg/max = 26.341/38.886/50.806 ms

@@ -1,0 +1,12 @@
+current-slot           current-slot: a Finished. Total time: 0.002s 
+slot-count             slot-count: 2 Finished. Total time: 0.002s 
+slot-successful:a      slot-successful:a: yes Finished. Total time: 0.004s 
+slot-successful:b      slot-successful:b: no Finished. Total time: 0.002s 
+slot-unbootable:a      slot-unbootable:a: no Finished. Total time: 0.003s 
+slot-unbootable:b      slot-unbootable:b: no Finished. Total time: 0.002s 
+slot-retry-count:a     slot-retry-count:a: 7 Finished. Total time: 0.003s 
+slot-retry-count:b     slot-retry-count:b: 7 Finished. Total time: 0.003s 
+version-bootloader     version-bootloader:  Finished. Total time: 0.002s 
+unlocked               unlocked: yes Finished. Total time: 0.002s 
+secure                 secure: yes Finished. Total time: 0.002s 
+max-download-size      max-download-size: 805306368 Finished. Total time: 0.003s 

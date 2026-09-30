@@ -1,0 +1,20 @@
+### bl/abl_a.img (1048576 B) — firmware volume trovati: [('0x1000', 163840, 72)]
+[FV abl_a.img@1000 off=0x1000 len=163840 (163840 B) headerlen=72]
+[FFS abl_a.img@1000 off=0x1048 guid=9e21fd93-9c72-4c15-8c4b-e77f1db2d792 type=0x0b size=150099]
+  [sect GUID_DEFINED off=0x1060 size=150075 (150075 B) large=False]
+      GUID_DEFINED ee4e5898-3914-4259-9d6e-dc7bd79403cf dataOffset=24 attr=0x0001 payload=150051 B entropy=8.00
+      -> decompresso 602312 B
+      [sect RAW off=0x0 size=4 (4 B) large=False]
+      [sect FV_IMAGE off=0x4 size=602308 (602308 B) large=False]
+[FV out/abl_a.img@1000_f1048_gd1060_fvi_4.bin.fv off=0x0 len=602304 (602304 B) headerlen=72]
+...
+### bl/abl_a.img (1048576 B) — firmware volume trovati: [('0x1000', 163840, 72)]
+[FV abl_a.img@1000 off=0x1000 len=163840 (163840 B) headerlen=72]
+[FFS abl_a.img@1000 off=0x1048 guid=9e21fd93-9c72-4c15-8c4b-e77f1db2d792 type=0x0b size=150099]
+  [sect GUID_DEFINED off=0x1060 size=150075 (150075 B) large=False]
+      GUID_DEFINED ee4e5898-3914-4259-9d6e-dc7bd79403cf dataOffset=24 attr=0x0001 payload=150051 B entropy=8.00
+      -> decompresso 602312 B
+      [sect RAW off=0x0 size=4 (4 B) large=False]
+      [sect FV_IMAGE off=0x4 size=602308 (602308 B) large=False]
+[FV out/abl_a.img@1000_f1048_gd1060_fvi_4.bin.fv off=0x0 len=602304 (602304 B) headerlen=72]
+STATS {'files': 1, 'sections': 3, 'decompressed': 1, 'failed': 0, 'leaf': 2}

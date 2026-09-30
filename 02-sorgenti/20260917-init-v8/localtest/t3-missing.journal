@@ -1,0 +1,41 @@
+nx679j: chain: start
+nx679j: chain: 18 modules to try, 0 .ko visible
+nx679j: MOD ghost_module                       MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: kmsg unavailable
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: no kmsg/pmsg/rawdump channel this boot
+nx679j: MOD second_ghost                       MISSING (no .ko in /lib/modules)
+nx679j: MOD dwc3_msm                           MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_msm_ssusb_qmp                  MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_msm_snps_hs                    MISSING (no .ko in /lib/modules)
+nx679j: MOD phy_generic                        MISSING (no .ko in /lib/modules)
+nx679j: MOD eud                                MISSING (no .ko in /lib/modules)
+nx679j: MOD ssusb_redriver_nb7vpq904m          MISSING (no .ko in /lib/modules)
+nx679j: MOD ucsi_glink                         MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: kmsg unavailable
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: no kmsg/pmsg/rawdump channel this boot
+nx679j: MOD altmode_glink                      MISSING (no .ko in /lib/modules)
+nx679j: MOD pmic_glink                         MISSING (no .ko in /lib/modules)
+nx679j: MOD pdr_interface                      MISSING (no .ko in /lib/modules)
+nx679j: MOD qmi_helpers                        MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_glink                         MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_glink_smem                    MISSING (no .ko in /lib/modules)
+nx679j: MOD qcom_smd                           MISSING (no .ko in /lib/modules)
+nx679j: MOD rproc_qcom_common                  MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: kmsg unavailable
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: no kmsg/pmsg/rawdump channel this boot
+nx679j: MOD fsa4480_i2c                        MISSING (no .ko in /lib/modules)
+nx679j: ---- dump (chain progress) ----
+nx679j: kmsg unavailable
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: no kmsg/pmsg/rawdump channel this boot
+nx679j: chain: done in 3 ms: ok=0 timeout-killed=0 failed/missing=18 skipped=0
+nx679j: ---- dump (end of chain) ----
+nx679j: kmsg unavailable
+nx679j: pmsg unavailable (no ramoops this boot)
+nx679j: no kmsg/pmsg/rawdump channel this boot

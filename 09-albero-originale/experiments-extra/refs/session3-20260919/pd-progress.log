@@ -1,0 +1,50 @@
+[ns] service=14 version=1 instance=0 node=1 port=14
+[ns] service=64 version=1 instance=1 node=1 port=17081
+BOOT_ID=2ca42e08-8c9a-4d61-8ae3-2b632149d26a
+[dspawn] pid=27325 log=/tmp/crashlog-pd.log
+STOP uptime=28752
+spawned pid=27334: /sys/class/remoteproc/remoteproc3/state <- stop
+START uptime=28758
+spawned pid=27364: /sys/class/remoteproc/remoteproc3/state <- start
+[ns] service 2 not found (lookup returned 0 entries)
+SAMPLE phase=before-protective-restart uptime=28759 elapsed=1 mode=unknown services=18 state=running
+query failed
+SAMPLE phase=before-protective-restart uptime=28774 elapsed=16 mode=5 services=60 state=running
+[qrtr] local node=1 port=0
+[ns] service=2 version=1 instance=0 node=0 port=72
+[qmi] raw (18 bytes):
+  02 01 00 2d 00 0b 00 02 04 00 00 00 00 00 01 01 
+  00 05 
+[qmi] type=2 txn=1 msg_id=0x002d msg_len=11
+  TLV 0x02 len=4  u32=0 (0x00000000)  str=""
+  TLV 0x01 len=1  u8=5
+[PD-MAPPER] map tms/servreg -> msm/adsp/root_pd instance=74
+[PD-MAPPER] map tms/servreg -> msm/slpi/sensor_pd instance=90
+[PD-MAPPER] map tms/servreg -> msm/cdsp/root_pd instance=76
+[PD-MAPPER] map tms/servreg -> msm/slpi/root_pd instance=90
+[PD-MAPPER] map tms/servreg -> msm/adsp/audio_pd instance=74
+[PD-MAPPER] map avs/audio -> msm/adsp/audio_pd instance=74
+[PD-MAPPER] map tms/servreg -> msm/modem/root_pd instance=180
+[PD-MAPPER] map gps/gps_service -> msm/modem/root_pd instance=180
+[PD-MAPPER] map tms/servreg -> msm/adsp/charger_pd instance=74
+[PD-MAPPER] published service=64 version=0x101 instance=0
+[PD-MAPPER] map tms/servreg -> msm/adsp/root_pd instance=74
+[PD-MAPPER] map tms/servreg -> msm/slpi/sensor_pd instance=90
+[PD-MAPPER] map tms/servreg -> msm/cdsp/root_pd instance=76
+[PD-MAPPER] map tms/servreg -> msm/slpi/root_pd instance=90
+[PD-MAPPER] map tms/servreg -> msm/adsp/audio_pd instance=74
+[PD-MAPPER] map avs/audio -> msm/adsp/audio_pd instance=74
+[PD-MAPPER] map tms/servreg -> msm/modem/root_pd instance=180
+[PD-MAPPER] map gps/gps_service -> msm/modem/root_pd instance=180
+[PD-MAPPER] map tms/servreg -> msm/adsp/charger_pd instance=74
+[PD-MAPPER] published service=64 version=0x101 instance=0
+[PD-MAPPER] request node=1 port=16384 service=tms/servreg domains=7
+[PD-MAPPER] request node=0 port=103 service=tms/servreg domains=7
+[PD-MAPPER] request node=0 port=103 service=avs/audio domains=1
+[PD-MAPPER] request node=0 port=103 service=tms/servreg domains=7
+[PD-MAPPER] request node=0 port=103 service=tms/pddump_disabled domains=0
+[PD-MAPPER] request node=1 port=17084 service=tms/servreg domains=7
+[PD-MAPPER] request node=0 port=2 service=tms/servreg domains=7
+[PD-MAPPER] request node=0 port=2 service=tms/pddump_disabled domains=0
+[PD-MAPPER] request node=0 port=2 service=avs/audio domains=1
+[PD-MAPPER] request node=0 port=2 service=tms/servreg domains=7

@@ -1,0 +1,10 @@
+  0.000s UTC 2026-07-17T20:14:02.140977040+0000 stock-on-B control result
+  6.603s OUTCOME FASTBOOT_RETURN elapsed=6.603s (after EDL reset)
+  post current-slot: b
+  post slot-successful:a: no
+  post slot-successful:b: yes
+  post slot-retry-count:a: 7
+  post slot-retry-count:b: 5
+  post slot-unbootable:a: no
+  post slot-unbootable:b: no
+  note: boot_b/vendor_boot_b/dtbo_b/vbmeta_b cloned from stock slot A recon-20260717-183330

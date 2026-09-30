@@ -1,0 +1,9 @@
+vendor_boot: header_size=2128 page=4096 vendor_ramdisk_size=10041284 dtb_size=3879360 dtb_addr=0x1f00000
+area dtb a offset 10047488 (0x995000)
+#0 off=0         size=3490578157 model=
+     compatible=
+     msm-id=- board-id=-
+FDT totali: 1
+byte dopo ultimo FDT: 0, non-zero: 0
+
+dtbo: magic=0xd7b7ab1e voci=44

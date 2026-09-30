@@ -1,0 +1,27 @@
+/vendor/etc/init/hw/init.qcom.rc:56:    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules msm_11ad_proxy
+/vendor/etc/init/hw/init.qcom.rc:654:    insmod /system/lib/modules/pronto/pronto_wlan.ko con_mode=5
+/vendor/etc/init/hw/init.qti.kernel.rc:35:    start vendor.modprobe
+/vendor/etc/init/hw/init.qti.kernel.rc:181:service vendor.modprobe /vendor/bin/vendor_modprobe.sh
+/vendor/etc/init/hw/init.qti.kernel.rc:187:    seclabel u:r:vendor_modprobe:s0
+/vendor/etc/init/netmgrd.rc:16:    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules rmnet_ctl
+/vendor/etc/init/netmgrd.rc:17:    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules rmnet_core
+/vendor/etc/init/netmgrd.rc:18:    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules/5.4-gki rmnet_ctl
+/vendor/etc/init/netmgrd.rc:19:    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules/5.4-gki rmnet_core
+/vendor/etc/init/netmgrd.rc:48:    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules rmnet_shs
+/vendor/etc/init/netmgrd.rc:49:    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules/5.4-gki rmnet_shs
+/vendor/etc/init/netmgrd.rc:52:    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -r -d /vendor/lib/modules rmnet_shs
+/vendor/etc/init/netmgrd.rc:53:    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -r -d /vendor/lib/modules/5.4-gki rmnet_shs
+/vendor/etc/init/netmgrd.rc:56:    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -d /vendor/lib/modules rmnet_perf rmnet_perf_ingress_deag=N
+/vendor/etc/init/netmgrd.rc:57:    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -d /vendor/lib/modules/5.4-gki rmnet_perf rmnet_perf_ingress_deag=N
+/vendor/etc/init/netmgrd.rc:60:    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -d /vendor/lib/modules rmnet_perf rmnet_perf_opt_mode="udp"
+/vendor/etc/init/netmgrd.rc:61:    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -d /vendor/lib/modules/5.4-gki rmnet_perf rmnet_perf_opt_mode="udp"
+/vendor/etc/init/netmgrd.rc:64:    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules rmnet_perf
+/vendor/etc/init/netmgrd.rc:65:    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules/5.4-gki rmnet_perf
+/vendor/etc/init/netmgrd.rc:68:    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -r -d /vendor/lib/modules rmnet_perf
+/vendor/etc/init/netmgrd.rc:69:    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -r -d /vendor/lib/modules/5.4-gki rmnet_perf
+/vendor/etc/init/netmgrd.rc:72:    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules rmnet_offload
+/vendor/etc/init/netmgrd.rc:73:    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules/5.4-gki rmnet_offload
+/vendor/etc/init/netmgrd.rc:76:    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -r -d /vendor/lib/modules rmnet_offload
+/vendor/etc/init/netmgrd.rc:77:    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -r -d /vendor/lib/modules/5.4-gki rmnet_offload
+/system/etc/init/hw/init.rc:20:    # denials.  So disable it by setting modprobe to the empty string.  Note: to
+/system/etc/init/hw/init.rc:22:    write /proc/sys/kernel/modprobe \n

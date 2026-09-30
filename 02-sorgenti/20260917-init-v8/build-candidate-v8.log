@@ -1,0 +1,33 @@
+=== build-candidate-v8 (ONE image: the supervisor + its worker) ===
+
+[1] container      magisk_patched-30700_Zx2eF.img sha256=0cd94d5627501f3c... ok
+[2] ramdisk source  /home/user/nx679j-stock/experiments/20260916-122926-native-baseline/probe-v7-sonda/work/v7-ramdisk.cpio
+                    3106504 bytes sha256=bfeb2f907ce9e5842f4fe37d4ebcf67ad83630fcf32e43d7f2590151cc53c4e0
+                    (the v7 image built from it is boot_b-probe-v7.img, sha256=77d7675eb54a65d9..., MEASURED to boot and self-restart on hardware)
+[3] compiling
+    /init   67312 bytes (freestanding: -nostdlib -ffreestanding)
+    worker  663536 bytes (static, may block)
+[4] PID 1 audit: which syscalls can the shipped bytes execute?
+    svc #0 -> clock_gettime (1 call sites)
+    svc #0 -> clone (1 call sites)
+    svc #0 -> execve (1 call sites)
+    svc #0 -> exit_group (1 call sites)
+    svc #0 -> kill (1 call sites)
+    svc #0 -> nanosleep (2 call sites)
+    svc #0 -> reboot (1 call sites)
+    svc #0 -> wait4 (1 call sites)
+    no libc, no undefined symbols, no finit_module/mount/lib-module strings
+    call targets: _start+0xa8, _start+0xd8, _start+0xe0, _start+0xf0, memcpy, memcpy+0x4, memmove+0x1c, memset+0x4, mkmsg, now_ms, report_op, run_op, run_op+0x38, run_op+0xa0, run_op+0xc8, run_op+0xf8, scpy, u2s
+[5] worker audit
+    663536 bytes static=True finit_module=True fork=True
+[6] ramdisk: splice /init, add /nx679j/worker, nothing else touched
+    cpio 3106504 -> 3305244 bytes, 68 entries, /init 532352 -> 67312 bytes, /nx679j/worker 663536 bytes
+[7] lz4 -l legacy compression + round trip
+    3305244 -> 1076975 bytes, legacy magic 02214c18, round trip byte-identical
+[7b] UNPACK the compressed ramdisk and look at the real files: this is the check the kernel will do
+    init 67312 bytes ok, nx679j/worker 663536 bytes ok, both executable, both hashes match
+[8] boot image: in-place graft into the container
+    boot_b-init-v8.img 100663296 bytes sha256=04e7f9b2be9430977f48ce7091ada2edcad63c8edd11b976fce11262a45d1dbd
+    header: {'magic': 'ANDROID!', 'kernel_size': 49108324, 'ramdisk_size': 1076975, 'header_size': 1584, 'os_version': '0x18000162', 'signature_size': 4096}
+    kernel identical, ramdisk identical, tail identical, 1070281 bytes differ from the container (all inside the size field + ramdisk region)
+    leftover bytes of the old ramdisk left in place: 1124008

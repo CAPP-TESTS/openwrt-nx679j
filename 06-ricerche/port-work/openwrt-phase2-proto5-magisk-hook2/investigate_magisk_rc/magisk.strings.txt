@@ -1,0 +1,792 @@
+/system/bin/linker64
+14206865
+pthread_mutex_destroy
+cfmakeraw
+unsetenv
+clearenv
+android_dlopen_ext
+pthread_cond_broadcast
+getsockopt
+unlockpt
+__cxa_atexit
+pthread_exit
+pthread_attr_init
+__libc_init
+getrlimit
+sigtimedwait
+pthread_cond_wait
+sigemptyset
+sigfillset
+sigaddset
+__system_property_get
+mprotect
+faccessat
+unlinkat
+symlinkat
+readlinkat
+renameat
+fchmodat
+setgroups
+lsetxattr
+fsetxattr
+lgetxattr
+fgetxattr
+tcsetattr
+tcgetattr
+strerror
+fdopendir
+closedir
+rewinddir
+socketpair
+android_log_processLogBuffer
+dl_iterate_phdr
+strerror_r
+localtime_r
+clock_nanosleep
+libdl.so
+liblog.so
+sigaction
+posix_memalign
+android_logger_open
+getpwnam
+__stack_chk_fail
+getauxval
+pthread_sigmask
+sigprocmask
+__register_atfork
+readlink
+__strlcpy_chk
+__umask_chk
+__vsprintf_chk
+__vsnprintf_chk
+pthread_rwlock_wrlock
+pthread_mutex_unlock
+pthread_rwlock_unlock
+pthread_rwlock_rdlock
+pthread_mutex_lock
+realpath
+closelog
+getopt_long
+vasprintf
+vsnprintf
+vfprintf
+NativeBridgeItf
+getpagesize
+__android_log_write
+pthread_key_delete
+pthread_attr_setdetachstate
+pthread_key_create
+pthread_create
+ftruncate
+clock_gettime
+strftime
+basename
+sendfile
+copy_file_range
+android_set_abort_message
+android_logger_list_free
+getpwuid
+setresuid
+setresgid
+signalfd
+android_logger_list_read
+android_logger_list_alloc
+pthread_setspecific
+pthread_getspecific
+__openat_2
+__open_2
+sqlite3: Cannot load libsqlite.so
+sqlite3_finalize
+Invalid PID: %s
+/data/user
+core/resetprop/persist.rs
+Unrecognized argument: 
+libunwind: %s - %s
+DW_EH_PE_funcrel pointer encoding not supported
+(II[II[[IILjava/lang/String;Ljava/lang/String;[I[IZLjava/lang/String;Ljava/lang/String;ZZ[Ljava/lang/String;[Ljava/lang/String;ZZZLjava/lang/String;)I
+logcat: skip [%.*s] PID=[%d] UID=[%d] PPID=[%d]; parent not zygote
+/vendor/etc/selinux/vendor_property_contexts
+Cannot connect to daemon: 
+Upgrade / New module: 
+core/su/connect.rs
+Unexpected map tag: '
+', expecting 1 or 2
+%s failed to release mutex
+getSavedFloatRegister
+sqlite3_step
+supp-group
+/proc/self/attr/exec
+Target does not exist in denylist
+isolated
+/proc/self/ns/mnt
+logcat: skip [%.*s] PID=[%d] UID=[%d]
+/nonplat_property_contexts
+su: return code=[
+libunwind: malformed DW_CFA_def_cfa DWARF unwind, reg too big
+MAGISKTMP
+sqlite3(line:%d): %s
+/dev/.ev
+interactive
+/proc/%d/environ
+(II[II[[IILjava/lang/String;Ljava/lang/String;[ILjava/lang/String;Ljava/lang/String;)I
+(II[II[[IILjava/lang/String;Ljava/lang/String;[I[IZLjava/lang/String;Ljava/lang/String;Z[Ljava/lang/String;[Ljava/lang/String;ZZZ)I
+(II[II[[IILjava/lang/String;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;)V
+su: request from uid=[
+], pid=[
+], client=[
+libunwind: malformed DW_CFA_val_offset DWARF unwind, reg (%lu) out of range
+CIE version is not 1 or 3
+%s.d: exec [%s]
+* Running module %s scripts
+sqlite3_prepare_v2
+__system_property_read_callback
+exec failed with %d: %s
+(II[II[[IJJ)I
+denylist: kill PID=[%d] (%s)
+: loading module files
+denylist: Unmounted (
+resetprop: read prop from [
+libunwind: malformed DW_CFA_def_cfa_sf DWARF unwind, reg too big
+Can't binary search on variable length encoded data.
+deny: Daemon error
+DenyList Config CLI
+Usage: magisk --denylist [action [arguments...] ]
+Actions:
+   status          Return the enforcement status
+   enable          Enable denylist enforcement
+   disable         Disable denylist enforcement
+   add PKG [PROC]  Add a new target to the denylist
+   rm PKG [PROC]   Remove target(s) from the denylist
+   ls              Print the current denylist
+   exec CMDs...    Execute commands in isolated mount
+                   namespace and do all unmounts
+/watchdog/magisk
+pkg: APK signature mismatch: 
+base/files.rs
+getULEB128
+/data/adb/magisk/busybox
+companion
+(II[II[[IILjava/lang/String;Ljava/lang/String;[I[IZLjava/lang/String;Ljava/lang/String;)I
+The kernel does not support mount namespace
+AppZygoteInit
+Unable to add '
+', skipped
+/Volumes/Developer/android/Magisk/native/src/base/dir.rs
+%s failed to acquire mutex
+libunwind: malformed DW_CFA_offset_extended DWARF unwind, reg too big
+FDE has zero length
+Invalid GID: %s
+zygisk64: [%s] is on the denylist
+/proc/%d
+%*d %*s %*c %d
+/Volumes/Developer/android/sdk/ndk/magisk/toolchains/rust/lib/rustlib/src/rust/library/core/src/slice/sort/unstable/quicksort.rs
+ is not present, abort
+resetprop: prop [
+] does not exist
+truncated uleb128 expression
+libunwind: unsupported .eh_frame_hdr version: %u at %lx
+resetprop: __system_properties_init error
+zygisk_companion_entry
+zygisk64: plt_hook failed
+(II[II[[IILjava/lang/String;IILjava/lang/String;ZLjava/lang/String;Ljava/lang/String;)V
+logcat: zygote PID=[%d]
+Unable to handle '
+': parent should be tmpfs
+:MAGISK:D (
+core/mount.rs
+core/thread.rs
+base/xwrap.rs
+unsupported arm64 register
+unsupported restore location for register
+getTableEntrySize
+/dev/pts
+/proc/self/fd
+Denylist is not enforced
+Invalid package / process name
+exynos9810
+AppZygote
+resetprop: update prop [
+resetprop: create prop [
+Error while parsing message: 
+base/dir.rs
+__cxa_guard_release
+truncated sleb128 expression
+DW_OP_piece not implemented
+sqlite3: Downgrading database is not supported
+MagiskSU
+Usage: su [options] [-] [user [argument...]]
+Options:
+  -c, --command COMMAND         Pass COMMAND to the invoked shell
+  -i, --interactive             Force pseudo-terminal allocation when using -c
+  -g, --group GROUP             Specify the primary group
+  -G, --supp-group GROUP        Specify a supplementary group
+                                The first specified supplementary group is also used
+                                as a primary group if the option -g is not specified
+  -Z, --context CONTEXT         Change SELinux context
+  -t, --target PID              PID to take mount namespace from
+  -d, --drop-cap                Drop all Linux capabilities
+  -h, --help                    Display this help message and exit
+  -, -l, --login                Pretend the shell to be a login shell
+  -m, -p,
+  --preserve-environment        Preserve the entire environment
+  -s, --shell SHELL             Use SHELL instead of the default /system/bin/sh
+  -v, --version                 Display version number and exit
+  -V                            Display version code and exit
+  -mm, -M,
+  --mount-master                Force run in the global mount namespace
+com/android/internal/os/Zygote
+(II[II[[IILjava/lang/String;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;ZZ[Ljava/lang/String;[Ljava/lang/String;ZZ)V
+package_name
+	: remove
+*incomplete utf-8 byte sequence from index 
+evaluateExpression
+%s: applet not found
+Failed to execute BusyBox shell
+__system_property_set
+nativeSpecializeAppProcess
+u:r:app_zygote:s0
+denylist add: [%s/%s]
+u:object_r:properties_serial:s0
+denylist: handling PID=[
+resetprop: write prop to [
+malformed uleb128 expression
+unsupported restore location for float register
+__system_property_find
+selinux_android_setcontext
+zygisk64: JNI_GetCreatedJavaVMs not found
+nativeForkSystemServer
+(II[II[[IILjava/lang/String;Ljava/lang/String;[I[IZLjava/lang/String;Ljava/lang/String;Z)I
+* Found preinit dir: 
+Cannot write_log_to_pipe: 
+Magisk - Multi-purpose Utility
+Usage: magisk [applet [arguments]...]
+   or: magisk [options]...
+Options:
+   -c                        print current binary version
+   -v                        print running daemon version
+   -V                        print running daemon version code
+   --list                    list all available applets
+   --remove-modules [-n]     remove all modules, reboot if -n is not provided
+   --install-module ZIP      install a module zip file
+Advanced Options (Internal APIs):
+   --daemon                  manually start magisk daemon
+   --stop                    remove all magisk changes and stop daemon
+   --[init trigger]          callback on init triggers. Valid triggers:
+                             post-fs-data, service, boot-complete, zygote-restart
+   --unlock-blocks           set BLKROSET flag to OFF for all block devices
+   --restorecon              restore selinux context on Magisk files
+   --clone-attr SRC DEST     clone permission, owner, and selinux context
+   --clone SRC DEST          clone SRC to DEST
+   --sqlite SQL              exec SQL commands to Magisk database
+   --path                    print Magisk tmpfs mount path
+   --denylist ARGS           denylist config CLI
+   --preinit-device          resolve a device to store preinit files
+Available applets:
+ (os error 
+libunwind: malformed DW_CFA_register DWARF unwind, reg2 too big
+DW_EH_PE_aligned pointer encoding not supported
+getSavedRegister
+ASH_STANDALONE
+libdl_android.so
+/dev/block
+/proc/%d/cwd
+/jit-cache
+zygisk64: Failed to restore plt_hook
+Target already exists in denylist
+denylist rm: [%s]
+%s/%d/%s
+execve %s failed with %d: %s
+/unencrypted
+data for rust::Str is not utf-8
+/vendor_property_contexts
+getRegister
+FDE is really a CIE
+post-fs-data
+CREATE TABLE IF NOT EXISTS denylist (package_name TEXT, process TEXT, PRIMARY KEY(package_name, process))
+30.7:MAGISKSU
+system_server
+JNI_GetCreatedJavaVMs
+zygisk64: Cannot dlopen libnativehelper.so: %s
+com.android.internal.os.ZygoteInit
+* Disable DenyList
+logcat: soft reboot
+!pkg: dyn APK signature mismatch: 
+resetprop: get persist prop [
+/su_request_
+PRAGMA user_version
+DROP TABLE IF EXISTS logs
+CREATE TABLE IF NOT EXISTS strings (key TEXT, value TEXT, PRIMARY KEY(key))
+zygisk64: Failed to dlopen zygisk module: %s
+zygisk64: Failed to register plt_hook "%s"
+logcat: terminate
+core/zygisk/daemon.rs
+libunwind: malformed DW_CFA_expression DWARF unwind, reg too big
+%.*s: exec [%s.sh]
+sqlite3_errstr
+preserve-environment
+drop-cap
+/dev/ptmx
+(II[II[[IILjava/lang/String;Ljava/lang/String;[I[IZLjava/lang/String;Ljava/lang/String;Z[Ljava/lang/String;[Ljava/lang/String;ZZ)I
+(II[II[[IILjava/lang/String;IILjava/lang/String;[ILjava/lang/String;Ljava/lang/String;)I
+/watchdog
+/Volumes/Developer/android/sdk/ndk/magisk/toolchains/rust/lib/rustlib/src/rust/library/std/src/rt.rs
+invalid utf-8 sequence of 
+ bytes from index 
+libunwind: malformed DW_CFA_offset_extended_sf DWARF unwind, reg too big
+sqlite3_bind_text
+setresuid (%u) failed with %d: %s
+zygisk_module_entry
+(II[II[[IILjava/lang/String;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;Z[Ljava/lang/String;[Ljava/lang/String;ZZZLjava/lang/String;)V
+denylist: initializing internal data structures
+logcat: revert [%.*s] PID=[%d] UID=[%d]
+/vendor/etc/selinux/nonplat_property_contexts
+/plat_property_contexts
+resetprop: get prop [
+su: waiting child pid=[
+!resetprop: encode with protobuf [
+core/resetprop/cli.rs
+unknown pointer encoding
+getSLEB128
+DW_OP_deref_size with bad size
+magisk32
+/data/adb/magisk/util_functions.sh
+'%s' does not exist
+DROP TABLE IF EXISTS hidelist;DELETE FROM settings WHERE key='magiskhide';
+android_get_LD_LIBRARY_PATH
+/sbin/.magisk
+su: use global namespace
+Failed to dlopen zygisk module: %s
+/unencrypted/magisk
+'pkg: repackaged APK signature invalid: 
+core/selinux.rs
+libunwind: unsupported .eh_frame_hdr at %lx: need at least 4 bytes of data but only got %zd
+/debug_ramdisk/.magisk
+/debug_ramdisk
+unlock %s failed with %d: %s
+c:hlimpds:VvuZ:Mt:g:G:
+setgroups failed with %d: %s
+zygisk64: JavaVM not found
+data for rust::String is not utf-8
+core/socket.rs
+ daemon started
+* Device API level: 
+setRegister
+Run this command with root
+su: use namespace of pid=[%d]
+zygiskd64
+* Launching zygiskd64
+zygisk64: Cannot hook method: %s %s
+(II[II[[IILjava/lang/String;Ljava/lang/String;[I[IZLjava/lang/String;Ljava/lang/String;ZZ[Ljava/lang/String;[Ljava/lang/String;ZZZ)I
+(II[II[[IILjava/lang/String;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;Z[Ljava/lang/String;[Ljava/lang/String;ZZZ)V
+/data/user_de
+logcat: skip [%s] PID=[%d] UID=[%d]
+security.selinux
+/property_contexts
+Unable to replace '
+', ignore request
+resetprop: unlink [
+5Received unexpected number of fds: expected=1 actual=
+/mountinfo
+libunwind: malformed DW_CFA_restore_extended DWARF unwind, reg too big
+DW_EH_PE_textrel pointer encoding not supported
+DWARF opcode not implemented
+* Running %s.d scripts
+/data/adb/modules/%.*s/%s.sh
+BEGIN TRANSACTION;ALTER TABLE policies RENAME TO policies_tmp;CREATE TABLE IF NOT EXISTS policies (uid INT, policy INT, until INT, logging INT, notification INT, PRIMARY KEY(uid));INSERT INTO policies SELECT uid, policy, until, logging, notification FROM policies_tmp;DROP TABLE policies_tmp;COMMIT;
+android_update_LD_LIBRARY_PATH
+sqlite3_column_count
+sqlite3_column_text
+DELETE FROM denylist WHERE package_name='%s'
+appcompat_override
+System property context nodes
+/Volumes/Developer/android/sdk/ndk/magisk/toolchains/rust/lib/rustlib/src/rust/library/alloc/src/str.rs
+libunwind: malformed DW_CFA_val_expression DWARF unwind, reg too big
+/system/bin/sh
+/.magisk/busybox/busybox
+zygisk64: Failed to register plt_hook [%s]
+(II[II[[IILjava/lang/String;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;Z[Ljava/lang/String;[Ljava/lang/String;ZZ)V
+logcat: skip [%.*s] PID=[%s] UID=[%d]; namespace not isolated
+ro.appcompat_override.
+property_info
+/system/etc/selinux/plat_property_contexts
+	: ignore
+resetprop: waiting for prop [
+core/magisk.rs
+base/cxx_extern.rs
+__cxa_guard_acquire
+unknown register
+/data/adb/magisk
+sqlite3_bind_parameter_count
+CREATE TABLE IF NOT EXISTS policies (uid INT, policy INT, until INT, logging INT, notification INT, PRIMARY KEY(uid))
+mount-master
+/.magisk/pts
+__android_log_close
+DELETE FROM denylist WHERE package_name='%s' AND process='%s'
+/proc/%d/ns/mnt
+logcat: revert [%s] PID=[%d] UID=[%d]
+/dev/__properties__/property_info
+!resetprop: decode with protobuf [
+/Volumes/Developer/android/sdk/ndk/magisk/toolchains/rust/lib/rustlib/src/rust/library/std/src/io/buffered/bufreader.rs
+/Volumes/Developer/android/sdk/ndk/magisk/toolchains/rust/lib/rustlib/src/rust/library/std/src/io/impls.rs
+DW_EH_PE_datarel is invalid with a datarelBase of 0
+Unknown DWARF encoding for search table.
+/data/adb/magisk.db
+PRAGMA user_version=12
+sqlite3_bind_int64
+sqlite3_column_name
+su: pts_slave=[%s]
+su: use new isolated namespace
+Cannot execute %s: %s
+/proc/%d/status
+/libandroid_runtime.so
+(II[II[[IILjava/lang/String;IILjava/lang/String;[ILjava/lang/String;Ljava/lang/String;I)I
+INSERT INTO denylist (package_name, process) VALUES('%s', '%s')
+/Volumes/Developer/android/sdk/ndk/magisk/toolchains/rust/lib/rustlib/src/rust/library/std/src/sync/once.rs
+core/daemon.rs
+	sqlite3: 
+	Feature '
+' has been deprecated
+libunwind: malformed DW_CFA_GNU_negative_offset_extended DWARF unwind, reg too big
+/data/adb/%s.d
+sqlite3_open_v2
+__system_property_wait
+/libnativebridge.so
+pthread_create failed with %d: %s
+resetprop: waiting for prop [
+] to exist
+,Received unexpected number of fds: expected=
+ actual=
+core/package.rs
+libunwind: malformed DW_CFA_register DWARF unwind, reg too big
+libunwind: malformed DW_CFA_def_cfa_register DWARF unwind, reg too big
+Incomplete Magisk install
+sqlite3_close
+zygisk64: load success
+nativeForkAndSpecialize
+(II[II[[IILjava/lang/String;IILjava/lang/String;[I[IZLjava/lang/String;Ljava/lang/String;)I
+%lx-%lx %4s %lx %x:%x %lu %n%*s
+core/bootstages.rs
+Unknown wire type '
+', must be less than 6
+libunwind: malformed DW_CFA_undefined DWARF unwind, reg too big
+CIE ID is not zero
+magisk64
+com.topjohnwu.magisk
+BEGIN TRANSACTION;ALTER TABLE hidelist RENAME TO hidelist_tmp;CREATE TABLE IF NOT EXISTS hidelist (package_name TEXT, process TEXT, PRIMARY KEY(package_name, process));INSERT INTO hidelist SELECT process as package_name, process FROM hidelist_tmp;DROP TABLE hidelist_tmp;COMMIT;
+KEY_VOLUMEDOWN detected: enter safe mode
+(II[II[[IILjava/lang/String;Ljava/lang/String;[I[ILjava/lang/String;Ljava/lang/String;)I
+/proc/%d/stat
+/dev/__properties__
+core/su/pts.rs
+content://
+	.provider
+<string-with-nul>
+__cxa_guard_acquire detected recursive initialization: do you have a function-local static variable whose initialization depends on that function?
+CIE start does not match
+BEGIN TRANSACTION;ALTER TABLE hidelist RENAME TO hidelist_tmp;CREATE TABLE IF NOT EXISTS hidelist (package_name TEXT, process TEXT, PRIMARY KEY(package_name, process));INSERT INTO hidelist SELECT * FROM hidelist_tmp;DROP TABLE hidelist_tmp;COMMIT;
+sqlite3_column_int
+CREATE TABLE IF NOT EXISTS settings (key TEXT, value INT, PRIMARY KEY(key))
+ro.dalvik.vm.native.bridge
+zygisk64: JNIEnv not found
+Error: %s. Aborting.
+core/su/db.rs
+core/db.rs
+Unrecognized argument: "
+%s failed to broadcast
+resetprop
+* post-fs-data scripts blocking phase timeout
+/libart.so
+/libnativehelper.so
+(II[II[[IILjava/lang/String;IILjava/lang/String;[I[ILjava/lang/String;Ljava/lang/String;)I
+(II[II[[IILjava/lang/String;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;Z)V
+Denylist is enforced
+core/su/daemon.rs
+6resetprop - System Property Manipulation Tool
+ [flags] [arguments...]
+Read mode arguments:
+   (no arguments)    print all properties
+   NAME              get property of NAME
+Write mode arguments:
+   NAME VALUE        set property NAME as VALUE
+   -f,--file   FILE  load and set properties from FILE
+   -d,--delete NAME  delete property
+Wait mode arguments (toggled with -w):
+    NAME             wait until property NAME changes
+    NAME OLD_VALUE   if value of property NAME is not OLD_VALUE, get value
+                     or else wait until property NAME changes
+General flags:
+   -h,--help         show this message
+   -v,--verbose      print verbose output to stderr
+   -w                switch to wait mode
+Read mode flags:
+   -p      also read persistent properties from storage
+   -P      only read persistent properties from storage
+   -Z      get property context instead of value
+Write mode flags:
+   -n      set properties bypassing property_service
+   -p      always write persistent prop changes to storage
+/Volumes/Developer/android/sdk/ndk/magisk/toolchains/rust/lib/rustlib/src/rust/library/core/src/mem/maybe_uninit.rs
+libc++abi
+libunwind: malformed DW_CFA_val_offset_sf DWARF unwind, reg too big
+getEncodedP
+DW_OP_fbreg not implemented
+Can't use -M and -t at the same time
+* Enable DenyList
+/proc/%d/cmdline
+denylist rm: [%s/%s]
+SELECT * FROM denylist
+u:r:zygote:s0
+su: request rejected (
+core/logging.rs
+base/cstr.rs
+libc++abi: 
+libunwind: malformed DW_CFA_same_value DWARF unwind, reg too big
+u:object_r:magisk_file:s0
+/dev/null
+ZYGISK_ENABLED
+libsqlite.so
+/apex/com.android.runtime/lib64:/apex/com.android.art/lib64:/apex/com.android.i18n/lib64:
+__system_property_foreach
+setresgid (%u) failed with %d: %s
+pthread_attr_destroy
+(II[IIII[[IJJ)I
+u:object_r:properties_device:s0
+properties_serial
+resetprop: delete prop [
+core/module.rs
+log -t Magisk "pm_install: $APK"
+log -t Magisk "pm_install: $(pm install -g -r $APK 2>&1)"
+appops set %s REQUEST_INSTALL_PACKAGES allow
+rm -f $APK
+log -t Magisk "pm_uninstall: $PKG"
+log -t Magisk "pm_uninstall: $(pm uninstall $PKG 2>&1)"
+. /data/adb/magisk/util_functions.sh
+install_module
+--preinit-device
+connection reset
+Invalid argumentInvalid exchangez
+{\fentity not found 
+Accessed denied
+property_servicehost unreachable
+Remote I/O error
+invalid filename
+--remove-modulesNot a typewriter
+--install-module
+Object is remote
+no storage space
+0123456789abcdef
+--zygote-restartMessage too longNo route to host
+bootlooprecovery
+ESTRPIPEdenylistENETDOWN--sqliterealpathgetxattrNo anodeNOEX
+/system/ENOTUNIQELIBEXEC
+stub.apkENOTSOCK--daemon
+unlinkat
+--methodreadlinkERESTARTEMSGSIZEEALREADY
+magisk32--delete
+supolicydeadlockpersist.EL2NSYNCENOTCONN
+signalfdfrom.uid.replace/persistsetxattrrenameat/dev/__properties__/property_info
+Must use __system_property_read_callback() to read
+UUUUUUUU
+/system/bin/shduplicate values provided
+selfmove
+ext4argsopen/dm-fromdup2
+--espollmmapread
+gidstruePATHvsoc--ei
+30.7NAMEhelpcallfifo--ezstatf2fsEADVEDOMforkfailed to write whole buffermagisk::ffi::SuRequest::defaultmagisk::ffi::get_propmagisk::ffi::lgetfileconmagisk::ffi::recv_fdsmagisk::ffi::setfilecon
+versionCodefailed to write the buffered datafailed to write whole buffer
+Root access is disabled!
+Root access is disabled for ADB!
+Root access limited to ADB only!
+zygiskd startup error** late_start service mode running
+** post-fs-data mode running
+* Magisk environment incomplete, abort
+* Safe mode triggered
+/data/adb** boot-complete triggered
+* Initializing Magisk environment
+** zygote restarted
+zygote crashed too many times, rolling-back
+pkg: no dyn APK, ignore
+ <- ./magisk
+	 <- null
+.magisk/device/log
+zygisk/armeabi-v7a.so
+/cache/data_adb/magisk
+DELETE FROM policies WHERE uid=?
+zygisk/arm64-v8a.so
+/data/adb/magisk.db
+u:object_r:unlabeled:s0
+ro.product.device
+/system/build.prop
+/sys/fs/selinux/context
+/cache/magisk.log.bak
+/data/adb/modules
+.magisk/device/socket
+ro.build.version.sdk
+/data/adb/modules
+/data/adb/service.d
+cert: invalid signing block size
+persist.sys.safemode
+/system/bin/linker
+ro.vendor.mtk_model
+/system/bin/linker64
+.magisk/device/preinit
+ <- ./magiskpolicy
+u:object_r:rootfs:s0
+/data/adb/magisk
+/proc/self/attr/current
+ro.config.per_app_memcg
+Software caused connection abortsu: fork handler
+su: fork failed, abort
+su: remote process probably died, abort
+mount: preinit dir not found
+30.7(30700)
+Start daemon on magisk tmpfs
+Failed to get pty number
+Failed to restore terminal attributesFailed to set terminal attributes
+/data/property/persistent_properties
+Root is required for this operation
+Daemon error
+%m-%d %T
+/cache/magisk.logpthread_sigmaskpipe2tcsetattrcert: cannot find certificatecert: invalid signing block magiccert: APK version too lowcom.topjohnwu.magisk/data/system/packages.xml
+/data/stub.apk
+dyncurrent.apk
+/data/app
+/base.apk
+/data/property/persistent_properties
+/data/propertyprop.XXXXXXmkstemp+
+/data/property/persistent_properties.XXXXXX
+/data/property
+/data/adb
+ro.sys.safemode
+post-fs-data
+0com.topjohnwu.magiskinstall
+/data/magisk
+/cache/data_adb
+/data/adb/post-fs-data.d
+/data/adb/magisk/busybox
+.magisk/busybox
+busybox--install-s
+/data/adb/magisk/magisk32
+/data/adb/magisk/magiskpolicy
+magiskpolicy
+/data/user
+/data/user_de
+u:r:zygote:s0
+30.7:MAGISK:D
+/system/bin/rebootroot_accessmultiuser_modemnt_nszygiskrequesterSELECT uid FROM policiesSELECT policy FROM policies WHERE uid=? AND (until=0 OR until>strftime('%s', 'now'))SELECT policy, logging, notification FROM policies WHERE uid=? AND (until=0 OR until>strftime('%s', 'now')):	
+/product
+/system_ext
+systemsystem.propskip_mountDELETE FROM strings WHERE key=?SELECT value FROM strings WHERE key=?SELECT value FROM settings WHERE key=?INSERT OR REPLACE INTO settings (key,value) VALUES(?,?)SELECT * FROM settingssystem_server
+unloaded
+/dev/null
+/dev/zero
+u:r:magisk:s0
+ro.kernel.qemu
+ro.boot.qemu
+.magisk/config
+/acct/dev/cg2_bpf/sys/fs/cgroupfalse/dev/memcg/apps
+/system_ext/app/mediatek-res/mediatek-res.apk
+.magisk/rootdir/.mount_list
+REMOUNT_ROOT
+.magisk/rootdir
+/proc/self/exe
+u:object_r:magisk_file:s0
+cgroup.procs
+u:object_r:magisk_file:s0
+uidpidrequest--extra\\\:\:policynotify.magiskto.uidtargetcontextcommandlog/system/bin/app_process/system/bincom.android.commands.content.Content--uri--userCLASSPATH/system/framework/content.jarErrorcom.android.commands.am.Amstart-p-aandroid.intent.action.VIEW-f0x18800020action/system/framework/am.jarfalse
+suresetprop--, -c-v-V--list--stop--post-fs-data--service--boot-complete--unlock-blocks--restorecon--clone-attr--clone--path--denylistno subcommand matchedno subcommand name-h--help-n--no-rebootziptosql
+ /data tmpfsRECOVERYMODEro.build.version.sdkrw/by-nameblock/vd/by-name//mnt/vendor/persist/metadata/klogdump/cache/data
+.magisk/modules
+.magisk/worker
+magisk/adb/modules
+.magisk/preinit
+ro.crypto.state
+encrypted
+ro.crypto.type
+ro.crypto.metadata.enabled
+MAGISKTMPMAKEDEVmknod
+uninstall.sh
+riru-core
+zygisk/unloaded
+jit-cache
+binliblib64/
+.magisk/modules
+.magisk/worker
+mountmirror
+./magiskpolicy
+./magisk
+/data/adb/modules_update
+/system/
+/vendor/
+/product/
+/system_ext/
+/system/apex//system/xbinmagiskuninstall.shmagiskpolicysuresetprop
+failed to fill whole bufferstream did not contain valid UTF-8
+/proc/mounts
+ro.crypto.state
+encrypted
+init.svc.vold
+u:object_r:adb_data_file:s0
+/data/adb
+u:object_r:system_file:s0
+/data/adb/magisk/sbin
+u:object_r:magisk_log_file:s0
+root_accessmultiuser_modemnt_nszygiskkeyvaluepolicyloggingnotification~~Multiple operation mode detected!
+0libzygisk.so
+ro.dalvik.vm.native.bridge
+ro.maple.enable
+1ro.direct modificationmagisk
+companion
+-v--verbose-w-p-P-Z-n-f--file-d-h--help
+8Cannot decode varintUnexpected end of bufferOutput buffer too smallbind_mountremountset_mount_privateunmountlgetxattrlsetxattrsymlinkmkdirmkfiforemovelstatlchownrename/chmodfstatfchmodfchownopenatioctl/fgetxattrfsetxattr-master:shared:propagate_from:unbindable/proc/self/fd
+No value provided for option ''.
+Error parsing option '' with value '': 
+Error parsing positional argument 'Required positional arguments not provided:
+    Required options not provided:One of the following subcommands must be present:Unrecognized argument: --Trailing arguments are not allowed after `help`.fdopendiropenatreadlinkatsymlinkatopendir...readdirmkdirat
+<invalid>
+failed to fill whole bufferstream did not contain valid UTF-8base::ffi::log_from_cxxpipe2fdopendirfopenmknodmountopendirsetnssetsidunshare
+Unknown errnoOperation not permittedNo such file or directoryNo such processInterrupted system callI/O errorNo such device or addressArgument list too longExec format errorBad file numberNo child processesTry againOut of memoryPermission deniedBad addressBlock device requiredDevice or resource busyFile existsCross-device linkNo such deviceNot a directoryIs a directoryFile table overflowToo many open filesText file busyFile too largeNo space left on deviceIllegal seekRead-only file systemToo many linksBroken pipeMath argument out of domain of funcMath result not representableResource deadlock would occurFile name too longNo record locks availableFunction not implementedDirectory not emptyToo many symbolic links encounteredNo message of desired typeIdentifier removedChannel number out of rangeLevel 2 not synchronizedLevel 3 haltedLevel 3 resetLink number out of rangeProtocol driver not attachedNo CSI structure availableLevel 2 haltedInvalid request descriptorExchange fullInvalid request codeInvalid slotBad font file formatDevice not a streamNo data availableTimer expiredOut of streams resourcesMachine is not on the networkPackage not installedLink has been severedAdvertise errorSrmount errorCommunication error on sendProtocol errorMultihop attemptedRFS specific errorNot a data messageValue too large for defined data typeName not unique on networkFile descriptor in bad stateRemote address changedCan not access a needed shared libraryAccessing a corrupted shared library.lib section in a.out corruptedAttempting to link in too many shared librariesCannot exec a shared library directlyIllegal byte sequenceInterrupted system call should be restartedStreams pipe errorToo many usersSocket operation on non-socketDestination address requiredProtocol wrong type for socketProtocol not availableProtocol not supportedSocket type not supportedOperation not supported on transport endpointProtocol family not supportedAddress family not supported by protocolAddress already in useCannot assign requested addressNetwork is downNetwork is unreachableNetwork dropped connection because of resetConnection reset by peerNo buffer space availableTransport endpoint is already connectedTransport endpoint is not connectedCannot send after transport endpoint shutdownToo many references: cannot spliceConnection timed outConnection refusedHost is downOperation already in progressOperation now in progressStale file handleStructure needs cleaningNot a XENIX named type fileNo XENIX semaphores availableIs a named type fileQuota exceededNo medium foundWrong medium typeOperation canceledRequired key not availableKey has expiredKey has been revokedKey was rejected by serviceOwner diedState not recoverable
+UnknownErrnoEPERMENOENTESRCHEINTREIOENXIOE2BIGENOEXECEBADFECHILDEAGAINENOMEMEACCESEFAULTENOTBLKEBUSYEEXISTEXDEVENODEVENOTDIREISDIREINVALENFILEEMFILEENOTTYETXTBSYEFBIGENOSPCESPIPEEROFSEMLINKEPIPEERANGEEDEADLKENAMETOOLONGENOLCKENOSYSENOTEMPTYELOOPENOMSGEIDRMECHRNGEL3HLTEL3RSTELNRNGEUNATCHENOCSIEL2HLTEBADEEBADREXFULLENOANOEBADRQCEBADSLTEBFONTENOSTRENODATAETIMEENOSRENONETENOPKGEREMOTEENOLINKESRMNTECOMMEPROTOEMULTIHOPEDOTDOTEBADMSGEOVERFLOWEBADFDEREMCHGELIBACCELIBBADELIBSCNELIBMAXEILSEQEUSERSEDESTADDRREQEPROTOTYPEENOPROTOOPTEPROTONOSUPPORTESOCKTNOSUPPORTEOPNOTSUPPEPFNOSUPPORTEAFNOSUPPORTEADDRINUSEEADDRNOTAVAILENETUNREACHENETRESETECONNABORTEDECONNRESETENOBUFSEISCONNESHUTDOWNETOOMANYREFSETIMEDOUTECONNREFUSEDEHOSTDOWNEHOSTUNREACHEINPROGRESSESTALEEUCLEANENOTNAMENAVAILEISNAMEREMOTEIOEDQUOTENOMEDIUMEMEDIUMTYPEECANCELEDENOKEYEKEYEXPIREDEKEYREVOKEDEKEYREJECTEDEOWNERDEADENOTRECOVERABLE
+stream did not contain valid UTF-8
+	must specify at least one of read, write, or append accesscreating or truncating a file requires write or append access
+permission deniedconnection refusednetwork unreachableconnection abortednot connectedaddress in useaddress not availablenetwork downbroken pipeentity already existsoperation would blocknot a directoryis a directorydirectory not emptyread-only filesystem or storage mediumfilesystem loop or indirection limit (e.g. symlink loop)stale network file handleinvalid input parameterinvalid datatimed outwrite zeroseek on unseekable filequota exceededfile too largeresource busyexecutable file busycross-device link or renametoo many linksargument list too longoperation interruptedunsupportedunexpected end of fileout of memoryin progressother erroruncategorized errordescription() is deprecated; use Displayfailed to write whole buffer
+nul byte found in provided data/=file descriptor did not correspond to a Unix socketpath must be shorter than SUN_LENpaths must not contain interior null bytes-
+failed to write the buffered data
+file name contained an unexpected NUL bytefailed to write whole buffer
+)14:EFIJNOde
+ #%&(38:HJLPSUVXZ\^`cefksx}
+)147:;=IJ]
+)14:;EFIJ^de
+):;EIW[^_de
+FGNOXZ\^~
+no7=?BESgu
+;00******************************************************************************************************************************************************************************************************
+Tuht8vjt8
+Tuht8vjt8
+Tuht8vjt8
+Tuht8vjt8
+t6Dy;5Dy
+K @9J$@9I(@9
+*K0@9J4@9?
+Linker: LLD 21.0.0 (https://android.googlesource.com/toolchain/llvm-project 5e96669f06077099aa41290cdb4c5e6fa0f59349)
+Android (13989888, +pgo, +bolt, +lto, +mlgo, based on r563880c) clang version 21.0.0 (https://android.googlesource.com/toolchain/llvm-project 5e96669f06077099aa41290cdb4c5e6fa0f59349)
+Android (13989888, +pgo, -bolt, +lto, -mlgo, based on r563880c) clang version 21.0.0 (https://android.googlesource.com/toolchain/llvm-project 5e96669f06077099aa41290cdb4c5e6fa0f59349)
+clang version 21.0.0 (https://android.googlesource.com/toolchain/llvm-project 5e96669f06077099aa41290cdb4c5e6fa0f59349)
+rustc version 1.93.0-nightly (254b59607 2026-01-19)
+.init_array
+.fini_array
+.comment
+.note.android.ident
+.got.plt
+.rela.plt
+.eh_frame_hdr
+.gnu.version_r
+.data.rel.ro
+.rela.dyn
+.gnu.version
+.gnu.hash
+.relro_padding
+.eh_frame
+.note.gnu.build-id
+.dynamic
+.shstrtab

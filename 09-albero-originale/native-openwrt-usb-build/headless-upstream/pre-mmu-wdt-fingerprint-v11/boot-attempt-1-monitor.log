@@ -1,0 +1,29 @@
+   0.000s UTC 2026-07-11T19:07:39.808784+00:00
+   0.001s baseline netifs=enp98s0,enp99s0,lo,wlan0,ztmjfmwg7f usb=3-2=0c45:8009 3-3=12cf:0c05 3-5=8087:0032 8-1=18d1:d00d usb1=1d6b:0002 usb2=1d6b:0003 usb3=1d6b:0002 usb4=1d6b:0003 usb5=1d6b:0002 usb6=1d6b:0003 usb7=1d6b:0002 usb8=1d6b:0003
+   0.053s fastboot reboot rc=0: Rebooting                                          OKAY [  0.000s]
+Finished. Total time: 0.050s
+   0.061s state fastboot=0 adb=0 netifs=enp98s0,enp99s0,lo,wlan0,ztmjfmwg7f usb=3-2=0c45:8009 3-3=12cf:0c05 3-5=8087:0032 usb1=1d6b:0002 usb2=1d6b:0003 usb3=1d6b:0002 usb4=1d6b:0003 usb5=1d6b:0002 usb6=1d6b:0003 usb7=1d6b:0002 usb8=1d6b:0003
+  14.583s state fastboot=1 adb=0 netifs=enp98s0,enp99s0,lo,wlan0,ztmjfmwg7f usb=3-2=0c45:8009 3-3=12cf:0c05 3-5=8087:0032 8-1=18d1:d00d usb1=1d6b:0002 usb2=1d6b:0003 usb3=1d6b:0002 usb4=1d6b:0003 usb5=1d6b:0002 usb6=1d6b:0003 usb7=1d6b:0002 usb8=1d6b:0003
+  14.583s FASTBOOT RETURN: 14.530s after reboot command completed
+  14.587s fastboot getvar current-slot rc=0: current-slot: b
+Finished. Total time: 0.002s
+  14.591s fastboot getvar slot-retry-count:b rc=0: slot-retry-count:b: 7
+Finished. Total time: 0.003s
+  14.595s fastboot getvar slot-unbootable:b rc=0: slot-unbootable:b: no
+Finished. Total time: 0.003s
+  14.639s fastboot set_active a rc=0: Setting current slot to 'a'                        OKAY [  0.040s]
+Finished. Total time: 0.042s
+  14.650s fastboot getvar current-slot rc=0: current-slot: a
+Finished. Total time: 0.010s
+  14.702s fastboot reboot rc=0: Rebooting                                          OKAY [  0.000s]
+Finished. Total time: 0.050s
+  41.075s Android adb=1 boot_completed='' slot='_a'
+  41.614s Android adb=1 boot_completed='' slot='_a'
+  42.152s Android adb=1 boot_completed='' slot='_a'
+  42.692s Android adb=1 boot_completed='' slot='_a'
+  43.235s Android adb=1 boot_completed='' slot='_a'
+  43.792s Android adb=1 boot_completed='1' slot='_a'
+  43.792s RECOVERY SUCCESS: healthy slot-A Android boot-complete
+  43.849s root pstore rc=0: total 0
+dr-xr-x---  2 system log  0 1970-01-02 13:08 .
+drwxr-xr-x 10 root   root 0 1970-01-01 01:00 ..

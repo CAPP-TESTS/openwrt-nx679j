@@ -1,0 +1,142 @@
+{
+  "image": "/home/user/nx679j-stock/experiments/20260916-122926-native-baseline/candidate-minimal-gadget-v5/boot_b-minimal-gadget-v5.img",
+  "bytes": 50266112,
+  "sha256": "62c7fa4bb28cdd5ec96faa960b431ed8b5faf734a9e298405ea1400040b8b1f4",
+  "header_version": 4,
+  "kernel_bytes": 49108324,
+  "kernel_sha256": "f0aa949c95d1421381850cb1982bd2a505e96fcd7565543ec28d5b1f7d81a0cc",
+  "ramdisk_bytes": 1147147,
+  "ramdisk_sha256": "33f0cb1b30d3ce61cfcfa2b87400d43f87219bd3925981864ae66c4a3d6ed915",
+  "ramdisk_cpio_bytes": 3598688,
+  "ramdisk_entries": 85,
+  "ramdisk_modules": 40,
+  "checks_total": 97,
+  "checks_failed": [],
+  "cmdline_bytes": 725,
+  "size_comparison": {
+    "v4_ramdisk_bytes": 12051145,
+    "v5_ramdisk_bytes": 1147147,
+    "v5_over_v4_ramdisk_pct": 9.5,
+    "v4_image_bytes": 61169664,
+    "v5_image_bytes": 50266112,
+    "v5_over_v4_image_pct": 82.2,
+    "v4_ramdisk_entries": 1541,
+    "v5_ramdisk_entries": 85,
+    "android_reference_ramdisk_bytes": 2200983,
+    "v5_over_android_reference_pct": 52.1,
+    "v4_modules": 327,
+    "v5_modules": 40
+  },
+  "extraction": {
+    "dir": 13,
+    "file": 46,
+    "link": 20,
+    "node": 6
+  },
+  "elfs_checked": [
+    "bin/basename",
+    "bin/busybox",
+    "bin/cat",
+    "bin/dd",
+    "bin/head",
+    "bin/ip",
+    "bin/ln",
+    "bin/ls",
+    "bin/mkdir",
+    "bin/mknod",
+    "bin/mount",
+    "bin/rm",
+    "bin/sh",
+    "bin/sleep",
+    "bin/sync",
+    "bin/tail",
+    "bin/uname",
+    "bin/wc",
+    "bin/which",
+    "lib/ld-musl-aarch64.so.1",
+    "lib/libc.so",
+    "lib/libgcc_s.so.1",
+    "lib/libubox.so.20240329",
+    "sbin/insmod",
+    "sbin/kmodloader"
+  ],
+  "applets_checked": {
+    "basename": {
+      "rc": 0,
+      "busybox_banner": true
+    },
+    "cat": {
+      "rc": 0,
+      "busybox_banner": true
+    },
+    "dd": {
+      "rc": 0,
+      "busybox_banner": true
+    },
+    "head": {
+      "rc": 0,
+      "busybox_banner": true
+    },
+    "ip": {
+      "rc": 0,
+      "busybox_banner": true
+    },
+    "ln": {
+      "rc": 0,
+      "busybox_banner": true
+    },
+    "ls": {
+      "rc": 0,
+      "busybox_banner": true
+    },
+    "mkdir": {
+      "rc": 0,
+      "busybox_banner": true
+    },
+    "mknod": {
+      "rc": 0,
+      "busybox_banner": true
+    },
+    "mount": {
+      "rc": 0,
+      "busybox_banner": true
+    },
+    "rm": {
+      "rc": 0,
+      "busybox_banner": true
+    },
+    "sh": {
+      "rc": 0,
+      "busybox_banner": true
+    },
+    "sleep": {
+      "rc": 0,
+      "busybox_banner": true
+    },
+    "sync": {
+      "rc": 0,
+      "busybox_banner": true
+    },
+    "tail": {
+      "rc": 0,
+      "busybox_banner": true
+    },
+    "uname": {
+      "rc": 0,
+      "busybox_banner": true
+    },
+    "wc": {
+      "rc": 0,
+      "busybox_banner": true
+    },
+    "which": {
+      "rc": 0,
+      "busybox_banner": true
+    }
+  },
+  "init_syntax_check": {
+    "rc": 0,
+    "stderr": "",
+    "stdout": ""
+  }
+}

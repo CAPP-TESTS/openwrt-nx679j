@@ -1,0 +1,32 @@
+STOP uptime=28752
+START uptime=28758
+SAMPLE phase=before-protective-restart uptime=28759 elapsed=1 mode=unknown services=18 state=running
+SAMPLE phase=before-protective-restart uptime=28774 elapsed=16 mode=5 services=60 state=running
+SAMPLE phase=before-protective-restart uptime=28789 elapsed=31 mode=5 services=60 state=running
+SAMPLE phase=before-protective-restart uptime=28804 elapsed=46 mode=5 services=60 state=running
+SAMPLE phase=before-protective-restart uptime=28819 elapsed=61 mode=5 services=60 state=running
+ipanetm 16384 0 - Live 0xffffffe3e6151000 (O)
+ipa_clientsm 249856 0 - Live 0xffffffe3e616a000 (O)
+rndisipam 69632 1 ipa_clientsm, Live 0xffffffe3e6322000 (O)
+ipam 4079616 3 ipanetm,ipa_clientsm,rndisipam, Live 0xffffffe3e659b000 (O)
+rmnet_aps 20480 0 - Live 0xffffffe3e613e000 (O)
+rmnet_perf_tether 20480 0 - Live 0xffffffe3e6138000 (O)
+rmnet_perf 16384 0 - Live 0xffffffe3e6133000 (O)
+rmnet_offload 32768 0 - Live 0xffffffe3e60a6000 (O)
+rmnet_shs 196608 1 rmnet_perf, Live 0xffffffe3e6102000 (O)
+rmnet_core 331776 6 rmnet_aps,rmnet_perf_tether,rmnet_perf,rmnet_offload,rmnet_shs, Live 0xffffffe3e60b0000 (O)
+gsim 274432 1 ipam, Live 0xffffffe3e6557000 (O)
+rmnet_ctl 20480 1 rmnet_core, Live 0xffffffe3e6098000 (O)
+rmnet_wlan 49152 0 - Live 0xffffffe3e6081000 (O)
+rmnet_sch 16384 0 - Live 0xffffffe3e6165000 (O)
+usb_f_gsi 90112 0 - Live 0xffffffe3e57dd000
+dwc3_msm 135168 2 msm_drm,usb_f_gsi, Live 0xffffffe3e57bb000
+ipa_fmwk 126976 6 ipa_clientsm,rndisipam,ipam,rmnet_core,rmnet_ctl,usb_f_gsi, Live 0xffffffe3e575a000
+mdt_loader 16384 3 ipam,qcom_spss,qcom_q6v5_pas, Live 0xffffffe3e5731000
+qcom_scm 118784 16 ipam,qcom_spss,arm_smmu,ufs_qcom,crypto_qti_hwkm,msm_drm,memory_dump_v2,qcom_wdt_core,qcom_q6v5_pas,pinctrl_msm,eud,phy_msm_snps_hs,qcom_pdc,qcom_dload_mode,mdt_loader,secure_buffer, Live 0xffffffe3e56d3000
+mhi 139264 2 ipam,mhi_cntrl_qcom, Live 0xffffffe3e56a8000
+rproc_qcom_common 45056 8 ipam,qcom_spss,qcom_q6v5_pas,qcom_q6v5,pmic_glink,pdr_interface,qcom_sysmon,pci_msm_drv, Live 0xffffffe3e565f000
+qmi_helpers 28672 4 ipam,rmnet_core,pdr_interface,qcom_sysmon, Live 0xffffffe3e562e000
+qcom_ipc_logging 40960 26 ipanetm,ipa_clientsm,rndisipam,ipam,gsim,rmnet_ctl,glink_pkt,ufs_qcom,msm_qmp,altmode_glink,smp2p,mhi_cntrl_qcom,qcom_esoc,msm_geni_serial,qcom_rpmh,msm_geni_se,usb_f_gsi,dwc3_msm,ucsi_glink,qcom_pdc,qcom_aoss,mhi,pci_msm_drv,qcom_glink,qrtr,ns,[permanent], Live 0xffffffe3e560a000
+smem 24576 10 ipam,qcom_glink_spss,msm_qmp,smp2p,socinfo,qcom_q6v5,rproc_qcom_common,qcom_glink_smem,qcom_smd,minidump, Live 0xffffffe3e54ee000
+ipa

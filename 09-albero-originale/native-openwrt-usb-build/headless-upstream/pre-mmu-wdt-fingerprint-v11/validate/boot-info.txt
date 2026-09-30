@@ -1,0 +1,8 @@
+boot magic: ANDROID!
+kernel_size: 38781440
+ramdisk size: 4929692
+os version: 12.0.0
+os patch level: 2022-02
+boot image header version: 4
+command line args: console=ttyMSM0,115200n8 console=tty0 loglevel=8 ignore_loglevel initcall_debug fbcon=map:0 panic=10 g_ncm.dev_addr=xx:xx:xx:xx:xx:xx g_ncm.host_addr=xx:xx:xx:xx:xx:xx
+boot.img signature size: 0

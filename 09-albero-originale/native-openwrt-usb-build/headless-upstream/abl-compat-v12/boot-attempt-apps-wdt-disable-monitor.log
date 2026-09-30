@@ -1,0 +1,12 @@
+  0.000s UTC 2026-07-17T12:27:52.224374Z apps-wdt-mmio-disable boot_b
+  0.004s baseline fastboot devices rc=0: 3dbd****	 fastboot
+  0.009s baseline current-slot: current-slot: b | Finished. Total time: 0.002s
+  0.061s fastboot reboot rc=0: Rebooting                                          OKAY [  0.000s] | Finished. Total time: 0.050s
+ 15.203s FASTBOOT RETURN devices='3dbd****	 fastboot'
+ 15.203s OUTCOME FASTBOOT_RETURN elapsed=15.203s saw_disconnect=True
+ 15.208s getvar current-slot: current-slot: b | Finished. Total time: 0.002s
+ 15.213s getvar slot-retry-count:b: slot-retry-count:b: 7 | Finished. Total time: 0.003s
+ 15.225s getvar slot-unbootable:b: slot-unbootable:b: no | Finished. Total time: 0.009s
+ 15.270s recovery set_active a rc=0: Setting current slot to 'a'                        OKAY [  0.040s] | Finished. Total time: 0.042s
+ 15.323s recovery reboot rc=0: Rebooting                                          OKAY [  0.000s] | Finished. Total time: 0.050s
+ 44.810s RECOVERY SUCCESS: 1 | _a

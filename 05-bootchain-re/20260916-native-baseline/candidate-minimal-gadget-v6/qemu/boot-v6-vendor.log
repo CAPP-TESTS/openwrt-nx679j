@@ -1,0 +1,881 @@
+[    0.000000][    T0] Booting Linux on physical CPU 0x0000000000 [0x411fd070]
+[    0.000000][    T0] Linux version 5.10.66-android12-9-00005-gf6e6376090be-ab8060604 (build-user@build-host) (Android (7284624, based on r416183b) clang version 12.0.5 (https://android.googlesource.com/toolchain/llvm-project c935d99d7cf2016289302412d708641d52d2f7ee), LLD 12.0.5 (/buildbot/src/android/llvm-toolchain/out/llvm-project/lld c935d99d7cf2016289302412d708641d52d2f7ee)) #1 SMP PREEMPT Fri Jan 7 14:51:36 UTC 2022
+[    0.000000][    T0] Machine model: linux,dummy-virt
+[    0.000000][    T0] Stack Depot is disabled
+[    0.000000][    T0] earlycon: pl11 at MMIO 0x00************** (options '')
+[    0.000000][    T0] printk: bootconsole [pl11] enabled
+[    0.000000][    T0] efi: UEFI not found.
+[    0.000000][    T0] Zone ranges:
+[    0.000000][    T0]   DMA32    [mem 0x00**************-0x00000000bfffffff]
+[    0.000000][    T0]   Normal   empty
+[    0.000000][    T0] Movable zone start for each node
+[    0.000000][    T0] Early memory node ranges
+[    0.000000][    T0]   node   0: [mem 0x00**************-0x00000000bfffffff]
+[    0.000000][    T0] Initmem setup node 0 [mem 0x00**************-0x00000000bfffffff]
+[    0.000000][    T0] cma: Reserved 16 MiB at 0x00000000bc800000
+[    0.000000][    T0] psci: probing for conduit method from DT.
+[    0.000000][    T0] psci: PSCIv1.1 detected in firmware.
+[    0.000000][    T0] psci: Using standard PSCI v0.2 function IDs
+[    0.000000][    T0] psci: Trusted OS migration not required
+[    0.000000][    T0] psci: SMC Calling Convention v1.0
+[    0.000000][    T0] percpu: Embedded 33 pages/cpu s95960 r8192 d31016 u135168
+[    0.000000][    T0] Detected PIPT I-cache on CPU0
+[    0.000000][    T0] CPU features: SYS_ID_AA64MMFR1_EL1[11:8]: already set to 0
+[    0.000000][    T0] CPU features: detected: ARM erratum 832075
+[    0.000000][    T0] CPU features: detected: ARM erratum 834220
+[    0.000000][    T0] CPU features: detected: Spectre-v3a
+[    0.000000][    T0] CPU features: kernel page table isolation forced ON by KASLR
+[    0.000000][    T0] CPU features: detected: Kernel page table isolation (KPTI)
+[    0.000000][    T0] CPU features: detected: Spectre-v2
+[    0.000000][    T0] CPU features: detected: Spectre-v4
+[    0.000000][    T0] CPU features: detected: ARM errata 1165522, 1319367, or 1530923
+[    0.000000][    T0] Built 1 zonelists, mobility grouping on.  Total pages: 516096
+[    0.000000][    T0] Kernel command line: stack_depot_disable=on kasan.stacktrace=off kvm-arm.mode=protected cgroup_disable=pressure cgroup.memory=nokmem console=ttyAMA0 earlycon loglevel=7 panic=10 rdinit=/init
+[    0.000000][    T0] cgroup: Disabling pressure control group feature
+[    0.000000][    T0] Dentry cache hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+[    0.000000][    T0] Inode-cache hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+[    0.000000][    T0] mem auto-init: stack:all(zero), heap alloc:on, heap free:off
+[    0.000000][    T0] Memory: 1984232K/2097152K available (28800K kernel code, 2088K rwdata, 10664K rodata, 3072K init, 969K bss, 96536K reserved, 16384K cma-reserved)
+[    0.000000][    T0] random: get_random_u64 called from kmem_cache_open+0x2c/0x39c with crng_init=0
+[    0.000000][    T0] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
+[    0.000000][    T0] rcu: Preemptible hierarchical RCU implementation.
+[    0.000000][    T0] rcu: 	RCU event tracing is enabled.
+[    0.000000][    T0] rcu: 	RCU dyntick-idle grace-period acceleration is enabled.
+[    0.000000][    T0] rcu: 	RCU restricting CPUs from NR_CPUS=32 to nr_cpu_ids=2.
+[    0.000000][    T0] 	Trampoline variant of Tasks RCU enabled.
+[    0.000000][    T0] 	Tracing variant of Tasks RCU enabled.
+[    0.000000][    T0] rcu: RCU calculated value of scheduler-enlistment delay is 25 jiffies.
+[    0.000000][    T0] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=2
+[    0.000000][    T0] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+[    0.000000][    T0] GICv2m: range[mem 0x08020000-0x08020fff], SPI[80:143]
+[    0.000000][    T0] rcu: 	Offload RCU callbacks from CPUs: (none).
+[    0.000000][    T0] kfence: initialized - using 524288 bytes for 63 objects at 0x(____ptrval____)-0x(____ptrval____)
+[    0.000000][    T0] arch_timer: cp15 timer(s) running at 62.50MHz (virt).
+[    0.000000][    T0] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x1cd42e208c, max_idle_ns: 881590405314 ns
+[    0.000044][    T0] sched_clock: 56 bits at 62MHz, resolution 16ns, wraps every 4398046511096ns
+[    0.002892][    T0] Calibrating delay loop (skipped), value calculated using timer frequency.. 125.00 BogoMIPS (lpj=250000)
+[    0.003101][    T0] pid_max: default: 32768 minimum: 301
+[    0.005931][    T0] LSM: Security Framework initializing
+[    0.006595][    T0] SELinux:  Initializing.
+[    0.007199][    T0] Mount-cache hash table entries: 4096 (order: 3, 32768 bytes, linear)
+[    0.007299][    T0] Mountpoint-cache hash table entries: 4096 (order: 3, 32768 bytes, linear)
+[    0.027712][    T1] /cpus/cpu-map: empty cluster
+[    0.035271][    T1] rcu: Hierarchical SRCU implementation.
+[    0.038142][    T1] EFI services will not be available.
+[    0.038886][    T1] smp: Bringing up secondary CPUs ...
+[    0.044414][    T0] Detected PIPT I-cache on CPU1
+[    0.044943][    T0] CPU1: Booted secondary processor 0x0000000001 [0x411fd070]
+[    0.047900][    T1] smp: Brought up 1 node, 2 CPUs
+[    0.048162][    T1] SMP: Total of 2 processors activated.
+[    0.048338][    T1] CPU features: detected: 32-bit EL0 Support
+[    0.048464][    T1] CPU features: detected: CRC32 instructions
+[    0.048589][    T1] CPU features: detected: 32-bit EL1 Support
+[    0.048705][    T1] CPU features: detected: Protected KVM
+[    0.052399][    T1] CPU features: emulated: Privileged Access Never (PAN) using TTBR0_EL1 switching
+[    0.126949][    T1] CPU: All CPU(s) started at EL1
+[    0.127615][   T14] alternatives: patching kernel code
+[    0.147483][    T1] Registered cp15_barrier emulation handler
+[    0.147751][    T1] Registered setend emulation handler
+[    0.147910][    T1] KASLR enabled
+[    0.148842][    T1] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 76************** ns
+[    0.149059][    T1] futex hash table entries: 512 (order: 3, 32768 bytes, linear)
+[    0.152783][    T1] pinctrl core: initialized pinctrl subsystem
+[    0.163755][    T1] NET: Registered protocol family 16
+[    0.175013][    T1] DMA: preallocated 256 KiB GFP_KERNEL pool for atomic allocations
+[    0.175591][    T1] DMA: preallocated 256 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+[    0.175956][    T1] audit: initializing netlink subsys (disabled)
+[    0.177325][   T24] audit: type=2000 audit(0.168:1): state=initialized audit_enabled=0 res=1
+[    0.181450][    T1] thermal_sys: Registered thermal governor 'step_wise'
+[    0.181506][    T1] thermal_sys: Registered thermal governor 'user_space'
+[    0.181603][    T1] thermal_sys: Registered thermal governor 'power_allocator'
+[    0.182349][    T1] cpuidle: using governor menu
+[    0.183175][    T1] hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+[    0.183772][    T1] ASID allocator initialised with 32768 entries
+[    0.184523][    T1] Serial: AMBA PL011 UART driver
+[    0.200265][    T1] 9000000.pl011: ttyAMA0 at MMIO 0x9000000 (irq = 47, base_baud = 0) is a PL011 rev1
+[    0.201343][    T1] printk: console [ttyAMA0] enabled
+[    0.201343][    T1] printk: console [ttyAMA0] enabled
+[    0.201817][    T1] printk: bootconsole [pl11] disabled
+[    0.201817][    T1] printk: bootconsole [pl11] disabled
+[    0.233444][    T1] iommu: Default domain type: Translated 
+[    0.235350][    T1] SCSI subsystem initialized
+[    0.235922][    T1] usbcore: registered new interface driver usbfs
+[    0.236131][    T1] usbcore: registered new interface driver hub
+[    0.236279][    T1] usbcore: registered new device driver usb
+[    0.236735][    T1] mc: Linux media interface: v0.10
+[    0.236849][    T1] videodev: Linux video capture interface: v2.00
+[    0.237626][    T1] EDAC MC: Ver: 3.0.0
+[    0.240342][    T1] Advanced Linux Sound Architecture Driver Initialized.
+[    0.245186][    T1] Bluetooth: Core ver 2.22
+[    0.245476][    T1] NET: Registered protocol family 31
+[    0.246327][    T1] Bluetooth: HCI device and connection manager initialized
+[    0.246571][    T1] Bluetooth: HCI socket layer initialized
+[    0.246663][    T1] Bluetooth: L2CAP socket layer initialized
+[    0.246862][    T1] Bluetooth: SCO socket layer initialized
+[    0.247905][    T1] nfc: nfc_init: NFC Core ver 0.1
+[    0.248109][    T1] NET: Registered protocol family 39
+[    0.249659][    T1] clocksource: Switched to clocksource arch_sys_counter
+[    0.310568][    T1] VFS: Disk quotas dquot_6.6.0
+[    0.310844][    T1] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    0.312938][    T1] NET: Registered protocol family 2
+[    0.313929][    T1] IP idents hash table entries: 32768 (order: 6, 262144 bytes, linear)
+[    0.319048][    T1] tcp_listen_portaddr_hash hash table entries: 1024 (order: 2, 16384 bytes, linear)
+[    0.319276][    T1] TCP established hash table entries: 16384 (order: 5, 131072 bytes, linear)
+[    0.319564][    T1] TCP bind hash table entries: 16384 (order: 6, 262144 bytes, linear)
+[    0.319772][    T1] TCP: Hash tables configured (established 16384 bind 16384)
+[    0.320652][    T1] UDP hash table entries: 1024 (order: 3, 32768 bytes, linear)
+[    0.320882][    T1] UDP-Lite hash table entries: 1024 (order: 3, 32768 bytes, linear)
+[    0.322069][    T1] NET: Registered protocol family 1
+[    0.322335][    T1] NET: Registered protocol family 44
+[    0.322562][    T1] PCI: CLS 0 bytes, default 64
+[    0.327916][    T1] Trying to unpack rootfs image as initramfs...
+[    0.612340][    T1] Freeing initrd memory: 8844K
+[    0.640885][    T1] hw perfevents: enabled with armv8_pmuv3 PMU driver, 7 counters available
+[    0.641434][    T1] kvm [1]: HYP mode not available
+[    0.647841][    T1] Initialise system trusted keyrings
+[    0.649445][    T1] workingset: timestamp_bits=46 max_order=19 bucket_order=0
+[    0.659235][    T1] fuse: init (API version 7.32)
+[    0.677735][    T1] Key type asymmetric registered
+[    0.677980][    T1] Asymmetric key parser 'x509' registered
+[    0.678291][    T1] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 241)
+[    0.678794][    T1] io scheduler mq-deadline registered
+[    0.679000][    T1] io scheduler kyber registered
+[    0.679406][    T1] io scheduler bfq registered
+[    0.683244][    T1] pl061_gpio 9030000.pl061: PL061 GPIO chip registered
+[    0.684119][    T1] pci-host-generic 4010000000.pcie: host bridge /pcie@10000000 ranges:
+[    0.684565][    T1] pci-host-generic 4010000000.pcie:       IO 0x003eff0000..0x003effffff -> 0x0000000000
+[    0.684954][    T1] pci-host-generic 4010000000.pcie:      MEM 0x0010000000..0x003efeffff -> 0x0010000000
+[    0.685043][    T1] pci-host-generic 4010000000.pcie:      MEM 0x8000000000..0xffffffffff -> 0x8000000000
+[    0.685819][    T1] pci-host-generic 4010000000.pcie: ECAM at [mem 0x4010000000-0x401fffffff] for [bus 00-ff]
+[    0.686348][    T1] pci-host-generic 4010000000.pcie: PCI host bridge to bus 0000:00
+[    0.686492][    T1] pci_bus 0000:00: root bus resource [bus 00-ff]
+[    0.686577][    T1] pci_bus 0000:00: root bus resource [io  0x0000-0xffff]
+[    0.686638][    T1] pci_bus 0000:00: root bus resource [mem 0x10000000-0x3efeffff]
+[    0.686690][    T1] pci_bus 0000:00: root bus resource [mem 0x8000000000-0xffffffffff]
+[    0.687608][    T1] pci 0000:00:00.0: [1b36:0008] type 00 class 0x060000
+[    0.691808][    T1] Serial: 8250/16550 driver, 4 ports, IRQ sharing disabled
+[    0.694183][   T15] cacheinfo: Unable to detect cache hierarchy for CPU 0
+[    0.709016][    T1] brd: module loaded
+[    0.718804][    T1] loop: module loaded
+[    0.722855][    T1] wireguard: WireGuard 1.0.0 loaded. See www.wireguard.com for information.
+[    0.722985][    T1] wireguard: Copyright (C) 2015-2019 Jason A. Donenfeld <Jason@zx2c4.com>. All Rights Reserved.
+[    0.725912][    T1] libphy: Fixed MDIO Bus: probed
+[    0.726003][    T1] tun: Universal TUN/TAP device driver, 1.6
+[    0.726192][    T1] CAN device driver interface
+[    0.726248][    T1] PPP generic driver version 2.4.2
+[    0.726531][    T1] PPP BSD Compression module registered
+[    0.726622][    T1] PPP Deflate Compression module registered
+[    0.726729][    T1] PPP MPPE Compression module registered
+[    0.726792][    T1] NET: Registered protocol family 24
+[    0.726851][    T1] PPTP driver version 0.8.5
+[    0.727332][    T1] usbcore: registered new interface driver rtl8150
+[    0.727429][    T1] usbcore: registered new interface driver r8152
+[    0.727508][    T1] usbcore: registered new interface driver cdc_ether
+[    0.727580][    T1] usbcore: registered new interface driver cdc_eem
+[    0.727687][    T1] usbcore: registered new interface driver cdc_ncm
+[    0.727760][    T1] usbcore: registered new interface driver aqc111
+[    0.728164][    T1] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    0.728257][    T1] ehci-pci: EHCI PCI platform driver
+[    0.728350][    T1] ehci-platform: EHCI generic platform driver
+[    0.728866][    T1] usbcore: registered new interface driver cdc_acm
+[    0.728932][    T1] cdc_acm: USB Abstract Control Model driver for USB modems and ISDN adapters
+[    0.729655][    T1] usbcore: registered new interface driver uas
+[    0.729806][    T1] usbcore: registered new interface driver usb-storage
+[    0.731188][    T1] dummy_hcd dummy_hcd.0: USB Host+Gadget Emulator, driver 02 May 2005
+[    0.731437][    T1] dummy_hcd dummy_hcd.0: Dummy host controller
+[    0.731695][    T1] dummy_hcd dummy_hcd.0: new USB bus registered, assigned bus number 1
+[    0.734687][    T1] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 5.10
+[    0.734775][    T1] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    0.734837][    T1] usb usb1: Product: Dummy host controller
+[    0.734884][    T1] usb usb1: Manufacturer: Linux 5.10.66-android12-9-00005-gf6e6376090be-ab8060604 dummy_hcd
+[    0.734954][    T1] usb usb1: SerialNumber: dummy_hcd.0
+[    0.736685][    T1] hub 1-0:1.0: USB hub found
+[    0.736991][    T1] hub 1-0:1.0: 1 port detected
+[    0.743439][    T1] usbcore: registered new interface driver xpad
+[    0.745706][    T1] rtc-pl031 9010000.pl031: registered as rtc0
+[    0.746163][    T1] rtc-pl031 9010000.pl031: setting system clock to 2026-09-17T09:30:54 UTC (1789637454)
+[    0.746735][    T1] usbcore: registered new interface driver uvcvideo
+[    0.746791][    T1] USB Video Class driver (1.1.1)
+[    0.746840][    T1] gspca_main: v2.14.0 registered
+[    0.747171][    T1] device-mapper: uevent: version 1.0.3
+[    0.747594][    T1] device-mapper: ioctl: 4.44.0-ioctl (2021-02-01) initialised: dm-devel@redhat.com
+[    0.748958][    T1] Bluetooth: HCI UART driver ver 2.3
+[    0.749078][    T1] Bluetooth: HCI UART protocol H4 registered
+[    0.749200][    T1] Bluetooth: HCI UART protocol LL registered
+[    0.749343][    T1] Bluetooth: HCI UART protocol Broadcom registered
+[    0.749420][    T1] Bluetooth: HCI UART protocol QCA registered
+[    0.751198][    T1] sdhci: Secure Digital Host Controller Interface driver
+[    0.751274][    T1] sdhci: Copyright(c) Pierre Ossman
+[    0.751321][    T1] sdhci-pltfm: SDHCI platform and OF driver helper
+[    0.751615][    T1] hid: raw HID events driver (C) Jiri Kosina
+[    0.753141][    T1] usbcore: registered new interface driver usbhid
+[    0.753195][    T1] usbhid: USB HID core driver
+[    0.753765][    T1] ashmem: initialized
+[    0.754266][    T1] gnss: GNSS driver registered with major 234
+[    0.755277][    T1] usbcore: registered new interface driver snd-usb-audio
+[    0.756458][    T1] GACT probability NOT on
+[    0.756645][    T1] Mirror/redirect action on
+[    0.756882][    T1] netem: version 1.3
+[    0.757030][    T1] u32 classifier
+[    0.757060][    T1]     input device check on
+[    0.757095][    T1]     Actions configured
+[    0.761706][    T1] xt_time: kernel timezone is -0000
+[    0.761970][    T1] ipip: IPv4 and MPLS over IPv4 tunneling driver
+[    0.763213][    T1] gre: GRE over IPv4 demultiplexor driver
+[    0.763283][    T1] ip_gre: GRE over IPv4 tunneling driver
+[    0.764860][    T1] IPv4 over IPsec tunneling driver
+[    0.769208][    T1] Initializing XFRM netlink socket
+[    0.769661][    T1] IPsec XFRM device driver
+[    0.770607][    T1] NET: Registered protocol family 10
+[    0.776406][    T1] Segment Routing with IPv6
+[    0.777136][    T1] mip6: Mobile IPv6
+[    0.780361][    T1] sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+[    0.782302][    T1] ip6_gre: GRE over IPv6 tunneling driver
+[    0.783297][    T1] NET: Registered protocol family 17
+[    0.783574][    T1] NET: Registered protocol family 15
+[    0.784030][    T1] can: controller area network core
+[    0.784391][    T1] NET: Registered protocol family 29
+[    0.784460][    T1] can: raw protocol
+[    0.784620][    T1] can: broadcast manager protocol
+[    0.784754][    T1] can: netlink gateway - max_hops=1
+[    0.785841][    T1] Bluetooth: RFCOMM TTY layer initialized
+[    0.785949][    T1] Bluetooth: RFCOMM socket layer initialized
+[    0.786087][    T1] Bluetooth: RFCOMM ver 1.11
+[    0.786156][    T1] Bluetooth: HIDP (Human Interface Emulation) ver 1.2
+[    0.786226][    T1] Bluetooth: HIDP socket layer initialized
+[    0.786385][    T1] l2tp_core: L2TP core driver, V2.0
+[    0.786516][    T1] l2tp_ppp: PPPoL2TP kernel driver, V2.0
+[    0.786575][    T1] tipc: Activated (version 2.0.0)
+[    0.787616][    T1] NET: Registered protocol family 30
+[    0.788797][    T1] tipc: Started in single node mode
+[    0.789653][    T1] NET: Registered protocol family 36
+[    0.790158][    T1] NET: Registered protocol family 40
+[    0.790790][    T1] registered taskstats version 1
+[    0.790910][    T1] Loading compiled-in X.509 certificates
+[    0.791071][    T1] page_owner is disabled
+[    0.791406][    T1] Key type ._fscrypt registered
+[    0.791449][    T1] Key type .fscrypt registered
+[    0.791490][    T1] Key type fscrypt-provisioning registered
+[    0.799269][    T1] input: gpio-keys as /devices/platform/gpio-keys/input/input0
+[    0.806456][    T1] ALSA device list:
+[    0.806647][    T1]   No soundcards found.
+[    0.809312][    T1] uart-pl011 9000000.pl011: no DMA platform data
+[    0.839722][    T1] Freeing unused kernel memory: 3072K
+[    0.840577][    T1] Run /init as init process
+[    0.871992][    T1] nx679j-v6: init v6 entered pid=1 channels kmsg=0 console=0
+nx679j-v6: init v6 entered pid=1 channels kmsg=0 console=0
+[    0.883016][    T1] nx679j-v6: pmsg0 unavailable (no pmsg major in /proc/devices: no ramoops this boot)
+nx679j-v6: pmsg0 unavailable (no pmsg major in /proc/devices: no ramoops this boot)
+[    0.883657][    T1] nx679j-v6: kernel=5.10.66-android12-9-00005-gf6e6376090be-ab8060604 aarch64
+nx679j-v6: kernel=5.10.66-android12-9-00005-gf6e6376090be-ab8060604 aarch64
+[    0.884571][    T1] nx679j-v6: cmdline=stack_depot_disable=on kasan.stacktrace=off kvm-arm.mode=protected cgroup_disable=pressure cgroup.memory=nokmem console=ttyAMA0 earlycon loglevel=7 panic=10 rdinit=/init
+nx679j-v6: cmdline=stack_depot_disable=on kasan.stacktrace=off kvm-arm.mode=protected cgroup_disable=pressure cgroup.memory=nokmem console=ttyAMA0 earlycon loglevel=7 panic=10 rdinit=/init
+[    0.886236][    T1] nx679j-v6: configfs usb_gadget dir present=1 rc=0
+nx679j-v6: configfs usb_gadget dir present=1 rc=0
+[    0.886645][    T1] nx679j-v6: stage2 module chain (device metadata if present, else fallback list)
+nx679j-v6: stage2 module chain (device metadata if present, else fallback list)
+[    0.912630][    T1] nx679j-v6: modload indexed 327 .ko files on disk
+nx679j-v6: modload indexed 327 .ko files on disk
+[    0.922172][    T1] nx679j-v6: modload source=device modules.load=98 recovery=329 parsed deps=389 softdep pre=4 post=0
+nx679j-v6: modload source=device modules.load=98 recovery=329 parsed deps=389 softdep pre=4 post=0
+[    0.922642][    T1] nx679j-v6: modload want=400 entries (device lists + 28 goal names)
+nx679j-v6: modload want=400 entries (device lists + 28 goal names)
+[    0.934260][    T1] nx679j-v6: modload qcom_scm rc=0 /lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/qcom-scm.ko
+nx679j-v6: modload qcom_scm rc=0 /lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/qcom-scm.ko
+nx679j-v6: modload qcom_hwspinlock rc=0 /lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/qcom_hwspinlock.ko
+nx679j-v6: modload smem rc=0 /lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/smem.ko
+nx679j-v6: modload minidump rc=0 /lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/minidump.ko
+nx679j-v6: modload qcom_wdt_core rc=0 /lib/modules/qcom_wdt_core.ko
+nx679j-v6: modload gh_virt_wdt rc=0 /lib/modules/gh_virt_wdt.ko
+nx679j-v6: modload qcom_cpu_vendor_hooks rc=0 /lib/modules/qcom_cpu_vendor_hooks.ko
+nx679j-v6: modload cmd_db rc=0 /lib/modules/cmd-db.ko
+nx679j-v6: modload qcom_ipc_logging rc=0 /lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/qcom_ipc_logging.ko
+nx679j-v6: modload qcom_rpmh rc=0 /lib/modules/qcom_rpmh.ko
+nx679j-v6: modload clk_rpmh rc=0 /lib/modules/clk-rpmh.ko
+nx679j-v6: modload proxy_consumer rc=0 /lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/proxy-consumer.ko
+nx679j-v6: modload debug_regulator rc=0 /lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/debug-regulator.ko
+nx679j-v6: modload gdsc_regulator rc=0 /lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/gdsc-regulator.ko
+nx679j-v6: modload clk_qcom rc=0 /lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/clk-qcom.ko
+nx679j-v6: modload clk_dummy rc=0 /lib/modules/clk-dummy.ko
+nx679j-v6: modload gcc_waipio rc=0 /lib/modules/gcc-waipio.ko
+nx679j-v6: modload icc_debug rc=0 /lib/modules/icc-debug.ko
+nx679j-v6: modload icc_bcm_voter rc=0 /lib/modules/icc-bcm-voter.ko
+nx679j-v6: modload icc_rpmh rc=0 /lib/modules/icc-rpmh.ko
+nx679j-v6: modload qcom_ipcc rc=0 /lib/modules/qcom_ipcc.ko
+nx679j-v6: modload qcom_pdc rc=0 /lib/modules/qcom-pdc.ko
+nx679j-v6: modload rpmh_regulator rc=0 /lib/modules/rpmh-regulator.ko
+nx679j-v6: modload dcvs_fp rc=0 /lib/modules/dcvs_fp.ko
+nx679j-v6: modload qcom_dcvs rc=0 /lib/modules/qcom-dcvs.ko
+nx679j-v6: modload bwmon rc=0 /lib/modules/bwmon.ko
+nx679j-v6: modload qcom_cpufreq_hw rc=0 /lib/modules/qcom-cpufreq-hw.ko
+nx679j-v6: modload sched_walt rc=0 /lib/modules/sched-walt.ko
+[    1.057864][    T1] cfg80211: Loading compiled-in X.509 certificates for regulatory database
+[    1.065272][    T1] cfg80211: Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+[    1.066797][   T23] platform regulatory.0: Direct firmware load for regulatory.db failed with error -2
+[    1.067183][   T23] cfg80211: failed to load regulatory.db
+nx679j-v6: modload cfg80211 rc=0 /lib/modules/cfg80211.ko
+nx679j-v6: modload tmecom_intf rc=0 /lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/tmecom-intf.ko
+nx679j-v6: modload hwkm rc=0 /lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/hwkm.ko
+nx679j-v6: modload crypto_qti_hwkm rc=0 /lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/crypto-qti-hwkm.ko
+nx679j-v6: modload crypto_qti_common rc=0 /lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/crypto-qti-common.ko
+nx679j-v6: modload cqhci rc=0 /lib/modules/cqhci.ko
+nx679j-v6: modload dispcc_diwali rc=0 /lib/modules/dispcc-diwali.ko
+nx679j-v6: modload dispcc_waipio rc=0 /lib/modules/dispcc-waipio.ko
+nx679j-v6: modload gcc_diwali rc=0 /lib/modules/gcc-diwali.ko
+nx679j-v6: modload gh_arm_drv rc=0 /lib/modules/gh_arm_drv.ko
+[    1.093024][    T1] gunyah: gunyah-hypervisor or haven-hypervisor node not present
+nx679j-v6: modload gh_ctrl rc=0 /lib/modules/gh_ctrl.ko
+nx679j-v6: modload gh_dbl rc=0 /lib/modules/gh_dbl.ko
+nx679j-v6: modload gh_msgq rc=0 /lib/modules/gh_msgq.ko
+nx679j-v6: modload gh_rm_drv rc=0 /lib/modules/gh_rm_drv.ko
+nx679j-v6: modload iommu_logger rc=0 /lib/modules/iommu-logger.ko
+nx679j-v6: modload kryo_arm64_edac rc=0 /lib/modules/kryo_arm64_edac.ko
+nx679j-v6: modload llcc_qcom rc=0 /lib/modules/llcc-qcom.ko
+nx679j-v6: modload mac80211 rc=0 /lib/modules/mac80211.ko
+nx679j-v6: modload secure_buffer rc=0 /lib/modules/secure_buffer.ko
+nx679j-v6: modload mem_buf_dev rc=0 /lib/modules/mem_buf_dev.ko
+nx679j-v6: modload msm_dma_iommu_mapping rc=0 /lib/modules/msm_dma_iommu_mapping.ko
+nx679j-v6: modload qcom_dma_heaps rc=0 /lib/modules/qcom_dma_heaps.ko
+nx679j-v6: modload mem_buf rc=0 /lib/modules/mem_buf.ko
+nx679j-v6: modload mem_hooks rc=0 /lib/modules/mem-hooks.ko
+nx679j-v6: modload memory_dump_v2 rc=0 /lib/modules/memory_dump_v2.ko
+nx679j-v6: modload pinctrl_msm rc=0 /lib/modules/pinctrl-msm.ko
+nx679j-v6: modload qcom_tlmm_vm_irqchip rc=-2 no .ko in /lib/modules
+nx679j-v6: modload pinctrl_waipio rc=0 /lib/modules/pinctrl-waipio.ko
+nx679j-v6: modload qnoc_qos rc=0 /lib/modules/qnoc-qos.ko
+nx679j-v6: modload qnoc_waipio rc=0 /lib/modules/qnoc-waipio.ko
+nx679j-v6: modload qti_fixed_regulator rc=0 /lib/modules/qti-fixed-regulator.ko
+nx679j-v6: modload reboot_mode rc=0 /lib/modules/reboot-mode.ko
+nx679j-v6: modload msm_geni_se rc=0 /lib/modules/msm-geni-se.ko
+[    1.188361][    T1] msm_geni_serial_init: Driver initialized
+nx679j-v6: modload msm_geni_serial rc=0 /lib/modules/msm_geni_serial.ko
+nx679j-v6: modload ns rc=0 /lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/ns.ko
+nx679j-v6: modload nvmem_qcom_spmi_sdam rc=0 /lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/nvmem_qcom-spmi-sdam.ko
+nx679j-v6: modload phy_generic rc=0 /lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/phy-generic.ko
+nx679j-v6: modload phy_qcom_ufs rc=0 /lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/phy-qcom-ufs.ko
+nx679j-v6: modload phy_qcom_ufs_qmp_v4_waipio rc=0 /lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/phy-qcom-ufs-qmp-v4-waipio.ko
+nx679j-v6: modload phy_qcom_ufs_qmp_v4_diwali rc=0 /lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/phy-qcom-ufs-qmp-v4-diwali.ko
+nx679j-v6: modload phy_qcom_ufs_qmp_v4_cape rc=0 /lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/phy-qcom-ufs-qmp-v4-cape.ko
+nx679j-v6: modload pinctrl_cape rc=0 /lib/modules/pinctrl-cape.ko
+nx679j-v6: modload pinctrl_diwali rc=0 /lib/modules/pinctrl-diwali.ko
+nx679j-v6: modload qcom_dload_mode rc=0 /lib/modules/qcom-dload-mode.ko
+nx679j-v6: modload qcom_gic_intr_routing rc=0 /lib/modules/qcom_gic_intr_routing.ko
+nx679j-v6: modload qcom_iommu_util rc=0 /lib/modules/qcom_iommu_util.ko
+nx679j-v6: modload qcom_llcc_pmu rc=0 /lib/modules/qcom_llcc_pmu.ko
+nx679j-v6: modload qcom_pmu_lib rc=0 /lib/modules/qcom-pmu-lib.ko
+nx679j-v6: modload pmu_vendor rc=0 /lib/modules/pmu_vendor.ko
+nx679j-v6: modload pmu_scmi rc=0 /lib/modules/pmu_scmi.ko
+nx679j-v6: modload regmap_spmi rc=0 /lib/modules/regmap-spmi.ko
+nx679j-v6: modload qti_regmap_debugfs rc=0 /lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/qti-regmap-debugfs.ko
+nx679j-v6: modload qcom_spmi_pmic rc=0 /lib/modules/qcom-spmi-pmic.ko
+nx679j-v6: modload spmi_pmic_arb rc=0 /lib/modules/spmi-pmic-arb.ko
+nx679j-v6: modload qcom_reboot_reason rc=0 /lib/modules/qcom-reboot-reason.ko
+nx679j-v6: modload qnoc_diwali rc=0 /lib/modules/qnoc-diwali.ko
+[    1.247505][    T1] NET: Registered protocol family 42
+nx679j-v6: modload qrtr rc=0 /lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/qrtr.ko
+nx679j-v6: modload rtc_pm8xxx rc=0 /lib/modules/rtc-pm8xxx.ko
+nx679j-v6: modload socinfo rc=0 /lib/modules/socinfo.ko
+nx679j-v6: modload stub_regulator rc=0 /lib/modules/stub-regulator.ko
+nx679j-v6: modload ufshcd_crypto_qti rc=0 /lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/ufshcd-crypto-qti.ko
+nx679j-v6: modload ufs_qcom rc=0 /lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/ufs_qcom.ko
+nx679j-v6: modload arm_smmu rc=0 /lib/modules/arm_smmu.ko
+nx679j-v6: modload qcom_aoss rc=0 /lib/modules/qcom_aoss.ko
+nx679j-v6: modload msm_qmp rc=0 /lib/modules/msm_qmp.ko
+nx679j-v6: modload qcom_rimps rc=0 /lib/modules/qcom_rimps.ko
+nx679j-v6: modload c1dcvs_vendor rc=0 /lib/modules/c1dcvs_vendor.ko
+nx679j-v6: modload c1dcvs_scmi rc=0 /lib/modules/c1dcvs_scmi.ko
+[    1.286136][    T1] msm_mmrm: loading out-of-tree module taints kernel.
+nx679j-v6: modload msm_mmrm rc=0 /lib/modules/msm-mmrm.ko
+nx679j-v6: modload qmi_helpers rc=0 /lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/qmi_helpers.ko
+nx679j-v6: modload qcom_smd rc=0 /lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/qcom_smd.ko
+nx679j-v6: modload qcom_glink rc=0 /lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/qcom_glink.ko
+nx679j-v6: modload qcom_glink_smem rc=0 /lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/qcom_glink_smem.ko
+nx679j-v6: modload rproc_qcom_common rc=0 /lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/rproc_qcom_common.ko
+nx679j-v6: modload pdr_interface rc=0 /lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/pdr_interface.ko
+nx679j-v6: modload pmic_glink rc=0 /lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/pmic_glink.ko
+nx679j-v6: modload ucsi_glink rc=0 /lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/ucsi_glink.ko
+nx679j-v6: modload fsa4480_i2c rc=0 /lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/fsa4480-i2c.ko
+nx679j-v6: modload msm_ext_display rc=0 /lib/modules/msm_ext_display.ko
+nx679j-v6: modload usb_switch_dp rc=0 /lib/modules/usb_switch_dp.ko
+nx679j-v6: modload altmode_glink rc=0 /lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/altmode-glink.ko
+nx679j-v6: modload gh_mem_notifier rc=0 /lib/modules/gh_mem_notifier.ko
+nx679j-v6: modload gh_irq_lend rc=0 /lib/modules/gh_irq_lend.ko
+nx679j-v6: modload ssusb_redriver_nb7vpq904m rc=0 /lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/ssusb-redriver-nb7vpq904m.ko
+nx679j-v6: modload phy_msm_snps_hs rc=0 /lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/phy-msm-snps-hs.ko
+nx679j-v6: modload phy_msm_ssusb_qmp rc=0 /lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/phy-msm-ssusb-qmp.ko
+nx679j-v6: modload eud rc=0 /lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/eud.ko
+nx679j-v6: modload dwc3_msm rc=0 /lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/dwc3-msm.ko
+nx679j-v6: dwc3_msm loaded -> first gadget attempt
+[    6.419342][    T1] nx679j-v6: cycle=900 udc=NONE after 5s
+nx679j-v6: cycle=900 udc=NONE after 5s
+[    6.421987][    T1] nx679j-v6: modload panel_event_notifier rc=0 /lib/modules/panel_event_notifier.ko
+nx679j-v6: modload panel_event_notifier rc=0 /lib/modules/panel_event_notifier.ko
+[    6.468403][    T1] zxb get panel_name from uefi: i=0, name=
+[    6.469710][    T1] [drm:dsi_display_register [msm_drm]] *ERROR* [msm-dsi-error]: display name[]is not valid
+[    6.469886][    T1] zxb get panel_name from uefi: i=1, name=
+[    6.470721][    T1] [drm:dsi_display_register [msm_drm]] *ERROR* [msm-dsi-error]: display name[]is not valid
+[    6.471000][    T1] Error: Driver 'sde_wb' is already registered, aborting...
+[    6.471077][    T1] [ZtemtDisp] [nubia_disp_preference_init: 707] start
+[    6.471203][    T1] [ZtemtDisp] [nubia_disp_preference_init: 732] success
+[    6.474475][    T1] nx679j-v6: modload msm_drm rc=0 /lib/modules/msm_drm.ko
+nx679j-v6: modload msm_drm rc=0 /lib/modules/msm_drm.ko
+[    6.478709][    T1] msm_perf: set_event failed, eventId:0x8, cpu:0, error code:-517
+[    6.479110][    T1] nx679j-v6: modload msm_performance rc=0 /lib/modules/msm_performance.ko
+nx679j-v6: modload msm_performance rc=0 /lib/modules/msm_performance.ko
+[    6.481431][    T1] nx679j-v6: modload mdt_loader rc=0 /lib/modules/mdt_loader.ko
+nx679j-v6: modload mdt_loader rc=0 /lib/modules/mdt_loader.ko
+[    6.482651][    T1] nx679j-v6: modload qcom_arm_smmu_mod rc=-2 no .ko in /lib/modules
+nx679j-v6: modload qcom_arm_smmu_mod rc=-2 no .ko in /lib/modules
+[    6.484793][    T1] nx679j-v6: modload nvmem_qfprom rc=0 /lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/nvmem_qfprom.ko
+nx679j-v6: modload nvmem_qfprom rc=0 /lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/nvmem_qfprom.ko
+[    6.527456][    T1] nx679j-v6: modload msm_kgsl rc=0 /lib/modules/msm_kgsl.ko
+nx679j-v6: modload msm_kgsl rc=0 /lib/modules/msm_kgsl.ko
+[    6.530207][    T1] registered sysstats version 1
+[    6.530559][    T1] nx679j-v6: modload msm_sysstats rc=0 /lib/modules/msm_sysstats.ko
+nx679j-v6: modload msm_sysstats rc=0 /lib/modules/msm_sysstats.ko
+[    6.534066][    T1] nx679j-v6: modload zsmalloc rc=0 /lib/modules/zsmalloc.ko
+nx679j-v6: modload zsmalloc rc=0 /lib/modules/zsmalloc.ko
+nx679j-v6: modload lzo rc=0 /lib/modules/lzo.ko
+nx679j-v6: modload lzo_rle rc=0 /lib/modules/lzo-rle.ko
+nx679j-v6: modload msm_show_resume_irq rc=0 /lib/modules/msm_show_resume_irq.ko
+nx679j-v6: modload qcom_sysmon rc=0 /lib/modules/qcom_sysmon.ko
+nx679j-v6: modload qcom_esoc rc=0 /lib/modules/qcom_esoc.ko
+[    6.553356][    T1] pcie:pcie_init.
+nx679j-v6: modload pci_msm_drv rc=0 /lib/modules/pci-msm-drv.ko
+nx679j-v6: modload mhi rc=0 /lib/modules/mhi.ko
+nx679j-v6: modload mhi_cntrl_qcom rc=0 /lib/modules/mhi_cntrl_qcom.ko
+nx679j-v6: modload mhi_dev_dtr rc=0 /lib/modules/mhi_dev_dtr.ko
+nx679j-v6: modload mhi_dev_uci rc=0 /lib/modules/mhi_dev_uci.ko
+nx679j-v6: modload mhi_dev_netdev rc=0 /lib/modules/mhi_dev_netdev.ko
+nx679j-v6: modload phy_qcom_ufs_qmp_v4_lahaina rc=0 /lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/phy-qcom-ufs-qmp-v4-lahaina.ko
+nx679j-v6: modload phy_qcom_ufs_qmp_v3 rc=0 /lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/phy-qcom-ufs-qmp-v3.ko
+nx679j-v6: modload phy_qcom_ufs_qmp_14nm rc=0 /lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/phy-qcom-ufs-qmp-14nm.ko
+nx679j-v6: modload pinctrl_spmi_gpio rc=0 /lib/modules/pinctrl-spmi-gpio.ko
+nx679j-v6: modload pinctrl_spmi_mpp rc=0 /lib/modules/pinctrl-spmi-mpp.ko
+nx679j-v6: modload qpnp_pbs rc=0 /lib/modules/qpnp-pbs.ko
+nx679j-v6: modload pwm_qti_lpg rc=0 /lib/modules/pwm-qti-lpg.ko
+nx679j-v6: modload camcc_waipio rc=0 /lib/modules/camcc-waipio.ko
+nx679j-v6: modload camcc_diwali rc=0 /lib/modules/camcc-diwali.ko
+nx679j-v6: modload debugcc_diwali rc=0 /lib/modules/debugcc-diwali.ko
+nx679j-v6: modload videocc_waipio rc=0 /lib/modules/videocc-waipio.ko
+nx679j-v6: modload gpucc_waipio rc=0 /lib/modules/gpucc-waipio.ko
+nx679j-v6: modload debugcc_waipio rc=0 /lib/modules/debugcc-waipio.ko
+nx679j-v6: modload gpucc_diwali rc=0 /lib/modules/gpucc-diwali.ko
+nx679j-v6: modload videocc_diwali rc=0 /lib/modules/videocc-diwali.ko
+nx679j-v6: modload bam_dma rc=0 /lib/modules/bam_dma.ko
+nx679j-v6: modload gpi rc=0 /lib/modules/gpi.ko
+nx679j-v6: modload pci_edma rc=0 /lib/modules/pci-edma.ko
+nx679j-v6: modload qcom_cpuss_sleep_stats rc=0 /lib/modules/qcom_cpuss_sleep_stats.ko
+nx679j-v6: modload cdsp_loader rc=0 /lib/modules/cdsp-loader.ko
+nx679j-v6: modload qcom_ramdump rc=0 /lib/modules/qcom_ramdump.ko
+nx679j-v6: modload heap_mem_ext_v01 rc=0 /lib/modules/heap_mem_ext_v01.ko
+nx679j-v6: modload msm_memshare rc=0 /lib/modules/msm_memshare.ko
+[    6.623799][    T1] can't find qcom,msm-imem node
+nx679j-v6: modload boot_stats rc=-19 (ENODEV)
+nx679j-v6: modload smp2p rc=0 /lib/modules/smp2p.ko
+nx679j-v6: modload subsystem_sleep_stats rc=0 /lib/modules/subsystem_sleep_stats.ko
+nx679j-v6: modload adsp_sleepmon rc=0 /lib/modules/adsp_sleepmon.ko
+nx679j-v6: modload sysmon_subsystem_stats rc=0 /lib/modules/sysmon_subsystem_stats.ko
+nx679j-v6: modload qsee_ipc_irq_bridge rc=0 /lib/modules/qsee_ipc_irq_bridge.ko
+nx679j-v6: modload core_hang_detect rc=0 /lib/modules/core_hang_detect.ko
+nx679j-v6: modload soc_sleep_stats rc=0 /lib/modules/soc_sleep_stats.ko
+nx679j-v6: modload rq_stats rc=0 /lib/modules/rq_stats.ko
+nx679j-v6: modload dcc_v2 rc=0 /lib/modules/dcc_v2.ko
+nx679j-v6: modload qseecom_mod rc=0 /lib/modules/qseecom-mod.ko
+nx679j-v6: modload smcinvoke_mod rc=0 /lib/modules/smcinvoke_mod.ko
+nx679j-v6: modload microdump_collector rc=0 /lib/modules/microdump_collector.ko
+nx679j-v6: modload llcc_perfmon is in modules.blocklist (loading anyway)
+nx679j-v6: modload llcc_perfmon rc=0 /lib/modules/llcc_perfmon.ko
+nx679j-v6: modload smp2p_sleepstate rc=0 /lib/modules/smp2p_sleepstate.ko
+nx679j-v6: modload sensors_ssc rc=0 /lib/modules/sensors_ssc.ko
+nx679j-v6: modload glink_pkt rc=0 /lib/modules/glink_pkt.ko
+nx679j-v6: modload qcom_glink_spss rc=0 /lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/qcom_glink_spss.ko
+nx679j-v6: modload glink_probe rc=0 /lib/modules/glink_probe.ko
+nx679j-v6: modload qti_battery_debug rc=0 /lib/modules/qti_battery_debug.ko
+nx679j-v6: modload charger_ulog_glink rc=0 /lib/modules/charger-ulog-glink.ko
+nx679j-v6: modload pmic_pon_log rc=0 /lib/modules/pmic-pon-log.ko
+nx679j-v6: modload qcom_spss rc=0 /lib/modules/qcom_spss.ko
+nx679j-v6: modload spss_utils rc=0 /lib/modules/spss_utils.ko
+nx679j-v6: modload spcom rc=0 /lib/modules/spcom.ko
+[    6.759236][    T1] cdsprm: Init successful
+nx679j-v6: modload cdsprm rc=0 /lib/modules/cdsprm.ko
+nx679j-v6: modload msm_show_epoch rc=0 /lib/modules/msm_show_epoch.ko
+nx679j-v6: modload guestvm_loader rc=0 /lib/modules/guestvm_loader.ko
+nx679j-v6: modload thermal_pause rc=0 /lib/modules/thermal_pause.ko
+nx679j-v6: modload hyp_core_ctl rc=0 /lib/modules/hyp_core_ctl.ko
+nx679j-v6: modload qbt_handler rc=0 /lib/modules/qbt_handler.ko
+nx679j-v6: modload qcom_soc_wdt rc=0 /lib/modules/qcom_soc_wdt.ko
+nx679j-v6: modload sys_pm_vx rc=0 /lib/modules/sys_pm_vx.ko
+nx679j-v6: modload wlan_firmware_service rc=-19 (ENODEV)
+nx679j-v6: modload qti_adc_tm rc=0 /lib/modules/qti-adc-tm.ko
+[    6.853199][    T1] icnss2: Unknown symbol wlfw_msa_info_resp_msg_v01_ei (err -2)
+[    6.853389][    T1] icnss2: Unknown symbol wlfw_msa_info_req_msg_v01_ei (err -2)
+[    6.853594][    T1] icnss2: Unknown symbol wlfw_msa_ready_resp_msg_v01_ei (err -2)
+[    6.853709][    T1] icnss2: Unknown symbol wlfw_msa_ready_req_msg_v01_ei (err -2)
+[    6.853814][    T1] icnss2: Unknown symbol wlfw_device_info_resp_msg_v01_ei (err -2)
+[    6.853923][    T1] icnss2: Unknown symbol wlfw_device_info_req_msg_v01_ei (err -2)
+[    6.854030][    T1] icnss2: Unknown symbol wlfw_power_save_req_msg_v01_ei (err -2)
+[    6.854138][    T1] icnss2: Unknown symbol wlfw_soc_wake_resp_msg_v01_ei (err -2)
+[    6.854246][    T1] icnss2: Unknown symbol wlfw_soc_wake_req_msg_v01_ei (err -2)
+[    6.854354][    T1] icnss2: Unknown symbol wlfw_ind_register_resp_msg_v01_ei (err -2)
+[    6.854466][    T1] icnss2: Unknown symbol wlfw_ind_register_req_msg_v01_ei (err -2)
+[    6.854578][    T1] icnss2: Unknown symbol wlfw_cap_resp_msg_v01_ei (err -2)
+[    6.854683][    T1] icnss2: Unknown symbol wlfw_cap_req_msg_v01_ei (err -2)
+[    6.854799][    T1] icnss2: Unknown symbol dms_get_mac_address_resp_msg_v01_ei (err -2)
+[    6.854909][    T1] icnss2: Unknown symbol dms_get_mac_address_req_msg_v01_ei (err -2)
+[    6.855020][    T1] icnss2: Unknown symbol wlfw_mac_addr_resp_msg_v01_ei (err -2)
+[    6.855128][    T1] icnss2: Unknown symbol wlfw_mac_addr_req_msg_v01_ei (err -2)
+[    6.855235][    T1] icnss2: Unknown symbol wlfw_bdf_download_resp_msg_v01_ei (err -2)
+[    6.855347][    T1] icnss2: Unknown symbol wlfw_bdf_download_req_msg_v01_ei (err -2)
+[    6.855457][    T1] icnss2: Unknown symbol wlfw_qdss_trace_data_resp_msg_v01_ei (err -2)
+[    6.855569][    T1] icnss2: Unknown symbol wlfw_qdss_trace_data_req_msg_v01_ei (err -2)
+[    6.855682][    T1] icnss2: Unknown symbol wlfw_qdss_trace_config_download_resp_msg_v01_ei (err -2)
+[    6.855802][    T1] icnss2: Unknown symbol wlfw_qdss_trace_config_download_req_msg_v01_ei (err -2)
+[    6.855915][    T1] icnss2: Unknown symbol wlfw_wlan_mode_resp_msg_v01_ei (err -2)
+[    6.856020][    T1] icnss2: Unknown symbol wlfw_wlan_mode_req_msg_v01_ei (err -2)
+[    6.856117][    T1] icnss2: Unknown symbol wlfw_wlan_cfg_resp_msg_v01_ei (err -2)
+[    6.856260][    T1] icnss2: Unknown symbol wlfw_wlan_cfg_req_msg_v01_ei (err -2)
+[    6.856388][    T1] icnss2: Unknown symbol wlfw_shutdown_resp_msg_v01_ei (err -2)
+[    6.856496][    T1] icnss2: Unknown symbol wlfw_shutdown_req_msg_v01_ei (err -2)
+[    6.856610][    T1] icnss2: Unknown symbol wlfw_ini_resp_msg_v01_ei (err -2)
+[    6.856714][    T1] icnss2: Unknown symbol wlfw_ini_req_msg_v01_ei (err -2)
+[    6.856817][    T1] icnss2: Unknown symbol wlfw_athdiag_read_resp_msg_v01_ei (err -2)
+[    6.856924][    T1] icnss2: Unknown symbol wlfw_athdiag_read_req_msg_v01_ei (err -2)
+[    6.857036][    T1] icnss2: Unknown symbol wlfw_athdiag_write_resp_msg_v01_ei (err -2)
+[    6.857147][    T1] icnss2: Unknown symbol wlfw_athdiag_write_req_msg_v01_ei (err -2)
+[    6.857255][    T1] icnss2: Unknown symbol wlfw_rejuvenate_ack_resp_msg_v01_ei (err -2)
+[    6.857366][    T1] icnss2: Unknown symbol wlfw_rejuvenate_ack_req_msg_v01_ei (err -2)
+[    6.857526][    T1] icnss2: Unknown symbol wlfw_dynamic_feature_mask_resp_msg_v01_ei (err -2)
+[    6.857655][    T1] icnss2: Unknown symbol wlfw_dynamic_feature_mask_req_msg_v01_ei (err -2)
+[    6.857776][    T1] icnss2: Unknown symbol wlfw_qdss_trace_mem_info_resp_msg_v01_ei (err -2)
+[    6.857891][    T1] icnss2: Unknown symbol wlfw_qdss_trace_mem_info_req_msg_v01_ei (err -2)
+[    6.858007][    T1] icnss2: Unknown symbol wlfw_m3_dump_upload_done_resp_msg_v01_ei (err -2)
+[    6.858125][    T1] icnss2: Unknown symbol wlfw_m3_dump_upload_done_req_msg_v01_ei (err -2)
+[    6.858241][    T1] icnss2: Unknown symbol wlfw_vbatt_resp_msg_v01_ei (err -2)
+[    6.858348][    T1] icnss2: Unknown symbol wlfw_vbatt_req_msg_v01_ei (err -2)
+[    6.858455][    T1] icnss2: Unknown symbol wlfw_host_cap_resp_msg_v01_ei (err -2)
+[    6.858564][    T1] icnss2: Unknown symbol wlfw_host_cap_req_msg_v01_ei (err -2)
+[    6.858674][    T1] icnss2: Unknown symbol wlfw_get_info_resp_msg_v01_ei (err -2)
+[    6.858763][    T1] icnss2: Unknown symbol wlfw_get_info_req_msg_v01_ei (err -2)
+[    6.858869][    T1] icnss2: Unknown symbol wlfw_subsys_restart_level_resp_msg_v01_ei (err -2)
+[    6.858972][    T1] icnss2: Unknown symbol wlfw_subsys_restart_level_req_msg_v01_ei (err -2)
+[    6.859087][    T1] icnss2: Unknown symbol wlfw_qdss_trace_mode_resp_msg_v01_ei (err -2)
+[    6.859200][    T1] icnss2: Unknown symbol wlfw_qdss_trace_mode_req_msg_v01_ei (err -2)
+[    6.859312][    T1] icnss2: Unknown symbol wlfw_fw_ready_ind_msg_v01_ei (err -2)
+[    6.859421][    T1] icnss2: Unknown symbol wlfw_msa_ready_ind_msg_v01_ei (err -2)
+[    6.859530][    T1] icnss2: Unknown symbol wlfw_pin_connect_result_ind_msg_v01_ei (err -2)
+[    6.859646][    T1] icnss2: Unknown symbol wlfw_rejuvenate_ind_msg_v01_ei (err -2)
+[    6.859755][    T1] icnss2: Unknown symbol wlfw_cal_done_ind_msg_v01_ei (err -2)
+[    6.859862][    T1] icnss2: Unknown symbol wlfw_fw_init_done_ind_msg_v01_ei (err -2)
+[    6.859972][    T1] icnss2: Unknown symbol wlfw_qdss_trace_req_mem_ind_msg_v01_ei (err -2)
+[    6.860086][    T1] icnss2: Unknown symbol wlfw_qdss_trace_save_ind_msg_v01_ei (err -2)
+[    6.860197][    T1] icnss2: Unknown symbol wlfw_qdss_trace_free_ind_msg_v01_ei (err -2)
+[    6.860310][    T1] icnss2: Unknown symbol wlfw_respond_get_info_ind_msg_v01_ei (err -2)
+[    6.860422][    T1] icnss2: Unknown symbol wlfw_m3_dump_upload_segments_req_ind_msg_v01_ei (err -2)
+nx679j-v6: modload icnss2 rc=-2 (ENOENT file/symbol missing)
+nx679j-v6: modload rimps_log rc=0 /lib/modules/rimps_log.ko
+nx679j-v6: modload plh_vendor rc=0 /lib/modules/plh_vendor.ko
+nx679j-v6: modload plh_scmi rc=0 /lib/modules/plh_scmi.ko
+nx679j-v6: modload sps_drv rc=0 /lib/modules/sps_drv.ko
+nx679j-v6: modload usb_bam rc=0 /lib/modules/usb_bam.ko
+nx679j-v6: modload usb_f_qdss rc=0 /lib/modules/usb_f_qdss.ko
+nx679j-v6: modload qdss_bridge rc=0 /lib/modules/qdss_bridge.ko
+nx679j-v6: modload memlat rc=0 /lib/modules/memlat.ko
+nx679j-v6: modload qcom_logbuf_vendor_hooks rc=0 /lib/modules/qcom_logbuf_vendor_hooks.ko
+nx679j-v6: modload qcom_sync_file rc=0 /lib/modules/qcom_sync_file.ko
+nx679j-v6: modload hung_task_enh rc=0 /lib/modules/hung_task_enh.ko
+nx679j-v6: modload qfprom_sys rc=0 /lib/modules/qfprom-sys.ko
+nx679j-v6: modload qcom_pm8008_regulator rc=0 /lib/modules/qcom_pm8008-regulator.ko
+nx679j-v6: modload qpnp_amoled_regulator rc=0 /lib/modules/qpnp-amoled-regulator.ko
+nx679j-v6: modload hvc_gunyah rc=0 /lib/modules/hvc_gunyah.ko
+nx679j-v6: modload msm_rng rc=0 /lib/modules/msm_rng.ko
+[    6.946190][    T1] adsprpc: fastrpc_device_init: SSR notifier registered for lpass
+[    6.946365][    T1] adsprpc: fastrpc_device_init: SSR notifier registered for mpss
+[    6.946444][    T1] adsprpc: fastrpc_device_init: SSR notifier registered for dsps
+[    6.946569][    T1] Error: adsprpc (1249): 1: 1: init: fastrpc_alloc_cma_memory: failed to allocate CMA memory, device adsprpc-mem is not initialized
+[    6.946711][    T1] Warning: adsprpc (7798): 1: 1: init: fastrpc_device_init: fastrpc_device_init: CMA alloc failed  err 0xffffffed
+[    6.946833][    T1] Warning: adsprpc (7803): 1: 1: init: fastrpc_device_init: fastrpc_device_init: CMA alloc failed  err 0xfffffff4
+[    6.947013][    T1] adsprpc: fastrpc_device_init: SSR notifier registered for cdsp
+nx679j-v6: modload frpc_adsprpc rc=0 /lib/modules/frpc-adsprpc.ko
+nx679j-v6: modload rdbg rc=0 /lib/modules/rdbg.ko
+nx679j-v6: modload qcom_iommu_debug rc=0 /lib/modules/qcom_iommu_debug.ko
+nx679j-v6: modload lt9611uxc rc=0 /lib/modules/lt9611uxc.ko
+[    6.959658][    T1] zram: Added device: zram0
+nx679j-v6: modload zram rc=0 /lib/modules/zram.ko
+nx679j-v6: modload qcom_i2c_pmic rc=0 /lib/modules/qcom-i2c-pmic.ko
+nx679j-v6: modload sec_nfc rc=0 /lib/modules/sec_nfc.ko
+nx679j-v6: modload nfc_i2c rc=0 /lib/modules/nfc_i2c.ko
+nx679j-v6: modload sg rc=0 /lib/modules/sg.ko
+nx679j-v6: modload spi_msm_geni rc=0 /lib/modules/spi-msm-geni.ko
+nx679j-v6: modload spmi_pmic_arb_debug rc=0 /lib/modules/spmi-pmic-arb-debug.ko
+nx679j-v6: modload spmi_glink_debug rc=0 /lib/modules/spmi-glink-debug.ko
+nx679j-v6: modload cnss_plat_ipc_qmi_svc rc=-19 (ENODEV)
+[    6.963596][    T1] NB_NFC: module init!.
+[    7.058316][    T1] cnss2: Unknown symbol cnss_plat_ipc_qmi_file_download (err -2)
+[    7.058548][    T1] cnss2: Unknown symbol cnss_plat_ipc_qmi_file_upload (err -2)
+[    7.058684][    T1] cnss2: Unknown symbol cnss_plat_ipc_qmi_daemon_config (err -2)
+[    7.058858][    T1] cnss2: Unknown symbol cnss_plat_ipc_register (err -2)
+[    7.059010][    T1] cnss2: Unknown symbol cnss_plat_ipc_unregister (err -2)
+[    7.060651][    T1] cnss2: Unknown symbol wlfw_respond_mem_resp_msg_v01_ei (err -2)
+[    7.060783][    T1] cnss2: Unknown symbol wlfw_respond_mem_req_msg_v01_ei (err -2)
+[    7.060916][    T1] cnss2: Unknown symbol wlfw_cap_resp_msg_v01_ei (err -2)
+[    7.061041][    T1] cnss2: Unknown symbol wlfw_cap_req_msg_v01_ei (err -2)
+[    7.061168][    T1] cnss2: Unknown symbol wlfw_bdf_download_resp_msg_v01_ei (err -2)
+[    7.061302][    T1] cnss2: Unknown symbol wlfw_bdf_download_req_msg_v01_ei (err -2)
+[    7.061434][    T1] cnss2: Unknown symbol wlfw_m3_info_resp_msg_v01_ei (err -2)
+[    7.061616][    T1] cnss2: Unknown symbol wlfw_m3_info_req_msg_v01_ei (err -2)
+[    7.061746][    T1] cnss2: Unknown symbol wlfw_mac_addr_resp_msg_v01_ei (err -2)
+[    7.061877][    T1] cnss2: Unknown symbol wlfw_mac_addr_req_msg_v01_ei (err -2)
+[    7.062009][    T1] cnss2: Unknown symbol wlfw_qdss_trace_data_resp_msg_v01_ei (err -2)
+[    7.062146][    T1] cnss2: Unknown symbol wlfw_qdss_trace_data_req_msg_v01_ei (err -2)
+[    7.062285][    T1] cnss2: Unknown symbol wlfw_qdss_trace_config_download_resp_msg_v01_ei (err -2)
+[    7.062432][    T1] cnss2: Unknown symbol wlfw_qdss_trace_config_download_req_msg_v01_ei (err -2)
+[    7.062576][    T1] cnss2: Unknown symbol wlfw_wlan_mode_resp_msg_v01_ei (err -2)
+[    7.062712][    T1] cnss2: Unknown symbol wlfw_wlan_mode_req_msg_v01_ei (err -2)
+[    7.062844][    T1] cnss2: Unknown symbol wlfw_wlan_cfg_resp_msg_v01_ei (err -2)
+[    7.062975][    T1] cnss2: Unknown symbol wlfw_wlan_cfg_req_msg_v01_ei (err -2)
+[    7.063107][    T1] cnss2: Unknown symbol wlfw_athdiag_read_resp_msg_v01_ei (err -2)
+[    7.063240][    T1] cnss2: Unknown symbol wlfw_athdiag_read_req_msg_v01_ei (err -2)
+[    7.063378][    T1] cnss2: Unknown symbol wlfw_athdiag_write_resp_msg_v01_ei (err -2)
+[    7.063514][    T1] cnss2: Unknown symbol wlfw_athdiag_write_req_msg_v01_ei (err -2)
+[    7.063651][    T1] cnss2: Unknown symbol wlfw_ini_resp_msg_v01_ei (err -2)
+[    7.063780][    T1] cnss2: Unknown symbol wlfw_ini_req_msg_v01_ei (err -2)
+[    7.063910][    T1] cnss2: Unknown symbol wlfw_pcie_gen_switch_resp_msg_v01_ei (err -2)
+[    7.064050][    T1] cnss2: Unknown symbol wlfw_pcie_gen_switch_req_msg_v01_ei (err -2)
+[    7.064187][    T1] cnss2: Unknown symbol wlfw_antenna_switch_resp_msg_v01_ei (err -2)
+[    7.064327][    T1] cnss2: Unknown symbol wlfw_antenna_switch_req_msg_v01_ei (err -2)
+[    7.064463][    T1] cnss2: Unknown symbol wlfw_antenna_grant_resp_msg_v01_ei (err -2)
+[    7.064598][    T1] cnss2: Unknown symbol wlfw_antenna_grant_req_msg_v01_ei (err -2)
+[    7.064778][    T1] cnss2: Unknown symbol wlfw_qdss_trace_mem_info_resp_msg_v01_ei (err -2)
+[    7.064922][    T1] cnss2: Unknown symbol wlfw_qdss_trace_mem_info_req_msg_v01_ei (err -2)
+[    7.065063][    T1] cnss2: Unknown symbol wlfw_dynamic_feature_mask_resp_msg_v01_ei (err -2)
+[    7.065204][    T1] cnss2: Unknown symbol wlfw_dynamic_feature_mask_req_msg_v01_ei (err -2)
+[    7.065346][    T1] cnss2: Unknown symbol wlfw_get_info_resp_msg_v01_ei (err -2)
+[    7.065522][    T1] cnss2: Unknown symbol wlfw_get_info_req_msg_v01_ei (err -2)
+[    7.065674][    T1] cnss2: Unknown symbol wlfw_cal_report_resp_msg_v01_ei (err -2)
+[    7.065810][    T1] cnss2: Unknown symbol wlfw_cal_report_req_msg_v01_ei (err -2)
+[    7.065949][    T1] cnss2: Unknown symbol dms_get_mac_address_resp_msg_v01_ei (err -2)
+[    7.066087][    T1] cnss2: Unknown symbol dms_get_mac_address_req_msg_v01_ei (err -2)
+[    7.066224][    T1] cnss2: Unknown symbol wlfw_qdss_trace_mode_resp_msg_v01_ei (err -2)
+[    7.066361][    T1] cnss2: Unknown symbol wlfw_qdss_trace_mode_req_msg_v01_ei (err -2)
+[    7.066499][    T1] cnss2: Unknown symbol wlfw_ind_register_resp_msg_v01_ei (err -2)
+[    7.066639][    T1] cnss2: Unknown symbol wlfw_ind_register_req_msg_v01_ei (err -2)
+[    7.066776][    T1] cnss2: Unknown symbol wlfw_host_cap_resp_msg_v01_ei (err -2)
+[    7.066910][    T1] cnss2: Unknown symbol wlfw_host_cap_req_msg_v01_ei (err -2)
+[    7.067044][    T1] cnss2: Unknown symbol wlfw_request_mem_ind_msg_v01_ei (err -2)
+[    7.067179][    T1] cnss2: Unknown symbol wlfw_fw_mem_ready_ind_msg_v01_ei (err -2)
+[    7.067314][    T1] cnss2: Unknown symbol wlfw_fw_ready_ind_msg_v01_ei (err -2)
+[    7.067444][    T1] cnss2: Unknown symbol wlfw_fw_init_done_ind_msg_v01_ei (err -2)
+[    7.067581][    T1] cnss2: Unknown symbol wlfw_pin_connect_result_ind_msg_v01_ei (err -2)
+[    7.067721][    T1] cnss2: Unknown symbol wlfw_cal_done_ind_msg_v01_ei (err -2)
+[    7.067853][    T1] cnss2: Unknown symbol wlfw_qdss_trace_req_mem_ind_msg_v01_ei (err -2)
+[    7.067994][    T1] cnss2: Unknown symbol wlfw_qdss_trace_save_ind_msg_v01_ei (err -2)
+[    7.068131][    T1] cnss2: Unknown symbol wlfw_qdss_trace_free_ind_msg_v01_ei (err -2)
+[    7.068270][    T1] cnss2: Unknown symbol wlfw_respond_get_info_ind_msg_v01_ei (err -2)
+[    7.068407][    T1] cnss2: Unknown symbol wlfw_wfc_call_twt_config_ind_msg_v01_ei (err -2)
+[    7.068545][    T1] cnss2: Unknown symbol wlfw_wfc_call_status_resp_msg_v01_ei (err -2)
+[    7.068687][    T1] cnss2: Unknown symbol wlfw_wfc_call_status_req_msg_v01_ei (err -2)
+nx679j-v6: modload cnss2 rc=-2 (ENOENT file/symbol missing)
+nx679j-v6: modload cnss_utils rc=-19 (ENODEV)
+nx679j-v6: modload cnss_nl rc=-19 (ENODEV)
+nx679j-v6: modload cnss_prealloc rc=-19 (ENODEV)
+[    7.377265][    T1] usbcore: registered new interface driver ax88179_178a
+nx679j-v6: modload ax88179_178a rc=0 /lib/modules/ax88179_178a.ko
+nx679j-v6: modload msm_sharedmem rc=0 /lib/modules/msm_sharedmem.ko
+nx679j-v6: modload phy_qcom_emu rc=0 /lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/phy-qcom-emu.ko
+nx679j-v6: modload repeater rc=0 /lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/repeater.ko
+nx679j-v6: modload phy_msm_snps_eusb2 rc=0 /lib/modules/5.10.66-android12-9-00005-gf6e6376090be-ab8060604/phy-msm-snps-eusb2.ko
+[    7.388680][    T1] usbcore: registered new interface driver usb_ehset_test
+nx679j-v6: modload ehset rc=0 /lib/modules/ehset.ko
+[    7.390462][    T1] usbcore: registered new interface driver lvs
+nx679j-v6: modload lvstest rc=0 /lib/modules/lvstest.ko
+[    7.392811][    T1] diag: failed to find diag_dload imem node
+nx679j-v6: modload usb_f_diag rc=0 /lib/modules/usb_f_diag.ko
+nx679j-v6: modload usb_f_ccid rc=0 /lib/modules/usb_f_ccid.ko
+nx679j-v6: modload usb_f_cdev rc=0 /lib/modules/usb_f_cdev.ko
+[    7.406966][    T1] IPA framework init
+nx679j-v6: modload ipa_fmwk rc=0 /lib/modules/ipa_fmwk.ko
+nx679j-v6: modload usb_f_gsi rc=0 /lib/modules/usb_f_gsi.ko
+nx679j-v6: modload f_fs_ipc_log rc=0 /lib/modules/f_fs_ipc_log.ko
+nx679j-v6: modload repeater_i2c_eusb2 rc=0 /lib/modules/repeater-i2c-eusb2.ko
+nx679j-v6: modload gpio_keys_nubia rc=0 /lib/modules/gpio_keys_nubia.ko
+nx679j-v6: modload atmel_mxt_ts rc=0 /lib/modules/atmel_mxt_ts.ko
+[    7.426690][    T1] [GTP-INF][goodix_ts_core_init:2578] Core layer init:v1.2.2
+[    7.426834][    T1] [GTP-INF][goodix_i2c_bus_init:256] Goodix i2c driver init
+nx679j-v6: modload goodix_core rc=0 /lib/modules/goodix_core.ko
+nx679j-v6: modload pm8941_pwrkey rc=0 /lib/modules/pm8941-pwrkey.ko
+nx679j-v6: modload qcom_hv_haptics rc=0 /lib/modules/qcom-hv-haptics.ko
+nx679j-v6: modload i2c_msm_geni rc=0 /lib/modules/i2c-msm-geni.ko
+nx679j-v6: modload i3c_master_msm_geni rc=0 /lib/modules/i3c-master-msm-geni.ko
+nx679j-v6: modload qcom_ipc_lite rc=0 /lib/modules/qcom_ipc_lite.ko
+[    7.451577][    T1] synx: synx device initialization start
+[    7.452299][    T1] client callback registered with ipc_lite
+[    7.452411][    T1] synx: synx device initialization success
+nx679j-v6: modload synx_driver rc=0 /lib/modules/synx-driver.ko
+nx679j-v6: modload radio_i2c_rtc6226_qca rc=0 /lib/modules/radio-i2c-rtc6226-qca.ko
+nx679j-v6: modload qcom_pon rc=0 /lib/modules/qcom-pon.ko
+nx679j-v6: modload qti_battery_charger rc=0 /lib/modules/qti_battery_charger.ko
+nx679j-v6: modload qcom_tsens rc=0 /lib/modules/qcom_tsens.ko
+nx679j-v6: modload qcom_spmi_temp_alarm rc=0 /lib/modules/qcom-spmi-temp-alarm.ko
+nx679j-v6: modload qti_qmi_sensor_v2 rc=0 /lib/modules/qti_qmi_sensor_v2.ko
+nx679j-v6: modload qti_qmi_cdev rc=0 /lib/modules/qti_qmi_cdev.ko
+nx679j-v6: modload cpu_hotplug rc=0 /lib/modules/cpu_hotplug.ko
+nx679j-v6: modload bcl_pmic5 rc=0 /lib/modules/bcl_pmic5.ko
+nx679j-v6: modload bcl_soc rc=0 /lib/modules/bcl_soc.ko
+nx679j-v6: modload msm_lmh_dcvs rc=0 /lib/modules/msm_lmh_dcvs.ko
+nx679j-v6: modload cpu_voltage_cooling rc=0 /lib/modules/cpu_voltage_cooling.ko
+nx679j-v6: modload policy_engine rc=0 /lib/modules/policy_engine.ko
+nx679j-v6: modload sdpm_clk rc=0 /lib/modules/sdpm_clk.ko
+nx679j-v6: modload ddr_cdev rc=0 /lib/modules/ddr_cdev.ko
+nx679j-v6: modload qti_userspace_cdev rc=0 /lib/modules/qti_userspace_cdev.ko
+nx679j-v6: modload qti_cpufreq_cdev rc=0 /lib/modules/qti_cpufreq_cdev.ko
+nx679j-v6: modload qti_devfreq_cdev rc=0 /lib/modules/qti_devfreq_cdev.ko
+nx679j-v6: modload btpower rc=0 /lib/modules/btpower.ko
+nx679j-v6: modload slimbus rc=0 /lib/modules/slimbus.ko
+nx679j-v6: modload bt_fm_slim rc=0 /lib/modules/bt_fm_slim.ko
+nx679j-v6: modload qcom_edac rc=0 /lib/modules/qcom_edac.ko
+nx679j-v6: modload qcom_cpufreq_hw_debug rc=0 /lib/modules/qcom-cpufreq-hw-debug.ko
+[    7.534030][    T1] cpuidle: using governor qcom-cpu-lpm
+nx679j-v6: modload qcom_lpm rc=0 /lib/modules/qcom_lpm.ko
+nx679j-v6: modload sdhci_msm rc=0 /lib/modules/sdhci-msm.ko
+nx679j-v6: modload leds_qti_flash rc=0 /lib/modules/leds-qti-flash.ko
+nx679j-v6: modload leds_qti_tri_led rc=0 /lib/modules/leds-qti-tri-led.ko
+nx679j-v6: modload leds_qpnp_vibrator_ldo rc=0 /lib/modules/leds-qpnp-vibrator-ldo.ko
+[    7.551725][    T1] aw22xxx driver version v1.1.3
+nx679j-v6: modload leds_aw22xxx rc=0 /lib/modules/leds-aw22xxx.ko
+[    7.556502][    T1] [haptic_hv][2949]aw_i2c_init: aw_haptic driver version v0.5.2.1
+nx679j-v6: modload haptic rc=0 /lib/modules/haptic.ko
+[    7.559978][    T1] aw9620x driver version v0.0.4.17
+nx679j-v6: modload aw9620x rc=0 /lib/modules/aw9620x.ko
+nx679j-v6: modload tz_log rc=0 /lib/modules/tz_log.ko
+nx679j-v6: modload qce50 rc=0 /lib/modules/qce50.ko
+nx679j-v6: modload qcedev_mod rc=0 /lib/modules/qcedev-mod.ko
+[    7.589744][    T1] ep_pcie_init
+nx679j-v6: modload ep_pcie_drv rc=0 /lib/modules/ep_pcie_drv.ko
+nx679j-v6: modload mhi_dev_net rc=0 /lib/modules/mhi_dev_net.ko
+nx679j-v6: modload mhi_dev_drv rc=0 /lib/modules/mhi_dev_drv.ko
+nx679j-v6: modload qcom_pil_info rc=0 /lib/modules/qcom_pil_info.ko
+nx679j-v6: modload qcom_q6v5 rc=0 /lib/modules/qcom_q6v5.ko
+nx679j-v6: modload qcom_q6v5_pas rc=0 /lib/modules/qcom_q6v5_pas.ko
+nx679j-v6: modload gh_virtio_backend rc=0 /lib/modules/gh_virtio_backend.ko
+nx679j-v6: modload qcom_vadc_common rc=0 /lib/modules/qcom-vadc-common.ko
+nx679j-v6: modload qcom_spmi_adc5 rc=0 /lib/modules/qcom-spmi-adc5.ko
+nx679j-v6: modload icc_test rc=0 /lib/modules/icc-test.ko
+nx679j-v6: modload qnoc_parrot rc=0 /lib/modules/qnoc-parrot.ko
+[    7.639371][    T1] [GOODIXFP] [gf_init: 1260] goodixfp status = 0x0
+nx679j-v6: modload gf_spi rc=0 /lib/modules/gf_spi.ko
+nx679j-v6: modload stk3x3x rc=0 /lib/modules/stk3x3x.ko
+[    7.644960][    T1] [NUBIA_SENSORS_SENS] [sensors_sensitivity_init:392] init
+[    7.645094][    T1] [NUBIA_SENSORS_SENS] [sensors_sensitivity_register:313] sensors_sensitivity_register start
+[    7.645579][    T1] [NUBIA_SENSORS_SENS] [sensors_sensitivity_register:363] sensors_sensitivity_register ok.
+nx679j-v6: modload sensors_sensitivity rc=0 /lib/modules/sensors_sensitivity.ko
+nx679j-v6: modload fork_monitor_ctl rc=0 /lib/modules/fork_monitor_ctl.ko
+nx679j-v6: modload sched_ctl rc=0 /lib/modules/sched_ctl.ko
+[    7.652708][    T1] cpufreezer uevent init
+nx679j-v6: modload nubiafreezer rc=0 /lib/modules/nubiafreezer.ko
+[    7.660010][    T1] fan_init
+[    7.660187][    T1] fan_init exit
+nx679j-v6: modload fan_core rc=0 /lib/modules/fan_core.ko
+nx679j-v6: modload slim_qcom_ngd_ctrl rc=0 /lib/modules/slim-qcom-ngd-ctrl.ko
+nx679j-v6: modload summary loaded=294 skipped=0 failed=8 missing=2 dwc3_seen=1
+nx679j-v6: stage3 gadget attempt (wait=30s for a real UDC)
+[   37.712765][    T1] nx679j-v6: cycle=0 udc=NONE after 30s
+nx679j-v6: cycle=0 udc=NONE after 30s
+[   37.713390][    T1] nx679j-v6: stage3 result=-1
+nx679j-v6: stage3 result=-1
+[   37.723691][    T1] nx679j-v6: rawdump none (no block device yet: is ufs_qcom in?)
+nx679j-v6: rawdump none (no block device yet: is ufs_qcom in?)
+[   37.729415][    T1] nx679j-v6: cycle=1 uptime=37.71 72.65 logs=321
+nx679j-v6: cycle=1 uptime=37.71 72.65 logs=321
+[   42.737764][    T1] nx679j-v6: cycle=1 udc=NONE after 5s
+nx679j-v6: cycle=1 udc=NONE after 5s
+[   52.745214][    T1] nx679j-v6: cycle=2 uptime=52.73 102.65 logs=323
+nx679j-v6: cycle=2 uptime=52.73 102.65 logs=323
+[   57.753028][    T1] nx679j-v6: cycle=2 udc=NONE after 5s
+nx679j-v6: cycle=2 udc=NONE after 5s
+[   67.759529][    T1] nx679j-v6: cycle=3 uptime=67.74 132.65 logs=325
+nx679j-v6: cycle=3 uptime=67.74 132.65 logs=325
+[   72.768549][    T1] nx679j-v6: cycle=3 udc=NONE after 5s
+nx679j-v6: cycle=3 udc=NONE after 5s
+[   82.777296][    T1] nx679j-v6: cycle=4 uptime=82.76 162.65 logs=327
+nx679j-v6: cycle=4 uptime=82.76 162.65 logs=327
+[   87.785955][    T1] nx679j-v6: cycle=4 udc=NONE after 5s
+nx679j-v6: cycle=4 udc=NONE after 5s
+[   97.792537][    T1] nx679j-v6: cycle=5 uptime=97.77 192.65 logs=329
+nx679j-v6: cycle=5 uptime=97.77 192.65 logs=329
+[  102.800546][    T1] nx679j-v6: cycle=5 udc=NONE after 5s
+nx679j-v6: cycle=5 udc=NONE after 5s
+[  112.806705][    T1] nx679j-v6: cycle=6 uptime=112.79 222.65 logs=331
+nx679j-v6: cycle=6 uptime=112.79 222.65 logs=331
+[  117.815196][    T1] nx679j-v6: cycle=6 udc=NONE after 5s
+nx679j-v6: cycle=6 udc=NONE after 5s
+[  127.821215][    T1] nx679j-v6: cycle=7 uptime=127.80 252.64 logs=333
+nx679j-v6: cycle=7 uptime=127.80 252.64 logs=333
+[  132.828654][    T1] nx679j-v6: cycle=7 udc=NONE after 5s
+nx679j-v6: cycle=7 udc=NONE after 5s
+[  142.834494][    T1] nx679j-v6: cycle=8 uptime=142.82 282.65 logs=335
+nx679j-v6: cycle=8 uptime=142.82 282.65 logs=335
+[  147.842434][    T1] nx679j-v6: cycle=8 udc=NONE after 5s
+nx679j-v6: cycle=8 udc=NONE after 5s
+[  157.848493][    T1] nx679j-v6: cycle=9 uptime=157.83 312.64 logs=337
+nx679j-v6: cycle=9 uptime=157.83 312.64 logs=337
+[  162.855713][    T1] nx679j-v6: cycle=9 udc=NONE after 5s
+nx679j-v6: cycle=9 udc=NONE after 5s
+[  172.861843][    T1] nx679j-v6: cycle=10 uptime=172.84 342.65 logs=339
+nx679j-v6: cycle=10 uptime=172.84 342.65 logs=339
+[  177.868647][    T1] nx679j-v6: cycle=10 udc=NONE after 5s
+nx679j-v6: cycle=10 udc=NONE after 5s
+[  187.874330][    T1] nx679j-v6: cycle=11 uptime=187.86 372.66 logs=341
+nx679j-v6: cycle=11 uptime=187.86 372.66 logs=341
+[  192.881088][    T1] nx679j-v6: cycle=11 udc=NONE after 5s
+nx679j-v6: cycle=11 udc=NONE after 5s
+[  202.887126][    T1] nx679j-v6: cycle=12 uptime=202.87 402.65 logs=343
+nx679j-v6: cycle=12 uptime=202.87 402.65 logs=343
+[  207.894110][    T1] nx679j-v6: cycle=12 udc=NONE after 5s
+nx679j-v6: cycle=12 udc=NONE after 5s
+[  217.899880][    T1] nx679j-v6: cycle=13 uptime=217.88 432.65 logs=345
+nx679j-v6: cycle=13 uptime=217.88 432.65 logs=345
+[  222.907365][    T1] nx679j-v6: cycle=13 udc=NONE after 5s
+nx679j-v6: cycle=13 udc=NONE after 5s
+[  232.914157][    T1] nx679j-v6: cycle=14 uptime=232.90 462.64 logs=347
+nx679j-v6: cycle=14 uptime=232.90 462.64 logs=347
+[  237.921409][    T1] nx679j-v6: cycle=14 udc=NONE after 5s
+nx679j-v6: cycle=14 udc=NONE after 5s
+[  247.927929][    T1] nx679j-v6: cycle=15 uptime=247.91 492.62 logs=349
+nx679j-v6: cycle=15 uptime=247.91 492.62 logs=349
+[  252.936032][    T1] nx679j-v6: cycle=15 udc=NONE after 5s
+nx679j-v6: cycle=15 udc=NONE after 5s
+[  262.944364][    T1] nx679j-v6: cycle=16 uptime=262.93 522.62 logs=351
+nx679j-v6: cycle=16 uptime=262.93 522.62 logs=351
+[  267.951098][    T1] nx679j-v6: cycle=16 udc=NONE after 5s
+nx679j-v6: cycle=16 udc=NONE after 5s
+[  277.957330][    T1] nx679j-v6: cycle=17 uptime=277.94 552.61 logs=353
+nx679j-v6: cycle=17 uptime=277.94 552.61 logs=353
+[  282.965108][    T1] nx679j-v6: cycle=17 udc=NONE after 5s
+nx679j-v6: cycle=17 udc=NONE after 5s
+[  292.971636][    T1] nx679j-v6: cycle=18 uptime=292.95 582.61 logs=355
+nx679j-v6: cycle=18 uptime=292.95 582.61 logs=355
+[  297.978696][    T1] nx679j-v6: cycle=18 udc=NONE after 5s
+nx679j-v6: cycle=18 udc=NONE after 5s
+[  307.985019][    T1] nx679j-v6: cycle=19 uptime=307.97 612.61 logs=357
+nx679j-v6: cycle=19 uptime=307.97 612.61 logs=357
+[  312.992574][    T1] nx679j-v6: cycle=19 udc=NONE after 5s
+nx679j-v6: cycle=19 udc=NONE after 5s
+[  322.998916][    T1] nx679j-v6: cycle=20 uptime=322.98 642.61 logs=359
+nx679j-v6: cycle=20 uptime=322.98 642.61 logs=359
+[  328.006396][    T1] nx679j-v6: cycle=20 udc=NONE after 5s
+nx679j-v6: cycle=20 udc=NONE after 5s
+[  338.012413][    T1] nx679j-v6: cycle=21 uptime=337.99 672.60 logs=361
+nx679j-v6: cycle=21 uptime=337.99 672.60 logs=361
+[  343.019557][    T1] nx679j-v6: cycle=21 udc=NONE after 5s
+nx679j-v6: cycle=21 udc=NONE after 5s
+[  353.025913][    T1] nx679j-v6: cycle=22 uptime=353.01 702.60 logs=363
+nx679j-v6: cycle=22 uptime=353.01 702.60 logs=363
+[  358.035543][    T1] nx679j-v6: cycle=22 udc=NONE after 5s
+nx679j-v6: cycle=22 udc=NONE after 5s
+[  368.046679][    T1] nx679j-v6: cycle=23 uptime=368.03 732.60 logs=365
+nx679j-v6: cycle=23 uptime=368.03 732.60 logs=365
+[  373.055227][    T1] nx679j-v6: cycle=23 udc=NONE after 5s
+nx679j-v6: cycle=23 udc=NONE after 5s
+[  383.061125][    T1] nx679j-v6: cycle=24 uptime=383.04 762.60 logs=367
+nx679j-v6: cycle=24 u

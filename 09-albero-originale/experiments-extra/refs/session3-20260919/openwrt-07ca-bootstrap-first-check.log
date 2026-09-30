@@ -1,0 +1,25 @@
+07ca5714-6343-4c47-a412-625741059c13
+1136.63 8966.71
+running
+BOOTSTRAP_BEGIN uptime=1093.74 5629.35
+loaded /proc/1/root/lib/modules/msm_sharedmem.ko
+[dspawn] pid=8719 log=/tmp/rmtfs.log
+[ns] service=14 version=1 instance=0 node=1 port=14
+[dspawn] pid=8726 log=/tmp/tqftpserv.log
+[dspawn] pid=8728 log=/tmp/pd-mapper.log
+[ns] service=4096 version=1 instance=0 node=1 port=16390
+[ns] service=4096 version=2 instance=0 node=1 port=16391
+[ns] service=4096 version=3 instance=0 node=1 port=16392
+[ns] service=4096 version=4 instance=0 node=1 port=16393
+[ns] service=4096 version=5 instance=0 node=1 port=16394
+[ns] service=4096 version=6 instance=0 node=1 port=16395
+[ns] service=4096 version=7 instance=0 node=1 port=16396
+[ns] service=4096 version=8 instance=0 node=1 port=16397
+[ns] service=4096 version=9 instance=0 node=1 port=16398
+[ns] service=4096 version=10 instance=0 node=1 port=16399
+[ns] service=64 version=1 instance=1 node=1 port=16400
+[dspawn] pid=8736 log=/tmp/crashlog-observed.log
+loaded /proc/1/root/lib/modules/qrtr-smd.ko
+MSS_FIRST_START uptime=1098.77 8760.84
+spawned pid=8780: /sys/class/remoteproc/remoteproc3/state <- start
+12

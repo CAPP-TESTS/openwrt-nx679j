@@ -1,0 +1,14 @@
+vbmeta_a: 65536 B (partizione 65536) sha256=cc0de687c935714a9b6de4bf3492391474e640d2e23f752f6c626f6413b07e22
+AVB0 a offset: 0
+  sha256(primi 6656 byte) = fc5963cbdb83c862af668504f1259a121f794221c1358251a5b37fc6ea703cc6   
+  sha256(primi 11904 byte) = bc224f447b3fb65b70fe37d4a95d49b120fd45fa62393d2cca3a956397c85f46   
+  sha256(primi 11904 byte) = bc224f447b3fb65b70fe37d4a95d49b120fd45fa62393d2cca3a956397c85f46   
+  byte dopo 11904 tutti zero? True
+  struttura chiave pubblica AVB0 a 6656: b'\x00\x00\x00\x00'
+
+boot_a: 100663296 B sha256=0cd94d5627501f3c65c94542093ad18b1ec6c1c215dc6a7ecab4f941057e8364
+  primo ANDROID! a offset 0 | occorrenze AVB0: [51318784, 51322880]
+  boot_a[51317499:51318850] (coda dopo la firma): primo byte non-zero = 1285
+  hash descriptor dichiarato per 'boot' in vbmeta: digest f0abae29b198534160dc5c0123a28bf6ae392bb50ada970b4a5d041003407ece, image_size=50499584
+  sha256(boot_a[0:50499584])            = ec823514e7345cc9ab454a2bea21a836f26886889a34ce79a4a00cdc0a2fb8ea  -> NON COINCIDE
+  sha256(salt||boot_a[0:50499584])      = 9dbd5737b29210ea08539fe0a05ee6388263067371caf819258d0f1e758d8048  -> NON COINCIDE

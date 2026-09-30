@@ -1,0 +1,38 @@
+[
+  {
+    "timestamp": "2094.249657",
+    "path": "LAN",
+    "caller_offset": "0x58e18",
+    "pointer": "0xffffff8799834040",
+    "raw32": "0100100308000e00ffffffff00************************d6b42500001000",
+    "opcode": 1,
+    "mask": 784,
+    "packet_length": 8,
+    "source": 14,
+    "destination": 16
+  },
+  {
+    "timestamp": "2097.279805",
+    "path": "LAN",
+    "caller_offset": "0x58e18",
+    "pointer": "0xffffff8799830040",
+    "raw32": "0100104308000e00ffffffff00************************b5c22500001000",
+    "opcode": 1,
+    "mask": 17168,
+    "packet_length": 8,
+    "source": 14,
+    "destination": 16
+  },
+  {
+    "timestamp": "2097.377577",
+    "path": "LAN",
+    "caller_offset": "0x58e18",
+    "pointer": "0xffffff87802ca040",
+    "raw32": "0100104308000e00ffffffff00**************************c32500001000",
+    "opcode": 1,
+    "mask": 17168,
+    "packet_length": 8,
+    "source": 14,
+    "destination": 16
+  }
+]
