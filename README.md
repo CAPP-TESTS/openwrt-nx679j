@@ -1,3 +1,24 @@
+# **Note preliminari by RAW - 2026.10.04**
+
+1. Il port non è comunque un OpenWrt “nativo” nel senso stretto = userland OpenWrt eseguito in chroot sullo slot B - sopra il kernel vendor Android 5.10.66 lasciato invariato. Il modem X65 è pilotato direttamente via QMI/QRTR (senza ModemManager) e l’interfaccia è una UI scritta in C su DRM/KMS. Non si tratta quindi di un porting e.g. in implementazione halium/hybris per cui si opera a livello di kernel/boot + system + vendor.
+
+2. L'autore NON ha rilasciato pacchetti chiavi-in-mano per flash & esecuzione - _giustamente, tanto per vincoli di licenza/redistribuzione dei blob proprietari quanto anche per l'assenza di adeguate procedure per recupero/ripristino d'emergenza_. Tuttavia, NON ha nemmeno rilasciato documentazione e risorse adeguate, onde consentire piena riproducibilità delle build sino all'ultima versione nelle iterazioni (v180 del 25/09)... = si è infatti limitato al solo sbrigativo paragrafo ["Come ricostruire da zero"](/DOCUMENTAZIONE.md#9-come-ricostruire-da-zero) all'interno del mega-file di riepilogo attività :/
+
+\
+Per quanto il progetto presenti spunti interessanti, ci sono decisamente non pochi aspetti da rivedere / rifare - e non solo per quanto concerne revisione + riorganizzazione di docs/risorse per loro presentazione pub (_aka switch ad org con repo differenziate, anche per rispettare meglio licenze n.d.r._).
+
+Mancano comunque elementi necessari - tanto per consentire 100% reproducible build con il dispositivo specifico NX679J quanto per replicare metodologia/approccio (cfr. anche impegno agenti/AI) in attività di sviluppo esteso ad altri dispositivi.
+
+\
+In attesa di eventuali aggiornamenti da parte dell'autore, ho provveduto intanto a caricare in questo fork :
+
+- **[Prima guida best-effort per la ricostruzione di una build per flash/uso su Nubia RedMagic 7 (NX679J)](Best_Effort_Reconstruction_with_gaps_on_NX679J.pdf)** = build funzionalmente equivalente alla v90 del 23/09, partendo come base dalla compilazione v10 (solo avvio OpenWrt + SSH).
+
+- **[Analisi grezza di repo/deliverable con focus su incidenza/impatto delle quote d'impegno Agenti/AI](Rapporto_openwrt-nx679j.pdf)** (_disponibile anche in [EN](Report_openwrt-nx679j_EN.pdf)_) per le fasi di attività svolte per il progetto nell'arco dei 3 mesi (Luglio, Agosto, Settembre).
+
+----------------
+----------------
+
 # NX679J — OpenWrt nativo su un Nubia RedMagic 7 (SM8450)
 
 Port completo di **OpenWrt 25.12.5** su un telefono **Nubia RedMagic 7 (NX679J, Snapdragon 8 Gen 1 / SM8450)**: OpenWrt gira in chroot sullo **slot B** con il **kernel vendor 5.10.66 lasciato intatto**, il **modem X65** come uplink, e un'**interfaccia utente nativa sul display del telefono** (tasti laterali + standby senza burn-in).
